@@ -75,7 +75,7 @@ To get help with dcrdocs, please use the [forum], [GitHub issues], or the Decred
 [Chocolatey]: https://chocolatey.org
 [Decred]: https://github.com/decred
 [forum]: https://forum.decred.org
-[GitHub issues]: https://github.com/decred/dcrdocs/issues]
+[GitHub issues]: https://github.com/decred/dcrdocs/issues
 [MkDocs]: https://mkdocs.org
 [pip]: http://pip.readthedocs.org/en/latest/installing.html
 [python-markdown-math]: https://pypi.python.org/pypi/python-markdown-math/

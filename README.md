@@ -17,7 +17,7 @@ MkDocs supports Python versions 2.6, 2.7, 3.3, 3.4 and 3.5.
 
 On Windows it is recommended that you install Python and pip with [Chocolatey].
 
-Install the `mkdocs` development package and [python-markdown-math] (required for rendering equations) using pip:
+Install the `mkdocs` development package and [python-markdown-math] \(required for rendering equations\) using pip:
 
 ```bash
 $ pip install https://github.com/mkdocs/mkdocs/archive/master.zip python-markdown-math
@@ -42,7 +42,7 @@ INFO    -  Cleaning site directory
 [I 160402 15:50:43 handlers:60] Start detecting changes
 ```
 
-Open up <http://127.0.0.1:8000/> in your browser, and you will see the default home page being displayed. The dev-server also supports auto-reloading, and will rebuild your documentation whenever anything in the configuration file, documentation directory, or theme directory changes.
+Open up <http://127.0.0.1:8000> in your browser, and you will see the default home page being displayed. The dev-server also supports auto-reloading, and will rebuild your documentation whenever anything in the configuration file, documentation directory, or theme directory changes.
 
 ## Building the site
 

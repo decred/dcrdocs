@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://docs.decred.org/advanced/storing-login-details/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Storing Login Details - dcrdocs</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">dcrdocs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../getting-started/overview/">Overview</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">User Guides</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../getting-started/user-guides/windows/">Windows</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../getting-started/user-guides/linux/">Linux</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../getting-started/user-guides/web/">Web</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+<li >
+    <a href="../../getting-started/obtaining-dcr/">Obtaining DCR</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../getting-started/using-the-block-explorer/">Using the Block Explorer</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mining <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../mining/overview/">Overview</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Proof-of-work</a>
+    <ul class="dropdown-menu">
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Pool Mining</a>
+    <ul class="dropdown-menu">
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">cgminer</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Solo Mining</a>
+    <ul class="dropdown-menu">
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">cgminer</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Proof-of-stake</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../faq/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faq/general/">General</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faq/configuration/">Configuration</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faq/wallets-and-seeds/">Wallets and Seeds</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faq/web-client/">Web Client</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faq/blocks/">Blocks</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Proof-of-stake</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../faq/proof-of-stake/solo-mining/">Solo Mining</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../faq/proof-of-stake/buying-tickets-and-fees/">Buying Tickets and Fees</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../faq/proof-of-stake/voting-tickets/">Voting Tickets</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../faq/proof-of-stake/stake-pools/">Stake Pools</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+<li >
+    <a href="../../faq/proof-of-work-mining/">Proof-of-work Mining</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li class="active">
+    <a href="./">Storing Login Details</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../network-parameters/">Network Parameters</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../block-header-specifications/">Block Header Specifications</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../research/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/hybrid-design/">Hybrid Design</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/decentralized-stake-pooling/">Decentralized Stake Pooling</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/elliptic-curve-signature-algorithms/">Elliptic Curve Signature Algorithms</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/blake-256-hash-function/">BLAKE-256 Hash Function</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/script-extensions/">Script Extensions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/signature-script-isolation-and-fraud-proofs/">Signature Script Isolation and Fraud Proofs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/transaction-extensions/">Transaction Extensions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/schnorr-signatures/">Schnorr Signatures</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/miscellaneous-improvements/">Miscellaneous Improvements</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../about/credits/">Credits</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../../faq/proof-of-work-mining/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../network-parameters/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/decred/dcrdocs">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#storing-login-details"> Storing Login Details</a></li>
+        
+            <li><a href="#operating-system-differences"> Operating system differences</a></li>
+        
+            <li><a href="#dcrd"> dcrd</a></li>
+        
+            <li><a href="#dcrwallet"> dcrwallet</a></li>
+        
+            <li><a href="#dcrctl"> dcrctl</a></li>
+        
+            <li><a href="#other-uses-for-the-config-file"> Other uses for the config file</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="storing-login-details"><strong><i class="fa fa-hdd-o"></i> Storing Login Details</strong><a class="headerlink" href="#storing-login-details" title="Permanent link">&para;</a></h1>
+<p>Most parameters that are specified on the command line can also be kept in configuration files. This is a good way of storing your login credentials so that you do not need to include them in scripts or type them into the terminal all the time.</p>
+<hr />
+<h2 id="operating-system-differences"><strong><i class="fa fa-laptop"></i> Operating system differences</strong><a class="headerlink" href="#operating-system-differences" title="Permanent link">&para;</a></h2>
+<p>The files and file content are the same in both Linux and Windows. The only difference is the file location. There is one directory for two of the three Decred programs, <code>dcrd</code> and <code>dcrwallet</code>. In Windows they are located in <code>%LOCALAPPDATA%</code> (you can type that into the Windows explorer location bar to go straight to the folder), while in Linux they are in <code>~/.dcrd</code>, and <code>~/.dcrwallet</code> respectively. These are hidden directories and will not show up with <code>ls</code>, but are accessible using <code>cd .dcrd</code> and <code>cd .dcrwallet</code> from the home directory.</p>
+<p>Only the <code>dcrd</code> and <code>dcrwallet</code> folders are created by default. Since <code>dcrctl</code> interfaces with the daemon on localhost, no extra authentication is needed.</p>
+<hr />
+<h2 id="dcrd"><strong><i class="fa fa-terminal"></i> dcrd</strong><a class="headerlink" href="#dcrd" title="Permanent link">&para;</a></h2>
+<p>Go to your <code>dcrd</code> folder as specified above and create a text file called <code>dcrd.conf</code>. Open it and type it the following lines:</p>
+<pre><code class="no-highlight">rpcuser=&lt;username&gt;
+rpcpass=&lt;password&gt;
+</code></pre>
+
+<p>Where the username and password are ones you can make up on the spot. You do not need to register anywhere. They just secure your connection to the network. Save the file and exit the editor.</p>
+<hr />
+<h2 id="dcrwallet"><strong><i class="fa fa-terminal"></i> dcrwallet</strong><a class="headerlink" href="#dcrwallet" title="Permanent link">&para;</a></h2>
+<p>The procedure for the wallet is almost the same as for <code>dcrd</code>. Go to the <code>dcrwallet</code> folder and create a text file called <code>dcrwallet.conf</code>. Open it and enter the following lines:</p>
+<pre><code class="no-highlight">username=&lt;username&gt;
+password=&lt;password&gt;
+</code></pre>
+
+<p>You can make up the username, but the password must be the one you used to create your wallet (that is the password you were asked to enter, not the seed key words).</p>
+<hr />
+<h2 id="dcrctl"><strong><i class="fa fa-terminal"></i> dcrctl</strong><a class="headerlink" href="#dcrctl" title="Permanent link">&para;</a></h2>
+<p>As mentioned above, <code>dcrctl</code> uses the daemon already active on the local machine and so does not require extra authentication. As long as you are using config files for <code>dcrd</code> and <code>dcrwallet</code>, you do not need a config file for <code>dcrctl</code>.</p>
+<hr />
+<h2 id="other-uses-for-the-config-file"><strong><i class="fa fa-tasks"></i> Other uses for the config file</strong><a class="headerlink" href="#other-uses-for-the-config-file" title="Permanent link">&para;</a></h2>
+<p>Almost any command that you specify on the command line can be put into a config file. Have a look at the three sample files that came in the Decred download package for all the options available. To use the <code>dcrctl</code> config file, you will need to create a <code>dcrctl</code> folder next to the other two folders and put the file there.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center>dcrdocs v0.0.1. Decred Project 2016.</center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

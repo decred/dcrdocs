@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://docs.decred.org/getting-started/user-guides/web/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+	<title>Web - dcrdocs</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">dcrdocs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../overview/">Overview</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">User Guides</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../windows/">Windows</a>
+</li>
+
+        
+            
+<li >
+    <a href="../linux/">Linux</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Web</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+<li >
+    <a href="../../obtaining-dcr/">Obtaining DCR</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../using-the-block-explorer/">Using the Block Explorer</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mining <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../mining/overview/">Overview</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Proof-of-work</a>
+    <ul class="dropdown-menu">
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Pool Mining</a>
+    <ul class="dropdown-menu">
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">cgminer</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Solo Mining</a>
+    <ul class="dropdown-menu">
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">cgminer</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Proof-of-stake</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../faq/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../faq/general/">General</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../faq/configuration/">Configuration</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../faq/wallets-and-seeds/">Wallets and Seeds</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../faq/web-client/">Web Client</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../faq/blocks/">Blocks</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Proof-of-stake</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../faq/proof-of-stake/solo-mining/">Solo Mining</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../faq/proof-of-stake/buying-tickets-and-fees/">Buying Tickets and Fees</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../faq/proof-of-stake/voting-tickets/">Voting Tickets</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../faq/proof-of-stake/stake-pools/">Stake Pools</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+<li >
+    <a href="../../../faq/proof-of-work-mining/">Proof-of-work Mining</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../advanced/storing-login-details/">Storing Login Details</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../advanced/network-parameters/">Network Parameters</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../advanced/block-header-specifications/">Block Header Specifications</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../research/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../research/hybrid-design/">Hybrid Design</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../research/decentralized-stake-pooling/">Decentralized Stake Pooling</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../research/elliptic-curve-signature-algorithms/">Elliptic Curve Signature Algorithms</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../research/blake-256-hash-function/">BLAKE-256 Hash Function</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../research/script-extensions/">Script Extensions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../research/signature-script-isolation-and-fraud-proofs/">Signature Script Isolation and Fraud Proofs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../research/transaction-extensions/">Transaction Extensions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../research/schnorr-signatures/">Schnorr Signatures</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../research/miscellaneous-improvements/">Miscellaneous Improvements</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../../about/credits/">Credits</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../about/license/">License</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../linux/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../../obtaining-dcr/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/decred/dcrdocs">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#web-client-user-guide"> Web Client User Guide</a></li>
+        
+            <li><a href="#create-your-web-client-wallet"> Create your web client wallet</a></li>
+        
+            <li><a href="#send-funds-with-the-web-client"> Send funds with the web client</a></li>
+        
+            <li><a href="#receive-funds-with-the-web-client"> Receive funds with the web client</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="web-client-user-guide"><i class="fa fa-firefox"></i> <strong>Web Client User Guide</strong><a class="headerlink" href="#web-client-user-guide" title="Permanent link">&para;</a></h1>
+<hr />
+<p>There are a couple of things you need to know about the web client before you use it:</p>
+<ul>
+<li>You cannot <a href="../../../mining/overview/#2-proof-of-stake-mining">proof-of-stake mine</a> with it.</li>
+<li>Your wallet is identified by your seed key words, but there is no other authentication at this time. This means that anyone with access to your computer will be able to access your funds in the wallet. However, you can set a password for sending funds.</li>
+</ul>
+<hr />
+<h2 id="create-your-web-client-wallet"><strong><i class="fa fa-plus-circle"></i> Create your web client wallet</strong><a class="headerlink" href="#create-your-web-client-wallet" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Step One</p>
+</blockquote>
+<p>Go to <a href="https://wallet.decred.org">https://wallet.decred.org</a>. You will be presented with the <code>Terms and Conditions</code> screen. Pay extra attention to the following:</p>
+<p>Just like the command-line wallet, if you lose your seed words or your password for sending funds you will lose access to your wallet. There is no password reset. Also note that all transactions on Decred are irreversible by design. If you accidentally send funds to the wrong address, you will need to ask the recipient to send them back. The developers are unable to reverse transactions. Click <code>I Agree</code> once you have read them. You will now see the welcome screen. If this is the first time you have used Decred, click <code>Get Started</code>. If you want to restore a previously used wallet, click <code>Import Backup</code>. This guide will assume you are just starting out so click <code>Get Started</code>.</p>
+<blockquote>
+<p>Step Two</p>
+</blockquote>
+<p>A wallet will be generated for you and you will see this screen:</p>
+<p>Note that under <code>Personal Wallet</code> on the left it says <code>Testnet</code>. This wallet will only work on the test Decred network which is not very useful to us. Click the dropdown in the top left, then click <code>Add wallet</code>. Click <code>Create New Wallet</code>. Give your wallet a name then click <code>Create New Wallet</code>.</p>
+<blockquote>
+<p>Step Three</p>
+</blockquote>
+<p>Your wallet is now created and ready to use. However, before you do anything else, you should add a password for sending funds and backup the seed words that were used to create your wallet. This is doubly true for the web client which does not store a permanent record. Your wallet data is stored in the browser cache and can be deleted quite easily. If you are running in incognito mode, it will be deleted as soon as you close the browser. <strong>WITHOUT THESE KEY WORDS YOU LOSE ACCESS TO ALL FUNDS IN YOUR WALLET</strong> should the wallet data be deleted. The funds themselves still exist in the blockchain, however, without the key you cannot access them.</p>
+<p>Click the <code>Preferences</code> button on the right opposite your wallet name. There are really only three things you will be interested in here:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Wallet Alias</code></td>
+<td>You can rename the wallet if you wish.</td>
+</tr>
+<tr>
+<td><code>Request Password for Spending Funds</code></td>
+<td>Since your wallet is saved in the browser cache, there is no extra password required to access it. By setting a password here, you ensure that only you can send funds if someone else accesses your browser. Type a password in and click <code>Set</code>. Note the alert that says passwords cannot be recovered. There is no password reset feature on the wallet. If you lose the password, you will never be able to move your coins out of the wallet or use them for proof-of-stake voting.</td>
+</tr>
+<tr>
+<td><code>Backup</code></td>
+<td>This is where you will find your seed key words.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Step Four</p>
+</blockquote>
+<p>Click <code>Backup</code>. You will see this screen:</p>
+<p>First of all, read the note. Only use ONE wallet at a time with a given seed (See: <a href="#">FAQ</a>). You can have multiple wallets installed on different machines, but only one of them should be running at any given time. Click <code>Show Wallet Seed</code>. Write this down somewhere safe, or put it in an encrypted document to which you will not forget the password. This list of words is used to generate the authentication key for your wallet. Anyone who possesses this list can access the funds in your wallet.</p>
+<blockquote>
+<p><strong>VERY IMPORTANT</strong></p>
+</blockquote>
+<p><strong>DO NOT, UNDER ANY CIRCUMSTANCES, GIVE YOUR KEY WORDS TO ANYONE! NOT EVEN THE DEVELOPERS!</strong></p>
+<p>Once you have written the words down (and have triple-checked that they are correct; capitalization is important), go to the next step.</p>
+<blockquote>
+<p>Step Five</p>
+</blockquote>
+<p>Now that you have written down your key words and checked them, do it again. Seriously. This step is critical. Without this list your wallet cannot be reconstructed and no one, not even the developers, can restore it. Now that you are sure the list is stored correctly, click <code>Delete Words</code>. Click <code>Back</code> twice to get to the main wallet screen.</p>
+<hr />
+<h2 id="send-funds-with-the-web-client"><strong><i class="fa fa-long-arrow-right"></i> Send funds with the web client</strong><a class="headerlink" href="#send-funds-with-the-web-client" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Step One</p>
+</blockquote>
+<p>On the main web wallet page, click the <code>Send</code> button at the bottom. You will be taken to this page. Note the <code>Advanced Options</code> section has already been expanded. In the <code>To</code> field, put in the Decred address of the recipient.</p>
+<blockquote>
+<p>Step Two</p>
+</blockquote>
+<p>In <code>Amount</code>, enter the value in DCR to send to the recipient. If you wish you can type an optional message in the <code>Note</code> field. Press <code>Send</code>. The <code>Use Unconfirmed Funds</code> option lets you use funds that the network knows are being sent to you but have not yet been confirmed by <a href="../../../mining/overview/#1-proof-of-work-mining">proof-of-work miners</a>. If this is turned on and the amount specified can only be covered by using unconfirmed funds, the transaction will not proceed until the required funds have been confirmed.</p>
+<hr />
+<h2 id="receive-funds-with-the-web-client"><strong><i class="fa fa-long-arrow-left"></i> Receive funds with the web client</strong><a class="headerlink" href="#receive-funds-with-the-web-client" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Step One</p>
+</blockquote>
+<p>Click the <code>Receive</code> button at the bottom of the window. You will see this screen:</p>
+<p>Give the person sending you DCR the address displayed (it will start with <code>Ds</code>) or they can use the QR code if their wallet or service accepts them. You can use the same address as often as you want, but for privacy it is recommended that you generate a new address each time. Do not worry about being given a duplicate address. There are around <code>2.08x10^93</code> possible addresses, so we will probably reach the heat death of the universe before we run of Decred addresses.</p>
+<blockquote>
+<p><strong>WARNING</strong></p>
+</blockquote>
+<p>The above address is for demonstration purposes only, but is a real address. The wallet it is linked to is temporary and the key has already been deleted. If you try sending DCR to this address it will work and no one will ever be able to access them again.</p>
+<p><strong>DO NOT ATTEMPT TO SEND DCR TO THIS ADDRESS</strong>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center>dcrdocs v0.0.1. Decred Project 2016.</center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://docs.decred.org/advanced/block-header-specifications/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Block Header Specifications - dcrdocs</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">dcrdocs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../getting-started/overview/">Overview</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">User Guides</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../getting-started/user-guides/windows/">Windows</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../getting-started/user-guides/linux/">Linux</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../getting-started/user-guides/web/">Web</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+<li >
+    <a href="../../getting-started/obtaining-dcr/">Obtaining DCR</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../getting-started/using-the-block-explorer/">Using the Block Explorer</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mining <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../mining/overview/">Overview</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Proof-of-work</a>
+    <ul class="dropdown-menu">
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Pool Mining</a>
+    <ul class="dropdown-menu">
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">cgminer</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Solo Mining</a>
+    <ul class="dropdown-menu">
+        
+            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">cgminer</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Proof-of-stake</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FAQ <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../faq/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faq/general/">General</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faq/configuration/">Configuration</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faq/wallets-and-seeds/">Wallets and Seeds</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faq/web-client/">Web Client</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../faq/blocks/">Blocks</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Proof-of-stake</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../faq/proof-of-stake/solo-mining/">Solo Mining</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../faq/proof-of-stake/buying-tickets-and-fees/">Buying Tickets and Fees</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../faq/proof-of-stake/voting-tickets/">Voting Tickets</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../faq/proof-of-stake/stake-pools/">Stake Pools</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                        
+<li >
+    <a href="../../faq/proof-of-work-mining/">Proof-of-work Mining</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../storing-login-details/">Storing Login Details</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../network-parameters/">Network Parameters</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Block Header Specifications</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../research/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/hybrid-design/">Hybrid Design</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/decentralized-stake-pooling/">Decentralized Stake Pooling</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/elliptic-curve-signature-algorithms/">Elliptic Curve Signature Algorithms</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/blake-256-hash-function/">BLAKE-256 Hash Function</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/script-extensions/">Script Extensions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/signature-script-isolation-and-fraud-proofs/">Signature Script Isolation and Fraud Proofs</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/transaction-extensions/">Transaction Extensions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/schnorr-signatures/">Schnorr Signatures</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../research/miscellaneous-improvements/">Miscellaneous Improvements</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../about/credits/">Credits</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../network-parameters/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../verifying-binaries/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/decred/dcrdocs">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#block-header-specifications">Block Header Specifications</a></li>
+        
+            <li><a href="#block-header-format">Block header format</a></li>
+        
+            <li><a href="#example-encoded-block-header">Example encoded block header</a></li>
+        
+            <li><a href="#example-encoded-block-header-as-raw-bytes">Example encoded block header as raw bytes</a></li>
+        
+            <li><a href="#mining-details">Mining details</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="block-header-specifications"><strong>Block Header Specifications</strong><a class="headerlink" href="#block-header-specifications" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="block-header-format"><strong>Block header format</strong><a class="headerlink" href="#block-header-format" title="Permanent link">&para;</a></h2>
+<p>Decred block headers occupy 180 bytes when serialized. The serialization format for a block header is displayed below:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Version</td>
+<td>Block header version</td>
+<td>4 bytes</td>
+</tr>
+<tr>
+<td>Previous block</td>
+<td>Hash of the previous block</td>
+<td>32 bytes</td>
+</tr>
+<tr>
+<td>Merkle root</td>
+<td>Merkle tree hash calculated using all transactions in the block</td>
+<td>32 bytes</td>
+</tr>
+<tr>
+<td>Stake root</td>
+<td>Merkle tree hash calculated using all stake transactions in the block</td>
+<td>32 bytes</td>
+</tr>
+<tr>
+<td>Vote bits</td>
+<td>Bit flags. Currently only used to signify votes on the previous merkle root</td>
+<td>2 bytes</td>
+</tr>
+<tr>
+<td>Final state</td>
+<td>Commitment to the final state of the PRNG (for lottery purposes)</td>
+<td>6 bytes</td>
+</tr>
+<tr>
+<td>Voters</td>
+<td>Number of participating voters in the block</td>
+<td>2 bytes</td>
+</tr>
+<tr>
+<td>Fresh stake</td>
+<td>Number of new tickets in the block</td>
+<td>1 byte</td>
+</tr>
+<tr>
+<td>Revocations</td>
+<td>Number of revocations present in the block</td>
+<td>1 byte</td>
+</tr>
+<tr>
+<td>Pool size</td>
+<td>Size of the ticket pool</td>
+<td>4 bytes</td>
+</tr>
+<tr>
+<td>Bits</td>
+<td>Difficulty target for the block</td>
+<td>4 bytes</td>
+</tr>
+<tr>
+<td>SBits</td>
+<td>Stake difficulty target for the block</td>
+<td>8 bytes</td>
+</tr>
+<tr>
+<td>Height</td>
+<td>The number of blocks that precede the block in the blockchain</td>
+<td>4 bytes</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>Number of bytes that the serialized block occupies</td>
+<td>4 bytes</td>
+</tr>
+<tr>
+<td>Timestamp</td>
+<td>Time that the block was created</td>
+<td>4 bytes</td>
+</tr>
+<tr>
+<td>Extra data</td>
+<td>The nonce and any other data that may be used later for consensus purposes</td>
+<td>40 bytes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="example-encoded-block-header"><strong>Example encoded block header</strong><a class="headerlink" href="#example-encoded-block-header" title="Permanent link">&para;</a></h2>
+<pre><code>        0x01, 0x00, 0x00, 0x00, // Version 1
+        0x6f, 0xe2, 0x8c, 0x0a, 0xb6, 0xf1, 0xb3, 0x72, // PrevBlock
+        0xc1, 0xa6, 0xa2, 0x46, 0xae, 0x63, 0xf7, 0x4f,
+        0x93, 0x1e, 0x83, 0x65, 0xe1, 0x5a, 0x08, 0x9c,
+        0x68, 0xd6, 0x19, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x3b, 0xa3, 0xed, 0xfd, 0x7a, 0x7b, 0x12, 0xb2, // MerkleRoot
+        0x7a, 0xc7, 0x2c, 0x3e, 0x67, 0x76, 0x8f, 0x61,
+        0x7f, 0xc8, 0x1b, 0xc3, 0x88, 0x8a, 0x51, 0x32,
+        0x3a, 0x9f, 0xb8, 0xaa, 0x4b, 0x1e, 0x5e, 0x4a,
+        0x3b, 0xa3, 0xed, 0xfd, 0x7a, 0x7b, 0x12, 0xb2, // StakeRoot
+        0x7a, 0xc7, 0x2c, 0x3e, 0x67, 0x76, 0x8f, 0x61,
+        0x7f, 0xc8, 0x1b, 0xc3, 0x88, 0x8a, 0x51, 0x32,
+        0x3a, 0x9f, 0xb8, 0xaa, 0x4b, 0x1e, 0x5e, 0x4a,
+        0x00, 0x00, // VoteBits
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // FinalState
+        0x00, 0x00, // Voters
+        0x00,                   // FreshStake
+        0x00,                   // Revocations
+        0x00, 0x00, 0x00, 0x00, //Poolsize
+        0xff, 0xff, 0x00, 0x1d, // Bits
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // SBits
+        0x00, 0x00, 0x00, 0x00, // Height
+        0x00, 0x00, 0x00, 0x00, // Size
+        0x29, 0xab, 0x5f, 0x49, // Timestamp
+        0xf3, 0xe0, 0x01, 0x00, // Nonce
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // ExtraData
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00,
+</code></pre>
+
+<hr />
+<h2 id="example-encoded-block-header-as-raw-bytes"><strong>Example encoded block header as raw bytes</strong><a class="headerlink" href="#example-encoded-block-header-as-raw-bytes" title="Permanent link">&para;</a></h2>
+<pre><code>        0x01, 0x00, 0x00, 0x00, // Version 1
+        0x6f, 0xe2, 0x8c, 0x0a, 0xb6, 0xf1, 0xb3, 0x72, // PrevBlock
+        0xc1, 0xa6, 0xa2, 0x46, 0xae, 0x63, 0xf7, 0x4f,
+        0x93, 0x1e, 0x83, 0x65, 0xe1, 0x5a, 0x08, 0x9c,
+        0x68, 0xd6, 0x19, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x3b, 0xa3, 0xed, 0xfd, 0x7a, 0x7b, 0x12, 0xb2, // MerkleRoot
+        0x7a, 0xc7, 0x2c, 0x3e, 0x67, 0x76, 0x8f, 0x61,
+        0x7f, 0xc8, 0x1b, 0xc3, 0x88, 0x8a, 0x51, 0x32,
+        0x3a, 0x9f, 0xb8, 0xaa, 0x4b, 0x1e, 0x5e, 0x4a,
+        0x3b, 0xa3, 0xed, 0xfd, 0x7a, 0x7b, 0x12, 0xb2, // StakeRoot
+        0x7a, 0xc7, 0x2c, 0x3e, 0x67, 0x76, 0x8f, 0x61,
+        0x7f, 0xc8, 0x1b, 0xc3, 0x88, 0x8a, 0x51, 0x32,
+        0x3a, 0x9f, 0xb8, 0xaa, 0x4b, 0x1e, 0x5e, 0x4a,
+        0x00, 0x00, // VoteBits
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // FinalState
+        0x00, 0x00, // Voters
+        0x00,                   // FreshStake
+        0x00,                   // Revocations
+        0x00, 0x00, 0x00, 0x00, //Poolsize
+        0xff, 0xff, 0x00, 0x1d, // Bits
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // SBits
+        0x00, 0x00, 0x00, 0x00, // Height
+        0x00, 0x00, 0x00, 0x00, // Size
+        0x29, 0xab, 0x5f, 0x49, // Timestamp
+        0xf3, 0xe0, 0x01, 0x00, // Nonce
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // ExtraData
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00,
+</code></pre>
+
+<hr />
+<h2 id="mining-details"><strong>Mining details</strong><a class="headerlink" href="#mining-details" title="Permanent link">&para;</a></h2>
+<p>Both getwork and getblocktemplate are implemented, but neither is precisely the same as in Bitcoin. getwork is very similar, but returns a non-int32 reversed byte string to work off of. The &lsquo;data&rsquo; field refers to the properly padded blake256 input of 3x64 byte chunks. Only the last chunk needs to be modified when mining.</p>
+<p>Example <code>getwork</code> response:</p>
+<pre><code>{
+  &quot;data&quot;: &quot;00000000bf9d58482135c4d8d9445af7604b24ccf1d31b33df33abf21a4e11f52c
+000000ef9d462a20d734def40076f0027faa8ef8d9c52d68c46741d03b1732377a556ed9cbf3b
+694e65c1b287e8fd2be2e2243a74356d1ef95413d9fc74ffb8a8a07530100e11754a6af500500
+03000115000000096f1d28d1354d000000000a0d0000591300009329a55600000000000000000
+00000000000000000000000000000000000000000000000000000000000000080000001000000
+00000005a0&quot;,
+  &quot;target&quot;: &quot;000000000000000000000000000000000000000000000000000000096f000000&quot;
+}
+</code></pre>
+
+<p><code>getblocktemplate</code> also returns a full header and data about the transactions that are included in the block. An example:</p>
+<pre><code>{
+  &quot;header&quot;: &quot;...&quot;,
+  &quot;sigoplimit&quot;: 20000,
+  &quot;sizelimit&quot;: 1000000,
+  &quot;transactions&quot;: [
+    {
+      &quot;data&quot;: &quot;...&quot;,
+      &quot;hash&quot;: &quot;9e72fdd4f0ac763da72ef672e6a4a9ec157412439fc578f979a6643fb9ad3bb6&quot;,
+      &quot;depends&quot;: [],
+      &quot;fee&quot;: 1000,
+      &quot;sigops&quot;: 2,
+      &quot;txtype&quot;: &quot;regular&quot;
+    }
+  ],
+  &quot;stransactions&quot;: [
+    {
+      &quot;data&quot;: &quot;...&quot;,
+      &quot;hash&quot;: &quot;53b4dd7e041f492d9b2de54215b8fff107885313e4556eadabec7784b936f96e&quot;,
+      &quot;depends&quot;: [],
+      &quot;fee&quot;: 0,
+      &quot;sigops&quot;: 1,
+      &quot;txtype&quot;: &quot;vote&quot;
+    },
+    {
+      &quot;data&quot;: &quot;...&quot;,
+      &quot;hash&quot;: &quot;316819cd5ab8a67d56e81cb02f2386a52ce9e88e2984c8fb773b9a7435a843fe&quot;,
+      &quot;depends&quot;: [],
+      &quot;fee&quot;: 0,
+      &quot;sigops&quot;: 1,
+      &quot;txtype&quot;: &quot;vote&quot;
+    },
+    {
+      &quot;data&quot;: &quot;...&quot;,
+      &quot;hash&quot;: &quot;ec478ed0572049dea679feeb2cfac70740644dde18ad9241d9075501ea293f25&quot;,
+      &quot;depends&quot;: [],
+      &quot;fee&quot;: 0,
+      &quot;sigops&quot;: 1,
+      &quot;txtype&quot;: &quot;vote&quot;
+    },
+    {
+      &quot;data&quot;: &quot;...&quot;,
+      &quot;hash&quot;: &quot;c83befd244e25cc79b79956d1046003c605aaee672da14c03f4a12a42ba85126&quot;,
+      &quot;depends&quot;: [],
+      &quot;fee&quot;: 0,
+      &quot;sigops&quot;: 1,
+      &quot;txtype&quot;: &quot;vote&quot;
+    },
+    {
+      &quot;data&quot;: &quot;...&quot;,
+      &quot;hash&quot;: &quot;17e7cad2a56540c64c6a655263de22bf45c3ed4d43d059f808038212e3c7d840&quot;,
+      &quot;depends&quot;: [],
+      &quot;fee&quot;: 0,
+      &quot;sigops&quot;: 1,
+      &quot;txtype&quot;: &quot;vote&quot;
+    },
+    {
+      &quot;data&quot;: &quot;...&quot;,
+      &quot;hash&quot;: &quot;e4f17fd4f487fdbf8c24cd1bde1b621203561e9edce975c9f649961160819afb&quot;,
+      &quot;depends&quot;: [],
+      &quot;fee&quot;: 1000,
+      &quot;sigops&quot;: 3,
+      &quot;txtype&quot;: &quot;ticket&quot;
+    },
+    {
+      &quot;data&quot;: &quot;...&quot;,
+      &quot;hash&quot;: &quot;e214c31c466a60772cfc463b856c29236c7db10126d0a7a4da000aba0e2a58bb&quot;,
+      &quot;depends&quot;: [],
+      &quot;fee&quot;: 1000,
+      &quot;sigops&quot;: 2,
+      &quot;txtype&quot;: &quot;ticket&quot;
+    },
+    {
+      &quot;data&quot;: &quot;...&quot;,
+      &quot;hash&quot;: &quot;2dd201d2960a8e44cbe33caae34d8cdb4c7a9bcfcfc397e88fb5e4afd9e3e425&quot;,
+      &quot;depends&quot;: [],
+      &quot;fee&quot;: 1000,
+      &quot;sigops&quot;: 2,
+      &quot;txtype&quot;: &quot;ticket&quot;
+    },
+    {
+      &quot;data&quot;: &quot;...&quot;,
+      &quot;hash&quot;: &quot;b00a34879e4dffacd79f1adae07cf78a415c733695cb309290843f81b860a570&quot;,
+      &quot;depends&quot;: [],
+      &quot;fee&quot;: 1000,
+      &quot;sigops&quot;: 3,
+      &quot;txtype&quot;: &quot;ticket&quot;
+    }
+  ],
+  &quot;coinbaseaux&quot;: {
+    &quot;flags&quot;: &quot;062f646372642f&quot;
+  },
+  &quot;coinbasevalue&quot;: 247524752,
+  &quot;longpollid&quot;: &quot;0000005de504d40790bbcccdbe7c693b5bbc0e4871c2d9375625e5248be2f645-1453664716&quot;,
+  &quot;target&quot;: &quot;0000006f09000000000000000000000000000000000000000000000000000000&quot;,
+  &quot;maxtime&quot;: 1453671916,
+  &quot;mintime&quot;: 1453664454,
+  &quot;mutable&quot;: [
+    &quot;time&quot;,
+    &quot;transactions/add&quot;,
+    &quot;prevblock&quot;,
+    &quot;coinbase/append&quot;
+  ],
+  &quot;noncerange&quot;: &quot;00000000ffffffff&quot;,
+  &quot;capabilities&quot;: [
+    &quot;proposal&quot;
+  ]
+}
+</code></pre>
+
+<p>Mining is performed by incrementing nonce until the block header is below target. ExtraData is allowed to be used as an extra nonce for fast hashing devices like ASICs, but may be used later by soft fork to provide the root for further data structures required for consensus.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center>dcrdocs v0.0.1. Decred Project 2016.</center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

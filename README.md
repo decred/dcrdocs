@@ -17,7 +17,7 @@ MkDocs supports Python versions 2.6, 2.7, 3.3, 3.4 and 3.5.
 
 On Windows it is recommended that you install Python and pip with [Chocolatey].
 
-Install the `mkdocs` development package, [python-markdown-math] \(required for rendering equations\), and the [mkdocs-bootswatch] themes using pip:
+Install the `mkdocs` development package, [python-markdown-math] \(required for rendering equations\), and [mkdocs-bootswatch] themes using pip:
 
 ```bash
 $ pip install https://github.com/mkdocs/mkdocs/archive/master.zip python-markdown-math mkdocs-bootswatch

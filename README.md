@@ -8,19 +8,19 @@ dcrdocs is built with [MkDocs]. In order to install MkDocs you will need [Python
 
 ```bash
 $ python --version
-Python 2.7.2
+Python 2.7.6
 $ pip --version
-pip 1.5.2
+pip 8.1.1
 ```
 
 MkDocs supports Python versions 2.6, 2.7, 3.3, 3.4 and 3.5.
 
 On Windows it is recommended that you install Python and pip with [Chocolatey].
 
-Install the `mkdocs` development package and [python-markdown-math] \(required for rendering equations\) using pip:
+Install the `mkdocs` development package, [python-markdown-math] \(required for rendering equations\), and the [mkdocs-bootswatch] themes using pip:
 
 ```bash
-$ pip install https://github.com/mkdocs/mkdocs/archive/master.zip python-markdown-math
+$ pip install https://github.com/mkdocs/mkdocs/archive/master.zip python-markdown-math mkdocs-bootswatch
 ```
 
 ## Getting started
@@ -28,7 +28,7 @@ $ pip install https://github.com/mkdocs/mkdocs/archive/master.zip python-markdow
 Getting started is super easy.
 
 ```bash
-cd dcrdocs
+$ cd dcrdocs
 ```
 
 There is a single configuration file named `mkdocs.yml`, and a folder named `docs` that will contain the documentation source files. MkDocs comes with a built-in dev-server that lets you preview the documentation as you work on it. Make sure you are in the same directory as the `mkdocs.yml` configuration file, and then start the server by running the `mkdocs serve` command:
@@ -49,19 +49,19 @@ Open up <http://127.0.0.1:8000> in your browser, and you will see the default ho
 To deploy dcrdocs, first build the documentation:
 
 ```bash
-mkdocs build
+$ mkdocs build
 ```
 
 This will create a new directory, named `site`. After some time, files may be removed from the documentation but they will still reside in the `site` directory. To remove those stale files, just run `mkdocs` with the `--clean` switch.
 
 ```bash
-mkdocs build --clean
+$ mkdocs build --clean
 ```
 
 To view a list of options available on a given command, use the `--help` flag with that command. For example, to get a list of all options available for the `build` command run the following:
 
 ```bash
-mkdocs build --help
+$ mkdocs build --help
 ```
 
 ## Deploying
@@ -76,7 +76,8 @@ To get help with dcrdocs, please use the [forum], [GitHub issues], or the Decred
 [Decred]: https://github.com/decred
 [forum]: https://forum.decred.org
 [GitHub issues]: https://github.com/decred/dcrdocs/issues
+[mkdocs-bootswatch]: https://mkdocs.github.io/mkdocs-bootswatch
 [MkDocs]: https://mkdocs.org
 [pip]: http://pip.readthedocs.org/en/latest/installing.html
-[python-markdown-math]: https://pypi.python.org/pypi/python-markdown-math/
+[python-markdown-math]: https://pypi.python.org/pypi/python-markdown-math
 [Python]: https://www.python.org

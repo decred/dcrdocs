@@ -4,7 +4,8 @@
 
 ## **Block header format**
 
-Decred block headers occupy 180 bytes when serialized. The serialization format for a block header is displayed below:
+Decred block headers occupy 180 bytes when serialized. The
+serialization format for a block header is displayed below:
 
 Field          | Description                                                                 | Size
 ---            | ---                                                                         | ---
@@ -103,7 +104,11 @@ Extra data     | The nonce and any other data that may be used later for consens
 
 ## **Mining details**
 
-Both getwork and getblocktemplate are implemented, but neither is precisely the same as in Bitcoin. getwork is very similar, but returns a non-int32 reversed byte string to work off of. The 'data' field refers to the properly padded blake256 input of 3x64 byte chunks. Only the last chunk needs to be modified when mining.
+Both getwork and getblocktemplate are implemented, but neither is
+precisely the same as in Bitcoin. getwork is very similar, but returns
+a non-int32 reversed byte string to work off of. The 'data' field
+refers to the properly padded blake256 input of 3x64 byte chunks. Only
+the last chunk needs to be modified when mining.
 
 Example `getwork` response:
 
@@ -119,7 +124,8 @@ Example `getwork` response:
 }
 ```
 
-`getblocktemplate` also returns a full header and data about the transactions that are included in the block. An example:
+`getblocktemplate` also returns a full header and data about the
+transactions that are included in the block. An example:
 
 ```
 {
@@ -231,4 +237,8 @@ Example `getwork` response:
 }
 ```
 
-Mining is performed by incrementing nonce until the block header is below target. ExtraData is allowed to be used as an extra nonce for fast hashing devices like ASICs, but may be used later by soft fork to provide the root for further data structures required for consensus.
+Mining is performed by incrementing nonce until the block header is
+below the target. ExtraData is allowed to be used as an extra nonce
+for fast hashing devices like ASICs, but a soft fork may change this
+at some point (to allow it to be used for other consensus data
+structures).

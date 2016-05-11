@@ -1,8 +1,18 @@
-# **Network Parameters**
+# **Program Options**
 
 ---
 
-The default options are sane for most users. This means `dcrd` will work 'out of the box' for most users. However, there are also a wide variety of flags that can be used to control it. The following section provides a usage overview which enumerates the flags. An interesting point to note is that the long form of all of these options (except `-C`) can be specified in a configuration file that is automatically parsed when dcrd starts up. By default, the configuration file is located at `~/.dcrd/dcrd.conf` on POSIX-style operating systems and `%LOCALAPPDATA%\dcrd\dcrd.conf` on Windows. The `-C` (`--configfile`) flag, as shown below, can be used to override this location.
+The default options are sane for most users (although you may need to
+set your credentials. This means `dcrd` will
+work 'out of the box' for most users. However, there are also a wide
+variety of flags that can be used to control its behavior. The following section
+provides a usage overview which enumerates the flags.An interesting
+point to note is that the long form of all of these options (except
+`-C`) can be specified in a configuration file that is automatically
+parsed when dcrd starts up.
+The `-C` (`--configfile`)
+flag, as shown below, can be used to override the default location.
+You can always get a list of all options by using the `-h` option.
 
 ---
 
@@ -18,9 +28,11 @@ dcrd [OPTIONS]
 
 Option                      | Description
 ---                         | ---
+`-A` or `--appdata=`        | Path to dcrd home directory ($HOME/.dcrd)
 `-V` or `--version`         | Display version information and exit
 `-C` or `--configfile=`     | Path to configuration file
 `-b` or `--datadir=`        | Directory to store data
+`--logdir=`                 | Directory to log output. ($HOME/.dcrd/logs)
 `-a` or `--addpeer=`        | Add a peer to connect with at startup
 `--connect=`                | Connect only to the specified peers at startup
 `--nolisten`                | Disable listening for incoming connections -- NOTE: Listening is automatically disabled if the `--connect` or `--proxy` options are used without also specifying listen interfaces via `--listen`
@@ -48,15 +60,19 @@ Option                      | Description
 `--onionpass=`              | Password for onion proxy server
 `--noonion=`                | Disable connecting to tor hidden services
 `--torisolation`            | Enable Tor stream isolation by randomizing user credentials for each connection
-`--testnet=`                | Use the test network
-`--regtest=`                | Use the regression test network
+`--testnet `                | Use the test network
+`--simnet`                  | Use the simulation test network
 `--nocheckpoints=`          | Disable built-in checkpoints. Don't do this unless you know what you're doing.
 `--dbtype=`                 | Database backend to use for the Block Chain (leveldb)
 `--profile=`                | Enable HTTP profiling on given port -- NOTE port must be between 1024 and 65536 (6060)
 `--cpuprofile=`             | Write CPU profile to the specified file
+`--memprofile=`             | Write mem profile to the specified file
+`--dumpblockchain=`         | Write blockchain as a gob-encoded map to the specified file
+`--miningtimeoffset=`       | Offset the mining timestamp of a block by this many seconds (positive values are in the past)
 `-d` or `--debuglevel:`     | Logging level for all subsystems {trace, debug, info, warn, error, critical} -- You may also specify &lt;subsystem&gt;=&lt;level&gt;,&lt;subsystem2&gt;=&lt;level&gt;,... to set the log level for individual subsystems -- Use show to list available subsystems (info)
 `--upnp`                    | Use UPnP to map our listening port outside of NAT
 `--limitfreerelay=`         | Limit relay of transactions with no transaction fee to the given amount in thousands of bytes per minute (15)
+`--norelaypriority`         | Do not require free or low-fee transactions to have high priority for relaying
 `--maxorphantx=`            | Max number of orphan transactions to keep in memory (1000)
 `--generate=`               | Generate (mine) decreds using the CPU
 `--miningaddr=`             | Add the specified payment address to the list of addresses to use for generated blocks -- At least one address is required if the generate option is set
@@ -66,6 +82,8 @@ Option                      | Description
 `--getworkkey=`             | DEPRECATED -- Use the --miningaddr option instead
 `--addrindex=`              | Build and maintain a full address index. Currently only supported by leveldb.
 `--dropaddrindex=`          | Deletes the address-based transaction index from the database on start up, and the exits.
+`--nonaggressive`           | Disable mining off of the parent block of the blockchain if there aren't enough voters
+`--nominingstatesync`       | Disable synchronizing the mining state with other nodes
 
 ---
 
@@ -79,13 +97,18 @@ Option                      | Description
 
 ## **PoS Commands**
 
-While it's quite easy to get started PoS mining, there's a lot happening in the background. Let's have a look at some of the information available:
+While it's easy to get started PoS mining, there's a lot happening in
+the background. Let's have a look at some of the information
+available:
 
 ```
 dcrctl -u <daemon username> - P <daemon password> --wallet <command>
 ```
 
-```getbalance ("account" minconf=1 "balancetype")``` Gets the balance for the given account (not address). On its own it will display spendable coins. To see all coins, you need to set balancetype to all e.g. ‘getbalance * 0 all' will show the total balance in wallet.
+```getbalance ("account" minconf=1 "balancetype")``` Gets the balance
+for the given account (not address). On its own it will display
+spendable coins. To see all coins, you need to set balancetype to all
+e.g. ‘getbalance * 0 all' will show the total balance in wallet.
 
 ```
 getstakeinfo
@@ -159,7 +182,10 @@ Block reward share      | 60/30/10     | The reward for a block is split between
 
 ### Chain server commands
 
-Note that some commands have been omitted from this list. They include duplicate commands, unimplemented commands and those that have limited utility to the general user base.
+Note that some commands have been omitted from this list. They include
+duplicate commands, unimplemented commands and those that have limited
+utility to the general user base.  You can always see all commands
+with `dcrctl -l`.
 
 Command              | Description
 ---                  | ---

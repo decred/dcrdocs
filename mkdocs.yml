@@ -53,8 +53,9 @@ pages:
     - 'Stake Pools': 'faq/proof-of-stake/stake-pools.md'
   - 'Proof-of-work Mining': 'faq/proof-of-work-mining.md'
 - Advanced:
+  - 'Overview': 'advanced/overview.md'
   - 'Storing Login Details': 'advanced/storing-login-details.md'
-  - 'Network Parameters': 'advanced/network-parameters.md'
+  - 'Program Options': 'advanced/program-options.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'

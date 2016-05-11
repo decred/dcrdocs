@@ -16,7 +16,7 @@ Go to one of your terminals and change to the Decred directory that you extracte
 ~/Decred/$ ./dcrd --rpcuser [daemon username] --rpcpass [daemon password]
 ```
 
-Choose any username and password. It is one that you make up on the spot, you do not need to register anywhere to get one. It is what will identify you to the network. Save these, you will need them later. You can also put them in a file so you do ont need to specify them on the command line or in scripts. (See: [Storing Login Details](../../advanced/storing-login-details.md)). This program is what is known as a daemon. It works in the background and you will not interface with it directly. It exists solely to connect you to the network.
+Choose any username and password. It is one that you make up on the spot, you do not need to register anywhere to get one. It is what will identify you to the network. Save these, you will need them later. You can also put them in a file so you do not need to specify them on the command line or in scripts. (See: [Storing Login Details](../../advanced/storing-login-details.md)). This program is what is known as a daemon. It works in the background and you will not interface with it directly. It exists solely to connect you to the network.
 
 > Step Three
 
@@ -32,7 +32,7 @@ Then, as it downloads the blocks, you will see lines like:
 22:58:16 2016-02-09 [INF] BMGR: Processed 321 blocks in the last 10.03s (544 transactions, height 322, 2016-02-09 09:50:34 +1000 EST)
 ```
 
-Once the `Synching to block height` equals the processed block height you can continue. This may take quite some time as the block height gets bigger (there is no limit). Note that you are not mining at this point, you are just connected to the network. This connection will be used in the future.
+Once the `Syncing to block height` equals the processed block height you can continue. This may take quite some time as the block height gets bigger (there is no limit). Note that you are not mining at this point, you are just connected to the network. This connection will be used in the future.
 
 ---
 

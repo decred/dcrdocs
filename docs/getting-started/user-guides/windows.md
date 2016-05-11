@@ -32,7 +32,7 @@ Then, as it downloads the blocks, you will see lines like:
 22:58:16 2016-02-09 [INF] BMGR: Processed 321 blocks in the last 10.03s (544 transactions, height 322, 2016-02-09 09:50:34 +1000 EST)
 ```
 
-Once the `Synching to block height` equals the processed block height you can continue. This may take quite some time as the block height gets bigger (there is no limit). Note that you are not mining at this point, you are just connected to the network. This connection will be used in the future.
+Once the `Syncing to block height` equals the processed block height you can continue. This may take quite some time as the block height gets bigger (there is no limit). Note that you are not mining at this point, you are just connected to the network. This connection will be used in the future.
 
 ---
 

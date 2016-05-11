@@ -6,7 +6,7 @@
 
 > Step One
 
-Download the latest Decred platform from the [Decred releases page](https://github.com/decred/decred-release/releases). Choose the zip for either `windows-386-[date]` if you have a 32-bit version of Windows or `windows-amd64-[date]` if you have 64-bit ([How can I tell?](http://windows.microsoft.com/en-au/windows/32-bit-and-64-bit-windows#1TC=windows-7)). If you are running Windows Vista or higher, you may need to unblock the zip file. After the file has downloaded, open the file location in Explorer, right click the file and choose properties. You may see a security section down the bottom. Click `Unblock` then `OK`. Double-click the zip to open it and copy the files in it to any location, e.g., `C:\Decred`. Now we need a command prompt. Open the folder where you copied the files. In the location bar at the top, type in `cmd` and press `Enter`.
+Download the latest Decred platform from the [Decred releases page](https://github.com/decred/decred-release/releases). Choose the zip for either `decred-[version]-windows-386-[date]` if you have a 32-bit version of Windows or `decred-[version]-windows-amd64-[date]` if you have 64-bit ([How can I tell?](http://windows.microsoft.com/en-au/windows/32-bit-and-64-bit-windows#1TC=windows-7)). If you are running Windows Vista or higher, you may need to unblock the zip file. After the file has downloaded, open the file location in Explorer, right click the file and choose properties. You may see a security section down the bottom. Click `Unblock` then `OK`. Double-click the zip to open it and copy the files in it to any location, e.g., `C:\Decred`. Now we need a command prompt. Open the folder where you copied the files. In the location bar at the top, type in `cmd` and press `Enter`.
 
 > Step Two
 

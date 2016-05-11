@@ -4,7 +4,14 @@
 
 ## **<i class="fa fa-info-circle"></i> Overview**
 
-All transactions in the Decred network are visible through use of the block explorer, located at [`https://mainnet.decred.org`](https://mainnet.decred.org). Let us review the home page:
+A block explorer based on
+[Insight](https://github.com/bitpay/insight-ui) is provided for the
+Decred network. All blocks and transactions in the Decred blockchain
+are visible through use of this block explorer, located at
+[`https://mainnet.decred.org`](https://mainnet.decred.org) and
+[`https://testnet.decred.org`](https://testnet.decred.org) for the
+testnet wallet.  Below is a quick review of some of the information on
+it.
 
 Option         | Explanation
 ---            | ---
@@ -15,13 +22,19 @@ Option         | Explanation
 `Fresh Stake`  | The number of new tickets purchased in this block.
 `Size`         | The size (in bytes) of the block.
 
-Under `Latest Transactions`, you can see the transaction ID (txid) and the value (in DCR) transmitted across the network.
+Under `Latest Transactions`, you can see the transaction ID (txid) and
+the value (in DCR) transmitted across the network.
 
 ---
 
 ## **<i class="fa fa-cube"></i> Blocks**
 
-Blocks can be found by searching for their block height number, clicking on a `Height` value from the home page, or from their `BlockHash` value. Older blocks will have lower block numbers. The top half of a block overview shows relevant information about this specific block. This information includes: the block height, the block hash, and several key network parameters, described below:
+Blocks can be found by searching for their block height number,
+clicking on a `Height` value from the home page, or from their
+`BlockHash` value. Older blocks will have lower block numbers. The top
+half of a block overview shows relevant information about this
+specific block. This information includes: the block height, the block
+hash, and several key network parameters, described below:
 
 Option                   | Explanation
 ---                      | ---
@@ -46,13 +59,21 @@ Option                   | Explanation
 
 ## **<i class="fa fa-exchange"></i> Transactions**
 
-This section lists all the transactions that were mined into this block. Transactions are chosen from the network mempool in order of highest fee first. All transactions in the block overview follow this order: Standard transactions (peer-to-peer transfer), proof-of-stake votes, proof-of-stake ticket purchases. The following sections will review each type of transaction.
+This section lists all the transactions that were mined into this
+block. Transactions are chosen from the network mempool in order of
+highest fee first. All transactions in the block overview follow this
+order: Standard transactions (peer-to-peer transfer), proof-of-stake
+votes, proof-of-stake ticket purchases. The following sections will
+review each type of transaction.
 
 ---
 
 ### Standard transactions
 
-Here is an unconfirmed standard transaction that went through the Decred network. Unconfirmed means it has not been included into a block yet, which implies it is a very recent transaction or it was sent with a very low fee. This transaction below depicts one user sending DCR to two separate addresses. The sending address is on the left, and the receiving address is on the right.
+Here is the information included in an unconfirmed standard
+transaction that went through the Decred network. Unconfirmed means it
+has not been included into a block yet, which implies it is a very
+recent transaction or it was sent with a very low fee.
 
 Option              | Explanation
 ---                 | ---
@@ -62,20 +83,39 @@ Option              | Explanation
 `Mined Time`        | The time a miner included the transaction in a block.
 `Included in Block` | The block number that the transaction became a part of.
 
-Note `Received Time`, `Mined Time`, and `Included in Block` will not have a value until a miner confirms the transaction. Depending on the fees in the mempool, this will take five minutes on average. Once there is at least one confirmation, the transaction is considered complete.
+Note `Received Time`, `Mined Time`, and `Included in Block` will not
+have a value until a miner confirms the transaction. Depending on the
+fees in the mempool, this will take five minutes on average. Once
+there is at least one confirmation, the transaction is considered
+complete.
 
 ---
 
 ### Ticket purchases
 
-Here is an example of a ticket purchase (stake submission). The same details described above appear in the upper summary section. This time, the example transaction has been confirmed.
+FOr a ticket purchase (stake submission) there are a few differences
+from a standard transaction shown.
 
-Note the difference under details: The word `Ticket` appears above the sender's wallet address on the left, and the words `Subsidy Commitment` appear on the right. This particular user purchased a stake ticket for 8.75411638 DCR and received change in the amount of 7.15994209 DCR. The address listed on the left under `Ticket` is the address that that contains the funds used to purchase this ticket. The first output on the right is the address that retains voting rights for this specific ticket. The second output, `Subsidy Commitment`, is the address where the reward will go. This is not yet shown by the block explorer at this time. The third and final output is the address where change for this transaction will be sent.
+Note the difference under details: The word `Ticket` appears above the
+sender's wallet address on the left, and the words `Subsidy
+Commitment` appear on the right. This particular user purchased a
+stake ticket for 8.75411638 DCR and received change in the amount
+of 7.15994209 DCR. The address listed on the left under `Ticket` is
+the address that that contains the funds used to purchase this
+ticket. The first output on the right is the address that retains
+voting rights for this specific ticket. The second output, `Subsidy
+Commitment`, is the address where the reward will go. This is not yet
+shown by the block explorer at this time. The third and final output
+is the address where change for this transaction will be sent.
 
 ---
 
 ### Proof-of-stake votes
 
-Note the identifying terms in the details section: `Vote`, `Stake Base`, `Block Commitment`, and `Vote Bits`:
+Note the identifying terms in the details section: `Vote`, `Stake
+Base`, `Block Commitment`, and `Vote Bits`:
 
-These keywords indicate that this transaction is a vote that was cast from a proof-of-stake ticket holder. In this particular example, the user had previously purchased a ticket for 8.99472311 DCR and was sent 10.82959184 DCR after the vote was cast in this transaction.
+These keywords indicate that this transaction is a vote that was cast
+from a proof-of-stake ticket holder. In this particular example, the
+user had previously purchased a ticket for 8.99472311 DCR and was
+sent 10.82959184 DCR after the vote was cast in this transaction.

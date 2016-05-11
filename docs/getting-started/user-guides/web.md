@@ -2,10 +2,26 @@
 
 ---
 
-There are a couple of things you need to know about the web client before you use it:
+A simple web wallet is available for users who do not want to install
+additional software on their computer.  It is based on
+[Copay](https://github.com/bitpay/copay) with Decred specific changes
+added and can be found at
+[https://wallet.decred.org](https://wallet.decred.org)
 
-* You cannot [proof-of-stake mine](../../mining/overview.md#2-proof-of-stake-mining) with it.
-* Your wallet is identified by your seed key words, but there is no other authentication at this time. This means that anyone with access to your computer will be able to access your funds in the wallet. However, you can set a password for sending funds.
+There are a couple of things you need to know about the web client
+before you use it:
+
+* You cannot
+  [stake mine](/mining/overview.md#2-proof-of-stake-mining)
+  with it.
+* Your wallet is kept entirely in the local storage of your web
+  browser.  This means that is you delete your local storage, you will
+  delete you wallet and must recreate from the seed.
+* The security of your wallet depends entirely on the security of your
+  web browser.
+* You can put a pin on your wallet to prevent sending funds but any
+  other access is dependant entirely on the access controls on your
+  computer, not on the server or any login details.
 
 ---
 
@@ -13,19 +29,43 @@ There are a couple of things you need to know about the web client before you us
 
 > Step One
 
-Go to [https://wallet.decred.org](https://wallet.decred.org). You will be presented with the `Terms and Conditions` screen. Pay extra attention to the following:
+Go to [https://wallet.decred.org](https://wallet.decred.org). You will
+be presented with the `Terms and Conditions` screen. Pay extra
+attention to the following:
 
-Just like the command-line wallet, if you lose your seed words or your password for sending funds you will lose access to your wallet. There is no password reset. Also note that all transactions on Decred are irreversible by design. If you accidentally send funds to the wrong address, you will need to ask the recipient to send them back. The developers are unable to reverse transactions. Click `I Agree` once you have read them. You will now see the welcome screen. If this is the first time you have used Decred, click `Get Started`. If you want to restore a previously used wallet, click `Import Backup`. This guide will assume you are just starting out so click `Get Started`.
+Just like the command-line wallet, if you lose your seed words or your
+password for sending funds you will lose access to your wallet. There
+is no password reset. Also note that all transactions on Decred are
+irreversible by design. If you accidentally send funds to the wrong
+address, you will need to ask the recipient to send them back. The
+developers are unable to reverse transactions. Click `I Agree` once
+you have read them. You will now see the welcome screen. If this is
+the first time you have used Decred, click `Get Started`. If you want
+to restore a previously used wallet, click `Import Backup`. This guide
+will assume you are just starting out so click `Get Started`.
 
 > Step Two
 
 A wallet will be generated for you and you will see this screen:
 
-Note that under `Personal Wallet` on the left it says `Testnet`. This wallet will only work on the test Decred network which is not very useful to us. Click the dropdown in the top left, then click `Add wallet`. Click `Create New Wallet`. Give your wallet a name then click `Create New Wallet`.
+Note that under `Personal Wallet` on the left it says `Testnet`. This
+wallet will only work on the Decred testnet network.  Testnet is meant
+for testing only and coins on testnet have NO value.  Click the
+dropdown in the top left, then click `Add wallet`. Click `Create New
+Wallet`. Give your wallet a name then click `Create New Wallet`.
 
 > Step Three
 
-Your wallet is now created and ready to use. However, before you do anything else, you should add a password for sending funds and backup the seed words that were used to create your wallet. This is doubly true for the web client which does not store a permanent record. Your wallet data is stored in the browser cache and can be deleted quite easily. If you are running in incognito mode, it will be deleted as soon as you close the browser. **WITHOUT THESE KEY WORDS YOU LOSE ACCESS TO ALL FUNDS IN YOUR WALLET** should the wallet data be deleted. The funds themselves still exist in the blockchain, however, without the key you cannot access them.
+Your wallet is now created and ready to use. However, before you do
+anything else, you should add a password for sending funds and backup
+the seed words that were used to create your wallet. This is doubly
+true for the web client which does not store a permanent record. Your
+wallet data is stored in the browser cache and can be deleted quite
+easily. If you are running in incognito mode, it will be deleted as
+soon as you close the browser. **WITHOUT THESE KEY WORDS YOU LOSE
+ACCESS TO ALL FUNDS IN YOUR WALLET** should the wallet data be
+deleted. The funds themselves still exist in the blockchain, however,
+without the key you cannot access them.
 
 Click the `Preferences` button on the right opposite your wallet name. There are really only three things you will be interested in here:
 
@@ -39,7 +79,14 @@ Option                                | Description
 
 Click `Backup`. You will see this screen:
 
-First of all, read the note. Only use ONE wallet at a time with a given seed (See: [FAQ](#)). You can have multiple wallets installed on different machines, but only one of them should be running at any given time. Click `Show Wallet Seed`. Write this down somewhere safe, or put it in an encrypted document to which you will not forget the password. This list of words is used to generate the authentication key for your wallet. Anyone who possesses this list can access the funds in your wallet.
+First of all, read the note. Only use ONE wallet at a time with a
+given seed (See: [FAQ](#)). You can have multiple wallets installed on
+different machines, but only one of them should be running at any
+given time. Click `Show Wallet Seed`. Write this down somewhere safe,
+or put it in an encrypted document to which you will not forget the
+password. This list of words is used to generate the authentication
+key for your wallet. Anyone who possesses this list can access the
+funds in your wallet.
 
 > **VERY IMPORTANT**
 
@@ -49,7 +96,11 @@ Once you have written the words down (and have triple-checked that they are corr
 
 > Step Five
 
-Now that you have written down your key words and checked them, do it again. Seriously. This step is critical. Without this list your wallet cannot be reconstructed and no one, not even the developers, can restore it. Now that you are sure the list is stored correctly, click `Delete Words`. Click `Back` twice to get to the main wallet screen.
+Now that you have written down your key words and checked them, do it
+again. Seriously. This step is critical. Without this list your wallet
+cannot be reconstructed and no one, not even the developers, can
+restore it. Now that you are sure the list is stored correctly, click
+`Delete Words`. Click `Back` twice to get to the main wallet screen.
 
 ---
 
@@ -57,11 +108,21 @@ Now that you have written down your key words and checked them, do it again. Ser
 
 > Step One
 
-On the main web wallet page, click the `Send` button at the bottom. You will be taken to this page. Note the `Advanced Options` section has already been expanded. In the `To` field, put in the Decred address of the recipient.
+On the main web wallet page, click the `Send` button at the
+bottom. You will be taken to this page. Note the `Advanced Options`
+section has already been expanded. In the `To` field, put in the
+Decred address of the recipient.
 
 > Step Two
 
-In `Amount`, enter the value in DCR to send to the recipient. If you wish you can type an optional message in the `Note` field. Press `Send`. The `Use Unconfirmed Funds` option lets you use funds that the network knows are being sent to you but have not yet been confirmed by [proof-of-work miners](../../mining/overview.md#1-proof-of-work-mining). If this is turned on and the amount specified can only be covered by using unconfirmed funds, the transaction will not proceed until the required funds have been confirmed.
+In `Amount`, enter the value in DCR to send to the recipient. If you
+wish you can type an optional message in the `Note` field. Press
+`Send`. The `Use Unconfirmed Funds` option lets you use funds that the
+network knows are being sent to you but have not yet been confirmed by
+[proof-of-work miners](/mining/overview.md#1-proof-of-work-mining). If
+this is turned on and the amount specified can only be covered by
+using unconfirmed funds, the transaction will not proceed until the
+required funds have been confirmed.
 
 ---
 
@@ -69,12 +130,14 @@ In `Amount`, enter the value in DCR to send to the recipient. If you wish you ca
 
 > Step One
 
-Click the `Receive` button at the bottom of the window. You will see this screen:
+Click the `Receive` button at the bottom of the window. You will see
+this screen:
 
-Give the person sending you DCR the address displayed (it will start with `Ds`) or they can use the QR code if their wallet or service accepts them. You can use the same address as often as you want, but for privacy it is recommended that you generate a new address each time. Do not worry about being given a duplicate address. There are around `2.08x10^93` possible addresses, so we will probably reach the heat death of the universe before we run of Decred addresses.
+Give the person sending you DCR the address displayed (it will start
+with `Ds`) or they can use the QR code if their wallet or service
+accepts them. You can use the same address as often as you want, but
+for privacy it is recommended that you generate a new address each
+time. Do not worry about being given a duplicate address. There are
+around `2.08x10^93` possible addresses, so we will probably reach the
+heat death of the universe before we run out of Decred addresses.
 
-> **WARNING**
-
-The above address is for demonstration purposes only, but is a real address. The wallet it is linked to is temporary and the key has already been deleted. If you try sending DCR to this address it will work and no one will ever be able to access them again.
-
-**DO NOT ATTEMPT TO SEND DCR TO THIS ADDRESS**.

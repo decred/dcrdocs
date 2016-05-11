@@ -21,6 +21,7 @@ pages:
   - User Guides:
     - 'Windows': 'getting-started/user-guides/windows.md'
     - 'Linux': 'getting-started/user-guides/linux.md'
+    - 'OSX': 'getting-started/user-guides/osx.md'
     - 'Web': 'getting-started/user-guides/web.md'
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
@@ -56,6 +57,8 @@ pages:
   - 'Network Parameters': 'advanced/network-parameters.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
+  - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
+  - 'Advanced dcrctl usage': 'advanced/dcrctl-usage.md'
 - Research:
   - 'Overview': 'research/overview.md'
   - 'Hybrid Design': 'research/hybrid-design.md'

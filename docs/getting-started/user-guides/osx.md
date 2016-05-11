@@ -1,4 +1,4 @@
-# <i class="fa fa-linux"></i> **Linux/UNIX User Guide**
+# <i class="fa fa-apple"></i> **OS X User Guide**
 
 ---
 
@@ -6,11 +6,12 @@
 
 > Step One
 
-Download the latest Decred software from the
+Download the latest Decred platform from the
 [Decred releases page](https://github.com/decred/decred-release/releases). Extract
-it to a directory (e.g., `~/Decred`). Open three command terminals. If
-you are running in headless mode via SSH, you will need to use a
-terminal multiplexer such as `screen`
+it to a directory (e.g., `~/Decred`).  OS X is frequently identified as
+`Darwin` so the binaries provided are named decred-darwin.  Open three
+command terminals. If you are running in headless mode via SSH, you
+will need to use a terminal multiplexer such as `screen`
 ([How do I use `screen`?](http://www.howtogeek.com/howto/ubuntu/keep-your-ssh-session-running-when-you-disconnect/))
 or [`tmux`](https://tmux.github.io/). Where you see the instruction to
 move to another terminal, you'll need to start a new window in screen
@@ -20,7 +21,7 @@ or tmux..
 
 Go to one of your terminals and change to the Decred directory that
 you extracted the files to. They will likely be under a subdirectory
-such as `~/Decred/decred-linux-amd64`. Type the following (replacing
+such as `~/Decred/decred-darwin-amd64`. Type the following (replacing
 the text in square brackets with your own values):
 
 ```no-highlight

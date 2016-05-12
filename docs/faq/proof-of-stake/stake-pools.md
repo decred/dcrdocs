@@ -8,7 +8,7 @@ Well first keep in mind that wallet (`dcrwallet`) != core network (`dcrd`). In o
 
 With that out of the way, you are correct that the only real benefit of the current pool is that it will provide worry-free voting since it provides multi-location redundancy and automatic failure recovery[^9262], neither of which your local setup is very likely to have.
 
-However, it is entirely possible that a stake pool could implement proportional reward splitting so stakers receive smaller and more consistent payouts, however that would come at the expense of having to trust the pool with the rewards since it would have to receive them in order to split them out (just like with PoW pools).
+However, it is entirely possible that a stake pool could implement proportional reward splitting so stakers receive smaller and more consistent payouts, however that would come at the expense of having to trust the pool with the rewards since it would have to receive them in order to split them out (just like with proof-of-work pools).
 
 ---
 
@@ -16,15 +16,15 @@ However, it is entirely possible that a stake pool could implement proportional 
 
 It is technically possible to create a pool that supports proportional reward splitting[^9262], but this pool does not do that at all. This one simply votes on your behalf. It does this by making the ticket voting rights a 1-of-2 multi-signature P2SH script. The pool signs the vote with its private key at the time the ticket is selected. Since it is a 1-of-2 multi-signature script though, it means if the pool failed to vote for you for whatever reason (extremely unlikely as the mainnet pool will have multiple redundancy and automatic failover), it would still be possible to vote on your own behalf because you have the second private key and could therefore provide a valid signature and satisfy the 1-of-2 requirement.
 
-Also, it is important to note that the original ticket purchase contains a commitment to go to a reward address for which only you have the private key. The PoS voting consensus rules enforce the commitment, so it is impossible for the pool to steal your funds.
+Also, it is important to note that the original ticket purchase contains a commitment to go to a reward address for which only you have the private key. The proof-of-stake voting consensus rules enforce the commitment, so it is impossible for the pool to steal your funds.
 
-In order to split rewards the pool would have to be the recipient of all rewards and then be trusted to properly split the rewards amongst all of the participants according to their proportionality. I fully expect such a scheme will be developed with the understanding it is less secure than the approach the current pool uses.
+In order to split rewards the pool would have to be the recipient of all rewards and then be trusted to properly split the rewards amongst all of the participants according to their proportionality. It is expected that such a scheme will be developed with the understanding it is less secure than the approach the current pool design uses.
 
 ---
 
 #### **3. I have to run my wallet to buy tickets, but will they vote properly without me if I shut it down and the pool votes for me instead?**
 
-Yes[^9274], that is correct. You only need to run wallet in order to spend your coins to purchase the ticket which delegates your voting rights to the pool that will then vote on your behalf. The reward address is a consensus-enforced commitment in the ticket purchase for one of your own addresses for which only you have private key.
+Yes[^9274], that is correct. You only need to run wallet in order to spend your coins to purchase the ticket which delegates your voting rights to the pool that will then vote on your behalf. The reward address is a consensus-enforced commitment in the ticket purchase for one of your own addresses for which only you have the private key.
 
 ---
 
@@ -38,13 +38,13 @@ It is certainly possible[^9311], but one of the things that all pools should sup
 
 They are set when you actually vote[^13607] (which really only makes sense because you might have bought the ticket weeks or months before a specific voting agenda even exists).
 
-A PoS pool can operate however it wants since there is a lot of room for flexibility due to the way the ticket purchase commitment scheme is designed. That said, in general, people should avoid using stake pools that do not allow them control over how they want to vote on non-pool specific issues.
+A proof-of-stake pool can operate however it wants since there is a lot of room for flexibility due to the way the ticket purchase commitment scheme is designed. That said, in general, people should avoid using stake pools that do not allow them control over how they want to vote on non-pool specific issues.
 
 ---
 
 #### **6. What safeguards are in place to stop pool owners disappearing with the funds in the pool?**
 
-The current pool design is such that the pool can NOT steal the funds[^14593]. You are only delegating voting rights (and in reality it's a 1-of-2 multisig which means either you OR the pool can vote). The ticket purchase contains a consensus-enforced commitment for the final subsidy address, so there is simply no way for the pool to steal the funds.
+The current pool design is such that the pool can NOT steal the funds[^14593]. You are only delegating voting rights (and in reality it is a 1-of-2 multisig which means either you OR the pool can vote). The ticket purchase contains a consensus-enforced commitment for the final subsidy address, so there is simply no way for the pool to steal the funds.
 
 The worst that would happen if a pool owner disappears is the votes will be missed which results in the ticket being revoked which in turn causes the original coins to go back to the original coin owner (minus the initial transaction fee of course). However, as mentioned previously, because the ticket is a 1-of-2 multisig, each user could run their own wallet in order to vote should the pool owner disappear.
 

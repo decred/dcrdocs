@@ -15,6 +15,8 @@ To discourage manipulation of the included votes, a linear subsidy penalty is ap
 
 Bit flags are explicitly added to both the block header and votes so that either miner can easily vote in new hard or soft forks.
 
+---
+
 ## **<i class="fa fa-book"></i> References**
 
 [^1]: Bentov I., Lee C., Mizrahi A., Rosenfeld M. 2014. [Proof-of-activity: Extending Bitcoin's proof-of-work via proof-of-stake](https://decred.org/research/bentov2014.pdf).

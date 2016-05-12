@@ -4,7 +4,7 @@
 
 #### **1. Can a block become orphaned after being confirmed multiple times?**
 
-Only if there as a reorg that is sufficiently long[^8918]. In order for that to happen, you need more hash power working on the other side of a fork than the hash power that is working on the current best chain.
+Only if there is a reorg that is sufficiently long[^8918]. In order for that to happen, you need more hash power working on the other side of a fork than the hash power that is working on the current best chain.
 
 ---
 
@@ -16,7 +16,7 @@ Testnet will continue to be a testing ground for new features, so it makes sense
 
 #### **3. What do "[INF] CHAN: Adding orphan block" messages mean?**
 
-It just means a block that you do not have the parent for was received[^14660]. It pretty much always happens when restarting `dcrd` due to the way the sync works. You are still syncing up to the latest block, but the remote peer, that is ahead of you, send a notification that a new block showed up, one for which you do not have the parent yet.
+It just means a block that you do not have the parent for was received[^14660]. It pretty much always happens when restarting `dcrd` due to the way the sync works. You are still syncing up to the latest block, but the remote peer, that is ahead of you, sent a notification that a new block showed up, one for which you do not have the parent yet.
 
 Rather than ignoring it, once you are sufficiently close to being synced, it essentially saves them for later so once you do have the parent blocks those newer block automatically get connected.
 

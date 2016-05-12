@@ -6,6 +6,8 @@ As in Bitcoin, subsidy decays exponentially with block height. However, Decred's
 
 It should also be noted that many well known mining attacks, such as selfish mining[^4] and stubborn mining[^5], will no longer function advantageously in a system where there is effective decentralization of stake mining and no PoW-PoS miner collusion. This is simply because it is impossible to generate secret extensions to blockchains without the assistance of stake miners. Resilience to previously described mining attacks, and newly conceived mining attacks specific to our system, will be a fruitful area for future research.
 
+---
+
 ## **<i class="fa fa-book"></i> References**
 
 [^1]: Buterin V. 2014. [A next-generation smart contract and decentralized application platform](https://decred.org/research/buterin2014.pdf).

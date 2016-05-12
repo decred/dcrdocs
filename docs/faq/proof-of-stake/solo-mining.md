@@ -6,7 +6,7 @@
 
 Stake "mining" does not need any hash power[^9304]. Think of it a bit like interest on invested coins. You lock your coins for a period of time in order to purchase a ticket that gives you a high probability (>99%) of gaining voting rights and receiving interest in exchange for casting a voting and the opportunity cost of not being able to use those coins for potentially up to ~4.7 months.
 
-If you have already purchased stake tickets, those coins are locked until the tickets either win or expire. You are solo staking and therefore you MUST keep your wallet online 24/7 until all of your tickets have won (or expired) or you will miss out on the rewards since you can't cast a vote if you wallet is not online. Because those coins are now locked there is no way for you to change the already staked coins now.
+If you have already purchased stake tickets, those coins are locked until the tickets either win or expire. You are solo staking and therefore you MUST keep your wallet online 24/7 until all of your tickets have won (or expired) or you will miss out on the rewards since you cannot cast a vote if you wallet is not online. Because those coins are now locked there is no way for you to change the already staked coins now.
 
 The stake pool, on the other hand, allows you to delegate your voting rights to the pool so it is responsible for being online 24/7 and casting your vote for you.
 
@@ -16,7 +16,7 @@ The stake pool, on the other hand, allows you to delegate your voting rights to 
 
 Definitely not[^9311]. Staking mining cannot possibly enforce that. An SPV style wallet could easily perform the necessary staking by communicating with other full nodes (`dcrd` instances) on the network. It is true that the current wallet requires `dcrd` to be running, but that will not always be the case.
 
-Even if the software did try to enforce that, you could not stop people from writing utilities and such do it via the peer-2-peer network without needing to run their own local instance anyways.
+Even if the software did try to enforce that, you could not stop people from writing utilities and such to do it via the peer-to-peer network without needing to run their own local instance anyways.
 
 ---
 
@@ -34,7 +34,7 @@ You do not need to be reachable. Voting is deterministic on a per-block basis[^9
 
 #### **5. Can I run multiple voting-only wallets with the same seed on multiple servers?**
 
-You can have multiple voting-only wallets because they are not creating new addresses[^12697]. The problem comes in when you have two wallet creating transactions that involve new addresses because they do not know what the other one is doing.
+You can have multiple voting-only wallets because they are not creating new addresses[^12697]. The problem comes in when you have two wallets creating transactions that involve new addresses because they do not know what the other one is doing.
 
 If you are doing a hot/cold setup, you can create multiple voting-only hot wallets without any issues so long as they both are aware of the address you give voting rights to.
 

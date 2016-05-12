@@ -8,6 +8,18 @@ A common extension to the Bitcoin protocol modifies the consensus mechanism to e
 
 Despite the controversy, it is apparent that systems who have a PoS overlay dependent on a PoW timestamping system may be able to independently achieve consensus. This is mathematically explored by Bentov and colleagues[^8] in a paper on their scheme, proof-of-activity (PoA), and appears to be a viable extension to the PoW protocols that may enable some interesting new properties. A similar design called MC2 was earlier proposed by Mackenzie in 2013[^9]. Here we describe the construction and implementation of a similar consensus system that we have named "Decred".
 
+Research work in Decred is currently organized around the following subsections:
+
+* [Hybrid Design](hybrid-design.md)
+* [Decentralized Stake Pooling](decentralized-stake-pooling.md)
+* [Elliptic Curve Signature Algorithms](elliptic-curve-signature-algorithms.md)
+* [BLAKE-256 Hash Function](blake-256-hash-function.md)
+* [Script Extensions](script-extensions.md)
+* [Signature Script Isolation and Fraud Proofs](signature-script-isolation-and-fraud-proofs.md)
+* [Transaction Extensions](transaction-extensions.md)
+* [Schnorr Signatures](schnorr-signatures.md)
+* [Miscellaneous Improvements](miscellaneous-improvements.md)
+
 ## **<i class="fa fa-book"></i> References**
 
 [^1]: Nakamoto S. 2008. [Bitcoin: A peer-to-peer electronic cash system](https://decred.org/research/nakamoto2008.pdf).

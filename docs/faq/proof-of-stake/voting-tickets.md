@@ -10,7 +10,7 @@ Proof-of-stake voting began[^7969] at block 4,096.
 
 #### **2. In the source code TicketPoolSize is set to 8,192, but the current ticket pool size is larger than that. Why?**
 
-It is intentional and is an integral part of the dynamic ticket price adjustment[^8965]. The `TicketPoolSize` is the target ticket pool size and it works very similar to the target difficulty for proof-of-work (PoW). The fact the current ticket pool size is larger than the target is what causes the ticket price to rise which will in turn will eventually cause less tickets to be purchased and result in the number of tickets in the pool reducing back towards the target. If it falls under, the price will fall to encourage more ticket sales in order to increase the number of tickets in the pool towards the target.
+It is intentional and is an integral part of the dynamic ticket price adjustment[^8965]. The `TicketPoolSize` is the target ticket pool size and it works very similar to the target difficulty for proof-of-work (PoW). The fact the current ticket pool size is larger than the target is what causes the ticket price to rise which in turn will eventually cause less tickets to be purchased and result in the number of tickets in the pool reducing back towards the target. If it falls under, the price will fall to encourage more ticket sales in order to increase the number of tickets in the pool towards the target.
 
 ---
 
@@ -30,7 +30,7 @@ No[^9806], the expiration time does not start until a ticket is actually mined i
 
 Votes are always determined by the current tip. Miners do not start mining for a new block until at least 3+ of the selected voters issue their ssgen transactions. So, if a found block does not manage to get the selected votes[^10219], the block is simply orphaned by the next block another miner finds.
 
-For a more concrete example, assume the current chain tip is at block 5,000. The voters determined by block 5,000 have already submitted their votes, so miners are chugging away looking for block 5,001. Now, a miner finds a solution for block 5,001 and submits it to the network. All of the daemons (and hence wallets) will see that 5,001 just showed up. However, the miners do not immediately start mining off of 5001. Instead they continue mining off of 5,000 until 3+ votes for block 5,001 show up. At that point they all switch and start mining off of 5,001. If those 3+ votes never show up, another candidate block 5,001 will be found by the other miners still working on block 5,000 who will submit their (different) solution for block 5001 to the network. Since each of these new candidate blocks for 5,001 have a different hash, different tickets are selected.
+For a more concrete example, assume the current chain tip is at block 5,000. The voters determined by block 5,000 have already submitted their votes, so miners are chugging away looking for block 5,001. Now, a miner finds a solution for block 5,001 and submits it to the network. All of the daemons (and hence wallets) will see that 5,001 just showed up. However, the miners do not immediately start mining off of 5,001. Instead they continue mining off of 5,000 until 3+ votes for block 5,001 show up. At that point they all switch and start mining off of 5,001. If those 3+ votes never show up, another candidate block 5,001 will be found by the other miners still working on block 5,000 who will submit their (different) solution for block 5,001 to the network. Since each of these new candidate blocks for 5,001 have a different hash, different tickets are selected.
 
 ---
 
@@ -55,7 +55,7 @@ Output          | Description
 
 Missed tickets are tickets that were called to vote, but did not. After a ticket has been missed, it can be revoked[^14763]. The wallet automatically revokes missed tickets it controls (assuming it is unlocked so it can sign the revocation transaction).
 
-All `rebroadcastmissed` does is tell wallet to ask the chain server (`dcrd`) to give it the list of missed tickets again so it can double check if it needs to revoke any. Typically it's not needed unless, for example, it tried to revoke a ticket but couldn't because the wallet was not unlocked. In other words, if you noticed that revoked != missed, you might need to `rebroadcastmissed`. As said though, there is rarely a need for this since the wallet automatically does it on startup and looks for missed tickets on every block.
+All `rebroadcastmissed` does is tell wallet to ask the chain server (`dcrd`) to give it the list of missed tickets again so it can double check if it needs to revoke any. Typically it is not needed unless, for example, it tried to revoke a ticket but could not because the wallet was not unlocked. In other words, if you noticed that revoked != missed, you might need to `rebroadcastmissed`. As said though, there is rarely a need for this since the wallet automatically does it on startup and looks for missed tickets on every block.
 
 ---
 

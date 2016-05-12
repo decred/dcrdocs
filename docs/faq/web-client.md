@@ -4,7 +4,7 @@
 
 #### **1. How secure is the web client?**
 
-The web client is a fork of [Copay](https://copay.io), so it is as secure as that[^7981]. The seed (and hence private keys) are kept and computed locally in your browser's local storage and everything is run client side. The server never has access to any of the private data needed to spend coins.
+The web client is a fork of [Copay](https://copay.io), so it is as secure as that[^7981]. The seed (and hence private keys) are kept and computed locally in your browser's local storage and everything is run client-side. The server never has access to any of the private data needed to spend coins.
 
 ---
 

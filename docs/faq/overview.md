@@ -18,7 +18,7 @@ Questions about port numbers, configuration files, running mainnet and testnet s
 
 ## **3. <i class="fa fa-money"></i> [Wallets and Seeds](wallets-and-seeds.md)**
 
-Question about sharing your wallet seed, converting your wallet seed hex to words, running multiple wallets, someone gaining access to wallet.db, brute-force attacks on random wallets, non-functional seed words, importing keys in wallet import format (WIF), differences between testnet and mainnet addresses, and the different types of addresses.
+Questions about your wallet seed, converting your wallet seed hex to words, running multiple wallets, someone gaining access to wallet.db, brute-force attacks on random wallets, non-functional seed words, importing keys in wallet import format (WIF), differences between testnet and mainnet addresses, and the different types of addresses.
 
 ---
 

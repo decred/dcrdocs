@@ -485,9 +485,10 @@ Result:
 <blockquote>
 <p>Manual ticket purchasing example (Solo Mining)</p>
 </blockquote>
-<pre><code class="no-highlight">dcrctl --wallet purchaseticket &quot;default&quot; 23 1 &quot;&quot; 1 &quot;&quot; &quot;&quot; 1 &quot;this purchases one ticket from the default account for a maximum of 23 DCR that expires after 1 block&quot;
+<pre><code class="no-highlight">dcrctl --wallet purchaseticket &quot;default&quot; 23 1 &quot;&quot; 1 &quot;&quot; 0.0 1000
 </code></pre>
 
+<p>This purchases one ticket from the default account for a maximum of 23 DCR that expires at block 1000.</p>
 <blockquote>
 <p>Manual ticket purchasing (Pool Mining)</p>
 </blockquote>

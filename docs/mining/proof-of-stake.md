@@ -70,8 +70,10 @@ Result:
 > Manual ticket purchasing example (Solo Mining)
 
 ```no-highlight
-dcrctl --wallet purchaseticket "default" 23 1 "" 1 "" "" 1 "this purchases one ticket from the default account for a maximum of 23 DCR that expires after 1 block"
+dcrctl --wallet purchaseticket "default" 23 1 "" 1 "" 0.0 1000
 ```
+
+This purchases one ticket from the default account for a maximum of 23 DCR that expires at block 1000.
 
 > Manual ticket purchasing (Pool Mining)
 

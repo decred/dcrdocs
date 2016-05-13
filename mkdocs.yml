@@ -10,7 +10,7 @@ markdown_extensions:
       permalink: True
   - tables
 extra_javascript:
-    - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 extra_css:
     - https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
     - css/style.css

@@ -6,7 +6,7 @@
 
 > <i class="fa fa-male"></i> Solo Mining
 
-<i class="fa fa-exclamation-triangle"></i> **Solo mining is not recommended and is not covered by this documentation!** The Decred network regularly sees a network hash rate of upto 10000Gh/s. Solo mining is generally only done by advanced individuals or organized groups with a large cluster of GPUs so it is not addressed here.
+<i class="fa fa-exclamation-triangle"></i> **Solo mining is not recommended and is not covered by this documentation!** The Decred network regularly sees a network hash rate of up to 10,000Gh/s. Solo mining is generally only done by advanced individuals or organized groups with a large cluster of GPUs so it is not addressed here.
 
 > <i class="fa fa-users"></i> Pool Mining
 
@@ -48,11 +48,11 @@ GPU drivers usually contain the libraries needed for mining.  If you have diffic
 
 Official builds of ccminer and cgminer are available on GitHub at the following URL:
 
-[https://github.com/decred/decred-release/releases/tag/v0.1.0_miners](https://github.com/decred/decred-release/releases/tag/v0.1.0_miners)
+[<i class="fa fa-download"></i> https://github.com/decred/decred-release/releases/tag/v0.1.0_miners](https://github.com/decred/decred-release/releases/tag/v0.1.0_miners)
 
-Those with an **AMD** graphics card should download **cgminer** for their operating system.
+Those with an **AMD** graphics card should download **[<i class="fa fa-github"></i> cgminer](https://github.com/decred/cgminer)** for their operating system.
 
-Those with an **NVIDIA** graphics card should download **ccminer** for their operating system.
+Those with an **NVIDIA** graphics card should download **[<i class="fa fa-github"></i> ccminer](https://github.com/decred/ccminer)** for their operating system.
 
 > Unofficial Miners
 

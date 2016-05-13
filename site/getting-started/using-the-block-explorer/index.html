@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../../advanced/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../advanced/storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../advanced/network-parameters/">Network Parameters</a>
+    <a href="../../advanced/program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../../advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -477,7 +423,14 @@
 <h1 id="using-the-block-explorer"><strong><i class="fa fa-cubes"></i> Using the Block Explorer</strong><a class="headerlink" href="#using-the-block-explorer" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="overview"><strong><i class="fa fa-info-circle"></i> Overview</strong><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>All transactions in the Decred network are visible through use of the block explorer, located at <a href="https://mainnet.decred.org"><code>https://mainnet.decred.org</code></a>. Let us review the home page:</p>
+<p>A block explorer based on
+<a href="https://github.com/bitpay/insight-ui">Insight</a> is provided for the
+Decred network. All blocks and transactions in the Decred blockchain
+are visible through use of this block explorer, located at
+<a href="https://mainnet.decred.org"><code>https://mainnet.decred.org</code></a> and
+<a href="https://testnet.decred.org"><code>https://testnet.decred.org</code></a> for the
+testnet wallet.  Below is a quick review of some of the information on
+it.</p>
 <table>
 <thead>
 <tr>
@@ -512,10 +465,16 @@
 </tr>
 </tbody>
 </table>
-<p>Under <code>Latest Transactions</code>, you can see the transaction ID (txid) and the value (in DCR) transmitted across the network.</p>
+<p>Under <code>Latest Transactions</code>, you can see the transaction ID (txid) and
+the value (in DCR) transmitted across the network.</p>
 <hr />
 <h2 id="blocks"><strong><i class="fa fa-cube"></i> Blocks</strong><a class="headerlink" href="#blocks" title="Permanent link">&para;</a></h2>
-<p>Blocks can be found by searching for their block height number, clicking on a <code>Height</code> value from the home page, or from their <code>BlockHash</code> value. Older blocks will have lower block numbers. The top half of a block overview shows relevant information about this specific block. This information includes: the block height, the block hash, and several key network parameters, described below:</p>
+<p>Blocks can be found by searching for their block height number,
+clicking on a <code>Height</code> value from the home page, or from their
+<code>BlockHash</code> value. Older blocks will have lower block numbers. The top
+half of a block overview shows relevant information about this
+specific block. This information includes: the block height, the block
+hash, and several key network parameters, described below:</p>
 <table>
 <thead>
 <tr>
@@ -599,10 +558,18 @@
 </tbody>
 </table>
 <h2 id="transactions"><strong><i class="fa fa-exchange"></i> Transactions</strong><a class="headerlink" href="#transactions" title="Permanent link">&para;</a></h2>
-<p>This section lists all the transactions that were mined into this block. Transactions are chosen from the network mempool in order of highest fee first. All transactions in the block overview follow this order: Standard transactions (peer-to-peer transfer), proof-of-stake votes, proof-of-stake ticket purchases. The following sections will review each type of transaction.</p>
+<p>This section lists all the transactions that were mined into this
+block. Transactions are chosen from the network mempool in order of
+highest fee first. All transactions in the block overview follow this
+order: Standard transactions (peer-to-peer transfer), proof-of-stake
+votes, proof-of-stake ticket purchases. The following sections will
+review each type of transaction.</p>
 <hr />
 <h3 id="standard-transactions">Standard transactions<a class="headerlink" href="#standard-transactions" title="Permanent link">&para;</a></h3>
-<p>Here is an unconfirmed standard transaction that went through the Decred network. Unconfirmed means it has not been included into a block yet, which implies it is a very recent transaction or it was sent with a very low fee. This transaction below depicts one user sending DCR to two separate addresses. The sending address is on the left, and the receiving address is on the right.</p>
+<p>Here is the information included in an unconfirmed standard
+transaction that went through the Decred network. Unconfirmed means it
+has not been included into a block yet, which implies it is a very
+recent transaction or it was sent with a very low fee.</p>
 <table>
 <thead>
 <tr>
@@ -633,15 +600,34 @@
 </tr>
 </tbody>
 </table>
-<p>Note <code>Received Time</code>, <code>Mined Time</code>, and <code>Included in Block</code> will not have a value until a miner confirms the transaction. Depending on the fees in the mempool, this will take five minutes on average. Once there is at least one confirmation, the transaction is considered complete.</p>
+<p>Note <code>Received Time</code>, <code>Mined Time</code>, and <code>Included in Block</code> will not
+have a value until a miner confirms the transaction. Depending on the
+fees in the mempool, this will take five minutes on average. Once
+there is at least one confirmation, the transaction is considered
+complete.</p>
 <hr />
 <h3 id="ticket-purchases">Ticket purchases<a class="headerlink" href="#ticket-purchases" title="Permanent link">&para;</a></h3>
-<p>Here is an example of a ticket purchase (stake submission). The same details described above appear in the upper summary section. This time, the example transaction has been confirmed.</p>
-<p>Note the difference under details: The word <code>Ticket</code> appears above the sender&rsquo;s wallet address on the left, and the words <code>Subsidy Commitment</code> appear on the right. This particular user purchased a stake ticket for 8.75411638 DCR and received change in the amount of 7.15994209 DCR. The address listed on the left under <code>Ticket</code> is the address that that contains the funds used to purchase this ticket. The first output on the right is the address that retains voting rights for this specific ticket. The second output, <code>Subsidy Commitment</code>, is the address where the reward will go. This is not yet shown by the block explorer at this time. The third and final output is the address where change for this transaction will be sent.</p>
+<p>FOr a ticket purchase (stake submission) there are a few differences
+from a standard transaction shown.</p>
+<p>Note the difference under details: The word <code>Ticket</code> appears above the
+sender&rsquo;s wallet address on the left, and the words <code>Subsidy
+Commitment</code> appear on the right. This particular user purchased a
+stake ticket for 8.75411638 DCR and received change in the amount
+of 7.15994209 DCR. The address listed on the left under <code>Ticket</code> is
+the address that that contains the funds used to purchase this
+ticket. The first output on the right is the address that retains
+voting rights for this specific ticket. The second output, <code>Subsidy
+Commitment</code>, is the address where the reward will go. This is not yet
+shown by the block explorer at this time. The third and final output
+is the address where change for this transaction will be sent.</p>
 <hr />
 <h3 id="proof-of-stake-votes">Proof-of-stake votes<a class="headerlink" href="#proof-of-stake-votes" title="Permanent link">&para;</a></h3>
-<p>Note the identifying terms in the details section: <code>Vote</code>, <code>Stake Base</code>, <code>Block Commitment</code>, and <code>Vote Bits</code>:</p>
-<p>These keywords indicate that this transaction is a vote that was cast from a proof-of-stake ticket holder. In this particular example, the user had previously purchased a ticket for 8.99472311 DCR and was sent 10.82959184 DCR after the vote was cast in this transaction.</p></div>
+<p>Note the identifying terms in the details section: <code>Vote</code>, <code>Stake
+Base</code>, <code>Block Commitment</code>, and <code>Vote Bits</code>:</p>
+<p>These keywords indicate that this transaction is a vote that was cast
+from a proof-of-stake ticket holder. In this particular example, the
+user had previously purchased a ticket for 8.99472311 DCR and was
+sent 10.82959184 DCR after the vote was cast in this transaction.</p></div>
         </div>
 
         <footer class="col-md-12">

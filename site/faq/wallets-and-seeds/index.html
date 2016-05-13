@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../../advanced/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../advanced/storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../advanced/network-parameters/">Network Parameters</a>
+    <a href="../../advanced/program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../../advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -471,7 +417,7 @@
         
             <li><a href="#4-can-someone-steal-my-coins-if-they-access-walletdb">4. Can someone steal my coins if they access wallet.db?</a></li>
         
-            <li><a href="#5-can-someone-use-a-brute-force-attack-on-a-random-wallet-to-regenerate-its-seed-words">5. Can someone use a brute-force attack on a random wallet to regenerate its seed words?</a></li>
+            <li><a href="#5-can-someone-use-a-brute-force-attack-on-a-random-wallet-to-regenerate-its-seed-words-the-words-are-not-salted">5. Can someone use a brute-force attack on a random wallet to regenerate its seed words (the words are not salted)?</a></li>
         
             <li><a href="#6-my-seed-is-not-working-what-can-i-do">6. My seed is not working. What can I do?</a></li>
         
@@ -509,9 +455,9 @@
 <h4 id="4-can-someone-steal-my-coins-if-they-access-walletdb"><strong>4. Can someone steal my coins if they access wallet.db?</strong><a class="headerlink" href="#4-can-someone-steal-my-coins-if-they-access-walletdb" title="Permanent link">&para;</a></h4>
 <p>Nobody can steal your coins if they get access to the wallet.db<sup id="fnref:9803"><a class="footnote-ref" href="#fn:9803" rel="footnote">4</a></sup> file unless they also have your private passphrase. If you chose to use public encryption, they also cannot get access to any of your extended public keys or addresses.</p>
 <hr />
-<h4 id="5-can-someone-use-a-brute-force-attack-on-a-random-wallet-to-regenerate-its-seed-words"><strong>5. Can someone use a brute-force attack on a random wallet to regenerate its seed words?</strong><a class="headerlink" href="#5-can-someone-use-a-brute-force-attack-on-a-random-wallet-to-regenerate-its-seed-words" title="Permanent link">&para;</a></h4>
+<h4 id="5-can-someone-use-a-brute-force-attack-on-a-random-wallet-to-regenerate-its-seed-words-the-words-are-not-salted"><strong>5. Can someone use a brute-force attack on a random wallet to regenerate its seed words (the words are not salted)?</strong><a class="headerlink" href="#5-can-someone-use-a-brute-force-attack-on-a-random-wallet-to-regenerate-its-seed-words-the-words-are-not-salted" title="Permanent link">&para;</a></h4>
 <p>All the seed words are is a direct mapping of English words to hex digits. The seed is nothing more than a 256-bit (32-byte) cryptographically random number. Salt does not apply here at all. It has nothing to do with brute-forcing<sup id="fnref:10452"><a class="footnote-ref" href="#fn:10452" rel="footnote">5</a></sup> random cryptographic numbers.</p>
-<p>In other words, since each word can be 256 possibilities and there are 32 words, that yields 256^32 (or 2^256 depending on how you want to look at it, but it&rsquo;s the same number) possibilities. That number is larger than the entire number of hydrogen atoms in the known universe. In fact, it&rsquo;s almost more than the number or atoms total in known universe.</p>
+<p>In other words, since each word can be 256 possibilities and there are 32 words, that yields 256^32 (or 2^256 depending on how you want to look at it, but it is the same number) possibilities. That number is larger than the entire number of hydrogen atoms in the known universe. In fact, it is almost more than the number of atoms total in the known universe.</p>
 <p>To put this in perspective, assuming there are 7 billion people on the planet and each person owned 10 computers and each one of those computers could test a billion possibilities a second and that you could find the solution on average after testing only 50% of the total possibilities, it would still take 26x10^48 (that&rsquo;s 26 trillion trillion trillion trillion) years to brute-force a single seed.</p>
 <hr />
 <h4 id="6-my-seed-is-not-working-what-can-i-do"><strong>6. My seed is not working. What can I do?</strong><a class="headerlink" href="#6-my-seed-is-not-working-what-can-i-do" title="Permanent link">&para;</a></h4>

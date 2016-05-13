@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../../advanced/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../advanced/storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../advanced/network-parameters/">Network Parameters</a>
+    <a href="../../advanced/program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../../advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -471,6 +417,7 @@
             <div class="col-md-9" role="main">
 
 <h1 id="elliptic-curve-signature-algorithms"><strong>Elliptic Curve Signature Algorithms</strong><a class="headerlink" href="#elliptic-curve-signature-algorithms" title="Permanent link">&para;</a></h1>
+<hr />
 <p>Although secp256k1 is widely considered to have a secure choice of elliptic curve parameters, some questions about the origin of the curve remain. For example, the selection of the Koblitz curve,</p>
 <p>
 <script type="math/tex">(y^2 + xy = x^3 + ax^2 + b \text{ and } a = a^2 \text{, } b = b^2 \text{; } a = 1 \text{ or } 2 \text{, } b != 0)</script>
@@ -482,6 +429,7 @@
 <p>For all other Koblitz curve specifications, the most obvious <script type="math/tex">m</script> value is selected. Although this is curious, there are no known attacks that can be applied by using a slightly larger $m$ value for the Galois field. Other objections to the parameters used by secp256k1 have also been raised<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>.</p>
 <p>Another extremely popular digital signature algorithm (DSA) with 128-bits of security is Ed25519<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>. This uses the EdDSA signing algorithm over a curve birationally equivalent to Curve25519 and is widely employed today. Unlike secp256k1&rsquo;s ECDSA, Ed25519 uses simpler Schnorr signatures that are provably secure in a random oracle model (See: <a href="../schnorr-signatures/">Schnorr Signatures</a>).</p>
 <p>Schnorr signatures have also been proposed for Bitcoin<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup>. However, instead of using an OP code exclusive to Schnorr signatures utilizing the curve parameters for secp256k1, Decred instead uses a new OP code OP_CHECKSIGALT to verify an unlimited number of new signature schemes. In the current implementation, both secp256k1 Schnorr signatures and Ed25519 signatures are available to supplement secp256k1 ECDSA signatures. In the future, it is trivial to add new signature schemes in a soft fork, such as those that are quantum secure. Having these two Schnorr suites available also allows for the generation of simple group signatures occupying the same space of a normal signature<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>, which for both is implemented. In the future, threshold signatures using dealerless secret sharing will also enable t-of-n threshold signatures occupying the same amount of space<sup id="fnref:7"><a class="footnote-ref" href="#fn:7" rel="footnote">7</a></sup>.</p>
+<hr />
 <h2 id="references"><strong><i class="fa fa-book"></i> References</strong><a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <div class="footnote">
 <hr />

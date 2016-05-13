@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.decred.org/getting-started/overview/">
+        <link rel="canonical" href="https://docs.decred.org/mining/proof-of-stake/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Overview - dcrdocs</title>
+	<title>Proof-of-work (PoS) - dcrdocs</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -58,13 +58,13 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
-<li class="active">
-    <a href="./">Overview</a>
+<li >
+    <a href="../../getting-started/overview/">Overview</a>
 </li>
 
                     
@@ -75,25 +75,25 @@
         
             
 <li >
-    <a href="../user-guides/windows/">Windows</a>
+    <a href="../../getting-started/user-guides/windows/">Windows</a>
 </li>
 
         
             
 <li >
-    <a href="../user-guides/linux/">Linux</a>
+    <a href="../../getting-started/user-guides/linux/">Linux</a>
 </li>
 
         
             
 <li >
-    <a href="../user-guides/osx/">OSX</a>
+    <a href="../../getting-started/user-guides/osx/">OSX</a>
 </li>
 
         
             
 <li >
-    <a href="../user-guides/web/">Web</a>
+    <a href="../../getting-started/user-guides/web/">Web</a>
 </li>
 
         
@@ -103,13 +103,13 @@
                     
                         
 <li >
-    <a href="../obtaining-dcr/">Obtaining DCR</a>
+    <a href="../../getting-started/obtaining-dcr/">Obtaining DCR</a>
 </li>
 
                     
                         
 <li >
-    <a href="../using-the-block-explorer/">Using the Block Explorer</a>
+    <a href="../../getting-started/using-the-block-explorer/">Using the Block Explorer</a>
 </li>
 
                     
@@ -118,25 +118,25 @@
             
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mining <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
 <li >
-    <a href="../../mining/overview/">Overview</a>
+    <a href="../overview/">Overview</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Proof-of-work (PoS)</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../../mining/proof-of-work/">Proof-of-work (PoW)</a>
+    <a href="../proof-of-work/">Proof-of-work (PoW)</a>
 </li>
 
                     
@@ -379,12 +379,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../..">
+                    <a rel="next" href="../overview/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../user-guides/windows/">
+                    <a rel="prev" href="../proof-of-work/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -407,75 +407,130 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#overview"> Overview</a></li>
+        <li class="main active"><a href="#proof-of-stake-pos-mining">Proof-of-stake (PoS) Mining</a></li>
         
-            <li><a href="#1-user-guides">1.  User Guides</a></li>
+            <li><a href="#solo-mining-or-pool-mining">Solo Mining or Pool Mining</a></li>
         
-            <li><a href="#2-obtaining-dcr">2.  Obtaining DCR</a></li>
+            <li><a href="#purchasing-tickets"> Purchasing tickets</a></li>
         
-            <li><a href="#3-using-the-block-explorer">3.  Using the Block Explorer</a></li>
+            <li><a href="#considerations-and-future-improvements"> Considerations and Future Improvements</a></li>
+        
+            <li><a href="#see-also"> See also</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="overview"><strong><i class="fa fa-info-circle"></i> Overview</strong><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
+<h1 id="proof-of-stake-pos-mining"><strong> Proof-of-stake (PoS) Mining</strong><a class="headerlink" href="#proof-of-stake-pos-mining" title="Permanent link">&para;</a></h1>
 <hr />
-<p>The first thing you will need to do to get started with Decred is
-create your wallet. Your wallet is like a bank account. It can contain
-many address and like your bank account you don&rsquo;t want to give anyone
-else access to it. An address is like a sub account. If you want to
-receive DCR from someone else, you give them an address that is linked
-to your wallet. You can create a new address for each transaction or
-reuse the same address multiple times but it is strongly recommended
-that you do not reuse addresses. Your wallet can generate as many
-address as you want.  There are three parts to getting started with
-Decred:</p>
+<h2 id="solo-mining-or-pool-mining"><strong> Solo Mining or Pool Mining </strong><a class="headerlink" href="#solo-mining-or-pool-mining" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><i class="fa fa-male"></i> Solo Mining</p>
+</blockquote>
+<p><i class="fa fa-exclamation-triangle"></i> In order to successfully participate in PoS, you need to ensure that your wallet is online 24/7. This is because your ticket may be called on to vote at any time and if your wallet is unable to respond you will lose the vote reward.  The amount of your ticket purchase will be returned to you, however, ticket purchase fees will not be returned.</p>
+<blockquote>
+<p><i class="fa fa-users"></i> Pool Mining</p>
+</blockquote>
+<p>Using a stake pool is beneficial because the servers are geographically distributed and redundant which vastly increases the odds that your vote will always be cast even in the event of a network or server outage.  However, stake pools charge a fee in order to pay for server costs.</p>
+<hr />
+<h2 id="purchasing-tickets"><strong><i class="fa fa-ticket"></i> Purchasing tickets</strong><a class="headerlink" href="#purchasing-tickets" title="Permanent link">&para;</a></h2>
+<p>To participate in PoS mining, you will first need to have followed the <a href="../../getting-started/overview/">Getting Started</a> guide, <a href="../../getting-started/obtaining-dcr/">Obtain DCR</a> guide, and have unlocked your wallet. </p>
+<blockquote>
+<p>Sign up at a stake pool (Pool Mining)</p>
+</blockquote>
+<p><i class="fa fa-times"></i><strong> Coming Soon </strong> No public stake pools have launched at this time. An announcement will be made when they are available and this documentation will be updated. You may track progress on the <a href="https://forum.decred.org/threads/rfp-6-setup-and-operate-10-stake-pools.1361/"><i class="fa fa-comments"></i> stake pool forum thread</a>.</p>
+<blockquote>
+<p>Manual ticket purchasing (Overview)</p>
+</blockquote>
+<p>First, obtain the current ticket price by visiting a site such as <a href="https://dcrstats.com">dcrstats.com</a>, <a href="https://stats.decred.org">stats.decred.org</a>, or see the difficulty field from the following dcrctl command:</p>
+<pre><code class="no-highlight">dcrctl --wallet getstakeinfo
+{
+  &quot;poolsize&quot;: 42670,
+  &quot;difficulty&quot;: 22.07045882,
+  &quot;allmempooltix&quot;: 0,
+  &quot;ownmempooltix&quot;: 0,
+  &quot;immature&quot;: 0,
+  &quot;live&quot;: 0,
+  &quot;proportionlive&quot;: 0,
+  &quot;voted&quot;: 0,
+  &quot;totalsubsidy&quot;: 0,
+  &quot;missed&quot;: 0,
+  &quot;proportionmissed&quot;: 0,
+  &quot;revoked&quot;: 0
+}
+</code></pre>
+
+<p>Now purchase your ticket(s) via dcrctl.  The syntax for the command is:</p>
+<pre><code class="no-highlight">dcrctl --wallet help purchaseticket
+purchaseticket &quot;fromaccount&quot; spendlimit (minconf=1 &quot;ticketaddress&quot; numtickets &quot;pooladdress&quot; poolfees expiry &quot;comment&quot;)
+
+Purchase ticket using available funds.
+
+Arguments:
+1. fromaccount   (string, required)             The account to use for purchase (default=&quot;default&quot;)
+2. spendlimit    (numeric, required)            Limit on the amount to spend on ticket
+3. minconf       (numeric, optional, default=1) Minimum number of block confirmations required
+4. ticketaddress (string, optional)             Override the ticket address to which voting rights are given
+5. numtickets    (numeric, optional)            The number of tickets to purchase
+6. pooladdress   (string, optional)             The address to pay stake pool fees to
+7. poolfees      (numeric, optional)            The amount of fees to pay to the stake pool
+8. expiry        (numeric, optional)            Height at which the purchase tickets expire
+9. comment       (string, optional)             Unused
+
+Result:
+&quot;value&quot; (string) Hash of the resulting ticket
+</code></pre>
+
+<blockquote>
+<p>Manual ticket purchasing example (Solo Mining)</p>
+</blockquote>
+<pre><code class="no-highlight">dcrctl --wallet purchaseticket &quot;default&quot; 23 1 &quot;&quot; 1 &quot;&quot; &quot;&quot; 1 &quot;this purchases one ticket from the default account for a maximum of 23 DCR that expires after 1 block&quot;
+</code></pre>
+
+<blockquote>
+<p>Manual ticket purchasing (Pool Mining)</p>
+</blockquote>
+<p>Every stake pool provides their own instructions which are correct for usage of that specific pool so this information will not be duplicated here.</p>
+<blockquote>
+<p>Automatic ticket purchasing (Solo Mining)</p>
+</blockquote>
+<p><i class="fa fa-exclamation-triangle"></i> <strong>Automatic ticket purchasing is not recommended because it may incur transaction fees beyond your control!</strong></p>
+<p>Automatic ticket purchasing can be enabled by adding the relevant configuration options to dcrwallet&rsquo;s configuration file.  See <a href="../../advanced/storing-login-details/#dcrwallet">dcrwallet.conf configuration</a>.</p>
+<pre><code class="no-highlight">; Always keep this amount of DCR in the wallet.
+balancetomaintain=10
+; Enable ticket purchasing and voting.
+enablestakemining=1
+; Prompt for a password on startup to ensure the wallet is unlocked immediately.
+promptpass=1
+; Maximum amount to spend on a ticket.
+ticketmaxprice=10
+</code></pre>
+
+<blockquote>
+<p>Post ticket purchase information</p>
+</blockquote>
 <ul>
-<li>Connecting to the Decred network by starting a node.</li>
-<li>Creating your wallet and attaching it to the node.</li>
-<li>Controlling your wallet and performing transactions.</li>
+<li>The ticket price is not spent, although it is removed from your balance as it is not spendable. It is just a deposit. You will get it back when your ticket votes, expires, or is revoked due to not voting.</li>
+<li>20 tickets are accepted into the voting pool each block. Tickets that are waiting stay in the mempool. Tickets are moved from the mempool to the voting pool in order of txfee.</li>
+<li>Tickets take 256 blocks (about a day) to mature. During this time the stake price you paid will not be visible in your total balance.</li>
+<li>You can keep track of your tickets&rsquo; status by periodically running:</li>
 </ul>
-<p>Once you&rsquo;re setup and online there are four ways you can add DCR to
-your wallet.</p>
-<ul>
-<li>Purchase from an exchange</li>
-<li>Proof-of-Work mining</li>
-<li>Proof-of-Stake mining (assuming you already have some DCR)</li>
-<li>Have someone send you some DCR</li>
-</ul>
+<pre><code class="no-highlight">dcrctl --wallet getstakeinfo
+</code></pre>
+
 <hr />
-<h2 id="1-user-guides"><strong>1. <i class="fa fa-user"></i> User Guides</strong><a class="headerlink" href="#1-user-guides" title="Permanent link">&para;</a></h2>
+<h2 id="considerations-and-future-improvements"><strong> <i class="fa fa-code-fork"></i> Considerations and Future Improvements </strong><a class="headerlink" href="#considerations-and-future-improvements" title="Permanent link">&para;</a></h2>
+<p>This is in no way a definitive guide. There are user defined ticketfee and txfee variables which will help entice proof-of-work (PoW) miners to include your ticket in the ticket pool in front of lower fee purchases. Ticket purchasing has become increasingly competitive since this documentation was started.  A new ticket purchasing tool called <a href="https://github.com/cjepson/dcrticketbuyer"><i class="fa fa-github"></i> dcrticketbuyer</a> is being developed to help alleviate some of the complexity of buying tickets.</p>
 <hr />
-<h3 id="11-windows">1.1 <i class="fa fa-windows"></i> <a href="../user-guides/windows/">Windows</a><a class="headerlink" href="#11-windows" title="Permanent link">&para;</a></h3>
-<p>While this guide assumes you have no knowledge of Decred,
-cryptocurrency in general, or the Windows command line, it does assume
-you have some basic Windows knowledge including how to use Windows
-Explorer to unzip files.</p>
-<hr />
-<h3 id="12-linuxunix">1.2 <i class="fa fa-linux"></i> <a href="../user-guides/linux/">Linux/UNIX</a><a class="headerlink" href="#12-linuxunix" title="Permanent link">&para;</a></h3>
-<p>This guide will take you through the setup of the Decred daemon and
-wallet on Linux. Some familiarity with navigating the Linux shell and
-extracting tar balls is assumed.</p>
-<hr />
-<h3 id="13-os-x">1.3 <i class="fa fa-apple"></i> <a href="../user-guides/osx/">OS X</a><a class="headerlink" href="#13-os-x" title="Permanent link">&para;</a></h3>
-<p>This guide will take you through the setup of the Decred daemon and
-wallet on OS X. Some familiarity with navigating the UNIX shell and
-extracting tar balls is assumed.</p>
-<hr />
-<h3 id="14-web">1.4. <i class="fa fa-firefox"></i> <a href="../user-guides/web/">Web</a><a class="headerlink" href="#14-web" title="Permanent link">&para;</a></h3>
-<p>This section describtes the web wallet.  The web wallet is a basic
-online wallet that allows you to send and receive DCR. It is still
-under development and so lacks a number of features that are in the
-command line wallet (for example, stake mining is not currently
-supported).</p>
-<hr />
-<h2 id="2-obtaining-dcr"><strong>2. <i class="fa fa-exchange"></i> <a href="../obtaining-dcr/">Obtaining DCR</a></strong><a class="headerlink" href="#2-obtaining-dcr" title="Permanent link">&para;</a></h2>
-<p>This section describes some of the ways to aquire DCR..</p>
-<hr />
-<h2 id="3-using-the-block-explorer"><strong>3. <i class="fa fa-cubes"></i> <a href="../using-the-block-explorer/">Using the Block Explorer</a></strong><a class="headerlink" href="#3-using-the-block-explorer" title="Permanent link">&para;</a></h2>
-<p>This section describes the block explorer for Decred.</p></div>
+<h2 id="see-also"><strong> <i class="fa fa-book"></i> See also </strong><a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<p><a href="../../advanced/program-options/#pos-commands">Proof-of-stake Commands</a></p>
+<p><a href="../../faq/proof-of-stake/buying-tickets-and-fees/">Proof-of-stake FAQ - Buying Tickets and Fees</a></p>
+<p><a href="../../faq/proof-of-stake/solo-mining/">Proof-of-stake FAQ - Solo Mining</a></p>
+<p><a href="../../faq/proof-of-stake/stake-pools/">Proof-of-stake FAQ - Stake Pools</a></p>
+<p><a href="../../faq/proof-of-stake/voting-tickets/">Proof-of-stake FAQ - Voting Tickets</a></p>
+<p><a href="../../advanced/program-options/#pos-network-parameters">Proof-of-stake Mining Parameters</a></p>
+<p><a href="https://wiki.decred.org/Solo_Stake_Mining">Wiki - Solo Stake Mining</a></p></div>
         </div>
 
         <footer class="col-md-12">

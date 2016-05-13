@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../../advanced/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../advanced/storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../advanced/network-parameters/">Network Parameters</a>
+    <a href="../../advanced/program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../../advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -500,7 +446,7 @@
 <h4 id="2-what-do-you-mean-by-configuration-files-for-dcrd-dcrwallet-and-dcrctl"><strong>2. What do you mean by configuration files for <code>dcrd</code>, <code>dcrwallet</code>, and <code>dcrctl</code>?</strong><a class="headerlink" href="#2-what-do-you-mean-by-configuration-files-for-dcrd-dcrwallet-and-dcrctl" title="Permanent link">&para;</a></h4>
 <p>Each application (<code>dcrd</code>, <code>dcrwallet</code>, <code>dcrctl</code>) can have their own configuration files<sup id="fnref:9055"><a class="footnote-ref" href="#fn:9055" rel="footnote">2</a></sup>. Use <code>-h</code> and look at the path in parenthesis of the configuration file option (<code>-C</code>, <code>--configfile</code>) to see the default path. Create a text file at the path and named according to that path you just looked up.</p>
 <p>Then you can use the <code>dcrd</code> <a href="https://github.com/decred/dcrd/blob/master/sample-dcrd.conf">sample config file</a> and <code>dcrwallet</code> <a href="https://github.com/decred/dcrwallet/blob/master/sample-dcrwallet.conf">sample config file</a> to set whatever options you want. You can do the same thing for <code>dcrctl</code> too. The format is the same. Every command line option listed by <code>-h</code> can be specified in the config files (just use the long option name).</p>
-<p>Once those are created and in place, you don&rsquo;t have add all of the options to the command line all the time. That is why I can do:</p>
+<p>Once those are created and in place, you do not have to add all of the options to the command line all the time. That is why you can do:</p>
 <pre><code class="no-highlight">dcrctl getnetworkhashps
 2547036949350
 </code></pre>
@@ -512,11 +458,11 @@
 <h4 id="4-what-are-the-security-implications-of-using-the-same-rpc-server-authentication-passwords-with-dcrd-and-dcrwallet"><strong>4. What are the security implications of using the same RPC server authentication passwords with <code>dcrd</code> and <code>dcrwallet</code>?</strong><a class="headerlink" href="#4-what-are-the-security-implications-of-using-the-same-rpc-server-authentication-passwords-with-dcrd-and-dcrwallet" title="Permanent link">&para;</a></h4>
 <p>There is a lot less you can do with access to <code>dcrd</code> than you can to <code>dcrwallet</code>. The key point is that RPC access<sup id="fnref:11480"><a class="footnote-ref" href="#fn:11480" rel="footnote">4</a></sup> to <code>dcrwallet</code>, when the wallet is unlocked, can be used to spend coins.</p>
 <p>When they are both on the same machine, it probably does not matter all that much, but when you are running more secure setups where the wallet is on a separate machine than <code>dcrd</code>, you would pretty clearly not want to use the same credentials for both. Remember that <code>dcrd</code> has to be on an Internet-facing machine in order to stay synced to the network (download the block chain data, broadcast transactions, and so on).</p>
-<p>On the other hand, the <code>dcrwallet</code> that contains your funds, for best security, should really not be on a system that has internet access as it is infinitely more difficult for someone to steal your coins if the wallet that contains them is not even on a machine that is accessible via the Internet. Obviously, if you are staking your coins, you will need at least one Internet-facing <code>dcrwallet</code> instance. Thus, the most secure setup involves having one &ldquo;cold&rdquo; <code>dcrwallet</code> instance that is on a machine that is not Internet-accessible, and a second &ldquo;hot&rdquo; <code>dcrwallet</code> instance (using a different seed of course) to which the cold dcrwallet instance delegates voting right via the <code>--ticketaddress</code> parameter, both of which use different credentials.</p>
+<p>On the other hand, the <code>dcrwallet</code> that contains your funds, for best security, should really not be on a system that has Internet access as it is significantly more difficult for someone to steal your coins if the wallet that contains them is not even on a machine that is accessible via the Internet. Obviously, if you are staking your coins, you will need at least one Internet-facing <code>dcrwallet</code> instance. Thus, the most secure setup involves having one &ldquo;cold&rdquo; <code>dcrwallet</code> instance that is on a machine that is not Internet-accessible, and a second &ldquo;hot&rdquo; <code>dcrwallet</code> instance (using a different seed of course) to which the cold dcrwallet instance delegates voting right via the <code>--ticketaddress</code> parameter, both of which use different credentials.</p>
 <hr />
 <h4 id="5-why-am-i-connecting-to-only-8-outbound-peers"><strong>5. Why am I connecting to only 8 outbound peers?</strong><a class="headerlink" href="#5-why-am-i-connecting-to-only-8-outbound-peers" title="Permanent link">&para;</a></h4>
 <p>There is an intentional unconfigurable limit of 8 outbound peers<sup id="fnref:15399"><a class="footnote-ref" href="#fn:15399" rel="footnote">5</a></sup>. More outbound peers than that does not help you in any way and is actually worse for both you and the network. This has been tested extremely thoroughly in Bitcoin, including btcsuite (the upstream project for Decred). All you would do by upping your outbound connections is waste valuable slots of the relatively few public peers there are (there are always a much higher number of &ldquo;leechers&rdquo; than there are &ldquo;seeders&rdquo;).</p>
-<p>On the other hand, increasing your maximum connections, which really just increases the number of allowed inbound connections, helps the network by ensuring there are more slots available for new nodes and SPV clients which Decred does not have any yet, but it will.</p>
+<p>On the other hand, increasing your maximum connections, which really just increases the number of allowed inbound connections, helps the network by ensuring there are more slots available for new nodes and SPV clients which Decred does not have yet, but it will.</p>
 <hr />
 <h2 id="sources"><strong><i class="fa fa-book"></i> Sources</strong><a class="headerlink" href="#sources" title="Permanent link">&para;</a></h2>
 <div class="footnote">

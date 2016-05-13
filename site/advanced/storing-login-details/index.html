@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -306,6 +234,12 @@
                     <ul class="dropdown-menu">
                     
                         
+<li >
+    <a href="../overview/">Overview</a>
+</li>
+
+                    
+                        
 <li class="active">
     <a href="./">Storing Login Details</a>
 </li>
@@ -313,7 +247,7 @@
                     
                         
 <li >
-    <a href="../network-parameters/">Network Parameters</a>
+    <a href="../program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -433,12 +379,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../../faq/proof-of-work-mining/">
+                    <a rel="next" href="../overview/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../network-parameters/">
+                    <a rel="prev" href="../program-options/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -471,7 +417,7 @@
         
             <li><a href="#dcrctl"> dcrctl</a></li>
         
-            <li><a href="#other-uses-for-the-config-file"> Other uses for the config file</a></li>
+            <li><a href="#additional-configuration-options"> Additional Configuration Options</a></li>
         
     
     </ul>
@@ -479,33 +425,89 @@
             <div class="col-md-9" role="main">
 
 <h1 id="storing-login-details"><strong><i class="fa fa-hdd-o"></i> Storing Login Details</strong><a class="headerlink" href="#storing-login-details" title="Permanent link">&para;</a></h1>
-<p>Most parameters that are specified on the command line can also be kept in configuration files. This is a good way of storing your login credentials so that you do not need to include them in scripts or type them into the terminal all the time.</p>
+<p>All parameters that are specified on the command line to dcrd,
+dcrwallet and dcrctl can also be kept in configuration files. This is
+a good way of storing your login credentials so that you do not need
+to include them in scripts or type them into the terminal all the
+time.</p>
 <hr />
 <h2 id="operating-system-differences"><strong><i class="fa fa-laptop"></i> Operating system differences</strong><a class="headerlink" href="#operating-system-differences" title="Permanent link">&para;</a></h2>
-<p>The files and file content are the same in both Linux and Windows. The only difference is the file location. There is one directory for two of the three Decred programs, <code>dcrd</code> and <code>dcrwallet</code>. In Windows they are located in <code>%LOCALAPPDATA%</code> (you can type that into the Windows explorer location bar to go straight to the folder), while in Linux they are in <code>~/.dcrd</code>, and <code>~/.dcrwallet</code> respectively. These are hidden directories and will not show up with <code>ls</code>, but are accessible using <code>cd .dcrd</code> and <code>cd .dcrwallet</code> from the home directory.</p>
-<p>Only the <code>dcrd</code> and <code>dcrwallet</code> folders are created by default. Since <code>dcrctl</code> interfaces with the daemon on localhost, no extra authentication is needed.</p>
+<p>The files and file content are the same on all platforms. The only
+difference is the file location.  Each program (<code>dcrd</code>, <code>dcrwallet</code>,
+and <code>dcrctl</code> has a directory of its own to store the configuration
+files.  On Windows they are located in <code>%LOCALAPPDATA%</code> (you can type
+that into the Windows explorer location bar to go straight to the
+folder).  On Linux and other properly behaving UNIX they are in
+<code>~/.dcrd/</code>, <code>~/.dcrwallet/</code>, and <code>~/.dcrctl/</code> respectively. These are
+hidden directories and will not show up with <code>ls</code>, but are accessible
+using <code>cd .dcrd</code>, <code>cd .dcrwallet</code>, and <code>cd .dcrctl</code> from the home
+directory.  OS X does not follow the proper UNIX way and puts them in
+<code>~/Libraries/Application Support/Dcrd</code>, <code>~/Libraries/Application
+Support/Dcrwallet</code>, and <code>~/Libraries/Application Support/Dcrctl</code>.</p>
+<p>Only the <code>dcrd</code> and <code>dcrwallet</code> folders are created by default.  If
+you want to store the login information for <code>dcrctl</code> you will need to
+manually create the directory for it.</p>
 <hr />
 <h2 id="dcrd"><strong><i class="fa fa-terminal"></i> dcrd</strong><a class="headerlink" href="#dcrd" title="Permanent link">&para;</a></h2>
-<p>Go to your <code>dcrd</code> folder as specified above and create a text file called <code>dcrd.conf</code>. Open it and type it the following lines:</p>
-<pre><code class="no-highlight">rpcuser=&lt;username&gt;
+<p>Go to your <code>dcrd</code> folder as specified above and create a text file
+called <code>dcrd.conf</code>. Open it with whatever editor you like and type it
+the following lines:</p>
+<pre><code class="no-highlight">[Application Options]
+
+rpcuser=&lt;username&gt;
 rpcpass=&lt;password&gt;
 </code></pre>
 
-<p>Where the username and password are ones you can make up on the spot. You do not need to register anywhere. They just secure your connection to the network. Save the file and exit the editor.</p>
+<p>Choose any username and password you want. You do not need to register these
+anywhere and they will only be used to allow your wallet and control
+tool to communicate with the daemon you are running</p>
 <hr />
 <h2 id="dcrwallet"><strong><i class="fa fa-terminal"></i> dcrwallet</strong><a class="headerlink" href="#dcrwallet" title="Permanent link">&para;</a></h2>
-<p>The procedure for the wallet is almost the same as for <code>dcrd</code>. Go to the <code>dcrwallet</code> folder and create a text file called <code>dcrwallet.conf</code>. Open it and enter the following lines:</p>
-<pre><code class="no-highlight">username=&lt;username&gt;
+<p>The procedure for the wallet is almost the same as for <code>dcrd</code>. Go to
+the <code>dcrwallet</code> folder and create a text file called
+<code>dcrwallet.conf</code>. Open it and enter the following lines:</p>
+<pre><code class="no-highlight">[Application Options]
+
+username=&lt;username&gt;
 password=&lt;password&gt;
 </code></pre>
 
-<p>You can make up the username, but the password must be the one you used to create your wallet (that is the password you were asked to enter, not the seed key words).</p>
+<p>As with <code>dcrd</code> you can use any values you want here.  If you choose to
+use a different set of credentials than you did for <code>dcrd</code> you will
+also need to add:</p>
+<pre><code class="no-highlight">dcrdusername=&lt;dcrdusername&gt;
+dcrdpassword=&lt;dcrdpassword&gt;
+</code></pre>
+
+<p>If you use the same credentials you can leave those values out.</p>
+<p>If you set a public password for the wallet (the second password
+during the wallet creation) you can also add that here:</p>
+<pre><code class="no-highlight">walletpass=&lt;yourwalletpassword&gt;
+</code></pre>
+
+<p>You cannot specify you wallet passphrase in the config files.  That
+must be entered manually with <code>dcrctl</code>.</p>
 <hr />
 <h2 id="dcrctl"><strong><i class="fa fa-terminal"></i> dcrctl</strong><a class="headerlink" href="#dcrctl" title="Permanent link">&para;</a></h2>
-<p>As mentioned above, <code>dcrctl</code> uses the daemon already active on the local machine and so does not require extra authentication. As long as you are using config files for <code>dcrd</code> and <code>dcrwallet</code>, you do not need a config file for <code>dcrctl</code>.</p>
+<p>To save the auth info for dcrctl you need to create the directory for
+it (see <a href="#operating-system-differences">above</a> for the location) and
+open a file named <code>dcrctl.conf</code>.  Add the following info (using the
+username and password you set for dcrd.  If you used different
+credentials for dcrwallet you will need to specify one here and the
+other on the command line but if they are the same this will work for
+both.</p>
+<pre><code class="no-highlight">[Application Options]
+
+rpcuser=&lt;username&gt;
+rpcpass=&lt;password&gt;
+</code></pre>
+
 <hr />
-<h2 id="other-uses-for-the-config-file"><strong><i class="fa fa-tasks"></i> Other uses for the config file</strong><a class="headerlink" href="#other-uses-for-the-config-file" title="Permanent link">&para;</a></h2>
-<p>Almost any command that you specify on the command line can be put into a config file. Have a look at the three sample files that came in the Decred download package for all the options available. To use the <code>dcrctl</code> config file, you will need to create a <code>dcrctl</code> folder next to the other two folders and put the file there.</p></div>
+<h2 id="additional-configuration-options"><strong><i class="fa fa-tasks"></i> Additional Configuration Options</strong><a class="headerlink" href="#additional-configuration-options" title="Permanent link">&para;</a></h2>
+<p>All command line options can be put in the config file.
+The sample config files in the release package gives additional
+options or you can run one of the programs with the <code>-h</code> option to
+show the online help listed all the options.</p></div>
         </div>
 
         <footer class="col-md-12">

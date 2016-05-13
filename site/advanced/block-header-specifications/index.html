@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../network-parameters/">Network Parameters</a>
+    <a href="../program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -433,7 +379,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../network-parameters/">
+                    <a rel="next" href="../program-options/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
@@ -479,7 +425,8 @@
 <h1 id="block-header-specifications"><strong>Block Header Specifications</strong><a class="headerlink" href="#block-header-specifications" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="block-header-format"><strong>Block header format</strong><a class="headerlink" href="#block-header-format" title="Permanent link">&para;</a></h2>
-<p>Decred block headers occupy 180 bytes when serialized. The serialization format for a block header is displayed below:</p>
+<p>Decred block headers occupy 180 bytes when serialized. The
+serialization format for a block header is displayed below:</p>
 <table>
 <thead>
 <tr>
@@ -641,7 +588,11 @@
 
 <hr />
 <h2 id="mining-details"><strong>Mining details</strong><a class="headerlink" href="#mining-details" title="Permanent link">&para;</a></h2>
-<p>Both getwork and getblocktemplate are implemented, but neither is precisely the same as in Bitcoin. getwork is very similar, but returns a non-int32 reversed byte string to work off of. The &lsquo;data&rsquo; field refers to the properly padded blake256 input of 3x64 byte chunks. Only the last chunk needs to be modified when mining.</p>
+<p>Both getwork and getblocktemplate are implemented, but neither is
+precisely the same as in Bitcoin. getwork is very similar, but returns
+a non-int32 reversed byte string to work off of. The &lsquo;data&rsquo; field
+refers to the properly padded blake256 input of 3x64 byte chunks. Only
+the last chunk needs to be modified when mining.</p>
 <p>Example <code>getwork</code> response:</p>
 <pre><code>{
   &quot;data&quot;: &quot;00000000bf9d58482135c4d8d9445af7604b24ccf1d31b33df33abf21a4e11f52c
@@ -654,7 +605,8 @@
 }
 </code></pre>
 
-<p><code>getblocktemplate</code> also returns a full header and data about the transactions that are included in the block. An example:</p>
+<p><code>getblocktemplate</code> also returns a full header and data about the
+transactions that are included in the block. An example:</p>
 <pre><code>{
   &quot;header&quot;: &quot;...&quot;,
   &quot;sigoplimit&quot;: 20000,
@@ -764,7 +716,11 @@
 }
 </code></pre>
 
-<p>Mining is performed by incrementing nonce until the block header is below target. ExtraData is allowed to be used as an extra nonce for fast hashing devices like ASICs, but may be used later by soft fork to provide the root for further data structures required for consensus.</p></div>
+<p>Mining is performed by incrementing nonce until the block header is
+below the target. ExtraData is allowed to be used as an extra nonce
+for fast hashing devices like ASICs, but a soft fork may change this
+at some point (to allow it to be used for other consensus data
+structures).</p></div>
         </div>
 
         <footer class="col-md-12">

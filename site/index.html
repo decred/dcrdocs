@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="advanced/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="advanced/storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="advanced/network-parameters/">Network Parameters</a>
+    <a href="advanced/program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="advanced/deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="advanced/dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -477,13 +423,13 @@
 <h1 id="overview"><strong>Overview</strong><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="what-is-decred"><i class="fa icon-decred_symbol"></i> <strong>What is Decred?</strong><a class="headerlink" href="#what-is-decred" title="Permanent link">&para;</a></h2>
-<p>Decred is a cryptocurrency, similar to Bitcoin, with a strong focus on community input, open governance and sustainable funding and development. It utilises a hybrid &ldquo;proof-of-work&rdquo; and &ldquo;proof-of-stake&rdquo; mining system to ensure that a small group cannot dominate the flow of transactions or make changes to Decred without the input of the community. A unit of currency is called a &lsquo;decred&rsquo; (DCR). To ensure the integrity of the currency and prevent people from making fraudulent transactions or creating their own coins, Decred uses a method of recording transactions known as a blockchain.</p>
+<p>Decred is a cryptocurrency, similar to Bitcoin, with a strong focus on community input, open governance and sustainable funding and development. It utilizes a hybrid &ldquo;proof-of-work&rdquo; and &ldquo;proof-of-stake&rdquo; mining system to ensure that a small group cannot dominate the flow of transactions or make changes to Decred without the input of the community. A unit of currency is called a &lsquo;decred&rsquo; (DCR). To ensure the integrity of the currency and prevent people from making fraudulent transactions or creating their own coins, Decred uses a method of recording transactions known as a blockchain.</p>
 <hr />
-<p><more information to link to Decred governace, tech and dev pages></p>
+<p><more information to link to Decred governance, tech and dev pages></p>
 <h2 id="what-is-a-cryptocurrency"><i class="fa icon-cryptocurrency fa-lg"></i> <strong>What is a cryptocurrency?</strong><a class="headerlink" href="#what-is-a-cryptocurrency" title="Permanent link">&para;</a></h2>
 <p>A cryptocurrency is a system of &lsquo;value exchange&rsquo;, just like any real world currency you may be familiar with. Its main difference is that it is not controlled by a central government or group and thus cannot be manipulated or restricted in the way those currencies can be.</p>
 <p>As an example, you may buy Decred from a fiat currency exchange and use it to directly purchase a product in a different country without having to pay high exchange rates.
-Decred uses a wallet to store, transfer and receive DCR. This wallet signs every transaction in and out with a special public key that is unique to you. This is how the network knows that the address sending the transaction is the correct one. Think of your bank account and PIN. When you use your card (wallet) you also enter your PIN (public key) so the bank knows it was you that authorised the transaction. The main difference here is that the public key is known by everyone on the network whereas your PIN is not. When you start using Decred, you will generate a private key that you must not give to anyone.</p>
+Decred uses a wallet to store, transfer and receive DCR. This wallet signs every transaction in and out with a special public key that is unique to you. This is how the network knows that the address sending the transaction is the correct one. Think of your bank account and PIN. When you use your card (wallet) you also enter your PIN (public key) so the bank knows it was you that authorized the transaction. The main difference here is that the public key is known by everyone on the network whereas your PIN is not. When you start using Decred, you will generate a private key that you must not give to anyone.</p>
 <hr />
 <h2 id="what-is-the-blockchain"><i class="fa icon-block fa-lg"></i> <strong>What is the blockchain?</strong><a class="headerlink" href="#what-is-the-blockchain" title="Permanent link">&para;</a></h2>
 <p>The blockchain is the heart of Decred. It is where all transactions that take place are stored. It is similar to a bank ledger in that it records all the activity that happens when DCR are transferred. This ledger is able to confirm that new transactions are valid and that no fraud is taking place.</p>

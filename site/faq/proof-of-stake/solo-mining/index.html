@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../../../advanced/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../../advanced/storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../../advanced/network-parameters/">Network Parameters</a>
+    <a href="../../../advanced/program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../../../advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../advanced/deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../advanced/dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -484,12 +430,12 @@
 <hr />
 <h4 id="1-do-i-need-hash-power-to-stake-mine"><strong>1. Do I need hash power to stake mine?</strong><a class="headerlink" href="#1-do-i-need-hash-power-to-stake-mine" title="Permanent link">&para;</a></h4>
 <p>Stake &ldquo;mining&rdquo; does not need any hash power<sup id="fnref:9304"><a class="footnote-ref" href="#fn:9304" rel="footnote">1</a></sup>. Think of it a bit like interest on invested coins. You lock your coins for a period of time in order to purchase a ticket that gives you a high probability (&gt;99%) of gaining voting rights and receiving interest in exchange for casting a voting and the opportunity cost of not being able to use those coins for potentially up to ~4.7 months.</p>
-<p>If you have already purchased stake tickets, those coins are locked until the tickets either win or expire. You are solo staking and therefore you MUST keep your wallet online 24/7 until all of your tickets have won (or expired) or you will miss out on the rewards since you can&rsquo;t cast a vote if you wallet is not online. Because those coins are now locked there is no way for you to change the already staked coins now.</p>
+<p>If you have already purchased stake tickets, those coins are locked until the tickets either win or expire. You are solo staking and therefore you MUST keep your wallet online 24/7 until all of your tickets have won (or expired) or you will miss out on the rewards since you cannot cast a vote if you wallet is not online. Because those coins are now locked there is no way for you to change the already staked coins now.</p>
 <p>The stake pool, on the other hand, allows you to delegate your voting rights to the pool so it is responsible for being online 24/7 and casting your vote for you.</p>
 <hr />
 <h4 id="2-isnt-one-of-the-main-reasons-for-stake-mining-to-ensure-there-are-always-a-sufficient-amount-of-peers-online"><strong>2. Isn&rsquo;t one of the main reasons for stake mining to ensure there are always a sufficient amount of peers online?</strong><a class="headerlink" href="#2-isnt-one-of-the-main-reasons-for-stake-mining-to-ensure-there-are-always-a-sufficient-amount-of-peers-online" title="Permanent link">&para;</a></h4>
 <p>Definitely not<sup id="fnref:9311"><a class="footnote-ref" href="#fn:9311" rel="footnote">2</a></sup>. Staking mining cannot possibly enforce that. An SPV style wallet could easily perform the necessary staking by communicating with other full nodes (<code>dcrd</code> instances) on the network. It is true that the current wallet requires <code>dcrd</code> to be running, but that will not always be the case.</p>
-<p>Even if the software did try to enforce that, you could not stop people from writing utilities and such do it via the peer-2-peer network without needing to run their own local instance anyways.</p>
+<p>Even if the software did try to enforce that, you could not stop people from writing utilities and such to do it via the peer-to-peer network without needing to run their own local instance anyways.</p>
 <hr />
 <h4 id="3-what-happens-if-my-wallet-is-unreachable-or-locked-when-my-tickets-are-selected-by-miners"><strong>3. What happens if my wallet is unreachable or locked when my tickets are selected by miners?</strong><a class="headerlink" href="#3-what-happens-if-my-wallet-is-unreachable-or-locked-when-my-tickets-are-selected-by-miners" title="Permanent link">&para;</a></h4>
 <p>If your wallet is offline or locked<sup id="fnref:9806"><a class="footnote-ref" href="#fn:9806" rel="footnote">3</a></sup> when your tickets are selected, you lose out on the rewards and your ticket is removed from the pool immediately. There are no &ldquo;redos&rdquo;.</p>
@@ -498,7 +444,7 @@
 <p>You do not need to be reachable. Voting is deterministic on a per-block basis<sup id="fnref:9806"><a class="footnote-ref" href="#fn:9806" rel="footnote">3</a></sup>. That is to say your wallet will know if your ticket is selected based on the current block and then a &ldquo;vote transaction&rdquo; (ssgen transaction) is broadcast to the network, just like other transactions.</p>
 <hr />
 <h4 id="5-can-i-run-multiple-voting-only-wallets-with-the-same-seed-on-multiple-servers"><strong>5. Can I run multiple voting-only wallets with the same seed on multiple servers?</strong><a class="headerlink" href="#5-can-i-run-multiple-voting-only-wallets-with-the-same-seed-on-multiple-servers" title="Permanent link">&para;</a></h4>
-<p>You can have multiple voting-only wallets because they are not creating new addresses<sup id="fnref:12697"><a class="footnote-ref" href="#fn:12697" rel="footnote">4</a></sup>. The problem comes in when you have two wallet creating transactions that involve new addresses because they do not know what the other one is doing.</p>
+<p>You can have multiple voting-only wallets because they are not creating new addresses<sup id="fnref:12697"><a class="footnote-ref" href="#fn:12697" rel="footnote">4</a></sup>. The problem comes in when you have two wallets creating transactions that involve new addresses because they do not know what the other one is doing.</p>
 <p>If you are doing a hot/cold setup, you can create multiple voting-only hot wallets without any issues so long as they both are aware of the address you give voting rights to.</p>
 <hr />
 <h2 id="sources"><strong><i class="fa fa-book"></i> Sources</strong><a class="headerlink" href="#sources" title="Permanent link">&para;</a></h2>

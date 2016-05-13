@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../../advanced/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../advanced/storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../advanced/network-parameters/">Network Parameters</a>
+    <a href="../../advanced/program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../../advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -438,7 +384,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../proof-of-work/pool-mining/cgminer/windows/">
+                    <a rel="prev" href="../proof-of-stake/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -463,9 +409,9 @@
     
         <li class="main active"><a href="#overview"> Overview</a></li>
         
-            <li><a href="#1-proof-of-work-mining">1.  Proof-of-work Mining</a></li>
+            <li><a href="#1-proof-of-work-pow-mining">1.  Proof-of-work (PoW) Mining</a></li>
         
-            <li><a href="#2-proof-of-stake-mining">2.  Proof-of-stake Mining</a></li>
+            <li><a href="#2-proof-of-stake-pos-mining">2.  Proof-of-stake (PoS) Mining</a></li>
         
     
     </ul>
@@ -473,10 +419,15 @@
             <div class="col-md-9" role="main">
 
 <h1 id="overview"><strong><i class="fa fa-info-circle"></i> Overview</strong><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
-<p>Decred has two methods of transaction verification proof-of-work (PoW) and proof-of-stake (PoS).</p>
+<p>Decred has two methods of transaction verification proof-of-work (PoW) and
+proof-of-stake (PoS).</p>
 <hr />
-<h2 id="1-proof-of-work-mining"><strong>1. <i class="fa fa-fire"></i> Proof-of-work Mining</strong><a class="headerlink" href="#1-proof-of-work-mining" title="Permanent link">&para;</a></h2>
-<p>Proof-of-work mining, more commonly referred to as PoW mining, is the activity of committing your computer’s hardware and resources to process network transactions and build the blocks that make up the blockchain in the Decred network. Each time a block is created (by a miner), about 30 new Decred coins are made. These coins are then split up as follows:</p>
+<h2 id="1-proof-of-work-pow-mining"><strong>1. <i class="fa fa-fire"></i> <a href="../proof-of-work/">Proof-of-work (PoW) Mining</a></strong><a class="headerlink" href="#1-proof-of-work-pow-mining" title="Permanent link">&para;</a></h2>
+<p>Proof-of-work mining, more commonly referred to as PoW mining, is the activity
+of committing your computer’s hardware and resources to process network
+transactions and build the blocks that make up the blockchain in the Decred
+network. Each time a block is created (by a miner), about 30 new Decred coins
+are made. These coins are then split up as follows:</p>
 <table>
 <thead>
 <tr>
@@ -499,41 +450,37 @@
 </tr>
 </tbody>
 </table>
-<p>You will, on average, receive a reward that is roughly proportional to the hashrate of your miner and the overall hashrate of the network when you commit your computer to PoW mining. To get started, you must have a computer with a video card. Most video cards can be used for mining (including the &ldquo;mobile&rdquo; types found in some laptops). In general, higher end video cards perform at higher hashrates and therefore receive higher rewards.</p>
+<p>You will, on average, receive a reward that is roughly proportional to the
+hashrate of your miner and the overall hashrate of the network when you commit
+your computer to PoW mining. To get started, you must have a computer with a
+video card. Most video cards can be used for mining (including the &ldquo;mobile&rdquo;
+types found in some laptops). In general, higher end video cards perform at
+higher hashrates and therefore receive higher rewards.</p>
 <hr />
-<h3 id="11-pool-mining">1.1 <i class="fa fa-life-ring"></i> Pool Mining<a class="headerlink" href="#11-pool-mining" title="Permanent link">&para;</a></h3>
-<p>If you have a small hashrate compared to the hashrate of the network, pool mining may be your best option. When you mine in a pool, your miner’s hashrate is combined with all the other pool miners’ hashrates to look for the correct solution for a block. You will receive a reward based on the amount of work your miner performs in the pool.</p>
-<p>These are the community mining pools:</p>
-<ul>
-<li>http://coinmine.pl/dcr</li>
-<li>https://dcr.maxminers.net</li>
-<li>https://dcr.suprnova.cc</li>
-<li>https://pool.mn/dcr</li>
-<li>http://yiimp.ccminer.org</li>
-<li>https://zpool.ca</li>
-</ul>
-<hr />
-<h4 id="111-cgminer">1.1.1 cgminer<a class="headerlink" href="#111-cgminer" title="Permanent link">&para;</a></h4>
-<hr />
-<h5 id="1111-windows">1.1.1.1 <i class="fa fa-windows"></i> <a href="../proof-of-work/pool-mining/cgminer/windows/">Windows</a><a class="headerlink" href="#1111-windows" title="Permanent link">&para;</a></h5>
-<hr />
-<h5 id="1112-linux">1.1.1.2 <i class="fa fa-linux"></i> <a href="../proof-of-work/pool-mining/cgminer/linux/">Linux</a><a class="headerlink" href="#1112-linux" title="Permanent link">&para;</a></h5>
-<hr />
-<h3 id="12-solo-mining">1.2 <i class="fa fa-male"></i> Solo Mining<a class="headerlink" href="#12-solo-mining" title="Permanent link">&para;</a></h3>
-<hr />
-<h4 id="121-cgminer">1.2.1 cgminer<a class="headerlink" href="#121-cgminer" title="Permanent link">&para;</a></h4>
-<hr />
-<h5 id="1211-windows">1.2.1.1 <i class="fa fa-windows"></i> <a href="../proof-of-work/solo-mining/cgminer/windows/">Windows</a><a class="headerlink" href="#1211-windows" title="Permanent link">&para;</a></h5>
-<hr />
-<h5 id="1222-linux">1.2.2.2 <i class="fa fa-linux"></i> <a href="../proof-of-work/solo-mining/cgminer/linux/">Linux</a><a class="headerlink" href="#1222-linux" title="Permanent link">&para;</a></h5>
-<hr />
-<h2 id="2-proof-of-stake-mining"><strong>2. <i class="fa fa-ticket"></i> Proof-of-stake Mining</strong><a class="headerlink" href="#2-proof-of-stake-mining" title="Permanent link">&para;</a></h2>
-<p>Proof of Stake mining is the second method of transaction verification in Decred. It is computationally cheap (you can run a full PoS node on a Rasberry Pi) but it requires you to already have some DCR in your wallet. In the Decred network, PoW miners solve blocks then turn those blocks over to PoS miners to vote on them. PoS miners buy tickets for the stake pool via their wallets. When a block is completed, 5 tickets are chosen at random from the stake pool to vote on the block. If at least 3 votes are ‘Yes&rsquo; then the block is validated, included in the block chain and both PoW and PoS miners are paid. If the vote fails, the block is discarded and the transactions return to be included in another block. The PoW miners are not paid, however the PoS miners are.</p>
-<p>This is to incentivise PoW miners to mine according to the wishes of PoS miners. For example, if the rules of the network change in the future any PoW miners who don&rsquo;t follow them will not be paid. It also helps stop large mining pools getting too much influence over the network. In other cryptocurrencies that don&rsquo;t use PoS, the large groups of PoW miners who effectively control the network can collude to block transactions, stop network changes or even force faked transactions (although this would take a huge amount of resources). Collusion between PoW and PoS miners is not possible as tickets are not chosen until the time of the vote. Collusion between PoS miners is likewise remote as the ticket pool is kept at around 40,960 active tickets at any time. The chance of three tickets belonging to the same individual or group being chosen for the same block is very small. Even if this did happen every transaction is validated at least twice so the chance of anyone manipulating the blockchain is effectively zero.</p>
-<hr />
-<h3 id="21-pool-mining">2.1 <i class="fa fa-life-ring"></i> <a href="../proof-of-stake/pool-mining/">Pool Mining</a><a class="headerlink" href="#21-pool-mining" title="Permanent link">&para;</a></h3>
-<hr />
-<h3 id="22-solo-mining">2.2 <i class="fa fa-male"></i> <a href="../proof-of-stake/solo-mining/">Solo Mining</a><a class="headerlink" href="#22-solo-mining" title="Permanent link">&para;</a></h3></div>
+<h2 id="2-proof-of-stake-pos-mining"><strong>2. <i class="fa fa-ticket"></i> <a href="../proof-of-stake/">Proof-of-stake (PoS) Mining</a></strong><a class="headerlink" href="#2-proof-of-stake-pos-mining" title="Permanent link">&para;</a></h2>
+<p>Proof of Stake mining is the second method of block verification in Decred. It
+is computationally cheap but it requires you to already have some DCR in your
+wallet. In the Decred network, PoW miners solve blocks then turn those blocks
+over to PoS miners to vote on them. When a block is completed, 5 tickets are
+chosen at random from the stake pool to vote on the block. If at least 3 votes
+are ‘Yes&rsquo; then the block is validated, included in the block chain and both
+PoW and PoS miners are paid. If the vote fails, the block is discarded and the
+transactions return to be included in another block. The PoW miners are not
+paid, however the PoS miners are.</p>
+<p>This is to incentivize PoW miners to mine according to the wishes of PoS
+miners. For example, if the rules of the network change in the future any
+PoW miners who don&rsquo;t follow them will not be paid. It also helps stop large
+mining pools getting too much influence over the network. In
+cryptocurrencies that don&rsquo;t use PoS, the large groups of PoW miners who
+effectively control the network can collude to block transactions, stop network
+changes or even force faked transactions (although this would take a huge
+amount of resources). Collusion between PoW and PoS miners is not possible as
+tickets are not chosen until the time of the vote. Collusion between PoS miners
+is likewise remote as the ticket pool is kept at around 40,960 active tickets
+at any time. The chance of three tickets belonging to the same individual or
+group being chosen for the same block is very small. Even if this did happen
+every transaction is validated at least twice so the chance of anyone
+manipulating the blockchain is effectively zero.</p></div>
         </div>
 
         <footer class="col-md-12">

@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../../advanced/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../advanced/storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../advanced/network-parameters/">Network Parameters</a>
+    <a href="../../advanced/program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../../advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -433,7 +379,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../../advanced/verifying-binaries/">
+                    <a rel="next" href="../../advanced/dcrctl-usage/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
@@ -475,6 +421,18 @@
 <p>Distributed timestamping protocols were first applied to decentralizing a financial network in the ground-breaking paper on Bitcoin by Nakamoto<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>. The field has seen explosive research follow-up from both amateurs and professionals, competing to offer extensions, adjustments, improvements, and refinements of the existing protocol. Notable implementations of new ideas include Ethereum<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>, which extended scripting, CryptoNote<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>, which refined privacy, and Sidechains<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>, which investigated two-way pegs with 1:1 Bitcoin tokens. These protocols all utilize proof-of-work (PoW) as originally described in the Bitcoin whitepaper.</p>
 <p>A common extension to the Bitcoin protocol modifies the consensus mechanism to either completely or partially use proof-of-stake (PoS), or the use of one&rsquo;s stake (tokens) rather than one&rsquo;s computational power to participate in the timestamping process. The first proof-of-stake blockchain based on the Bitcoin protocol was implemented in 2012 by King and Nadal<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup>, and includes both PoW and PoS that gradually skew towards complete PoS over time. Criticisms of pure PoS consensus systems have themselves been abundant<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup> <sup id="fnref:7"><a class="footnote-ref" href="#fn:7" rel="footnote">7</a></sup>, with the most vehement opposition coming from those working with purely PoW blockchains. The most common argument against PoS for distributed timestamping is &ldquo;nothing-at-stake&rdquo; or &ldquo;costless simulation&rdquo;, describing the systematic instability resulting from stakeholders being able to generate alternatively timestamped histories with no cost to themselves.</p>
 <p>Despite the controversy, it is apparent that systems who have a PoS overlay dependent on a PoW timestamping system may be able to independently achieve consensus. This is mathematically explored by Bentov and colleagues<sup id="fnref:8"><a class="footnote-ref" href="#fn:8" rel="footnote">8</a></sup> in a paper on their scheme, proof-of-activity (PoA), and appears to be a viable extension to the PoW protocols that may enable some interesting new properties. A similar design called MC2 was earlier proposed by Mackenzie in 2013<sup id="fnref:9"><a class="footnote-ref" href="#fn:9" rel="footnote">9</a></sup>. Here we describe the construction and implementation of a similar consensus system that we have named &ldquo;Decred&rdquo;.</p>
+<p>Research work in Decred is currently organized around the following subsections:</p>
+<ul>
+<li><a href="../hybrid-design/">Hybrid Design</a></li>
+<li><a href="../decentralized-stake-pooling/">Decentralized Stake Pooling</a></li>
+<li><a href="../elliptic-curve-signature-algorithms/">Elliptic Curve Signature Algorithms</a></li>
+<li><a href="../blake-256-hash-function/">BLAKE-256 Hash Function</a></li>
+<li><a href="../script-extensions/">Script Extensions</a></li>
+<li><a href="../signature-script-isolation-and-fraud-proofs/">Signature Script Isolation and Fraud Proofs</a></li>
+<li><a href="../transaction-extensions/">Transaction Extensions</a></li>
+<li><a href="../schnorr-signatures/">Schnorr Signatures</a></li>
+<li><a href="../miscellaneous-improvements/">Miscellaneous Improvements</a></li>
+</ul>
 <h2 id="references"><strong><i class="fa fa-book"></i> References</strong><a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <div class="footnote">
 <hr />

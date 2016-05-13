@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.decred.org/advanced/network-parameters/">
+        <link rel="canonical" href="https://docs.decred.org/advanced/program-options/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Network Parameters - dcrdocs</title>
+	<title>Program Options - dcrdocs</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li class="active">
-    <a href="./">Network Parameters</a>
+    <a href="./">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -461,7 +407,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#network-parameters">Network Parameters</a></li>
+        <li class="main active"><a href="#program-options">Program Options</a></li>
         
             <li><a href="#usage">Usage</a></li>
         
@@ -482,9 +428,19 @@
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="network-parameters"><strong>Network Parameters</strong><a class="headerlink" href="#network-parameters" title="Permanent link">&para;</a></h1>
+<h1 id="program-options"><strong>Program Options</strong><a class="headerlink" href="#program-options" title="Permanent link">&para;</a></h1>
 <hr />
-<p>The default options are sane for most users. This means <code>dcrd</code> will work &lsquo;out of the box&rsquo; for most users. However, there are also a wide variety of flags that can be used to control it. The following section provides a usage overview which enumerates the flags. An interesting point to note is that the long form of all of these options (except <code>-C</code>) can be specified in a configuration file that is automatically parsed when dcrd starts up. By default, the configuration file is located at <code>~/.dcrd/dcrd.conf</code> on POSIX-style operating systems and <code>%LOCALAPPDATA%\dcrd\dcrd.conf</code> on Windows. The <code>-C</code> (<code>--configfile</code>) flag, as shown below, can be used to override this location.</p>
+<p>The default options are sane for most users (although you may need to
+set your credentials. This means <code>dcrd</code> will
+work &lsquo;out of the box&rsquo; for most users. However, there are also a wide
+variety of flags that can be used to control its behavior. The following section
+provides a usage overview which enumerates the flags.An interesting
+point to note is that the long form of all of these options (except
+<code>-C</code>) can be specified in a configuration file that is automatically
+parsed when dcrd starts up.
+The <code>-C</code> (<code>--configfile</code>)
+flag, as shown below, can be used to override the default location.
+You can always get a list of all options by using the <code>-h</code> option.</p>
 <hr />
 <h2 id="usage"><strong>Usage</strong><a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <pre><code>dcrd [OPTIONS]
@@ -501,6 +457,10 @@
 </thead>
 <tbody>
 <tr>
+<td><code>-A</code> or <code>--appdata=</code></td>
+<td>Path to dcrd home directory ($HOME/.dcrd)</td>
+</tr>
+<tr>
 <td><code>-V</code> or <code>--version</code></td>
 <td>Display version information and exit</td>
 </tr>
@@ -511,6 +471,10 @@
 <tr>
 <td><code>-b</code> or <code>--datadir=</code></td>
 <td>Directory to store data</td>
+</tr>
+<tr>
+<td><code>--logdir=</code></td>
+<td>Directory to log output. ($HOME/.dcrd/logs)</td>
 </tr>
 <tr>
 <td><code>-a</code> or <code>--addpeer=</code></td>
@@ -621,12 +585,12 @@
 <td>Enable Tor stream isolation by randomizing user credentials for each connection</td>
 </tr>
 <tr>
-<td><code>--testnet=</code></td>
+<td><code>--testnet</code></td>
 <td>Use the test network</td>
 </tr>
 <tr>
-<td><code>--regtest=</code></td>
-<td>Use the regression test network</td>
+<td><code>--simnet</code></td>
+<td>Use the simulation test network</td>
 </tr>
 <tr>
 <td><code>--nocheckpoints=</code></td>
@@ -645,6 +609,18 @@
 <td>Write CPU profile to the specified file</td>
 </tr>
 <tr>
+<td><code>--memprofile=</code></td>
+<td>Write mem profile to the specified file</td>
+</tr>
+<tr>
+<td><code>--dumpblockchain=</code></td>
+<td>Write blockchain as a gob-encoded map to the specified file</td>
+</tr>
+<tr>
+<td><code>--miningtimeoffset=</code></td>
+<td>Offset the mining timestamp of a block by this many seconds (positive values are in the past)</td>
+</tr>
+<tr>
 <td><code>-d</code> or <code>--debuglevel:</code></td>
 <td>Logging level for all subsystems {trace, debug, info, warn, error, critical} &ndash; You may also specify &lt;subsystem&gt;=&lt;level&gt;,&lt;subsystem2&gt;=&lt;level&gt;,&hellip; to set the log level for individual subsystems &ndash; Use show to list available subsystems (info)</td>
 </tr>
@@ -655,6 +631,10 @@
 <tr>
 <td><code>--limitfreerelay=</code></td>
 <td>Limit relay of transactions with no transaction fee to the given amount in thousands of bytes per minute (15)</td>
+</tr>
+<tr>
+<td><code>--norelaypriority</code></td>
+<td>Do not require free or low-fee transactions to have high priority for relaying</td>
 </tr>
 <tr>
 <td><code>--maxorphantx=</code></td>
@@ -692,6 +672,14 @@
 <td><code>--dropaddrindex=</code></td>
 <td>Deletes the address-based transaction index from the database on start up, and the exits.</td>
 </tr>
+<tr>
+<td><code>--nonaggressive</code></td>
+<td>Disable mining off of the parent block of the blockchain if there aren&rsquo;t enough voters</td>
+</tr>
+<tr>
+<td><code>--nominingstatesync</code></td>
+<td>Disable synchronizing the mining state with other nodes</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -712,11 +700,16 @@
 </table>
 <hr />
 <h2 id="pos-commands"><strong>PoS Commands</strong><a class="headerlink" href="#pos-commands" title="Permanent link">&para;</a></h2>
-<p>While it&rsquo;s quite easy to get started PoS mining, there&rsquo;s a lot happening in the background. Let&rsquo;s have a look at some of the information available:</p>
+<p>While it&rsquo;s easy to get started PoS mining, there&rsquo;s a lot happening in
+the background. Let&rsquo;s have a look at some of the information
+available:</p>
 <pre><code>dcrctl -u &lt;daemon username&gt; - P &lt;daemon password&gt; --wallet &lt;command&gt;
 </code></pre>
 
-<p><code>getbalance ("account" minconf=1 "balancetype")</code> Gets the balance for the given account (not address). On its own it will display spendable coins. To see all coins, you need to set balancetype to all e.g. ‘getbalance * 0 all&rsquo; will show the total balance in wallet.</p>
+<p><code>getbalance ("account" minconf=1 "balancetype")</code> Gets the balance
+for the given account (not address). On its own it will display
+spendable coins. To see all coins, you need to set balancetype to all
+e.g. ‘getbalance * 0 all&rsquo; will show the total balance in wallet.</p>
 <pre><code>getstakeinfo
   &quot;poolsize&quot;: 42208,
   &quot;difficulty&quot;: 17.4973371,
@@ -915,7 +908,10 @@
 <hr />
 <h2 id="dcrctl-parameters"><strong>dcrctl parameters</strong><a class="headerlink" href="#dcrctl-parameters" title="Permanent link">&para;</a></h2>
 <h3 id="chain-server-commands">Chain server commands<a class="headerlink" href="#chain-server-commands" title="Permanent link">&para;</a></h3>
-<p>Note that some commands have been omitted from this list. They include duplicate commands, unimplemented commands and those that have limited utility to the general user base.</p>
+<p>Note that some commands have been omitted from this list. They include
+duplicate commands, unimplemented commands and those that have limited
+utility to the general user base.  You can always see all commands
+with <code>dcrctl -l</code>.</p>
 <table>
 <thead>
 <tr>

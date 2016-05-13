@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../../../advanced/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../../advanced/storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../../advanced/network-parameters/">Network Parameters</a>
+    <a href="../../../advanced/program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../../../advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../advanced/deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../advanced/dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -490,7 +436,7 @@
 <p>Proof-of-stake voting began<sup id="fnref:7969"><a class="footnote-ref" href="#fn:7969" rel="footnote">1</a></sup> at block 4,096.</p>
 <hr />
 <h4 id="2-in-the-source-code-ticketpoolsize-is-set-to-8192-but-the-current-ticket-pool-size-is-larger-than-that-why"><strong>2. In the source code TicketPoolSize is set to 8,192, but the current ticket pool size is larger than that. Why?</strong><a class="headerlink" href="#2-in-the-source-code-ticketpoolsize-is-set-to-8192-but-the-current-ticket-pool-size-is-larger-than-that-why" title="Permanent link">&para;</a></h4>
-<p>It is intentional and is an integral part of the dynamic ticket price adjustment<sup id="fnref:8965"><a class="footnote-ref" href="#fn:8965" rel="footnote">2</a></sup>. The <code>TicketPoolSize</code> is the target ticket pool size and it works very similar to the target difficulty for proof-of-work (PoW). The fact the current ticket pool size is larger than the target is what causes the ticket price to rise which will in turn will eventually cause less tickets to be purchased and result in the number of tickets in the pool reducing back towards the target. If it falls under, the price will fall to encourage more ticket sales in order to increase the number of tickets in the pool towards the target.</p>
+<p>It is intentional and is an integral part of the dynamic ticket price adjustment<sup id="fnref:8965"><a class="footnote-ref" href="#fn:8965" rel="footnote">2</a></sup>. The <code>TicketPoolSize</code> is the target ticket pool size and it works very similar to the target difficulty for proof-of-work (PoW). The fact the current ticket pool size is larger than the target is what causes the ticket price to rise which in turn will eventually cause less tickets to be purchased and result in the number of tickets in the pool reducing back towards the target. If it falls under, the price will fall to encourage more ticket sales in order to increase the number of tickets in the pool towards the target.</p>
 <hr />
 <h4 id="3-if-i-am-unlucky-and-my-ticket-expires-without-voting-do-i-lose-the-transaction-fee"><strong>3. If I am unlucky and my ticket expires without voting, do I lose the transaction fee?</strong><a class="headerlink" href="#3-if-i-am-unlucky-and-my-ticket-expires-without-voting-do-i-lose-the-transaction-fee" title="Permanent link">&para;</a></h4>
 <p>Yes<sup id="fnref:9806"><a class="footnote-ref" href="#fn:9806" rel="footnote">3</a></sup>.</p>
@@ -500,7 +446,7 @@
 <hr />
 <h4 id="5-what-happens-if-none-or-less-than-3-of-the-selected-voters-issue-their-ssgen-transactions"><strong>5. What happens if none (or less than 3) of the selected voters issue their ssgen transactions?</strong><a class="headerlink" href="#5-what-happens-if-none-or-less-than-3-of-the-selected-voters-issue-their-ssgen-transactions" title="Permanent link">&para;</a></h4>
 <p>Votes are always determined by the current tip. Miners do not start mining for a new block until at least 3+ of the selected voters issue their ssgen transactions. So, if a found block does not manage to get the selected votes<sup id="fnref:10219"><a class="footnote-ref" href="#fn:10219" rel="footnote">4</a></sup>, the block is simply orphaned by the next block another miner finds.</p>
-<p>For a more concrete example, assume the current chain tip is at block 5,000. The voters determined by block 5,000 have already submitted their votes, so miners are chugging away looking for block 5,001. Now, a miner finds a solution for block 5,001 and submits it to the network. All of the daemons (and hence wallets) will see that 5,001 just showed up. However, the miners do not immediately start mining off of 5001. Instead they continue mining off of 5,000 until 3+ votes for block 5,001 show up. At that point they all switch and start mining off of 5,001. If those 3+ votes never show up, another candidate block 5,001 will be found by the other miners still working on block 5,000 who will submit their (different) solution for block 5001 to the network. Since each of these new candidate blocks for 5,001 have a different hash, different tickets are selected.</p>
+<p>For a more concrete example, assume the current chain tip is at block 5,000. The voters determined by block 5,000 have already submitted their votes, so miners are chugging away looking for block 5,001. Now, a miner finds a solution for block 5,001 and submits it to the network. All of the daemons (and hence wallets) will see that 5,001 just showed up. However, the miners do not immediately start mining off of 5,001. Instead they continue mining off of 5,000 until 3+ votes for block 5,001 show up. At that point they all switch and start mining off of 5,001. If those 3+ votes never show up, another candidate block 5,001 will be found by the other miners still working on block 5,000 who will submit their (different) solution for block 5,001 to the network. Since each of these new candidate blocks for 5,001 have a different hash, different tickets are selected.</p>
 <hr />
 <h4 id="6-what-happens-if-a-ticket-i-have-missed-a-vote"><strong>6. What happens if a ticket I have missed a vote?</strong><a class="headerlink" href="#6-what-happens-if-a-ticket-i-have-missed-a-vote" title="Permanent link">&para;</a></h4>
 <p>Your wallet will automatically revoke the ticket in the block after it is missed<sup id="fnref:13912"><a class="footnote-ref" href="#fn:13912" rel="footnote">5</a></sup>, so you get them back just after they were missed as immature funds (that means they will not be spendable for 256 blocks when they mature).</p>
@@ -529,7 +475,7 @@
 <hr />
 <h4 id="7-what-is-the-difference-between-a-missed-and-revoked-ticket"><strong>7. What is the difference between a missed and revoked ticket?</strong><a class="headerlink" href="#7-what-is-the-difference-between-a-missed-and-revoked-ticket" title="Permanent link">&para;</a></h4>
 <p>Missed tickets are tickets that were called to vote, but did not. After a ticket has been missed, it can be revoked<sup id="fnref:14763"><a class="footnote-ref" href="#fn:14763" rel="footnote">6</a></sup>. The wallet automatically revokes missed tickets it controls (assuming it is unlocked so it can sign the revocation transaction).</p>
-<p>All <code>rebroadcastmissed</code> does is tell wallet to ask the chain server (<code>dcrd</code>) to give it the list of missed tickets again so it can double check if it needs to revoke any. Typically it&rsquo;s not needed unless, for example, it tried to revoke a ticket but couldn&rsquo;t because the wallet was not unlocked. In other words, if you noticed that revoked != missed, you might need to <code>rebroadcastmissed</code>. As said though, there is rarely a need for this since the wallet automatically does it on startup and looks for missed tickets on every block.</p>
+<p>All <code>rebroadcastmissed</code> does is tell wallet to ask the chain server (<code>dcrd</code>) to give it the list of missed tickets again so it can double check if it needs to revoke any. Typically it is not needed unless, for example, it tried to revoke a ticket but could not because the wallet was not unlocked. In other words, if you noticed that revoked != missed, you might need to <code>rebroadcastmissed</code>. As said though, there is rarely a need for this since the wallet automatically does it on startup and looks for missed tickets on every block.</p>
 <hr />
 <h2 id="sources"><strong><i class="fa fa-book"></i> Sources</strong><a class="headerlink" href="#sources" title="Permanent link">&para;</a></h2>
 <div class="footnote">

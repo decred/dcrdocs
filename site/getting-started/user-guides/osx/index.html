@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://docs.decred.org/getting-started/user-guides/linux/">
+        <link rel="canonical" href="https://docs.decred.org/getting-started/user-guides/osx/">
         <link rel="shortcut icon" href="../../../img/favicon.ico">
 
-	<title>Linux - dcrdocs</title>
+	<title>OSX - dcrdocs</title>
 
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -80,14 +80,14 @@
 
         
             
-<li class="active">
-    <a href="./">Linux</a>
+<li >
+    <a href="../linux/">Linux</a>
 </li>
 
         
             
-<li >
-    <a href="../osx/">OSX</a>
+<li class="active">
+    <a href="./">OSX</a>
 </li>
 
         
@@ -379,12 +379,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../windows/">
+                    <a rel="next" href="../linux/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../osx/">
+                    <a rel="prev" href="../web/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -407,7 +407,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#linuxunix-user-guide"> Linux/UNIX User Guide</a></li>
+        <li class="main active"><a href="#os-x-user-guide"> OS X User Guide</a></li>
         
             <li><a href="#connect-to-the-decred-network"> Connect to the Decred network</a></li>
         
@@ -420,17 +420,18 @@
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="linuxunix-user-guide"><i class="fa fa-linux"></i> <strong>Linux/UNIX User Guide</strong><a class="headerlink" href="#linuxunix-user-guide" title="Permanent link">&para;</a></h1>
+<h1 id="os-x-user-guide"><i class="fa fa-apple"></i> <strong>OS X User Guide</strong><a class="headerlink" href="#os-x-user-guide" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="connect-to-the-decred-network"><strong><i class="fa fa-cloud"></i> Connect to the Decred network</strong><a class="headerlink" href="#connect-to-the-decred-network" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Step One</p>
 </blockquote>
-<p>Download the latest Decred software from the
+<p>Download the latest Decred platform from the
 <a href="https://github.com/decred/decred-release/releases">Decred releases page</a>. Extract
-it to a directory (e.g., <code>~/Decred</code>). Open three command terminals. If
-you are running in headless mode via SSH, you will need to use a
-terminal multiplexer such as <code>screen</code>
+it to a directory (e.g., <code>~/Decred</code>).  OS X is frequently identified as
+<code>Darwin</code> so the binaries provided are named decred-darwin.  Open three
+command terminals. If you are running in headless mode via SSH, you
+will need to use a terminal multiplexer such as <code>screen</code>
 (<a href="http://www.howtogeek.com/howto/ubuntu/keep-your-ssh-session-running-when-you-disconnect/">How do I use <code>screen</code>?</a>)
 or <a href="https://tmux.github.io/"><code>tmux</code></a>. Where you see the instruction to
 move to another terminal, you&rsquo;ll need to start a new window in screen
@@ -440,7 +441,7 @@ or tmux..</p>
 </blockquote>
 <p>Go to one of your terminals and change to the Decred directory that
 you extracted the files to. They will likely be under a subdirectory
-such as <code>~/Decred/decred-linux-amd64</code>. Type the following (replacing
+such as <code>~/Decred/decred-darwin-amd64</code>. Type the following (replacing
 the text in square brackets with your own values):</p>
 <pre><code class="no-highlight">~/Decred/$ ./dcrd --rpcuser [daemon username] --rpcpass [daemon password]
 </code></pre>

@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../network-parameters/">Network Parameters</a>
+    <a href="../program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li class="active">
     <a href="./">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -438,7 +384,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../../research/overview/">
+                    <a rel="prev" href="../deleting-your-wallet/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -470,16 +416,31 @@
 
 <h1 id="verifying-binaries"><strong>Verifying Binaries</strong><a class="headerlink" href="#verifying-binaries" title="Permanent link">&para;</a></h1>
 <hr />
-<p>In order to verify binaries or other signed files from the Decred Project, there are a couple pieces of software required:</p>
+<p>The official
+<a href="https://github.com/decred/decred-release">Decred releases</a> have
+signed hashes that you should check to confirm that they are the same
+binaries that the developers posted.  This page provides instructions
+for that.</p>
+<p>In order to verify binaries or other signed files from the Decred
+Project, there are a couple pieces of software required:</p>
 <ul>
-<li>SHA256 &ndash; Once you download your file(s), you need to check their SHA256 hashes, so you may need to download a tool to do this, depending on your OS.</li>
-<li>GnuPG or PGP &ndash; This is required to import public keys and verify signatures. Examples below use GnuPG.</li>
+<li>SHA256 &ndash; Once you download your file(s), you need to check their
+  SHA256 hashes, so you may need to download a tool to do this,
+  depending on your OS.</li>
+<li>GnuPG or PGP &ndash; This is required to import public keys and verify
+  signatures. Examples below use GnuPG.</li>
 </ul>
-<p>The steps to verify the binaries are as follows:</p>
+<p>The following instructions should work as is on Linux/UNIX/OSX.
+Windows users will have to install sha256 and gnupg themselves and use
+the windows cmd terminal to do this.  The steps to verify the binaries
+are as follows:</p>
 <blockquote>
 <p>Step One</p>
 </blockquote>
-<p>Download the file manifest, the signature for the file manifest, and the zip/tarball for your OS from here. Obtain the SHA256 value for the zip/tarball for your OS and check that it matches the value in the file manifest, e.g. for 64-bit Linux:</p>
+<p>Download the file manifest, the signature for the file manifest, and
+the zip/tarball for your OS from here. Obtain the SHA256 value for the
+zip/tarball for your OS and check that it matches the value in the
+file manifest, e.g. for 64-bit Linux:</p>
 <pre><code class="no-highlight">$ sha256sum linux-amd64-20160127-02.tar.gz
 8ffaa268a329890ebf0f96b3cd1bc9f69359e431edbb95d89cec5a605108574b linux-amd64-20160127-02.tar.gz
 </code></pre>
@@ -487,7 +448,14 @@
 <blockquote>
 <p>Step Two</p>
 </blockquote>
-<p>Import the Decred Release Signing Key in GnuPG:</p>
+<p>Compare the value you got in Step One to the value for the file in the
+manifest file.</p>
+<blockquote>
+<p>Step Three</p>
+</blockquote>
+<p>Import the Decred Release Signing Key in GnuPG.  You will only need to
+do this a single time and can skip this when verifying later releases
+on the same computer.</p>
 <pre><code class="no-highlight">$ gpg --keyserver pgp.mit.edu --recv-keys 0x518A031D
 gpg: requesting key 518A031D from hkp server pgp.mit.edu
 gpg: /home/user/.gnupg/trustdb.gpg: trustdb created
@@ -499,7 +467,8 @@ gpg: imported: 1 (RSA: 1)
 <blockquote>
 <p>Step Three</p>
 </blockquote>
-<p>Verify the signature for the file manifest is valid and created by the Decred Release Signing Key:</p>
+<p>Verify the signature for the file manifest is valid and created by the
+Decred Release Signing Key:</p>
 <pre><code class="no-highlight">$ gpg --verify manifest-20160127-02.txt.asc
 gpg: assuming signed data in `manifest-20160127-02.txt'
 gpg: Signature made Wed 27 Jan 2016 08:56:59 PM UTC using RSA key ID 518A031D
@@ -510,7 +479,8 @@ Primary key fingerprint: FD13 B683 5E24 8FAF 4BD1 838D 6DF6 34AA 7608 AF04
 Subkey fingerprint: F516 ADB7 A069 852C 7C28 A02D 6D89 7EDF 518A 031D
 </code></pre>
 
-<p>The zip or tarball with binaries for your platform is now verified and you can be confident they were generated by the Decred Project.</p></div>
+<p>The zip or tarball with binaries for your platform is now verified and
+you can be confident they were generated by the Decred Project.</p></div>
         </div>
 
         <footer class="col-md-12">

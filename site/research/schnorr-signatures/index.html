@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../../advanced/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../advanced/storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../advanced/network-parameters/">Network Parameters</a>
+    <a href="../../advanced/program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../../advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -486,6 +432,7 @@
 </ol>
 <p>In the above, multiplications by a capital letter (e.g., <script type="math/tex">kG</script>) are point multiplications by a scalar, and so always result in a point on the curve. Addition of these points results in another point. Additions and multiplications of scalars amongst themselves is the same as regular multiplication you would do with any integer. It&rsquo;s important to note that multiplying a point by a scalar is considered an irreversible step, because the calculation of the scalar from the new point defaults to the discrete logarithm problem.</p>
 <p>From the above it is clear that <script type="math/tex">r</script> is a point on the curve, while <script type="math/tex">s</script> is a scalar. Consider the group of signers represented by <script type="math/tex">x_{sum} = x_1 + ... + x_n</script> with nonces <script type="math/tex">k_{sum} = k_1 + ... + k_n</script>. The public key for the private scalar sum would be: <script type="math/tex">y = x_{sum} G</script>. The signature for these sums (from all group participants) would be: <script type="math/tex">r' = k_{sum} G s' = k_{sum} - h x_{sum}</script>. To generate this signature all participants would have to share their private key and nonces beforehand. We want to obviously avoid this, so instead let us have each participant create a partial signature. <script type="math/tex">r_n = k_1 G + ... + k_n G = r'</script> (the sum of the public nonce points, which the participants may freely individually publish) <script type="math/tex">s_n = k_n - h x_n</script>. Substituting this into the general formulas for signatures and using point or scalar addition: <script type="math/tex">r = r_n = r'</script> (the same as above) <script type="math/tex">s = s_1 + ... + s_n = s'</script> (simple scalar addition; it must be true that <script type="math/tex">(k_1 - h x_1) + ... + (k_n - h x_n) = s_1 + ... + s_n = s')</script>. Doing an m-of-n signature is non-trivial. It has been suggested that a merkle tree containing all possible public key sums for <script type="math/tex">m</script> participants be used for these cases, generating a <script type="math/tex">log(n)</script> sized signature [28].</p>
+<hr />
 <h2 id="references"><strong><i class="fa fa-book"></i> References</strong><a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <div class="footnote">
 <hr />

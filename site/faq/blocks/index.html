@@ -87,6 +87,12 @@
         
             
 <li >
+    <a href="../../getting-started/user-guides/osx/">OSX</a>
+</li>
+
+        
+            
+<li >
     <a href="../../getting-started/user-guides/web/">Web</a>
 </li>
 
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../../advanced/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../advanced/storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../advanced/network-parameters/">Network Parameters</a>
+    <a href="../../advanced/program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../../advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../advanced/dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -485,13 +431,13 @@
 <h1 id="blocks"><strong><i class="fa fa-cubes"></i> Blocks</strong><a class="headerlink" href="#blocks" title="Permanent link">&para;</a></h1>
 <hr />
 <h4 id="1-can-a-block-become-orphaned-after-being-confirmed-multiple-times"><strong>1. Can a block become orphaned after being confirmed multiple times?</strong><a class="headerlink" href="#1-can-a-block-become-orphaned-after-being-confirmed-multiple-times" title="Permanent link">&para;</a></h4>
-<p>Only if there as a reorg that is sufficiently long<sup id="fnref:8918"><a class="footnote-ref" href="#fn:8918" rel="footnote">1</a></sup>. In order for that to happen, you need more hash power working on the other side of a fork than the hash power that is working on the current best chain.</p>
+<p>Only if there is a reorg that is sufficiently long<sup id="fnref:8918"><a class="footnote-ref" href="#fn:8918" rel="footnote">1</a></sup>. In order for that to happen, you need more hash power working on the other side of a fork than the hash power that is working on the current best chain.</p>
 <hr />
 <h4 id="2-can-we-remove-the-testnet-block-explorer-given-that-one-for-mainnet-is-available"><strong>2. Can we remove the testnet block explorer given that one for mainnet is available?</strong><a class="headerlink" href="#2-can-we-remove-the-testnet-block-explorer-given-that-one-for-mainnet-is-available" title="Permanent link">&para;</a></h4>
 <p>Testnet will continue to be a testing ground for new features, so it makes sense to keep the testnet block explorer<sup id="fnref:9621"><a class="footnote-ref" href="#fn:9621" rel="footnote">2</a></sup> up.</p>
 <hr />
 <h4 id="3-what-do-inf-chan-adding-orphan-block-messages-mean"><strong>3. What do &ldquo;[INF] CHAN: Adding orphan block&rdquo; messages mean?</strong><a class="headerlink" href="#3-what-do-inf-chan-adding-orphan-block-messages-mean" title="Permanent link">&para;</a></h4>
-<p>It just means a block that you do not have the parent for was received<sup id="fnref:14660"><a class="footnote-ref" href="#fn:14660" rel="footnote">3</a></sup>. It pretty much always happens when restarting <code>dcrd</code> due to the way the sync works. You are still syncing up to the latest block, but the remote peer, that is ahead of you, send a notification that a new block showed up, one for which you do not have the parent yet.</p>
+<p>It just means a block that you do not have the parent for was received<sup id="fnref:14660"><a class="footnote-ref" href="#fn:14660" rel="footnote">3</a></sup>. It pretty much always happens when restarting <code>dcrd</code> due to the way the sync works. You are still syncing up to the latest block, but the remote peer, that is ahead of you, sent a notification that a new block showed up, one for which you do not have the parent yet.</p>
 <p>Rather than ignoring it, once you are sufficiently close to being synced, it essentially saves them for later so once you do have the parent blocks those newer block automatically get connected.</p>
 <hr />
 <h4 id="4-should-i-download-the-blockchain-again-with-every-new-software-release"><strong>4. Should I download the blockchain again with every new software release?</strong><a class="headerlink" href="#4-should-i-download-the-blockchain-again-with-every-new-software-release" title="Permanent link">&para;</a></h4>

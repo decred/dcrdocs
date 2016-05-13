@@ -86,6 +86,12 @@
 
         
             
+<li >
+    <a href="../osx/">OSX</a>
+</li>
+
+        
+            
 <li class="active">
     <a href="./">Web</a>
 </li>
@@ -123,93 +129,15 @@
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-work</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Pool Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../../mining/proof-of-work/pool-mining/cgminer/windows/">Windows</a>
+    <a href="../../../mining/proof-of-stake/">Proof-of-work (PoS)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../../mining/proof-of-work/pool-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Solo Mining</a>
-    <ul class="dropdown-menu">
-        
-            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">cgminer</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../../mining/proof-of-work/solo-mining/cgminer/windows/">Windows</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../../mining/proof-of-work/solo-mining/cgminer/linux/">Linux</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
-
-        
-    </ul>
-  </li>
 
                     
                         
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Proof-of-stake</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../../../mining/proof-of-stake/pool-mining/">Pool Mining</a>
+    <a href="../../../mining/proof-of-work/">Proof-of-work (PoW)</a>
 </li>
-
-        
-            
-<li >
-    <a href="../../../mining/proof-of-stake/solo-mining/">Solo Mining</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                     
                     </ul>
@@ -307,13 +235,19 @@
                     
                         
 <li >
+    <a href="../../../advanced/overview/">Overview</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../../advanced/storing-login-details/">Storing Login Details</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../../advanced/network-parameters/">Network Parameters</a>
+    <a href="../../../advanced/program-options/">Program Options</a>
 </li>
 
                     
@@ -326,6 +260,18 @@
                         
 <li >
     <a href="../../../advanced/verifying-binaries/">Verifying Binaries</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../advanced/deleting-your-wallet/">Deleting Your Wallet</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../../advanced/dcrctl-usage/">Advanced dcrctl usage</a>
 </li>
 
                     
@@ -433,7 +379,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../linux/">
+                    <a rel="next" href="../osx/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
@@ -476,27 +422,66 @@
 
 <h1 id="web-client-user-guide"><i class="fa fa-firefox"></i> <strong>Web Client User Guide</strong><a class="headerlink" href="#web-client-user-guide" title="Permanent link">&para;</a></h1>
 <hr />
-<p>There are a couple of things you need to know about the web client before you use it:</p>
+<p>A simple web wallet is available for users who do not want to install
+additional software on their computer.  It is based on
+<a href="https://github.com/bitpay/copay">Copay</a> with Decred specific changes
+added and can be found at
+<a href="https://wallet.decred.org">https://wallet.decred.org</a></p>
+<p>There are a couple of things you need to know about the web client
+before you use it:</p>
 <ul>
-<li>You cannot <a href="../../../mining/overview/#2-proof-of-stake-mining">proof-of-stake mine</a> with it.</li>
-<li>Your wallet is identified by your seed key words, but there is no other authentication at this time. This means that anyone with access to your computer will be able to access your funds in the wallet. However, you can set a password for sending funds.</li>
+<li>You cannot
+  <a href="../../../mining/overview/#2-proof-of-stake-mining">stake mine</a>
+  with it.</li>
+<li>Your wallet is kept entirely in the local storage of your web
+  browser.  This means that is you delete your local storage, you will
+  delete you wallet and must recreate from the seed.</li>
+<li>The security of your wallet depends entirely on the security of your
+  web browser.</li>
+<li>You can put a pin on your wallet to prevent sending funds but any
+  other access is dependant entirely on the access controls on your
+  computer, not on the server or any login details.</li>
 </ul>
 <hr />
 <h2 id="create-your-web-client-wallet"><strong><i class="fa fa-plus-circle"></i> Create your web client wallet</strong><a class="headerlink" href="#create-your-web-client-wallet" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Step One</p>
 </blockquote>
-<p>Go to <a href="https://wallet.decred.org">https://wallet.decred.org</a>. You will be presented with the <code>Terms and Conditions</code> screen. Pay extra attention to the following:</p>
-<p>Just like the command-line wallet, if you lose your seed words or your password for sending funds you will lose access to your wallet. There is no password reset. Also note that all transactions on Decred are irreversible by design. If you accidentally send funds to the wrong address, you will need to ask the recipient to send them back. The developers are unable to reverse transactions. Click <code>I Agree</code> once you have read them. You will now see the welcome screen. If this is the first time you have used Decred, click <code>Get Started</code>. If you want to restore a previously used wallet, click <code>Import Backup</code>. This guide will assume you are just starting out so click <code>Get Started</code>.</p>
+<p>Go to <a href="https://wallet.decred.org">https://wallet.decred.org</a>. You will
+be presented with the <code>Terms and Conditions</code> screen. Pay extra
+attention to the following:</p>
+<p>Just like the command-line wallet, if you lose your seed words or your
+password for sending funds you will lose access to your wallet. There
+is no password reset. Also note that all transactions on Decred are
+irreversible by design. If you accidentally send funds to the wrong
+address, you will need to ask the recipient to send them back. The
+developers are unable to reverse transactions. Click <code>I Agree</code> once
+you have read them. You will now see the welcome screen. If this is
+the first time you have used Decred, click <code>Get Started</code>. If you want
+to restore a previously used wallet, click <code>Import Backup</code>. This guide
+will assume you are just starting out so click <code>Get Started</code>.</p>
 <blockquote>
 <p>Step Two</p>
 </blockquote>
 <p>A wallet will be generated for you and you will see this screen:</p>
-<p>Note that under <code>Personal Wallet</code> on the left it says <code>Testnet</code>. This wallet will only work on the test Decred network which is not very useful to us. Click the dropdown in the top left, then click <code>Add wallet</code>. Click <code>Create New Wallet</code>. Give your wallet a name then click <code>Create New Wallet</code>.</p>
+<p>Note that under <code>Personal Wallet</code> on the left it says <code>Testnet</code>. This
+wallet will only work on the Decred testnet network.  Testnet is meant
+for testing only and coins on testnet have NO value.  Click the
+dropdown in the top left, then click <code>Add wallet</code>. Click <code>Create New
+Wallet</code>. Give your wallet a name then click <code>Create New Wallet</code>.</p>
 <blockquote>
 <p>Step Three</p>
 </blockquote>
-<p>Your wallet is now created and ready to use. However, before you do anything else, you should add a password for sending funds and backup the seed words that were used to create your wallet. This is doubly true for the web client which does not store a permanent record. Your wallet data is stored in the browser cache and can be deleted quite easily. If you are running in incognito mode, it will be deleted as soon as you close the browser. <strong>WITHOUT THESE KEY WORDS YOU LOSE ACCESS TO ALL FUNDS IN YOUR WALLET</strong> should the wallet data be deleted. The funds themselves still exist in the blockchain, however, without the key you cannot access them.</p>
+<p>Your wallet is now created and ready to use. However, before you do
+anything else, you should add a password for sending funds and backup
+the seed words that were used to create your wallet. This is doubly
+true for the web client which does not store a permanent record. Your
+wallet data is stored in the browser cache and can be deleted quite
+easily. If you are running in incognito mode, it will be deleted as
+soon as you close the browser. <strong>WITHOUT THESE KEY WORDS YOU LOSE
+ACCESS TO ALL FUNDS IN YOUR WALLET</strong> should the wallet data be
+deleted. The funds themselves still exist in the blockchain, however,
+without the key you cannot access them.</p>
 <p>Click the <code>Preferences</code> button on the right opposite your wallet name. There are really only three things you will be interested in here:</p>
 <table>
 <thead>
@@ -524,7 +509,14 @@
 <p>Step Four</p>
 </blockquote>
 <p>Click <code>Backup</code>. You will see this screen:</p>
-<p>First of all, read the note. Only use ONE wallet at a time with a given seed (See: <a href="#">FAQ</a>). You can have multiple wallets installed on different machines, but only one of them should be running at any given time. Click <code>Show Wallet Seed</code>. Write this down somewhere safe, or put it in an encrypted document to which you will not forget the password. This list of words is used to generate the authentication key for your wallet. Anyone who possesses this list can access the funds in your wallet.</p>
+<p>First of all, read the note. Only use ONE wallet at a time with a
+given seed (See: <a href="#">FAQ</a>). You can have multiple wallets installed on
+different machines, but only one of them should be running at any
+given time. Click <code>Show Wallet Seed</code>. Write this down somewhere safe,
+or put it in an encrypted document to which you will not forget the
+password. This list of words is used to generate the authentication
+key for your wallet. Anyone who possesses this list can access the
+funds in your wallet.</p>
 <blockquote>
 <p><strong>VERY IMPORTANT</strong></p>
 </blockquote>
@@ -533,29 +525,45 @@
 <blockquote>
 <p>Step Five</p>
 </blockquote>
-<p>Now that you have written down your key words and checked them, do it again. Seriously. This step is critical. Without this list your wallet cannot be reconstructed and no one, not even the developers, can restore it. Now that you are sure the list is stored correctly, click <code>Delete Words</code>. Click <code>Back</code> twice to get to the main wallet screen.</p>
+<p>Now that you have written down your key words and checked them, do it
+again. Seriously. This step is critical. Without this list your wallet
+cannot be reconstructed and no one, not even the developers, can
+restore it. Now that you are sure the list is stored correctly, click
+<code>Delete Words</code>. Click <code>Back</code> twice to get to the main wallet screen.</p>
 <hr />
 <h2 id="send-funds-with-the-web-client"><strong><i class="fa fa-long-arrow-right"></i> Send funds with the web client</strong><a class="headerlink" href="#send-funds-with-the-web-client" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Step One</p>
 </blockquote>
-<p>On the main web wallet page, click the <code>Send</code> button at the bottom. You will be taken to this page. Note the <code>Advanced Options</code> section has already been expanded. In the <code>To</code> field, put in the Decred address of the recipient.</p>
+<p>On the main web wallet page, click the <code>Send</code> button at the
+bottom. You will be taken to this page. Note the <code>Advanced Options</code>
+section has already been expanded. In the <code>To</code> field, put in the
+Decred address of the recipient.</p>
 <blockquote>
 <p>Step Two</p>
 </blockquote>
-<p>In <code>Amount</code>, enter the value in DCR to send to the recipient. If you wish you can type an optional message in the <code>Note</code> field. Press <code>Send</code>. The <code>Use Unconfirmed Funds</code> option lets you use funds that the network knows are being sent to you but have not yet been confirmed by <a href="../../../mining/overview/#1-proof-of-work-mining">proof-of-work miners</a>. If this is turned on and the amount specified can only be covered by using unconfirmed funds, the transaction will not proceed until the required funds have been confirmed.</p>
+<p>In <code>Amount</code>, enter the value in DCR to send to the recipient. If you
+wish you can type an optional message in the <code>Note</code> field. Press
+<code>Send</code>. The <code>Use Unconfirmed Funds</code> option lets you use funds that the
+network knows are being sent to you but have not yet been confirmed by
+<a href="../../../mining/overview/#1-proof-of-work-mining">proof-of-work miners</a>. If
+this is turned on and the amount specified can only be covered by
+using unconfirmed funds, the transaction will not proceed until the
+required funds have been confirmed.</p>
 <hr />
 <h2 id="receive-funds-with-the-web-client"><strong><i class="fa fa-long-arrow-left"></i> Receive funds with the web client</strong><a class="headerlink" href="#receive-funds-with-the-web-client" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Step One</p>
 </blockquote>
-<p>Click the <code>Receive</code> button at the bottom of the window. You will see this screen:</p>
-<p>Give the person sending you DCR the address displayed (it will start with <code>Ds</code>) or they can use the QR code if their wallet or service accepts them. You can use the same address as often as you want, but for privacy it is recommended that you generate a new address each time. Do not worry about being given a duplicate address. There are around <code>2.08x10^93</code> possible addresses, so we will probably reach the heat death of the universe before we run of Decred addresses.</p>
-<blockquote>
-<p><strong>WARNING</strong></p>
-</blockquote>
-<p>The above address is for demonstration purposes only, but is a real address. The wallet it is linked to is temporary and the key has already been deleted. If you try sending DCR to this address it will work and no one will ever be able to access them again.</p>
-<p><strong>DO NOT ATTEMPT TO SEND DCR TO THIS ADDRESS</strong>.</p></div>
+<p>Click the <code>Receive</code> button at the bottom of the window. You will see
+this screen:</p>
+<p>Give the person sending you DCR the address displayed (it will start
+with <code>Ds</code>) or they can use the QR code if their wallet or service
+accepts them. You can use the same address as often as you want, but
+for privacy it is recommended that you generate a new address each
+time. Do not worry about being given a duplicate address. There are
+around <code>2.08x10^93</code> possible addresses, so we will probably reach the
+heat death of the universe before we run out of Decred addresses.</p></div>
         </div>
 
         <footer class="col-md-12">

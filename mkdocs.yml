@@ -27,7 +27,7 @@ pages:
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
 - Mining:
   - 'Overview': 'mining/overview.md'
-  - 'Proof-of-work (PoS)': 'mining/proof-of-stake.md'
+  - 'Proof-of-stake (PoS)': 'mining/proof-of-stake.md'
   - 'Proof-of-work (PoW)': 'mining/proof-of-work.md'
 - FAQ:
   - 'Overview': 'faq/overview.md'

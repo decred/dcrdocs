@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://docs.decred.org/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,7 +13,7 @@
         
     <url>
      <loc>https://docs.decred.org/getting-started/overview/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -25,13 +25,13 @@
         
     <url>
      <loc>https://docs.decred.org/getting-started/obtaining-dcr/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/getting-started/using-the-block-explorer/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -41,19 +41,19 @@
         
     <url>
      <loc>https://docs.decred.org/mining/overview/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/mining/proof-of-stake/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/mining/proof-of-work/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -63,37 +63,37 @@
         
     <url>
      <loc>https://docs.decred.org/faq/overview/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/faq/general/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/faq/configuration/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/faq/wallets-and-seeds/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/faq/web-client/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/faq/blocks/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -105,7 +105,7 @@
         
     <url>
      <loc>https://docs.decred.org/faq/proof-of-work-mining/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -115,43 +115,43 @@
         
     <url>
      <loc>https://docs.decred.org/advanced/overview/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/advanced/storing-login-details/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/advanced/program-options/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/advanced/block-header-specifications/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/advanced/verifying-binaries/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/advanced/deleting-your-wallet/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/advanced/dcrctl-usage/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -161,61 +161,61 @@
         
     <url>
      <loc>https://docs.decred.org/research/overview/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/research/hybrid-design/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/research/decentralized-stake-pooling/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/research/elliptic-curve-signature-algorithms/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/research/blake-256-hash-function/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/research/script-extensions/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/research/signature-script-isolation-and-fraud-proofs/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/research/transaction-extensions/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/research/schnorr-signatures/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/research/miscellaneous-improvements/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -225,13 +225,13 @@
         
     <url>
      <loc>https://docs.decred.org/about/credits/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://docs.decred.org/about/license/</loc>
-     <lastmod>2016-05-23</lastmod>
+     <lastmod>2016-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

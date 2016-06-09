@@ -34,7 +34,7 @@ Proof of Stake mining is the second method of block verification in Decred. It
 is computationally cheap but it requires you to already have some DCR in your
 wallet. In the Decred network, PoW miners solve blocks then turn those blocks
 over to PoS miners to vote on them. When a block is completed, 5 tickets are
-chosen at random from the stake pool to vote on the block. If at least 3 votes
+chosen at random from the ticket pool to vote on the block. If at least 3 votes
 are ‘Yes' then the block is validated, included in the block chain and both
 PoW and PoS miners are paid. If the vote fails, the block is discarded and the
 transactions return to be included in another block. The PoW miners are not

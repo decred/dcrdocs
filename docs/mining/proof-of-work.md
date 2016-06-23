@@ -25,12 +25,12 @@ Follow the [Getting Started](/getting-started/overview.md) guide and create an a
 
 These mining pools are known to support Decred:
 
-* [http://yiimp.ccminer.org](http://yiimp.ccminer.org)
-* [http://coinmine.pl/dcr](http://coinmine.pl/dcr)
-* [https://dcr.maxminers.net](https://dcr.maxminers.net)
-* [https://dcr.suprnova.cc](https://dcr.suprnova.cc)
-* [https://pool.mn/dcr](https://pool.mn/dcr)
-* [https://zpool.ca](https://zpool.ca)
+* [<i class="fa fa-external-link-square"></i> http://yiimp.ccminer.org](http://yiimp.ccminer.org)
+* [<i class="fa fa-external-link-square"></i> http://coinmine.pl/dcr](http://coinmine.pl/dcr)
+* [<i class="fa fa-external-link-square"></i> https://dcr.maxminers.net](https://dcr.maxminers.net)
+* [<i class="fa fa-external-link-square"></i> https://dcr.suprnova.cc](https://dcr.suprnova.cc)
+* [<i class="fa fa-external-link-square"></i> https://pool.mn/dcr](https://pool.mn/dcr)
+* [<i class="fa fa-external-link-square"></i> https://zpool.ca](https://zpool.ca)
 
 Mining pools all work more or less the same but you may wish to sign up at multiple pools and see which one suits you the best.
 

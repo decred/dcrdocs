@@ -58,7 +58,7 @@ extracting tar balls is assumed.
 
 ### 1.4. <i class="fa fa-firefox"></i> [Web](user-guides/web.md)
 
-This section describtes the web wallet.  The web wallet is a basic
+This section describes the web wallet.  The web wallet is a basic
 online wallet that allows you to send and receive DCR. It is still
 under development and so lacks a number of features that are in the
 command line wallet (for example, stake mining is not currently
@@ -68,7 +68,7 @@ supported).
 
 ## **2. <i class="fa fa-exchange"></i> [Obtaining DCR](obtaining-dcr.md)**
 
-This section describes some of the ways to aquire DCR..
+This section describes some of the ways to aquire DCR.
 
 ---
 

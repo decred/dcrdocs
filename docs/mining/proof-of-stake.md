@@ -51,6 +51,7 @@ administration labor.
 These stake pools are officially recognized:
 
 * [<i class="fa fa-external-link-square"></i> https://dcr.stakepool.net](https://dcr.stakepool.net)
+* [<i class="fa fa-external-link-square"></i> https://decredstakepool.com](https://decredstakepool.com)
 * [<i class="fa fa-external-link-square"></i> https://dcr.stakeminer.com](https://dcr.stakeminer.com)
 * [<i class="fa fa-external-link-square"></i> http://pool.d3c.red](http://pool.d3c.red)
 * [<i class="fa fa-external-link-square"></i> https://dcrstakes.com](https://dcrstakes.com)

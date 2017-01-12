@@ -248,10 +248,10 @@ Decred. Open a third terminal and go to your Decred directory. Type in
 (once again using your values for the square brackets):
 
 ```no-highlight
-~/Decred/$ ./dcrctl -u [daemon username] -P [daemon password] --wallet walletpassphrase [wallet password] 0
+~/Decred/$ ./dcrctl -u [wallet username] -P [wallet password] --wallet walletpassphrase [wallet password] 0
 ```
 
-What we are doing here is authenticating with the daemon and using the
+What we are doing here is authenticating with the wallet and using the
 `--wallet` command to send the wallet password to unlock the
 wallet. The `0` means unlock without a time limit. Do note, however,
 that this only unlocks the wallet for the current session. If you

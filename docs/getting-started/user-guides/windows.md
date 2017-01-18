@@ -250,7 +250,7 @@ Decred. Open a third command prompt in your Decred folder. Type in
 (once again using your values for the square brackets):
 
 ```no-highlight
-C:\Decred> dcrctl -u [daemon username] -P [daemon password] --wallet walletpassphrase [wallet password] 0
+C:\Decred> dcrctl -u [wallet username] -P [wallet password] --wallet walletpassphrase [wallet password] 0
 ```
 
 What we are doing here is authenticating with the daemon and using the

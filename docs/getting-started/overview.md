@@ -4,13 +4,13 @@
 
 The first thing you will need to do to get started with Decred is
 create your wallet. Your wallet is like a bank account. It can contain
-many address and like your bank account you don't want to give anyone
+many addresses and like your bank account you don't want to give anyone
 else access to it. An address is like a sub account. If you want to
 receive DCR from someone else, you give them an address that is linked
 to your wallet. You can create a new address for each transaction or
 reuse the same address multiple times but it is strongly recommended
 that you do not reuse addresses. Your wallet can generate as many
-address as you want.  There are three parts to getting started with
+address as you want. There are three parts to getting started with
 Decred:
 
 * Connecting to the Decred network by starting a node.

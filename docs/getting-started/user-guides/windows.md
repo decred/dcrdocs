@@ -6,6 +6,11 @@
 
 > Step One
 
+Paymetheus Users  
+You will already have the dcrd program installed as part of the Paymetheus package.
+Open Windows Explorer and navigate to "C:\Program Files\Decred\Paymetheus". Then,
+in the location bar at the top, type in "cmd" and press Enter. Continue to Step 2.
+
 Download the latest Decred software from the
 [Decred releases page](https://github.com/decred/decred-release/releases). Choose
 the zip for either `decred-[version]-windows-386-[date]` if you have a
@@ -64,6 +69,10 @@ quite some time as the block height grows larger (there is no
 limit). Note that you are not mining at this point, you are just
 connected to the network. This connection will be used in the future.
 You must leave this cmd window open to use the wallet.
+
+Paymetheus Users  
+You have completed the connection that Paymetheus requires to connect to the network. You may return to the 
+[Paymetheus guide](paymetheus.md).
 
 ---
 

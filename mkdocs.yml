@@ -29,6 +29,14 @@ pages:
   - 'Overview': 'mining/overview.md'
   - 'Proof-of-stake (PoS)': 'mining/proof-of-stake.md'
   - 'Proof-of-work (PoW)': 'mining/proof-of-work.md'
+  - User Guides:
+    - cgminer:
+      - Pool-Mining:
+        - 'Linux Guide': 'mining/proof-of-work/pool-mining/cgminer/linux.md'
+        - 'Windows Guide': 'mining/proof-of-work/pool-mining/cgminer/windows.md'
+      - Solo-Mining:
+        - 'Linux Guide': 'mining/proof-of-work/solo-mining/cgminer/linux.md'
+        - 'Windows Guide': 'mining/proof-of-work/solo-mining/cgminer/windows.md'
 - FAQ:
   - 'Overview': 'faq/overview.md'
   - 'General': 'faq/general.md'

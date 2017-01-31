@@ -4,6 +4,7 @@ site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
 markdown_extensions:
   - footnotes
+  - fontawesome_markdown
   - smarty
   - mdx_math
   - toc:
@@ -12,7 +13,6 @@ markdown_extensions:
 extra_javascript:
     - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 extra_css:
-    - https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
     - css/style.css
 pages:
 - Home: 'index.md'

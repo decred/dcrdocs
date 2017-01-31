@@ -34,3 +34,90 @@
     content: "\e902";
 }
 
+/* karambles additional css for new theme */
+
+body {
+	background-color: #FFFFFF;
+	color: #5a6d81;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	color: #2970ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 rgba(0,0,0,0.0);
+}
+
+hr {
+	border-top: 1px solid #e2e2e2;
+}
+
+code {
+	background-color: #0c1e3e;
+	color: #ffffff;
+	border: 1px solid #2ed8a3;
+}
+a {
+	color: #2970ff;
+}
+a:hover, a:focus {
+	color: #2970ff;
+}
+
+.well {
+	background-color: #2970ff;
+	border: 0;
+}
+
+.nav > li > a {
+	color: #ffffff;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: #0c1e3e;
+}
+
+.navbar {
+	background-image: linear-gradient(#0c1e3e,#102853 60%,#15346d);
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	background-color: #2970ff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #0c1e3e;
+}
+
+.dropdown-menu {
+	background-color: #2970ff;
+}
+
+.dropdown-menu > li > a {
+	color: #ffffff;
+}
+
+.dropdown-submenu > a::after {
+	border-left-color: #ffffff;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	background-color: #0c1e3e;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	background-color: #2767e9;
+}
+
+
+
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color: #2767e9;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+	background-color: #0c1e3e;
+	color: #ffffff;
+}

@@ -30,6 +30,9 @@ pages:
   - 'Proof-of-stake (PoS)': 'mining/proof-of-stake.md'
   - 'Proof-of-work (PoW)': 'mining/proof-of-work.md'
   - User Guides:
+    - gominer:
+      - Pool-Mining:
+        - 'Windows Guide': 'mining/proof-of-work/pool-mining/gominer/windows.md'
     - cgminer:
       - Pool-Mining:
         - 'Linux Guide': 'mining/proof-of-work/pool-mining/cgminer/linux.md'

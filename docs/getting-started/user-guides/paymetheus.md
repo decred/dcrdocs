@@ -9,23 +9,27 @@ About the only thing Paymetheus doesn't do is PoS voting.
 ## **Download and Install** ##
 The first thing you'll need to do is get a copy of Paymetheus. You will find the downloads [here](https://github.com/decred/decred-binaries/releases). 
 Download the file for your operating system and install. Once you're done, run the 'Decred' program.
-You'll notice a program called "Paymetheus Standalone". This does not include the 'dcrd' program 
-required to connect to the Decred network, so don't use this one.
+You'll notice a program called "Paymetheus Standalone". This is for people who are
+running a seperate 'dcrd' server. You might want to do this for solo [Proof of Stake](/mining/proof-of-stake.md) mining.
 
 ---
 
 ## **Start Paymetheus** ##
-You're now ready to start using Decred! Start Paymetheus Standalone. You will now see the connection screen:  
+You're now ready to start using Decred! Start the 'Decred' program. You will now see the connection screen:  
 
 ![Paymetheus connection screen](../../img/Paymetheus-dcrd-login.png)  
 
-Paymetheus comes with a dcrd server built in so just press Continue.
+>Two programs are actually running when you start Decred. There's 'Paymetheus' which is the graphical wallet we'll talk further about
+>and 'dcrd' which is the communications program that actually talks to the Decred network. This means that you can run dcrd
+>on another computer (such as an always on server) and then use Paymetheus to connect to it remotely.
+
+We're just going to use a local one here so just press Continue.
 
 ---
 
 ## **Create or Restore Wallet** ##
 You will now have the option to create a new wallet or restore a wallet from a seed. If you're reading this, you're probably new and don't 
-already have a wallet so let's create a new one. If you click restore, you will be asked to enter your seed words instead of being given a new list.
+already have a wallet so let's create a new one. If you click restore, you will be asked to enter your seed words instead of being given a new seed.
 The rest of the process is the same. Click "Create a new wallet". You will see the following screen:  
 ![Paymetheus wallet creation screen](/img/Paymetheus-seed-window.png)  
 
@@ -45,16 +49,18 @@ somewhere secure and also store them in an ENCRYPTED file on your computer. Clou
 can access them which is why you should encrypt the file (MS Word or Libre/OpenOffice can do this).  
 
 Okay, so you've secured your key words in at least two different places. Click Continue. You are now asked to type them back in to ensure you have written 
-them down correctly in case you need to restore your wallet later. Note you can't paste them; you will need to type them. Do so and click Confirm. 
-This is tedious, but it's to make sure you have the words correct.  
+them down correctly in case you need to restore your wallet later. Note you can't paste them; you will need to type them. 
+This is to make sure you have the words saved somewhere other than the clipboard. Do so and click Confirm.
 
 ---
 
 ## **Choose a Private Wallet Passphrase** ##
-Enter a passphrase to use whenever you send coins or sign transactions. There is also the option here for a public passphrase which can protect your wallet 
-in case it's compromised. If you secure your wallet key words and don't give them to anyone this step is usually overkill, so you can leave it unticked.
-Once you've entered your new passphrase, click Encrypt.  
+Enter a passphrase to use whenever you create a transaction on the network. There is also the option here for a public passphrase. This encrypts your wallet
+data file on your computer. It just prevents someone from viewing your accounts and transactions should they get access to it. As long as the database is locked,
+they cannot access your funds. For most people this step is usually overkill, so you can leave it unticked.
+Once you've entered your new private (and optional public) passphrase, click Encrypt.  
 
 Your wallet will now create and synchronize to the blockchain. This can take a few minutes on slower computers. Note that the key words you wrote down will 
 work with any Decred wallet application, not just Paymetheus.
 
+Continue to [Using Paymetheus](using-paymetheus.md)

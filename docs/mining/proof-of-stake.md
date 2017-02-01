@@ -296,9 +296,9 @@ Some other details to keep in mind are:
 * Tickets take 256 blocks (about a day) to mature. During this time the stake price you paid will not be visible in your total balance.
 * You can keep track of your tickets' status by periodically running:
 
-  ```no-highlight
-  dcrctl --wallet getstakeinfo
-  ```
+```no-highlight
+dcrctl --wallet getstakeinfo
+```
 
   or by inspecting the Stake Mining tab in Paymetheus.
 

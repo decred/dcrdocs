@@ -17,6 +17,7 @@ extra_css:
 pages:
 - Home: 'index.md'
 - Getting Started:
+  - 'Download and Install Decred': 'getting-started/install-guide.md'
   - 'Overview': 'getting-started/overview.md'
   - User Guides:
     - 'Windows Command Line': 'getting-started/user-guides/windows.md'

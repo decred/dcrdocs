@@ -1,0 +1,126 @@
+# Installation Guide
+
+This guide was last updated for v0.7.0.
+
+---
+
+There are four methods for downloading and installing the Decred software. One is via dcrinstall (cross-platform), one is via the Windows Installer (Windows only of course, and the only way to get Paymetheus as of v0.7.0), another is via the precompiled binary releases (cross-platform), and the other is building the software yourself. The first three methods will be covered here and the fourth may be added at a later date.
+
+## dcrinstall
+
+`dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binaries are provided for Windows, OSX/macOS, Linux, OpenBSD, and FreeBSD. Executing installer will install `dcrd`, `dcrwallet`, `dcrctl`, and `dcrticketbuyer`. Instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
+
+> OSX/macOS:
+
+1. Download the correct file:
+
+    For 32-bit computers, download the `dcrinstall-darwin-386-v0.7.0` file. <br />
+    For 64-bit computers, download the `dcrinstall-darwin-amd64-v0.7.0` file.
+
+2. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal:
+
+    Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
+    
+    `cd ~/Downloads/` <br />
+    `chmod u+x dcrinstall-darwin-amd64-v0.7.0` <br />
+    `./dcrinstall-darwin-amd64-v0.7.0`
+    
+3. The binaries for `dcrd`, `dcrwallet`, `dcrctl`, and `dcrticketbuyer` can then be found in the `~/decred/` directory.
+
+> Linux:
+
+1. Download the correct file:
+
+    For 32-bit computers, download the `dcrinstall-linux-386-v0.7.0` file. <br />
+    For 64-bit computers, download the `dcrinstall-linux-amd64-v0.7.0` file. <br />
+    For 32-bit ARM computers, download the `dcrinstall-linux-arm-v0.7.0` file. <br />
+    For 64-bit ARM computers, download the `dcrinstall-linux-arm64-v0.7.0` file.
+
+2. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal:
+
+    Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
+    
+    `cd ~/Downloads/` <br />
+    `chmod u+x dcrinstall-darwin-amd64-v0.7.0` <br />
+    `./dcrinstall-darwin-amd64-v0.7.0` 
+    
+3. The binaries for `dcrd`, `dcrwallet`, `dcrctl`, and `dcrticketbuyer` can then be found in the `~/decred/` directory.
+
+> Windows:
+
+1. Download the correct file:
+
+    For 32-bit computers, download the `dcrinstall-windows-386-v0.7.0.exe` file. <br /> 
+    For 64-bit computers, download the `dcrinstall-windows-amd64-v0.7.0.exe` file. <br />
+
+2.  Run the dcrinstall executable file.
+
+    You can either double click it or run it from the Command Prompt. 
+    
+3. The binaries for `dcrd`, `dcrwallet`, `dcrctl`, and `dcrticketbuyer` can then be found in the `%HOMEPATH%\decred\` directory (usually %HOMEPATH% is `C:\Users\username`).
+
+## Binary Releases
+
+The newest Binary Releases can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). With the exception of the `.msi` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be unzip and go, instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
+
+> OSX/macOS
+
+1. Download the correct file:
+
+    For 32-bit computers, download the `decred-darwin-386-v0.7.0.tar.gz` file. <br />
+    For 64-bit computers, download the `decred-darwin-amd64-v0.7.0.tar.gz` file.
+
+2. Navigate to download location and open the .tar file:
+
+    Finder: simply double click on the .tar file. <br />
+    Terminal: use the `tar -xvf filename` command. 
+    
+    Both of these should extract the tar into a folder that shares the same name. (`e.g. tar -xvf decred-darwin-amd64-v0.7.0.tar` should extract to `decred-darwin-amd64-v0.7.0`). It should include `dcrctl`, `dcrd`, `dcrticketbuyer`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, `sample-dcrwallet.conf`, and `ticketbuyer-example.conf`.
+
+
+> Linux
+
+1. Download the correct file:
+
+    For 32-bit computers, download the `decred-linux-386-v0.7.0.tar.gz` file. <br />
+    For 64-bit computers, download the `decred-darwin-amd64-v0.7.0.tar.gz` file. <br />
+    For 32-bit ARM computers, download the `decred-linux-arm-v0.7.0.tar.gz` file. <br />
+    For 64-bit ARM computers, download the `decred-linux-arm64-v0.7.0.tar.gz` file.
+
+2. Navigate to download location and open the .tar file:
+
+    Finder: simply double click on the .tar file. <br />
+    Terminal: use the `tar -xvf filename` command. 
+    
+    Both of these should extract the tar into a folder that shares the same name. (`e.g. tar -xvf decred-darwin-amd64-v0.7.0.tar` should extract to `decred-darwin-amd64-v0.7.0`). It should include `dcrctl`, `dcrd`, `dcrticketbuyer`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, `sample-dcrwallet.conf`, and `ticketbuyer-example.conf`.
+
+> Windows
+
+Note: Windows 7/8/10 natively provides support for `.zip` files, therefore it is preferable to use the `.zip` file so that third-party applications aren't required for the `.tar.gz` file. Instructions are provided for the `.zip` file.
+
+1. Download the correct file:
+
+    For 32-bit computers, download the `decred-windows-386-v0.7.0.zip` file. <br />
+    For 64-bit computers, download the `decred-windows-amd64-v0.7.0.zip` file.
+
+2. Navigate to download location and unzip the `.zip` file:
+
+    File Explorer: Right click on the .zip file, select "Extract All.." and a prompt should open asking for the directory to use. The default will extract the `.zip` to a folder with the same name. It should include `dcrctl`, `dcrd`, `dcrticketbuyer`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, `sample-dcrwallet.conf`, and `ticketbuyer-example.conf`.
+
+If you decide to download the `.tar.gz` file, it will require two separate extractions in some third-party application (7-zip, winRAR, etc..) to get to the actual binaries.
+
+## Windows Installer
+
+The Windows Installer (`.msi` file) located here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases) will install Paymetheus and Dcrticketbuyer to your computer's Program Files. As of the v0.7.0 release, this is the only way to get Paymetheus (the Windows GUI Decred wallet/node). Installation is pretty straightforward, but instructions are provided below:
+
+1. Download the correct file:
+
+    For 32-bit computers, download the `decred_0.7.0-beta_x86.msi` file. <br />
+    For 64-bit computers, download the `decred_0.7.0-beta_x64.msi` file.
+
+2. Navigate to download location and open the `.msi` file.
+
+3. Follow the installation steps. Within this process you'll be prompted to accept an End-User License Agreement, and be able to select which of the features you wish to install (Paymetheus and/or Dcrticketbuyer).
+
+4. After setup, the features should be installed to your `..\Program Files\Decred\` folder and accessible through the Start Menu (look for `Decred` in the Program list).
+

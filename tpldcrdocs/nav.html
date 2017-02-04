@@ -1,0 +1,76 @@
+<div class="navbar {% if config.extra.theme_inverse %}navbar-inverse{% else %}navbar-default{% endif %} navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            {%- block site_name %}
+            <a class="navbar-brand" href="{{ nav.homepage.url }}">
+               <svg class="svg-decred-logo">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ base_url }}/img/sprites.svg#decred-logo"></use>
+               </svg>
+            </a>
+            {%- endblock %}
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+
+            {%- block site_nav %}
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+             {%- block search_button %}
+                <li>
+                    <a class="hide-search" href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                     <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">
+                           <svg class="svg-search">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ base_url }}/img/sprites.svg#svg-search"></use>
+                           </svg>
+                        </span>
+                        <input id="searchGone" autocomplete="off" type="text" class="form-control" placeholder="Search" data-toggle="modal" data-target="#myModal">
+                     </div>
+                    </a>
+                </li>
+                {%- endblock %}
+            </ul>
+
+            {%- endblock %}
+                   <div class="col-md-3 visible-xs">
+                <div class="bs-sidebar hidden-print affix well" role="complementary">
+                    <ul class="nav bs-sidenav">
+                  {% for nav_item in nav %}
+                    <li>{% include "toc.html" %}<li>
+                  {% endfor %}
+                </ul>
+                </div>
+                </div>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                {%- block repo %}
+                {% if config.repo_url %}
+                <li>
+                    <a class="github-logo hidden-xs" href="{{ config.repo_url }}">
+                        {% if config.repo_name == 'GitHub' %}
+                            <i class="fa fa-github"></i>
+                        {% elif config.repo_name == 'Bitbucket' %}
+                            <i class="fa fa-bitbucket"></i>
+                        {% endif %}
+                        {{ config.repo_name }}
+                    </a>
+                </li>
+                {% endif %}
+                {%- endblock %}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -4,7 +4,7 @@ This guide was last updated for v0.7.0.
 
 ---
 
-There are four methods for downloading and installing the Decred software. One is via dcrinstall (cross-platform), one is via the Windows Installer (Windows only of course, and the only way to get Paymetheus as of v0.7.0), another is via the precompiled binary releases (cross-platform), and the other is building the software yourself. The first three methods will be covered here and the fourth may be added at a later date.
+There are four methods for downloading and installing the Decred software. One is via dcrinstall (cross-platform), one is via the Windows Installer (Windows only of course, and the only way to get Paymetheus as of v0.7.0), another is via the precompiled binary releases (cross-platform), and the other is building the software yourself (cross-platform). The first three methods will be covered here and the fourth may be added at a later date.
 
 ## dcrinstall
 
@@ -70,12 +70,14 @@ The newest Binary Releases can be found here: [https://github.com/decred/decred-
     For 32-bit computers, download the `decred-darwin-386-v0.7.0.tar.gz` file. <br />
     For 64-bit computers, download the `decred-darwin-amd64-v0.7.0.tar.gz` file.
 
-2. Navigate to download location and open the .tar file:
+2. Navigate to download location and extract the .tar.gz file:
 
-    Finder: simply double click on the .tar file. <br />
-    Terminal: use the `tar -xvf filename` command. 
+    Finder: simply double click on the .tar.gz file. <br />
+    Terminal: use the `tar -xvzf filename.tar.gz` command. 
+
+    **NOTE**: If you are using Safari on macOS Sierra and have the 'Open "safe" files after downloading' preference enabled, .gz and .zip files are automatically uncompressed after download. The `tar -xvzf filename.tar.gz` command results in this error: `tar: Error opening archive: Failed to open 'filename.tar.gz'`. Use `tar -xvzf filename.tar` instead (remove the .gz from the previous command).
     
-    Both of these should extract the tar into a folder that shares the same name. (`e.g. tar -xvf decred-darwin-amd64-v0.7.0.tar` should extract to `decred-darwin-amd64-v0.7.0`). It should include `dcrctl`, `dcrd`, `dcrticketbuyer`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, `sample-dcrwallet.conf`, and `ticketbuyer-example.conf`.
+    Both of these should extract the tar into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v0.7.0.tar.gz` should extract to `decred-darwin-amd64-v0.7.0`). It should include `dcrctl`, `dcrd`, `dcrticketbuyer`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, `sample-dcrwallet.conf`, and `ticketbuyer-example.conf`.
 
 
 > Linux
@@ -87,12 +89,12 @@ The newest Binary Releases can be found here: [https://github.com/decred/decred-
     For 32-bit ARM computers, download the `decred-linux-arm-v0.7.0.tar.gz` file. <br />
     For 64-bit ARM computers, download the `decred-linux-arm64-v0.7.0.tar.gz` file.
 
-2. Navigate to download location and open the .tar file:
+2. Navigate to download location and extract the .tar.gz file:
 
-    Finder: simply double click on the .tar file. <br />
-    Terminal: use the `tar -xvf filename` command. 
+    Finder: simply double click on the .tar.gz file. <br />
+    Terminal: use the `tar -xvzf filename.tar.gz` command. 
     
-    Both of these should extract the tar into a folder that shares the same name. (`e.g. tar -xvf decred-darwin-amd64-v0.7.0.tar` should extract to `decred-darwin-amd64-v0.7.0`). It should include `dcrctl`, `dcrd`, `dcrticketbuyer`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, `sample-dcrwallet.conf`, and `ticketbuyer-example.conf`.
+    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v0.7.0.tar.gz` should extract to `decred-darwin-amd64-v0.7.0`). It should include `dcrctl`, `dcrd`, `dcrticketbuyer`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, `sample-dcrwallet.conf`, and `ticketbuyer-example.conf`.
 
 > Windows
 
@@ -111,7 +113,7 @@ If you decide to download the `.tar.gz` file, it will require two separate extra
 
 ## Windows Installer
 
-The Windows Installer (`.msi` file) located here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases) will install Paymetheus and Dcrticketbuyer to your computer's Program Files. As of the v0.7.0 release, this is the only way to get Paymetheus (the Windows GUI Decred wallet/node). Installation is pretty straightforward, but instructions are provided below:
+The Windows Installer (`.msi` file) is located here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). It will install Paymetheus and Dcrticketbuyer to your computer's Program Files. As of the v0.7.0 release, this is the only way to get Paymetheus (the Windows GUI Decred wallet/node). Installation is pretty straightforward, but instructions are provided below:
 
 1. Download the correct file:
 

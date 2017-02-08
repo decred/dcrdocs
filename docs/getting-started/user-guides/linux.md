@@ -6,15 +6,13 @@
 
 > Step One
 
-Download the latest Decred software from the
-[Decred releases page](https://github.com/decred/decred-release/releases). Extract
-it to a directory (e.g., `~/Decred`). Open three command terminals. If
-you are running in headless mode via SSH, you will need to use a
-terminal multiplexer such as `screen`
-([How do I use `screen`?](http://www.howtogeek.com/howto/ubuntu/keep-your-ssh-session-running-when-you-disconnect/))
-or [`tmux`](https://tmux.github.io/). Where you see the instruction to
-move to another terminal, you'll need to start a new window in screen
-or tmux..
+Follow the steps in the following link to [Download and Install Decred](/getting-started/install-guide.md).
+
+*If you are running in headless mode via SSH,* you
+will need to use a terminal multiplexer such as [**screen**](http://www.howtogeek.com/howto/ubuntu/keep-your-ssh-session-running-when-you-disconnect/)
+or [**tmux**](https://tmux.github.io/). Where you see the instruction to
+move to another terminal, you'll need to start a new window in `screen`
+or `tmux`.
 
 > Step Two
 

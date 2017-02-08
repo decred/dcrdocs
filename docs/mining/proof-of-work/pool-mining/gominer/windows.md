@@ -13,12 +13,12 @@ Last updated for gominer v0.6.0.
 
 Visit [https://github.com/decred/decred-binaries/releases/tag/v0.6.1](https://github.com/decred/decred-binaries/releases/tag/v0.6.1) to download the gominer Windows binaries. Within the "Downloads" section you should see the following files:
 
-- `gominer-windows-amd64-cuda-v0.6.0.zip`,     
-- `gominer-windows-amd64-opencl-v0.6.0.zip`,    
+- `gominer-windows-amd64-cuda-v0.6.0.zip`,
+- `gominer-windows-amd64-opencl-v0.6.0.zip`,
 - `gominer-windows-amd64-opencladl-v0.6.0.zip`.
 
-For NVIDIA graphics cards, download the `*-cuda-*.zip` file.     
-For AMD graphics cards from the Radeon and FirePro lines, download the `*-opencladl-*.zip` file.     
+For NVIDIA graphics cards, download the `*-cuda-*.zip` file. <br />
+For AMD graphics cards from the Radeon and FirePro lines, download the `*-opencladl-*.zip` file. <br />
 For other graphics cards, download `*-opencl-*.zip` file.
 
 Extract or Copy all of the files to a new folder. Either remember the pathname to this folder, or open a new File Explorer window to view the contents of the folder (For the rest of this tutorial, we will use `C:\decred\gominer\` as an example). The contents of this folder should be `blake256.cl`, `gominer.exe`, `LICENSE`, `README.md`, and `sample-gominer.conf`.
@@ -27,21 +27,21 @@ Extract or Copy all of the files to a new folder. Either remember the pathname t
 
 For those who are new, please familiarize yourself with some methods to open a command prompt at a specific directory (folder):
 
-- In File Explorer, navigate to specific folder, type `cmd` into the address bar, and press enter.    
-- In File Explorer, navigate to specific folder, click the "File" dropdown, navigate to the "Open command prompt" option, and select "Open command prompt".      
+- In File Explorer, navigate to specific folder, type `cmd` into the address bar, and press enter.
+- In File Explorer, navigate to specific folder, click the "File" dropdown, navigate to the "Open command prompt" option, and select "Open command prompt".
 - Click the start menu or press the Windows key on your keyboard, type `cmd`, and open the "Command Prompt" Desktop App that should appear in the search results. Change the current directory to a specific folder by using the `cd` command, `e.g. cd C:\decred\gominer\`. The `dir` command by itself can be used to see the contents of the current directory.
 
 ### **Setup *gominer* Configuration File**
 
 > Step 1: Choose Mining Pool
 
-Before we begin this step, it is important that you've already signed up for a mining pool account (if required by your chosen mining pool, you'll have to create a worker at the pool's website). Record your worker's login and password, and the pool's stratum+tcp address:port for later use. 
+Before we begin this step, it is important that you've already signed up for a mining pool account (if required by your chosen mining pool, you'll have to create a worker at the pool's website). Record your worker's login and password, and the pool's stratum+tcp address:port for later use.
 
 If this is new to you, here are a few guides for creating workers on some of the Decred mining pools (WARNING: do not forget your PIN you set during account creation - you will be unable to withdraw any mined DCR without it):
 
-- [https://dcr.maxminers.net/index.php?page=gettingstarted](https://dcr.maxminers.net/index.php?page=gettingstarted)    
-- [https://dcr.suprnova.cc/index.php?page=gettingstarted](https://dcr.suprnova.cc/index.php?page=gettingstarted)    
-- [https://www2.coinmine.pl/dcr/index.php?page=gettingstarted](https://www2.coinmine.pl/dcr/index.php?page=gettingstarted)    
+- [https://dcr.maxminers.net/index.php?page=gettingstarted](https://dcr.maxminers.net/index.php?page=gettingstarted)
+- [https://dcr.suprnova.cc/index.php?page=gettingstarted](https://dcr.suprnova.cc/index.php?page=gettingstarted)
+- [https://www2.coinmine.pl/dcr/index.php?page=gettingstarted](https://www2.coinmine.pl/dcr/index.php?page=gettingstarted)
 - [https://pool.mn/dcr/index.php?page=gettingstarted](https://pool.mn/dcr/index.php?page=gettingstarted)
 
 > Step 2: Verify Device ID#
@@ -56,10 +56,10 @@ Within the "General settings" section:
 
 - set `devices=` to the Device ID#(s) recorded by using the `gominer.exe -l` command in the Step 2. Multiple devices should be separated by comma, e.g. `devices=2,3`.
 
-Within the "Mining settings" section: 
+Within the "Mining settings" section:
 
 - set `pool=` to the stratum+tcp address:port of the mining pool of your choice, e.g. decredpool.org uses `stratum+tcp://stratum.decredpool.org:3333` (WARNING: the http://address:port will not work with gominer - stratum+tcp *must* be used).
-- set `pooluser=` to your worker's login. 
+- set `pooluser=` to your worker's login.
 - set `poolpass=` to your worker's password.
 
 After these changes have been made, Save As or Save + Rename the file as gominer.conf.

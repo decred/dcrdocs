@@ -65,7 +65,7 @@ cgminer is a popular miner for **AMD** GPUs that has a long history of use in ma
 
 ccminer is a popular miner for **NVIDIA** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
 
-**Official builds of ccminer and cgminer are available on GitHub from the following link:     
+**Official builds of ccminer and cgminer are available on GitHub from the following link: <br />
 [https://github.com/decred/decred-release/releases/tag/v0.1.0_miners](https://github.com/decred/decred-release/releases/tag/v0.1.0_miners)**
 
 > Unofficial Miners

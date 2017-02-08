@@ -19,7 +19,9 @@ pages:
 - Getting Started:
   - 'Overview': 'getting-started/overview.md'
   - User Guides:
-    - 'Windows': 'getting-started/user-guides/windows.md'
+    - 'Windows Command Line': 'getting-started/user-guides/windows.md'
+    - 'Paymetheus: Windows GUI': 'getting-started/user-guides/paymetheus.md'
+    - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
     - 'Linux': 'getting-started/user-guides/linux.md'
     - 'OSX': 'getting-started/user-guides/osx.md'
     - 'Web': 'getting-started/user-guides/web.md'

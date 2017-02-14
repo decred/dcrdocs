@@ -1,4 +1,4 @@
-# ** Proof-of-work (PoW) Mining**
+# ** Proof-of-Work (PoW) Mining**
 
 ---
 
@@ -15,16 +15,17 @@ Pool mining distributes shares based on blocks found so you can earn a steady am
 
 ---
 
-## Obtain a Decred address to receive funds to
+## Obtain a Decred Address to Receive Funds With
 
 Follow the [Getting Started](/getting-started/overview.md) guide and create an address so you can withdraw mining rewards to it.
 
 ---
 
-## **<i class="fa fa-life-ring"></i> Sign up for a mining pool**
+## **<i class="fa fa-life-ring"></i> Sign up for a Mining Pool**
 
 These mining pools are known to support Decred:
 
+* [<i class="fa fa-external-link-square"></i> http://decredpool.org](http://decredpool.org)
 * [<i class="fa fa-external-link-square"></i> http://yiimp.ccminer.org](http://yiimp.ccminer.org)
 * [<i class="fa fa-external-link-square"></i> http://coinmine.pl/dcr](http://coinmine.pl/dcr)
 * [<i class="fa fa-external-link-square"></i> https://dcr.maxminers.net](https://dcr.maxminers.net)
@@ -34,25 +35,38 @@ These mining pools are known to support Decred:
 
 Mining pools all work more or less the same but you may wish to sign up at multiple pools and see which one suits you the best.
 
+Please choose to mine on a smaller pool so the network's hashrate can be spread out for better decentralization of mining power!
+
 ---
 
-## ** GPU drivers/software **
+## ** GPU Drivers/Software **
 
 GPU drivers usually contain the libraries needed for mining.  If you have difficulties running the software you may wish to re-install and specifically check that the OpenCL (AMD) or CUDA (NVIDIA) libraries are selected.
 
 ---
 
-## **<i class="fa fa-download"></i> Select and download mining software **
+## **<i class="fa fa-download"></i> Select and Download Mining Software **
 
 > Official Decred Mining Software Builds
 
-Official builds of ccminer and cgminer are available on GitHub at the following URL:
+#### **[<i class="fa fa-github"></i> gominer](https://github.com/decred/gominer)**
 
-[<i class="fa fa-download"></i> https://github.com/decred/decred-release/releases/tag/v0.1.0_miners](https://github.com/decred/decred-release/releases/tag/v0.1.0_miners)
+It is recommended that everyone use gominer for Decred. This is the easiest miner to setup and start mining. Currently, the latest version of gominer is **[<i class="fa fa-github"></i>v0.6.0](https://github.com/decred/gominer/releases)** and the official binaries can be downloaded from **[https://github.com/decred/decred-binaries/releases/tag/v0.6.1](https://github.com/decred/decred-binaries/releases/tag/v0.6.1)**
 
-Those with an **AMD** graphics card should download **[<i class="fa fa-github"></i> cgminer](https://github.com/decred/cgminer)** for their operating system.
+Please be certain to select the correct operating system (Windows/Linux) and the correct version for your GPU type (CUDA for NVIDIA cards, OpenCL/OpenCLADL for AMD cards). gominer is only available to 64-bit operating systems. User guides to start mining with gominer can be found here: 
 
-Those with an **NVIDIA** graphics card should download **[<i class="fa fa-github"></i> ccminer](https://github.com/decred/ccminer)** for their operating system.
+- [Windows Pool-Mining](/mining/proof-of-work/pool-mining/gominer/windows.md)
+
+#### **[<i class="fa fa-github"></i> cgminer](https://github.com/decred/cgminer)**
+
+cgminer is a popular miner for **AMD** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
+
+#### **[<i class="fa fa-github"></i> ccminer](https://github.com/decred/ccminer)**
+
+ccminer is a popular miner for **NVIDIA** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
+
+**Official builds of ccminer and cgminer are available on GitHub from the following link: <br />
+[https://github.com/decred/decred-release/releases/tag/v0.1.0_miners](https://github.com/decred/decred-release/releases/tag/v0.1.0_miners)**
 
 > Unofficial Miners
 
@@ -60,21 +74,9 @@ Those with an **AMD** graphics card running Windows may want to download [sgmine
 
 ---
 
-## **Running the software**
+## **Running the Software**
 
 * Decompress and install the software to a place of your choosing.
 * Open a command prompt to that path.
 * Follow your mining pools instructions for setup.
-* Run the miner.  Here are some examples:
-
-ccminer + coinmine:
-
-```no-highlight
-ccminer -a decred -o stratum+tcp://dcr.coinmine.pl:2222 -u username.workerid -p pass --show-diff -q
-```
-
-sgminer + yiimp:
-
-```no-highlight
-./sgminer -I 31 -k decred -u DsThisIsJustAnExampleAddr -p x -o stratum+tcp://yiimp.ccminer.org:4252 --gpu-powertune 20
-```
+* Run the miner. 

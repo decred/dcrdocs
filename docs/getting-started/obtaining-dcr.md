@@ -30,14 +30,12 @@ well documented in the
 ### **<i class="fa fa-exchange"></i> Exchanges**
 
 Since the release of Decred on February 8th, 2016, there are five
-currency exchanges where you can buy or sell Decred (as of May 2016).
+currency exchanges where you can buy or sell Decred (as of February 2017).
 We hope to have this list grow as time goes on.
 
+* [Poloniex](https://poloniex.com/)
 * [Bittrex](https://bittrex.com/)
 * [Bleutrade](https://bleutrade.com/exchange)
-* [C-cex](https://c-cex.com/)
-* [Poloniex](https://poloniex.com/)
-* [YoBit](https://yobit.net/en/)
 
 You will need to create an account on one of these sites, send your
 Bitcoin to this new account, and submit an order for Decred at a price

@@ -1,5 +1,6 @@
 site_name: dcrdocs
-theme: slate
+theme: null
+theme_dir: tpldcrdocs/
 site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
 markdown_extensions:

@@ -13,7 +13,8 @@ of recent account activity.
 
 
 ## **Accounts  ** ##
-The accounts tab shows you the accounts in your wallet and allows you to add new ones. Accounts in Decred work just like bank accounts. 
+The accounts tab shows you the accounts in your wallet and allows you to add new ones.
+Accounts in Decred work just like bank accounts. 
 They allow you to keep seperate records of your DCR. This feature is most 
 useful for those who run businesses and wish to keep seperate accounts for 
 tax records for example. Transferring DCR across accounts will create a 
@@ -25,9 +26,9 @@ transaction on the blockchain.
 
 
 ## **Scripts** ##
-Currently only used for PoS mining in a pool. If you sign up for a pool, 
-you will be asked to import a script. This is where you will add it.
-See the Purchase Tickets section below for more information.  
+Currently only used for PoS mining in a pool. As of version 0.8.0
+script setup has been automated. See the Purchase Tickets section below for more information.
+It will be used for more advanced features in the future.  
 
 ![Scripts tab](/img/Paymetheus-import-script.png)  
 
@@ -81,36 +82,39 @@ the outcome of any vote. By spreading tickets around pools, it makes the network
 
 ![Creating voting account](/img/Paymetheus-create-voting-account.png)  
 
-To generate a public key address, use the "Request Payment" view to generate a
-new address for the voting account.  The pubkey address (below the shorter P2PKH
-address) must be given to the pool.
+There's a fair bit of information here, so we'll go through each of the options.
 
-<i class="fa fa-exclamation-triangle"></i> **On mainnet, the address will begin with the letters Ds.**
+* **Ticket difficulty** - The current price of a ticket.
+* **Blocks until retarget** - When this reaches 0, a new ticket price is calculated.
+* **Source account** - This is the account that will purchase the tickets and receive the reward.
+* **Tickets to purchase** - The number of tickets to purchase.
+* **Ticket fee (DCR/kB)** - Tickets are entered into the voting pool by order of their fee. In times of demand,
+                        you will need to increase this value in order to have your tickets accepted.
+						You can view current ticket fees [here](https://www.dcrstats.com).
+* **Split fee (DCR/kB)** - Sometimes your wallet will need to use multiple transactions to buy tickets. This can
+                       be left at 0.01. It does not affect your chances of buying tickets or voting with them.
+* **Expiry (blocks)** - Often ticket fees will increase during a window and you may be stopped out by higher fees. By setting an
+					expiry, tickets that are not mined in the given number of blocks are cancelled so you can try again
+					with higher fees if you wish. If this is empty, they will not expire until the end of the window.
+* **Stake pool preference** - Automate setup with PoS pools. See below for more information.
+* **Voting address** - The Decred address that will do the voting. Solo and custom pool miners only.
+* **Pool fee address** - For those using a custom pool.
+* **Pool fees (%)** - For those using a custom pool.
 
-![Generate pubkey address](/img/Paymetheus-generate-pubkey-address.png)  
+![Purchasing tickets](/img/Paymetheus-ticket-purchasing.png)  
 
-<i class="fa fa-exclamation-triangle"></i> **On mainnet, the public key address will begin with the letters Dk.**
+To easily set up ticket purchasing for a stake pool, click the 'Manage pools button'. If you haven't already,
+you'll need to register with a stake pool (see above). Once you've registerd log in and look for your API key and copy it.
+Select the pool you just registered with from the drop down. Paste the key into the 'API key' box, then click outside the
+box to update it. You should see a bunch of letters and numbers appear in the bottom box. Click 'Save'. You can now purchase
+tickets by clicking the 'Purchase' button!
 
-Copy and paste the public key address into the stake pool's submit address form
-and click the submit button.  Your multisig script and P2SH address will be
-generated and you will be redirected to the tickets page.
-
-Next, import the pool's 1-of-2 multisignature script (on the Scripts tab).  This allows the funds to
-be recovered in case of pool failure.
-
-![Importing a script](/img/Paymetheus-import-script.png)  
-
-Finally, tickets can be purchased.  Select the "Using a pool?" checkbox and copy
-the values from the pool.  When all fields are set and if there is enough input
-value is available, the purchase button will become enabled and tickets may be
-purchased.
-
+![Manage stake pools](/img/Paymetheus-manage-stake-pool.png)
+			
 NOTE: While you can purchase tickets using Paymetheus, it cannot vote for you so you must either use a pool
 or run your own voting wallet which needs to be online 24/7. If you would prefer to solo mine,
 check the [Getting Started](/getting-started/overview.md) and [PoS Mining](/mining/proof-of-stake.ms)
 guides for more information.
-
-![Purchasing tickets](/img/Paymetheus-ticket-purchasing.png)  
 
 ---
 

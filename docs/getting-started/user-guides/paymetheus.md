@@ -31,6 +31,7 @@ We're just going to use a local one here so just press Continue.
 You will now have the option to create a new wallet or restore a wallet from a seed. If you're reading this, you're probably new and don't 
 already have a wallet so let's create a new one. If you click restore, you will be asked to enter your seed words instead of being given a new seed.
 The rest of the process is the same. Click "Create a new wallet". You will see the following screen:  
+
 ![Paymetheus wallet creation screen](/img/Paymetheus-seed-window.png)  
 
 <i class="fa fa-exclamation-triangle"></i> **STOP HERE!!! DO NOT CLICK CONTINUE!**  

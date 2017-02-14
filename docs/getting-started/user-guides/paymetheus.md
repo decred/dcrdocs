@@ -23,7 +23,7 @@ You're now ready to start using Decred! Start the 'Decred' program. You will now
 >and 'dcrd' which is the communications program that actually talks to the Decred network. This means that you can run dcrd
 >on another computer (such as an always on server) and then use Paymetheus to connect to it remotely.
 
-We're just going to use a local one here so just press Continue.
+We're going to use a local one that Paymetheus started so just press Continue.
 
 ---
 

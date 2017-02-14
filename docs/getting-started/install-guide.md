@@ -1,10 +1,10 @@
 # Installation Guide
 
-This guide was last updated for v0.8.0.
+This guide was last updated for v0.8.1.
 
 ---
 
-There are four methods for downloading and installing the Decred software. One is via dcrinstall (cross-platform), one is via the Windows Installer (Windows only of course, and the only way to get Paymetheus as of v0.8.0), another is via the precompiled binary releases (cross-platform), and the other is building the software yourself (cross-platform). The first three methods will be covered here and the fourth may be added at a later date.
+There are four methods for downloading and installing the Decred software. One is via dcrinstall (cross-platform), one is via the Windows Installer (Windows only of course, and the only way to get Paymetheus as of v0.8.1), another is via the precompiled binary releases (cross-platform), and the other is building the software yourself (cross-platform). The first three methods will be covered here and the fourth may be added at a later date.
 
 ## dcrinstall
 
@@ -117,8 +117,8 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `decred_0.8.0-beta_x86.msi` file. <br />
-    For 64-bit computers, download the `decred_0.8.0-beta_x64.msi` file.
+    For 32-bit computers, download the `decred_0.8.1-beta_x86.msi` file. <br />
+    For 64-bit computers, download the `decred_0.8.1-beta_x64.msi` file.
 
 2. Navigate to download location and open the `.msi` file.
 

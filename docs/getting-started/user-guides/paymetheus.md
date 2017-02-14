@@ -7,10 +7,7 @@ About the only thing Paymetheus doesn't do is PoS voting.
 ---
 
 ## **Download and Install** ##
-The first thing you'll need to do is get a copy of Paymetheus. You will find the downloads [here](https://github.com/decred/decred-binaries/releases). 
-Download the file for your operating system and install. Once you're done, run the 'Decred' program.
-You'll notice a program called "Paymetheus Standalone". This is for people who are
-running a seperate 'dcrd' server. You might want to do this for solo [Proof of Stake](/mining/proof-of-stake.md) mining.
+Download and installation instructions are available [here](/getting-started/install-guide.md#windows-installer)
 
 ---
 

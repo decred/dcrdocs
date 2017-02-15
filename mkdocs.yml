@@ -31,8 +31,8 @@ pages:
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
 - Mining:
   - 'Overview': 'mining/overview.md'
-  - 'Proof-of-stake (PoS)': 'mining/proof-of-stake.md'
-  - 'Proof-of-work (PoW)': 'mining/proof-of-work.md'
+  - 'Proof-of-Stake (PoS)': 'mining/proof-of-stake.md'
+  - 'Proof-of-Work (PoW)': 'mining/proof-of-work.md'
   - User Guides:
     - gominer:
       - Pool-Mining:
@@ -56,7 +56,7 @@ pages:
     - 'Buying Tickets and Fees': 'faq/proof-of-stake/buying-tickets-and-fees.md'
     - 'Voting Tickets': 'faq/proof-of-stake/voting-tickets.md'
     - 'Stake Pools': 'faq/proof-of-stake/stake-pools.md'
-  - 'Proof-of-work Mining': 'faq/proof-of-work-mining.md'
+  - 'Proof-of-Work Mining': 'faq/proof-of-work-mining.md'
 - Advanced:
   - 'Overview': 'advanced/overview.md'
   - 'Storing Login Details': 'advanced/storing-login-details.md'
@@ -64,7 +64,7 @@ pages:
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
-  - 'Advanced dcrctl usage': 'advanced/dcrctl-usage.md'
+  - 'Advanced dcrctl Usage': 'advanced/dcrctl-usage.md'
 - Research:
   - 'Overview': 'research/overview.md'
   - 'Hybrid Design': 'research/hybrid-design.md'

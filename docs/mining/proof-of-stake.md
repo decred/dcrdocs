@@ -1,4 +1,4 @@
-# ** Proof-of-stake (PoS) Mining**
+# ** Proof-of-Stake (PoS) Mining**
 
 ---
 
@@ -46,7 +46,7 @@ administration labor.
 
 ---
 
-## **<i class="fa fa-life-ring"></i> Sign up for a stake pool**
+## **<i class="fa fa-life-ring"></i> Sign Up For a Stake Pool**
 
 These stake pools are officially recognized:
 
@@ -57,7 +57,7 @@ These stake pools are officially recognized:
 * [<i class="fa fa-external-link-square"></i> https://stakepool.dcrstats.com](https://stakepool.dcrstats.com)
 * [<i class="fa fa-external-link-square"></i> https://stake.decredbrasil.com](https://stake.decredbrasil.com)
 * [<i class="fa fa-external-link-square"></i> http://stakepool.eu](http://stakepool.eu)
-* [<i class="fa fa-external-link-square"></i> http://dcrstakepool.getjumbucks.com](http://dcrstakepool.getjumbucks.com)
+* [<i class="fa fa-external-link-square"></i> https://dcr.ubiqsmart.com - formerly Jumbucks Stake Pool](https://dcr.ubiqsmart.com)
 
 You can find a comparison of each pool's fees and statistics by visiting the
 [<i class="fa fa-external-link-square"></i> Decred website](https://decred.org)
@@ -348,7 +348,7 @@ dcrctl --wallet getstakeinfo
 
 ---
 
-## ** <i class="fa fa-book"></i> See also **
+## ** <i class="fa fa-book"></i> See Also **
 
 [Proof-of-stake Commands](/advanced/program-options.md#pos-commands)
 

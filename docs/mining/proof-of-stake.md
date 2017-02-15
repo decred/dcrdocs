@@ -61,7 +61,7 @@ These stake pools are officially recognized:
 
 You can find a comparison of each pool's fees and statistics by visiting the
 [<i class="fa fa-external-link-square"></i> Decred website](https://decred.org)
-and clicking the 'Find a stake pool' link at the top right.
+and clicking the 'Stakepools' link within the footer.
 
 Each pool runs the same software which will walk you through the ticket buying
 process. The instructions are also below so you may view them without signing

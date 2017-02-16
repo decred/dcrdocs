@@ -169,9 +169,8 @@ dcrctl --wallet getblockheight
 ```
 
 Getting this information directly is the most reliable and accurate but you may
-also use websites such
-as [<i class="fa fa-external-link-square"></i> stats.decred.org](https://stats.decred.org)
-or [<i class="fa fa-external-link-square"></i> dcrstats.com](https://dcrstats.com).
+also use the official stats page at [<i class="fa fa-external-link-square"></i> stats.decred.org](https://stats.decred.org)
+or an third-party stats page such as [<i class="fa fa-external-link-square"></i> dcrstats.com](https://dcrstats.com).
 
 > Purchaseticket Syntax
 
@@ -329,7 +328,7 @@ After a successful ticket purchase, you must wait to see whether or not the
 transaction is mined and included in a block.  The main reason for your ticket
 not being mined is that the ticket price adjusts before it can be mined.  This
 can happen due to the mempool being full of competing ticket purchase
-transactions or simply bad purchase timing.  You may use a site such as
+transactions or simply bad purchase timing.  You can use the official Decred stats site at [<i class="fa fa-external-link-square"></i> stats.decred.org](https://stats.decred.org) or a third-party site such as
 [<i class="fa fa-external-link-square"></i> dcrstats.com](https://dcrstats.com)
 to view when the next ticket price adjustment occurs.
 

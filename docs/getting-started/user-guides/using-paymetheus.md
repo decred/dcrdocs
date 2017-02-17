@@ -117,8 +117,7 @@ tickets by clicking the 'Purchase' button!
 			
 NOTE: While you can purchase tickets using Paymetheus, it cannot vote for you so you must either use a pool
 or run your own voting wallet which needs to be online 24/7. If you would prefer to solo mine,
-check the [Getting Started](/getting-started/overview.md) and [PoS Mining](/mining/proof-of-stake.md)
-guides for more information.
+check the [dcrd Setup Guide](/getting-started/user-guides/dcrd-setup.md), [dcrwallet Setup Guide](/getting-started/user-guides/dcrd-setup.md) and [PoS Mining Guide](/mining/proof-of-stake.ms) for more information.
 
 ---
 

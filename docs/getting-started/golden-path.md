@@ -1,4 +1,10 @@
-# The Golden Path
+# **The Golden Path**
+
+Last updated for v0.8.2
+
+---
+
+## Begin Your Journey Here
 
 Welcome to the world of Decred! We know that getting started with any new cryptocurrency
 can be difficult and we want to make the journey as easy as possible. Decred is well
@@ -15,18 +21,6 @@ who are interested.
 Each document in the path will lead to the next so have a look at the bottom of the page
 for the 'Continue to ...' link to keep going.
 
-Continue to download and install...  
-***WINDOWS***
+---
 
-* [Paymetheus](/getting-started/install-guide#windows-installer)
-* [Command Line](/getting-started/install-guide)
-
-***MAC***
-
-* [Decrediton](https://github.com/decred/decrediton)
-* [Command Line](/getting-started/install-guide#)
-
-***LINUX***
-
-* [Decrediton](https://github.com/decred/decrediton)
-* [Command Line](/getting-started/install-guide)
+To continue on The Golden Path, visit the [Operating Systems](/getting-started/operating-systems.md) guide.

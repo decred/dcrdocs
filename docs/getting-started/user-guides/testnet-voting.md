@@ -76,31 +76,7 @@ If you haven't already updated your Decred binaries to v0.8.2, visit the [Instal
 
 If you already familiar with the `.conf` files, continue to step 3.
 
-All of the Decred software, when started, reads from a configuration file to determine which settings it should enable/disable/set during that initial load. All of the command line startup flags `(e.g. dcrwallet --testnet)` can be replaced by settings within the appropriate configuration file `(e.g. dcrwallet --testnet could be replaced by testnet=1 in dcrwallet.conf)`.
-
-These configuration files are located with the application home directory of the application. The location of these default home directories for Windows, macOS/OSX, and Linux are listed below:
-
-Windows:
-
-    C:\Users\<username>\AppData\Local\Dcrwallet\
-    C:\Users\<username>\AppData\Local\Dcrd\
-    C:\Users\<username>\AppData\Local\Dcrctl\ 
-
-macOS: 
-
-    ~/Library/Application Support/Dcrwallet/
-    ~/Library/Application Support/Dcrd/
-    ~/Library/Application Support/Dcrctl/
-    
-Linux: 
-    
-    ~/.dcrwallet/
-    ~/.dcrd/
-    ~/.dcrctl/
-
-Each of these folders is allowed it's own `.conf` file, named after the individual application (`e.g. Dcrd uses dcrd.conf`). 
-
-The dcrinstall and Binary Release Installation methods include sample configuration files. It is recommended to copy these config files into the appropriate directory described above, and rename them to remove 'sample-'. These files have many settings commented out (comments are not read by the program during runtime) so all of these settings are effectively disabled. You can enable these pre-written settings by simply deleting the semi-colon before the line.
+Please view our [Configuration Files Introduction](/getting-started/startup-basics.md#configuration-files) and either create new configuration files or copy the sample configuration files into the directories specified for your operating system.
 
 > Step 3: Edit Config Files to Launch Testnet
 

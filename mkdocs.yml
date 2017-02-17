@@ -19,15 +19,17 @@ pages:
 - Home: 'index.md'
 - Getting Started:
   - The Golden Path Beginner's Guide: 'getting-started/golden-path.md'
+  - 'Operating Systems': 'getting-started/operating-systems.md'
   - 'Download and Install Decred': 'getting-started/install-guide.md'
-  - 'Overview': 'getting-started/overview.md'
-  - User Guides:
-    - 'Windows Command Line': 'getting-started/user-guides/windows.md'
-    - 'Paymetheus: Windows GUI': 'getting-started/user-guides/paymetheus.md'
+  - Paymetheus:
+    - 'Paymetheus Setup': 'getting-started/user-guides/paymetheus.md'
     - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
-    - 'Linux': 'getting-started/user-guides/linux.md'
-    - 'OSX': 'getting-started/user-guides/osx.md'
-    - 'Web': 'getting-started/user-guides/web.md'
+  - Command-Line:
+    - 'Startup Basics': 'getting-started/startup-basics.md'
+    - 'dcrd Setup': 'getting-started/user-guides/dcrd-setup.md'
+    - 'dcrwallet Setup': 'getting-started/user-guides/dcrwallet-setup.md'
+    - 'dcrctl Basics': 'getting-started/user-guides/dcrctl-basics.md'
+  - 'Web Wallet': 'getting-started/user-guides/web.md'
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
   - 'Testnet Voting Guide': 'getting-started/user-guides/testnet-voting.md'

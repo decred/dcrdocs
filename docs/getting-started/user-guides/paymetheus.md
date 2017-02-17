@@ -1,4 +1,4 @@
-# **Paymetheus** #
+# **Paymetheus Setup Guide** #
 
 Paymetheus is a simple to use graphical wallet for Decred. With it, you can send and receive DCR, 
 purchase tickets for [PoS voting](/mining/proof-of-stake.md), get a history of all your transactions and more.

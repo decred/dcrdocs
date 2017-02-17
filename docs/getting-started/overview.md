@@ -40,31 +40,6 @@ create transactions and participate in Proof-of-Stake mining/voting.
 
 ---
 
-### 1.1 <i class="fa fa-windows"></i> [Windows](user-guides/windows.md)
-
-While this guide assumes you have no knowledge of Decred,
-cryptocurrency in general, or the Windows command line, it does assume
-you have some basic Windows knowledge including how to use Windows
-Explorer to unzip files.
-
----
-
-### 1.2 <i class="fa fa-linux"></i> [Linux/UNIX](user-guides/linux.md)
-
-This guide will take you through the setup of the Decred daemon and
-wallet on Linux. Some familiarity with navigating the Linux shell and
-extracting tar balls is assumed.
-
----
-
-### 1.3 <i class="fa fa-apple"></i> [OS X](user-guides/osx.md)
-
-This guide will take you through the setup of the Decred daemon and
-wallet on OS X. Some familiarity with navigating the UNIX shell and
-extracting tar balls is assumed.
-
----
-
 ### 1.4. <i class="fa fa-firefox"></i> [Web](user-guides/web.md)
 
 This section describes the web wallet.  The web wallet is a basic

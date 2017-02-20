@@ -105,8 +105,8 @@ There's a fair bit of information here, so we'll go through each of the options.
 
 To easily set up ticket purchasing for a stake pool, click the 'Manage pools button'. If you haven't already,
 you'll need to register with a stake pool (see above). Once you've registered, log in, look for your API key, and copy it.
-Select the pool you just registered with from the drop down. Paste the key into the 'API key' box, then click outside the
-box to update it. You should see a bunch of letters and numbers appear in the bottom box. Click 'Save'. You can now purchase
+Select the pool you just registered with from the drop down. Paste the key into the 'API key' box and click 'Save'.
+You should see a bunch of letters and numbers appear in the bottom box. Click 'Close'. You can now purchase
 tickets by clicking the 'Purchase' button!
 
 ![Manage stake pools](/img/Paymetheus-manage-stake-pool.png)

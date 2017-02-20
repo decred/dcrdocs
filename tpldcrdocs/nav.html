@@ -1,98 +1,46 @@
-<div class="navbar {% if config.extra.theme_inverse %}navbar-inverse{% else %}navbar-default{% endif %} navbar-fixed-top" role="navigation">
-    <div class="container">
+<!-- Top Bar -->
+<div class="top-bar">
+    <!-- Logo -->
+    <a class="svg-decred-logo" href="{{ nav.homepage.url }}">
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200"><defs><style>.cls-1{fill:#0c1e3e;}.cls-2{fill:#2ed7a2;}.cls-3{fill:#2972ff;}.cls-4{fill:#fff;}</style></defs><title>decred - logo - primary - negative - full color</title><rect id="_Rectangle_" data-name="&lt;Rectangle&gt;" class="cls-1" width="640" height="200"/><g id="_Group_" data-name="&lt;Group&gt;"><g id="_Group_2" data-name="&lt;Group&gt;"><path id="_Path_" data-name="&lt;Path&gt;" class="cls-2" d="M106.47,111.27H137.9a21.18,21.18,0,0,0,0-42.36h-10L106.47,50.32H137.9a39.78,39.78,0,0,1,15,76.62l24.78,21.51H149.3Z"/></g><g id="_Group_3" data-name="&lt;Group&gt;"><path id="_Path_2" data-name="&lt;Path&gt;" class="cls-3" d="M121.81,87.51H90.38a21.18,21.18,0,0,0,0,42.36h10l21.42,18.59H90.38a39.78,39.78,0,0,1-15-76.62L50.62,50.32H79Z"/></g><path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" class="cls-4" d="M347.21,118.38v-.17c0-17.64,13.57-31.47,31.9-31.47,12.36,0,20.32,5.19,25.68,12.62l-12.62,9.77c-3.46-4.32-7.43-7.09-13.22-7.09-8.47,0-14.44,7.18-14.44,16v.17c0,9.07,6,16.16,14.44,16.16,6.31,0,10-2.94,13.66-7.35l12.62,9c-5.71,7.87-13.4,13.66-26.8,13.66C361.13,149.68,347.21,136.45,347.21,118.38Z"/><path id="_Compound_Path_2" data-name="&lt;Compound Path&gt;" class="cls-4" d="M411.2,87.51H440c9.31,0,15.76,2.44,19.85,6.62,3.57,3.48,5.4,8.18,5.4,14.19v.17c0,9.31-5,15.5-12.54,18.72l14.54,21.24h-19.5L435.49,130h-7.4v18.46H411.2Zm28,29.25c5.75,0,9.05-2.79,9.05-7.23v-.17c0-4.79-3.48-7.23-9.14-7.23H428.09v14.62Z"/><path id="_Compound_Path_3" data-name="&lt;Compound Path&gt;" class="cls-4" d="M473.19,87.52h49v14.37h-32.3v9.23h29.25v13.32H489.91v9.66h32.74v14.37H473.19Z"/><path id="_Compound_Path_4" data-name="&lt;Compound Path&gt;" class="cls-4" d="M531.49,87.52H555c21.77,0,34.39,12.54,34.39,30.12v.18c0,17.59-12.8,30.65-34.74,30.65H531.49Zm23.77,46c10.1,0,16.8-5.57,16.8-15.41v-.17c0-9.75-6.7-15.41-16.8-15.41h-6.88v31Z"/><path id="_Compound_Path_5" data-name="&lt;Compound Path&gt;" class="cls-4" d="M312.76,149.61c-17.89,0-30.87-13.18-30.87-31.34,0-17.93,12.62-31.46,29.36-31.46,9,0,16.41,3.34,21.53,9.66,4.67,5.76,7.24,13.88,7.24,22.85,0,1-.08,2-.17,3.09H294.36l.14.88c1.63,10,8.72,16.28,18.49,16.28,6.43,0,11.46-2.12,16.71-7.08l7.21,6.4C330.66,146.1,322.75,149.61,312.76,149.61Zm-1.63-52.76c-8.79,0-15.37,6.63-16.74,16.88l-.11.86H327.6l-.09-.83C326.45,103.33,320.17,96.85,311.12,96.85Z"/><path id="_Compound_Path_6" data-name="&lt;Compound Path&gt;" class="cls-4" d="M239.39,149.61c-13.89,0-27.95-10.81-27.95-31.46s14.06-31.46,27.95-31.46c8.25,0,15,3.47,20.49,10.6L261.25,99V59.62H273.9v88.84H261.25V136.38l-1.38,1.95C254.48,145.92,247.79,149.61,239.39,149.61Zm3.4-52.14c-10.93,0-18.57,8.5-18.57,20.68,0,12,7.81,20.68,18.57,20.68s18.69-8.89,18.69-20.68S253.45,97.47,242.79,97.47Z"/></g></svg>
+    </a>
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
+    <!-- Expander button -->
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
 
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+<!-- Navigation Container -->
+<div class="scroll-spy hidden-print navbar-collapse collapse">
+    <ul class="nav bs-sidenav current">
 
-            {%- block site_name %}
-            <a href="{{ nav.homepage.url }}">
-                <svg class="svg-decred-logo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200">
-                    <defs>
-                        <style>
-                        .cls-1 {
-                            fill: #0c1e3e;
-                        }
-                        .cls-2 {
-                            fill: #fff;
-                        }
-                        </style>
-                    </defs>
-                    <title>decred - logo - primary - negative - 1 color</title>
-                    <g id="_Group_2" data-name="&lt;Group&gt;">
-                        <path id="_Path_" data-name="&lt;Path&gt;" class="cls-2" d="M106.47,111.27H137.9a21.18,21.18,0,0,0,0-42.36h-10L106.47,50.32H137.9a39.78,39.78,0,0,1,15,76.62l24.78,21.51H149.3Z" />
-                    </g>
-                    <g id="_Group_3" data-name="&lt;Group&gt;">
-                        <path id="_Path_2" data-name="&lt;Path&gt;" class="cls-2" d="M121.81,87.51H90.38a21.18,21.18,0,0,0,0,42.36h10l21.42,18.59H90.38a39.78,39.78,0,0,1-15-76.62L50.62,50.32H79Z" />
-                    </g>
-                    <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" class="cls-2" d="M347.21,118.38v-.17c0-17.64,13.57-31.47,31.9-31.47,12.36,0,20.32,5.19,25.68,12.62l-12.62,9.77c-3.46-4.32-7.43-7.09-13.22-7.09-8.47,0-14.44,7.18-14.44,16v.17c0,9.07,6,16.16,14.44,16.16,6.31,0,10-2.94,13.66-7.35l12.62,9c-5.71,7.87-13.4,13.66-26.8,13.66C361.13,149.68,347.21,136.45,347.21,118.38Z" />
-                    <path id="_Compound_Path_2" data-name="&lt;Compound Path&gt;" class="cls-2" d="M411.2,87.51H440c9.31,0,15.76,2.44,19.85,6.62,3.57,3.48,5.4,8.18,5.4,14.19v.17c0,9.31-5,15.5-12.54,18.72l14.54,21.24h-19.5L435.49,130h-7.4v18.46H411.2Zm28,29.25c5.75,0,9.05-2.79,9.05-7.23v-.17c0-4.79-3.48-7.23-9.14-7.23H428.09v14.62Z" />
-                    <path id="_Compound_Path_3" data-name="&lt;Compound Path&gt;" class="cls-2" d="M473.19,87.52h49v14.37h-32.3v9.23h29.25v13.32H489.91v9.66h32.74v14.37H473.19Z" />
-                    <path id="_Compound_Path_4" data-name="&lt;Compound Path&gt;" class="cls-2" d="M531.49,87.52H555c21.77,0,34.39,12.54,34.39,30.12v.18c0,17.59-12.8,30.65-34.74,30.65H531.49Zm23.77,46c10.1,0,16.8-5.57,16.8-15.41v-.17c0-9.75-6.7-15.41-16.8-15.41h-6.88v31Z" />
-                    <path id="_Compound_Path_5" data-name="&lt;Compound Path&gt;" class="cls-2" d="M312.76,149.61c-17.89,0-30.87-13.18-30.87-31.34,0-17.93,12.62-31.46,29.36-31.46,9,0,16.41,3.34,21.53,9.66,4.67,5.76,7.24,13.88,7.24,22.85,0,1-.08,2-.17,3.09H294.36l.14.88c1.63,10,8.72,16.28,18.49,16.28,6.43,0,11.46-2.12,16.71-7.08l7.21,6.4C330.66,146.1,322.75,149.61,312.76,149.61Zm-1.63-52.76c-8.79,0-15.37,6.63-16.74,16.88l-.11.86H327.6l-.09-.83C326.45,103.33,320.17,96.85,311.12,96.85Z" />
-                    <path id="_Compound_Path_6" data-name="&lt;Compound Path&gt;" class="cls-2" d="M239.39,149.61c-13.89,0-27.95-10.81-27.95-31.46s14.06-31.46,27.95-31.46c8.25,0,15,3.47,20.49,10.6L261.25,99V59.62H273.9v88.84H261.25V136.38l-1.38,1.95C254.48,145.92,247.79,149.61,239.39,149.61Zm3.4-52.14c-10.93,0-18.57,8.5-18.57,20.68,0,12,7.81,20.68,18.57,20.68s18.69-8.89,18.69-20.68S253.45,97.47,242.79,97.47Z" />
-                    </g>
-                </svg>
-            </a>
-            {%- endblock %}
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-            {%- block site_nav %}
-
-            <!-- Main navigation -->
-            <ul class="nav navbar-nav search-nav">
-                {%- block search_button %}
-                <li>
-                    <a class="hide-search" href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <div class="input-group">
-                            <span class="input-group-addon" id="basic-addon1">
-                           <svg class="svg-search">
-                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ base_url }}/img/sprites.svg#svg-search"></use>
-                           </svg>
-                        </span>
-                            <input id="searchGone" autocomplete="off" type="text" class="form-control" placeholder="Search" data-toggle="modal" data-target="#myModal">
-                        </div>
-                    </a>
-                </li>
-                {%- endblock %}
-            </ul>
-            {%- endblock %}
-
-            <div class="col-md-3 visible-xs">
-                <div class="bs-sidebar hidden-print affix well" role="complementary">
-                    <ul class="nav bs-sidenav">
-                        {% for nav_item in nav %}
-                        <li>{% include "toc.html" %}<li>
-                        {% endfor %}
-                    </ul>
+        <!-- Search -->
+        {%- block site_nav %}
+        {%- block search_button %}
+        <div class="search-nav">
+            <form role="form">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">
+                        <svg class="svg-search">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ base_url }}/img/sprites.svg#svg-search"></use>
+                        </svg>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Search" id="mkdocs-search-query" autocomplete="off">
                 </div>
-            </div>
-
-            <!-- Search, Navigation and Repo links -->
-            <ul class="nav navbar-nav navbar-right">
-                {%- block repo %} {% if config.repo_url %}
-                <li>
-                    <a class="github-logo hidden-xs" href="{{ config.repo_url }}">
-                        {% if config.repo_name == 'GitHub' %}
-                            <i class="fa fa-github"></i>
-                        {% elif config.repo_name == 'Bitbucket' %}
-                            <i class="fa fa-bitbucket"></i>
-                        {% endif %}
-                        {{ config.repo_name }}
-                    </a>
-                </li>
-                {% endif %} {%- endblock %}
-            </ul>
-
+            </form>
+            <div id="mkdocs-search-results"></div>
         </div>
-    </div>
+        {%- endblock %}
+        {%- endblock %}
+
+        <!-- Navigation -->
+        {% for nav_item in nav %}
+        <li class="nav-link">{% include "toc.html" %}<li>
+        {% endfor %}
+
+    </ul>
 </div>

@@ -6,7 +6,7 @@ This guide was last updated for v0.8.2.
 
 There are four methods for downloading and installing the Decred software. One is via dcrinstall (cross-platform), one is via the Windows Installer (Windows only of course, and the only way to get Paymetheus as of v0.8.2), another is via the precompiled binary releases (cross-platform), and the other is building the software yourself (cross-platform). The first three methods will be covered here and the fourth may be added at a later date.
 
-## dcrinstall
+## **dcrinstall**
 
 `dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binaries are provided for Windows, OSX/macOS, Linux, OpenBSD, and FreeBSD. Executing installer will install `dcrd`, `dcrwallet`, `dcrctl`, and `dcrticketbuyer`. Instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
 
@@ -59,7 +59,7 @@ There are four methods for downloading and installing the Decred software. One i
     
 3. The binaries for `dcrd`, `dcrwallet`, `dcrctl`, and `dcrticketbuyer` can then be found in the `%HOMEPATH%\decred\` directory (usually %HOMEPATH% is `C:\Users\username`).
 
-## Binary Releases
+## **Binary Releases**
 
 The newest Binary Releases can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). With the exception of the `.msi` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be unzip and go, instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
 
@@ -111,7 +111,7 @@ Note: Windows 7/8/10 natively provides support for `.zip` files, therefore it is
 
 If you decide to download the `.tar.gz` file, it will require two separate extractions in some third-party application (7-zip, winRAR, etc..) to get to the actual binaries.
 
-## Windows Installer
+## **Windows Installer** 
 
 The Windows Installer (`.msi` file) is located here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). It will install Paymetheus to your computer's Program Files folder. Installation is pretty straightforward, but instructions are provided below:
 
@@ -125,3 +125,10 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 3. Follow the installation steps. Within this process you'll be prompted to accept an End-User License Agreement.
 
 4. After setup, the features should be installed to your `..\Program Files\Decred\` folder and accessible through the Start Menu (look for `Decred` in the Program list)
+
+-----------------------
+
+Windows application (Paymetheus) users can continue to [Paymetheus setup](/getting-started/user-guides/paymetheus.md)
+
+Command line users can continue to [Windows](/getting-started/user-guides/windows.md),
+[OSX](/getting-started/user-guides/osx.md) or [Linux](/getting-started/user-guides/linux.md)

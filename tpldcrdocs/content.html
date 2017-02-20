@@ -1,3 +1,12 @@
+<a class="github-page-link hidden-xs no-underline" href="{{ config.repo_url }}">
+{% if config.repo_name == 'GitHub' %}
+    <i class="fa fa-github"></i>
+{% elif config.repo_name == 'Bitbucket' %}
+    <i class="fa fa-bitbucket"></i>
+{% endif %}
+<div>Edit on {{ config.repo_name }}</div>
+</a>
+
 {% if page and page.meta and page.meta.source %}
 <div class="source-links">
 {% for filename in page.meta.source %}

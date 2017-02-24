@@ -8,21 +8,21 @@ As of the v0.8.0 release of Feb. 13, 2017, the hard-fork voting mechanism was im
 
 ## Introduction
 
-There is a two-step process for voting to implement consensus changes that would create a hard fork. Note: the following block intervals are for the testnet, they will differ for mainnet.
+There is a two-phase process for voting to implement consensus changes that would create a hard fork. Note: the following block intervals are for the testnet, they will differ for mainnet.
 
-The first step is to meet the upgrade threshold on the network. After the hard fork code is released, all of the nodes on the network participating in PoW/PoS need to first upgrade before the voting can begin. For Proof-of-Work, at least 75% of the 100 most recent blocks must have the latest block version. For Proof-of-Stake, 75% of the votes cast within a static 2016 block interval must have the latest votebit version.
+The first step is to meet the upgrade threshold on the network. After the hard fork code is released, a majority of the nodes on the network participating in PoW/PoS need to first upgrade before the voting can begin. For Proof-of-Work, at least 75% of the 100 most recent blocks must have the latest block version. For Proof-of-Stake, 75% of the votes cast within a static 2016 block interval must have the latest votebit version.
 
-The second step of this process is the actual voting. The previous 2016 block interval falls somewhere within a larger 5040 block interval and the network must wait for that larger 5040 block interval to end. Because of the different interval lengths, it *might* take up to an additional 5040 blocks before the voting window begins. After that, a static 5040 block interval expires while votes are cast and if 75% of the votes mined within that interval signal a 'yes' vote to the proposed changes, the changes are fully implemented after one additional block interval (to give any remaining nodes the time needed to update to avoid being forked off the blockchain). Below is a simplified chart to explain each block interval in the order they chronologically appear.
+The second step of this process is the actual voting. The previous 2016 block interval falls somewhere within a larger 5040 block interval and the network must wait for that larger 5040 block interval to end. Because of the different interval lengths, it *might* take up to an additional 5040 blocks before the voting window begins. After that, a static 5040 block interval transpires while votes are cast and if 75% of the votes mined within that interval signal a 'yes' vote to the proposed changes, the changes are fully implemented after one additional block interval (to give any remaining nodes the time needed to update to avoid being forked off the blockchain). Below is a simplified chart to explain each block interval in the order they chronologically appear.
 
 Interval Description | Interval Type | Number of Blocks
 ---------------------|-------------|---------------
-Minimum 75% of Votes must be newest version | Static | 2016
 Minimum 75% of Blocks must be newest version | Rolling | 100
+Minimum 75% of Votes must be newest version | Static | 2016
 Interval after upgrade requirements met | Static | Up to 5040
 Actual voting interval - 75% of Votes must signal a "yes" to pass | Static | 5040
 Pre-implementation interval if vote passes | Static | 5040
 
-If a proposal fails to reach a 10% threshold of either 'no' or 'yes' votes, stakeholders will be able to vote on it again during the next block interval, until the threshold is met or the proposal expires. 
+If a proposal fails to reach a 10% threshold of either 'no' or 'yes' votes, stakeholders will be able to vote on it again during the next block interval, until this threshold is met or the proposal expires. 
 
 Below are instructions to participate in the voting demo on the Testnet using a stakepool with Paymetheus and/or the command line applications `dcrd`, `dcrwallet`, and `dcrctl`. The command line guide uses configuration files to pass parameters to the application during launch. Alternatively, flags can be used when starting an application, but they will not be covered in this draft.
 
@@ -38,7 +38,7 @@ From the Start Menu, open `Decred Testnet`. This will launch `Paymetheus`, and a
 
 In the `Paymetheus` window, you'll be greated by a "Connect to dcrd" dialog. Keep the defaults and press the continue button. The next view will have two buttons, "Create a new wallet" and "Restore wallet from seed." For this guide, it will be assumed you do not already have a seed you wish to restore.
 
-After clicking "Create a new wallet," you'll be greeted with information regarding your new wallet seed. Record your seed, put it in a safe place, and never share it with anyone. You will also need to re-enter it once you press the CONTINUE button.
+After clicking "Create a new wallet," you'll be greeted with information regarding your new wallet seed. Record your seed, put it in a safe place, and never share it with anyone. You will also need to re-enter it once you press the CONTINUE button. 
 
 After you've typed in your seed, the Encrypt Wallet view will be next. Enter a private passphrase as the directions explain. Press ENCRYPT. Paymetheus will then begin to create your wallet. Once it is created, it will open to your wallet overview page.
 
@@ -48,17 +48,19 @@ While waiting for your node/wallet to sync, visit [https://teststakepool.decred.
 
 > Step 4: Acquire Testnet Coins
 
-Next, you'll need to acquire Testnet coins in order to buy Testnet tickets. There is am official Testnet faucet located at [https://faucet.decred.org](https://faucet.decred.org). To get a new address from Paymetheus, click the "Request payment" tab on the navigation menu. Clicking the "GENERATE ADDRESS" button will result in an address that should begin with "Ts". Copy and paste that address into the faucet and you should recieve your coins.
+Next, you'll need to acquire Testnet coins in order to buy Testnet tickets. There is an official Testnet faucet located at [https://faucet.decred.org](https://faucet.decred.org). To get a new address from Paymetheus, click the "Request payment" tab on the navigation menu. Clicking the "GENERATE ADDRESS" button will result in an address that should begin with "Ts". Copy and paste that address into the faucet and you should recieve your coins.
 
 > Step 5: Purchase Testnet Tickets
 
-Click the "Purchase tickets" tab within the Paymetheus navigation menu. You will see 7 form fields within the page. All of the defaults can be used for purchasing tickets **except** the "Stake pool preference". Click the "Manage pools" button. You need to enter the API key for your account at the testnet stakepool. To do this, simply visit [https://teststakepool.decred.org/settings](https://teststakepool.decred.org/settings) - your API Token should be the first item on the page. Enter it into the API Key field within Paymetheus and press Save. Your 1-of-2 multi-sig script will be automatically generated and you can press Close. From here, select teststakepool.decred.org from the Stake pool preference drop down and press the Purchase button begin purchasing tickets! Note: the ticket difficulty is equal to the cost per ticket, so make sure you have enough testnet coins to purchase at least one.
+Click the "Purchase tickets" tab within the Paymetheus navigation menu. You will see 7 form fields within the page. All of the defaults can be used for purchasing tickets **except** the "Stake pool preference". Click the "Manage pools" button. You need to enter the API key for your account at the testnet stakepool. To do this, simply visit [https://teststakepool.decred.org/settings](https://teststakepool.decred.org/settings) - your API Token should be the first item on the page. Enter it into the API Key field within Paymetheus and press Save. Your 1-of-2 multi-sig script will be automatically generated and you can press Close. 
+
+Next, select teststakepool.decred.org from the Stake pool preference drop down and press the Purchase button to begin purchasing tickets! Note: the ticket difficulty is equal to the cost per ticket, so make sure you have enough testnet coins to purchase at least one.
 
 > Step 6: Set The Votebits of Your Tickets via Stakepool 
 
-When you buy tickets via a stakepool, you automatically give that pool control of the votebits. The pool can then vote whichever way it pleases. (Note, if you purchase tickets without a stakepool, your ticket votebits default to 1)
+When using a stakepool, any tickets you buy have their voting rights delegated to that stakepool. By default, the pool will vote any way it pleases with your tickets. Of course, you might want to change how your tickets vote.
 
-*Alternatively* (and recommended for this guide), a user can set the votebits via the stakepool tickets interface. Below is a screenshot of the [https://teststakepool.decred.org/tickets](https://teststakepool.decred.org/tickets) page. At the bottom of the "Live/Immature" section of this page, you will see the votebit settings. You can only edit the votebits of *all* of your tickets at once via the pool's interface. The tickets displayed below were set to "Yes" for "Previous Block Valid?" and "Yes" for "Increase Block Size from 1.0 MiB to 1.25MB" which resulted in a Votebit value of 5. 
+You can set the votebits of your tickets via the stakepool tickets interface. Below is a screenshot of the [https://teststakepool.decred.org/tickets](https://teststakepool.decred.org/tickets) page. At the bottom of the "Live/Immature" section of this page, you will see the votebit settings. You can only edit the votebits of *all* of your tickets at once via the pool's interface. The tickets displayed below were set to "Yes" for "Previous Block Valid?" and "Yes" for "Increase Block Size from 1.0 MiB to 1.25MB" which resulted in a Votebit value of 5. 
 
 <img src="/img/testnet-voting_votebit-setting.jpg">
 
@@ -76,13 +78,27 @@ If you already familiar with the `.conf` files, continue to step 3.
 
 All of the Decred software, when started, reads from a configuration file to determine which settings it should enable/disable/set during that initial load. All of the command line startup flags `(e.g. dcrwallet --testnet)` can be replaced by settings within the appropriate configuration file `(e.g. dcrwallet --testnet could be replaced by testnet=1 in dcrwallet.conf)`.
 
-These configuration files are located with the data directory of the application. The default data directory for Windows, macOS/OSX, and Linux are listed below:
+These configuration files are located with the application home directory of the application. The location of these default home directories for Windows, macOS/OSX, and Linux are listed below:
 
-    Windows: C:\Users\<username>\AppData\Local\
-    macOS: ~/Library/Application Support/
-    Linux: ~/
+Windows:
 
-Within this data directory should be folders for `Dcrd`, `Dcrwallet`, and `Dcrctl`. Each of these folders is allowed it's own `.conf` file, named after the individual application (`e.g. Dcrd uses dcrd.conf`). 
+    C:\Users\<username>\AppData\Local\Dcrwallet\
+    C:\Users\<username>\AppData\Local\Dcrd\
+    C:\Users\<username>\AppData\Local\Dcrctl\ 
+
+macOS: 
+
+    ~/Library/Application Support/Dcrwallet/
+    ~/Library/Application Support/Dcrd/
+    ~/Library/Application Support/Dcrctl/
+    
+Linux: 
+    
+    ~/.dcrwallet/
+    ~/.dcrd/
+    ~/.dcrctl/
+
+Each of these folders is allowed it's own `.conf` file, named after the individual application (`e.g. Dcrd uses dcrd.conf`). 
 
 The dcrinstall and Binary Release Installation methods include sample configuration files. It is recommended to copy these config files into the appropriate directory described above, and rename them to remove 'sample-'. These files have many settings commented out (comments are not read by the program during runtime) so all of these settings are effectively disabled. You can enable these pre-written settings by simple deleting the semi-colon before the line.
 
@@ -128,7 +144,7 @@ While waiting for your node/wallet to sync, visit [https://teststakepool.decred.
 
 > Step 8: Wait for Testnet Node/Wallet to Sync
 
-Take a break, this may take awhile. Your CPU will be taxed heavily during this syncing.
+Take a break, this may take a while. 
 
 > Step 9: Create a Public Key Address to Use the Stakepool
 
@@ -140,11 +156,10 @@ Next, you need import a script that will allow you to delegate voting rights to 
 
 > Step 11: Acquire Testnet Coins
 
-Next, you'll need to acquire Testnet coins in order to buy Testnet tickets. There is am official Testnet faucet located at [https://faucet.decred.org](https://faucet.decred.org). Enter a Testnet address (one can be retrieved by running the `getnewaddress` command - examples for each OS below)
+Next, you'll need to acquire Testnet coins in order to buy Testnet tickets. There is an official Testnet faucet located at [https://faucet.decred.org](https://faucet.decred.org). Enter a Testnet address (one can be retrieved by running the `getnewaddress` command - examples for each OS below)
 
     Windows: dcrctl.exe --wallet getnewaddress
-    macOS: ./dcrctl --wallet getnewaddress
-    Linux: ./dcrctl --wallet getnewaddress
+    macOS/Linux: ./dcrctl --wallet getnewaddress
 
 > Step 12: Buy Testnet Tickets
 
@@ -158,9 +173,9 @@ First, a minimum of 75% of ALL votes cast in the last 2016 blocks must be from a
 
 > Step 14: Set The Votebits of Your Tickets via Stakepool 
 
-When you buy tickets via a stakepool, you automatically give that pool control of the votebits. The pool can then vote whichever way it pleases. (Note, if you purchase tickets without a stakepool, your ticket votebits default to 1)
+When using a stakepool, any tickets you buy have their voting rights delegated to that stakepool. By default, the pool will vote any way it pleases with your tickets. Of course, you might want to change how your tickets vote.
 
-*Alternatively* (and recommended for this guide), a user can set the votebits via the stakepool tickets interface. Below is a screenshot of the [https://teststakepool.decred.org/tickets](https://teststakepool.decred.org/tickets) page. At the bottom of the "Live/Immature" section of this page, you will see the votebit settings. You can only edit the votebits of *all* of your tickets at once via the pool's interface. The tickets displayed below were set to "Yes" for "Previous Block Valid?" and "Yes" for "Increase Block Size from 1.0 MiB to 1.25MB" which resulted in a Votebit value of 5. 
+You can set the votebits of your tickets via the stakepool tickets interface. Below is a screenshot of the [https://teststakepool.decred.org/tickets](https://teststakepool.decred.org/tickets) page. At the bottom of the "Live/Immature" section of this page, you will see the votebit settings. You can only edit the votebits of *all* of your tickets at once via the pool's interface. The tickets displayed below were set to "Yes" for "Previous Block Valid?" and "Yes" for "Increase Block Size from 1.0 MiB to 1.25MB" which resulted in a Votebit value of 5. 
 
 <img src="/img/testnet-voting_votebit-setting.jpg">
 

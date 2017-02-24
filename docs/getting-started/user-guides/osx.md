@@ -271,3 +271,5 @@ That is it! You are now up and running. Some things you might want to try:
 * [Proof-of-Work mining](/mining/overview/#1-proof-of-work-mining)
 * [Proof-of-Stake mining](/mining/overview/#2-proof-of-stake-mining)
 * [Advanced dcrctl usage](/advanced/dcrctl-usage)
+
+Or continue to [Obtaining DCR](/getting-started/obtaining-dcr.md)

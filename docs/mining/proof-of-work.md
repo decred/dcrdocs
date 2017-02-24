@@ -80,3 +80,5 @@ Those with an **AMD** graphics card running Windows may want to download [sgmine
 * Open a command prompt to that path.
 * Follow your mining pools instructions for setup.
 * Run the miner. 
+
+Continue to [PoW Mining FAQ](/faq/proof-of-work-mining.md)

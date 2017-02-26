@@ -4,11 +4,10 @@
 
 #### **1. Are there any other benefits to a stake pool other than not needing to run a full node and keeping your wallet unlocked? For example, will it have a better chance of winning or anything like that?**
 
-Well first keep in mind that the wallet (`dcrwallet`) is not the core network (`dcrd`). In order to stake you need to have `dcrwallet` online and unlocked 24/7.
+Stake pools will usually implement multi-wallet redundancy by having many wallets physically distributed around the globe. This means there's less chance of a vote
+being missed because one wallet is down. It also reduces latency between the wallet and network which can reduce the chance of a vote being missed.
 
-With that out of the way, you are correct that the only real benefit of the current pool is that it will provide worry-free voting since it provides multi-location redundancy and automatic failure recovery[^9262], neither of which your local setup is very likely to have.
-
-However, it is entirely possible that a stake pool could implement proportional reward splitting so stakers receive smaller and more consistent payouts, however that would come at the expense of having to trust the pool with the rewards since it would have to receive them in order to split them out (just like with proof-of-work pools).
+In addition, it is entirely possible that a stake pool could implement proportional reward splitting so stakers receive smaller and more consistent payouts, however that would come at the expense of having to trust the pool with the rewards since it would have to receive them in order to split them out (just like with proof-of-work pools).
 
 ---
 

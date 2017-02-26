@@ -6,7 +6,7 @@ documented, with everything from basic information such as, "how do I send decre
 super technical stuff like "why did you choose a BLAKE-256 hash function, and how does
 it compare to the Merkle-Damgård construction?".
 
-So that you don't get overwhelmed by the amount of information on offer, we have created
+So that you don't get overwhelmed by the amount of information available, we have created
 a "Golden Path" through the documentation that will take you through the basics of getting
 started with Decred, information on how to participate in the voting and mining processes
 then finish with advanced options and how to participate in the test network for those
@@ -18,7 +18,7 @@ for the 'Continue to ...' link to keep going.
 Continue to download and install...  
 ***WINDOWS***
 
-* [Application](/getting-started/install-guide#windows-installer)
+* [Paymetheus](/getting-started/install-guide#windows-installer)
 * [Command Line](/getting-started/install-guide)
 
 ***MAC***

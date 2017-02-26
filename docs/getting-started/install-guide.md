@@ -128,7 +128,7 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
 -----------------------
 
-Windows application (Paymetheus) users can continue to [Paymetheus setup](/getting-started/user-guides/paymetheus.md)
+Paymetheus users can continue to [Paymetheus setup](/getting-started/user-guides/paymetheus.md)
 
 Command line users can continue to [Windows](/getting-started/user-guides/windows.md),
 [OSX](/getting-started/user-guides/osx.md) or [Linux](/getting-started/user-guides/linux.md)

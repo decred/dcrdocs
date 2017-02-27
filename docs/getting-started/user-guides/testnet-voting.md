@@ -34,7 +34,7 @@ If you haven't already updated your Decred binaries to v0.8.2, visit the [Instal
 
 > Step 2: Run Decred Testnet
 
-From the Start Menu, open `Decred Testnet`. This will launch `Paymetheus`, and a new Command Prompt window will open and run `dcrd.exe`. If this is the first time running the testnet daemon, it will take awhile to sync to the testnet blockchain. 
+From the Start Menu, open `Decred Testnet`. This will launch `Paymetheus`, and a new Command Prompt window will open and run `dcrd.exe`. If this is the first time running the testnet daemon, it will take a while to sync to the testnet blockchain. 
 
 In the `Paymetheus` window, you'll be greated by a "Connect to dcrd" dialog. Keep the defaults and press the continue button. The next view will have two buttons, "Create a new wallet" and "Restore wallet from seed." For this guide, it will be assumed you do not already have a seed you wish to restore.
 
@@ -132,11 +132,11 @@ This will run you through the usual prompts of creating a new wallet. Follow the
 
 > Step 5: Start dcrd on the Testnet
 
-Run your `dcrd` executable with the `testnet=1` or `testnet=true` option within the config file to start your node on the testnet. Your node will begin to sync with the rest of the network. Syncing will take awhile.
+Run your `dcrd` executable with the `testnet=1` or `testnet=true` option within the config file to start your node on the testnet. Your node will begin to sync with the rest of the network. Syncing will take a while.
 
 > Step 6: Start dcrwallet on the Testnet
 
-Run your `dcrwallet` executable with the `testnet=1` or `testnet=true`option within the config file to start your wallet on the testnet. Your wallet will connect to your node and begin to sync your addresses. Syncing may take awhile.
+Run your `dcrwallet` executable with the `testnet=1` or `testnet=true`option within the config file to start your wallet on the testnet. Your wallet will connect to your node and begin to sync your addresses. Syncing may take a while.
 
 > Step 7: Register at Stakepool Website
 

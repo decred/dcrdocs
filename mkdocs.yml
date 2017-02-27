@@ -29,6 +29,7 @@ pages:
     - 'Web': 'getting-started/user-guides/web.md'
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
+  - 'Testnet Voting Guide': 'getting-started/user-guides/testnet-voting.md'
 - Mining:
   - 'Overview': 'mining/overview.md'
   - 'Proof-of-Stake (PoS)': 'mining/proof-of-stake.md'

@@ -214,7 +214,13 @@ p>a {
     color: #2970ff;
 }
 
+h4 a {
+    color: #132f4b;
+}
 
+strong a {
+    color: #132f4b;
+}
 /*
  * Side navigation
  *

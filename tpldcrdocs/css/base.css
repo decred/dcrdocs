@@ -214,7 +214,13 @@ p>a {
     color: #2970ff;
 }
 
+h4 a {
+    color: #132f4b;
+}
 
+strong a {
+    color: #132f4b;
+}
 /*
  * Side navigation
  *
@@ -353,10 +359,10 @@ table {
 
 .table>thead>tr>th {
     border-bottom: 2px solid #f0f4f4;
-    background-color: #e7eaed;
+    background-color: #132f4b;
     font-family: source-sans, sans-serif;
     font-weight: 600;
-    color: #132f4b;
+    color: #e7eaed;
 }
 
 .table>tbody>tr>td,
@@ -373,6 +379,11 @@ table {
 .table-striped > tbody > tr:nth-child(2n+1) > td,
 .table-striped > tbody > tr:nth-child(2n+1) > th {
     background-color: #fff
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td,
+.table-striped > tbody > tr:nth-child(2n) > th {
+    background-color: #d4f0fd;
 }
 
 .table-hover tbody tr:hover td,

@@ -44,7 +44,7 @@ rpcpass=<password>
 
 Choose any username and password you want. You do not need to register these
 anywhere and they will only be used to allow your wallet and control
-tool to communicate with the daemon you are running
+tool to communicate with the daemon you are running.
 
 ---
 

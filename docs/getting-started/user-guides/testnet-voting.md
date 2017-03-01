@@ -22,7 +22,7 @@ Interval after upgrade requirements met | Static | Up to 5040
 Actual voting interval - 75% of Votes must signal a "yes" to pass | Static | 5040
 Pre-implementation interval if vote passes | Static | 5040
 
-If a proposal fails to reach a 10% threshold of either 'no' or 'yes' votes, stakeholders will be able to vote on it again during the next block interval, until this threshold is met or the proposal expires. 
+If a proposal fails to reach a 10% threshold of either 'no' or 'yes' votes, stakeholders will be able to vote on it again during the next voting interval, until this threshold is met or the proposal expires. 
 
 Below are instructions to participate in the voting demo on the Testnet using a stakepool with Paymetheus and/or the command line applications `dcrd`, `dcrwallet`, and `dcrctl`. The command line guide uses configuration files to pass parameters to the application during launch. Alternatively, flags can be used when starting an application, but they will not be covered in this draft.
 

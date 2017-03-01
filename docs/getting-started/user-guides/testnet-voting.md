@@ -10,7 +10,7 @@ As of the v0.8.0 release of Feb. 13, 2017, the hard-fork voting mechanism was im
 
 There is a two-phase process for voting to implement consensus changes that would create a hard fork. Note: the following block intervals are for the testnet, they will differ for mainnet.
 
-The first step is to meet the upgrade threshold on the network. After the hard fork code is released, a majority of the nodes on the network participating in PoW/PoS need to first upgrade before the voting can begin. For Proof-of-Work, at least 75% of the 100 most recent blocks must have the latest block version. For Proof-of-Stake, 75% of the votes cast within a static 2016 block interval must have the latest votebit version.
+The first step is to meet the upgrade threshold on the network. After the hard fork code is released, a majority of the nodes on the network participating in PoW/PoS need to first upgrade before the voting can begin. For Proof-of-Work, at least 75% of the 100 most recent blocks must have the latest block version. For Proof-of-Stake, 75% of the votes cast within a static 2016 block interval must have the latest vote version.
 
 The second step of this process is the actual voting. The previous 2016 block interval falls somewhere within a larger 5040 block interval and the network must wait for that larger 5040 block interval to end. Because of the different interval lengths, it *might* take up to an additional 5040 blocks before the voting window begins. After that, a static 5040 block interval transpires while votes are cast and if 75% of the votes mined within that interval signal a 'yes' vote to the proposed changes, the changes are fully implemented after one additional block interval (to give any remaining nodes the time needed to update to avoid being forked off the blockchain). Below is a simplified chart to explain each block interval in the order they chronologically appear.
 
@@ -22,7 +22,7 @@ Interval after upgrade requirements met | Static | Up to 5040
 Actual voting interval - 75% of Votes must signal a "yes" to pass | Static | 5040
 Pre-implementation interval if vote passes | Static | 5040
 
-If a proposal fails to reach a 10% threshold of either 'no' or 'yes' votes, stakeholders will be able to vote on it again during the next block interval, until this threshold is met or the proposal expires. 
+If a proposal fails to reach a 10% threshold of either 'no' or 'yes' votes, stakeholders will be able to vote on it again during the next voting interval, until this threshold is met or the proposal expires. 
 
 Below are instructions to participate in the voting demo on the Testnet using a stakepool with Paymetheus and/or the command line applications `dcrd`, `dcrwallet`, and `dcrctl`. The command line guide uses configuration files to pass parameters to the application during launch. Alternatively, flags can be used when starting an application, but they will not be covered in this draft.
 
@@ -100,7 +100,7 @@ Linux:
 
 Each of these folders is allowed it's own `.conf` file, named after the individual application (`e.g. Dcrd uses dcrd.conf`). 
 
-The dcrinstall and Binary Release Installation methods include sample configuration files. It is recommended to copy these config files into the appropriate directory described above, and rename them to remove 'sample-'. These files have many settings commented out (comments are not read by the program during runtime) so all of these settings are effectively disabled. You can enable these pre-written settings by simple deleting the semi-colon before the line.
+The dcrinstall and Binary Release Installation methods include sample configuration files. It is recommended to copy these config files into the appropriate directory described above, and rename them to remove 'sample-'. These files have many settings commented out (comments are not read by the program during runtime) so all of these settings are effectively disabled. You can enable these pre-written settings by simply deleting the semi-colon before the line.
 
 > Step 3: Edit Config Files to Launch Testnet
 

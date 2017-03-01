@@ -594,7 +594,12 @@ ul>li>a {
 .col-md-9 {
     float: none;
 }
-
+.col-md-9 li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    color: #132f4b;
+    font-weight: 600;
+}
 [class^="icon-"],
 [class*=" icon-"] {
     font-family: 'dcrdocs' !important;
@@ -990,3 +995,4 @@ h6:hover .headerlink {
         margin-bottom: 20px;
     }
 }
+

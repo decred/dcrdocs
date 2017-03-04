@@ -55,7 +55,7 @@ Output          | Description
 
 Missed tickets are tickets that were called to vote, but did not. After a ticket has been missed, it can be revoked[^14763]. The wallet automatically revokes missed tickets it controls (assuming it is unlocked so it can sign the revocation transaction).
 
-All `rebroadcastmissed` does is tell wallet to ask the network daemon (`dcrd`) to give it the list of missed tickets again so it can double check if it needs to revoke any. Typically it is not needed unless, for example, it tried to revoke a ticket but could not because the wallet was locked. In other words, if you noticed that revoked does not equal missed, you might need to `rebroadcastmissed`. As said though, there is rarely a need for this since the wallet automatically does it on startup and looks for missed tickets on every block.
+All `rebroadcastmissed` does is tell the wallet to ask the network daemon (`dcrd`) to give it the list of missed tickets again to double check if any need to be revoked. Typically this is not needed unless, for example, an attempt to revoke a ticket was made but failed because the wallet was locked. In other words, if you notice that revoked does not equal missed, you might need to `rebroadcastmissed`. As said though, there is rarely a need for this since the wallet automatically does it on startup and looks for missed tickets on every block.
 
 Continue to [Proof-of-Work Mining](/mining/proof-of-work.md)
 

@@ -1,7 +1,7 @@
 # The Golden Path
 
 Welcome to the world of Decred! We know that getting started with any new cryptocurrency
-can be difficult and we want to make the journey as easy as possible. Decred is fully
+can be difficult and we want to make the journey as easy as possible. Decred is well
 documented, with everything from basic information such as, "how do I send decred", to
 super technical stuff like "why did you choose a BLAKE-256 hash function, and how does
 it compare to the Merkle-Damgård construction?".

@@ -7,8 +7,6 @@
 Stake pools will usually implement multi-wallet redundancy by having many wallets physically distributed around the globe. This means there's less chance of a vote
 being missed because one wallet is down. It also reduces latency between the wallet and network which can reduce the chance of a vote being missed.
 
-In addition, it is entirely possible that a stake pool could implement proportional reward splitting so stakers receive smaller and more consistent payouts, however that would come at the expense of having to trust the pool with the rewards since it would have to receive them in order to split them out (just like with proof-of-work pools).
-
 ---
 
 #### **2. Does a proof-of-stake pool split reward between all participants (% based on the amount of tickets you submitted to pool)?**

@@ -17,7 +17,7 @@ You're now ready to start using Decred! Start the 'Decred' program. You will now
 ![Paymetheus connection screen](../../img/Paymetheus-dcrd-login.png)  
 
 >Two programs are actually running when you start Decred. There's 'Paymetheus' which is the graphical wallet we'll talk further about
->and 'dcrd' which is the communications daemon (pronounced DAY-mon; a program that runs in the background and that does not interact
+>and 'dcrd' which is the communications daemon (pronounced DAY-mon; a program that runs in the background and that does not directly interact
 > with a user) that actually talks to the Decred network. This means that you can run dcrd
 >on another computer (such as an always on server) and then use Paymetheus to connect to it remotely.
 

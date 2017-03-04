@@ -23,10 +23,10 @@ Continue to download and install...
 
 ***MAC***
 
-* Application - Native Mac app coming soon!
+* [Decredition](https://github.com/decred/decrediton)
 * [Command Line](/getting-started/install-guide#)
 
 ***LINUX***
 
-* Application - Native Linux app coming soon!
+* [Decredition](https://github.com/decred/decrediton)
 * [Command Line](/getting-started/install-guide)

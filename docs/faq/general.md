@@ -6,8 +6,8 @@
 
 Here are a series of blog posts that discuss the motivation[^8550] for Decred:
 
-* [Iterating Bitcoin](https://blog.companyzero.com/2015/11/bitcoins-biggest-challenges/)
-* [Bitcoin's biggest challenges](https://blog.companyzero.com/2015/12/iterating-bitcoin/)
+* [Iterating Bitcoin](https://blog.companyzero.com/2015/12/iterating-bitcoin/)
+* [Bitcoin's biggest challenges](https://blog.companyzero.com/2015/11/bitcoins-biggest-challenges/)
 
 ---
 

@@ -18,6 +18,7 @@ extra_css:
 pages:
 - Home: 'index.md'
 - Getting Started:
+  - The Golden Path Beginner's Guide: 'getting-started/golden-path.md'
   - 'Download and Install Decred': 'getting-started/install-guide.md'
   - 'Overview': 'getting-started/overview.md'
   - User Guides:

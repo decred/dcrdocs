@@ -38,6 +38,8 @@ You can have multiple voting-only wallets because they are not creating new addr
 
 If you are doing a hot/cold setup, you can create multiple voting-only hot wallets without any issues so long as they both are aware of the address you give voting rights to.
 
+Continue to [Stake Pools FAQ](/faq/proof-of-stake/stake-pools.md)
+
 ---
 
 ## **<i class="fa fa-book"></i> Sources**

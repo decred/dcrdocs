@@ -4,11 +4,8 @@
 
 #### **1. Are there any other benefits to a stake pool other than not needing to run a full node and keeping your wallet unlocked? For example, will it have a better chance of winning or anything like that?**
 
-Well first keep in mind that wallet (`dcrwallet`) != core network (`dcrd`). In order to stake you need to have `dcrwallet` online and unlocked 24/7.
-
-With that out of the way, you are correct that the only real benefit of the current pool is that it will provide worry-free voting since it provides multi-location redundancy and automatic failure recovery[^9262], neither of which your local setup is very likely to have.
-
-However, it is entirely possible that a stake pool could implement proportional reward splitting so stakers receive smaller and more consistent payouts, however that would come at the expense of having to trust the pool with the rewards since it would have to receive them in order to split them out (just like with proof-of-work pools).
+Stake pools will usually implement multi-wallet redundancy by having many wallets physically distributed around the globe. This means there's less chance of a vote
+being missed because one wallet is down. It also reduces latency between the wallet and network which can reduce the chance of a vote being missed.
 
 ---
 
@@ -53,6 +50,8 @@ The worst that would happen if a pool owner disappears is the votes will be miss
 #### **7. Where can I see an example of a stake pool ticket on the block explorer?**
 
 Stake pools involve 'Dc' addresses since the stake pool uses pay-to-script-hash addresses[^17515]. For example, see txid: [c0abc0ec63a8de15550f067e2b6fde28f0432fb91b938574b282daa69f914103](https://mainnet.decred.org/tx/c0abc0ec63a8de15550f067e2b6fde28f0432fb91b938574b282daa69f914103).
+
+Continue to [PoS Voting Tickets FAQ](/faq/proof-of-stake/voting-tickets.md)
 
 ---
 

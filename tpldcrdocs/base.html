@@ -19,7 +19,7 @@
         <link href="{{ base_url }}/css/bootstrap-custom.min.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ base_url }}/css/highlight.css">
         <link rel="stylesheet" href="{{ base_url }}/css/font-awesome-4.0.3.css">
-        
+
         {%- for path in extra_css %}
         <link href="{{ path }}" rel="stylesheet">
         <link href="{{ base_url }}/css/base.css" rel="stylesheet">
@@ -51,29 +51,32 @@
         </script>
         {% endif %}
         {%- endblock %}
-      
+
         {%- block extrahead %} {% endblock %}
     </head>
 
     <body>
-
-        {% include "nav.html" %}
-
         <div class="container">
-			<div class="row">
-				{%- block content %}
-					<div class="col-md-3 hidden-mob">
-						<div class="bs-sidebar hidden-print affix well" role="complementary">
-							<ul class="nav bs-sidenav current">
-								{% for nav_item in nav %}
-								<li>{% include "toc.html" %}<li>
-							  {% endfor %}
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-9" role="main">{% include "content.html" %}</div>
-				{%- endblock %}
-            </div>
+            {%- block content %}
+                <div class="col-sm-3 col-xs-12" role="navigation">
+                    {% include "nav.html" %}
+                </div>
+                <div class="col-sm-9 col-xs-12" role="main">
+
+                    <a class="github-page-link hidden-xs no-underline" href="{{ config.repo_url }}">
+                    {% if config.repo_name == 'GitHub' %}
+                        <i class="fa fa-github"></i>
+                    {% elif config.repo_name == 'Bitbucket' %}
+                        <i class="fa fa-bitbucket"></i>
+                    {% endif %}
+                    <div>Edit on {{ config.repo_name }}</div>
+                    </a>
+
+                    <div class="content">
+                        {% include "content.html" %}
+                    </div>
+                </div>
+            {%- endblock %}
         </div>
 
         {%- block scripts %}
@@ -84,28 +87,5 @@
         <script src="{{ path }}"></script>
         {%- endfor %}
         {%- endblock %}
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <form role="form">
-                            <div class="input-group">
-                        <span class="input-group-addon" id="basic-addon1">
-                           <svg class="svg-search">
-                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ base_url }}/img/sprites.svg#svg-search"></use>
-                           </svg>
-                        </span>
-                       <input type="text" class="form-control" placeholder="" id="mkdocs-search-query" autocomplete="off">
-                     </div>
-                        </form>
-                    </div>
-                    <div class="modal-body">
-                        <div id="mkdocs-search-results"></div>
-                    </div>
-             
-                </div>
-            </div>
-        </div>
     </body>
 </html>

@@ -13,29 +13,14 @@ function getSearchTerm()
     }
 }
 
-$(document).ready(function() {
-    var search_term = getSearchTerm(),
-        $search_modal = $('#mkdocs_search_modal');
-
-    if(search_term) {
-        $search_modal.modal();
-    }
-
-    $search_modal.on('shown.bs.modal', function () {
-        $search_modal.find('#mkdocs-search-query').focus();
-    });
-});
-
-
 /* Highlight */
 $( document ).ready(function() {
     hljs.initHighlightingOnLoad();
     $('table').addClass('table table-striped table-hover');
 });
 
-
 $('body').scrollspy({
-    target: '.bs-sidebar',
+    target: '.scroll-spy',
 });
 
 /* Toggle the `clicky` class on the body when clicking links to let us
@@ -49,4 +34,16 @@ $("li.disabled a").click(function() {
     event.preventDefault();
 });
 
-
+/* Link to github page of current content */
+$(document).ready(function(){
+    var git = 'https://github.com/decred/dcrdocs/edit/master/docs'
+    var t1 = window.location.pathname
+    var url = null
+    if (t1=='/'){
+        url = git + '/index.md'
+    }else{
+        url = git+t1.substr(0, t1.length-1)+'.md'
+    }
+    a_git = $('[href="https://github.com/decred/dcrdocs"]')
+    a_git.attr('href', url).attr('target', '_blank')
+})

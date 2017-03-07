@@ -23,10 +23,10 @@ Continue to download and install...
 
 ***MAC***
 
-* [Decredition](https://github.com/decred/decrediton)
+* [Decrediton](https://github.com/decred/decrediton)
 * [Command Line](/getting-started/install-guide#)
 
 ***LINUX***
 
-* [Decredition](https://github.com/decred/decrediton)
+* [Decrediton](https://github.com/decred/decrediton)
 * [Command Line](/getting-started/install-guide)

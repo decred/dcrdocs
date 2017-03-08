@@ -76,13 +76,13 @@ and understand the options available before using the feature as you may set you
 prices higher than desired.
 
 All of these options can be specified on the command line or in dcrwallet.conf. Note that at
-this time there is no way to change settings from within dcrwallet. You will need to restart it to 
+this time there is no way to change settings while dcrwallet is running. You will need to restart it to 
 adjust your settings.
 
 Parameter|Description|Default|Explanation
 :----------:|:---------------------------:|:----------:|:---------------------------:
-ticketbuyer.maxpricescale|Attempt to prevent the stake difficulty from going above this multiplier (>1.0) by manipulation, 0 to disable|2|If purchasing tickets at this price window would cause the next window to be higher than ```(price * multiplier)```, do not buy tickets. This may cause you not buy tickets when otherwise you could. Recommend to set to 0.
-ticketbuyer.pricetarget|A target to try to seek setting the stake price to rather than meeting the average price, 0 to disable |0 DCR|Attempt to buy tickets in order to force the future price to '''pricetarget'''. Leave this at 0.
+ticketbuyer.maxpricescale|Attempt to prevent the stake difficulty from going above this multiplier (>1.0) by manipulation, 0 to disable|2|If purchasing tickets at this price window would cause the next window to be higher than ```(price * multiplier)```, do not buy tickets. This may cause you not buy tickets when otherwise you could. Recommend to set to 0. This option has been deprecated and will be removed in a future version.
+ticketbuyer.pricetarget|A target to try to seek setting the stake price to rather than meeting the average price, 0 to disable |0 DCR|Attempt to buy tickets in order to force the future price to '''pricetarget'''. Leave this at 0. This option has been deprecated and will be removed in a future version.
 ticketbuyer.avgpricemode|The mode to use for calculating the average price if pricetarget is disabled (vwap, pool, dual) |vwap|!
 ticketbuyer.avgpricevwapdelta|The number of blocks to use from the current block to calculate the VWAP |2880|!
 ticketbuyer.maxfee|Maximum ticket fee per KB |0.1 DCR|Tickets are entered into the mempool in order of their fee per kilobyte. This sets the maximum fee you are willing to pay.

@@ -41,7 +41,7 @@ The ticketfee is the fee you pay if your ticket gets mined. This fee is an incen
 
 In case the buying window is full, meaning there are more tickets being bought than there are available to be mined, the ticketfee will be used to determine which tickets get put into the pool. The tickets with the highest ticketfee will be selected by the miners.
 
-Fees are calculated in DCR per kilobyte. Since a ticket is only abour 300bytes in size, the actual fees you pay will be lower than what you set as the specific fee amount.
+Fees are calculated in DCR per kilobyte. Since a ticket is only about 300bytes in size, the actual fees you pay will be lower than what you set as the specific fee amount.
 
 Both txfees and ticketfees will not be returned when a ticket votes, expires, or misses a vote.
 
@@ -99,8 +99,8 @@ One of the agenda issues set for the PoS voting system could be a hardfork. If s
 
 For a hardfork vote to start two critical conditions have to be met:
 
-First, 75% of the PoW miners have to upgrade to the latest version of the current network block version. This check runs over the past 100 blocks.
-Second, 75% of the PoS miners have to upgrade to the latest version. This check runs over the past 2016 blocks.
+- First, 75% of the PoW miners have to upgrade to the latest version of the current network block version. This check runs over the past 100 blocks.
+- Second, 75% of the PoS miners have to upgrade to the latest version. This check runs over the past 2016 blocks.
 
 If these checks are met the voting process begins. Tickets can be set with an additional parameter of yes/no/abstain. You do this in your wallet before the ticket votes. Tickets marked as abstain will not be counted in the total amount of votes.
 

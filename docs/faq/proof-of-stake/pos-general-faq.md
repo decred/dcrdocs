@@ -18,7 +18,7 @@ In the Decred Proof-of-Stake system, anyone holding DCR can participate by buyin
 
 #### **2. What are tickets?**
 
-A ticket is a token you buy to participate in the PoS system. You can buy tickets through the command line interface of dcrctl, or through a GUI like Paymetheus [Paymetheus Ticket Purchasing Guide] (/getting-started/user-guides/using-paymetheus.md#-purchase-tickets-tab)  or Decredition. Whenever you buy a ticket you pay the current ticket price and a ticket fee using your DCR. Once your ticket is mined it will move from the current 'allmempool' to the 'immature' ticket pool. After 256 blocks (about 22 hours) it then will mature and go into the live ticket pool and is ready to be chosen to validate a block.
+A ticket is a token you buy to participate in the PoS system. You can buy tickets through the command line interface of dcrctl, or through a GUI like Paymetheus[^1] or Decredition. Whenever you buy a ticket you pay the current ticket price and a ticket fee using your DCR. Once your ticket is mined it will move from the current 'allmempool' to the 'immature' ticket pool. After 256 blocks (about 22 hours) it then will mature and go into the live ticket pool and is ready to be chosen to validate a block.
 
 Remember, your wallet has to be online and unlocked for your ticket to cast a valid vote on a block when it is selected. If you don't want to leave your wallet unlocked and online have a look at a PoS stake pool.
 
@@ -113,3 +113,7 @@ The hardfork vote can fail at multiple points. The vote might not start at all i
 In case a vote fails a new round will start at the beginning of the process. This means checking whether the PoW miners have upgraded, if the PoS miners have upgraded, and then another vote counting period. This will continue for a certain amount of rounds, after which, if the vote hasn't passed, the agenda issue will be tabled.
 
 ---
+
+## **<i class="fa fa-book"></i> Links**
+
+[^1]: [Paymetheus Ticket Purchasing Guide] (/getting-started/user-guides/using-paymetheus.md#-purchase-tickets-tab)

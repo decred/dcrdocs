@@ -71,65 +71,34 @@ up for a pool.
 
 ## **<i class="fa fa-ticket"></i> Automatic Purchasing Of Tickets**
 
-[<i class="fa fa-github"></i> dcrticketbuyer](https://github.com/decred/dcrticketbuyer)
-is a highly configurable utility for purchasing tickets.  The GitHub project
-page
-[<i class="fa fa-external-link-square"></i>https://github.com/decred/dcrticketbuyer](https://github.com/decred/dcrticketbuyer)
-provides an overiew of the options and how to run it.
+You can set up dcrwallet to automatically purchase tickets on your behalf. We recommended you read
+and understand the options available before using the feature as you may set your fees and ticket 
+prices higher than desired.
 
-<i class="fa fa-exclamation-triangle"></i> ** It is highly recommended
-to try dcrticketbuyer on testnet to make sure it's correctly configured and
-behaves as expected before attempting to use it on mainnet. Once tickets are
-purchased, the funds can be locked for months without any way to retrieve
-them. **
+All of these options can be specified on the command line or in dcrwallet.conf. Note that at
+this time there is no way to change settings while dcrwallet is running. You will need to restart it to 
+adjust your settings.
 
-> dcrticketbuyer (Solo Mining)
-
-The bare minimum configuration is to provide the RPC access credentials for
-dcrd and dcrwallet.  In this configuration, dcrticketbuyer will use all
-available funds to purchase tickets at an average price that is calculated
-by examining historic prices.
-
-```no-highlight
-dcrduser=<dcrd RPC Username>
-dcrdpass=<dcrd RPC Password>
-dcrwuser=<dcrwallet RPC Username>
-dcrwpass=<dcrwallet RPC Password>
-```
-
-> dcrticketbuyer (Pool Mining)
-
-Purchasing tickets and delegating the voting rights to a stake pool requires
-the following stake pool-specific configuration options.  The values to use
-may be found in the instructions portion of the Tickets page that is present
-on any of the official stake pools.
-
-```no-highlight
-pooladdress=DsExamplePaymentAddr
-poolfees=7.5
-ticketaddress=DcExampleTicketAddr
-```
-
-> dcrwallet
-
-<i class="fa fa-thumbs-down"></i> **This method of using dcrwallet to
-purchase tickets automatically has been deprecated and is not recommended.**
-
-<i class="fa fa-exclamation-triangle"></i> **Automatic ticket purchasing built-in to dcrwallet can incur transaction fees beyond your control!**
-
-Automatic ticket purchasing can be enabled by adding the relevant configuration options to dcrwallet's configuration file.
-See [dcrwallet.conf configuration](/advanced/storing-login-details.md#dcrwallet).
-
-```no-highlight
-; Always keep this amount of DCR in the wallet.
-balancetomaintain=10
-; Enable ticket purchasing and voting.
-enablestakemining=1
-; Prompt for a password on startup to ensure the wallet is unlocked immediately.
-promptpass=1
-; Maximum amount to spend on a ticket.
-ticketmaxprice=10
-```
+Parameter|Description|Default|Explanation
+:----------:|:---------------------------:|:----------:|:---------------------------:
+ticketbuyer.maxpricescale|Attempt to prevent the stake difficulty from going above this multiplier (>1.0) by manipulation, 0 to disable|2|If purchasing tickets at this price window would cause the next window to be higher than ```(price * multiplier)```, do not buy tickets. This may cause you not buy tickets when otherwise you could. Recommend to set to 0. This option has been deprecated and will be removed in a future version.
+ticketbuyer.pricetarget|A target to try to seek setting the stake price to rather than meeting the average price, 0 to disable |0 DCR|Attempt to buy tickets in order to force the future price to '''pricetarget'''. Leave this at 0. This option has been deprecated and will be removed in a future version.
+ticketbuyer.avgpricemode|The mode to use for calculating the average price if pricetarget is disabled (vwap, pool, dual) |vwap|!
+ticketbuyer.avgpricevwapdelta|The number of blocks to use from the current block to calculate the VWAP |2880|!
+ticketbuyer.maxfee|Maximum ticket fee per KB |0.1 DCR|Tickets are entered into the mempool in order of their fee per kilobyte. This sets the maximum fee you are willing to pay.
+ticketbuyer.minfee|Minimum ticket fee per KB |0.01 DCR|The minimum fee per kilobyte you are willing to pay. This should probably be left at 0.01 unless you know what you're doing.
+ticketbuyer.feesource|The fee source to use for ticket fee per KB (median or mean) |median|The fee chosen by the ticket buyer will be based off either the median (line all the fees up in order and choose the middle one) or the mean (also known as the average; add all the fees up and divide by 2). It's recommended to leave this at median as there have been instances of fee manipulation where people try to force up the average by buying one ticket with a very high fee.
+ticketbuyer.maxperblock|Maximum tickets per block, with negative numbers indicating buy one ticket every 1-in-n blocks |5|Do not buy more than this number of tickets per block. A negative number means buy one ticket every n blocks. e.g. -2 would mean buy a ticket every second block.
+ticketbuyer.blockstoavg|Number of blocks to average for fees calculation |11| Fees are calculated using this many previous blocks. You can usually leave this at the default.
+ticketbuyer.feetargetscaling|Scaling factor for setting the ticket fee, multiplies by the average fee |1|The average fee is multipled by this number to give the fee to pay. DO NOT change this until you really know what you're doing. It could raise your fees very high. Remember, fees are non-refundable!
+ticketbuyer.dontwaitfortickets|Don't wait until your last round of tickets have entered the blockchain to attempt to purchase more| |By default, the ticket buyer will not buy more tickets until all the previous ones purchased have been entered into the blockchain. You can set this to purchase more even if some are still in the mempool.
+ticketbuyer.spreadticketpurchases|Spread ticket purchases evenly throughout the window| |By default all tickets are purchased at once. This setting allows tells the ticket buyer to spread out the purchase of tickets which may result in more favourable fees.
+ticketbuyer.maxinmempool|The maximum number of your tickets allowed in mempool before purchasing more tickets |40|If you have this many tickets in the mempool, the ticket buyer will not buy more until some are accepted into the blockchain.
+ticketbuyer.expirydelta|Number of blocks in the future before the ticket expires |16|You can set an expiry so that if your tickets are not accepted into the blockchain due to high fees, they will cancel and you can try again by raising your fees.
+ticketbuyer.maxpriceabsolute|Maximum absolute price to purchase a ticket |0 DCR| If the ticket price is above this value, you will not buy more tickets. The default of 0 turns this off.
+ticketbuyer.maxpricerelative|Scaling factor for setting the maximum price, multiplies by the average price |1.25|If the current window price is significantly higher than the last few windows, do not buy any tickets. E.g. With the default value of 1.25, if the average price of the last few windows is 50DCR, you won't buy any tickets if the current window is over 75DCR.
+ticketbuyer.balancetomaintainabsolute|Amount of funds to keep in wallet when stake mining |0 DCR| If you balance is lower than this number, you will not buy tickets. The default of 0 will use all the funds in your account to buy tickets.
+ticketbuyer.balancetomaintainrelative|Proportion of funds to leave in wallet when stake mining |0.3|Similar to the last one, except it's based on a percentage of your total funds.
 
 ---
 

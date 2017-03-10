@@ -7,7 +7,7 @@ This guide is intended to help you setup the `dcrd` application using [startup f
 **Prerequisites:**
 
 - Use either the latest [dcrinstall](/getting-started/install-guide.md#dcrinstall) or [Binary Release archive](/getting-started/install-guide.md#binary-releases) to install `dcrd`.
-- Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/operating-systems.md#command-line-differences-across-operating-systems).
+- Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/cli-differences.md).
 
 ---
 
@@ -53,4 +53,4 @@ Note that this connection will be used in the future. You must leave this `dcrd`
 
 ---
 
-To continue on The Golden Path, visit the [dcrwallet Setup](/getting-started/user-guides/dcrwallet-setup.md) guide.
+Now that you've set up `dcrd`, visit the [dcrwallet Setup](/getting-started/user-guides/dcrwallet-setup.md) guide.

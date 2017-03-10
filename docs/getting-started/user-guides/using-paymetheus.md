@@ -158,5 +158,3 @@ Tickets missed               | Tickets that missed a vote either because the vot
 Tickets revoked              | Tickets that missed a vote and have had the ticket price refunded (minus the ticket fee), should be the same as tickets missed
 Tickets voted                | Lifetime tickets voted by this wallet
 Total subsidy earned         | Lifetime DCR subsidy earned by this wallet
-
-Continue to [Obtaining DCR](/getting-started/obtaining-dcr.md)

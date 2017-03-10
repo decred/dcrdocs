@@ -18,13 +18,13 @@ extra_css:
 pages:
 - Home: 'index.md'
 - Getting Started:
-  - The Golden Path Beginner's Guide: 'getting-started/golden-path.md'
-  - 'Operating Systems': 'getting-started/operating-systems.md'
-  - 'Download and Install Decred': 'getting-started/install-guide.md'
+  - "Beginner's Guide": 'getting-started/beginner-guide.md'
+  - 'Download and Install': 'getting-started/install-guide.md'
   - Paymetheus:
     - 'Paymetheus Setup': 'getting-started/user-guides/paymetheus.md'
     - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
   - Command-Line:
+    - 'OS Differences': 'getting-started/cli-differences.md'
     - 'Startup Basics': 'getting-started/startup-basics.md'
     - 'dcrd Setup': 'getting-started/user-guides/dcrd-setup.md'
     - 'dcrwallet Setup': 'getting-started/user-guides/dcrwallet-setup.md'

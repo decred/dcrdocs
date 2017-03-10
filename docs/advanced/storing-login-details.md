@@ -1,6 +1,6 @@
 # **<i class="fa fa-hdd-o"></i> Storing Login Details**
 
-All parameters that are specified on the command line to dcrd,
+All parameters that are specified on the command line while starting dcrd,
 dcrwallet and dcrctl can also be kept in configuration files. This is
 a good way of storing your login credentials so that you do not need
 to include them in scripts or type them into the terminal all the
@@ -94,8 +94,7 @@ during the wallet creation) you can also add that to `dcrwallet.conf`:
 walletpass=<yourwalletpassword>
 ```
 
-You cannot specify you wallet passphrase in the config files. That
-must be entered manually with `dcrctl`. Alternatively, you can add `promptpass=true` to `dcrwallet.conf` to prompt you for your wallet passphrase every time your start `dcrwallet`.
+You cannot specify your private wallet passphrase in the config files. That must be entered manually with `dcrctl`. 
 
 ---
 
@@ -137,7 +136,7 @@ rpcpass=<password>
 
 ## **<i class="fa fa-tasks"></i> Additional Configuration Options**
 
-All command line startup options can be put in the config file.
+All command line options can be put in the config file.
 The sample config files in the release package gives additional
 options or you can run one of the programs with the `-h` option to show a list and description of all options for the specified application.
 

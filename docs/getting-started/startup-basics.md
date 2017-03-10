@@ -32,9 +32,9 @@ Linux:
     ~/.dcrd/
     ~/.dcrctl/
 
-Each of these folders is allowed it's own `.conf` file, named after the individual application (`e.g. Dcrd uses dcrd.conf`). Please also note that `Dcrd` and `Dcrwallet` home directories are automatically created when each application is first launched. You will have to manually create a `Dcrctl` home directory to utilize a config file.
+Each of these folders is allowed it's own `.conf` file, named after the individual application (`e.g. dcrd uses dcrd.conf`). Please also note that the `Dcrd` and `Dcrwallet` home directories are automatically created when each application is first launched. You will have to manually create a `Dcrctl` home directory to utilize a config file.
 
-The [dcrinstall and Binary Release Installation methods](/getting-started/install-guide.md) include sample configuration files. It is recommended to copy these config files into the appropriate directory described above, and rename them to remove 'sample-'. These files have many settings commented out (comments are not read by the program during runtime) so all of these settings are effectively disabled. You can enable these pre-written settings by simple deleting the semi-colon before the line.
+The [dcrinstall](/getting-started/install-guide.md#dcrinstall) and [Binary Release](/getting-started/install-guide.md#binary-releases) installation methods include sample configuration files. It is recommended to copy these config files into the appropriate directory described above, and rename them to remove 'sample-'. These files have many settings commented out (comments are not read by the program during runtime) so all of these settings are effectively disabled. You can enable these pre-written settings by simple deleting the semi-colon before the line.
 
 ---
 
@@ -55,7 +55,3 @@ The above example would first look to the `dcrd` configuration file for settings
 [Storing Login Details in Config Files](/advanced/storing-login-details.md)
 
 [Full List of Options for Each Application](/advanced/program-options.md)
-
----
-
-To continue with The Golden Path, visit the [dcrd Setup](/getting-started/user-guides/dcrd-setup.md) guide.

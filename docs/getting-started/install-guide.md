@@ -8,7 +8,7 @@ There are four methods for downloading and installing the Decred software. One i
 
 ---
 
-## **Windows Installer for Paymetheus** 
+## **Paymetheus** 
 
 The Windows Installer (`.msi` file) is located here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). It will install Paymetheus to your computer's Program Files folder. Installation is pretty straightforward, but instructions are provided below:
 
@@ -17,7 +17,7 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
     For 32-bit computers, download the `decred_0.8.2-beta_x86.msi` file. <br />
     For 64-bit computers, download the `decred_0.8.2-beta_x64.msi` file.
 
-2. Navigate to download location and open the `.msi` file.
+2. Navigate to download location and double click the `.msi` file.
 
 3. Follow the installation steps. Within this process you'll be prompted to accept an End-User License Agreement.
 

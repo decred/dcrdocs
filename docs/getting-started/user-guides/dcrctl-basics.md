@@ -7,7 +7,7 @@ This guide is intended to help you learn the basic commands of the `dcrctl` appl
 **Prerequisites:**
 
 - Use either the latest [dcrinstall](/getting-started/install-guide.md#dcrinstall) or [Binary Release archive](/getting-started/install-guide.md#binary-releases) archive to install `dcrctl`.
-- Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/operating-systems.md#command-line-differences-across-operating-systems).
+- Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/cli-differences.md).
 - [Setup dcrd](/getting-started/user-guides/dcrd-setup.md) and have it running in the background.
 - [Setup dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) and have it running in the background.
 
@@ -39,7 +39,7 @@ The command to unlock your wallet follows:
 dcrctl -u [wallet username] -P [wallet password] --wallet walletpassphrase [private passphrase set during wallet creation] 0
 ```
 
-Here, we are specifying for `dcrctl` to send the command to `dcrwallet` by using the `--wallet` flag. The `-u` and `-P` flags are specifying the username and password needed to send commands to `dcrwallet`. The actual command is `walletpassphrase` which accepts two parameters, your private passphrase and a time limit. Specifying `0` for a time limit unlocks `dcrwallet` without a time limit. Note, however, that this only unlocks the wallet for the current session. If you close the window the wallet is running in, you will need to unlock it again the next time you start it. 
+Here, we are specifying for `dcrctl` to send the command to `dcrwallet` by using the `--wallet` flag. The `-u` and `-P` flags are specifying the username and password needed to send commands to `dcrwallet`. The actual command is `walletpassphrase` which accepts two parameters, your private passphrase and a time limit. Specifying `0` for a time limit unlocks `dcrwallet` without a time limit. Note, however, that this only unlocks the wallet for the current session. If you close the window the wallet is running in, or stop/restart the `dcrwallet`, you will need to unlock it again the next time you start it. 
 
 If the command was successful, you will not get a confirmation from `dcrctl`, but if you look at your `dcrwallet` session, it will say:
 
@@ -118,5 +118,3 @@ dcrctl help [command]
 More commands can also be found on the [Program Options](/advanced/program-options.md) page.
 
 ---
-
-To continue with The Golden Path, visit the [Obtaining DCR](/getting-started/obtaining-dcr/) guide.

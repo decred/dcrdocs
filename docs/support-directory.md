@@ -1,24 +1,20 @@
 # **Support Reference Directory**
 
-The purpose of this page is to provide a directory for support contacts. Everyone currently working with the Decred project has their Slack username listed.
+The purpose of this page is to provide a directory for support contacts. Everyone currently working with the Decred project has their Slack and/or IRC username listed.
 
 ## Join Us on Slack
 
 Join us on Slack for support. You can receive an invite to the Decred Slack by visiting [https://slack.decred.org](https://slack.decred.org). Once you've signed up, you can join using your web browser by visiting [https://decred.slack.com](https://decred.slack.com) or by downloading one of Slack's desktop or mobile applications.
+
+## IRC Information:
+
+Majority of the developers are available on the Freenode IRC #decred channel. Join us on your own IRC client or the Freenode webchat [here](https://webchat.freenode.net/?channels=decred&uio=d4). There is also a bridge between Slack's #general channel and the #decred channel on IRC.
 
 ## Development Support
 
 **@jy-p: Boss Man** <br />
 Project Leader <br />
 CEO of Company0
-
-**@davecgh: Lead Developer** <br />
-Consensus Expert<br />
-General Support
-
-**marcop (IRC only): Developer** <br />
-Consensus Expert<br />
-Support
 
 **@ay-p: Developer** <br />
 Decrediton<br />
@@ -31,6 +27,14 @@ Go Programmer<br />
 PoS Support<br />
 Analytics/Data Collection
 
+**@davecgh: Lead Developer** <br />
+Consensus Expert<br />
+General Support
+
+**@dhill: Developer** <br />
+sysadmin<br />
+Go Programmer 
+
 **@jcv: Developer** <br />
 Decrediton<br />
 Wallet Support<br />
@@ -40,25 +44,29 @@ Documentation<br />
 Release Management<br />
 General Support
 
-**@jrick: Developer** <br />
-Paymetheus Support<br />
-Wallet Support<br /> 
-PoS Support
-
 **@jolan: Developer** <br />
 PoW Support<br />
 gominer<br /> 
 Website Management
 
-**@dhill: Developer** <br />
-sysadmin<br />
-Go Programmer 
+**@jrick: Developer** <br />
+Paymetheus Support<br />
+Wallet Support<br /> 
+PoS Support
+
+**marcop (IRC only): Developer** <br />
+Consensus Expert<br />
+Support
 
 **@raedah: Developer** <br />
 Ticket Buyer Support<br />
 General Support
 
 ## Documentation Support
+
+**@animedow: Documentation Collaborator** <br />
+PoS Support<br />
+General Support 
 
 **@gratefulcheddar: Documentation Collaborator** <br />
 PoS and PoW Support<br />
@@ -75,29 +83,25 @@ Paymetheus Support<br />
 Statistics<br />
 General Support
 
-**@animedow: Documentation Collaborator** <br />
-PoS Support<br />
-General Support 
-
 ## Community Support
+
+**@coin_artist: Marketing Representative** <br />
+Promotional Crypto-Puzzles<br />
+Community Management
 
 **@dbt1033: Community Manager** <br />
 Social Media<br />
 Forum Moderator<br />
 Marketing 
 
-**@emiliomann: Brazilian Community Manager** <br />
-PoS Support<br />
-Public Relations<br />
-Marketing  
-
 **@dyrk: Russian Community Manager** <br />
 PoS Support<br /> 
 Dcrstats / Stakepool / Evolution
 
-**@coin_artist: Marketing Representative** <br />
-Promotional Crypto-Puzzles<br />
-Community Management
+**@emiliomann: Brazilian Community Manager** <br />
+PoS Support<br />
+Public Relations<br />
+Marketing  
 
 ## Design Support
 

@@ -80,7 +80,7 @@ pages:
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - About:
-  - 'Support': 'support.md'
+  - 'Support Directory': 'support-directory.md'
   - 'Credits': 'about/credits.md'
   - 'License': 'about/license.md'
 copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.2. Decred Project 2016.

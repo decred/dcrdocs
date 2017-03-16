@@ -8,7 +8,7 @@ There are four methods for downloading and installing the Decred software. One i
 
 ## **dcrinstall**
 
-`dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binaries are provided for Windows, OSX/macOS, Linux, OpenBSD, and FreeBSD. Executing installer will install `dcrd`, `dcrwallet`, `dcrctl`, and `dcrticketbuyer`. Instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
+`dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binaries are provided for Windows, OSX/macOS, Linux, OpenBSD, and FreeBSD. Executing installer will install `dcrd`, `dcrwallet`, and `dcrctl`. Instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
 
 > OSX/macOS:
 
@@ -25,7 +25,7 @@ There are four methods for downloading and installing the Decred software. One i
     `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
     `./dcrinstall-darwin-amd64-v0.8.2`
     
-3. The binaries for `dcrd`, `dcrwallet`, `dcrctl`, and `dcrticketbuyer` can then be found in the `~/decred/` directory.
+3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory.
 
 > Linux:
 
@@ -44,7 +44,7 @@ There are four methods for downloading and installing the Decred software. One i
     `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
     `./dcrinstall-darwin-amd64-v0.8.2` 
     
-3. The binaries for `dcrd`, `dcrwallet`, `dcrctl`, and `dcrticketbuyer` can then be found in the `~/decred/` directory.
+3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory.
 
 > Windows:
 
@@ -57,7 +57,7 @@ There are four methods for downloading and installing the Decred software. One i
 
     You can either double click it or run it from the Command Prompt. 
     
-3. The binaries for `dcrd`, `dcrwallet`, `dcrctl`, and `dcrticketbuyer` can then be found in the `%HOMEPATH%\decred\` directory (usually %HOMEPATH% is `C:\Users\username`).
+3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `%HOMEPATH%\decred\` directory (usually %HOMEPATH% is `C:\Users\username`).
 
 ## **Binary Releases**
 
@@ -77,7 +77,7 @@ The newest Binary Releases can be found here: [https://github.com/decred/decred-
 
     **NOTE**: If you are using Safari on macOS Sierra and have the 'Open "safe" files after downloading' preference enabled, .gz and .zip files are automatically uncompressed after download. The `tar -xvzf filename.tar.gz` command results in this error: `tar: Error opening archive: Failed to open 'filename.tar.gz'`. Use `tar -xvzf filename.tar` instead (remove the .gz from the previous command).
     
-    Both of these should extract the tar into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v0.8.2.tar.gz` should extract to `decred-darwin-amd64-v0.8.2`). It should include `dcrctl`, `dcrd`, `dcrticketbuyer`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, `sample-dcrwallet.conf`, and `ticketbuyer-example.conf`.
+    Both of these should extract the tar into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v0.8.2.tar.gz` should extract to `decred-darwin-amd64-v0.8.2`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
 
 
 > Linux
@@ -94,7 +94,7 @@ The newest Binary Releases can be found here: [https://github.com/decred/decred-
     Finder: simply double click on the .tar.gz file. <br />
     Terminal: use the `tar -xvzf filename.tar.gz` command. 
     
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v0.8.2.tar.gz` should extract to `decred-darwin-amd64-v0.8.2`). It should include `dcrctl`, `dcrd`, `dcrticketbuyer`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, `sample-dcrwallet.conf`, and `ticketbuyer-example.conf`.
+    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v0.8.2.tar.gz` should extract to `decred-darwin-amd64-v0.8.2`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
 
 > Windows
 
@@ -107,7 +107,7 @@ Note: Windows 7/8/10 natively provides support for `.zip` files, therefore it is
 
 2. Navigate to download location and unzip the `.zip` file:
 
-    File Explorer: Right click on the .zip file, select "Extract All.." and a prompt should open asking for the directory to use. The default will extract the `.zip` to a folder with the same name. It should include `dcrctl`, `dcrd`, `dcrticketbuyer`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, `sample-dcrwallet.conf`, and `ticketbuyer-example.conf`.
+    File Explorer: Right click on the .zip file, select "Extract All.." and a prompt should open asking for the directory to use. The default will extract the `.zip` to a folder with the same name. It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
 
 If you decide to download the `.tar.gz` file, it will require two separate extractions in some third-party application (7-zip, winRAR, etc..) to get to the actual binaries.
 

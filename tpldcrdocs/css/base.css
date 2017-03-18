@@ -184,13 +184,14 @@ div[role=navigation] a.current {
 }
 
 div[role=main] {
-    padding: 0 10px 40px 10px;
+    padding: 0 15px 40px 15px;
     background-color: #f4f7f9;
     min-height: 100%;
     min-height: 100vh;
 }
 div[role=main] .content {
-    max-width: 900px;
+    margin: 0 auto;
+    max-width: 70rem;
 }
 div[role=main] p {
     font-weight: 300;
@@ -478,6 +479,9 @@ div[role=main] .github-page-link {
     div[role=main] {
         padding: 0px 15px 50px 30px;
     }
+    div[role=main] .content {
+        margin: 0;
+    }
     .navbar-collapse {
         padding: 0  15px;
     }
@@ -501,7 +505,7 @@ div[role=main] .github-page-link {
 
 @media (min-width: 1048px) {
     div[role=main] {
-        padding: 15px 45px 45px 45px;
+        padding: 9px 45px 45px 65px;
     }
 }
 

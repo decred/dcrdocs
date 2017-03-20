@@ -23,10 +23,12 @@ Continue to download and install...
 
 ***MAC***
 
-* [Decrediton](https://github.com/decred/decrediton)
+* [Download](https://github.com/decred/decred-binaries/releases) and [install](https://github.com/decred/decrediton) Decrediton then
+continue to [Obtaining DCR](/getting-started/obtaining-dcr/)
 * [Command Line](/getting-started/install-guide#)
 
 ***LINUX***
 
-* [Decrediton](https://github.com/decred/decrediton)
+* [Download](https://github.com/decred/decred-binaries/releases) and [install](https://github.com/decred/decrediton) Decrediton then
+continue to [Obtaining DCR](/getting-started/obtaining-dcr/)
 * [Command Line](/getting-started/install-guide)

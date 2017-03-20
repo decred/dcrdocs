@@ -65,6 +65,7 @@ pages:
   - 'Storing Login Details': 'advanced/storing-login-details.md'
   - 'Program Options': 'advanced/program-options.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
+  - 'Transaction Details': 'advanced/transaction-details.md'
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
   - 'Advanced dcrctl Usage': 'advanced/dcrctl-usage.md'

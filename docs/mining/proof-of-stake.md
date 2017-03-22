@@ -31,13 +31,13 @@ You will also need to [Obtain DCR](/getting-started/obtaining-dcr.md) if you hav
 Purchasing a ticket for PoS is quite simple (see below) but what happens to it after you buy it?
 A ticket will go through a few stages in its lifetime:
 
-1. You buy a ticket using your wallet. The rest of the process is the same for both solo and pool tickets.
-2. The ticket enters the 'mempool'. Only 20 tickets are mined into each block. This is where tickets wait to be mined.
-3. Tickets are mined into a block in order of their `ticketfee`. Note that the ticketfee is priced per KB. 
+1. You buy a ticket using your wallet.
+2. Tickets are mined into a block in order of their `ticketfee`. Note that the ticketfee is priced per KB. 
 A ticket transaction is about a third (solo) or half (pool) a KB so the actual fee you pay will be scaled accordingly.
+3. The ticket enters the 'mempool'. Only 20 tickets are mined into each block. This is where tickets wait to be mined.
 4. **A -** If your ticket is mined into a block, it will enter immature status for 256 blocks (about 20 hours). During
-this time the ticket cannot vote. At this point, the ticket fee is non-refundable.
-4. **B -** If your ticket is not mined, both the ticket price and fee are returned.
+this time the ticket cannot vote. At this point, the ticket fee is non-refundable.  
+**B -** If your ticket is not mined, both the ticket price and fee are returned.
 5. After 256 blocks your ticket enters the main pool and is eligible for voting.
 6. The chance of a ticket voting is based on a Poisson distribution with a mean of 28 days. What this means is that after 28 days any
 ticket has a 50% chance to have already voted.
@@ -45,7 +45,7 @@ ticket has a 50% chance to have already voted.
 after this time, a ticket has not voted, it expires. The ticket price is returned to the user.
 8. A ticket may be missed if the voting wallet does not respond or two valid blocks are found within close proximity of each other.
 If this happens, the ticket price is returned to the user.
-8. After a ticket has voted, missed, or expired, the funds (ticket price and subsidy if applicable) will enter immature status for another 256 blocks.
+8. After a ticket has voted, missed, or expired, the funds (ticket price and subsidy if applicable, minus the fee) will enter immature status for another 256 blocks.
 9. At the end of this period, the funds unlock and are available again.
 
 ---

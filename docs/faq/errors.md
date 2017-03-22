@@ -20,16 +20,18 @@ they will be usable again.
 
 #### **4. Paymetheus is displaying the wrong balance.** ####
 
+> These instructions are valid as of version 0.8.x and may not work with later versions.
+
 If Paymetheus displays the wrong balance, you can fix it by using the command line utility to overwrite some files.
 Some of this can be confusing if you are not familiar with the command line, but just follow the instructions line by line
 and you'll be fine. Where you see commands that `look like this`, just copy them and paste them exactly as they are into the command line.
 Don't forget to press <ENTER> after each command. If you get stuck, join our [Slack channel](https://decred.slack.com) and someone will help,
-But first, check the command and make sure you entered it correctly. You will need your wallet seed. This process should take about 15 minutes.
+but first, check the command and make sure you entered it correctly. You will need your wallet seed. This process should take about 15 minutes.
 
 1. We're going to open three PowerShell windows. Press the Window key. Type 'powershell' (don't type the quotes here or in the future) and press enter.
 2. Do this two more times.
 3. Move the windows so you can see all of them.
-4. Copy and paste the following command: `cd $env:programfiles/decred/paymetheus` (Note, in powershell, just right click to paste). Press <ENTER>.
+4. Copy and paste the following command: `cd $env:programfiles/decred/paymetheus` (Note, in powershell, press CTRL+V or right click to paste). Press <ENTER>.
 5. Run the same command in the other two windows.
 6. Open Windows Explorer.
 7. Paste `%localappdata%/decred/paymetheus` into the location bar. Press Enter.
@@ -37,7 +39,7 @@ But first, check the command and make sure you entered it correctly. You will ne
 9. Go to one of the PowerShell windows and paste `./dcrd -u you -P sekrit`. Press <ENTER>.
 10. Go to one of the other Powershell windows and paste `./dcrwallet --appdata=$env:localappdata/decred/paymetheus --create`
 11. Follow the prompts and import your seed. Say no when asked for and additional layer of encryption and yes when asked if you have a seed.
-12. Paste the following command into the same window: `./dcrwallet -u you -P sekrit --appdata=$env:localappdata/decred/paymetheus'. Press <ENTER>.
+12. Paste the following command into the same window: `./dcrwallet -u you -P sekrit --appdata=$env:localappdata/decred/paymetheus`. Press <ENTER>.
 13. Enter the private passphrase you used when creating the wallet.
 14. Go to the third PowerShell window and paste `./dcrctl -u you -P sekrit --wallet -c $env:localappdata/decred/paymetheus/rpc.cert getbalance`. Press <ENTER>.
 15. Press CTRL+C in the first two windows to close the programs (dcrd and dcrwallet).

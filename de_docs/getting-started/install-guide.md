@@ -41,8 +41,8 @@ There are four methods for downloading and installing the Decred software. One i
     Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
     
     `cd ~/Downloads/` <br />
-    `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
-    `./dcrinstall-darwin-amd64-v0.8.2` 
+    `chmod u+x dcrinstall-linux-amd64-v0.8.2` <br />
+    `./dcrinstall-linux-amd64-v0.8.2` 
     
 3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory.
 

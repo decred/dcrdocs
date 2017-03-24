@@ -69,5 +69,3 @@ through the RFP process in which payment is made in Decred.  More
 information on currently open RFPs can be found on
 [the forum](https://forum.decred.org/forums/requests-for-proposals/)
 and on [github](https://github.com/decred/RFPs).
-
-Continue to [Proof-of-Stake Mining](/mining/proof-of-stake.md)

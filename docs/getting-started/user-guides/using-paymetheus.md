@@ -117,8 +117,7 @@ tickets by clicking the 'Purchase' button!
 			
 NOTE: While you can purchase tickets using Paymetheus, it cannot vote for you so you must either use a pool
 or run your own voting wallet which needs to be online 24/7. If you would prefer to solo mine,
-check the [Getting Started](/getting-started/overview.md) and [PoS Mining](/mining/proof-of-stake.md)
-guides for more information.
+check the [dcrd Setup Guide](/getting-started/user-guides/dcrd-setup.md), [dcrwallet Setup Guide](/getting-started/user-guides/dcrd-setup.md) and [PoS Mining Guide](/mining/proof-of-stake.ms) for more information.
 
 ---
 
@@ -159,5 +158,3 @@ Tickets missed               | Tickets that missed a vote either because the vot
 Tickets revoked              | Tickets that missed a vote and have had the ticket price refunded (minus the ticket fee), should be the same as tickets missed
 Tickets voted                | Lifetime tickets voted by this wallet
 Total subsidy earned         | Lifetime DCR subsidy earned by this wallet
-
-Continue to [Obtaining DCR](/getting-started/obtaining-dcr.md)

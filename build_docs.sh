@@ -6,7 +6,7 @@ echo " E N  -  E N G L I S H  V E R S I O N "
 echo "INFO	-  Building en_docs into directory site/"
 mkdocs build -f mkdocs.yml -d site
 
-LANG="de ru"
+LANG="de"
 for L in $LANG; do
     ####################
     # BUILD $LANG VERSION

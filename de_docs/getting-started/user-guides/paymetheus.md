@@ -1,4 +1,4 @@
-# **Paymetheus** #
+# **Paymetheus Setup Guide** #
 
 Paymetheus is a simple to use graphical wallet for Decred. With it, you can send and receive DCR, 
 purchase tickets for [PoS voting](/mining/proof-of-stake.md), get a history of all your transactions and more.
@@ -22,6 +22,8 @@ You're now ready to start using Decred! Start the 'Decred' program. You will now
 >on another computer (such as an always on server) and then use Paymetheus to connect to it remotely.
 
 We're going to use a local one that Paymetheus has already started so just press Continue.
+
+> The first time Paymetheus starts, it will download the blockchain in the background. This can take up to an hour.
 
 ---
 

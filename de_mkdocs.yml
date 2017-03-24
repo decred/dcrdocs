@@ -3,7 +3,6 @@ theme: null
 theme_dir: tpldcrdocs/
 site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
-docs_dir: de_docs/
 markdown_extensions:
   - footnotes
   - fontawesome_markdown
@@ -19,18 +18,22 @@ extra_css:
 pages:
 - Home: 'index.md'
 - Loslegen:
+  - "Beginner's Guide": 'getting-started/beginner-guide.md'
   - 'Herunterladen und installieren': 'getting-started/install-guide.md'
-  - 'Übersicht': 'getting-started/overview.md'
-  - User Guides:
-    - 'Windows Command Line': 'getting-started/user-guides/windows.md'
-    - 'Paymetheus: Windows GUI': 'getting-started/user-guides/paymetheus.md'
+  - Paymetheus:
+    - 'Paymetheus Setup': 'getting-started/user-guides/paymetheus.md'
     - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
-    - 'Linux': 'getting-started/user-guides/linux.md'
-    - 'OSX': 'getting-started/user-guides/osx.md'
-    - 'Web': 'getting-started/user-guides/web.md'
+  - Command-Line:
+    - 'OS Differences': 'getting-started/cli-differences.md'
+    - 'Startup Basics': 'getting-started/startup-basics.md'
+    - 'dcrd Setup': 'getting-started/user-guides/dcrd-setup.md'
+    - 'dcrwallet Setup': 'getting-started/user-guides/dcrwallet-setup.md'
+    - 'dcrctl Basics': 'getting-started/user-guides/dcrctl-basics.md'
+  - 'Web Wallet': 'getting-started/user-guides/web.md'
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
   - 'Testnet Voting Guide': 'getting-started/user-guides/testnet-voting.md'
+  - 'Decred Constitution': 'getting-started/constitution.md'
 - Mining:
   - 'Overview': 'mining/overview.md'
   - 'Proof-of-Stake (PoS)': 'mining/proof-of-stake.md'
@@ -59,11 +62,13 @@ pages:
     - 'Voting Tickets': 'faq/proof-of-stake/voting-tickets.md'
     - 'Stake Pools': 'faq/proof-of-stake/stake-pools.md'
   - 'Proof-of-Work Mining': 'faq/proof-of-work-mining.md'
+  - 'Common Errors and Solutions': 'faq/errors.md'
 - Advanced:
   - 'Overview': 'advanced/overview.md'
   - 'Storing Login Details': 'advanced/storing-login-details.md'
   - 'Program Options': 'advanced/program-options.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
+  - 'Transaction Details': 'advanced/transaction-details.md'
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
   - 'Advanced dcrctl Usage': 'advanced/dcrctl-usage.md'
@@ -80,6 +85,7 @@ pages:
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - About:
+  - 'Support Directory': 'support-directory.md'
   - 'Credits': 'about/credits.md'
   - 'License': 'about/license.md'
 copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.2. Decred Project 2016.

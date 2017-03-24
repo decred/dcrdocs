@@ -14,15 +14,10 @@ randomly selected to vote on PoW blocks as covered by the
 
 ## ** Prerequisites **
 
-To take part in PoS mining, you will first need to have followed the
-[Getting Started](/getting-started/overview.md) guide and completed the
-"connect your wallet to the network" step
-([<i class="fa fa-windows"></i> Windows](/getting-started/user-guides/windows.md#connect-your-wallet-to-the-decred-network)
-[<i class="fa fa-apple"></i> OSX](/getting-started/user-guides/osx.md#connect-your-wallet-to-the-decred-network) 
-[<i class="fa fa-linux"></i> Linux](/getting-started/user-guides/osx.md#connect-your-wallet-to-the-decred-network))
-including unlocking your wallet.
-
-You will also need to [Obtain DCR](/getting-started/obtaining-dcr.md) if you have not done so already.
+- A running [dcrd](/getting-started/user-guides/dcrd-setup.md) Instance
+- A running [dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) Instance
+- [dcrctl basics](/getting-started/user-guides/dcrctl-basics.md) such as unlocking your wallet.
+- [Obtain some DCR](/getting-started/obtaining-dcr.md)
 
 ---
 

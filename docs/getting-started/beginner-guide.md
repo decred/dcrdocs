@@ -34,7 +34,7 @@ Below you'll find a list of currently available applications, with a chart showi
 | Linux     |            | X    | X         | X      | X           |
 | Other UNIX|            | X    | X         | X      |             |
 
-"Other UNIX" currently includes various *BSDs and Solaris.
+"Other UNIX" currently includes various *BSDs and Solaris/illumos.
 
 ---
 

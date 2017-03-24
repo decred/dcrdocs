@@ -23,6 +23,8 @@ You're now ready to start using Decred! Start the 'Decred' program. You will now
 
 We're going to use a local one that Paymetheus has already started so just press Continue.
 
+> The first time Paymetheus starts, it will download the blockchain in the background. This can take up to an hour.
+
 ---
 
 ## **Create or Restore Wallet** ##

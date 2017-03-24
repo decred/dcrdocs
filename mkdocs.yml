@@ -60,6 +60,7 @@ pages:
     - 'Voting Tickets': 'faq/proof-of-stake/voting-tickets.md'
     - 'Stake Pools': 'faq/proof-of-stake/stake-pools.md'
   - 'Proof-of-Work Mining': 'faq/proof-of-work-mining.md'
+  - 'Common Errors and Solutions': 'faq/errors.md'
 - Advanced:
   - 'Overview': 'advanced/overview.md'
   - 'Storing Login Details': 'advanced/storing-login-details.md'

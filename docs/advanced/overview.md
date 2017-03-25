@@ -16,6 +16,10 @@ This page lists a number of options that may be used.
 
 This page describes the Decred block header.
 
+## <i class="fa fa-money"></i> [Transaction Details](/advanced/transaction-details.md)
+
+This page describes the component parts of a decred transaction and also includes an explanation of how transactions are serialized.
+
 ## <i class="fa fa-check"></i> [Verifying Binaries](/advanced/verifying-binaries.md)
 
 The official

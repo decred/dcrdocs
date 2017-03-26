@@ -45,8 +45,7 @@ ticket has a 50% chance to have already voted.
 after this time, a ticket has not voted, it expires. The ticket price is returned to the user.
 8. A ticket may be missed if the voting wallet does not respond or two valid blocks are found within close proximity of each other.
 If this happens, the ticket price is returned to the user.
-8. After a ticket has voted, missed, or expired, the funds (ticket price and subsidy if applicable, minus the fee) will enter immature status for another 256 blocks. If a ticket is missed or expired, a ticket revocation transaction is submitted by the wallet which then frees up the locked ticket outputs. *NOTE* Revocations can only be submitted for a corresponding missed ticket. You cannot revoke a ticket until it is missed.
-9. There is another immaturity period of 256 blocks. At the end of this period, your funds unlock and are available again.
+9. After a ticket has voted, missed, or expired, the funds (ticket price and subsidy if applicable, minus the fee) will enter immature status for another 256 blocks, after which they are released. If a ticket is missed or expired, a ticket revocation transaction is submitted by the wallet which then frees up the locked ticket outputs. *NOTE* Revocations can only be submitted for a corresponding missed ticket. You cannot revoke a ticket until it is missed.
 
 ---
 

@@ -51,4 +51,4 @@ Giving away these coins in an airdrop accomplished several things for the projec
 [^14482]: Decred Forum, [Post 14,482](https://forum.decred.org/threads/1318/#post-14482)
 [^1]: Company0 Blog, [December 2015](https://blog.companyzero.com/2015/12/decred-rethink-digital-currency/)
 [^3]: Decred Forum, [Final Airdrop Review Process](https://forum.decred.org/threads/final-airdrop-review-process.534/)
-[^2]: Github, [decred/dcrd](https://github.com/decred/dcrd/blob/v0.0.2/chaincfg/premine.go)
+[^2]: Github, [decred/dcrd](https://github.com/decred/dcrd/blob/216aa759fa64e5a13ca8a4608e6c80a0f87eff85/chaincfg/premine.go)

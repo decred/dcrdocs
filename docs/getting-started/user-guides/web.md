@@ -67,7 +67,7 @@ ACCESS TO ALL FUNDS IN YOUR WALLET** should the wallet data be
 deleted. The funds themselves still exist in the blockchain, however,
 without the key you cannot access them.
 
-<i class="fa fa-exclamation-triangle"></i> **DO NOT USE THE SAME SEED IN MULTIPLE WALLETS! Visit [Wallets and Seeds FAQ](/faq/faq/wallets-and-seeds.md#3-can-i-run-multiple-wallets) to see why this matters. It is recommended that where possible a new wallet should mean generating a new seed.** 
+<i class="fa fa-exclamation-triangle"></i> **DO NOT USE THE SAME SEED IN MULTIPLE WALLETS! Visit [Wallets and Seeds FAQ](/faq/wallets-and-seeds.md#3-can-i-run-multiple-wallets) to see why this matters. It is recommended that where possible a new wallet should mean generating a new seed.** 
 
 Click the `Preferences` button on the right opposite your wallet name. There are really only three things you will be interested in here:
 

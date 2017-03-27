@@ -14,9 +14,9 @@ You can use the [dcrseedhextowords](https://github.com/davecgh/dcrseedhextowords
 
 ---
 
-#### **3. Can I run multiple wallets?**
+#### **3. Can I run multiple wallets with the same seed?**
 
-Running multiple wallets[^9731] with the same seed will absolutely lead to the situation where the wallets will not see the same balance. You should not be running multiple wallets with the same seed.
+Running multiple wallets with the same seed can lead to the situation where the wallets will not see the same balance. You should not run multiple wallets with the same seed.[^9731]
 
 The problem is simply that addresses are generated deterministically from the seed. So if you have two wallets running on the same seed, you basically end up with a situation like this:
 
@@ -27,7 +27,7 @@ So, any coins that have been sent to addresses #13, #14, and #15 will be known t
 
 Further, if you simply tell Wallet B to get the next address it also will not see the coins because, from its point of view, that address just now came into existence and so it will not search for transactions before the current point in time. This is an optimization because, as you can imagine, the blockchain ends up getting extremely large over time and it would be incredibly expensive (in terms of resource usage) to scan the entire chain every time a new address is generated.
 
-There is one exception to this, and that's for voting hot wallets that have no funds of their own. If the wallet is **only** doing voting and not buying tickets or creating any other transactions, it's safe.[^11319]
+There is one exception to this and that's for voting hot wallets that have no funds of their own. If the wallet is **only** doing voting and not buying tickets or creating any other transactions, it's safe.[^11319]
 
 ---
 

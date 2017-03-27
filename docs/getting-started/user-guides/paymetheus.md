@@ -34,14 +34,16 @@ The rest of the process is the same. Click "Create a new wallet". You will see t
 
 ![Paymetheus wallet creation screen](/img/Paymetheus-seed-window.png)  
 
-<i class="fa fa-exclamation-triangle"></i> **STOP HERE!!! DO NOT CLICK CONTINUE!**  
+<i class="fa fa-exclamation-triangle"></i> **STOP HERE!!! DO NOT CLICK CONTINUE! **
 
-This is the most important part of using Decred. In the white box you key (or seed) words are displayed. These words are the key to your wallet.  
+**This is the most important part of using Decred. In the white box you key (or seed) words are displayed. These words are the key to your wallet.  **
+ **WITHOUT THESE WORDS OR THE HEX REPRESENTATION YOU WILL PERMANANTLY AND FOREVER LOSE ACCESS TO YOUR FUNDS!**  
 
-<i class="fa fa-exclamation-triangle"></i> **WITHOUT THESE WORDS OR THE HEX REPRESENTATION YOU WILL PERMANANTLY AND FOREVER LOSE ACCESS TO YOUR FUNDS!**  
+**DO NOT GIVE THEM TO ANYONE ELSE, NOT EVEN DECRED DEVELOPERS!**
 
-**DO NOT GIVE THEM TO ANYONE ELSE, NOT EVEN DECRED DEVELOPERS!** With these words, someone else can recreate your wallet on another computer and transfer
-all of funds out to another wallet. It is not possible to reverse a transaction in Decred, so if someone steals your Decred, there is no way to get it back.  
+With these words, someone else can recreate your wallet on another computer and transfer all of funds out to another wallet. It is not possible to reverse a transaction in Decred, so if someone steals your Decred, there is no way to get it back.  
+
+<i class="fa fa-exclamation-triangle"></i> **DO NOT USE THE SAME SEED IN MULTIPLE WALLETS! Visit [Wallets and Seeds FAQ](/faq/wallets-and-seeds.md#3-can-i-run-multiple-wallets) to see why this matters. It is recommended that where possible a new wallet should mean generating a new seed.** 
 
 Decred and other digital currencies are often described as being like a bank account. This is true, but your wallet is like an actual, physical wallet.
 If you lose your wallet, you lose access to whatever you had in it and no one, not even the Decred developers can get it back. So it's very important

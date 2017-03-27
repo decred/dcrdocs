@@ -14,9 +14,9 @@ You can use the [dcrseedhextowords](https://github.com/davecgh/dcrseedhextowords
 
 ---
 
-#### **3. Can I run multiple wallets?**
+#### **3. Can I run multiple wallets with the same seed?**
 
-Running multiple wallets[^9731] with the same seed will absolutely lead to the situation where the wallets will not see the same balance. You should not be running multiple wallets with the same seed.
+Running multiple wallets with the same seed can lead to the situation where the wallets will not see the same balance. You should not run multiple wallets with the same seed.[^9731]
 
 The problem is simply that addresses are generated deterministically from the seed. So if you have two wallets running on the same seed, you basically end up with a situation like this:
 
@@ -26,6 +26,8 @@ The problem is simply that addresses are generated deterministically from the se
 So, any coins that have been sent to addresses #13, #14, and #15 will be known to Wallet A, but not Wallet B.
 
 Further, if you simply tell Wallet B to get the next address it also will not see the coins because, from its point of view, that address just now came into existence and so it will not search for transactions before the current point in time. This is an optimization because, as you can imagine, the blockchain ends up getting extremely large over time and it would be incredibly expensive (in terms of resource usage) to scan the entire chain every time a new address is generated.
+
+There is one exception to this and that's for voting hot wallets that have no funds of their own. If the wallet is **only** doing voting and not buying tickets or creating any other transactions, it's safe.[^11319]
 
 ---
 
@@ -100,6 +102,7 @@ The stake pool, however, uses a pay-to-script-hash address, which is identified 
 [^8613]: Decred Forum, [Post 8,613](https://forum.decred.org/threads/576/#post-8613)
 [^8660]: Decred Forum, [Post 8,660](https://forum.decred.org/threads/534/page-3#post-8660)
 [^9731]: Decred Forum, [Post 9,731](https://forum.decred.org/threads/657/#post-9731)
+[^11319]: Decred Forum, [Post 11,319](https://forum.decred.org/threads/531/page-3#post-11319)
 [^9803]: Decred Forum, [Post 9,803](https://forum.decred.org/threads/686/#post-9803)
 [^10452]: Decred Forum, [Post 10,452](https://forum.decred.org/threads/734/#post-10452)
 [^10657]: Decred Forum, [Post 10,657](https://forum.decred.org/threads/483/#post-10657)

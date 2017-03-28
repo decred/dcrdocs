@@ -44,7 +44,8 @@ To get started, choose an option for installations available for your operating 
 
 * [Paymetheus](/getting-started/install-guide.md#paymetheus)
 * [Command Line Suite](/getting-started/install-guide.md#dcrinstall)
-* [Decrediton (BETA)](https://github.com/decred/decrediton/blob/master/README.md#installation) - NOTE: Install instructions currently limited to the Github README.
+* [Decrediton (BETA)](/getting-started/install-guide.md#decrediton)
+
 
 ---
 
@@ -56,6 +57,12 @@ The following guides, in order, will get you started with Paymetheus:
 
 * [Paymetheus Setup](/getting-started/user-guides/paymetheus.md)
 * [Using Paymetheus](/getting-started/user-guides/using-paymetheus.md)
+
+## **Decrediton Path**
+
+The following guide will help you load Decrediton:
+
+* [Decrediton Setup](/getting-started/user-guides/decrediton-setup.md)
 
 ## **Command-Line Path**
 

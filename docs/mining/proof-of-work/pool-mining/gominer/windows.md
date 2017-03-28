@@ -2,7 +2,7 @@
 
 This guide is intended for basic initial setup of gominer on a mining pool of choice using a configuration file, more advanced options are available.
 
-Last updated for gominer v0.6.0.
+Last updated for gominer v0.8.0.
 
 ---
 
@@ -11,11 +11,11 @@ Last updated for gominer v0.6.0.
 
 >Download .zip File
 
-Visit [https://github.com/decred/decred-binaries/releases/tag/v0.6.1](https://github.com/decred/decred-binaries/releases/tag/v0.6.1) to download the gominer Windows binaries. Within the "Downloads" section you should see the following files:
+Visit [https://github.com/decred/decred-binaries/releases/tag/v0.8.0](https://github.com/decred/decred-binaries/releases/tag/v0.8.0) to download the gominer Windows binaries. Within the "Downloads" section you should see the following files:
 
-- `gominer-windows-amd64-cuda-v0.6.0.zip`,
-- `gominer-windows-amd64-opencl-v0.6.0.zip`,
-- `gominer-windows-amd64-opencladl-v0.6.0.zip`.
+- `gominer-windows-amd64-cuda-v0.8.0.zip`,
+- `gominer-windows-amd64-opencl-v0.8.0.zip`,
+- `gominer-windows-amd64-opencladl-v0.8.0.zip`.
 
 For NVIDIA graphics cards, download the `*-cuda-*.zip` file. <br />
 For AMD graphics cards from the Radeon and FirePro lines, download the `*-opencladl-*.zip` file. <br />

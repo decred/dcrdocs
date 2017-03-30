@@ -10,11 +10,11 @@ New Decred is created each time a PoW miner discovers a new block - this is comm
 
 The block reward started at 31.19582664 and it adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/101.
 
-If a block includes less than 5 PoS votes there will be a fraction of the block reward which is not allocated to anybody at all. As a result, it is only possible to calculate an upper limit for the total number of Decred which will ever be created. 
+If a block includes less than 5 PoS votes there will be a fraction of the block reward which is not allocated to anybody. As a result, it is only possible to calculate an upper limit for the total number of Decred which will ever be created.
 
-> The last block reward will be created in January 2039. The upper limit on the total supply of Decred at that time is 20,999,999.99800912 coins.
+> The last block reward will be created in January 2039. The upper limit on the total supply of Decred at this time is 20,999,999.99800912 coins.
 
-The table below shows the block reward and total supply of Decred until the last block reward in 2039. All values in the table are estimates.
+The table below shows the estimated block reward and estimated total supply of Decred until the last block reward in 2039. Note that the total supply of DCR at block 0 is 1,680,000 due to the [premine](/faq/general/#3-how-was-the-decred-premine-distributed).
 
 Block height | Estimated Date       | Block reward (DCR) | PoW (DCR) | PoS vote (DCR) | Dev subsidy (DCR) | Total DCR supply
 -------------|----------------------|--------------------|-----------|----------------|-------------------|-----------------

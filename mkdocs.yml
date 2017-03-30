@@ -73,6 +73,7 @@ pages:
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
   - 'Advanced dcrctl Usage': 'advanced/dcrctl-usage.md'
   - 'Contributing Guidelines': 'advanced/contributing.md'
+  - 'User Projects': 'advanced/user-projects.md'
 - Research:
   - 'Overview': 'research/overview.md'
   - 'Hybrid Design': 'research/hybrid-design.md'

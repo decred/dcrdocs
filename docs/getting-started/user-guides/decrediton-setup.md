@@ -10,7 +10,7 @@ This guide is intended to help you setup the `Decrediton` application.
 
 ---
 
-`Decrediton` is a graphical user interface for `dcrwallet`. When this application launches, it automatically starts its own instance of `dcrd` and `dcrwallet` in the background - it will not open if there is already a running instance of `dcrd`. Please note that as of 0.8.2, this application is a beta release - there are many bugs. 
+`Decrediton` is a graphical user interface for `dcrwallet`. When this application launches, it automatically starts its own instance of `dcrd` and `dcrwallet` in the background - it will not open if there is already a running instance of `dcrd`. Please note that as of 0.8.2, this application is a alpha release - there are known bugs in the software that are being worked on. 
 
 NOTE: At any point in the use of Decrediton, it may become unresponsive or get stuck on a loading screen This can usually be fixed with a restart of the application.
 
@@ -20,7 +20,7 @@ NOTE: At any point in the use of Decrediton, it may become unresponsive or get s
 
 During the creation process for your wallet, you will be given a sequence of 33 words known as a seed phrase. This seed phrase is essentially the private key for your wallet. You will be able to use this seed phrase to restore your private keys, transaction history, and balances using any Decred wallet on any computer. 
 
-This ultimately means that *anyone* who knows your seed can use it to restore your private keys, transaction history, and balances to a Decred wallet on their computer. For this reason, it is of utmost importance to keep your seed phrase safe. Treat this seed the same way you would treat a physical key to a safe. If you lose your seed phrase, you permanently lose access to your wallet and all funds within it. It cannot be recovered by anyone, including the Decred developers. It is recommended you write it down on paper and store that somewhere secure. If you decide to keep it on your computer, it would be best to keep it in an encrypted document (do not forget the password) in case the file or your computer is stolen.
+This ultimately means that *anyone* who knows your seed can use it to restore your private keys, transaction history, and balances to a Decred wallet on their without your knowledge. For this reason, it is of utmost importance to keep your seed phrase safe. Treat this seed the same way you would treat a physical key to a safe. If you lose your seed phrase, you permanently lose access to your wallet and all funds within it. It cannot be recovered by anyone, including the Decred developers. It is recommended you write it down on paper and store that somewhere secure. If you decide to keep it on your computer, it would be best to keep it in an encrypted document (do not forget the password) in case the file or your computer is stolen.
 
 **REMINDER: DO NOT, UNDER ANY CIRCUMSTANCES, GIVE YOUR SEED OR THE ASSOCIATED HEX KEY TO ANYONE! NOT EVEN THE DEVELOPERS!**
 

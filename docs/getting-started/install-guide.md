@@ -136,7 +136,7 @@ If you decide to download the `.tar.gz` file, it will require two separate extra
 
 ## Decrediton
 
-Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). As of v0.8.2, Decrediton is only available for Linux and Mac and is technically a beta release. There are known bugs in the software that are being worked on.
+Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). As of v0.8.2, Decrediton is only available for Linux and Mac and is technically a alpha release. There are known bugs in the software that are being worked on.
 
 > macOS/OSX
 
@@ -144,7 +144,7 @@ Decrediton is released with the Binary Releases and can be found here: [https://
 
 2. Double click the `decrediton-0.8.2.dmg` file once downloaded to mount the disk image.
 
-3. Drag the decrediton.app into your Applications folder within the disk image.
+3. Drag the decrediton.app into the link to your Applications folder within the disk image.
 
 > Linux
 

@@ -23,7 +23,7 @@ pages:
   - Paymetheus:
     - 'Paymetheus Setup': 'getting-started/user-guides/paymetheus.md'
     - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
-  - Decrediton (BETA):
+  - Decrediton (ALPHA):
     - 'Decrediton Setup': 'getting-started/user-guides/decrediton-setup.md'
   - Command-Line:
     - 'OS Differences': 'getting-started/cli-differences.md'

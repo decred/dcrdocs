@@ -2,7 +2,7 @@
 
 ---
 
-The following is a list of projects which have been created by members of the Decred community. These are not official Decred projects, and as such they are not necessarily endorsed or supported by the Decred developers. 
+The following is a list of projects which have been created by members of the Decred community. These are not official Decred projects and as such, they are not necessarily endorsed or supported by the Decred developers. 
 
 ## Dashboards
 

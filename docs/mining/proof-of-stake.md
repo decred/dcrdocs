@@ -148,7 +148,7 @@ It is also helpful to get the **height** field from **getbestblock** so you may
 use the ticket expiration functionality:
 
 ```no-highlight
-dcrctl --wallet getblockheight
+dcrctl --wallet getbestblock
 {
   "hash": "0000000000000d14cab9056131a0461778a7f8cd1066cb343307882bd730f2a9",
   "height": 35472

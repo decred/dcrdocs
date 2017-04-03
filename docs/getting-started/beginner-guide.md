@@ -43,9 +43,9 @@ Below you'll find a list of currently available applications, with a chart showi
 To get started, choose an option for installations available for your operating system below:
 
 * [Paymetheus](/getting-started/install-guide.md#paymetheus)
-* [Command Line Suite](/getting-started/install-guide.md#dcrinstall)
-* [Decrediton (ALPHA)](/getting-started/install-guide.md#decrediton)
 
+* [Command Line Suite via DCRINSTALL](/getting-started/install-guide.md#dcrinstall) - NOTE: The `dcrinstall` method is the fastest and easiest way to get a command-line node and wallet running. It is recommended and the command-line path setup guides below will assume you've used this method.
+* [Decrediton (ALPHA)](/getting-started/install-guide.md#decrediton)
 
 ---
 

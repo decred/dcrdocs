@@ -4,7 +4,15 @@ This guide was last updated for v0.8.2.
 
 ---
 
-There are four methods for downloading and installing the Decred software. One is via dcrinstall (cross-platform), one is via the Windows Installer (Windows only of course, and the only way to get Paymetheus as of v0.8.2), another is via the precompiled binary releases (cross-platform), and the other is building the software yourself (cross-platform). The first three methods will be covered here and the fourth may be added at a later date.
+There are five methods for downloading and installing the Decred software. 
+
+* [The Windows Installer](#paymetheus) (.msi) - This only works for installing Paymetheus on Windows machines.
+* [dcrinstall](#dcrinstall) - A cross-platform, automatic installer/updater for the command-line applications (`dcrd`, `dcrwallet`, and `dcrctl`).
+* [Decrediton](#decrediton) - For installing decrediton on Linux or Mac.
+* Manually installing and setting up the precompiled [binary releases](#binary-releases) for the cross-platform command-line applications.
+* Compiling from source.
+
+The first four methods will be covered here and the fourth may be added at a later date. 
 
 ---
 
@@ -29,6 +37,8 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
 `dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binaries are provided for Windows, OSX/macOS, Linux, OpenBSD, and FreeBSD. Executing installer will install `dcrd`, `dcrwallet`, and `dcrctl`. Instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
 
+This method is recommended over the traditional manual installation. `dcrinstall` will automatically download the precompiled, signed binaries found on Github, verify the signatures of the binaries, copy them to a specific folder dependant on OS, create configuration files with settings to allow the 3 applications to communicate with each other, and run you through the wallet creation process. After running through `dcrinstall`, you will be able to launch the software with no additional configuration.
+
 > OSX/macOS:
 
 1. Download the correct file:
@@ -36,7 +46,7 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
     For 32-bit computers, download the `dcrinstall-darwin-386-v0.8.2` file. <br />
     For 64-bit computers, download the `dcrinstall-darwin-amd64-v0.8.2` file.
 
-2. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal:
+2. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal, and run it:
 
     Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
     
@@ -44,7 +54,7 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
     `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
     `./dcrinstall-darwin-amd64-v0.8.2`
     
-3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory.
+3. The executable binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory. Before the `dcrinstall` completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 
 > Linux:
 
@@ -55,7 +65,7 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
     For 32-bit ARM computers, download the `dcrinstall-linux-arm-v0.8.2` file. <br />
     For 64-bit ARM computers, download the `dcrinstall-linux-arm64-v0.8.2` file.
 
-2. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal:
+2. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal, and run it:
 
     Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
     
@@ -63,7 +73,7 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
     `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
     `./dcrinstall-darwin-amd64-v0.8.2` 
     
-3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory.
+3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory. Before the `dcrinstall` completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 
 > Windows:
 
@@ -76,7 +86,33 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
     You can either double click it or run it from the Command Prompt. 
     
-3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `%HOMEPATH%\decred\` directory (usually %HOMEPATH% is `C:\Users\username`).
+3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `%HOMEPATH%\decred\` directory (usually %HOMEPATH% is `C:\Users\username`). Before the `dcrinstall` completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
+
+---
+
+## **Decrediton**
+
+Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). As of v0.8.2, Decrediton is only available for Linux and Mac and is technically an alpha release. There are known bugs in the software that are being worked on.
+
+> macOS/OSX
+
+1. Download the `decrediton-0.8.2.dmg` file.
+
+2. Double click the `decrediton-0.8.2.dmg` file once downloaded to mount the disk image.
+
+3. Drag the decrediton.app into the link to your Applications folder within the disk image.
+
+> Linux
+
+1. Download the `decrediton-0.8.2.tar.gz` file.
+
+2. Navigate to download location and extract the .tar.gz file:
+
+    Ubuntu File Browser: simply right click on the .tar.gz file and press "Extract Here". <br />
+    Terminal: use the `tar -xvzf filename.tar.gz` command. 
+    
+    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v0.8.2.tar.gz` should extract to `decrediton-v0.8.2`). If successful, this new folder should include a `decrediton` executable.
+
 
 ---
 
@@ -133,27 +169,3 @@ Note: Windows 7/8/10 natively provides support for `.zip` files, therefore it is
 If you decide to download the `.tar.gz` file, it will require two separate extractions in some third-party application (7-zip, winRAR, etc..) to get to the actual binaries.
 
 ---
-
-## Decrediton
-
-Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). As of v0.8.2, Decrediton is only available for Linux and Mac and is technically a alpha release. There are known bugs in the software that are being worked on.
-
-> macOS/OSX
-
-1. Download the `decrediton-0.8.2.dmg` file.
-
-2. Double click the `decrediton-0.8.2.dmg` file once downloaded to mount the disk image.
-
-3. Drag the decrediton.app into the link to your Applications folder within the disk image.
-
-> Linux
-
-1. Download the `decrediton-0.8.2.tar.gz` file.
-
-2. Navigate to download location and extract the .tar.gz file:
-
-    Ubuntu File Browser: simply right click on the .tar.gz file and press "Extract Here". <br />
-    Terminal: use the `tar -xvzf filename.tar.gz` command. 
-    
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v0.8.2.tar.gz` should extract to `decrediton-v0.8.2`). If successful, this new folder should include a `decrediton` executable.
-

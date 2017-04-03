@@ -112,7 +112,7 @@ The newest Binary Releases can be found here: [https://github.com/decred/decred-
 
 2. Navigate to download location and extract the .tar.gz file:
 
-    Finder: simply double click on the .tar.gz file. <br />
+    Ubuntu File Browser: simply right click on the .tar.gz and select "Extract Here". <br />
     Terminal: use the `tar -xvzf filename.tar.gz` command. 
     
     Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v0.8.2.tar.gz` should extract to `decred-darwin-amd64-v0.8.2`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
@@ -132,4 +132,28 @@ Note: Windows 7/8/10 natively provides support for `.zip` files, therefore it is
 
 If you decide to download the `.tar.gz` file, it will require two separate extractions in some third-party application (7-zip, winRAR, etc..) to get to the actual binaries.
 
------------------------
+---
+
+## Decrediton
+
+Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). As of v0.8.2, Decrediton is only available for Linux and Mac and is technically a alpha release. There are known bugs in the software that are being worked on.
+
+> macOS/OSX
+
+1. Download the `decrediton-0.8.2.dmg` file.
+
+2. Double click the `decrediton-0.8.2.dmg` file once downloaded to mount the disk image.
+
+3. Drag the decrediton.app into the link to your Applications folder within the disk image.
+
+> Linux
+
+1. Download the `decrediton-0.8.2.tar.gz` file.
+
+2. Navigate to download location and extract the .tar.gz file:
+
+    Ubuntu File Browser: simply right click on the .tar.gz file and press "Extract Here". <br />
+    Terminal: use the `tar -xvzf filename.tar.gz` command. 
+    
+    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v0.8.2.tar.gz` should extract to `decrediton-v0.8.2`). If successful, this new folder should include a `decrediton` executable.
+

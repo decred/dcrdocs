@@ -33,7 +33,7 @@ A ticket transaction is about a third (solo) or half (pool) a KB so the actual f
 4. **A -** If your ticket is mined into a block, it will enter immature status for 256 blocks (about 20 hours). During
 this time the ticket cannot vote. At this point, the ticket fee is non-refundable.  
 **B -** If your ticket is not mined, both the ticket price and fee are returned.
-5. After the ticket matures (256 blocks), your ticket enters the main pool and is eligible for voting.
+5. After the ticket matures (256 blocks), your ticket enters the ticket pool and is eligible for voting.
 6. The chance of a ticket voting is based on a Poisson distribution with a mean of 28 days. What this means is that after 28 days any
 ticket has a 50% chance to have already voted.
 7. Given a target pool size of 40960 tickets, any given ticket has a 99.5% chance of voting within ~142 days (about 4.7 months). If,

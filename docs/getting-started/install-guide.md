@@ -12,7 +12,7 @@ There are five methods for downloading and installing the Decred software.
 * Manually installing and setting up the precompiled [binary releases](#binary-releases) for the cross-platform command-line applications.
 * Compiling from source.
 
-The first four methods will be covered here and the fourth may be added at a later date. 
+The first four methods will be covered here and the fifth may be added at a later date. 
 
 ---
 
@@ -37,7 +37,7 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
 `dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binaries are provided for Windows, OSX/macOS, Linux, OpenBSD, and FreeBSD. Executing installer will install `dcrd`, `dcrwallet`, and `dcrctl`. Instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
 
-This method is recommended over the traditional manual installation. `dcrinstall` will automatically download the precompiled, signed binaries found on Github, verify the signatures of the binaries, copy them to a specific folder dependant on OS, create configuration files with settings to allow the 3 applications to communicate with each other, and run you through the wallet creation process. After running through `dcrinstall`, you will be able to launch the software with no additional configuration.
+This method is recommended over the traditional manual installation. `dcrinstall` will automatically download the precompiled, signed binary package found on Github, verify the signature of this package, copy the binaries within the package to a specific folder dependant on OS, create configuration files with settings to allow the 3 applications to communicate with each other, and run you through the wallet creation process. After running through `dcrinstall`, you will be able to launch the software with no additional configuration.
 
 > OSX/macOS:
 
@@ -54,7 +54,7 @@ This method is recommended over the traditional manual installation. `dcrinstall
     `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
     `./dcrinstall-darwin-amd64-v0.8.2`
     
-3. The executable binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory. Before the `dcrinstall` completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
+3. The executable binaries for `dcrd`, `dcrwallet`, and `dcrctl` can now be found in the `~/decred/` directory. Before the `dcrinstall` process completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 
 > Linux:
 
@@ -73,7 +73,7 @@ This method is recommended over the traditional manual installation. `dcrinstall
     `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
     `./dcrinstall-darwin-amd64-v0.8.2` 
     
-3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory. Before the `dcrinstall` completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
+3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can now be found in the `~/decred/` directory. Before the `dcrinstall` process completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 
 > Windows:
 
@@ -86,7 +86,7 @@ This method is recommended over the traditional manual installation. `dcrinstall
 
     You can either double click it or run it from the Command Prompt. 
     
-3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `%HOMEPATH%\decred\` directory (usually %HOMEPATH% is `C:\Users\username`). Before the `dcrinstall` completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
+3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can now be found in the `%HOMEPATH%\decred\` directory (usually %HOMEPATH% is `C:\Users\username`). Before the `dcrinstall` process completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 
 ---
 

@@ -13,7 +13,7 @@ This guide is intended to help you learn the basic commands of the `dcrctl` appl
 
 ---
 
-`dcrctl` is the client that controls `dcrd` and `dcrwallet` via remote procedure call (RPC). You will use `dcrctl` for many things such as checking your balance, buying tickets, creating transactions, and viewing network information.
+`dcrctl` is the client that controls `dcrd` and `dcrwallet` via remote procedure call (RPC). You can use `dcrctl` for many things such as checking your balance, buying tickets, creating transactions, and viewing network information.
 
 **REMINDER:** This guide uses OS-agnostic examples for commands. Review the prerequisites to determine if you should be using `./dcrctl` or `dcrctl.exe` instead of `dcrctl`.
 
@@ -99,7 +99,7 @@ To send the `getnewaddress` command to `dcrwallet` using `dcrctl`, enter the fol
 dcrctl --wallet getnewaddress
 ```
 
-This will generate and return a new payment address. If you wish to minimize address reuse, use this command to get a new address for each transaction you wish to recieve.
+This will generate and return a new payment address. To minimize address reuse, use this command to get a new address for each transaction you wish to receive.
 
 ---
 

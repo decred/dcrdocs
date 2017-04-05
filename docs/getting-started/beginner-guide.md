@@ -12,6 +12,8 @@ This beginner's guide is a path to getting the Decred software up and running. Y
 
 You'll need to follow an [Installation Guide](#installation-guides), and then follow the path for the application of your choice below. After your application is set-up, go through the [General Guides](#general-guides) at the bottom of this page. If you have any questions along the way, join us in our [Slack](/support-directory.md#join-us-on-slack).
 
+**NOTE: Using Testnet is highly recommended for learning how to use the Decred software without the fear of making a mistake and losing real money. After following the guides to setup your choice of software, please visit the [Using Testnet guide](/getting-started/using-testnet.md) to learn how to launch your application onto Decred's testnet.**
+
 ---
 
 ## **Applications**
@@ -81,6 +83,7 @@ The following guides, in order, will get you started with the Command-Line Appli
 
 The following guides are independent of the different applications:
 
+* [Using Testnet](/getting-started/using-testnet.md)
 * [Obtaining DCR](/getting-started/obtaining-dcr.md)
 * [Using the Block Explorer](/getting-started/using-the-block-explorer.md)
 * [Proof-of-Stake Guide](/mining/proof-of-stake.md)

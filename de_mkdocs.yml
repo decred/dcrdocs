@@ -15,6 +15,7 @@ extra_javascript:
     - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 extra_css:
     - css/style.css
+docs_dir: 'de_docs'
 pages:
 - Home: 'index.md'
 - Loslegen:

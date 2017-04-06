@@ -281,5 +281,3 @@ Continue to [PoS Tickets and Fees FAQ](/faq/proof-of-stake/buying-tickets-and-fe
 [Proof-of-stake FAQ - Voting Tickets](/faq/proof-of-stake/voting-tickets.md)
 
 [Proof-of-stake Mining Parameters](/advanced/program-options.md#pos-network-parameters)
-
-[Wiki - Solo Stake Mining](https://wiki.decred.org/Solo_Stake_Mining)

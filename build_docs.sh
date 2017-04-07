@@ -13,7 +13,8 @@ for L in $LANG; do
     echo "======================================="
     echo $L " V E R S I O N "
     echo "INFO	-  Comparing Files and copy missing contents from en version"
-    for i in `diff -rq docs/ ${L}_docs/ | grep "Only in" | sed 's/Only in//' | sed 's/:/\//' | sed 's/ //' | sed 's/docs\///' | awk -F' ' '{print $1$2}'`; do echo $i; cp ${absolutePath}/docs/$i ${absolutePath}/${L}_docs/$i;  done
+    mkdir -p ${L}_docs
+    for i in `diff -rq docs/ ${L}_docs/ | grep "Only in" | sed 's/Only in//' | sed 's/:/\//' | sed 's/ //' | sed 's/docs\///' | awk -F' ' '{print $1$2}'`; do echo $i; cp -r ${absolutePath}/docs/$i ${absolutePath}/${L}_docs/$i;  done
     echo "INFO	-  Building "$L"_docs into directory site/"$L
     mkdocs build -f ${L}_mkdocs.yml -d site/${L}
 

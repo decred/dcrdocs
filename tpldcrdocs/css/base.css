@@ -34,8 +34,8 @@
 }
 
 html {
-    font-size: 52.5%;
     height: 100%;
+    font-size: 16px;
 }
 
 body {
@@ -69,7 +69,7 @@ div[role=main] .headerlink {
 }
 
 p {
-    font-size: 1.7rem;
+    font-size: 1rem;
 }
 
 h1,
@@ -84,14 +84,14 @@ p {
 }
 
 h1 {
-    font-size: 4.2rem;
+    font-size: 1.95rem;
     font-weight: normal;
     padding-right: 35px;
 }
 
 h2 {
-    font-size: 2.6rem;
-    margin: 26px 0 20px 0;
+    font-size: 1.16rem;
+    margin: 1.2rem 0 .8rem;
 }
 
 h1:hover .headerlink,
@@ -120,7 +120,7 @@ blockquote p {
 }
 
 ol li {
-    font-size: 1.7rem;
+    font-size: 1rem;
 }
 
 ol {
@@ -184,13 +184,14 @@ div[role=navigation] a.current {
 }
 
 div[role=main] {
-    padding: 0 10px 40px 10px;
+    padding: 0 15px 40px 15px;
     background-color: #f4f7f9;
     min-height: 100%;
     min-height: 100vh;
 }
 div[role=main] .content {
-    max-width: 900px;
+    margin: 0 auto;
+    max-width: 42rem;
 }
 div[role=main] p {
     font-weight: 300;
@@ -200,7 +201,7 @@ div[role=main] ul {
 }
 div[role=main] li {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1rem;
 }
 
 div.source-links {
@@ -215,7 +216,7 @@ div[role=main] a {
 
 pre {
     margin: 10px 0 20px 0;
-    font-size: 1.5rem;
+    font-size: .74rem;
     color: #09182d;
     background-color: #fff;
     border: 0;
@@ -226,6 +227,7 @@ code {
     padding: 1px 3px;
     background: #d4f0fd;
     color: #132f4b;
+    font-size: .87rem;
 }
 pre code {
     background: transparent;
@@ -270,21 +272,21 @@ strong a {
     border: 0;
 }
 .bs-sidenav {
+    font-size: .9rem;
     background: #0c1e3e;
 }
 .bs-sidenav > li {
+    font-family: 'Inconsolata', monospace;
     margin-bottom: 4px;
-    line-height: 1.3em;
 }
 .nav-link > ul > li:first-child {
-    font-size: 20px;
+    font-size: 1.3rem;
     padding: 0 0 10px 0;
 }
 .bs-sidenav a {
-    font-family: 'Inconsolata', monospace;
     color: #d4f0fd;
-    font-size: 1.7rem;
     padding-bottom: 50px;
+    line-height: 1.3rem;
 }
 .bs-sidenav a:focus {
     font-weight: bold;
@@ -299,9 +301,9 @@ strong a {
 .page-nav {
     padding: 0 0 0px 15px;
 }
-.subnav .group-heading {
+.group-heading {
     color: #7990a9;
-    margin-left: -1px;
+    line-height: 1rem;
 }
 
 .navbar-collapse.in {
@@ -319,7 +321,7 @@ strong a {
 .table>tbody>tr>td,
 .table>tbody>tr>td>a {
     color: #132f4b;
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -407,7 +409,8 @@ strong a {
 }
 #mkdocs-search-results h3 {
     margin: 0 0 4px 0;
-    line-height: 14px;
+    line-height: 1rem;
+    font-size: 1rem;
 }
 #mkdocs-search-results h3 a {
     color: #2970ff
@@ -467,7 +470,7 @@ div[role=main] .github-page-link {
 }
 
 .github-page-link .fa {
-   font-size: 3.0rem;
+   font-size: 1.7rem;
 }
 .github-page-link > div {
     font-size: 10px;
@@ -477,6 +480,9 @@ div[role=main] .github-page-link {
 @media (min-width: 767px) {
     div[role=main] {
         padding: 0px 15px 50px 30px;
+    }
+    div[role=main] .content {
+        margin: 0;
     }
     .navbar-collapse {
         padding: 0  15px;
@@ -500,8 +506,11 @@ div[role=main] .github-page-link {
 }
 
 @media (min-width: 1048px) {
+    html {
+        font-size: 18px;
+    }
     div[role=main] {
-        padding: 15px 45px 45px 45px;
+        padding: 9px 45px 45px 65px;
     }
 }
 

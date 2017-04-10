@@ -200,7 +200,6 @@ div[role=main] ul {
 }
 div[role=main] li {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.8rem;
 }
 
 div.source-links {
@@ -319,7 +318,6 @@ strong a {
 .table>tbody>tr>td,
 .table>tbody>tr>td>a {
     color: #132f4b;
-    font-size: 1.8rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
 

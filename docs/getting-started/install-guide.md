@@ -70,8 +70,8 @@ This method is recommended over the traditional manual installation. `dcrinstall
     Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
     
     `cd ~/Downloads/` <br />
-    `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
-    `./dcrinstall-darwin-amd64-v0.8.2` 
+    `chmod u+x dcrinstall-linux-amd64-v0.8.2` <br />
+    `./dcrinstall-linux-amd64-v0.8.2` 
     
 3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can now be found in the `~/decred/` directory. Before the `dcrinstall` process completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 

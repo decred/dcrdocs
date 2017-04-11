@@ -77,7 +77,7 @@ These are the recommended steps to contribute a new language to dcrdocs:
 1. Add 'ru' to the list of languages in `build_docs.sh`. In this case ```LANG="de es"``` becomes ```LANG="de es ru"```
 1. Run `build_docs.sh`. This will create the directory `ru_docs` which will contain a full copy of the English documentation
 1. Copy `mkdocs.yml` to `ru_mkdocs.yml` and give it an extra line `docs_dir: 'ru_docs'`
-1. Translate each of the markdown files in `ru_docs`
+1. Translate each of the markdown files in `ru_docs`. Make one commit for each file translated to more easily track progress and changes in the commit history. The commit message should be formatted as `ru translation filename.md`
 1. Translate the table of contents by updating the headings in `ru_mkdocs.yml`
 1. Translate the copyright message in `ru_mkdocs.yml`
 1. Run `build_docs.sh` again and check the output contains no errors to validate your work. 

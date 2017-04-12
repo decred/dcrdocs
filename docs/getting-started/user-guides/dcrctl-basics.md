@@ -2,7 +2,7 @@
 
 Last updated for v0.8.2.
 
-This guide is intended to help you learn the basic commands of the `dcrctl` application using [startup flags](/getting-started/startup-basics.md#startup-command-flags). 
+This guide is intended to help you learn the basic commands of the `dcrctl` application using a [minimal configuration file](/getting-started/startup-basics.md#minimum-configuration). 
 
 **Prerequisites:**
 

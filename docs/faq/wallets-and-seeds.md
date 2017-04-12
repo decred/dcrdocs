@@ -57,16 +57,16 @@ Make sure all of the words are on a single line separated by spaces[^10657]. Eve
 
 It is possible to import a standalone private key[^10724] into `dcrwallet`. Note that this is only for `--noseed` addresses and you should not run this unless you know what you are doing!
 
-Unlock the wallet (ignore square brackets):
+Unlock the wallet (ignore angle brackets):
 
 ```no-highlight
-dcrctl --wallet walletpassphrase [private encryption passphrase] 60
+dcrctl --wallet walletpassphrase <private encryption passphrase> 60
 ```
 
-Import the standalone (`--noseed`) private key (ignore square brackets):
+Import the standalone (`--noseed`) private key (ignore angle brackets):
 
 ```no-highlight
-dcrctl --wallet importprivkey [put WIF private key here]
+dcrctl --wallet importprivkey <put WIF private key here>
 ```
 
 View balance of imported account (give it some time to rescan and look at the log in dcrwallet to see rescan progress):

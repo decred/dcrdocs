@@ -53,14 +53,14 @@ At the very minimum, for `dcrd`, `dcrwallet`, and `dcrctl` to be able to communi
 4. Create an empty text file and save it as `dcrctl.conf` in `dcrctl`'s home directory.
 5. Choose an arbitrary username and password, these will only be used for each application to communicate via remote procedure call. The easiest configuration is to set them all equal.
 6. Inside `dcrd.conf`, underneath `[Application Options]`, add the following lines:<br /><br />
-        rpcuser=chosen-username<br />
-        rpcpass=chosen-password<br /><br />
+        rpcuser=<chosen-username><br />
+        rpcpass=<chosen-password><br /><br />
 7. Inside `dcrwallet.conf`, underneath `[Application Options]`, add the following lines:<br /><br />
-        username=chosen-username<br />
-        password=chosen-password<br /><br />
+        username=<chosen-username><br />
+        password=<chosen-password><br /><br />
 8. Inside `dcrctl.conf`, add the following lines:<br /><br />
-        rpcuser=chosen-username<br />
-        rpcpass=chosen-password<br /><br />
+        rpcuser=<chosen-username><br />
+        rpcpass=<chosen-password><br /><br />
 9. Save all three configuration files.
 
 ---

@@ -9,13 +9,13 @@
 Note that all `dcrd`, `dcrwallet`, and `dcrctl` commands must be executed in the directory where your Decred files are! Start `dcrd`:
 
 ```no-highlight
-~/Decred/$ ./dcrd -u user -P password
+~/Decred/$ ./dcrd -u <username> -P <password>
 ```
 
 Start dcrwallet:
 
 ```no-highlight
-~/Decred/$ ./dcrwallet -u user -P password
+~/Decred/$ ./dcrwallet -u <username> -P <password>
 ```
 
 > Step Two
@@ -23,7 +23,7 @@ Start dcrwallet:
 Generate a new wallet address:
 
 ```no-highlight
-~/Decred/$ ./dcrctl -u user -P password --wallet getnewaddress default
+~/Decred/$ ./dcrctl -u <username> -P <password> --wallet getnewaddress default
 ```
 
 Copy the new address (output from the last command). Close/stop `dcrd` and `dcrwallet` by pressing `ctrl+c` in each window.
@@ -33,7 +33,7 @@ Copy the new address (output from the last command). Close/stop `dcrd` and `dcrw
 Restart `dcrd` using the command:
 
 ```no-highlight
-~/Decred/$ ./dcrd -u user -P password --miningaddr [new address from step two or your web client wallet address]
+~/Decred/$ ./dcrd -u <username> -P <password> --miningaddr <new address from step two or your web client wallet address>
 ```
 
 > Step Four
@@ -41,7 +41,7 @@ Restart `dcrd` using the command:
 Setup TLS security by copying rpc.cert to /usr/share/ca-certificates:
 
 ```no-highlight
-sudo cp /home/user/.dcrd/rpc.cert /usr/share/ca-certificates/dcrd.crt
+sudo cp /home/<username>/.dcrd/rpc.cert /usr/share/ca-certificates/dcrd.crt
 ```
 
 Use a text editor to add the line "dcrd.crt" (no quotes) to /etc/ca-certificates.conf:
@@ -84,7 +84,7 @@ If `dcrd` is not finished syncing to the blockchain, wait for it to finish, then
 In your cgminer directory, start cgminer with the command:
 
 ```no-highlight
-~/Decred/$ ./cgminer --blake256 -o https://127.0.0.1:9109 -u user -p password
+~/Decred/$ ./cgminer --blake256 -o https://127.0.0.1:9109 -u <username> -p <password>
 ```
 
 Create a cgminer configuration file by pressing the following keys: `S` (Settings), `W` (Write Config File), `Enter` (Save config file as `cgminer.conf`). Note that `cgminer.conf` will be placed in the same directory as cgminer. cgminer can now be launched by simply running the command:

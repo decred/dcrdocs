@@ -102,7 +102,7 @@ the background. Let's have a look at some of the information
 available:
 
 ```
-dcrctl -u <daemon username> - P <daemon password> --wallet <command>
+dcrctl -u <username> - P <password> --wallet <command>
 ```
 
 ```getbalance ("account" minconf=1 "balancetype")``` Gets the balance

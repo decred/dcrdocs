@@ -1200,14 +1200,14 @@
     var title = _("EqSource","MathJax Equation Source");
     if (MENU.isMobile) {
       w.document.open();
-      w.document.write("<html><head><meta name='viewport' content='width=device-width, initial-scale=1.0' /><title>"+title+"</title></head><body style='font-size:85%'>");
+      w.document.write("<html><head><meta name='viewport' content='width=device-width, initial-scale=1.0' /><title>"+title+"</title></head ><body style='font-size:85%'>");
       w.document.write("<pre>"+text+"</pre>");
       w.document.write("<hr><input type='button' value='"+_("Close","Close")+"' onclick='window.close()' />");
       w.document.write("</body></html>");
       w.document.close();
     } else {
       w.document.open();
-      w.document.write("<html><head><title>"+title+"</title></head><body style='font-size:85%'>");
+      w.document.write("<html><head><title>"+title+"</title></head ><body style='font-size:85%'>");
       w.document.write("<table><tr><td><pre>"+text+"</pre></td></tr></table>");
       w.document.write("</body></html>");
       w.document.close();

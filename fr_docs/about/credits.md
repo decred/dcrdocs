@@ -2,7 +2,7 @@
 
 ---
 
-Contributor                                                                 | Source
+Contributeur                                                                 | Source
 ---                                                                         | ---
 [`@anondran`](https://forum.decred.org/members/anondran.714/)               | [Brief Guide: Setting Up Mainnet Wallet -- Airdop Included -- With Basic Commands -- OS Neutral](https://forum.decred.org/threads/brief-guide-setting-up-mainnet-wallet-airdop-included-with-basic-commands-os-neutral.478/)
 [`@anondran`](https://forum.decred.org/members/anondran.714/)               | [Brief Guide: Setting Up Testnet Wallet, Sending, And Receiving Coins -- OS Neutral](https://forum.decred.org/threads/brief-guide-setting-up-testnet-wallet-sending-and-receiving-coins-os-neutral.355/)

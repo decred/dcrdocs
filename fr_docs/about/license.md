@@ -1,11 +1,11 @@
 # **License**
 
-dcrdocs is licensed under the [copyfree](http://copyfree.org) ISC License.
+dcrdocs est une license sous [copyfree](http://copyfree.org) ISC License.
 
 ---
 
 Copyright © 2013-2015 The btcsuite developers. Copyright © 2015-2017 The Decred developers.
 
-Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+La permission d'utiliser, copier, modifier, et distribuer ce software pour n'importe quel usage avec ou sans charge est par la présente accordée, à condition que l'avis de copyright ci-dessus et cet avis d'autorisation apparaissent dans toutes les copies.
 
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+LE LOGICIEL EST FOURNI «EN L'ÉTAT» ET L'AUTEUR DÉCLINE TOUTE GARANTIE EN CE QUI CONCERNE CE LOGICIEL INCLUANT TOUTES LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D'APTITUDE. EN AUCUN CAS, L'AUTEUR NE PEUT PAS ÊTRE TENU RESPONSABLE DE TOUT DOMMAGE SPÉCIAL, DIRECT, INDIRECT OU CONSÉCUTIF OU TOUT DOMMAGE QUI RÉSULTE DE LA PERTE D'UTILISATION, DE DONNÉES OU DE BÉNÉFICES, QUE CE SOIT EN ACTION DE CONTRAT, DE NÉGLIGENCE OU D'AUTRES ACTIONS DELICTUELLES, DÉCOULANT DE OU EN CONNEXION AVEC L'UTILISATION OU LA PERFORMANCE DE CE LOGICIEL.

@@ -4,7 +4,7 @@ dcrdocs est une license sous [copyfree](http://copyfree.org) ISC License.
 
 ---
 
-Copyright © 2013-2015 The btcsuite developers. Copyright © 2015-2017 The Decred developers.
+Copyright © 2013-2015 Les dévelopeurs btcsuite. Copyright © 2015-2017 Les dévelopeurs Decred.
 
 La permission d'utiliser, copier, modifier, et distribuer ce software pour n'importe quel usage avec ou sans charge est par la présente accordée, à condition que l'avis de copyright ci-dessus et cet avis d'autorisation apparaissent dans toutes les copies.
 

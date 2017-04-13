@@ -19,7 +19,7 @@ You can always get a list of all options by using the `-h` option.
 ## **Usage**
 
 ```
-dcrd <OPTIONS>
+dcrd [OPTIONS]
 ```
 
 ---

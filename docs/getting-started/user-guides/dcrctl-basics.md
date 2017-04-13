@@ -33,9 +33,9 @@ If you did not use `dcrinstall`, you will need to enable the bare minimum settin
 
 You will need to run dcrctl commands in a separate shell window (Command Prompt/Bash).
 
-To issue commands to `dcrwallet`, you will need to use `dcrctl --wallet [command]`.
+To issue commands to `dcrwallet`, you will need to use `dcrctl --wallet <command>`.
 
-To issue commands to `dcrd`, you will need to use `dcrctl [command]`.
+To issue commands to `dcrd`, you will need to use `dcrctl <command>`.
 
 To see a full list of commands that `dcrctl` can send to `dcrd` and `dcrwallet`, issue the following command in your shell:
 
@@ -46,13 +46,13 @@ dcrctl -l
 This will return a very long list of commands, separated by application. The commands on the top section are for `dcrd` and the commands on the bottom section are for `dcrwallet`. You can find out more about an individual command by typing the following for `dcrwallet` commands:
 
 ```no-highlight
-dcrctl help --wallet [command]
+dcrctl help --wallet <command>
 ```
 
 or the following for `dcrd` commands:
 
 ```no-highlight
-dcrctl help [command]
+dcrctl help <command>
 ```
 
 ---
@@ -64,7 +64,7 @@ Some functionality of `dcrwallet` requires the wallet to be unlocked.
 The command to unlock your wallet follows: 
 
 ```no-highlight
-dcrctl --wallet walletpassphrase [private passphrase set during wallet creation] 0
+dcrctl --wallet walletpassphrase <private passphrase set during wallet creation> 0
 ```
 
 Here, we are specifying for `dcrctl` to send the command to `dcrwallet` by using the `--wallet` flag. The actual command is `walletpassphrase` which accepts two parameters, your private passphrase and a time limit. Specifying `0` for a time limit unlocks `dcrwallet` without a time limit. Note, however, that this only unlocks the wallet for the current session. If you close the window the wallet is running in, or stop/restart the `dcrwallet`, you will need to unlock it again the next time you start it. 
@@ -108,7 +108,7 @@ This will generate and return a new payment address. To minimize address reuse, 
 To send DCR to an address, issue the `sendtoaddress` command to `dcrwallet` using `dcrctl`. Enter the following in your shell, filling in the receiving address and amount to send:
 
 ```no-highlight
-dcrctl --wallet sendtoaddress [address] [amount]
+dcrctl --wallet sendtoaddress <address> <amount>
 ```
 
 If successful, `dcrctl` will return a transaction hash that can be used to watch the transaction on the official [Decred Block Explorer](/getting-started/using-the-block-explorer.md).

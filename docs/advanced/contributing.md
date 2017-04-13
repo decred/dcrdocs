@@ -55,7 +55,7 @@ $ go install $(glide nv)
 - Add a git remote for your fork:
 
 ```bash
-$ git remote add yourname https://github.com/yourname/dcrd.git
+$ git remote add <yourname> https://github.com/<yourname>/dcrd.git
 ```
 
 ## **Other projects**
@@ -76,7 +76,7 @@ $ cd dcrdocs
 - Add a git remote for your fork:
 
 ```bash
-$ git remote add yourname https://github.com/yourname/dcrdocs.git
+$ git remote add <yourname> https://github.com/<yourname>/dcrdocs.git
 ```
 
 ## **Creating a new feature pull request**
@@ -84,13 +84,13 @@ $ git remote add yourname https://github.com/yourname/dcrdocs.git
 - Checkout a new feature branch to house the changes you will be making:
 
 ```bash
-$ git checkout -b feature_branch
+$ git checkout -b <feature_branch>
 ```
 - Make whatever changes are necessary for the feature and commit them
 - Push your feature branch to your fork:
 
 ```bash
-$ git push yourname feature_branch
+$ git push <yourname> <feature_branch>
 ```
 - With your browser, navigate to https://github.com/decred/dcrd
 - Create a pull request with the GitHub UI.  You can request a reviewer on the GitHub web page or you can ask someone on irc/slack.
@@ -108,7 +108,7 @@ $ git pull
 - Checkout the existing feature branch and rebase it with the interactive flag:
 
 ```bash
-$ git checkout feature_branch
+$ git checkout <feature_branch>
 $ git rebase -i master
 ```
 - Follow the directions presented to specify 's' meaning squash for the additional commits (the first commit must remain 'p' or 'push'
@@ -117,7 +117,7 @@ $ git rebase -i master
 - Force push the branch to your fork:
 
 ```bash
-$ git push -f yourname feature_branch
+$ git push -f <yourname> <feature_branch>
 ```
 
 ## **Other Considerations**

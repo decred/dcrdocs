@@ -36,13 +36,13 @@ but first, check the command and make sure you entered it correctly. You will ne
 6. Open Windows Explorer.
 7. Paste `%localappdata%/decred/paymetheus` into the location bar. Press ENTER.
 8. Delete the 'mainnet' folder.
-9. Go to one of the PowerShell windows and paste `./dcrd -u you -P sekrit`. Press ENTER.
+9. Go to one of the PowerShell windows and paste `./dcrd -u <username> -P <password>`. Press ENTER.
 10. Go to one of the other Powershell windows and paste `./dcrwallet --appdata=$env:localappdata/decred/paymetheus --create`
 11. Follow the prompts and import your seed. Say no when asked for an additional layer of encryption and yes when asked if you have a seed.
 12. At the prompt, enter your seed words and press ENTER twice.
-13. Paste the following command into the same window: `./dcrwallet -u you -P sekrit --appdata=$env:localappdata/decred/paymetheus`. Press ENTER.
+13. Paste the following command into the same window: `./dcrwallet -u <username> -P <password> --appdata=$env:localappdata/decred/paymetheus`. Press ENTER.
 14. Enter the private passphrase you used when creating the wallet.
-15. Go to the third PowerShell window and paste `./dcrctl -u you -P sekrit --wallet -c $env:localappdata/decred/paymetheus/rpc.cert getbalance`. Press ENTER.
+15. Go to the third PowerShell window and paste `./dcrctl -u <username> -P <password> --wallet -c $env:localappdata/decred/paymetheus/rpc.cert getbalance`. Press ENTER.
 16. Press CTRL+C in the first two windows to close the programs (dcrd and dcrwallet).
 17. You can close all three PowerShell windows.
 18. Go back to the Explorer window. Delete the two files, rpc.cert and rpc.key.
@@ -55,7 +55,7 @@ but first, check the command and make sure you entered it correctly. You will ne
 #### **1. Some of my missed/expired tickets are still locked after more than a day.** ####
 
 1. Start the wallet process with the `--enablevoting` flag. It will not issue revocations without it.
-2. Unlock the wallet with `dcrctl --wallet walletpassphrase "yourpassphrase" 0`. The wallet must be unlocked for it to be able to create the revocations and sign them.
+2. Unlock the wallet with `dcrctl --wallet walletpassphrase <yourpassphrase> 0`. The wallet must be unlocked for it to be able to create the revocations and sign them.
 3. Instruct dcrd to notify the wallet about missed tickets again so it will issue the revocations with `dcrctl rebroadcastmissed`.
 
 

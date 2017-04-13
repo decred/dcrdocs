@@ -9,13 +9,13 @@
 Note that all `dcrd`, `dcrwallet`, and `dcrctl` commands must be executed in the directory where your Decred files are! Start `dcrd`:
 
 ```no-highlight
-C:\Decred> dcrd -u user -P password
+C:\Decred> dcrd -u <username> -P <password>
 ```
 
 Start dcrwallet:
 
 ```no-highlight
-C:\Decred> dcrwallet -u user -P password
+C:\Decred> dcrwallet -u <username> -P <password>
 ```
 
 > Step Two
@@ -23,7 +23,7 @@ C:\Decred> dcrwallet -u user -P password
 Generate a new wallet address:
 
 ```no-highlight
-C:\Decred> dcrctl -u user -P password --wallet getnewaddress
+C:\Decred> dcrctl -u <username> -P <password> --wallet getnewaddress
 ```
 
 Copy the new address (output from the last command). Close/stop `dcrd` and `dcrwallet` by pressing `ctrl+c` in each window.
@@ -33,7 +33,7 @@ Copy the new address (output from the last command). Close/stop `dcrd` and `dcrw
 Restart `dcrd` using the command:
 
 ```no-highlight
-C:\Decred> dcrd --miningaddr [new address from step two or your web client wallet address]
+C:\Decred> dcrd --miningaddr <new address from step two or your web client wallet address>
 ```
 
 ---
@@ -51,7 +51,7 @@ Visit https://github.com/decred/cgminer/releases to find the latest cgminer rele
 Right-click on `start_local.bat` and click `Edit`. Change the username and password to match the credentials used in step 1. Save and close start_local.bat  For reference, here is the command in start_local.bat:
 
 ```no-highlight
-C:\Decred> cgminer --blake256 -o https://127.0.0.1:9109 -u username -p password --cert "%LOCALAPPDATA%\Dcrd\rpc.cert"
+C:\Decred> cgminer --blake256 -o https://127.0.0.1:9109 -u <username> -p <password> --cert "%LOCALAPPDATA%\Dcrd\rpc.cert"
 ```
 
 > Step Two

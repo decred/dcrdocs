@@ -42,7 +42,7 @@ To benchmark your system and find out the hashrate your GPUs are capable of, use
 Register on one of the pool websites and setup a new miner for each of your mining computers. Refer to the pool website of your choice for instructions, if needed. In your terminal window from step one, type the following command to launch cgminer (ignore square brackets):
 
 ```no-highlight
-~/Decred/$ ./cgminer --blake256 -o [pool url]:[port number] -u [web login].[worker name] -p [worker password]
+~/Decred/$ ./cgminer --blake256 -o <pool url>:<port number> -u <web login>.<worker name> -p <worker password>
 ```
 
 Example:

@@ -6,7 +6,7 @@ The default options are sane for most users (although you may need to
 set your credentials. This means `dcrd` will
 work 'out of the box' for most users. However, there are also a wide
 variety of flags that can be used to control its behavior. The following section
-provides a usage overview which enumerates the flags.An interesting
+provides a usage overview which enumerates the flags. An interesting
 point to note is that the long form of all of these options (except
 `-C`) can be specified in a configuration file that is automatically
 parsed when dcrd starts up.
@@ -19,7 +19,7 @@ You can always get a list of all options by using the `-h` option.
 ## **Usage**
 
 ```
-dcrd [OPTIONS]
+dcrd <OPTIONS>
 ```
 
 ---

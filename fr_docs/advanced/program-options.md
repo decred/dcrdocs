@@ -207,7 +207,7 @@ Commande                                                                        
 `Getbalance (" account "minconf=1 " balancetype ")` | Obtenez le solde dépensé dans le compte donné. Pour obtenir le montant total dans le portefeuille, utilisez 'getbalance * 0 all'.
 `Getbalancetomaintain` | Il s'agit du solde minimum à conserver dans le portefeuille lors de l'achat d'une preuve d'enjeu automatique.
 `Getmasterpubkey` | Obtenez la clé publique pour votre portefeuille. Cela permettra aux gens de voir, mais pas de dépenser les fonds de votre portefeuille. C'est suûr de la fournir aux autres.
-`Getnewaddress (" account "verbose = false)` | Obtenez une nouvelle adresse dans le compte donné.
+`Getnewaddress (" account "verbose=false)` | Obtenez une nouvelle adresse dans le compte donné.
 `getreceivedbyaccount "account" (minconf=1)`                                    | Obtient le montant total de DCR jamais reçu par ce portefeuille. Cela inclut les retours des enjeux, de sorte qu'il pourrait être assez important si vous êtes une mineur PdE.
 `Getreceivedbyaddress" adresse "(minconf=1)` | Obtenez des fonds reçus par l'adresse indiquée.
 `Getseed` | Désactivé sur mainnet pour la sécurité.
@@ -217,8 +217,8 @@ Commande                                                                        
 `Gettickets includesimmature` | Obtenez tous vos tickets actuels. Le deuxième argument devrait être vrai si vous voulez voir des bilticketslets immatures aussi.
 `Gettransaction" txid "(includewatchonly=false)` | Obtenez la transaction associée à l'identifiant donné.
 `Listaccounts (minconf=1)` | Voir tous les comptes et leur solde dépensé dans votre portefeuille.
-`Listreceivedbyaccount (minconf=1 includeempty = false includewatchonly=false)` | Obtenez une liste de tous vos comptes et le montant de DCR qui a été reçu par eux.
-`Listreceivedbyaddress (minconf=1 includeempty = false includewatchonly=false)` | Obtenez une liste de toutes vos adresses et le montant de DCR qui a été reçu par elles.
+`Listreceivedbyaccount (minconf=1 includeempty=false includewatchonly=false)` | Obtenez une liste de tous vos comptes et le montant de DCR qui a été reçu par eux.
+`Listreceivedbyaddress (minconf=1 includeempty=false includewatchonly=false)` | Obtenez une liste de toutes vos adresses et le montant de DCR qui a été reçu par elles.
 `Listsinceblock (" blockhash "targetconfirmations 1 includewatchonly=false)` | Liste les transactions survenues depuis le hash de bloc donné.
 `Listtransactions ("account" count=10 from=0 includewatchonly=false)` | Énumérez le nombre de transactions spécifiées par «compte» dans le compte donné.
 `move "fromaccount" "toaccount" amount (minconf=1 "comment")`                   | Déplacez les fonds entre les comptes dans le même portefeuille.

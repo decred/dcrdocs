@@ -23,7 +23,7 @@ Cette page décrit les composants de la transaction d'un decred et comprend éga
 ## <i class="fa fa-check"></i> [Vérification des binaires](/advanced/verifying-binaries.md)
 
 L'officiel
-[Délivrance Decred](https://github.com/decred/decred-release) a
+[Signature Decred](https://github.com/decred/decred-release) a
 Hachages signés que vous devriez vérifier pour confirmer qu'ils sont identiques
 aux binaires publiés par les développeurs. Cette page fournit des instructions
 pour cela.

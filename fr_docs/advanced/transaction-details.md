@@ -1,78 +1,78 @@
-# **Transaction Details**
+# **Details de Transaction**
 
 ---
 
-Decred transactions are transfers of DCR that exist within blocks. Transactions are comprised primarily of inputs and outputs, though they have a few other fields of data as well. 
+Les transactions Decred sont des transferts de DCR qui existent dans des blocs. Les transactions sont principalement constituées d'entrées et de sorites, mais elles ont aussi quelques autres champs de données. 
 
 
-## **Transaction Format**
+## **Format de Transaction**
 
-Field        | Description                                                                                    | Size
+Domaine        | Description                                                                                    | Taille
 ---          | ---                                                                                            | ---
-Version      | Transaction version. This number is used to signify how the transaction should be interpreted  | 4 bytes
-Input count  | The number of inputs in the transaction encoded as a variable-length integer                   | 1-9 bytes
-Inputs       | Serialized list of all the transaction's inputs                                                | Variable
-Output count | The number of outputs in the transaction encoded as a variable-length integer                  | 1-9 bytes
-Outputs      | Serialized list of all the transaction's outputs                                               | Variable
-Lock time    | The time when a transaction can be spent. (usually zero, in which case it has no effect)       | 4 bytes
-Expiry       | The block height at which the transaction expires and is no longer valid                       | 4 bytes
+Version      | Version de transaction. Ce numéro sert à indiquer comment la transaction doit être interprétée  | 4 bytes
+Nombre d'entrées  | Le nombre d'entrées dans la transaction codée en nombre entier de longueur variable                   | 1-9 bytes
+Entrées       | Liste sérialisée de toutes les entrées de la transaction                                                | Variable
+Nombre de sorties | Le nombre de sorties dans la transaction est codé en entier de longueur variable                  | 1-9 bytes
+Sorties      | Liste sérialisée de toutes les sorties de la transaction                                               | Variable
+Temps de verrouillage    | Le moment où une transaction peut être dépensée. (Habituellement zéro, dans ce cas il n'a aucun effet)        | 4 bytes
+Échéance       | La hauteur du bloc auquel la transaction expire et n'est plus valide                       | 4 bytes
 
 
-### Inputs
-Inputs spend previously-made outputs. There are two types of transaction inputs: Witness and non-witness.
+### Entrées
+Les entrées passent des sorties précédemment réalisées. Il existe deux types d'entrées de transaction: témoin et non-témoin.
 
 
-#### Non-Witness Inputs
-A non-witness transaction input is a reference to an unspent output and a sequence number. A reference to an unspent output is called an "outpoint." Outpoints have three fields:
+#### Entrées non témoins
+Une entrée de transaction non-témoin est une référence à une sortie non utilisée et à un numéro de séquence. Une référence à une sortie non utilisée appelée "point de dépassement". Les point de dépassement ont trois champs:
 
-Field            | Description                                                                                                                           | Size
+Champ            | Description                                                                                                                           | Taille
 ---              | ---                                                                                                                                   | ---
-Transaction hash | The hash of the transaction which contains the output being spent                                                                     | 32 bytes
-Output index     | The index of the output being spent                                                                                                   | 4 bytes
-Tree             | Which tree the output being spent is in. This is required because there is more than one tree used to locate transactions in a block. | 1 byte
+Hash de ransaction | Le hash de la transaction qui contient la sortie dépensée                                                                     | 32 bytes
+Indice de sortie     | L'indice de la sortie en cours d'envoi                                                                                                   | 4 bytes
+Arbre             | Quel arbre la sortie en cours utilise. Cela est nécessaire car il existe plus d'un arbre utilisé pour localiser les transactions dans un bloc. | 1 byte
 
-In addition to an outpoint, non-witness inputs contain a sequence number. This number has more historical significance than relevant usage; however, its most relevant purpose is to enable "locking" of payments so that they cannot be redeemed until a certain time.
+En plus d'un point de dépassement, les entrées non-témoins contiennent un numéro de séquence. Ce nombre a une signification plus historique que l'utilisation pertinente; Cependant, son but le plus pertinent est de permettre le "verrouillage" des paiements afin qu'ils ne puissent être échangés que jusqu'à un certain moment.
 
 
-#### Witness Inputs
-A witness transaction input contains the data necessary to prove that an output can be spent. Witness inputs contain four fields of data:
+#### Entrées témoins
+Une entrée de transaction témoin contient les données nécessaires pour prouver qu'une sortie peut être dépensée. Les contributions des témoins contiennent quatre champs de données:
 
-Field            | Description
+Champ            | Description
 ---              | ---
-Value            | The amount of coins that the output being spent transfers.
-Block height     | The height of the block containing the transaction in which the output being spent is located.
-Block index      | The index of the transaction in which the output being spent is located.
-Signature script | The script that satisfies the requirements of the script in the output being spent.
+Valeur            | Le montant des pièces de monnaie que la sortie qui est dépensée transfère.
+Hauteur du bloc     | La hauteur du bloc contenant la transaction dans laquelle se trouve la sortie dépensée.
+Indice du bloc      | L'indice de la transaction dans laquelle se trouve la sortie dépensée.
+Script de signature | Le script qui satisfait aux exigences du script dans la sortie dépensée.
 
 
-### Outputs
-Outputs are transfers of DCR that can be spent by inputs. Outputs always have three fields of data:
+### Sorties
+Les sorties sont des transferts de DCR qui peuvent être dépensés par des entrées. Les sorties ont toujours trois champs de données:
 
-Field             | Description                                                                                     | Size
+Champ             | Description                                                                                     | Taille
 ---               | ---                                                                                             | ---
-Value             | The amount of DCR being sent by the output.                                                     | 8 bytes
-Version           | The version of the output. This number is used to signify how the output should be interpreted. | 2 bytes
-Public key script | The script that must be satisfied to spend the output                                           | Variable
+Valeur             | La quantité de DCR envoyée par la sortie.                                                     | 8 bytes
+Version           | La version de la sortie. Ce numéro sert à indiquer comment la sortie doit être interprétée. | 2 bytes
+Script de clé publique | Clé publique le script qui doit être satisfait de passer le Script de sortie                                           | Variable
 
 ---
 
-## **Serialization**
-The format displayed above is not the format that transactions are sent and received in. When sending or receiving transactions, they can be serialized in a few ways. The way that a transaction should be deserialized can be determined from its version. Transaction versions occupy four bytes, but those four bytes are actually used to store two separate values. The first two bytes of a transaction's version denote its actual version number. The second two bytes denote its serialization format.
+## **Serialisation**
+Le format affiché ci-dessus n'est pas le format auquel les transactions sont envoyées et reçues. Lors de l'envoi ou de la réception de transactions, elles peuvent être sérialisées de quelques façons. La façon dont une transaction doit être désérialisée peut être déterminée à partir de sa version. Les versions de transaction occupent quatre octets, mais ces quatre octets sont utilisés pour stocker deux valeurs distinctes. Les deux premiers octets de la version d'une transaction indiquent son numéro de version réel. Les deux premiers octets désignent leur format de sérialisation.
 
 
-### Serialization Formats
-When serializing, there are two main parts of a transaction: Its "prefix" and its witness data.
-The transaction prefix is comprised of:
+### Formats de Serialisation
+Lors de la sérialisation, il existe deux parties principales d'une transaction: son «préfixe» et ses données de témoins.
+Le préfixe de transaction comprend:
 
-* Inputs (without any witness data)
-* Outputs
-* Lock time
-* Expiry
+* Entrées (sans données témoins)
+* Les sorties
+* Heure de verrouillage
+* Expiration
 
-The witness data of a transaction involves only its inputs. The included data fields of its inputs depend on the specific serialization format. This format can be any one of the following:
+Les données des témoins d'une transaction ne comportent que ses entreées. Les champs de données inclus de ses entrées dépendent du format de sérialisation spécifique. Ce format peut être l'un des suivants:
 
-* **0 (Full serialization)** - The transaction's prefix is located immediately before its witness data.
-* **1 (No witness)** - The transaction's prefix is the only data present.
-* **2 (Only witness)** - The transaction's witness data is the only data present. For each input, this includes its value, block height, block index, and signature script.
-* **3 (Witness signing)** - The transaction's witness data is the only data present, and is serialized for signing purposes. For each input, this includes only its signature script.
-* **4 (Witness signing with value)** - The transaction's witness data is the only data present, and is serialized for signing purposes. Unlike the Witness signing format, this format includes the value of each input before its signature script.
+* **0 (Complète Serialisation)** - Le préfixe de la transaction est situé immédiatement avant les données de son témoin.
+* **1 (Pas de témoins)** - Le préfixe de la transaction est la seule donnée présente.
+* **2 (Témoins seulement)** - Les données des témoins de la transaction sont les seules données présentes. Pour chaque entrée, cela inclut sa valeur, sa hauteur de bloc, son index de bloc et son script de signature.
+* **3 (Témoins signant)** - Les données des témoins de la transaction sont les seules données présentes et sont sérialisées à des fins de signature. Pour chaque entrée, cela inclut uniquement son script de signature.
+* **4 (Témoins signant avec valeur)** - Les données des témoins de la transaction sont les seules données présentes et sont sérialisées à des fins de signature. Contrairement au format de signature du témoin, ce format comprend la valeur de chaque entrée avant son script de signature.

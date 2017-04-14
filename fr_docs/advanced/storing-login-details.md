@@ -1,49 +1,46 @@
-# **<i class="fa fa-hdd-o"></i> Storing Login Details**
+# **<i class="fa fa-hdd-o"></i> Enregistrement des détails de connexion**
 
-All parameters that are specified on the command line while starting dcrd,
-dcrwallet and dcrctl can also be kept in configuration files. This is
-a good way of storing your login credentials so that you do not need
-to include them in scripts or type them into the terminal all the
-time.
+Tous les paramètres qui sont spécifiés sur la ligne de commande pendant que vous démarrez dcrd,
+Dcrwallet et dcrctl peuvent également être conservés dans les fichiers de configuration. C'est une bonne façon de stocker vos informations d'identification de connexion afin que vous n'ayez pas besoin de les inclure dans les scripts ou les taper dans le terminal tous les
+temps.
 
 ---
 
-## **<i class="fa fa-laptop"></i> Configuration File Basics**
+## **<i class="fa fa-laptop"></i> Principes de base du fichier de configuration**
 
-If unfamiliar with the basics of configuration files, please review the information found in our [Startup Options Intro](/getting-started/startup-basics.md#configuration-files) page.
+Si vous ne connaissez pas les bases des fichiers de configuration, consultez les informations trouvées dans notre [Introduction aux options de démarrage](/getting-started/startup-basics.md#configuration-files) page.
 
 ---
 
 ## **<i class="fa fa-terminal"></i> dcrd.conf**
 
-Choose any username and password you want in the following steps. You do not need to register these
-anywhere and they will only be used to allow `dcrwallet` and `dcrctl` to communicate with `dcrd`.
+Choisissez le nom d'utilisateur et le mot de passe souhaité dans les étapes suivantes. Vous n'avez pas besoin de les enregistrer et ils ne seront utilisés que pour permettre à `dcrwallet` et` dcrctl` de communiquer avec `dcrd`.
 
-> Using the Sample Config File
+> Utiliser du fichier de configuration d'exemple
 
-Please follow the steps below if you've already copied the sample configuration files into their appropriate directories.
+Suivez les étapes ci-dessous si vous avez déjà copié les exemples de fichiers de configuration dans leurs répertoires appropriés.
 
-1. Navigate to your `dcrd` application folder as described in our [Startup Options Intro](/getting-started/startup-basics.md#configuration-files). 
-2. Open `dcrd.conf` in a text editor.
-3. Find the following lines:
+1. Accédez à votre dossier d'application `dcrd` comme décrit dans notre [Introduction aux options de démarrage](/getting-started/startup-basics.md#configuration-files). 
+2. Ouvrir `dcrd.conf` dans l'éditeur de texte.
+3. Trouver les lignes suivantes:
 
     `;rpcuser=` <br />
     `;rpcpass=`
 
-4. Uncomment the lines by removing the semi-colon and add your chosen username and password to the appropriate lines.
+4. Décomment les lignes en supprimant le point-virgule et ajoutez le nom d'utilisateur et le mot de passe choisis aux lignes appropriées.
 
-> Creating a New Config File
+> Création d'un nouveau fichier de configuration
 
-Please follow the steps below if you have **not** copied the sample configuration files into their appropriate directories.
+Suivez les étapes ci-dessous si vous n'avez *pas* copié les example de fichiers de configuration dans leurs répertoires appropriés.
 
-1. Navigate to your `dcrd` application folder as described above in our [Startup Options Intro](/getting-started/startup-basics.md#configuration-files).
-2. Create a new text file.
-3. Rename it `dcrd.conf`.
-3. Open `dcrd.conf` in a text editor.
-4. Add the following lines:
+1. Accédez à votre dossier d'application `dcrd` comme décrit ci-dessus dans notre [Introduction aux options de démarrage](/getting-started/startup-basics.md#configuration-files).
+2. Créez un nouveau fichier texte.
+3. Renommez-le `dcrd.conf`.
+3. Ouvrez `dcrd.conf` dans un éditeur de texte.
+4. Ajoutez les lignes suivantes:
 
 ```no-highlight
-[Application Options]
+[Options de l'application]
 
 rpcuser=<username>
 rpcpass=<password>
@@ -53,80 +50,79 @@ rpcpass=<password>
 
 ## **<i class="fa fa-terminal"></i> dcrwallet.conf**
 
-The procedure for `dcrwallet.conf` is very similar to the procedure for `dcrd.conf`. 
+La procédure pour `dcrwallet.conf` est très similaire à la procédure pour` dcrd.conf`.
 
-Please note that if the values of `username=` and `password=` in `dcrwallet.conf` do not match the values of `rpcuser=` and `rpcpass=` in  `dcrd.conf`, you will need to set `dcrdusername=` and `dcrdpassword=`  in `dcrwallet.conf` to the `rpcuser`/`rpcpass` values found in `dcrd.conf` (it is easiest to set all of the username/passwords the same).
+Veuillez noter que si les valeurs de `username=` et `password=` dans `dcrwallet.conf` Ne correspondent pas aux valeurs de `rpcuser=` et `rpcpass=` dans  `dcrd.conf`, voud devrez régler `dcrdusername=` et `dcrdpassword=`  dans `dcrwallet.conf` aux `rpcuser`/`rpcpass` valeurs trouvées dans `dcrd.conf` (Il est plus facile de définir le même nom d'utilisateur / mot de passe).
 
-> Using the Sample Config File
+> Utiliser les exemple du fichier de configuration
 
-Please follow the steps below if you've already copied the sample configuration files into their appropriate directories.
+Suivez les étapes ci-dessous si vous avez déjà copié les exemples de fichiers de configuration dans leurs répertoires appropriés.
 
-1. Navigate to your `dcrwallet` application folder as described in our [Startup Options Intro](/getting-started/startup-basics.md#configuration-files). 
-2. Open `dcrwallet.conf` in a text editor.
-3. Find the following lines:
+1. Accédez à votre dossier d'application `dcrwallet` comme décrit dans notre [Introduction aux options de démarrage](/getting-started/startup-basics.md#configuration-files). 
+2. Ouvrir `dcrwallet.conf` dans un éditeur de texte.
+3. Trouver les lignes suivantes:
 
     `;username=` <br />
     `;password=`
 
-4. Uncomment the lines by removing the semi-colon and add your chosen username and password to the appropriate lines.
+4. Décomment les lignes en supprimant le point-virgule et ajoutez le nom d'utilisateur et le mot de passe choisis aux lignes appropriées.
 
-> Creating a New Config File
+> Création d'un nouveau fichier de configuration
 
-Please follow the steps below if you have **not** copied the sample configuration files into their appropriate directories.
+Suivez les étapes ci-dessous si vous n'avez ** pas ** copié les exemples de fichiers de configuration dans leurs répertoires appropriés.
 
-1. Navigate to your `dcrwallet` application folder as described in our [Startup Options Intro](/getting-started/startup-basics.md#configuration-files).
-2. Create a new text file.
-3. Rename it `dcrwallet.conf`.
-3. Open `dcrwallet.conf` in a text editor.
-4. Add the following lines:
+1. Accédez à votre dossier d'application `dcrwallet` comme décrit dans notre [Intro d'options de démarrage](/getting-started/startup-basics.md#configuration-files).
+2. Créez un nouveau fichier texte.
+3. Renommez-le `dcrwallet.conf`.
+3. Ouvrez `dcrwallet.conf` dans un éditeur de texte.
+4. Ajoutez les lignes suivantes:
 
 ```no-highlight
-[Application Options]
+[Options de l'application]
 
 username=<username>
 password=<password>
 ```
 
-If you set the optional public password for the wallet (the second password
-during the wallet creation) you can also add that to `dcrwallet.conf`:
+Si vous définissez le mot de passe public facultatif pour le portefeuille (le deuxième mot de passe pendant la création du portefeuille), vous pouvez également ajouter cela à `dcrwallet.conf`:
 
 ```no-highlight
 walletpass=<yourwalletpassword>
 ```
 
-You cannot specify your private wallet passphrase in the config files. That must be entered manually with `dcrctl`. 
+Vous ne pouvez pas spécifier votre mot de passe de portefeuille privé dans les fichiers de configuration. Cela doit être saisi manuellement avec `dcrctl`. 
 
 ---
 
 ## **<i class="fa fa-terminal"></i> dcrctl.conf**
 
-It is again easiest to set the username/passwords the same amongst `dcrd.conf`, `dcrwallet.conf`, and `dcrctl.conf`. If you used different credentials for dcrwallet you will need to specify one here and the other on the command line when issuing commands.
+Il est encore plus facile de définir le nom d'utilisateur / mot de passe le même entre `dcrd.conf`,` dcrwallet.conf` et `dcrctl.conf`. Si vous avez utilisé différentes informations d'identification pour dcrwallet, vous devez en spécifier un ici et l'autre sur la ligne de commande lors de l'émission de commandes.
 
-> Using the Sample Config File
+> Utiliser les exemple du fichier de configuration
 
-Please follow the steps below if you've already copied the sample configuration files into their appropriate directories.
+Suivez les étapes ci-dessous si vous avez déjà copié les exemples de fichiers de configuration dans leurs répertoires appropriés.
 
-1. Navigate to your `dcrctl` application folder as described in our [Startup Options Intro](/getting-started/startup-basics.md#configuration-files). 
-2. Open `dcrctl.conf` in a text editor.
-3. Find the following lines:
+1. Naviguez vers votre dossier d'application `dcrctl` comme décrit dans notre [Introduction aux options de démarrage](/getting-started/startup-basics.md#configuration-files). 
+2. Ouvrir `dcrctl.conf` dans un éditeur de texte.
+3. Trouver les lignes suivantes:
 
     `;rpcuser=` <br />
     `;rpcpass=`
 
-4. Uncomment the lines by removing the semi-colon and add your chosen username and password to the appropriate lines.
+4. Décomment les lignes en supprimant le point-virgule et ajoutez le nom d'utilisateur et le mot de passe choisis aux lignes appropriées.
 
-> Creating a New Config File
+> Création d'un nouveau fichier de configuration
 
-Please follow the steps below if you have **not** copied the sample configuration files into their appropriate directories.
+Suivez les étapes ci-dessous si vous n'avez *pas* copié les fichiers de configuration d'échantillons dans leurs répertoires appropriés.
 
-1. Navigate to your `dcrctl` application folder as described in our [Startup Options Intro](/getting-started/startup-basics.md#configuration-files).
-2. Create a new text file.
-3. Rename it `dcrctl.conf`.
-3. Open `dcrctl.conf` in a text editor.
-4. Add the following lines:
+1. Naviguez vers votre dossier `dcrctl` comme décrit dans notre [Introduction aux options de démarrage](/getting-started/startup-basics.md#configuration-files).
+2. Créez un nouveau fichier texte.
+3. Renommez-le `dcrctl.conf`.
+3. Ouvrez `dcrctl.conf` dans un éditeur de texte.
+4. Ajoutez les lignes suivantes:
 
 ```no-highlight
-[Application Options]
+[Options de l'application]
 
 rpcuser=<username>
 rpcpass=<password>
@@ -134,10 +130,9 @@ rpcpass=<password>
 
 ---
 
-## **<i class="fa fa-tasks"></i> Additional Configuration Options**
+## **<i class="fa fa-tasks"></i> Options de configuration supplémentaires**
 
-All command line options can be put in the config file.
-The sample config files in the release package gives additional
-options or you can run one of the programs with the `-h` option to show a list and description of all options for the specified application.
+Toutes les options de ligne de commande peuvent être placées dans le fichier de configuration.
+Les exemples de fichiers de configuration dans le package de publication donnent des options supplémentaires ou vous pouvez exécuter l'un des programmes avec l'option `-h` pour afficher une liste et une description de toutes les options pour l'application spécifiée.
 
-There is also a full list of options for each application which can be found [here](/advanced/storing-login-details.md).
+Il existe également une liste complète d'options pour chaque application qui peut être trouvée [ici](/advanced/storing-login-details.md).

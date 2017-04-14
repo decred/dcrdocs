@@ -1,16 +1,16 @@
-# **<i class="fa fa-fire"></i> Proof-of-work Mining**
+# **<i class="fa fa-fire"></i> Preuve-de-Travail**
 
 ---
 
-#### **1. How long does it take for mined coins to get to my wallet?**
+#### **1. Combien de temps faut-il pour les pièces minées pour mon portefeuille??**
 
-The coinbase maturity is 256 blocks[^16085]. That means the coins will not show up as spendable for that many blocks.
+La maturité de base est de 256 blocs [^16085]. Cela signifie que les pièces de monnaie ne seront pas considérées comme dépensables pour cette durée de blocss.
 
 ---
 
-#### **2. How do I find out which block I mined?**
+#### **2. Comment savoir quel bloc j'ai miné?**
 
-There will be an entry in the `dcrd` log[^16093] that looks something like:
+Il y aura une entrée dans `dcrd` journal [^16093] qui ressemble à ceci:
 
 ```no-highlight
 Accepted block 000... via getwork.

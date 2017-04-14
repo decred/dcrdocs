@@ -1,75 +1,75 @@
-# **<i class="fa fa-money"></i> Wallets and Seeds**
+# **<i class="fa fa-money"></i> Portefeuille et Graine**
 
 ---
 
-#### **1. Should I give my wallet seed to someone?**
+#### **1. Devrais-je donner ma graine de portefeuille à quelqu'un?**
 
-No, you should never[^8613] share your wallet seed with anyone. Doing so is the equivalent of giving them all of your DCR in that wallet.
-
----
-
-#### **2. How can I convert my wallet seed hex to seed words?**
-
-You can use the [dcrseedhextowords](https://github.com/davecgh/dcrseedhextowords)[^8660] utility to convert a Decred seed from hex to the seed words needed for importing into wallets.
+Non, vous ne devriez jamais [^8613] partager votre semence de portefeuille avec n'importe qui. Cela équivaut à leur donner tout votre DCR dans ce portefeuille.
 
 ---
 
-#### **3. Can I run multiple wallets with the same seed?**
+#### **2. Comment puis-je convertir ma grain de portefeuille hex en graine de portefeuille mots?**
 
-Running multiple wallets with the same seed can lead to the situation where the wallets will not see the same balance. You should not run multiple wallets with the same seed.[^9731]
-
-The problem is simply that addresses are generated deterministically from the seed. So if you have two wallets running on the same seed, you basically end up with a situation like this:
-
-* Wallet A: Knows about all addresses up to address #15
-* Wallet B: Knows about all addresses up to address #12
-
-So, any coins that have been sent to addresses #13, #14, and #15 will be known to Wallet A, but not Wallet B.
-
-Further, if you simply tell Wallet B to get the next address it also will not see the coins because, from its point of view, that address just now came into existence and so it will not search for transactions before the current point in time. This is an optimization because, as you can imagine, the blockchain ends up getting extremely large over time and it would be incredibly expensive (in terms of resource usage) to scan the entire chain every time a new address is generated.
-
-There is one exception to this and that's for voting hot wallets that have no funds of their own. If the wallet is **only** doing voting and not buying tickets or creating any other transactions, it's safe.[^11319]
+Vous pouvez utiliser le [dcrseedhextowords](https://github.com/davecgh/dcrseedhextowords)[^8660] utilitaire pour convertir la graine de Decred de hex à une graine de mots nécéssaire pour importer vos portefeuilles.
 
 ---
 
-#### **4. Can someone steal my coins if they access wallet.db?**
+#### **3. Puis-je gérer plusieurs portefeuilles avec la même graine?**
 
-Nobody can steal your coins if they get access to the wallet.db[^9803] file unless they also have your private passphrase. If you chose to use public encryption, they also cannot get access to any of your extended public keys or addresses.
+L'exécution de plusieurs portefeuilles avec la même graine peut conduire à la situation où les portefeuilles ne verront pas le même équilibre. Vous ne devez pas exécuter plusieurs portefeuilles avec la même graine.[^9731]
 
----
+Le problème est simplement que les adresses sont générées de manière déterministe à partir de la graine. Donc, si vous avez deux portefeuilles fonctionnant sur la même graine, vous finissez par une situation comme celle-ci:
 
-#### **5. Can someone use a brute-force attack on a random wallet to regenerate its seed words (the words are not salted)?**
+* Portefeuille A: connaît toutes les adresses jusqu'à l'adresse #15
+* Portefeuille B: connaît toutes les adresses jusqu'à l'adresse #12
 
-All the seed words are is a direct mapping of English words to hex digits. The seed is nothing more than a 256-bit (32-byte) cryptographically random number. Salt does not apply here at all. It has nothing to do with brute-forcing[^10452] random cryptographic numbers.
+Ainsi, toutes les pièces qui ont été envoyées aux adresses #13, #14 et #15 seront connues de Portefeuille A, mais pas Portefeuille B.
 
-In other words, since each word can be 256 possibilities and there are 32 words, that yields 256^32 (or 2^256 depending on how you want to look at it, but it is the same number) possibilities. That number is larger than the entire number of hydrogen atoms in the known universe. In fact, it is almost more than the number of atoms total in the known universe.
+En outre, si vous dites simplement à Portefeuille B d'obtenir la prochaine adresse, il ne verra pas non plus les pièces de monnaie parce que, de son point de vue, cette adresse vient d'être créée et ne cherchera pas de transactions avant le moment présent. Il s'agit d'une optimisation parce que, comme vous pouvez l'imaginer, la chaîne de blocs finit par devenir extrêmement grande au fil du temps et il serait incroyablement coûteux (en termes d'utilisation des ressources) de numériser toute la chaîne chaque fois qu'une nouvelle adresse est générée.
 
-To put this in perspective, assuming there are 7 billion people on the planet and each person owned 10 computers and each one of those computers could test a billion possibilities a second and that you could find the solution on average after testing only 50% of the total possibilities, it would still take 26x10^48 (that's 26 trillion trillion trillion trillion) years to brute-force a single seed.
-
----
-
-#### **6. My seed is not working. What can I do?**
-
-Make sure all of the words are on a single line separated by spaces[^10657]. Even though they are printed out on multiple lines for readbility, they must be entered on a single line. Also double-check your words have no typos by comparing them to the words in the [PGP word list](https://en.wikipedia.org/wiki/PGP_word_list).
+Il y a une exception à cela et c'est pour le vote de Hotwallet qui n'ont pas de fonds. Si le portefeuille vote **seulement**  et n'achete pas de billets ou ne crée aucune autre transaction, c'est en sécurité.[^11319]
 
 ---
 
-#### **7. How do I import a key that is in wallet import format (WIF)?**
+#### **4. Est-ce que quelqu'un peut voler mes pièces s'ils ont accès à wallet.db?**
 
-It is possible to import a standalone private key[^10724] into `dcrwallet`. Note that this is only for `--noseed` addresses and you should not run this unless you know what you are doing!
+Personne ne peut voler vos pièces de monnaie s'ils ont accès au fichier wallet.db [^9803] à moins qu'ils n'aient également votre mot de passe privé. Si vous choisissez d'utiliser le cryptage public, ils ne peuvent pas non plus accéder à l'une de vos clés ou adresses publiques étendues.
 
-Unlock the wallet (ignore square brackets):
+---
+
+#### **5. Quelqu'un peut-il utiliser une attaque de force brute sur un portefeuille aléatoire pour régénérer ses mots de graine (les mots ne sont pas salés)?**
+
+Toutes les graines sont en mappage direct de mots en anglais aux chiffres hexadécimaux. La graine n'est rien de plus qu'un nombre cryptographiquement aléatoire de 256 bits (32 octets). Le sel ne s'applique pas du tout. Il n'a rien à voir avec les nombres cryptographiques aléatoires forcés [^ 10452].
+
+En d'autres termes, puisque chaque mot peut être 256 possibilités et il y a 32 mots, cela donne des possibilités de 256 ^ 32 (ou 2 ^ 256 selon la façon dont vous voulez le regarder, mais le même nombre). Ce nombre est plus grand que le nombre entier d'atomes d'hydrogène dans l'univers connu. En fait, c'est presque le nombre d'atomes total dans l'univers connu.
+
+Pour mettre cela en perspective, en supposant qu'il y ait 7 milliards de personnes sur la planète et chaque personne possédait 10 ordinateurs et chacun de ces ordinateurs pourrait tester un milliard de possibilités par seconde et que vous pourriez trouver la solution en moyenne après avoir testé seulement 50% des possibilités totales, il faudrait encore 26x10 ^ 48 (soit 26 trillion trillion trillions) pour forcer brutalement une seule graine.
+
+---
+
+#### **6. Ma graine ne fonctionne pas. Que puis-je faire?**
+
+Assurez-vous que tous les mots se trouvent sur une seule ligne séparée par des espaces [^10657]. Même si elles sont imprimées sur plusieurs lignes pour leur lisibilité, elles doivent être entrées sur une seule ligne. Vérifiez également que vos mots n'ont pas de fautes de frappe en les comparant aux mots dans le [Liste des mots PGP (https://en.wikipedia.org/wiki/PGP_word_list).
+
+---
+
+#### **7. Comment puis-je importer une clé dans ce format d'importation de portefeuille (WIF)?**
+
+Il est possible d'importer une clé privée autonome [^10724] dans `dcrwallet`. Notez que ce n'est que pour `--noseed` adresses et vous ne devriez pas exécuter ceci sauf si vous savez ce que vous faites!
+
+Débloquez le portefeuille (ignorez les crochets):
 
 ```no-highlight
 dcrctl --wallet walletpassphrase [private encryption passphrase] 60
 ```
 
-Import the standalone (`--noseed`) private key (ignore square brackets):
+Importez la clé privée autonome (`--noseed`) (ignorez les crochets):
 
 ```no-highlight
 dcrctl --wallet importprivkey [put WIF private key here]
 ```
 
-View balance of imported account (give it some time to rescan and look at the log in dcrwallet to see rescan progress):
+Afficher le solde du compte importé (donnez-lui un peu de temps pour remanier et regarder le journal dans dcrwallet pour pouvoir rescanner le progrès):
 
 ```no-highlight
 dcrctl --wallet getbalance "imported" 0 all
@@ -77,23 +77,23 @@ dcrctl --wallet getbalance "imported" 0 all
 
 ---
 
-#### **8. What is the difference between a testnet and mainnet address?**
+#### **8. Quel est la differnence entre l'adresse testnet et mainnet?**
 
-A testnet public key address[^11507] that starts with Tk. A mainnet address starts with Dk. T = Testnet, D = (Decred) Mainnet.
+Une adresse de clé publique testnet[^11507] commence avec Tk. Une adresse mainnet avec Dk. T = Testnet, D = (Decred) Mainnet.
 
 ---
 
-#### **9. What are the different types of addresses?**
+#### **9. Quels sont les différents type d'adresses?**
 
-A Decred address[^14995] is actually just a representation of a public key (which itself could be a script hash) along with a 2-byte prefix which identifies the network and type and a checksum suffix in order to detect improperly entered addresses.
+Une adresses Decred n'est en fait qu'une représentation d'une clé publique (qui pourrait être un hash de script) avec un préfixe de 2 octets qui identifie le réseau et le type et un suffixe de somme de contrôle afin de détecter les adresses incorrectes.
 
-Consequently, you can always tell what type of address it is based on the 2-byte prefix.
+Par conséquent, vous pouvez toujours indiquer quel type d'adresse est basé sur le prefixe 2 octets.
 
-The first byte of the prefix identifies the network. This is why all mainnet addresses start with "D", testnet addresses start with "T", and simnet addresses start with "S". The second byte of the prefix identifies the type of address it is.
+Le premier octet du préfixe identifie le réseau. C'est pourquoi toutes les adresses mainnet commencent par "D", les adresses testnet commencent par "T", et les adresses simnet commencent par "S". Le second octet du préfixe identifie le type d'adresse qu'il est.
 
-The most common addresses used at the moment are secp256k1 pubkey hashes, which are identified by a lowercase "s". It represents a single public key and therefore only has a single associated private key which can be used to redeem it.
+Les adresses les plus couramment utilisées pour le moment sont seck256k1 hashes pubkey, qui sont identifiés par une minuscule "s". Il représente une seule clé publique et n'a donc qu'une seule clé privée associée qui peut être utilisée pour la réparer.
 
-The stake pool, however, uses a pay-to-script-hash address, which is identified by the second byte being a lowercase "c" (again that is shown in the linked params). The specific flavor of script it generates is a multi-signature 1-of-2, which is how it allows either the pool, or you, to vote. Both you and the stake pool have your own private keys and since the script only requires one signature of the possible two, that is how it allows delegation of voting rights to the pool without you giving up your voting rights completely.
+Le pool de mise d'enjeu, cependant, utilise une adresse de paiement-script-hash, qui est identifiée par le second octet comme étant une minuscule "c" (encore une fois qui est affichée dans les params liés). La saveur spécifique du script qu'il génère est une signature multi-1-de-2, qui permet à la pool, ou à vous, de voter. Vous et le groupe de participation ont vos propres clés privées et puisque le script nécessite seulement une signature des deux possibles, c'est ainsi qu'il permet de déléguer des droits de vote au pool sans que vous renoncez complètement à vos droits de vote.
 
 ---
 

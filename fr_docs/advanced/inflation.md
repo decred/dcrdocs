@@ -2,19 +2,19 @@
 
 ---
 
-New Decred is created each time a PoW miner discovers a new block - this is commonly referred to as the "block reward". The block reward is split three ways:
+Un nouveau Decred est créé chaque fois qu'un mineur PdT découvre un nouveau bloc - cela est communément appelé «récompense de bloc». La récompense du bloc est divisée en trois:
 
-* 60% goes to the proof of work miner who found the block
-* 30% goes to the PoS voters on that block (6% to each of the 5 voters)
-* 10% goes towards the development subsidy
+* 60% Va à la preuve de travail mineur qui a trouvé le bloc
+* 30% vont aux électeurs PdE sur ce bloc (6% pour chacun des 5 électeurs)
+* 10% pour la subvention de développement
 
-The block reward started at 31.19582664 and it adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/101.
+La prime de bloc a débuté au 31.19582664 et elle se règle tous les 6,144 blocs (environ 21.33 jours) en réduisant de 100/101.
 
-If a block includes less than 5 PoS votes there will be a fraction of the block reward which is not allocated to anybody. As a result, it is only possible to calculate an upper limit for the total number of Decred which will ever be created.
+Si un bloc comprend moins de 5 votes PdE, il y aura une fraction de la récompense du bloc qui ne sera attribuée à personne. En conséquence, il est seulement possible de calculer une limite supérieure pour le nombre total de Decred qui sera jamais créé.
 
-> The last block reward will be created in January 2039. The upper limit on the total supply of Decred at this time is 20,999,999.99800912 coins.
+> La dernière récompense de bloc sera créée en janvier 2039. La limite supérieure de l'offre totale de Decred à ce moment est 20,999,999.99800912 coins.
 
-The table below shows the estimated block reward and estimated total supply of Decred until the last block reward in 2039. Note that the total supply of DCR at block 0 is 1,680,000 due to the [premine](/faq/general/#3-how-was-the-decred-premine-distributed).
+Le tableau ci-dessous montre la récompense de bloc estimée et l'offre totale estimée de Decred jusqu'à la dernière récompense de bloc en 2039. Notez que l'offre totale de DCR au bloc 0 est de 1 680 000 en raison de la [prémine](/faq/general/#3-how-was-the-decred-premine-distributed).
 
 Block height | Estimated Date       | Block reward (DCR) | PoW (DCR) | PoS vote (DCR) | Dev subsidy (DCR) | Total DCR supply
 -------------|----------------------|--------------------|-----------|----------------|-------------------|-----------------

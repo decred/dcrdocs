@@ -1,22 +1,17 @@
-# **<i class="fa fa-hdd-o"></i> Deleting Your Wallet**
+# **<i class="fa fa-hdd-o"></i> Supprimer votre Portefeuille**
 
-There are a few reasons you might need to delete your wallet.
+Ici quelques raisons pour lequelles vous devriez effacer votre portefeuille.
 
-* You need to restore your wallet from seed.
-* You do not have the seed any more and want to make a new wallet.
-* You want to remove the wallet from a particular computer.
+* Vous devez restorer votre portefeuille depuis la graine.
+* Vous n'avez plus la graine et voulez créer un nouveau portefeuille.
+* Vous voulez l'enlever d'un ordinateur en particulier.
 
-First you need to find the dcrwallet application directory which varies by platform.
-This is the same directory that is home for your [configuration files](/getting-started/startup-basics.md#configuration-files).
+Premièrement vous devez trouver le répertoire d'application dcrwallet  lequel varie selon la plate-forme.
+C'est le meme répertoire qui est consacré pour votre [fichier de configuration](/getting-started/startup-basics.md#configuration-files).
 
-In that directory, you need to delete the file `mainnet/wallet.db`.
-That will completely remove your wallet from that computer.  To access
-it again you will need to restore from the original seed.
+Dans ce répertoire, vous devez supprimer le fichier `mainnet/wallet.db`.
+Ca enlevera complètement votre portefeuille de cet ordinateurT.  Pour y accèder vous devriez restorer la graine originale.
 
-It is important to note that it is possible (but not certain) that a
-deleted file may be recovered using file recovery tools.  If you are
-deleting this for security reasons you probably need to use a secure
-deletion tool such as
-[GNU shred](https://www.gnu.org/software/coreutils/manual/html_node/shred-invocation.html).
+Il est important de noter qu'il est possible (mais pas certain) qu'un fichier supprimé soit récupéré à l'aide d'un outil récupération de fichiers.  Si vous le supprimez pour des raisons de sécurité, vous avez probablement besoin d'utiliser un outil de suppression sécurisé comme https://www.gnu.org/software/coreutils/manual/html_node/shred-invocation.html).
 
 

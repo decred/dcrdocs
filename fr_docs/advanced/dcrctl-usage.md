@@ -1,40 +1,38 @@
-# **<i class="fa fa-hdd-o"></i> dcrctl Usage**
+# **<i class="fa fa-hdd-o"></i> dcrctl Utilisation**
 
-dcrctl provides a way to control both the daemon `dcrd` and the wallet
-`dcrwallet` using the json rpc interface without actually writing
-json.
+dcrctl fournit un moyen de contrôler daemon `dcrd` et le portefeuille
+`dcrwallet` utilisant l'interface json rpc sans actuellement ecrire json.
 
-To simplify the examples we will assume that you have all password
-stored in the [config files](/advanced/storing-login-details.md).
+Pour simplifier les examples nous allons assumer que vous avez tout les mots de passes stockés dans [Fichier de config](/advanced/storing-login-details.md).
 
-## <i class="fa fa-power-off"></i> Stopping the programs
+## <i class="fa fa-power-off"></i> Arrêter les programmes
 
-To cleanly shut down the programs:
+Pour nettoyer proprement les programmes:
 
 ```no-highlight
 dcrctl --wallet stop
 dcrctl stop
 ```
 
-## <i class="fa fa-arrow-up"></i> Finding the current block height
+## <i class="fa fa-arrow-up"></i> Trouver la hauteur actuelle du bloc
 
 ```no-highlight
 dcrctl getblockcount
 ```
 
-## <i class="fa fa-dollar"></i> See your balance
+## <i class="fa fa-dollar"></i> Voir votre balance
 
 ```no-highlight
 dcrctl --wallet getbalance
 ```
 
-## <i class="fa fa-inbox"></i> Get a new address
+## <i class="fa fa-inbox"></i> Trouver une nouvelle adresse
 
 ```no-highlight
 dcrctl --wallet getnewaddress
 ```
 
-## <i class="fa fa-rocket"></i> Send funds to an address
+## <i class="fa fa-rocket"></i> Envoyer les fonds à une adresse
 
 ```
 dcrctl --wallet sendtoaddress TseGH6Xfq9k8Co6txJbY3kiiM7vpaYzXD4T 13

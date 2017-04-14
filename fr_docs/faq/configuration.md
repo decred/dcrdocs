@@ -2,21 +2,21 @@
 
 ---
 
-#### **1. How can I see information about the port numbers `dcrd` uses?**
+#### **1. Comment puis-je voir des informations sur les numéros de port que `dcrd` utilise?**
 
-You can get the port numbers[^8929] from the `-h` or `--help` parameters passed to `dcrd`:
+Vous pouvez obtenir les numéros de port [^8929] depuis `-h` ou `--help` paramètres passés à `dcrd`:
 
 ```no-highlight
 dcrd -h
 ```
 
-Look for the following line:
+Rechercher les lignes suivantes:
 
 ```no-highlight
 --rpclisten=  Add an interface/port to listen for RPC connections (default port: 9109, testnet: 19109)
 ```
 
-It is also logged when you start `dcrd`:
+Il est également enregistré lorsque vous démarrez `dcrd`:
 
 ```no-highlight
 12:01:46 2016-02-08 [INF] RPCS: RPC server listening on [::1]:9109
@@ -25,13 +25,13 @@ It is also logged when you start `dcrd`:
 
 ---
 
-#### **2. What do you mean by configuration files for `dcrd`, `dcrwallet`, and `dcrctl`?**
+#### **2. Qu'entendez-vous par les fichiers de configuration pou `dcrd`, `dcrwallet`, et `dcrctl`?**
 
-Each application (`dcrd`, `dcrwallet`, `dcrctl`) can have their own configuration files[^9055]. Use `-h` and look at the path in parenthesis of the configuration file option (`-C`, `--configfile`) to see the default path. Create a text file at the path and named according to that path you just looked up.
+Chaque application (`dcrd`, `dcrwallet`, `dcrctl`) peuvent avoir les propres fichier de configuration [^9055]. Utilises `-h` et recherche le chemin entre parenthèses de l'option de fichier de configuration (`-C`, `--configfile`) pour voir le chemin par défaut. Créez un fichier texte sur le chemin et nommé selon ce chemin que vous venez voir.
 
-Then you can use the `dcrd` [sample config file](https://github.com/decred/dcrd/blob/master/sample-dcrd.conf) and `dcrwallet` [sample config file](https://github.com/decred/dcrwallet/blob/master/sample-dcrwallet.conf) to set whatever options you want. You can do the same thing for `dcrctl` too. The format is the same. Every command line option listed by `-h` can be specified in the config files (just use the long option name).
+Après vous pouvez utiliser `dcrd` [sample config file](https://github.com/decred/dcrd/blob/master/sample-dcrd.conf) et `dcrwallet` [sample config file](https://github.com/decred/dcrwallet/blob/master/sample-dcrwallet.conf) pour définir les options souhaitées. Vous pouvez faire la même chose pour `dcrctl` aussi. Le format est le même. Chaque option de ligne de commande répertoriée par `-h` peut être spécifié dans les fichiers de configuration (utilisez simplement le long nom de l'option).
 
-Once those are created and in place, you do not have to add all of the options to the command line all the time. That is why you can do:
+Une fois que ceux-ci sont créés et en place, vous ne devez pas ajouter toutes les options à la ligne de commande tout le temps. C'est pourquoi vous pouvez faire:
 
 ```no-highlight
 dcrctl getnetworkhashps
@@ -40,27 +40,27 @@ dcrctl getnetworkhashps
 
 ---
 
-#### **3. Can I run mainnet and testnet daemons and wallets at the same time and on the same machine?**
+#### **3. Puis-je exécuter les daemons et les portefeuilles mainstream et testnet en même temps et sur la même machine?**
 
-Yes[^9264], just add `--testnet` to the appropriate spots (`dcrd`, `dcrwallet`, `dcrctl`) and everything will work. This is why they use different ports and data/log directories!
-
----
-
-#### **4. What are the security implications of using the same RPC server authentication passwords with `dcrd` and `dcrwallet`?**
-
-There is a lot less you can do with access to `dcrd` than you can to `dcrwallet`. The key point is that RPC access[^11480] to `dcrwallet`, when the wallet is unlocked, can be used to spend coins.
-
-When they are both on the same machine, it probably does not matter all that much, but when you are running more secure setups where the wallet is on a separate machine than `dcrd`, you would pretty clearly not want to use the same credentials for both. Remember that `dcrd` has to be on an Internet-facing machine in order to stay synced to the network (download the block chain data, broadcast transactions, and so on).
-
-On the other hand, the `dcrwallet` that contains your funds, for best security, should really not be on a system that has Internet access as it is significantly more difficult for someone to steal your coins if the wallet that contains them is not even on a machine that is accessible via the Internet. Obviously, if you are staking your coins, you will need at least one Internet-facing `dcrwallet` instance. Thus, the most secure setup involves having one "cold" `dcrwallet` instance that is on a machine that is not Internet-accessible, and a second "hot" `dcrwallet` instance (using a different seed of course) to which the cold dcrwallet instance delegates voting right via the `--ticketaddress` parameter, both of which use different credentials.
+Oui[^9264], ajoutes juste `--testnet` aux endroits appropriés (`dcrd`, `dcrwallet`, `dcrctl`) et tout fonctionnera. C'est pourquoi ils utilisent différents ports et répertoires de données/journaux!
 
 ---
 
-#### **5. Why am I connecting to only 8 outbound peers?**
+#### **4. Quelles sont les implications pour la sécurité d'utiliser les mêmes mots de passe d'authentification de serveur RPC avec `dcrd` et `dcrwallet`?**
 
-There is an intentional unconfigurable limit of 8 outbound peers[^15399]. More outbound peers than that does not help you in any way and is actually worse for both you and the network. This has been tested extremely thoroughly in Bitcoin, including btcsuite (the upstream project for Decred). All you would do by upping your outbound connections is waste valuable slots of the relatively few public peers there are (there are always a much higher number of "leechers" than there are "seeders").
+Vous pouvez faire beaucoup moins avec l'accès à `dcrd` que vous ne le pouvez à` dcrwallet`. Le point clé est que l'accès RPC [^11480] à `dcrwallet`, lorsque le portefeuille est déverrouillé, peut être utilisé pour dépenser des pièces de monnaie.
 
-On the other hand, increasing your maximum connections, which really just increases the number of allowed inbound connections, helps the network by ensuring there are more slots available for new nodes and SPV clients which Decred does not have yet, but it will.
+Alors qu'ils sont tous deux sur la même machine, cela n'a probablement pas d'importance, mais lorsque vous exécutez des configurations plus sécurisées où le porte-monnaie est sur une autre machine que `dcrd`, vous ne voudrez certainement pas utiliser les mêmes références pour les deux. Rappelez-vous que `dcrd` doit être sur une machine orientée vers l'Internet afin de rester synchronisée avec le réseau (télécharger les données de la chaîne de blocs, les transactions de diffusion, etc.).
+
+D'autre part, le `dcrwallet` qui contient vos fonds, pour une meilleure sécurité, ne devrait pas vraiment être sur un système qui a un accès Internet, car il est beaucoup plus difficile pour quelqu'un de voler vos pièces si le portefeuille qui les contient n'est pas même sur une machine accessible via Internet. De toute évidence, si vous mettez vos coins en jeu, vous devriez avoir une instance `dcrwallet` tournée vers Internet. Ainsi, la configuration la plus sécurisée consiste à avoir une instance "cold" `dcrwallet` qui se trouve sur une machine qui n'est pas accessible à Internet, et une seconde instance "hot" `dcrwallet` (utilisant une differente graine bien sûr)  à laquelle l'instance cold dcrwallet délègue les droits de vote via le `--ticketaddress` paramètre, les deux utilisent des informations d'identification différentes.
+
+---
+
+#### **5. Pourquoi je me connecte à seulement 8 pairs sortants?**
+
+Il existe une limite inconfigurable intentionnelle de 8 pairs sortants [^15399]. Plus de pairs sortants que cela ne vous aide d'aucune façon et est en fait pire pour vous et le réseau. Cela a été testé de manière extrêmement approfondie dans Bitcoin, y compris btcsuite (le projet en amont pour Decred). Tout ce que vous feriez en augmentant vos connexions sortantes est de gaspiller des crénaux de relativement peu de pairs publics il y a (il y a toujours un nombre beaucoup plus élevé de "leechers" qu'il n'y a de seeders).
+
+D'autre part, l'augmentation de vos connexions maximales, qui augmente tout simplement le nombre de connexions entrantes autorisées, aide le réseau en garantissant qu'il y a plus de crénaux disponibles pour les nouvelle nodes et les clients SPV que Decred n'a pas encore, mais qu'il aura.
 
 ---
 

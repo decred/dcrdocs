@@ -1,22 +1,15 @@
-# **Program Options**
+# **Options du programme**
 
 ---
 
-The default options are sane for most users (although you may need to
-set your credentials. This means `dcrd` will
-work 'out of the box' for most users. However, there are also a wide
-variety of flags that can be used to control its behavior. The following section
-provides a usage overview which enumerates the flags.An interesting
-point to note is that the long form of all of these options (except
-`-C`) can be specified in a configuration file that is automatically
-parsed when dcrd starts up.
-The `-C` (`--configfile`)
-flag, as shown below, can be used to override the default location.
-You can always get a list of all options by using the `-h` option.
+Les options par défaut sont saines pour la plupart des utilisateurs (bien que vous devriez peut-être définir vos informations d'identification. Cela signifie que `dcrd` travail «hors de la boîte» pour la plupart des utilisateurs. Cependant, il existe également une large variété de drapeaux qui peuvent être utilisés pour contrôler son comportement. La section suivante fournit un aperçu de l'utilisation qui énumère les drapeaux. Un intéressant point est que la forme longue de toutes ces options (sauf `-C`) peut être spécifié dans un fichier de configuration automatiquement analysé lorsque dcrd démarre.
+Le `-C` (`--configfile`)
+drapeau, comme indiqué ci-dessous, peut être utilisé pour remplacer l'emplacement par défaut.
+Vous pouvez toujours obtenir une liste de toutes les options en utilisant l'option `-h`.
 
 ---
 
-## **Usage**
+## **Utilisation**
 
 ```
 dcrd [OPTIONS]
@@ -24,91 +17,86 @@ dcrd [OPTIONS]
 
 ---
 
-## **Application options**
+## **Options d'Application**
 
 Option                      | Description
 ---                         | ---
-`-A` or `--appdata=`        | Path to dcrd home directory ($HOME/.dcrd)
-`-V` or `--version`         | Display version information and exit
-`-C` or `--configfile=`     | Path to configuration file
-`-b` or `--datadir=`        | Directory to store data
-`--logdir=`                 | Directory to log output. ($HOME/.dcrd/logs)
-`-a` or `--addpeer=`        | Add a peer to connect with at startup
-`--connect=`                | Connect only to the specified peers at startup
-`--nolisten`                | Disable listening for incoming connections -- NOTE: Listening is automatically disabled if the `--connect` or `--proxy` options are used without also specifying listen interfaces via `--listen`
-`--listen=`                 | Add an interface/port to listen for connections (default all interfaces port: `9108`, testnet: `19108`)
-`--maxpeers=`               | Max number of inbound and outbound peers (125)
-`--banduration=`            | How long to ban misbehaving peers. Valid time units are {s, m, h}.  Minimum 1 second (24h0m0s)
-`-u` or `--rpcuser=`        | Username for RPC connections
-`-P` or `--rpcpass=`        | Password for RPC connections
-`--rpclimituser=`           | Username for limited RPC connections
-`--rpclimitpass=`           | Password for limited RPC connections
-`--rpclisten=`              | Add an interface/port to listen for RPC connections (default port: `8334`, testnet: `18334`)
-`--rpccert=`                | File containing the certificate file
-`--rpckey=`                 | File containing the certificate key
-`--rpcmaxclients=`          | Max number of RPC clients for standard connections (10)
-`--rpcmaxwebsockets=`       | Max number of RPC clients for standard connections (25)
-`--norpc`                   | Disable built-in RPC server -- NOTE: The RPC server is disabled by default if no `rpcuser`/`rpcpass` is specified
-`--notls`                   | Disable TLS for the RPC server -- NOTE: This is only allowed if the RPC server is bound to localhost
-`--nodnsseed`               | Disable DNS seeding for peers
-`--externalip:`             | Add an ip to the list of local addresses we claim to listen on to peers
-`--proxy=`                  | Connect via SOCKS5 proxy (eg. 127.0.0.1:9050)
-`--proxyuser=`              | Username for proxy server
-`--proxypass=`              | Password for proxy server
-`--onion=`                  | Connect to tor hidden services via SOCKS5 proxy (eg. 127.0.0.1:9050)
-`--onionuser=`              | Username for onion proxy server
-`--onionpass=`              | Password for onion proxy server
-`--noonion=`                | Disable connecting to tor hidden services
-`--torisolation`            | Enable Tor stream isolation by randomizing user credentials for each connection
-`--testnet `                | Use the test network
-`--simnet`                  | Use the simulation test network
-`--nocheckpoints=`          | Disable built-in checkpoints. Don't do this unless you know what you're doing.
-`--dbtype=`                 | Database backend to use for the Block Chain (leveldb)
-`--profile=`                | Enable HTTP profiling on given port -- NOTE port must be between 1024 and 65536 (6060)
-`--cpuprofile=`             | Write CPU profile to the specified file
-`--memprofile=`             | Write mem profile to the specified file
-`--dumpblockchain=`         | Write blockchain as a gob-encoded map to the specified file
-`--miningtimeoffset=`       | Offset the mining timestamp of a block by this many seconds (positive values are in the past)
-`-d` or `--debuglevel:`     | Logging level for all subsystems {trace, debug, info, warn, error, critical} -- You may also specify &lt;subsystem&gt;=&lt;level&gt;,&lt;subsystem2&gt;=&lt;level&gt;,... to set the log level for individual subsystems -- Use show to list available subsystems (info)
-`--upnp`                    | Use UPnP to map our listening port outside of NAT
-`--limitfreerelay=`         | Limit relay of transactions with no transaction fee to the given amount in thousands of bytes per minute (15)
-`--norelaypriority`         | Do not require free or low-fee transactions to have high priority for relaying
-`--maxorphantx=`            | Max number of orphan transactions to keep in memory (1000)
-`--generate=`               | Generate (mine) decreds using the CPU
-`--miningaddr=`             | Add the specified payment address to the list of addresses to use for generated blocks -- At least one address is required if the generate option is set
-`--blockminsize=`           | Mininum block size in bytes to be used when creating a block
-`--blockmaxsize=`           | Maximum block size in bytes to be used when creating a block (750000)
-`--blockprioritysize=`      | Size in bytes for high-priority/low-fee transactions when creating a block (50000)
-`--getworkkey=`             | DEPRECATED -- Use the --miningaddr option instead
-`--addrindex=`              | Build and maintain a full address index. Currently only supported by leveldb.
-`--dropaddrindex=`          | Deletes the address-based transaction index from the database on start up, and the exits.
-`--nonaggressive`           | Disable mining off of the parent block of the blockchain if there aren't enough voters
-`--nominingstatesync`       | Disable synchronizing the mining state with other nodes
+`-A` ou `--appdata=`        | Chemin d'accès au répertoire principal dcrd ($HOME/.dcrd)
+`-V` ou `--version`         | Afficher les informations de version et quitter
+`-C` ou `--configfile=`     | Chemin d'accès au fichier de configuration
+`-b` ou `--datadir=`        | Répertoire pour stocker des données
+`--logdir=`                 | Répertoire pour enregistrer la sortie. ($HOME/.dcrd/logs)
+`-a` ou `--addpeer=`        | Ajouter un pair pour se connecter au démarrage
+`--connect=`                | Connectez-vous uniquement aux pairs spécifiés lors du démarrage
+`--nolisten`                | Désactiver l'écoute des connexions entrantes - REMARQUE: L'écoute est automatiquement désactivée si les options  `--connect` ou `--proxy` sont utilisées sans spécifier les interfaces d'écoute via  `--listen`
+`--listen=`                 | Ajouter une interface / port pour écouter les connexions (par défaut tous les ports d'interface: `9108`, testnet: `19108`)
+`--maxpeers=`               | Nombre maximum de pairs entrants et sortants (125)
+`--banduration=`            | Combien de temps interdire aux pairs qui se comportent mal. Les unités de temps valides sont {s, m, h}.  Minimum 1 seconde (24h0m0s)
+`-u` or `--rpcuser=`        | Nom d'utilisateur pour les connexions RPC
+`-P` or `--rpcpass=`        | Mot de passe pour les connexions RPC
+`--rpclimituser=`           | Nom d'utilisateur pour les connexions RPC limitées
+`--rpclimitpass=`           | Mot de passe pour les connexions RPC limitées
+`--rpclisten=`              | Ajouter une interface / port pour écouter les connexions RPC (par défaut port: `8334`, testnet: `18334`)
+`--rpccert=`                | Fichier contenant le fichier de certificat
+`--rpckey =` | Fichier contenant la clé de certificat
+`--rpcmaxclients =` | Nombre maximum de clients RPC pour les connexions standard (10)
+`--rpcmaxwebsockets =` | Nombre maximal de clients RPC pour les connexions standard (25)
+`--norpc` | Désactiver le serveur RPC intégré - REMARQUE: le serveur RPC est désactivé par défaut si aucun rpcuser / rpcpass n'est spécifié
+`--notls` | Désactiver TLS pour le serveur RPC - REMARQUE: ceci n'est autorisé que si le serveur RPC est lié à localhost
+`--nodnsseed` | Désactiver le semis DNS pour les pairs
+`--externalip:` | Ajouter un ip à la liste des adresses locales que nous prétendons écouter aux pairs
+`--proxy =` | Connexion via le proxy SOCKS5 (par exemple, 127.0.0.1:9050)
+`--proxyuser =` | Nom d'utilisateur du serveur proxy
+`--proxypass =` | Mot de passe pour le serveur proxy
+`--onion =` | Connectez-vous à des services cachés via le proxy SOCKS5 (par exemple, 127.0.0.1:9050)
+`--onionuser =` | Nom d'utilisateur pour serveur proxy d'oignon
+`--onionpass =` | Mot de passe pour le serveur proxy d'oignon
+`--noonion =` | Désactiver la connexion à des services cachés
+`--torisolation` | Activer l'isolement du flux tor en randomisant les informations d'identification des utilisateurs pour chaque connexion
+`--testnet` | Utilisez le réseau de test
+`--simnet` | Utilisez le réseau de test de simulation
+`--nocheckpoints =` | Désactivez les points de contrôle intégrés. Ne faites pas cela, sauf si vous savez ce que vous faites.
+`--dbtype =` | Base de données à utiliser pour la chaîne Block (leveldb)
+`--profile =` | Activer le profilage HTTP sur un port donné - REMARQUE Le port doit être compris entre 1024 et 65536 (6060)
+`--cpuprofile =` | Ecrire le profil du CPU au fichier spécifié
+`--memprofile =` | Ecrire le profil mem au fichier spécifié
+`--dumpblockchain =` | Écrivez la chaîne de blocs comme une carte codée par gob dans le fichier spécifié
+`--miningtimeoffset =` | Neutralise l'horodatage de l'exploitation d'un bloc pendant ce nombre de secondes (Les valeurs positives sont dans le passé)
+`-d` ou` --debuglevel: `| Niveau d'enregistrement pour tous les sous-systèmes {trace, debug, info, warn, error, critical} - Vous pouvez également spécifier &lt;subsystem&gt;=&lt;level&gt;,&lt;subsystem2&gt;=&lt;level&gt;,... Pour définir le niveau de journal pour les sous-systèmes individuels - Utiliser afficher pour répertorier les sous-systèmes disponibles (info)
+`--upnp` | Utilisez UPnP pour mapper notre port d'écoute en dehors de NAT
+`--limitfreerelay =` | Limiter le relais des transactions sans frais de transaction au montant donné en milliers d'octets par minute (15)
+`--norelaypriority` | Ne nécessitent pas de transactions gratuites ou à faible coût pour avoir une priorité élevée pour le relais
+`--maxorphantx =` | Nombre maximum de transactions orphelines à conserver dans la mémoire (1000)
+`--generate =` | Générer (mine) decred en utilisant un CPU
+`--miningaddr =` | Ajouter l'adresse de paiement spécifiée à la liste des adresses à utiliser pour les blocs générés - Au moins une adresse est requise si l'option de génération est définie
+`--blockminsize =` | Taille de bloc Mininum en octets à utiliser lors de la création d'un bloc
+`--blockmaxsize =` | Taille maximale du bloc en octets à utiliser lors de la création d'un bloc (750000)
+`--blockprioritysize =` | Taille en octets pour les transactions à priorité élevée / à faible taux lors de la création d'un bloc (50000)
+`--getworkkey =` | DEPRECATED - Utilisez l'option --miningaddr à la place
+`--adddexdex =` | Créez et maintenez un index d'adresse complet. Actuellement uniquement pris en charge par leveldb.
+`--dropaddrindex =` | Supprime l'index de transaction basé sur l'adresse à partir de la base de données au démarrage et les sorties.
+`--nagagégiste '| Désactiver l'extraction du bloc parent de la chaîne de blocs s'il n'y a pas assez d'électeurs
+`--nominingstatesync` | Désactiver la synchronisation de l'état de minage avec d'autres nodes
 
 ---
 
-## **Help options**
+## ** Options d'aide **
 
-Option                      | Description
----                         | ---
-`-h` or `--help`            | Show this help message
+Option | La description
+--- | ---
+`-h` ou` --help` | Afficher ce message d'aide
 
 ---
 
-## **PoS Commands**
+## **Commandes PdE**
 
-While it's easy to get started PoS mining, there's a lot happening in
-the background. Let's have a look at some of the information
-available:
+Bien qu'il soit facile de commencer l'exploitation minière de PoS, il se passe beaucoup de choses dans l'arrière-plan. Voyons quelques-unes des informations disponible:
 
 ```
 dcrctl -u <daemon username> - P <daemon password> --wallet <command>
 ```
 
-```getbalance ("account" minconf=1 "balancetype")``` Gets the balance
-for the given account (not address). On its own it will display
-spendable coins. To see all coins, you need to set balancetype to all
-e.g. ‘getbalance * 0 all' will show the total balance in wallet.
+```getbalance ("account" minconf=1 "balancetype")``` Obtient l'équilibre pour le compte donné (pas l'adresse). De son côté, il affichera les pièces de monnaie dépensables. Pour voir toutes les pièces, vous devez définir le type de balance à all par exemple. 'Getbalance * 0 all' affichera l'équilibre total dans le portefeuille.
 
 ```
 getstakeinfo
@@ -126,126 +114,123 @@ getstakeinfo
   "revoked": 50
 ```
 
-The `getstakeinfo` command returns a list of data about your PoS mining results.
+La commande `getstakeinfo` Renvoie une liste de données sur vos résultats miniers PdE.
 
-Output             | Description
+Sortie             | Description
 ---                |---
-`poolsize`         | The number of tickets current in the voting pool.
-`difficulty`       | This is the cost of a ticket. It goes up or down depending on the number of tickets currently in the pool as well as the number of tickets over the last 2880 blocks using an exponential moving average <LINK>Source(https://github.com/decred/dcrd/blob/master/chaincfg/params.go#L336). The network will adjust the price to try to keep the pool size near the target of 40,960 tickets. Note this doesn't mean the price will always go up if above this number, nor will it always go down if below. The rate that tickets enter the pool also affects the price. It is adjusted every 144 blocks.
-`allmempooltix`    | Only 20 tickets per block are accepted in to the voting pool. Extra tickets wait in the mempool. Tickets are accepted into the voting pool according to txfee which is 0.05 by default. See PoS mining#Purchasing-Tickets for more information.
-`ownmempooltix`    | Your tickets that are waiting in the mempool.
-`immature`         | All tickets have a 256 (about a day) maturity time during which they cannot be selected to vote. This indicates how many of your tickets are in this state.
-`live`             | Tickets in the voting pool that are active and able to vote when selected.
-`proportionlive`   | Proportion of your live tickets in the voting pool.
-`voted`            | Number of your tickets that have voted in this wallet.
-`totalsubsidy`     | Total amount this wallet has earned through voting.
-`missed`           | Tickets that were selected to vote but didn't, likely because the wallet was offline.
-`proportionmissed` | Proportion of all missed tickets that were yours.
-`revoked`          | Number of revoked tickets. Since missed tickets are revoked (removed from the voting pool without voting) this number will usually (but not always) equal missed tickets.
+`poolsize`         | Le nombre de tickets actuels dans la pool de vote.
+`Difficulté '| C'est le coût d'un ticket. Il monte ou baisse en fonction du nombre de tickets actuellement dans le pool ainsi que du nombre de tickets au cours des 2880 blocs en utilisant une moyenne mobile exponentielle <LINK> Source (https://github.com/decred/dcrd/blob /master/chaincfg/params.go#L336). Le réseau ajustera le prix pour essayer de garder la taille de la pool près de la cible de 40 960 tickets. Notez que cela ne signifie pas que le prix augmentera toujours si au-dessus de ce numéro, et il ne descendra pas toujours si en-dessous. Le taux auquel les tickets entrent dans la piscine affecte également le prix. Il est réglé tous les 144 blocs.
+`Allmempooltix` | Seuls 20 tickets par bloc sont acceptés dans la pool de vote. Des tickets supplémentaires attendent dans le mempool. Les tickets sont acceptés dans la pool de vote selon txfee qui est de 0,05 par défaut. Pour plus d'informations, consultez la rubrique «Achats-tickets d'extraction minière PoS».
+`Ownmempooltix` | Vos tickets qui attendent dans le mempool.
+`Immature` | Tous les tickets ont un délai de maturité de 256 (environ un jour) pendant lequel ils ne peuvent pas être sélectionnés pour voter. Cela indique combien de vos tickets sont dans cet état.
+`Live` | Les tickets dans le groupe de vote sont actifs et peuvent voter lorsqu'ils sont sélectionnés.
+`Proportionlive` | Proportion de vos tickets en direct dans la pool de vote.
+`Vote` | Nombre de tickets qui ont voté dans ce portefeuille.
+`Totalsubsidy` | Montant total que ce portefeuille a gagné au moyen du vote.
+`missed` | Les tickets qui ont été sélectionnés pour voter, mais pas, probablement parce que le portefeuille était hors ligne.
+`Proportionmissed` | Proportion de tous les tickets manqués qui étaient les vôtres.
+`revoked` | Nombre de tickets révoqués. Étant donné que les tickets manqués sont révoqués (retirés du groupe de vote sans vote), ce numéro sera habituellement (mais pas toujours) des tickets manquants égaux.
 
 ---
 
-## **PoS network parameters**
+## **Paramètres réseau PdE**
 
-Parameter               | Value              | Description
+Paramètre               | Valeur              | Description
 ---                     | ---                | ---
-`MinimumStakeDiff`      | 2                  | The minimum price for a stake ticket.
-`TicketPoolSize`        | 8,192              | This is multiplied by TicketsPerBlock to get the desired voting pool size (40,960).
-`TicketsPerBlock`       | 5                  | This many tickets will be chosen to vote each block.
-`TicketMaturity`        | 256                | Time in blocks (about a day) until a ticket is able to vote after being purchased.
-`TicketExpiry`          | 40,960             | Tickets that haven't voted after this many blocks will be revoked (about 142 days).
-`CoinbaseMaturity`      | 256                | Historic. Before this block coins could not be transferred.
-`SStxChangeMaturity`    | 1                  | After voting, this many blocks must pass for stake and reward to return to PoS miners.
-`TicketPoolSizeWeight`  | 4                  | Tickets will not change price up or down by more than this multiplier in one update.
-`StakeDiffAlpha`        | 1                  | This is the stake difficulty EMA calculation alpha (smoothing) value. It is different from a normal EMA alpha. Closer to 1 --> smoother.
-`StakeDiffWindowSize`   | 144                | The number of blocks in a window. Averaged per window, used below.
-`StakeDiffWindows`      | 20                 | An exponential moving average over this many windows is used to calculate stake cost.
-`MaxFreshStakePerBlock` | 20                 | This many new tickets will be added from the mempool to the voting pool each block.
-`StakeEnabledHeight`    | 256 + 256          | Historic. This is the height in which the first ticket could possibly mature. Since coins were locked until block 256, no tickets could be purchased until then. After that, there was another 256 blocks before they matured.
-`StakeValidationHeight` | 4,096              | Historic. Stake mining did not occur before this block.
-`StakeBaseSigScript`    | []byte{0x00, 0x00} | This is the consensus stakebase signature script for all votes on the network. This isn't signed in any way, so without forcing it to be this value, miners/daemons could freely change it. Ensures the block is on the right network.
+`MinimumStakeDiff`      | 2                  | Le prix minimum pour un ticket de participation.
+`TicketPoolSize`        | 8,192              | Ceci est multiplié par TicketPerBlock pour obtenir une taille souhaitée de pool de vote (40 960).
+`TicketsPerBlock` | 5 | Ces nombreux tickets seront choisis pour voter chaque bloc.
+`TicketMaturity` | 256 | Temps dans les blocs (environ un jour) jusqu'à ce qu'un ticket puisse voter après avoir été acheté.
+`TicketExpiry` | 40,960 | Les tickets qui n'ont pas voté après ces nombreux blocs seront révoqués (environ 142 jours).
+`CoinbaseMaturity` | 256 | Historique. Avant les pièces de monnaie de ce bloc ne peuvent pas être transférées.
+`SStxChangeMaturity` | 1 | Après avoir voté, ces nombreux blocs doivent passer pour la participation et récompenser en retour les mineurs PdE.
+`TicketPoolSizeWeight` | 4 | Les tickets ne changeront pas le prix vers le haut ou vers le bas de plus que ce multiplicateur en une mise à jour.
+`StakeDiffAlpha` | 1 | Ceci est la difficulté de l'enjeu EMA calcul alpha (lissage) de la valeur. Il est différent d'un EMA alpha normal. Plus près de 1 -> plus lisse.
+`StakeDiffWindowSize` | 144 | Le nombre de blocs dans une fenêtre. Moyenne par fenêtre, utilisée ci-dessous.
+`StakeDiffWindows` | 20 | Une moyenne mobile exponentielle sur ces nombreuses fenêtres est utilisée pour calculer le coût de l'investissement.
+`MaxFreshStakePerBlock` | 20 | Ces nombreux nouveaux tickets seront ajoutés du mempool au bloc de vote de chaque bloc.
+`StakeEnabledHeight` | 256 + 256 | Historique. C'est la hauteur dans laquelle le premier ticket pourrait mûrir. Puisque les pièces ont été verrouillées jusqu'au bloc 256, aucun ticket ne peut être acheté avant. Ensuite, il y a 256 autres blocs avant qu'ils ne deviennent matures.
+`StakeValidationHeight` | 4,096 | Historique. Le minage par Preuve d'Enjeu n'a pas eu lieu avant ce bloc.
+`StakeBaseSigScript` | [] Byte {0x00, 0x00} | Il s'agit du script de signature de base de consensus pour tous les votes sur le réseau. Ceci n'est pas signé de quelque façon que ce soit, alors, sans forcer cette valeur, les mineurs/daemons pourraient le changer librement. Assure que le bloc se trouve sur le bon réseau.
 
 ---
 
-## **Blockchain parameters**
+## **Paramètres de la Chaîne de blocs**
 
-Paramater               | Value        | Description
+Paramètre               | Valeur        | Description
 ---                     | ---          | ---
-Initial block reward    | 31.1958      | This was the initial reward for mining a block.
-Block reward multiplier | 100/101      | The block reward is multiplied by this whenever the block price changes. Basically what that means is that every reward cycle (see below) the block reward given for mining a block is reduced by approximately 1%.
-Block reward change     | 6,144 blocks | The number of blocks between block reward changes. This occurs approximately every 3 weeks. Decred uses a more frequent change cycle (about 3 weeks compared to Bitcoins 4 years), but the magnitude of the change is much less (about 1% per cycle whereas Bitcoin is 50%). This is designed to reduce the shock in markets when a change occurs.
-Block reward share      | 60/30/10     | The reward for a block is split between miners and the Decred development team as follows: PoW miners get 60% of the reward to reimburse them for electricity and hardware expenses. PoS miners get 6% of the reward each (30% for 5 votes) <what happens if less than 5 vote?>. This encourages people to hold their coins and invest in the Decred network. The development team receives 10% to help ensure the future of Decred by funding ongoing development.
+Récompense de bloc initial | 31.1958 | C'était la récompense initiale pour l'extraction d'un bloc.
+Multiplicateur de récompense de blocs | 100/101 | La récompense de bloc est multipliée par ceci chaque fois que le prix du bloc change. Fondamentalement, cela signifie que tout cycle de récompense (voir ci-dessous) la récompense de bloc pour l'extraction d'un bloc est réduit d'environ 1%.
+Changement du bloc de récompense | 6 144 blocs | Le nombre de blocs entre les blocs de récompenses change. Cela se produit environ toutes les 3 semaines. Decred utilise un cycle de changement plus fréquent (environ 3 semaines par rapport à Bitcoins 4 ans), mais l'ampleur du changement est beaucoup moins élevée (environ 1% par cycle alors que Bitcoin est à 50%). Ceci est conçu pour réduire le choc sur les marchés lorsqu'un changement se produit.
+Partage des blocs de récompense | 60/30/10 | La récompense pour un bloc est divisée entre les mineurs et l'équipe de développement de Decred comme suit: les mineurs PdT obtiennent 60% de la récompense pour les rembourser pour les dépenses d'électricité et de matériel. Les mineurs PdE obtiennent 6% de la récompense (30% pour 5 voix) <que se passe-t-il si moins de 5 votent?>. Cela encourage les gens à conserver leurs pièces et à investir dans le réseau de Decred. L'équipe de développement reçoit 10% pour assurer l'avenir de Decred en finançant le développement en cours.
 
 ---
 
-## **dcrctl parameters**
+## **dcrctl paramètres**
 
-### Chain server commands
+### Commandes du serveur de chaîne
 
-Note that some commands have been omitted from this list. They include
-duplicate commands, unimplemented commands and those that have limited
-utility to the general user base.  You can always see all commands
-with `dcrctl -l`.
+Notez que certaines commandes ont été omises dans cette liste. Elles comprennent des commandes en double, des commandes non implémentées et celles qui ont une limite d'utilité de la base d'utilisateurs générale. Vous pouvez toujours voir toutes les commandes
+avec `dcrctl -l`.
 
-Command              | Description
+Commande              | Description
 ---                  | ---
-`getbestblock`       | Get the most recent block and hash in the chain.
-`getbestblockhash`   | Get the hash of the most recent block in the chain.
-`getblockcount`      | Get the current number of blocks in the chain.
-`getdifficulty`      | Get the current PoW mining difficulty.
-`gethashespersec`    | Get the network hash rate.
-`getinfo`           | Displays some basic info about the network including current block number and network difficulty.
-`getmininginfo`      | Probably the most useful PoW command. Shows the current block, size and difficulty, as well as the total network hash rate per second.
-`getnettotals`       | Gets the amount of data sent and received by the daemon.
-`getpeerinfo`        | Similar to getnettoals, includes network data transfer, time connected, block height when daemon was started and current block height.
-`getstakedifficulty` | Returns current PoS difficulty.
-`getticketpoolvalue` | Gets the DCR value of all tickets in the pool.
-`help ("command")`   | Show the help for a command.
-`missedtickets`      | Show all of your tickets that missed voting.
-`gebroadcastmissed` | Rebroadcast missed tickets to the network. This is done automatically on starting the wallet.
-`rebroadcastwinners` | As above, but for voted tickets.
-`stop`               | Stop the daemon.
+`getbestblock`       | Obtenez le bloc le plus récent et le hachage dans la chaîne.
+`Getbestblockhash` | Obtenez le hash du bloc le plus récent de la chaîne.
+`Getblockcount` | Obtenez le nombre actuel de blocs dans la chaîne.
+`Getdifficulty` | Obtenez la difficulté actuelle du minage de la PdT.
+`Gethashespersec` | Obtenez le taux de hachage du réseau.
+`Getinfo` | Affiche des informations de base sur le réseau, y compris le numéro de bloc actuel et la difficulté du réseau.
+`Getmininginfo` | Probablement la commande PdT la plus utile. Indique le bloc, la taille et la difficulté actuels, ainsi que le taux de hachage réseau total par seconde.
+`Getnettotals` | Obtient le nombre de données envoyées et reçues par daemon.
+`Getpeerinfo` | Similaire à getnettotals, comprend le transfert de données réseau, le temps de connexion, la hauteur du bloc lorsque daemon a été démarré et la hauteur actuelle du bloc.
+`Gettakedifficulty` | Renvoie la difficulté actuelle de PdE.
+`Getticketpoolvalue` | Obtient la valeur DCR de tous les tickets dans la piscine.
+`Help (" commande ")` | Montrez l'aide pour une commande.
+`Missingtickets` | Montrez tous vos tickets qui ont manqué le vote.
+`Gebroadcastmissed` | Rediffuser des tickets manqués au réseau. Cela se fait automatiquement lors du démarrage du portefeuille.
+`Rebroadcastwinners` | Comme ci-dessus, mais pour les tickets votés.
+`Stop` | Arrêtez daemon.
 
-### Wallet server commands (\-\-wallet)
+### Commands du Serveur de Portefeuille (\-\-wallet)
 
-Command                                                                         | Description
+Commande                                                                         | Description
 ---                                                                             | ---
-`addmultisigaddress nrequired ["key",...] ("account")`                          | Adds an address that requires multiple signatures to use.
-`consolidate inputs ("account")`                                                | Cleans up funds in multiple addresses in an account and puts it in a single address. Note there is a transaction fee to use this command.
-`createmultisig nrequired ["key",...]`                                          | Used for multi signature wallets.
-`createnewaccount "account"`                                                    | Create a new account. Note, this makes a new account within the current wallet, NOT a new wallet.
-`dumpprivkey "address"`                                                         | Disabled on mainnet for security reasons.
-`encryptwallet "passphrase"`                                                    | Encrypt the wallet with the given phrase
-`getaccount "address"`                                                          | This command will tell you what account the given address belongs to.
-`getaccountaddress "account"`                                                   | Return the first address in the given account (default is ‘default').
-`getaddressesbyaccount "account"`                                               | Get all the addresses in the given account.
-`getbalance ("account" minconf=1 "balancetype")`                                | Get the spendable balance in the given account. To get the entire balance in the wallet, use ‘getbalance * 0 all'.
-`getbalancetomaintain`                                                          | This is the minimum balance to maintain in the wallet when using auto stake buying.
-`getmasterpubkey`                                                               | Get the public key for your wallet. This will allow people to view, but not spend funds in your wallet. It is safe to provide to others.
-`getnewaddress ("account" verbose=false)`                                       | Get a new address in the given account.
-`getreceivedbyaccount "account" (minconf=1)`                                    | Gets the total amount of DCR ever received by this wallet. This includes stake returns so it could be quite large if you're PoS mining.
-`getreceivedbyaddress "address" (minconf=1)`                                    | Get funds received by the given address.
-`getseed`                                                                       | Disabled on mainnet for security.
-`getstakeinfo`                                                                  | Retreive useful information on the current status of the PoS pool. See <LINK>PoS Commands.
-`getticketfee`                                                                  | Get the average fee being paid for tickets.
-`getticketmaxprice`                                                             | Get the maximum price that your wallet will auto purchase tickets for.
-`gettickets includeimmature`                                                    | Get all your current tickets. Second argument should be true if you want to see immature tickets too.
-`gettransaction "txid" (includewatchonly=false)`                                | Get the transaction associated with the given id.
-`listaccounts (minconf=1)`                                                      | See all accounts and their spendable balance in your wallet.
-`listreceivedbyaccount (minconf=1 includeempty=false includewatchonly=false)`   | Get a list of all your accounts and the amount of DCR that has been received by them.
-`listreceivedbyaddress (minconf=1 includeempty=false includewatchonly=false)`   | Get a list of all your addresses and the amount of DCR that has been received by them.
-`listsinceblock ("blockhash" targetconfirmations=1 includewatchonly=false)`     | List transactions that occurred since the given block hash.
-`listtransactions ("account" count=10 from=0 includewatchonly=false)`           | List the number of transactions as specified by ‘count' in the given account.
-`move "fromaccount" "toaccount" amount (minconf=1 "comment")`                   | Move funds between accounts in the same wallet.
-`purchaseticket "fromaccount" spendlimit (minconf=1 "ticketaddress" "comment")` | Manually purchase PoS tickets. ‘fromaccount' will usually be "default". ‘spendlimit' is the amount you want to spend on tickets in total, not per ticket.
-`renameaccount "oldaccount" "newaccount"`                                       | Rename an account in your wallet.
-`sendfrom "fromaccount" "toaddress" amount (minconf=1 "comment" "commentto")`   | Send DCR from the given account to the given address. You can add an optional comment.
-`sendtoaddress "address" amount ("comment" "commentto")`                        | Similar to above but uses the default account to send from.
-`setbalancetomaintain balance`                                                  | Used for auto staking. The wallet will auto buy tickets until it reaches this threshold.
-`setticketfee fee`                                                              | Set the (non-refunable) fee for purchasing stake tickets. See <LINK>FAQ#Ticket fee
-`setticketmaxprice max`                                                         | Set the maximum price the wallet will pay when auto buying tickets.
-`setticketvotebits "txhash" votebits ("votebitsext")`                           | Sets the given ticket to vote ‘yes' or ‘no' (default yes)
-`settxfee amount`                                                               | Sets the fee per kB of transaction data you are willing to pay. Note this is NOT the same as setticketfee above.
-`walletlock`                                                                    | Lock the wallet (no funds can be sent).
-`walletpassphrase "passphrase" timeout`                                         | Unlock the wallet using the given pass phrase for the given time period in seconds. 0 will unlock the wallet until it is restarted.
-`walletpassphrasechange "oldpassphrase" "newpassphrase"`                        | Change your wallet passphrase.
+`addmultisigaddress nrequired ["key",...] ("account")`                          | Ajoute une adresse qui nécessite plusieurs signatures à utiliser.
+`consolidate inputs (" account ")` | Nettoie les fonds dans plusieurs adresses dans un compte et le met dans une seule adresse. Notez qu'il y a des frais de transaction pour utiliser cette commande.
+`Createmultisig nrequired [" key ", ...]` | Utilisé pour les portefeuilles multi-signature. `createnewaccount "account"` | Créer un nouveau compte. Notez que cela fait un nouveau compte dans le portefeuille actuel, PAS un nouveau portefeuille.
+`dumpprivkey "address"` | Désactivé sur mainnet pour des raisons de sécurité.
+`Encryptwallet" passphrase "` | Encrypte le portefeuille avec la phrase donnée
+`getaccount "address"` | Cette commande vous indiquera à quel compte appartient l'adresse donnée.
+`Getaccountaddress" account "` | Renvoie la première adresse dans le compte donné (la valeur par défaut est «par défaut»).
+`Getaddressesbyaccount" account "` | Obtenez toutes les adresses dans le compte donné.
+`Getbalance (" account "minconf=1 " balancetype ")` | Obtenez le solde dépensé dans le compte donné. Pour obtenir le montant total dans le portefeuille, utilisez 'getbalance * 0 all'.
+`Getbalancetomaintain` | Il s'agit du solde minimum à conserver dans le portefeuille lors de l'achat d'une preuve d'enjeu automatique.
+`Getmasterpubkey` | Obtenez la clé publique pour votre portefeuille. Cela permettra aux gens de voir, mais pas de dépenser les fonds de votre portefeuille. C'est suûr de la fournir aux autres.
+`Getnewaddress (" account "verbose = false)` | Obtenez une nouvelle adresse dans le compte donné.
+`getreceivedbyaccount "account" (minconf=1)`                                    | Obtient le montant total de DCR jamais reçu par ce portefeuille. Cela inclut les retours des enjeux, de sorte qu'il pourrait être assez important si vous êtes une mineur PdE.
+`Getreceivedbyaddress" adresse "(minconf=1)` | Obtenez des fonds reçus par l'adresse indiquée.
+`Getseed` | Désactivé sur mainnet pour la sécurité.
+`Getstakeinfo` | Retrouver des informations utiles sur l'état actuel du pool PoS. Voir <LINK> PoS Commands.
+`Getticketfee` | Obtenez les frais moyens payés pour les tickets.
+`Getticketmaxprice` | Obtenez le prix maximum que votre portefeuille achètera automatiquement pour les tickets
+`Gettickets includesimmature` | Obtenez tous vos tickets actuels. Le deuxième argument devrait être vrai si vous voulez voir des bilticketslets immatures aussi.
+`Gettransaction" txid "(includewatchonly=false)` | Obtenez la transaction associée à l'identifiant donné.
+`Listaccounts (minconf=1)` | Voir tous les comptes et leur solde dépensé dans votre portefeuille.
+`Listreceivedbyaccount (minconf=1 includeempty = false includewatchonly=false)` | Obtenez une liste de tous vos comptes et le montant de DCR qui a été reçu par eux.
+`Listreceivedbyaddress (minconf=1 includeempty = false includewatchonly=false)` | Obtenez une liste de toutes vos adresses et le montant de DCR qui a été reçu par elles.
+`Listsinceblock (" blockhash "targetconfirmations 1 includewatchonly=false)` | Liste les transactions survenues depuis le hash de bloc donné.
+`Listtransactions ("account" count=10 from=0 includewatchonly=false)` | Énumérez le nombre de transactions spécifiées par «compte» dans le compte donné.
+`move "fromaccount" "toaccount" amount (minconf=1 "comment")`                   | Déplacez les fonds entre les comptes dans le même portefeuille.
+`Purchaseticket" fromaccount "spendlimit (minconf=1" ticketaddress "" comment ")` | Achetez manuellement des tickets PdE. 'Fromaccount' sera habituellement "par défaut". 'Spendlimit' est le montant que vous souhaitez dépenser sur le total tickets, pas par ticket.
+`Renameaccount" oldaccount "" newaccount "` | Renommez un compte dans votre portefeuille.
+`Sendfrom" fromaccount "" toaddress "montant (minconf=1" comment "" commentto ")` | Envoyer DCR à partir du compte donné à l'adresse indiquée. Vous pouvez ajouter un commentaire facultatif.
+`Sendtoaddress" address "amount (" comment "" commentto ")` | Semblable à ci-dessus, mais utilise le compte par défaut à envoyer.
+`Setbalancetomaintain balance` | Utilisé pour la PdE automatique. Le portefeuille achètera les tickets jusqu'à ce qu'il atteigne ce seuil.
+`setticketfee fee` | Réglez les frais (non remboursables) pour l'achat de tickets de participation. Voir <LINK>FAQ#Ticket fee
+`Setticketmaxprice max` | Définissez le prix maximum que le portefeuille paiera lors de l'achat automatique de tickets.
+`Setticketvotebits" txhash "votebits (" votebitsext ")` | Définit le ticket donné pour voter «oui» ou «non» (par défaut oui)
+`Settxfee amount` | Définit les frais par kB des données de transaction que vous êtes prêt à payer. Remarquez ceci n'est PAS identique à setticketfee ci-dessus.
+`Walletlock` | Verrouillez le portefeuille (aucun fonds ne peut être envoyé).
+`walletpassphrase "passphrase" timeout` | Débloquez le portefeuille en utilisant la mot de passe pour la période de temps donnée en secondes. 0 déverrouillera le portefeuille jusqu'à ce qu'il soit redémarré.
+`Walletpassphrasechange" oldpassphrase "" newpassphrase "` | Changez votre mot de passe de portefeuille.

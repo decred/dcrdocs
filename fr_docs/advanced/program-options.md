@@ -38,43 +38,43 @@ Option                      | Description
 `--rpclimitpass=`           | Mot de passe pour les connexions RPC limitées
 `--rpclisten=`              | Ajouter une interface / port pour écouter les connexions RPC (par défaut port: `8334`, testnet: `18334`)
 `--rpccert=`                | Fichier contenant le fichier de certificat
-`--rpckey =` | Fichier contenant la clé de certificat
-`--rpcmaxclients =` | Nombre maximum de clients RPC pour les connexions standard (10)
-`--rpcmaxwebsockets =` | Nombre maximal de clients RPC pour les connexions standard (25)
+`--rpckey=` | Fichier contenant la clé de certificat
+`--rpcmaxclients=` | Nombre maximum de clients RPC pour les connexions standard (10)
+`--rpcmaxwebsockets=` | Nombre maximal de clients RPC pour les connexions standard (25)
 `--norpc` | Désactiver le serveur RPC intégré - REMARQUE: le serveur RPC est désactivé par défaut si aucun rpcuser / rpcpass n'est spécifié
 `--notls` | Désactiver TLS pour le serveur RPC - REMARQUE: ceci n'est autorisé que si le serveur RPC est lié à localhost
 `--nodnsseed` | Désactiver le semis DNS pour les pairs
 `--externalip:` | Ajouter un ip à la liste des adresses locales que nous prétendons écouter aux pairs
-`--proxy =` | Connexion via le proxy SOCKS5 (par exemple, 127.0.0.1:9050)
-`--proxyuser =` | Nom d'utilisateur du serveur proxy
-`--proxypass =` | Mot de passe pour le serveur proxy
-`--onion =` | Connectez-vous à des services cachés via le proxy SOCKS5 (par exemple, 127.0.0.1:9050)
-`--onionuser =` | Nom d'utilisateur pour serveur proxy d'oignon
-`--onionpass =` | Mot de passe pour le serveur proxy d'oignon
-`--noonion =` | Désactiver la connexion à des services cachés
+`--proxy=` | Connexion via le proxy SOCKS5 (par exemple, 127.0.0.1:9050)
+`--proxyuser=` | Nom d'utilisateur du serveur proxy
+`--proxypass=` | Mot de passe pour le serveur proxy
+`--onion=` | Connectez-vous à des services cachés via le proxy SOCKS5 (par exemple, 127.0.0.1:9050)
+`--onionuser=` | Nom d'utilisateur pour serveur proxy d'oignon
+`--onionpass=` | Mot de passe pour le serveur proxy d'oignon
+`--noonion=` | Désactiver la connexion à des services cachés
 `--torisolation` | Activer l'isolement du flux tor en randomisant les informations d'identification des utilisateurs pour chaque connexion
 `--testnet` | Utilisez le réseau de test
 `--simnet` | Utilisez le réseau de test de simulation
-`--nocheckpoints =` | Désactivez les points de contrôle intégrés. Ne faites pas cela, sauf si vous savez ce que vous faites.
-`--dbtype =` | Base de données à utiliser pour la chaîne Block (leveldb)
-`--profile =` | Activer le profilage HTTP sur un port donné - REMARQUE Le port doit être compris entre 1024 et 65536 (6060)
-`--cpuprofile =` | Ecrire le profil du CPU au fichier spécifié
-`--memprofile =` | Ecrire le profil mem au fichier spécifié
-`--dumpblockchain =` | Écrivez la chaîne de blocs comme une carte codée par gob dans le fichier spécifié
-`--miningtimeoffset =` | Neutralise l'horodatage de l'exploitation d'un bloc pendant ce nombre de secondes (Les valeurs positives sont dans le passé)
+`--nocheckpoints=` | Désactivez les points de contrôle intégrés. Ne faites pas cela, sauf si vous savez ce que vous faites.
+`--dbtype=` | Base de données à utiliser pour la chaîne Block (leveldb)
+`--profile=` | Activer le profilage HTTP sur un port donné - REMARQUE Le port doit être compris entre 1024 et 65536 (6060)
+`--cpuprofile=` | Ecrire le profil du CPU au fichier spécifié
+`--memprofile=` | Ecrire le profil mem au fichier spécifié
+`--dumpblockchain=` | Écrivez la chaîne de blocs comme une carte codée par gob dans le fichier spécifié
+`--miningtimeoffset=` | Neutralise l'horodatage de l'exploitation d'un bloc pendant ce nombre de secondes (Les valeurs positives sont dans le passé)
 `-d` ou` --debuglevel: `| Niveau d'enregistrement pour tous les sous-systèmes {trace, debug, info, warn, error, critical} - Vous pouvez également spécifier &lt;subsystem&gt;=&lt;level&gt;,&lt;subsystem2&gt;=&lt;level&gt;,... Pour définir le niveau de journal pour les sous-systèmes individuels - Utiliser afficher pour répertorier les sous-systèmes disponibles (info)
 `--upnp` | Utilisez UPnP pour mapper notre port d'écoute en dehors de NAT
-`--limitfreerelay =` | Limiter le relais des transactions sans frais de transaction au montant donné en milliers d'octets par minute (15)
+`--limitfreerelay=` | Limiter le relais des transactions sans frais de transaction au montant donné en milliers d'octets par minute (15)
 `--norelaypriority` | Ne nécessitent pas de transactions gratuites ou à faible coût pour avoir une priorité élevée pour le relais
-`--maxorphantx =` | Nombre maximum de transactions orphelines à conserver dans la mémoire (1000)
-`--generate =` | Générer (mine) decred en utilisant un CPU
-`--miningaddr =` | Ajouter l'adresse de paiement spécifiée à la liste des adresses à utiliser pour les blocs générés - Au moins une adresse est requise si l'option de génération est définie
-`--blockminsize =` | Taille de bloc Mininum en octets à utiliser lors de la création d'un bloc
-`--blockmaxsize =` | Taille maximale du bloc en octets à utiliser lors de la création d'un bloc (750000)
-`--blockprioritysize =` | Taille en octets pour les transactions à priorité élevée / à faible taux lors de la création d'un bloc (50000)
-`--getworkkey =` | DEPRECATED - Utilisez l'option --miningaddr à la place
-`--adddexdex =` | Créez et maintenez un index d'adresse complet. Actuellement uniquement pris en charge par leveldb.
-`--dropaddrindex =` | Supprime l'index de transaction basé sur l'adresse à partir de la base de données au démarrage et les sorties.
+`--maxorphantx=` | Nombre maximum de transactions orphelines à conserver dans la mémoire (1000)
+`--generate=` | Générer (mine) decred en utilisant un CPU
+`--miningaddr=` | Ajouter l'adresse de paiement spécifiée à la liste des adresses à utiliser pour les blocs générés - Au moins une adresse est requise si l'option de génération est définie
+`--blockminsize=` | Taille de bloc Mininum en octets à utiliser lors de la création d'un bloc
+`--blockmaxsize=` | Taille maximale du bloc en octets à utiliser lors de la création d'un bloc (750000)
+`--blockprioritysize=` | Taille en octets pour les transactions à priorité élevée / à faible taux lors de la création d'un bloc (50000)
+`--getworkkey=` | DEPRECATED - Utilisez l'option --miningaddr à la place
+`--adddexdex=` | Créez et maintenez un index d'adresse complet. Actuellement uniquement pris en charge par leveldb.
+`--dropaddrindex=` | Supprime l'index de transaction basé sur l'adresse à partir de la base de données au démarrage et les sorties.
 `--nagagégiste '| Désactiver l'extraction du bloc parent de la chaîne de blocs s'il n'y a pas assez d'électeurs
 `--nominingstatesync` | Désactiver la synchronisation de l'état de minage avec d'autres nodes
 

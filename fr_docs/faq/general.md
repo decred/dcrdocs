@@ -2,44 +2,44 @@
 
 ---
 
-#### **1. What lead to the development of Decred?**
+#### **1. Ce qui a conduit au développement de Decred?**
 
-Here are a series of blog posts that discuss the motivation[^8550] for Decred:
+Voici une série de publications sur le blog qui discutent de la motivation [^8550] pour Decred:
 
-* [Iterating Bitcoin](https://blog.companyzero.com/2015/12/iterating-bitcoin/)
-* [Bitcoin's biggest challenges](https://blog.companyzero.com/2015/11/bitcoins-biggest-challenges/)
+* [Réitérer Bitcoin](https://blog.companyzero.com/2015/12/iterating-bitcoin/)
+* [Les plus gros challenges de Bitcoin](https://blog.companyzero.com/2015/11/bitcoins-biggest-challenges/)
 
 ---
 
-#### **2. How do you pronounce Decred?**
+#### **2. Comment prononcer Decred?**
 
-The correct pronunciation[^14482] is in the opening line of the Decred Constitution.
+La correct prononciation [^14482] est dans la ligne d'ouverture de la Constitution Decred.
 
 ```no-highlight
 Decred (/ˈdi:ˈkred/, /dɪˈkred/, dee-cred)
 ```
 
-In other words, it is a long e as in the word decentralized.
+En d'autres termes, c'est un long e comme dans le mot décentralisé.
 
 ---
 
-#### **3. How was the Decred premine distributed?**
+#### **3. Comment la prémine de DCR a-t-elle été distribuée??**
 
-The premine consists of 8% of the total supply of 21 million coins (1.68 million coins).[^1] This was split equally between compensation for bring-up costs and an “airdrop”.
+La prémine est composée de 8% de l'offre totale de 21 millions de pièces de monnaie (1,68 million de pièces de monnaie). [^1] Cela a été réparti à parts égales entre la compensation pour les coûts d'émergence et un "airdrop".
 
-** Bring up costs (840,000 coins, 50% of premine, 4% of total Decred supply) **
+** Amènes les coûts à (840 000 pièces, 50% de la prémine, 4% de l'offre totale déclarée) **
 
-The development of Decred was funded by Company 0 and from the pockets of its developers individually. The cost of developing the project, in terms of developer pay, totals to approximately USD 300,000, which Company 0 paid to developers. An additional amount of approximately USD 115,000 has been allocated for unpaid work and individual purchases by developers. Company 0 felt that the most equitable way to handle compensation for these expenses was to perform a small premine as part of the project launch. The model is unusual in that no developer received any amount of coins for free – all coins owned by developers will either purchased at a rate of USD 0.49 per coin from their own pockets or exchanged for work performed at the same rate.
+Le développement de Decred a été financé par la Companie 0 et par les poches de ses développeurs individuellement. Le coût du développement du projet, en termes de rémunération des développeurs, s'élève à environ 300 000 USD, dont la Société 0 a versé aux développeurs. Un montant supplémentaire d'environ 115 000 USD a été alloué pour le travail non rémunéré et les achats individuels par les développeurs. La société 0 a estimé que la façon la plus équitable de gérer la compensation pour ces dépenses était d'effectuer une petite prémine dans le cadre du lancement du projet. Le modèle est inhabituel dans la mesure où aucun développeur n'a reçu de pièces de monnaie gratuites - toutes les pièces détenues par les développeurs seront achetées au taux de USD 0,49 par pièce à partir de leurs propres poches ou échangées contre un travail effectué au même taux.
 
-This means Company 0 and its developers will have put roughly USD 415,000 into the bring-up since April, 2014 and receive 4% of the total supply, 840,000 coins (at USD 0.49 per coin). Coins held by Company 0 will be used to fund its ongoing work on open source projects, such as Decred and btcsuite.
+Cela signifie que la Société 0 et ses développeurs auront mis environ USD 415 000 dans leur poches depuis avril 2014 et recevront 4% de l'offre totale, 840 000 pièces (à USD 0,49 par pièce). Les pièces détenues par la Companie 0 seront utilisées pour financer ses travaux en cours sur des projets open source, tels que Decred et btcsuite.
 
- **Airdrop (840,000 coins, 50% of premine, 4% of total Decred supply) **
+ **Airdrop (840,000 coins, 50% of premine, 4% du stock total de Decred) **
 
-Rather than allocating the entire premine to the bring-up costs, the remaining half of the premine was spread evenly across a list of airdrop participants. Airdrop sign-up was available to anybody and ran through January 2016. Not everybody who signed up was selected to participate in the airdrop - Decred is fundamentally about technological progress, so the airdrop targeted individuals that have made contributions to advance technology in its various forms. There was also a large number of fraudulent sign-ups which needed to be carefully identified and dealt with.[^3]
+Plutôt que d'attribuer la totalité de la prémine aux coûts d'apparition, la moitié restante de la prémine a été répartie uniformément sur une liste de participants d'Airdrop. L'inscription d'Airdrop était disponible pour tout le monde et a couru jusqu'en janvier 2016. Toutes les inscriptions non pas été sélectionnées pour participer à la diffusion - Decred est fondamental sur le progrès technologique, de sorte que l'airdrop a ciblé des individus qui ont contribués à faire avancer la technologie sous ses différentes formes . Il y avait également un grand nombre d'inscriptions frauduleuses qui devaient être soigneusement identifiées et traitées. [^3]
 
-> The airdrop concluded with awarding 282.63795424 DCR to 2972 participants.[^2]
+> L'airdrop c'est conclu avec l'attribution de 282.63795424 DCR à 2972 ​​participants. [^2]
 
-Giving away these coins in an airdrop accomplished several things for the project: enlarging the Decred network, further helping to decentralize the distribution of coins, and getting coins into the hands of people who are interested in participating in the project. These coins were be given away unconditionally and there was zero expectation of Decred receiving anything from the participants in return for these coins.
+La distribution de ces pièces pendant l'airdrop a permis d'accomplir plusieurs choses pour le projet: l'élargissement du réseau de Decred, l'aide à la décentralisation de la distribution des pièces et l'obtention de pièces de monnaie entre les personnes intéressées à participer au projet. Ces pièces de monnaie ont été distribuées inconditionnellement et il n'y avait aucune attente de décrocher des destinataires des participants en échange de ces pièces.
 
 
 

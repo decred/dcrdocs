@@ -46,4 +46,8 @@ $(document).ready(function(){
     }
     a_git = $('[href="https://github.com/decred/dcrdocs"]')
     a_git.attr('href', url).attr('target', '_blank')
-})
+});
+
+window.MathJax = {
+    showMathMenu: false
+};

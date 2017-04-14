@@ -49,5 +49,6 @@ $(document).ready(function(){
 });
 
 window.MathJax = {
-    showMathMenu: false
+    showMathMenu: false,
+    imageFont: null
 };

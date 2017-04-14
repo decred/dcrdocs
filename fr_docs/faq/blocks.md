@@ -1,54 +1,54 @@
-# **<i class="fa fa-cubes"></i> Blocks**
+# **<i class="fa fa-cubes"></i> Blocs**
 
 ---
 
-#### **1. Can a block become orphaned after being confirmed multiple times?**
+#### **1. Un bloc peut-il devenir orphelin après avoir été confirmé à plusieurs reprises?**
 
-Only if there is a reorg that is sufficiently long[^8918]. In order for that to happen, you need more hash power working on the other side of a fork than the hash power that is working on the current best chain.
-
----
-
-#### **2. Can we remove the testnet block explorer given that one for mainnet is available?**
-
-Testnet will continue to be a testing ground for new features, so it makes sense to keep the testnet block explorer[^9621] up.
+Seulement s'il y a une réorganisation qui est suffisamment longue [^ 8918]. Pour que cela se produise, vous avez besoin de plus de puissance de hash fonctionnant de l'autre côté d'une fork que la puissance de hash qui fonctionne sur la meilleure chaîne actuelle.
 
 ---
 
-#### **3. What do "[INF] CHAN: Adding orphan block" messages mean?**
+#### **2. Peut-on supprimer l'explorateur de bloc testnet étant donné que l'un pour mainnet est disponible?**
 
-It just means a block that you do not have the parent for was received[^14660]. It pretty much always happens when restarting `dcrd` due to the way the sync works. You are still syncing up to the latest block, but the remote peer, that is ahead of you, sent a notification that a new block showed up, one for which you do not have the parent yet.
-
-Rather than ignoring it, once you are sufficiently close to being synced, it essentially saves them for later so once you do have the parent blocks those newer block automatically get connected.
+Testnet continuera d'être un terrain d'essai pour les nouvelles fonctionnalités, il est donc logique de garder l'explorateur de bloc testnet [^9621].
 
 ---
 
-#### **4. Should I download the blockchain again with every new software release?**
+#### **3. Que signifient les messages "[INF] CHAN: Adding orphan block"?**
 
-You should almost never have to download the chain again[^14788] on an upgrade unless it is just a super massive change where it makes sense to start over. Typically though, it should migrate things so it just works.
+Cela signifie simplement qu'un bloc dont vous n'avez pas le parent a été reçu [^14660]. Il arrive presque toujours de redémarrer `dcrd` en raison de la façon dont fonctionne la synchronisation. Vous êtes toujours en train de synchroniser avec le dernier bloc, mais le pair distant, qui vous attend, a envoyé une notification selon laquelle un nouveau bloc est apparu, celui pour lequel vous n'avez pas encore le parent.
 
----
-
-#### **5. What is the genesis block number?**
-
-The genesis block[^16987] is block height 0 (block number 0). Every block after that increases by 1.
+Plutôt que de l'ignorer, une fois que vous êtes suffisamment près d'être synchronisé, il les sauvegarde essentiellement pour plus tard, une fois que vous avez les blocs parents, ces nouveaux blocs se connectent automatiquement.
 
 ---
 
-#### **6. What do "[INF] CHAN: FORK: Block 000..." messages mean?**
+#### **4. Devrais-je télécharger la chaîne de blocs à nouveau avec chaque nouvelle version du logiciel?**
 
-Here is an example message:
+Vous ne devriez presque jamais télécharger la chaîne de nouveau [^14788] lors d'une mise à niveau, à moins qu'il ne s'agisse d'un changement super massif où il est logique de recommencer. Généralement, il devrait migrer des choses, donc ça marche..
+
+---
+
+#### **5. Quel est le nombre de blocs de genèse?**
+
+Le bloc de genèse [^16987] est la hauteur de bloc 0 (bloc numéro 0). Chaque bloc après cela augmente de 1.
+
+---
+
+#### **6. Que signifient les messages "[INF] CHAN: FORK: Block 000 ..."?**
+
+Voici un exemple de message:
 
 ```no-highlight
 [INF] CHAN: FORK: Block 0000000000001aedcf1b82b087a1d05ef787550174da1012e473e8ee8c178937 (height 17879) forks the chain at height 17878/block 000000000000150f863186cab6ef5c433bcc155d2f683394f8e65cb037f80b16, but does not cause a reorganize
 ```
 
-It means two miners found a solution to a block around the same time and both submitted their solved blocks to the network[^17791]. Both are equally valid, however your node saw the other solution ([000000000000147d33cde5e9823122924fb43405418712720eb6457956d8edbb](https://mainnet.decred.org/block/000000000000147d33cde5e9823122924fb43405418712720eb6457956d8edbb)) first, so from your node's point of view, the new block ([0000000000001aedcf1b82b087a1d05ef787550174da1012e473e8ee8c178937](https://mainnet.decred.org/block/0000000000001aedcf1b82b087a1d05ef787550174da1012e473e8ee8c178937)) was on a side chain.
+Cela signifie que deux mineurs ont trouvé une solution à un bloc autour du même temps et ont tous deux soumis leurs blocs résolus au réseau [^17791]. Les deux sont également valables, mais votre node a vu l'autre solution ([000000000000147d33cde5e9823122924fb43405418712720eb6457956d8edbb](https://mainnet.decred.org/block/000000000000147d33cde5e9823122924fb43405418712720eb6457956d8edbb)) premièrement, donc du point de vue de votre node, le nouveau bloc ([0000000000001aedcf1b82b087a1d05ef787550174da1012e473e8ee8c178937](https://mainnet.decred.org/block/0000000000001aedcf1b82b087a1d05ef787550174da1012e473e8ee8c178937)) était sur une chaîne latérale.
 
-Since it takes blocks time to relay, other nodes might have seen 0000000000001aedcf1b82b087a1d05ef787550174da1012e473e8ee8c178937 first which means to them the other solution that your node saw first ([000000000000147d33cde5e9823122924fb43405418712720eb6457956d8edbb](https://mainnet.decred.org/block/000000000000147d33cde5e9823122924fb43405418712720eb6457956d8edbb)) was the one on the side chain.
+Comme il faut du temps aux blocs pour relayer, d'autres nodes auraient pu voir 0000000000001aedcf1b82b087a1d05ef787550174da1012e473e8ee8c178937 premièrement ce qui signifie pour eux l'autre solution que votre node a vu en premier ([000000000000147d33cde5e9823122924fb43405418712720eb6457956d8edbb](https://mainnet.decred.org/block/000000000000147d33cde5e9823122924fb43405418712720eb6457956d8edbb)) était celui de la chaîne latérale.
 
-This is totally normal and resolves itself whenever the next block is found since it will now define the longest chain and whichever solution was not built on will be orphaned.
+Ceci est totalement normal et se résout à chaque fois que le prochain bloc est trouvé car il définira désormais la chaîne la plus longue et la solution ne sera pas intégrée sera orphelin.
 
-In this case, block #17880 ([000000000000154c6091747245e3c2620447c71b346aed09548e74b4543d0d66](https://mainnet.decred.org/block/000000000000154c6091747245e3c2620447c71b346aed09548e74b4543d0d66)) ended up building on top of 000000000000147d33cde5e9823122924fb43405418712720eb6457956d8edbb, so the other solution ([0000000000001aedcf1b82b087a1d05ef787550174da1012e473e8ee8c178937](https://mainnet.decred.org/block/0000000000001aedcf1b82b087a1d05ef787550174da1012e473e8ee8c178937)) was orphaned.
+Dans ce cas, bloc #17880 ([000000000000154c6091747245e3c2620447c71b346aed09548e74b4543d0d66](https://mainnet.decred.org/block/000000000000154c6091747245e3c2620447c71b346aed09548e74b4543d0d66)) a fini par construire sur le dessus 000000000000147d33cde5e9823122924fb43405418712720eb6457956d8edbb, alors l'autre solution ([0000000000001aedcf1b82b087a1d05ef787550174da1012e473e8ee8c178937](https://mainnet.decred.org/block/0000000000001aedcf1b82b087a1d05ef787550174da1012e473e8ee8c178937)) était orpheline.
 
 ---
 

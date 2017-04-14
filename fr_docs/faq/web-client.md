@@ -1,22 +1,22 @@
-# **<i class="fa fa-firefox"></i> Web Client**
+# **<i class="fa fa-firefox"></i> Client en Ligne**
 
 ---
 
-#### **1. How secure is the web client?**
+#### **1. Comment sécuriser le client en ligne?**
 
-The web client is a fork of [Copay](https://copay.io), so it is as secure as that[^7981]. The seed (and hence private keys) are kept and computed locally in your browser's local storage and everything is run client-side. The server never has access to any of the private data needed to spend coins.
-
----
-
-#### **2. Can you solo stake mine with the web client?**
-
-No, recall that the browser wallet runs locally on your machine. That would not lend itself well to running 24/7. As a result, the browser wallet will never be able to solo stake[^9093]. It would however be possible to support stake pooling with it. Stake pools provide you with the ability to not have a wallet running 24/7 since it will be the pool's responsibility to be online and cast a vote on your behalf at that point.
+Le client en ligne est une fork de [Copay](https://copay.io), donc c'est aussi sûr que ca[^7981]. La graine (Et donc les clés privées) sont conservés et calculés localement dans le stockage local de votre navigateur et tout est exécuté côté client. Le serveur n'a jamais accès à aucune des données privées nécessaires pour dépenser des pièces de monnaie.
 
 ---
 
-#### **3. Is it safe to delete the wallet and start over?**
+#### **2. Pouvez vous faire de la preuve d'enjeu solo avec le client en ligne?**
 
-It is safe[^10652]. The only difference is you will need to go to `Import Wallet` this time instead of creating a new one.
+Non, rappelez-vous que le portefeuille du navigateur fonctionne localement sur votre machine. Cela ne se prêterait pas bien à l'exécution 24/7. En conséquence, le portefeuille du navigateur ne sera jamais capable de mettre d'enjeu solo [^ 9093]. Il serait toutefois possible de soutenir une pool d'enjeu avec elle. Les pools d'enjeu vous offrent la possibilité de ne pas avoir un porte-monnaie en cours d'exécution 24/7, car il incombera à la pool d'être en ligne et de voter en votre nom à ce moment-là.
+
+---
+
+#### **3. Est-il sûr de supprimer le portefeuille et de commencer?**
+
+C'est sûr [^10652]. La seule différence est que vous devrez aller sur le portefeuille et commencer `Importez Portefeuille` cette fois au lieu de créer un nouveau.
 
 ---
 

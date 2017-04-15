@@ -64,21 +64,21 @@ General Support
 
 ## Documentation Support
 
-**@animedow: Documentation Collaborateurr** <br />
+**@animedow: Documentation Collaborateur** <br />
 PdE Support<br />
 General Support 
 
-**@gratefulcheddar: Documentation Collaborateurr** <br />
+**@gratefulcheddar: Documentation Collaborateur** <br />
 PdE and PdT Support<br />
 Command-Line Application Support<br />
 Community Management<br />
 General Support
 
-**@praxis: Documentation Collaborateurr** <br />
+**@praxis: Documentation Collaborateur** <br />
 Community Management<br />
 General Support
 
-**@shadowlance: Documentation Collaborateurr** <br />
+**@shadowlance: Documentation Collaborateur** <br />
 Paymetheus Support<br />
 Statistics<br />
 General Support

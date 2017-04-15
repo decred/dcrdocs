@@ -1,91 +1,91 @@
-# **Support Reference Directory**
+# **Répertoire de référence de soutien**
 
-The purpose of this page is to provide a directory for support contacts. Everyone currently working with the Decred project has their Slack and/or IRC username listed.
+Le but de cette page est de fournir un répertoire pour les contacts de support. Tous ceux qui travaillent actuellement avec le projet Decred ont leur nom d'utilisateur Slack et/ou IRC répertoriés.
 
-## Join Us on Slack
+## Rejoignez-nous sur Slack
 
-Join us on Slack for support. You can receive an invite to the Decred Slack by visiting [https://slack.decred.org](https://slack.decred.org). Once you've signed up, you can join using your web browser by visiting [https://decred.slack.com](https://decred.slack.com) or by downloading one of Slack's desktop or mobile applications.
+Rejoignez-nous sur Slack pour obtenir de l'aide. Vous pouvez recevoir une invitation à Decred Slack en visitant [https://slack.decred.org](https://slack.decred.org). Une fois que vous vous êtes inscrit, vous pouvez vous connecter en utilisant votre navigateur en visitant [https://decred.slack.com](https://decred.slack.com) ou en téléchargeant l'une des applications bureau ou mobiles de Slack.
 
-## IRC Information:
+## Information IRC:
 
-Majority of the developers are available on the Freenode IRC #decred channel. Join us on your own IRC client or the Freenode webchat [here](https://webchat.freenode.net/?channels=decred&uio=d4). There is also a bridge between Slack's #general channel and the #decred channel on IRC.
+La majorité des développeurs sont disponibles sur le canal Freenode IRC #decred. Rejoignez-nous sur votre propre client IRC ou sur le webchat Freenode [ici](https://webchat.freenode.net/?channels=decred&uio=d4). Il y a aussi un pont entre le canal #general de Slack et le canal #decred sur IRC.
 
-## Development Support
+## Support de Dévelopment
 
 **@jy-p: Boss Man** <br />
 Project Leader <br />
 CEO of Company0
 
-**@ay-p: Developer** <br />
+**@ay-p: Développeur** <br />
 Decrediton<br />
 Wallet Support<br />
-PoS Support<br />
+PdE Support<br />
 General Support  
 
-**@chappjc: Developer** <br />
+**@chappjc: Développeur** <br />
 Go Programmer<br />
-PoS Support<br />
+PdE Support<br />
 Analytics/Data Collection
 
-**@davecgh: Lead Developer** <br />
+**@davecgh: Développeur de tête** <br />
 Consensus Expert<br />
 General Support
 
-**@dhill: Developer** <br />
+**@dhill: Développeur** <br />
 sysadmin<br />
 Go Programmer 
 
-**@jcv: Developer** <br />
+**@jcv: Développeur** <br />
 Decrediton<br />
 Wallet Support<br />
-PoW Support<br />
+PdT Support<br />
 gominer<br />
 Documentation<br />
 Release Management<br />
 General Support
 
-**@jolan: Developer** <br />
-PoW Support<br />
+**@jolan: Développeur** <br />
+PdT Support<br />
 gominer<br /> 
 Website Management
 
-**@jrick: Developer** <br />
+**@jrick: Développeur** <br />
 Paymetheus Support<br />
 Wallet Support<br /> 
-PoS Support
+PdE Support
 
-**marcop (IRC only): Developer** <br />
+**marcop (IRC only): Développeur** <br />
 Consensus Expert<br />
 Support
 
-**@raedah: Developer** <br />
+**@raedah: Développeur** <br />
 Ticket Buyer Support<br />
 General Support
 
 ## Documentation Support
 
-**@animedow: Documentation Collaborator** <br />
-PoS Support<br />
+**@animedow: Documentation Collaborateurr** <br />
+PdE Support<br />
 General Support 
 
-**@gratefulcheddar: Documentation Collaborator** <br />
-PoS and PoW Support<br />
+**@gratefulcheddar: Documentation Collaborateurr** <br />
+PdE and PdT Support<br />
 Command-Line Application Support<br />
 Community Management<br />
 General Support
 
-**@praxis: Documentation Collaborator** <br />
+**@praxis: Documentation Collaborateurr** <br />
 Community Management<br />
 General Support
 
-**@shadowlance: Documentation Collaborator** <br />
+**@shadowlance: Documentation Collaborateurr** <br />
 Paymetheus Support<br />
 Statistics<br />
 General Support
 
 ## Community Support
 
-**@coin_artist: Marketing Representative** <br />
+**@coin_artist: Marketing Représentative** <br />
 Promotional Crypto-Puzzles<br />
 Community Management
 
@@ -99,7 +99,7 @@ PoS Support<br />
 Dcrstats / Stakepool / Evolution
 
 **@emiliomann: Brazilian Community Manager** <br />
-PoS Support<br />
+PdE Support<br />
 Public Relations<br />
 Marketing  
 

@@ -1,55 +1,55 @@
-# **dcrctl Basics**
+# **dcrctl Basiques**
 
-Last updated for v0.8.2.
+Dernière mise aà jour v0.8.2.
 
-This guide is intended to help you learn the basic commands of the `dcrctl` application using [startup flags](/getting-started/startup-basics.md#startup-command-flags). 
+Cette fois au lieu de créer un guide nehis c'est destiné à vous aider à apprendre les commandes de base de l'un `dcrctl` application using [startup flags](/getting-started/startup-basics.md#startup-command-flags). 
 
-**Prerequisites:**
+**Conditions préalables:**
 
-- Use either the latest [dcrinstall](/getting-started/install-guide.md#dcrinstall) to install `dcrctl`. Additional steps will be required if another installation method was used.
-- Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/cli-differences.md).
-- [Setup dcrd](/getting-started/user-guides/dcrd-setup.md) and have it running in the background.
-- [Setup dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) and have it running in the background.
-
----
-
-`dcrctl` is the client that controls `dcrd` and `dcrwallet` via remote procedure call (RPC). You can use `dcrctl` for many things such as checking your balance, buying tickets, creating transactions, and viewing network information.
-
-**REMINDER:** This guide uses OS-agnostic examples for commands. Review the prerequisites to determine if you should be using `./dcrctl` or `dcrctl.exe` instead of `dcrctl`.
+- Prévoir le dernier [dcrinstall](/getting-started/install-guide.md#dcrinstall) à installer `dcrctl`. Des étapes supplémentaires seront nécessaires si une autre méthode d'installation a été utilisée.
+- Examinez comment les commandes de lancement de l'invite de commandes (Windows) et Bash (OSX/Linux) shells differ [ici](/getting-started/cli-differences.md).
+- [Installer dcrd](/getting-started/user-guides/dcrd-setup.md) et faites-le tourner dans le fond.
+- [Installer dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) et faites-le tourner dans le fond.
 
 ---
 
-> Configure RPC Username and Password
+`dcrctl` est le client qui le contrôle `dcrd` et `dcrwallet` via appel de procédure aà distance (RPC). Vous pouvez utiliser `dcrctl` pour de nombreuses choses, comme la vérification de votre solde, l'achat de tickets, la création de transactions et l'affichage d'informations sur le réseau.
 
-Commands sent to either `dcrd` or `dcrwallet` will require RPC username/passwords to be setup in the configuration files.
-
-If you used [`dcrinstall`](/getting-started/install-guide.md#dcrinstall), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
-
-If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](/getting-started/startup-basics.md#minimum-configuration) to do so.
+**RAPPEL:** Ce guide utilise des examples OS-agnostic comme commandes. Examinez les conditions préalables pour déterminer si vous devriez utiliser `./dcrctl` or `dcrctl.exe` au-lieu de `dcrctl`.
 
 ---
 
-## dcrctl Commands
+> Configurez le nom d'utilisateur et le mot de passe RPC
 
-You will need to run dcrctl commands in a separate shell window (Command Prompt/Bash).
+Commandes envoyées soit à `dcrd` ou `dcrwallet` Exigera que le nom / mot de passe RPC soit configuré dans les fichiers de configuration.
 
-To issue commands to `dcrwallet`, you will need to use `dcrctl --wallet [command]`.
+Si vous avez utilisé [`dcrinstall`](/getting-started/install-guide.md#dcrinstall), vos fichiers de configuration sont déjà configurés avec le nom d'utilisateur/mot de passe RPC pour `dcrd`, `dcrwallet`, et `dcrctl`.
 
-To issue commands to `dcrd`, you will need to use `dcrctl [command]`.
+Si vous n'avez pas utilisé `dcrinstall`, vous devrez activer les paramètres minimaux nuls dans vos fichiers de configuration. Suivre [this guide](/getting-started/startup-basics.md#minimum-configuration) to do so.
 
-To see a full list of commands that `dcrctl` can send to `dcrd` and `dcrwallet`, issue the following command in your shell:
+---
+
+## dcrctl Commandes
+
+Vous devrez exécuter des commandes dcrctl dans une fenêtre de shell distincte (Commande Prompt/Bash).
+
+Émettre des commandes pour `dcrwallet`, vous aurez besoin d'utiliser `dcrctl --wallet [command]`.
+
+Émettre des commandes pour `dcrd`, vous aurez besoin d'utiliser `dcrctl [command]`.
+
+Pour voir la liste complète des commandes `dcrctl` peut envoyer à `dcrd` et `dcrwallet`, émettez la commande suivante dans votre shell:
 
 ```no-highlight
 dcrctl -l
 ```
 
-This will return a very long list of commands, separated by application. The commands on the top section are for `dcrd` and the commands on the bottom section are for `dcrwallet`. You can find out more about an individual command by typing the following for `dcrwallet` commands:
+Cela renverra une très longue liste de commandes, séparées par une application. Les commandes de la partie supérieure sont destinées à `dcrd` Et les commandes en bas sont pour `dcrwallet`. Vous pouvez en savoir plus sur une commande individuelle en tapant ce qui suit pour `dcrwallet` commandes:
 
 ```no-highlight
 dcrctl help --wallet [command]
 ```
 
-or the following for `dcrd` commands:
+ou la suivante pour `dcrd` commandes:
 
 ```no-highlight
 dcrctl help [command]
@@ -57,75 +57,75 @@ dcrctl help [command]
 
 ---
 
-## Unlocking Your Wallet
+## Débloquer votre portefeuille
 
-Some functionality of `dcrwallet` requires the wallet to be unlocked.
+Quelques fonctionnalités de `dcrwallet` rExige que le portefeuille soit déverrouillé.
 
-The command to unlock your wallet follows: 
+La commande pour débloquer votre portefeuille suit: 
 
 ```no-highlight
-dcrctl --wallet walletpassphrase [private passphrase set during wallet creation] 0
+dcrctl --wallet walletpassphrase [passphrase privée créée pendant la création de portefeuille] 0
 ```
 
-Here, we are specifying for `dcrctl` to send the command to `dcrwallet` by using the `--wallet` flag. The actual command is `walletpassphrase` which accepts two parameters, your private passphrase and a time limit. Specifying `0` for a time limit unlocks `dcrwallet` without a time limit. Note, however, that this only unlocks the wallet for the current session. If you close the window the wallet is running in, or stop/restart the `dcrwallet`, you will need to unlock it again the next time you start it. 
+Ici, nous spécifions pour `dcrctl` d'envoyer la commande `dcrwallet` en utilisant le drapeau `--wallet`. La commande actuelle est `walletpassphrase` laquelle accepte deux paramètres, votre phrase de passe privée et un temps de délai. En précisant `0` pour un déverrouillage de limité `dcrwallet` à sans limite. Notez, cependant, cela débloque uniquement le portefeuille pour la session en cours. Si vous fermez la fenêtre, le portefeuille est en cours d'exécution ou arrêtez/redémarrez le `dcrwallet`, vous devrez le débloquer à nouveau la prochaine fois que vous l'aurez démarré.
 
-If the command was successful, you will not get a confirmation from `dcrctl`, but if you look at your `dcrwallet` session, it will say:
+Si la commande a réussi, vous ne recevrez pas une confirmation de `dcrctl`, mais si vous regarder à la session `dcrwallet`, il dira:
 
 ```no-highlight
 [INF] RPCS: The wallet has been unlocked without a time limit.
 ```
 
-NOTE: Because unlocking the wallet is required for many functions of `dcrwallet`, `dcrwallet` can be started with the `--promptpass` flag or setting `promptpass=true` in `dcrwallet.conf` (discussed [here](/advanced/storing-login-details.md#dcrwalletconf)).
+REMARQUE: Parce que le déverrouillage du portefeuille est requis pour de nombreuses fonctions de `dcrwallet`, `dcrwallet` peut-être démmaré avec le drapeau `--promptpass`  ou réglé `promptpass=true` dans `dcrwallet.conf` (discuté [ici](/advanced/storing-login-details.md#dcrwalletconf)).
 
 ---
 
-## Checking Your Balance
+## Vérifier votre Balance
 
-To send the `getbalance` command to `dcrwallet` using `dcrctl`, enter the following in your shell:
+Envoyer la commande `getbalance` à `dcrwallet` utilisant `dcrctl`, entrez ce qui suit dans votre shell:
 
 ```no-highlight
 dcrctl --wallet getbalance
 ```
 
-This will return all of the balances for all of your accounts.
+Cela renverra tous les soldes de tous vos comptes.
 
 ---
 
-## Getting a New Receiving Address
+## Obtenir une nouvelle Adresse de Réception
 
-To send the `getnewaddress` command to `dcrwallet` using `dcrctl`, enter the following in your shell:
+Envoyer la commande `getnewaddress` à `dcrwallet` utilisant `dcrctl`, entrez ce qui suit dans votre shell:
 
 ```no-highlight
 dcrctl --wallet getnewaddress
 ```
 
-This will generate and return a new payment address. To minimize address reuse, use this command to get a new address for each transaction you wish to receive.
+Cela générera et renverra une nouvelle adresse de paiement. Pour minimiser la réutilisation des adresses, utilisez cette commande pour obtenir une nouvelle adresse pour chaque transaction que vous souhaitez recevoir.
 
 ---
 
-## Sending DCR
+## Envoyer DCR
 
-To send DCR to an address, issue the `sendtoaddress` command to `dcrwallet` using `dcrctl`. Enter the following in your shell, filling in the receiving address and amount to send:
+Pour envoyer DCR à une adresse, émettre la commande `sendtoaddress` à `dcrwallet` utilisant `dcrctl`. Entrez ce qui suit dans votre shell, Remplissant l'adresse de réception et le montant à envoyer:
 
 ```no-highlight
 dcrctl --wallet sendtoaddress [address] [amount]
 ```
 
-If successful, `dcrctl` will return a transaction hash that can be used to watch the transaction on the official [Decred Block Explorer](/getting-started/using-the-block-explorer.md).
+Si elle réussit, `dcrctl` il enverra un hash de transaction qui peut être utilisé pour regarder la transaction sur le site officiel [Decred Block Explorer](/getting-started/using-the-block-explorer.md).
 
 ---
 
-## Check Network Stats
+## Vérifiez les statistiques du réseau
 
-There are many different commands to check different network stats. Here we will cover sending `getinfo` to `dcrd` and `getstakeinfo` to `dcrwallet`.
+Il existe plusieurs commandes différentes pour vérifier les différentes statistiques du réseau. Nous couvrons l'envoi `getinfo` à `dcrd` et `getstakeinfo` à `dcrwallet`.
 
-To get information about your local `dcrd` node, issue the `getinfo` command to `dcrd` using `dcrctl`. Enter the following in your shell:
+Pour obtenir des informations sur votre local `dcrd` node, émis par la commande `getinfo` à `dcrd` utilisant `dcrctl`. Entrez ce qui suit dans votre shell:
 
 ```no-highlight
 dcrctl getinfo
 ```
 
-To get staking information about the Proof-of-Stake network, issue the `getstakeinfo` command to `dcrwallet` using `dcrctl`. Enter the following in your shell:
+Pour obtenir des informations sur le réseau de preuve de mise d'enjeu, émettre la commande `getstakeinfo` à `dcrwallet` utilisant `dcrctl`. Entrez ce qui suit dans votre shell:
 
 ```no-highlight
 dcrctl --wallet getstakeinfo
@@ -133,8 +133,8 @@ dcrctl --wallet getstakeinfo
 
 ---
 
-## Additional Commands
+## Commandes Additionelles
 
-More commands can also be found on the [Program Options](/advanced/program-options.md) page.
+Plus de commandes peuvent également être trouvées sur la page [Options du programme](/advanced/program-options.md).
 
 ---

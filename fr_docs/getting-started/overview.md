@@ -28,7 +28,7 @@ Remarque: Vous devriez remarquer rapidement l'une des nombreuses différences en
 
 ### 1.4. <i class="fa fa-firefox"></i> [Web](user-guides/web.md)
 
-Cette section décrit le portefeuille en ligne. Le portefeuille en ligne est une base portefeuille en ligne qui vous permet d'envoyer et de recevoir DCR. Il est encore en cours de développement et ne dispose donc pas d'un grand nombre de fonctionnalités portefeuille de ligne de commande (par exemple, la preuveud'enjeu n'est actuellement pas
+Cette section décrit le portefeuille en ligne. Le portefeuille en ligne est une base portefeuille en ligne qui vous permet d'envoyer et de recevoir DCR. Il est encore en cours de développement et ne dispose donc pas d'un grand nombre de fonctionnalités portefeuille de ligne de commande (par exemple, la preuve d'enjeu n'est actuellement pas
 prise en charge).
 
 ---

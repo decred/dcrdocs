@@ -1,126 +1,124 @@
-# **dcrwallet Setup Guide**
+# **Guide d'installation de dcrwallet**
 
-Last updated for v0.8.2.
+Dernière mise aà jour v0.8.2.
 
-This guide is intended to help you setup the `dcrwallet` application using [startup flags](/getting-started/startup-basics.md#startup-command-flags). 
+Ce guide est destiné à vous aider à configurer l'application `dcrwallet` utilisant [drapeaux de démarrage](/getting-started/startup-basics.md#startup-command-flags). 
 
-**Prerequisites:**
+**Comditions Préalable:**
 
-- Use the latest [dcrinstall](/getting-started/install-guide.md#dcrinstall) to install `dcrwallet`. Additional steps will be required if another installation method was used.
-- Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells, and the home directories differ [here](/getting-started/cli-differences.md).
-- [Setup dcrd](/getting-started/user-guides/dcrd-setup.md) and have it running in the background.
-
----
-
-`dcrwallet` is the daemon that handles Decred wallet functionality for a single user. It manages all of your accounts, addresses, and transactions; tracks balances across addresses; and allows stakeholders to participate in Proof-of-Stake voting.
-
-In order to run `dcrwallet`, a `wallet.db` must exist within `dcrwallet`'s home directory. In order for that file to exist, you must create a new wallet. `dcrinstall` automatically starts the creation process. If you delete your wallet.db or used another installation process, you'll have to run the [manual wallet creation command](#manual-wallet-creation-command).
+- Utiliser le dernier [dcrinstall](/getting-started/install-guide.md#dcrinstall) pour installer `dcrwallet`. Des étapes supplémentaires seront nécessaires si une autre méthode d'installation a été utilisée.
+- Examinez comment lancee les commandes pour commande Prompt (Windows) et Bash (OSX / Linux) et les répertoires personnels diffèrent [ici](/getting-started/cli-differences.md).
+- [Installer dcrd](/getting-started/user-guides/dcrd-setup.md) Et faites-le fonctionner en arrière-plan.
 
 ---
 
-## **Critical Information**
+`dcrwallet` est le daemon qui gère la fonctionnalité de portefeuille pour un seul utilisateur. Il gère tous vos comptes, adresses et transactions; Suit les balances dans les adresses; Et permet aux parties prenantes de participer au vote par la preuve d'enjeu.
 
-During the creation process for your wallet, you will be given a sequence of 33 words known as a seed phrase. This seed phrase is essentially the private key for your wallet. You will be able to use this seed phrase to restore your private keys, transaction history, and balances using any Decred wallet on any computer. 
-
-This ultimately means that *anyone* who knows your seed can use it to restore your private keys, transaction history, and balances to a Decred wallet on their computer without your knowledge. For this reason, it is of utmost importance to keep your seed phrase safe. Treat this seed the same way you would treat a physical key to a safe. If you lose your seed phrase, you permanently lose access to your wallet and all funds within it. It cannot be recovered by anyone, including the Decred developers. It is recommended you write it down on paper and store that somewhere secure. If you decide to keep it on your computer, it would be best to keep it in an encrypted document (do not forget the password) in case the file or your computer is stolen.
-
-Every seed phrase is also associated with a 64 character seed hex. The seed hex functions the same way as the seed phrase - `dcrwallet` will accept it when attempting to restore your wallet. It is also important to keep your seed hex secure.
-
-**REMINDER: DO NOT, UNDER ANY CIRCUMSTANCES, GIVE YOUR SEED OR THE ASSOCIATED HEX KEY TO ANYONE! NOT EVEN THE DEVELOPERS!**
+Pour `dcrwallet`, un `wallet.db` doit exister dans `dcrwallet` répertoire gîte. Pour que ce fichier existe, vous devez créer un nouveau portefeuille. `dcrinstall` Démarre automatiquement le processus de création. Si vous supprimez le wallet.db ou a utilisé un autre processus d'installation, vous devrez exécuter la [commande de création de portefeuille manuel](#manual-wallet-creation-command).
 
 ---
 
-## **Manual Wallet Creation Command**
+## **Informations essentielles**
 
-If you do not have already have a `wallet.db` file stored in `dcrwallet`'s home directory, you must run the `dcrwallet --create` command. Steps for this can be found below. 
+Pendant le processus de création de votre portefeuille, vous recevrez une séquence de 33 mots appelée graine phrase. Cette graine phrase est essentiellement la clé privée de votre portefeuille. Vous pourrez utiliser cette graine phrase pour restaurer vos clés privées, votre historique de transactions et vos soldes en utilisant un portefeuille Decred sur n'importe quel ordinateur.
 
-1. Open a new shell window (Bash/Command Prompt/etc,..).
-2. Navigate to the directory of the `dcrwallet` executable.
-3. Enter the command `dcrwallet --create` (review the Prerequisites above if you are unsure whether you to use `./dcrwallet` or `dcrwallet.exe` for the previous command). 
+Cela signifie finalement que *celui* qui connaît votre graine peut l'utiliser pour restaurer vos clés privées, l'historique des transactions et les soldes sur un portefeuille sur leur ordinateur à votre insu. Pour cette raison, il est de la plus haute importance de garder votre graine phrase en toute sécurité. Traitez cette semence de la même façon que vous traiterez une clé physique pour un coffre-fort. Si vous perdez votre graine phrase, vous perdez en permanence l'accès à votre portefeuille et à tous les fonds. Il ne peut être récupéré par personne, y compris les développeurs de Decred. Il est recommandé de l'écrire sur papier et de la stocker quelque part en sécurité. Si vous décidez de la conserver sur votre ordinateur, il serait préférable de la garder dans un document encrypté (n'oubliez pas le mot de passe) dans le cas où le fichier ou votre ordinateur est volé.
+
+Chaque graine phrase est également associée à un hex de graines de 64 caractères. L'hex de graine fonctionne de la même manière que la graine phrase - `dcrwallet` l'acceptera lors de la tentative de restauration de votre portefeuille. Il est également important de garder votre semence hexagonal sécurisée.
+
+**RAPPEL: NE PAS, SOUS AUCUNES CIRCONSTANCES, DONNER VOTRE GRAINE OU LA CLÉ HEX ASSOCIÉE A QUELQU'UN! MÊME PAS LES DÉVELOPPES!**
 
 ---
 
-## **Wallet Creation Walkthrough**
+## **Commande de création de portefeuille manuel**
 
-During this process, you'll set a private passphrase, optionally set a public passphrase, and record your seed. To accomplish this, follow the steps below:
+Si vous n'en n'avez déjà pas un `wallet.db` Fichier stocké dans `dcrwallet` répertoire gîte, vous devez démarrer la commande `dcrwallet --create`. Des étapes pour cela peuvent être trouvées ci-dessous.
 
-> Set Passphrases for Your Wallet
+1. Ouvrir une nouvelle fenêtre shell (Bash/Command Prompt/etc,..).
+2. Accédez au répertoire de l'éxecutable `dcrwallet`.
+3. Entrez la commande `dcrwallet --create` (passez en revue les conditions préalables ci-dessus si vous ne savez pas si vous devez utiliser `./dcrwallet` ou `dcrwallet.exe` pour la commande précédente). 
 
-If the `dcrwallet --create` command successfully executed, you should be greeted by the following text:
+---
 
+## **Création de portefeuille Procédure pas à pas**
+
+Au cours de ce processus, vous définissez une phrase privée, définissez éventuellement une phrase publique et enregistrez votre graine. Pour ce faire, suivez les étapes ci-dessous:
+
+> Définir des mots de passe pour votre portefeuille
+
+Si la commande `dcrwallet --create` s'éxecute avec succès, vous devriez être accueilli par le texte suivant:
 ```no-highlight
-Enter the private passphrase for your new wallet:
+Entrez la phrase de passe privée pour votre nouveau portefeuille:
 ```
 
-This first passphrase, the private passphrase, is what you will use to unlock your wallet when creating transactions or voting with Proof-of-Stake. Please use a unique and strong password. This password also protects the private keys within your wallet file, securing it from theft.
+Cette première phrase de passe, la phrase de passe privée, c'est ce que vous utiliserez pour débloquer votre portefeuille lors de la création de transactions ou le vote avec Preuve d'enjeu. Utilisez un mot de passe unique et fort. Ce mot de passe protège également les clés privées du fichier de votre portefeuille, en le sécurisant du vol.
 
-After you've verified your private passphrase, you should see the following prompt:
+Après avoir vérifié votre phrase de passe privée, vous devriez voir la phrase de passe suivante pour votre nouveau portefeuille::
 
 ```no-highlight
 Do you want to add an additional layer of encryption for public data? (n/no/y/yes) [no]:
 ```
 
-The previous passphrase is optional. It is used to encrypt all of the public data (transactions and addresses) within your wallet file so if it is stolen, an adversary can't link you to your transactions. 
+La phrase de passe précédente est facultative. Elle est utilisée pour chiffrer toutes les données publiques (transactions et adresses) dans le fichier de votre portefeuille, donc, s'il est volé, un adversaire ne peut pas vous lier à vos transactions.
 
-> Record Your Seed
+> Enregistrez votre graine
 
-Before creating a new seed for your wallet, please review the [Critical Information section](/getting-started/user-guides/dcrwallet-setup.md#critical-information).
+Avant de créer une nouvelle graine pour votre portefeuille, veuillez passer en revue la section [Informations critiques](/getting-started/user-guides/dcrwallet-setup.md#critical-information).
 
-After you've set your private passphrase and optional public passphrase, you'll see the following prompt:
+Après avoir défini votre phrase de passe privée et votre mot de passe public facultatif, vous verrez l'invite suivante:
 
 ```no-highlight
 Do you have an existing wallet seed you want to use? (n/no/y/yes) [no]:
 ```
 
-This guide assumes you do not have an existing seed, so continue by hitting `Enter` which will answer the prompt with the default `[no]`. NOTE: If you wish to restore your wallet by using your seed, you would simple enter `[yes]` here and follow the instructions on screen.
+Ce guide suppose que vous n'avez pas une graine existante, alors continuez en frappant `Enter` qui répondra à l'invite par défaut `[no]`. NNOTE: si vous souhaitez restaurer votre portefeuille en utilisant votre graine, vous entrerez simplement `[yes]` Ici et suivez les instructions à l'écran.
 
-<i class="fa fa-exclamation-triangle"></i> **DO NOT USE THE SAME SEED IN MULTIPLE WALLETS! Visit [Wallets and Seeds FAQ](/faq/wallets-and-seeds.md#3-can-i-run-multiple-wallets) to see why this matters. It is recommended that where possible a new wallet should mean generating a new seed.** 
+<i class="fa fa-exclamation-triangle"></i> **N'UTILISEZ PAS LA MÊME GRAINE DANS DES WALLETS MULTIPLES! Visiter [Portefeuilles et graines FAQ](/faq/wallets-and-seeds.md#3-can-i-run-multiple-wallets) Pour voir pourquoi cela compte. Il est recommandé que, si possible, un nouveau portefeuille devrait générer une nouvelle graine.** 
 
-After answering `[no]`, your seed phrase (wallet generation seed) and its hex will be displayed in the window. Please read through the IMPORTANT section displayed immediately after the Hex.
+Après avoir répondu `[no]`, Votre graine phrase (graine de génération de portefeuille) et son hex sera affiché dans la fenêtre. Veuillez lire la section IMPORTANTE affichée immédiatement après le Hex.
 
-It cannot be stressed enough how important it is to save your seed phrase in a secure location, so if you haven't committed this to memory, please review the [Critical Information section](/getting-started/user-guides/dcrwallet-setup.md#critical-information) again.
+On ne peut pas trop souligner combien il est important d'enregistrer votre graines phrase dans un emplacement sécurisé, donc, si vous ne vous en souvenez pas, consultez la section [Informations critiques](/getting-started/user-guides/dcrwallet-setup.md#critical-information) encore.
 
-Once you have written down the seed phrase and hex type `OK` and press `Enter`. NOTE: if you did not write the phrase down before continuing, you should [start this process over](/getting-started/user-guides/dcrwallet-setup.md#create-a-new-wallet) after [deleting your wallet file](/advanced/deleting-your-wallet.md)
+Une fois que vous avez écrit la graine phrase et hex type entrez `OK` Et appuyez sur `Enter`. REMARQUE: si vous n'avez pas écrit la phrase avant de continuer, vous devriez [Répeter ce processus](/getting-started/user-guides/dcrwallet-setup.md#create-a-new-wallet) after [Suppression de votre fichier portefeuille](/advanced/deleting-your-wallet.md)
 
-After pressing `Enter`, you should see the following message:
+Après avoir pressé `Enter`, Vous devriez voir le message suivant:
 
 ```no-highlight
 Creating the wallet...
 The wallet has been created successfully.
 ```
 
-The wallet will then be created. This might take a few minutes if you have a slow computer.
+Le portefeuille sera alors créé. Cela peut prendre quelques minutes si vous avez un ordinateur lent.
 
 ---
 
-## **Launching dcrwallet**
+## **Démarrer dcrwallet**
 
-In order to launch `dcrwallet`, you first must have [created your wallet](#wallet-creation-walkthrough) and
-[connected dcrd to the Decred network](/getting-started/user-guides/dcrd-setup.md#connect-to-the-decred-network).
+Pour lancer `dcrwallet`, vous devez premièrement [created your wallet](#wallet-creation-walkthrough) et
+[connecter dcrd au réseau Decred](/getting-started/user-guides/dcrd-setup.md#connect-to-the-decred-network).
 
-> Configure RPC Username and Password
+> Configurez RPC Nom d'utilisateur et Mot de passe
 
-If you used [`dcrinstall`](/getting-started/install-guide.md#dcrinstall), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
+Si vous utilisé [`dcrinstall`](/getting-started/install-guide.md#dcrinstall), vos fichiers de configuration sont déjà configurés avec le nom d'utilisateur/mot de passe RPC pour `dcrd`, `dcrwallet`, et `dcrctl`.
 
-If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](/getting-started/startup-basics.md#minimum-configuration) to do so.
+Si vous n'avez pas utilisé `dcrinstall`, yVous devrez activer les paramètres minimaux sur nuls dans vos fichiers de configuration. Suivez [ce guide](/getting-started/startup-basics.md#minimum-configuration) pour cela.
 
-> Start dcrwallet 
+> Démarrer dcrwallet 
 
-With the correctly set configuration files, open another shell window in your Decred directory (or use the last window if you have just created your wallet). Type the following command (review this guides Prerequisites to determine exact command depending on your OS/Shell application):
+Avec les fichiers de configuration correctement configurés, ouvrez une autre fenêtre shell dans votre répertoire Decred (ou utilisez la dernière fenêtre si vous venez de créer votre portefeuille). Tapez la commande suivante (reportez-vous à ce guide Prérequis pour déterminer l'ordre exact en fonction de votre application OS/Shell):
 
 ```no-highlight
 dcrwallet
 ```
 
-Your `dcrwallet` will now connect to the network via `dcrd`. It will begin to scan the network for your active addresses which can take a few minutes on slow computers. Eventually it will start showing lines like:
+Votre `dcrwallet` a maintenant se connecter au réseau via `dcrd`. Il commencera à scanner le réseau pour vos adresses actives cela peut prendre quelques minutes sur les ordinateurs lents. Finalement, il commencera à montrer des lignes comme:
 
 ```no-highlight
 [INF] WLLT: Connecting block 0000000000002004ea8fa74af334cb291a22832642b5be603995683534bbb97b, height 9990
 ```
 
-This means your wallet is successfully connected to the network
-through your daemon.
+Cela signifie que votre portefeuille est correctement connecté au réseau à travers votre daemon.
 
 ---
 
-To learn how to use `dcrd` and  `dcrwallet`, visit the [dcrctl Basics](/getting-started/user-guides/dcrctl-basics.md) guide. You'll learn how to unlock your wallet, send and receive DCR using `dcrctl`, check your balance, and check various network stats.
+Pour apprendre comment utiliser `dcrd` et  `dcrwallet`, visitez le guide [dcrctl Basiques](/getting-started/user-guides/dcrctl-basics.md). Vous apprendrez comment débloquer votre portefeuille, envoyer et recevoir DCR en utilisant `dcrctl`, vérifiez votre solde et vérifiez les différentes statistiques du réseau.

@@ -1,62 +1,45 @@
-# **<i class="fa fa-info-circle"></i> Overview**
+# **<i class="fa fa-info-circle"></i> Vue d'Ensemble**
 
 ---
 
-The first thing you will need to do to get started with Decred is
-create your wallet. Your wallet is like a bank account. It can contain
-many address and like your bank account you don't want to give anyone
-else access to it. An address is like a sub account. If you want to
-receive DCR from someone else, you give them an address that is linked
-to your wallet. You can create a new address for each transaction or
-reuse the same address multiple times but it is strongly recommended
-that you do not reuse addresses. Your wallet can generate as many
-address as you want.  There are three parts to getting started with
-Decred:
+La première chose que vous devrez faire pour commencer avec Decred est créez votre portefeuille. Votre portefeuille est comme un compte bancaire. Il peut contenir beaucoup d'adresse et comme votre compte bancaire, vous ne voulez donner l'accès à personne. Une adresse est comme un sous-compte. Si vous voulez recevoir DCR de quelqu'un d'autre, vous leur donnez une adresse liée à votre portefeuille. Vous pouvez créer une nouvelle adresse pour chaque transaction ou réutiliser la même adresse à plusieurs reprises, mais il est fortement recommandé que vous ne réutilisez pas les adresses. Votre portefeuille peut générer autant d'adresses que vous le souhaitez. Il y a trois parties pour commencer avec Decred:
 
-* Connecting to the Decred network by starting a node.
-* Creating your wallet and attaching it to the node.
-* Controlling your wallet and performing transactions.
+* Connexion au réseau Decred en démarrant une node.
+* Créer votre portefeuille et l'attacher à la node.
+* Contrôle de votre portefeuille et réalisation de transactions.
 
-Once you're setup and online there are four ways you can add DCR to
-your wallet.
+Une fois que vous êtes configuré et en ligne, il existe quatre façons d'ajouter DCR à
+votre portefeuille.
 
-* Purchase from an exchange
-* Proof-of-Work mining
-* Proof-of-Stake mining (assuming you already have some DCR)
-* Have someone send you some DCR
+* Acheter depuis un échange
+* Preuve-de-Travail PdT
+* Preuve-d'enjeu PdE (en supposant que vous ayez déjà un peu de DCR)
+* Demandez que quelqu'un vous envoye un DCR
 
 
-Note: You might soon notice one of the many differences between Decred and other 
-popular cryptocurrencies: the wallet daemon and node daemon are separate.
-A lot of other coins run these functions together in a single daemon.
-For those who choose to use the command line interfaces, this means you must
-run `dcrd` for full node functionality, and `dcrwallet` to store your DCR,
-create transactions and participate in Proof-of-Stake mining/voting.
+Remarque: Vous devriez remarquer rapidement l'une des nombreuses différences entre Decred et d'autres cryptocurrency populaires: le daemon portefeuille et la node daemon sont séparés. De nombreuses autres cryptocurrency fonctionnent ensemble dans un daemon unique. Pour ceux qui choisissent d'utiliser les interfaces de ligne de commande, cela signifie que vous devez démarrer `dcrd` pour la fonctionnalité complète de la node, et `dcrwallet` pour stocker votre DCR, create transactions and participate in Preuve d'enjeu mining/voting.
 
 
 ---
 
-## **1. <i class="fa fa-user"></i> User Guides**
+## **1. <i class="fa fa-user"></i> Guides de l'utilisateur**
 
 ---
 
 ### 1.4. <i class="fa fa-firefox"></i> [Web](user-guides/web.md)
 
-This section describes the web wallet.  The web wallet is a basic
-online wallet that allows you to send and receive DCR. It is still
-under development and so lacks a number of features that are in the
-command line wallet (for example, stake mining is not currently
-supported).
+Cette section décrit le portefeuille en ligne. Le portefeuille en ligne est une base portefeuille en ligne qui vous permet d'envoyer et de recevoir DCR. Il est encore en cours de développement et ne dispose donc pas d'un grand nombre de fonctionnalités portefeuille de ligne de commande (par exemple, la preuveud'enjeu n'est actuellement pas
+prise en charge).
 
 ---
 
-## **2. <i class="fa fa-exchange"></i> [Obtaining DCR](obtaining-dcr.md)**
+## **2. <i class="fa fa-exchange"></i> [Aqcuérir DCR](obtaining-dcr.md)**
 
-This section describes some of the ways to aquire DCR.
+Cette section décrit certaines des façons d'acquérir DCR.
 
 ---
 
-## **3. <i class="fa fa-cubes"></i> [Using the Block Explorer](using-the-block-explorer.md)**
+## **3. <i class="fa fa-cubes"></i> [Utiliser le Bloc Explorer](using-the-block-explorer.md)**
 
-This section describes the block explorer for Decred.
+Cette section décrit l'explorateur de blocs pour Decred.
 

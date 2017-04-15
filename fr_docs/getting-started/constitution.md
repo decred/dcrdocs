@@ -2,55 +2,55 @@
 
 ---
 
-*Decred* (/ˈdi:ˈkred/, /dɪˈkred/, dee-cred) is an open, progressive, and self-funding cryptocurrency with a system of community-based governance integrated into its blockchain. The project mission is to develop technology for the public benefit, with a primary focus on cryptocurrency technology. *Decred*, as a currency and as a project, is bound by the following set of rules, which include guiding principles, a system of governance, and a funding mechanism. These rules have been established in an effort to create an equitable and sustainable framework within which to achieve *Decred*'s goals.
+*Decred* (/ˈdi:ˈkred/, /dɪˈkred/, dee-cred) est une digitale currency ouverte, progressive et autofinancée avec un système de gouvernance communautaire intégré à sa chaîne de blocs. La mission du projet est de développer une technologie au bénéfice du public, en mettant l'accent sur la technologie cryptocurrency. * Decred *, en tant que monnaie et en tant que projet, est lié par les règles suivantes, qui comprennent des principes directeurs, un système de gouvernance et un mécanisme de financement. Ces règles ont été établies dans le but de créer un cadre équitable et durable pour atteindre les objectifs de * Decred *.
 
 ---
 
-## Principles
+## Principes
 
-* *Free and Open-Source Software* - All software developed as part of *Decred* shall be free and open source-software.
-* *Free Speech and Consideration* - Everyone has the right to communicate opinions and ideas without fear of censorship. Consideration shall be given to all constructive speech that is based in fact and reason.
-* *Multi-Stakeholder Inclusivity* - Inclusivity represents a multi-stakeholder system and an active effort shall be maintained to include a diverse set of views and users. While it would be ideal to include everyone, *Decred* shall comply with all relevant bodies of law in the jurisdictions where applicable, such as embargoes and other trade sanctions.
-* *Incremental Privacy and Security* - Privacy and security are priorities and shall be balanced with the complexity of their implementations. Additional privacy and security technology shall be implemented on a continuing and incremental basis, both proactively and on-demand in response to attacks.
-* *Fixed Finite Supply* - Issuance is finite and the total maximum number of coins in *Decred* shall not change. The total maximum supply for *Decred* is 20,999,999.99800912 coins, with a per-block subsidy that adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/101. The genesis block subsidy starts at 31.19582664 coins.
-* *Universal Fungibility* - Universal fungibility is fundamental to *Decred* being a store of value and attacks against it shall be actively monitored and countermeasures pursued as necessary.
-
----
-
-## Blockchain Governance
-
-* Governance of the network occurs directly through the blockchain via hybridization of a block's proof-of-work ("PoW") with its proof-of-stake ("PoS"). PoS contributors, known as stakeholders, can effectively override PoW contributors, known as miners, if 60% or more of the stakeholders vote against a particular block created by a miner.
-* A lottery system is used to determine which stakeholders vote on each block and collect a subsidy.
-* To be a stakeholder, one must purchase one or more tickets, which entails locking a specified amount of coins for approximately 1 day (256 blocks).
-* After waiting for the ticket to mature, the ticket is entered into a lottery that runs once per block where the winning tickets gain the ability to vote on the previous block.
-* Stakeholders must wait an average of 28 days (8,192 blocks) to vote their tickets, and during this time the coins used to purchase the ticket remain locked. The wait may be much longer or shorter than the average of 28 days because the ticket selection process is pseudorandom. Tickets expire after approximately 142 days (40,960 blocks).
-* Stakeholder votes recorded in the blockchain are rewarded with 6% of each block subsidy, and each block can have up to 5 votes for a total of 30% of each block subsidy.
-* PoW receives 60% of each block subsidy, subject to the constraint that their subsidy scales linearly with the number of PoS votes included, e.g. including 3 of 5 votes reduces PoW subsidy by 60%.
-* The votes themselves decide by majority decision whether the general transaction tree of the previous block, including the PoW subsidy, is valid. Thus, if PoS voters vote against a particular PoW block, it destroys the PoW subsidy (and development subsidy) and invalidates any regular transactions within that block.
-* Additional vote bits may be set when stakeholders submit votes, allowing stakeholders to vote on matters besides the previous block.
+* *Logiciel gratuit et Open Source* - Tout logiciel développé dans le cadre de *Decred* doit être un logiciel gratuit et open source.
+* * Liberté d'expression et considération* - Toute personne a le droit de communiquer des opinions et des idées sans crainte de la censure. Il faut tenir compte de tout discours constructif fondé en fait et en raison.
+* * Inclusion multi-parties prenantes* - L'inclusion représente un système multipartite et un effort actif doit être maintenu pour inclure un ensemble diversifié de vues et d'utilisateurs. Bien qu'il soit idéal d'inclure tout le monde, *Decred* doit se conformer à toutes les lois pertinentes dans les juridictions, le cas échéant, telles que les embargos et autres sanctions commerciales.
+* * Confidentialité et sécurité incrémentielles* - La confidentialité et la sécurité sont des priorités et doivent être équilibrées avec la complexité de leurs implémentations. Les technologies de sécurité et de confidentialité supplémentaires doivent être mises en œuvre de manière continue et progressive, à la fois de manière proactive et à la demande en réponse aux attaques.
+* * Supply Fixe et limité* - La délivrance est finie et le nombre maximum total de pièces dans *Decred* ne doit pas changer. L'offre maximale totale pour *Decred* est de 20,999,999.99800912 pièces de monnaie, avec une subvention par bloc qui règle tous les 6144 blocs (environ 21,33 jours) en réduisant de 100/101. La bourse de blocs de genèse commence à 31.19582664 pièces.
+* * Fongibilité universelle* - La fongibilité universelle est fondamentale pour *Decred* étant un stock de valeur et les attaques contre elle doivent être activement surveillées et des contre-mesures poursuivies au besoin.
 
 ---
 
-## Project Governance
+## Gouvernance de la chaîne de bloc
 
-* Off-chain decision-making shall be used to resolve disputes related to development and voted on by the *Decred Assembly* as they arise, as an effective proof-of-assembly ("PoA"), until such time PoA is integrated into the blockchain.
-* The *Decred Assembly* shall be composed of diverse Assembly members who are selected for membership by the *Admission Council* from the project ecosystem for representation.
-* Councils that are composed of Assembly members shall be formed to address ongoing and episodic matters. The initial Councils shall serve the separate functions of admission (*Admission Council*), creation (*Creation Council*), and attrition (*Attrition Council*).
-* The *Admission Council* shall vote on the inclusion of new members into the Assembly. All additional Councils shall be created by the *Creation Council*. The *Attrition Council* shall be responsible for deactivating both Councils and Assembly members as necessary.
-* Membership of the *Decred Assembly* shall consist of Assembly members who have been confirmed by a 60% or greater affirmative vote by the *Admission Council*. There is no restriction on the age or nationality of Assembly members, the only requirement is that of merit as judged by the *Admission Council*. Merit is judged on the basis of two characteristics: (1) the amount of time over which one has been involved with the project, and (2) one's body of work and its impact in the context of the project.
-* Attrition is embraced by temporarily deactivating or actively expelling Assembly members by a 60% or greater affirmative vote by the *Attrition Council* on the basis of: (1) substantial non-fulfillment of duties for one or more Councils or the Assembly, and/or (2) counterproductive behaviour that goes against the framework set forth in the Constitution without constructive action toward solutions.
-* All matters formally presented to a Council shall be resolved by a vote in 365 days or less.
+* La gouvernance du réseau se produit directement à travers la chaîne de blocs par hybridation de la preuve de travail d'un bloc ("PdT") avec sa preuve d'enjen ("PdE"). Les contributeurs PdE, connus sous le nom de parties prenantes, peuvent efficacement annuler les contributeurs de PdT, connus sous le nom de mineurs, si 60% ou plus des parties prenantes votent contre un bloc particulier créé par un mineur.
+* Un système de loterie est utilisé pour déterminer quels acteurs votent sur chaque bloc et collectent une subvention.
+* Pour être un intervenant, il faut acheter un ou plusieurs billets, ce qui implique le verrouillage d'une quantité de pièces spécifiée pour environ 1 jour (256 blocs).
+* Après avoir attendu l'arrivée du billet, le ticket est entré dans une loterie qui fonctionne une fois par bloc où les billets gagnants ont la possibilité de voter sur le bloc précédent.
+* Les parties prenantes doivent attendre en moyenne 28 jours (8192 blocs) pour voter leurs billets et pendant ce temps, les pièces utilisées pour acheter le ticket restent verrouillées. L'attente peut être beaucoup plus longue ou plus courte que la moyenne de 28 jours, car le processus de sélection des tickets est pseudo-random. Les billets expirent après environ 142 jours (40 960 blocs).
+* Les votes des parties prenantes enregistrés dans la chaîne de blocs sont récompensés par 6% de chaque subvention de bloc, et chaque bloc peut avoir jusqu'à 5 voix pour un total de 30% de chaque subvention de bloc.
+* PdT reçoit 60% de chaque subvention de blocs, sous réserve de la contrainte de répartir linéairement sa subvention avec le nombre de votes PoS inclus, par exemple inclure 3 des 5 votes réduit la subvention de PoW de 60%.
+* Les votes eux-mêmes décident, par décision majoritaire, si l'arbre de transaction générale du bloc précédent, y compris la subvention PoW, est valide. Ainsi, si les électeurs de PoS votent contre un bloc de PdT particulier, il détruit la subvention de PdT (et la subvention de développement) et invalide toute transaction régulière au sein de ce bloc.
+* Des bits de vote supplémentaires peuvent être définis lorsque les parties prenantes soumettent des votes, ce qui permet aux parties prenantes de voter sur des questions autres que le bloc précédent.
 
 ---
 
-## Funding
+## Projet de Gouvernance
 
-* Sustainability and longevity require that a subsidy of 10% of all block rewards be given to a development organization on an ongoing basis. The initial development organization shall be *Decred Holdings Group* LLC ("DHG"), a Nevis LLC that is responsible for funding work related to the development of the project, such as software development, infrastructure, and awareness.
-* DHG shall only fund work that adheres to the guiding principles.
-* DHG shall issue public financial statements every six months, starting March 8th, 2016. The frequency of financial statements may increase with activity, but it shall not occur more often than quarterly.
-* DHG shall put forth a budget proposal each year on March 8th, after the corresponding public financial statement has been issued.
-* The *Funding Council* shall review, propose changes, make changes, and ultimately approve the proposal by April 8th, one month from the initial budget proposal.
-* Final approval of the budget via PoA vote shall occur after *Funding Council* approval by April 18th, two months from the initial proposal.
-* DHG shall make public requests for proposals ("RFPs") for projects that are to be completed by parties on a contractual basis. RFPs shall include a scope and an explanation of how the work shall benefit the project. Parties that submit proposals shall be required to include: (1) a detailed description of the work to be performed, (2) a series of milestones that can be verified as work is completed, and (3) a quote for the work, itemized by milestone, in U.S. Dollars ("USD").
-* All proposals, both submitted and accepted, shall be made public one week after a proposal has been selected. Once the selection occurs, the associated RFP shall be removed. Contracted parties shall be paid exclusively in *decred* ("DCR") at the current effective DCR/USD rate at the time of payment, unless specifically noted otherwise.
-* In the future, the development organization may need to change from DHG to another entity that serves an identical function. If and when this occurs, DHG shall transfer all assets to the new entity and the development subsidy shall be directed to the new entity.
+* La prise de décision hors chaîne doit être utilisée pour résoudre les différents liés au développement et voté par *l'Assemblée Decred* telle qu'elle se présente, en tant que preuve d'authenticité ("PoA"), jusqu'à ce que cette PoA soit intégré dans la Bloc-chaîne.
+* *L'Assemblée Decred* sera composée de divers membres de l'Assemblée sélectionnés pour être membres du *Conseil d'Admission* de l'écosystème du projet pour la représentation.
+* Les conseils composés de membres de l'Assemblée doivent être formés pour traiter des questions en cours et épisodiques. Les conseils initiaux servent les fonctions distinctes d'admission (*Conseil d'admission*), création (*Conseil de la création*) et attrition (*Conseil d'attrition*).
+* Le *Conseil d'admission* vote sur l'inclusion de nouveaux membres dans l'Assemblée. Tous les conseils supplémentaires seront créés par le *Conseil de la création*. Le *Conseil d'attrition* sera responsable de désactiver les conseils et les membres de l'Assemblée si nécessaire.
+* L'adhésion à *l'Assemblée Decred* est composée de membres de l'Assemblée qui ont été confirmés par un vote affirmatif de 60% ou plus par le *Conseil d'admission*. Il n'y a aucune restriction quant à l'âge ou la nationalité des membres de l'Assemblée, la seule exigence est celle du mérite jugée par *le Conseil d'admission*. Le mérite est jugé sur la base de deux caractéristiques: (1) le temps pendant lequel on a participé au projet, et (2) son corps de travail et son impact dans le cadre du projet.
+* L'attrition est acceptée par la désactivation temporaire ou l'expulsion active des membres de l'assemblée par un vote affirmatif de 60% ou plus par le *Conseil d'attrition* sur la base: (1) d'un non-accomplissement substantiel des tâches pour un ou plusieurs Conseils ou l'Assemblée, et/Ou (2) un comportement contreproductif qui va à l'encontre du cadre énoncé dans la Constitution sans action constructive vers des solutions.
+* Toutes les questions formellement présentées à un Conseil sont résolues par un vote de 365 jours ou moins.
+
+---
+
+## Fondement
+
+* La durabilité et la longévité exigent qu'une subvention de 10% de toutes les récompenses en bloc soit accordée à une organisation de développement sur une base continue. L'organisation de développement initiale doit être *Decred Holdings Group* LLC ("DHG"), une Nevis LLC qui est responsable du financement des travaux liés au développement du projet, tels que le développement de logiciels, l'infrastructure et la sensibilisation.
+* DHG ne financera que des travaux qui respectent les principes directeurs.
+* DHG doit publier des états financiers publics tous les six mois, à compter du 8 mars 2016. La fréquence des états financiers peut augmenter avec l'activité, mais elle ne doit pas se produire plus souvent que trimestriellement.
+* DHG doit présenter une proposition de budget chaque année le 8 mars, après l'émission de l'état financier public correspondant.
+* Le *Conseil de financement* doit examiner, proposer des changements, apporter des modifications et, finalement, approuver la proposition d'ici le 8 avril, un mois à compter de la proposition de budget initial.
+* L'approbation finale du budget via le vote par la PoA se produit après *approbation du Conseil de financement* pour le 18 avril, deux mois après la proposition initiale.
+* DHG doit faire des demandes de propositions publiques ("RFP") pour les projets qui doivent être complétés par les parties sur une base contractuelle. Les demandes de propositions doivent inclure une portée et une explication de la façon dont le travail bénéficiera au projet. Les parties qui soumettent des propositions doivent inclure: (1) une description détaillée du travail à effectuer, (2) une série de jalons qui peuvent être vérifiés à mesure que le travail est terminé, et (3) un devis pour le travail, détaillé Par étape, en dollars américains («USD»).
+* Toutes les propositions, soumises et acceptées, seront publiées une semaine après la sélection d'une proposition. Une fois la sélection effectuée, la demande de propositions associée doit être supprimée. Les parties contractantes seront payées exclusivement dans *Decred* («DCR») au taux DCR/USD actuel au moment du paiement, sauf indication contraire.
+* À l'avenir, l'organisation de développement peut devoir passer de DHG à une autre entité qui remplit une fonction identique. Si et quand cela se produit, DHG transfère tous les actifs à la nouvelle entité et la subvention de développement doit être dirigée vers la nouvelle entité.

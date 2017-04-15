@@ -1,69 +1,59 @@
-# **Paymetheus Setup Guide** #
+# **Paymetheus Guide d'Installation** #
 
-Paymetheus is a simple to use graphical wallet for Decred. With it, you can send and receive DCR, 
-purchase tickets for [PoS voting](/mining/proof-of-stake.md), get a history of all your transactions and more.
-About the only thing Paymetheus doesn't do is PoS voting.
-
----
-
-## **Download and Install** ##
-Download and installation instructions are available [here](/getting-started/install-guide.md#windows-installer)
+Paymetheus est un portefeuille graphique simple à utiliser pour Decred. Avec cela, vous pouvez envoyer et recevoir DCR,
+Acheter des billets pour [PdE vote](/mining/proof-of-stake.md), Obtenez un historique de toutes vos transactions et plus encore. À propos, la seule chose que Paymetheus ne fait pas, c'est le vote de PdE.
 
 ---
 
-## **Start Paymetheus** ##
-You're now ready to start using Decred! Start the 'Decred' program. You will now see the connection screen:  
-
-![Paymetheus connection screen](../../img/Paymetheus-dcrd-login.png)  
-
->Two programs are actually running when you start Decred. There's 'Paymetheus' which is the graphical wallet we'll talk further about
->and 'dcrd' which is the communications daemon (pronounced DAY-mon; a program that runs in the background and that does not directly interact
-> with a user) that actually talks to the Decred network. This means that you can run dcrd
->on another computer (such as an always on server) and then use Paymetheus to connect to it remotely.
-
-We're going to use a local one that Paymetheus has already started so just press Continue.
-
-> The first time Paymetheus starts, it will download the blockchain in the background. This can take up to an hour.
+## **Télécharger and Installer** ##
+Les instructions de téléchargement et d'installation sont disponibles [ici](/getting-started/install-guide.md#windows-installer)
 
 ---
 
-## **Create or Restore Wallet** ##
-You will now have the option to create a new wallet or restore a wallet from a seed. If you're reading this, you're probably new and don't 
-already have a wallet so let's create a new one. If you click restore, you will be asked to enter your seed words instead of being given a new seed.
-The rest of the process is the same. Click "Create a new wallet". You will see the following screen:  
+## **Démarrer Paymetheus** ##
+Vous êtes maintenant prêt à commencer à utiliser Decred! Commencez le programme "Decred". Vous verrez maintenant l'écran de connexion:  
 
-![Paymetheus wallet creation screen](/img/Paymetheus-seed-window.png)  
+![Écran de connexion Paymetheus](../../img/Paymetheus-dcrd-login.png)  
 
-<i class="fa fa-exclamation-triangle"></i> **STOP HERE!!! DO NOT CLICK CONTINUE! **
+>Deux programmes sont en cours d'exécution lorsque vous démarrez Decred. Il y a 'Paymetheus' qui est le portefeuille graphique dont nous parlerons plus dans un instant
+> Et 'dcrd' qui est le daemon de communication (prononcé DAY-mon); un programme qui s'exécute en arrière-plan et qui n'intervient pas directement
+> Avec un utilisateur qui parle réellement au réseau de Decred. Cela signifie que vous pouvez exécuter dcrd
+> Sur un autre ordinateur (tel que toujours sur le serveur), puis utilisez Paymetheus pour vous connecter à distance.
 
-**This is the most important part of using Decred. In the white box you key (or seed) words are displayed. These words are the key to your wallet.  **
- **WITHOUT THESE WORDS OR THE HEX REPRESENTATION YOU WILL PERMANANTLY AND FOREVER LOSE ACCESS TO YOUR FUNDS!**  
+Nous allons utiliser un local que Paymetheus a déjà commencé, alors appuyez sur Continuer.
 
-**DO NOT GIVE THEM TO ANYONE ELSE, NOT EVEN DECRED DEVELOPERS!**
-
-With these words, someone else can recreate your wallet on another computer and transfer all of funds out to another wallet. It is not possible to reverse a transaction in Decred, so if someone steals your Decred, there is no way to get it back.  
-
-<i class="fa fa-exclamation-triangle"></i> **DO NOT USE THE SAME SEED IN MULTIPLE WALLETS! Visit [Wallets and Seeds FAQ](/faq/wallets-and-seeds.md#3-can-i-run-multiple-wallets) to see why this matters. It is recommended that where possible a new wallet should mean generating a new seed.** 
-
-Decred and other digital currencies are often described as being like a bank account. This is true, but your wallet is like an actual, physical wallet.
-If you lose your wallet, you lose access to whatever you had in it and no one, not even the Decred developers can get it back. So it's very important
-that you take the time to read this page and WRITE DOWN the key words in a safe place. A good idea is to write them on a piece of paper and store them
-somewhere secure and also store them in an ENCRYPTED file on your computer. Cloud storage like Dropbox or OneDrive is fine, but remember that other people
-can access them which is why you should encrypt the file (MS Word or Libre/OpenOffice can do this).  
-
-Okay, so you've secured your key words in at least two different places. Click Continue. You are now asked to type them back in to ensure you have written 
-them down correctly in case you need to restore your wallet later. Note you can't paste them; you will need to type them. 
-This is to make sure you have the words saved somewhere other than the clipboard. Do so and click Confirm.
+> La première fois que Paymetheus commence, il va télécharger la chaîne de blocs en arrière-plan. Cela peut prendre jusqu'à une heure.
 
 ---
 
-## **Choose a Private Wallet Passphrase** ##
-Enter a passphrase to use whenever you create a transaction on the network. There is also the option here for a public passphrase. This encrypts your wallet
-data file on your computer. It just prevents someone from viewing your accounts and transactions should they get access to it. As long as the database is locked,
-they cannot access your funds. For most people this step is usually overkill, so you can leave it unticked.
-Once you've entered your new private (and optional public) passphrase, click Encrypt.  
+## **Créer ou restaurer un portefeuille** ##
+Vous aurez maintenant la possibilité de créer un nouveau portefeuille ou de restaurer un portefeuille à partir d'une graine. Si vous lisez ceci, vous êtes probablement nouveau et n'avez pas déjà un porte-monnaie alors, créons-en un nouveau. Si vous cliquez sur restaurer, vous devrez entrer vos mots de départ au lieu de recevoir une nouvelle génération.
+Le reste du processus est le même. Cliquez sur "Créer un nouveau portefeuille". Vous verrez l'écran suivant:
 
-Your wallet will now create and synchronize to the blockchain. This can take a few minutes on slower computers. Note that the key words you wrote down will 
-work with any Decred wallet application, not just Paymetheus.
+![Écran de création de portefeuille Paymetheus](/img/Paymetheus-seed-window.png)  
 
-Continue to [Using Paymetheus](using-paymetheus.md)
+<i class="fa fa-exclamation-triangle"></i> **ARRÊTEZ ICI!!! NE PAS CLIC CONTINUER! **
+
+**C'est la partie la plus importante de l'utilisation de Decred. Dans la boîte blanche, les mots clés (ou les graines) sont affichés. Ces mots sont la clé de votre portefeuille.  **
+ **SANS CES MOTS OU LA REPRÉSENTATION HEX, VOUS ALLEZ DE FACON PERMANENTE ET POUR TOUJOURS PERDRE L'ACCÈS À VOS FONDS!**  
+
+**NE PAS LES DONNER À N'IMPORTE QUI, PAS MEME AUX DÉVELOPPEURS DECRED!**
+
+Avec ces mots, quelqu'un d'autre peut recréer votre portefeuille sur un autre ordinateur et transférer tous les fonds à un autre portefeuille. Il n'est pas possible d'inverser une transaction en Decred, donc si quelqu'un vole vos Decred, il n'y a aucun moyen de le récupérer.  
+
+<i class="fa fa-exclamation-triangle"></i> **N'UTILISEZ PAS LA MÊME GRAINES DANS DE MULTIPLES PORTEFEUILLES! Visiter [Portefeuilles et graines FAQ](/faq/wallets-and-seeds.md#3-can-i-run-multiple-wallets) Pour voir pourquoi cela compte. Il est recommandé que, si possible, un nouveau portefeuille devrait générer une nouvelle graine.** 
+
+Decred et les autres monnaies numériques sont souvent décrites comme étant un compte bancaire. C'est vrai, mais votre portefeuille est comme un porte-monnaie physique réel.
+Si vous perdez votre portefeuille, vous perdez l'accès à tout ce que vous aviez et personne, même les développeurs de Decred ne le récupèrent. C'est donc très important que vous prenez le temps de lire cette page et ÉCRIVEZ les mots clés dans un endroit sûr. Une bonne idée est de les écrire sur un morceau de papier et de les stocker quelque part sécurisé et les stocker dans un fichier ENCRYPTE sur votre ordinateur. Le stockage sur clouds comme Dropbox ou OneDrive est bien, mais n'oubliez pas que d'autres personnes peut y accéder, c'est pourquoi vous devez crypter le fichier (MS Word ou Libre/OpenOffice peut le faire).
+
+D'accord, vous avez obtenu votre graine dans au moins deux endroits différents. Cliquez sur Continuer. Vous êtes invité à les taper afin de vous assurer que ce que vous avez écrit est corrects dans le cas où vous devriez restaurer votre portefeuille plus tard. Notez que vous ne pouvez pas les coller; vous devrez les écrire.
+Ceci est pour vous assurer que vous avez les mots enregistrés ailleurs que le presse-papiers. Faites-le et cliquez sur Confirmer.
+
+---
+
+## **Choisissez une phrase de passe de portefeuille privé** ##
+Entrez une phrase secrète à utiliser chaque fois que vous créez une transaction sur le réseau. Il existe également l'option ici pour une phrase de passe publique. Cela crypte le fichier de données de votre portefeuille sur votre ordinateur. Cela empêche simplement quelqu'un d'afficher vos comptes et les transactions s'ils en ont accès. Tant que la base de données est verrouillée, ils ne peuvent pas accéder à vos fonds. Pour la plupart des gens, cette étape est habituellement une overkill, donc vous pouvez la laisser non vérifié. Une fois que vous avez entré votre nouvelle phrase secrète privée (et facultative), cliquez sur Crypter.
+
+Votre portefeuille va maintenant se créer et se synchroniser avec la chaîne de bloc. Cela peut prendre quelques minutes sur des ordinateurs plus lents. Notez que les mots clés que vous avez rédigés fonctionneront avec n'importe quelle application de portefeuille Decred, pas seulement Paymetheus.
+
+Continuer vers [Utiliser Paymetheus](using-paymetheus.md)

@@ -1,12 +1,12 @@
-# **BLAKE-256 Hash Function**
+# **BLAKE-256 Fonctions Hash**
 
 ---
 
-SHA256, used in Bitcoin, has a number of technical shortcomings due to its Merkle-Damgård construction. These vulnerabilities led to the SHA3 competition for a new hash function based on a different fundamental construction. Decred has chosen BLAKE256 as its hash function, a finalist for the competition[^1] [^2]. The hash function is based around a HAIFA construction that incorporates a variation of the ChaCha stream cipher by Bernstein. The hash function is notable for its high performance on x86-64 microarchitecture, being faster for short messages than SHA256[^3] despite being considered to have a much higher security margin at 14-rounds.
+SHA256, utilisé dans Bitcoin, présente plusieurs lacunes techniques en raison de sa construction Merkle-Damgård. Ces vulnérabilités ont conduit à la compétition SHA3 pour une nouvelle fonction de hachage basée sur une construction fondamentale différente. Decred a choisi BLAKE256 comme sa fonction hash, finaliste pour la compétition [^1] [^2]. La fonction hash est basée autour d'une construction HAIFA qui intègre une variante du code ChaCha par Bernstein. La fonction hash est remarquable pour ses performances élevées sur la microarchitecture x86-64, étant plus rapide pour les messages courts que SHA256 [^3] en dépit d'avoir une marge de sécurité beaucoup plus élevée à 14 tours.
 
 ---
 
-## **<i class="fa fa-book"></i> References**
+## **<i class="fa fa-book"></i> Réferences**
 
 [^1]: Aumasson J., Henzen L., Meier W., Phan R. 2010. [SHA-3 proposal BLAKE](https://decred.org/research/aumasson2010.pdf).
 [^2]: Aumasson J., Henzen L., Meier W., Phan R. 2014. The hash function BLAKE.

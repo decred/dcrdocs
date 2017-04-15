@@ -1,12 +1,12 @@
-# **Signature Script Isolation and Fraud Proofs**
+# **Signature Script Isolation et anti-fraude**
 
 ---
 
-To prevent transaction malleability, the ability to generate a transaction with the same input references and outputs and yet a different transaction ID, input scripts have been removed from the calculation of the transaction hash. The origins of this modification have been controversial, although it appears to have been implemented in both CryptoNote coins and sidechains in the past[^1] [^2]. It is now being proposed for Bitcoin as a soft fork referred to as "Segregated Witness"[^3]. As in the Elements sidechains implementation, commitments to the witness data are included in the merkle tree of the block[^2]. In addition, fraud proofs, as suggested for Bitcoin's soft fork[^3], are set by miners and also committed to as part of the data in the merkle tree.
+Pour éviter la malléabilité des transactions, la possibilité de générer une transaction avec les mêmes références et sorties d'entrée et pourtant un identifiant de transaction différent, les scripts d'entrée ont été supprimés du calcul du hash de la transaction. L'origine de cette modification a été controversée, même si elle semble avoir été mise en œuvre dans les deux part CryptoNote et les chaînes latérales dans le passé [^1] [^2]. Il est maintenant proposé pour Bitcoin comme une softfork appelée "Segregated Witness" [^3]. Comme dans la mise en œuvre des élements de chaînes latérales, les engagements relatifs aux données des témoins sont inclus dans l'arbre Merkle du bloc [^2]. En outre, les preuves de fraude, comme suggéré pour la sorftfork de Bitcoin [^3], sont définies par les mineurs et également engagées dans le cadre de l'arbre Merkle.
 
 ---
 
-## **<i class="fa fa-book"></i> References**
+## **<i class="fa fa-book"></i> Réferences**
 
 [^1]: von Saberhagen N. 2013. [CryptoNote v2.0](https://decred.org/research/saberhagen2013.pdf).
 [^2]: Maxwell G. 2015. [Bringing new elements to Bitcoin with sidechains](https://decred.org/research/maxwell2015.pdf).

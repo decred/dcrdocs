@@ -1,71 +1,63 @@
-# <i class="fa fa-exchange"></i> **Obtaining DCR**
+# <i class="fa fa-exchange"></i> **Obtenir DCR**
 
 ---
 
-## **<i class="fa fa-info-circle"></i> Overview**
+## **<i class="fa fa-info-circle"></i> Vue d'Ensemble**
 
-This article discusses some of the ways a user can acquire Decred
-coins.
+Cet article traite de certaines des façons dont un utilisateur peut acquérir Decred
+unité.
 
-The four basic ways are:
+Les quatre méthodes de base sont les suivantes:
 
-* Purchase Decred for BTC Through an Exchange
-* PoW Mine for Decred
-* PoS Mine for Decred (this requires you to already have some Decred)
-* Sell / Trade Goods or Services with someone who already has Decred.
+* Achat déclaré pour BTC par échange
+* PdT Mine for Decred
+* PdE Mine for Decred (cela exige que vous ayez déjà un peu de Decred)
+* Vendre/commercialiser des biens ou des services avec quelqu'un qui a déjà Decred.
 
-## **<i class="fa fa-info-circle"></i> Purchasing Decred**
+## **<i class="fa fa-info-circle"></i> Acheter Decred**
 
-One way to acquire Decred is to purchase some on an exchange.
+L'une des façons d'acquérir Decred est d'en acheter sur un échange.
 
 ### **<i class="fa fa-btc"></i> Bitcoin**
 
-Note: Due to Decred’s early stages of development and adoption,
-Bitcoin must be traded for Decred, fiat currency cannot be used.  If
-you already have some Bitcoin, move ahead to the next section.  If you
-do not have any Bitcoin, the procedure for obtaining some has been
-well documented in the
+Note: En raison des premiers stades de développement et d'adoption de Decred,
+Bitcoin doit être négocié pour Decred, la monnaie fiat ne peut pas être utilisée. Si
+Vous avez déjà quelques Bitcoin, passez à la section suivante. Si vous
+N'avez pas de Bitcoin, la procédure d'obtention a été bien documenté dans le
 [Bitcoin wiki](https://en.bitcoin.it/wiki/Buying_Bitcoins_%28the_newbie_version%29).
 
-### **<i class="fa fa-exchange"></i> Exchanges**
+### **<i class="fa fa-exchange"></i> Échanges**
 
-Since the release of Decred on February 8th, 2016, there are three
-currency exchanges where you can buy or sell Decred (as of February 2017).
-We hope to have this list grow as time goes on.
+Depuis la sortie de Decred le 8 février 2016, il y a trois
+Les échanges de devises où vous pouvez acheter ou vendre Decred (en février 2017).
+Nous espérons que cette liste augmentera au fil du temps.
 
 * [Poloniex](https://poloniex.com/)
 * [Bittrex](https://bittrex.com/)
 * [Bleutrade](https://bleutrade.com/exchange)
 
-You will need to create an account on one of these sites, send your
-Bitcoin to this new account, and submit an order for Decred at a price
-of your choosing.  When your order is fulfilled, you will need to
-withdraw your new Decred and send it to your Decred wallet.
+Vous devrez créer un compte sur l'un de ces sites, envoyer votre
+Bitcoin à ce nouveau compte, et soumettre une commande pour Decred à un prix
+De votre choix. Lorsque votre commande est remplie, vous devrez
+Retirez votre nouveau Decred et envoyez-le à votre portefeuille Decred.
 
 
-## **<i class="fa fa-info-circle"></i> Mine for Decred (PoW)**
+## **<i class="fa fa-info-circle"></i> Preuve-de-Travail Decred (PdT)**
 
-Proof-of-Work (PoW) is a measure of using computational power to
-create and verify the cryptographically secure blockchain.  This is
-similar to traditional Bitcoin mining.  PoW mining is described in
-more detail [here](/mining/overview/#1-proof-of-work-mining).
+Preuve-de-Travail PdT est une mesure de l'utilisation du pouvoir de calcul pour créez et vérifiez la chaîne de blocs cryptographiquement sécurisée. C'est similaire à l'extraction traditionnelle de Bitcoin. L'exploitation minière PdT est décrite dans plus de détails [ici](/mining/overview/#1-proof-of-work-mining).
 
-## **<i class="fa fa-info-circle"></i> Stake Mine for Decred / Proof-of-Stake (PoS)**
+## **<i class="fa fa-info-circle"></i> Preuve-d'Enjeu pour Decred (PdE)**
 
-Proof-of-Stake (PoS) mining is performed by stakeholders who lock a
-certain amount of their DCR in return for voting rights and a monetary
-reward. PoS mining is described in more detail
-[here](/mining/overview/#2-proof-of-stake-mining).
+Preuve-d'enjeu est effectuée par des parties prenantes qui immobilise un montant de leur DCR en échange de droits de vote et d'une récompense monétaire. Preuve-d'enjeu est décrite plus en détail [ici](/mining/overview/#2-proof-of-stake-mining).
 
-## **<i class="fa fa-info-circle"></i> Sell / Trade Goods or Services for Decred**
+## **<i class="fa fa-info-circle"></i> Vendre / Trader des Biens ou Services pour Decred**
 
-An alternative to obtaining Decred is to use your skills, knowledge,
-or experience by exchanging services for Decred as payment.  Services
-can be anything that you are skilled at which are in need or
-requested by other members of the Decred community.
+Une alternative à l'obtention de Decred est d'utiliser vos compétences, vos connaissances,
+Ou l'expérience en échangeant des services pour Decred en paiement. Prestations de service
+Peut-être tout ce dont vous êtes compétent dans le besoin ou
+la demande par d'autres membres de la communauté de Decred.
 
-Another method is to contribute to the Decred community
-through the RFP process in which payment is made in Decred.  More
-information on currently open RFPs can be found on
-[the forum](https://forum.decred.org/forums/requests-for-proposals/)
-and on [github](https://github.com/decred/RFPs).
+Une autre méthode consiste à contribuer à la communauté de Decred par le biais du processus de demande de propositions dans lequel le paiement est effectué en décembre. Plus
+Des informations sur les RFP actuellement ouvertes peuvent être trouvées sur
+[le forum](https://forum.decred.org/forums/requests-for-proposals/)
+et sur [github](https://github.com/decred/RFPs).

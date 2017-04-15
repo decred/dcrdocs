@@ -11,7 +11,7 @@ Ce guide est destiné à vous aider à configurer l'application `dcrd` utilisant
 
 ---
 
-`dcrd` Est la node daemon pour Decred. Un daemon est un programme qui fonctionne en arrière-plan avec lequel vous n'interagissez pas directement. `dcrd` conserve tout le compte-rendu transactionnel passé (ou chaîne de bloc) de Decred et permet de relayer les transactions vers d'autres nodes Decred à travers le monde. Vous pouvez le considérer comme votre propre chaine de blocs serveur personnel Decred. La chaîne de blocs est enregistrée dans dossier `data` dans `dcrd` répertoire gîte.
+`dcrd` est la node daemon pour Decred. Un daemon est un programme qui fonctionne en arrière-plan avec lequel vous n'interagissez pas directement. `dcrd` conserve tout le compte-rendu transactionnel passé (ou chaîne de bloc) de Decred et permet de relayer les transactions vers d'autres nodes Decred à travers le monde. Vous pouvez le considérer comme votre propre chaine de blocs serveur personnel Decred. La chaîne de blocs est enregistrée dans dossier `data` dans `dcrd` répertoire gîte.
 
 **Utilisateurs avancés: si vous exécutez en mode sans tête via SSH,** vous devriez utiliser un multiplexeur terminal tel que [screen](http://www.howtogeek.com/howto/ubuntu/keep-your-ssh-session-running-when-you-disconnect/)
 ou [tmux](https://tmux.github.io/). Où vous voyez les instructions pour passez à une autre shell, vous devrez commencer une nouvelle fenêtre dans `screen`
@@ -19,7 +19,7 @@ ou `tmux`.
 
 ---
 
-## **<i class="fa fa-cloud"></i> CConnectez-vous au Réseau Decred**
+## **<i class="fa fa-cloud"></i> Connectez-vous au Réseau Decred**
 
 La première fois que vous lancez `dcrd`, Il se connectera au réseau Decred et commencera à télécharger la chaine de blocs. Autoriser `dcrwallet` et `dcrctl` pour communiquer avec `dcrd`, les fichiers de configuration doivent avoir `rpcuser` et `rpcpass` réglages activés. 
 

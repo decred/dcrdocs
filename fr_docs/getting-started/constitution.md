@@ -8,7 +8,7 @@
 
 ## Principes
 
-* *Logiciel gratuit et Open Source* - Tout logiciel développé dans le cadre de *Decred* doit être un logiciel gratuit et open source.
+* * Logiciel gratuit et Open Source* - Tout logiciel développé dans le cadre de *Decred* doit être un logiciel gratuit et open source.
 * * Liberté d'expression et considération* - Toute personne a le droit de communiquer des opinions et des idées sans crainte de la censure. Il faut tenir compte de tout discours constructif fondé en fait et en raison.
 * * Inclusion multi-parties prenantes* - L'inclusion représente un système multipartite et un effort actif doit être maintenu pour inclure un ensemble diversifié de vues et d'utilisateurs. Bien qu'il soit idéal d'inclure tout le monde, *Decred* doit se conformer à toutes les lois pertinentes dans les juridictions, le cas échéant, telles que les embargos et autres sanctions commerciales.
 * * Confidentialité et sécurité incrémentielles* - La confidentialité et la sécurité sont des priorités et doivent être équilibrées avec la complexité de leurs implémentations. Les technologies de sécurité et de confidentialité supplémentaires doivent être mises en œuvre de manière continue et progressive, à la fois de manière proactive et à la demande en réponse aux attaques.

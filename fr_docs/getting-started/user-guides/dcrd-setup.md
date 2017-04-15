@@ -1,64 +1,62 @@
-# **dcrd Setup Guide**
+# **dcrd Guide d'installation**
 
-Last updated for v0.8.2.
+Dernière mise aà jour v0.8.2.
 
-This guide is intended to help you setup the `dcrd` application using [startup flags](/getting-started/startup-basics.md#startup-command-flags). 
+Ce guide est destiné à vous aider à configurer l'application `dcrd` utilisant [drapeaux de démarrage](/getting-started/startup-basics.md#startup-command-flags). 
 
-**Prerequisites:**
+**Conditions préalables:**
 
-- Use either the latest [dcrinstall](/getting-started/install-guide.md#dcrinstall) to install `dcrd`. Additional steps will be required if another installation method was used.
-- Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/cli-differences.md).
-
----
-
-`dcrd` is the node daemon for Decred. A daemon is a program that works in the background that you do not interface with directly. `dcrd` maintains the entire past transactional ledger (or blockchain) of Decred and allows relaying of transactions to other Decred nodes across the world. You can think of it as your own personal Decred blockchain server. The blockchain is saved in the `data` folder within `dcrd`'s home directory.
-
-**Advanced Users: If you are running in headless mode via SSH,** you
-will need to use a terminal multiplexer such as [screen](http://www.howtogeek.com/howto/ubuntu/keep-your-ssh-session-running-when-you-disconnect/)
-or [tmux](https://tmux.github.io/). Where you see the instruction to
-move to another shell, you'll need to start a new window in `screen`
-or `tmux`.
+- Utiliser le dernier [dcrinstall](/getting-started/install-guide.md#dcrinstall) pour installer `dcrd`. Des étapes supplémentaires seront nécessaires si une autre méthode d'installation a été utilisée.
+- Examinez comment les commandes de lancement pour le Command Prompt (Windows) and Bash (OSX/Linux) shells diffèrent [here](/getting-started/cli-differences.md).
 
 ---
 
-## **<i class="fa fa-cloud"></i> Connect to the Decred Network**
+`dcrd` Est la node daemon pour Decred. Un daemon est un programme qui fonctionne en arrière-plan avec lequel vous n'interagissez pas directement. `dcrd` conserve tout le compte-rendu transactionnel passé (ou chaîne de bloc) de Decred et permet de relayer les transactions vers d'autres nodes Decred à travers le monde. Vous pouvez le considérer comme votre propre chaine de blocs serveur personnel Decred. La chaîne de blocs est enregistrée dans dossier `data` dans `dcrd` répertoire gîte.
 
-The first time launching `dcrd`, it will connect to the Decred network and begin downloading the blockchain. To allow `dcrwallet` and `dcrctl` to communicate with `dcrd`, the configuration files must have `rpcuser` and `rpcpass` settings enabled. 
+**Utilisateurs avancés: si vous exécutez en mode sans tête via SSH,** vous devriez utiliser un multiplexeur terminal tel que [screen](http://www.howtogeek.com/howto/ubuntu/keep-your-ssh-session-running-when-you-disconnect/)
+ou [tmux](https://tmux.github.io/). Où vous voyez les instructions pour passez à une autre shell, vous devrez commencer une nouvelle fenêtre dans `screen`
+ou `tmux`.
 
-> Configure RPC Username and Password
+---
 
-If you used [`dcrinstall`](/getting-started/install-guide.md#dcrinstall), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
+## **<i class="fa fa-cloud"></i> CConnectez-vous au Réseau Decred**
 
-If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](/getting-started/startup-basics.md#minimum-configuration) to do so. 
+La première fois que vous lancez `dcrd`, Il se connectera au réseau Decred et commencera à télécharger la chaine de blocs. Autoriser `dcrwallet` et `dcrctl` pour communiquer avec `dcrd`, les fichiers de configuration doivent avoir `rpcuser` et `rpcpass` réglages activés. 
 
-> Start dcrd 
+> Configurez le nom d'utilisateur et le mot de passe RPC
 
-With the correctly set configuration files, open another shell window in your Decred directory (or use the last window if you have just created your wallet). Type the following command (review this guides Prerequisites to determine exact command depending on your OS/Shell application):
+Si vous avez utilisé [`dcrinstall`](/getting-started/install-guide.md#dcrinstall), Vos fichiers de configuration sont déjà configurés avec le nom d'utilisateur/mot de passe RPC pour `dcrd`, `dcrwallet`, et `dcrctl`.
+
+Si vous n'avez pas utilisé `dcrinstall`, Vous devrez activer les paramètres minimaux nets dans vos fichiers de configuration. Suivre [this guide](/getting-started/startup-basics.md#minimum-configuration) pour cela. 
+
+> Démarrer dcrd 
+
+Avec les fichiers de configuration correctement définis, ouvrez une autre fenêtre de shell dans votre répertoire Decred (ou utilisez la dernière fenêtre si vous venez de créer votre portefeuille). Tapez la commande suivante (consultez ce guide prérequis pour déterminer l'ordre exact en fonction de votre OS/Shell application):
 
 ```no-highlight
 dcrd
 ```
 
-> Wait for dcrd to Sync to the Decred Blockchain
+> Attendez que dcrd soit synchronisé avec la Chaîne de blocs
 
-When `dcrd` launches successfully, you should see your shell window begin to fill up with messages as the daemon connects to the network and starts processing blocks. Wait until it is completed - the entire blockchain is being downloaded into the `dcrd` data directory. 
+Quand `dcrd` démarre correctement, vous devriez voir votre fenêtre shell commencer à ce remplir avec des messages que daemon se connecte au réseau et commence à traiter des blocs. Attendez que ce soit terminé - l'entière chaîne de blocs est téléchargée dans  `dcrd` répertoire de données.
 
-You will see a line at the start like this:
+Vous verrez une ligne au début comme celle-ci:
 
 ```no-highlight
 22:58:04 2016-02-09 [INF] BMGR: Syncing to block height 617 from peer 104.236.167.133:9108
 ```
 
-Then, as it continues to download blocks, you will see lines like this:
+Ensuite, alors qu'il continue de télécharger des blocs, vous verrez des lignes comme celle-ci:
 
 ```no-highlight
 22:58:16 2016-02-09 [INF] BMGR: Processed 321 blocks in the last 10.03s (544 transactions, height 322, 2016-02-09 09:50:34 +1000 EST)
 ```
 
-The blockchain will be fully synced once the most recently processed block is the current block height. You can tell by either comparing the date and time in the log message or by comparing the height of the last block processed against the last block height on [the official block explorer](https://mainnet.decred.org/).  
+La chaîne de blocs sera entièrement synchronisée une fois que le dernier bloc traité est à la hauteur actuelle du bloc. Vous pouvez indiquer en comparant la date et l'heure dans le message du journal ou en comparant la hauteur du dernier bloc traité contre la dernière hauteur de bloc sur [l'explorateur de blocs officiel](https://mainnet.decred.org/).  
 
-Note that this connection will be used in the future. You must leave this `dcrd` instance running in order to use `dcrwallet`.
+Notez que cette connexion sera utilisée à l'avenir. Vous devez quitter ce `dcrd` instance en cours d'exécution pour utiliser `dcrwallet`.
 
 ---
 
-Now that you've set up `dcrd`, visit the [dcrwallet Setup](/getting-started/user-guides/dcrwallet-setup.md) guide.
+Maintenant que vous avez configuré `dcrd`, visitez [Installer dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) guide.

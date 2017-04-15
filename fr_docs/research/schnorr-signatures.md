@@ -1,21 +1,19 @@
-# **Schnorr Signatures**
+# **Signatures Schnorr**
 
 ---
 
-Schnorr signatures have been proposed for Bitcoin. They have also been used extensively in other cryptocurrencies, such as Nxt and CryptoNote coins. In the simplest case, a Schnorr signature ECDSA cryptosystem can be described as follows:
+Schnorr signatures ont été proposées pour Bitcoin. Elles ont également été largement utilisées dans d'autres cryptocurrency, telles que les crypto Nxt et CryptoNote. Dans le cas le plus simple, un cryptosystème ECDSA de signature Schnorr peut être décrit comme suit:
 
-1. \(y = xG\) where \(y\) is the public key point on the curve, \(x\) is the private scalar, \(G\) is the curve generator.
-2. \(r = kG\) where \(r\) is the point on the curve resulting from the multiplication of \(k\), the nonce scalar, by the generator.
-3. \(h = H(M || r)\) where \(H\) is a secure hash function, \(M\) is the message (usually a 32 byte hash), and \(r\) is the encoded point previously described. \(||\) denotes concatenation.
-4. \(s = k - hx\) where \(s\) is the scalar denoted from \(k - hx\).
-5. The signature is \((r,s)\), and verification is simply \(H(M || r) == hQ + sG\).
+1. \(y = xG\) where \(y\) Est le point de la clé publique est sur la courbe, \(x\) est le scalaire privé, \(G\) est le générateur de courbe.
+2. \(r = kG\) ou \(r\) est le point sur la courbe résultant de la multiplication de \(k\), le non scalaire, par le générateur
+3. \(h = H(M || r)\) ou \(H\) est une fonction de hash sur, \(M\) est le messagee (habituellement un hash 32 octets), et \(r\) est le point encodé précédement expliqué. \(||\) denotes la concaténation.
+4. \(s = k - hx\) ou \(s\) est le scalaire dénoté à partir de \(k - hx\).
+5. La signature est \((r,s)\), et la vérification est simple \(H(M || r) == hQ + sG\).
 
-In the above, multiplications by a capital letter (e.g., \(kG\)) are point multiplications by a scalar, and so always result in a point on the curve. Addition of these points results in another point. Additions and multiplications of scalars amongst themselves is the same as regular multiplication you would do with any integer. It's important to note that multiplying a point by a scalar is considered an irreversible step, because the calculation of the scalar from the new point defaults to the discrete logarithm problem.
-
-From the above it is clear that \(r\) is a point on the curve, while \(s\) is a scalar. Consider the group of signers represented by \(x_{sum} = x_1 + ... + x_n\) with nonces \(k_{sum} = k_1 + ... + k_n\). The public key for the private scalar sum would be: \(y = x_{sum} G\). The signature for these sums (from all group participants) would be: \(r' = k_{sum} G s' = k_{sum} - h x_{sum}\). To generate this signature all participants would have to share their private key and nonces beforehand. We want to obviously avoid this, so instead let us have each participant create a partial signature. \(r_n = k_1 G + ... + k_n G = r'\) (the sum of the public nonce points, which the participants may freely individually publish) \(s_n = k_n - h x_n\). Substituting this into the general formulas for signatures and using point or scalar addition: \(r = r_n = r'\) (the same as above) \(s = s_1 + ... + s_n = s'\) (simple scalar addition; it must be true that \((k_1 - h x_1) + ... + (k_n - h x_n) = s_1 + ... + s_n = s')\). Doing an m-of-n signature is non-trivial. It has been suggested that a merkle tree containing all possible public key sums for \(m\) participants be used for these cases, generating a \(log(n)\) sized signature [28].
+Dans ce qui précède, les multiplications par une lettre majuscule (par exemple, \(kG\)) sont des multiplications ponctuelles par un scalaire, et donc entraînent toujours un point sur la courbe. L'ajout de ces points aboutit à un autre point. Les ajouts et les multiplications de scalaires entre eux sont les memes que la multiplication régulière que vous feriez avec n'importe quel nombre entier. Il est important de noter que la multiplication d'un point par un scalaire est considéré comme une étape irréversible, car le calcul du scalaire du nouveau point de défaut pour la discretion du logarithme. Dans ce qui précède, il est clair que\(r\) est un point sur la courbe, tandis que \(s\) est un scalaire. Considérons le groupe de signataires représenté par \(x_{sum} = x_1 + ... + x_n\) avec nonces \(k_{sum} = k_1 + ... + k_n\). La clé publique pour la somme scalaire privée serait: \(y = x_{sum} G\). La signature pour ces sommes (de tout les participant du groupe) serait: \(r' = k_{sum} G s' = k_{sum} - h x_{sum}\). Pour générer cette signature, tous les participants devraient partager leur clé privée et leur points au préalable. Nous voulons évidemment éviter cela, alors nous demandons à chaque participant de créer une signature partielle. \(r_n = k_1 G + ... + k_n G = r'\) (La somme des points publics autres que les participants peuvent publier individuellement) \(s_n = k_n - h x_n\). En remplaçant ceci en formules générales pour les signatures et en utilisant l'addition ponctuelle ou scalaire: \(r = r_n = r'\) (là même ci-dessus) \(s = s_1 + ... + s_n = s'\) (simple addition scalaire; Il doit être vrai que \((k_1 - h x_1) + ... + (k_n - h x_n) = s_1 + ... + s_n = s')\). Faire une signature m-of-n n'est pas trivial. Il a été suggéré qu'un arbre de merkle contenant toutes les sommes possibles de la clé publique pour \(m\) participants soit utilisé pour ces cas, générant \(log(n)\) signature de taille [28].
 
 ---
 
-## **<i class="fa fa-book"></i> References**
+## **<i class="fa fa-book"></i> Réferences**
 
 [^1]: Wuille P. 2015. [Tree signatures: Multisig on steroids using tree signatures](https://decred.org/research/wuille2015.pdf).

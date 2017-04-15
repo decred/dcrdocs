@@ -1,11 +1,11 @@
-# **Transactions Extensions**
+# **Extensions de Transactions**
 
 ---
 
-Transaction expiry has been added, which allows one to prune transactions from the memory pool if the blockchain has reached a certain height[^1]. Previously the only way to remove a transaction from the mempool was to double spend it.
+L'expiration de la transaction a été ajoutée, ce qui permet d'organiser les transactions de la pool de mémoire si la chaîne de bloc a atteint une certaine hauteur [^1]. Auparavant, la seule façon de supprimer une transaction du mempool était de la dépenser deux fois.
 
 ---
 
-## **<i class="fa fa-book"></i> References**
+## **<i class="fa fa-book"></i> Réferences**
 
 [^1]: ByteCoin. 2010. [Need OP_BLOCKNUMBER to allow "time" limited transactions](https://decred.org/research/bytecoin2010.pdf).

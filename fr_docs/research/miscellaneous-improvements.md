@@ -1,14 +1,13 @@
-# **Miscellaneous Improvements**
+# **MAméliorations diverses**
 
 ---
 
-As in Bitcoin, subsidy decays exponentially with block height. However, Decred's algorithm, though also extremely simple, better interpolates this decay over time so as not to produce market shock with steep subsidy drops similar to CryptoNote[^1]. Like PeerCoin[^2], the PoW difficulty is calculated from the exponentially weighted average of differences in previous block times. However, this calculation is also interpolated into Bitcoin-like difficulty window periods. The "timewarp" bug in Bitcoin is corrected[^3], by ensuring that every difference in block time in incorporated into the difficulty calculation.
+Comme dans Bitcoin, les subventions décroissent de façon exponentielle avec une hauteur de bloc. Cependant, l'algorithme de Decred, bien que extrêmement simple, interpole mieux cette décroissance au fil du temps afin de ne pas provoquer de choc de marché avec des chutes de subvention abruptes similaires à CryptoNote [^1]. Comme PeerCoin [^2], la difficulté PdT est calculée à partir de la moyenne pondérée exponentiellement des différences dans les temps de blocages précédents. Cependant, ce calcul est également interpolé dans des périodes de fenêtre de difficulté Bitcoin. Le bug "timewarp" dans Bitcoin est corrigé [^3], en veillant à ce que chaque différence de temps de blocage soit intégrée au calcul de la difficulté.
 
-It should also be noted that many well known mining attacks, such as selfish mining[^4] and stubborn mining[^5], will no longer function advantageously in a system where there is effective decentralization of stake mining and no PoW-PoS miner collusion. This is simply because it is impossible to generate secret extensions to blockchains without the assistance of stake miners. Resilience to previously described mining attacks, and newly conceived mining attacks specific to our system, will be a fruitful area for future research.
-
+Il convient également de noter que de nombreuses attaques de minage bien connues, telles que l'enjeu égoïste [^4] et l'enjeu obstinée [^5], ne fonctionneront plus avantageusement dans un système où il y a une décentralisation effective de l'enjeu et aucune mineur PdT-PdE connivence. C'est tout simplement parce qu'il est impossible de générer des extensions secrètes pour bloquer les chaînes sans l'aide des mineurs d'enjeu. La résilience aux attaques précédemment décrites, et les attaques de minage nouvellement conçues spécifiques à notre système, seront un domaine fructueux pour les recherches futures.
 ---
 
-## **<i class="fa fa-book"></i> References**
+## **<i class="fa fa-book"></i> Réferences**
 
 [^1]: Buterin V. 2014. [A next-generation smart contract and decentralized application platform](https://decred.org/research/buterin2014.pdf).
 [^2]: King S. and Nadal S. 2012. [PPCoin: Peer-to-peer crypto-currency with proof-of-stake](https://decred.org/research/king2012.pdf).

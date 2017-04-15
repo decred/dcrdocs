@@ -1,54 +1,54 @@
-# **Decrediton Setup Guide**
+# **Guide d'installation Decrediton**
 
-Last updated for v0.8.2.
+Dernière mise à jour v0.8.2.
 
-This guide is intended to help you setup the `Decrediton` application. 
+Ce guide est destiné à vous aider à configurer l'application `Decrediton`. 
 
-**Prerequisites:**
+**Conditions préalables:**
 
-- Use the [Decrediton Install Guide](/getting-started/install-guide.md#decrediton) to install `Decrediton`.
-
----
-
-`Decrediton` is a graphical user interface for `dcrwallet`. When this application launches, it automatically starts its own instance of `dcrd` and `dcrwallet` in the background - it will not open if there is already a running instance of `dcrd`. Please note that as of 0.8.2, this application is a alpha release - there are known bugs in the software that are being worked on. 
-
-NOTE: At any point in the use of Decrediton, it may become unresponsive or get stuck on a loading screen. This can usually be fixed with a restart of the application.
+- Utiliser [le Guide d'Installation Decrediton](/getting-started/install-guide.md#decrediton) pour `Decrediton`.
 
 ---
 
-## **Critical Information**
+`Decrediton` est une interface utilisateur graphique pour `dcrwallet`. Lorsque cette application se lance, elle démarre automatiquement son propre exemple de `dcrd` et `dcrwallet` en arrière plan - Il ne s'ouvre pas s'il existe déjà une instance en cours d'exécution `dcrd`. Notez qu'à partir de 0.8.2, cette application est une version alpha - il existe des bugs connus dans le logiciel sur lequel on travaille.
 
-During the creation process for your wallet, you will be given a sequence of 33 words known as a seed phrase. This seed phrase is essentially the private key for your wallet. You will be able to use this seed phrase to restore your private keys, transaction history, and balances using any Decred wallet on any computer. 
-
-This ultimately means that *anyone* who knows your seed can use it to restore your private keys, transaction history, and balances to a Decred wallet on their without your knowledge. For this reason, it is of utmost importance to keep your seed phrase safe. Treat this seed the same way you would treat a physical key to a safe. If you lose your seed phrase, you permanently lose access to your wallet and all funds within it. It cannot be recovered by anyone, including the Decred developers. It is recommended you write it down on paper and store that somewhere secure. If you decide to keep it on your computer, it would be best to keep it in an encrypted document (do not forget the password) in case the file or your computer is stolen.
-
-**REMINDER: DO NOT, UNDER ANY CIRCUMSTANCES, GIVE YOUR SEED OR THE ASSOCIATED HEX KEY TO ANYONE! NOT EVEN THE DEVELOPERS!**
+REMARQUE: à n'importe quel moment de l'utilisation de Decrediton, il risque de ne plus réagir ou de se coincer sur un écran de chargement. Cela peut généralement être corrigé avec un redémarrage de l'application.
 
 ---
 
-Every time you open `Decrediton`, you will be greeted by the following disclaimer:
+## **Informations essentielles**
 
-    Decrediton is currently under heavy development and in an alpha-state. While we have tested the code thoroughly, we suggest using caution on Mainnet. Use at your own risk!
+Pendant le processus de création de votre portefeuille, vous recevrez une séquence de 33 mots appelée graine phrase. Cette graine phrase est essentiellement la clé privée de votre portefeuille. Vous pourrez utiliser cette graine phrase pour restaurer vos clés privées, votre historique de transactions et vos soldes en utilisant un portefeuille Decred sur n'importe quel ordinateur.
 
-## **Creating a New Wallet**
+Cela signifie finalement que *celui* qui connaît votre semence peut l'utiliser pour restaurer vos clés privées, l'historique des transactions et les soldes d'un portefeuille sur le leur sans votre connaissance. Pour cette raison, il est de la plus haute importance de garder votre graines phrase en toute sécurité. Traitez cette graine de la même façon que vous traiterez une clé physique pour un coffre-fort. Si vous perdez votre graine phrase, vous perdez en permanence l'accès à votre portefeuille et à tous les fonds. Il ne peut être récupéré par personne, y compris les développeurs de Decred. Il est recommandé de l'écrire sur papier et de stocker quelque part sécurisé. Si vous décidez de le conserver sur votre ordinateur, il serait préférable de le garder dans un document chiffré (n'oubliez pas le mot de passe) dans le cas où le fichier ou votre ordinateur est volé.
 
-After clicking "OK, I Understand" to the disclaimer, you'll see the "Create a Wallet" dialog.
+**RAPPEL: NE PAS, SOUS CERTAINES CIRCONSTANCES, DONNER VOTRE GRAINE OU LA CLÉ HEX ASSOCIEE A QUELQU'UN! NON MÊME LES DÉVELOPPES!**
 
-The "Create a Wallet" dialog defaults to the "New Seed" option. Simply click "Existing Seed" if you already have a seed you intend to use, and follow the steps presented there. This guide assumes you do not have a seed and will continue using the "New Seed" option. Please review the [Critical Information](#critical-information) about seeds, above.
+---
 
-1. Record the seed that is displayed in the text box (you will need to re-enter it on the next screen).
+Chaque fois que vous ouvrez `Decrediton`, Vous serez accueilli par la clause de non-responsabilité suivante:
 
-2. Press "Continue"
+    Decrediton est actuellement en développement lourd et dans un état alpha. Bien que nous ayons testé le code à fond, nous vous suggérons d'être prudent sur Mainnet. À utiliser à vos risques et périls!
 
-3. Confirm your seed, and create a private wallet passphrase. This passphrase will be used to unlock your wallet when creating transactions.
+## **Créer un nouveau Portefeuille**
 
-4. Press "Create Wallet"
+Après avoir cliqué sur "OK, je comprends" à la clause de non-responsabilité, vous verrez la boîte de dialogue "Créer un portefeuille".
 
-5. You should then see a spinning blue circle. This will spin until `dcrd` has fully synced the blockchain. On computers that haven't had `dcrd` loaded on them, this should take 1-2 hours with newer hardware (it may take multiple hours with older hardware). You can check your process monitor application for a running instance of `dcrd` - if it is using a substantial percentage of your CPU, it is syncing. If it isn't, Decrediton may require a restart to move beyond this screen.
+De la boîte de dialogue "Créer un portefeuille" à l'option par défaut "NEW SEED". Cliquez simplement sur «Existing Seed» si vous avez déjà une graine que vous avez l'intention d'utiliser et suivez les étapes présentées ici. Ce guide suppose que vous ne possédez pas de graine et continuera à utiliser l'option "NEW SEED". Veuillez passer en revue l' [Informations critiques](#critical-information) à propos de la graine, ci-dessus.
 
-## **Opening Wallet**
+1. Enregistrez la graine qui s'affiche dans la zone de texte (vous devrez l'entrer à nouveau sur l'écran suivant).
 
-After the blockchain has been synced, you should see a "Opening Wallet" page. Here, you will need to enter your private passphrase and the wallet will rescan recent blocks for transactions that belong to your addresses. Wait for the progress bar to fill. Decrediton should then load the Overview page with your Available Balance and Recent Transactions displayed.
+2. Appuyez sur "Continuer"
+
+3. Confirmez votre graine et créez une graine phrase de porte-monnaie privée. Cette graine phrase servira à débloquer votre portefeuille lors de la création de transactions.
+
+4. Appuyez sur "Créer un porte-monnaie"
+
+5. Vous devriez alors voir un cercle bleu tournant. Cela tournera jusqu'à `dcrd` a complètement synchronisé la chaîne de blocs. Sur les ordinateurs qui n'ont pas eu `dcrd` chargé sur eux, cela devrait prendre 1-2 heures avec du matériel plus récent (cela peut prendre plusieurs heures avec un matériel plus ancien). Vous pouvez vérifier votre application de moniteur de processus pour une instance en cours d'exécution `dcrd` - si elle utilise un pourcentage important de votre CPU, elle se synchronise. Si ce n'est pas le cas, Decrediton peut nécessiter un redémarrage pour aller au-delà de cet écran.
+
+## **Ouverture du Portefeuille**
+
+Une fois la chaîne de blocs synchronisée, vous devriez voir une page "Opening Wallet". Ici, vous devrez entrer votre phrase de passe privée et le portefeuille va réexaminer les blocs récents pour les transactions qui appartiennent à vos adresses. Attendez que la barre de progression soit complétée. Decrediton devrait ensuite charger la page Vue d'ensemble avec votre Solde disponible et Transactions récentes affichées.
 
 ---
 

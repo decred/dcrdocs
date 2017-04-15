@@ -1,26 +1,26 @@
-# **<i class="fa fa-info-circle"></i> Overview**
+# **<i class="fa fa-info-circle"></i> Vue d'Ensemble**
 
 ---
 
-Distributed timestamping protocols were first applied to decentralizing a financial network in the ground-breaking paper on Bitcoin by Nakamoto[^1]. The field has seen explosive research follow-up from both amateurs and professionals, competing to offer extensions, adjustments, improvements, and refinements of the existing protocol. Notable implementations of new ideas include Ethereum[^2], which extended scripting, CryptoNote[^3], which refined privacy, and Sidechains[^4], which investigated two-way pegs with 1:1 Bitcoin tokens. These protocols all utilize proof-of-work (PoW) as originally described in the Bitcoin whitepaper.
+Les protocoles de timestamping distribués ont d'abord été appliqués à la décentralisation d'un réseau financier dans le document novateur sur Bitcoin par Nakamoto [^1]. Le champ a connu un suivi de la recherche explosive tant des amateurs que des professionnels, en compétition pour offrir des extensions, des ajustements, des évolutions et des améliorations du protocole existant. Les mises en œuvre remarquables de nouvelles idées incluent Ethereum [^2], qui a étendu les scripts, CryptoNote [^3], qui a raffiné la vie privée, et Sidechains [^4], qui a enquêté sur les rattachement bidirectionnels avec des jetons 1:1 Bitcoin. Ces protocoles utilisent tous la preuve de travail (PdT) comme décrit à l'origine dans le White paper Bitcoin.
 
-A common extension to the Bitcoin protocol modifies the consensus mechanism to either completely or partially use proof-of-stake (PoS), or the use of one's stake (tokens) rather than one's computational power to participate in the timestamping process. The first proof-of-stake blockchain based on the Bitcoin protocol was implemented in 2012 by King and Nadal[^5], and includes both PoW and PoS that gradually skew towards complete PoS over time. Criticisms of pure PoS consensus systems have themselves been abundant[^6] [^7], with the most vehement opposition coming from those working with purely PoW blockchains. The most common argument against PoS for distributed timestamping is "nothing-at-stake" or "costless simulation", describing the systematic instability resulting from stakeholders being able to generate alternatively timestamped histories with no cost to themselves.
+Une extension commune au protocole Bitcoin modifie le mécanisme de consensus pour utiliser totalement ou partiellement la preuve d'enjeu (PdE) ou l'utilisation de son intérêt (tokens) plutôt que son pouvoir de calcul pour participer au processus de l'horodatage. La première chaine de blocs avec preuve d'enjeu basée sur le protocole de Bitcoin a été implémentée en 2012 par King et Nadal [^5], et inclut à la fois PdT et PdE qui s'écartent peu à peu vers des PdE complets au fil du temps. Les critiques des systèmes purs de consensus PdE ont été abondantes [^6] [^7], avec l'opposition la plus véhémentante de là part de ceux qui travaillent avec des chaînes de blocs purement PdT. L'argument le plus répandu contre PdE pour l'horodatage distribué est «rien en jeu» ou «simulation sans frais», décrivant l'instabilité systématique résultant que les parties prenantes peuvent générer des antécédents horodatés, sans coût pour eux-mêmes.
 
-Despite the controversy, it is apparent that systems who have a PoS overlay dependent on a PoW timestamping system may be able to independently achieve consensus. This is mathematically explored by Bentov and colleagues[^8] in a paper on their scheme, proof-of-activity (PoA), and appears to be a viable extension to the PoW protocols that may enable some interesting new properties. A similar design called MC2 was earlier proposed by Mackenzie in 2013[^9]. Here we describe the construction and implementation of a similar consensus system that we have named "Decred".
+En dépit de la controverse, il est évident que les systèmes qui ont une superposition PdE dépendent d'un système d'horodatage PdT peuvent être en mesure de parvenir à un consensus. Ceci est étudié mathématiquement par Bentov et ses collègues [^8] dans un document sur leur schéma, la preuve d'activité (PdA) et semble être une extension viable des protocoles PdT qui peuvent permettre de nouvelles propriétés intéressantes. Une conception similaire appelée MC2 a été proposée par Mackenzie en 2013 [^9]. Nous décrivons ici la construction et la mise en œuvre d'un système de consensus similaire que nous avons appelé "Decred".
 
-Research work in Decred is currently organized around the following subsections:
+Le travail de recherche de Decred est actuellement organisé autour des sous-sections suivantes:
 
-* [Hybrid Design](hybrid-design.md)
-* [Decentralized Stake Pooling](decentralized-stake-pooling.md)
-* [Elliptic Curve Signature Algorithms](elliptic-curve-signature-algorithms.md)
-* [BLAKE-256 Hash Function](blake-256-hash-function.md)
-* [Script Extensions](script-extensions.md)
-* [Signature Script Isolation and Fraud Proofs](signature-script-isolation-and-fraud-proofs.md)
-* [Transaction Extensions](transaction-extensions.md)
-* [Schnorr Signatures](schnorr-signatures.md)
-* [Miscellaneous Improvements](miscellaneous-improvements.md)
+* [Design hybride](hybrid-design.md)
+* [Participation décentralisée aux enjeux](decentralized-stake-pooling.md)
+* [Algorithmes de Signature Elliptic en Courbe](elliptic-curve-signature-algorithms.md)
+* [Fonction BLAKE-256 Hash](blake-256-hash-function.md)
+* [Extensions du Script](script-extensions.md)
+* [Signature d'éléments de script et preuves de fraude](signature-script-isolation-and-fraud-proofs.md)
+* [Extensions des Transaction](transaction-extensions.md)
+* [Signatures Schnorr](schnorr-signatures.md)
+* [Améliorations diverses](miscellaneous-improvements.md)
 
-## **<i class="fa fa-book"></i> References**
+## **<i class="fa fa-book"></i> Réferences**
 
 [^1]: Nakamoto S. 2008. [Bitcoin: A peer-to-peer electronic cash system](https://decred.org/research/nakamoto2008.pdf).
 [^2]: Buterin V. 2014. [A Next-generation smart contract and decentralized application platform](https://decred.org/research/buterin2014.pdf).

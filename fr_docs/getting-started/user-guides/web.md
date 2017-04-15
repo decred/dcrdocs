@@ -1,145 +1,97 @@
-# <i class="fa fa-firefox"></i> **Web Client User Guide**
+# <i class="fa fa-firefox"></i> **Guide d'Utilisateur pour le Client en Ligne**
 
 ---
 
-A simple web wallet is available for users who do not want to install
-additional software on their computer.  It is based on
-[Copay](https://github.com/bitpay/copay) with Decred specific changes
-added and can be found at
+Un portefeuille en ligne simple est disponible pour les utilisateurs qui ne veulent pas installer de logiciels supplémentaires sur leur ordinateur. C'est basé sur
+[Copay](https://github.com/bitpay/copay) avec des changements Decred spécifiques ajoutés et peuvent être trouvé ici
 [https://wallet.decred.org](https://wallet.decred.org)
 
-There are a couple of things you need to know about the web client
-before you use it:
+Il y a quelques choses que vous devez savoir sur le client Web
+Avant de l'utiliser:
 
-* You cannot
-  [stake mine](/mining/overview.md#2-proof-of-stake-mining)
-  with it.
-* Your wallet is kept entirely in the local storage of your web
-  browser.  This means that is you delete your local storage, you will
-  delete you wallet and must recreate from the seed.
-* The security of your wallet depends entirely on the security of your
-  web browser.
-* You can put a pin on your wallet to prevent sending funds but any
-  other access is dependant entirely on the access controls on your
-  computer, not on the server or any login details.
+* Vous ne pouvez pas
+  [PdE mine](/mining/overview.md#2-proof-of-stake-mining)
+  avec.
+* Votre portefeuille est entièrement conservé dans le stockage local de votre site Web
+  navigateur. Cela signifie que vous supprimez votre stockage local, vous allez supprimez votre portefeuille et devez recréer à partir de la graine.
+* La sécurité de votre portefeuille dépend entièrement de la sécurité de votre navigateur web.
+* Vous pouvez mettre une épingle sur votre portefeuille pour éviter d'envoyer des fonds, mais tout autre accès dépend entièrement sur l'accès des contrôles de votre ordinateur, pas sur le serveur ni un détail de connexion.
 
 ---
 
-## **<i class="fa fa-plus-circle"></i> Create your web client wallet**
+## **<i class="fa fa-plus-circle"></i> Créer votre Portefeuille en Ligne**
 
-> Step One
+> Première Etape 
+Allez sur [https://wallet.decred.org](https://wallet.decred.org). vous serez présenté avec la fenètre `Termes and Conditions`. Prêtez une attention particulière à ce qui suit:
 
-Go to [https://wallet.decred.org](https://wallet.decred.org). You will
-be presented with the `Terms and Conditions` screen. Pay extra
-attention to the following:
+Tout comme le portefeuille de ligne de commande, si vous perdez vos mots de graine ou votre
+Mot de passe pour l'envoi de fonds, vous perdrez l'accès à votre portefeuille. Il n'y a pas de réinitialisation de mot de passe. Notez également que toutes les transactions sur Decred sont irréversible par la conception. Si vous envoyez accidentellement des fonds sur une fausse adresse, vous devrez demander au destinataire de les renvoyer. les développeurs ne peuvent pas inverser les transactions. Cliquez `J'accepte` dès que vous les avez lu. Vous verrez maintenant l'écran d'accueil. Si c'est la première fois que vous avez utilisé Decred, cliquez sur `Commencer`. Si vous souhaitez restaurer un portefeuille utilisé précédemment, cliquez sur `Importer Backup`. Ce guide supposera que vous commencez simplement, alors cliquez sur `GCommencer`.
 
-Just like the command-line wallet, if you lose your seed words or your
-password for sending funds you will lose access to your wallet. There
-is no password reset. Also note that all transactions on Decred are
-irreversible by design. If you accidentally send funds to the wrong
-address, you will need to ask the recipient to send them back. The
-developers are unable to reverse transactions. Click `I Agree` once
-you have read them. You will now see the welcome screen. If this is
-the first time you have used Decred, click `Get Started`. If you want
-to restore a previously used wallet, click `Import Backup`. This guide
-will assume you are just starting out so click `Get Started`.
+> Deuxième étape
 
-> Step Two
+Un portefeuille sera généré pour vous et vous verrez cet écran:
 
-A wallet will be generated for you and you will see this screen:
+Notez ca sous `Portefeuille Personel` sur la gauche il dit `Testnet`. Ce portefeuille ne fonctionnera que sur le réseau Decred Testnet. Testnet est destiné à tester uniquement et les pièces sur testnet n'ont aucune valeur. Cliquez le menu déroulant en haut à gauche, puis cliquez sur `Ajouter un Portefeuille`. Cliquez `Créer un nouveau Portefeuille`. Donnez un nom aà votre portefeuile et cliquez `Créer un nouveau Portefeuille`.
 
-Note that under `Personal Wallet` on the left it says `Testnet`. This
-wallet will only work on the Decred testnet network.  Testnet is meant
-for testing only and coins on testnet have NO value.  Click the
-dropdown in the top left, then click `Add wallet`. Click `Create New
-Wallet`. Give your wallet a name then click `Create New Wallet`.
+> Troisième étape
 
-> Step Three
+Votre portefeuille est maintenant créé et prêt à l'emploi. Cependant, avant de faire autre chose, vous devez ajouter un mot de passe pour l'envoi de fonds et une sauvegarde des mots de base utilisés pour créer votre portefeuille. C'est doublement vrai pour le client en ligne qui ne stocke pas un enregistrement permanent. Les données de votre portefeuille sont stockées dans le cache du navigateur et peuvent être supprimées tout à fait facilement. Si vous exécutez en mode anonyme, il sera supprimé dès que vous fermez le navigateur. **SANS CES MOTS CLÉS QUE VOUS PERDEZ ACCÈS À TOUS LES FONDS DE VOTRE MARCHANDISME** si les données du portefeuille sont supprimées. Les fonds eux-mêmes existent encore dans la chaîne de bloc, cependant, sans la clé, vous ne pouvez pas y accéder.
 
-Your wallet is now created and ready to use. However, before you do
-anything else, you should add a password for sending funds and backup
-the seed words that were used to create your wallet. This is doubly
-true for the web client which does not store a permanent record. Your
-wallet data is stored in the browser cache and can be deleted quite
-easily. If you are running in incognito mode, it will be deleted as
-soon as you close the browser. **WITHOUT THESE KEY WORDS YOU LOSE
-ACCESS TO ALL FUNDS IN YOUR WALLET** should the wallet data be
-deleted. The funds themselves still exist in the blockchain, however,
-without the key you cannot access them.
+<i class="fa fa-exclamation-triangle"></i> **DNE PAS UTILISER LA MEME GRAINE DANS DES PORTEFEUILLE MULTIPLES! Visiter [Portefeuilles et graines FAQ](/faq/wallets-and-seeds.md#3-can-i-run-multiple-wallets) pour voir pourquoi cela compte. Il est recommandé que, si possible, un nouveau portefeuille devrait générer une nouvelle graine.** 
 
-<i class="fa fa-exclamation-triangle"></i> **DO NOT USE THE SAME SEED IN MULTIPLE WALLETS! Visit [Wallets and Seeds FAQ](/faq/wallets-and-seeds.md#3-can-i-run-multiple-wallets) to see why this matters. It is recommended that where possible a new wallet should mean generating a new seed.** 
-
-Click the `Preferences` button on the right opposite your wallet name. There are really only three things you will be interested in here:
+Cliquez sur le boutton `Préferences`  à droite en face de votre nom de portefeuille. Il n'y a vraiment que trois choses dont vous serez intéressé:
 
 Option                                | Description
 ---                                   | ---
-`Wallet Alias`                        | You can rename the wallet if you wish.
-`Request Password for Spending Funds` | Since your wallet is saved in the browser cache, there is no extra password required to access it. By setting a password here, you ensure that only you can send funds if someone else accesses your browser. Type a password in and click `Set`. Note the alert that says passwords cannot be recovered. There is no password reset feature on the wallet. If you lose the password, you will never be able to move your coins out of the wallet or use them for proof-of-stake voting.
-`Backup`                              | This is where you will find your seed key words.
+`Alias Portefeuille`                        | Vous pouvez renommer le portefeuille si vous le souhaitez.
+`Demander un mot de passe pour dépenser des fonds` | Comme votre portefeuille est enregistré dans le cache du navigateur, il n'y a pas de mot de passe supplémentaire requis pour y accéder. En établissant un mot de passe ici, vous vous assurez que vous pouvez simplement envoyer des fonds si quelqu'un d'autre accède à votre navigateur. Tapez un mot de passe et cliquez sur `Set`. Notez l'alerte indiquant que les mots de passe ne peuvent pas être récupérés. Il n'y a pas de fonction de réinitialisation du mot de passe sur le portefeuille. Si vous perdez le mot de passe, vous ne pourrez jamais déplacer vos pièces de monnaie du portefeuille ou les utiliser pour le vote de la preuve d'enjeu.
+`Backup`                              | C'est là que vous trouverez vos mots clés de graine.
 
-> Step Four
+> Quatrième étape
 
-Click `Backup`. You will see this screen:
+Cliquez sur `Sauvegarder`. Vous verrez cet écran:
 
-First of all, read the note. Only use ONE wallet at a time with a
-given seed (See: [FAQ](#)). You can have multiple wallets installed on
-different machines, but only one of them should be running at any
-given time. Click `Show Wallet Seed`. Write this down somewhere safe,
-or put it in an encrypted document to which you will not forget the
-password. This list of words is used to generate the authentication
-key for your wallet. Anyone who possesses this list can access the
-funds in your wallet.
+Tout d'abord, lisez la note. Utilisez uniquement un portefeuille à la fois avec une graine donnée (voir: [FAQ](#)). Vous pouvez avoir plusieurs portefeuilles installés sur différentes machines, mais un seul d'entre elles devrait fonctionner à n'importe quel
+temps donné. Cliquez sur `Montrer la graine du portefeuille`. Écrivez ceci dans un endroit sûr, ou le mettre dans un document encrypté auquel vous n'oublierez pas le
+mot de passe. Cette liste de mots est utilisée pour générer la clé d'authentification pour votre portefeuille. Toute personne possédant cette liste peut accéder aux fonds dans votre portefeuille.
 
-> **VERY IMPORTANT**
+> **TRES IMPORTANT**
 
-**DO NOT, UNDER ANY CIRCUMSTANCES, GIVE YOUR KEY WORDS TO ANYONE! NOT EVEN THE DEVELOPERS!**
+**NE PAS, SOUS AUCUNE CIRCONSTANCE, DONNEZ VOS MOTS CLÉS À N'IMPORTE QUI! NON MÊME PAS AUX DÉVELOPPEURS!**
 
-Once you have written the words down (and have triple-checked that they are correct; capitalization is important), go to the next step.
+Une fois que vous avez écrit les mots (et que vous avez vérifié trois fois qu'ils sont corrects, la capitalisation est importante), passez à l'étape suivante.
 
-> Step Five
+> Cinquième étape
 
-Now that you have written down your key words and checked them, do it
-again. Seriously. This step is critical. Without this list your wallet
-cannot be reconstructed and no one, not even the developers, can
-restore it. Now that you are sure the list is stored correctly, click
-`Delete Words`. Click `Back` twice to get to the main wallet screen.
+Maintenant que vous avez écrit vos mots clés et les avez vérifiés, faites-le
+encore. Sérieusement. Cette étape est critique. Sans cette liste, votre portefeuille
+Ne peut pas être reconstruit et personne, même pas les développeurs, ne peutle rétablir. Maintenant que vous êtes sûr que la liste est stockée correctement, cliquez sur
+`Efaccer les Mots`. Cliquez sur `Retour` deux fois pour accéder à l'écran principal du portefeuille.
 
 ---
 
-## **<i class="fa fa-long-arrow-right"></i> Send funds with the web client**
+## **<i class="fa fa-long-arrow-right"></i> Envoyer des Fonds avec le Client Web**
 
-> Step One
+> La première étape
 
-On the main web wallet page, click the `Send` button at the
-bottom. You will be taken to this page. Note the `Advanced Options`
-section has already been expanded. In the `To` field, put in the
-Decred address of the recipient.
+Sur la page du portefeuille de la page Web principale, cliquez sur le bouton `Envoyer` en bas. Vous serez emmené sur cette page. Notez la section d' `Options Advancées` a déjà été développée. Dans le champ `To`, mettez l'adresse décrite du destinataire.
 
-> Step Two
+> Deuxième étape
 
-In `Amount`, enter the value in DCR to send to the recipient. If you
-wish you can type an optional message in the `Note` field. Press
-`Send`. The `Use Unconfirmed Funds` option lets you use funds that the
-network knows are being sent to you but have not yet been confirmed by
-[proof-of-work miners](/mining/overview.md#1-proof-of-work-mining). If
-this is turned on and the amount specified can only be covered by
-using unconfirmed funds, the transaction will not proceed until the
-required funds have been confirmed.
+Dans `Montant`, entrez la valeur dans DCR pour envoyer au destinataire. Si vous le souhaitez vous pouvez saisir un message facultatif dans le champ `Note`. Pressez
+`Envoyer`. Les `Utiliser non-confirmé Fonds` option vous permet d'utiliser des fonds que le réseau sait que vous vous êtes fait envoyé mais qui n'ont pas encore été confirmé par
+[PdT minage](/mining/overview.md#1-proof-of-work-mining). Si cela est activé et que le montant spécifié ne peut être couvert qu'en utilisant des fonds non confirmés, la transaction ne s'effectuera pas avant que les fonds requis ont été confirmés.
 
 ---
 
-## **<i class="fa fa-long-arrow-left"></i> Receive funds with the web client**
+## **<i class="fa fa-long-arrow-left"></i> Recevoir des fonds avec le client en Ligne**
 
-> Step One
+> Première étape
 
-Click the `Receive` button at the bottom of the window. You will see
-this screen:
+Cliquez sur le bouton `Recevoir 'en bas de la fenêtre. Vous verrez cet écran:
 
-Give the person sending you DCR the address displayed (it will start
-with `Ds`) or they can use the QR code if their wallet or service
-accepts them. You can use the same address as often as you want, but
-for privacy it is recommended that you generate a new address each
-time. Do not worry about being given a duplicate address. There are
-around `2.08x10^93` possible addresses, so we will probably reach the
-heat death of the universe before we run out of Decred addresses.
+Donnez à la personne qui vous envoie DCR l'adresse affichée (elle commencera
+avec `Ds`) Ou ils peuvent utiliser le code QR si leur portefeuille ou service les accepte. Vous pouvez utiliser la même adresse aussi souvent que vous le souhaitez, mais pour la confidentialité, il est recommandé de générer une nouvelle adresse chaque
+fois. Ne vous inquiétez pas d'avoir reçu une adresse en double. Il y a
+autour `2.08x10^93` possible addresses, donc nous allons probablement atteindre la mort thermique de l'Univers avant de manquer d'adresses Decred.
 

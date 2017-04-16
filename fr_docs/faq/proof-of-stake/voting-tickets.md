@@ -1,44 +1,44 @@
-# **Voting Tickets**
+# **Tickets de Vote**
 
 ---
 
-#### **1. When did proof-of-stake voting start?**
+#### **1. Quand est-ce que la preuve d'enjeu commence?**
 
-Proof-of-stake voting began[^7969] at block 4,096.
-
----
-
-#### **2. In the source code TicketPoolSize is set to 8,192, but the current ticket pool size is larger than that. Why?**
-
-It is intentional and is an integral part of the dynamic ticket price adjustment[^8965]. The `TicketPoolSize` is the target ticket pool size and it works very similar to the target difficulty for proof-of-work (PoW). The fact the current ticket pool size is larger than the target is what causes the ticket price to rise which in turn will eventually cause less tickets to be purchased and result in the number of tickets in the pool reducing back towards the target. If it falls under, the price will fall to encourage more ticket sales in order to increase the number of tickets in the pool towards the target.
+La preuve d'enjeu aà commencé au bloc[^7969] 4,096.
 
 ---
 
-#### **3. If I am unlucky and my ticket expires without voting, do I lose the transaction fee?**
+#### **2. Dans le code source TicketPoolSize est défini sur 8,192, mais la taille actuelle du pool de tickets est supérieure à celle. Pourquoi?**
 
-Yes[^9806].
-
----
-
-#### **4. Voting on mainnet was on 'hold' up until block 4,096, with people buying tickets. Does this mean there will be a significantly higher risk for these tickets to expire?**
-
-No[^9806], the expiration time does not start until a ticket is actually mined into a block. The tickets were just sitting in the memory pool until they could be included in blocks starting with block 4,096.
+C'est intentionnel et fait partie intégrante de l'ajustement dynamique du prix du ticket [^8965]. Le `TicketPoolSize` est la taille du pool de tickets cible et cela fonctionne très semblable à la difficulté cible de la preuve de travail (PdT). Le fait que la taille actuelle de la pool de ticket soit plus grande que la cible est ce qui provoque l'augmentation du prix du ticket qui, à son tour, entraînera éventuellement moins de ticket et entraînera le nombre de tickets dans la pool de se réduisent vers la cible. Si elle tombe sous, le prix va baisser pour encourager davantage de ventes de ticket afin d'augmenter le nombre de ticket dans la piscine vers la cible
 
 ---
 
-#### **5. What happens if none (or less than 3) of the selected voters issue their ssgen transactions?**
+#### **3. Si j'ai de la malchance et que mon ticket expire sans vote, est-ce que je perds les frais de transaction??**
 
-Votes are always determined by the current tip. Miners do not start mining for a new block until at least 3+ of the selected voters issue their ssgen transactions. So, if a found block does not manage to get the selected votes[^10219], the block is simply orphaned by the next block another miner finds.
-
-For a more concrete example, assume the current chain tip is at block 5,000. The voters determined by block 5,000 have already submitted their votes, so miners are chugging away looking for block 5,001. Now, a miner finds a solution for block 5,001 and submits it to the network. All of the daemons (and hence wallets) will see that 5,001 just showed up. However, the miners do not immediately start mining off of 5,001. Instead they continue mining off of 5,000 until 3+ votes for block 5,001 show up. At that point they all switch and start mining off of 5,001. If those 3+ votes never show up, another candidate block 5,001 will be found by the other miners still working on block 5,000 who will submit their (different) solution for block 5,001 to the network. Since each of these new candidate blocks for 5,001 have a different hash, different tickets are selected.
+Oui[^9806].
 
 ---
 
-#### **6. What happens if a ticket I have missed a vote?**
+#### **4. Le vote sur mainnet a été bloqué jusqu'au bloc 4096, alors que les gens achètent des tickets. Cela signifie-t-il qu'il y aura un risque beaucoup plus élevé pour ces tickets d'expirer?**
 
-Your wallet will automatically revoke the ticket in the block after it is missed[^13912], so you get them back just after they were missed as immature funds (that means they will not be spendable for 256 blocks when they mature).
+Non[^9806], le délai d'expiration ne commence pas jusqu'à ce qu'un ticket soit réellement extrait dans un bloc. Les tickets étaient simplement en attente dans la pool de mémoire jusqu'à ce qu'ils puissent être inclus dans les blocs à partir du bloc 4,096.
 
-For example:
+---
+
+#### **5. Que se passe-t-il si aucun (ou moins de 3) des électeurs sélectionnés n'émettent leurs transactions ssgen?**
+
+Les votes sont toujours déterminés par la pointe actuelle. Les mineurs ne commencent pas à exploiter un nouveau bloc jusqu'à ce que au moins 3+ des électeurs sélectionnés émettent leurs transactions ssgen. Donc, si un bloc trouvé ne parvient pas à obtenir les votes sélectionnés[^10219], le bloc est simplement orphelin par le prochain bloc qu'un mineur trouve.
+
+Pour un exemple plus concret, supposons que la chaîne actuelle soit au bloc 5000. Les électeurs déterminés par le bloc 5000 ont déjà soumis leurs votes, de sorte que les mineurs échouent à chercher le bloc 5001. Maintenant, un mineur trouve une solution pour le bloc 5001 et le soumet au réseau. Tous les daemon (et donc les portefeuilles) verront que 5001 est apparu. Cependant, les mineurs ne commencent pas immédiatement à partir de 5001. Au lieu de cela, ils continuent à extraire 5000 jusqu'à ce que 3+ votes pour le bloc 5001 s'affichent. À ce moment-là, ils changent tous et commencent à s'enquérir de 5001. Si ces 3+ votes ne se présentent jamais, un autre bloc candidat 5001 sera trouvé par les autres mineurs qui travaillent encore sur le bloc 5000 qui présenteront leur solution (différente) pour le bloc 5001 au réseau. Étant donné que chacun de ces nouveaux blocs candidats pour 5001 ont un hash différent, différents tickets sont sélectionnés.
+
+---
+
+#### **6. Que se passe-t-il si un ticket m'a manqué un vote??**
+
+Votre portefeuille révoque automatiquement le ticket dans le bloc après avoir échoué [^13912], afin que vous les récupériez juste après qu'ils aient été manqué comme fonds immatures (cela signifie qu'ils ne seront pas dépensés pour 256 blocs lorsqu'ils mûront).
+
+Par exemple:
 
 ```no-highlight
 dcrctl --wallet getstakeinfo
@@ -46,18 +46,18 @@ dcrctl --wallet getstakeinfo
 
 Output          | Description
 ---             |---
-`allmempooltix` | All of the stake tickets in the memory pool (waiting to be mined into a block).
-`ownmempooltix` | Your stake tickets in the memory pool (waiting to be mined into a block).
+`allmempooltix` | Tous les tickets de participation dans la pool de mémoire (en attente d'être inclus dans un bloc).
+`ownmempooltix` | Vos tickets de participation dans la pool de mémoire (en attente d'être extraits dans un bloc).
 
 ---
 
-#### **7. What is the difference between a missed and revoked ticket?**
+#### **7. Quelle est la différence entre un ticket manqué et révoqué?**
 
-Missed tickets are tickets that were called to vote, but did not. After a ticket has been missed, it can be revoked[^14763]. The wallet automatically revokes missed tickets it controls (assuming it is unlocked so it can sign the revocation transaction).
+Les tickets émis sont des tickets qui ont été appelés à voter, mais ne l'ont pas fait. Une fois qu'un ticket a été manqué, il peut être révoqué [^14763]. Le portefeuille révoque automatiquement les tickets manqués qu'il contrôle (en supposant qu'il soit déverrouillé afin qu'il puisse signer la transaction de révocation).
 
-All `rebroadcastmissed` does is tell the wallet to ask the network daemon (`dcrd`) to give it the list of missed tickets again to double check if any need to be revoked. Typically this is not needed unless, for example, an attempt to revoke a ticket was made but failed because the wallet was locked. In other words, if you notice that revoked does not equal missed, you might need to `rebroadcastmissed`. As said though, there is rarely a need for this since the wallet automatically does it on startup and looks for missed tickets on every block.
+Tout `rebroadcastmissed` fait son appel au portefeuille pour demander au daemon du réseau (` dcrd`) de lui donner à nouveau la liste des tickets manqués pour vérifier à nouveau s'il est nécessaire de révoquer. En règle générale, cela n'est pas nécessaire, sauf si, par exemple, une tentative de révoquaction d'un ticket a été effectuée mais a échoué car le portefeuille a été verrouillé. En d'autres termes, si vous remarquez que la révocation n'est pas égale à celle manquée, vous devrez peut-être `rebroadcastmissed`. Comme on l'a dit, il y a rarement besoin de cela puisque le portefeuille le fait automatiquement au démarrage et recherche des tickets manqués sur chaque bloc.
 
-Continue to [Proof-of-Work Mining](/mining/proof-of-work.md)
+Continuer à [Minage PdT](/mining/proof-of-work.md)
 
 ---
 

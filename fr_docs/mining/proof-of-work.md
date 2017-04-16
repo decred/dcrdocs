@@ -1,29 +1,29 @@
-# ** Proof-of-Work (PoW) Mining**
+# ** Preuve-de-Travail (PdT) Minage**
 
 ---
 
-## ** Solo Mining or Pool Mining **
+## ** Solo Minage ou Pool Minage **
 
-> <i class="fa fa-male"></i> Solo Mining
+> <i class="fa fa-male"></i> Solo Minage
 
-<i class="fa fa-exclamation-triangle"></i> **Solo mining is not recommended and is not covered by this documentation!** The Decred network regularly sees a network hash rate of up to 10,000Gh/s. Solo mining is generally only done by advanced individuals or organized groups with a large cluster of GPUs so it is not addressed here.
+<i class="fa fa-exclamation-triangle"></i> **Solo minage n'est pas recommandé et n'est pas couvert dans cette documentation!** Le réseau de Decred voit régulièrement un taux de hash réseau de plus de 10 000 Gh/s. Miner en solo n'est généralement effectuée que par des personnes avancées ou des groupes organisés avec un grand groupe de GPU, de sorte qu'il ne soit pas abordé ici.
 
-> <i class="fa fa-users"></i> Pool Mining
+> <i class="fa fa-users"></i> Pool Minage
 
-When you mine in a pool, your hashrate is combined with all the other pool miners’ hashrates to look for the correct solution for a block. You will receive a reward based on the amount of work your miner performs in the pool.
-Pool mining distributes shares based on blocks found so you can earn a steady amount of Decred rather than the "all or none" of solo mining.
-
----
-
-## Obtain a Decred Address to Receive Funds With
-
-Follow the [dcrctl Basics](/getting-started/user-guides/dcrctl-basics.md) guide and create an address so you can withdraw mining rewards to it.
+Lorsque vous vous trouvez dans une piscine, votre hash est combiné avec tous les autres hashrates des mineurs de pool pour rechercher la solution correcte pour un bloc. Vous recevrez une récompense en fonction de la quantité de travail effectué par votre mineur dans la pool.
+Le minage en pool distribue des actions en fonction des blocs trouvés afin que vous puissiez gagner un montant stable de Decred plutôt que de «tout ou rien» en minage solo
 
 ---
 
-## **<i class="fa fa-life-ring"></i> Sign up for a Mining Pool**
+## Obtenir une Adresse Decred et Recevoir des Fonds avec
 
-These mining pools are known to support Decred:
+Suivez le guide [dcrctl Basics](/getting-started/user-guides/dcrctl-basics.md) Et créez une adresse afin que vous puissiez retirer des récompenses de minage.
+
+---
+
+## **<i class="fa fa-life-ring"></i> Signez sur une Pool de Minage**
+
+Ces Pool de Minage sont Connues et Supportées par Decred:
 
 * [<i class="fa fa-external-link-square"></i> http://decredpool.org](http://decredpool.org)
 * [<i class="fa fa-external-link-square"></i> http://yiimp.ccminer.org](http://yiimp.ccminer.org)
@@ -33,52 +33,52 @@ These mining pools are known to support Decred:
 * [<i class="fa fa-external-link-square"></i> https://pool.mn/dcr](https://pool.mn/dcr)
 * [<i class="fa fa-external-link-square"></i> https://zpool.ca](https://zpool.ca)
 
-Mining pools all work more or less the same but you may wish to sign up at multiple pools and see which one suits you the best.
+Les pools de minage fonctionnent tous plus ou moins les mêmes, mais vous pouvez vous inscrire à plusieurs pools et voir celle qui vous convient le mieux.
 
-Please choose to mine on a smaller pool so the network's hashrate can be spread out for better decentralization of mining power!
+Choisissez de miner sur une plus petite pool afin que le hash du réseau puisse être réparti pour une meilleure décentralisation du pouvoir de minage!
 
 ---
 
 ## ** GPU Drivers/Software **
 
-GPU drivers usually contain the libraries needed for mining.  If you have difficulties running the software you may wish to re-install and specifically check that the OpenCL (AMD) or CUDA (NVIDIA) libraries are selected.
+Les pilotes GPU contiennent habituellement les bibliothèques nécessaires au minage. Si vous avez des difficultés à exécuter le logiciel, vous pouvez réinstaller et vérifier spécifiquement que les bibliothèques OpenCL (AMD) ou CUDA (NVIDIA) sont sélectionnées.
 
 ---
 
-## **<i class="fa fa-download"></i> Select and Download Mining Software **
+## **<i class="fa fa-download"></i> Selectionner and Télécharger le Software de Minage **
 
-> Official Decred Mining Software Builds
+> Software de Minage Officiel de Decred
 
 #### **[<i class="fa fa-github"></i> gominer](https://github.com/decred/gominer)**
 
-It is recommended that everyone use gominer for Decred. This is the easiest miner to setup and start mining. Currently, the latest version of gominer is **[<i class="fa fa-github"></i>v0.8.0](https://github.com/decred/gominer/releases/)** and the official binaries can be downloaded from **[https://github.com/decred/decred-binaries/releases/tag/v0.8.0](https://github.com/decred/decred-binaries/releases/tag/v0.8.0)**
+Il est recommandé que tous utilisent gominer pour Decred. C'est le mineur le plus facile à configurer et à démarrer pour miner. Actuellement, la dernière version de gominer est **[<i class="fa fa-github"></i>v0.8.0](https://github.com/decred/gominer/releases/)** et les binaire officiels peuvent être téléchargés depuis **[https://github.com/decred/decred-binaries/releases/tag/v0.8.0](https://github.com/decred/decred-binaries/releases/tag/v0.8.0)**
 
-Please be certain to select the correct operating system (Windows/Linux) and the correct version for your GPU type (CUDA for NVIDIA cards, OpenCL/OpenCLADL for AMD cards). gominer is only available to 64-bit operating systems. User guides to start mining with gominer can be found here: 
+Assurez-vous de sélectionner le système d'exploitation correct (Windows/Linux) et la version correcte pour votre type de GPU (CUDA pour les cartes NVIDIA, OpenCL/OpenCLADL pour les cartes AMD). Gominer n'est disponible que pour les systèmes d'exploitation 64 bits. Les guides d'utilisation pour commencer l'extraction avec gominer peuvent être trouvés ici: 
 
-- [Windows Pool-Mining](/mining/proof-of-work/pool-mining/gominer/windows.md)
+- [Windows Pool-de-Minage](/mining/proof-of-work/pool-mining/gominer/windows.md)
 
 #### **[<i class="fa fa-github"></i> cgminer](https://github.com/decred/cgminer)**
 
-cgminer is a popular miner for **AMD** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
+cgminer est un populaire mineur pour **AMD** GPUs qui a une longue histoire d'utilisation dans de différentes et nombreuses cryptocurrency. Il est plus difficile à utiliser que le gominer Decred.
 
 #### **[<i class="fa fa-github"></i> ccminer](https://github.com/decred/ccminer)**
 
-ccminer is a popular miner for **NVIDIA** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
+ccminer est un mineur populaire **NVIDIA** GPUs qui a une longue histoire d'utilisation dans de différentes et nombreuses cryptocurrency. Il est plus difficile à utiliser que le gominer Decred.
 
-**Official builds of ccminer and cgminer are available on GitHub from the following link: <br />
+**Logiciels officiels de ccminer et cgminer sont disponibles sur GitHub depuis ce lien: <br />
 [https://github.com/decred/decred-release/releases/tag/v0.1.0_miners](https://github.com/decred/decred-release/releases/tag/v0.1.0_miners)**
 
-> Unofficial Miners
+> Mineurs Non-official
 
-Those with an **AMD** graphics card running Windows may want to download [sgminer](https://github.com/tpruvot/sgminer/releases).
+Ceux avec une carte graphique **AMD** utilisant Windows peuvent vouloir télécharger [sgminer](https://github.com/tpruvot/sgminer/releases).
 
 ---
 
-## **Running the Software**
+## **Lancer le Software**
 
-* Decompress and install the software to a place of your choosing.
-* Open a command prompt to that path.
-* Follow your mining pools instructions for setup.
-* Run the miner. 
+* Décompressez et installez le logiciel dans un lieu de votre choix.
+* Ouvrez une invite de commandes sur ce chemin.
+* Suivez les instructions de vos pools de minage pour la configuration.
+* Exécuter le mineur.
 
-Continue to [PoW Mining FAQ](/faq/proof-of-work-mining.md)
+Continuer à [PdT Minage FAQ](/faq/proof-of-work-mining.md)

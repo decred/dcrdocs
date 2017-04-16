@@ -1,72 +1,57 @@
-# ** Proof-of-Stake (PoS) Mining**
+# ** Preuve-d'Enjeu (PdE) Minage**
 
 ---
 
-## ** Overview **
+## ** Vue d'Ensemble **
 
-This document explains the process by which one purchases a ticket with DCR by
-sending an SStx transaction.  If the transaction is successfully mined, it will
-then go through a 256 block maturation period.  Once mature, the ticket will be
-randomly selected to vote on PoW blocks as covered by the
-[general mining overview](/mining/overview.md#2-proof-of-stake-pos-mining).
+Ce document explique le procédé par lequel on achéte un ticket avec DCR en envoyant une transaction SStx.  Si la transaction est minée avec succès, il apparaîtra puis passera par une période de maturation de 256 blocs. Une fois à maturité, le ticket sera sélectionnés au hasard pour voter sur les blocs PdT couverts par la [Aperçu général de l'extraction](/mining/overview.md#2-proof-of-stake-pos-mining).
 
 ---
 
-## ** Prerequisites **
+## ** Conditions préalables **
 
-- A running [dcrd](/getting-started/user-guides/dcrd-setup.md) Instance
-- A running [dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) Instance
-- [dcrctl basics](/getting-started/user-guides/dcrctl-basics.md) such as unlocking your wallet.
-- [Obtain some DCR](/getting-started/obtaining-dcr.md)
-
----
-
-## ** How Does It Work? ** ##
-
-Purchasing a ticket for PoS is quite simple (see below) but what happens to it after you buy it?
-A ticket on main net (test net uses different parameters) will go through a few stages in its lifetime:
-
-1. You buy a ticket using your wallet.
-2. The ticket enters the 'mempool'. Only 20 tickets are mined into each block. This is where tickets wait to be mined.
-3. Tickets are mined into a block in order of their `ticketfee`. Note that the ticketfee is priced per KB. 
-A ticket transaction is about a third (solo) or half (pool) a KB so the actual fee you pay will be scaled accordingly.
-4. **A -** If your ticket is mined into a block, it will enter immature status for 256 blocks (about 20 hours). During
-this time the ticket cannot vote. At this point, the ticket fee is non-refundable.  
-**B -** If your ticket is not mined, both the ticket price and fee are returned.
-5. After the ticket matures (256 blocks), your ticket enters the ticket pool and is eligible for voting.
-6. The chance of a ticket voting is based on a Poisson distribution with a mean of 28 days. What this means is that after 28 days any
-ticket has a 50% chance to have already voted.
-7. Given a target pool size of 40960 tickets, any given ticket has a 99.5% chance of voting within ~142 days (about 4.7 months). If,
-after this time, a ticket has not voted, it expires. The ticket price is returned to the user.
-8. A ticket may be missed if the voting wallet does not respond or two valid blocks are found within close proximity of each other.
-If this happens, the ticket price is returned to the user.
-9. After a ticket has voted, missed, or expired, the funds (ticket price and subsidy if applicable, minus the fee) will enter immature status for another 256 blocks, after which they are released. If a ticket is missed or expired, a ticket revocation transaction is submitted by the wallet which then frees up the locked ticket outputs. *NOTE* Revocations can only be submitted for a corresponding missed ticket. You cannot revoke a ticket until it is missed.
+- Une instance fonctionnelle [dcrd](/getting-started/user-guides/dcrd-setup.md)
+- Une instance fonctionnelle [dcrwallet](/getting-started/user-guides/dcrwallet-setup.md)
+- [dcrctl basiques](/getting-started/user-guides/dcrctl-basics.md) comme débloquer votre portefeuille.
+- [Obtenir DCR](/getting-started/obtaining-dcr.md)
 
 ---
 
-## ** Solo Mining or Pool Mining **
+## ** HComment ça marche? ** ##
 
-> <i class="fa fa-male"></i> Solo Mining
+L'achat d'un ticket pour PdE est assez simple (voir ci-dessous) mais qu'est-ce qui vous arrive après l'avoir acheté?
+Un ticket sur le réseau principal (test net utilise différents paramètres) passera par quelques étapes de sa vie:
 
-<i class="fa fa-exclamation-triangle"></i> **In order to successfully
-take part in PoS, you need to make sure that your wallet is online 24/7. This
-is because your ticket may be called on to vote at any time and if your wallet
-is unable to respond you will lose the vote reward.  The amount of your ticket
-purchase will be returned minus transaction fees.**
-
-> <i class="fa fa-users"></i> Pool Mining
-
-Using a stake pool is beneficial because the servers are geographically
-distributed and redundant which vastly increases the odds that your vote
-will always be cast even if a network or server outage occurs.
-The stake pools charge a fee to pay for server costs and system
-administration labor.
+1. Vous achetez un ticket en utilisant votre portefeuille.
+2. Le ticket entre dans la `mempool`. Seulement 20 tickets sont extraits dans chaque bloc. C'est là que les tickets attendent d'être exploités.
+3. Les tickets sont inclus dans un bloc dans l'ordre de leur `ticketfee`. Notez que les frais du ticket est fixée au prix par KB.
+Une transaction de ticket est d'environ un tiers (solo) ou la moitier (pool) d'un KB, de sorte que les frais réels que vous payez seront mis à l'échelle en conséquence.
+4. **A -** Si votre ticket est extrait dans un bloc, il entrera dans un état immature pour 256 blocs (environ 20 heures). Pendant ce temps, le ticket ne peut pas voter. À ce stade, les frais de ticket ne sont pas remboursables.  
+**B -** Si votre ticket n'est pas extrait, le prix du ticket et les frais sont retournés.
+5. Après l'échéance du ticket (256 blocs), votre ticket entre dans la pool de tickets et est éligible au vote.
+6. Les chances de voter sur un ticket sont basées sur une distribution de Poisson avec une moyenne de 28 jours. Ce que cela signifie, c'est qu'après 28 jours le ticket a 50% de chances d'avoir déjà voté.
+7. Compte tenu d'une cible de pool de la taille de 40960 ticket, un ticket donné a une chance de vote de 99,5% en ~ 142 jours (environ 4,7 mois). Si,
+Après cette période, un ticket n'a pas voté, il expire. Le prix du ticket est retourné à l'utilisateur.
+8. Un ticket peut être manqué si le portefeuille de vote ne répond pas ou deux blocs valides se trouvent à proximité immédiate l'un de l'autre. Si cela se produit, le prix du ticket est retourné à l'utilisateur.
+9. Une fois qu'un ticket a voté, manqué ou a expiré, les fonds (prix du ticket et subvention, le cas échéant, moins les frais) entreront dans un statut immature pour 256 autres blocs, après quoi ils seront libérés. Si un ticket est manqué ou expiré, une transaction de révocation de tickets est soumise par le portefeuille qui libère les sorties de tickets verrouillées. *NOTE* Les révocations ne peuvent être soumises que pour un ticket échoué correspondant. Vous ne pouvez pas révoquer un ticket jusqu'à ce qu'il soit manqué.
 
 ---
 
-## **<i class="fa fa-life-ring"></i> Sign Up For a Stake Pool**
+## ** Minage Solo ou Pool de Minage **
 
-These stake pools are officially recognized:
+> <i class="fa fa-male"></i> Minage Solo
+
+<i class="fa fa-exclamation-triangle"></i> **Pour réussir à participez à la PdE, vous devez vous assurer que votre portefeuille est en ligne 24 heures sur 24, 7 jours sur 7. C'est parce que votre ticket peut être appelé à voter à tout moment et si votre portefeuille est incapable de répondre, vous perdrez la récompense de vote. Le montant de l'achat votre ticket sera retourné moins les frais de transaction.**
+
+> <i class="fa fa-users"></i> Pool de Minage
+
+L'utilisation d'une pool de pari est bénéfique car les serveurs sont géographiquement distribué et redondant, ce qui augmente considérablement les chances que votre vote soit toujours diffusé même si une panne de réseau ou de serveur se produit. Les pools de pari facturent des frais pour payer les coûts et le travail des système des serveurs administratif.
+
+---
+
+## **<i class="fa fa-life-ring"></i> Signez pour une Pool de Minage**
+
+Ces pool de minage sont officielement reconnues:
 
 * [<i class="fa fa-external-link-square"></i> https://dcr.stakepool.net](https://dcr.stakepool.net)
 * [<i class="fa fa-external-link-square"></i> https://dcr.stakeminer.com](https://dcr.stakeminer.com)
@@ -77,54 +62,46 @@ These stake pools are officially recognized:
 * [<i class="fa fa-external-link-square"></i> https://stakepool.eu](https://stakepool.eu)
 * [<i class="fa fa-external-link-square"></i> https://dcr.ubiqsmart.com](https://dcr.ubiqsmart.com)
 
-You can find a comparison of each pool's fees and statistics by visiting the
-[<i class="fa fa-external-link-square"></i> Decred website](https://decred.org)
-and clicking the 'Stakepools' link within the footer.
+Vous pouvez trouver une comparaison des frais et des statistiques de chaque pool en visitant [<i class="fa fa-external-link-square"></i> Decred website](https://decred.org)
+et cliquer sur le lien 'Stakepools' en pied de page.
 
-Each pool runs the same software which will walk you through the ticket buying
-process. The instructions are also below so you may view them without signing
-up for a pool.
+Chaque pool exécute le même logiciel qui vous guidera dans le processus d'achat de tickets. Les instructions sont également ci-dessous afin que vous puissiez les visualiser sans signer pour une pool.
 
 ---
 
-## **<i class="fa fa-ticket"></i> Automatic Purchasing Of Tickets**
+## **<i class="fa fa-ticket"></i> Achat Automatique de tickets**
 
-You can set up dcrwallet to automatically purchase tickets on your behalf. We recommended you read
-and understand the options available before using the feature as you may set your fees and ticket 
-prices higher than desired.
+Vous pouvez configurer dcrwallet pour acheter automatiquement des tickets en votre nom. Nous vous recommandons de lire et comprendre les options disponibles avant d'utiliser la fonctionnalité car vous pouvez définir vos frais et le prix de votre ticket ​​supérieurs à ceux souhaités.
 
-All of these options can be specified on the command line or in dcrwallet.conf. Note that at
-this time there is no way to change settings while dcrwallet is running. You will need to restart it to 
-adjust your settings.
+Toutes ces options peuvent être spécifiées sur la ligne de commande ou dans dcrwallet.conf. Notez qu'à ce moment, il n'y a aucun moyen de modifier les paramètres pendant que dcrwallet est en cours d'exécution. Vous devrez le redémarrer pour ajuster vos paramètres.
 
-Parameter|Description|Default|Explanation
+Paramètre | Description | Par défaut | Explication
 :----------:|:---------------------------:|:----------:|:---------------------------:
-ticketbuyer.maxpricescale|Attempt to prevent the stake difficulty from going above this multiplier (>1.0) by manipulation, 0 to disable|2|If purchasing tickets at this price window would cause the next window to be higher than ```(price * multiplier)```, do not buy tickets. This may cause you not buy tickets when otherwise you could. Recommend to set to 0. This option has been deprecated and will be removed in a future version.
-ticketbuyer.pricetarget|A target to try to seek setting the stake price to rather than meeting the average price, 0 to disable |0 DCR|Attempt to buy tickets in order to force the future price to '''pricetarget'''. Leave this at 0. This option has been deprecated and will be removed in a future version.
-ticketbuyer.avgpricemode|The mode to use for calculating the average price if pricetarget is disabled (vwap, pool, dual) |vwap|!
-ticketbuyer.avgpricevwapdelta|The number of blocks to use from the current block to calculate the VWAP |2880|!
-ticketbuyer.maxfee|Maximum ticket fee per KB |0.1 DCR|Tickets are entered into the mempool in order of their fee per kilobyte. This sets the maximum fee you are willing to pay.
-ticketbuyer.minfee|Minimum ticket fee per KB |0.01 DCR|The minimum fee per kilobyte you are willing to pay. This should probably be left at 0.01 unless you know what you're doing.
-ticketbuyer.feesource|The fee source to use for ticket fee per KB (median or mean) |median|The fee chosen by the ticket buyer will be based off either the median (line all the fees up in order and choose the middle one) or the mean (also known as the average; add all the fees up and divide by 2). It's recommended to leave this at median as there have been instances of fee manipulation where people try to force up the average by buying one ticket with a very high fee.
-ticketbuyer.maxperblock|Maximum tickets per block, with negative numbers indicating buy one ticket every 1-in-n blocks |5|Do not buy more than this number of tickets per block. A negative number means buy one ticket every n blocks. e.g. -2 would mean buy a ticket every second block.
-ticketbuyer.blockstoavg|Number of blocks to average for fees calculation |11| Fees are calculated using this many previous blocks. You can usually leave this at the default.
-ticketbuyer.feetargetscaling|Scaling factor for setting the ticket fee, multiplies by the average fee |1|The average fee is multipled by this number to give the fee to pay. DO NOT change this until you really know what you're doing. It could raise your fees very high. Remember, fees are non-refundable!
-ticketbuyer.dontwaitfortickets|Don't wait until your last round of tickets have entered the blockchain to attempt to purchase more| |By default, the ticket buyer will not buy more tickets until all the previous ones purchased have been entered into the blockchain. You can set this to purchase more even if some are still in the mempool.
-ticketbuyer.spreadticketpurchases|Spread ticket purchases evenly throughout the window| |By default all tickets are purchased at once. This setting allows tells the ticket buyer to spread out the purchase of tickets which may result in more favourable fees.
-ticketbuyer.maxinmempool|The maximum number of your tickets allowed in mempool before purchasing more tickets |40|If you have this many tickets in the mempool, the ticket buyer will not buy more until some are accepted into the blockchain.
-ticketbuyer.expirydelta|Number of blocks in the future before the ticket expires |16|You can set an expiry so that if your tickets are not accepted into the blockchain due to high fees, they will cancel and you can try again by raising your fees.
-ticketbuyer.maxpriceabsolute|Maximum absolute price to purchase a ticket |0 DCR| If the ticket price is above this value, you will not buy more tickets. The default of 0 turns this off.
-ticketbuyer.maxpricerelative|Scaling factor for setting the maximum price, multiplies by the average price |1.25|If the current window price is significantly higher than the last few windows, do not buy any tickets. E.g. With the default value of 1.25, if the average price of the last few windows is 50DCR, you won't buy any tickets if the current window is over 75DCR.
-ticketbuyer.balancetomaintainabsolute|Amount of funds to keep in wallet when stake mining |0 DCR| If you balance is lower than this number, you will not buy tickets. The default of 0 will use all the funds in your account to buy tickets.
-ticketbuyer.balancetomaintainrelative|Proportion of funds to leave in wallet when stake mining |0.3|Similar to the last one, except it's based on a percentage of your total funds.
-
+ticketbuyer.maxpricescale|Essaye d'empêcher la difficulté d'enjeu d'aller au-dessus de ce multiplicateur (>1.0) par manipulation, 0 pour désactiver |2|Si l'achat de tickets à cette fenêtre de prix cause la prochaine fenêtre à être supérieure à ```(price * multiplier)```, n'achetez pas de tickets. Cela pourrait vous empêcher d'acheter des tickets si vous le voulez. Recommander de définir 0. Cette option a été obsolète et sera supprimée dans une future version.
+Ticketbuyer.pricetarget|Une cible pour essayer de chercher à définir le prix de l'enjeu plutôt que de respecter le prix moyen, 0 pour désactiver | 0 DCR | Tenter d'acheter des tickets afin de forcer le prix futur à '''pricetarget'''. Laisser sur 0. Cette option est obsolète et sera supprimée dans une future version.
+Ticketbuyer.avgpricemode|Mode à utiliser pour calculer le coût moyen si pricetarget est désactivé (vwap, pool, dual) |vwap|!
+ticketbuyer.avgpricevwapdelta|Le nombre de blocs à utiliser à partir du bloc actuel pour calculer le VWAP |2880|!
+ticketbuyer.maxfee|Frais maximum par KB |0.1 DCR|Les tickets sont entrés dans la mempool dans l'ordre de leurs frais par kilo-octet. Cela fixe le coût maximale que vous êtes prêt à payer.
+ticketbuyer.minfee|Le coût minimale du ticket par KB|0.01 DCR|Le coût minimum par kilobyte que vous êtes prêt à payer. Cela devrait probablement être laissé à 0.01 sauf si vous savez ce que vous faites.
+Ticketbuyer.feesource|La source de frais à utiliser pour le coût du ticket par KB (médiane ou moyenne)|médiane|Les frais choisi par l'acheteur du ticket sera basé soit sur la médiane (alignez tous les frais en ordre et choisissez le moyen) ou la moyenne (aussi connue sous le nom de moyenne, ajouter tous les frais et diviser par 2). Il est recommandé de laisser cela à la médiane car il y a eu des cas de manipulation de frais où les gens essaient de forcer la moyenne en achetant un ticket avec des frais très élevés.
+ticketbuyer.maxperblock|tickets maximum par bloc, avec les numéros négatifs indiquant acheter un ticket tous les -n blocs |5|Ne pas acheter plus de ce nombre de tickets par bloc. Un nombre négatif signifie acheter un ticket tous les n blocs. par exemple. -2 signifie acheter un ticket à chaque deuxième bloc.
+Ticketbuyer.blockstoavg|Mmoyenne du nombre de blocs pour le calcul des frais |11| Les frais sont calculés en utilisant ceci pour la plupart des blocs précédents. Vous pouvez généralement laisser ceci par défaut.
+Ticketbuyer.feetargalingcaling|Facteur de mise à l'échelle pour la fixation des frais de ticket, se multiplie par la redevance moyenne |1|La redevance moyenne est multipliée par ce numéro pour payer les frais de paiement. NE PAS changer cela jusqu'à ce que vous sachiez vraiment ce que vous faites. Cela pourrait augmenter considérablement vos frais. Rappelez-vous, les frais ne sont pas remboursables!
+Ticketbuyer.dontwaitfortickets|N'attendez pas jusqu'à ce que votre dernier tour de ticket soit entré dans la chaîne de blocs pour essayer d'en acheter plus| |Par défaut, l'acheteur de tickets n'achètera pas de tickets jusqu'à ce que tous les achats précédents aient été entrés dans la chaîne de blocs. Vous pouvez définir ceci pour acheter plus même si certains sont encore dans la mempool.
+ticketbuyer.spreadticketpurchases|Répartissez les achats de tickets uniformément dans toute la fenêtre| |Par défaut, tous les tickets sont achetés à la fois. Ce réglage permet à l'acheteur de tickets d'étaler l'achat de tickets qui peuvent entraîner des frais plus avantageux.
+Ticketbuyer.maxinmempool|Le nombre maximum de tickets autorisés dans mempool avant d'acheter plus de tickets |40|Si vous avez ces tickets dans la mempool, l'acheteur de tickets n'achètera pas tant que certains ne seront pas acceptés dans la chaîne de blocs.
+Ticketbuyer.expirydelta|Nombre de blocs à l'avenir avant l'expiration du ticket |16|Vous pouvez fixer une échéance afin que, si vos tickets ne sont pas acceptés dans la chaîne de blocs en raison de frais élevés, ils s'annuleront et vous pourrez réessayer en augmentant vos frais.
+Ticketbuyer.maxpriceabsolute|Prix absolu maximal pour acheter un ticket |0 DCR| Si le prix du ticket est supérieur à cette valeur, vous ne pourrez plus acheter de tickets. La valeur par défaut 0 l'éteint.
+Ticketbuyer.maxpricerelative|Facteur de mise à l'échelle pour la définition du prix maximal, se multiplie par le prix moyen |1.25|Si le prix de la fenêtre actuelle est significativement plus élevé que les dernières fenêtres, n'achetez pas de tickets. Par exemple, avec la valeur par défaut de 1.25, si le prix moyen des dernières fenêtres est de 50DCR, vous n'acheterez aucun ticket si la fenêtre actuelle est supérieure à 75DCR.
+Ticketbuyer.balancetomaintainabsolute|Montant des fonds à conserver dans un portefeuille lors de la preuve d'enjeu |0 DCR|Si votre balance est inférieur à ce numéro, vous n'achèterez pas de tickets. La valeur par défaut 0 utilisera tous les fonds de votre compte pour acheter des tickets.
+Ticketbuyer.balancetomaintainrelative|Proportion de fonds à laisser dans le portefeuille lors de la preuve d'enjeu |0.3|Semblable à la dernière, sauf si elle est basée sur un pourcentage de vos fonds totaux.
 ---
 
-## **<i class="fa fa-ticket"></i> Manual Purchasing Of Tickets**
+## **<i class="fa fa-ticket"></i> Achat Manuel des tickets**
 
-> Obtaining Ticket Price and Block Height
+> Obtenir le prix des tickets et la hauteur de bloc
 
-First, get the current ticket price from the **difficulty** field from **getstakeinfo**:
+Premièrement obtenir le prix du ticket courant pour le champ de **difficulty** pour **getstakeinfo**:
 
 ```no-highlight
 dcrctl --wallet getstakeinfo
@@ -144,8 +121,7 @@ dcrctl --wallet getstakeinfo
 }
 ```
 
-It is also helpful to get the **height** field from **getbestblock** so you may
-use the ticket expiration functionality:
+Il est également utile d'obtenir le champ **height** de **getbestblock** ainsi vous pouvez utiliser la fonctionalité expiration du ticket:
 
 ```no-highlight
 dcrctl --wallet getbestblock
@@ -155,73 +131,66 @@ dcrctl --wallet getbestblock
 }
 ```
 
-Getting this information directly is the most reliable and accurate but you may
-also use the official stats page at [<i class="fa fa-external-link-square"></i> stats.decred.org](https://stats.decred.org).
+Obtenir cette information directement est plus fiable et précis, mais vous pouvez utilisez également la page officielle des statistiques à [<i class="fa fa-external-link-square"></i> stats.decred.org](https://stats.decred.org).
 
-> Purchaseticket Syntax
+> Syntaxe Purchaseticket
 
-Now purchase your ticket(s) via dcrctl.  The full syntax for the command is:
+Achetez maintenant votre ticket(s) via dcrctl. La syntaxe complète de la commande est:
 
 ```no-highlight
 dcrctl --wallet help purchaseticket
 purchaseticket "fromaccount" spendlimit (minconf=1 "ticketaddress" numtickets "pooladdress" poolfees expiry "comment")
 
-Purchase ticket using available funds.
+Acheter des tickets à l'aide des fonds disponibles.
 
 Arguments:
-1. fromaccount   (string, required)             The account to use for purchase (default="default")
-2. spendlimit    (numeric, required)            Limit on the amount to spend on ticket
-3. minconf       (numeric, optional, default=1) Minimum number of block confirmations required
-4. ticketaddress (string, optional)             Override the ticket address to which voting rights are given
-5. numtickets    (numeric, optional)            The number of tickets to purchase
-6. pooladdress   (string, optional)             The address to pay stake pool fees to
-7. poolfees      (numeric, optional)            The amount of fees to pay to the stake pool
-8. expiry        (numeric, optional)            Height at which the purchase tickets expire
-9. comment       (string, optional)             Unused
+1. fromaccount   (string, required)             Le compte à utiliser pour l'achat (default="default")
+2. spendlimit    (numeric, required)            La limite du montant aà dépenser par ticket
+3. minconf       (numeric, optional, default=1) Nombre minimum de confirmation par bloc requise
+4. ticketaddress (string, optional)             Remplacer l'adresse du ticket à laquelle les droits de vote sont donnés
+5. numtickets    (numeric, optional)            Le nombre de tickets à acheter
+6. pooladdress   (string, optional)             L'adresse pour payer les frais de participation de la pool
+7. poolfees      (numeric, optional)            Le montant des frais à payer à la pool
+8. expiry        (numeric, optional)            Hauteur à laquelle les tickets d'achat expirent
+9. comment       (string, optional)             Inutilisé
 
-Result:
-"value" (string) Hash of the resulting ticket
+Resultat:
+"value" (string) Hash du ticket résultant
 ```
 
-> Manual Ticket Purchasing Example (Solo)
+> Example d'Achat de Ticket Manuel (Solo)
 
 ```no-highlight
 dcrctl --wallet purchaseticket "default" 23 1 "" 1 "" 0.0 35482
 ```
 
-This purchases one ticket from the default account for a maximum of 23 DCR that
-expires at block 35482.
+Cela achète un ticket du compte par défaut pour un maximum de 23 DCR qui
+Expire au bloc 35482.
 
-The command will return a ticket hash / transaction id if successful.
+La commande renverra un ticket hash / id transaction s'il est réussi.
 
-> dcrwallet Manual Ticket Purchasing Example (Pool)
+> dcrwallet Example d'Achat de Ticket Manuel (Pool)
 
-The ticket purchasing part for a pool is much the same but there are some more
-steps involved to allow both you and the pool to vote by creating a
-multisignature script and P2SH address.
+La partie d'achat de tickets pour un pool est à peu près la même, mais il y a plus les étapes à suivre pour permettre à vous et à la pool de voter en créant un script multisignature et adresse P2SH.
 
-Once you sign up for a stake pool, you will be redirected to an address
-submission page.
+Une fois que vous vous inscrivez à un groupe de participation, vous serez redirigé vers une Page de soumission d'adresse.
 
-To join the pool, provide a public key address which can be used to generate a
-1-of-2 multisignature script. The multisignature script will be generated by
-the pool and returned to you along with a P2SH address to give voting rights to.
-The P2SH address starts with **Dc** on mainnet.
+Pour rejoindre la pool, fournissez une adresse de clé publique qui peut être utilisée pour générer un
+1-de-2 script multisignature. Le script multisignature sera généré par la pool et vous est retourné avec une adresse P2SH pour donner droit de vote.
+L'adresse P2SH commence par **Dc** sur mainnet.
 
-It is recommended to generate a new account when joining a stake pool.  This is
-because accounts are hardened so in the case of a total stake pool
-failure/shutdown, it would be safe to give the private key to another stake pool
-as long as that account only does voting and nothing else.
+Il est recommandé de générer un nouveau compte lors de la participation à une pool de partages. C'est parce que les comptes sont durcis, donc dans le cas d'une participation totale échec/arrêt, il serait sécurisé de donner la clé privée à une autre pool
+Tant que ce compte ne fait que voter et rien d'autre.
 
 ```no-highlight
 dcrctl --wallet createnewaccount voting
 ```
 
-To generate a public key address, create a new wallet address with **getnewaddress &lt;account&gt;**.
-Then, call **validateaddress &lt;yourAddress&gt;** and retrieve the address listed in the
-**pubkeyaddr** field of the response. It is prefixed with **Dk** on mainnet.
+Pour générer une adresse de clé publique, créez une nouvelle adresse de portefeuille avec **getnewaddress &lt;account&gt;**.
+Puis, appellez **validateaddress &lt;yourAddress&gt;** Et récupérez l'adresse indiquée dans le
+**pubkeyaddr** champs de la reéponse. C'est le préfixe avec **Dk** sur mainnet.
 
-The following is an example for mainnet:
+L'example suivant pour mainnet:
 
 ```no-highlight
 dcrctl --wallet getnewaddress voting
@@ -238,69 +207,59 @@ dcrctl --wallet validateaddress DsExampleAddr1For2Demo3PurposesOnly
 }
 ```
 
-Copy and paste the **pubkeyaddr** into the stake pool's submit address form
-and click the submit button.  Your multisig script and P2SH address will be
-generated and you will be redirected to the tickets page.
+Copiez et coller **pubkeyaddr** et récupérez l'adresse dans le formulaire d'adresse de soumission de la pool d'enjeu et cliquez sur le bouton soumettre. Votre script multisig et l'adresse P2SH seront générée et vous serez redirigé vers la page des tickets.
 
-Now simply follow the directions on the tickets page. First, import the
-multisig script locally into your wallet using dcrctl for safe keeping,
-so you can recover your funds and vote in the unlikely event of a pool
-failure:
+Maintenant, suivez simplement les instructions sur la page des tickets. Tout d'abord, importez le script multisig localement dans votre portefeuille en utilisant dcrctl pour raison de sécurité, afin que vous puissiez récupérer vos fonds et voter dans le cas improbable d'un échec de la pool dans:
 
 ```no-highlight
 dcrctl --wallet importscript <ReallyLongScriptDisplayedOnPoolPage>
 ```
 
-Now **purchaseticket** with the stake pool-specific fields set:
+Maintenant **purchaseticket** avec le spécifique champs de pool réglé:
 
 ```no-highlight
 dcrctl --wallet purchaseticket "default" 23 1 DcExampleAddr1For2Demo3PurposesOnly 1 DsExampleAddr1For2Demo3PurposesOnly 7.5 35482
 ```
 
-This purchases one ticket which is delegated to the P2SH address from the default
-account for a maximum of 23 DCR that expires at block 35482 and pays a 7.5% fee
-to the pool's payment address.
+Cela achète un ticket qui est délégué à l'adresse P2SH par le compte de défaut pour un maximum de 23 DCR qui expire au bloc 35482 et paie une taxe de 7,5% à l'adresse de paiement de la pool.
 
-> Paymetheus Manual Ticket Purchasing Example (Pool)
+> Paymetheus Example d'Achat de Ticket Manuel (Pool)
 
-Please see the [Using Paymetheus guide](/getting-started/user-guides/using-paymetheus.md#purchase-tickets-tab)
+S'il vous plaît voir le [Guide Paymetheus d'Utilisation](/getting-started/user-guides/using-paymetheus.md#purchase-tickets-tab)
 ---
 
-## ** Post Purchase Information **
+## ** Information Après l'Achat D'un Ticket**
 
-After a successful ticket purchase, you must wait to see whether or not the
-transaction is mined and included in a block.  The main reason for your ticket
-not being mined is that the ticket price adjusts before it can be mined.  This
-can happen due to the mempool being full of competing ticket purchase
-transactions or simply bad purchase timing.  You can use the official Decred stats site at [<i class="fa fa-external-link-square"></i> stats.decred.org](https://stats.decred.org) to view when the next ticket price adjustment occurs.
+Après un achat de ticket réussis, vous devez attendre pour voir si oui ou non
+la transaction est minée et incluse dans un bloc. La principale raison pour laquelle votre ticket ne soit pas miné est que le prix du ticket s'ajuste avant qu'il puisse être extrait. Cela peut se produire en raison du fait que la mempool soit pleine de concurrents à l'achat de tickets ou simplement un mauvais moment d'achat. Vous pouvez utiliser le site officiel des statistiques décédées à [<i class="fa fa-external-link-square"></i> stats.decred.org](https://stats.decred.org) pour voir quand l'ajustement du prix du ticket suivant se produit.
 
-Some other details to keep in mind are:
+D'autres détails à garder à l'esprit sont les suivants:
 
-* The ticket price is not spent, although it is removed from your balance as it is not spendable. It is just a deposit. You will get it back when your ticket votes, expires, or is revoked due to not voting.
-* 20 tickets are accepted into the voting pool each block. Tickets that are waiting stay in the mempool. Tickets are moved from the mempool to the voting pool in order of txfee.
-* Tickets take 256 blocks (about a day) to mature. During this time the stake price you paid will not be visible in your total balance.
-* You can keep track of your tickets' status by periodically running:
+* Le prix du ticket n'est pas dépensé, bien qu'il soit retiré de votre solde car il n'est pas dépensé. C'est juste un dépôt. Vous le récupérerez lorsque votre ticket votera, expirera ou sera révoqué en raison du non-vote.
+* 20 tickets sont acceptés dans la pool de vote de chaque bloc. Les tickets qui attendent restent dans la mempool. Les tickets sont déplacés de la mempool vers la pool de vote dans l'ordre des txfee.
+* Les tickets prennent 256 blocs (environ un jour) pour mûrir. Pendant ce temps, le prix d'enchère que vous avez payé ne sera pas visible dans votre solde total.
+* Vous pouvez suivre l'état de vos tickets en vous mettant régulièrement en ligne:
 
 ```no-highlight
 dcrctl --wallet getstakeinfo
 ```
 
-  or by inspecting the Stake Mining tab in Paymetheus.
+  ou en inspectant l'onglet Stake Mining Paymetheus.
 
-Continue to [PoS Tickets and Fees FAQ](/faq/proof-of-stake/buying-tickets-and-fees.md)
+Continuez vers [PdE Tickets et frais FAQ](/faq/proof-of-stake/buying-tickets-and-fees.md)
 
 ---
 
-## ** <i class="fa fa-book"></i> See Also **
+## ** <i class="fa fa-book"></i> Voir Aussi **
 
-[Proof-of-stake Commands](/advanced/program-options.md#pos-commands)
+[Commandes Preuve-d'Enjeu](/advanced/program-options.md#pos-commands)
 
-[Proof-of-stake FAQ - Buying Tickets and Fees](/faq/proof-of-stake/buying-tickets-and-fees.md)
+[Preuve-d'Enjeu FAQ - Acheter des Tickets et Frais](/faq/proof-of-stake/buying-tickets-and-fees.md)
 
-[Proof-of-stake FAQ - Solo Mining](/faq/proof-of-stake/solo-mining.md)
+[Preuve-d'Enjeu FAQ - Solo Mining](/faq/proof-of-stake/solo-mining.md)
 
-[Proof-of-stake FAQ - Stake Pools](/faq/proof-of-stake/stake-pools.md)
+[Preuve-d'Enjeu FAQ - Stake Pools](/faq/proof-of-stake/stake-pools.md)
 
-[Proof-of-stake FAQ - Voting Tickets](/faq/proof-of-stake/voting-tickets.md)
+[Preuve-d'Enjeu FAQ - Tickets de Vote](/faq/proof-of-stake/voting-tickets.md)
 
-[Proof-of-stake Mining Parameters](/advanced/program-options.md#pos-network-parameters)
+[Preuve-d'Enjeu Minage Paramètres](/advanced/program-options.md#pos-network-parameters)

@@ -1,57 +1,56 @@
-# **<i class="fa fa-life-ring"></i> Stake Pools**
+# **<i class="fa fa-life-ring"></i> Pools d'Enjeu**
 
 ---
 
-#### **1. Are there any other benefits to a stake pool other than not needing to run a full node and keeping your wallet unlocked? For example, will it have a better chance of winning or anything like that?**
+#### **1. Y a-t-il d'autres avantages pour une pool d'enjeu autrement que de ne pas avoir besoin d'exécuter une node complète et de garder votre portefeuille débloqué? Par exemple, aura-t-il une meilleure chance de gagner ou quelque chose comme ça?**
 
-Stake pools will usually implement multi-wallet redundancy by having many wallets physically distributed around the globe. This means there's less chance of a vote
-being missed because one wallet is down. It also reduces latency between the wallet and network which can reduce the chance of a vote being missed.
-
----
-
-#### **2. Does a proof-of-stake pool split reward between all participants (% based on the amount of tickets you submitted to pool)?**
-
-It is technically possible to create a pool that supports proportional reward splitting[^9262], but this pool does not do that at all. This one simply votes on your behalf. It does this by making the ticket voting rights a 1-of-2 multi-signature P2SH script. The pool signs the vote with its private key at the time the ticket is selected. Since it is a 1-of-2 multi-signature script though, it means if the pool failed to vote for you for whatever reason (extremely unlikely as the mainnet pool will have multiple redundancy and automatic failover), it would still be possible to vote on your own behalf because you have the second private key and could therefore provide a valid signature and satisfy the 1-of-2 requirement.
-
-Also, it is important to note that the original ticket purchase contains a commitment to go to a reward address for which only you have the private key. The proof-of-stake voting consensus rules enforce the commitment, so it is impossible for the pool to steal your funds.
-
-In order to split rewards the pool would have to be the recipient of all rewards and then be trusted to properly split the rewards amongst all of the participants according to their proportionality. It is expected that such a scheme will be developed with the understanding it is less secure than the approach the current pool design uses.
+Les pool de minage impliquent généralement la redondance multi-portefeuille en ayant beaucoup de portefeuilles physiquement distribués dans le monde entier. Cela signifie qu'il y a moins de chance qu'un vote soit manqué parce qu'un portefeuille est en panne. Cela réduit également la latence entre le portefeuille et le réseau, ce qui peut réduire les chances d'un vote manqué.
 
 ---
 
-#### **3. I have to run my wallet to buy tickets, but will they vote properly without me if I shut it down and the pool votes for me instead?**
+#### **2. Est-ce qu'une pool de preuve d'enjeu regroupe une récompense entre tous les participants (% selon le montant des tickets que vous avez soumis aà la pool)?**
 
-Yes[^9274], that is correct. You only need to run wallet in order to spend your coins to purchase the ticket which delegates your voting rights to the pool that will then vote on your behalf. The reward address is a consensus-enforced commitment in the ticket purchase for one of your own addresses for which only you have the private key.
+Est-ce qu'une pool d'enjeu divise la récompense entre tous les participants. Il est techniquement possible de créer un pool qui prend en charge le fractionnement proportionnel des primes [^9262], mais ce groupe ne le fait pas du tout. Celui-ci vote simplement en votre nom. Il fait cela en faisant du droit de vote des tickets un script P2SH multi-signature de 1-de-2. La pool signe le vote avec sa clé privée au moment où le ticket est sélectionné. Comme il s'agit d'un script multi-signature 1-of-2, cela signifie que si le pool n'a pas voté pour vous pour quelque raison que ce soit (extrêmement peu probable car la pool mainnet aura une redondance multiple et un basculement automatique), il serait toujours possible de voter en votre propre nom parce que vous avez la deuxième clé privée et pourriez donc fournir une signature valide et satisfaire l'exigence du 1-de-2.
 
----
+En outre, il est important de noter que l'achat du ticket d'origine contient un engagement à accéder à une adresse de récompense pour laquelle vous seul avez la clé privée. Les règles de consensus sur le vote à l'enjeu imposent l'engagement, de sorte qu'il est impossible pour le groupe de voler vos fonds.
 
-#### **4. Are there any issues that could arise from a stake pool having too many people. For example, force voting a block in or out?**
-
-It is certainly possible[^9311], but one of the things that all pools should support is allowing each user to select their individual voting preferences. That way, whenever their ticket comes up and the pool votes on their behalf, it will vote according to their preferences.
+Afin de diviser les récompenses, le pool devrait être récipiendaire de toutes les récompenses et être fiable pour répartir correctement les récompenses parmi tous les participants en fonction de leur proportionnalité. On s'attend à ce qu'un tel schéma soit développé dans la mesure où il est moins sécurisé que l'approche utilisée par la conception actuelle de la pool. (% En fonction du nombre de tickets que vous avez soumis à la pool
 
 ---
 
-#### **5. Are vote bits set when you purchase a stake or when you actually are called to vote? Does this change when in a proof-of-stake pool?**
+#### **3. Je dois lancer mon portefeuille pour acheter des ticket, mais votera-t-il correctement sans moi si je l'arrête et que la pool vote à la place?**
 
-They are set when you actually vote[^13607] (which really only makes sense because you might have bought the ticket weeks or months before a specific voting agenda even exists).
-
-A proof-of-stake pool can operate however it wants since there is a lot of room for flexibility due to the way the ticket purchase commitment scheme is designed. That said, in general, people should avoid using stake pools that do not allow them control over how they want to vote on non-pool specific issues.
+Oui[^9274], c'est correct. Vous n'avez qu'à exécuter le portefeuille afin de dépenser vos coins pour acheter le ticket qui délègue vos droits de vote à la pool qui votera en votre nom. L'adresse de récompense est un engagement forcé par consensus dans l'achat de ticket pour l'une de vos adresses pour lesquelles vous avez seulement la clé privée.
 
 ---
 
-#### **6. What safeguards are in place to stop pool owners disappearing with the funds in the pool?**
+#### **4. Y a-t-il des problèmes qui pourraient résulter d'une pool d'enjeu ayant trop de personnes. Par exemple, forcer le vote d'un bloc dans une direction ou l'autre?**
 
-The current pool design is such that the pool can NOT steal the funds[^14593]. You are only delegating voting rights (and in reality it is a 1-of-2 multisig which means either you OR the pool can vote). The ticket purchase contains a consensus-enforced commitment for the final subsidy address, so there is simply no way for the pool to steal the funds.
-
-The worst that would happen if a pool owner disappears is the votes will be missed which results in the ticket being revoked which in turn causes the original coins to go back to the original coin owner (minus the initial transaction fee of course). However, as mentioned previously, because the ticket is a 1-of-2 multisig, each user could run their own wallet in order to vote should the pool owner disappear.
+C'est certainement possible[^9311], mais l'une des choses que tous les pools devraient supporter permet à chaque utilisateur de sélectionner ses préférences de vote individuelles. De cette façon, chaque fois que leur ticket survient et la pool vote en leur nom, il votera selon leurs préférences.
 
 ---
 
-#### **7. Where can I see an example of a stake pool ticket on the block explorer?**
+#### **5. Les bits de vote sont-ils définis lorsque vous achetez une participation ou lorsque vous êtes réellement appelé à voter? Cela change-t-il lorsque dans une pool d'enjeu?**
 
-Stake pools involve 'Dc' addresses since the stake pool uses pay-to-script-hash addresses[^17515]. For example, see txid: [c0abc0ec63a8de15550f067e2b6fde28f0432fb91b938574b282daa69f914103](https://mainnet.decred.org/tx/c0abc0ec63a8de15550f067e2b6fde28f0432fb91b938574b282daa69f914103).
+Ils sont définis réellement lorsque vous votez[^13607] (ce qui n'a vraiment de sens parce que vous avez peut-être acheté le ticket des semaines ou des mois avant même qu'un agenda spécifique de vote existe).
 
-Continue to [PoS Voting Tickets FAQ](/faq/proof-of-stake/voting-tickets.md)
+Une pool d'enjeu peut fonctionner, si elle le veut, car il existe beaucoup de marge de manœuvre en la raison de la façon dont le régime d'engagement de l'achat de ticket est conçu. Cela dit, en général, les gens devraient éviter d'utiliser des pools d'enjeu qui ne leur permettent pas de contrôler la façon dont ils veulent voter sur des questions qui ne sont pas liées à la pool..
+
+---
+
+#### **6. Quelles garanties sont en place pour empêcher les propriétaires de la pool de disparaître avec les fonds?**
+
+La conception actuelle de la piscine est telle que le groupe ne peut PAS voler les fonds[^14593]. Vous ne déléguez que les droits de vote (et en réalité, c'est un multisig de 1-de-2 qui signifie que vous ou le groupe peut voter). L'achat de ticket comprend un engagement forcé par consensus pour l'adresse de la subvention finale, de sorte qu'il n'y a tout simplement aucun moyen pour le groupe de voler les fonds.
+
+Le pire qui pourrait se produirait si un propriétaire de pool disparaît est que les votes seront manqués, ce qui entraînera la révoque du ticket qui, à son tour, amène les coins originaux à revenir au propriétaire d'origine de ces coins (moins les frais de transaction initiaux bien sûr). Cependant, comme mentionné précédemment, parce que le ticket est un multisig de 1-de-2, chaque utilisateur pourrait exécuter son propre porte-monnaie afin de voter si le propriétaire de la piscine disparaît.
+
+---
+
+#### **7. Où puis-je voir un exemple d'un ticket de pool d'enjeu sur l'explorateur de blocs?**
+
+ Les Pools d'enejeu involve 'Dc' adresses depuis la pool d'enjeu pay-to-script-hash adresses[^17515]. Pour example, voir txid: [c0abc0ec63a8de15550f067e2b6fde28f0432fb91b938574b282daa69f914103](https://mainnet.decred.org/tx/c0abc0ec63a8de15550f067e2b6fde28f0432fb91b938574b282daa69f914103).
+
+Continuez vers [Tickets de Vote FAQ PdE](/faq/proof-of-stake/voting-tickets.md)
 
 ---
 

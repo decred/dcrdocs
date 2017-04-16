@@ -1,4 +1,4 @@
-# **Répertoire de référence de soutien**
+# **Répertoire de soutien**
 
 Le but de cette page est de fournir un répertoire pour les contacts de support. Tous ceux qui travaillent actuellement avec le projet Decred ont leur nom d'utilisateur Slack et/ou IRC répertoriés.
 

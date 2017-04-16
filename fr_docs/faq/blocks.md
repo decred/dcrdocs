@@ -4,11 +4,11 @@
 
 #### **1. Un bloc peut-il devenir orphelin après avoir été confirmé à plusieurs reprises?**
 
-Seulement s'il y a une réorganisation qui est suffisamment longue [^ 8918]. Pour que cela se produise, vous avez besoin de plus de puissance de hash fonctionnant de l'autre côté d'une fork que la puissance de hash qui fonctionne sur la meilleure chaîne actuelle.
+Seulement s'il y a une réorganisation qui est suffisamment longue [^8918]. Pour que cela se produise, vous avez besoin de plus de puissance de hash fonctionnant de l'autre côté d'une fork que la puissance de hash qui fonctionne sur la meilleure chaîne actuelle.
 
 ---
 
-#### **2. Peut-on supprimer l'explorateur de bloc testnet étant donné que l'un pour mainnet est disponible?**
+#### **2. Peut-on supprimer l'explorateur de bloc testnet étant donné qu'un pour le mainnet est disponible?**
 
 Testnet continuera d'être un terrain d'essai pour les nouvelles fonctionnalités, il est donc logique de garder l'explorateur de bloc testnet [^9621].
 
@@ -24,7 +24,7 @@ Plutôt que de l'ignorer, une fois que vous êtes suffisamment près d'être syn
 
 #### **4. Devrais-je télécharger la chaîne de blocs à nouveau avec chaque nouvelle version du logiciel?**
 
-Vous ne devriez presque jamais télécharger la chaîne de nouveau [^14788] lors d'une mise à niveau, à moins qu'il ne s'agisse d'un changement super massif où il est logique de recommencer. Généralement, il devrait migrer des choses, donc ça marche..
+Vous ne devriez presque jamais télécharger la chaîne de nouveau [^14788] lors d'une mise à niveau, à moins qu'il ne s'agisse d'un changement super massif où il est logique de recommencer. Généralement, il devrait migrer des informations, donc ça marche..
 
 ---
 

@@ -1,44 +1,44 @@
-# **<i class="fa fa-male"></i> Solo Mining**
+# **<i class="fa fa-male"></i> Minage Solo**
 
 ---
 
-#### **1. Do I need hash power to stake mine?**
+#### **1. Ai-je besoin de pouvoir hash pour miner?**
 
-Stake "mining" does not need any hash power[^9304]. Think of it a bit like interest on invested coins. You lock your coins for a period of time in order to purchase a ticket that gives you a high probability (>99%) of gaining voting rights and receiving interest in exchange for casting a voting and the opportunity cost of not being able to use those coins for potentially up to ~4.7 months.
+Le minage preuve-d'enjeu n'a pas besoin de puissance de hachage [^9304]. Pensez-y un peu à des intérêt sur les decred investis. Vous verrouillez vos coins pendant un certain temps afin d'acheter un ticket qui vous donne une probabilité élevée (>99%) de gagner des droits de vote et de recevoir des intérêts en échange d'un vote et le coût d'opportunité de ne pas pouvoir utiliser ces coin potentiellement jusqu'à ~ 4,7 mois.
 
-If you have already purchased stake tickets, those coins are locked until the tickets either win or expire. You are solo staking and therefore you MUST keep your wallet online 24/7 until all of your tickets have won (or expired) or you will miss out on the rewards since you cannot cast a vote if you wallet is not online. Because those coins are now locked there is no way for you to change the already staked coins now.
+Si vous avez déjà acheté des tickets de participation, ces coins sont verrouillez jusqu'à ce que les tickets votent ou expirent. Vous êtes en solo et, par conséquent, vous devez garder votre portefeuille en ligne 24 heures sur 24, 7 jours sur 7, jusqu'à ce que tous vos tickets aient votés (ou aient expiré) ou vous allez manquer les récompenses puisque vous ne pouvez pas voter si votre portefeuille n'est pas en ligne. Parce que ces coins sont maintenant verrouillés, il n'y a aucun moyen de changer les coins déjà mises en jeu.
 
-The stake pool, on the other hand, allows you to delegate your voting rights to the pool so it is responsible for being online 24/7 and casting your vote for you.
-
----
-
-#### **2. Isn't one of the main reasons for stake mining to ensure there are always a sufficient amount of peers online?**
-
-Definitely not[^9311]. Staking mining cannot possibly enforce that. An SPV style wallet could easily perform the necessary staking by communicating with other full nodes (`dcrd` instances) on the network. It is true that the current wallet requires `dcrd` to be running, but that will not always be the case.
-
-Even if the software did try to enforce that, you could not stop people from writing utilities and such to do it via the peer-to-peer network without needing to run their own local instance anyways.
+Les pools de minage, en revanche, vous permettent de déléguer vos droits de vote à la pool afin qu'il soit responsable d'être en ligne 24 heures sur 24 et 7 jours sur 7 et de voter pour vous.
 
 ---
 
-#### **3. What happens if my wallet is unreachable or locked when my tickets are selected by miners?**
+#### **2. N'est-ce pas l'une des principales raisons pour lesquelles le minage ne constitue pas l'une des principales raisons de s'assurer qu'il y a toujours une quantité suffisante de pairs en ligne?**
 
-If your wallet is offline or locked[^9806] when your tickets are selected, you lose out on the rewards and your ticket is removed from the pool immediately. There are no "redos".
+Certainement pas [^9311]. Le minage d'enjeu ne peu possiblement pas renforcer ca. Un portefeuille SPV style peut effectuez facilement le jalonnement nécessaire en communiquant avec d'autres nodes complètes (instances `dcrd`) sur le réseau. Il est vrai que le portefeuille actuel exige que `dcrd` soit en cours d'exécution, mais ce ne sera pas toujours le cas.
 
----
-
-#### **4. Can I somehow test if my machine is reachable for voting? In other words, run the actions of a miner who would want to get my vote.**
-
-You do not need to be reachable. Voting is deterministic on a per-block basis[^9806]. That is to say your wallet will know if your ticket is selected based on the current block and then a "vote transaction" (ssgen transaction) is broadcast to the network, just like other transactions.
+Même si le logiciel a essayé de l'appliquer, vous ne pouvez pas empêcher les utilisateurs d'écrire des utilitaires et de le faire via le réseau peer-to-peer sans avoir à exécuter leur propre instance locale de toute façon.
 
 ---
 
-#### **5. Can I run multiple voting-only wallets with the same seed on multiple servers?**
+#### **3. Que se passe-t-il si mon portefeuille est inaccessible ou verrouillé lorsque mes tickets sont sélectionnés par des mineurs?**
 
-You can have multiple voting-only wallets because they are not creating new addresses[^12697]. The problem comes in when you have two wallets creating transactions that involve new addresses because they do not know what the other one is doing.
+Si votre portefeuille est hors ligne ou verrouillé [^9806] lorsque vos tickets sont sélectionnés, vous perdez sur les récompenses et votre ticket est retiré du pool immédiatement. Il n'y a pas de "retour".
 
-If you are doing a hot/cold setup, you can create multiple voting-only hot wallets without any issues so long as they both are aware of the address you give voting rights to.
+---
 
-Continue to [Stake Pools FAQ](/faq/proof-of-stake/stake-pools.md)
+#### **4. Puis-je vérifier si ma machine est accessible pour le vote? En d'autres termes, exécutez les actions d'un mineur qui souhaiterait obtenir mon vote.**
+
+Vous n'avez pas besoin d'être joignable. Le vote est déterministe sur une base par bloc [^9806]. C'est-à-dire que votre portefeuille saura si votre ticket est sélectionné en fonction du bloc actuel, puis une "transaction de vote" (transaction ssgen) est diffusée sur le réseau, tout comme les autres transactions.
+
+---
+
+#### **5. Puis-je gérer plusieurs portefeuilles vote-uniquement avec la même graine sur plusieurs serveurs?**
+
+Vous pouvez avoir plusieurs portefeuilles vote-uniquement, car ils ne créent pas de nouvelles adresses [^12697]. Le problème vient lorsque vous avez deux portefeuilles créant des transactions impliquant de nouvelles adresses car elles ne savent pas ce que l'autre fait.
+
+Si vous effectuez une configuration chaude/froid, vous pouvez créer plusieurs portefeuilles vote-uniquement sans avoir de problèmes tant qu'ils sont tous deux conscients de l'adresse à laquelle vous avez droit de vote.
+
+Continuer à [Pools d'Enjeu FAQ](/faq/proof-of-stake/stake-pools.md)
 
 ---
 

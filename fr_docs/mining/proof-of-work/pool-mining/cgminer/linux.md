@@ -1,17 +1,17 @@
-# **<i class="fa fa-linux"></i> Linux User Guide**
+# **<i class="fa fa-linux"></i> Guide d'UtilisateurLinux**
 
 ---
 
-## **<i class="fa fa-download"></i> Download and extract cgminer**
+## **<i class="fa fa-download"></i> Télécharger et extraire cgminer**
 
-Visit https://github.com/decred/cgminer/releases to find the latest cgminer release. To download and extract the files through the terminal, run the following commands. Note that this example downloads cgminer v0.0.4.
+Visitez https://github.com/decred/cgminer/releases pour trouver la dernière version de cgminer. Pour télécharger et extraire les fichiers via le terminal, exécutez les commandes suivantes. Notez que cet exemple est télécharger cgminer v0.0.4.
 
 ```no-highlight
 ~/Decred/$ wget "https://github.com/decred/decred-release/releases/download/v0.0.4_cgminer/cgminer-decred-linux-x86_64-20160208.tar.gz"
 ~/Decred/$ tar -xvf cgminer*
 ```
 
-Move into the new cgminer directory:
+Se déplacer dans le nouveau répertoire cgminer:
 
 ```
 ~/Decred/$ cd cgminer*
@@ -19,41 +19,41 @@ Move into the new cgminer directory:
 
 ## **<i class="fa fa-play-circle"></i> Initialize and run cgminer**
 
-> Step One
+> Première étape
 
-Type the following in your terminal window to list your mining-capable hardware:
+Tapez ce qui suit dans votre fenêtre de terminal pour répertorier votre matériel de minage capable:
 
 ```no-highlight
 ~/Decred/$ ./cgminer -n
 ```
 
-You should see your video cards listed either by their GPU codename or the driver name. The last line of output should show the number of compatible GPUs you can mine with.
+Vous devriez voir vos cartes vidéo listées soit par leur nom de code GPU, soit par le nom du pilote. La dernière ligne de sortie devrait indiquer le nombre de GPU compatibles avec lesquels vous pouvez exploiter.
 
-> Step Two (Optional)
+> Deuxième étape (facultatif)
 
-To benchmark your system and find out the hashrate your GPUs are capable of, use the command:
+Pour comparer votre système et découvrir le hash dont vos GPU sont capables, utilisez la commande:
 
 ```no-highlight
 ~/Decred/$ ./cgminer --blake256 --benchmark
 ```
 
-> Step Three
+> Troisième étape
 
-Register on one of the pool websites and setup a new miner for each of your mining computers. Refer to the pool website of your choice for instructions, if needed. In your terminal window from step one, type the following command to launch cgminer (ignore square brackets):
+Enregistrez-vous sur l'un des sites Web des pools et configurez un nouveau mineur pour chacun de vos ordinateurs de minage. Reportez-vous au site Web de la pool de votre choix pour obtenir des instructions, si nécessaire. Dans votre fenêtre de terminal depuis la première étape, tapez la commande suivante pour lancer cgminer (ignorez les crochets):
 
 ```no-highlight
 ~/Decred/$ ./cgminer --blake256 -o [pool url]:[port number] -u [web login].[worker name] -p [worker password]
 ```
 
-Example:
+Exemple:
 
 ```no-highlight
 ~/Decred/$ ./cgminer --blake256 -o http://dcr.maxminers.net:7727 -u DecredMiner.miner1 -p 7@!x5L1
 ```
 
-> Step Four
+> Quatrième étape
 
-cgminer should now launch. Create a cgminer configuration file by pressing the following keys: `S` (Settings), `W` (Write Config File), `Enter` (Save config file as `cgminer.conf`). Note that `cgminer.conf` will be placed in the same directory as `cgminer`. To add any other pools to your configuration file, open `cgminer.conf` with Gedit (GUI) / Pico (CLI) or a similar text editor. Multiple pools can be added by following this syntax in the "pools" section of the configuration file (note the comma between each individual pool entry):
+cgminer devrait maintenant être lancé. Créez une configuration de fichier cgminer en pressant la touche suivante: `S` (Réglage), `W` (Écrire un Fichier de Configuration), `Enter` (Sauvegarder le fichier comme `cgminer.conf`). Notez que `cgminer.conf` sera placé dans le même répertoire  que `cgminer`. Pour ajouter d'autres pools à votre fichier de configuration, ouvrez `cgminer.conf` avec Gedit (GUI) / Pico (CLI) ou un éditeur de texte similaire. Plusieurs pools peuvent être ajoutés en suivant cette syntaxe dans la section `pools` du fichier de configuration (notez la virgule entre chaque entrée de pool individuelle):
 
 ```no-highlight
 "pools" : [
@@ -70,12 +70,12 @@ cgminer should now launch. Create a cgminer configuration file by pressing the f
 ]
 ```
 
-> Step Five
+> Cinquième étape
 
-Save `cgminer.conf` and close `cgminer`. Relaunch cgminer using the command:
+Sauvez `cgminer.conf` et fermer `cgminer`. Relancez cgminer utilisant la commande:
 
 ```no-highlight
 ~/Decred/$ ./cgminer
 ```
 
-This concludes the basic cgminer pool setup guide. For more information on cgminer usage and detailed explanations on program functions, refer to the official [cgminer README](https://github.com/decred/cgminer/blob/3.7/README).
+Ceci conclut le guide de base du pool cgminer. Pour plus d'informations sur l'utilisation de cgminer et des explications détaillées sur les fonctions du programme, consultez le responsable [cgminer LisezMoi](https://github.com/decred/cgminer/blob/3.7/README).

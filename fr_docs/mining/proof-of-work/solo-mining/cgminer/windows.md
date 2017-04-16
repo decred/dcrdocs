@@ -4,64 +4,64 @@
 
 ## **<i class="fa fa-cloud"></i> Connect dcrd to the Decred network**
 
-> Step One
+> Première Étape
 
-Note that all `dcrd`, `dcrwallet`, and `dcrctl` commands must be executed in the directory where your Decred files are! Start `dcrd`:
+Note que `dcrd`, `dcrwallet`, et `dcrctl` commandes doivent être exécutées dans le répertoire où se trouvent vos fichiers Decred! Démarrer `dcrd`:
 
 ```no-highlight
 C:\Decred> dcrd -u user -P password
 ```
 
-Start dcrwallet:
+Démarrer dcrwallet:
 
 ```no-highlight
 C:\Decred> dcrwallet -u user -P password
 ```
 
-> Step Two
+> Seconde Étape
 
-Generate a new wallet address:
+Générer une nouvelle adresse portefeuille:
 
 ```no-highlight
 C:\Decred> dcrctl -u user -P password --wallet getnewaddress
 ```
 
-Copy the new address (output from the last command). Close/stop `dcrd` and `dcrwallet` by pressing `ctrl+c` in each window.
+Copier la nouvelle adresse (sortie de la dernière commande). Fermer/Arrêter `dcrd` et `dcrwallet` en pressant `ctrl+c` dans chaque fenêtre.
 
-> Step Three
+> Troisième Étape
 
-Restart `dcrd` using the command:
+Redémarrer `dcrd` utilisant commande:
 
 ```no-highlight
-C:\Decred> dcrd --miningaddr [new address from step two or your web client wallet address]
+C:\Decred> dcrd --miningaddr [nouvelle adresse de l'étape 2 ou de votre adresse de portefeuille client en ligne]
 ```
 
 ---
 
-## **<i class="fa fa-download"></i> Download and extract cgminer**
+## **<i class="fa fa-download"></i> Télécharger et extraire cgminer**
 
-Visit https://github.com/decred/cgminer/releases to find the latest cgminer release. For 64-bit Windows, download and extract `cgminer-decred-w64_*.zip`. For 32-bit Windows, download and extract `cgminer-decred-w32_*.zip`. Extract all files to a new folder and open the new folder to view the files.
+Visitez https://github.com/decred/cgminer/releases pour trouver la dernière version de cgminer. Pour Windows 64 bit, download and extract `cgminer-decred-w64_*.zip`. For 32-bit Windows, télécharger et extraire `cgminer-decred-w32_*.zip`. Extraire tous les fichiers dans un nouveau dossier et ouvrez le nouveau dossier pour afficher les fichiers.
 
 ---
 
-## **<i class="fa fa-play-circle"></i> Initialize and run cgminer**
+## **<i class="fa fa-play-circle"></i> Initialiser and démarrer cgminer**
 
-> Step One
+> Première Étape
 
-Right-click on `start_local.bat` and click `Edit`. Change the username and password to match the credentials used in step 1. Save and close start_local.bat  For reference, here is the command in start_local.bat:
+Clic-droit sur `start_local.bat` et clic `Edit`. Modifiez le nom d'utilisateur et le mot de passe pour correspondre aux informations d'identification utilisées à l'étape 1. Sauvez et fermez start_local.bat  Pour référence, ici est la commande dans start_local.bat:
 
 ```no-highlight
 C:\Decred> cgminer --blake256 -o https://127.0.0.1:9109 -u username -p password --cert "%LOCALAPPDATA%\Dcrd\rpc.cert"
 ```
 
-> Step Two
+> Seconde Étape
 
-If dcrd is not finished syncing to the blockchain, wait for it to finish, then proceed to the next step. When it is finished, it will show:
+Si dcrd n'est pas fini de se synchroniser avec la chaîne de blocs, attendez qu'elle soit terminée, puis passez à l'étape suivante. Quand il sera terminé, il apparaîtra:
 
 ```no-highlight
 [INF] BMGR: Processed 1 block in the last 5m34.49s
 ```
 
-> Step Three
+> Troisieème Étape
 
-Double click on `start_local.bat`. `cgminer` should open. Create a `cgminer` configuration file by pressing the following keys: `S` (Settings), `W` (Write Config File), `Enter` (Save config file as `cgminer.conf`). Note that `cgminer.conf` will be placed in the same directory as cgminer. cgminer can now be launched by simply double clicking `cgminer.exe`. This concludes the basic solo cgminer setup guide. For more information on cgminer usage and detailed explanations on program functions, refer to the official [cgminer README](https://github.com/decred/cgminer/blob/3.7/README).
+Double clic sur `start_local.bat`. `cgminer` devrait ouvrir. Créer un `cgminer` fichier de configuration en pressant sur cette touche: `S` (Paramètre), `W` (Écrire le fichier de configuration), `Enter` (Sauvegarder le fichier de configuration comme `cgminer.conf`). Notez que `cgminer.conf` sera placé dans le même répertoire que cgminer. Cgminer peut maintenant être lancé simplement en double-cliquant `cgminer.exe`. Ceci conclut le guide de base solo cgminer. Pour plus d'informations sur l'utilisation de cgminer et des explications détaillées sur les fonctions du programme, consultez le responsable [cgminer Lisezmoi](https://github.com/decred/cgminer/blob/3.7/README).

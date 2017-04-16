@@ -1,48 +1,48 @@
-# **<i class="fa fa-windows"></i> Windows User Guide**
+# **<i class="fa fa-windows"></i> Guide d'Utilisateur Windows**
 
 ---
 
-## **<i class="fa fa-download"></i> Download and extract cgminer**
+## **<i class="fa fa-download"></i> Télécharger et extraire cgminer**
 
-Visit https://github.com/decred/cgminer/releases to find the latest cgminer release. For 64-bit Windows, download and extract `cgminer-decred-w64_*.zip`. For 32-bit Windows, download and extract `cgminer-decred-w32_*.zip`. Extract all files to a new folder and open the new folder to view the files.
+Visitez https://github.com/decred/cgminer/releases pour trouver la dernière version de cgminer. pour 64 bit Windows, download and extract `cgminer-decred-w64_*.zip`. For 32-bit Windows, télécharger et extraire `cgminer-decred-w32_*.zip`. Extrayez tous les fichiers dans un nouveau dossier et ouvrez le nouveau dossier pour afficher les fichiers.
 
 ## **<i class="fa fa-play-circle"></i> Initialize and run cgminer**
 
-> Step One
+> Première étape
 
-Open a command prompt window by typing `cmd` into the address bar at the top of the file explorer that has the new cgminer files and pressing `Enter`. Type the following in your command prompt window to list your mining-capable hardware:
+Ouvrez une fenêtre d'invite de commande en tapant `cmd` dans la barre d'adresse en haut de l'explorateur de fichiers qui contient les nouveaux fichiers cgminer et en appuyant sur `Enter`. Tapez ce qui suit dans votre fenêtre d'invite de commande pour répertorier votre matériel de minage capable:
 
 ```no-highlight
 C:\Decred> cgminer -n
 ```
 
-You should see your video cards listed either by their GPU codename or the driver name. The last line of output should show the number of compatible GPUs you can mine with.
+Vous devriez voir vos cartes vidéo listées soit par leur nom de code GPU, soit par le nom du pilote. La dernière ligne de sortie devrait indiquer le nombre de GPU compatibles avec lesquels vous pouvez exploiter.
 
-> Step Two (Optional)
+> Deuxième étape (facultatif)
 
-To benchmark your system and find out the hashrate it can perform at, use the command:
+Pour comparer votre système et découvrir le hash qu'il peut effectuer, utilisez la commande:
 
 ```no-highlight
 C:\Decred> cgminer --blake256 --benchmark
 ```
 
-> Step Three
+> Troisième étape
 
-Register on one of the pool websites and setup a new miner for each of your mining computers. Refer to the pool website of your choice for instructions, if needed. In your command line window from step one, type the following command to launch cgminer (ignore square brackets):
+Enregistrez-vous sur l'un des sites Web de la pool et configurez un nouveau mineur pour chacun de vos ordinateurs de minage. Reportez-vous au site Web de la pool de votre choix pour obtenir des instructions, si nécessaire. Dans votre fenêtre de ligne de commande depuis la première étape, tapez la commande suivante pour lancer cgminer (ignorez les crochets):
 
 ```no-highlight
 C:\Decred> cgminer --blake256 -o [pool url]:[port number] -u [web login].[worker name] -p [worker password]
 ```
 
-Example:
+Exemple:
 
 ```no-highlight
 C:\Decred> cgminer --blake256 -o http://dcr.maxminers.net:7727 -u DecredMiner.miner1 -p 7@!x5L1
 ```
 
-> Step Four
+> Quatrième étape
 
-cgminer should now launch. Create a cgminer configuration file by pressing the following keys: `S` (Settings), `W` (Write Config File), `Enter` (Save config file as `cgminer.conf`). Note that `cgminer.conf` will be placed in the same directory as `cgminer.exe` To add any other pools to your configuration file, open `cgminer.conf` with Notepad or a similar text editor. Use the following syntax to make changes in the "pools" section of the configuration file (note the comma between each individual pool entry):
+cgminer devrait maintenant être lancé. Créez une configuration de fichier cgminer en pressant la touche suivante: `S` (Réglage), `W` (Écrire un Fichier de Configuration), `Enter` (Sauvegarder le fichier comme `cgminer.conf`). Notez que `cgminer.conf` era placé dans le même répertoire  que `cgminer.exe` Pour ajouter d'autres pools à votre fichier de configuration, ouvrez `cgminer.conf` avec le Bloc-notes ou un éditeur de texte similaire. Utilisez la syntaxe suivante pour effectuer des modifications dans la section "pools" du fichier de configuration (notez la virgule entre chaque entrée de pool individuel):
 
 ```no-highlight
 "pools" : [
@@ -59,6 +59,6 @@ cgminer should now launch. Create a cgminer configuration file by pressing the f
 ]
 ```
 
-> Step Five
+> Cinquième étape
 
-Save `cgminer.conf` and close `cgminer.exe`. Double-click on the cgminer program and it will launch and load the newly created configuration file. This concludes the basic cgminer pool setup guide. For more information on cgminer usage and detailed explanations on program functions, refer to the [cgminer README](https://github.com/decred/cgminer/blob/3.7/README).
+Suvegarder `cgminer.conf` et fermer `cgminer.exe`. Double-cliquez sur le programme cgminer et lancer et charger le fichier de configuration nouvellement créé. Ceci conclut le guide de base du pool cgminer. Pour plus d'informations sur l'utilisation de cgminer et des explications détaillées sur les fonctions du programme, reportez-vous à la [cgminer LisezMoi](https://github.com/decred/cgminer/blob/3.7/README).

@@ -2,6 +2,28 @@
 
 ---
 
+## ** Overview **
+
+Proof-of-work mining, more commonly referred to as PoW mining, is the activity
+of committing your computer’s hardware and resources to process network
+transactions and build the blocks that make up the blockchain in the Decred
+network. Each time a block is created (by a miner), about 30 new Decred coins
+are made. These coins are then split up as follows:
+
+Subsidy | Party
+---     | ---
+`60%`   | PoW Miners
+`30%`   | PoS Voters
+`10%`   | Decred development subsidy
+
+You will, on average, receive a reward that is roughly proportional to the
+hashrate of your miner and the overall hashrate of the network when you commit
+your computer to PoW mining. To get started, you must have a computer with a
+video card. Most video cards can be used for mining (including the "mobile"
+types found in some laptops). In general, higher end video cards perform at
+higher hashrates and therefore receive higher rewards.
+---
+
 ## ** Solo Mining or Pool Mining **
 
 > <i class="fa fa-male"></i> Solo Mining

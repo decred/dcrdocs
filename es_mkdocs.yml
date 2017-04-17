@@ -34,7 +34,6 @@ pages:
   - 'Testnet Voting Guide': 'getting-started/user-guides/testnet-voting.md'
   - 'Constitución de Decred': 'getting-started/constitution.md'
 - Mining:
-  - 'Overview': 'mining/overview.md'
   - 'Proof-of-Stake (PoS)': 'mining/proof-of-stake.md'
   - 'Proof-of-Work (PoW)': 'mining/proof-of-work.md'
   - User Guides:

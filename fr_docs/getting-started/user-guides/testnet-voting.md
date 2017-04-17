@@ -1,18 +1,18 @@
-# Testnet Hard Fork Voting Guide
+# Testnet Hard Fork Guide de vote
 
-This guide was last updated for v0.8.2 
+Ce guide a été mis à jour pour v0.8.2 
 
-As of the v0.8.0 release of Feb. 13, 2017, the hard-fork voting mechanism was implemented for testing on the Decred Testnet. The test vote is estimated to start on Feb 25, 2017 around 1PM CST and last for 7 days. If you wish to participate, guides for Paymetheus and the Command-Line applications can be found here. 
+À partir de la version v0.8.0 du 13 février 2017, le mécanisme de vote a été mis en place pour les tests sur le Testnet de Decred. On estime que le vote d'essai débutera le 25 février 2017 vers 1 heure du CST et durera 7 jours. Si vous souhaitez participer, des guides pour Paymetheus et les applications de ligne de commande peuvent être trouvés ici. 
 
 ---
 
 ## Introduction
 
-There is a two-phase process for voting to implement consensus changes that would create a hard fork. Note: the following block intervals are for the testnet, they will differ for mainnet.
+Il existe un processus en deux étapes pour voter pour mettre en œuvre des changements de consensus qui créeraient une fork difficile. Remarque: les intervalles de bloc suivants sont pour le testnet, ils seront différents pour mainnet.
 
-The first step is to meet the upgrade threshold on the network. After the hard fork code is released, a majority of the nodes on the network participating in PoW/PoS need to first upgrade before the voting can begin. For Proof-of-Work, at least 75% of the 100 most recent blocks must have the latest block version. For Proof-of-Stake, 75% of the votes cast within a static 2016 block interval must have the latest vote version.
+La première étape consiste à respecter le seuil de mise à niveau sur le réseau. Une fois que le code de l' hardfork est relâchée, la majorité des nodes du réseau participant au PdT/PdE doivent commencer avant le début du vote. Pour la preuve de travail, au moins 75% des 100 blocs les plus récents doivent avoir la dernière version en bloc. Pour la preuve d'enjeu, 75% des votes exprimés dans un intervalle de bloc 2016 statique doivent avoir la dernière version du vote.
 
-The second step of this process is the actual voting. The previous 2016 block interval falls somewhere within a larger 5040 block interval and the network must wait for that larger 5040 block interval to end. Because of the different interval lengths, it *might* take up to an additional 5040 blocks before the voting window begins. After that, a static 5040 block interval transpires while votes are cast and if 75% of the votes mined within that interval signal a 'yes' vote to the proposed changes, the changes are fully implemented after one additional block interval (to give any remaining nodes the time needed to update to avoid being forked off the blockchain). Below is a simplified chart to explain each block interval in the order they chronologically appear.
+La deuxième étape de ce processus est le vote effectif. L'intervalle de bloc précédent 2016 tombe quelque part dans un intervalle de bloc plus important de 5040 et le réseau doit attendre que l'intervalle 5040 du bloc pour finir. En raison des différentes longueurs d'intervalle, il *pourrait* prendre jusqu'à 5040 blocs supplémentaires avant le début de la fenêtre de vote. Après cela, un intervalle de bloc 5040 statique se transmet pendant que les votes sont exprimés et si 75% des votes extraits dans cet intervalle signent un vote "oui" aux modifications proposées, les modifications sont entièrement mises en œuvre après un intervalle de bloc supplémentaire (pour donner aux reste nodes le temps nécessaire à la mise à jour pour éviter d'être enlevé de la chaîne de blocs). Vous trouverez ci-dessous un tableau simplifié pour expliquer chaque intervalle de bloc dans l'ordre où ils apparaissent chronologiquement.
 
 Interval Description | Interval Type | Number of Blocks
 ---------------------|-------------|---------------
@@ -22,9 +22,9 @@ Interval after upgrade requirements met | Static | Up to 5040
 Actual voting interval - 75% of Votes must signal a "yes" to pass | Static | 5040
 Pre-implementation interval if vote passes | Static | 5040
 
-If a proposal fails to reach a 10% threshold of either 'no' or 'yes' votes, stakeholders will be able to vote on it again during the next voting interval, until this threshold is met or the proposal expires. 
+Si une proposition ne parvient pas à atteindre un seuil de 10% des votes «non» ou «oui», les parties prenantes pourront voter à nouveau lors de l'intervalle de vote suivant, jusqu'à ce que ce seuil soit atteint ou que la proposition expire. 
 
-Below are instructions to participate in the voting demo on the Testnet using a stakepool with Paymetheus and/or the command line applications `dcrd`, `dcrwallet`, and `dcrctl`. The command line guide uses configuration files to pass parameters to the application during launch. Alternatively, flags can be used when starting an application, but they will not be covered in this draft.
+Ci-dessous sont des instructions pour participer à la démo de vote sur le Testnet en utilisant un projet de partage avec Paymetheus et / ou les applications de ligne de commande `dcrd`,` dcrwallet` et `dcrctl`. Le guide de ligne de commande utilise des fichiers de configuration pour transmettre des paramètres à l'application pendant le lancement. Alternativement, les drapeaux peuvent être utilisés lors du démarrage d'une application, mais ils ne seront pas couverts par ce projet.
 
 ## Paymetheus
 

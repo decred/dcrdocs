@@ -8,7 +8,7 @@ This document explains the process by which one purchases a ticket with DCR by
 sending an SStx transaction.  If the transaction is successfully mined, it will
 then go through a 256 block maturation period.  Once mature, the ticket will be
 randomly selected to vote on PoW blocks as covered by the
-[general mining overview](/mining/overview.md#2-proof-of-stake-pos-mining).
+[general mining overview](/mining/proof-of-stake.md).
 
 ---
 

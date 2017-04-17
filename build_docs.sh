@@ -4,7 +4,7 @@ absolutePath=${PWD}
 echo "======================================="
 echo " E N  -  E N G L I S H  V E R S I O N "
 echo "INFO	-  Building en_docs into directory site/"
-mkdocs build -f mkdocs.yml -d site
+mkdocs build --strict -f mkdocs.yml -d site
 
 LANG="de es"
 for L in $LANG; do
@@ -16,7 +16,7 @@ for L in $LANG; do
     mkdir -p ${L}_docs
     for i in `diff -rq docs/ ${L}_docs/ | grep "Only in" | sed 's/Only in//' | sed 's/:/\//' | sed 's/ //' | sed 's/docs\///' | awk -F' ' '{print $1$2}'`; do echo $i; cp -r ${absolutePath}/docs/$i ${absolutePath}/${L}_docs/$i;  done
     echo "INFO	-  Building "$L"_docs into directory site/"$L
-    mkdocs build -f ${L}_mkdocs.yml -d site/${L}
+    mkdocs build --strict -f ${L}_mkdocs.yml -d site/${L}
 
     # DELETE CSS,JS,FONTS FROM $LANG DIRECTORY
     echo "INFO	-  Remove files and directories site/"$L"/css/ js/ fonts/ Icons/"

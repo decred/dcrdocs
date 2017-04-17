@@ -12,7 +12,7 @@ There are a couple of things you need to know about the web client
 before you use it:
 
 * You cannot
-  [stake mine](/mining/overview.md#2-proof-of-stake-mining)
+  [stake mine](/mining/proof-of-stake.md)
   with it.
 * Your wallet is kept entirely in the local storage of your web
   browser.  This means that is you delete your local storage, you will
@@ -119,7 +119,7 @@ In `Amount`, enter the value in DCR to send to the recipient. If you
 wish you can type an optional message in the `Note` field. Press
 `Send`. The `Use Unconfirmed Funds` option lets you use funds that the
 network knows are being sent to you but have not yet been confirmed by
-[proof-of-work miners](/mining/overview.md#1-proof-of-work-mining). If
+[proof-of-work miners](/mining/proof-of-work.md). If
 this is turned on and the amount specified can only be covered by
 using unconfirmed funds, the transaction will not proceed until the
 required funds have been confirmed.

@@ -4,11 +4,37 @@
 
 ## ** Overview **
 
+Proof of Stake mining is the second method of block verification in Decred. It
+is computationally cheap but it requires you to already have some DCR in your
+wallet. In the Decred network, PoW miners solve blocks then turn those blocks
+over to PoS miners to vote on them. When a block is completed, 5 tickets are
+chosen at random from the ticket pool to vote on the block. If at least 3 votes
+are ‘Yes' then the block is validated, included in the block chain and both
+PoW and PoS miners are paid. If the vote fails, the block is discarded and the
+transactions return to be included in another block. The PoW miners are not
+paid, however the PoS miners are.
+
+This is to incentivize PoW miners to mine according to the wishes of PoS
+miners. For example, if the rules of the network change in the future any
+PoW miners who don't follow them will not be paid. It also helps stop large
+mining pools getting too much influence over the network. In
+cryptocurrencies that don't use PoS, the large groups of PoW miners who
+effectively control the network can collude to block transactions, stop network
+changes or even force faked transactions (although this would take a huge
+amount of resources). Collusion between PoW and PoS miners is not possible as
+tickets are not chosen until the time of the vote. Collusion between PoS miners
+is likewise remote as the ticket pool is kept at around 40,960 active tickets
+at any time. The chance of three tickets belonging to the same individual or
+group being chosen for the same block is very small. Even if this did happen
+every transaction is validated at least twice so the chance of anyone
+manipulating the blockchain is effectively zero.
+
+
 This document explains the process by which one purchases a ticket with DCR by
 sending an SStx transaction.  If the transaction is successfully mined, it will
 then go through a 256 block maturation period.  Once mature, the ticket will be
 randomly selected to vote on PoW blocks as covered by the
-[general mining overview](/mining/overview.md#2-proof-of-stake-pos-mining).
+[general mining overview](/mining/proof-of-stake.md).
 
 ---
 

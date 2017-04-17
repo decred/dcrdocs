@@ -36,7 +36,6 @@ pages:
   - 'Testnet Voting Guide': 'getting-started/user-guides/testnet-voting.md'
   - 'Decred Constitution': 'getting-started/constitution.md'
 - Mining:
-  - 'Overview': 'mining/overview.md'
   - 'Proof-of-Stake (PoS)': 'mining/proof-of-stake.md'
   - 'Proof-of-Work (PoW)': 'mining/proof-of-work.md'
   - User Guides:
@@ -51,7 +50,6 @@ pages:
         - 'Linux Guide': 'mining/proof-of-work/solo-mining/cgminer/linux.md'
         - 'Windows Guide': 'mining/proof-of-work/solo-mining/cgminer/windows.md'
 - FAQ:
-  - 'Overview': 'faq/overview.md'
   - 'General': 'faq/general.md'
   - 'Configuration': 'faq/configuration.md'
   - 'Wallets and Seeds': 'faq/wallets-and-seeds.md'
@@ -65,7 +63,6 @@ pages:
   - 'Proof-of-Work Mining': 'faq/proof-of-work-mining.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
 - Advanced:
-  - 'Overview': 'advanced/overview.md'
   - 'Storing Login Details': 'advanced/storing-login-details.md'
   - 'Program Options': 'advanced/program-options.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'

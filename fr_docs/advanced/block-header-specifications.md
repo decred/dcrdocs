@@ -1,34 +1,33 @@
-# **Block Header Specifications**
+# **Spécifications du Bloc de tête**
 
 ---
 
-## **Block header format**
+## **Format du Bloc de tête**
 
-Decred block headers occupy 180 bytes when serialized. The
-serialization format for a block header is displayed below:
+Les blocs de tête occupent 180 octets lors de la sérialisation. Le format de sérialisation d'un bloc de tête est affiché ci-dessous:
 
-Field          | Description                                                                 | Size
----            | ---                                                                         | ---
-Version        | Block header version                                                        | 4 bytes
-Previous block | Hash of the previous block                                                  | 32 bytes
-Merkle root    | Merkle tree hash calculated using all transactions in the block             | 32 bytes
-Stake root     | Merkle tree hash calculated using all stake transactions in the block       | 32 bytes
-Vote bits      | Bit flags. Currently only used to signify votes on the previous merkle root | 2 bytes
-Final state    | Commitment to the final state of the PRNG (for lottery purposes)            | 6 bytes
-Voters         | Number of participating voters in the block                                 | 2 bytes
-Fresh stake    | Number of new tickets in the block                                          | 1 byte
-Revocations    | Number of revocations present in the block                                  | 1 byte
-Pool size      | Size of the ticket pool                                                     | 4 bytes
-Bits           | Difficulty target for the block                                             | 4 bytes
-SBits          | Stake difficulty target for the block                                       | 8 bytes
-Height         | The number of blocks that precede the block in the blockchain               | 4 bytes
-Size           | Number of bytes that the serialized block occupies                          | 4 bytes
-Timestamp      | Time that the block was created                                             | 4 bytes
-Extra data     | The nonce and any other data that may be used later for consensus purposes  | 40 bytes
+Field          | Description                                                                                        | Size
+---            | ---                                                                                                | ---
+Version        | Version du bloc de tête                                                                            | 4 bytes
+Previous block | Hash du bloc précédent                                                                             | 32 bytes
+Merkle root    | L'hash de l'arbre Merkle calculé en utilisant toutes les transaction du bloc                       | 32 bytes
+Stake root     | L'hash de l'arbre Merkle calculé en utilisant toutes les transactions d'enjeu du bloc              | 32 bytes
+Vote bits      | Drapeaux de bits. Actuellement, il ne sert qu'à signaler des votes sur la racine Merkle précédente | 2 bytes
+Final state    | Engagement envers l'état final du PRNG (à des fins de loterie)                                     | 6 bytes
+Voters         | Nombre de voteurs participant dans le bloc                                                         | 2 bytes
+Fresh stake    | Nombre de nouveau ticket dans bloc                                                                 | 1 byte
+Revocations    | Nombre de révocations présentent dans le bloc                                                      | 1 byte
+Pool size      | Taille des tickets de pool                                                                         | 4 bytes
+Bits           | Objectif de difficulté pour le bloc                                                                | 4 bytes
+SBits          | Objectif de difficulté pour l'enjeu dans le bloc                                                   | 8 bytes
+Height         | Le nombre de blocs qui précèdent le bloc dans la chaîne de blocs                                   | 4 bytes
+Size           | Nombre d'octets que le bloc sérialisé occupe                                                       | 4 bytes
+Timestamp      | Moment auquel le bloc aà été créé                                                                  | 4 bytes
+Extra data     | La nonce et toute autre donnée qui peut être utilisée plus tard pour des raisons de consensus      | 40 bytes
 
 ---
 
-## **Example encoded block header**
+## **Exemple encodé du bloc de téte**
 
 ```
         0x01, 0x00, 0x00, 0x00, // Version 1
@@ -65,7 +64,7 @@ Extra data     | The nonce and any other data that may be used later for consens
 
 ---
 
-## **Example encoded block header as raw bytes**
+## **Example encodé du bloc de tête comme RAW octets**
 
 ```
         0x01, 0x00, 0x00, 0x00, // Version 1
@@ -102,15 +101,11 @@ Extra data     | The nonce and any other data that may be used later for consens
 
 ---
 
-## **Mining details**
+## **Détails de minage**
 
-Both getwork and getblocktemplate are implemented, but neither is
-precisely the same as in Bitcoin. getwork is very similar, but returns
-a non-int32 reversed byte string to work off of. The 'data' field
-refers to the properly padded blake256 input of 3x64 byte chunks. Only
-the last chunk needs to be modified when mining.
+getwork et getblocktemplate sont implémentés tout les deux, mais aucun ne sont pas exactement comme chez Bitcoin. getwork est très similaire, mais revient à une chaîne d'octets inversée non int32 pour fonctionner dessus. Le champ «données» se réfère à l'entrée blake256 correctement remplies de morceaux d'octets 3x64. Seulement le dernier morceau doit être modifié lors du minage.
 
-Example `getwork` response:
+Exemple `getwork` réponse:
 
 ```
 {
@@ -124,8 +119,7 @@ Example `getwork` response:
 }
 ```
 
-`getblocktemplate` also returns a full header and data about the
-transactions that are included in the block. An example:
+`getblocktemplate` renvoie également une tête complète et des données sur le les transactions qui sont incluses dans le bloc. Un exemple:
 
 ```
 {
@@ -237,8 +231,4 @@ transactions that are included in the block. An example:
 }
 ```
 
-Mining is performed by incrementing nonce until the block header is
-below the target. ExtraData is allowed to be used as an extra nonce
-for fast hashing devices like ASICs, but a soft fork may change this
-at some point (to allow it to be used for other consensus data
-structures).
+Le minage est effectué en incrémentant un nonce jusqu'à ce que le bloc de tête soit en dessous de la cible. ExtraData est autorisé à être utilisé comme un extra nonce pour les dispositifs de hachage rapide comme les ASIC, mais une softfork peut changer cela à un moment donné (pour lui permettre d'être utilisé pour d'autres données de structure de consensus).

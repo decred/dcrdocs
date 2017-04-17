@@ -36,6 +36,13 @@ Below you'll find a list of currently available applications, with a chart showi
 
 "Other UNIX" currently includes various *BSDs and Solaris/illumos.
 
+Note: You might soon notice one of the many differences between Decred and other 
+popular cryptocurrencies: the wallet daemon and node daemon are separate.
+A lot of other coins run these functions together in a single daemon.
+For those who choose to use the command line interfaces, this means you must
+run `dcrd` for full node functionality, and `dcrwallet` to store your DCR,
+create transactions and participate in Proof-of-Stake mining/voting.
+
 ---
 
 ## **Installation Guides**

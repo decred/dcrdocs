@@ -31,7 +31,7 @@ C:\Decred> cgminer --blake256 --benchmark
 Enregistrez-vous sur l'un des sites Web de la pool et configurez un nouveau mineur pour chacun de vos ordinateurs de minage. Reportez-vous au site Web de la pool de votre choix pour obtenir des instructions, si nécessaire. Dans votre fenêtre de ligne de commande depuis la première étape, tapez la commande suivante pour lancer cgminer (ignorez les crochets):
 
 ```no-highlight
-C:\Decred> cgminer --blake256 -o [pool url]:[port number] -u [web login].[worker name] -p [worker password]
+C:\Decred> cgminer --blake256 -o <pool url>:<port number> -u <web login>.<worker name> -p <worker password>
 ```
 
 Exemple:

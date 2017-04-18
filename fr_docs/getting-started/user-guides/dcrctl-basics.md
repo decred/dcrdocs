@@ -33,9 +33,9 @@ Si vous n'avez pas utilisé `dcrinstall`, vous devrez activer les paramètres mi
 
 Vous devrez exécuter des commandes dcrctl dans une fenêtre de shell distincte (Commande Prompt/Bash).
 
-Émettre des commandes pour `dcrwallet`, vous aurez besoin d'utiliser `dcrctl --wallet [command]`.
+Émettre des commandes pour `dcrwallet`, vous aurez besoin d'utiliser `dcrctl --wallet <command>`.
 
-Émettre des commandes pour `dcrd`, vous aurez besoin d'utiliser `dcrctl [command]`.
+Émettre des commandes pour `dcrd`, vous aurez besoin d'utiliser `dcrctl <command>`.
 
 Pour voir la liste complète des commandes `dcrctl` peut envoyer à `dcrd` et `dcrwallet`, émettez la commande suivante dans votre shell:
 
@@ -52,7 +52,7 @@ dcrctl help --wallet [command]
 ou la suivante pour `dcrd` commandes:
 
 ```no-highlight
-dcrctl help [command]
+dcrctl help <command>
 ```
 
 ---
@@ -64,7 +64,7 @@ Quelques fonctionnalités de `dcrwallet` rExige que le portefeuille soit déverr
 La commande pour débloquer votre portefeuille suit: 
 
 ```no-highlight
-dcrctl --wallet walletpassphrase [passphrase privée créée pendant la création de portefeuille] 0
+dcrctl --wallet walletpassphrase <passphrase privée créée pendant la création de portefeuille> 0
 ```
 
 Ici, nous spécifions pour `dcrctl` d'envoyer la commande `dcrwallet` en utilisant le drapeau `--wallet`. La commande actuelle est `walletpassphrase` laquelle accepte deux paramètres, votre phrase de passe privée et un temps de délai. En précisant `0` pour un déverrouillage de limité `dcrwallet` à sans limite. Notez, cependant, cela débloque uniquement le portefeuille pour la session en cours. Si vous fermez la fenêtre, le portefeuille est en cours d'exécution ou arrêtez/redémarrez le `dcrwallet`, vous devrez le débloquer à nouveau la prochaine fois que vous l'aurez démarré.
@@ -108,7 +108,7 @@ Cela générera et renverra une nouvelle adresse de paiement. Pour minimiser la 
 Pour envoyer DCR à une adresse, émettre la commande `sendtoaddress` à `dcrwallet` utilisant `dcrctl`. Entrez ce qui suit dans votre shell, Remplissant l'adresse de réception et le montant à envoyer:
 
 ```no-highlight
-dcrctl --wallet sendtoaddress [address] [amount]
+dcrctl --wallet sendtoaddress <address> <amount>
 ```
 
 Si elle réussit, `dcrctl` il enverra un hash de transaction qui peut être utilisé pour regarder la transaction sur le site officiel [Decred Block Explorer](/getting-started/using-the-block-explorer.md).

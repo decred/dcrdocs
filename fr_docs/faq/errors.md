@@ -31,13 +31,13 @@ mais premièrement, vérifiez la commande et assurez-vous de l'avoir entré corr
 6. Ouvrez l'Explorateur Windows.
 7. Coller `%localappdata%/decred/paymetheus` Dans la barre de localisation. Appuyez sur Entrée.
 8. Supprimez le dossier 'mainnet'.
-9. Accédez à l'une des fenêtres PowerShell et collez `./dcrd -u you -P sekrit`. Pressez ENTER.
+9. Accédez à l'une des fenêtres PowerShell et collez `./dcrd -u <username> -P <password>`. Pressez ENTER.
 10. Accédez à l'une des autres fenêtres Powershell et collez `./dcrwallet --appdata=$env:localappdata/decred/paymetheus --create`
 11. uivez les instructions et importez votre graine. Dites non quand on vous demande une couche supplémentaire de cryptage et oui quand on vous demande si vous avez une graine.
 12. À l'invite, entrez vos mots de graine et appuyez deux fois sur ENTER.
-13. Collez la commande suivante dans la même fenêtre: `./dcrwallet -u you -P sekrit --appdata=$env:localappdata/decred/paymetheus`. Pressez ENTER.
+13. Collez la commande suivante dans la même fenêtre: `./dcrwallet -u <username> -P <password> --appdata=$env:localappdata/decred/paymetheus`. Pressez ENTER.
 14. EEntrez la phrase de passe privée que vous avez utilisée lors de la création du portefeuille.
-15. Accédez à la troisième fenêtre PowerShell et collez `./dcrctl -u you -P sekrit --wallet -c $env:localappdata/decred/paymetheus/rpc.cert getbalance`. Pressez ENTER.
+15. Accédez à la troisième fenêtre PowerShell et collez `./dcrctl -u <username> -P <password> --wallet -c $env:localappdata/decred/paymetheus/rpc.cert getbalance`. Pressez ENTER.
 16. Appuyez sur CTRL + C dans les deux premières fenêtres pour fermer les programmes (dcrd et dcrwallet).
 17. Vous pouvez fermer les trois fenêtres PowerShell.
 18. Retournez à la fenêtre de l'Explorateur. Supprimez les deux fichiers, rpc.cert et rpc.key.
@@ -50,7 +50,7 @@ mais premièrement, vérifiez la commande et assurez-vous de l'avoir entré corr
 #### **1. Certains de mes billets manqués/expirés sont toujours verrouillés après plus d'une journée.** ####
 
 1. Démarrez le processus de portefeuille avec le drapeau `--enablevoting`. Il ne causera pas de révocations comme cela.
-2. Débloquez le portefeuille avec `dcrctl --wallet walletpassphrase "yourpassphrase" 0`. Le portefeuille doit être débloqué pour pouvoir créer les révocations et les signer.
+2. Débloquez le portefeuille avec `dcrctl --wallet walletpassphrase <yourpassphrase> 0`. Le portefeuille doit être débloqué pour pouvoir créer les révocations et les signer.
 3. Demandez à dcrd d'informer le portefeuille à propos des billets manqués de façon à en remettre les révocations `dcrctl rebroadcastmissed`.
 
 

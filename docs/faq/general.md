@@ -33,9 +33,12 @@ The development of Decred was funded by Company 0 and from the pockets of its de
 
 This means Company 0 and its developers will have put roughly USD 415,000 into the bring-up since April, 2014 and receive 4% of the total supply, 840,000 coins (at USD 0.49 per coin). Coins held by Company 0 will be used to fund its ongoing work on open source projects, such as Decred and btcsuite.
 
+When Decred launched in February 2016, the developers and project members committed to not trade any of their bring-up DCR for 12 months and Company 0 committed to not trade any for 24 months.[^4] These coins will however be used to purchase proof of stake tickets with the intention of making the Decred network harder to attack during it's infancy. As the community participation in PoS increases, the amount of tickets purchased using the premine will be reduced proportionally. [^5] [^6]
+
+
  **Airdrop (840,000 coins, 50% of premine, 4% of total Decred supply) **
 
-Rather than allocating the entire premine to the bring-up costs, the remaining half of the premine was spread evenly across a list of airdrop participants. Airdrop sign-up was available to anybody and ran through January 2016. Not everybody who signed up was selected to participate in the airdrop - Decred is fundamentally about technological progress, so the airdrop targeted individuals that have made contributions to advance technology in its various forms. There was also a large number of fraudulent sign-ups which needed to be carefully identified and dealt with.[^3]
+Rather than allocating the entire premine to the bring-up costs, the remaining half of the premine was spread evenly across a list of airdrop participants. Airdrop sign-up was available to anybody and ran through January 2016. Not everybody who signed up was selected to participate in the airdrop - Decred is fundamentally about technological progress, so the airdrop targeted individuals that have made contributions to advance technology in its various forms. There was also a large number of fraudulent sign-ups which needed to be carefully identified and dealt with.[^3] 
 
 > The airdrop concluded with awarding 282.63795424 DCR to 2972 participants.[^2]
 
@@ -52,3 +55,6 @@ Giving away these coins in an airdrop accomplished several things for the projec
 [^1]: Company0 Blog, [December 2015](https://blog.companyzero.com/2015/12/decred-rethink-digital-currency/)
 [^3]: Decred Forum, [Final Airdrop Review Process](https://forum.decred.org/threads/final-airdrop-review-process.534/)
 [^2]: Github, [decred/dcrd](https://github.com/decred/dcrd/blob/216aa759fa64e5a13ca8a4608e6c80a0f87eff85/chaincfg/premine.go)
+[^4]: Decred Forum, [The Project's Commitment](https://forum.decred.org/threads/the-projects-commitment.730/)
+[^5]: Bitcointalk.org, [[ANN][DCR] Decred - Hybrid PoW/PoS | btcsuite Devs | Tons of New Features | Go](https://bitcointalk.org/index.php?topic=1290358.msg13412287#msg13412287)
+[^6]: Decred Forum, [How Can We Communicate That Decred Isn't Another Pump And Dump?](https://forum.decred.org/threads/how-can-we-communicate-that-decred-isnt-another-pump-and-dump.96/page-2#post-2220)

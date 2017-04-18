@@ -42,7 +42,7 @@ Pour comparer votre système et découvrir le hash dont vos GPU sont capables, u
 Enregistrez-vous sur l'un des sites Web des pools et configurez un nouveau mineur pour chacun de vos ordinateurs de minage. Reportez-vous au site Web de la pool de votre choix pour obtenir des instructions, si nécessaire. Dans votre fenêtre de terminal depuis la première étape, tapez la commande suivante pour lancer cgminer (ignorez les crochets):
 
 ```no-highlight
-~/Decred/$ ./cgminer --blake256 -o [pool url]:[port number] -u [web login].[worker name] -p [worker password]
+~/Decred/$ ./cgminer --blake256 -o <pool url>:<port number> -u <web login>.<worker name> -p <worker password>
 ```
 
 Exemple:

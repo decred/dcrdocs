@@ -86,7 +86,7 @@ Cette méthode est recommandée pour l'installation manuelle traditionnelle. `dc
 
     Vous pouvez double-cliquer ou l'exécuter à partir de l'invite de commande. 
     
-3. Les binaires pour `dcrd`, `dcrwallet`, et `dcrctl` peuvent maintenant être trouvés dans le répertoire `%HOMEPATH%\decred\` (habituellement est %HOMEPATH% `C:\Users\username`). Avant que le processus `dcrinstall` ne se termine, vous serez amené à l'invite de création de portefeuille. Suivez les étapes [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) du guide d'installation dcrwallet pour terminer.
+3. Les binaires pour `dcrd`, `dcrwallet`, et `dcrctl` peuvent maintenant être trouvés dans le répertoire `%HOMEPATH%\decred\` (habituellement est %HOMEPATH% `C:\Users\<username>`). Avant que le processus `dcrinstall` ne se termine, vous serez amené à l'invite de création de portefeuille. Suivez les étapes [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) du guide d'installation dcrwallet pour terminer.
 
 ---
 

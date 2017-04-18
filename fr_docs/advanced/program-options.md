@@ -93,7 +93,7 @@ Option | La description
 Bien qu'il soit facile de commencer l'exploitation minière de PoS, il se passe beaucoup de choses dans l'arrière-plan. Voyons quelques-unes des informations disponible:
 
 ```
-dcrctl -u <daemon username> - P <daemon password> --wallet <command>
+dcrctl -u <username> - P <password> --wallet <command>
 ```
 
 ```getbalance ("account" minconf=1 "balancetype")``` Obtient l'équilibre pour le compte donné (pas l'adresse). De son côté, il affichera les pièces de monnaie dépensables. Pour voir toutes les pièces, vous devez définir le type de balance à all par exemple. 'Getbalance * 0 all' affichera l'équilibre total dans le portefeuille.

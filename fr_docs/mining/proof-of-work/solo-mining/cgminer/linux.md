@@ -9,13 +9,13 @@
 Note que `dcrd`, `dcrwallet`, et `dcrctl` commandes doivent être exécutées dans le répertoire où se trouvent vos fichiers Decred! Démarrer `dcrd`:
 
 ```no-highlight
-~/Decred/$ ./dcrd -u user -P password
+~/Decred/$ ./dcrd -u <user> -P <password>
 ```
 
 Démarrer dcrwallet:
 
 ```no-highlight
-~/Decred/$ ./dcrwallet -u user -P password
+~/Decred/$ ./dcrwallet -u <user> -P <password>
 ```
 
 > Seconde Étape
@@ -23,7 +23,7 @@ Démarrer dcrwallet:
 Générer une nouvelle adresse portefeuille:
 
 ```no-highlight
-~/Decred/$ ./dcrctl -u user -P password --wallet getnewaddress default
+~/Decred/$ ./dcrctl -u <username> -P <password> --wallet getnewaddress default
 ```
 
 Copier la nouvelle adresse (sortie de la dernière commande). Fermer/Arrêter `dcrd` et `dcrwallet` en pressant `ctrl+c` dans chaque fenêtre.
@@ -33,7 +33,7 @@ Copier la nouvelle adresse (sortie de la dernière commande). Fermer/Arrêter `d
 Redémarrer `dcrd` utilisant la commande:
 
 ```no-highlight
-~/Decred/$ ./dcrd -u user -P password --miningaddr [nouvelle adresse de l'étape 2 ou de votre adresse de portefeuille client en ligne]
+~/Decred/$ ./dcrd -u <username> -P <password> --miningaddr <nouvelle adresse de l'étape 2 ou de votre adresse de portefeuille client en ligne>
 ```
 
 > Quatrième Étape
@@ -41,7 +41,7 @@ Redémarrer `dcrd` utilisant la commande:
 Installer TLS securité en copiant rpc.cert dans /usr/share/ca-certificates:
 
 ```no-highlight
-sudo cp /home/user/.dcrd/rpc.cert /usr/share/ca-certificates/dcrd.crt
+sudo cp /home/<username>/.dcrd/rpc.cert /usr/share/ca-certificates/dcrd.crt
 ```
 
 Utiliser le texte éditeur pour écrire la commande "dcrd.crt" (sans guillemets) dans /etc/ca-certificates.conf:
@@ -84,7 +84,7 @@ Si `dcrd` n'a pas fini de se synchroniser avec la chaîne de blocs, attendez qu'
 Dans votre répertoire cgminer, démarrer cgminer avec la commande:
 
 ```no-highlight
-~/Decred/$ ./cgminer --blake256 -o https://127.0.0.1:9109 -u user -p password
+~/Decred/$ ./cgminer --blake256 -o https://127.0.0.1:9109 -u <username> -p <password>
 ```
 
 Créez un fichier de configuration cgminer en appuyant sur les touches suivantes: `S` (Paramètres), `W` (Écrire un fichier de configuration), `Enter` (Sauvegarder le fichier de configuration comme) `cgminer.conf`). Notez que `cgminer.conf` sera placé dans le même répertoire que cgminer. Cgminer peut maintenant être lancé en exécutant simplement la commande:

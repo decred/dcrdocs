@@ -35,6 +35,6 @@ dcrctl --wallet getnewaddress
 ## <i class="fa fa-rocket"></i> Envoyer les fonds à une adresse
 
 ```
-dcrctl --wallet sendtoaddress TseGH6Xfq9k8Co6txJbY3kiiM7vpaYzXD4T 13
+dcrctl --wallet sendtoaddress <address> <amount>
 ```
 

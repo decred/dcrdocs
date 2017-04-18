@@ -57,16 +57,16 @@ Assurez-vous que tous les mots se trouvent sur une seule ligne séparée par des
 
 Il est possible d'importer une clé privée autonome [^10724] dans `dcrwallet`. Notez que ce n'est que pour `--noseed` adresses et vous ne devriez pas exécuter ceci sauf si vous savez ce que vous faites!
 
-Débloquez le portefeuille (ignorez les crochets):
+Débloquez le portefeuille (Ignorer les brackets angulaires):
 
 ```no-highlight
-dcrctl --wallet walletpassphrase [private encryption passphrase] 60
+dcrctl --wallet walletpassphrase <private encryption passphrase> 60
 ```
 
-Importez la clé privée autonome (`--noseed`) (ignorez les crochets):
+Importez la clé privée autonome (`--noseed`) (Ignorer les brackets angulaires):
 
 ```no-highlight
-dcrctl --wallet importprivkey [put WIF private key here]
+dcrctl --wallet importprivkey <put WIF private key here>
 ```
 
 Afficher le solde du compte importé (donnez-lui un peu de temps pour remanier et regarder le journal dans dcrwallet pour pouvoir rescanner le progrès):

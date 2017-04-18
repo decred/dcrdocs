@@ -54,7 +54,7 @@ $ go install $(glide nv)
 - Ajouter une git remote pour votre fork:
 
 ```bash
-$ git remote ajoutez votre nom https://github.com/votrenom/dcrd.git
+$ git remote <yourname> https://github.com/<yourname>/dcrd.git
 ```
 
 ## **Autres Projets**
@@ -75,7 +75,7 @@ $ cd dcrdocs
 - Ajoutez une git remote pour votre fork:
 
 ```bash
-$ git remote ajoutez votre nom https://github.com/votrenom/dcrdocs.git
+$ git remote <yourname> https://github.com/<yourname>/dcrdocs.git
 ```
 
 ## **Création d'une nouvelle demande d'extraction de fonctionnalité**
@@ -83,13 +83,13 @@ $ git remote ajoutez votre nom https://github.com/votrenom/dcrdocs.git
 - Vérifiez une nouvelle branche de fonctionnalité pour loger les changements que vous allez faire:
 
 ```bash
-$ git checkout -b feature_branch
+$ git checkout -b <feature_branch>
 ```
 - Faites les changements nécéssaires pour la fonctionnalité et commitez-les
 - Poussez votre branche de fonctionnalité sur votre fork:
 
 ```bash
-$ git push votrenom feature_branch
+$ git push <youname> <feature_branch>
 ```
 - Avec l'explorateur, navigez vers https://github.com/decred/dcrd
 - Créez une pull requête avec le GitHub UI.  Vous pouvez faire la requête d'une pré-visualisation sur GitHub web page ou demandez à quelqu'un sur irc/slack.
@@ -107,7 +107,7 @@ $ git pull
 - Vérifiez la branche de fonctionnalité existante et redéfinissez-la avec le drapeau interactif:
 
 ```bash
-$ git checkout feature_branch
+$ git checkout <feature_branch>
 $ git rebase -i master
 ```
 - Suivez les directions présentées pour spécifier 's' signifiant écraser pour le prochain commitement additionnel (le premier commitement doit rester 'p' ou 'push'
@@ -116,7 +116,7 @@ $ git rebase -i master
 - Force push la branche sur votre fork:
 
 ```bash
-$ git push -f votre nom feature_branch
+$ git push -f <yourname> <feature_branch>
 ```
 
 ## **Autres Considérations**

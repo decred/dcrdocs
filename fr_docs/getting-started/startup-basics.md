@@ -53,14 +53,14 @@ Au minimum, pour `dcrd`,` dcrwallet` et `dcrctl` pour pouvoir communiquer entre 
 4. Créez un fichier texte vide et enregistrez-le en tant que `dcrctl.conf` dans le répertoire personnel de `dcrctl`.
 5. Choisissez un nom d'utilisateur et un mot de passe arbitraires, ceux-ci ne seront utilisés que pour chaque application à communiquer via un appel de procédure à distance. La configuration la plus simple est de les rendre égaux.
 6. Dans `dcrd.conf`, sous `[Application Options]`, ajoutez les lignes suivantes:<br /><br />
-        rpcuser=chosen-username<br />
-        rpcpass=chosen-password<br /><br />
+        rpcuser=<chosen-username><br />
+        rpcpass=<chosen-password><br /><br />
 7. Dans `dcrwallet.conf`, sous `[Application Options]`, ajoutez les lignes suivantes:<br /><br />
-        username=chosen-username<br />
-        password=chosen-password<br /><br />
+        username=<chosen-username><br />
+        password=<chosen-password><br /><br />
 8. Dans `dcrctl.conf`, ajoutez les lignes suivantes:<br /><br />
-        rpcuser=chosen-username<br />
-        rpcpass=chosen-password<br /><br />
+        rpcuser=<chosen-username><br />
+        rpcpass=c<hosen-password><br /><br />
 9. Sauvez les trois fichiers de configuration.
 
 ---

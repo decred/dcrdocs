@@ -9,13 +9,13 @@
 Note que `dcrd`, `dcrwallet`, et `dcrctl` commandes doivent être exécutées dans le répertoire où se trouvent vos fichiers Decred! Démarrer `dcrd`:
 
 ```no-highlight
-C:\Decred> dcrd -u user -P password
+C:\Decred> dcrd -u <username> -P <password>
 ```
 
 Démarrer dcrwallet:
 
 ```no-highlight
-C:\Decred> dcrwallet -u user -P password
+C:\Decred> dcrwallet -u <username> -P <password>
 ```
 
 > Seconde Étape
@@ -23,7 +23,7 @@ C:\Decred> dcrwallet -u user -P password
 Générer une nouvelle adresse portefeuille:
 
 ```no-highlight
-C:\Decred> dcrctl -u user -P password --wallet getnewaddress
+C:\Decred> dcrctl -u <username> -P <password> --wallet getnewaddress
 ```
 
 Copier la nouvelle adresse (sortie de la dernière commande). Fermer/Arrêter `dcrd` et `dcrwallet` en pressant `ctrl+c` dans chaque fenêtre.
@@ -33,7 +33,7 @@ Copier la nouvelle adresse (sortie de la dernière commande). Fermer/Arrêter `d
 Redémarrer `dcrd` utilisant commande:
 
 ```no-highlight
-C:\Decred> dcrd --miningaddr [nouvelle adresse de l'étape 2 ou de votre adresse de portefeuille client en ligne]
+C:\Decred> dcrd --miningaddr <nouvelle adresse de l'étape 2 ou de votre adresse de portefeuille client en ligne>
 ```
 
 ---
@@ -51,7 +51,7 @@ Visitez https://github.com/decred/cgminer/releases pour trouver la dernière ver
 Clic-droit sur `start_local.bat` et clic `Edit`. Modifiez le nom d'utilisateur et le mot de passe pour correspondre aux informations d'identification utilisées à l'étape 1. Sauvez et fermez start_local.bat  Pour référence, ici est la commande dans start_local.bat:
 
 ```no-highlight
-C:\Decred> cgminer --blake256 -o https://127.0.0.1:9109 -u username -p password --cert "%LOCALAPPDATA%\Dcrd\rpc.cert"
+C:\Decred> cgminer --blake256 -o https://127.0.0.1:9109 -u <username> -p <password> --cert "%LOCALAPPDATA%\Dcrd\rpc.cert"
 ```
 
 > Seconde Étape

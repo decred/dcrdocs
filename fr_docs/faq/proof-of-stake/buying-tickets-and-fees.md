@@ -21,7 +21,7 @@ Non, ssgen n'impose pas de frais[^10219] (contrairement aux transactions d'achat
 #### **3. Comment changer les frais du ticket?**
 
 ```no-highlight
-dcrctl --wallet setticketfee [fee]
+dcrctl --wallet setticketfee <fee>
 ```
 
 ---
@@ -29,7 +29,7 @@ dcrctl --wallet setticketfee [fee]
 #### **4. Comment puis-je acheter manuellement des tickets?**
 
 ```no-highlight
-dcrctl --wallet purchaseticket "fromaccount" spendlimit minconf
+dcrctl --wallet purchaseticket <fromaccount> <spendlimit> <minconf>
 ```
 
 Ou:

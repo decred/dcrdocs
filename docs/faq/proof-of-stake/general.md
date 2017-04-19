@@ -4,7 +4,7 @@
 
 #### **1. What is Decred's Proof-of-Stake system?**
 
-The Proof-of-Stake (PoS) system allows holders of Decred to have a say in the governance of the currency. It aims to take full control away from the miners and allow the users to have a voice.
+The Proof-of-Stake (PoS) system allows holders of Decred to have a say in the governance of the currency. It aims to give users a voice alongside the miners.
 In order to participate, users can purchase "tickets", which enter a lottery pool. Every block 5 tickets are chosen from the PoS ticket pool. If at least 3 of those validate the previously mined block, 
 the newly mined block is added to the chain, and both PoW miners and PoS stakers are paid. If the block is not validated by the PoS stakers the PoW miners do not get paid, but the PoS stakers do. This is
  to incentivize PoW miners to mine according to the wishes of the PoS stakers.
@@ -31,12 +31,19 @@ to be mined based on their fee per kilobyte. Since there is a limited number of 
 you can increase the fee you're willing to pay to get your ticket(s) mined. Once your ticket is mined it will move from the current 'allmempool' to the 'immature' ticket pool. After 256 blocks
 (about 20 hours) it then will mature and go into the live ticket pool where it is eligible to be chosen to vote.
 
-Remember, your wallet has to be online and unlocked for your ticket to cast a valid vote when it is selected. If you don't want to leave your wallet unlocked and online, have a look at a
-[PoS stake pool](/mining/proof-of-stake.md#solo-mining-or-pool-mining).
+---
+
+#### **3. Do I need to be constantly connected to the network to participate in PoS?**
+
+A wallet needs to be online 24/7 to respond to a vote if one of your tickets is selected. There are two main ways to do this; a solo staking wallet which you set up and keep online all the time, or you 
+can use a [stake pool](/mining/proof-of-stake.md#solo-mining-or-pool-mining). A stake pool is basically a community run wallet to which you can assign the voting rights of your tickets and the pool will
+vote on your behalf for a small percentage of the PoS reward.
+
+It is important to note that you are only assigning voting rights to the pool, not your actual funds. A stake pool does not have access to your funds at any time.
 
 ---
 
-#### **3. What is the "ticket price"?**
+#### **4. What is the "ticket price"?**
 
 The price for tickets is determined by an algorithm that aims to keep the ticket pool size, which is the total amount of tickets in the PoS system ticket pool around a target size of 40960 tickets.
 The ticket price will go up or down according to the demand for tickets, and the number of tickets currently in the pool.
@@ -48,7 +55,7 @@ The ticket price is always refunded no matter if your ticket votes, misses or ex
 
 ---
 
-#### **4. What are fees?**
+#### **5. What are fees?**
 
 The PoS system utilizes two types of fees, a txfee (also known as a 'split' fee) and a ticketfee.
 	
@@ -66,7 +73,7 @@ Returning the funds back to your wallet after a ticket votes or is revoked does 
 
 ---
 
-#### **5. What is a stake pool?**
+#### **6. What is a stake pool?**
 
 A stake pool is the equivalent of a mining pool, but for the PoS system. Through the options in your Decred wallet, you can give your voting rights to a stake pool. If your ticket is selected to vote,
 the stake pool will cast the vote for you and you are rewarded with the PoS reward minus the stake pool fee (usually 4-5%). Unlike the mining pools, the PoS reward is not split amongst the users of the stake pool, but the full reward goes to the owner of the ticket.
@@ -79,7 +86,7 @@ It also reduces latency between the wallet and network which can reduce the chan
 
 ---
 
-#### **6. What happens to my funds when I buy a ticket?**
+#### **7. What happens to my funds when I buy a ticket?**
 
 Funds used to purchase tickets are locked until the ticket is selected to vote or it expires. They are unable to leave your wallet and will appear in the "lockedbytickets" section of your wallet.
 If your ticket is selected to vote, you will be refunded the total amount paid for the ticket and the PoS reward.
@@ -91,7 +98,7 @@ In case your ticket isn't selected to vote after 40960 blocks (about 4 months), 
 
 ---
 
-#### **7. What are the chances of my ticket voting?**
+#### **8. What are the chances of my ticket voting?**
 
 The PoS system in Decred uses a Poisson distribution to determine the chances of a ticket voting at any given time. Given the target pool size of 40960 tickets, any one ticket has a 50% chance to vote
 within 28 days and a 99.5% chance to vote before expiry. Note that these values will change with the pool size.
@@ -99,7 +106,7 @@ within 28 days and a 99.5% chance to vote before expiry. Note that these values 
 
 ---
 
-#### **8. What is Proof-of-Stake voting?**
+#### **9. What is Proof-of-Stake voting?**
 
 Because the block validation performed by the PoS system behaves like a voting system, it can be used to vote on other issues too.
 
@@ -111,13 +118,18 @@ For example, you could choose the color of your ticket to be either red or blue,
 
 If you replace the red or blue option with a yes or no option, you have a voting system that can count votes over time. By using the PoS voting system anyone who holds DCR can vote on issues set in an agenda.
 
-This voting system can be used for any issue. For Decred the most prominent use will be to vote on hardforks.
+This voting system can be used for any governance issue. For Decred, the most prominent use will be to vote on hardforks, which are technical changes to the way the currency works. Some examples:
+- Increase the maximum block size.
+- Change the algorithm PoS uses to determine the ticket price.
+- Vote on major new features for the currency (e.g. lighning network, enhanced privacy).
+- Change the PoW algorithm.
+- Pretty much anything the comunity decides would be in the best interest of the currency.
 
 Currently, a platform for the community to submit and advocate a voting agenda is in development.
 
 ---
 
-#### **9. What is hardfork voting?**
+#### **10. What is hardfork voting?**
 
 Like any other cryptocurrency Decred might need to hardfork at some point.
 
@@ -125,7 +137,7 @@ One of the agenda issues set for the PoS voting system could be a hardfork. If s
 
 For a hardfork vote to start two critical conditions have to be met:
 
-- First, 75% of the PoW miners have to upgrade to the latest version of the current network block version. This check runs over the past 100 blocks.
+- First, 75% of the PoW miners have to upgrade to the latest version of the current network block version. This check runs over the past 1000 blocks.
 - Second, 75% of the PoS miners have to upgrade to the latest version. This check runs over the past 2016 blocks.
 
 If these checks are met the voting process begins. Tickets can be set with an additional parameter of yes/no/abstain. You do this in your wallet before the ticket votes. Tickets marked as abstain will not be counted in the total amount of votes.
@@ -140,7 +152,7 @@ In case a vote fails a new round will start at the beginning of the process. Thi
 
 ---
 
-#### **9. Is PoS susceptible to large exchanges using their customers Decred?**
+#### **11. Is PoS susceptible to large exchanges using their customers Decred?**
 
 The number of decred a person (or exchange) has means nothing to PoS. It's the number of tickets you have. Funds used to purchase tickets are locked until the ticket they purchased votes. This means that
 decred involved in PoS are effectively nontransferable. For an exchange to use their customers decred for voting, they would have to transfer them out of the wallets and lock them for up to 5 months. People
@@ -154,7 +166,7 @@ can't buy more when the price drops again.
 
 ---
 
-#### **10. Is PoS susceptible to influence from large balance holders such as the original developers?**
+#### **12. Is PoS susceptible to influence from large balance holders such as the original developers?**
 
 The pool size limits above apply here. This stops one person/group flooding the PoS pool with large numbers of their own tickets. Even if they bought up the whole pool (with huge fees) the most they would
 likely get is about 4000 tickets (based on previous ticket windows where the ones around 30DCR usually go up to 100 for the next window, and the max for the one after that is often over 300). So a large

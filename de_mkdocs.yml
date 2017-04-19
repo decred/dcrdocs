@@ -60,6 +60,7 @@ pages:
   - 'Web Client': 'faq/web-client.md'
   - 'Blocks': 'faq/blocks.md'
   - Proof-of-stake:
+    - 'General': 'faq/proof-of-stake/general.md'
     - 'Solo Mining': 'faq/proof-of-stake/solo-mining.md'
     - 'Buying Tickets and Fees': 'faq/proof-of-stake/buying-tickets-and-fees.md'
     - 'Voting Tickets': 'faq/proof-of-stake/voting-tickets.md'

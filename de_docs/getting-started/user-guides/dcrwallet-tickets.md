@@ -1,12 +1,12 @@
 # **Buying Tickets With dcrwallet**
 
-Last updated for v0.8.2 on 4/18/2017
+Last updated for v0.8.2
 
 This guide is intended to walk through ticket buying using `dcrwallet`. It will cover both manual ticket purchase and automatic ticket purchase for solo-voting and stakepool-voting configurations.
 
 **Prerequisites:**
 
-- Use either the latest [dcrinstall](/getting-started/install-guide.md#dcrinstall) to install `dcrctl`. Additional steps will be required if another installation method was used.
+- Use the latest [dcrinstall](/getting-started/install-guide.md#dcrinstall) to install `dcrd`, `dcrwallet,` and `dcrctl`. Additional steps will be required if another installation method was used.
 - Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/cli-differences.md).
 - [Setup dcrd](/getting-started/user-guides/dcrd-setup.md) and have it running in the background.
 - [Setup dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) and have it running in the background.
@@ -23,9 +23,9 @@ NOTE: `dcrwallet.conf` is split into two sections labeled `[Application Options]
 
 There are a few decisions to be made before venturing into this guide. First, will you be using a stakepool to delegate your ticket voting rights? Second, will you be purchasing tickets manually or automatically via the ticketbuyer feature?
 
-Stakepool ticket purchasing allows a stakeholder to delegate voting rights to a stakepool. These stakepools are online 24/7 and very rarely miss a vote. They utilize multi-sig transactions so they're unable to touch any of your DCR. As a downside, most require a small percentage of your voting reward as a pool fee. Stakepool delegated tickets also require a larger transaction size (~540 Bytes vs. ~300 Bytes for solo-voting tickets) for purchasing which results in a slightly higher absolute ticket fee since fees are calculated by DCR/kB.
+Stakepool ticket purchasing allows a stakeholder to delegate voting rights to a stakepool. These stakepools are online at all times (24/7) and very rarely miss a vote. They utilize multi-sig transactions so they're unable to touch any of your DCR. As a downside, most require a small percentage of your voting reward as a pool fee. Stakepool delegated tickets also require a larger transaction size (~540 Bytes vs. ~300 Bytes for solo-voting tickets) for purchasing which results in a slightly higher absolute ticket fee since fees are calculated by DCR/kB.
 
-Solo-voting requires you to have a voting wallet unlocked at all times, or else you can miss votes and lose your voting reward. You do not have to pay pool fees and your ticket purchases are more likely to be mined with a smaller absolute fee (due to the miners selecting tickets based on DCR/kB ticket fee rates and solo tickets having a smaller TXN size).
+Solo-voting requires you to have a voting wallet unlocked at all times (24/7), or else you may miss votes and lose your voting reward. You do not have to pay pool fees and your ticket purchases are more likely to be mined with a smaller absolute fee (due to the miners selecting tickets based on DCR/kB ticket fee rates and solo tickets having a smaller TXN size).
 
 Manual ticket purchasing vs. automated ticketbuyer purchasing is mainly up to personal preference. The normal benefits of automation apply to ticketbuyer, but many may be overwhelmed by the amount variables that can be configured. Also, ticketbuyer's fee calculation sometimes doesn't result in the most economical fee for a stakeholder. Some people also enjoy manually purchasing tickets every few days and trying to bid the most economical fee. Both methods will only purchase tickets when your wallet is unlocked.
 

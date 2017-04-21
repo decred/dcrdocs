@@ -1,12 +1,12 @@
 # Using Testnet Guide
 
-last updated for v1.0.0/testnet2
+last updated for testnet2
 
 ---
 
 ## Why Use Testnet?
 
-Testnet2 is a wonderful place where you can experiment with the Decred applications without worrying that a mistake will cost you real money. It is actually recommended that people use the Testnet2 to learn the basics of the Decred software or any new features.
+The testnet is a wonderful place where you can experiment with the Decred applications without worrying that a mistake will cost you real money. It is actually recommended that people use the testnet to learn the basics of the Decred software and any new features.
 
 Decred is currently on its 2nd Testnet, also known as testnet2. Testnets are periodically reset to help keep a manageable blockchain file size. 
 
@@ -20,27 +20,31 @@ Running a testnet2 node is incredibly easy. You application of choice will need 
 
 ## Paymetheus
 
-To launch `Paymetheus` on testnet2, simply launch the `Decred Testnet` application instead of the usual `Decred` application. You will then be walked through the wallet creation (the same steps in the [Paymetheus Setup guide](/getting-started/user-guides/paymetheus.md)). After `dcrd` finishes syncing in the background, you'll then be able to fill your `Paymetheus` wallet with tDCR and familiarize yourself with the software.
+To launch `Paymetheus` on testnet2, simply launch the `Decred Testnet` application instead of the usual `Decred` application. You will then be walked through the wallet creation (the same steps in the [Paymetheus Setup guide](/getting-started/user-guides/paymetheus.md)). After `dcrd` finishes syncing in the background, you'll then be able to fill your `Paymetheus` wallet with testnet DCR and familiarize yourself with the software.
 
 ---
 
+<!-- ## Decrediton 
+
+To launch `Decrediton` on testnet2, you have to launch `Decrediton` from the command line with the `--testnet` flag. Keep in mind that using the flag once will make it always start in that mode until you use the `--mainnet` flag to switch back to the mainnet blockchain.
+
+___ -->
+
 ## Command-Line Suite
 
-To launch `dcrd` and `dcrwallet` on testnet2, simply add the `--testnet` flag to your launch command. Alternatively, you could put `testnet=true` in all of your config files, but it's usually much faster to use the startup flag.
+To launch `dcrd` and `dcrwallet` on testnet, simply add the `--testnet` flag to your launch command. Alternatively, you could put `testnet=1` in all of your config files, but it's usually much faster to use the startup flag.
 
 On the first launch of `dcrd --testnet`, `dcrd` will begin downloading the testnet2 blockchain to the `data/testnet2` folder of `dcrd`'s home directory.
 
-Before you're able to launch `dcrwallet` with the `--testnet` flag, you must create a separate Testnet wallet using the `dcrwallet --testnet --create` command. The steps are the same as those found in the [dcrwallet Setup Guide](/getting-started/user-guides/dcrwallet-setup.md). 
+Before you're able to launch `dcrwallet` with the `--testnet` flag, you must create a separate testnet wallet using the `dcrwallet --testnet --create` command. The steps are the same as those found in the [dcrwallet Setup Guide](/getting-started/user-guides/dcrwallet-setup.md). 
 
 To issue commands to both `dcrwallet` and `dcrd`, you must also add the `--testnet` flag to any of the `dcrctl` commands that you use. E.g. you would issue the `dcrctl --testnet --wallet getbalance` command to check your testnet balance. 
 
 ---
 
-## Acquiring Testnet2 Coins
+## Acquiring Testnet Coins
 
-You can acquire coins through the [Decred Testnet Faucet](https://faucet.decred.org). Please return any coins to the address listed at the bottom of that page when you're done playing with testnet2.
+You can acquire coins through the [Decred Testnet Faucet](https://faucet.decred.org). Please return any coins to the address listed at the bottom of that page when you're done playing with the testnet.
 
 ---
-
-<!-- TODO: ADD DECREDITON SECTION -->
 

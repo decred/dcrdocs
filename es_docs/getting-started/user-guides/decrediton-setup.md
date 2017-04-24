@@ -1,6 +1,6 @@
 # **Decrediton Setup Guide**
 
-Last updated for v0.8.2.
+Last updated for v1.0.0.
 
 This guide is intended to help you setup the `Decrediton` application. 
 
@@ -10,7 +10,7 @@ This guide is intended to help you setup the `Decrediton` application.
 
 ---
 
-`Decrediton` is a graphical user interface for `dcrwallet`. When this application launches, it automatically starts its own instance of `dcrd` and `dcrwallet` in the background - it will not open if there is already a running instance of `dcrd`. Please note that as of 0.8.2, this application is a alpha release - there are known bugs in the software that are being worked on. 
+`Decrediton` is a graphical user interface for `dcrwallet`. When this application launches, it automatically starts its own instance of `dcrd` and `dcrwallet` in the background - it will not open if there is already a running instance of `dcrd`.
 
 NOTE: At any point in the use of Decrediton, it may become unresponsive or get stuck on a loading screen. This can usually be fixed with a restart of the application.
 

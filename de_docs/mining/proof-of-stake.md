@@ -1,6 +1,6 @@
 # **Proof-of-Stake (PoS) Mining**
 
-Last updated for v0.8.2
+Last updated for v1.0.0
 
 This document is meant to be an educational resource for Proof-of-Stake mining (staking) with Decred. It will cover the purpose of the Proof-of-Stake protocol, a brief introduction to the staking process, a ticket lifecycle, and get you started with ticket buying. 
 

@@ -1,6 +1,6 @@
 # **Buying Tickets With dcrwallet**
 
-Last updated for v0.8.2
+Last updated for v1.0.0
 
 This guide is intended to walk through ticket buying using `dcrwallet`. It will cover both manual ticket purchase and automatic ticket purchase for solo-voting and stakepool-voting configurations.
 

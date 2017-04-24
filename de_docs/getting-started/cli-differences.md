@@ -1,6 +1,6 @@
 # **Command-Line Differences Across Operating Systems**
 
-This page was last updated for v0.8.2.
+This page was last updated for v1.0.0.
 
 ---
 

@@ -1,10 +1,10 @@
 # Installation Guide
 
-This guide was last updated for v0.8.2.
+This guide was last updated for v1.0.0.
 
 ---
 
-There are four methods for downloading and installing the Decred software. One is via dcrinstall (cross-platform), one is via the Windows Installer (Windows only of course, and the only way to get Paymetheus as of v0.8.2), another is via the precompiled binary releases (cross-platform), and the other is building the software yourself (cross-platform). The first three methods will be covered here and the fourth may be added at a later date.
+There are four methods for downloading and installing the Decred software. One is via dcrinstall (cross-platform), one is via the Windows Installer (Windows only of course, and the only way to get Paymetheus as of v1.0.0), another is via the precompiled binary releases (cross-platform), and the other is building the software yourself (cross-platform). The first three methods will be covered here and the fourth may be added at a later date.
 
 ---
 
@@ -14,8 +14,8 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `decred_0.8.2-beta_x86.msi` file. <br />
-    For 64-bit computers, download the `decred_0.8.2-beta_x64.msi` file.
+    For 32-bit computers, download the `decred_1.0.0-release_x86.msi` file. <br />
+    For 64-bit computers, download the `decred_1.0.0-release_x64.msi` file.
 
 2. Navigate to download location and double click the `.msi` file.
 
@@ -33,16 +33,16 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `dcrinstall-darwin-386-v0.8.2` file. <br />
-    For 64-bit computers, download the `dcrinstall-darwin-amd64-v0.8.2` file.
+    For 32-bit computers, download the `dcrinstall-darwin-386-v1.0.0` file. <br />
+    For 64-bit computers, download the `dcrinstall-darwin-amd64-v1.0.0` file.
 
 2. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal:
 
     Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
     
     `cd ~/Downloads/` <br />
-    `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
-    `./dcrinstall-darwin-amd64-v0.8.2`
+    `chmod u+x dcrinstall-darwin-amd64-v1.0.0` <br />
+    `./dcrinstall-darwin-amd64-v1.0.0`
     
 3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory.
 
@@ -50,18 +50,18 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `dcrinstall-linux-386-v0.8.2` file. <br />
-    For 64-bit computers, download the `dcrinstall-linux-amd64-v0.8.2` file. <br />
-    For 32-bit ARM computers, download the `dcrinstall-linux-arm-v0.8.2` file. <br />
-    For 64-bit ARM computers, download the `dcrinstall-linux-arm64-v0.8.2` file.
+    For 32-bit computers, download the `dcrinstall-linux-386-v1.0.0` file. <br />
+    For 64-bit computers, download the `dcrinstall-linux-amd64-v1.0.0` file. <br />
+    For 32-bit ARM computers, download the `dcrinstall-linux-arm-v1.0.0` file. <br />
+    For 64-bit ARM computers, download the `dcrinstall-linux-arm64-v1.0.0` file.
 
 2. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal:
 
     Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
     
     `cd ~/Downloads/` <br />
-    `chmod u+x dcrinstall-darwin-amd64-v0.8.2` <br />
-    `./dcrinstall-darwin-amd64-v0.8.2` 
+    `chmod u+x dcrinstall-darwin-amd64-v1.0.0` <br />
+    `./dcrinstall-darwin-amd64-v1.0.0` 
     
 3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can then be found in the `~/decred/` directory.
 
@@ -69,8 +69,8 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `dcrinstall-windows-386-v0.8.2.exe` file. <br /> 
-    For 64-bit computers, download the `dcrinstall-windows-amd64-v0.8.2.exe` file. <br />
+    For 32-bit computers, download the `dcrinstall-windows-386-v1.0.0.exe` file. <br /> 
+    For 64-bit computers, download the `dcrinstall-windows-amd64-v1.0.0.exe` file. <br />
 
 2.  Run the dcrinstall executable file.
 
@@ -88,8 +88,8 @@ The newest Binary Releases can be found here: [https://github.com/decred/decred-
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `decred-darwin-386-v0.8.2.tar.gz` file. <br />
-    For 64-bit computers, download the `decred-darwin-amd64-v0.8.2.tar.gz` file.
+    For 32-bit computers, download the `decred-darwin-386-v1.0.0.tar.gz` file. <br />
+    For 64-bit computers, download the `decred-darwin-amd64-v1.0.0.tar.gz` file.
 
 2. Navigate to download location and extract the .tar.gz file:
 
@@ -98,24 +98,24 @@ The newest Binary Releases can be found here: [https://github.com/decred/decred-
 
     **NOTE**: If you are using Safari on macOS Sierra and have the 'Open "safe" files after downloading' preference enabled, .gz and .zip files are automatically uncompressed after download. The `tar -xvzf filename.tar.gz` command results in this error: `tar: Error opening archive: Failed to open 'filename.tar.gz'`. Use `tar -xvzf filename.tar` instead (remove the .gz from the previous command).
     
-    Both of these should extract the tar into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v0.8.2.tar.gz` should extract to `decred-darwin-amd64-v0.8.2`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+    Both of these should extract the tar into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v1.0.0.tar.gz` should extract to `decred-darwin-amd64-v1.0.0`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
 
 
 > Linux
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `decred-linux-386-v0.8.2.tar.gz` file. <br />
-    For 64-bit computers, download the `decred-darwin-amd64-v0.8.2.tar.gz` file. <br />
-    For 32-bit ARM computers, download the `decred-linux-arm-v0.8.2.tar.gz` file. <br />
-    For 64-bit ARM computers, download the `decred-linux-arm64-v0.8.2.tar.gz` file.
+    For 32-bit computers, download the `decred-linux-386-v1.0.0.tar.gz` file. <br />
+    For 64-bit computers, download the `decred-darwin-amd64-v1.0.0.tar.gz` file. <br />
+    For 32-bit ARM computers, download the `decred-linux-arm-v1.0.0.tar.gz` file. <br />
+    For 64-bit ARM computers, download the `decred-linux-arm64-v1.0.0.tar.gz` file.
 
 2. Navigate to download location and extract the .tar.gz file:
 
     Finder: simply double click on the .tar.gz file. <br />
     Terminal: use the `tar -xvzf filename.tar.gz` command. 
     
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v0.8.2.tar.gz` should extract to `decred-darwin-amd64-v0.8.2`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v1.0.0.tar.gz` should extract to `decred-darwin-amd64-v1.0.0`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
 
 > Windows
 
@@ -123,8 +123,8 @@ Note: Windows 7/8/10 natively provides support for `.zip` files, therefore it is
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `decred-windows-386-v0.8.2.zip` file. <br />
-    For 64-bit computers, download the `decred-windows-amd64-v0.8.2.zip` file.
+    For 32-bit computers, download the `decred-windows-386-v1.0.0.zip` file. <br />
+    For 64-bit computers, download the `decred-windows-amd64-v1.0.0.zip` file.
 
 2. Navigate to download location and unzip the `.zip` file:
 

@@ -51,7 +51,7 @@ GPU drivers usually contain the libraries needed for mining.  If you have diffic
 
 #### **[<i class="fa fa-github"></i> gominer](https://github.com/decred/gominer)**
 
-It is recommended that everyone use gominer for Decred. This is the easiest miner to setup and start mining. Currently, the latest version of gominer is **[<i class="fa fa-github"></i>v0.8.0](https://github.com/decred/gominer/releases)** and the official binaries can be downloaded from **[https://github.com/decred/decred-binaries/releases/tag/v0.8.0](https://github.com/decred/decred-binaries/releases/tag/v0.8.0)**
+It is recommended that everyone use gominer for Decred. This is the easiest miner to setup and start mining. Currently, the latest version of gominer is **[<i class="fa fa-github"></i>v1.0.0](https://github.com/decred/gominer/releases)** and the official binaries can be downloaded from **[https://github.com/decred/decred-binaries/releases/tag/v1.0.0](https://github.com/decred/decred-binaries/releases/tag/v1.0.0)**
 
 Please be certain to select the correct operating system (Windows/Linux) and the correct version for your GPU type (CUDA for NVIDIA cards, OpenCL/OpenCLADL for AMD cards). gominer is only available to 64-bit operating systems. User guides to start mining with gominer can be found here: 
 

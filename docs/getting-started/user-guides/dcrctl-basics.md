@@ -1,6 +1,6 @@
 # **dcrctl Basics**
 
-Last updated for v0.8.2.
+Last updated for v1.0.0.
 
 This guide is intended to help you learn the basic commands of the `dcrctl` application using a [minimal configuration file](/getting-started/startup-basics.md#minimum-configuration). 
 

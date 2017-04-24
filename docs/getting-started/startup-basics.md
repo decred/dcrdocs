@@ -1,6 +1,6 @@
 # Startup Basics
 
-This guide was last updated for v0.8.2
+This guide was last updated for v1.0.0
 
 ---
 

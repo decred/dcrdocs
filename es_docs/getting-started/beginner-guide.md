@@ -6,14 +6,11 @@ Last updated for v0.8.2
 
 ## **Welcome To Decred**
 
-Welcome to the world of Decred! We know that getting started with any new cryptocurrency
-can be difficult and we want to make the journey as easy as possible. Decred is well
-documented, with everything from basic information such as, "how do I send decred", to
-super technical stuff like "why did you choose a BLAKE-256 hash function, and how does
-it compare to the Merkle-Damgård construction?".
+Welcome to Decred! We are very glad to have you. As you may or may not already know, Decred is different. There's a lot of new things to learn to fully grasp how things work. This documentation will attempt to make things a bit easier to understand.
 
-So that you don't get overwhelmed by the amount of information available, we have created
-this beginner's guide through the documentation. By following the links at the bottom of a few pages, you'll learn how to install, setup, and use the Decred applications; how to obtain DCR; how to vote via Proof-of-Stake; how to use the block explorer; and configure the software to use on the Testnet. 
+This beginner's guide is a path to getting the Decred software up and running. You can choose from multiple clients to get a node on the network and Decred in your wallet. Specifically, you'll learn how to install, setup, and use the Decred applications; how to obtain DCR; how to vote via Proof-of-Stake; and how to use the block explorer.
+
+You'll need to follow an [Installation Guide](#installation-guides), and then follow the path for the application of your choice below. After your application is set-up, go through the [General Guides](#general-guides) at the bottom of this page. If you have any questions along the way, join us in our [Slack](/support-directory/md#join-us-on-slack).
 
 ---
 

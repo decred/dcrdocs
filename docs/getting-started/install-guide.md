@@ -65,7 +65,7 @@ This method is recommended over the traditional manual installation. `dcrinstall
     For 32-bit ARM computers, download the `dcrinstall-linux-arm-v1.0.0` file. <br />
     For 64-bit ARM computers, download the `dcrinstall-linux-arm64-v1.0.0` file.
 
-2. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal, and run it:
+2. Make dcrinstall-linux-xxxx-vx.x.x an executable within your terminal, and run it:
 
     Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
     

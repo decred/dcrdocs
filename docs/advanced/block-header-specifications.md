@@ -25,6 +25,7 @@ Height         | The number of blocks that precede the block in the blockchain  
 Size           | Number of bytes that the serialized block occupies                          | 4 bytes
 Timestamp      | Time that the block was created                                             | 4 bytes
 Extra data     | The nonce and any other data that may be used later for consensus purposes  | 40 bytes
+Stake version  | The stake version used for voting on the created block                      | 4 bytes
 
 ---
 
@@ -61,6 +62,7 @@ Extra data     | The nonce and any other data that may be used later for consens
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
         0x00, 0x00, 0x00, 0x00,
+        0x00, 0x00, 0x00, 0x00, // StakeVersion
 ```
 
 ---

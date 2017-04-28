@@ -37,5 +37,5 @@ Project                                     | Description
 Project                                                                                                                         | Description
 --------------------------------------------------------------------------------------------------------------------------------|------------------------------------
 [dcrspy](https://github.com/chappjc/dcrspy)                                                                                     | Monitor details of the Decred network
-[Balance and ticket stats](https://forum.decred.org/threads/bash-shell-script-to-view-quick-stats-on-balance-and-tickets.2926/) | bash script displaying wallet stats
- 
+[Balance and ticket stats](https://forum.decred.org/threads/bash-shell-script-to-view-quick-stats-on-balance-and-tickets.2926/) | Bash script displaying wallet stats
+[dcrstatus](https://github.com/karamble/dcrstatus)                                                                              | Dashboard showing personal stats in Bash

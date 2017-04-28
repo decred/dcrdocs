@@ -1,6 +1,6 @@
 # Testnet Hard Fork Voting Guide
 
-This guide was last updated for v1.0.0 
+This guide was last updated for v1.0.1 
 
 As of the v0.8.0 release of Feb. 13, 2017, the hard-fork voting mechanism was implemented for testing on the Decred Testnet. The test vote is estimated to start on Feb 25, 2017 around 1PM CST and last for 7 days. If you wish to participate, guides for Paymetheus and the Command-Line applications can be found here. 
 
@@ -30,7 +30,7 @@ Below are instructions to participate in the voting demo on the Testnet using a 
 
 > Step 1: Download and Install Paymetheus
 
-If you haven't already updated your Decred binaries to v1.0.0, visit the [Installation Guide](/getting-started/install-guide.md) and follow the directions for the Windows Installer.
+If you haven't already updated your Decred binaries to v1.0.1, visit the [Installation Guide](/getting-started/install-guide.md) and follow the directions for the Windows Installer.
 
 > Step 2: Run Decred Testnet
 
@@ -70,7 +70,7 @@ For some basic information about Votebits, visit [An Explanation of Votebits](#a
 
 > Step 1: Download and Install Decred
 
-If you haven't already updated your Decred binaries to v1.0.0, visit the [Installation Guide](/getting-started/install-guide.md) and follow the directions for your operating system.
+If you haven't already updated your Decred binaries to v1.0.1, visit the [Installation Guide](/getting-started/install-guide.md) and follow the directions for your operating system.
 
 > Step 2: Create Config Files
 

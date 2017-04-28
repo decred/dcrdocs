@@ -1,6 +1,6 @@
 # Installation Guide
 
-This guide was last updated for v1.0.0.
+This guide was last updated for v1.0.1.
 
 ---
 
@@ -22,8 +22,8 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `decred_1.0.0-release_x86.msi` file. <br />
-    For 64-bit computers, download the `decred_1.0.0-release_x64.msi` file.
+    For 32-bit computers, download the `decred_1.0.1-release_x86.msi` file. <br />
+    For 64-bit computers, download the `decred_1.0.1-release_x64.msi` file.
 
 2. Navigate to download location and double click the `.msi` file.
 
@@ -43,16 +43,16 @@ This method is recommended over the traditional manual installation. `dcrinstall
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `dcrinstall-darwin-386-v1.0.0` file. <br />
-    For 64-bit computers, download the `dcrinstall-darwin-amd64-v1.0.0` file.
+    For 32-bit computers, download the `dcrinstall-darwin-386-v1.0.1` file. <br />
+    For 64-bit computers, download the `dcrinstall-darwin-amd64-v1.0.1` file.
 
 2. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal, and run it:
 
     Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
     
     `cd ~/Downloads/` <br />
-    `chmod u+x dcrinstall-darwin-amd64-v1.0.0` <br />
-    `./dcrinstall-darwin-amd64-v1.0.0`
+    `chmod u+x dcrinstall-darwin-amd64-v1.0.1` <br />
+    `./dcrinstall-darwin-amd64-v1.0.1`
     
 3. The executable binaries for `dcrd`, `dcrwallet`, and `dcrctl` can now be found in the `~/decred/` directory. Before the `dcrinstall` process completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 
@@ -60,18 +60,18 @@ This method is recommended over the traditional manual installation. `dcrinstall
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `dcrinstall-linux-386-v1.0.0` file. <br />
-    For 64-bit computers, download the `dcrinstall-linux-amd64-v1.0.0` file. <br />
-    For 32-bit ARM computers, download the `dcrinstall-linux-arm-v1.0.0` file. <br />
-    For 64-bit ARM computers, download the `dcrinstall-linux-arm64-v1.0.0` file.
+    For 32-bit computers, download the `dcrinstall-linux-386-v1.0.1` file. <br />
+    For 64-bit computers, download the `dcrinstall-linux-amd64-v1.0.1` file. <br />
+    For 32-bit ARM computers, download the `dcrinstall-linux-arm-v1.0.1` file. <br />
+    For 64-bit ARM computers, download the `dcrinstall-linux-arm64-v1.0.1` file.
 
 2. Make dcrinstall-linux-xxxx-vx.x.x an executable within your terminal, and run it:
 
     Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
     
     `cd ~/Downloads/` <br />
-    `chmod u+x dcrinstall-linux-amd64-v1.0.0` <br />
-    `./dcrinstall-linux-amd64-v1.0.0` 
+    `chmod u+x dcrinstall-linux-amd64-v1.0.1` <br />
+    `./dcrinstall-linux-amd64-v1.0.1` 
     
 3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can now be found in the `~/decred/` directory. Before the `dcrinstall` process completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 
@@ -79,8 +79,8 @@ This method is recommended over the traditional manual installation. `dcrinstall
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `dcrinstall-windows-386-v1.0.0.exe` file. <br /> 
-    For 64-bit computers, download the `dcrinstall-windows-amd64-v1.0.0.exe` file. <br />
+    For 32-bit computers, download the `dcrinstall-windows-386-v1.0.1.exe` file. <br /> 
+    For 64-bit computers, download the `dcrinstall-windows-amd64-v1.0.1.exe` file. <br />
 
 2.  Run the dcrinstall executable file.
 
@@ -92,26 +92,26 @@ This method is recommended over the traditional manual installation. `dcrinstall
 
 ## **Decrediton**
 
-Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). As of v1.0.0, Decrediton is only available for Linux and Mac and is technically an alpha release. There are known bugs in the software that are being worked on.
+Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). As of v1.0.1, Decrediton is only available for Linux and Mac and is technically an alpha release. There are known bugs in the software that are being worked on.
 
 > macOS/OSX
 
-1. Download the `decrediton-1.0.0.dmg` file.
+1. Download the `decrediton-1.0.1.dmg` file.
 
-2. Double click the `decrediton-1.0.0.dmg` file once downloaded to mount the disk image.
+2. Double click the `decrediton-1.0.1.dmg` file once downloaded to mount the disk image.
 
 3. Drag the decrediton.app into the link to your Applications folder within the disk image.
 
 > Linux
 
-1. Download the `decrediton-1.0.0.tar.gz` file.
+1. Download the `decrediton-1.0.1.tar.gz` file.
 
 2. Navigate to download location and extract the .tar.gz file:
 
     Ubuntu File Browser: simply right click on the .tar.gz file and press "Extract Here". <br />
     Terminal: use the `tar -xvzf filename.tar.gz` command. 
     
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.0.0.tar.gz` should extract to `decrediton-v1.0.0`). If successful, this new folder should include a `decrediton` executable.
+    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.0.1.tar.gz` should extract to `decrediton-v1.0.1`). If successful, this new folder should include a `decrediton` executable.
 
 
 ---
@@ -124,8 +124,8 @@ The newest Binary Releases can be found here: [https://github.com/decred/decred-
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `decred-darwin-386-v1.0.0.tar.gz` file. <br />
-    For 64-bit computers, download the `decred-darwin-amd64-v1.0.0.tar.gz` file.
+    For 32-bit computers, download the `decred-darwin-386-v1.0.1.tar.gz` file. <br />
+    For 64-bit computers, download the `decred-darwin-amd64-v1.0.1.tar.gz` file.
 
 2. Navigate to download location and extract the .tar.gz file:
 
@@ -134,24 +134,24 @@ The newest Binary Releases can be found here: [https://github.com/decred/decred-
 
     **NOTE**: If you are using Safari on macOS Sierra and have the 'Open "safe" files after downloading' preference enabled, .gz and .zip files are automatically uncompressed after download. The `tar -xvzf filename.tar.gz` command results in this error: `tar: Error opening archive: Failed to open 'filename.tar.gz'`. Use `tar -xvzf filename.tar` instead (remove the .gz from the previous command).
     
-    Both of these should extract the tar into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v1.0.0.tar.gz` should extract to `decred-darwin-amd64-v1.0.0`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+    Both of these should extract the tar into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v1.0.1.tar.gz` should extract to `decred-darwin-amd64-v1.0.1`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
 
 
 > Linux
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `decred-linux-386-v1.0.0.tar.gz` file. <br />
-    For 64-bit computers, download the `decred-darwin-amd64-v1.0.0.tar.gz` file. <br />
-    For 32-bit ARM computers, download the `decred-linux-arm-v1.0.0.tar.gz` file. <br />
-    For 64-bit ARM computers, download the `decred-linux-arm64-v1.0.0.tar.gz` file.
+    For 32-bit computers, download the `decred-linux-386-v1.0.1.tar.gz` file. <br />
+    For 64-bit computers, download the `decred-darwin-amd64-v1.0.1.tar.gz` file. <br />
+    For 32-bit ARM computers, download the `decred-linux-arm-v1.0.1.tar.gz` file. <br />
+    For 64-bit ARM computers, download the `decred-linux-arm64-v1.0.1.tar.gz` file.
 
 2. Navigate to download location and extract the .tar.gz file:
 
     Ubuntu File Browser: simply right click on the .tar.gz and select "Extract Here". <br />
     Terminal: use the `tar -xvzf filename.tar.gz` command. 
     
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v1.0.0.tar.gz` should extract to `decred-darwin-amd64-v1.0.0`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decred-darwin-amd64-v1.0.1.tar.gz` should extract to `decred-darwin-amd64-v1.0.1`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
 
 > Windows
 
@@ -159,8 +159,8 @@ Note: Windows 7/8/10 natively provides support for `.zip` files, therefore it is
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `decred-windows-386-v1.0.0.zip` file. <br />
-    For 64-bit computers, download the `decred-windows-amd64-v1.0.0.zip` file.
+    For 32-bit computers, download the `decred-windows-386-v1.0.1.zip` file. <br />
+    For 64-bit computers, download the `decred-windows-amd64-v1.0.1.zip` file.
 
 2. Navigate to download location and unzip the `.zip` file:
 

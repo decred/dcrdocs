@@ -62,7 +62,7 @@ Stake version  | The stake version used for voting on the created block         
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-        0x00, 0x00, 0x00, 0x00, // StakeVersion
+        0x03, 0x00, 0x00, 0x00, // StakeVersion
 ```
 
 ---
@@ -81,7 +81,7 @@ Stake version  | The stake version used for voting on the created block         
         00000000000000029ab5f49f3e001000
         00000000000000000000000000000000
         00000000000000000000000000000000
-        0000000
+        3000000
 ```
 
 ---

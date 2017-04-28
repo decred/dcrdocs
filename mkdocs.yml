@@ -41,7 +41,6 @@ pages:
   - User Guides:
     - gominer:
       - Pool-Mining:
-        - 'Linux Guide': 'mining/proof-of-work/pool-mining/gominer/linux.md'
         - 'Windows Guide': 'mining/proof-of-work/pool-mining/gominer/windows.md'
     - cgminer:
       - Pool-Mining:

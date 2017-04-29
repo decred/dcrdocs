@@ -54,10 +54,7 @@ Okay, so you've secured your seed words in at least two different places. Click 
 ---
 
 ## **Choose a Private Wallet Passphrase** ##
-Enter a passphrase to use whenever you create a transaction on the network. There is also the option here for a public passphrase. This encrypts your wallet
-data file on your computer. It just prevents someone from viewing your accounts and transactions should they get access to it. As long as the database is locked,
-they cannot access your funds. For most people this step is usually overkill, so you can leave it unticked.
-Once you've entered your new private (and optional public) passphrase, click Encrypt.  
+Enter a passphrase to use whenever you create a transaction on the network. There is also the option here for a public passphrase. It is used to encrypt all of the public data (transactions and addresses) within your wallet file so if it is stolen, an adversary can’t link you to your transactions. As long as the database is locked, they cannot access your funds. For most people this step is usually overkill, so you can leave it unticked.  Once you've entered your new private (and optional public) passphrase, click Encrypt.  
 
 Your wallet will now create and synchronize to the blockchain. This can take a few minutes on slower computers. Note that the seed words you wrote down will 
 work with any Decred wallet application, not just Paymetheus.

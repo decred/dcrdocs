@@ -135,7 +135,7 @@ addresses available so you don't need to worry about running out.
 
 
 ## **Transaction History** ##
-This tab shows a list of all transactions that occured. The transaction hash can be used with the
+This tab shows a list of all transactions that have occurred. The transaction hash can be used with the
 [block explorer](/getting-started/using-the-block-explorer.md) to see more information about the transaction.  
 
 ![Transaction History](/img/Paymetheus-transactions.png)  

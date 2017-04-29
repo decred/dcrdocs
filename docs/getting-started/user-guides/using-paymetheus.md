@@ -36,7 +36,7 @@ It will be used for more advanced features in the future.
 
 
 ## **Create Transaction** ##
-This tab is how you send funds to another address. Simply copy the receivers
+This tab is how you send funds to another address. Simply copy the receiver’s
 address into the text box and type in the amount of Decred you wish to send.
 The estimated fee will be listed as well. You can click the '+' button to 
 send Decred to multiple addresses in the one transaction if you wish.  

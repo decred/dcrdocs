@@ -41,7 +41,7 @@ The rest of the process is the same. Click "Create a new wallet". You will see t
 
 **DO NOT GIVE THEM TO ANYONE ELSE, NOT EVEN DECRED DEVELOPERS!**
 
-With these words, someone else can recreate your wallet on another computer and transfer all of funds out to another wallet. It is not possible to reverse a transaction in Decred, so if someone steals your Decred, there is no way to get it back.  
+With these words, someone else can recreate your wallet on another computer and transfer all the funds out to another wallet. It is not possible to reverse a transaction in Decred, so if someone steals your Decred, there is no way to get it back.  
 
 <i class="fa fa-exclamation-triangle"></i> **DO NOT USE THE SAME SEED IN MULTIPLE WALLETS! Visit [Wallets and Seeds FAQ](/faq/wallets-and-seeds.md#3-can-i-run-multiple-wallets) to see why this matters. It is recommended that where possible a new wallet should mean generating a new seed.** 
 

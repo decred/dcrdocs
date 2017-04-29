@@ -88,7 +88,7 @@ There's a fair bit of information here, so we'll go through each of the options.
 * **Blocks until retarget** - When this reaches 0, a new ticket price is calculated.
 * **Source account** - This is the account that will purchase the tickets and receive the reward.
 * **Tickets to purchase** - The number of tickets to purchase.
-* **Ticket fee (DCR/kB)** - Tickets are entered into the voting pool by order of their fee. In times of demand,
+* **Ticket fee (DCR/kB)** - Tickets are entered into the voting pool by order of their fee. In times of high demand,
                         you will need to increase this value in order to have your tickets accepted.
 						You can view current ticket fees [here](https://www.dcrstats.com).
 * **Split fee (DCR/kB)** - Paymetheus uses a “split” transaction to avoid blocking your balance, spliting the

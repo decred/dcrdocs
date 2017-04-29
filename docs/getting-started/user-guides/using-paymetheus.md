@@ -98,7 +98,7 @@ There's a fair bit of information here, so we'll go through each of the options.
                        would have to wait for the confirmation of the ticket transaction, which could take several hours.
                        This can be left at 0.01. It does not affect your chances of buying tickets or voting with them.
 * **Expiry (blocks)** - Often ticket fees will increase during a window and you may be stopped out by higher fees. By setting an
-					expiry, tickets that are not mined in the given number of blocks are cancelled so you can try again
+					expiry, tickets that are not mined by the given block height are cancelled so you can try again
 					with higher fees if you wish. If this is empty, they will not expire until the end of the window.
 * **Stake pool preference** - Automate setup with PoS pools. See below for more information.
 * **Voting address** - The Decred address that will do the voting. Solo and custom pool miners only.

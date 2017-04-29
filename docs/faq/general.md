@@ -54,7 +54,7 @@ Giving away these coins in an airdrop accomplished several things for the projec
 [^14482]: Decred Forum, [Post 14,482](https://forum.decred.org/threads/1318/#post-14482)
 [^1]: Company0 Blog, [December 2015](https://blog.companyzero.com/2015/12/decred-rethink-digital-currency/)
 [^3]: Decred Forum, [Final Airdrop Review Process](https://forum.decred.org/threads/final-airdrop-review-process.534/)
-[^2]: Github, [decred/dcrd](https://github.com/decred/dcrd/blob/216aa759fa64e5a13ca8a4608e6c80a0f87eff85/chaincfg/premine.go)
+[^2]: GitHub, [decred/dcrd](https://github.com/decred/dcrd/blob/216aa759fa64e5a13ca8a4608e6c80a0f87eff85/chaincfg/premine.go)
 [^4]: Decred Forum, [The Project's Commitment](https://forum.decred.org/threads/the-projects-commitment.730/)
 [^5]: Bitcointalk.org, [[ANN][DCR] Decred - Hybrid PoW/PoS | btcsuite Devs | Tons of New Features | Go](https://bitcointalk.org/index.php?topic=1290358.msg13412287#msg13412287)
 [^6]: Decred Forum, [How Can We Communicate That Decred Isn't Another Pump And Dump?](https://forum.decred.org/threads/how-can-we-communicate-that-decred-isnt-another-pump-and-dump.96/page-2#post-2220)

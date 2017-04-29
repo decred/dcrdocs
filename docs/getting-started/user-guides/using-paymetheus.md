@@ -49,7 +49,7 @@ send Decred to multiple addresses in the one transaction if you wish.
 ## ** Purchase Tickets tab** ##
 
 Paymetheus is able to buy tickets for Proof of Stake mining by using its manual ticket
-purchasing features. Note that Paymetheus can *only* purchase tickets, it can't do the
+purchasing features. Note that Paymetheus can only *purchase* tickets, it can't do the
 actual voting. For that you will either need to setup [solo PoS](/mining/proof-of-stake)
 or use a PoS [stake pool](/mining/proof-of-stake.md#sign-up-for-a-stake-pool).
 

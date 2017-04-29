@@ -77,7 +77,7 @@ as many missed votes are caused by PoW miners (sometimes they will find a soluti
 so quickly that votes haven't had time to propagate around the network). In order to ensure one pool
 does't become too large, it is recommended that you join a smaller pool. While a pool can't access your funds,
 they CAN choose to vote against your wishes. Doing so would have them blacklisted pretty quickly, but
-keeping individual pool sizes low means that any rogue operators would have a hard time having an affect on 
+keeping individual pool sizes low means that any rogue operators would have a hard time affecting 
 the outcome of any vote. By spreading tickets around pools, it makes the network even more decentralized.
 
 ![Creating voting account](/img/Paymetheus-create-voting-account.png)  

@@ -36,7 +36,7 @@ The rest of the process is the same. Click "Create a new wallet". You will see t
 
 <i class="fa fa-exclamation-triangle"></i> **STOP HERE!!! DO NOT CLICK CONTINUE! **
 
-**This is the most important part of using Decred. In the white box you key (or seed) words are displayed. These words are the key to your wallet.  **
+**This is the most important part of using Decred. In the white box your key (or seed) words are displayed. These words are the key to your wallet.  **
  **WITHOUT THESE WORDS OR THE HEX REPRESENTATION YOU WILL PERMANANTLY AND FOREVER LOSE ACCESS TO YOUR FUNDS!**  
 
 **DO NOT GIVE THEM TO ANYONE ELSE, NOT EVEN DECRED DEVELOPERS!**

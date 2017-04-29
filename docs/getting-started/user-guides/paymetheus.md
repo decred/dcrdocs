@@ -36,7 +36,7 @@ The rest of the process is the same. Click "Create a new wallet". You will see t
 
 <i class="fa fa-exclamation-triangle"></i> **STOP HERE!!! DO NOT CLICK CONTINUE! **
 
-**This is the most important part of using Decred. In the white box your key (or seed) words are displayed. These words are the key to your wallet.  **
+**This is the most important part of using Decred. In the white box your seed words are displayed. These words are the key to your wallet.  **
  **WITHOUT THESE WORDS OR THE HEX REPRESENTATION YOU WILL PERMANENTLY AND FOREVER LOSE ACCESS TO YOUR FUNDS!**  
 
 **DO NOT GIVE THEM TO ANYONE ELSE, NOT EVEN DECRED DEVELOPERS!**
@@ -47,9 +47,9 @@ With these words, someone else can recreate your wallet on another computer and 
 
 Decred and other digital currencies are often described as being like a bank account. However, unlike with online banking, in the Decred system there is no trusted third party who holds your money on your behalf. You and you alone control your DCR, just like with physical cash. When cash or DCR is lost, misplaced, or stolen, it is most likely gone permanently.
 
-If you lose your wallet, you lose access to whatever you had in it and no one, not even the Decred developers can get it back. So it's very important that you take the time to read this page and WRITE DOWN the key words in a safe place. A good idea is to write them on a piece of paper and store them somewhere secure and also store them in an ENCRYPTED file on your computer. Cloud storage like Dropbox or OneDrive is fine when precautions are taken. Since online accounts can be hacked, you should strongly encrypt your wallet file (MS Word or Libre/OpenOffice can do this) before you upload it to a cloud storage service.  
+If you lose your wallet, you lose access to whatever you had in it and no one, not even the Decred developers can get it back. So it's very important that you take the time to read this page and WRITE DOWN the seed words in a safe place. A good idea is to write them on a piece of paper and store them somewhere secure and also store them in an ENCRYPTED file on your computer. Cloud storage like Dropbox or OneDrive is fine when precautions are taken. Since online accounts can be hacked, you should strongly encrypt your wallet file (MS Word or Libre/OpenOffice can do this) before you upload it to a cloud storage service.  
 
-Okay, so you've secured your key words in at least two different places. Click Continue. You are now asked to type them back in to ensure you have written them down correctly in case you need to restore your wallet later. Note you can't paste them; you will need to type them.  This is to make sure you have the words saved somewhere other than the clipboard. Do so and click Confirm.
+Okay, so you've secured your seed words in at least two different places. Click Continue. You are now asked to type them back in to ensure you have written them down correctly in case you need to restore your wallet later. Note you can't paste them; you will need to type them.  This is to make sure you have the words saved somewhere other than the clipboard. Do so and click Confirm.
 
 ---
 
@@ -59,7 +59,7 @@ data file on your computer. It just prevents someone from viewing your accounts 
 they cannot access your funds. For most people this step is usually overkill, so you can leave it unticked.
 Once you've entered your new private (and optional public) passphrase, click Encrypt.  
 
-Your wallet will now create and synchronize to the blockchain. This can take a few minutes on slower computers. Note that the key words you wrote down will 
+Your wallet will now create and synchronize to the blockchain. This can take a few minutes on slower computers. Note that the seed words you wrote down will 
 work with any Decred wallet application, not just Paymetheus.
 
 Continue to [Using Paymetheus](using-paymetheus.md)

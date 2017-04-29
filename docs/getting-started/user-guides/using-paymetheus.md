@@ -15,7 +15,7 @@ of recent account activity.
 ## **Accounts  ** ##
 The accounts tab shows you the accounts in your wallet and allows you to add new ones.
 Accounts in Decred work just like bank accounts. 
-They allow you to keep seperate records of your DCR. This feature is most 
+They allow you to keep separate records of your DCR. This feature is most 
 useful for those who run businesses and wish to keep seperate accounts for 
 tax records for example. Transferring DCR across accounts will create a 
 transaction on the blockchain.  

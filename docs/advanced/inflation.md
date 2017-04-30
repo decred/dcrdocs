@@ -18,7 +18,7 @@ The table below shows the estimated block reward and estimated total supply of D
 
 Block height | Estimated Date       | Block reward (DCR) | PoW (DCR) | PoS vote (DCR) | Dev subsidy (DCR) | Total DCR supply
 -------------|----------------------|--------------------|-----------|----------------|-------------------|-----------------
-0            | February 8, 2016     |              31.20 |     18.72 |           1.87 |              3.12 |        1,680,000
+1            | February 8, 2016     |              31.20 |     18.72 |           1.87 |              3.12 |        1,680,000
 6,144        | February 29, 2016    |              30.89 |     18.53 |           1.85 |              3.09 |        1,869,769
 12,288       | March 21, 2016       |              30.58 |     18.35 |           1.83 |              3.06 |        2,057,660
 18,432       | April 11, 2016       |              30.28 |     18.17 |           1.82 |              3.03 |        2,243,690

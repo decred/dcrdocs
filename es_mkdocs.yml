@@ -22,6 +22,8 @@ pages:
   - Paymetheus:
     - 'Paymetheus Setup': 'getting-started/user-guides/paymetheus.md'
     - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
+  - Decrediton (ALPHA):
+    - 'Decrediton Setup': 'getting-started/user-guides/decrediton-setup.md'
   - Command-Line:
     - 'OS Differences': 'getting-started/cli-differences.md'
     - 'Startup Basics': 'getting-started/startup-basics.md'
@@ -68,9 +70,11 @@ pages:
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
   - 'Transaction Details': 'advanced/transaction-details.md'
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
+  - 'Inflation': 'advanced/inflation.md'
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
   - 'Advanced dcrctl Usage': 'advanced/dcrctl-usage.md'
   - 'Contributing Guidelines': 'advanced/contributing.md'
+  - 'User Projects': 'advanced/user-projects.md'
 - Research:
   - 'Overview': 'research/overview.md'
   - 'Hybrid Design': 'research/hybrid-design.md'

@@ -46,7 +46,7 @@ The "Create a Wallet" dialog defaults to the "New Seed" option. Simply click "Ex
 
 5. You should then see a spinning blue circle. This will spin until `dcrd` has fully synced the blockchain. On computers that haven't had `dcrd` loaded on them, this should take 1-2 hours with newer hardware (it may take longer with older hardware). You can check your process monitor application for a running instance of `dcrd` - if it is using a substantial percentage of your CPU, it is syncing. If it isn't, Decrediton may require a restart to move beyond this screen.
 
-## **Opening Wallet**
+## **Opening the Wallet**
 
 After the blockchain has been synced, you should see a "Opening Wallet" page. Here, you will need to enter your private passphrase and the wallet will rescan recent blocks for transactions that belong to your addresses. Wait for the progress bar to fill. Decrediton should then load the Overview page with your Available Balance and Recent Transactions displayed.
 

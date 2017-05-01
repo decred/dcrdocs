@@ -202,7 +202,7 @@ Command              | Description
 `getticketpoolvalue` | Gets the DCR value of all tickets in the pool.
 `help ("command")`   | Show the help for a command.
 `missedtickets`      | Show all of your tickets that missed voting.
-`gebroadcastmissed` | Rebroadcast missed tickets to the network. This is done automatically on starting the wallet.
+`gebroadcastmissed` | Rebroadcast missed tickets to the network. This is done automatically upon starting the wallet.
 `rebroadcastwinners` | As above, but for voted tickets.
 `stop`               | Stop the daemon.
 

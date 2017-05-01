@@ -24,8 +24,9 @@ SBits          | Stake difficulty target for the block                          
 Height         | The number of blocks that precede the block in the blockchain               | 4 bytes
 Size           | Number of bytes that the serialized block occupies                          | 4 bytes
 Timestamp      | Time that the block was created                                             | 4 bytes
-Extra data     | The nonce and any other data that may be used later for consensus purposes  | 40 bytes
-
+Nonce          | The nonce used to generate the block                                        | 4 bytes
+Extra data     | Any other data (may be used later for consensus purposes)                   | 32 bytes
+Stake version  | The stake version used for voting on the created block                      | 4 bytes
 ---
 
 ## **Example encoded block header**
@@ -60,7 +61,7 @@ Extra data     | The nonce and any other data that may be used later for consens
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-        0x00, 0x00, 0x00, 0x00,
+        0x03, 0x00, 0x00, 0x00, // StakeVersion
 ```
 
 ---
@@ -79,7 +80,7 @@ Extra data     | The nonce and any other data that may be used later for consens
         00000000000000029ab5f49f3e001000
         00000000000000000000000000000000
         00000000000000000000000000000000
-        0000000
+        3000000
 ```
 
 ---

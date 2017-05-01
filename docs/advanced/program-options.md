@@ -132,7 +132,7 @@ Output             | Description
 ---                |---
 `poolsize`         | The number of tickets currently in the voting pool.
 `difficulty`       | This is the cost of a ticket. It goes up or down depending on the number of tickets currently in the pool as well as the number of tickets over the last 2880 blocks using an exponential moving average <LINK>Source(https://github.com/decred/dcrd/blob/master/chaincfg/params.go#L336). The network will adjust the price to try to keep the pool size near the target of 40,960 tickets. Note this doesn't mean the price will always go up if above this number, nor will it always go down if below. The rate that tickets enter the pool also affects the price. It is adjusted every 144 blocks.
-`allmempooltix`    | Only 20 tickets per block are accepted in to the voting pool. Extra tickets wait in the mempool. Tickets are accepted into the voting pool according to txfee which is 0.05 by default. See PoS mining#Purchasing-Tickets for more information.
+`allmempooltix`    | Only 20 tickets per block are accepted into the voting pool. Extra tickets wait in the mempool. Tickets are accepted into the voting pool according to txfee which is 0.05 by default. See PoS mining#Purchasing-Tickets for more information.
 `ownmempooltix`    | Your tickets that are waiting in the mempool.
 `immature`         | All tickets have a 256 (about a day) maturity time during which they cannot be selected to vote. This indicates how many of your tickets are in this state.
 `live`             | Tickets in the voting pool that are active and able to vote when selected.

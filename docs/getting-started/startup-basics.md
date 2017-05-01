@@ -35,7 +35,7 @@ Linux:
     ~/.dcrctl/
     ~/.config/decrediton
 
-Each of these folders is allowed it's own `.conf` file, named after the individual application (`e.g. dcrd uses dcrd.conf`). Please also note that the `Dcrd` and `Dcrwallet` home directories are automatically created when each application is first launched. You will have to manually create a `Dcrctl` home directory to utilize a config file.
+Each of these folders is allowed its own `.conf` file, named after the individual application (`e.g. dcrd uses dcrd.conf`). Please also note that the `Dcrd` and `Dcrwallet` home directories are automatically created when each application is first launched. You will have to manually create a `Dcrctl` home directory to utilize a config file.
 
 The [dcrinstall](/getting-started/install-guide.md#dcrinstall) installation method automatically creates configuration files, with the [minimum configuration settings](#minimum-configuration) already enabled. 
 

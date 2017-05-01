@@ -108,7 +108,7 @@ dcrctl -u <username> - P <password> --wallet <command>
 ```getbalance ("account" minconf=1 "balancetype")``` Gets the balance
 for the given account (not address). On its own it will display
 spendable coins. To see all coins, you need to set balancetype to all
-e.g. ‘getbalance * 0 all' will show the total balance in wallet.
+e.g. ‘getbalance * 0 all' will show the wallet’s total balance.
 
 ```
 getstakeinfo

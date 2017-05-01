@@ -226,7 +226,7 @@ Command                                                                         
 `getreceivedbyaccount "account" (minconf=1)`                                    | Gets the total amount of DCR ever received by this wallet. This includes stake returns so it could be quite large if you're PoS mining.
 `getreceivedbyaddress "address" (minconf=1)`                                    | Get funds received by the given address.
 `getseed`                                                                       | Disabled on mainnet for security.
-`getstakeinfo`                                                                  | Retreive useful information on the current status of the PoS pool. See <LINK>PoS Commands.
+`getstakeinfo`                                                                  | Retrieve useful information on the current status of the PoS pool. See <LINK>PoS Commands.
 `getticketfee`                                                                  | Get the average fee being paid for tickets.
 `getticketmaxprice`                                                             | Get the maximum price that your wallet will auto purchase tickets for.
 `gettickets includeimmature`                                                    | Get all your current tickets. Second argument should be true if you want to see immature tickets too.

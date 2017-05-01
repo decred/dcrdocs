@@ -49,7 +49,7 @@ At the very minimum, for `dcrd`, `dcrwallet`, and `dcrctl` to be able to communi
 
 1. If the operating system dependent home directories listed in the [configuration files](#configuration-file-locations) section above do not exist, please create them for `dcrd`, `dcrwallet`, and `dcrctl`.
 2. Copy the [sample dcrd configuration file](https://github.com/decred/dcrd/blob/master/sample-dcrd.conf) from GitHub, and paste it into a new text file. Save the text file as `dcrd.conf` in `dcrd`'s home directory.
-3. Copy the [sample configuration file](https://github.com/decred/dcrwallet/blob/master/sample-dcrwallet.conf) from GitHub, and paste it into a new text file. Save the text file as `dcrwallet.conf` in `dcrwallet`'s home directory.
+3. Copy the [sample dcrwallet configuration file](https://github.com/decred/dcrwallet/blob/master/sample-dcrwallet.conf) from GitHub, and paste it into a new text file. Save the text file as `dcrwallet.conf` in `dcrwallet`'s home directory.
 4. Create an empty text file and save it as `dcrctl.conf` in `dcrctl`'s home directory.
 5. Choose an arbitrary username and password, these will only be used for each application to communicate via remote procedure call. The easiest configuration is to set them all equal.
 6. Inside `dcrd.conf`, underneath `[Application Options]`, add the following lines:<br /><br />

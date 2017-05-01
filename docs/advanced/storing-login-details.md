@@ -137,7 +137,7 @@ rpcpass=<password>
 ## **<i class="fa fa-tasks"></i> Additional Configuration Options**
 
 All command line options can be put in the config file.
-The sample config files in the release package gives additional
+The sample config files in the release package give additional
 options or you can run one of the programs with the `-h` option to show a list and description of all options for the specified application.
 
 There is also a full list of options for each application which can be found [here](/advanced/storing-login-details.md).

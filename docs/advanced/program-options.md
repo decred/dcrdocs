@@ -12,7 +12,7 @@ point to note is that the long form of all of these options (except
 parsed when dcrd starts up.
 The `-C` (`--configfile`)
 flag, as shown below, can be used to override the default location.
-You can always get a list of all options by using the `-h` option.
+You can always get a list of all options by using the `-h` flag.
 
 ---
 

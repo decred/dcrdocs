@@ -10,7 +10,7 @@ The purpose of this page is to explain the key differences for running the cross
 
 > Launch Commands
 
-The first major difference in the command line applications (`dcrd`,) is how you launch them from the command line. This is not as much of an operating system as it is a difference in shells. Windows comes with Command Prompt and PowerShell installed. macOS uses Bash within the Terminal application, and many Linux distributions use Bash as well. Below are examples of the basic run commands for Bash and Command Prompt.
+The first major difference in the command line applications (`dcrd`,`dcrwallet`,`dcrctl`) is how you launch them from the command line. This is not as much of an operating system as it is a difference in shells. Windows comes with Command Prompt and PowerShell installed. macOS uses Bash within the Terminal application, and many Linux distributions use Bash as well. Below are examples of the basic run commands for Bash and Command Prompt.
 
 **Command Prompt:** `dcrd.exe`, `dcrwallet.exe`, `dcrctl.exe` <br />
 **Bash:** `./dcrd`, `./dcrwallet`, `./dcrctl`

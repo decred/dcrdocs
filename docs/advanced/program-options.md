@@ -197,7 +197,7 @@ Command              | Description
 `getinfo`           | Displays some basic info about the network including current block number and network difficulty.
 `getmininginfo`      | Probably the most useful PoW command. Shows the current block, size and difficulty, as well as the total network hash rate per second.
 `getnettotals`       | Gets the amount of data sent and received by the daemon.
-`getpeerinfo`        | Similar to getnettoals, includes network data transfer, time connected, block height when daemon was started and current block height.
+`getpeerinfo`        | Similar to getnettotals, includes network data transfer, time connected, block height when daemon was started and current block height.
 `getstakedifficulty` | Returns current PoS difficulty.
 `getticketpoolvalue` | Gets the DCR value of all tickets in the pool.
 `help ("command")`   | Show the help for a command.

@@ -184,7 +184,7 @@ Block reward share      | 60/30/10     | The reward for a block is split between
 
 Note that some commands have been omitted from this list. They include
 duplicate commands, unimplemented commands and those that have limited
-utility to the general user base.  You can always see all commands
+utility to the general userbase.  You can always see all commands
 with `dcrctl -l`.
 
 Command              | Description

@@ -106,7 +106,7 @@ If you did not use `dcrinstall`, you will need to enable the bare minimum settin
 
 > Start dcrwallet 
 
-With the correctly set configuration files, open another shell window in your Decred directory (or use the last window if you have just created your wallet). Type the following command (review this guides Prerequisites to determine exact command depending on your OS/Shell application):
+With the correctly set configuration files, open another shell window in your Decred directory (or use the last window if you have just created your wallet). Type the following command (review this guide’s Prerequisites to determine the right command for your OS/Shell application):
 
 ```no-highlight
 dcrwallet

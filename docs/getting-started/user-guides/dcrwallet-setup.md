@@ -36,7 +36,7 @@ If you do not already have a `wallet.db` file stored in `dcrwallet`'s home direc
 
 1. Open a new shell window (Bash/Command Prompt/etc,..).
 2. Navigate to the directory of the `dcrwallet` executable.
-3. Enter the command `dcrwallet --create` (review the Prerequisites above if you are unsure whether you to use `./dcrwallet` or `dcrwallet.exe` for the previous command). 
+3. Enter the command `dcrwallet --create` (review the Prerequisites above if you are unsure whether you should use `./dcrwallet` or `dcrwallet.exe` for the previous command). 
 
 ---
 

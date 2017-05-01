@@ -242,7 +242,7 @@ Command                                                                         
 `sendfrom "fromaccount" "toaddress" amount (minconf=1 "comment" "commentto")`   | Send DCR from the given account to the given address. You can add an optional comment.
 `sendtoaddress "address" amount ("comment" "commentto")`                        | Similar to above but uses the default account to send from.
 `setbalancetomaintain balance`                                                  | Used for auto staking. The wallet will auto buy tickets until it reaches this threshold.
-`setticketfee fee`                                                              | Set the (non-refunable) fee for purchasing stake tickets. See <LINK>FAQ#Ticket fee
+`setticketfee fee`                                                              | Set the (non-refundable) fee for purchasing stake tickets. See <LINK>FAQ#Ticket fee
 `setticketmaxprice max`                                                         | Set the maximum price the wallet will pay when auto buying tickets.
 `setticketvotebits "txhash" votebits ("votebitsext")`                           | Sets the given ticket to vote ‘yes' or ‘no' (default yes)
 `settxfee amount`                                                               | Sets the fee per kB of transaction data you are willing to pay. Note this is NOT the same as setticketfee above.

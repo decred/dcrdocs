@@ -32,7 +32,7 @@ Every seed phrase is also associated with a 64 character seed hex. The seed hex 
 
 ## **Manual Wallet Creation Command**
 
-If you do not have already have a `wallet.db` file stored in `dcrwallet`'s home directory, you must run the `dcrwallet --create` command. Steps for this can be found below. 
+If you do not already have a `wallet.db` file stored in `dcrwallet`'s home directory, you must run the `dcrwallet --create` command. Steps for this can be found below. 
 
 1. Open a new shell window (Bash/Command Prompt/etc,..).
 2. Navigate to the directory of the `dcrwallet` executable.

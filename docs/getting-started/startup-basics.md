@@ -39,7 +39,7 @@ Each of these folders is allowed its own `.conf` file, named after the individua
 
 The [dcrinstall](/getting-started/install-guide.md#dcrinstall) installation method automatically creates configuration files, with the [minimum configuration settings](#minimum-configuration) already enabled. 
 
-The [Binary Release](/getting-started/install-guide.md#binary-releases) installation method include sample configuration files within the .zip/.tar.gz. It is recommended to copy these config files into the appropriate directory described above, and rename them to remove 'sample-'. These files have many settings commented out (comments are not read by the program during runtime) so all of these settings are effectively disabled. You can enable these pre-written settings by simple deleting the semi-colon before the line.
+The [Binary Release](/getting-started/install-guide.md#binary-releases) installation method include sample configuration files within the .zip/.tar.gz. It is recommended to copy these config files into the appropriate directory described above, and rename them to remove 'sample-'. These files have many settings commented out (comments are not read by the program during runtime) so all of these settings are effectively disabled. You can enable these pre-written settings by simply deleting the semi-colon before the line.
 
 ---
 

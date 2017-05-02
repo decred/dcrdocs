@@ -17,7 +17,7 @@ The following examples will be split into two sections, one for the Go projects 
 
 ## **General Model**
 
-With this process we are trying to make contributing simple while also  maintining a high level of code quality and clean history.  Members of the Decred team must follow the same procedures as external contributors.
+With this process we are trying to make contributing simple while also  maintaining a high level of code quality and clean history.  Members of the Decred team must follow the same procedures as external contributors.
 
 Our model for hacking code in outline form is as follows.  If any of this does not make sense, don't worry, it will be explained in more detail in the next sections.
 

@@ -28,9 +28,9 @@ The **Ticket Price**/**Stake Difficulty** is the price you must pay for a ticket
 
 The **Ticket Pool** is the total number of tickets in the Decred network.
 
-The **Ticket Fee** (`ticketfee`) is the fee rate that must be included in the ticket purchase to incentivize Proof-of-Work miners to include that ticket in a new block. **Ticket Fee** usually refers to the DCR/kB fee rate for a ticket purchase transaction. Therefore, with a higher transaction size, you will end up paying a higher absolute fee. For example, solo-staking ticket purchases are around 300kB, which means a **Ticket Fee** of .3 DCR/kB will result in the spending on .1 DCR if, and only if, that ticket gets included in a block.
+The **Ticket Fee** (`ticketfee`) is the fee rate that must be included in the ticket purchase to incentivize Proof-of-Work miners to include that ticket in a new block. **Ticket Fee** usually refers to the DCR/kB fee rate for a ticket purchase transaction. Therefore, with a higher transaction size, you will end up paying a higher absolute fee. For example, solo-staking ticket purchases are around 300 Bytes, which means a **Ticket Fee** of .3 DCR/kB will result in the spending on .1 DCR if, and only if, that ticket gets included in a block.
 
-When the **Ticket Price** gets relatively low for a single **Ticket Window**, you can usually expect a fee market to form, with many stakeholders trying to buy tickets before the window ends. When the **Ticket Price** is not at an extremely low and profitable price, the default **Ticket Fee** of 0.01 DCR/kB rate is usually high enough to be included in a block. Keep in mind that 
+When the **Ticket Price** gets relatively low for a single **Ticket Window**, you can usually expect a fee market to form, with many stakeholders trying to buy tickets before the window ends. When the **Ticket Price** is not at an extremely low and profitable price, the default **Ticket Fee** of 0.01 DCR/kB rate is usually high enough to be included in a block.  
 
 When a ticket is called to vote, the wallet that has voting rights for that ticket must be online. If the wallet is not online to cast its vote, the ticket will be marked as `missed` and you will not receive a reward for that ticket. Stakepools are offered as a solution for those that cannot have a voting wallet online 24/7.
 
@@ -45,7 +45,7 @@ A ticket on main net (test net uses different parameters) will go through a few 
 
 1. You buy a ticket using a Paymetheus <!--, Decrediton,--> or dcrwallet wallet. The total cost of the each single ticket transaction should be **Ticket Price** + **Ticket Fee**(`ticketfee`).
 2. Your ticket enters the `mempool`. This is where your ticket waits to be mined by PoW miners. Only 20 fresh tickets are mined into each block.
-3. Tickets are mined into a block in with higher **Ticket Fee** transactions having a higher priority. Note that the **Ticket Fee** is DCR per KB of the transaction. A few common transaction sizes are 298kB (a solo ticket purchase) and 539kB (a pool ticket purchase).
+3. Tickets are mined into a block in with higher **Ticket Fee** transactions having a higher priority. Note that the **Ticket Fee** is DCR per KB of the transaction. A few common transaction sizes are 298 Bytes (a solo ticket purchase) and 539 Bytes (a pool ticket purchase).
 4. **A -** If your ticket is mined into a block, it becomes an immature ticket. This state lasts for 256 blocks (about 20 hours). During this time the ticket cannot vote. At this point, the ticket fee is non-refundable. <br /> 
 **B -** If your ticket is not mined, both the **Ticket Price** and **Ticket Fee** are returned to the purchasing account.
 5. After your ticket matures (256 blocks), it enters the **Ticket Pool** and is eligible for voting.

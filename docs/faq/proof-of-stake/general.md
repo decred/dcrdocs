@@ -156,7 +156,7 @@ In case a vote fails a new round will start at the beginning of the process. Thi
 #### **11. Is PoS susceptible to large exchanges using their customers’ decred?**
 
 The number of decred a person (or exchange) has means nothing to PoS. It's the number of tickets you have. Funds used to purchase tickets are locked until the ticket they purchased votes. This means that
-decred involved in PoS are effectively nontransferable. For an exchange to use their customers decred for voting, they would have to transfer them out of the wallets and lock them for up to 5 months. People
+decred involved in PoS are effectively nontransferable. For an exchange to use their customers’ decred for voting, they would have to transfer them out of the wallets and lock them for up to 5 months. People
 would notice their balances change (decred locked in PoS will not show as spendable) and they would not be able to withdraw any funds so the exchange would suffer a large loss of liquidity.
 
 Further there is a hard limit of 20 tickets added per block so no exchange could flood the pool faster than this.

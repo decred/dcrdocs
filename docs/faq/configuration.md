@@ -27,7 +27,7 @@ It is also logged when you start `dcrd`:
 
 #### **2. What do you mean by configuration files for `dcrd`, `dcrwallet`, and `dcrctl`?**
 
-Each application (`dcrd`, `dcrwallet`, `dcrctl`) can have their own configuration files[^9055]. Use `-h` and look at the path in parenthesis of the configuration file option (`-C`, `--configfile`) to see the default path. Create a text file at the path and named according to that path you just looked up.
+Each application (`dcrd`, `dcrwallet`, `dcrctl`) can have its own configuration files[^9055]. Use `-h` and look at the path in parenthesis of the configuration file option (`-C`, `--configfile`) to see the default path. Create a text file at the path and named according to that path you just looked up.
 
 Then you can use the `dcrd` [sample config file](https://github.com/decred/dcrd/blob/master/sample-dcrd.conf) and `dcrwallet` [sample config file](https://github.com/decred/dcrwallet/blob/master/sample-dcrwallet.conf) to set whatever options you want. You can do the same thing for `dcrctl` too. The format is the same. Every command line option listed by `-h` can be specified in the config files (just use the long option name).
 

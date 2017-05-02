@@ -39,7 +39,7 @@ Nobody can steal your coins if they get access to the wallet.db[^9803] file unle
 
 #### **5. Can someone use a brute-force attack on a random wallet to regenerate its seed words (the words are not salted)?**
 
-All the seed words are is a direct mapping of English words to hex digits. The seed is nothing more than a 256-bit (32-byte) cryptographically random number. Salt does not apply here at all. It has nothing to do with brute-forcing[^10452] random cryptographic numbers.
+All the seed words are is a direct mapping of English words to hex digits. The seed is nothing more than a 256-bit (32-byte) cryptographically secure random number. Salt does not apply here at all. It has nothing to do with brute-forcing[^10452] random numbers.
 
 In other words, since each word can be 256 possibilities and there are 32 words, that yields 256^32 (or 2^256 depending on how you want to look at it, but it is the same number) possibilities. That number is larger than the entire number of hydrogen atoms in the known universe. In fact, it is almost more than the number of atoms total in the known universe.
 
@@ -49,7 +49,7 @@ To put this in perspective, assuming there are 7 billion people on the planet an
 
 #### **6. My seed is not working. What can I do?**
 
-Make sure all of the words are on a single line separated by spaces[^10657]. Even though they are printed out on multiple lines for readbility, they must be entered on a single line. Also double-check your words have no typos by comparing them to the words in the [PGP word list](https://en.wikipedia.org/wiki/PGP_word_list).
+Make sure all of the words are on a single line separated by spaces[^10657]. Even though they are printed out on multiple lines for readability, they must be entered on a single line. Also double-check your words have no typos by comparing them to the words in the [PGP word list](https://en.wikipedia.org/wiki/PGP_word_list).
 
 ---
 
@@ -79,7 +79,7 @@ dcrctl --wallet getbalance "imported" 0 all
 
 #### **8. What is the difference between a testnet and mainnet address?**
 
-A testnet public key address[^11507] that starts with Tk. A mainnet address starts with Dk. T = Testnet, D = (Decred) Mainnet.
+A testnet public key address[^11507] starts with the letters `Tk`. A mainnet address starts with the letters `Dk`. `T` = Testnet, `D` = (Decred) Mainnet.
 
 ---
 

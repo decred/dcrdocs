@@ -41,7 +41,7 @@ To get started, choose an option for installations available for your operating 
 
 * [Paymetheus](/getting-started/install-guide.md#paymetheus)
 * [Command Line Suite](/getting-started/install-guide.md#dcrinstall)
-* [Decrediton (BETA)](https://github.com/decred/decrediton/blob/master/README.md#installation) - NOTE: Install instructions currently limited to the Github README.
+* [Decrediton (BETA)](https://github.com/decred/decrediton/blob/master/README.md#installation) - NOTE: Install instructions currently limited to the GitHub README.
 
 ---
 

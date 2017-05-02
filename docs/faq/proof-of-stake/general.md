@@ -15,7 +15,7 @@ the chain.
 
 The PoS system rewards participants for their staking. Every Decred block has a PoS reward component that will be distributed to every ticket chosen to vote in that block. The system is designed in such a 
 way that the average time for the ticket to be selected is 28 days. If a ticket hasn't been selected after 40960 blocks (a bit under 5 months) it will be revoked by the system. The DCR used to purchase a
- ticket is returned regardless of weather or not it votes.
+ ticket is returned regardless of whether or not it votes.
 
 Another interesting feature this PoS system allows for is the ability to vote on an agenda. Because the block validation can be considered a vote, by adding extra votebit components to the ticket the system can track and count votes over a series of blocks. These votes can be about anything.
 
@@ -76,7 +76,7 @@ Returning the funds back to your wallet after a ticket votes or is revoked does 
 #### **6. What is a stake pool?**
 
 A stake pool is the equivalent of a mining pool, but for the PoS system. Through the options in your Decred wallet, you can give your voting rights to a stake pool. If your ticket is selected to vote,
-the stake pool will cast the vote for you and you are rewarded with the PoS reward minus the stake pool fee (usually 4-5%). Unlike the mining pools, the PoS reward is not split amongst the users of the stake pool, but the full reward goes to the owner of the ticket.
+the stake pool will cast the vote for you and you are rewarded with the PoS reward minus the stake pool fee (usually 4-5%). Unlike the mining pools, the PoS reward is not split amongst the users of the stake pool. The full reward goes to the owner of the ticket.
 
 A stake pool will allow you to buy tickets but not have your own wallet unlocked and always online. It is important to note that your funds never leave your wallet. You are not sending anything to the pool,
 just giving it authority to vote on your behalf. A stake pool cannot access your funds. 
@@ -89,7 +89,7 @@ It also reduces latency between the wallet and network which can reduce the chan
 #### **7. What happens to my funds when I buy a ticket?**
 
 Funds used to purchase tickets are locked until the ticket is selected to vote or it expires. They are unable to leave your wallet and will appear in the "lockedbytickets" section of your wallet.
-If your ticket is selected to vote, you will be refunded the total amount paid for the ticket and the PoS reward.
+If your ticket is selected to vote, you will be refunded the total amount paid for the ticket and given the PoS reward.
 
 The only cost for using this system are the fees you set. The txfee will be charged for the transaction of your ticket across the network. The ticketfee will be charged for incorporation into the
 ticket pool, and is paid to the PoW miners. If your ticket does not get mined, there is no charge as the transaction never made it onto the network.
@@ -119,6 +119,7 @@ For example, you could choose the color of your ticket to be either red or blue,
 If you replace the red or blue option with a yes or no option, you have a voting system that can count votes over time. By using the PoS voting system anyone who holds DCR can vote on issues set in an agenda.
 
 This voting system can be used for any governance issue. For Decred, the most prominent use will be to vote on hardforks, which are technical changes to the way the currency works. Some examples:
+
 - Increase the maximum block size.
 - Change the algorithm PoS uses to determine the ticket price.
 - Vote on major new features for the currency (e.g. lighning network, enhanced privacy).
@@ -133,16 +134,16 @@ Currently, a platform for the community to submit and advocate a voting agenda i
 
 Like any other cryptocurrency Decred might need to hardfork at some point.
 
-One of the agenda issues set for the PoS voting system could be a hardfork. If such an issue is set, the new version of the decred files will include the hardfork but it will not activate until the PoS system has voted on it.
+One of the agenda issues set for the PoS voting system could be a hardfork. If such an issue is set, the new version of the Decred source code will include the hardfork in it, but the hard fork will not activate until the PoS system has voted on it.
 
 For a hardfork vote to start two critical conditions have to be met:
 
 - First, 75% of the PoW miners have to upgrade to the latest version of the current network block version. This check runs over the past 1000 blocks.
 - Second, 75% of the PoS miners have to upgrade to the latest version. This check runs over the past 2016 blocks.
 
-If these checks are met the voting process begins. Tickets can be set with an additional parameter of yes/no/abstain. You do this in your wallet before the ticket votes. Tickets marked as abstain will not be counted in the total amount of votes.
+Once these checks are met, the voting process begins. Tickets can be set with an additional parameter of yes/no/abstain. You do this in your wallet before the ticket votes. Tickets marked as abstain will not be counted in the total amount of votes.
 
-The PoS system then starts counting tickets with these parameters set over a predetermined amount of blocks. If over this interval the amount of votes is 75%, or more, 'yes' the vote has passed. A lock in period of a set number of blocks will start before the hardfork goes live, so everyone has a chance to upgrade and not be hardforked off the network.
+The PoS system then starts counting tickets with these parameters set over a predetermined amount of blocks. If over this interval the amount of ‘yes’ votes is 75% or more, the vote has passed. A lock in period of a set number of blocks will start before the hardfork goes live, so everyone has a chance to upgrade and not be hardforked off the network.
 
 Because the code for the hardfork is already in the then current version of Decred there is no need for the developers to interfere or the majority of PoW miners and PoS miners to upgrade after a decision has been reached. If the vote on a hardfork passes it will be implemented automatically after the lock in period.
 
@@ -152,15 +153,15 @@ In case a vote fails a new round will start at the beginning of the process. Thi
 
 ---
 
-#### **11. Is PoS susceptible to large exchanges using their customers Decred?**
+#### **11. Is PoS susceptible to large exchanges using their customers’ decred?**
 
 The number of decred a person (or exchange) has means nothing to PoS. It's the number of tickets you have. Funds used to purchase tickets are locked until the ticket they purchased votes. This means that
-decred involved in PoS are effectively nontransferable. For an exchange to use their customers decred for voting, they would have to transfer them out of the wallets and lock them for up to 5 months. People
+decred involved in PoS are effectively nontransferable. For an exchange to use their customers’ decred for voting, they would have to transfer them out of the wallets and lock them for up to 5 months. People
 would notice their balances change (decred locked in PoS will not show as spendable) and they would not be able to withdraw any funds so the exchange would suffer a large loss of liquidity.
 
 Further there is a hard limit of 20 tickets added per block so no exchange could flood the pool faster than this.
 
-Finally, there's a soft cap on the total number of tickets in the pool. Every 144 block (2880 tickets) the ticket price is adjusted based on the number of tickets in the pool and the rate that new tickets
+Finally, there's a soft cap on the total number of tickets in the pool. Every 144 blocks (2880 tickets) the ticket price is adjusted based on the number of tickets in the pool and the rate that new tickets
 were added in the last window. Eventually the ticket price would be so high that even an exchange wouldn't be able to buy many tickets. And remember that even if they did that their DCR are locked so they
 can't buy more when the price drops again.
 
@@ -174,7 +175,7 @@ balance holder could probably buy 2 windows out. A window at 30 would be 86,400D
 
 Now the holder could wait a couple of days for the price to drop then start buying back up again. Except that most of their funds will be locked in the ones they bought earlier (although some will have voted) so their buying power for the new window is greatly reduced. But lets say they have super capital and bought all the decred on all exchanges. So they are able to buy another two windows and replace those tickets that voted and were successful in buying all the tickets (at very high fees and/or prices). Let say that takes them to about 25% of the tickets.
 
-Tickets for a block are chosen with a random distribution. To force a vote to go a certain way you would need 3 out of 5 votes for a given block which is 60%. Even with that hige expenditure of capital,
+Tickets for a block are chosen with a random distribution. To force a vote to go a certain way you would need 3 out of 5 votes for a given block which is 60%. Even with that huge expenditure of capital,
 they are less than half way there. And a vote isn't decided on a single block so you would need 60% of 75% of blocks in the voting period.
 
 And THEN you still need the PoW miners to confirm the votes. If they think someone is trying to game the system, they can choose to invalidate blocks.

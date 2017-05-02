@@ -2,7 +2,7 @@
 
 ---
 
-The default options are sane for most users (although you may need to
+The default options are sane for most users, although you may need to
 set your credentials. This means `dcrd` will
 work 'out of the box' for most users. However, there are also a wide
 variety of flags that can be used to control its behavior. The following section
@@ -12,7 +12,7 @@ point to note is that the long form of all of these options (except
 parsed when dcrd starts up.
 The `-C` (`--configfile`)
 flag, as shown below, can be used to override the default location.
-You can always get a list of all options by using the `-h` option.
+You can always get a list of all options by using the `-h` flag.
 
 ---
 
@@ -81,7 +81,7 @@ Option                      | Description
 `--blockprioritysize=`      | Size in bytes for high-priority/low-fee transactions when creating a block (50000)
 `--getworkkey=`             | DEPRECATED -- Use the --miningaddr option instead
 `--addrindex=`              | Build and maintain a full address index. Currently only supported by leveldb.
-`--dropaddrindex=`          | Deletes the address-based transaction index from the database on start up, and the exits.
+`--dropaddrindex=`          | Deletes the address-based transaction index from the database on start up, and then exits.
 `--nonaggressive`           | Disable mining off of the parent block of the blockchain if there aren't enough voters
 `--nominingstatesync`       | Disable synchronizing the mining state with other nodes
 
@@ -108,7 +108,7 @@ dcrctl -u <username> - P <password> --wallet <command>
 ```getbalance ("account" minconf=1 "balancetype")``` Gets the balance
 for the given account (not address). On its own it will display
 spendable coins. To see all coins, you need to set balancetype to all
-e.g. ‘getbalance * 0 all' will show the total balance in wallet.
+e.g. ‘getbalance * 0 all' will show the wallet’s total balance.
 
 ```
 getstakeinfo
@@ -130,9 +130,9 @@ The `getstakeinfo` command returns a list of data about your PoS mining results.
 
 Output             | Description
 ---                |---
-`poolsize`         | The number of tickets current in the voting pool.
+`poolsize`         | The number of tickets currently in the voting pool.
 `difficulty`       | This is the cost of a ticket. It goes up or down depending on the number of tickets currently in the pool as well as the number of tickets over the last 2880 blocks using an exponential moving average <LINK>Source(https://github.com/decred/dcrd/blob/master/chaincfg/params.go#L336). The network will adjust the price to try to keep the pool size near the target of 40,960 tickets. Note this doesn't mean the price will always go up if above this number, nor will it always go down if below. The rate that tickets enter the pool also affects the price. It is adjusted every 144 blocks.
-`allmempooltix`    | Only 20 tickets per block are accepted in to the voting pool. Extra tickets wait in the mempool. Tickets are accepted into the voting pool according to txfee which is 0.05 by default. See PoS mining#Purchasing-Tickets for more information.
+`allmempooltix`    | Only 20 tickets per block are accepted into the voting pool. Extra tickets wait in the mempool. Tickets are accepted into the voting pool according to ticketfee which is 0.01 DCR/kB by default. See PoS mining#Purchasing-Tickets for more information.
 `ownmempooltix`    | Your tickets that are waiting in the mempool.
 `immature`         | All tickets have a 256 (about a day) maturity time during which they cannot be selected to vote. This indicates how many of your tickets are in this state.
 `live`             | Tickets in the voting pool that are active and able to vote when selected.
@@ -184,7 +184,7 @@ Block reward share      | 60/30/10     | The reward for a block is split between
 
 Note that some commands have been omitted from this list. They include
 duplicate commands, unimplemented commands and those that have limited
-utility to the general user base.  You can always see all commands
+utility to the general userbase.  You can always see all commands
 with `dcrctl -l`.
 
 Command              | Description
@@ -197,12 +197,12 @@ Command              | Description
 `getinfo`           | Displays some basic info about the network including current block number and network difficulty.
 `getmininginfo`      | Probably the most useful PoW command. Shows the current block, size and difficulty, as well as the total network hash rate per second.
 `getnettotals`       | Gets the amount of data sent and received by the daemon.
-`getpeerinfo`        | Similar to getnettoals, includes network data transfer, time connected, block height when daemon was started and current block height.
+`getpeerinfo`        | Similar to getnettotals, includes network data transfer, time connected, block height when daemon was started and current block height.
 `getstakedifficulty` | Returns current PoS difficulty.
 `getticketpoolvalue` | Gets the DCR value of all tickets in the pool.
 `help ("command")`   | Show the help for a command.
 `missedtickets`      | Show all of your tickets that missed voting.
-`gebroadcastmissed` | Rebroadcast missed tickets to the network. This is done automatically on starting the wallet.
+`gebroadcastmissed` | Rebroadcast missed tickets to the network. This is done automatically upon starting the wallet.
 `rebroadcastwinners` | As above, but for voted tickets.
 `stop`               | Stop the daemon.
 
@@ -226,7 +226,7 @@ Command                                                                         
 `getreceivedbyaccount "account" (minconf=1)`                                    | Gets the total amount of DCR ever received by this wallet. This includes stake returns so it could be quite large if you're PoS mining.
 `getreceivedbyaddress "address" (minconf=1)`                                    | Get funds received by the given address.
 `getseed`                                                                       | Disabled on mainnet for security.
-`getstakeinfo`                                                                  | Retreive useful information on the current status of the PoS pool. See <LINK>PoS Commands.
+`getstakeinfo`                                                                  | Retrieve useful information on the current status of the PoS pool. See <LINK>PoS Commands.
 `getticketfee`                                                                  | Get the average fee being paid for tickets.
 `getticketmaxprice`                                                             | Get the maximum price that your wallet will auto purchase tickets for.
 `gettickets includeimmature`                                                    | Get all your current tickets. Second argument should be true if you want to see immature tickets too.
@@ -234,7 +234,7 @@ Command                                                                         
 `listaccounts (minconf=1)`                                                      | See all accounts and their spendable balance in your wallet.
 `listreceivedbyaccount (minconf=1 includeempty=false includewatchonly=false)`   | Get a list of all your accounts and the amount of DCR that has been received by them.
 `listreceivedbyaddress (minconf=1 includeempty=false includewatchonly=false)`   | Get a list of all your addresses and the amount of DCR that has been received by them.
-`listsinceblock ("blockhash" targetconfirmations=1 includewatchonly=false)`     | List transactions that occurred since the given block hash.
+`listsinceblock ("blockhash" targetconfirmations=1 includewatchonly=false)`     | List transactions that have occurred since the given block hash.
 `listtransactions ("account" count=10 from=0 includewatchonly=false)`           | List the number of transactions as specified by ‘count' in the given account.
 `move "fromaccount" "toaccount" amount (minconf=1 "comment")`                   | Move funds between accounts in the same wallet.
 `purchaseticket "fromaccount" spendlimit (minconf=1 "ticketaddress" "comment")` | Manually purchase PoS tickets. ‘fromaccount' will usually be "default". ‘spendlimit' is the amount you want to spend on tickets in total, not per ticket.
@@ -242,7 +242,7 @@ Command                                                                         
 `sendfrom "fromaccount" "toaddress" amount (minconf=1 "comment" "commentto")`   | Send DCR from the given account to the given address. You can add an optional comment.
 `sendtoaddress "address" amount ("comment" "commentto")`                        | Similar to above but uses the default account to send from.
 `setbalancetomaintain balance`                                                  | Used for auto staking. The wallet will auto buy tickets until it reaches this threshold.
-`setticketfee fee`                                                              | Set the (non-refunable) fee for purchasing stake tickets. See <LINK>FAQ#Ticket fee
+`setticketfee fee`                                                              | Set the (non-refundable) fee for purchasing stake tickets. See <LINK>FAQ#Ticket fee
 `setticketmaxprice max`                                                         | Set the maximum price the wallet will pay when auto buying tickets.
 `setticketvotebits "txhash" votebits ("votebitsext")`                           | Sets the given ticket to vote ‘yes' or ‘no' (default yes)
 `settxfee amount`                                                               | Sets the fee per kB of transaction data you are willing to pay. Note this is NOT the same as setticketfee above.

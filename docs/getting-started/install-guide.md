@@ -37,7 +37,7 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
 `dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binaries are provided for Windows, OSX/macOS, Linux, OpenBSD, and FreeBSD. Executing installer will install `dcrd`, `dcrwallet`, and `dcrctl`. Instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
 
-This method is recommended over the traditional manual installation. `dcrinstall` will automatically download the precompiled, signed binary package found on Github, verify the signature of this package, copy the binaries within the package to a specific folder dependant on OS, create configuration files with settings to allow the 3 applications to communicate with each other, and run you through the wallet creation process. After running through `dcrinstall`, you will be able to launch the software with no additional configuration.
+This method is recommended over the traditional manual installation. `dcrinstall` will automatically download the precompiled, signed binary package found on GitHub, verify the signature of this package, copy the binaries within the package to a specific folder dependant on OS, create configuration files with settings to allow the 3 applications to communicate with each other, and run you through the wallet creation process. After running through `dcrinstall`, you will be able to launch the software with no additional configuration.
 
 > OSX/macOS:
 

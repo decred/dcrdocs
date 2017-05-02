@@ -9,9 +9,9 @@ being missed because one wallet is down. It also reduces latency between the wal
 
 ---
 
-#### **2. Does a proof-of-stake pool split reward between all participants (% based on the amount of tickets you submitted to pool)?**
+#### **2. Does a stakepool split the reward between all participants (% based on the amount of tickets you submitted to the pool)?**
 
-It is technically possible to create a pool that supports proportional reward splitting[^9262], but this pool does not do that at all. This one simply votes on your behalf. It does this by making the ticket voting rights a 1-of-2 multi-signature P2SH script. The pool signs the vote with its private key at the time the ticket is selected. Since it is a 1-of-2 multi-signature script though, it means if the pool failed to vote for you for whatever reason (extremely unlikely as the mainnet pool will have multiple redundancy and automatic failover), it would still be possible to vote on your own behalf because you have the second private key and could therefore provide a valid signature and satisfy the 1-of-2 requirement.
+It is technically possible to create a pool that supports proportional reward splitting[^9262], but the current stakepool reference implementation `dcrstakepool` doesn’t enable this. It simply votes on your behalf. It does this by making the ticket voting rights a 1-of-2 multi-signature P2SH script. The pool signs the vote with its private key at the time the ticket is selected. Since it is a 1-of-2 multi-signature script though, it means if the pool failed to vote for you for whatever reason (extremely unlikely as the mainnet pool will have multiple redundancy and automatic failover), it would still be possible to vote on your own behalf because you have the second private key and could therefore provide a valid signature and satisfy the 1-of-2 requirement.
 
 Also, it is important to note that the original ticket purchase contains a commitment to go to a reward address for which only you have the private key. The proof-of-stake voting consensus rules enforce the commitment, so it is impossible for the pool to steal your funds.
 
@@ -21,7 +21,7 @@ In order to split rewards the pool would have to be the recipient of all rewards
 
 #### **3. I have to run my wallet to buy tickets, but will they vote properly without me if I shut it down and the pool votes for me instead?**
 
-Yes[^9274], that is correct. You only need to run wallet in order to spend your coins to purchase the ticket which delegates your voting rights to the pool that will then vote on your behalf. The reward address is a consensus-enforced commitment in the ticket purchase for one of your own addresses for which only you have the private key.
+Yes[^9274], that is correct. You only need to run your wallet in order to spend your coins to purchase the ticket which delegates your voting rights to the pool which will then vote on your behalf. The reward address is a consensus-enforced commitment in the ticket purchase for one of your own addresses for which only you have the private key.
 
 ---
 
@@ -31,11 +31,11 @@ It is certainly possible[^9311], but one of the things that all pools should sup
 
 ---
 
-#### **5. Are vote bits set when you purchase a stake or when you actually are called to vote? Does this change when in a proof-of-stake pool?**
+#### **5. Are the vote bits set when you purchase a ticket or when your ticket is called to vote? Does this change when in a stakepool?**
 
-They are set when you actually vote[^13607] (which really only makes sense because you might have bought the ticket weeks or months before a specific voting agenda even exists).
+The vote bits are set when you actually vote[^13607] (which really only makes sense because you might have bought the ticket weeks or months before a specific voting agenda even exists).
 
-A proof-of-stake pool can operate however it wants since there is a lot of room for flexibility due to the way the ticket purchase commitment scheme is designed. That said, in general, people should avoid using stake pools that do not allow them control over how they want to vote on non-pool specific issues.
+A stakepool can operate however it wants since there is a lot of room for flexibility due to the way the ticket purchase commitment scheme is designed. That said, in general, people should avoid using stake pools that do not allow them control over how they want to vote on non-pool specific issues.
 
 ---
 

@@ -8,7 +8,7 @@ All code for Decred is kept on GitHub.  This document provides some basic info o
 
 ## **Initial Preparation**
 
-A good first step is to read the [Code Contribution Guidelines documentation](https://github.com/decred/dcrd/blob/master/docs/code_contribution_guidelines.md) to get a good understanding of policies used by the
+A good first step is to read the [Code Contribution Guidelines documentation](https://github.com/decred/dcrd/blob/master/docs/code_contribution_guidelines.md) to get a good understanding of the policies used by the
 project.  That document is primarily focused on the Go codebase but it is still a good start.
 
 The following examples will be split into two sections, one for the Go projects (dcrd, dcrwallet, gominer, etc), and one for projects that do not use Go (decrediton, Paymetheus, dcrdocs, etc).  In all cases, be sure to check out the README.md in each project if you need help setting the particular project up.
@@ -17,7 +17,7 @@ The following examples will be split into two sections, one for the Go projects 
 
 ## **General Model**
 
-With this process we are trying to make contributing simple while also  maintining a high level of code quality and clean history.  Members of the Decred team must follow the same procedures as external contributors.
+With this process we are trying to make contributing simple while also  maintaining a high level of code quality and clean history.  Members of the Decred team must follow the same procedures as external contributors.
 
 Our model for hacking code in outline form is as follows.  If any of this does not make sense, don't worry, it will be explained in more detail in the next sections.
 
@@ -27,7 +27,7 @@ Our model for hacking code in outline form is as follows.  If any of this does n
 1. When your code is ready to be reviewed or when you just want input from other devs open a Pull Request (PR) on the main repo from the GitHub web page.
 1. Add a comment on the PR that says what issue you are fixing.  Put the text Closes # or Fixes # followed by the number of the issue on a single line.  This will allow GitHub to automatically link the PR to the issue and close the issue when the PR is closed.
 1. You can request a specific reviewer from the GitHub webpage or you can ask someone on irc/slack to review.
-1. ALL code must be reviewed and receive at least one approval before it can go in.  Only team members can give official approval, but comments from others users are encouraged.
+1. ALL code must be reviewed and receive at least one approval before it can go in.  Only team members can give official approval, but comments from other users are encouraged.
 1. If there are changes requested, make those changes and commit them to your local branch.
 1. Push those changes to the same branch you have been hacking on.  They will show up in the PR that way and the reviewer can then compare to the previous version.
 1. Once your code is approved, it can be merged into master.  To keep history clean, we only allow non-fast-forward merges (that means we want a linear history).  Most PRs also must be squashed to a single commit (although if there is reason to have it as multiple commits that can be considered on a case by case basis.
@@ -111,7 +111,7 @@ $ git pull
 $ git checkout <feature_branch>
 $ git rebase -i master
 ```
-- Follow the directions presented to specify 's' meaning squash for the additional commits (the first commit must remain 'p' or 'push'
+- Follow the directions presented to specify 's' meaning squash for the additional commits (the first commit must remain 'p' or 'pick'
 - Write a single commit message in the editor that you have set to cover all the commits included.
 - Save and close the editor and git should generate a single commit with the message you specified and all the commits you added.  You can check the commit with the command ```git show```.
 - Force push the branch to your fork:

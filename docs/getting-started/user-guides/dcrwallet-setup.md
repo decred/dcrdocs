@@ -7,7 +7,7 @@ This guide is intended to help you setup the `dcrwallet` application using [star
 **Prerequisites:**
 
 - Use the latest [dcrinstall](/getting-started/install-guide.md#dcrinstall) to install `dcrwallet`. Additional steps will be required if another installation method was used.
-- Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells, and the home directories differ [here](/getting-started/cli-differences.md).
+- Review how the launch commands differ for the Command Prompt (Windows) and Bash (OSX/Linux) shells, and how the home directories differ [here](/getting-started/cli-differences.md).
 - [Setup dcrd](/getting-started/user-guides/dcrd-setup.md) and have it running in the background.
 
 ---
@@ -32,11 +32,11 @@ Every seed phrase is also associated with a 64 character seed hex. The seed hex 
 
 ## **Manual Wallet Creation Command**
 
-If you do not have already have a `wallet.db` file stored in `dcrwallet`'s home directory, you must run the `dcrwallet --create` command. Steps for this can be found below. 
+If you do not already have a `wallet.db` file stored in `dcrwallet`'s home directory, you must run the `dcrwallet --create` command. Steps for this can be found below. 
 
 1. Open a new shell window (Bash/Command Prompt/etc,..).
 2. Navigate to the directory of the `dcrwallet` executable.
-3. Enter the command `dcrwallet --create` (review the Prerequisites above if you are unsure whether you to use `./dcrwallet` or `dcrwallet.exe` for the previous command). 
+3. Enter the command `dcrwallet --create` (review the Prerequisites above if you are unsure whether you should use `./dcrwallet` or `dcrwallet.exe` for the previous command). 
 
 ---
 
@@ -60,7 +60,7 @@ After you've verified your private passphrase, you should see the following prom
 Do you want to add an additional layer of encryption for public data? (n/no/y/yes) [no]:
 ```
 
-The previous passphrase is optional. It is used to encrypt all of the public data (transactions and addresses) within your wallet file so if it is stolen, an adversary can't link you to your transactions. 
+The public passphrase is optional. It is used to encrypt all of the public data (transactions and addresses) within your wallet file so if it is stolen, an adversary can't link you to your transactions. 
 
 > Record Your Seed
 
@@ -72,7 +72,7 @@ After you've set your private passphrase and optional public passphrase, you'll 
 Do you have an existing wallet seed you want to use? (n/no/y/yes) [no]:
 ```
 
-This guide assumes you do not have an existing seed, so continue by hitting `Enter` which will answer the prompt with the default `[no]`. NOTE: If you wish to restore your wallet by using your seed, you would simple enter `[yes]` here and follow the instructions on screen.
+This guide assumes you do not have an existing seed, so continue by hitting `Enter` which will answer the prompt with the default `[no]`. NOTE: If you wish to restore your wallet by using your seed, you would simply enter `[yes]` here and follow the instructions on screen.
 
 <i class="fa fa-exclamation-triangle"></i> **DO NOT USE THE SAME SEED IN MULTIPLE WALLETS! Visit [Wallets and Seeds FAQ](/faq/wallets-and-seeds.md#3-can-i-run-multiple-wallets) to see why this matters. It is recommended that where possible a new wallet should mean generating a new seed.** 
 
@@ -80,7 +80,7 @@ After answering `[no]`, your seed phrase (wallet generation seed) and its hex wi
 
 It cannot be stressed enough how important it is to save your seed phrase in a secure location, so if you haven't committed this to memory, please review the [Critical Information section](/getting-started/user-guides/dcrwallet-setup.md#critical-information) again.
 
-Once you have written down the seed phrase and hex type `OK` and press `Enter`. NOTE: if you did not write the phrase down before continuing, you should [start this process over](/getting-started/user-guides/dcrwallet-setup.md#create-a-new-wallet) after [deleting your wallet file](/advanced/deleting-your-wallet.md)
+Once you have written down the seed phrase and hex, type `OK` and press `Enter`. NOTE: if you did not write the phrase down before continuing, you should [start this process over](/getting-started/user-guides/dcrwallet-setup.md#create-a-new-wallet) after [deleting your wallet file](/advanced/deleting-your-wallet.md)
 
 After pressing `Enter`, you should see the following message:
 
@@ -106,7 +106,7 @@ If you did not use `dcrinstall`, you will need to enable the bare minimum settin
 
 > Start dcrwallet 
 
-With the correctly set configuration files, open another shell window in your Decred directory (or use the last window if you have just created your wallet). Type the following command (review this guides Prerequisites to determine exact command depending on your OS/Shell application):
+With the correctly set configuration files, open another shell window in your Decred directory (or use the last window if you have just created your wallet). Type the following command (review this guide’s Prerequisites to determine the right command for your OS/Shell application):
 
 ```no-highlight
 dcrwallet

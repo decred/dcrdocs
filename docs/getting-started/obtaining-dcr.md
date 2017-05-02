@@ -31,7 +31,7 @@ well documented in the
 
 Since the release of Decred on February 8th, 2016, there are three
 currency exchanges where you can buy or sell Decred (as of February 2017).
-We hope to have this list grow as time goes on.
+We hope this list will grow as time goes on.
 
 * [Poloniex](https://poloniex.com/)
 * [Bittrex](https://bittrex.com/)

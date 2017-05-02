@@ -220,8 +220,8 @@ transactions that are included in the block. An example:
 }
 ```
 
-Mining is performed by incrementing nonce until the block header is
-below the target. ExtraData is allowed to be used as an extra nonce
-for fast hashing devices like ASICs, but a soft fork may change this
-at some point (to allow it to be used for other consensus data
-structures).
+Mining is performed by incrementing the nonce until the block
+header is below the target. ExtraData is allowed to be used as an
+extra nonce for fast hashing devices like ASICs, but a soft fork
+may change this at some point (to allow it to be used for other
+consensus data structures).

@@ -3,7 +3,7 @@
 There are a few reasons you might need to delete your wallet.
 
 * You need to restore your wallet from seed.
-* You do not have the seed any more and want to make a new wallet.
+* You do not have the seed anymore and want to make a new wallet.
 * You want to remove the wallet from a particular computer.
 
 First you need to find the dcrwallet application directory which varies by platform.

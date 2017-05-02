@@ -64,10 +64,10 @@ the seed words that were used to create your wallet. This is doubly
 true for the web client which does not store a permanent record of
 your wallet. Your wallet data is stored in the browser cache and
 can be deleted quite easily. If you are running in incognito mode,
-it will be deleted as soon as you close the browser. **WITHOUT THESE
-KEY WORDS YOU LOSE ACCESS TO ALL FUNDS IN YOUR WALLET** should the
-wallet data be deleted. The funds themselves still exist in the
-blockchain, however, without the key you cannot access them.
+it will be deleted as soon as you close the browser. **WITHOUT THIS
+SEED PHRASE YOU LOSE ACCESS TO ALL FUNDS IN YOUR WALLET** should
+the wallet data be deleted. The funds themselves still exist in
+the blockchain, however, without the seed you cannot access them.
 
 <i class="fa fa-exclamation-triangle"></i> **DO NOT USE THE SAME SEED IN MULTIPLE WALLETS! Visit [Wallets and Seeds FAQ](/faq/wallets-and-seeds.md#3-can-i-run-multiple-wallets) to see why this matters. It is recommended that where possible a new wallet should mean generating a new seed.** 
 
@@ -77,7 +77,7 @@ Option                                | Description
 ---                                   | ---
 `Wallet Alias`                        | You can rename the wallet if you wish.
 `Request Password for Spending Funds` | Since your wallet is saved in the browser cache, there is no extra password required to access it. By setting a password here, you ensure that only you can send funds if someone else accesses your browser. Type a password in and click `Set`. Note the alert that says passwords cannot be recovered. There is no password reset feature on the wallet. If you lose the password, you will never be able to move your coins out of the wallet or use them for proof-of-stake voting.
-`Backup`                              | This is where you will find your seed key words.
+`Backup`                              | This is where you will find your seed words.
 
 > Step Four
 
@@ -94,13 +94,13 @@ funds in your wallet.
 
 > **VERY IMPORTANT**
 
-**DO NOT, UNDER ANY CIRCUMSTANCES, GIVE YOUR KEY WORDS TO ANYONE! NOT EVEN THE DEVELOPERS!**
+**DO NOT, UNDER ANY CIRCUMSTANCES, GIVE YOUR SEED WORDS TO ANYONE! NOT EVEN THE DEVELOPERS!**
 
 Once you have written the words down (and have triple-checked that they are correct; capitalization is important), go to the next step.
 
 > Step Five
 
-Now that you have written down your key words and checked them, do it
+Now that you have written down your seed words and checked them, do it
 again. Seriously. This step is critical. Without this list your wallet
 cannot be reconstructed and no one, not even the developers, can
 restore it. Now that you are sure the list is stored correctly, click

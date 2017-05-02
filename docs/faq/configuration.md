@@ -60,7 +60,7 @@ On the other hand, the `dcrwallet` that contains your funds, for best security, 
 
 There is an intentional unconfigurable limit of 8 outbound peers[^15399]. More outbound peers than that does not help you in any way and is actually worse for both you and the network. This has been tested extremely thoroughly in Bitcoin, including btcsuite (the upstream project for Decred). All you would do by upping your outbound connections is waste valuable slots of the relatively few public peers there are (there are always a much higher number of "leechers" than there are "seeders").
 
-On the other hand, increasing your maximum connections, which really just increases the number of allowed inbound connections, helps the network by ensuring there are more slots available for new nodes and SPV clients which Decred does not have yet, but it will.
+On the other hand, increasing your maximum connections, which really just increases the number of allowed inbound connections, helps the network by ensuring there are more slots available for new nodes and SPV clients.
 
 ---
 

@@ -31,7 +31,7 @@ Each application (`dcrd`, `dcrwallet`, `dcrctl`) can have its own configuration 
 
 Then you can use the `dcrd` [sample config file](https://github.com/decred/dcrd/blob/master/sample-dcrd.conf) and `dcrwallet` [sample config file](https://github.com/decred/dcrwallet/blob/master/sample-dcrwallet.conf) to set whatever options you want. You can do the same thing for `dcrctl` too. The format is the same. Every command line option listed by `-h` can be specified in the config files (just use the long option name).
 
-Once those are created and in place, you do not have to add all of the options to the command line all the time. That is why you can do:
+Once those are created and in place, you do not have to add all of the options to the command line all the time. For instance, you can run `dcrctl` without passing in any parameters on the command line:
 
 ```no-highlight
 dcrctl getnetworkhashps

@@ -48,7 +48,7 @@ Yes[^9264], just add `--testnet` to the appropriate spots (`dcrd`, `dcrwallet`, 
 
 #### **4. What are the security implications of using the same RPC server authentication passwords with `dcrd` and `dcrwallet`?**
 
-There is a lot less you can do with access to `dcrd` than you can with access to `dcrwallet`. The key point is that RPC access[^11480] to `dcrwallet`, when the wallet is unlocked, can be used to spend coins.
+There is a lot less you can do with access to `dcrd` than you can with access to `dcrwallet`. Importantly, RPC access[^11480] to `dcrwallet`, when the wallet is unlocked, can be used to spend coins.
 
 When they are both on the same machine, it probably does not matter all that much, but when you are running more secure setups where the wallet is on a separate machine than `dcrd`, you would pretty clearly not want to use the same credentials for both. Remember that `dcrd` has to be on an Internet-facing machine in order to stay synced to the network (download the block chain data, broadcast transactions, and so on).
 

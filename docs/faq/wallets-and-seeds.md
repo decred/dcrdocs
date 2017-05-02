@@ -49,7 +49,7 @@ To put this in perspective, assuming there are 7 billion people on the planet an
 
 #### **6. My seed is not working. What can I do?**
 
-Make sure all of the words are on a single line separated by spaces[^10657]. Even though they are printed out on multiple lines for readbility, they must be entered on a single line. Also double-check your words have no typos by comparing them to the words in the [PGP word list](https://en.wikipedia.org/wiki/PGP_word_list).
+Make sure all of the words are on a single line separated by spaces[^10657]. Even though they are printed out on multiple lines for readability, they must be entered on a single line. Also double-check your words have no typos by comparing them to the words in the [PGP word list](https://en.wikipedia.org/wiki/PGP_word_list).
 
 ---
 

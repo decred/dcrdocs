@@ -71,7 +71,7 @@ With the stakepool configured and your multi-sig script imported to your wallet,
 
 ## **Ticket Purchasing**
 
-Both manual and automatic ticket purchasing require your wallet to be unlocked via the `dcrcrl --wallet walletpassphrase <private passphrase> <time limit>` command.
+Both manual and automatic ticket purchasing require your wallet to be unlocked via the `dcrctl --wallet walletpassphrase <private passphrase> <time limit>` command.
 
 There are three things you might want to understand before purchasing tickets: the `purchaseticket` command, when/why a `ticketfee` is important, and the significance of `ticket price`.
 

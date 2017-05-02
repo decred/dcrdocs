@@ -92,26 +92,26 @@ This method is recommended over the traditional manual installation. `dcrinstall
 
 ## **Decrediton**
 
-Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). As of v1.0.1, Decrediton is only available for Linux and Mac and is technically an alpha release. There are known bugs in the software that are being worked on.
+Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). As of v1.0.2, Decrediton is only available for Linux and Mac and is technically an alpha release. There are known bugs in the software that are being worked on.
 
 > macOS/OSX
 
-1. Download the `decrediton-1.0.1.dmg` file.
+1. Download the `decrediton-1.0.2.dmg` file.
 
-2. Double click the `decrediton-1.0.1.dmg` file once downloaded to mount the disk image.
+2. Double click the `decrediton-1.0.2.dmg` file once downloaded to mount the disk image.
 
 3. Drag the decrediton.app into the link to your Applications folder within the disk image.
 
 > Linux
 
-1. Download the `decrediton-1.0.1.tar.gz` file.
+1. Download the `decrediton-1.0.2.tar.gz` file.
 
 2. Navigate to download location and extract the .tar.gz file:
 
     Ubuntu File Browser: simply right click on the .tar.gz file and press "Extract Here". <br />
     Terminal: use the `tar -xvzf filename.tar.gz` command. 
     
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.0.1.tar.gz` should extract to `decrediton-v1.0.1`). If successful, this new folder should include a `decrediton` executable.
+    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.0.2.tar.gz` should extract to `decrediton-v1.0.2`). If successful, this new folder should include a `decrediton` executable.
 
 
 ---

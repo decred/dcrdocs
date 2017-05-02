@@ -9,9 +9,9 @@ being missed because one wallet is down. It also reduces latency between the wal
 
 ---
 
-#### **2. Does a stakepool split reward between all participants (% based on the amount of tickets you submitted to pool)?**
+#### **2. Does a stakepool split the reward between all participants (% based on the amount of tickets you submitted to the pool)?**
 
-It is technically possible to create a pool that supports proportional reward splitting[^9262], but this pool does not do that at all. This one simply votes on your behalf. It does this by making the ticket voting rights a 1-of-2 multi-signature P2SH script. The pool signs the vote with its private key at the time the ticket is selected. Since it is a 1-of-2 multi-signature script though, it means if the pool failed to vote for you for whatever reason (extremely unlikely as the mainnet pool will have multiple redundancy and automatic failover), it would still be possible to vote on your own behalf because you have the second private key and could therefore provide a valid signature and satisfy the 1-of-2 requirement.
+It is technically possible to create a pool that supports proportional reward splitting[^9262], but the current stakepool reference implementation `dcrstakepool` doesn’t enable this. It simply votes on your behalf. It does this by making the ticket voting rights a 1-of-2 multi-signature P2SH script. The pool signs the vote with its private key at the time the ticket is selected. Since it is a 1-of-2 multi-signature script though, it means if the pool failed to vote for you for whatever reason (extremely unlikely as the mainnet pool will have multiple redundancy and automatic failover), it would still be possible to vote on your own behalf because you have the second private key and could therefore provide a valid signature and satisfy the 1-of-2 requirement.
 
 Also, it is important to note that the original ticket purchase contains a commitment to go to a reward address for which only you have the private key. The proof-of-stake voting consensus rules enforce the commitment, so it is impossible for the pool to steal your funds.
 

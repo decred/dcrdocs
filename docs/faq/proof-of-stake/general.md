@@ -15,7 +15,7 @@ the chain.
 
 The PoS system rewards participants for their staking. Every Decred block has a PoS reward component that will be distributed to every ticket chosen to vote in that block. The system is designed in such a 
 way that the average time for the ticket to be selected is 28 days. If a ticket hasn't been selected after 40960 blocks (a bit under 5 months) it will be revoked by the system. The DCR used to purchase a
- ticket is returned regardless of weather or not it votes.
+ ticket is returned regardless of whether or not it votes.
 
 Another interesting feature this PoS system allows for is the ability to vote on an agenda. Because the block validation can be considered a vote, by adding extra votebit components to the ticket the system can track and count votes over a series of blocks. These votes can be about anything.
 

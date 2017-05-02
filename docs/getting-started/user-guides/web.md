@@ -38,11 +38,13 @@ password for sending funds you will lose access to your wallet. There
 is no password reset. Also note that all transactions on Decred are
 irreversible by design. If you accidentally send funds to the wrong
 address, you will need to ask the recipient to send them back. The
-developers are unable to reverse transactions. Click `I Agree` once
-you have read them. You will now see the welcome screen. If this is
-the first time you have used Decred, click `Get Started`. If you want
-to restore a previously used wallet, click `Import Backup`. This guide
-will assume you are just starting out so click `Get Started`.
+developers are unable to reverse transactions.
+
+Click `I Agree` once you have read the `Terms and Conditions`. You
+will now see the welcome screen. If this is the first time you
+have used Decred, click `Get Started`. If you want to restore a
+previously used wallet, click `Import Backup`. This guide will
+assume you are just starting out so click `Get Started`.
 
 > Step Two
 

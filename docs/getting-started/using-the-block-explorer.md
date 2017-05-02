@@ -87,7 +87,7 @@ Note `Received Time`, `Mined Time`, and `Included in Block` will not have a valu
 
 ### Ticket purchases
 
-FOr a ticket purchase (stake submission) there are a few differences
+For a ticket purchase (stake submission) there are a few differences
 from a standard transaction shown.
 
 Note the difference under details: The word `Ticket` appears above the

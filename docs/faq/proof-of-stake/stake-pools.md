@@ -21,7 +21,7 @@ In order to split rewards the pool would have to be the recipient of all rewards
 
 #### **3. I have to run my wallet to buy tickets, but will they vote properly without me if I shut it down and the pool votes for me instead?**
 
-Yes[^9274], that is correct. You only need to run wallet in order to spend your coins to purchase the ticket which delegates your voting rights to the pool that will then vote on your behalf. The reward address is a consensus-enforced commitment in the ticket purchase for one of your own addresses for which only you have the private key.
+Yes[^9274], that is correct. You only need to run your wallet in order to spend your coins to purchase the ticket which delegates your voting rights to the pool that will then vote on your behalf. The reward address is a consensus-enforced commitment in the ticket purchase for one of your own addresses for which only you have the private key.
 
 ---
 

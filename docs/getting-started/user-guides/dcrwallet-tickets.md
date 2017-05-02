@@ -160,7 +160,7 @@ You might also want to configure `ticketbuyer`.
 * **ticketbuyer.maxfee=0.1** - ticketbuyer will never buy a ticket with a fee rate higher than 0.1.
 * **ticketbuyer.minfee=0.01** - ticketbuyer will never buy a ticket with a fee rate lower than 0.01.
 * **ticketbuyer.feesource=median** - ticketbuyer uses a median to calculate fee rate, in which half of fees are higher and half of fees are lower.
-* **ticketbuyer.maxperblock=5** - ticketbuyer will by a maximum of 5 tickets per block if fee and price are within range.
+* **ticketbuyer.maxperblock=5** - ticketbuyer will buy a maximum of 5 tickets per block if fee and price are within range.
 * **ticketbuyer.blockstoavg=10** - the number of blocks used to calculate the average fee rate.
 * **ticketbuyer.feetargetscaling=1** - ticketbuyer multiplies the average fee by 1 to calculate the fee rate to attempt to use.
 * **ticketbuyer.maxinmempool=40** - ticketbuyer will never allow your mempool tickets to exceed 40.

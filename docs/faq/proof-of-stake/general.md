@@ -119,6 +119,7 @@ For example, you could choose the color of your ticket to be either red or blue,
 If you replace the red or blue option with a yes or no option, you have a voting system that can count votes over time. By using the PoS voting system anyone who holds DCR can vote on issues set in an agenda.
 
 This voting system can be used for any governance issue. For Decred, the most prominent use will be to vote on hardforks, which are technical changes to the way the currency works. Some examples:
+
 - Increase the maximum block size.
 - Change the algorithm PoS uses to determine the ticket price.
 - Vote on major new features for the currency (e.g. lighning network, enhanced privacy).

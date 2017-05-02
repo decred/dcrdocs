@@ -39,7 +39,7 @@ Nobody can steal your coins if they get access to the wallet.db[^9803] file unle
 
 #### **5. Can someone use a brute-force attack on a random wallet to regenerate its seed words (the words are not salted)?**
 
-All the seed words are is a direct mapping of English words to hex digits. The seed is nothing more than a 256-bit (32-byte) cryptographically random number. Salt does not apply here at all. It has nothing to do with brute-forcing[^10452] random cryptographic numbers.
+All the seed words are is a direct mapping of English words to hex digits. The seed is nothing more than a 256-bit (32-byte) cryptographically secure random number. Salt does not apply here at all. It has nothing to do with brute-forcing[^10452] random cryptographic numbers.
 
 In other words, since each word can be 256 possibilities and there are 32 words, that yields 256^32 (or 2^256 depending on how you want to look at it, but it is the same number) possibilities. That number is larger than the entire number of hydrogen atoms in the known universe. In fact, it is almost more than the number of atoms total in the known universe.
 

@@ -42,7 +42,7 @@ Rather than allocating the entire premine to the bring-up costs, the remaining h
 
 > The airdrop concluded with awarding 282.63795424 DCR to 2972 participants.[^2]
 
-Giving away these coins in an airdrop accomplished several things for the project: enlarging the Decred network, further helping to decentralize the distribution of coins, and getting coins into the hands of people who are interested in participating in the project. These coins were be given away unconditionally and there was zero expectation of Decred receiving anything from the participants in return for these coins.
+Giving away these coins in an airdrop accomplished several things for the project: enlarging the Decred network, further helping to decentralize the distribution of coins, and getting coins into the hands of people who are interested in participating in the project. These coins were given away unconditionally and there was zero expectation of Decred receiving anything from the participants in return for these coins.
 
 
 

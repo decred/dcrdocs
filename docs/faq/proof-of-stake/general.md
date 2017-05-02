@@ -89,7 +89,7 @@ It also reduces latency between the wallet and network which can reduce the chan
 #### **7. What happens to my funds when I buy a ticket?**
 
 Funds used to purchase tickets are locked until the ticket is selected to vote or it expires. They are unable to leave your wallet and will appear in the "lockedbytickets" section of your wallet.
-If your ticket is selected to vote, you will be refunded the total amount paid for the ticket and the PoS reward.
+If your ticket is selected to vote, you will be refunded the total amount paid for the ticket and given the PoS reward.
 
 The only cost for using this system are the fees you set. The txfee will be charged for the transaction of your ticket across the network. The ticketfee will be charged for incorporation into the
 ticket pool, and is paid to the PoW miners. If your ticket does not get mined, there is no charge as the transaction never made it onto the network.

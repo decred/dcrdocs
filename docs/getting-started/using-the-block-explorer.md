@@ -70,10 +70,7 @@ review each type of transaction.
 
 ### Standard transactions
 
-Here is the information included in an unconfirmed standard
-transaction that went through the Decred network. Unconfirmed means it
-has not been included into a block yet, which implies it is a very
-recent transaction or it was sent with a very low fee.
+Here’s the information included in standard Decred transactions.
 
 Option              | Explanation
 ---                 | ---
@@ -83,11 +80,8 @@ Option              | Explanation
 `Mined Time`        | The time a miner included the transaction in a block.
 `Included in Block` | The block number that the transaction became a part of.
 
-Note `Received Time`, `Mined Time`, and `Included in Block` will not
-have a value until a miner confirms the transaction. Depending on the
-fees in the mempool, this will take five minutes on average. Once
-there is at least one confirmation, the transaction is considered
-complete.
+Note `Received Time`, `Mined Time`, and `Included in Block` will not have a value until a miner validates the transaction and includes it in a Decred block. After being confirmed in a block, the transaction is considered complete.
+
 
 ---
 

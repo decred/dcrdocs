@@ -4,7 +4,7 @@
 
 #### **1. Do I need hash power to stake mine?**
 
-Stake "mining" does not need any hash power[^9304]. Think of it a bit like interest on invested coins. You lock your coins for a period of time in order to purchase a ticket that gives you a high probability (>99%) of gaining voting rights and receiving interest in exchange for casting a voting and the opportunity cost of not being able to use those coins for potentially up to ~4.7 months.
+Stake "mining" does not need any hash power[^9304]. Think of it a bit like interest on invested coins. You lock your coins for a period of time in order to purchase a ticket that gives you a high probability (>99%) of gaining voting rights and receiving interest in exchange for casting a vote and the opportunity cost of not being able to use those coins for potentially up to ~4.7 months.
 
 If you have already purchased stake tickets, those coins are locked until the tickets either win or expire. You are solo staking and therefore you MUST keep your wallet online 24/7 until all of your tickets have won (or expired) or you will miss out on the rewards since you cannot cast a vote if you wallet is not online. Because those coins are now locked there is no way for you to change the already staked coins now.
 

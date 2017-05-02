@@ -4,7 +4,7 @@
 
 ## **Overview**
 
-When developing Decred applications or testing potential changes, it is often extremely useful to have a test network where transactions are actually mined into blocks and difficulty levels are low enough to generate blocks as needed.
+When developing Decred applications or testing potential changes, it is often extremely useful to have a test network where difficulty levels are low enough to generate blocks as needed.
 
 In order to facilitate these scenarios, dcrd provides a simulation network (`--simnet`).  The following is an overview of the most important properties that distinguish it from the main network:
 
@@ -55,7 +55,7 @@ The following is a command reference to get going:
 
 * Stop the initial dcrd process and restart it with the mining address set to the output from the previous command:
 
-    `$ dcrd --simnet --rpcuser=<username> --rpcpass=<password> --miningaddr=S....`
+    `$ dcrd --simnet --rpcuser=<username> --rpcpass=<password> --miningaddr=<S....>`
 
 * Instruct dcrd to generate enough initial blocks for the first coinbase to mature:
 

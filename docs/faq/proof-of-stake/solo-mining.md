@@ -14,7 +14,7 @@ The stake pool, on the other hand, allows you to delegate your voting rights to 
 
 #### **2. Isn't one of the main reasons for stake mining to ensure there are always a sufficient amount of peers online?**
 
-Definitely not[^9311]. Staking mining cannot possibly enforce that. An SPV style wallet could easily perform the necessary staking by communicating with other full nodes (`dcrd` instances) on the network. It is true that the current wallet requires `dcrd` to be running, but that will not always be the case.
+Definitely not[^9311]. Stake mining cannot possibly enforce that. An SPV style wallet could easily perform the necessary staking by communicating with other full nodes (`dcrd` instances) on the network. It is true that the current wallet requires `dcrd` to be running, but that will not always be the case.
 
 Even if the software did try to enforce that, you could not stop people from writing utilities and such to do it via the peer-to-peer network without needing to run their own local instance anyways.
 

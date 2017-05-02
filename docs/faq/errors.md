@@ -62,4 +62,4 @@ but first, check the command and make sure you entered it correctly. You will ne
 At that point, you should see some details about the revocation transactions in the wallet log.
 Once those revocation transactions are mined into a block (which should be the next block),
 you will see the funds move to the immaturestakegeneration category in the `dcrctl --wallet`
-getbalance output. Finally, after 256 blocks, they will move to spendable category and thus be available to spend.
+getbalance output. Finally, after 256 blocks, they will move to the spendable category and thus be available to spend.

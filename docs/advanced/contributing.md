@@ -27,7 +27,7 @@ Our model for hacking code in outline form is as follows.  If any of this does n
 1. When your code is ready to be reviewed or when you just want input from other devs open a Pull Request (PR) on the main repo from the GitHub web page.
 1. Add a comment on the PR that says what issue you are fixing.  Put the text Closes # or Fixes # followed by the number of the issue on a single line.  This will allow GitHub to automatically link the PR to the issue and close the issue when the PR is closed.
 1. You can request a specific reviewer from the GitHub webpage or you can ask someone on irc/slack to review.
-1. ALL code must be reviewed and receive at least one approval before it can go in.  Only team members can give official approval, but comments from others users are encouraged.
+1. ALL code must be reviewed and receive at least one approval before it can go in.  Only team members can give official approval, but comments from other users are encouraged.
 1. If there are changes requested, make those changes and commit them to your local branch.
 1. Push those changes to the same branch you have been hacking on.  They will show up in the PR that way and the reviewer can then compare to the previous version.
 1. Once your code is approved, it can be merged into master.  To keep history clean, we only allow non-fast-forward merges (that means we want a linear history).  Most PRs also must be squashed to a single commit (although if there is reason to have it as multiple commits that can be considered on a case by case basis.

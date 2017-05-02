@@ -59,7 +59,7 @@ but first, check the command and make sure you entered it correctly. You will ne
 3. Instruct dcrd to notify the wallet about missed tickets again so it will issue the revocations with `dcrctl rebroadcastmissed`.
 
 
-At that point, you should see the wallet log some details about the revocation transactions.
+At that point, you should see some details about the revocation transactions in the wallet log.
 Once those revocation transactions are mined into a block (which should be the next block),
 you will see the funds move to the immaturestakegeneration category in the `dcrctl --wallet`
 getbalance output. Finally, after 256 blocks, they will move to spendable category and thus be available to spend.

@@ -175,7 +175,7 @@ balance holder could probably buy 2 windows out. A window at 30 would be 86,400D
 
 Now the holder could wait a couple of days for the price to drop then start buying back up again. Except that most of their funds will be locked in the ones they bought earlier (although some will have voted) so their buying power for the new window is greatly reduced. But lets say they have super capital and bought all the decred on all exchanges. So they are able to buy another two windows and replace those tickets that voted and were successful in buying all the tickets (at very high fees and/or prices). Let say that takes them to about 25% of the tickets.
 
-Tickets for a block are chosen with a random distribution. To force a vote to go a certain way you would need 3 out of 5 votes for a given block which is 60%. Even with that hige expenditure of capital,
+Tickets for a block are chosen with a random distribution. To force a vote to go a certain way you would need 3 out of 5 votes for a given block which is 60%. Even with that huge expenditure of capital,
 they are less than half way there. And a vote isn't decided on a single block so you would need 60% of 75% of blocks in the voting period.
 
 And THEN you still need the PoW miners to confirm the votes. If they think someone is trying to game the system, they can choose to invalidate blocks.

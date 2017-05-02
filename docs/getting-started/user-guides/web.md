@@ -20,7 +20,7 @@ before you use it:
 * The security of your wallet depends entirely on the security of your
   web browser.
 * You can put a pin on your wallet to prevent sending funds but any
-  other access is dependant entirely on the access controls on your
+  other access is dependent entirely on the access controls on your
   computer, not on the server or any login details.
 
 ---

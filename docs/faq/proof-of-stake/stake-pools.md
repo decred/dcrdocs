@@ -31,7 +31,7 @@ It is certainly possible[^9311], but one of the things that all pools should sup
 
 ---
 
-#### **5. Are vote bits set when you purchase a stake or when you actually are called to vote? Does this change when in a stakepool?**
+#### **5. Are the vote bits set when you purchase a ticket or when your ticket is called to vote? Does this change when in a stakepool?**
 
 They are set when you actually vote[^13607] (which really only makes sense because you might have bought the ticket weeks or months before a specific voting agenda even exists).
 

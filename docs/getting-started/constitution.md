@@ -25,7 +25,7 @@
 * After waiting for the ticket to mature, the ticket is entered into a lottery that runs once per block where the winning tickets gain the ability to vote on the previous block.
 * Stakeholders must wait an average of 28 days (8,192 blocks) to vote their tickets, and during this time the coins used to purchase the ticket remain locked. The wait may be much longer or shorter than the average of 28 days because the ticket selection process is pseudorandom. Tickets expire after approximately 142 days (40,960 blocks).
 * Stakeholder votes recorded in the blockchain are rewarded with 6% of each block subsidy, and each block can have up to 5 votes for a total of 30% of each block subsidy.
-* PoW receives 60% of each block subsidy, subject to the constraint that their subsidy scales linearly with the number of PoS votes included, e.g. including 3 of 5 votes reduces PoW subsidy by 60%.
+* PoW receives 60% of each block subsidy, subject to the constraint that their subsidy scales linearly with the number of PoS votes included, e.g. including 3 of 5 votes reduces PoW subsidy to 60% of the maximum.
 * The votes themselves decide by majority decision whether the general transaction tree of the previous block, including the PoW subsidy, is valid. Thus, if PoS voters vote against a particular PoW block, it destroys the PoW subsidy (and development subsidy) and invalidates any regular transactions within that block.
 * Additional vote bits may be set when stakeholders submit votes, allowing stakeholders to vote on matters besides the previous block.
 

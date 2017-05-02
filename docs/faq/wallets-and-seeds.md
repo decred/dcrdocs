@@ -79,7 +79,7 @@ dcrctl --wallet getbalance "imported" 0 all
 
 #### **8. What is the difference between a testnet and mainnet address?**
 
-A testnet public key address[^11507] that starts with Tk. A mainnet address starts with Dk. T = Testnet, D = (Decred) Mainnet.
+A testnet public key address[^11507] starts with the letters `Tk`. A mainnet address starts with the letters `Dk`. `T` = Testnet, `D` = (Decred) Mainnet.
 
 ---
 

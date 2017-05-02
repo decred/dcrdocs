@@ -134,7 +134,7 @@ Currently, a platform for the community to submit and advocate a voting agenda i
 
 Like any other cryptocurrency Decred might need to hardfork at some point.
 
-One of the agenda issues set for the PoS voting system could be a hardfork. If such an issue is set, the new version of the decred files will include the hardfork but it will not activate until the PoS system has voted on it.
+One of the agenda issues set for the PoS voting system could be a hardfork. If such an issue is set, the new version of the Decred source code will include the hardfork in it, but the hard fork will not activate until the PoS system has voted on it.
 
 For a hardfork vote to start two critical conditions have to be met:
 

@@ -161,7 +161,7 @@ would notice their balances change (decred locked in PoS will not show as spenda
 
 Further there is a hard limit of 20 tickets added per block so no exchange could flood the pool faster than this.
 
-Finally, there's a soft cap on the total number of tickets in the pool. Every 144 block (2880 tickets) the ticket price is adjusted based on the number of tickets in the pool and the rate that new tickets
+Finally, there's a soft cap on the total number of tickets in the pool. Every 144 blocks (2880 tickets) the ticket price is adjusted based on the number of tickets in the pool and the rate that new tickets
 were added in the last window. Eventually the ticket price would be so high that even an exchange wouldn't be able to buy many tickets. And remember that even if they did that their DCR are locked so they
 can't buy more when the price drops again.
 

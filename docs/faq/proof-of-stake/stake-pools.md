@@ -33,7 +33,7 @@ It is certainly possible[^9311], but one of the things that all pools should sup
 
 #### **5. Are the vote bits set when you purchase a ticket or when your ticket is called to vote? Does this change when in a stakepool?**
 
-They are set when you actually vote[^13607] (which really only makes sense because you might have bought the ticket weeks or months before a specific voting agenda even exists).
+The vote bits are set when you actually vote[^13607] (which really only makes sense because you might have bought the ticket weeks or months before a specific voting agenda even exists).
 
 A stakepool can operate however it wants since there is a lot of room for flexibility due to the way the ticket purchase commitment scheme is designed. That said, in general, people should avoid using stake pools that do not allow them control over how they want to vote on non-pool specific issues.
 

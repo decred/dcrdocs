@@ -95,7 +95,7 @@ sender's wallet address on the left, and the words `Subsidy
 Commitment` appear on the right. This particular user purchased a
 stake ticket for 8.75411638 DCR and received change in the amount
 of 7.15994209 DCR. The address listed on the left under `Ticket` is
-the address that that contains the funds used to purchase this
+the address that contains the funds used to purchase this
 ticket. The first output on the right is the address that retains
 voting rights for this specific ticket. The second output, `Subsidy
 Commitment`, is the address where the reward will go. This is not yet

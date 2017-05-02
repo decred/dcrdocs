@@ -129,8 +129,8 @@ Be sure to check for a fee war event and adjust your ticketfee before purchase b
 
 To purchase tickets with their voting rights delegated to a stakepool, we have to use the full `purchaseticket` command.
 
-* Your `ticketaddress` is the P2SH Address found at the top of "Tickets" page of your Stakepool under the "Ticket Information" section.
-* Your `pooladdress` is the address for your Stakepool's fees are collected. This can be found in the "Ticket Instructions" section of your Stakepool's "Tickets" page.
+* Your `ticketaddress` is the P2SH Address found at the top of "Tickets" page of your stakepool under the "Ticket Information" section.
+* Your `pooladdress` is the address for your stakepool's fees are collected. This can be found in the "Ticket Instructions" section of your stakepool's "Tickets" page.
 * Your `poolfees` is the percentage of the stake reward that will go to the `pooladdress` when a ticket votes. It is important to match your pool's advertised fee. 
 
 A quick example: 
@@ -145,7 +145,7 @@ To set up your `dcrwallet` to enable its built-in ticketbuyer feature, add the f
 
     enableticketbuyer=1
 
-If you are using a Stakepool, you should also add the following lines (all of these can be found on your Stakepool's "Tickets" page):
+If you are using a stakepool, you should also add the following lines (all of these can be found on your stakepool's "Tickets" page):
 
     ticketaddress=<P2SH Address shared with Stakepool>
     pooladdress=<Stakepool's Fee Collection Address>

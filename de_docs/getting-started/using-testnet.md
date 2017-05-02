@@ -24,11 +24,24 @@ To launch `Paymetheus` on testnet2, simply launch the `Decred Testnet` applicati
 
 ---
 
-<!-- ## Decrediton 
+## Decrediton 
 
 To launch `Decrediton` on testnet2, you have to launch `Decrediton` from the command line with the `--testnet` flag. Keep in mind that using the flag once will make it always start in that mode until you use the `--mainnet` flag to switch back to the mainnet blockchain.
 
-___ -->
+For Linux, 
+
+1. Open your terminal and navigate to the directory with the decrediton executable.
+2. Issue the command `./decrediton --testnet`.
+3. Decrediton will launch and attempt to connect to testnet2.
+
+For macOS/OSX,
+
+1. Open your terminal and issue the following command: `/Applications/decrediton.app/Contents/MacOS/decrediton --testnet`
+2. Decrediton will launch and attempt to connect to testnet2.
+
+Remember, if you want to switch Decrediton back to mainnet, you'll need to issue those commands with the `--mainnet` flag.
+
+---
 
 ## Command-Line Suite
 

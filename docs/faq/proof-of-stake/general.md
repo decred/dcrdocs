@@ -76,7 +76,7 @@ Returning the funds back to your wallet after a ticket votes or is revoked does 
 #### **6. What is a stake pool?**
 
 A stake pool is the equivalent of a mining pool, but for the PoS system. Through the options in your Decred wallet, you can give your voting rights to a stake pool. If your ticket is selected to vote,
-the stake pool will cast the vote for you and you are rewarded with the PoS reward minus the stake pool fee (usually 4-5%). Unlike the mining pools, the PoS reward is not split amongst the users of the stake pool, but the full reward goes to the owner of the ticket.
+the stake pool will cast the vote for you and you are rewarded with the PoS reward minus the stake pool fee (usually 4-5%). Unlike the mining pools, the PoS reward is not split amongst the users of the stake pool. The full reward goes to the owner of the ticket.
 
 A stake pool will allow you to buy tickets but not have your own wallet unlocked and always online. It is important to note that your funds never leave your wallet. You are not sending anything to the pool,
 just giving it authority to vote on your behalf. A stake pool cannot access your funds. 

@@ -15,8 +15,8 @@ before you use it:
   [stake mine](/mining/proof-of-stake.md)
   with it.
 * Your wallet is kept entirely in the local storage of your web
-  browser.  This means that is you delete your local storage, you will
-  delete you wallet and must recreate from the seed.
+  browser.  This means that if you delete your local storage, you will
+  delete your wallet and must recreate it from the seed.
 * The security of your wallet depends entirely on the security of your
   web browser.
 * You can put a pin on your wallet to prevent sending funds but any

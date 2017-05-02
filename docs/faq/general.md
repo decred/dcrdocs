@@ -33,7 +33,7 @@ The development of Decred was funded by Company 0 and from the pockets of its de
 
 This means Company 0 and its developers will have put roughly USD 415,000 into the bring-up since April, 2014 and receive 4% of the total supply, 840,000 coins (at USD 0.49 per coin). Coins held by Company 0 will be used to fund its ongoing work on open source projects, such as Decred and btcsuite.
 
-When Decred launched in February 2016, the developers and project members committed to not trade any of their bring-up DCR for 12 months and Company 0 committed to not trade any for 24 months.[^4] These coins will however be used to purchase proof of stake tickets with the intention of making the Decred network harder to attack during it's infancy. As the community participation in PoS increases, the amount of tickets purchased using the premine will be reduced proportionally. [^5] [^6]
+When Decred launched in February 2016, the developers and project members committed to not trade any of their bring-up DCR for 12 months and Company 0 committed to not trade any for 24 months.[^4] These coins will however be used to purchase proof of stake tickets with the intention of making the Decred network harder to attack during its infancy. As the community participation in PoS increases, the amount of tickets purchased using the premine will be reduced proportionally. [^5] [^6]
 
 
  **Airdrop (840,000 coins, 50% of premine, 4% of total Decred supply) **

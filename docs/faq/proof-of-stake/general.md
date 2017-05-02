@@ -141,7 +141,7 @@ For a hardfork vote to start two critical conditions have to be met:
 - First, 75% of the PoW miners have to upgrade to the latest version of the current network block version. This check runs over the past 1000 blocks.
 - Second, 75% of the PoS miners have to upgrade to the latest version. This check runs over the past 2016 blocks.
 
-If these checks are met the voting process begins. Tickets can be set with an additional parameter of yes/no/abstain. You do this in your wallet before the ticket votes. Tickets marked as abstain will not be counted in the total amount of votes.
+Once these checks are met, the voting process begins. Tickets can be set with an additional parameter of yes/no/abstain. You do this in your wallet before the ticket votes. Tickets marked as abstain will not be counted in the total amount of votes.
 
 The PoS system then starts counting tickets with these parameters set over a predetermined amount of blocks. If over this interval the amount of votes is 75%, or more, 'yes' the vote has passed. A lock in period of a set number of blocks will start before the hardfork goes live, so everyone has a chance to upgrade and not be hardforked off the network.
 

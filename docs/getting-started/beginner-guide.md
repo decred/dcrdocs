@@ -47,7 +47,6 @@ create transactions and participate in Proof-of-Stake mining/voting.
 To get started, choose an option for installations available for your operating system below:
 
 * [Paymetheus](/getting-started/install-guide.md#paymetheus)
-
 * [Command Line Suite **via dcrinstall**](/getting-started/install-guide.md#dcrinstall) - NOTE: The `dcrinstall` method is the fastest and easiest way to get a command-line node and wallet running. It is recommended and the command-line path setup guides below will assume you've used this method.
 * [Decrediton (ALPHA)](/getting-started/install-guide.md#decrediton)
 
@@ -85,3 +84,4 @@ The following guides are independent of the different applications:
 * [Obtaining DCR](/getting-started/obtaining-dcr.md)
 * [Using the Block Explorer](/getting-started/using-the-block-explorer.md)
 * [Proof-of-Stake Guide](/mining/proof-of-stake.md)
+* [Mainnet Voting Guide](/getting-started/user-guides/agenda-voting.md)

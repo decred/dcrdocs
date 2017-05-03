@@ -84,3 +84,4 @@ The following guides are independent of the different applications:
 * [Obtaining DCR](/getting-started/obtaining-dcr.md)
 * [Using the Block Explorer](/getting-started/using-the-block-explorer.md)
 * [Proof-of-Stake Guide](/mining/proof-of-stake.md)
+* [Mainnet Voting Guide](/getting-started/user-guides/agenda-voting.md)

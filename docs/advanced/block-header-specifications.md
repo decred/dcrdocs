@@ -10,29 +10,30 @@ serialization format for a block header is displayed below:
 Field          | Description                                                                 | Size
 ---            | ---                                                                         | ---
 Version        | Block header version                                                        | 4 bytes
-Previous block | Hash of the previous block                                                  | 32 bytes
-Merkle root    | Merkle tree hash calculated using all transactions in the block             | 32 bytes
-Stake root     | Merkle tree hash calculated using all stake transactions in the block       | 32 bytes
-Vote bits      | Bit flags. Currently only used to signify votes on the previous merkle root | 2 bytes
-Final state    | Commitment to the final state of the PRNG (for lottery purposes)            | 6 bytes
+PrevBlock      | Hash of the previous block                                                  | 32 bytes
+MerkleRoot     | Merkle tree hash calculated using all transactions in the block             | 32 bytes
+StakeRoot      | Merkle tree hash calculated using all stake transactions in the block       | 32 bytes
+VoteBits       | Bit flags. Currently only used to signify votes on the previous merkle root | 2 bytes
+FinalState     | Commitment to the final state of the PRNG (for lottery purposes)            | 6 bytes
 Voters         | Number of participating voters in the block                                 | 2 bytes
-Fresh stake    | Number of new tickets in the block                                          | 1 byte
+FreshStake     | Number of new tickets in the block                                          | 1 byte
 Revocations    | Number of revocations present in the block                                  | 1 byte
-Pool size      | Size of the ticket pool                                                     | 4 bytes
+PoolSize       | Size of the ticket pool                                                     | 4 bytes
 Bits           | Difficulty target for the block                                             | 4 bytes
 SBits          | Stake difficulty target for the block                                       | 8 bytes
 Height         | The number of blocks that precede the block in the blockchain               | 4 bytes
 Size           | Number of bytes that the serialized block occupies                          | 4 bytes
 Timestamp      | Time that the block was created                                             | 4 bytes
 Nonce          | The nonce used to generate the block                                        | 4 bytes
-Extra data     | Any other data (may be used later for consensus purposes)                   | 32 bytes
-Stake version  | The stake version used for voting on the created block                      | 4 bytes
+ExtraData      | Any other data (may be used later for consensus purposes)                   | 32 bytes
+StakeVersion   | The stake version used for voting on the created block                      | 4 bytes
+
 ---
 
 ## **Example encoded block header**
 
-```
-        0x01, 0x00, 0x00, 0x00, // Version 1
+```javascript
+        0x01, 0x00, 0x00, 0x00, // Version
         0x6f, 0xe2, 0x8c, 0x0a, 0xb6, 0xf1, 0xb3, 0x72, // PrevBlock
         0xc1, 0xa6, 0xa2, 0x46, 0xae, 0x63, 0xf7, 0x4f,
         0x93, 0x1e, 0x83, 0x65, 0xe1, 0x5a, 0x08, 0x9c,
@@ -68,7 +69,7 @@ Stake version  | The stake version used for voting on the created block         
 
 ## **Example encoded block header as raw bytes**
 
-```
+```no-highlight
         010000006fe28c0ab6f1b372c1a6a246
         ae63f74f931e8365e15a089c68d61900
         000000003ba3edfd7a7b12b27ac72c3e

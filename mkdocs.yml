@@ -17,7 +17,6 @@ pages:
 - Home: 'index.md'
 - Getting Started:
   - "Beginner's Guide": 'getting-started/beginner-guide.md'
-  - 'Download and Install': 'getting-started/install-guide.md'
   - Paymetheus:
     - 'Paymetheus Setup': 'getting-started/user-guides/paymetheus.md'
     - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'

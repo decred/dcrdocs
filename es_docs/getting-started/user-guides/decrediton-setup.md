@@ -6,7 +6,7 @@ This guide is intended to help you setup the `Decrediton` application.
 
 **Prerequisites:**
 
-- Use the [Decrediton Install Guide](/getting-started/install-guide.md#decrediton) to install `Decrediton`.
+- Use the [Decrediton Install Guide](/getting-started/user-guides/decrediton-setup.md) to install `Decrediton`.
 
 ---
 

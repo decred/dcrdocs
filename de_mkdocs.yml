@@ -18,7 +18,6 @@ pages:
 - Home: 'index.md'
 - Loslegen:
   - "Beginner's Guide": 'getting-started/beginner-guide.md'
-  - 'Herunterladen und installieren': 'getting-started/install-guide.md'
   - Paymetheus:
     - 'Paymetheus Setup': 'getting-started/user-guides/paymetheus.md'
     - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'

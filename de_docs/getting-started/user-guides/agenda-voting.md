@@ -100,5 +100,34 @@ If your Stakepool has updated to the latest stakepool software, you will find a 
 
 ---
 
-<!-- TODO: ADD HARDFORKDEMO SITE WHEN READY -->
+## **Verifying Your Vote**
+
+The easiest method to track your how your tickets actually voted is to use the [block explorer](https://mainnet.decred.org) to manually view each of your votes.
+
+You can follow a ticket purchase creation by inputting the txid for that purchase into the block explorer (or clicking the link for a ticket on your stakepool's website). Below is a quick walkthrough, starting from a stakepool's website. The red numbers of each image corresponds to the step number.
+
+1. Go to your stakepool's Tickets page, open the Voted Tickets section and click the txid for the ticket you want to inspect. This will open the block explorer to the ticket purchase transaction. (Figure 3)
+2. Press the '+' button to view the transaction details. (Figure 4)
+3. Press the '>' on the 1st output of the transaction (the 'stakesubsmission' output) to open the block explorer to the actual voting transaction. (Figure 4)
+4. The vote transaction should already be expanded, if not, press the '+' button. (Figure 5)
+5. Locate the second output of the transaction. The vote for this ticket is shown within the first 4 digits of the OP_RETURN. The 6th digit shows the vote version. In the images below, a version 4 vote voted "01" *in hexadecimal* (aka 0x01). (Figure 5)
+6. Compare the block explorer votebits with the chart below and you'll see that the ticket voted to abstain from both lnsupport and sdiffalgo agendas while verifying the previous block as valid. (Figure 6)
+
+figure 3:<br>
+<img src="/img/verify_voted-tickets.png">
+
+figure 4:<br>
+<img src="/img/verify_block-explorer-sstx.png">
+
+figure 5:<br>
+<img src="/img/verify_block-explorer-votebits.png">
+
+figure 6:<br>
+<img src="/img/verify_votebits-chart.png">
+
+---
+
+## **Tracking Vote Progress**
+
+[voting.decred.org](https://voting.decred.org) is an official website set up to track the progress of upgrading and voting. 
 

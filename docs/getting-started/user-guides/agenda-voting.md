@@ -102,9 +102,13 @@ If your Stakepool has updated to the latest stakepool software, you will find a 
 
 ## **Verifying Your Vote**
 
-The easiest method to track your how your tickets actually voted is to use the [block explorer](https://mainnet.decred.org) to manually view each of your votes.
+The easiest method to track your how your tickets actually voted is to use the [block explorer](https://mainnet.decred.org) to view each of your votes.
 
-You can follow a ticket purchase creation by inputting the txid for that purchase into the block explorer (or clicking the link for a ticket on your stakepool's website). Below is a quick walkthrough, starting from a stakepool's website. The red numbers of each image corresponds to the step number.
+The block explorer has been updated to display YES and NO votes for each agenda. If a ticket voted abstain, it will not display anything. The first ticket in this example image voted "ABSTAIN" for both agendas, the second ticket voted "YES" for both agendas, and the third ticket voted "YES" for the lnsupport agenda and "ABSTAIN" for the sdiffalgorithm agenda.
+
+<img src="/img/verify_block-explorer-votes.png">
+
+You can also manually verify your vote by inputting the txid for the ticket purchase transaction into the block explorer or clicking the link for a Voted Ticket on your stakepool's website. Below is a quick walkthrough, starting from a stakepool's website. The red numbers of each image corresponds to the step number.
 
 1. Go to your stakepool's Tickets page, open the Voted Tickets section and click the txid for the ticket you want to inspect. This will open the block explorer to the ticket purchase transaction. (Figure 3)
 2. Press the '+' button to view the transaction details. (Figure 4)

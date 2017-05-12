@@ -36,7 +36,7 @@ To participate in voting, you first need a wallet. If you don't have one already
 
 Next, you'll need to learn the basics of [Proof-of-Stake](/mining/proof-of-stake.md). You'll need to be able to [buy tickets](/mining/proof-of-stake.md#how-to-stake) with your application of choice.
 
-Finally, you'll need to learn how to set the `votechoice` for your tickets in order to cast a "Yes", "No", or "Abstain" vote for an agenda. By default, your tickets will cast "Abstain" votes. If you are solo-staking with `dcrwallet`, go here. If you are pool-staking with `dcrwallet`, `Paymetheus`, or `Decrediton`, go here.
+Finally, you'll need to learn how to set the `votechoice` for your tickets in order to cast a "Yes", "No", or "Abstain" vote for an agenda. By default, your tickets will cast "Abstain" votes. If you are solo-staking with `dcrwallet`, go [here](#solo-voting). If you are pool-staking with `dcrwallet`, `Paymetheus`, or `Decrediton`, go [here](#stakepool-voting).
 
 ---
 

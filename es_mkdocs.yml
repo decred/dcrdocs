@@ -34,7 +34,7 @@ pages:
   - 'Web Wallet': 'getting-started/user-guides/web.md'
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
-  - 'Testnet Voting Guide': 'getting-started/user-guides/testnet-voting.md'
+  - 'Mainnet Voting Guide': 'getting-started/user-guides/agenda-voting.md'
   - 'Constitución de Decred': 'getting-started/constitution.md'
 - Mining:
   - 'Proof-of-Stake (PoS)': 'mining/proof-of-stake.md'

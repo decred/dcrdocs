@@ -33,6 +33,13 @@ Below you'll find a list of currently available applications, with a chart showi
 
 "Other UNIX" currently includes various *BSDs and Solaris/illumos.
 
+Note: You might soon notice one of the many differences between Decred and other 
+popular cryptocurrencies: the wallet daemon and node daemon are separate.
+A lot of other coins run these functions together in a single daemon.
+For those who choose to use the command line interfaces, this means you must
+run `dcrd` for full node functionality, and `dcrwallet` to store your DCR,
+create transactions and participate in Proof-of-Stake mining/voting.
+
 ---
 
 ## **Installation Guides**
@@ -40,8 +47,8 @@ Below you'll find a list of currently available applications, with a chart showi
 To get started, choose an option for installations available for your operating system below:
 
 * [Paymetheus](/getting-started/install-guide.md#paymetheus)
-* [Command Line Suite](/getting-started/install-guide.md#dcrinstall)
-* [Decrediton (BETA)](https://github.com/decred/decrediton/blob/master/README.md#installation) - NOTE: Install instructions currently limited to the GitHub README.
+* [Command Line Suite **via dcrinstall**](/getting-started/install-guide.md#dcrinstall) - NOTE: The `dcrinstall` method is the fastest and easiest way to get a command-line node and wallet running. It is recommended and the command-line path setup guides below will assume you've used this method.
+* [Decrediton (ALPHA)](/getting-started/install-guide.md#decrediton)
 
 ---
 
@@ -53,6 +60,12 @@ The following guides, in order, will get you started with Paymetheus:
 
 * [Paymetheus Setup](/getting-started/user-guides/paymetheus.md)
 * [Using Paymetheus](/getting-started/user-guides/using-paymetheus.md)
+
+## **Decrediton Path**
+
+The following guide will help you load Decrediton:
+
+* [Decrediton Setup](/getting-started/user-guides/decrediton-setup.md)
 
 ## **Command-Line Path**
 
@@ -71,3 +84,4 @@ The following guides are independent of the different applications:
 * [Obtaining DCR](/getting-started/obtaining-dcr.md)
 * [Using the Block Explorer](/getting-started/using-the-block-explorer.md)
 * [Proof-of-Stake Guide](/mining/proof-of-stake.md)
+* [Mainnet Voting Guide](/getting-started/user-guides/agenda-voting.md)

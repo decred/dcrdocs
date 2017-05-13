@@ -15,7 +15,7 @@ of recent account activity.
 ## **Accounts  ** ##
 The accounts tab shows you the accounts in your wallet and allows you to add new ones.
 Accounts in Decred work just like bank accounts. 
-They allow you to keep seperate records of your DCR. This feature is most 
+They allow you to keep separate records of your DCR. This feature is most 
 useful for those who run businesses and wish to keep seperate accounts for 
 tax records for example. Transferring DCR across accounts will create a 
 transaction on the blockchain.  
@@ -36,7 +36,7 @@ It will be used for more advanced features in the future.
 
 
 ## **Create Transaction** ##
-This tab is how you send funds to another address. Simply copy the receivers
+This tab is how you send funds to another address. Simply copy the receiver’s
 address into the text box and type in the amount of Decred you wish to send.
 The estimated fee will be listed as well. You can click the '+' button to 
 send Decred to multiple addresses in the one transaction if you wish.  
@@ -49,7 +49,7 @@ send Decred to multiple addresses in the one transaction if you wish.
 ## ** Purchase Tickets tab** ##
 
 Paymetheus is able to buy tickets for Proof of Stake mining by using its manual ticket
-purchasing features. Note that Paymetheus can *only* purchase tickets, it can't do the
+purchasing features. Note that Paymetheus can only *purchase* tickets, it can't do the
 actual voting. For that you will either need to setup [solo PoS](/mining/proof-of-stake)
 or use a PoS [stake pool](/mining/proof-of-stake.md#sign-up-for-a-stake-pool).
 
@@ -77,7 +77,7 @@ as many missed votes are caused by PoW miners (sometimes they will find a soluti
 so quickly that votes haven't had time to propagate around the network). In order to ensure one pool
 does't become too large, it is recommended that you join a smaller pool. While a pool can't access your funds,
 they CAN choose to vote against your wishes. Doing so would have them blacklisted pretty quickly, but
-keeping individual pool sizes low means that any rogue operators would have a hard time having an affect on 
+keeping individual pool sizes low means that any rogue operators would have a hard time affecting 
 the outcome of any vote. By spreading tickets around pools, it makes the network even more decentralized.
 
 ![Creating voting account](/img/Paymetheus-create-voting-account.png)  
@@ -88,7 +88,7 @@ There's a fair bit of information here, so we'll go through each of the options.
 * **Blocks until retarget** - When this reaches 0, a new ticket price is calculated.
 * **Source account** - This is the account that will purchase the tickets and receive the reward.
 * **Tickets to purchase** - The number of tickets to purchase.
-* **Ticket fee (DCR/kB)** - Tickets are entered into the voting pool by order of their fee. In times of demand,
+* **Ticket fee (DCR/kB)** - Tickets are entered into the voting pool by order of their fee. In times of high demand,
                         you will need to increase this value in order to have your tickets accepted.
 						You can view current ticket fees [here](https://www.dcrstats.com).
 * **Split fee (DCR/kB)** - Paymetheus uses a “split” transaction to avoid blocking your balance, spliting the
@@ -98,7 +98,7 @@ There's a fair bit of information here, so we'll go through each of the options.
                        would have to wait for the confirmation of the ticket transaction, which could take several hours.
                        This can be left at 0.01. It does not affect your chances of buying tickets or voting with them.
 * **Expiry (blocks)** - Often ticket fees will increase during a window and you may be stopped out by higher fees. By setting an
-					expiry, tickets that are not mined in the given number of blocks are cancelled so you can try again
+					expiry, tickets that are not mined by the given block height are cancelled so you can try again
 					with higher fees if you wish. If this is empty, they will not expire until the end of the window.
 * **Stake pool preference** - Automate setup with PoS pools. See below for more information.
 * **Voting address** - The Decred address that will do the voting. Solo and custom pool miners only.
@@ -135,7 +135,7 @@ addresses available so you don't need to worry about running out.
 
 
 ## **Transaction History** ##
-This tab shows a list of all transactions that occured. The transaction hash can be used with the
+This tab shows a list of all transactions that have occurred. The transaction hash can be used with the
 [block explorer](/getting-started/using-the-block-explorer.md) to see more information about the transaction.  
 
 ![Transaction History](/img/Paymetheus-transactions.png)  

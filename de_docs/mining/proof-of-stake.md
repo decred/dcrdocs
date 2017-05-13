@@ -10,7 +10,7 @@ This document is meant to be an educational resource for Proof-of-Stake mining (
 
 Decred's unique Proof-of-Stake protocol serves multiple purposes:
 
-To provide a metric for stakeholders/end-user support of any consensus updates. That is, stakeholders are able to vote on specific proposals/agenda on the Decred blockchain. Agendas may include deciding whether or not the dev team spends time implementing a specific feature, activating the code of a feature already submitted for implementation, or making other decisions such as how the dev subsidy should be spent.
+To provide a metric for stakeholders/end-user support of any consensus updates. That is, stakeholders are able to vote on specific proposals/agenda on the Decred blockchain. Agendas may include deciding whether or not the dev team spends time implementing a specific feature, activating the code of a feature already submitted for implementation, or making other decisions such as how the dev subsidy should be spent. More information on voting can be found in our [Mainnet Voting Guide](/getting-started/user-guides/agenda-voting.md).
 
 Decred's PoS also provides a system of checks and balances for nonconforming miners. Stakeholders can vote a block invalid if it doesn't match to the consensus rules of the network. 
 
@@ -102,6 +102,8 @@ and clicking the 'Stakepools' link within the footer at the bottom of the page.
 <!-- TODO: **Purchasing Tickets with Decrediton** -->
 
 ## **Additional Information**
+
+[Mainnet Voting Guide](/getting-started/user-guides/agenda-voting.md)
 
 [Proof-of-Stake Commands](/advanced/program-options.md#pos-commands)
 

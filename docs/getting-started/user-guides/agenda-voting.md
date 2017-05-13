@@ -104,7 +104,7 @@ If your Stakepool has updated to the latest stakepool software, you will find a 
 
 The easiest method to track your how your tickets actually voted is to use the [block explorer](https://mainnet.decred.org) to view each of your votes.
 
-The block explorer has been updated to display YES and NO votes for each agenda. If a ticket voted abstain, it will not display anything. The first ticket in this example image voted "ABSTAIN" for both agendas, the second ticket voted "YES" for both agendas, and the third ticket voted "YES" for the lnsupport agenda and "ABSTAIN" for the sdiffalgorithm agenda.
+The block explorer has been updated to display YES, NO, and ABSTAIN votes for each agenda with each ticket. The first and second tickets in the following example image voted "ABSTAIN" for both agendas while the third ticket voted "YES" for both agendas.
 
 <img src="/img/verify_block-explorer-votes.png">
 

@@ -114,7 +114,7 @@ You can also manually verify your vote by inputting the txid for the ticket purc
 2. Press the '+' button to view the transaction details. (Figure 4)
 3. Press the '>' on the 1st output of the transaction (the 'stakesubsmission' output) to open the block explorer to the actual voting transaction. (Figure 4)
 4. The vote transaction should already be expanded, if not, press the '+' button. (Figure 5)
-5. Locate the second output of the transaction. The vote for this ticket is shown within the first 4 digits of the OP_RETURN. The 6th digit shows the vote version. In the images below, a version 4 vote voted "01" *in hexadecimal* (aka 0x01). (Figure 5)
+5. Locate the second output of the transaction. Viewing the OP_RETURN of this output, the first 4 digits represent the individual votebits and the last 8 represent the vote version in hexadecimal. In the images below, a version "04" vote voted "01", *both numbers are in hexadecimal* (aka 0x04 and 0x01). (Figure 5)
 6. Compare the block explorer votebits with the chart below and you'll see that the ticket voted to abstain from both lnsupport and sdiffalgo agendas while verifying the previous block as valid. (Figure 6)
 
 figure 3:<br>

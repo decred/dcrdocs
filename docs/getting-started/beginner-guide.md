@@ -10,7 +10,7 @@ Welcome to Decred! We are very glad to have you. As you may or may not already k
 
 This beginner's guide is a path to getting the Decred software up and running. You can choose from multiple clients to get a node on the network and Decred in your wallet. Specifically, you'll learn how to install, setup, and use the Decred applications; how to obtain DCR; how to vote via Proof-of-Stake; and how to use the block explorer.
 
-You'll need to follow an [Installation Guide](#installation-guides), and then follow the path for the application of your choice below. After your application is set-up, go through the [General Guides](#general-guides) at the bottom of this page. If you have any questions along the way, join us in our [Slack](/support-directory/md#join-us-on-slack).
+You'll need to follow an [Installation Guide](#installation-guides), and then follow the path for the application of your choice below. After your application is set-up, go through the [General Guides](#general-guides) at the bottom of this page. If you have any questions along the way, join us in our [Slack](/support-directory.md#join-us-on-slack).
 
 ---
 

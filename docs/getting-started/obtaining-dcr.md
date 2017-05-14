@@ -48,14 +48,14 @@ withdraw your new Decred and send it to your Decred wallet.
 Proof-of-Work (PoW) is a measure of using computational power to
 create and verify the cryptographically secure blockchain.  This is
 similar to traditional Bitcoin mining.  PoW mining is described in
-more detail [here](/mining/overview/#1-proof-of-work-mining).
+more detail [here](/mining/proof-of-work).
 
 ## **<i class="fa fa-info-circle"></i> Stake Mine for Decred / Proof-of-Stake (PoS)**
 
 Proof-of-Stake (PoS) mining is performed by stakeholders who lock a
 certain amount of their DCR in return for voting rights and a monetary
 reward. PoS mining is described in more detail
-[here](/mining/overview/#2-proof-of-stake-mining).
+[here](/mining/proof-of-stake).
 
 ## **<i class="fa fa-info-circle"></i> Sell / Trade Goods or Services for Decred**
 

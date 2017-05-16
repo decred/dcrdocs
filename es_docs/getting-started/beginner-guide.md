@@ -48,7 +48,7 @@ To get started, choose an option for installations available for your operating 
 
 * [Paymetheus](/getting-started/user-guides/paymetheus.md)
 * [Command Line Suite **via dcrinstall**](/getting-started/user-guides/cli-installation.md#dcrinstall) - NOTE: The `dcrinstall` method is the fastest and easiest way to get a command-line node and wallet running. It is recommended and the command-line path setup guides below will assume you've used this method.
-* [Decrediton (ALPHA)](https://github.com/decred/decrediton/blob/master/README.md#installation) - NOTE: Install instructions currently limited to the GitHub README.
+* [Decrediton (ALPHA)](/getting-started/user-guides/decrediton-setup.md)
 
 ---
 

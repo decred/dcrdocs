@@ -18,7 +18,7 @@ The following chart shows an estimate of the coin supply growth over time.
 
 ![Decred supply chart](../../img/decred_supply.png)
 
-The table below shows the estimated block reward and estimated total supply of Decred until the last block reward in 2039. Note that the total supply of DCR at block 0 is 1,680,000 due to the [premine](/faq/general/#3-how-was-the-decred-premine-distributed).
+The table below shows the estimated block reward and estimated total supply of Decred until the last block reward in 2039. Note that the total supply of DCR at block 0 is 1,680,000 due to the [premine](/faq/general.md#3-how-was-the-decred-premine-distributed).
 
 Block height | Estimated Date       | Block reward (DCR) | PoW (DCR) | PoS vote (DCR) | Dev subsidy (DCR) | Total DCR supply
 -------------|----------------------|--------------------|-----------|----------------|-------------------|-----------------

@@ -18,7 +18,7 @@ The first four methods will be covered here and the fifth may be added at a late
 
 ## **Paymetheus** 
 
-The Windows Installer (`.msi` file) is located here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). It will install Paymetheus to your computer's Program Files folder. Installation is pretty straightforward, but instructions are provided below:
+The Windows Installer (`.msi` file) is located here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.1](https://github.com/decred/decred-binaries/releases/tag/v1.0.1). It will install Paymetheus to your computer's Program Files folder. Installation is pretty straightforward, but instructions are provided below:
 
 1. Download the correct file:
 
@@ -35,7 +35,7 @@ The Windows Installer (`.msi` file) is located here: [https://github.com/decred/
 
 ## **dcrinstall**
 
-`dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binaries are provided for Windows, OSX/macOS, Linux, OpenBSD, and FreeBSD. Executing installer will install `dcrd`, `dcrwallet`, and `dcrctl`. Instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
+`dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: [https://github.com/decred/decred-release/releases/tag/v1.0.1](https://github.com/decred/decred-release/releases/tag/v1.0.1). Binaries are provided for Windows, OSX/macOS, Linux, OpenBSD, and FreeBSD. Executing installer will install `dcrd`, `dcrwallet`, and `dcrctl`. Instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
 
 This method is recommended over the traditional manual installation. `dcrinstall` will automatically download the precompiled, signed binary package found on GitHub, verify the signature of this package, copy the binaries within the package to a specific folder dependant on OS, create configuration files with settings to allow the 3 applications to communicate with each other, and run you through the wallet creation process. After running through `dcrinstall`, you will be able to launch the software with no additional configuration.
 
@@ -92,7 +92,7 @@ This method is recommended over the traditional manual installation. `dcrinstall
 
 ## **Decrediton**
 
-Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). As of v1.0.2, Decrediton is only available for Linux and Mac and is technically an alpha release. There are known bugs in the software that are being worked on.
+Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.2_decrediton](https://github.com/decred/decred-binaries/releases/tag/v1.0.2_decrediton). As of v1.0.2, Decrediton is only available for Linux and Mac and is technically an alpha release. There are known bugs in the software that are being worked on.
 
 > macOS/OSX
 
@@ -118,7 +118,7 @@ Decrediton is released with the Binary Releases and can be found here: [https://
 
 ## **Binary Releases**
 
-The newest Binary Releases can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). With the exception of the `.msi` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be unzip and go, instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
+The newest Binary Releases can be found here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.1](https://github.com/decred/decred-binaries/releases/tag/v1.0.1). With the exception of the `.msi` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be unzip and go, instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
 
 > OSX/macOS
 

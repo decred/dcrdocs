@@ -2,7 +2,7 @@
 
 ---
 
-New decred is created each time a PoW miner discovers a new block - this is commonly referred to as the "block reward". The block reward is split three ways:
+New blocks are discovered by the PoW miners roughly every 5 minutes, and each time this occurs new decred are created.  This "block reward" is split three ways:
 
 * 60% goes to the proof of work miner who found the block
 * 30% goes to the PoS voters on that block (6% to each of the 5 voters)

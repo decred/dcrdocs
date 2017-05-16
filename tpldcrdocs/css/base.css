@@ -419,7 +419,12 @@ strong a {
 #mkdocs-search-results > p {
     padding: 10px;
 }
-
+.col-md-9 li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    color: #132f4b;
+    font-weight: 600;
+}
 [class^="icon-"],
 [class*=" icon-"] {
     font-family: 'dcrdocs' !important;
@@ -553,3 +558,4 @@ div[role=main] .github-page-link {
 .hljs {
     color: #132f4b
 }
+

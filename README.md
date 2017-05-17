@@ -20,7 +20,7 @@ On Windows it is recommended that you install Python and pip with [Chocolatey].
 Install the `mkdocs` package, [python-markdown-math] \(required for rendering equations\), [mkdocs-bootswatch] themes, and fontawesome packages using pip:
 
 ```bash
-$ pip install mkdocs python-markdown-math mkdocs-bootswatch fontawesome-markdown
+$ pip install --user -r requirements.txt
 ```
 
 ## Getting started

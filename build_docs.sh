@@ -65,10 +65,4 @@ for L in $LANG; do
 
 done
 
-echo
-echo "+-------------------------+"
-echo "|      BUILD SUCCESS      |"
-echo "+-------------------------+"
-echo
-
 trap : 0

@@ -1,4 +1,20 @@
 #! /bin/sh
+
+set -e
+
+abort()
+{
+    echo
+    echo "+-------------------------+" >&2
+    echo "|  !!! BUILD FAILURE !!!  |" >&2
+    echo "+-------------------------+" >&2
+    echo
+    exit 1
+}
+
+trap 'abort' 0
+
+
 absolutePath=${PWD}
 
 echo "======================================="
@@ -49,3 +65,4 @@ for L in $LANG; do
 
 done
 
+trap : 0

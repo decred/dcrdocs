@@ -6,7 +6,7 @@ This guide is intended to help you setup the `dcrwallet` application using [star
 
 **Prerequisites:**
 
-- Use either the latest [dcrinstall](/getting-started/user-guides/cli-installation.md#dcrinstall) or [Binary Release archive](/getting-started/user-guides/cli-installation.md#binary-releases) archive to install `dcrwallet`.
+- Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md) to install `dcrwallet`. Additional steps will be required if another installation method was used.
 - Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/cli-differences.md).
 - [Setup dcrd](/getting-started/user-guides/dcrd-setup.md) and have it running in the background.
 

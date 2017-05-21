@@ -73,6 +73,7 @@ pages:
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
   - 'Inflation': 'advanced/inflation.md'
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
+  - 'Manual CLI Install': 'advanced/manual-cli-install.md'
   - 'Advanced dcrctl Usage': 'advanced/dcrctl-usage.md'
   - 'Simnet': 'advanced/simnet.md'
   - 'Contributing Guidelines': 'advanced/contributing.md'

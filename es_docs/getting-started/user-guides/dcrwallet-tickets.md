@@ -13,7 +13,7 @@ This guide is intended to walk through ticket buying using `dcrwallet`. It will 
 - Familiarize yourself with the [basics of using dcrctl](/getting-started/user-guides/dcrctl-basics.md).
 - Familiarize yourself with the [staking process](/mining/proof-of-stake.md#staking-101) and the [ticket lifecycle](/mining/proof-of-stake.md#ticket-lifecycle)
 
-This guide assumes you have set up `dcrd` and `dcrwallet` using configuration files. If you used `dcrinstall`, you have configuration files already. Using configuration files is highly recommended - it makes for an easier time issuing commands to `dcrwallet` and `dcrd` through `dcrctl`. A guide for minimum configuration (saving your RPC username and RPC password) can be found [here](/getting-started/startup-basics.md#minimum-configuration). 
+This guide assumes you have set up `dcrd` and `dcrwallet` using configuration files. If you used `dcrinstall`, you have configuration files already. Using configuration files is highly recommended - it makes for an easier time issuing commands to `dcrwallet` and `dcrd` through `dcrctl`. A guide for minimum configuration (saving your RPC username and RPC password) can be found [here](/advanced/manual-cli-install.md#minimum-configuration). 
 
 NOTE: `dcrwallet.conf` is split into two sections labeled `[Application Options]` and `[Ticket Buyer Options]`. Any setting prefixed by 'tickeybuyer.' must be placed within the lower `[Ticket Buyer Options]` section. All other settings go within `[Application Options]`. 
 

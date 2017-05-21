@@ -100,7 +100,7 @@ In order to launch `dcrwallet`, you first must have [created your wallet](#walle
 
 > Configure RPC Username and Password
 
-If you used [`dcrinstall`](/getting-started/user-guides/cli-installation.md#dcrinstall), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
+If you used [`dcrinstall`](/getting-started/user-guides/cli-installation.md), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
 
 If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](/getting-started/startup-basics.md#minimum-configuration) to do so.
 

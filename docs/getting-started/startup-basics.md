@@ -37,7 +37,7 @@ Linux:
 
 Each of these folders is allowed its own `.conf` file, named after the individual application (`e.g. dcrd uses dcrd.conf`). Please also note that the `Dcrd` and `Dcrwallet` home directories are automatically created when each application is first launched. You will have to manually create a `Dcrctl` home directory to utilize a config file.
 
-The [dcrinstall](/getting-started/user-guides/cli-installation.md#dcrinstall) installation method automatically creates configuration files, with the [minimum configuration settings](#minimum-configuration) already enabled. 
+The [dcrinstall](/getting-started/user-guides/cli-installation.md) installation method automatically creates configuration files, with the [minimum configuration settings](#minimum-configuration) already enabled. 
 
 The [Manual Installation](/advanced/manual-cli-install.md#installation) method includes sample configuration files within the .zip/.tar.gz. It is recommended to copy these config files into the appropriate directory described above, and rename them to remove 'sample-'. These files have many settings commented out (comments are not read by the program during runtime) so all of these settings are effectively disabled. You can enable these pre-written settings by simply deleting the semi-colon before the line.
 
@@ -45,7 +45,7 @@ The [Manual Installation](/advanced/manual-cli-install.md#installation) method i
 
 ## Minimum Configuration
 
-At the very minimum, for `dcrd`, `dcrwallet`, and `dcrctl` to be able to communicate with each other, they need to be launched with the same rpcuser/rpcpass combination. This is done automatically by the [dcrinstall](/getting-started/user-guides/cli-installation.md#dcrinstall) method. For manual configuration, please follow these steps:
+At the very minimum, for `dcrd`, `dcrwallet`, and `dcrctl` to be able to communicate with each other, they need to be launched with the same rpcuser/rpcpass combination. This is done automatically by the [dcrinstall](/getting-started/user-guides/cli-installation.md) method. For manual configuration, please follow these steps:
 
 1. If the operating system dependent home directories listed in the [configuration files](#configuration-file-locations) section above do not exist, please create them for `dcrd`, `dcrwallet`, and `dcrctl`.
 2. Copy the [sample dcrd configuration file](https://github.com/decred/dcrd/blob/master/sample-dcrd.conf) from GitHub, and paste it into a new text file. Save the text file as `dcrd.conf` in `dcrd`'s home directory.

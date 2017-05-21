@@ -6,7 +6,7 @@ This guide is intended to walk through ticket buying using `dcrwallet`. It will 
 
 **Prerequisites:**
 
-- Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md#dcrinstall) to install `dcrd`, `dcrwallet,` and `dcrctl`. Additional steps will be required if another installation method was used.
+- Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md) to install `dcrd`, `dcrwallet,` and `dcrctl`. Additional steps will be required if another installation method was used.
 - Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/cli-differences.md).
 - [Setup dcrd](/getting-started/user-guides/dcrd-setup.md) and have it running in the background.
 - [Setup dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) and have it running in the background.

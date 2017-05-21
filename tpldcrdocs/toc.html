@@ -9,7 +9,7 @@
     {% if nav_item.title != "Home" %}
         <li class="toctree-l1 {% if nav_item.actives%}current{%endif%}">
             <a class="{% if nav_item.active%}current{%endif%}" href="{{ nav_item.url }}">{{ nav_item.title }}</a>
-            {% if nav_item == page %}
+<!--             {% if nav_item == page %}
                 <ul class="page-nav">
                 {% for toc_item in page.toc %}
                     {% for toc_item in toc_item.children %}
@@ -17,7 +17,7 @@
                     {% endfor %}
                 {% endfor %}
                 </ul>
-            {% endif %}
+            {% endif %} -->
         </li>
     {% endif %}
 {% endif %}

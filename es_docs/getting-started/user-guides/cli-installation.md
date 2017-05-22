@@ -1,41 +1,19 @@
-# Installation Guide
+# ** CLI Installation guide **
 
-This guide was last updated for v1.0.1.
-
----
-
-There are five methods for downloading and installing the Decred software. 
-
-* [The Windows Installer](#paymetheus) (.msi) - This only works for installing Paymetheus on Windows machines.
-* [dcrinstall](#dcrinstall) - A cross-platform, automatic installer/updater for the command-line applications (`dcrd`, `dcrwallet`, and `dcrctl`).
-* [Decrediton](#decrediton) - For installing decrediton on Linux or Mac.
-* Manually installing and setting up the precompiled [binary releases](#binary-releases) for the cross-platform command-line applications.
-* Compiling from source.
-
-The first four methods will be covered here and the fifth may be added at a later date. 
+This page was last updated for v1.0.1.
 
 ---
 
-## **Paymetheus** 
+There are two methods to install Decred CLI (command line interface) tools `dcrd`, `dcrwallet`, and `dcrctl`.
 
-The Windows Installer (`.msi` file) is located here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.1](https://github.com/decred/decred-binaries/releases/tag/v1.0.1). It will install Paymetheus to your computer's Program Files folder. Installation is pretty straightforward, but instructions are provided below:
-
-1. Download the correct file:
-
-    For 32-bit computers, download the `decred_1.0.1-release_x86.msi` file. <br />
-    For 64-bit computers, download the `decred_1.0.1-release_x64.msi` file.
-
-2. Navigate to download location and double click the `.msi` file.
-
-3. Follow the installation steps. Within this process you'll be prompted to accept an End-User License Agreement.
-
-4. After setup, the features should be installed to your `..\Program Files\Decred\` folder and accessible through the Start Menu (look for `Decred` in the Program list)
+* [dcrinstall](#dcrinstall) - The recommended method. `dcrinstall` is a cross-platform, automatic installer/updater for the all of the command-line applications. It is the quickest and easiest option to get a wallet running.
+* [Binary Releases](#binary-releases) - This option is recommended for advanced users only; manually download, install and configure precompiled binaries.
 
 ---
 
 ## **dcrinstall**
 
-`dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: [https://github.com/decred/decred-release/releases/tag/v1.0.1](https://github.com/decred/decred-release/releases/tag/v1.0.1). Binaries are provided for Windows, OSX/macOS, Linux, OpenBSD, and FreeBSD. Executing installer will install `dcrd`, `dcrwallet`, and `dcrctl`. Instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
+`dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: [https://github.com/decred/decred-release/releases](https://github.com/decred/decred-release/releases). Binaries are provided for Windows, OSX/macOS, Linux, OpenBSD, and FreeBSD. Executing installer will install `dcrd`, `dcrwallet`, and `dcrctl`. Instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
 
 This method is recommended over the traditional manual installation. `dcrinstall` will automatically download the precompiled, signed binary package found on GitHub, verify the signature of this package, copy the binaries within the package to a specific folder dependant on OS, create configuration files with settings to allow the 3 applications to communicate with each other, and run you through the wallet creation process. After running through `dcrinstall`, you will be able to launch the software with no additional configuration.
 
@@ -88,37 +66,12 @@ This method is recommended over the traditional manual installation. `dcrinstall
     
 3. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can now be found in the `%HOMEPATH%\decred\` directory (usually %HOMEPATH% is `C:\Users\<username>`). Before the `dcrinstall` process completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](/getting-started/user-guides/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 
----
-
-## **Decrediton**
-
-Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.2_decrediton](https://github.com/decred/decred-binaries/releases/tag/v1.0.2_decrediton). As of v1.0.2, Decrediton is only available for Linux and Mac and is technically an alpha release. There are known bugs in the software that are being worked on.
-
-> macOS/OSX
-
-1. Download the `decrediton-1.0.2.dmg` file.
-
-2. Double click the `decrediton-1.0.2.dmg` file once downloaded to mount the disk image.
-
-3. Drag the decrediton.app into the link to your Applications folder within the disk image.
-
-> Linux
-
-1. Download the `decrediton-1.0.2.tar.gz` file.
-
-2. Navigate to download location and extract the .tar.gz file:
-
-    Ubuntu File Browser: simply right click on the .tar.gz file and press "Extract Here". <br />
-    Terminal: use the `tar -xvzf filename.tar.gz` command. 
-    
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.0.2.tar.gz` should extract to `decrediton-v1.0.2`). If successful, this new folder should include a `decrediton` executable.
-
 
 ---
 
 ## **Binary Releases**
 
-The newest Binary Releases can be found here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.1](https://github.com/decred/decred-binaries/releases/tag/v1.0.1). With the exception of the `.msi` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be unzip and go, instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
+The newest Binary Releases can be found here: [https://github.com/decred/decred-binaries/releases](https://github.com/decred/decred-binaries/releases). With the exception of the `.msi` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be unzip and go, instructions are provided for Mac, Linux, and Windows below (assumed proficiency for *BSD users).
 
 > OSX/macOS
 
@@ -167,5 +120,3 @@ Note: Windows 7/8/10 natively provides support for `.zip` files, therefore it is
     File Explorer: Right click on the .zip file, select "Extract All.." and a prompt should open asking for the directory to use. The default will extract the `.zip` to a folder with the same name. It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
 
 If you decide to download the `.tar.gz` file, it will require two separate extractions in some third-party application (7-zip, winRAR, etc..) to get to the actual binaries.
-
----

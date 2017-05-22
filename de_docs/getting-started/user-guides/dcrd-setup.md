@@ -6,7 +6,7 @@ This guide is intended to help you setup the `dcrd` application using [startup f
 
 **Prerequisites:**
 
-- Use either the latest [dcrinstall](/getting-started/install-guide.md#dcrinstall) or [Binary Release archive](/getting-started/install-guide.md#binary-releases) to install `dcrd`.
+- Use either the latest [dcrinstall](/getting-started/user-guides/cli-installation.md#dcrinstall) or [Binary Release archive](/getting-started/user-guides/cli-installation.md#binary-releases) to install `dcrd`.
 - Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/cli-differences.md).
 
 ---

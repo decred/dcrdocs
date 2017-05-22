@@ -7,7 +7,7 @@ About the only thing Paymetheus doesn't do is PoS voting.
 ---
 
 ## **Download and Install** ##
-Download and installation instructions are available [here](/getting-started/install-guide.md#windows-installer)
+Download and installation instructions are available [here](/getting-started/user-guides/paymetheus.md)
 
 ---
 

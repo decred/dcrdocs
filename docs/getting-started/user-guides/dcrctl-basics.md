@@ -6,7 +6,7 @@ This guide is intended to help you learn the basic commands of the `dcrctl` appl
 
 **Prerequisites:**
 
-- Use the latest [dcrinstall](/getting-started/install-guide.md#dcrinstall) to install `dcrctl`. Additional steps will be required if another installation method was used.
+- Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md#dcrinstall) to install `dcrctl`. Additional steps will be required if another installation method was used.
 - Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/cli-differences.md).
 - [Setup dcrd](/getting-started/user-guides/dcrd-setup.md) and have it running in the background.
 - [Setup dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) and have it running in the background.
@@ -23,7 +23,7 @@ This guide is intended to help you learn the basic commands of the `dcrctl` appl
 
 Commands sent to either `dcrd` or `dcrwallet` will require RPC username/passwords to be setup in the configuration files.
 
-If you used [`dcrinstall`](/getting-started/install-guide.md#dcrinstall), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
+If you used [`dcrinstall`](/getting-started/user-guides/cli-installation.md#dcrinstall), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
 
 If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](/getting-started/startup-basics.md#minimum-configuration) to do so.
 

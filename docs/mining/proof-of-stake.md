@@ -87,11 +87,11 @@ These stakepools are officially recognized:
 * [<i class="fa fa-external-link-square"></i> https://dcr.stakepool.net](https://dcr.stakepool.net)
 * [<i class="fa fa-external-link-square"></i> https://dcr.stakeminer.com](https://dcr.stakeminer.com)
 * [<i class="fa fa-external-link-square"></i> https://pool.d3c.red](https://pool.d3c.red)
-* [<i class="fa fa-external-link-square"></i> https://dcrstakes.com](https://dcrstakes.com)
 * [<i class="fa fa-external-link-square"></i> https://stakepool.dcrstats.com](https://stakepool.dcrstats.com)
 * [<i class="fa fa-external-link-square"></i> https://stake.decredbrasil.com](https://stake.decredbrasil.com)
 * [<i class="fa fa-external-link-square"></i> https://stakepool.eu](https://stakepool.eu)
 * [<i class="fa fa-external-link-square"></i> https://dcr.ubiqsmart.com](https://dcr.ubiqsmart.com)
+* [<i class="fa fa-external-link-square"></i> https://ultrapool.eu](https://ultrapool.eu)
 
 You can find a comparison of each pool's fees and statistics by visiting the
 [<i class="fa fa-external-link-square"></i> Decred website](https://decred.org)

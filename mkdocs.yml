@@ -65,6 +65,7 @@ pages:
   - 'Proof-of-Work Mining': 'faq/proof-of-work-mining.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
 - Advanced:
+  - 'Manual CLI Install': 'advanced/manual-cli-install.md'
   - 'Storing Login Details': 'advanced/storing-login-details.md'
   - 'Program Options': 'advanced/program-options.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'

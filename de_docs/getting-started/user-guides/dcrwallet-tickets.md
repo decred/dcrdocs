@@ -6,14 +6,14 @@ This guide is intended to walk through ticket buying using `dcrwallet`. It will 
 
 **Prerequisites:**
 
-- Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md#dcrinstall) to install `dcrd`, `dcrwallet,` and `dcrctl`. Additional steps will be required if another installation method was used.
+- Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md) to install `dcrd`, `dcrwallet,` and `dcrctl`. Additional steps will be required if another installation method was used.
 - Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/cli-differences.md).
 - [Setup dcrd](/getting-started/user-guides/dcrd-setup.md) and have it running in the background.
 - [Setup dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) and have it running in the background.
 - Familiarize yourself with the [basics of using dcrctl](/getting-started/user-guides/dcrctl-basics.md).
 - Familiarize yourself with the [staking process](/mining/proof-of-stake.md#staking-101) and the [ticket lifecycle](/mining/proof-of-stake.md#ticket-lifecycle)
 
-This guide assumes you have set up `dcrd` and `dcrwallet` using configuration files. If you used `dcrinstall`, you have configuration files already. Using configuration files is highly recommended - it makes for an easier time issuing commands to `dcrwallet` and `dcrd` through `dcrctl`. A guide for minimum configuration (saving your RPC username and RPC password) can be found [here](/getting-started/startup-basics.md#minimum-configuration). 
+This guide assumes you have set up `dcrd` and `dcrwallet` using configuration files. If you used `dcrinstall`, you have configuration files already. Using configuration files is highly recommended - it makes for an easier time issuing commands to `dcrwallet` and `dcrd` through `dcrctl`. A guide for minimum configuration (saving your RPC username and RPC password) can be found [here](/advanced/manual-cli-install.md#minimum-configuration). 
 
 NOTE: `dcrwallet.conf` is split into two sections labeled `[Application Options]` and `[Ticket Buyer Options]`. Any setting prefixed by 'tickeybuyer.' must be placed within the lower `[Ticket Buyer Options]` section. All other settings go within `[Application Options]`. 
 

@@ -32,9 +32,11 @@ Linux:
     ~/.dcrd/
     ~/.dcrctl/
 
-Each of these folders is allowed it's own `.conf` file, named after the individual application (`e.g. dcrd uses dcrd.conf`). Please also note that the `Dcrd` and `Dcrwallet` home directories are automatically created when each application is first launched. You will have to manually create a `Dcrctl` home directory to utilize a config file.
+Each of these folders is allowed its own `.conf` file, named after the individual application (`e.g. dcrd uses dcrd.conf`). Please also note that the `Dcrd` and `Dcrwallet` home directories are automatically created when each application is first launched. You will have to manually create a `Dcrctl` home directory to utilize a config file.
 
-The [dcrinstall](/getting-started/user-guides/cli-installation.md#dcrinstall) and [Binary Release](/getting-started/user-guides/cli-installation.md#binary-releases) installation methods include sample configuration files. It is recommended to copy these config files into the appropriate directory described above, and rename them to remove 'sample-'. These files have many settings commented out (comments are not read by the program during runtime) so all of these settings are effectively disabled. You can enable these pre-written settings by simple deleting the semi-colon before the line.
+The [dcrinstall](/getting-started/user-guides/cli-installation.md) installation method automatically creates configuration files, with the [minimum configuration settings](/advanced/manual-cli-install.md#minimum-configuration) already enabled. 
+
+The [Manual Installation](/advanced/manual-cli-install.md#installation) method includes sample configuration files within the .zip/.tar.gz. It is recommended to copy these config files into the appropriate directory described above, and rename them to remove 'sample-'. These files have many settings commented out (comments are not read by the program during runtime) so all of these settings are effectively disabled. You can enable these pre-written settings by simply deleting the semi-colon before the line.
 
 ---
 

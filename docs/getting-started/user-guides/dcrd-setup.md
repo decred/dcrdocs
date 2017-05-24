@@ -6,7 +6,7 @@ This guide is intended to help you setup the `dcrd` application using [startup f
 
 **Prerequisites:**
 
-- Use either the latest [dcrinstall](/getting-started/user-guides/cli-installation.md#dcrinstall) to install `dcrd`. Additional steps will be required if another installation method was used.
+- Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md) to install `dcrd`. Additional steps will be required if another installation method was used.
 - Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/cli-differences.md).
 
 ---
@@ -27,9 +27,9 @@ The first time launching `dcrd`, it will connect to the Decred network and begin
 
 > Configure RPC Username and Password
 
-If you used [`dcrinstall`](/getting-started/user-guides/cli-installation.md#dcrinstall), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
+If you used [`dcrinstall`](/getting-started/user-guides/cli-installation.md), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
 
-If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](/getting-started/startup-basics.md#minimum-configuration) to do so. 
+If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](/advanced/manual-cli-install.md#minimum-configuration) to do so. 
 
 > Start dcrd 
 

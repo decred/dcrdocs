@@ -101,7 +101,7 @@ There's a fair bit of information here, so we'll go through each of the options.
 					expiry, tickets that are not mined by the given block height are cancelled so you can try again
 					with higher fees if you wish. If this is empty, they will not expire until the end of the window.
 * **Stake pool preference** - Automate setup with PoS pools. See below for more information.
-* **Voting address** - The Decred address that will do the voting. Solo and custom pool miners only.
+* **Voting address** - The Decred address that will do the voting. Solo and custom pool miners only. Note that addresses starting with Ds (for solo staking) and Dc (for stake pools) are valid voting addresses, depending on your setup.
 * **Pool fee address** - For those using a custom pool.
 * **Pool fees (%)** - For those using a custom pool.
 

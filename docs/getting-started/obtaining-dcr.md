@@ -42,6 +42,12 @@ Bitcoin to this new account, and submit an order for Decred at a price
 of your choosing.  When your order is fulfilled, you will need to
 withdraw your new Decred and send it to your Decred wallet.
 
+## **<i class="fa fa-info-circle"></i> Direct Exchanges**
+
+As Decred continues to grow in popularity, some exchanges are offering
+Decred directly for fiat currency.
+
+* [Changelly](https://changelly.com/)
 
 ## **<i class="fa fa-info-circle"></i> Mine for Decred (PoW)**
 

@@ -12,9 +12,9 @@ are made. These coins are then split up as follows:
 
 Subsidy | Party
 ---     | ---
-`60%`   | PoW Miners
-`30%`   | PoS Voters
-`10%`   | Decred development subsidy
+60%   | PoW Miners
+30%   | PoS Voters
+10%   | Decred development subsidy
 
 You will, on average, receive a reward that is roughly proportional to the
 hashrate of your miner and the overall hashrate of the network when you commit
@@ -37,7 +37,7 @@ Pool mining distributes shares based on blocks found so you can earn a steady am
 
 ---
 
-## Obtain a Decred Address to Receive Funds With
+## ** Obtain a Decred Address to Receive Funds With **
 
 Follow the [dcrctl Basics](/getting-started/user-guides/dcrctl-basics.md) guide and create an address so you can withdraw mining rewards to it.
 
@@ -69,30 +69,21 @@ GPU drivers usually contain the libraries needed for mining.  If you have diffic
 
 ## **<i class="fa fa-download"></i> Select and Download Mining Software **
 
-> Official Decred Mining Software Builds
+### Official Decred Miner (gominer)
 
-#### **[<i class="fa fa-github"></i> gominer](https://github.com/decred/gominer)**
-
-It is recommended that everyone use gominer for Decred. This is the easiest miner to setup and start mining. Currently, the latest version of gominer is **[<i class="fa fa-github"></i>v1.0.0](https://github.com/decred/gominer/releases/)** and the official binaries can be downloaded from **[https://github.com/decred/decred-binaries/releases/tag/v1.0.0](https://github.com/decred/decred-binaries/releases/tag/v1.0.0)**
+It is recommended that everyone use gominer for Decred. This is the easiest miner to setup and start mining. Currently, the latest version of gominer is **<i class="fa fa-github"></i> [v1.0.0](https://github.com/decred/gominer/releases/)** and the official binaries can be downloaded from **[https://github.com/decred/decred-binaries/releases/tag/v1.0.0](https://github.com/decred/decred-binaries/releases/tag/v1.0.0)**
 
 Please be certain to select the correct operating system (Windows/Linux) and the correct version for your GPU type (CUDA for NVIDIA cards, OpenCL/OpenCLADL for AMD cards). gominer is only available to 64-bit operating systems. User guides to start mining with gominer can be found here: 
 
 - [Windows Pool-Mining](/mining/proof-of-work/pool-mining/gominer/windows.md)
 
-#### **[<i class="fa fa-github"></i> cgminer](https://github.com/decred/cgminer)**
+### Unofficial Miners
 
-cgminer is a popular miner for **AMD** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
+* <i class="fa fa-github"></i> [cgminer](https://github.com/kR105-zz/cgminer) - cgminer is a popular miner for **AMD** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
 
-#### **[<i class="fa fa-github"></i> ccminer](https://github.com/decred/ccminer)**
+* <i class="fa fa-github"></i> [ccminer](https://github.com/tpruvot/ccminer) - ccminer is a popular miner for **NVIDIA** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
 
-ccminer is a popular miner for **NVIDIA** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
-
-**Official builds of ccminer and cgminer are available on GitHub from the following link: <br />
-[https://github.com/decred/decred-release/releases/tag/v0.1.0_miners](https://github.com/decred/decred-release/releases/tag/v0.1.0_miners)**
-
-> Unofficial Miners
-
-Those with an **AMD** graphics card running Windows may want to download [sgminer](https://github.com/tpruvot/sgminer/releases).
+* <i class="fa fa-github"></i> [sgminer](https://github.com/tpruvot/sgminer) - Those with an **AMD** graphics card running Windows may want to download sgminer.
 
 ---
 

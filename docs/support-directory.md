@@ -58,6 +58,10 @@ PoS Support
 Consensus Expert<br />
 Support
 
+**@peter_zen: Developer** <br />
+Web Wallet <br />
+TREZOR Integration
+
 **@raedah: Developer** <br />
 Ticket Buyer Support<br />
 General Support
@@ -74,6 +78,9 @@ Command-Line Application Support<br />
 Community Management<br />
 General Support
 
+**@jholdstock: Documentation Collaborator** <br />
+General Support
+
 **@praxis: Documentation Collaborator** <br />
 Community Management<br />
 General Support
@@ -85,14 +92,11 @@ General Support
 
 ## Community Support
 
-**@coin_artist: Marketing Representative** <br />
+**@coin_artist: Marketing/Community Manager** <br />
 Promotional Crypto-Puzzles<br />
-Community Management
-
-**@dbt1033: Community Manager** <br />
+Community Management<br />
+Public Relations<br />
 Social Media<br />
-Forum Moderator<br />
-Marketing 
 
 **@dyrk: Russian Community Manager** <br />
 PoS Support<br /> 
@@ -103,21 +107,34 @@ PoS Support<br />
 Public Relations<br />
 Marketing  
 
+**@underscoreingsoc: Marketing/Community Manager** <br />
+Community Management<br />
+Public Relations<br />
+Social Media<br />
+
 ## Design Support
 
 **@karamble: Web Designer** <br />
 Website Management<br />
 General Support 
 
-**@linnutee: Design Team:** <br />
+**@kart: Illustrator/Designer** <br />
+Illustrations <br />
+Graphic Design
+
+**@linnutee: Lead Designer** <br />
 Identity<br />
+UI/UX Design<br />
 Visual Design<br />
-(UI/UX) Interaction Design<br />
-Design Research<br />
 Motion Design
 
-**@sander: Design Team:** <br />
+**@pflan: Designer** <br />
+UI/UX Design<br />
+Front-End Development<br />
+Visual Design
+
+**@sander: Designer** <br />
 Identity<br />
+UI/UX Design<br />
 Visual Design<br />
-(UI/UX) Interaction Design<br />
 Front-End Development

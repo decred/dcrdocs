@@ -8,12 +8,12 @@ About the only thing Paymetheus doesn't do is PoS voting.
 
 ## **Download and Install** ##
 
-The Windows Installer (`.msi` file) is located here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.1](https://github.com/decred/decred-binaries/releases/tag/v1.0.1). It will install Paymetheus to your computer's Program Files folder. Installation is pretty straightforward, but instructions are provided below:
+The Windows Installer (`.msi` file) is located here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.3](https://github.com/decred/decred-binaries/releases/tag/v1.0.3). It will install Paymetheus to your computer's Program Files folder. Installation is pretty straightforward, but instructions are provided below:
 
 1. Download the correct file:
 
-    For 32-bit computers, download the `decred_1.0.1-release_x86.msi` file. <br />
-    For 64-bit computers, download the `decred_1.0.1-release_x64.msi` file.
+    For 32-bit computers, download the `decred_1.0.3-release_x86.msi` file. <br />
+    For 64-bit computers, download the `decred_1.0.3-release_x64.msi` file.
 
 2. Navigate to download location and double click the `.msi` file.
 

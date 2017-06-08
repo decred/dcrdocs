@@ -12,26 +12,26 @@ NOTE: At any point in the use of Decrediton, it may become unresponsive or get s
 
 ## **Download and Install** ##
 
-Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.2_decrediton](https://github.com/decred/decred-binaries/releases/tag/v1.0.2_decrediton). As of v1.0.2, Decrediton is only available for Linux and Mac and is technically an alpha release. There are known bugs in the software that are being worked on.
+Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.3_decrediton](https://github.com/decred/decred-binaries/releases/tag/v1.0.3_decrediton). As of v1.0.3, Decrediton is only available for Linux and Mac and is technically an alpha release. There are known bugs in the software that are being worked on.
 
 > macOS/OSX
 
-1. Download the `decrediton-1.0.2.dmg` file.
+1. Download the `decrediton-1.0.3.dmg` file.
 
-2. Double click the `decrediton-1.0.2.dmg` file once downloaded to mount the disk image.
+2. Double click the `decrediton-1.0.3.dmg` file once downloaded to mount the disk image.
 
 3. Drag the decrediton.app into the link to your Applications folder within the disk image.
 
 > Linux
 
-1. Download the `decrediton-1.0.2.tar.gz` file.
+1. Download the `decrediton-1.0.3.tar.gz` file.
 
 2. Navigate to download location and extract the .tar.gz file:
 
     Ubuntu File Browser: simply right click on the .tar.gz file and press "Extract Here". <br />
     Terminal: use the `tar -xvzf filename.tar.gz` command.
 
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.0.2.tar.gz` should extract to `decrediton-v1.0.2`). If successful, this new folder should include a `decrediton` executable.
+    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.0.3.tar.gz` should extract to `decrediton-v1.0.3`). If successful, this new folder should include a `decrediton` executable.
 
 ---
 

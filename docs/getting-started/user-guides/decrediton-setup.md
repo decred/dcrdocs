@@ -12,7 +12,7 @@ NOTE: At any point in the use of Decrediton, it may become unresponsive or get s
 
 ## **Download and Install** ##
 
-Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.3_decrediton](https://github.com/decred/decred-binaries/releases/tag/v1.0.3_decrediton). As of v1.0.3, Decrediton is only available for Linux and Mac and is technically an alpha release. There are known bugs in the software that are being worked on.
+Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.3_decrediton](https://github.com/decred/decred-binaries/releases/tag/v1.0.3_decrediton). As of v1.0.3, Decrediton is only available for Linux and Mac.
 
 > macOS/OSX
 
@@ -44,10 +44,6 @@ This ultimately means that *anyone* who knows your seed can use it to restore yo
 **REMINDER: DO NOT, UNDER ANY CIRCUMSTANCES, GIVE YOUR SEED OR THE ASSOCIATED HEX KEY TO ANYONE! NOT EVEN THE DEVELOPERS!**
 
 ---
-
-Every time you open `Decrediton`, you will be greeted by the following disclaimer:
-
-    Decrediton is currently under heavy development and in an alpha-state. While we have tested the code thoroughly, we suggest using caution on Mainnet. Use at your own risk!
 
 ## **Creating a New Wallet**
 

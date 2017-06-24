@@ -12,7 +12,7 @@ NOTE: If at any point the program becomes unresponsive or gets stuck on a loadin
 
 ## **Download and Install** ##
 
-Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.5]. As of v1.0.5, Decrediton is only available for Linux and Mac.
+Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases/tag/v1.0.5](https://github.com/decred/decred-binaries/releases/tag/v1.0.5). As of v1.0.5, Decrediton is only available for Linux and Mac.
 
 > macOS/OSX
 

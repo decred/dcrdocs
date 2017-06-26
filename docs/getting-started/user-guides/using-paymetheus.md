@@ -16,7 +16,7 @@ of recent account activity.
 The accounts tab shows you the accounts in your wallet and allows you to add new ones.
 Accounts in Decred work just like bank accounts. 
 They allow you to keep separate records of your DCR. This feature is most 
-useful for those who run businesses and wish to keep seperate accounts for 
+useful for those who run businesses and wish to keep separate accounts for 
 tax records for example. Transferring DCR across accounts will create a 
 transaction on the blockchain.  
 
@@ -91,7 +91,7 @@ There's a fair bit of information here, so we'll go through each of the options.
 * **Ticket fee (DCR/kB)** - Tickets are entered into the voting pool by order of their fee. In times of high demand,
                         you will need to increase this value in order to have your tickets accepted.
 						You can view current ticket fees [here](https://www.dcrstats.com).
-* **Split fee (DCR/kB)** - Paymetheus uses a “split” transaction to avoid blocking your balance, spliting the
+* **Split fee (DCR/kB)** - Paymetheus uses a “split” transaction to avoid blocking your balance, splitting the
                        exact amount needed for the ticket from the balance in your wallet. The “split” transaction
                        needs to be confirmed at least once before you can reuse your balance. This can block your 
                        whole balance for several minutes while this confirmation occurs. Without the split, you

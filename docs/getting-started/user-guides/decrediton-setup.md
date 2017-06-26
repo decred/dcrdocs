@@ -63,6 +63,6 @@ The "Create a Wallet" dialog defaults to the "New Seed" option. Simply click "Ex
 
 ## **Opening the Wallet**
 
-After the blockchain has been synced, you should see a "Opening Wallet" page. Here, you will need to enter your private passphrase and the wallet will rescan recent blocks for transactions that belong to your addresses. Wait for the progress bar to fill. Decrediton should then load the Overview page with your Available Balance and Recent Transactions displayed.
+After the blockchain has been synced, you should see an "Opening Wallet" page. Here, you will need to enter your private passphrase and the wallet will rescan recent blocks for transactions that belong to your addresses. Wait for the progress bar to fill. Decrediton should then load the Overview page with your Available Balance and Recent Transactions displayed.
 
 ---

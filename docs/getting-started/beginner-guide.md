@@ -24,7 +24,7 @@ Below you'll find a list of currently available applications, with a chart showi
 **dcrd**: The node daemon, this command-line application handles block management and consensus. <br />
 **dcrwallet**: The wallet daemon, this command-line application handles address and transaction management. <br />
 **dcrctl**: The remote procedure call (RPC) client, this command-line application is used to control dcrd and dcrwallet via RPC commands. <br />
-**Decrediton**: Cross-platform GUI client as of v1.0.5.
+**Decrediton**: Cross-platform GUI client as of v1.0.6.
 
 |           | Paymetheus | dcrd | dcrwallet | dcrctl | Decrediton |
 | ---------:|:----------:|:----:|:---------:|:------:|:-----------:|

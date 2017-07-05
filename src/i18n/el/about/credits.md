@@ -1,0 +1,27 @@
+# <i class="fa fa-thumbs-up"></i> Τίτλοι 
+
+---
+
+Συνεισφέρων                                                                 | Πηγαίος Κώδικας
+---                                                                         | ---
+[`@anondran`](https://forum.decred.org/members/anondran.714/)               | [Συνοπτικός Οδηγός: Ρύθμιση του Πορτοφολιού Mainnet - Περιλαμβάνεται το Αirdrop - με Βασικές Εντολές - Ανεξαρτήτως Λειτουργικού Συστήματος](https://forum.decred.org/threads/brief-guide-setting-up-mainnet-wallet-airdop-included-with-basic-commands-os-neutral.478/)
+[`@anondran`](https://forum.decred.org/members/anondran.714/)               | [Συνοπτικός Οδηγός: Ρύθμιση του Πορτοφολιού Testnet, Αποστολή και Λήψη Νομισμάτων - Ανεξαρτήτως Λειτουργικού Συστήματος](https://forum.decred.org/threads/brief-guide-setting-up-testnet-wallet-sending-and-receiving-coins-os-neutral.355/)
+[`@Ayush`](https://forum.decred.org/members/ayush.491/)                     | [Οδηγός PoS για Οποιοδήποτε Λειτουργικό Σύστημα - Ατομικό Stake Mining](https://forum.decred.org/threads/pos-guide-any-os-solo-stake-mining.1228/)
+[`@brencelj`](https://forum.decred.org/members/brencelj.607/)               | [Βοηθητικά Scripts για PoS σε Linux](https://forum.decred.org/threads/linux-pos-helping-scripts.1317/)
+[`@ClokworkGremlin`](https://forum.decred.org/members/clokworkgremlin.608/) | [Οδηγός: Ρυθμίζοντας έναν αφιερωμένο Chain Server στο Raspberry Pi 2 σας.](https://forum.decred.org/threads/tutorial-getting-a-dedicated-chain-server-set-up-on-your-raspberry-pi-2.379/)
+[`@davecgh`](https://forum.decred.org/members/davecgh.323/)                 | [Περιγραφή των Διαφορετικών Ονομάτων Χρήστη, Κωδικών Πρόσβασης και Φράσεων Πρόσβασης](https://forum.decred.org/threads/description-of-the-different-usernames-passwords-and-passphrases.428/)
+[`@davecgh`](https://forum.decred.org/members/davecgh.323/)                 | [Οδηγός (με Στιγμιότυπα Οθόνης) για να Διεκδικήσετε τα Κέρματα του Airdrop με την χρήση του wallet.decred.org](https://forum.decred.org/threads/guide-with-screenshots-to-claim-airdrop-coins-with-wallet-decred-org.643/)
+[`@David`](https://forum.decred.org/members/david.1047/)                    | [Πώς Λειτουργεί το dcrd και η Έλλειψη Δημόσιων Κόμβων dcrd](https://forum.decred.org/threads/how-dcrd-works-and-the-shortage-of-public-dcrd-nodes.1371/)
+[`@David`](https://forum.decred.org/members/david.1047/)                    | [Πώς να Παρακολουθήσετε το PoS Mining - Αγορές, Ψηφοφορίες και Ανακλήσεις](https://forum.decred.org/threads/how-to-track-pos-mining-purchases-votes-and-revokes.1403/)
+[`@Dirbaio`](https://forum.decred.org/members/dirbaio.430/)                 | [Οδηγός: Arch Linux - Ρύθμιση Opencl σε Headless Amd & Cgminer από τον Πηγαίο Κώδικα](https://forum.decred.org/threads/guide-arch-linux-headless-amd-opencl-setup-cgminer-from-source.383/)
+[`@drunkenmugsy`](https://forum.decred.org/members/drunkenmugsy.174/)       | [Συχνές Ερωτήσεις για το PoS Mining](https://forum.decred.org/threads/pos-mining-faq.1305/)
+[`@Finksy`](https://forum.decred.org/members/finksy.1347/)                  | [Ερώτηση Σχετικά με τη Ρύθμιση](https://forum.decred.org/threads/question-about-setup.1263/#post-13784)
+[`@norikai`](https://forum.decred.org/members/norikai.85/)                  | [Πώς να Ξαναχτίσετε/Επανασυνδέσετε το Πορτοφόλι Επιτυχώς](https://forum.decred.org/threads/how-to-rebuild-resync-wallet-successfully.1338/)
+[`@Reynold`](https://forum.decred.org/members/reynold.1164/)                | [Ρύθμιση του Decred στα Windows 64-bit και Mining στο Testnet](https://forum.decred.org/threads/decred-setup-on-windows-x64-and-mining-on-testnet.394/)
+[`@Reynold`](https://forum.decred.org/members/reynold.1164/)                | [Πώς Τελικά Έλαβα τα Νομίσματα μου από το Airdrop στο Κύριο μου Πορτοφόλι Decred](https://forum.decred.org/threads/how-i-finally-got-my-airdrop-coins-into-my-main-decred-wallet.588/)
+[`@rohit pawar`](https://forum.decred.org/members/rohit-pawar.93/)          | [Οδηγός για Ατομικό PoS Mining 24/7 Χρησιμοποιώντας το AWS - Windows](https://forum.decred.org/threads/guide-for-solo-pos-mining-using-aws-24x7-windows.748/)
+[`@sambiohazard`](https://forum.decred.org/members/sambiohazard.1017/)      | [Προαπαιτούμενα για το Mainnet. Ανεπίσημος Οδηγός Εισαγωγής Airdrop και Mining. Χρησιμοποιήστε με Δική σας Ευθύνη!](https://forum.decred.org/threads/prerequisites-for-mainnet-unofficial-airdrop-import-mining-guide-use-at-your-own-risk.472/)
+[`@sambiohazard`](https://forum.decred.org/members/sambiohazard.1017/)      | [Οδηγός μόνο για το Testnet: Πώς Έκανα το Daemon, το Πορτοφόλι μου και τον Miner να Τρέξει & Πώς Ξεκίνησα το Ατομικό Stake Mining.](https://forum.decred.org/threads/testnet-only-guide-how-i-got-my-daemon-wallet-and-miner-running-also-started-solo-stake-mining.352/)
+[`@sw1`](https://forum.decred.org/members/sw1.311/)                         | [Σύνταξη Λίστας Χρήσιμων Εντολών PoS](https://forum.decred.org/threads/compile-list-of-useful-pos-commands.807/)
+[`@thepotterone`](https://forum.decred.org/members/thepotterone.1153/)      | [Πώς να Εγκαταστήσετε και να Βελτιστοποιήσετε το Αρχείο Ρύθμισης Παραμέτρων του CGMiner](https://forum.decred.org/threads/cgminer-hardware-performance.330/page-6#post-5433)
+[`@zero`](https://forum.decred.org/members/zero.343/)                       | [Σύνοψη των Βασικών Εντολών με Σημειώσεις και Επεξηγήσεις για Κάθε μια από Αυτές](https://forum.decred.org/threads/decred-synopsis-of-basic-commands-with-notes-and-explanations-about-each-of-them.2667/)

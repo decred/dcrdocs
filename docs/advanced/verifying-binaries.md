@@ -25,7 +25,7 @@ are as follows:
 > Step One
 
 Download the file manifest, the signature for the file manifest, and
-the zip/tarball for your OS from here. Obtain the SHA256 value for the
+the zip/tarball for your OS from [here](https://github.com/decred/decred-binaries). Obtain the SHA256 value for the
 zip/tarball for your OS and check that it matches the value in the
 file manifest, e.g. for 64-bit Linux:
 
@@ -54,7 +54,7 @@ gpg: Total number processed: 1
 gpg: imported: 1 (RSA: 1)
 ```
 
-> Step Three
+> Step Four
 
 Verify the signature for the file manifest is valid and created by the
 Decred Release Signing Key:

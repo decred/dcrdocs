@@ -44,7 +44,17 @@ Rather than allocating the entire premine to the bring-up costs, the remaining h
 
 Giving away these coins in an airdrop accomplished several things for the project: enlarging the Decred network, further helping to decentralize the distribution of coins, and getting coins into the hands of people who are interested in participating in the project. These coins were given away unconditionally and there was zero expectation of Decred receiving anything from the participants in return for these coins.
 
+---
 
+#### **4. How does Decred scale?**
+
+The short answer is that Decred effectively has infinite scalability since its scalability characteristics are inherently tied to its strong and unique decentralized democratic governance model which is designed to give stakeholders a voice. The proposal system further decentralizes and scales the user-based decision making process by providing tools which build on this innovative infrastructure.
+
+At the present time, almost all conversations regarding scalability revolve solely around the technical aspects and specific mechanisms to achieve higher transaction throughput. This is problematic since, while it is certainly true that the technical specifics are an important aspect, they are actually entirely secondary to the ability for the holders of the currency to exert influence in a transparent, safe, and democratic fashion. This is the case since even the most elegant technical solution is entirely ineffective if the network is unable to adopt it due to the lack of a formalized user-driven decision making process. This point is probably painfully clear to anyone who has been involved with cryptocurrencies for any length of time and had the opportunity to witness the pervasive Bitcoin scaling debate in which the ability to scale has been hindered by the inability to deploy technical solutions due to lack of governance as opposed to technical barriers. Decred delves right to the heart of the issue and provides the tools necessary for holders to transparently and decisively make decisions regarding competing technical solutions which not only address scalability, but all other technical aspects.
+
+However, Decred does not just stop there. Another extremely important aspect of true scalability in the context of cryptocurrency that is rarely discussed is related to the much higher-level decision making process for topics such as future direction, budgets, and choosing which technical solutions are pursued, developed, and ultimately presented for vote. Decred aims to empower stakeholders to have a voice in these matters too by providing a public proposal system which allows proposals of these types to be submitted by any stakeholder and consequently be voted on. This proposal system is an off-chain system that is anchored to the Decred blockchain and confers voting rights in such a way that it is also transparent, secure, democratic, and directly verifiable by the blockchain.
+
+The combination of these two systems provides real scalability across all facets of Decred and puts the power in the hands of the users as opposed to one or more centralized groups.
 
 ---
 

@@ -65,11 +65,6 @@ using your own wallet if the pool stops working.
 It DOES NOT give the pool access to your funds. All you are doing is granting voting
 rights to the pool. The pool does not touch your funds. 
 
-It is recommended that you generate a new account when joining a stake pool. This is
-because accounts are hardened so in the case of a total stake pool
-failure/shutdown, it would be safe to give the private key to another stake pool
-as long as that account only does voting and nothing else.  
-
 Official stake pools are [listed here](/mining/proof-of-stake.md#list-of-stakepools).
 All stake pools run the same basic code, but may differ in the amount of redundancy available.
 More redundancy equals less chance of missed votes (although all pools will have missed votes

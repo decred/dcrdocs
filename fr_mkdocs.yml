@@ -1,0 +1,96 @@
+site_name: Decred Documentation
+theme: null
+theme_dir: tpldcrdocs/
+site_url: https://docs.decred.org
+repo_url: https://github.com/decred/dcrdocs
+markdown_extensions:
+  - footnotes
+  - fontawesome_markdown
+  - smarty
+  - mdx_math
+  - toc:
+      permalink: True
+  - tables
+extra_javascript:
+    - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+extra_css:
+    - css/style.css
+docs_dir: 'fr_docs'
+pages:
+- Home: 'index.md'
+- commencer:
+  - "Guide du Débutant": 'getting-started/beginner-guide.md'
+  - 'Téléchargez et installez': 'getting-started/install-guide.md'
+  - Paymetheus:
+    - 'Installer Paymetheus': 'getting-started/user-guides/paymetheus.md'
+    - 'Utiliser Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
+  - Decrediton (ALPHA):
+    - 'Installer Decrediton': 'getting-started/user-guides/decrediton-setup.md'
+  - Commande de Line:
+    - 'OS Différences': 'getting-started/cli-differences.md'
+    - 'Principes de base du démarrage': 'getting-started/startup-basics.md'
+    - 'Installer dcrd': 'getting-started/user-guides/dcrd-setup.md'
+    - 'Installer dcrwallet': 'getting-started/user-guides/dcrwallet-setup.md'
+    - 'dcrctl Basiques': 'getting-started/user-guides/dcrctl-basics.md'
+  - 'Portefeuille en Ligne': 'getting-started/user-guides/web.md'
+  - 'Obternir DCR': 'getting-started/obtaining-dcr.md'
+  - 'Utiliser le Bloc Explorer': 'getting-started/using-the-block-explorer.md'
+  - 'Guide de Vote Testnet': 'getting-started/user-guides/testnet-voting.md'
+  - 'Decred Constitution': 'getting-started/constitution.md'
+- Minage:
+  - 'Vue d-Ensemble': 'mining/overview.md'
+  - 'Preuve d-Enjeu (PdE)': 'mining/proof-of-stake.md'
+  - 'Preuve-de-Travail (PdT)': 'mining/proof-of-work.md'
+  - Guide d'Utilisateur:
+    - gominer:
+      - Miner:
+        - 'Guide Windows': 'mining/proof-of-work/pool-mining/gominer/windows.md'
+    - cgminer:
+      - Miner:
+        - 'Guide Linux': 'mining/proof-of-work/pool-mining/cgminer/linux.md'
+        - 'Guide Windows': 'mining/proof-of-work/pool-mining/cgminer/windows.md'
+      - Minage Solo:
+        - 'Guide Linux': 'mining/proof-of-work/solo-mining/cgminer/linux.md'
+        - 'Guide Windows': 'mining/proof-of-work/solo-mining/cgminer/windows.md'
+- FAQ:
+  - 'Vue d-Ensemble': 'faq/overview.md'
+  - 'General': 'faq/general.md'
+  - 'Configuration': 'faq/configuration.md'
+  - 'Portefeuilles et Graines': 'faq/wallets-and-seeds.md'
+  - 'Client en Ligne': 'faq/web-client.md'
+  - 'Blocs': 'faq/blocks.md'
+  - Preuve-d'Enjeu:
+    - 'Minage Solo': 'faq/proof-of-stake/solo-mining.md'
+    - 'Acheter des Tickets et Frais': 'faq/proof-of-stake/buying-tickets-and-fees.md'
+    - 'Tickets de Vote': 'faq/proof-of-stake/voting-tickets.md'
+    - 'Pools de minage': 'faq/proof-of-stake/stake-pools.md'
+  - 'Preuve-de-Travail minage': 'faq/proof-of-work-mining.md'
+  - 'Erreurs Communes et Solutions': 'faq/errors.md'
+- Advancé:
+  - 'Vue d-Ensemble: 'Overview.md'
+  - 'Enregistrement des détails de connexion': 'advanced/storing-login-details.md'
+  - 'Options de Programmes': 'advanced/program-options.md'
+  - 'Spécifications des Blocs de Tête': 'advanced/block-header-specifications.md'
+  - 'Details de Transaction': 'advanced/transaction-details.md'
+  - 'Verifier les Binaires': 'advanced/verifying-binaries.md'
+  - 'Inflation': 'advanced/inflation.md'
+  - 'Supprimer votre portefeuille': 'advanced/deleting-your-wallet.md'
+  - 'Usage Avancé dcrctl': 'advanced/dcrctl-usage.md'
+  - 'Directives de contribution': 'advanced/contributing.md'
+  - 'Projets d-Utilisateurs': 'advanced/user-projects.md'
+- Recherche:
+  - 'Vue d-Ensemble: 'research/overview.md'
+  - 'Design Hybride': 'research/hybrid-design.md'
+  - 'Pool de Minage Décentralisée': 'research/decentralized-stake-pooling.md'
+  - 'Algorithmes de Signature de la courbe elliptique': 'research/elliptic-curve-signature-algorithms.md'
+  - 'Fonction Hash BLAKE-256': 'research/blake-256-hash-function.md'
+  - 'Extensions de Script': 'research/script-extensions.md'
+  - 'Signature Script Isolation and Fraud Proofs': 'research/signature-script-isolation-and-fraud-proofs.md'
+  - 'Extensions de Transaction ': 'research/transaction-extensions.md'
+  - 'Signatures Schnorr': 'research/schnorr-signatures.md'
+  - 'Améliorations diverses': 'research/miscellaneous-improvements.md'
+- À Propos:
+  - 'Répertoire de soutien': 'support-directory.md'
+  - 'Crédits': 'about/credits.md'
+  - 'License': 'about/license.md'
+copyright: Si vous souhaité améliorer ce site, s'il vous plaît' <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.2. Decred Project 2016.

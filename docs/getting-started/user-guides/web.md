@@ -49,7 +49,7 @@ assume you are just starting out so click `Get Started`.
 > Step Two
 
 A wallet will be generated for you.  Under `Personal Wallet` on the
-left, choose `Mainnet` (the defaul) if you want the wallet to hold
+left, choose `Mainnet` (the default) if you want the wallet to hold
 actual money, or `Testnet` if it is only meant for testing purposes.
 
 Click the dropdown in the top left, then click `Add wallet`. Click

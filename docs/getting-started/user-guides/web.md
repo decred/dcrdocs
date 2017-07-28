@@ -48,13 +48,13 @@ assume you are just starting out so click `Get Started`.
 
 > Step Two
 
-A wallet will be generated for you and you will see this screen:
+A wallet will be generated for you.  Under `Personal Wallet` on the
+left, choose `Mainnet` (the default) if you want the wallet to hold
+actual money, or `Testnet` if it is only meant for testing purposes.
 
-Note that under `Personal Wallet` on the left it says `Testnet`. This
-wallet will only work on the Decred testnet network.  Testnet is meant
-for testing only and coins on testnet have NO value.  Click the
-dropdown in the top left, then click `Add wallet`. Click `Create New
-Wallet`. Give your wallet a name then click `Create New Wallet`.
+Click the dropdown in the top left, then click `Add wallet`. Click
+`Create New Wallet`. Give your wallet a name, then click `Create New
+Wallet`.
 
 > Step Three
 

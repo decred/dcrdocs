@@ -7,11 +7,12 @@
 This article discusses some of the ways a user can acquire Decred
 coins.
 
-The four basic ways are:
+The five basic ways are:
 
 * Purchase Decred for BTC Through an Exchange
 * PoW Mine for Decred
 * PoS Mine for Decred (this requires you to already have some Decred)
+* Contribute to Decred
 * Sell / Trade Goods or Services with someone who already has Decred.
 
 ## **<i class="fa fa-info-circle"></i> Purchasing Decred**
@@ -63,15 +64,13 @@ certain amount of their DCR in return for voting rights and a monetary
 reward. PoS mining is described in more detail
 [here](/mining/proof-of-stake).
 
+## **<i class="fa fa-info-circle"></i> Contribute to Decred**
+
+Decred is currently recruiting contractors - members of the community who are paid in Decred for their contributions. Check out [this blog post](https://blog.decred.org/2017/07/25/Decred-Recruiting/) for the details and how to get involved.
+
 ## **<i class="fa fa-info-circle"></i> Sell / Trade Goods or Services for Decred**
 
 An alternative to obtaining Decred is to use your skills, knowledge,
 or experience by exchanging services for Decred as payment.  Services
 can be anything that you are skilled at which are in need or
 requested by other members of the Decred community.
-
-Another method is to contribute to the Decred community
-through the RFP process in which payment is made in Decred.  More
-information on currently open RFPs can be found on
-[the forum](https://forum.decred.org/forums/requests-for-proposals/)
-and on [github](https://github.com/decred/RFPs).

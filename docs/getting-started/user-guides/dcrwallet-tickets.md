@@ -151,24 +151,7 @@ If you are using a stakepool, you should also add the following lines (all of th
     pooladdress=<Stakepool's Fee Collection Address>
     poolfees=<Stakepool's Required Reward Fee>
 
-You might also want to configure `ticketbuyer`.
-
-`ticketbuyer` will use the following default settings (also found in the chart [below](#full-ticketbuyer-options)) unless they are otherwise specified in your `dcrwallet.conf` file in the `[Ticket Buyer Options]` section:
-
-* **ticketbuyer.avgpricemode=vwap** - ticketbuyer uses a volume weighted average price formula to calculate the average ticket price.
-* **ticketbuyer.avgpricevwapdelta=2880** - ticketbuyer uses the last 2880 tickets in the vwap calculation.
-* **ticketbuyer.maxfee=0.1** - ticketbuyer will never buy a ticket with a fee rate higher than 0.1.
-* **ticketbuyer.minfee=0.01** - ticketbuyer will never buy a ticket with a fee rate lower than 0.01.
-* **ticketbuyer.feesource=median** - ticketbuyer uses a median to calculate fee rate, in which half of fees are higher and half of fees are lower.
-* **ticketbuyer.maxperblock=5** - ticketbuyer will buy a maximum of 5 tickets per block if fee and price are within range.
-* **ticketbuyer.blockstoavg=10** - the number of blocks used to calculate the average fee rate.
-* **ticketbuyer.feetargetscaling=1** - ticketbuyer multiplies the average fee by 1 to calculate the fee rate to attempt to use.
-* **ticketbuyer.maxinmempool=40** - ticketbuyer will never allow your mempool tickets to exceed 40.
-* **ticketbuyer.expirydelta=16** - tickets that aren't mined within 16 blocks are refunded to you.
-* **ticketbuyer.maxpricerelative=1.25** - ticketbuyer will never buy a ticket with a ticker price higher than (average price * 1.25).
-* **ticketbuyer.balancetomaintainrelative=0.3** - ticketbuyer will not use more than 70% of your funds to purchase tickets.
-
-A full list of `ticketbuyer` options can be found [below](#full-ticketbuyer-options). There are many variables that can be customized to get `ticketbuyer` to behave exactly how you want. 
+With this configuration ticketbuyer will start running with it's default settings. You may want to modify the ticketbuyer configuration to tweak its behaviour - the full set of configuration options and their default values can be found in the chart [below](#full-ticketbuyer-options).
 
 With `ticketbuyer` running and your wallet unlocked, you can watch your `dcrwallet` console to see whether or not tickets are being purchased. It will even display an explanation if tickets weren't purchased.
 
@@ -180,7 +163,7 @@ We recommended you read
 and understand the options available before using the feature as you may set your fees and ticket 
 prices higher than desired.
 
-All of these options can be specified on the command line or in dcrwallet.conf. Note that at
+All of these options can be specified on the command line or in dcrwallet.conf in the [Ticket Buyer Options] section. Note that at
 this time there is no way to change settings while dcrwallet is running: you will need to restart it to 
 adjust your settings.
 

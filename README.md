@@ -66,7 +66,22 @@ $ mkdocs build --help
 
 ## Deploying
 
-The version of dcrdocs that you just built only uses static files so you will be able to host it from pretty much anywhere. You can view a live version of the documentation at https://docs.decred.org.
+The version of dcrdocs that you just built only uses static files which are all contained in the `site/`, directory so you will be able to host it from pretty much anywhere. You can view a live version of the documentation at https://docs.decred.org.
+
+### Docker
+
+dcrdocs can also be hosted in a docker container. After building the site using the process above, a docker container can be built with
+
+```bash
+$ docker build . -t decred/dcrdocs
+```
+
+The container can then be run with
+
+```bash
+$ docker run -d --rm -p <local port>:80 decred/dcrdocs:latest
+```
+
 
 ## Translations
 ### Adding a new translation

@@ -59,7 +59,7 @@ Consensus Expert<br />
 Support
 
 **@dnldd: Developer** <br />
-dcrd/dcrwallet Support
+dcrd/dcrwallet Support<br />
 dcrrpcclient Support
 
 **@go1dfish: Developer** <br />
@@ -92,9 +92,6 @@ Statistics<br />
 General Support
 
 ## Community Support
-
-**@bacon**<br />
-Discord
 
 **@dyrk**<br />
 Bitcointalk<br />
@@ -174,14 +171,8 @@ Front-End Development
 
 ## Marketing Support
 
-**@bacon**<br />
-Media
-
 **@haon**<br />
 Media
-
-**@iizuka**<br />
-Advertising
 
 **@ingsoc**<br />
 Networking
@@ -189,26 +180,11 @@ Networking
 **@jd**<br />
 Advertising
 
-**@jiecut**<br />
-Media
-
-**@jjb**<br />
-Advertising
-
-**@joshuam**<br />
-Networking
-
 **@jz**<br />
 Networking
 
-**@solar**<br />
-Advertising
-
 **@thedecreddigest**<br />
 Media
-
-**@timhebel**<br />
-Advertising
 
 **@zombie5000**<br />
 Media

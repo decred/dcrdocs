@@ -93,19 +93,48 @@ General Support
 
 ## Community Support
 
-**@dyrk: Russian Community Manager** <br />
-PoS Support<br /> 
-Dcrstats / Stakepool / Evolution
+**@bacon**<br />
+Discord
 
-**@emiliomann: Brazilian Community Manager** <br />
-PoS Support<br />
-Public Relations<br />
-Marketing  
+**@dyrk**<br />
+Bitcointalk<br />
+Slack<br />
+Russia
 
-**@underscoreingsoc: Marketing/Community Manager** <br />
-Community Management<br />
-Public Relations<br />
-Social Media<br />
+**@emiliomann**<br />
+Bitcointalk<br />
+Facebook<br />
+Slack<br />
+Brazil
+
+**@haon**<br />
+Facebook<br />
+Slack<br />
+Netherlands
+
+**@ingsoc**<br />
+Discord<br />
+Slack<br />
+Twitter
+
+**@jd**<br />
+Facebook<br />
+YouTube
+
+**@jz**<br />
+Reddit<br />
+Slack
+
+**@praxis**<br />
+Bitcointalk<br />
+Reddit
+
+**@pvtwarren**<br />
+Reddit<br />
+Slack
+
+**@thedecreddigest**<br />
+Twitter
 
 ## Design Support
 

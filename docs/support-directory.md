@@ -54,12 +54,23 @@ Paymetheus Support<br />
 Wallet Support<br /> 
 PoS Support
 
-**marcop (IRC only): Developer** <br />
+**@moo31337: Developer** <br />
 Consensus Expert<br />
 Support
 
+**@dnldd: Developer** <br />
+dcrd/dcrwallet Support
+dcrrpcclient Support
+
+**@go1dfish: Developer** <br />
+Decrediton Support
+
+**@sndurkin: Developer** <br />
+Decrediton Support
+
 **@peter_zen: Developer** <br />
-Web Wallet <br />
+Web Wallet (Copay) <br />
+Ledger Integration <br />
 TREZOR Integration
 
 **@raedah: Developer** <br />
@@ -67,16 +78,6 @@ Ticket Buyer Support<br />
 General Support
 
 ## Documentation Support
-
-**@animedow: Documentation Collaborator** <br />
-PoS Support<br />
-General Support 
-
-**@gratefulcheddar: Documentation Collaborator** <br />
-PoS and PoW Support<br />
-Command-Line Application Support<br />
-Community Management<br />
-General Support
 
 **@jholdstock: Documentation Collaborator** <br />
 General Support
@@ -91,12 +92,6 @@ Statistics<br />
 General Support
 
 ## Community Support
-
-**@coin_artist: Marketing/Community Manager** <br />
-Promotional Crypto-Puzzles<br />
-Community Management<br />
-Public Relations<br />
-Social Media<br />
 
 **@dyrk: Russian Community Manager** <br />
 PoS Support<br /> 

@@ -171,3 +171,44 @@ Identity<br />
 UI/UX Design<br />
 Visual Design<br />
 Front-End Development
+
+## Marketing Support
+
+**@bacon**<br />
+Media
+
+**@haon**<br />
+Media
+
+**@iizuka**<br />
+Advertising
+
+**@ingsoc**<br />
+Networking
+
+**@jd**<br />
+Advertising
+
+**@jiecut**<br />
+Media
+
+**@jjb**<br />
+Advertising
+
+**@joshuam**<br />
+Networking
+
+**@jz**<br />
+Networking
+
+**@solar**<br />
+Advertising
+
+**@thedecreddigest**<br />
+Media
+
+**@timhebel**<br />
+Advertising
+
+**@zombie5000**<br />
+Media

@@ -7,7 +7,7 @@ This guide is intended to help you learn the basic commands of the `dcrctl` appl
 **Prerequisites:**
 
 - Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md) to install `dcrctl`. Additional steps will be required if another installation method was used.
-- Review how the launch commands for the Command Prompt (Windows) and Bash (OSX/Linux) shells differ [here](/getting-started/cli-differences.md).
+- Review how the launch commands for the Command Prompt (Windows) and Bash (macOS/Linux) shells differ [here](/getting-started/cli-differences.md).
 - [Setup dcrd](/getting-started/user-guides/dcrd-setup.md) and have it running in the background.
 - [Setup dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) and have it running in the background.
 

@@ -34,7 +34,7 @@ For Linux,
 2. Issue the command `./decrediton --testnet`.
 3. Decrediton will launch and attempt to connect to testnet2.
 
-For macOS/OSX,
+For macOS,
 
 1. Open your terminal and issue the following command: `/Applications/decrediton.app/Contents/MacOS/decrediton --testnet`
 2. Decrediton will launch and attempt to connect to testnet2.

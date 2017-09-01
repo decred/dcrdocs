@@ -17,7 +17,7 @@ Project, there are a couple pieces of software required:
 * GnuPG or PGP -- This is required to import public keys and verify
   signatures. Examples below use GnuPG.
 
-The following instructions should work as is on Linux/UNIX/OSX.
+The following instructions should work as is on Linux/UNIX/macOS.
 Windows users will have to install sha256 and gnupg themselves and use
 the windows cmd terminal to do this.  The steps to verify the binaries
 are as follows:

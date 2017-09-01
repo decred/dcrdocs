@@ -12,7 +12,7 @@ This guide applies to command-line application users. Paymetheus and Decrediton 
 
 All of the Decred software, when started, reads from a configuration file to determine which settings it should enable/disable/set during that initial load. All of the command line startup flags `(e.g. dcrwallet --testnet)` can be replaced by settings within the appropriate configuration file `(e.g. dcrwallet --testnet could be replaced by testnet=1 in dcrwallet.conf)`.
 
-These configuration files are located within the application home directory of the application. The location of these default home directories for Windows, macOS/OSX, and Linux are listed below:
+These configuration files are located within the application home directory of the application. The location of these default home directories for Windows, macOS, and Linux are listed below:
 
 Windows:
 

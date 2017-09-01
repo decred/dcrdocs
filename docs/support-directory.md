@@ -117,11 +117,20 @@ General Support
 Illustrations <br />
 Graphic Design
 
+**@kyle_firethought: Motion Designer** <br />
+Animation and Motion Design <br />
+Interactive Media <br />
+Video Creation
+
 **@linnutee: Lead Designer** <br />
 Identity<br />
 UI/UX Design<br />
 Visual Design<br />
 Motion Design
+
+**@lustosa: Illustrator** <br />
+Illustrations <br />
+Graphic Design
 
 **@pflan: Designer** <br />
 UI/UX Design<br />

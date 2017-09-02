@@ -112,6 +112,7 @@ Netherlands
 **@ingsoc**<br />
 Discord<br />
 Slack<br />
+Bitcointalk<br />
 Twitter
 
 **@jd**<br />

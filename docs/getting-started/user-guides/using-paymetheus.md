@@ -20,7 +20,7 @@ useful for those who run businesses and wish to keep separate accounts for
 tax records for example. Transferring DCR across accounts will create a 
 transaction on the blockchain.  
 
-![Overview tab](/img/Paymetheus-accounts.png)  
+![Accounts tab](/img/Paymetheus-accounts.png)  
 
 ---
 

@@ -37,6 +37,7 @@ We hope this list will grow as time goes on.
 * [Poloniex](https://poloniex.com/)
 * [Bittrex](https://bittrex.com/)
 * [Bleutrade](https://bleutrade.com/exchange)
+* [Tux Exchange](https://tuxexchange.com)
 
 You will need to create an account on one of these sites, send your
 Bitcoin to this new account, and submit an order for Decred at a price

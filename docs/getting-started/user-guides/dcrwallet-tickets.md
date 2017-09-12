@@ -100,7 +100,9 @@ Your `ticketfee` is the DCR/kB rate you'll pay to have your ticket purchase be i
 1. During startup by adding `ticketfee=<fee rate>` to the `[Application Options]` of your `dcrwallet.conf`.
 2. While your wallet is running, using the `dcrctl --wallet setticketfee <fee rate>` command. This is not a permanent setting and will default to 0.01 every time your wallet is restarted unless a ticketfee is specified in `dcrwallet.conf`.
 
-Why are ticketfees important? Usually the default fee of 0.01 is enough to get your tickets mined. The exception is during a fee war event. When the ticket price falls very low, demand outpaces supply (there are only a maximum of 2880 tickets available at each price interval). This creates a fee war, with stakeholders competing to get their tickets mined before the price changes.
+Why are ticket fees important? Usually the default fee of 0.01 is enough to get your tickets mined. The exception is during a "fee war" which can occur when ticket demand outpaces supply (there are only a maximum of 2880 tickets available at each price interval). This creates a situation where stakeholders increase their ticket fees in order to get their ticket purchases mined ahead of others who are offering lower fees.
+
+Third party sites such as [https://dcrstats.com](https://dcrstats.com) and [http://posmaster.info](http://posmaster.info) can be used to find the average ticket fee in the mempool.
 
 > Ticket Price
 
@@ -109,8 +111,6 @@ To get the current ticket price, issue the `dcrctl --wallet getstakeinfo` comman
 --- 
 
 #### **Manual Ticket Purchase**
-
-Before manually purchasing tickets, it is recommended to check for a ticketfee war and adjust your ticketfee before purchase by issuing the `dcrctl --wallet setticketfee <fee rate>` command. Third party sites such as [https://dcrstats.com](https://dcrstats.com) and [http://posmaster.info](http://posmaster.info) can be used to find the average ticketfee in the mempool, although you may oftentimes be able to purchase a ticket with a ticketfee lower than the average.
 
 > Solo Tickets
 
@@ -121,8 +121,6 @@ If you wish to specify the `numtickets` or `expiry` arguments, you would specify
 * `dcrctl --wallet purchaseticket "default" 50 1 "" 5` would purchase 5 tickets, as the 5th argument (`numtickets`) is set to 5.
 * `dcrctl --wallet purchaseticket "default" 50 1 "" 5 "" 0 100000` would purchase 5 tickets that would expire from the mempool if not mined by block 100,000, as the 8th argument (`expiry`) is set to 100000.
  
-Be sure to check for a fee war event and adjust your ticketfee before purchase by issuing the `dcrctl --wallet setticketfee <fee rate>` command.
-
 > Pool Tickets
 
 To purchase tickets with their voting rights delegated to a stakepool, we have to use the full `purchaseticket` command.

@@ -102,8 +102,6 @@ Your `ticketfee` is the DCR/kB rate you'll pay to have your ticket purchase be i
 
 Why are ticketfees important? Usually the default fee of 0.01 is enough to get your tickets mined. The exception is during a fee war event. When the ticket price falls very low, demand outpaces supply (there are only a maximum of 2880 tickets available at each price interval). This creates a fee war, with stakeholders competing to get their tickets mined before the price changes.
 
-With these two things in mind, let's continue to the two methods for purchasing tickets.
-
 > Ticket Price
 
 To get the current ticket price, issue the `dcrctl --wallet getstakeinfo` command and look for the `difficulty` value. This is the price of each ticket in the current price window. You'll want to adjust your `spendlimit` argument in the `purchaseticket` command to be greater than this `difficulty` value when purchasing tickets manually.

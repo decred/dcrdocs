@@ -2,12 +2,19 @@
 
 This guide is intended for basic initial setup of gominer with the mining pool of choice using a configuration file; more advanced options are available.
 
-Last updated on April 28th, 2017.
+Last updated on August 11th, 2017.
+
+---
+
+### **<i class="fa fa-download"></i> Required Drivers**
+
+> AMD
+
+The AMDGPU-PRO Drivers are required to run gominer for AMD video cards. They can be downloaded at [https://support.amd.com/en-us/kb-articles/Pages/AMD-Radeon-GPU-PRO-Linux-Beta-Driver–Release-Notes.aspx](https://support.amd.com/en-us/kb-articles/Pages/AMD-Radeon-GPU-PRO-Linux-Beta-Driver–Release-Notes.aspx). Follow the instructions for installing the driver on that same page.
 
 ---
 
 ### **<i class="fa fa-download"></i> Download and Extract the *gominer* Binary**
-
 
 >Download .tar.gz File
 

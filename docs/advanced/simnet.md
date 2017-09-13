@@ -10,7 +10,7 @@ In order to facilitate these scenarios, dcrd provides a simulation network (`--s
 
 * The difficulty starts extremely low to enable fast CPU mining of blocks
 * Networking changes:
-    * All code related to peer discovery and IP address dissemenation is disabled to help ensure the network remains private
+    * All code related to peer discovery and IP address dissemination is disabled to help ensure the network remains private
     * The peer and RPC network ports are different
     * A unique network byte sequence is used in the peer-to-peer message protocol so the blocks can't accidentally be crossed with the main network
 * All chain and payment address parameters are unique to prevent confusion with the main network:

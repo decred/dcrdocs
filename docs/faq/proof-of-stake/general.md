@@ -122,9 +122,9 @@ This voting system can be used for any governance issue. For Decred, the most pr
 
 - Increase the maximum block size.
 - Change the algorithm PoS uses to determine the ticket price.
-- Vote on major new features for the currency (e.g. lighning network, enhanced privacy).
+- Vote on major new features for the currency (e.g. lightning network, enhanced privacy).
 - Change the PoW algorithm.
-- Pretty much anything the comunity decides would be in the best interest of the currency.
+- Pretty much anything the community decides would be in the best interest of the currency.
 
 Currently, a platform for the community to submit and advocate a voting agenda is in development.
 
@@ -173,7 +173,7 @@ The pool size limits above apply here. This stops one person/group flooding the 
 likely get is about 4000 tickets (based on previous ticket windows where the ones around 30DCR usually go up to 100 for the next window, and the max for the one after that is often over 300). So a large
 balance holder could probably buy 2 windows out. A window at 30 would be 86,400DCR then the next at 100 would be 288,000DCR. So it would cost 374,400DCR to buy 5760 tickets. With a target pool size of 40960 tickets, 374400 DCR would give you about 14% of all tickets.
 
-Now the holder could wait a couple of days for the price to drop then start buying back up again. Except that most of their funds will be locked in the ones they bought earlier (although some will have voted) so their buying power for the new window is greatly reduced. But lets say they have super capital and bought all the decred on all exchanges. So they are able to buy another two windows and replace those tickets that voted and were successful in buying all the tickets (at very high fees and/or prices). Let say that takes them to about 25% of the tickets.
+Now the holder could wait a couple of days for the price to drop then start buying back up again. Except that most of their funds will be locked in the ones they bought earlier (although some will have voted) so their buying power for the new window is greatly reduced. But let's say they have super capital and bought all the decred on all exchanges. So they are able to buy another two windows and replace those tickets that voted and were successful in buying all the tickets (at very high fees and/or prices). Let's say that takes them to about 25% of the tickets.
 
 Tickets for a block are chosen with a random distribution. To force a vote to go a certain way you would need 3 out of 5 votes for a given block which is 60%. Even with that huge expenditure of capital,
 they are less than half way there. And a vote isn't decided on a single block so you would need 60% of 75% of blocks in the voting period.
@@ -182,7 +182,7 @@ And THEN you still need the PoW miners to confirm the votes. If they think someo
 
 So basically this is close to impossible, even if a single person has a HUGE percentage of DCR.
 
-But then we come to the stake pools. Stake pools, while not having access to any of their users funds, do have the ability to change votes on tickets assigned to them. This is why it is suggested that when joining a stake pool, people don't just go for the largest one. Decred is short for 'decentralised credit' so part of the spirit of PoS is ensuring that the PoS stake pools don't get too large in relation to the others. However, even the largest at almost 20% would still only get on average one vote per block.
+But then we come to the stake pools. Stake pools, while not having access to any of their users' funds, do have the ability to change votes on tickets assigned to them. This is why it is suggested that when joining a stake pool, people don't just go for the largest one. Decred is short for 'decentralised credit' so part of the spirit of PoS is ensuring that the PoS stake pools don't get too large in relation to the others. However, even the largest at almost 20% would still only get on average one vote per block.
 
 So Decred was specifically designed to minimise impact from both large PoW and PoS pools as well as individuals (including developers) with large holdings. 
 

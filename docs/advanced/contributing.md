@@ -111,7 +111,7 @@ $ git pull
 $ git checkout <feature_branch>
 $ git rebase -i master
 ```
-- Follow the directions presented to specify 's' meaning squash for the additional commits (the first commit must remain 'p' or 'pick'
+- Follow the directions presented to specify 's' meaning squash for the additional commits (the first commit must remain 'p' or 'pick').
 - Write a single commit message in the editor that you have set to cover all the commits included.
 - Save and close the editor and git should generate a single commit with the message you specified and all the commits you added.  You can check the commit with the command ```git show```.
 - Force push the branch to your fork:

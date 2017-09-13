@@ -30,7 +30,7 @@ well documented in the
 
 ### **<i class="fa fa-exchange"></i> Exchanges**
 
-Since the release of Decred on February 8th, 2016, there are three
+Since the release of Decred on February 8th, 2016, there are four
 currency exchanges where you can buy or sell Decred (as of February 2017).
 We hope this list will grow as time goes on.
 

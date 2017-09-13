@@ -30,7 +30,7 @@ Our model for hacking code in outline form is as follows.  If any of this does n
 1. ALL code must be reviewed and receive at least one approval before it can go in.  Only team members can give official approval, but comments from other users are encouraged.
 1. If there are changes requested, make those changes and commit them to your local branch.
 1. Push those changes to the same branch you have been hacking on.  They will show up in the PR that way and the reviewer can then compare to the previous version.
-1. Once your code is approved, it can be merged into master.  To keep history clean, we only allow non-fast-forward merges (that means we want a linear history).  Most PRs also must be squashed to a single commit (although if there is reason to have it as multiple commits that can be considered on a case by case basis.
+1. Once your code is approved, it can be merged into master.  To keep history clean, we only allow non-fast-forward merges (that means we want a linear history).  Most PRs also must be squashed to a single commit (although if there is reason to have it as multiple commits that can be considered on a case by case basis).
 1. If your PR is a single commit (or can be squashed by GitHub automatically) and is caught up with master, the reviewer will merge your PR.  If your branch was too far behind, you may be asked to rebase your commit.  Once that is done and pushed, the reviewer will merge your commit.
 
 ---

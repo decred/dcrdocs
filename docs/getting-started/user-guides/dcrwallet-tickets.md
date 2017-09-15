@@ -107,7 +107,7 @@ Your `ticketfee` is the DCR/kB rate you'll pay to have your ticket purchase be i
 2. While your wallet is running, using the `dcrctl --wallet setticketfee <fee rate>` command. This is not a permanent setting and will default to 0.001 every time your wallet is restarted unless a ticketfee is specified in `dcrwallet.conf`.
 >>>>>>> update default ticketfee to 0.001
 
-Why are ticket fees important? Usually the default fee of 0.001 is enough to get your tickets mined. The exception is during a "fee war" which can occur when ticket demand outpaces supply (there are only a maximum of 2880 tickets available at each price interval). This creates a situation where stakeholders increase their ticket fees in order to get their ticket purchases mined ahead of others who are offering lower fees.
+Why are ticket fees important? Usually the default fee of 0.001 is enough to get your tickets mined, however there are extremely rare circumstances where an increased ticket fee may be beneficial. When ticket demand outpaces supply (there are only a maximum of 2880 tickets available at each price interval) a situation is created where stakeholders can increase their ticket fees in order to get their ticket purchases mined ahead of others offering lower fees. This type of "fee wars" scenario has not occurred since the new ticket price algorithm was introduced in July 2017.
 
 Third party sites such as [https://dcrstats.com](https://dcrstats.com) and [http://posmaster.info](http://posmaster.info) can be used to find the average ticket fee in the mempool.
 

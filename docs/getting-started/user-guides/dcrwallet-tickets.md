@@ -99,10 +99,15 @@ purchaseticket "fromaccount" spendlimit (minconf=1 "ticketaddress" numtickets "p
 
 Your `ticketfee` is the DCR/kB rate you'll pay to have your ticket purchase be included in a block by a miner. You'll notice that the above `purchaseticket` command doesn't include any `ticketfee` arguments. The `ticketfee` argument can be set two ways.
 
+<<<<<<< HEAD
 1.  During startup by adding `ticketfee=<fee rate>` to the `[Application Options]` of your `dcrwallet.conf`.
 2.  While your wallet is running, using the `dcrctl --wallet setticketfee <fee rate>` command. This is not a permanent setting and will default to 0.01 every time your wallet is restarted unless a ticketfee is specified in `dcrwallet.conf`.
+=======
+1. During startup by adding `ticketfee=<fee rate>` to the `[Application Options]` of your `dcrwallet.conf`.
+2. While your wallet is running, using the `dcrctl --wallet setticketfee <fee rate>` command. This is not a permanent setting and will default to 0.001 every time your wallet is restarted unless a ticketfee is specified in `dcrwallet.conf`.
+>>>>>>> update default ticketfee to 0.001
 
-Why are ticket fees important? Usually the default fee of 0.01 is enough to get your tickets mined. The exception is during a "fee war" which can occur when ticket demand outpaces supply (there are only a maximum of 2880 tickets available at each price interval). This creates a situation where stakeholders increase their ticket fees in order to get their ticket purchases mined ahead of others who are offering lower fees.
+Why are ticket fees important? Usually the default fee of 0.001 is enough to get your tickets mined. The exception is during a "fee war" which can occur when ticket demand outpaces supply (there are only a maximum of 2880 tickets available at each price interval). This creates a situation where stakeholders increase their ticket fees in order to get their ticket purchases mined ahead of others who are offering lower fees.
 
 Third party sites such as [https://dcrstats.com](https://dcrstats.com) and [http://posmaster.info](http://posmaster.info) can be used to find the average ticket fee in the mempool.
 
@@ -120,17 +125,9 @@ To purchase tickets used for solo-staking, you only need to specify the `fromacc
 
 If you wish to specify the `numtickets` or `expiry` arguments, you would specify a `minconf` of 1, an empty `ticketaddress` (""), an empty `pooladdress` (""), and an empty `poolfees` (0). Two example follow:
 
-<<<<<<< HEAD
 -  `dcrctl --wallet purchaseticket "default" 50 1 "" 5` would purchase 5 tickets, as the 5th argument (`numtickets`) is set to 5.
 -  `dcrctl --wallet purchaseticket "default" 50 1 "" 5 "" 0 100000` would purchase 5 tickets that would expire from the mempool if not mined by block 100,000, as the 8th argument (`expiry`) is set to 100000.
 
-Be sure to check for a fee war event and adjust your ticketfee before purchase by issuing the `dcrctl --wallet setticketfee <fee rate>` command.
-
-=======
-* `dcrctl --wallet purchaseticket "default" 50 1 "" 5` would purchase 5 tickets, as the 5th argument (`numtickets`) is set to 5.
-* `dcrctl --wallet purchaseticket "default" 50 1 "" 5 "" 0 100000` would purchase 5 tickets that would expire from the mempool if not mined by block 100,000, as the 8th argument (`expiry`) is set to 100000.
- 
->>>>>>> Remove repeated references to fee wars.
 > Pool Tickets
 
 To purchase tickets with their voting rights delegated to a stakepool, we have to use the full `purchaseticket` command.
@@ -178,7 +175,7 @@ Parameter|Description|Default|Explanation
 ticketbuyer.avgpricemode|The mode to use for calculating the average price if pricetarget is disabled (vwap, pool, dual) |vwap|!
 ticketbuyer.avgpricevwapdelta|The number of blocks to use from the current block to calculate the VWAP |2880|!
 ticketbuyer.maxfee|Maximum ticket fee per KB |0.1 DCR|Tickets are entered into the mempool in order of their fee per kilobyte. This sets the maximum fee you are willing to pay.
-ticketbuyer.minfee|Minimum ticket fee per KB |0.01 DCR|The minimum fee per kilobyte you are willing to pay. This should probably be left at 0.01 unless you know what you're doing.
+ticketbuyer.minfee|Minimum ticket fee per KB |0.001 DCR|The minimum fee per kilobyte you are willing to pay. This should probably be left at 0.001 unless you know what you're doing.
 ticketbuyer.feesource|The fee source to use for ticket fee per KB (median or mean) |median|The fee chosen by the ticket buyer will be based off either the median (line all the fees up in order and choose the middle one) or the mean (also known as the average; add all the fees up and divide by 2). It's recommended to leave this at median as there have been instances of fee manipulation where people try to force up the average by buying one ticket with a very high fee.
 ticketbuyer.maxperblock|Maximum tickets per block, with negative numbers indicating buy one ticket every 1-in-n blocks |5|Do not buy more than this number of tickets per block. A negative number means buy one ticket every n blocks. e.g. -2 would mean buy a ticket every second block.
 ticketbuyer.blockstoavg|Number of blocks to average for fees calculation |11| Fees are calculated using this many previous blocks. You can usually leave this at the default.

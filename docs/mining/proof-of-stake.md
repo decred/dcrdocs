@@ -30,7 +30,7 @@ The **Ticket Pool** is the total number of tickets in the Decred network.
 
 The **Ticket Fee** (`ticketfee`) is the fee rate that must be included in the ticket purchase to incentivize Proof-of-Work miners to include that ticket in a new block. **Ticket Fee** usually refers to the DCR/kB fee rate for a ticket purchase transaction. Therefore, with a higher transaction size, you will end up paying a higher absolute fee. For example, solo-staking ticket purchases are around 300 Bytes, which means a **Ticket Fee** of .3 DCR/kB will result in the spending on .1 DCR if, and only if, that ticket gets included in a block.
 
-When the **Ticket Price** gets relatively low for a single **Ticket Window**, you can usually expect a fee market to form, with many stakeholders trying to buy tickets before the window ends. When the **Ticket Price** is not at an extremely low and profitable price, the default **Ticket Fee** of 0.01 DCR/kB rate is usually high enough to be included in a block.  
+When the **Ticket Price** gets relatively low for a single **Ticket Window**, you can usually expect a fee market to form, with many stakeholders trying to buy tickets before the window ends. When the **Ticket Price** is not at an extremely low and profitable price, the default **Ticket Fee** of 0.001 DCR/kB rate is usually high enough to be included in a block.
 
 When a ticket is called to vote, the wallet that has voting rights for that ticket must be online. If the wallet is not online to cast its vote, the ticket will be marked as `missed` and you will not receive a reward for that ticket. Stakepools are offered as a solution for those that cannot have a voting wallet online 24/7.
 

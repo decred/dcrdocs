@@ -33,7 +33,8 @@ pages:
   - 'Web Wallet': 'getting-started/user-guides/web.md'
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
-  - 'Mainnet Voting Guide': 'getting-started/user-guides/agenda-voting.md'
+  - 'Mainnet Voting': 'getting-started/user-guides/agenda-voting.md'
+  - 'How To Vote': 'getting-started/user-guides/how-to-vote.md'
   - 'Using Testnet': 'getting-started/using-testnet.md'
   - 'Decred Constitution': 'getting-started/constitution.md'
 - Mining:

@@ -37,7 +37,7 @@ Option                      | Description
 `--connect=`                | Connect only to the specified peers at startup
 `--nolisten`                | Disable listening for incoming connections -- NOTE: Listening is automatically disabled if the `--connect` or `--proxy` options are used without also specifying listen interfaces via `--listen`
 `--listen=`                 | Add an interface/port to listen for connections (default all interfaces port: `9108`, testnet: `19108`)
-`--maxpeers=`               | Max number of inbound and outbound peers (125)0
+`--maxpeers=`               | Max number of inbound and outbound peers (125)
 `--nobanning`               | Disable banning of misbehaving peers
 `--banduration=`            | How long to ban misbehaving peers. Valid time units are {s, m, h}.  Minimum 1 second (24h0m0s)
 `--banthreshold`            | Maximum allowed ban score before disconnecting banning misbehaving peers. (default: 100)

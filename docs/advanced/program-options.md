@@ -38,7 +38,10 @@ Option                      | Description
 `--nolisten`                | Disable listening for incoming connections -- NOTE: Listening is automatically disabled if the `--connect` or `--proxy` options are used without also specifying listen interfaces via `--listen`
 `--listen=`                 | Add an interface/port to listen for connections (default all interfaces port: `9108`, testnet: `19108`)
 `--maxpeers=`               | Max number of inbound and outbound peers (125)
+`--nobanning`               | Disable banning of misbehaving peers
 `--banduration=`            | How long to ban misbehaving peers. Valid time units are {s, m, h}.  Minimum 1 second (24h0m0s)
+`--banthreshold`            | Maximum allowed ban score before disconnecting banning misbehaving peers. (default: 100)
+`--whitelist=`              | Add an IP network or IP that will not be banned. (eg. 192.168.1.0/24 or ::1)
 `-u` or `--rpcuser=`        | Username for RPC connections
 `-P` or `--rpcpass=`        | Password for RPC connections
 `--rpclimituser=`           | Username for limited RPC connections
@@ -51,7 +54,7 @@ Option                      | Description
 `--norpc`                   | Disable built-in RPC server -- NOTE: The RPC server is disabled by default if no `rpcuser`/`rpcpass` is specified
 `--notls`                   | Disable TLS for the RPC server -- NOTE: This is only allowed if the RPC server is bound to localhost
 `--nodnsseed`               | Disable DNS seeding for peers
-`--externalip:`             | Add an ip to the list of local addresses we claim to listen on to peers
+`--externalip=`             | Add an ip to the list of local addresses we claim to listen on to peers
 `--proxy=`                  | Connect via SOCKS5 proxy (eg. 127.0.0.1:9050)
 `--proxyuser=`              | Username for proxy server
 `--proxypass=`              | Password for proxy server
@@ -60,7 +63,7 @@ Option                      | Description
 `--onionpass=`              | Password for onion proxy server
 `--noonion=`                | Disable connecting to tor hidden services
 `--torisolation`            | Enable Tor stream isolation by randomizing user credentials for each connection
-`--testnet `                | Use the test network
+`--testnet`                 | Use the test network
 `--simnet`                  | Use the simulation test network
 `--nocheckpoints=`          | Disable built-in checkpoints. Don't do this unless you know what you're doing.
 `--dbtype=`                 | Database backend to use for the Block Chain (leveldb)
@@ -71,6 +74,7 @@ Option                      | Description
 `--miningtimeoffset=`       | Offset the mining timestamp of a block by this many seconds (positive values are in the past)
 `-d` or `--debuglevel:`     | Logging level for all subsystems {trace, debug, info, warn, error, critical} -- You may also specify &lt;subsystem&gt;=&lt;level&gt;,&lt;subsystem2&gt;=&lt;level&gt;,... to set the log level for individual subsystems -- Use show to list available subsystems (info)
 `--upnp`                    | Use UPnP to map our listening port outside of NAT
+`--minrelaytxfee`           | The minimum transaction fee in DCR/kB to be considered a non-zero fee. (default: 0.001)
 `--limitfreerelay=`         | Limit relay of transactions with no transaction fee to the given amount in thousands of bytes per minute (15)
 `--norelaypriority`         | Do not require free or low-fee transactions to have high priority for relaying
 `--maxorphantx=`            | Max number of orphan transactions to keep in memory (1000)
@@ -80,10 +84,23 @@ Option                      | Description
 `--blockmaxsize=`           | Maximum block size in bytes to be used when creating a block (750000)
 `--blockprioritysize=`      | Size in bytes for high-priority/low-fee transactions when creating a block (50000)
 `--getworkkey=`             | DEPRECATED -- Use the --miningaddr option instead
-`--addrindex=`              | Build and maintain a full address index. Currently only supported by leveldb.
-`--dropaddrindex=`          | Deletes the address-based transaction index from the database on start up, and then exits.
+`--nopeerbloomfilters`      | Disable bloom filtering support
+`--sigcachemaxsize=`        | The maximum number of entries in the signature verification cache (default: 100000)
 `--nonaggressive`           | Disable mining off of the parent block of the blockchain if there aren't enough voters
 `--nominingstatesync`       | Disable synchronizing the mining state with other nodes
+`--allowoldvotes`           | Enable the addition of very old votes to the mempool
+`--blocksonly`              | Do not accept transactions from remote peers.
+`--relaynonstd`             | Relay non-standard transactions regardless of the default settings for the active network.
+`--rejectnonstd`            | Reject non-standard transactions regardless of the default settings for the active network.
+`--txindex`                 | Maintain a full hash-based transaction index which makes all transactions available via the getrawtransaction RPC
+`--droptxindex`             | Deletes the hash-based transaction index from the database on start up and then exits.
+`--addrindex`               | Maintain a full address-based transaction index which makes the searchrawtransactions RPC available
+`--dropaddrindex`           | Deletes the address-based transaction index from the database on start up and then exits.
+`--noexistsaddrindex`       | Disable the exists address index, which tracks whether or not an address has even been used.
+`--dropexistsaddrindex`     | Deletes the exists address index from the database on start up and then exits.
+`--piperx=`                 | File descriptor of read end pipe to enable parent -> child process communication
+`--pipetx=`                 | File descriptor of write end pipe to enable parent <- child process communication
+`--lifetimeevents`          | Send lifetime notifications over the TX pipe
 
 ---
 
@@ -112,24 +129,29 @@ e.g. ‘getbalance * 0 all' will show the wallet’s total balance.
 
 ```
 getstakeinfo
-  "poolsize": 42208,
-  "difficulty": 17.4973371,
-  "allmempooltix": 0,
+{
+  "blockheight": 171403,
+  "poolsize": 40957,
+  "difficulty": 68.20149389,
+  "allmempooltix": 9,
   "ownmempooltix": 0,
-  "immature": 0,
-  "live": 213,
-  "proportionlive": 0.005046436694465504,
-  "voted": 129,
-  "totalsubsidy": 239.06504718,
-  "missed": 50,
-  "proportionmissed": 0.0011832079132945241,
-  "revoked": 50
+  "immature": 4,
+  "live": 25,
+  "proportionlive": 0.000061527943941663,
+  "voted": 50,
+  "totalsubsidy": 81.95590153,
+  "missed": 3,
+  "proportionmissed": 0.026713124274099883,
+  "revoked": 3,
+  "expired": 0
+}
 ```
 
 The `getstakeinfo` command returns a list of data about your PoS mining results.
 
 Output             | Description
 ---                |---
+`blockheight`      | The lastest block number.
 `poolsize`         | The number of tickets currently in the voting pool.
 `difficulty`       | This is the cost of a ticket. It goes up or down depending on the number of tickets currently in the pool as well as the number of tickets over the last 2880 blocks using an exponential moving average <LINK>Source(https://github.com/decred/dcrd/blob/master/chaincfg/params.go#L336). The network will adjust the price to try to keep the pool size near the target of 40,960 tickets. Note this doesn't mean the price will always go up if above this number, nor will it always go down if below. The rate that tickets enter the pool also affects the price. It is adjusted every 144 blocks.
 `allmempooltix`    | Only 20 tickets per block are accepted into the voting pool. Extra tickets wait in the mempool. Tickets are accepted into the voting pool according to ticketfee which is 0.01 DCR/kB by default. See PoS mining#Purchasing-Tickets for more information.
@@ -142,6 +164,7 @@ Output             | Description
 `missed`           | Tickets that were selected to vote but didn't, likely because the wallet was offline.
 `proportionmissed` | Proportion of all missed tickets that were yours.
 `revoked`          | Number of revoked tickets. Since missed tickets are revoked (removed from the voting pool without voting) this number will usually (but not always) equal missed tickets.
+`expired`          | Number of tickets that did not vote and reached the expiry (40960 blocks). The chance of this is about 1 in 200 and funds used to purchase the ticket (but not fees) are returned.
 
 ---
 

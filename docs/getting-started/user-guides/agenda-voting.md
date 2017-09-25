@@ -1,6 +1,6 @@
 # **Mainnet Voting Guide**
 
-This guide was last updated on May 2, 2017.
+This guide was last updated on September 23, 2017.
 
 This page is intended to give a brief introduction to how agenda voting works and details the process for setting your tickets to cast your preferred vote for any agenda.
 
@@ -30,73 +30,13 @@ Below is a diagram of the entire cycle for a single agenda with consensus upgrad
 
 ---
 
-## **How To Vote**
+## **Voting Preparation**
 
 To participate in voting, you first need a wallet. If you don't have one already, visit the [Beginner Guide](/getting-started/beginner-guide.md), choose a wallet, and follow the installation and setup guides.
 
 Next, you'll need to learn the basics of [Proof-of-Stake](/mining/proof-of-stake.md). You'll need to be able to [buy tickets](/mining/proof-of-stake.md#how-to-stake) with your application of choice.
 
-Finally, you'll need to learn how to set the `votechoice` for your tickets in order to cast a "Yes", "No", or "Abstain" vote for an agenda. By default, your tickets will cast "Abstain" votes. If you are solo-staking with `dcrwallet`, go [here](#solo-voting). If you are pool-staking with `dcrwallet`, `Paymetheus`, or `Decrediton`, go [here](#stakepool-voting).
-
----
-
-## **Solo-voting**
-
-Through the command-line, you'll want to familiarize yourself with the `dcrctl --wallet getvotechoices` and `dcrctl --wallet setvotechoice "agendaid" "choiceid"` commands.
-
-The first command, `dcrctl --wallet getvotechoices`, returns JSON resembling this:
-
-```
-{
-  "version": 4,
-  "choices": [
-    {
-      "agendaid": "sdiffalgorithm",
-      "agendadescription": "Change stake difficulty algorithm as defined in DCP0001",
-      "choiceid": "abstain",
-      "choicedescription": "abstain voting for change"
-    },
-    {
-      "agendaid": "lnsupport",
-      "agendadescription": "Request developers begin work on Lightning Network (LN) integration",
-      "choiceid": "abstain",
-      "choicedescription": "abstain from voting"
-    }
-  ]
-}
-```
-
-The second command, `dcrctl --wallet setvotechoice "agendaid" "choiceid"`, let's you set your votechoice. `"agendaid"` is found via the `getvotechoices` command above, and `"choiceid"` can be `yes`, `no`, or `abstain`.
-
-For example, issuing `dcrctl --wallet setvotechoice sdiffalgorithm yes` results in the following changes to `dcrctl --wallet getvotechoices`:
-
-```
-{
-  "version": 4,
-  "choices": [
-    {
-      "agendaid": "sdiffalgorithm",
-      "agendadescription": "Change stake difficulty algorithm as defined in DCP0001",
-      "choiceid": "yes",
-      "choicedescription": "change to the new algorithm"
-    },
-    {
-      "agendaid": "lnsupport",
-      "agendadescription": "Request developers begin work on Lightning Network (LN) integration",
-      "choiceid": "abstain",
-      "choicedescription": "abstain from voting"
-    }
-  ]
-}
-```
-
----
-
-## **Stakepool-voting**
-
-If your Stakepool has updated to the latest stakepool software, you will find a "Voting" page in the navigation menu with dropdown options for each agenda. After you've chosen how you want your tickets to vote, simply press the "Update Voting Preferences" to save your votechoices. Below you'll find an image of the votechoices for vote version 4.
-
-<img src="/img/stakepool-voting-page.png">
+Finally, you'll need to learn how to set the `votechoice` for your tickets in order to cast a "Yes", "No", or "Abstain" vote for an agenda. By default, your tickets will cast "Abstain" votes. To set your vote choice, see our quick [How To Vote](/getting-started/user-guides/how-to-vote.md).
 
 ---
 
@@ -104,30 +44,9 @@ If your Stakepool has updated to the latest stakepool software, you will find a 
 
 The easiest method to track your how your tickets actually voted is to use the [block explorer](https://mainnet.decred.org) to view each of your votes.
 
-The block explorer has been updated to display YES, NO, and ABSTAIN votes for each agenda with each ticket. The first and second tickets in the following example image voted "ABSTAIN" for both agendas while the third ticket voted "YES" for both agendas.
+The block explorer has been updated to display "YES", "NO", and "ABSTAIN" votes for each agenda with each ticket. The first and second tickets in the following example image voted "ABSTAIN" for both agendas while the third ticket voted "YES" for both agendas. The image will be updated to reflect the v5 agenda when voting is live.
 
 <img src="/img/verify_block-explorer-votes.png">
-
-You can also manually verify your vote by inputting the txid for the ticket purchase transaction into the block explorer or clicking the link for a Voted Ticket on your stakepool's website. Below is a quick walkthrough, starting from a stakepool's website. The red numbers of each image corresponds to the step number.
-
-1. Go to your stakepool's Tickets page, open the Voted Tickets section and click the txid for the ticket you want to inspect. This will open the block explorer to the ticket purchase transaction. (Figure 3)
-2. Press the '+' button to view the transaction details. (Figure 4)
-3. Press the '>' on the 1st output of the transaction (the 'stakesubsmission' output) to open the block explorer to the actual voting transaction. (Figure 4)
-4. The vote transaction should already be expanded, if not, press the '+' button. (Figure 5)
-5. Locate the second output of the transaction. Viewing the OP_RETURN of this output, the first 4 digits represent the individual votebits and the last 8 represent the vote version in hexadecimal. In the images below, a version "04" vote voted "01", *both numbers are in hexadecimal* (aka 0x04 and 0x01). (Figure 5)
-6. Compare the block explorer votebits with the chart below and you'll see that the ticket voted to abstain from both lnsupport and sdiffalgo agendas while verifying the previous block as valid. (Figure 6)
-
-figure 3:<br>
-<img src="/img/verify_voted-tickets.png">
-
-figure 4:<br>
-<img src="/img/verify_block-explorer-sstx.png">
-
-figure 5:<br>
-<img src="/img/verify_block-explorer-votebits.png">
-
-figure 6:<br>
-<img src="/img/verify_votebits-chart.png">
 
 ---
 
@@ -137,4 +56,44 @@ figure 6:<br>
 
 ---
 
+## **Voting Archive**
 
+This section provides an archive for previous votes along with their outcomes.
+
+#V4#
+
+##**Change PoS Staking Algorithm**##
+**Agenda ID:**  sdiffalgorithm
+
+Change stake difficulty algorithm as defined in DCP0001
+
+Specifies a proposed replacement algorithm for determining the stake difficulty (commonly called the ticket price). This proposal resolves all issues with a new algorithm that adheres to the referenced ideals.
+
+##Voting Results:##
+
+| Choice  | Result
+|-----|-------|
+|No   |  2.07%|
+|Yes  | 97.92%|
+
+**Locked In:** 141184<br />
+**Activated:** 149248<br />
+**Hard Forked:** 149328
+					
+
+##**Start Lightning Network Support**##
+**Agenda ID:**  lnsupport
+
+Request developers begin work on Lightning Network (LN) integration
+
+The Lightning Network is the most directly useful application of smart contracts to date since it allows for off-chain transactions that optionally settle on-chain. This infrastructure has clear benefits for both scaling and privacy. Decred is optimally positioned for this integration.
+
+##Voting Results:##
+
+| Choice  | Result
+|-----|-------|
+|No   |  1.38%|
+|Yes  | 98.61%|
+
+**Locked In:** 141184<br />
+**Activated:** 149248

@@ -83,21 +83,61 @@ $ docker run -d --rm -p <local port>:80 decred/dcrdocs:latest
 ```
 
 
-## Translations
-### Adding a new translation
+## Localization
 
-These are the recommended steps to contribute a new language to dcrdocs:
+The below commands must be run when either the content changes or there are updates in the translations in Transifex.  You'll first need to install the [Transifex client](https://docs.transifex.com/client/installing-the-client).
 
-1. Find the two letter code which represents the language according to [ISO 639-2](https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes). For the rest of this guide we will use the Russian language as an example (code "ru")
-1. Add 'ru' to the list of languages in `build_docs.sh`. In this case ```LANG="de es"``` becomes ```LANG="de es ru"```
-1. Run `build_docs.sh`. This will create the directory `ru_docs` which will contain a full copy of the English documentation
-1. Copy `mkdocs.yml` to `ru_mkdocs.yml` and give it an extra line `docs_dir: 'ru_docs'`
-1. Translate each of the markdown files in `ru_docs`. Make one commit for each file translated to more easily track progress and changes in the commit history. The commit message should be formatted as `ru translation filename.md`
-1. Translate the table of contents by updating the headings in `ru_mkdocs.yml`
-1. Translate the copyright message in `ru_mkdocs.yml`
-1. Run `build_docs.sh` again and check the output contains no errors to validate your work. 
+#### Downloading web site code
 
-Properly translating the documentation will take a considerable amount of time and the pace of change in dcrdocs is fairly rapid. While translating it is important to keep an eye on changes which are happening in the English language version to ensure the translated version is also kept up to date. The command `git log <FILENAME>` may be useful to check the history of individual files.
+Make sure you have [git](https://git-scm.com/) installed.
+
+```sh
+git clone https://github.com/decred/dcrweb
+cd dcrweb;
+```
+
+#### Importing new translations and content updates
+
+When translations are added/updated in [Transifex](https://www.transifex.com/decred/), pull the updates:
+
+```sh
+npm run transifex:pull
+```
+
+When you run this for the first time, you'll be asked to log in with your Transifex username/password.
+
+To push the changes to staging:
+
+```sh
+git commit -m'Translation update'
+git push origin
+```
+
+This triggers the update on the staging site, which will be rebuilt usually in a few minutes (give it 5):
+
+[https://dcrweb.herokuapp.com/](https://dcrweb.herokuapp.com/)
+
+#### Updating the message catalog
+
+When the master content changes in the HTML files, you'll need to re-generate the message catalog and push it to Transifex so that translators can update the localized message catalogs.  After adding new content or making changes, be sure to validate the Markdown files in order to avoid issues while importing the catalogs.
+
+```sh
+npm run lint
+```
+
+If there are any errors, fix the files before continuing.  Once the lint command displays no errors, proceed to uploading the message catalog:
+
+```sh
+npm run transifex:push
+```
+
+#### Adding a new language
+
+  1. Add the new language in Transifex
+  2. In the repository folder, run `npm run transifex:pull`, and once it completes, add the resulting new files to git: `git add src/i18n`
+  5. Commit files to git + push to repo
+
+
 
 ### Locally serving dcrdocs translations
 Run `mkdocs serve -f de_docs.yml` in the repository root, substituting `de_docs.yml` with the config file for the language you wish to use.

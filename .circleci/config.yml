@@ -1,0 +1,46 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+#  1/4a6fc49a88361847209c851b0b40552c51aab97f
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:7.10
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - setup_remote_docker
+      - run: sudo npm i -g grunt-cli
+      - run: yarn install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run: yarn build:development
+      - run: yarn deploy:build:docker
+      - run: docker login --username=_ --password=$HEROKU_TOKEN registry.heroku.com
+      - run: docker tag decred/dcrdocs:latest registry.heroku.com/dcrdocs/web
+      - run: docker push registry.heroku.com/dcrdocs/web
+
+# workflows:
+#   version: 2
+#   build-test-and-deploy:
+#     jobs:
+#       - build:
+#           filters:
+#             branches:
+#               only: localization

@@ -105,7 +105,10 @@ Your `ticketfee` is the DCR/kB rate you'll pay to have your ticket purchase be i
 =======
 1. During startup by adding `ticketfee=<fee rate>` to the `[Application Options]` of your `dcrwallet.conf`.
 2. While your wallet is running, using the `dcrctl --wallet setticketfee <fee rate>` command. This is not a permanent setting and will default to 0.001 every time your wallet is restarted unless a ticketfee is specified in `dcrwallet.conf`.
+<<<<<<< HEAD
 >>>>>>> update default ticketfee to 0.001
+=======
+>>>>>>> dfd5c63e026351512cff13436f0d10e0bb946329
 
 Why are ticket fees important? Usually the default fee of 0.001 is enough to get your tickets mined, however there are extremely rare circumstances where an increased ticket fee may be beneficial. When ticket demand outpaces supply (there are only a maximum of 2880 tickets available at each price interval) a situation is created where stakeholders can increase their ticket fees in order to get their ticket purchases mined ahead of others offering lower fees. This type of "fee wars" scenario has not occurred since the new ticket price algorithm was introduced in July 2017.
 
@@ -117,8 +120,11 @@ To get the current ticket price, issue the `dcrctl --wallet getstakeinfo` comman
 
 ---
 
+<<<<<<< HEAD
 ### Manual Ticket Purchase
 
+=======
+>>>>>>> dfd5c63e026351512cff13436f0d10e0bb946329
 > Solo Tickets
 
 To purchase tickets used for solo-staking, you only need to specify the `fromaccount` and `spendlimit` arguments while using the `purchaseticket` command. For example: `dcrctl --wallet purchaseticket "default" 50` would use DCR from your `default` account to purchase a ticket if the current ticket price was a max of 50 DCR.

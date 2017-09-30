@@ -1,37 +1,35 @@
 # Decrediton Setup Guide 
 
-Last updated for v1.0.0.
+Last updated for v1.1.1.
 
 ---
 
-`Decrediton` is a graphical user interface for `dcrwallet`. When this application launches, it automatically starts its own instance of `dcrd` and `dcrwallet` in the background - it will not open if there is already a running instance of `dcrd`.
-
-NOTE: If at any point the program becomes unresponsive or gets stuck on a loading screen, this can usually be fixed with a restart of the application.
+`Decrediton` is a graphical user interface for `dcrwallet`. When this application launches, it automatically starts its own instance of the command line tools `dcrd` and `dcrwallet` in the background.
 
 ---
 
 ## Download and Install 
 
-Decrediton is released with the Binary Releases and can be found here: [https://github.com/decred/decred-binaries/releases/tag/v1.1.0](https://github.com/decred/decred-binaries/releases/tag/v1.1.0). As of v1.1.0, Decrediton is only available for Linux and macOS.
+The latest version of Decrediton can be downloaded from [https://decred.org/downloads/](https://decred.org/downloads/). As of v1.1.1, Decrediton is only available for Linux and macOS, but a build for Windows should soon be available.
 
 > macOS
 
-1. Download the `decrediton-1.1.0.dmg` file.
+1. Download the `decrediton-1.1.1.dmg` file.
 
-2. Double click the `decrediton-1.1.0.dmg` file once downloaded to mount the disk image.
+1. Double click the `decrediton-1.1.1.dmg` file once downloaded to mount the disk image.
 
-3. Drag the decrediton.app into the link to your Applications folder within the disk image.
+1. Drag the decrediton.app into the link to your Applications folder within the disk image.
 
 > Linux
 
-1. Download the `decrediton-1.1.0.tar.gz` file.
+1. Download the `decrediton-1.1.1.tar.gz` file.
 
-2. Navigate to download location and extract the .tar.gz file:
+1. Navigate to download location and extract the .tar.gz file:
 
     Ubuntu File Browser: simply right click on the .tar.gz file and press "Extract Here". <br />
     Terminal: use the `tar -xvzf filename.tar.gz` command.
 
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.1.0.tar.gz` should extract to `decrediton-v1.1.0`). If successful, this new folder should include a `decrediton` executable.
+    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.1.1.tar.gz` should extract to `decrediton-v1.1.1`). If successful, this new folder should include a `decrediton` executable.
 
 ---
 
@@ -45,24 +43,53 @@ This ultimately means that *anyone* who knows your seed can use it to restore yo
 
 ---
 
-## Creating a New Wallet 
+## Opening and Setting Up Decrediton
 
-After clicking "OK, I Understand" to the disclaimer, you'll see the "Create a Wallet" dialog.
+Decrediton will display the following screen when it is opened for the first time:
 
-The "Create a Wallet" dialog defaults to the "New Seed" option. Simply click "Existing Seed" if you already have a seed you intend to use, and follow the steps presented there. This guide assumes you do not have a seed and will continue using the "New Seed" option. Please review the [Critical Information](#critical-information) about seeds, above.
+![Decrediton create wallet screen](/img/decrediton/create-wallet.jpg)
 
-1. Record the seed that is displayed in the text box (you will need to re-enter it on the next screen).
-
-2. Press "Continue"
-
-3. Confirm your seed, and create a private wallet passphrase. This passphrase will be used to unlock your wallet when creating transactions.
-
-4. Press "Create Wallet"
-
-5. You should then see a spinning blue circle. This will spin until `dcrd` has fully synced the blockchain. On computers that haven't had `dcrd` loaded on them, this should take 1-2 hours with newer hardware (it may take longer with older hardware). You can check your process monitor application for a running instance of `dcrd` - if it is using a substantial percentage of your CPU, it is syncing. If it isn't, Decrediton may require a restart to move beyond this screen.
-
-## Opening the Wallet 
-
-After the blockchain has been synced, you should see an "Opening Wallet" page. Here, you will need to enter your private passphrase and the wallet will rescan recent blocks for transactions that belong to your addresses. Wait for the progress bar to fill. Decrediton should then load the Overview page with your Available Balance and Recent Transactions displayed.
+To create a brand new Decred wallet, continue to read the next section. If you have used Decred before and wish to restore an existing wallet, skip this section and read [Restore Existing Wallet From Seed](/getting-started/user-guides/decrediton-setup.md#restore-existing-wallet-from-seed)
 
 ---
+
+## Creating a New Wallet
+
+1. The 33 word seed for your new wallet is displayed in the text box (blurred in the above image). Record the seed and store it somewhere safe. You will need to re-enter this seed on the next screen.
+
+1. Press "Continue"
+
+1. Confirm your seed by entering the words into the confirmation box.
+![Decrediton seed entry screen](/img/decrediton/seed-entered.jpg)
+
+1. Create a private passphrase for your wallet. This passphrase will be used to unlock your wallet when creating transactions.
+
+1. Press "Create Wallet". You should then see a spinning Decred logo. This will spin until `dcrd` has fully synced the blockchain.
+![Decrediton loading screen](/img/decrediton/loading.jpg)
+
+1.  On computers that haven't had `dcrd` loaded before, this should take 1-2 hours with newer hardware (it may take longer with older hardware). You can check your process monitor application for a running instance of `dcrd` - if it is using a substantial percentage of your CPU, it is syncing. If it isn't, Decrediton may require a restart to move beyond this screen.
+
+1. When the whole blockchain has been scanned, Decrediton will open the Overview page displaying your current balance and recent transactions:
+![Decrediton overview screen](/img/decrediton/open-wallet.jpg)
+
+---
+
+## Restore Existing Wallet From Seed
+
+1. If you already have a wallet seed you can use it by clicking on the "Existing Seed" button.
+
+1. Enter your seed into the "Confirm Seed" text box.
+
+1. Create a private passphrase for your wallet.
+
+1. Press "Create Wallet". Wait for the blockchain to be scanned.
+
+---
+
+## Troubleshooting
+
+*Decrediton will not start!*
+
+![Decrediton error window](/img/decrediton/dcrd-error.jpg)
+
+If you are seeing the error above, it may be because there is already a running instance of `dcrd` on your machine. Decrediton attempts to start its own instance of `dcrd` and `dcrwallet` in the background. Kill any running instances of `dcrd` and restart Decrediton.

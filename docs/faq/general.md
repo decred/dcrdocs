@@ -2,7 +2,7 @@
 
 ---
 
-#### 1. What lead to the development of Decred? 
+#### 1. What led to the development of Decred? 
 
 Here are a series of blog posts that discuss the motivation[^8550] for Decred:
 

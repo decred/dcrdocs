@@ -22,6 +22,7 @@ pages:
     - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
   - Decrediton:
     - 'Decrediton Setup': 'getting-started/user-guides/decrediton-setup.md'
+    - 'Using Decrediton': 'getting-started/user-guides/using-decrediton.md'
   - Command-Line:
     - 'Installation': 'getting-started/user-guides/cli-installation.md'
     - 'OS Differences': 'getting-started/cli-differences.md'

@@ -10,7 +10,15 @@ Last updated for v1.1.1.
 
 ## Download and Install 
 
-The latest version of Decrediton can be downloaded from [https://decred.org/downloads/](https://decred.org/downloads/). As of v1.1.1, Decrediton is only available for Linux and macOS, but a build for Windows should soon be available.
+The latest version of Decrediton can be downloaded from [https://decred.org/downloads/](https://decred.org/downloads/). As of v1.1.1, Decrediton is available for Windows, macOS and Linux.
+
+> Windows
+
+1. Download the Windows installer `decrediton-1.1.1.exe`.
+
+1. Double click the installer and follow the instructions. This will install and automatically start up Decrediton to download the Decred blockchain and set up your wallet.
+
+1. The installer adds a shortcut to Decrediton on your desktop for next time you want to use it.
 
 > macOS
 

@@ -70,10 +70,10 @@ The version of dcrdocs that you just built only uses static files which are all 
 
 ### Docker
 
-dcrdocs can also be hosted in a docker container. After building the site using the process above, a docker container can be built with
+dcrdocs can also be hosted in a docker container. Build the container using
 
 ```bash
-$ docker build . -t decred/dcrdocs
+$ ./build_docker.sh
 ```
 
 The container can then be run with

@@ -47,7 +47,7 @@ Follow the [dcrctl Basics](/getting-started/user-guides/dcrctl-basics.md) guide 
 
 These mining pools are known to support Decred:
 
-* [<i class="fa fa-external-link-square"></i> http://decredpool.org](http://decredpool.org)
+* [<i class="fa fa-external-link-square"></i> http://decredpool.org](http://www.decredpool.org)
 * [<i class="fa fa-external-link-square"></i> http://yiimp.ccminer.org](http://yiimp.ccminer.org)
 * [<i class="fa fa-external-link-square"></i> http://coinmine.pl/dcr](http://coinmine.pl/dcr)
 * [<i class="fa fa-external-link-square"></i> https://dcr.maxminers.net](https://dcr.maxminers.net)

@@ -30,8 +30,8 @@ well documented in the
 
 ### <i class="fa fa-exchange"></i> Exchanges
 
-Since the release of Decred on February 8th, 2016, there are five
-currency exchanges where you can buy or sell Decred (as of February 2017).
+Since the release of Decred on February 8th, 2016, there are seven
+currency exchanges where you can buy or sell Decred (as of October 2017).
 We hope this list will grow as time goes on.
 
 * [Poloniex](https://poloniex.com/)

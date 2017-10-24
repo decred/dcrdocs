@@ -10,7 +10,7 @@ Proof-of-stake voting began[^7969] at block 4,096.
 
 #### 2. In the source code TicketPoolSize is set to 8,192, but the current ticket pool size is larger than that. Why? 
 
-It is intentional and is an integral part of the dynamic ticket price adjustment[^8965]. The `TicketPoolSize` is the target ticket pool size and it works very similar to the target difficulty for proof-of-work (PoW). The fact the current ticket pool size is larger than the target is what causes the ticket price to rise which in turn will eventually cause less tickets to be purchased and result in the number of tickets in the pool reducing back towards the target. If it falls under, the price will fall to encourage more ticket sales in order to increase the number of tickets in the pool towards the target.
+It is intentional and is an integral part of the dynamic ticket price adjustment[^8965]. The `TicketPoolSize` is the target ticket pool size and it works very similar to the target difficulty for proof-of-work (PoW). The fact the current ticket pool size is larger than the target is what causes the ticket price to rise which in turn will eventually cause fewer tickets to be purchased and result in the number of tickets in the pool reducing back towards the target. If it falls under, the price will fall to encourage more ticket sales in order to increase the number of tickets in the pool towards the target.
 
 ---
 

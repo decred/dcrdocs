@@ -1,8 +1,6 @@
 # Proof-of-Stake (PoS) Mining 
 
-Last updated for v1.0.0
-
-This document is meant to be an educational resource for Proof-of-Stake mining (staking) with Decred. It will cover the purpose of the Proof-of-Stake protocol, a brief introduction to the staking process, a ticket lifecycle, and get you started with ticket buying. 
+Last updated for v1.1.0
 
 ---
 
@@ -10,13 +8,15 @@ This document is meant to be an educational resource for Proof-of-Stake mining (
 
 Decred's unique Proof-of-Stake protocol serves multiple purposes:
 
-To provide a metric for stakeholders/end-user support of any consensus updates. That is, stakeholders are able to vote on specific proposals/agenda on the Decred blockchain. Agendas may include deciding whether or not the dev team spends time implementing a specific feature, activating the code of a feature already submitted for implementation, or making other decisions such as how the dev subsidy should be spent. More information on voting can be found in our [Mainnet Voting Guide](/getting-started/user-guides/agenda-voting.md).
+1. Allowing stakeholders to vote for or against proposed changes to the Decred blockchain. If stakeholders vote in support of a change, the chain will hardfork and the new feature becomes active automatically. More information on voting can be found in the [Mainnet Voting Guide](/getting-started/user-guides/agenda-voting.md).
 
-Decred's PoS also provides a system of checks and balances for nonconforming miners. Stakeholders can vote a block invalid even if it technically matches the consensus rules of the network.
+1. Providing a mechanism for stakeholders to keep check of nonconforming proof-of-work miners. Stakeholders can vote a block invalid even if it conforms to the consensus rules of the network. This allows stakeholders to discourage unfavourable mining behavior such as mining empty blocks.
+
+1. Allowing long-term holders of Decred to lock up their funds for a length of time in order to accrue new coins from the [Block Reward](/advanced/inflation/).
 
 ---
 
-## Staking 101 
+## How Proof-of-Stake Works
 
 To participate in proof-of-stake mining, stakeholders lock some DCR in return for a ticket. Every ticket owned gives a stakeholder the ability to cast a single vote. Upon voting, each ticket returns a small reward plus the original **Ticket Price** of the ticket. Each ticket is selected to vote at random, giving an average vote time of 28 days, but possibly requiring up to 142 days, with a .5% chance of expiring before being chosen to vote (this expiration returns the original **Ticket Price** without a reward). Every block mined must include 5 votes (Miners are penalized by a reward deduction if fewer than 5 votes are included). Every block mined can also include up to 20 fresh ticket purchases. A new ticket requires 256 block to mature before it is entered into the **Ticket Pool* and able to be called upon to vote.
 
@@ -55,51 +55,6 @@ A ticket on main net (test net uses different parameters) will go through a few 
 9. After a ticket has voted, missed, or expired, the funds (ticket price and subsidy if applicable, minus the fee) will enter immature status for another 256 blocks, after which they are released. If a ticket is missed or expired, a ticket revocation transaction is submitted by the wallet which then frees up the locked ticket outputs. **NOTE:** Revocations can only be submitted for a corresponding missed ticket. You cannot revoke a ticket until it is missed.
 
 ---
-
-## How to Stake 
-
-A wallet that is open and unlocked 24/7 is *highly recommended* for staking. Any loss in uptime may result in a loss of vote and reward. Stakepools are available for those unable to keep a personal voting wallet online forever.
-
-The only other requirement for staking is that you buy a ticket. Below you can find guides for buying tickets using [Paymetheus](#paymetheus) and [dcrwallet](#dcrwallet).
-
-If you intend to use a stakepool, you must first sign up for one. Links to officially recognized stakepools are provided [here](#list-of-stakepools).
-
----
-
-## Paymetheus 
-
-The Paymetheus application is unable to vote itself, which means that voting rights must be assigned to a stakepool.
-
-Please see the [Purchase Tickets tab guide](/getting-started/user-guides/using-paymetheus.md#purchase-tickets-tab) for Paymetheus to learn how to buy tickets using Paymetheus and a stakepool.
-
----
-
-## dcrwallet 
-
-The [Buying Tickets with dcrwallet](/getting-started/user-guides/dcrwallet-tickets.md) guide will show you how to buy tickets manually and automatically for pool or solo staking.
-
----
-
-## <i class="fa fa-life-ring"></i> List of Stakepools 
-
-These stakepools are officially recognized:
-
-* [<i class="fa fa-external-link-square"></i> https://dcr.stakepool.net](https://dcr.stakepool.net)
-* [<i class="fa fa-external-link-square"></i> https://dcr.stakeminer.com](https://dcr.stakeminer.com)
-* [<i class="fa fa-external-link-square"></i> https://pool.d3c.red](https://pool.d3c.red)
-* [<i class="fa fa-external-link-square"></i> https://stakepool.dcrstats.com](https://stakepool.dcrstats.com)
-* [<i class="fa fa-external-link-square"></i> https://stake.decredbrasil.com](https://stake.decredbrasil.com)
-* [<i class="fa fa-external-link-square"></i> https://stakepool.eu](https://stakepool.eu)
-* [<i class="fa fa-external-link-square"></i> https://dcr.ubiqsmart.com](https://dcr.ubiqsmart.com)
-* [<i class="fa fa-external-link-square"></i> https://ultrapool.eu](https://ultrapool.eu)
-
-You can find a comparison of each pool's fees and statistics by visiting the
-[<i class="fa fa-external-link-square"></i> Decred website](https://decred.org)
-and clicking the 'Stakepools' link within the footer at the bottom of the page.
-
----
-
-<!-- TODO: **Purchasing Tickets with Decrediton** -->
 
 ## Additional Information 
 

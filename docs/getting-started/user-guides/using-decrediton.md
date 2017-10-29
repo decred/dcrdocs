@@ -69,7 +69,7 @@ by transaction type: regular, ticket and vote transactions. The transaction hash
 
 The tickets tab allows you to see how many proof of stake tickets you current have, to buy new tickets, and to set your voting preferences.
 
-Before you can use the tickets tab you must first import the API key from your [stakepool account](/mining/proof-of-stake.md#list-of-stakepools).
+Before you can use the tickets tab you must first import the API key from your [stakepool account](/mining/how-to-stake.md#pos-using-a-stakepool).
 
 ![Tickets Tab](/img/decrediton/tickets.jpg)
 

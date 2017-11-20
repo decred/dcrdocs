@@ -46,10 +46,9 @@ Per i progetti che utilizzano Go, è possibile seguire questa procedura. Il Dcrd
 ```bash
 $ mkdir -p $GOPATH/src/github.com/decred/
 $ git clone https://github.com/decred/dcrd $GOPATH/src/github.com/decred/dcrd
-$ go get github.com/Masterminds/glide
 $ cd $GOPATH/src/github.com/decred/dcrd
-$ glide install
-$ go install $(glide nv)
+$ dep ensure
+$ go install . ./cmd/...
 ```
 
 - Aggiungi un telecomando git per la tua fork:

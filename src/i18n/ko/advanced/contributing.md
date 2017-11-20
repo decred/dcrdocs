@@ -46,10 +46,9 @@ Go를 사용하는 프로젝트의 경우이 절차를 수행 할 수 있습니�
 ```bash
 $ mkdir -p $GOPATH/src/github.com/decred/
 $ git clone https://github.com/decred/dcrd $GOPATH/src/github.com/decred/dcrd
-$ go get github.com/Masterminds/glide
 $ cd $GOPATH/src/github.com/decred/dcrd
-$ glide install
-$ go install $(glide nv)
+$ dep ensure
+$ go install . ./cmd/...
 ```
 
 - 귀하의 포크에 대한 자식 원격 추가 :

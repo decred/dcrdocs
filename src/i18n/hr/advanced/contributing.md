@@ -46,7 +46,7 @@ Za projekte koji upotrebljavaju Izlaz, možete pratiti ovaj postupak. Kao primje
 $ mkdir -p $GOPATH/src/github.com/decred/
 $ git clone https://github.com/decred/dcrd $GOPATH/src/github.com/decred/dcrd
 $ cd $GOPATH/src/github.com/decred/dcrd
-$ dep ensure
+$ go dep ensure
 $ go install . ./cmd/...
 ```
 

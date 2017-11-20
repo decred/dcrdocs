@@ -47,7 +47,7 @@ Go를 사용하는 프로젝트의 경우이 절차를 수행 할 수 있습니�
 $ mkdir -p $GOPATH/src/github.com/decred/
 $ git clone https://github.com/decred/dcrd $GOPATH/src/github.com/decred/dcrd
 $ cd $GOPATH/src/github.com/decred/dcrd
-$ dep ensure
+$ go dep ensure
 $ go install . ./cmd/...
 ```
 

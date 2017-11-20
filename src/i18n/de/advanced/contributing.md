@@ -47,7 +47,7 @@ For projects using Go, you can follow this procedure.  dcrd will be used as the 
 $ mkdir -p $GOPATH/src/github.com/decred/
 $ git clone https://github.com/decred/dcrd $GOPATH/src/github.com/decred/dcrd
 $ cd $GOPATH/src/github.com/decred/dcrd
-$ dep ensure
+$ go dep ensure
 $ go install . ./cmd/...
 ```
 

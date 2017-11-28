@@ -50,8 +50,8 @@ theme:
   feature:
     tabs: true
   palette:
-    primary: 0C1E3E
-    accent: light blue
+    primary: indigo
+    accent: green
   font:
     text: Source Sans Pro
     code: Inconsolata

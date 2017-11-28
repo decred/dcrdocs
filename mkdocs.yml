@@ -36,7 +36,7 @@ copyright: 'Copyright &copy; 2017 - 2018 Decred Project'
 theme:
   name: null
   custom_dir: material
-
+  logo: 'img/dcr-logo.svg'
   # 404 page
   static_templates:
     - 404.html
@@ -56,8 +56,6 @@ theme:
     text: Source Sans Pro
     code: Inconsolata
   favicon: assets/images/favicon.png
-  logo:
-    icon: "\uE80C"
 
 # Customization
 extra:

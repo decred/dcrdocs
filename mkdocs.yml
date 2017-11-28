@@ -25,7 +25,7 @@ site_author: Denys Zayets
 site_url: https://dcrdocs.netlify.com/
 
 # Repository
-repo_name: dupontfund/jessieknows
+repo_name: denyszayets/dcrdocs
 repo_url: https://github.com/denyszayets/dcrdocs
 edit_uri: ""
 
@@ -50,7 +50,7 @@ theme:
   feature:
     tabs: true
   palette:
-    primary: red
+    primary: 0C1E3E
     accent: light blue
   font:
     text: Source Sans Pro

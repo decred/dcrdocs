@@ -1,6 +1,10 @@
 site_name: Decred Documentation
-theme: null
-theme_dir: tpldcrdocs/
+
+# Configuration
+theme:
+  name: null
+  custom_dir: material
+
 site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
 markdown_extensions:

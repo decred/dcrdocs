@@ -19,18 +19,18 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: JessieKnows
+site_name: Decred Documentation
 site_description: Knowledge Base
 site_author: Denys Zayets
-site_url: https://jessieknows.netlify.com/
+site_url: https://dcrdocs.netlify.com/
 
 # Repository
 repo_name: dupontfund/jessieknows
-repo_url: https://github.com/dupontfund/jessieknows
+repo_url: https://github.com/denyszayets/dcrdocs
 edit_uri: ""
 
 # Copyright
-copyright: 'Copyright &copy; 2017 - 2018 Jessie Ball duPont Fund'
+copyright: 'Copyright &copy; 2017 - 2018 Decred Project'
 
 # Configuration
 theme:
@@ -53,8 +53,8 @@ theme:
     primary: red
     accent: light blue
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Source Sans Pro
+    code: Inconsolata
   favicon: assets/images/favicon.png
   logo:
     icon: "\uE80C"

@@ -43,13 +43,12 @@ For projects using Go, you can follow this procedure.  dcrd will be used as the 
 - Fork dcrd on GitHub
 - Run the following commands to obtain dcrd, all dependencies, and install it:
 
-```bash
+````bash
 $ mkdir -p $GOPATH/src/github.com/decred/
 $ git clone https://github.com/decred/dcrd $GOPATH/src/github.com/decred/dcrd
-$ go get github.com/Masterminds/glide
 $ cd $GOPATH/src/github.com/decred/dcrd
-$ glide install
-$ go install $(glide nv)
+$ go dep ensure
+$ go install . ./cmd/...
 ```
 
 - Add a git remote for your fork:

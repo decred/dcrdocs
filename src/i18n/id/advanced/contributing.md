@@ -46,10 +46,9 @@ Untuk proyek yang menggunakan Go, Anda dapat mengikuti prosedur ini. Dcrd akan d
 ```bash
 $ mkdir -p $GOPATH/src/github.com/decred/
 $ git clone https://github.com/decred/dcrd $GOPATH/src/github.com/decred/dcrd
-$ go get github.com/Masterminds/glide
 $ cd $GOPATH/src/github.com/decred/dcrd
-$ glide install
-$ go install $(glide nv)
+$ go dep ensure
+$ go install . ./cmd/...
 ```
 
 - Tambahkan git remote untuk fork Anda:

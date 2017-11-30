@@ -3,9 +3,9 @@ site_name: Decred Documentation
 site_url: https://docs.decred.org
 
 # Configuration
-theme:
+theme_dir:
   name: null
-  custom_dir: material
+  custom_dir: material/
   logo: 'images/logo.svg'
 
   # 404 page
@@ -27,8 +27,6 @@ theme:
     text: Source Sans Pro
     code: Inconsolata
   favicon: assets/images/favicon.png
-  logo:
-    icon: "\uE80C"
 
 # Copyright
 copyright: 'Copyright &copy; 2016 - 2017 Decred'

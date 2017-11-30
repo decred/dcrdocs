@@ -3,7 +3,11 @@ site_name: Decred Documentation
 site_url: https://docs.decred.org
 
 # Configuration
-theme: material
+theme:
+  name: null
+  custom_dir: material
+
+theme:
   logo: 'images/logo.svg'
 
   # 404 page

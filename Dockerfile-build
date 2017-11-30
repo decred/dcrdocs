@@ -1,0 +1,15 @@
+FROM python:3.5.4
+
+LABEL description="dcrdocs build"
+LABEL version="1.0"
+LABEL maintainer "holdstockjamie@gmail.com"
+
+USER root
+WORKDIR /root
+
+COPY ./ /root/
+
+RUN pip install mkdocs && \
+	pip install --user -r requirements.txt
+
+CMD ./build_docs.sh && chmod -R a+rw site

@@ -57,7 +57,7 @@ theme:
     code: Roboto Mono
   favicon: assets/images/favicon.png
   logo:
-    icon: "\uE80C"
+    icon: assets/images/logo.png
 
 # Customization
 extra:

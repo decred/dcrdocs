@@ -1,99 +1,122 @@
-site_name: Decred Documentation
-theme: null
-theme_dir: tpldcrdocs/
-site_url: https://docs.decred.org
-repo_url: https://github.com/decred/dcrdocs
+# Copyright (c) 2016-2017 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# Project information
+site_name: Material for MkDocs
+site_description: A Material Design theme for MkDocs
+site_author: Martin Donath
+site_url: https://squidfunk.github.io/mkdocs-material/
+
+# Repository
+repo_name: squidfunk/mkdocs-material
+repo_url: https://github.com/squidfunk/mkdocs-material
+edit_uri: ""
+
+# Copyright
+copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
+
+# Configuration
+theme:
+  name: null
+  custom_dir: material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  feature:
+    tabs: true
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  logo:
+    icon: "\uE80C"
+
+# Customization
+extra:
+  social:
+    - type: globe
+      link: http://struct.cc
+    - type: github-alt
+      link: https://github.com/squidfunk
+    - type: twitter
+      link: https://twitter.com/squidfunk
+    - type: linkedin
+      link: https://linkedin.com/in/squidfunk
+
+# Extensions
 markdown_extensions:
-  - footnotes
-  - fontawesome_markdown
-  - smarty
-  - mdx_math
-  - toc:
-      permalink: True
-  - tables
-extra_css:
-    - css/style.css
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
 pages:
-- Home: 'index.md'
-- Getting Started:
-  - "Beginner's Guide": 'getting-started/beginner-guide.md'
-  - Paymetheus:
-    - 'Paymetheus Setup': 'getting-started/user-guides/paymetheus.md'
-    - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
-  - Decrediton:
-    - 'Decrediton Setup': 'getting-started/user-guides/decrediton-setup.md'
-    - 'Using Decrediton': 'getting-started/user-guides/using-decrediton.md'
-  - Command-Line:
-    - 'Installation': 'getting-started/user-guides/cli-installation.md'
-    - 'OS Differences': 'getting-started/cli-differences.md'
-    - 'Startup Basics': 'getting-started/startup-basics.md'
-    - 'dcrd Setup': 'getting-started/user-guides/dcrd-setup.md'
-    - 'dcrwallet Setup': 'getting-started/user-guides/dcrwallet-setup.md'
-    - 'dcrctl Basics': 'getting-started/user-guides/dcrctl-basics.md'
-    - 'Buying Tickets': 'getting-started/user-guides/dcrwallet-tickets.md'
-  - 'Web Wallet': 'getting-started/user-guides/web.md'
-  - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
-  - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
-  - 'Mainnet Voting': 'getting-started/user-guides/agenda-voting.md'
-  - 'How To Vote': 'getting-started/user-guides/how-to-vote.md'
-  - 'Using Testnet': 'getting-started/using-testnet.md'
-  - 'Decred Constitution': 'getting-started/constitution.md'
-- Mining:
-  - 'Proof-of-Stake (PoS)': 'mining/proof-of-stake.md'
-  - 'Proof-of-Work (PoW)': 'mining/proof-of-work.md'
-  - User Guides:
-    - gominer:
-      - Pool-Mining:
-        - 'Linux Guide': 'mining/proof-of-work/pool-mining/gominer/linux.md'
-        - 'Windows Guide': 'mining/proof-of-work/pool-mining/gominer/windows.md'
-    - cgminer:
-      - Pool-Mining:
-        - 'Linux Guide': 'mining/proof-of-work/pool-mining/cgminer/linux.md'
-        - 'Windows Guide': 'mining/proof-of-work/pool-mining/cgminer/windows.md'
-      - Solo-Mining:
-        - 'Linux Guide': 'mining/proof-of-work/solo-mining/cgminer/linux.md'
-        - 'Windows Guide': 'mining/proof-of-work/solo-mining/cgminer/windows.md'
-- FAQ:
-  - 'General': 'faq/general.md'
-  - 'Configuration': 'faq/configuration.md'
-  - 'Wallets and Seeds': 'faq/wallets-and-seeds.md'
-  - 'Web Client': 'faq/web-client.md'
-  - 'Blocks': 'faq/blocks.md'
-  - Proof-of-stake:
-    - 'General': 'faq/proof-of-stake/general.md'
-    - 'Solo Mining': 'faq/proof-of-stake/solo-mining.md'
-    - 'Buying Tickets and Fees': 'faq/proof-of-stake/buying-tickets-and-fees.md'
-    - 'Voting Tickets': 'faq/proof-of-stake/voting-tickets.md'
-    - 'Stake Pools': 'faq/proof-of-stake/stake-pools.md'
-  - 'Proof-of-Work Mining': 'faq/proof-of-work-mining.md'
-  - 'Common Errors and Solutions': 'faq/errors.md'
-- Advanced:
-  - 'Manual CLI Install': 'advanced/manual-cli-install.md'
-  - 'Storing Login Details': 'advanced/storing-login-details.md'
-  - 'Program Options': 'advanced/program-options.md'
-  - 'Block Header Specifications': 'advanced/block-header-specifications.md'
-  - 'Blockchain Parameters': 'advanced/blockchain-parameters.md'
-  - 'Transaction Details': 'advanced/transaction-details.md'
-  - 'Verifying Binaries': 'advanced/verifying-binaries.md'
-  - 'Inflation': 'advanced/inflation.md'
-  - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
-  - 'Advanced dcrctl Usage': 'advanced/dcrctl-usage.md'
-  - 'Simnet': 'advanced/simnet.md'
-  - 'Contributing Guidelines': 'advanced/contributing.md'
-  - 'User Projects': 'advanced/user-projects.md'
-- Research:
-  - 'Overview': 'research/overview.md'
-  - 'Hybrid Design': 'research/hybrid-design.md'
-  - 'Decentralized Stake Pooling': 'research/decentralized-stake-pooling.md'
-  - 'Elliptic Curve Signature Algorithms': 'research/elliptic-curve-signature-algorithms.md'
-  - 'BLAKE-256 Hash Function': 'research/blake-256-hash-function.md'
-  - 'Script Extensions': 'research/script-extensions.md'
-  - 'Signature Script Isolation and Fraud Proofs': 'research/signature-script-isolation-and-fraud-proofs.md'
-  - 'Transaction Extensions': 'research/transaction-extensions.md'
-  - 'Schnorr Signatures': 'research/schnorr-signatures.md'
-  - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
-- About:
-  - 'Support Directory': 'support-directory.md'
-  - 'Credits': 'about/credits.md'
-  - 'License': 'about/license.md'
-copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.2. Decred Project 2016.
+  - Material: index.md
+  - Getting started: getting-started.md
+  - Extensions:
+    - Admonition: extensions/admonition.md
+    - CodeHilite: extensions/codehilite.md
+    - Footnotes: extensions/footnotes.md
+    - Metadata: extensions/metadata.md
+    - Permalinks: extensions/permalinks.md
+    - PyMdown: extensions/pymdown.md
+  - Specimen: specimen.md
+  - Customization: customization.md
+  - Release notes: release-notes.md
+  - Author's notes: authors-notes.md
+  - Contributing: contributing.md
+  - License: license.md
+
+# Google Analytics
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - auto

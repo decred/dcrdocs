@@ -21,3 +21,6 @@
 mkdocs>=0.17.1
 Pygments>=2.2
 pymdown-extensions>=3.4
+python-markdown-math==0.3
+mkdocs-bootswatch==0.4.0
+fontawesome-markdown==0.2.6

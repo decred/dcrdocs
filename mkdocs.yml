@@ -5,20 +5,11 @@ site_url: https://docs.decred.org
 # Configuration
 theme:
   name: null
-  custom_dir: material
-
-theme:
-  logo: 'images/logo.svg'
-
-  # 404 page
+  custom_dir: 'material'
   static_templates:
     - 404.html
-
-  # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
-
-  # Default values, taken from mkdocs_theme.yml
   language: en
   feature:
     tabs: true
@@ -28,7 +19,7 @@ theme:
   font:
     text: Source Sans Pro
     code: Inconsolata
-  favicon: assets/images/favicon.png
+    favicon: assets/images/favicon.png
 
 # Copyright
 copyright: 'Copyright &copy; 2016 - 2017 Decred'
@@ -69,10 +60,6 @@ markdown_extensions:
   - toc:
       permalink: True
   - tables
-
-# Estra CSS
-extra_css:
-    - css/style.css
 
 #Documents
 pages:

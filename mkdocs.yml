@@ -1,9 +1,58 @@
+# Project information
 site_name: Decred Documentation
-theme: null
-theme_dir: tpldcrdocs/
 site_url: https://docs.decred.org
+
+# Configuration
+theme:
+  name: null
+  custom_dir: 'material'
+  static_templates:
+    - 404.html
+  include_search_page: false
+  search_index_only: true
+  language: en
+  feature:
+    tabs: true
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Source Sans Pro
+    code: Inconsolata
+    favicon: assets/images/favicon.png
+
+# Copyright
+copyright: 'Copyright &copy; 2016 - 2017 Decred'
+
+# Repository
+repo_name: decred/dcrdocs
 repo_url: https://github.com/decred/dcrdocs
+edit_uri: ""
+
+# Extensions
 markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
   - footnotes
   - fontawesome_markdown
   - smarty
@@ -11,8 +60,8 @@ markdown_extensions:
   - toc:
       permalink: True
   - tables
-extra_css:
-    - css/style.css
+
+#Documents
 pages:
 - Home: 'index.md'
 - Getting Started:
@@ -96,4 +145,5 @@ pages:
   - 'Support Directory': 'support-directory.md'
   - 'Credits': 'about/credits.md'
   - 'License': 'about/license.md'
+
 copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.2. Decred Project 2016.

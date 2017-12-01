@@ -43,7 +43,7 @@ Stakepools allow stakeholders to generate ticket purchase transactions that give
 Purchasing a ticket for PoS is quite simple (see below) but what happens to it after you buy it?
 A ticket on main net (test net uses different parameters) will go through a few stages in its lifetime:
 
-1. You buy a ticket using a Paymetheus <!--, Decrediton,--> or dcrwallet wallet. The total cost of the each single ticket transaction should be **Ticket Price** + **Ticket Fee**(`ticketfee`).
+1. You buy a ticket using a Decrediton or dcrwallet wallet. The total cost of the each single ticket transaction should be **Ticket Price** + **Ticket Fee**(`ticketfee`).
 2. Your ticket enters the `mempool`. This is where your ticket waits to be mined by PoW miners. Only 20 fresh tickets are mined into each block.
 3. Tickets are mined into a block in with higher **Ticket Fee** transactions having a higher priority. Note that the **Ticket Fee** is DCR per KB of the transaction. A few common transaction sizes are 298 Bytes (a solo ticket purchase) and 539 Bytes (a pool ticket purchase).
 4. **A -** If your ticket is mined into a block, it becomes an immature ticket. This state lasts for 256 blocks (about 20 hours). During this time the ticket cannot vote. At this point, the ticket fee is non-refundable. <br /> 

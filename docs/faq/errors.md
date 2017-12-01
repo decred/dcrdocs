@@ -1,28 +1,5 @@
 # Errors and Common Problems 
 
-## Paymetheus 
-
-Decrediton has now replaced Paymetheus as the recommended wallet for Windows. You can use Decrediton with the same seed and API key that you used for Paymetheus.
-The below information will be kept until we stop supporting Paymetheus.
-
-#### 1. I've just started using Paymetheus, but it seems to be stuck. 
-
-The first time you start Paymetheus, it will download the blockchain. This can take up
-to an hour and Paymetheus will appear to be doing nothing.
-
-#### 2. Invalid passphrase for master private key. 
-
-This is just a long way of saying, "Incorrect password". You entered the wrong password for your
-wallet.
-
-#### 3. "Unable to purchase tickets: insufficient funds available..." but the wallet says I have enough. 
-
-There is a known bug in Paymetheus where immature funds are counted as available. After a ticket votes, there is a 
-256 block window where the funds are still locked. In this state, they are known as immature. When the period expires
-they will be usable again.
-
------
-
 ## Proof-of-Stake 
 
 #### 1. Some of my missed/expired tickets are still locked after more than a day. 

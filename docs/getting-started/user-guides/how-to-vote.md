@@ -10,9 +10,9 @@ If your Stakepool has updated to the latest stakepool software, you will find a 
 
 <img src="/img/stakepool-voting-page.png">
 
-You can also update your voting preferences via Paymetheus or Decrediton. Under the Tickets section, you'll find the option to set your vote. You must be using a stake pool to use this option.
+You can also update your voting preferences via Decrediton. Under the Tickets section, you'll find the option to set your vote. You must be using a stake pool to use this option.
 
-<img src="/img/paymetheus-voting-options.png">
+<img src="/img/decrediton/voting.jpg">
 
 ---------------------------
 

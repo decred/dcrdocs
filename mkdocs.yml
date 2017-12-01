@@ -17,9 +17,6 @@ pages:
 - Home: 'index.md'
 - Getting Started:
   - "Beginner's Guide": 'getting-started/beginner-guide.md'
-  - Paymetheus:
-    - 'Paymetheus Setup': 'getting-started/user-guides/paymetheus.md'
-    - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
   - Decrediton:
     - 'Decrediton Setup': 'getting-started/user-guides/decrediton-setup.md'
     - 'Using Decrediton': 'getting-started/user-guides/using-decrediton.md'
@@ -97,4 +94,7 @@ pages:
   - 'Support Directory': 'support-directory.md'
   - 'Credits': 'about/credits.md'
   - 'License': 'about/license.md'
+- Archive:
+    - 'Paymetheus Setup': 'getting-started/user-guides/paymetheus.md'
+    - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
 copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.2. Decred Project 2016.

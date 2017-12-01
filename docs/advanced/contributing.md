@@ -11,7 +11,7 @@ All code for Decred is kept on GitHub.  This document provides some basic info o
 A good first step is to read the [Code Contribution Guidelines documentation](https://github.com/decred/dcrd/blob/master/docs/code_contribution_guidelines.md) to get a good understanding of the policies used by the
 project.  That document is primarily focused on the Go codebase but it is still a good start.
 
-The following examples will be split into two sections, one for the Go projects (dcrd, dcrwallet, gominer, etc), and one for projects that do not use Go (decrediton, Paymetheus, dcrdocs, etc).  In all cases, be sure to check out the README.md in each project if you need help setting the particular project up.
+The following examples will be split into two sections, one for the Go projects (dcrd, dcrwallet, gominer, etc), and one for projects that do not use Go (decrediton, insight, dcrdocs, etc).  In all cases, be sure to check out the README.md in each project if you need help setting the particular project up.
 
 ---
 

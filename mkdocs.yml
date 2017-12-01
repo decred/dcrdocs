@@ -38,21 +38,22 @@ pages:
   - 'How To Vote': 'getting-started/user-guides/how-to-vote.md'
   - 'Using Testnet': 'getting-started/using-testnet.md'
   - 'Decred Constitution': 'getting-started/constitution.md'
-- Mining:
-  - 'Proof-of-Stake (PoS)': 'mining/proof-of-stake.md'
-  - 'Proof-of-Work (PoW)': 'mining/proof-of-work.md'
-  - User Guides:
-    - gominer:
-      - Pool-Mining:
-        - 'Linux Guide': 'mining/proof-of-work/pool-mining/gominer/linux.md'
-        - 'Windows Guide': 'mining/proof-of-work/pool-mining/gominer/windows.md'
-    - cgminer:
-      - Pool-Mining:
-        - 'Linux Guide': 'mining/proof-of-work/pool-mining/cgminer/linux.md'
-        - 'Windows Guide': 'mining/proof-of-work/pool-mining/cgminer/windows.md'
-      - Solo-Mining:
-        - 'Linux Guide': 'mining/proof-of-work/solo-mining/cgminer/linux.md'
-        - 'Windows Guide': 'mining/proof-of-work/solo-mining/cgminer/windows.md'
+- Proof-of-Stake Mining:
+  - "What is Proof-of-Stake?": 'mining/proof-of-stake.md'
+  - "How to Stake": 'mining/how-to-stake.md' 
+- Proof-of-Work Mining:
+  - 'Overview': 'mining/proof-of-work.md'
+  - gominer:
+    - Pool-Mining:
+      - 'Linux Guide': 'mining/proof-of-work/pool-mining/gominer/linux.md'
+      - 'Windows Guide': 'mining/proof-of-work/pool-mining/gominer/windows.md'
+  - cgminer:
+    - Pool-Mining:
+      - 'Linux Guide': 'mining/proof-of-work/pool-mining/cgminer/linux.md'
+      - 'Windows Guide': 'mining/proof-of-work/pool-mining/cgminer/windows.md'
+    - Solo-Mining:
+      - 'Linux Guide': 'mining/proof-of-work/solo-mining/cgminer/linux.md'
+      - 'Windows Guide': 'mining/proof-of-work/solo-mining/cgminer/windows.md'
 - FAQ:
   - 'General': 'faq/general.md'
   - 'Configuration': 'faq/configuration.md'

@@ -18,9 +18,31 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-mkdocs>=0.17.1
-Pygments>=2.2
-pymdown-extensions>=3.4
-python-markdown-math==0.3
-mkdocs-bootswatch==0.4.0
-fontawesome-markdown==0.2.6
+FROM jfloff/alpine-python:2.7-slim
+MAINTAINER Martin Donath <martin.donath@squidfunk.com>
+
+# Set build directory
+WORKDIR /tmp
+
+# Copy files necessary for build
+COPY material material
+COPY MANIFEST.in MANIFEST.in
+COPY package.json package.json
+COPY requirements.txt requirements.txt
+COPY setup.py setup.py
+
+# Perform build and cleanup artifacts
+RUN \
+  apk add --no-cache openssh git && \
+  python setup.py install 2>/dev/null && \
+  rm -rf /tmp/*
+
+# Set working directory
+WORKDIR /docs
+
+# Expose MkDocs development server port
+EXPOSE 8000
+
+# Start development server by default
+ENTRYPOINT ["mkdocs"]
+CMD ["serve", "--dev-addr=0.0.0.0:8000"]

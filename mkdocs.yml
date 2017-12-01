@@ -44,11 +44,9 @@ extra:
     - type: globe
       link: https://www.decred.org/
     - type: github-alt
-      link: https://github.com/squidfunk
+      link: https://github.com/decred/dcrdocs
     - type: twitter
-      link: https://www.decred.org/
-    - type: linkedin
-      link: https://www.decred.org/
+      link: https://twitter.com/decredproject
 
 # Extensions
 markdown_extensions:

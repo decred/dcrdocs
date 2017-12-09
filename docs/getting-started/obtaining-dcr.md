@@ -9,30 +9,21 @@ coins.
 
 The five basic ways are:
 
-* Purchase Decred for BTC Through an Exchange
-* PoW Mine for Decred
-* PoS Mine for Decred (this requires you to already have some Decred)
+* Purchase Decred for BTC through an exchange
+* PoW mine for Decred
+* PoS mine for Decred (this requires you to already have some Decred)
 * Contribute to Decred
-* Sell / Trade Goods or Services with someone who already has Decred.
+* Sell or trade goods or services with someone who already has Decred.
 
-## <i class="fa fa-info-circle"></i> Purchasing Decred
+---
+
+### <i class="fa fa-info-circle"></i> Purchasing Decred
+
+## <i class="fa fa-exchange"></i> Exchanges
 
 One way to acquire Decred is to purchase some on an exchange.
-
-### <i class="fa fa-btc"></i> Bitcoin
-
-Note: Due to Decred’s early stages of development and adoption,
-Bitcoin must be traded for Decred, fiat currency cannot be used.  If
-you already have some Bitcoin, move ahead to the next section.  If you
-do not have any Bitcoin, the procedure for obtaining some has been
-well documented in the
-[Bitcoin wiki](https://en.bitcoin.it/wiki/Buying_Bitcoins_%28the_newbie_version%29).
-
-### <i class="fa fa-exchange"></i> Exchanges
-
-Since the release of Decred on February 8th, 2016, there are seven
-currency exchanges where you can buy or sell Decred (as of October 2017).
-We hope this list will grow as time goes on.
+Since the release of Decred on February 8th 2016, ten
+cryptocurrency exchanges have added support for Decred (last updated November 2017).
 
 * [Poloniex](https://poloniex.com/)
 * [Bittrex](https://bittrex.com/)
@@ -41,11 +32,11 @@ We hope this list will grow as time goes on.
 * [YoBit](https://yobit.net/en/)
 * [Cryptopia](https://cryptopia.co.nz/Exchange/)
 * [Exodus](https://exodus.io)
+* [Evercoin](https://evercoin.com/)
+* [ShapeShift](https://shapeshift.io)
+* [Changelly](https://changelly.com/)
 
-You will need to create an account on one of these sites, send your
-Bitcoin to this new account, and submit an order for Decred at a price
-of your choosing.  When your order is fulfilled, you will need to
-withdraw your new Decred and send it to your Decred wallet.
+If you need help obtaining Bitcoin to get started, the process is well documented in the [Bitcoin wiki](https://en.bitcoin.it/wiki/Buying_Bitcoins_%28the_newbie_version%29).
 
 ## <i class="fa fa-info-circle"></i> Direct Exchanges
 
@@ -55,12 +46,16 @@ Decred directly for fiat currency.
 * [Changelly](https://changelly.com/)
 * [LiteBit](https://litebit.eu/)
 
+---
+
 ## <i class="fa fa-info-circle"></i> Mine for Decred (PoW)
 
 Proof-of-Work (PoW) is a measure of using computational power to
 create and verify the cryptographically secure blockchain.  This is
 similar to traditional Bitcoin mining.  PoW mining is described in
 more detail [here](/mining/proof-of-work).
+
+---
 
 ## <i class="fa fa-info-circle"></i> Stake Mine for Decred / Proof-of-Stake (PoS)
 
@@ -69,10 +64,13 @@ certain amount of their DCR in return for voting rights and a monetary
 reward. PoS mining is described in more detail
 [here](/mining/proof-of-stake).
 
+---
+
 ## <i class="fa fa-info-circle"></i> Contribute to Decred
 
 Decred is currently recruiting contractors - members of the community who are paid in Decred for their contributions. Check out [this blog post](https://blog.decred.org/2017/07/25/Decred-Recruiting/) for the details and how to get involved.
 
+---
 
 ## <i class="fa fa-info-circle"></i> Sell / Trade Goods or Services for Decred
 

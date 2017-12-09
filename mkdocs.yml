@@ -1,6 +1,19 @@
 site_name: Decred Documentation
-theme: null
-theme_dir: tpldcrdocs/
+theme: 
+  name: material
+  custom_dir: theme_override
+  favicon: 'img/favicon.ico'
+  logo: 'img/logo.svg'
+  feature:
+    tabs: true
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/decred'
+    - type: 'twitter'
+      link: 'https://twitter.com/decredproject'
+    - type: 'reddit'
+      link: 'https://www.reddit.com/r/decred/'
 site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
 markdown_extensions:
@@ -11,6 +24,8 @@ markdown_extensions:
   - toc:
       permalink: True
   - tables
+extra_javascript:
+  - js/MathJax-2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 extra_css:
     - css/style.css
 pages:

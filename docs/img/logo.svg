@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-logo);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-logo">
+      <rect width="128" height="128"/>
+    </clipPath>
+  </defs>
+  <g id="logo" class="cls-1">
+    <g id="Group_1" data-name="Group 1">
+      <g id="_Group_" data-name="&lt;Group&gt;" transform="translate(56.391 15.008)">
+        <path id="_Path_" data-name="&lt;Path&gt;" class="cls-2" d="M231.88,194.588h31.167a21,21,0,1,0,0-41.993h-9.931L231.88,134.16h31.167A39.44,39.44,0,0,1,277.9,210.133l24.574,21.324H274.343Z" transform="translate(-231.88 -134.16)"/>
+      </g>
+      <g id="_Group_2" data-name="&lt;Group&gt;" transform="translate(1 15)">
+        <path id="_Path_2" data-name="&lt;Path&gt;" class="cls-2" d="M170.583,171.014H139.416a21,21,0,1,0,0,41.993h9.927l21.236,18.435H139.416a39.44,39.44,0,0,1-14.857-75.973L99.985,134.14H128.12Z" transform="translate(-99.974 -134.14)"/>
+      </g>
+    </g>
+  </g>
+</svg>

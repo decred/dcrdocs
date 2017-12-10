@@ -1,5 +1,15 @@
 # Paymetheus Setup Guide 
 
+---
+
+### **<i class="fa fa-exclamation-triangle"></i> Important Notice**
+
+> **The Paymetheus wallet and this documentation are no longer under active development.**
+
+> **All users are recommended to use the [Decrediton wallet](/getting-started/user-guides/decrediton-setup.md).**
+
+---
+
 Paymetheus is a simple to use graphical wallet for Decred. With it, you can send and receive DCR, 
 purchase tickets for [PoS voting](/mining/proof-of-stake.md), get a history of all your transactions and more.
 About the only thing Paymetheus doesn't do is PoS voting.
@@ -72,3 +82,29 @@ Your wallet will now create and synchronize to the blockchain. This can take a f
 work with any Decred wallet application, not just Paymetheus.
 
 Continue to [Using Paymetheus](using-paymetheus.md)
+
+---
+
+## Testnet
+
+To launch `Paymetheus` on testnet2, simply launch the `Decred Testnet` application instead of the usual `Decred` application. You will then be walked through the wallet creation (the same steps as above). After `dcrd` finishes syncing in the background, you'll then be able to fill your `Paymetheus` wallet with testnet DCR and familiarize yourself with the software.
+
+---
+
+## Troubleshooting
+
+#### 1. I've just started using Paymetheus, but it seems to be stuck. 
+
+The first time you start Paymetheus, it will download the blockchain. This can take up
+to an hour and Paymetheus will appear to be doing nothing.
+
+#### 2. Invalid passphrase for master private key. 
+
+This is just a long way of saying, "Incorrect password". You entered the wrong password for your
+wallet.
+
+#### 3. "Unable to purchase tickets: insufficient funds available..." but the wallet says I have enough. 
+
+There is a known bug in Paymetheus where immature funds are counted as available. After a ticket votes, there is a 
+256 block window where the funds are still locked. In this state, they are known as immature. When the period expires
+they will be usable again.

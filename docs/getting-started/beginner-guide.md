@@ -20,18 +20,17 @@ You'll need to follow an [Installation Guide](#installation-guides), and then fo
 
 Below you'll find a list of currently available applications, with a chart showing their compatibility with different operating systems.
 
-**Paymetheus**: The only Windows GUI client as of v1.1.0. <br />
+**Decrediton**: Cross-platform GUI client as of v1.1.1.
 **dcrd**: The node daemon, this command-line application handles block management and consensus. <br />
 **dcrwallet**: The wallet daemon, this command-line application handles address and transaction management. <br />
 **dcrctl**: The remote procedure call (RPC) client, this command-line application is used to control dcrd and dcrwallet via RPC commands. <br />
-**Decrediton**: Cross-platform GUI client as of v1.1.1.
 
-|           | Paymetheus | dcrd | dcrwallet | dcrctl | Decrediton |
-| ---------:|:----------:|:----:|:---------:|:------:|:-----------:|
-| Windows   | X          | X    | X         | X      | X           |
-| macOS     |            | X    | X         | X      | X           |
-| Linux     |            | X    | X         | X      | X           |
-| Other UNIX|            | X    | X         | X      |             |
+|           | dcrd | dcrwallet | dcrctl | Decrediton  |
+| ---------:|:----:|:---------:|:------:|:-----------:|
+| Windows   | X    | X         | X      | X           |
+| macOS     | X    | X         | X      | X           |
+| Linux     | X    | X         | X      | X           |
+| Other UNIX| X    | X         | X      |             |
 
 "Other UNIX" currently includes various *BSDs and Solaris/illumos.
 
@@ -48,20 +47,12 @@ create transactions and participate in Proof-of-Stake mining/voting.
 
 To get started, choose an option for installations available for your operating system below:
 
-* [Paymetheus](/getting-started/user-guides/paymetheus.md)
 * [Command Line Suite **via dcrinstall**](/getting-started/user-guides/cli-installation.md) - NOTE: The `dcrinstall` method is the fastest and easiest way to get a command-line node and wallet running. It is recommended and the command-line path setup guides below will assume you've used this method.
 * [Decrediton](/getting-started/user-guides/decrediton-setup.md)
 
 ---
 
 **NOTE:** All of the following guides can be found in the navigation menu with the same names.
-
-## Paymetheus Path 
-
-The following guides, in order, will get you started with Paymetheus:
-
-* [Paymetheus Setup](/getting-started/user-guides/paymetheus.md)
-* [Using Paymetheus](/getting-started/user-guides/using-paymetheus.md)
 
 ## Decrediton Path 
 

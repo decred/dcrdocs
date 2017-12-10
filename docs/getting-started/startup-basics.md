@@ -4,7 +4,7 @@ This guide was last updated for v1.0.0
 
 ---
 
-This guide applies to command-line application users. Paymetheus and Decrediton users can safely ignore the use of config files - Paymetheus and Decrediton both handle basic configuration automatically. It is also worth noting that some of our guides show configuration file settings and other guides show startup command flags. 
+This guide applies to command-line application users. Decrediton users can safely ignore the use of config files - Decrediton handles basic configuration automatically. It is also worth noting that some of our guides show configuration file settings and other guides show startup command flags. 
 
 ---
 
@@ -19,7 +19,6 @@ Windows:
     C:\Users\<username>\AppData\Local\Dcrwallet\
     C:\Users\<username>\AppData\Local\Dcrd\
     C:\Users\<username>\AppData\Local\Dcrctl\ 
-    C:\Users\<username>\AppData\Local\Decred\Paymetheus
 
 macOS: 
 

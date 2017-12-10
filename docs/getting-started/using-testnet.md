@@ -18,12 +18,6 @@ Running a testnet2 node is incredibly easy. You application of choice will need 
 
 ---
 
-## Paymetheus
-
-To launch `Paymetheus` on testnet2, simply launch the `Decred Testnet` application instead of the usual `Decred` application. You will then be walked through the wallet creation (the same steps in the [Paymetheus Setup guide](/getting-started/user-guides/paymetheus.md)). After `dcrd` finishes syncing in the background, you'll then be able to fill your `Paymetheus` wallet with testnet DCR and familiarize yourself with the software.
-
----
-
 ## Decrediton 
 
 You can switch Decrediton between mainnet and testnet by changing the "Network" setting in the Settings tab, and then pressing the save button. You will have to close Decrediton and open it again for the change to take effect.

@@ -1,6 +1,16 @@
 # The Paymetheus Windows Wallet
 
-This guide assumes you have already set up a Paymetheus wallet using [this guide](paymetheus.md).
+---
+
+### **<i class="fa fa-exclamation-triangle"></i> Important Notice**
+
+> **The Paymetheus wallet and this documentation are no longer under active development.**
+
+> **All users are recommended to use the [Decrediton wallet](/getting-started/user-guides/decrediton-setup.md).**
+
+---
+
+This guide assumes you have already set up a Paymetheus wallet using [this guide](/getting-started/user-guides/paymetheus.md).
 
 ---
 

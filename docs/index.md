@@ -13,7 +13,7 @@ Decred is a cryptocurrency, similar to Bitcoin, with a strong focus on community
 A cryptocurrency is a system of 'value exchange', just like any real world currency you may be familiar with. Its main difference is that it is not controlled by a central government or group and thus cannot be manipulated or restricted in the way those currencies can be.
 
 As an example, you may buy Decred from a fiat currency exchange and use it to directly purchase a product in a different country without having to pay high exchange rates.
-Decred uses a wallet to store, transfer and receive DCR. This wallet signs every transaction in and out with a special public key that is unique to you. This is how the network knows that the address sending the transaction is the correct one. Think of your bank account and PIN. When you use your card (wallet) you also enter your PIN (public key) so the bank knows it was you that authorized the transaction. The main difference here is that the public key is known by everyone on the network whereas your PIN is not. When you start using Decred, you will generate a private key that you must not give to anyone.
+Decred uses a wallet to store, transfer and receive DCR. This wallet signs every transaction in and out with a special private key that is unique to you. This is how the network knows that the address sending the transaction is the correct one. Think of your bank account and PIN. When you use your card (wallet), you also enter your PIN (private key), so the bank knows it was you that authorized the transaction. When you first start using Decred, your wallet will generate a private key that you must not give to anyone.
 
 ---
 

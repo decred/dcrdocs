@@ -101,3 +101,13 @@ To create a brand new Decred wallet, continue to read the next section. If you h
 ![Decrediton error window](/img/decrediton/dcrd-error.jpg)
 
 If you are seeing the error above, it may be because there is already a running instance of `dcrd` on your machine. Decrediton attempts to start its own instance of `dcrd` and `dcrwallet` in the background. Kill any running instances of `dcrd` and restart Decrediton.
+
+*Where does Decrediton store data/write log files?*
+
+Decrediton stores the blockchain, your wallet, log files and its own configuration files all in a single directory. A different directory is used depending on the operating system:
+
+| OS      | Decrediton data directory                           |
+| -------:|:---------------------------------------------------:|
+| Windows | `C:\Users\<your-username>\AppData\Local\Decrediton` |
+| macOS   | `~/Library/Application Support/decrediton`          |
+| Linux   | `~/.config/decrediton`                              |

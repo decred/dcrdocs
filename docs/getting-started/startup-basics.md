@@ -25,14 +25,12 @@ macOS:
     ~/Library/Application Support/Dcrwallet/
     ~/Library/Application Support/Dcrd/
     ~/Library/Application Support/Dcrctl/
-    ~/Library/Application Support/decrediton/
-    
+        
 Linux: 
     
     ~/.dcrwallet/
     ~/.dcrd/
     ~/.dcrctl/
-    ~/.config/decrediton
 
 Each of these folders is allowed its own `.conf` file, named after the individual application (`e.g. dcrd uses dcrd.conf`). Please also note that the `Dcrd` and `Dcrwallet` home directories are automatically created when each application is first launched. You will have to manually create a `Dcrctl` home directory to utilize a config file.
 

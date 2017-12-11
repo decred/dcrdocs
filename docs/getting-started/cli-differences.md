@@ -19,17 +19,16 @@ Some of our guides might be OS-agnostic with the launch commands. If a guide say
 
 > Application Directory Locations
 
-The other way the command line clients differ is the location of each application directory (blocks, wallets, configuration files are all stored within the data directory). Below is a table of the default application directories for each application. 
+The other way the command line clients differ is the location of each application directory (blocks, wallets, log files, configuration files are all stored within the data directory). Below is a table of the default application directories for each application. 
 
-| OS      | dcrd, dcrwallet, dcrctl App Directories      | 
-| -------:|:--------------------------------------------- |
+| OS      | dcrd, dcrwallet, dcrctl App Directories             |
+| -------:|:---------------------------------------------------:|
 | Windows | `C:\Users\<your-username>\AppData\Local\dcrd\`      |
-|         | `C:\Users\<your-username>\AppData\Local\dcrwallet\` | 
+|         | `C:\Users\<your-username>\AppData\Local\dcrwallet\` |
 |         | `C:\Users\<your-username>\AppData\Local\dcrctl\`    |
-| macOS   | `~/Library/Application Support/dcrd/`         |
-|         | `~/Library/Application Support/dcrwallet/`    |
-|         | `~/Library/Application Support/dcrctl/`       |
-| Linux   | `~/.dcrd/`                                    |
-|         | `~/.dcrwallet/`                               |
-|         | `~/.dcrctl/`                                  |
-
+| macOS   | `~/Library/Application Support/dcrd/`               |
+|         | `~/Library/Application Support/dcrwallet/`          |
+|         | `~/Library/Application Support/dcrctl/`             |
+| Linux   | `~/.dcrd/`                                          |
+|         | `~/.dcrwallet/`                                     |
+|         | `~/.dcrctl/`                                        |

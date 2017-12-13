@@ -1,8 +1,8 @@
-# <i class="fa fa-exchange"></i> Obtaining DCR
+# Obtaining DCR
 
 ---
 
-## <i class="fa fa-info-circle"></i> Overview
+## Overview
 
 This article discusses some of the ways a user can acquire Decred
 coins.
@@ -17,9 +17,9 @@ The five basic ways are:
 
 ---
 
-### <i class="fa fa-info-circle"></i> Purchasing Decred
+### Purchasing Decred
 
-## <i class="fa fa-exchange"></i> Exchanges
+## Exchanges
 
 One way to acquire Decred is to purchase some on an exchange.
 Since the release of Decred on February 8th 2016, ten
@@ -38,7 +38,7 @@ cryptocurrency exchanges have added support for Decred (last updated November 20
 
 If you need help obtaining Bitcoin to get started, the process is well documented in the [Bitcoin wiki](https://en.bitcoin.it/wiki/Buying_Bitcoins_%28the_newbie_version%29).
 
-## <i class="fa fa-info-circle"></i> Direct Exchanges
+## Direct Exchanges
 
 As Decred continues to grow in popularity, some exchanges are offering
 Decred directly for fiat currency.
@@ -48,7 +48,7 @@ Decred directly for fiat currency.
 
 ---
 
-## <i class="fa fa-info-circle"></i> Mine for Decred (PoW)
+## Mine for Decred (PoW)
 
 Proof-of-Work (PoW) is a measure of using computational power to
 create and verify the cryptographically secure blockchain.  This is
@@ -57,7 +57,7 @@ more detail [here](/mining/proof-of-work).
 
 ---
 
-## <i class="fa fa-info-circle"></i> Stake Mine for Decred / Proof-of-Stake (PoS)
+## Stake Mine for Decred / Proof-of-Stake (PoS)
 
 Proof-of-Stake (PoS) mining is performed by stakeholders who lock a
 certain amount of their DCR in return for voting rights and a monetary
@@ -66,13 +66,13 @@ reward. PoS mining is described in more detail
 
 ---
 
-## <i class="fa fa-info-circle"></i> Contribute to Decred
+## Contribute to Decred
 
 Decred is currently recruiting contractors - members of the community who are paid in Decred for their contributions. Check out [this blog post](https://blog.decred.org/2017/07/25/Decred-Recruiting/) for the details and how to get involved.
 
 ---
 
-## <i class="fa fa-info-circle"></i> Sell / Trade Goods or Services for Decred
+## Sell / Trade Goods or Services for Decred
 
 An alternative to obtaining Decred is to use your skills, knowledge,
 or experience by exchanging services for Decred as payment.  Services

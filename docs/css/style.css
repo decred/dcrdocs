@@ -34,18 +34,15 @@
     content: "\e902";
 }
 
-.md-header {
-    background-color: #0C1E3E
-}
-
-.md-tabs {
-    background-color: #0C1E3E
-}
-
-.md-footer-nav {
-    background-color: #0C1E3E
-}
-
+/* Override header and footer with decred dark blue*/
+.md-header,
+.md-footer-nav,
 .md-footer-meta {
     background-color: #0C1E3E
+}
+
+/* Highlight current page in nav menu */
+.md-nav__link--active {
+    color      : #536dfe;
+    font-weight: bold;
 }

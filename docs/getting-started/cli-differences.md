@@ -26,9 +26,9 @@ The other way the command line clients differ is the location of each applicatio
 | Windows | `C:\Users\<your-username>\AppData\Local\dcrd\`      |
 |         | `C:\Users\<your-username>\AppData\Local\dcrwallet\` |
 |         | `C:\Users\<your-username>\AppData\Local\dcrctl\`    |
-| macOS   | `~/Library/Application Support/dcrd/`               |
-|         | `~/Library/Application Support/dcrwallet/`          |
-|         | `~/Library/Application Support/dcrctl/`             |
+| macOS   | `~/Library/Application Support/Dcrd/`               |
+|         | `~/Library/Application Support/Dcrwallet/`          |
+|         | `~/Library/Application Support/Dcrctl/`             |
 | Linux   | `~/.dcrd/`                                          |
 |         | `~/.dcrwallet/`                                     |
 |         | `~/.dcrctl/`                                        |

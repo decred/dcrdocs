@@ -109,5 +109,5 @@ Decrediton stores the blockchain, your wallet, log files and its own configurati
 | OS      | Decrediton data directory                           |
 | -------:|:---------------------------------------------------:|
 | Windows | `C:\Users\<your-username>\AppData\Local\Decrediton` |
-| macOS   | `~/Library/Application Support/decrediton`          |
+| macOS   | `~/Library/Application Support/Decrediton`          |
 | Linux   | `~/.config/decrediton`                              |

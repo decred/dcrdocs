@@ -1,4 +1,4 @@
-# User Projects 
+# Contributor Projects
 
 ---
 

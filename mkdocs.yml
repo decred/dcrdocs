@@ -12,8 +12,11 @@ extra:
       link: 'https://twitter.com/decredproject'
     - type: 'reddit'
       link: 'https://www.reddit.com/r/decred/'
+    - type: 'youtube'
+      link: 'https://www.youtube.com/decredchannel'
 site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
+repo_name: decred/dcrdocs
 markdown_extensions:
   - footnotes
   - fontawesome_markdown

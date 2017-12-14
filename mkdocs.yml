@@ -90,8 +90,6 @@ pages:
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
   - 'Advanced dcrctl Usage': 'advanced/dcrctl-usage.md'
   - 'Simnet': 'advanced/simnet.md'
-  - 'Contributing Guidelines': 'advanced/contributing.md'
-  - 'User Projects': 'advanced/user-projects.md'
 - Research:
   - 'Overview': 'research/overview.md'
   - 'Hybrid Design': 'research/hybrid-design.md'
@@ -103,6 +101,12 @@ pages:
   - 'Transaction Extensions': 'research/transaction-extensions.md'
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
+- Contributing:
+  - 'Contributor Compensation': 'advanced/contributor-compensation.md'
+  - 'Contributor Projects': 'advanced/user-projects.md'
+  - Guidelines:
+    - 'Using GitHub': 'advanced/using-github.md'
+    - 'Source Code Contributions': 'advanced/contributing.md'
 - About:
   - 'Support Directory': 'support-directory.md'
   - 'Credits': 'about/credits.md'

@@ -17,9 +17,9 @@ The five basic ways are:
 
 ---
 
-### Purchasing Decred
+## Purchasing Decred
 
-## Exchanges
+### Exchanges
 
 One way to acquire Decred is to purchase some on an exchange.
 Since the release of Decred on February 8th 2016, ten
@@ -38,7 +38,7 @@ cryptocurrency exchanges have added support for Decred (last updated November 20
 
 If you need help obtaining Bitcoin to get started, the process is well documented in the [Bitcoin wiki](https://en.bitcoin.it/wiki/Buying_Bitcoins_%28the_newbie_version%29).
 
-## Direct Exchanges
+### Direct Exchanges
 
 As Decred continues to grow in popularity, some exchanges are offering
 Decred directly for fiat currency.

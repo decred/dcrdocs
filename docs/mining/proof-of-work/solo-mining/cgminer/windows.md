@@ -1,4 +1,4 @@
-# <i class="fa fa-windows"></i> Windows User Guide 
+# <i class="fa fa-windows"></i> *cgminer* Windows Solo Mining User Guide 
 
 ---
 

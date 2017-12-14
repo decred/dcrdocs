@@ -1,4 +1,4 @@
-# <i class="fa fa-linux"></i> Linux User Guide 
+# <i class="fa fa-linux"></i> *cgminer* Linux Pool Mining User Guide 
 
 ---
 

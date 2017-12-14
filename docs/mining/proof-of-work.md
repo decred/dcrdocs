@@ -75,7 +75,7 @@ Gominer is the official Decred miner developed and supported by the Decred team.
 
 Please be certain to select the correct operating system (Windows/Linux) and the correct version for your GPU type (CUDA for NVIDIA cards, OpenCL/OpenCLADL for AMD cards). gominer is only available to 64-bit operating systems. User guides to start mining with gominer can be found here:
 
-- [Windows Pool-Mining](/mining/proof-of-work/pool-mining/gominer/windows.md)
+- [gominer Pool-Mining](/mining/proof-of-work/pool-mining/gominer.md)
 
 ### Unofficial Miners
 

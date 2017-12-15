@@ -22,8 +22,8 @@ The five basic ways are:
 ### Exchanges
 
 One way to acquire Decred is to purchase some on an exchange.
-Since the release of Decred on February 8th 2016, ten
-cryptocurrency exchanges have added support for Decred (last updated November 2017).
+Since the release of Decred on February 8th 2016, more than ten
+cryptocurrency exchanges have added support for Decred (last updated December 2017).
 
 * [Poloniex](https://poloniex.com/)
 * [Bittrex](https://bittrex.com/)
@@ -35,6 +35,7 @@ cryptocurrency exchanges have added support for Decred (last updated November 20
 * [Evercoin](https://evercoin.com/)
 * [ShapeShift](https://shapeshift.io)
 * [Changelly](https://changelly.com/)
+* [Flyp](https://flyp.me)
 
 If you need help obtaining Bitcoin to get started, the process is well documented in the [Bitcoin wiki](https://en.bitcoin.it/wiki/Buying_Bitcoins_%28the_newbie_version%29).
 

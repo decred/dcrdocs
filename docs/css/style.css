@@ -46,3 +46,8 @@
     color      : #536dfe;
     font-weight: bold;
 }
+
+/* Increase size of social media links in page footer */
+.md-footer-social {
+    font-size: 20px;
+}

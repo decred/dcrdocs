@@ -1,6 +1,6 @@
 # Decrediton Setup Guide 
 
-Last updated for v1.1.2.
+Last updated for v1.1.3.
 
 ---
 
@@ -10,11 +10,11 @@ Last updated for v1.1.2.
 
 ## Download and Install 
 
-The latest version of Decrediton can be downloaded from [https://decred.org/downloads/](https://decred.org/downloads/). As of v1.1.2, Decrediton is available for Windows, macOS and Linux.
+The latest version of Decrediton can be downloaded from [https://decred.org/downloads/](https://decred.org/downloads/). As of v1.1.3, Decrediton is available for Windows, macOS and Linux.
 
 > Windows
 
-1. Download the Windows installer `decrediton-v1.1.2.exe`.
+1. Download the Windows installer `decrediton-v1.1.3.exe`.
 
 1. Double click the installer and follow the instructions. This will install and automatically start up Decrediton to download the Decred blockchain and set up your wallet.
 
@@ -22,22 +22,22 @@ The latest version of Decrediton can be downloaded from [https://decred.org/down
 
 > macOS
 
-1. Download the `decrediton-v1.1.2.dmg` file.
+1. Download the `decrediton-v1.1.3.dmg` file.
 
-1. Double click the `decrediton-v1.1.2.dmg` file once downloaded to mount the disk image.
+1. Double click the `decrediton-v1.1.3.dmg` file once downloaded to mount the disk image.
 
 1. Drag the decrediton.app into the link to your Applications folder within the disk image.
 
 > Linux
 
-1. Download the `decrediton-v1.1.2.tar.gz` file.
+1. Download the `decrediton-v1.1.3.tar.gz` file.
 
 1. Navigate to download location and extract the .tar.gz file:
 
     Ubuntu File Browser: simply right click on the .tar.gz file and press "Extract Here". <br />
     Terminal: use the `tar -xvzf filename.tar.gz` command.
 
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.1.2.tar.gz` should extract to `decrediton-v1.1.2`). If successful, this new folder should include a `decrediton` executable.
+    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.1.3.tar.gz` should extract to `decrediton-v1.1.3`). If successful, this new folder should include a `decrediton` executable.
 
 ---
 

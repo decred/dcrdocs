@@ -46,23 +46,23 @@ StakeVersion   | The stake version used for voting on the created block         
         0x7a, 0xc7, 0x2c, 0x3e, 0x67, 0x76, 0x8f, 0x61,
         0x7f, 0xc8, 0x1b, 0xc3, 0x88, 0x8a, 0x51, 0x32,
         0x3a, 0x9f, 0xb8, 0xaa, 0x4b, 0x1e, 0x5e, 0x4a,
-        0x00, 0x00, // VoteBits
-        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // FinalState
-        0x00, 0x00, // Voters
-        0x00,                   // FreshStake
-        0x00,                   // Revocations
-        0x00, 0x00, 0x00, 0x00, //Poolsize
-        0xff, 0xff, 0x00, 0x1d, // Bits
+        0x00, 0x00,                                     // VoteBits
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00,             // FinalState
+        0x00, 0x00,                                     // Voters
+        0x00,                                           // FreshStake
+        0x00,                                           // Revocations
+        0x00, 0x00, 0x00, 0x00,                         // PoolSize
+        0xff, 0xff, 0x00, 0x1d,                         // Bits
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // SBits
-        0x00, 0x00, 0x00, 0x00, // Height
-        0x00, 0x00, 0x00, 0x00, // Size
-        0x29, 0xab, 0x5f, 0x49, // Timestamp
-        0xf3, 0xe0, 0x01, 0x00, // Nonce
+        0x00, 0x00, 0x00, 0x00,                         // Height
+        0x00, 0x00, 0x00, 0x00,                         // Size
+        0x29, 0xab, 0x5f, 0x49,                         // Timestamp
+        0xf3, 0xe0, 0x01, 0x00,                         // Nonce
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // ExtraData
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-        0x03, 0x00, 0x00, 0x00, // StakeVersion
+        0x03, 0x00, 0x00, 0x00,                         // StakeVersion
 ```
 
 ---
@@ -70,18 +70,12 @@ StakeVersion   | The stake version used for voting on the created block         
 ## Example encoded block header as raw bytes 
 
 ```no-highlight
-        010000006fe28c0ab6f1b372c1a6a246
-        ae63f74f931e8365e15a089c68d61900
-        000000003ba3edfd7a7b12b27ac72c3e
-        67768f617fc81bc3888a51323a9fb8aa
-        4b1e5e4a3ba3edfd7a7b12b27ac72c3e
-        67768f617fc81bc3888a51323a9fb8aa
-        4b1e5e4a000000000000000000000000
-        0000000ffff001d00000000000000000
-        00000000000000029ab5f49f3e001000
-        00000000000000000000000000000000
-        00000000000000000000000000000000
-        3000000
+        010000006fe28c0ab6f1b372c1a6a246ae63f74f931e8365e15a089c68d61900
+        000000003ba3edfd7a7b12b27ac72c3e67768f617fc81bc3888a51323a9fb8aa
+        4b1e5e4a3ba3edfd7a7b12b27ac72c3e67768f617fc81bc3888a51323a9fb8aa
+        4b1e5e4a0000000000000000000000000000000ffff001d00000000000000000
+        00000000000000029ab5f49f3e00100000000000000000000000000000000000
+        000000000000000000000000000000003000000
 ```
 
 ---

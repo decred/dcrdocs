@@ -1,4 +1,4 @@
-# Signature Script Isolation and Fraud Proofs 
+# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Signature Script Isolation and Fraud Proofs 
 
 ---
 

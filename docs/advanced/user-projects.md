@@ -1,4 +1,4 @@
-# Contributor Projects
+# <img class="dcr-icon" src="/img/dcr-icons/UserProjects.svg" /> Contributor Projects
 
 ---
 

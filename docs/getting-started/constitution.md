@@ -1,4 +1,4 @@
-#  <i class="fa fa-gavel"></i> Decred Constitution
+# <img class="dcr-icon" src="/img/dcr-icons/Constitution.svg" /> Decred Constitution
 
 ---
 

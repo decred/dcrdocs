@@ -1,4 +1,4 @@
-# Proof-of-Work (PoW) Mining 
+# <img class="dcr-icon" src="/img/dcr-icons/PoWMine.svg" /> Proof-of-Work (PoW) Mining
 
 ---
 
@@ -26,24 +26,24 @@ higher hashrates and therefore receive higher rewards.
 
 ## Solo Mining or Pool Mining  
 
-> <i class="fa fa-male"></i> Solo Mining
+> <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo Mining
 
 <i class="fa fa-exclamation-triangle"></i> **Solo mining is not recommended and is not covered by this documentation!** The Decred network regularly sees a network hash rate of up to 10,000Gh/s. Solo mining is generally only done by advanced individuals or organized groups with a large cluster of GPUs so it is not addressed here.
 
-> <i class="fa fa-users"></i> Pool Mining
+> <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> Pool Mining
 
 When you mine in a pool, your hashrate is combined with all the other pool miners’ hashrates to look for the correct solution for a block. You will receive a reward based on the amount of work your miner performs in the pool.
 Pool mining distributes shares based on blocks found so you can earn a steady amount of Decred rather than the "all or none" of solo mining.
 
 ---
 
-## Obtain a Decred Address to Receive Funds With  
+## <img class="dcr-icon" src="/img/dcr-icons/Receive.svg" /> Obtain a Decred Address to Receive Funds With
 
 Follow the [dcrctl Basics](/getting-started/user-guides/dcrctl-basics.md) guide and create an address so you can withdraw mining rewards to it.
 
 ---
 
-## <i class="fa fa-life-ring"></i> Sign up for a Mining Pool 
+## <img class="dcr-icon" src="/img/dcr-icons/SignUpForPool.svg" /> Sign up for a Mining Pool
 
 These mining pools are known to support Decred:
 
@@ -61,13 +61,13 @@ Please choose to mine on a smaller pool so the network's hashrate can be spread 
 
 ---
 
-## GPU Drivers/Software  
+## <img class="dcr-icon" src="/img/dcr-icons/Servers.svg" /> GPU Drivers/Software
 
 GPU drivers usually contain the libraries needed for mining.  If you have difficulties running the software you may wish to re-install and specifically check that the OpenCL (AMD) or CUDA (NVIDIA) libraries are selected.
 
 ---
 
-## <i class="fa fa-download"></i> Select and Download Mining Software  
+## <img class="dcr-icon" src="/img/dcr-icons/Download.svg" /> Select and Download Mining Software
 
 ### Official Decred Miner (gominer)
 
@@ -87,7 +87,7 @@ Please be certain to select the correct operating system (Windows/Linux) and the
 
 ---
 
-## Running the Software 
+## <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> Running the Software
 
 * Decompress and install the software to a place of your choosing.
 * Open a command prompt to that path.

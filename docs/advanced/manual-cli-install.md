@@ -1,4 +1,4 @@
-# Manual CLI Installation 
+# <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> Manual CLI Installation
 
 ---
 

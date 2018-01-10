@@ -1,4 +1,4 @@
-# <i class="fa fa-male"></i> Solo Mining 
+# <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo Mining
 
 ---
 
@@ -42,7 +42,7 @@ Continue to [Stake Pools FAQ](/faq/proof-of-stake/stake-pools.md)
 
 ---
 
-## <i class="fa fa-book"></i> Sources 
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
 
 [^9304]: Decred Forum, [Post 9,304](https://forum.decred.org/threads/626/page-2#post-9304)
 [^9311]: Decred Forum, [Post 9,311](https://forum.decred.org/threads/582/page-2#post-9311)

@@ -1,4 +1,4 @@
-# <i class="fa fa-hdd-o"></i> dcrctl Usage 
+# <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> dcrctl Usage 
 
 dcrctl provides a way to control both the daemon `dcrd` and the wallet
 `dcrwallet` using the json rpc interface without actually writing

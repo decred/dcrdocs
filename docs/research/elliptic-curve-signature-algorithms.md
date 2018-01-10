@@ -1,4 +1,4 @@
-# Elliptic Curve Signature Algorithms 
+# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Elliptic Curve Signature Algorithms 
 
 ---
 

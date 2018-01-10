@@ -1,8 +1,8 @@
-# Simnet 
+# <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> Simnet 
 
 ---
 
-## Overview 
+## <img class="dcr-icon" src="/img/dcr-icons/Info.svg" /> Overview 
 
 When developing Decred applications or testing potential changes, it is often extremely useful to have a test network where difficulty levels are low enough to generate blocks as needed.
 
@@ -25,7 +25,7 @@ In order to facilitate these scenarios, dcrd provides a simulation network (`--s
 
   ---
 
-## Getting Started 
+## <img class="dcr-icon" src="/img/dcr-icons/AtoB.svg" /> Getting Started 
 
 Running a single `dcrd` node on simnet is simply starting `dcrd` with the `--simnet` flag.  However, in order to be really useful, you'll typically want to be able to send coins amongst addresses which implies that blocks will need to be mined and interfacing with a wallet will be needed.
 

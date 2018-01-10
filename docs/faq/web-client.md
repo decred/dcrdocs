@@ -1,4 +1,4 @@
-# <i class="fa fa-firefox"></i> Web Client 
+# <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Web Client
 
 ---
 
@@ -20,7 +20,7 @@ It is safe[^10652]. The only difference is you will need to go to `Import Wallet
 
 ---
 
-## <i class="fa fa-book"></i> Sources 
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
 
 [^7981]: Decred Forum, [Post 7,981](https://forum.decred.org/threads/518/#post-7981)
 [^9093]: Decred Forum, [Post 9,093](https://forum.decred.org/threads/617/#post-9093)

@@ -1,4 +1,4 @@
-# <i class="fa fa-life-ring"></i> Stake Pools 
+# <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> Stake Pools
 
 ---
 
@@ -55,7 +55,7 @@ Continue to [PoS Voting Tickets FAQ](/faq/proof-of-stake/voting-tickets.md)
 
 ---
 
-## <i class="fa fa-book"></i> Sources 
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
 
 [^9262]: Decred Forum, [Post 9,262](https://forum.decred.org/threads/626/#post-9262)
 [^9274]: Decred Forum, [Post 9,274](https://forum.decred.org/threads/626/#post-9274)

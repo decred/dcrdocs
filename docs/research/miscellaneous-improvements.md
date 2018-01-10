@@ -1,4 +1,4 @@
-# Miscellaneous Improvements 
+# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Miscellaneous Improvements 
 
 ---
 

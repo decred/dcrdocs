@@ -1,4 +1,4 @@
-# Decrediton Setup Guide 
+# <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Decrediton Setup Guide
 
 Last updated for v1.1.3.
 

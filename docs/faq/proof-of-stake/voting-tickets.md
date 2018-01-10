@@ -1,4 +1,4 @@
-# Voting Tickets 
+# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Voting Tickets
 
 ---
 
@@ -61,7 +61,7 @@ Continue to [Proof-of-Work Mining](/mining/proof-of-work.md)
 
 ---
 
-## <i class="fa fa-book"></i> Sources 
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
 
 [^7969]: Decred Forum, [Post 7,969](https://forum.decred.org/threads/531/#post-7969)
 [^8965]: Decred Forum, [Post 8,965](https://forum.decred.org/threads/531/page-2#post-8965)

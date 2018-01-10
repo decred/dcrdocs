@@ -1,4 +1,4 @@
-# <i class="fa fa-thumbs-up"></i> Credits 
+# <img class="dcr-icon" src="/img/dcr-icons/Credits.svg" /> Credits 
 
 ---
 

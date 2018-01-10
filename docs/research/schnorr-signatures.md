@@ -1,4 +1,4 @@
-# Schnorr Signatures 
+# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Schnorr Signatures 
 
 ---
 

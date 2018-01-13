@@ -1,5 +1,7 @@
 *~
 .DS_Store
-site/
 node_modules
-docker_build
+
+/docker-build/
+/site/
+/package-lock.json

@@ -25,7 +25,7 @@ Dalam sistem Proof-of-Stake Decred siapa pun yang memegang DCR dapat berpartisip
 #### 2. Apa itu tiket?
 
 Tiket adalah token yang Anda beli untuk berpartisipasi dalam sistem PoS. Anda bisa membeli tiket melalui baris antarmuka perintah dcrctl, atau melalui GUI seperti Paymetheus[^1] atau Decrediton. Kapan pun Anda membeli 
-Tiket, Anda membayar harga tiket saat ini dan biaya tiket menggunakan DCR Anda. Ketika sebuah tiket dibeli, ia pergi ke 'mempoool sementara'. 20 tiket bisa ditambang di setiap blok dan tiket dipilih
+Tiket, Anda membayar harga tiket saat ini dan biaya tiket menggunakan DCR Anda. Ketika sebuah tiket dibeli, ia pergi ke 'mempool sementara'. 20 tiket bisa ditambang di setiap blok dan tiket dipilih
 Ditambang berdasarkan biaya per kilobyte. Karena jumlah tiket yang bisa ditambang ke blok dengan harga tertentu (2880) terbatas, mungkin ada persaingan untuk menbuat tiket ditambang. Pada kasus ini,
 Anda dapat meningkatkan biaya yang siapAnda bayar untuk mebuat tiket Anda ditambang. Setelah tiket Anda ditambang itu akan berpindah dari 'allmempool' saat ini ke pool tiket 'belum menghasilkan'. Setelah 256 blok
 (Sekitar 20 jam) kemudian akan bisa dihasilkan dan masuk ke dalam pool tiket langsung di mana tiket layak untuk memilih.

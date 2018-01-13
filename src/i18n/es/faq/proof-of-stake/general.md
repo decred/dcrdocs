@@ -25,7 +25,7 @@ En el sistema de Prueba-de-Participación de Decred cualquiera que posea DCR pue
 #### 2. ¿ Que son los boletos?
 
 Un boleto es una ficha que usted compra para participar en el sistema PoS. Usted puede comprar a través de la interfaz de comando de linea de dcrctl, o a través de un GUI como Paymetheus[^1] o Decrediton. Cuando usted compra 
-un boleto, usted paga el valor actual de un boleto y la tarifa del boleto usando sus DCR. Cuando el boleto es comprado, este va a un  "mempoool" temporal.  20 boletos pueden ser minados en cada bloque y son escogidos
+un boleto, usted paga el valor actual de un boleto y la tarifa del boleto usando sus DCR. Cuando el boleto es comprado, este va a un  "mempool" temporal.  20 boletos pueden ser minados en cada bloque y son escogidos
 para ser minados en base a su tarifa por kilobyte. Como existe un numero limitado deboletos que pueden ser minado de cada bloque a un precio dado (2880), puede existir competencia para tener boletos minados. En este caso,
 usted puede incrementar la tarifa que está dispuesto a pagar para tener su/s boletos(s) minados. Una vez que su boleto es minado éste será movido de "allmempool" hacia la piscina de boletos"inmmature". Despues 256 bloques
 (alrededor de 20 horas) ésto madurarane irán hacia la piscina de tickets en vivo donde podran ser elegidos para recibir votos.

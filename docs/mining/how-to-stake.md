@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/QuestionTicket.svg" /> How to Stake
 
-Last updated for v1.1.0
+Last updated for v1.1.3
 
 ---
 
@@ -10,7 +10,7 @@ Participating in proof-of-stake requires a Decred wallet to be running 24/7. The
 
 Running your own always-online wallet is known as "Solo" staking/mining.
 
-Stakepools are available for those unable to keep a personal voting wallet online. Using a Stakepool is completely safe, the Decred PoS protocol allows you to delegate your vote to a stakepool's always-online wallet without ever giving the Stakepool access to your funds.
+Stakepools are available for those unable to keep a personal voting wallet online. Using a stakepool is completely safe, the Decred PoS protocol allows you to delegate your vote to a stakepool's always-online wallet without ever giving the stakepool access to your funds.
 
 ---
 
@@ -22,33 +22,18 @@ Solo mining is currently only possible using the Decred command line tools. The 
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> PoS using a Stakepool
 
-Official stake pools are listed here:
+You can find the list of all official stakepools and statistics by visiting the
+[<i class="fa fa-external-link-square"></i> Decred website](https://decred.org/stakepools/).
 
-* [<i class="fa fa-external-link-square"></i> https://dcr.stakepool.net](https://dcr.stakepool.net)
-* [<i class="fa fa-external-link-square"></i> https://dcr.stakeminer.com](https://dcr.stakeminer.com)
-* [<i class="fa fa-external-link-square"></i> https://pool.d3c.red](https://pool.d3c.red)
-* [<i class="fa fa-external-link-square"></i> https://stakepool.dcrstats.com](https://stakepool.dcrstats.com)
-* [<i class="fa fa-external-link-square"></i> https://stake.decredbrasil.com](https://stake.decredbrasil.com)
-* [<i class="fa fa-external-link-square"></i> https://stakepool.eu](https://stakepool.eu)
-* [<i class="fa fa-external-link-square"></i> https://dcr.ubiqsmart.com](https://dcr.ubiqsmart.com)
-* [<i class="fa fa-external-link-square"></i> https://ultrapool.eu](https://ultrapool.eu)
+Using a stakepool DOES NOT give the pool access to your funds. All you are doing is granting voting rights to the pool.
 
-You can find a comparison of each pool's fees and statistics by visiting the
-[<i class="fa fa-external-link-square"></i> Decred website](https://decred.org)
-and clicking the 'Stakepools' link within the footer at the bottom of the page.
- 
-Using a Stakepool DOES NOT give the pool access to your funds. All you are doing is granting voting rights to the pool.
+In order to support network decentralization, it is recommended that you join a smaller pool with fewer live tickets.
 
-All stake pools run the same basic code, but they may differ in the amount of redundancy available.
-More redundancy equals less chance of missed votes (although all pools will have missed votes
-as many missed votes are caused by PoW miners (sometimes they will find a solution to the blocks
-so quickly that votes haven't had time to propagate around the network). In order to support network decentralization
-it is recommended that you join a smaller pool with fewer live tickets.
+All stakepools run the same basic code, but they may differ in the amount of redundancy available.
+More redundancy equals less chance of missed votes, although all pools will have missed votes as many missed votes are caused by PoW miners.
+Sometimes they will find a solution to the blocks so quickly that votes haven't had time to propagate around the network.
 
-There are currently three wallets which support Stakepool voting:
+There are currently two wallets which support stakepool voting:
 
-- `Decrediton` - cross-platform GUI wallet for Windows/macOS/Linux. The [Purchase Tickets tab](/getting-started/user-guides/using-decrediton.md#tickets) is used to buy tickets.
-
-- `Paymetheus` - GUI wallet for Windows only. Visit the [Purchase Tickets tab guide](/getting-started/user-guides/using-paymetheus.md#purchase-tickets-tab) to learn how to buy tickets using Paymetheus.
-
+- `Decrediton` - GUI wallet for Windows/macOS/Linux. The [Purchase Tickets tab](/getting-started/user-guides/using-decrediton.md#tickets) is used to buy tickets.
 - `dcrwallet` - CLI wallet for Windows/macOS/Linux. The [Buying Tickets with dcrwallet](/getting-started/user-guides/dcrwallet-tickets.md) guide explains how to purchase tickets via command line.

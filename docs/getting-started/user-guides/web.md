@@ -1,4 +1,4 @@
-# <i class="fa fa-firefox"></i> Web Client User Guide
+# <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Web Client User Guide
 
 ---
 
@@ -25,7 +25,7 @@ before you use it:
 
 ---
 
-## <i class="fa fa-plus-circle"></i> Create your web client wallet 
+## <img class="dcr-icon" src="/img/dcr-icons/CreateWallet.svg" /> Create your web client wallet
 
 > Step One
 
@@ -106,7 +106,7 @@ restore it. Now that you are sure the list is stored correctly, click
 
 ---
 
-## <i class="fa fa-long-arrow-right"></i> Send funds with the web client 
+## <img class="dcr-icon" src="/img/dcr-icons/Send.svg" /> Send funds with the web client
 
 > Step One
 
@@ -128,7 +128,7 @@ required funds have been confirmed.
 
 ---
 
-## <i class="fa fa-long-arrow-left"></i> Receive funds with the web client 
+## <img class="dcr-icon" src="/img/dcr-icons/Receive.svg" /> Receive funds with the web client
 
 > Step One
 

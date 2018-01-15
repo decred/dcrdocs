@@ -1,4 +1,4 @@
-# Decentralized Stake Pooling 
+# <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> Decentralized Stake Pooling 
 
 ---
 

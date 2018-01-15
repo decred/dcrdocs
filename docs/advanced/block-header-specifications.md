@@ -1,4 +1,4 @@
-# Block Header Specifications 
+# <img class="dcr-icon" src="/img/dcr-icons/BlockHeader.svg" /> Block Header Specifications 
 
 ---
 

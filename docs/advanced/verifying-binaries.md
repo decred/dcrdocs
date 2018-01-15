@@ -1,4 +1,4 @@
-# Verifying Binaries 
+# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Verifying Binaries 
 
 ---
 

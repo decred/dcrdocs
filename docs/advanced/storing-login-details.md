@@ -1,4 +1,4 @@
-# <i class="fa fa-hdd-o"></i> Storing Login Details 
+# <img class="dcr-icon" src="/img/dcr-icons/Harddrive.svg" /> Storing Login Details 
 
 All parameters that are specified on the command line while starting dcrd,
 dcrwallet and dcrctl can also be kept in configuration files. This is
@@ -8,13 +8,13 @@ time.
 
 ---
 
-## <i class="fa fa-laptop"></i> Configuration File Basics 
+## Configuration File Basics 
 
 If unfamiliar with the basics of configuration files, please review the information found in our [Startup Options Intro](/getting-started/startup-basics.md#configuration-files) page.
 
 ---
 
-## <i class="fa fa-terminal"></i> dcrd.conf 
+## dcrd.conf 
 
 Choose any username and password you want in the following steps. You do not need to register these
 anywhere and they will only be used to allow `dcrwallet` and `dcrctl` to communicate with `dcrd`.
@@ -51,7 +51,7 @@ rpcpass=<password>
 
 ---
 
-## <i class="fa fa-terminal"></i> dcrwallet.conf 
+## dcrwallet.conf 
 
 The procedure for `dcrwallet.conf` is very similar to the procedure for `dcrd.conf`. 
 
@@ -98,7 +98,7 @@ You cannot specify your private wallet passphrase in the config files. That must
 
 ---
 
-## <i class="fa fa-terminal"></i> dcrctl.conf 
+## dcrctl.conf 
 
 It is again easiest to set the username/passwords the same amongst `dcrd.conf`, `dcrwallet.conf`, and `dcrctl.conf`. If you used different credentials for dcrwallet you will need to specify one here and the other on the command line when issuing commands.
 
@@ -134,7 +134,7 @@ rpcpass=<password>
 
 ---
 
-## <i class="fa fa-tasks"></i> Additional Configuration Options 
+## Additional Configuration Options 
 
 All command line options can be put in the config file.
 The sample config files in the release package give additional

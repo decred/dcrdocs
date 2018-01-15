@@ -1,4 +1,4 @@
-# <i class="fa fa-desktop"></i> Configuration 
+# <img class="dcr-icon" src="/img/dcr-icons/Config1.svg" /> Configuration
 
 ---
 
@@ -64,7 +64,7 @@ On the other hand, increasing your maximum connections, which really just increa
 
 ---
 
-## <i class="fa fa-book"></i> Sources 
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
 
 [^8929]: Decred Forum, [Post 8,929](https://forum.decred.org/threads/600/#post-8929)
 [^9055]: Decred Forum, [Post 9,062](https://forum.decred.org/threads/472/page-12#post-9062)

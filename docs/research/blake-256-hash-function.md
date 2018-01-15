@@ -1,4 +1,4 @@
-# BLAKE-256 Hash Function 
+# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> BLAKE-256 Hash Function 
 
 ---
 

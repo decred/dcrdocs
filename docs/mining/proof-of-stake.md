@@ -1,4 +1,4 @@
-# Proof-of-Stake (PoS) Mining 
+# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Proof-of-Stake (PoS) Mining
 
 Last updated for v1.1.0
 

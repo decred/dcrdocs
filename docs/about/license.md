@@ -1,4 +1,4 @@
-# License 
+# <img class="dcr-icon" src="/img/dcr-icons/Document.svg" /> License 
 
 dcrdocs is licensed under the [copyfree](http://copyfree.org) ISC License.
 

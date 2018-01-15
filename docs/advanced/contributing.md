@@ -1,4 +1,4 @@
-# Source Code Contributions 
+# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Source Code Contributions 
 
 ---
 

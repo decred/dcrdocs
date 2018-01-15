@@ -1,4 +1,4 @@
-# <i class="fa fa-ticket"></i> Buying Tickets and Fees 
+# <img class="dcr-icon" src="/img/dcr-icons/BuyTicket.svg" /> Buying Tickets and Fees
 
 ---
 
@@ -54,7 +54,7 @@ Continue to [PoS Solo Mining FAQ](/faq/proof-of-stake/solo-mining.md)
 
 ---
 
-## <i class="fa fa-book"></i> Sources 
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
 
 [^9987]: Decred Forum, [Post 9,987](https://forum.decred.org/threads/582/page-2#post-9987)
 [^10219]: Decred Forum, [Post 10,219](https://forum.decred.org/threads/180/page-6#post-10219)

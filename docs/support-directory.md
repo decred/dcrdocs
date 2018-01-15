@@ -1,4 +1,4 @@
-# Support Reference Directory 
+# <img class="dcr-icon" src="/img/dcr-icons/Chat.svg" /> Support Reference Directory 
 
 The purpose of this page is to provide a directory for support contacts. Everyone currently working with the Decred project has their Slack and/or IRC username listed.
 

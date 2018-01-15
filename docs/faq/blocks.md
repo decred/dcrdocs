@@ -1,4 +1,4 @@
-# <i class="fa fa-cubes"></i> Blocks 
+# <img class="dcr-icon" src="/img/dcr-icons/Blocks.svg" /> Blocks
 
 ---
 
@@ -52,7 +52,7 @@ In this case, block #17880 ([000000000000154c6091747245e3c2620447c71b346aed09548
 
 ---
 
-## <i class="fa fa-book"></i> Sources 
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
 
 [^8918]: Decred Forum, [Post 8,918](https://forum.decred.org/threads/557/#post-8918)
 [^9621]: Decred Forum, [Post 9,621](https://forum.decred.org/threads/651/#post-9621)

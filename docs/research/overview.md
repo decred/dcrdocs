@@ -1,4 +1,4 @@
-# <i class="fa fa-info-circle"></i> Overview 
+# <img class="dcr-icon" src="/img/dcr-icons/Info.svg" /> Overview 
 
 ---
 

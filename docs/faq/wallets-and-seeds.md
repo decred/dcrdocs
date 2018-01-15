@@ -1,4 +1,4 @@
-# <i class="fa fa-money"></i> Wallets and Seeds 
+# <img class="dcr-icon" src="/img/dcr-icons/CreateWallet.svg" /> Wallets and Seeds
 
 ---
 
@@ -97,7 +97,7 @@ The stake pool, however, uses a pay-to-script-hash address, which is identified 
 
 ---
 
-## <i class="fa fa-book"></i> Sources 
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
 
 [^8613]: Decred Forum, [Post 8,613](https://forum.decred.org/threads/576/#post-8613)
 [^8660]: Decred Forum, [Post 8,660](https://forum.decred.org/threads/534/page-3#post-8660)

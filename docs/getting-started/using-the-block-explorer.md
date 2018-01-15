@@ -1,8 +1,8 @@
-# <i class="fa fa-cubes"></i> Using the Block Explorer 
+# <img class="dcr-icon" src="/img/dcr-icons/BlockExplorer.svg" /> Using the Block Explorer
 
 ---
 
-## <i class="fa fa-info-circle"></i> Overview 
+## <img class="dcr-icon" src="/img/dcr-icons/Info.svg" /> Overview
 
 A block explorer based on
 [Insight](https://github.com/bitpay/insight-ui) is provided for the
@@ -27,7 +27,7 @@ the value (in DCR) transmitted across the network.
 
 ---
 
-## <i class="fa fa-cube"></i> Blocks 
+## <img class="dcr-icon" src="/img/dcr-icons/Blocks.svg" /> Blocks
 
 Blocks can be found by searching for their block height number,
 clicking on a `Height` value from the home page, or from their
@@ -57,7 +57,7 @@ Option                   | Explanation
 `Version`                | The version of the block.
 `Nonce`                  | The value used by a miner to find the correct solution for this block.
 
-## <i class="fa fa-exchange"></i> Transactions 
+## <img class="dcr-icon" src="/img/dcr-icons/Transactions.svg" /> Transactions
 
 This section lists all the transactions that were mined into this
 block. Transactions are chosen from the network mempool in order of
@@ -85,7 +85,7 @@ Note `Received Time`, `Mined Time`, and `Included in Block` will not have a valu
 
 ---
 
-### Ticket purchases
+### <img class="dcr-icon" src="/img/dcr-icons/TicketLive.svg" /> Ticket purchases
 
 For a ticket purchase (stake submission) there are a few differences
 from a standard transaction shown.
@@ -104,7 +104,7 @@ is the address where change for this transaction will be sent.
 
 ---
 
-### Proof-of-stake votes
+### <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Proof-of-stake votes
 
 Note the identifying terms in the details section: `Vote`, `Stake
 Base`, `Block Commitment`, and `Vote Bits`:

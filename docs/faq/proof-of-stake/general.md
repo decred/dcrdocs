@@ -1,4 +1,4 @@
-# <i class="fa fa-ticket"></i> PoS General FAQ 
+# <img class="dcr-icon" src="/img/dcr-icons/TicketLive.svg" /> PoS General FAQ
 
 ---
 

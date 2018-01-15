@@ -1,10 +1,10 @@
-# How to Stake
+# <img class="dcr-icon" src="/img/dcr-icons/QuestionTicket.svg" /> How to Stake
 
 Last updated for v1.1.0
 
 ---
 
-## How to Stake 
+## How to Stake
 
 Participating in proof-of-stake requires a Decred wallet to be running 24/7. The wallet needs to be always online so that it can be called to vote - if the wallet is unavailable then the votes will be missed and no block reward will be received.
 
@@ -14,13 +14,13 @@ Stakepools are available for those unable to keep a personal voting wallet onlin
 
 ---
 
-## Solo PoS
+## <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo PoS
 
 Solo mining is currently only possible using the Decred command line tools. The [Buying Tickets with dcrwallet](/getting-started/user-guides/dcrwallet-tickets.md) guide explains how to buy tickets using the CLI wallet `dcrwallet`.
 
 ---
 
-## PoS using a Stakepool 
+## <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> PoS using a Stakepool
 
 Official stake pools are listed here:
 

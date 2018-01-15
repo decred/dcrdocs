@@ -1,4 +1,4 @@
-# Transaction Details 
+# <img class="dcr-icon" src="/img/dcr-icons/Transactions.svg" /> Transaction Details 
 
 ---
 

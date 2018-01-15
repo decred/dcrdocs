@@ -1,4 +1,4 @@
-# Using Decrediton #
+# <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Using Decrediton
 
 Last updated for v1.1.1.
 

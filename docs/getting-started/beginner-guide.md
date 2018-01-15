@@ -1,4 +1,4 @@
-# Beginner's Guide 
+# <img class="dcr-icon" src="/img/dcr-icons/Flag.svg" /> Beginner's Guide
 
 Last updated for v1.0.1
 

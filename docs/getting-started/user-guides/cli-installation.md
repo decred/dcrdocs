@@ -1,4 +1,4 @@
-# CLI Installation guide  
+# <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> CLI Installation guide
 
 This page was last updated for v1.1.2.
 

@@ -1,4 +1,4 @@
-# Blockchain Parameters
+# <img class="dcr-icon" src="/img/dcr-icons/Blocks.svg" /> Blockchain Parameters
 
 ---
 

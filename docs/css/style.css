@@ -32,6 +32,7 @@
 }
 .icon-decred_symbol:before {
     content: "\e902";
+    color: #0C1E3E;
 }
 
 /* Override header and footer with decred dark blue*/
@@ -50,4 +51,19 @@
 /* Increase size of social media links in page footer */
 .md-footer-social {
     font-size: 20px;
+}
+
+h1 img.dcr-icon {
+    height: 48px;
+    width : 48px;
+}
+
+h2 img.dcr-icon, h3 img.dcr-icon {
+    height: 32px;
+    width : 32px;
+}
+
+p img.dcr-icon {
+    height: 26px;
+    width : 26px;
 }

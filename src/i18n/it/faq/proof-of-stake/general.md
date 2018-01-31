@@ -25,7 +25,7 @@ Nel sistema Decred Proof-of-Stake è possibile partecipare chiunque abbia la DCR
 #### 2. Quali sono i biglietti?
 
 Un biglietto è un token acquistato per partecipare al sistema PoS. È possibile acquistare i biglietti tramite l'interfaccia di riga di comando di dcrctl, o attraverso una GUI come Paymetheus[^1] o Decrediton. Ogni volta che si acquista un
-Biglietto, si paga il prezzo del biglietto corrente e la tassa del biglietto utilizzando il DCR. Quando viene acquistato un biglietto, va a un "mempoool" temporaneo. 20 biglietti possono essere estratti in ogni blocco e vengono scelti i biglietti
+Biglietto, si paga il prezzo del biglietto corrente e la tassa del biglietto utilizzando il DCR. Quando viene acquistato un biglietto, va a un "mempool" temporaneo. 20 biglietti possono essere estratti in ogni blocco e vengono scelti i biglietti
 Da estirpare sulla base della loro tariffa per kilobyte. Dal momento che esiste un numero limitato di biglietti che possono essere estratti in blocchi ad un determinato prezzo (2880), potrebbe esservi la concorrenza per ottenere i biglietti minati. In questo caso,
 Puoi aumentare la tassa che sei disposta a pagare per ottenere il tuo biglietto estratto. Una volta che il tuo biglietto viene estratto, passerà dall'attuale 'allmempool' al pool di biglietti immaturi. Dopo 256 blocchi
 (Circa 20 ore) poi si maturerà e entra nel pool biglietto dal vivo dove è eleggibile per essere scelto per votare.

@@ -101,7 +101,7 @@ The automatic purchase panel allows you to enable the automatic ticket buyer - D
 - Max Price Absolute -  If the ticket price is above this value, you will not buy more tickets. The default of 0 turns this off.
 - Max Per Block - Do not buy more than this number of tickets per block. A negative number means buy one ticket every n blocks. e.g. -2 would mean buy a ticket every second block.
 - Max Fee - Tickets are entered into the mempool in order of their fee per kilobyte. This sets the maximum fee you are willing to pay.
-- Max Price Relative  - If the current window price is significantly higher than the last few windows, do not buy any tickets. E.g. With the default value of 1.25, if the average price of the last few windows is 50DCR, you won’t buy any tickets if the current window is over 75DCR.
+- Max Price Relative  - If the current window price is significantly higher than the last few windows, do not buy any tickets. E.g. With the default value of 1.25, if the average price of the last few windows is 50DCR, you won’t buy any tickets if the current window is over 62.5DCR.
 
 > Voting Settings
 

@@ -36,6 +36,13 @@ cryptocurrency exchanges have added support for Decred (last updated December 20
 * [ShapeShift](https://shapeshift.io)
 * [Changelly](https://changelly.com/)
 * [Flyp](https://flyp.me)
+* [Godex](https://godex.io)
+* [Fex](https://fex.hk)
+* [Upbit](https://upbit.com)
+* [LiteBit](https://www.litebit.eu/en/buy/decred)
+* [Coinspot](https://www.coinspot.com.au/buy/dcr)
+* [Zhaobi](https://www.zhaobi.com/#/usercenter/dcrUSDTtrade)
+* [Bisq](https://markets.bisq.network/?market=dcr_btc)
 
 If you need help obtaining Bitcoin to get started, the process is well documented in the [Bitcoin wiki](https://en.bitcoin.it/wiki/Buying_Bitcoins_%28the_newbie_version%29).
 

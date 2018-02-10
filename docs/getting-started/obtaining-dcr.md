@@ -36,7 +36,7 @@ Note: If you need help obtaining Bitcoin to get started, the process is well doc
 * [Bisq](https://markets.bisq.network/?market=dcr_btc)
 
 
-### Instand Exchanges
+### Instant Exchanges
 
 Instant exchanges allow users to convert from one cryptocurrency to another without the need for registration. Do note that higher fees usually apply, i.e., the price will include a fee for the convenience. You should compare prices among all the exchanges below.
 

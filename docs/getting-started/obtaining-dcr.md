@@ -46,6 +46,7 @@ Instant exchanges allow users to convert from one cryptocurrency to another with
 * [CoinSwitch](https://www.coinswitch.co/)
 * [Evercoin](https://evercoin.com/)
 * [BitPlace](https://www.bitplace.exchange/)
+* [Changenow](https://changenow.io/)
 
 
 ### Direct Exchanges

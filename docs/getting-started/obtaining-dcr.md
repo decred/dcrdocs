@@ -4,15 +4,14 @@
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Info.svg" /> Overview
 
-This article discusses some of the ways a user can acquire Decred
-coins.
+This article discusses some of the ways a user can acquire Decred.
 
 The five basic ways are:
 
-* Purchase Decred for BTC through an exchange
-* PoW mine for Decred
-* PoS mine for Decred (this requires you to already have some Decred)
-* Contribute to Decred
+* Purchase Decred for BTC or fiat currency through an exchange.
+* PoW mine for Decred.
+* PoS mine for Decred (this requires you to already have some Decred).
+* Contribute to Decred.
 * Sell or trade goods or services with someone who already has Decred.
 
 ---
@@ -21,56 +20,53 @@ The five basic ways are:
 
 ### Exchanges
 
-One way to acquire Decred is to purchase some on an exchange.
-Since the release of Decred on February 8th 2016, more than ten
-cryptocurrency exchanges have added support for Decred (last updated December 2017).
+One way to acquire Decred is to purchase some on an exchange with Bitcoin.
+Since the release of Decred on February 8th 2016, more than ten cryptocurrency exchanges have added support for Decred (last updated February 2018).
 
-* [Poloniex](https://poloniex.com/)
-* [Bittrex](https://bittrex.com/)
-* [Bleutrade](https://bleutrade.com/exchange)
-* [Tux Exchange](https://tuxexchange.com)
-* [YoBit](https://yobit.net/en/)
-* [Cryptopia](https://cryptopia.co.nz/Exchange/)
-* [Exodus](https://exodus.io)
-* [Evercoin](https://evercoin.com/)
-* [ShapeShift](https://shapeshift.io)
-* [Changelly](https://changelly.com/)
-* [Flyp](https://flyp.me)
-* [Godex](https://godex.io)
-* [Fex](https://fex.hk)
-* [Upbit](https://upbit.com)
-* [LiteBit](https://www.litebit.eu/en/buy/decred)
-* [Coinspot](https://www.coinspot.com.au/buy/dcr)
+Note: If you need help obtaining Bitcoin to get started, the process is well documented in the [Bitcoin wiki](https://en.bitcoin.it/wiki/Buying_Bitcoins_%28the_newbie_version%29).
+
+* [Bittrex](https://bittrex.com/Market/Index?MarketName=BTC-DCR)
+* [Poloniex](https://poloniex.com/exchange#btc_dcr)
+* [Upbit](https://www.upbit.com/exchange?code=CRIX.UPBIT.BTC-DCR)
+* [Fex](https://fex.hk/Home/Exchange?type=DCR/BTC&buytype=BTC)
 * [Zhaobi](https://www.zhaobi.com/#/usercenter/dcrUSDTtrade)
+* [Cryptopia](https://www.cryptopia.co.nz/Exchange/?market=DCR_BTC)
+* [Bleutrade](https://bleutrade.com/exchange/DCR/BTC)
+* [Tux Exchange](https://tuxexchange.com/trade?coin=DCR&market=BTC)
 * [Bisq](https://markets.bisq.network/?market=dcr_btc)
 
-If you need help obtaining Bitcoin to get started, the process is well documented in the [Bitcoin wiki](https://en.bitcoin.it/wiki/Buying_Bitcoins_%28the_newbie_version%29).
+
+### Instant Exchanges
+
+Instant exchanges allow users to convert from one cryptocurrency to another without the need for registration. Do note that higher fees usually apply, i.e., the price will include a fee for the convenience. You should compare prices among all the exchanges below.
+
+* [ShapeShift](https://shapeshift.io/)
+* [Flyp](https://flyp.me/)
+* [Godex](https://godex.io/)
+* [CoinSwitch](https://www.coinswitch.co/)
+* [Evercoin](https://evercoin.com/)
+* [BitPlace](https://www.bitplace.exchange/)
+* [Changenow](https://changenow.io/)
+
 
 ### Direct Exchanges
 
-As Decred continues to grow in popularity, some exchanges are offering
-Decred directly for fiat currency.
+As Decred continues to grow in popularity, some exchanges are offering Decred directly for fiat currency.
 
-* [Changelly](https://changelly.com/)
-* [LiteBit](https://litebit.eu/)
+* [LiteBit](https://www.litebit.eu/en/buy/decred) (EUR)
+* [Coinspot](https://www.coinspot.com.au/buy/dcr) (AUD)
 
 ---
 
 ## <img class="dcr-icon" src="/img/dcr-icons/PoWMine.svg" /> Mine for Decred (PoW)
 
-Proof-of-Work (PoW) is a measure of using computational power to
-create and verify the cryptographically secure blockchain.  This is
-similar to traditional Bitcoin mining.  PoW mining is described in
-more detail [here](/mining/proof-of-work).
+Proof-of-Work (PoW) is a measure of using computational power to create and verify the cryptographically secure blockchain.  This is similar to traditional Bitcoin mining. PoW mining is described in more detail [here](/mining/proof-of-work).
 
 ---
 
 ## <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Stake Mine for Decred / Proof-of-Stake (PoS)
 
-Proof-of-Stake (PoS) mining is performed by stakeholders who lock a
-certain amount of their DCR in return for voting rights and a monetary
-reward. PoS mining is described in more detail
-[here](/mining/proof-of-stake).
+Proof-of-Stake (PoS) mining is performed by stakeholders who lock a certain amount of their DCR in return for voting rights and a monetary reward. PoS mining is described in more detail [here](/mining/proof-of-stake).
 
 ---
 
@@ -82,7 +78,4 @@ Decred is currently recruiting contractors - members of the community who are pa
 
 ## <img class="dcr-icon" src="/img/dcr-icons/SellGoods.svg" /> Sell / Trade Goods or Services for Decred
 
-An alternative to obtaining Decred is to use your skills, knowledge,
-or experience by exchanging services for Decred as payment.  Services
-can be anything that you are skilled at which are in need or
-requested by other members of the Decred community.
+An alternative way to obtain Decred is to use your skills, knowledge, or experience by exchanging services for Decred as payment.  Services can be anything that you are skilled at which are in need or requested by other members of the Decred community.

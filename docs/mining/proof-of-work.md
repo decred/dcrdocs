@@ -47,13 +47,14 @@ Follow the [dcrctl Basics](/getting-started/user-guides/dcrctl-basics.md) guide 
 
 These mining pools are known to support Decred:
 
-* [<i class="fa fa-external-link-square"></i> http://decredpool.org](http://www.decredpool.org)
-* [<i class="fa fa-external-link-square"></i> http://yiimp.ccminer.org](http://yiimp.ccminer.org)
-* [<i class="fa fa-external-link-square"></i> http://coinmine.pl/dcr](http://coinmine.pl/dcr)
-* [<i class="fa fa-external-link-square"></i> https://dcr.maxminers.net](https://dcr.maxminers.net)
 * [<i class="fa fa-external-link-square"></i> https://dcr.suprnova.cc](https://dcr.suprnova.cc)
+* [<i class="fa fa-external-link-square"></i> http://coinmine.pl/dcr](http://coinmine.pl/dcr)
+* [<i class="fa fa-external-link-square"></i> http://mining.luxor.tech](http://mining.luxor.tech)
+* [<i class="fa fa-external-link-square"></i> http://yiimp.ccminer.org](http://yiimp.ccminer.org)
+* [<i class="fa fa-external-link-square"></i> https://dcr.maxminers.net](https://dcr.maxminers.net)
 * [<i class="fa fa-external-link-square"></i> https://pool.mn/dcr](https://pool.mn/dcr)
 * [<i class="fa fa-external-link-square"></i> https://zpool.ca](https://zpool.ca)
+* [<i class="fa fa-external-link-square"></i> http://decredpool.org](http://www.decredpool.org)
 
 Mining pools all work more or less the same but you may wish to sign up at multiple pools and see which one suits you the best.
 

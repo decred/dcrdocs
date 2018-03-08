@@ -4,6 +4,7 @@ theme:
   custom_dir: theme_override
   favicon: 'img/favicon.ico'
   logo: 'img/logo.svg'
+  font: false
 extra:
   social:
     - type: 'github'

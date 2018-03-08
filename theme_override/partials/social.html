@@ -1,0 +1,9 @@
+{% if config.extra.social %}
+  <div class="md-footer-social">
+    {% set path = "assets/fonts/font-awesome.min.css" %}
+    <link rel="stylesheet" href="{{ path }}">
+    {% for social in config.extra.social %}
+      <a href="{{ social.link }}" class="md-footer-social__link fa fa-{{ social.type }}"></a>
+    {% endfor %}
+  </div>
+{% endif %}

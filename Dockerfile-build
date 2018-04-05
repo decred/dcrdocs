@@ -1,4 +1,4 @@
-FROM python:3.5.4
+FROM python:3.6
 
 LABEL description="dcrdocs build"
 LABEL version="1.0"

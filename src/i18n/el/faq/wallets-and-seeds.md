@@ -41,7 +41,7 @@ Nobody can steal your coins if they get access to the wallet.db[^9803] file unle
 
 Όλες οι λέξεις seed είναι μια άμεση χαρτογράφηση των αγγλικών λέξεων σε hex ψηφία. Το seed δεν είναι τίποτα περισσότερο από έναν 256-bit (32-byte) κρυπτογραφικά ασφαλές τυχαίο αριθμό. Το salt δεν ισχύει εδώ. Δεν έχει καμία σχέση με επιθέσεις brute-force[^10452] σε τυχαίους αριθμούς
 
-In other words, since each word can be 256 possibilities and there are 32 words, that yields 256^32 (or 2^256 depending on how you want to look at it, but it is the same number) possibilities. That number is larger than the entire number of hydrogen atoms in the known universe. In fact, it is almost more than the number of atoms total in the known universe.
+In other words, since each word can be 256 possibilities and there are 33 words, that yields 256^32 (or 2^256 depending on how you want to look at it, but it is the same number) possibilities. That number is larger than the entire number of hydrogen atoms in the known universe. In fact, it is almost more than the number of atoms total in the known universe.
 
 To put this in perspective, assuming there are 7 billion people on the planet and each person owned 10 computers and each one of those computers could test a billion possibilities a second and that you could find the solution on average after testing only 50% of the total possibilities, it would still take 26x10^48 (that's 26 trillion trillion trillion trillion) years to brute-force a single seed.
 

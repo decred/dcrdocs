@@ -54,16 +54,29 @@
 }
 
 h1 img.dcr-icon {
-    height: 48px;
-    width : 48px;
+    height: 28px;
+    width : 28px;
+    vertical-align: middle;
 }
 
 h2 img.dcr-icon, h3 img.dcr-icon {
-    height: 32px;
-    width : 32px;
+    height: 26px;
+    width : 26px;
+    vertical-align: middle;
 }
 
 p img.dcr-icon {
-    height: 26px;
-    width : 26px;
+    height: 24px;
+    width : 24px;
+    vertical-align: middle;
 }
+
+@media only screen and (max-width: 76.1875em){
+    html .md-nav--primary .md-nav__title--site {
+    	background-color: #0C1E3E;
+    }
+    .md-nav__source {
+    	background-color: #122c5c;
+    }
+}
+

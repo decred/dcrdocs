@@ -52,9 +52,10 @@ Instant exchanges allow users to convert from one cryptocurrency to another with
 
 As Decred continues to grow in popularity, some exchanges are offering Decred directly for fiat currency.
 
-* [LiteBit](https://www.litebit.eu/en/buy/decred) (EUR)
+* [BRAZILIEX](https://braziliex.com/) (BRL)
 * [Coinspot](https://www.coinspot.com.au/buy/dcr) (AUD)
-* [profitfy](https://profitfy.trade/)
+* [LiteBit](https://www.litebit.eu/en/buy/decred) (EUR)
+* [profitfy](https://profitfy.trade/) (BRL)
 
 ### Payment Processors
 

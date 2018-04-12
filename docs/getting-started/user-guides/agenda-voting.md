@@ -97,3 +97,25 @@ The Lightning Network is the most directly useful application of smart contracts
 
 **Locked In:** 141184<br />
 **Activated:** 149248
+
+
+#V5#
+
+## Activation of new opcodes for Lightning Network Support
+**Agenda ID:** lnfeatures
+
+Enable features defined in [DCP0002](https://github.com/decred/dcps/blob/master/dcp-0002/dcp-0002.mediawiki) and [DCP0003](https://github.com/decred/dcps/blob/master/dcp-0003/dcp-0003.mediawiki) necessary to support Lightning Network (LN)
+
+The Lightning Network is the most directly useful application of smart contracts to date since it allows for off-chain transactions that optionally settle on-chain. This infrastructure has clear benefits for both scaling and privacy. Decred is optimally positioned for this integration.
+
+Block 205189 is the first block which contains the new opcode which was voted in via the lnfeatures vote and thus all old nodes must upgrade.
+
+##Voting Results:
+
+| Choice  | Result
+|-----|-------|
+|No   |  0.49%|
+|Yes  | 99.51%|
+
+**Locked In:** 181504<br />
+**Activated:** 189568

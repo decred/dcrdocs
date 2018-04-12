@@ -54,6 +54,7 @@ As Decred continues to grow in popularity, some exchanges are offering Decred di
 
 * [LiteBit](https://www.litebit.eu/en/buy/decred) (EUR)
 * [Coinspot](https://www.coinspot.com.au/buy/dcr) (AUD)
+* [profitfy](https://profitfy.trade/)
 
 ### Payment Processors
 

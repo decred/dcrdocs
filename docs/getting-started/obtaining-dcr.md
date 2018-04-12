@@ -46,7 +46,7 @@ Instant exchanges allow users to convert from one cryptocurrency to another with
 * [CoinSwitch](https://www.coinswitch.co/)
 * [Evercoin](https://evercoin.com/)
 * [Changenow](https://changenow.io/)
-
+* [HolyTransaction](https://holytransaction.com)
 
 ### Direct Exchanges
 
@@ -54,6 +54,13 @@ As Decred continues to grow in popularity, some exchanges are offering Decred di
 
 * [LiteBit](https://www.litebit.eu/en/buy/decred) (EUR)
 * [Coinspot](https://www.coinspot.com.au/buy/dcr) (AUD)
+
+### Payment Processors
+
+If you are an online merchant, the following solutions can help you accept Decred payments. These payment processors also provide integrations to most major e-commerce platforms.
+
+- [Globee](https://globee.com)
+- [Wirex](https://wirexapp.com)
 
 ---
 

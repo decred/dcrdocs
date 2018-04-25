@@ -1,7 +1,0 @@
-FROM httpd:alpine
-
-LABEL description="dcrdocs serve"
-LABEL version="1.0"
-LABEL maintainer "holdstockjamie@gmail.com"
-
-COPY ./docker-build/ /usr/local/apache2/htdocs/

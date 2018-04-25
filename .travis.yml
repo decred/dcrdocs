@@ -1,13 +1,7 @@
 sudo: required
 
-language: python
-python:
-  - "3.6"
-
 services:
   - docker
 
-install:
-  - pip install -r requirements.txt
 script:
-  - ./build_docker.sh
+  - sh build_docker.sh

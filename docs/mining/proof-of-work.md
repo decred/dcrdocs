@@ -52,6 +52,7 @@ These mining pools are known to support Decred:
 * [<i class="fa fa-external-link-square"></i> http://mining.luxor.tech](http://mining.luxor.tech)
 * [<i class="fa fa-external-link-square"></i> https://dcr.maxminers.net](https://dcr.maxminers.net)
 * [<i class="fa fa-external-link-square"></i> https://pool.mn/dcr](https://pool.mn/dcr)
+* [<i class="fa fa-external-link-square"></i> https://altpool.net](https://altpool.net)
 
 Mining pools all work more or less the same but you may wish to sign up at multiple pools and see which one suits you the best.
 

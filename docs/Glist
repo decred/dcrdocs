@@ -1,5 +1,5 @@
 OVERVIEW
-
+--------
 currency
 
 fiat currency
@@ -29,7 +29,7 @@ algorithm
 resources
 
 BEGINNERS GUIDE
-
+---------------
 clients
 
 block explorer
@@ -47,7 +47,7 @@ testnet
 mainnet
 
 OBTAINING DCR
-
+-------------
 exchange
 
 fiat pairing
@@ -57,3 +57,24 @@ block reward
 stakeholder
 
 cryptography (cryptographic, cryptographically)
+
+
+USING THE BLOCK EXPLORER
+------------------------
+
+mempool
+
+ticket window
+
+ticket price
+
+difficulty (pow - pos)
+
+ticket pool
+
+hash
+
+block
+
+
+

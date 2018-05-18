@@ -1,8 +1,8 @@
 # <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> **How To Vote**
 
-This guide assumes you already have an active wallet and have purchased tickets. If not, please follow the [Voting Preperation](/getting-started/user-guides/agenda-voting/#voting-preparation) guide.
+This guide assumes you already have a wallet and have purchased tickets. If not, please follow the [Voting Preperation](/getting-started/user-guides/agenda-voting/#voting-preparation) guide.
 
-The choice a ticket votes with depends on your vote preference at the time the ticket is chosen, not when it is bought. So you can set your choice at any time within the voting window and all future tickets will vote accordingly.
+The choice your ticket makes depends on the voting preference (Yes/No/Abstain) that are set when it is selected to vote. This means you can change the preference for all your live tickets at any time while the agenda is running, and they will vote accordingly.
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> **Stakepool Voting**
 

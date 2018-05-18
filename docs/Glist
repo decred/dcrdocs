@@ -72,9 +72,85 @@ difficulty (pow - pos)
 
 ticket pool
 
-hash
+hash (blockhash)
 
 block
+
+transaction ID
+
+block number (see height)
+
+MAINNET VOTIN
+-------------
+
+agenda (voting)
+
+consensus changes/upgrades/software
+
+hard fork(ing) scenario
+
+block interval
+
+hard fork code
+
+abstain ?
+
+Stake Version Interval (SVI)
+
+Rule Change Interval (RCI)
+
+Lightning Network
+
+smart contracts
+
+on-chain voting (consensus changes)
+
+off-chain voting (politeia)
+
+off-chain transactions
+
+scaling
+
+HOW TO VOTE
+-----------
+
+live ticket
+
+vote/voting preferences
+
+votechoices
+
+preference (vote)
+
+stakepool
+
+USING TESTNET GUIDE
+-------------------
+
+balance
+
+faucet
+
+DECRED CONSTITUTION
+-------------------
+
+Open Source
+
+genesis block
+
+issuance
+
+subsidy (= block reward)
+
+fungibility
+
+mature
+
+pseudorandom
+
+
+
+
 
 
 

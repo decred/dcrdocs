@@ -1,0 +1,64 @@
+abstain ?
+agenda (voting)
+algorithm
+application (-> software)
+balance
+block
+block explorer
+block interval
+block number (see height)
+block reward
+blockchain
+clients
+command-line
+consensus changes/upgrades/software
+cryptocurrency (explained in docs:overview)
+cryptography (cryptographic, cryptographically)
+currency
+daemon
+difficulty (pow - pos)
+exchange
+exchange rates
+faucet
+fiat currency
+fiat pairing
+full node
+fungibility
+genesis block
+governance
+hard fork code
+hard fork(ing) scenario
+hash (blockhash)
+issuance
+ledger (distinction between the word & the HW-wallet)
+Lightning Network
+live ticket
+mainnet
+mature
+mempool
+node
+off-chain transactions
+off-chain voting (politeia)
+on-chain voting (consensus changes)
+Open Source
+preference (vote)
+private key
+proof-of-stake (PoS, voting, voter)
+proof-of-work (PoW, mining, miner) 
+pseudorandom
+resources
+Rule Change Interval (RCI)
+scaling
+smart contracts
+Stake Version Interval (SVI)
+stakeholder
+stakepool
+subsidy (= block reward)
+testnet
+ticket pool
+ticket price
+ticket window
+transaction ID
+vote/voting preferences
+votechoices
+wallet

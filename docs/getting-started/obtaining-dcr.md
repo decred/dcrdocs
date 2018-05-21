@@ -62,7 +62,6 @@ As Decred continues to grow in popularity, some exchanges are offering Decred di
 
 ### Block Trading: Over-the-Counter Desks (for large orders)
 * [i2 Trading (Iterative Capital)](https://i2trading.com)
-* [Cumberland Mining](https://cumberlandmining.com/)
 
 ### Payment Processors
 

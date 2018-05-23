@@ -18,7 +18,9 @@ exchange rates
 
 wallet
 
-private key
+private key 
+
+public key
 
 ledger (distinction between the word & the HW-wallet)
 
@@ -148,8 +150,24 @@ mature
 
 pseudorandom
 
+DECREDITON SETUP GUIDE
+----------------------
 
+GUI/G.U.I. -> see graphical user interface
 
+graphical user interface
+
+Operating System/ OS / O.S.
+
+CLI/C.L.I. -> see command line interface
+
+command line interface
+
+seed (phrase)
+
+directory (aka folder)
+
+daemon
 
 
 

@@ -4,14 +4,20 @@
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Info.svg" /> Overview
 
-A block explorer based on
-[Insight](https://github.com/bitpay/insight-ui) is provided for the
-Decred network. All blocks and transactions in the Decred blockchain
-are visible through use of this block explorer, located at
-[`https://mainnet.decred.org`](https://mainnet.decred.org) and
+There are two block explorers available for Decred. All blocks and transactions on the Decred blockchain
+are visible through the use of these block explorers.
+
+The first explorer is based on
+[Insight](https://github.com/bitpay/insight-ui) and is located at
+[`https://mainnet.decred.org`](https://mainnet.decred.org) or 
 [`https://testnet.decred.org`](https://testnet.decred.org) for the
-testnet wallet.  Below is a quick review of some of the information on
-it.
+testnet.
+The second explorer is based on 
+[dcrdata](https://github.com/decred/dcrdata) and is located at
+[`https://explorer.dcrdata.org/`](https://explorer.dcrdata.org/) or
+[`https://testnet.dcrdata.org/`](https://testnet.dcrdata.org/) for the testnet.
+
+Below is a quick review of some of the information on them.
 
 Option         | Explanation
 ---            | ---

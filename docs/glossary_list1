@@ -1,7 +1,6 @@
-abstain ?
+abstain
 agenda (voting)
 algorithm
-application (-> software)
 balance
 block
 block explorer
@@ -12,12 +11,10 @@ blockchain
 CLI/C.L.I. -> see command line interface
 clients
 command line interface
-command-line
 consensus changes/upgrades/software
 cryptocurrency (explained in docs:overview)
 cryptography (cryptographic, cryptographically)
 currency
-daemon
 daemon
 difficulty (pow - pos)
 directory (aka folder)
@@ -53,7 +50,6 @@ private key
 proof-of-stake (PoS, voting, voter)
 proof-of-work (PoW, mining, miner) 
 pseudorandom
-resources
 Rule Change Interval (RCI)
 scaling
 seed (phrase)

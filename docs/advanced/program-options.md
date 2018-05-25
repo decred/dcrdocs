@@ -226,7 +226,6 @@ Command                                                                         
 `listreceivedbyaddress (minconf=1 includeempty=false includewatchonly=false)`   | Get a list of all your addresses and the amount of DCR that has been received by them.
 `listsinceblock ("blockhash" targetconfirmations=1 includewatchonly=false)`     | List transactions that have occurred since the given block hash.
 `listtransactions ("account" count=10 from=0 includewatchonly=false)`           | List the number of transactions as specified by ‘count' in the given account.
-`move "fromaccount" "toaccount" amount (minconf=1 "comment")`                   | Move funds between accounts in the same wallet.
 `purchaseticket "fromaccount" spendlimit (minconf=1 "ticketaddress" "comment")` | Manually purchase PoS tickets. ‘fromaccount' will usually be "default". ‘spendlimit' is the amount you want to spend on tickets in total, not per ticket.
 `renameaccount "oldaccount" "newaccount"`                                       | Rename an account in your wallet.
 `sendfrom "fromaccount" "toaddress" amount (minconf=1 "comment" "commentto")`   | Send DCR from the given account to the given address. You can add an optional comment.

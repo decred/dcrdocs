@@ -137,20 +137,6 @@ npm run transifex:push
   2. In the repository folder, run `npm run transifex:pull`, and once it completes, add the resulting new files to git: `git add src/i18n`
   5. Commit files to git + push to repo
 
-
-
-### Locally serving dcrdocs translations
-Run `mkdocs serve -f de_docs.yml` in the repository root, substituting `de_docs.yml` with the config file for the language you wish to use.
-
-```bash
-$ mkdocs serve -f de_docs.yml
-INFO    -  Building documentation...
-INFO    -  Cleaning site directory
-[I 160402 15:50:43 server:271] Serving on http://127.0.0.1:8000
-[I 160402 15:50:43 handlers:58] Start watching changes
-[I 160402 15:50:43 handlers:60] Start detecting changes
-```
-
 ## Getting help
 
 To get help with dcrdocs, please use the [forum], [GitHub issues], or the Decred development IRC channel `#decred-dev` on freenode.

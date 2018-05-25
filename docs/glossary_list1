@@ -1,174 +1,72 @@
-OVERVIEW
---------
-currency
-
-fiat currency
-
-cryptocurrency (explained in docs:overview)
-
-governance
-
-proof-of-work (PoW, mining, miner) 
-
-proof-of-stake (PoS, voting, voter)
-
-blockchain
-
-exchange rates
-
-wallet
-
-private key 
-
-public key
-
-ledger (distinction between the word & the HW-wallet)
-
-node
-
-algorithm
-
-resources
-
-BEGINNERS GUIDE
----------------
-clients
-
-block explorer
-
-application (-> software)
-
-daemon
-
-command-line
-
-full node
-
-testnet
-
-mainnet
-
-OBTAINING DCR
--------------
-exchange
-
-fiat pairing
-
-block reward
-
-stakeholder
-
-cryptography (cryptographic, cryptographically)
-
-
-USING THE BLOCK EXPLORER
-------------------------
-
-mempool
-
-ticket window
-
-ticket price
-
-difficulty (pow - pos)
-
-ticket pool
-
-hash (blockhash)
-
-block
-
-transaction ID
-
-block number (see height)
-
-MAINNET VOTIN
--------------
-
-agenda (voting)
-
-consensus changes/upgrades/software
-
-hard fork(ing) scenario
-
-block interval
-
-hard fork code
-
 abstain ?
-
-Stake Version Interval (SVI)
-
-Rule Change Interval (RCI)
-
-Lightning Network
-
-smart contracts
-
-on-chain voting (consensus changes)
-
-off-chain voting (politeia)
-
-off-chain transactions
-
-scaling
-
-HOW TO VOTE
------------
-
-live ticket
-
-vote/voting preferences
-
-votechoices
-
-preference (vote)
-
-stakepool
-
-USING TESTNET GUIDE
--------------------
-
+agenda (voting)
+algorithm
+application (-> software)
 balance
-
-faucet
-
-DECRED CONSTITUTION
--------------------
-
-Open Source
-
-genesis block
-
-issuance
-
-subsidy (= block reward)
-
-fungibility
-
-mature
-
-pseudorandom
-
-DECREDITON SETUP GUIDE
-----------------------
-
-GUI/G.U.I. -> see graphical user interface
-
-graphical user interface
-
-Operating System/ OS / O.S.
-
+block
+block explorer
+block interval
+block number (see height)
+block reward
+blockchain
 CLI/C.L.I. -> see command line interface
-
+clients
 command line interface
-
-seed (phrase)
-
-directory (aka folder)
-
+command-line
+consensus changes/upgrades/software
+cryptocurrency (explained in docs:overview)
+cryptography (cryptographic, cryptographically)
+currency
 daemon
-
-
-
-
+daemon
+difficulty (pow - pos)
+directory (aka folder)
+exchange
+exchange rates
+faucet
+fiat currency
+fiat pairing
+full node
+fungibility
+genesis block
+governance
+graphical user interface
+GUI/G.U.I. -> see graphical user interface
+hard fork code
+hard fork(ing) scenario
+hash (blockhash)
+issuance
+ledger (distinction between the word & the HW-wallet)
+Lightning Network
+live ticket
+mainnet
+mature
+mempool
+node
+off-chain transactions
+off-chain voting (politeia)
+on-chain voting (consensus changes)
+Open Source
+Operating System/ OS / O.S.
+preference (vote)
+private key
+proof-of-stake (PoS, voting, voter)
+proof-of-work (PoW, mining, miner) 
+pseudorandom
+resources
+Rule Change Interval (RCI)
+scaling
+seed (phrase)
+smart contracts
+Stake Version Interval (SVI)
+stakeholder
+stakepool
+subsidy (= block reward)
+testnet
+ticket pool
+ticket price
+ticket window
+transaction ID
+vote/voting preferences
+votechoices
+wallet

@@ -22,12 +22,15 @@
 * Governance of the network occurs directly through the blockchain via hybridization of a block's proof-of-work ("PoW") with its proof-of-stake ("PoS"). PoS contributors, known as stakeholders, can effectively override PoW contributors, known as miners, if 60% or more of the stakeholders vote against a particular block created by a miner.
 * A lottery system is used to determine which stakeholders vote on each block and collect a subsidy.
 * To be a stakeholder, one must purchase one or more tickets, which entails locking a specified amount of coins for approximately 1 day (256 blocks).
+## if stopped reading here would be very misleading. sentnce must be updated to be less ambiguous
+
 * After waiting for the ticket to mature, the ticket is entered into a lottery that runs once per block where the winning tickets gain the ability to vote on the previous block.
 * Stakeholders must wait an average of 28 days (8,192 blocks) to vote their tickets, and during this time the coins used to purchase the ticket remain locked. The wait may be much longer or shorter than the average of 28 days because the ticket selection process is pseudorandom. Tickets expire after approximately 142 days (40,960 blocks).
 * Stakeholder votes recorded in the blockchain are rewarded with 6% of each block subsidy, and each block can have up to 5 votes for a total of 30% of each block subsidy.
 * PoW receives 60% of each block subsidy, subject to the constraint that their subsidy scales linearly with the number of PoS votes included, e.g. including 3 of 5 votes reduces PoW subsidy to 60% of the maximum.
 * The votes themselves decide by majority decision whether the general transaction tree of the previous block, including the PoW subsidy, is valid. Thus, if PoS voters vote against a particular PoW block, it destroys the PoW subsidy (and development subsidy) and invalidates any regular transactions within that block.
 * Additional vote bits may be set when stakeholders submit votes, allowing stakeholders to vote on matters besides the previous block.
+## reference the word "agenda" here
 
 ---
 
@@ -45,7 +48,9 @@
 
 ## Funding
 
-* Sustainability and longevity require that a subsidy of 10% of all block rewards be given to a development organization on an ongoing basis. The initial development organization shall be *Decred Holdings Group* LLC ("DHG"), a Nevis LLC that is responsible for funding work related to the development of the project, such as software development, infrastructure, and awareness.
+* Sustainability and longevity require that a subsidy of 10% of all block rewards be given to a development organization on an ongoing basis.
+## make this sentence less passive: "In order to ..."
+ The initial development organization shall be *Decred Holdings Group* LLC ("DHG"), a Nevis LLC that is responsible for funding work related to the development of the project, such as software development, infrastructure, and awareness.
 * DHG shall only fund work that adheres to the guiding principles.
 * DHG shall issue public financial statements every six months, starting March 8th, 2016. The frequency of financial statements may increase with activity, but it shall not occur more often than quarterly.
 * DHG shall put forth a budget proposal each year on March 8th, after the corresponding public financial statement has been issued.

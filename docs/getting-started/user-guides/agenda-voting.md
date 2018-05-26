@@ -42,7 +42,7 @@ Finally, you'll need to learn how to set the `votechoice` for your tickets in or
 
 ## Verifying Your Vote
 
-The easiest method to track your how your tickets actually voted is to use the [block explorer](https://mainnet.decred.org) to view each of your votes.
+The easiest method to track how your tickets actually voted is to use the [block explorer](https://mainnet.decred.org) to view each of your votes.
 
 The block explorer has been updated to display "YES", "NO", and "ABSTAIN" votes for each agenda with each ticket. The first and second tickets in the following example image voted "ABSTAIN" for both agendas while the third ticket voted "YES" for both agendas. The image will be updated to reflect the v5 agenda when voting is live.
 
@@ -76,9 +76,9 @@ Specifies a proposed replacement algorithm for determining the stake difficulty 
 |No   |  2.07%|
 |Yes  | 97.92%|
 
-**Locked In:** 141184<br />
-**Activated:** 149248<br />
-**Hard Forked:** 149328
+**Locked In @ Block Height** 141184<br />
+**Activated @ Block Height** 149248<br />
+**Hard Forked @ Block Height** 149328
 
 
 ## Start Lightning Network Support
@@ -95,8 +95,8 @@ The Lightning Network is the most directly useful application of smart contracts
 |No   |  1.38%|
 |Yes  | 98.61%|
 
-**Locked In:** 141184<br />
-**Activated:** 149248
+**Locked In @ Block Height** 141184<br />
+**Activated @ Block Height** 149248
 
 
 #V5#
@@ -117,5 +117,6 @@ Block 205189 is the first block which contains the new opcode which was voted in
 |No   |  0.49%|
 |Yes  | 99.51%|
 
-**Locked In:** 181504<br />
-**Activated:** 189568
+**Locked In @ Block Height** 181504<br />
+**Activated @ Block Height** 189568<br />
+**Hard Forked @ Block Height** 205189

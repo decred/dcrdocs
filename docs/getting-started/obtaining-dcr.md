@@ -57,7 +57,6 @@ As Decred continues to grow in popularity, some exchanges are offering Decred di
 * [Coinspot](https://www.coinspot.com.au/buy/dcr) (AUD)
 * [CoinTree](https://www.cointree.com.au/Secure/TradeAltcoin) (AUD)
 * [ezBtcCanada](https://www.ezbtc.ca/) (CAD)
-* [LiteBit](https://www.litebit.eu/en/buy/decred) (EUR)
 * [Profitfy](https://profitfy.trade/) (BRL)
 
 ### Block Trading: Over-the-Counter Desks (for large orders)

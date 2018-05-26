@@ -4,23 +4,31 @@
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Info.svg" /> Overview
 
-A block explorer based on
-[Insight](https://github.com/bitpay/insight-ui) is provided for the
-Decred network. All blocks and transactions in the Decred blockchain
-are visible through use of this block explorer, located at
-[`https://mainnet.decred.org`](https://mainnet.decred.org) and
-[`https://testnet.decred.org`](https://testnet.decred.org) for the
-testnet wallet.  Below is a quick review of some of the information on
-it.
+All blocks and transactions in the Decred blockchain 
+can be examined with the block explorer, located at
+[`https://explorer.dcrdata.org/`](https://explorer.dcrdata.org/) and
+[`https://testnet.dcrdata.org`](https://testnet.dcrdata.org) for the
+testnet wallet.  Below is an explanation of the most important
+information you can find over there.
+
+Under `Chain State` 
+
+Option         | Explanation
+---            | ---
+`Total Supply` | The total amount of Decred minted thusfar (our of a total of 21 million).
+
+Under `Latest Blocks` 
 
 Option         | Explanation
 ---            | ---
 `Height`       | The block number.
-`Age`          | How long ago the block was added to the blockchain.
 `Transactions` | The number of transactions included in the block.
 `Votes`        | The number of proof-of-stake votes included in the block.
-`Fresh Stake`  | The number of new tickets purchased in this block.
+`Tickets`      | The number of new tickets purchased in this block.
+`Revocations`  | The number of revoked tickets included in the block
 `Size`         | The size (in bytes) of the block.
+`Age`          | How long ago the block was added to the blockchain.
+`Time`         | The date and time at which the block was mined 
 
 Under `Latest Transactions`, you can see the transaction ID (txid) and
 the value (in DCR) transmitted across the network.

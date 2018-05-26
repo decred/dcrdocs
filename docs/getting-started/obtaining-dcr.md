@@ -8,11 +8,11 @@ This article discusses some of the ways a user can acquire Decred.
 
 The five basic ways are:
 
-* Purchase Decred for BTC or fiat currency through an exchange.
+* Purchase Decred with Bitcoin or fiat currency through an exchange.
 * PoW mine for Decred.
 * PoS mine for Decred (this requires you to already have some Decred).
-* Contribute to Decred.
-* Sell or trade goods or services with someone who already has Decred.
+* Get Paid for your Contributions to the Project.
+* Sell goods or services to someone who already has Decred.
 
 ---
 
@@ -49,15 +49,14 @@ Instant exchanges allow users to convert from one cryptocurrency to another with
 * [HolyTransaction](https://holytransaction.com)
 
 
-### Direct Exchanges
+### Exchanges with a Decred - fiat pairing
 
-As Decred continues to grow in popularity, some exchanges are offering Decred directly for fiat currency.
+On these exchanges, you can trade Decred directly with fiat currency.
 
 * [Braziliex](https://braziliex.com/) (BRL)
 * [Coinspot](https://www.coinspot.com.au/buy/dcr) (AUD)
 * [CoinTree](https://www.cointree.com.au/Secure/TradeAltcoin) (AUD)
 * [ezBtcCanada](https://www.ezbtc.ca/) (CAD)
-* [LiteBit](https://www.litebit.eu/en/buy/decred) (EUR)
 * [Profitfy](https://profitfy.trade/) (BRL)
 
 ### Block Trading: Over-the-Counter Desks (for large orders)
@@ -72,15 +71,15 @@ If you are an online merchant, the following solutions can help you accept Decre
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/PoWMine.svg" /> Mine for Decred (PoW)
+## <img class="dcr-icon" src="/img/dcr-icons/PoWMine.svg" /> Decred Miners
 
-Proof-of-Work (PoW) is a measure of using computational power to create and verify the cryptographically secure blockchain.  This is similar to traditional Bitcoin mining. PoW mining is described in more detail [here](/mining/proof-of-work).
+Proof-of-Work (PoW) mining is a measure of using computational power to create and verify the cryptographically secure blockchain. The miners who provide this service to the network receive a portion of the block reward. Mining is described in more detail [here](/mining/proof-of-work).
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Stake Mine for Decred / Proof-of-Stake (PoS)
+## <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Decred Voters
 
-Proof-of-Stake (PoS) mining is performed by stakeholders who lock a certain amount of their DCR in return for voting rights and a monetary reward. PoS mining is described in more detail [here](/mining/proof-of-stake).
+Proof-of-Stake (PoS) voting, is performed by stakeholders who lock a certain amount of their DCR in return for voting rights and a portion of the block reward. Voting is described in more detail [here](/mining/proof-of-stake).
 
 ---
 
@@ -90,6 +89,6 @@ Decred is currently recruiting contractors - members of the community who are pa
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/SellGoods.svg" /> Sell / Trade Goods or Services for Decred
+## <img class="dcr-icon" src="/img/dcr-icons/SellGoods.svg" /> Sell Goods or Services for Decred
 
-An alternative way to obtain Decred is to use your skills, knowledge, or experience by exchanging services for Decred as payment.  Services can be anything that you are skilled at which are in need or requested by other members of the Decred community.
+An alternative way to obtain Decred is to accept it in return for the products your are selling. You can also use your skills, knowledge, or experience to offer services in exchange for Decred.

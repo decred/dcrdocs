@@ -6,7 +6,7 @@ SHA256, used in Bitcoin, has a number of technical shortcomings due to its Merkl
 
 ---
 
-## <i class="fa fa-book"></i> References 
+## :fa-book: References
 
 [^1]: Aumasson J., Henzen L., Meier W., Phan R. 2010. [SHA-3 proposal BLAKE](https://decred.org/research/aumasson2010.pdf).
 [^2]: Aumasson J., Henzen L., Meier W., Phan R. 2014. The hash function BLAKE.

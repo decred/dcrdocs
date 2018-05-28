@@ -186,6 +186,6 @@ But then we come to the stake pools. Stake pools, while not having access to any
 
 So Decred was specifically designed to minimise impact from both large PoW and PoS pools as well as individuals (including developers) with large holdings. 
 
-## <i class="fa fa-book"></i> Links 
+## :fa-book: Links
 
 [^1]: [Decrediton Ticket Purchasing Guide](/getting-started/user-guides/using-decrediton/#tickets)

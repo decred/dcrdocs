@@ -1,4 +1,4 @@
-# <i class="fa fa-github"></i> Using GitHub
+# :fa-github: Using GitHub
 
 ---
 

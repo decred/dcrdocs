@@ -6,7 +6,7 @@ Last updated for gominer v1.0.0.
 
 ---
 
-## <i class="fa fa-download"></i> Download and Extract *gominer*
+## :fa-download: Download and Extract *gominer*
 
 Visit [https://github.com/decred/decred-binaries/releases/tag/v1.0.0](https://github.com/decred/decred-binaries/releases/tag/v1.0.0) to download the gominer binaries. Within the "Downloads" section you should see the following files:
 

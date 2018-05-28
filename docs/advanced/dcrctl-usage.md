@@ -7,7 +7,7 @@ json.
 To simplify the examples we will assume that you have all password
 stored in the [config files](/advanced/storing-login-details.md).
 
-## <i class="fa fa-power-off"></i> Stopping the programs
+## :fa-power-off: Stopping the programs
 
 To cleanly shut down the programs:
 
@@ -16,25 +16,25 @@ dcrctl --wallet stop
 dcrctl stop
 ```
 
-## <i class="fa fa-arrow-up"></i> Finding the current block height
+## :fa-arrow-up: Finding the current block height
 
 ```no-highlight
 dcrctl getblockcount
 ```
 
-## <i class="fa fa-dollar"></i> See your balance
+## :fa-dollar: See your balance
 
 ```no-highlight
 dcrctl --wallet getbalance
 ```
 
-## <i class="fa fa-inbox"></i> Get a new address
+## :fa-inbox: Get a new address
 
 ```no-highlight
 dcrctl --wallet getnewaddress
 ```
 
-## <i class="fa fa-rocket"></i> Send funds to an address
+## :fa-rocket: Send funds to an address
 
 ```
 dcrctl --wallet sendtoaddress <address> <amount>

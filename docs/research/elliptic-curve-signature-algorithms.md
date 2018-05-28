@@ -18,7 +18,7 @@ Schnorr signatures have also been proposed for Bitcoin[^5]. However, instead of 
 
 ---
 
-## <i class="fa fa-book"></i> References 
+## :fa-book: References
 
 [^1]: Pornin T. 2013. [StackExchange Cryptography: Should we trust the NIST-recommended ECC parameters?](https://decred.org/research/pornin2013.pdf)
 [^2]: Solinas J. 2000. [Efficient arithmetic on Koblitz curves](https://decred.org/research/solinas2000.pdf).

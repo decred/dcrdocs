@@ -17,7 +17,7 @@ Bit flags are explicitly added to both the block header and votes so that either
 
 ---
 
-## <i class="fa fa-book"></i> References 
+## :fa-book: References
 
 [^1]: Bentov I., Lee C., Mizrahi A., Rosenfeld M. 2014. [Proof-of-activity: Extending Bitcoin's proof-of-work via proof-of-stake](https://decred.org/research/bentov2014.pdf).
 [^2]: Nakamoto S. 2008. [Bitcoin: A peer-to-peer electronic cash system](https://decred.org/research/nakamoto2008.pdf).

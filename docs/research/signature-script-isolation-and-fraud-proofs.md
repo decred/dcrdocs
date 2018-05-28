@@ -6,7 +6,7 @@ To prevent transaction malleability, the ability to generate a transaction with 
 
 ---
 
-## <i class="fa fa-book"></i> References 
+## :fa-book: References
 
 [^1]: von Saberhagen N. 2013. [CryptoNote v2.0](https://decred.org/research/saberhagen2013.pdf).
 [^2]: Maxwell G. 2015. [Bringing new elements to Bitcoin with sidechains](https://decred.org/research/maxwell2015.pdf).

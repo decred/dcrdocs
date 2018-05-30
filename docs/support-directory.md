@@ -50,7 +50,6 @@ gominer<br />
 Website Management
 
 **@jrick: Developer** <br />
-Paymetheus Support<br />
 Wallet Support<br /> 
 PoS Support
 
@@ -87,7 +86,6 @@ Community Management<br />
 General Support
 
 **@shadowlance: Documentation Collaborator** <br />
-Paymetheus Support<br />
 Statistics<br />
 General Support
 

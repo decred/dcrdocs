@@ -23,7 +23,7 @@ Solo mining is currently only possible using the Decred command line tools. The 
 ## <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> PoS using a Stakepool
 
 You can find the list of all official stakepools and statistics by visiting the
-[<i class="fa fa-external-link-square"></i> Decred website](https://decred.org/stakepools/).
+[:fa-external-link-square: Decred website](https://decred.org/stakepools/).
 
 Using a stakepool DOES NOT give the pool access to your funds. All you are doing is granting voting rights to the pool.
 

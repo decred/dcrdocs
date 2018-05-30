@@ -8,7 +8,7 @@ It should also be noted that many well known mining attacks, such as selfish min
 
 ---
 
-## <i class="fa fa-book"></i> References 
+## :fa-book: References
 
 [^1]: Buterin V. 2014. [A next-generation smart contract and decentralized application platform](https://decred.org/research/buterin2014.pdf).
 [^2]: King S. and Nadal S. 2012. [PPCoin: Peer-to-peer crypto-currency with proof-of-stake](https://decred.org/research/king2012.pdf).

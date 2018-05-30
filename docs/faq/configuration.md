@@ -2,26 +2,21 @@
 
 ---
 
-#### 1. How can I see information about the port numbers `dcrd` uses? 
+#### 1. What are the default ports `dcrd` and `dcrwallet` listen on?
 
-You can get the port numbers[^8929] from the `-h` or `--help` parameters passed to `dcrd`:
+> `dcrd`
 
-```no-highlight
-dcrd -h
-```
+|             |Mainet|Testnet|Simnet
+---           |---   |---    |---
+*Peer to Peer*| 9108 | 19108 | 18555
+*RPC Server*  | 9109 | 19109 | 19556
 
-Look for the following line:
+> `dcrwallet`
 
-```no-highlight
---rpclisten=  Add an interface/port to listen for RPC connections (default port: 9109, testnet: 19109)
-```
-
-It is also logged when you start `dcrd`:
-
-```no-highlight
-12:01:46 2016-02-08 [INF] RPCS: RPC server listening on [::1]:9109
-12:01:46 2016-02-08 [INF] RPCS: RPC server listening on 127.0.0.1:9109
-```
+|                |Mainet|Testnet|Simnet
+---              |---   |---    |---
+*JSON-RPC Server*| 9110 | 19110 | 19557
+*gRPC Server*    | 9111 | 19111 | 19558
 
 ---
 

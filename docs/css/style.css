@@ -80,3 +80,7 @@ p img.dcr-icon {
     }
 }
 
+/* Increase font-size for info/warning/danger boxes. 1.6rem matches the rest of the text. */
+.md-typeset .admonition {
+    font-size: 1.6rem;
+}

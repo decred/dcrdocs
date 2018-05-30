@@ -23,6 +23,7 @@ markdown_extensions:
   - fontawesome_markdown
   - smarty
   - mdx_math
+  - admonition
   - toc:
       permalink: True
   - tables

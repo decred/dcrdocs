@@ -19,18 +19,18 @@ site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
 repo_name: decred/dcrdocs
 markdown_extensions:
-  - footnotes
-  - fontawesome_markdown
-  - smarty
-  - mdx_math
-  - admonition
-  - toc:
+  - markdown.extensions.footnotes
+  - markdown.extensions.smarty
+  - markdown.extensions.admonition
+  - markdown.extensions.toc:
       permalink: True
-  - tables
+  - markdown.extensions.tables
+  - fontawesome_markdown
+  - mdx_math
 extra_javascript:
   - js/MathJax-2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 extra_css:
-    - css/style.css
+  - css/style.css
 pages:
 - 'Home': 'index.md'
 - Getting Started:

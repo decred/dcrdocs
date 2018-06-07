@@ -6,6 +6,12 @@ Last updated for v1.2.1.
 
 `Decrediton` is a graphical user interface for `dcrwallet`. When this application launches, it automatically starts its own instance of the command line tools `dcrd` and `dcrwallet` in the background.
 
+!!! info "Blockchain Download"
+
+	Decrediton needs to download a full copy of the Decred blockchain before it can be used. This means that a large download must be completed and a large amount of storage space must be be available on the PC where Decrediton is intalled.
+
+	At the end of May 2018 the Decred blockchain was 3.3GB.
+
 ---
 
 ## Download and Install
@@ -41,6 +47,38 @@ The latest version of Decrediton can be downloaded from [https://decred.org/down
 
 ---
 
+## Open and Set Up Decrediton
+
+Opening Decrediton for the first time will display the following screen:
+
+![Decrediton startup screen](/img/decrediton/startup.png)
+
+Select your desired language and press **Continue**. A short presentation explaining Decred blockchain, wallet, keys, staking/governance, and safety tips is shown. Please read these slides carefully if you are new to Decred.
+
+The following screen should be displayed next.
+
+![Decrediton blockchain download screen](/img/decrediton/chain-downloading.png)
+
+A large progress bar on this screen shows the progress of the blockchain download. You can begin to set up your wallet before the download completes. 
+
+!!! info "Pausing the download"
+
+    If you close Decrediton or shutdown your PC while the download is in progress, the download will be paused and progress will not be lost. It will be resumed from the same point next time Decrediton is started.
+
+    This means you can download the blockchain in multiple sessions if required.
+
+As Decrediton allows you to manage multiple wallets on one PC, you must give a name to your wallet so it can be identified. Enter a name and press the **Create New Wallet** button. You will now be faced with two options: 
+
+1. **Create a New Wallet** - Press this button if this is your first time using Decred.
+
+1. **Restore Existing Wallet** - Press this button if you already have a wallet seed. You can skip ahead to [Restore Existing Wallet From Seed](/getting-started/user-guides/decrediton-setup.md#restore-existing-wallet-from-seed)
+
+![Decrediton create wallet screen](/img/decrediton/create-wallet.png)
+
+---
+
+## Create a New Wallet
+
 !!! danger "Critical Information"
 
     During the creation process for your wallet, you will be given a sequence of 33 words known as a seed phrase. This seed phrase is essentially the private key for your wallet. You will be able to use this seed phrase to restore your private keys, transaction history, and balances using any Decred wallet on any computer.
@@ -51,45 +89,17 @@ The latest version of Decrediton can be downloaded from [https://decred.org/down
 
     **REMINDER: DO NOT, UNDER ANY CIRCUMSTANCES, GIVE YOUR SEED OR THE ASSOCIATED HEX KEY TO ANYONE! NOT EVEN THE DEVELOPERS!**
 
----
-
-## Open and Set Up Decrediton
-
-Opening Decrediton for the first time will display the following screen:
-
-![Decrediton startup screen](/img/decrediton/startup.png)
-
-To create a brand new Decred wallet, select **Continue** and follow the steps in the next section. A short presentation explaining Decred blockchain, wallet, keys, staking/governance, and safety tips is shown. Please read these slides carefully if you are new to Decred.
-
-If you have used Decred before and wish to restore an existing wallet, skip this section and read [Restore Existing Wallet From Seed](/getting-started/user-guides/decrediton-setup.md#restore-existing-wallet-from-seed)
-
----
-
-## Create a New Wallet
-
-![Decrediton create wallet screen](/img/decrediton/create-wallet.png)
-
-Start by selecting **Create a New Wallet** which results in this screen:
+The 33 word seed for your new wallet is displayed on the screen (obscured in the below image). Record the seed and store it somewhere safe.
 
 ![Decrediton wallet seed screen](/img/decrediton/wallet-seed.png)
 
-1. The 33 word seed for your new wallet is displayed in the text box (obscured in the above image). Record the seed and store it somewhere safe. You will need to re-enter this seed on the next screen.
+Press **Continue** and re-enter the missing words from your seed on the next screen. This is to confirm you have recorded your seed correctly.
 
-1. Select **Continue**
-
-1. Confirm your seed by entering the words into the confirmation box.
 ![Decrediton seed entry screen](/img/decrediton/seed-entered.png)
 
-1. Create a private passphrase for your wallet. This passphrase will be used to unlock your wallet when creating transactions.
+Create a private passphrase for your wallet. This passphrase will be used to unlock your wallet when creating transactions.
 
-1. Select **Create Wallet**. You should then see a spinning Decred logo. This will spin until `dcrd` has fully synced the blockchain.
-
-![Decrediton loading screen](/img/decrediton/loading.png)
-
-1.  On computers that haven't had `dcrd` loaded before, this should take 1-2 hours with newer hardware (it may take longer with older hardware). You can check your process monitor application for a running instance of `dcrd` - if it is using a substantial percentage of your CPU, it is syncing. If it isn't, Decrediton may require a restart to move beyond this screen.
-
-1. When the whole blockchain has been scanned, Decrediton will open the Overview page displaying your current balance and recent transactions:
-![Decrediton overview screen](/img/decrediton/open-wallet.png)
+Press **Create Wallet** and your wallet setup is complete. You will be taken back to the blockchain download progress bar. Once the download has been completed, Decrediton will open the Overview page for your new wallet and you will be able to begin sending and receiving Decred.
 
 ---
 
@@ -114,7 +124,7 @@ dcrd closed due to an error. Check dcrd logs
 and contact support if the issue persists.
 ```
 
-If you enocounter the above error, it could be because there is already a running instance of `dcrd` on your machine. Decrediton attempts to start its own instance of `dcrd` and `dcrwallet` in the background.
+If you encounter the above error, it could be because there is already a running instance of `dcrd` on your machine. Decrediton attempts to start its own instance of `dcrd` and `dcrwallet` in the background.
 
 You could possibly resolve this by killing any any running `dcrd` processes prior to restarting Decrediton.
 

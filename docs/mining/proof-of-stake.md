@@ -60,8 +60,6 @@ A ticket on main net (test net uses different parameters) will go through a few 
 
 [Mainnet Voting Guide](/getting-started/user-guides/agenda-voting.md)
 
-[Proof-of-Stake Commands](/advanced/program-options.md#pos-commands)
-
 [Proof-of-Stake FAQ - General](/faq/proof-of-stake/general.md)
 
 [Proof-of-Stake FAQ - Buying Tickets and Fees](/faq/proof-of-stake/buying-tickets-and-fees.md)
@@ -71,5 +69,3 @@ A ticket on main net (test net uses different parameters) will go through a few 
 [Proof-of-Stake FAQ - Stake Pools](/faq/proof-of-stake/stake-pools.md)
 
 [Proof-of-Stake FAQ - Voting Tickets](/faq/proof-of-stake/voting-tickets.md)
-
-[Proof-of-Stake Mining Parameters](/advanced/program-options.md#pos-network-parameters)

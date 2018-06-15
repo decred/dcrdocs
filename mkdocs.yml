@@ -54,6 +54,8 @@ pages:
       - 'dcrwallet Setup': 'getting-started/user-guides/dcrwallet-setup.md'
       - 'dcrctl Basics': 'getting-started/user-guides/dcrctl-basics.md'
       - 'Buying Tickets': 'getting-started/user-guides/dcrwallet-tickets.md'
+      - 'dcrd and dcrwallet CLI Arguments': 'getting-started/dcrd-and-dcrwallet-cli-arguments.md'
+      - 'All dcrctl RPC Commands': 'getting-started/all-dcrctl-rpc-commands.md'
     - 'Web Wallet': 'getting-started/user-guides/web.md'
 - Proof-of-Stake Mining:
   - "What is Proof-of-Stake?": 'mining/proof-of-stake.md'
@@ -78,15 +80,12 @@ pages:
 - Advanced:
   - 'Manual CLI Installation': 'advanced/manual-cli-install.md'
   - 'Storing Login Details': 'advanced/storing-login-details.md'
-  - 'Program Options': 'advanced/program-options.md'
-  - 'dcrd and dcrwallet CLI Arguments': 'advanced/dcrd-and-dcrwallet-cli-arguments.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
   - 'Blockchain Parameters': 'advanced/blockchain-parameters.md'
   - 'Transaction Details': 'advanced/transaction-details.md'
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
   - 'Inflation': 'advanced/inflation.md'
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
-  - 'Advanced dcrctl Usage': 'advanced/dcrctl-usage.md'
   - 'Simnet': 'advanced/simnet.md'
 - Research:
   - 'Overview': 'research/overview.md'

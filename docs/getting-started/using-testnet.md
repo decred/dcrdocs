@@ -21,6 +21,7 @@ Running a testnet2 node is incredibly easy. You application of choice will need 
 ## Decrediton 
 
 You can switch Decrediton between mainnet and testnet by editing the config.json file and setting network: testnet. Config.json can be located in the following folders:
+
 | OS      | Decrediton data directory                           |
 | -------:|:---------------------------------------------------:|
 | Windows | `C:\Users\<your-username>\AppData\Local\Decrediton` |

@@ -24,7 +24,7 @@ You can switch Decrediton between mainnet and testnet by editing the config.json
 
 | OS      | Decrediton data directory                           |
 | -------:|:---------------------------------------------------:|
-| Windows | `C:\Users\<your-username>\AppData\Local\Decrediton` |
+| Windows | `%LOCALAPPDATA%\Decrediton`                         |
 | macOS   | `~/Library/Application Support/Decrediton`          |
 | Linux   | `~/.config/decrediton`                              |
 

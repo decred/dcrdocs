@@ -84,3 +84,9 @@ p img.dcr-icon {
 .md-typeset .admonition {
     font-size: 1.6rem;
 }
+
+/* Disable min-width for headers in tables with at least 7 columns */
+.md-typeset table:not([class]) th:first-child:nth-last-child(n+7),
+.md-typeset table:not([class]) th:first-child:nth-last-child(n+7) ~ th {
+	min-width: 0;
+}

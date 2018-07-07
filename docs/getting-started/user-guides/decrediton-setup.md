@@ -132,8 +132,8 @@ You could possibly resolve this by killing any any running `dcrd` processes prio
 
 Decrediton stores the blockchain, your wallet, log files and its own configuration files all in a single directory. A different directory is used depending on the operating system:
 
-| OS      | Decrediton data directory                           |
-| -------:|:---------------------------------------------------:|
-| Windows | `C:\Users\<your-username>\AppData\Local\Decrediton` |
-| macOS   | `~/Library/Application Support/Decrediton`          |
-| Linux   | `~/.config/decrediton`                              |
+| OS      | Decrediton data directory                   |
+| -------:|:-------------------------------------------:|
+| Windows | `%LOCALAPPDATA%\Decrediton\`                |
+| macOS   | `~/Library/Application Support/Decrediton/` |
+| Linux   | `~/.config/decrediton/`                     |

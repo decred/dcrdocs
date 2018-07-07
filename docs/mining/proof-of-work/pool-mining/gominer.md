@@ -76,7 +76,7 @@ After these changes have been made, save the file and name it `gominer.conf`.
 
 ### Step 4: Copy gominer.conf to gominer AppData Folder
 
-The config file needs to be copied into the gominer config directory. On Windows this is `%localappdata%\Gominer\gominer.conf` and on Linux it is `~/.gominer/gominer.conf`
+The config file needs to be copied into the gominer config directory. On Windows this is `%LOCALAPPDATA%\Gominer\gominer.conf` and on Linux it is `~/.gominer/gominer.conf`
 
 ---
 

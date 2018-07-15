@@ -13,7 +13,7 @@ dcrd --logdir=/my/custom/log/directory
 
 ## `dcrd`
 
-??? info "Click to expand full list of `dcrd` arguments"
+??? info "Click to expand full list of `dcrd` CLI arguments"
     Argument                          |Description
     ----------------------------------|-------------
     `-A` or `--appdata=`              | Path to application home directory (default: `~/.dcrd`)
@@ -97,7 +97,7 @@ dcrd --logdir=/my/custom/log/directory
 
 ## `dcrwallet`
 
-??? info "Click to expand full list of `dcrwallet` arguments"
+??? info "Click to expand full list of `dcrwallet` CLI arguments"
     Argument                                           |Description
     ---------------------------------------------------|-------------
     `-C` or `--configfile=`                            | Path to configuration file (default: `~/.dcrwallet/dcrwallet.conf`)

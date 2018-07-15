@@ -1,10 +1,10 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> All `dcrctl` RPC commands
+# <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> `dcrctl` RPC Commands
 
-Last updated for v1.2.1.
+Last updated for v1.2.0.
 
-## All `dcrd` RPC methods
+## `dcrd` RPC Commands
 
-??? info "Click to expand full list of `dcrd` RPC methods"
+??? info "Click to expand full list of `dcrd` RPC commands"
     RPC Method                |Params
     --------------------------|-------------
     `addnode`                 | `"addr"` `"add|remove|onetry"`
@@ -82,9 +82,9 @@ Last updated for v1.2.1.
 
 ---
 
-## All `dcrwallet` RPC methods
+## `dcrwallet` RPC Commands
 
-??? info "Click to expand full list of `dcrwallet` RPC methods"
+??? info "Click to expand full list of `dcrwallet` RPC commands"
     RPC Method                |Params
     --------------------------|-------------
     `accountaddressindex`     | `"account"` `branch`

@@ -55,7 +55,7 @@ pages:
       - 'dcrctl Basics': 'getting-started/user-guides/dcrctl-basics.md'
       - 'Buying Tickets': 'getting-started/user-guides/dcrwallet-tickets.md'
       - 'dcrd and dcrwallet CLI Arguments': 'getting-started/dcrd-and-dcrwallet-cli-arguments.md'
-      - 'All dcrctl RPC Commands': 'getting-started/all-dcrctl-rpc-commands.md'
+      - 'dcrctl RPC Commands': 'getting-started/dcrctl-rpc-commands.md'
     - 'Web Wallet': 'getting-started/user-guides/web.md'
 - Proof-of-Stake Mining:
   - "What is Proof-of-Stake?": 'mining/proof-of-stake.md'

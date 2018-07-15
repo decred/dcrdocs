@@ -99,7 +99,6 @@ pages:
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - Contributing:
   - 'Contributor Compensation': 'advanced/contributor-compensation.md'
-  - 'Contributor Projects': 'advanced/user-projects.md'
   - Guidelines:
     - 'Using GitHub': 'advanced/using-github.md'
     - 'Source Code Contributions': 'advanced/contributing.md'

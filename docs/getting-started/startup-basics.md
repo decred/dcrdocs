@@ -50,4 +50,4 @@ The above example would first look to the `dcrd` configuration file for settings
 
 [Storing Login Details in Config Files](/advanced/storing-login-details.md) <!-- This has the same information found in the above, Minimum Configuration section. Could probably delete. -->
 
-[Full List of Options for Each Application](/advanced/program-options.md)
+[Full List of Options for Each Application](/getting-started/dcrd-and-dcrwallet-cli-arguments.md)

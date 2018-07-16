@@ -140,4 +140,4 @@ All command line options can be put in the config file.
 The sample config files in the release package give additional
 options or you can run one of the programs with the `-h` flag to show a list and description of all options for the specified application.
 
-There is also a full list of options for each application which can be found [here](/advanced/program-options.md).
+There is also a full list of options for each application which can be found [here](/getting-started/dcrd-and-dcrwallet-cli-arguments.md).

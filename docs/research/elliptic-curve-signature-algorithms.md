@@ -4,13 +4,17 @@
 
 Although secp256k1 is widely considered to have a secure choice of elliptic curve parameters, some questions about the origin of the curve remain. For example, the selection of the Koblitz curve,
 
-\((y^2 + xy = x^3 + ax^2 + b \text{ and } a = a^2 \text{, } b = b^2 \text{; } a = 1 \text{ or } 2 \text{, } b != 0)\)
+$$
+(y^2 + xy = x^3 + ax^2 + b \text{ and } a = a^2 \text{, } b = b^2 \text{; } a = 1 \text{ or } 2 \text{, } b != 0)
+$$
 
-is typically done by enumerating the binary extension Galois fields \(GF(2^m)\) where \(m\) is a prime in the range {\(0\), \(...\), higher limit} and \(x,y \in GF(2^m)\)[^1]. For 128-bit security, \(m\) is required to be \(\geqslant 257\) and typically the smallest prime possible in this range to facilitate fast calculation. In this case, the obvious choice for \(m\) is \(277\text{, } a = 0\); despite the existence of this appropriate $m$ value being known by the curators of the curve parameters[^2] and the fact that it was the most computationally efficient solution, the parameters \(m = 283\) and \(a = 0\) were selected out of three possible options:
+is typically done by enumerating the binary extension Galois fields $GF(2^m)$ where $m$ is a prime in the range {$0$, $...$, higher limit} and $x,y \in GF(2^m)$[^1]. For 128-bit security, $m$ is required to be $\geqslant 257$ and typically the smallest prime possible in this range to facilitate fast calculation. In this case, the obvious choice for $m$ is $277\text{, } a = 0$; despite the existence of this appropriate $m$ value being known by the curators of the curve parameters[^2] and the fact that it was the most computationally efficient solution, the parameters $m = 283$ and $a = 0$ were selected out of three possible options:
 
- \((m = 277\text{, } a = 0\text{; } m = 283\text{, } a = 0\text{; } m = 283\text{, } a = 1)\).
+$$
+(m = 277\text{, } a = 0\text{; } m = 283\text{, } a = 0\text{; } m = 283\text{, } a = 1)
+$$
 
-For all other Koblitz curve specifications, the most obvious \(m\) value is selected. Although this is curious, there are no known attacks that can be applied by using a slightly larger $m$ value for the Galois field. Other objections to the parameters used by secp256k1 have also been raised[^3].
+For all other Koblitz curve specifications, the most obvious $m$ value is selected. Although this is curious, there are no known attacks that can be applied by using a slightly larger $m$ value for the Galois field. Other objections to the parameters used by secp256k1 have also been raised[^3].
 
 Another extremely popular digital signature algorithm (DSA) with 128-bits of security is Ed25519[^4]. This uses the EdDSA signing algorithm over a curve birationally equivalent to Curve25519 and is widely employed today. Unlike secp256k1's ECDSA, Ed25519 uses simpler Schnorr signatures that are provably secure in a random oracle model (See: [Schnorr Signatures](schnorr-signatures.md)).
 

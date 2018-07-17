@@ -26,8 +26,8 @@ markdown_extensions:
       permalink: True
   - markdown.extensions.tables
   - pymdownx.details
+  - pymdownx.arithmatex
   - fontawesome_markdown
-  - mdx_math
 extra_javascript:
   - js/MathJax-2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 extra_css:

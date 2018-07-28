@@ -38,9 +38,11 @@ pages:
   - "Beginner's Guide": 'getting-started/beginner-guide.md'
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
-  - 'Mainnet Voting': 'getting-started/user-guides/agenda-voting.md'
-  - 'How To Vote': 'getting-started/user-guides/how-to-vote.md'
-  - 'Using Testnet': 'getting-started/using-testnet.md'
+- Governance:
+  - 'Introduction to Decred governance': 'getting-started/governance.md'
+  - 'Consensus rules voting': 'getting-started/user-guides/agenda-voting.md'
+  - 'How to Vote on consensus rule changes': 'getting-started/user-guides/how-to-vote.md'
+  - 'Politeia proposals and voting': 'getting-started/politeia.md' 
   - 'Decred Constitution': 'getting-started/constitution.md'
 - Wallets:
     - Decrediton (GUI):
@@ -57,7 +59,7 @@ pages:
       - 'dcrd and dcrwallet CLI Arguments': 'getting-started/dcrd-and-dcrwallet-cli-arguments.md'
       - 'dcrctl RPC Commands': 'getting-started/dcrctl-rpc-commands.md'
     - 'Web Wallet': 'getting-started/user-guides/web.md'
-- Proof-of-Stake Mining:
+- Proof-of-Stake Voting:
   - "What is Proof-of-Stake?": 'mining/proof-of-stake.md'
   - "How to Stake": 'mining/how-to-stake.md' 
   - PoS FAQ:
@@ -78,6 +80,7 @@ pages:
   - 'Blocks': 'faq/blocks.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
 - Advanced:
+  - 'Using Testnet': 'getting-started/using-testnet.md'
   - 'Manual CLI Installation': 'advanced/manual-cli-install.md'
   - 'Storing Login Details': 'advanced/storing-login-details.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'

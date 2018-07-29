@@ -14,23 +14,17 @@ All of the Decred software, when started, reads from a configuration file to det
 
 These configuration files are located within the application home directory of the application. The location of these default home directories for Windows, macOS, and Linux are listed below:
 
-Windows:
-
-    C:\Users\<username>\AppData\Local\Dcrwallet\
-    C:\Users\<username>\AppData\Local\Dcrd\
-    C:\Users\<username>\AppData\Local\Dcrctl\ 
-
-macOS: 
-
-    ~/Library/Application Support/Dcrwallet/
-    ~/Library/Application Support/Dcrd/
-    ~/Library/Application Support/Dcrctl/
-        
-Linux: 
-    
-    ~/.dcrwallet/
-    ~/.dcrd/
-    ~/.dcrctl/
+| OS      | dcrd, dcrwallet, dcrctl App Directories    |
+| -------:|:------------------------------------------:|
+| Windows | `%LOCALAPPDATA%\Dcrd\`                     |
+|         | `%LOCALAPPDATA%\Dcrwallet\`                |
+|         | `%LOCALAPPDATA%\Dcrctl\`                   |
+| macOS   | `~/Library/Application Support/Dcrd/`      |
+|         | `~/Library/Application Support/Dcrwallet/` |
+|         | `~/Library/Application Support/Dcrctl/`    |
+| Linux   | `~/.dcrd/`                                 |
+|         | `~/.dcrwallet/`                            |
+|         | `~/.dcrctl/`                               |
 
 Each of these folders is allowed its own `.conf` file, named after the individual application (`e.g. dcrd uses dcrd.conf`). Please also note that the `Dcrd` and `Dcrwallet` home directories are automatically created when each application is first launched. You will have to manually create a `Dcrctl` home directory to utilize a config file.
 
@@ -56,4 +50,4 @@ The above example would first look to the `dcrd` configuration file for settings
 
 [Storing Login Details in Config Files](/advanced/storing-login-details.md) <!-- This has the same information found in the above, Minimum Configuration section. Could probably delete. -->
 
-[Full List of Options for Each Application](/advanced/program-options.md)
+[Full List of Options for Each Application](/getting-started/dcrd-and-dcrwallet-cli-arguments.md)

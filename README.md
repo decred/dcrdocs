@@ -17,7 +17,7 @@ MkDocs supports Python versions 2.6, 2.7, 3.3, 3.4 and 3.5.
 
 On Windows it is recommended that you install Python and pip with [Chocolatey].
 
-Install the `mkdocs` package, [python-markdown-math] \(required for rendering equations\), [mkdocs-bootswatch] themes, and fontawesome packages using pip:
+Install the `mkdocs` package, [mkdocs-bootswatch] themes, and fontawesome packages using pip:
 
 ```bash
 $ pip install --user -r requirements.txt
@@ -137,20 +137,6 @@ npm run transifex:push
   2. In the repository folder, run `npm run transifex:pull`, and once it completes, add the resulting new files to git: `git add src/i18n`
   5. Commit files to git + push to repo
 
-
-
-### Locally serving dcrdocs translations
-Run `mkdocs serve -f de_docs.yml` in the repository root, substituting `de_docs.yml` with the config file for the language you wish to use.
-
-```bash
-$ mkdocs serve -f de_docs.yml
-INFO    -  Building documentation...
-INFO    -  Cleaning site directory
-[I 160402 15:50:43 server:271] Serving on http://127.0.0.1:8000
-[I 160402 15:50:43 handlers:58] Start watching changes
-[I 160402 15:50:43 handlers:60] Start detecting changes
-```
-
 ## Getting help
 
 To get help with dcrdocs, please use the [forum], [GitHub issues], or the Decred development IRC channel `#decred-dev` on freenode.
@@ -162,5 +148,4 @@ To get help with dcrdocs, please use the [forum], [GitHub issues], or the Decred
 [mkdocs-bootswatch]: https://mkdocs.github.io/mkdocs-bootswatch
 [MkDocs]: https://mkdocs.org
 [pip]: http://pip.readthedocs.org/en/latest/installing.html
-[python-markdown-math]: https://pypi.python.org/pypi/python-markdown-math
 [Python]: https://www.python.org

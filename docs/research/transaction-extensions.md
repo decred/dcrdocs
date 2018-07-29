@@ -6,6 +6,6 @@ Transaction expiry has been added, which allows one to prune transactions from t
 
 ---
 
-## <i class="fa fa-book"></i> References 
+## :fa-book: References
 
 [^1]: ByteCoin. 2010. [Need OP_BLOCKNUMBER to allow "time" limited transactions](https://decred.org/research/bytecoin2010.pdf).

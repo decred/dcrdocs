@@ -1,17 +1,23 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Questions.svg" /> Errors and Common Problems 
+# <img class="dcr-icon" src="/img/dcr-icons/Questions.svg" /> Common Errors and Solutions
 
 ## Proof-of-Stake 
 
 #### 1. Some of my missed/expired tickets are still locked after more than a day. 
 
-*Decrediton*
+> Decrediton
+
 1. Delete the wallet and restore from seed
+
 2. Open Tickets view, click import script button, paste the stakepool script into the textbox, enter the private passphrase and click Save.
+
 3. Wait until the rescan completes.
 
-*Command Line*
+> Command Line
+
 1. Start the wallet process with the `--enablevoting` flag. It will not issue revocations without it.
+
 2. Unlock the wallet with `dcrctl --wallet walletpassphrase <yourpassphrase> 0`. The wallet must be unlocked for it to be able to create the revocations and sign them.
+
 3. Instruct dcrd to notify the wallet about missed tickets again so it will issue the revocations with `dcrctl rebroadcastmissed`.
 
 At that point, you should see some details about the revocation transactions in the wallet log.

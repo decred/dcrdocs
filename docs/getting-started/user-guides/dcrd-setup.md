@@ -21,7 +21,7 @@ or `tmux`.
 
 ---
 
-## <i class="fa fa-cloud"></i> Connect to the Decred Network 
+## :fa-cloud: Connect to the Decred Network
 
 The first time launching `dcrd`, it will connect to the Decred network and begin downloading the blockchain. To allow `dcrwallet` and `dcrctl` to communicate with `dcrd`, the configuration files must have `rpcuser` and `rpcpass` settings enabled. 
 

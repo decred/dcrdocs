@@ -19,26 +19,30 @@ site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
 repo_name: decred/dcrdocs
 markdown_extensions:
-  - footnotes
-  - fontawesome_markdown
-  - smarty
-  - mdx_math
-  - toc:
+  - markdown.extensions.footnotes
+  - markdown.extensions.smarty
+  - markdown.extensions.admonition
+  - markdown.extensions.toc:
       permalink: True
-  - tables
+  - markdown.extensions.tables
+  - pymdownx.details
+  - pymdownx.arithmatex
+  - fontawesome_markdown
 extra_javascript:
   - js/MathJax-2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 extra_css:
-    - css/style.css
+  - css/style.css
 pages:
 - 'Home': 'index.md'
 - Getting Started:
   - "Beginner's Guide": 'getting-started/beginner-guide.md'
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
-  - 'Mainnet Voting': 'getting-started/user-guides/agenda-voting.md'
-  - 'How To Vote': 'getting-started/user-guides/how-to-vote.md'
-  - 'Using Testnet': 'getting-started/using-testnet.md'
+- Governance:
+  - 'Introduction to Decred governance': 'getting-started/governance.md'
+  - 'Consensus rules voting': 'getting-started/user-guides/agenda-voting.md'
+  - 'How to Vote on consensus rule changes': 'getting-started/user-guides/how-to-vote.md'
+  - 'Politeia proposals and voting': 'getting-started/politeia.md' 
   - 'Decred Constitution': 'getting-started/constitution.md'
 - Wallets:
     - Decrediton (GUI):
@@ -52,8 +56,10 @@ pages:
       - 'dcrwallet Setup': 'getting-started/user-guides/dcrwallet-setup.md'
       - 'dcrctl Basics': 'getting-started/user-guides/dcrctl-basics.md'
       - 'Buying Tickets': 'getting-started/user-guides/dcrwallet-tickets.md'
+      - 'dcrd and dcrwallet CLI Arguments': 'getting-started/dcrd-and-dcrwallet-cli-arguments.md'
+      - 'dcrctl RPC Commands': 'getting-started/dcrctl-rpc-commands.md'
     - 'Web Wallet': 'getting-started/user-guides/web.md'
-- Proof-of-Stake Mining:
+- Proof-of-Stake Voting:
   - "What is Proof-of-Stake?": 'mining/proof-of-stake.md'
   - "How to Stake": 'mining/how-to-stake.md' 
   - PoS FAQ:
@@ -74,16 +80,15 @@ pages:
   - 'Blocks': 'faq/blocks.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
 - Advanced:
-  - 'Manual CLI Install': 'advanced/manual-cli-install.md'
+  - 'Using Testnet': 'getting-started/using-testnet.md'
+  - 'Manual CLI Installation': 'advanced/manual-cli-install.md'
   - 'Storing Login Details': 'advanced/storing-login-details.md'
-  - 'Program Options': 'advanced/program-options.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
   - 'Blockchain Parameters': 'advanced/blockchain-parameters.md'
   - 'Transaction Details': 'advanced/transaction-details.md'
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
   - 'Inflation': 'advanced/inflation.md'
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
-  - 'Advanced dcrctl Usage': 'advanced/dcrctl-usage.md'
   - 'Simnet': 'advanced/simnet.md'
 - Research:
   - 'Overview': 'research/overview.md'
@@ -98,7 +103,6 @@ pages:
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - Contributing:
   - 'Contributor Compensation': 'advanced/contributor-compensation.md'
-  - 'Contributor Projects': 'advanced/user-projects.md'
   - Guidelines:
     - 'Using GitHub': 'advanced/using-github.md'
     - 'Source Code Contributions': 'advanced/contributing.md'
@@ -106,7 +110,4 @@ pages:
   - 'Support Directory': 'support-directory.md'
   - 'Credits': 'about/credits.md'
   - 'License': 'about/license.md'
-- Archive:
-    - 'Paymetheus Setup': 'getting-started/user-guides/paymetheus.md'
-    - 'Using Paymetheus': 'getting-started/user-guides/using-paymetheus.md'
 copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.2. Decred Project 2016.

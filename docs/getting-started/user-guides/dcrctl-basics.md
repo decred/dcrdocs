@@ -1,13 +1,10 @@
-# dcrctl Basics 
+# <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> `dcrctl` Basics
 
 Last updated for v1.1.2.
 
-This guide is intended to help you learn the basic commands of the `dcrctl` application using a [minimal configuration file](/advanced/manual-cli-install.md#minimum-configuration). 
-
 **Prerequisites:**
 
-- Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md) to install `dcrctl`. Additional steps will be required if another installation method was used.
-- Review how the launch commands for the Command Prompt (Windows) and Bash (macOS/Linux) shells differ [here](/getting-started/cli-differences.md).
+- Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md) to install the command line tools.
 - [Setup dcrd](/getting-started/user-guides/dcrd-setup.md) and have it running in the background.
 - [Setup dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) and have it running in the background.
 
@@ -15,46 +12,34 @@ This guide is intended to help you learn the basic commands of the `dcrctl` appl
 
 `dcrctl` is the client that controls `dcrd` and `dcrwallet` via remote procedure call (RPC). You can use `dcrctl` for many things such as checking your balance, buying tickets, creating transactions, and viewing network information.
 
-**REMINDER:** This guide uses OS-agnostic examples for commands. Review the prerequisites to determine if you should be using `./dcrctl` or `dcrctl.exe` instead of `dcrctl`.
+`dcrctl` is not a daemon - it does not run permanently in the background - it calls the requested RPC method, prints the response, and then terminates immediately.
 
 ---
 
-> Configure RPC Username and Password
+## Usage
 
-Commands sent to either `dcrd` or `dcrwallet` will require RPC username/passwords to be setup in the configuration files.
+To call `dcrd` RPC methods:
 
-If you used [`dcrinstall`](/getting-started/user-guides/cli-installation.md), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
+```bash
+dcrctl <options> <rpc method> <rpc method args>
+```
 
-If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](/advanced/manual-cli-install.md#minimum-configuration) to do so.
+To call `dcrwallet` RPC methods:
 
----
+```bash
+dcrctl <options> --wallet <rpc method> <rpc method args>
+```
 
-## dcrctl Commands
+To list available options:
+```bash
+dcrctl --help
+```
 
-You will need to run dcrctl commands in a separate shell window (Command Prompt/Bash).
+To list available RPC methods:
 
-To issue commands to `dcrwallet`, you will need to use `dcrctl --wallet <command>`.
-
-To issue commands to `dcrd`, you will need to use `dcrctl <command>`.
-
-To see a full list of commands that `dcrctl` can send to `dcrd` and `dcrwallet`, issue the following command in your shell:
-
-```no-highlight
+```bash
 dcrctl -l
 ```
-
-This will return a very long list of commands, separated by application. The commands on the top section are for `dcrd` and the commands on the bottom section are for `dcrwallet`. You can find out more about an individual command by typing the following for `dcrwallet` commands:
-
-```no-highlight
-dcrctl help --wallet <command>
-```
-
-or the following for `dcrd` commands:
-
-```no-highlight
-dcrctl help <command>
-```
-
 ---
 
 ## Unlocking Your Wallet
@@ -135,6 +120,6 @@ dcrctl --wallet getstakeinfo
 
 ## Additional Commands
 
-More commands can also be found on the [Program Options](/advanced/program-options.md) page.
+More commands can also be found on the [dcrctl RPC Commands](/getting-started/dcrctl-rpc-commands.md) page.
 
 ---

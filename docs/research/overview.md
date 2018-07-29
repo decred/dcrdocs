@@ -20,7 +20,7 @@ Research work in Decred is currently organized around the following subsections:
 * [Schnorr Signatures](schnorr-signatures.md)
 * [Miscellaneous Improvements](miscellaneous-improvements.md)
 
-## <i class="fa fa-book"></i> References 
+## :fa-book: References
 
 [^1]: Nakamoto S. 2008. [Bitcoin: A peer-to-peer electronic cash system](https://decred.org/research/nakamoto2008.pdf).
 [^2]: Buterin V. 2014. [A Next-generation smart contract and decentralized application platform](https://decred.org/research/buterin2014.pdf).

@@ -6,7 +6,7 @@ Last updated for gominer v1.0.0.
 
 ---
 
-## <i class="fa fa-download"></i> Download and Extract *gominer*
+## :fa-download: Download and Extract *gominer*
 
 Visit [https://github.com/decred/decred-binaries/releases/tag/v1.0.0](https://github.com/decred/decred-binaries/releases/tag/v1.0.0) to download the gominer binaries. Within the "Downloads" section you should see the following files:
 
@@ -36,14 +36,17 @@ For the CUDA version, the CUDA runtime library is now included.  The files in th
 
 Before we begin this step, it is important that you've already signed up for a mining pool account (if required by your chosen mining pool, you'll have to create a worker at the pool's website). Record your worker's login and password, and the pool's stratum+tcp address:port for later use.
 
-If this is new to you, here are a few guides for creating workers on some of the Decred mining pools (WARNING: do not forget your PIN you set during account creation - you will be unable to withdraw any mined DCR without it):
+If this is new to you, here are a few guides for creating workers on some of the Decred mining pools.
+
+!!! warning "Warning"
+    Do not forget the PIN you set during account creation - you will be unable to withdraw any mined DCR without it
 
 - [https://dcr.maxminers.net/index.php?page=gettingstarted](https://dcr.maxminers.net/index.php?page=gettingstarted)
 - [https://dcr.suprnova.cc/index.php?page=gettingstarted](https://dcr.suprnova.cc/index.php?page=gettingstarted)
 - [https://www2.coinmine.pl/dcr/index.php?page=gettingstarted](https://www2.coinmine.pl/dcr/index.php?page=gettingstarted)
 - [https://pool.mn/dcr/index.php?page=gettingstarted](https://pool.mn/dcr/index.php?page=gettingstarted)
 
-### Step 2: Verify Device ID#
+### Step 2: Verify Device ID
 
 Before setting up the configuration file, it is vital you find out which devices, as identified by gominer, you wish to use to mine (especially if you want to avoid mining with your CPU or IGP). To do this, open a terminal window and navigate to the folder you extracted gominer above. Use the following command to list all of the devices you can mine with:
 
@@ -73,7 +76,7 @@ After these changes have been made, save the file and name it `gominer.conf`.
 
 ### Step 4: Copy gominer.conf to gominer AppData Folder
 
-The config file needs to be copied into the gominer config directory. On Windows this is `%localappdata%\Gominer\gominer.conf` and on Linux it is `~/.gominer/gominer.conf`
+The config file needs to be copied into the gominer config directory. On Windows this is `%LOCALAPPDATA%\Gominer\gominer.conf` and on Linux it is `~/.gominer/gominer.conf`
 
 ---
 

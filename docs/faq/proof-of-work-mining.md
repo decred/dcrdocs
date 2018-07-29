@@ -1,4 +1,4 @@
-# <i class="fa fa-fire"></i> Proof-of-work Mining 
+# :fa-fire: Proof-of-work Mining
 
 ---
 

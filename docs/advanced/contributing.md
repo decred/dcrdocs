@@ -39,7 +39,7 @@ For projects not written in Go, the initial setup will depend on the project.  I
 
 ### One time setup 
 - Fork dcrdocs on GitHub
-- Run the following commands to obtain dcrd, all dependencies, and install it:
+- Run the following commands to obtain dcrdocs:
 
 ```bash
 $ mkdir -p code/decred

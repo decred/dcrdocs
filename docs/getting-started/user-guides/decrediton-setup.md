@@ -10,7 +10,7 @@ Last updated for v1.2.1.
 
 	Decrediton needs to download a full copy of the Decred blockchain before it can be used. This means that a large download must be completed and a large amount of storage space must be be available on the PC where Decrediton is intalled.
 
-	At the end of May 2018 the Decred blockchain was 3.3GB.
+	You can check the current size of the Decred blockchain at https://alpha.dcrdata.org/charts
 
 ---
 

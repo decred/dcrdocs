@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "dcrdocs-code";
+    src        : url(/css/fonts/SourceCodePro-Regular.ttf);
+}
+
+@font-face {
+    font-family: "dcrdocs";
+    src        : url(/css/fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: "dcrdocs";
+    src        : url(/css/fonts/SourceSansPro-SemiBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "dcrdocs";
+    src        : url(/css/fonts/SourceSansPro-Italic.ttf);
+    font-style : italic;
+}
+
+@font-face {
+    font-family: "dcrdocs";
+    src        : url(/css/fonts/SourceSansPro-SemiBoldItalic.ttf);
+    font-style : italic;
+    font-weight: bold;   
+}
+
+html, body {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "dcrdocs" !important;
+}
+
+pre, code {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "dcrdocs-code" !important;
+}
+
+.md-typeset h1 {
+    color         : #596D81;
+    font-size     : 34px;
+    text-transform: none;
+}
+
+.md-typeset h2 {
+    color         : #0C1E3E;
+    font-size     : 26px;
+    text-transform: none;
+    font-weight   : bold;
+}
+
+.md-typeset h3 {
+    color         : #0C1E3E;
+    font-size     : 23px;
+    text-transform: none;
+}
+
+.md-typeset h4 {
+    color         : #0C1E3E;
+    font-size     : 20px;
+    text-transform: none;
+    font-weight   : bold;
+}
+
+.md-typeset h5 {
+    color         : #0C1E3E;
+    font-size     : 18px;
+    text-transform: none;
+}
+
+.md-typeset h6 {
+    color         : #596D81;
+    font-size     : 16px;
+    text-transform: none;
+    font-weight   : bold;
+}
+
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol,
+.md-typeset table {
+    color    : #48566E;
+    font-size: 16px;
+}

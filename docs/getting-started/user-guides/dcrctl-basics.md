@@ -1,7 +1,5 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> `dcrctl` Basics
 
-Last updated for v1.1.2.
-
 **Prerequisites:**
 
 - Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md) to install the command line tools.

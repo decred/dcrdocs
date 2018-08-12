@@ -135,7 +135,30 @@ npm run transifex:push
 
   1. Add the new language in Transifex
   2. In the repository folder, run `npm run transifex:pull`, and once it completes, add the resulting new files to git: `git add src/i18n`
-  5. Commit files to git + push to repo
+  3. Commit files to git + push to repo
+
+## Pages to review upon new releases
+
+### CLI releases
+
+- `advanced/manual-cli-install.md`
+- `getting-started/dcrd-and-dcrwallet-cli-arguments.md`
+- `getting-started/dcrctl-rpc-commands.md`
+- `getting-started/user-guides/cli-installation.md`
+
+### Decrediton releases
+
+- `user-guides/decrediton-setup.md`
+- `user-guides/using-decrediton.md`
+
+### gominer release
+
+- `mining/proof-of-work/pool-mining.md`
+
+### Testnet reset
+
+- `getting-started/using-testnet.md`
+
 
 ## Getting help
 

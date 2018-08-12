@@ -1,6 +1,6 @@
 # dcrd Setup Guide 
 
-Last updated for v1.1.2.
+Last updated for CLI release v1.1.2.
 
 This guide is intended to help you setup the `dcrd` application using [startup flags](/getting-started/startup-basics.md#startup-command-flags). 
 

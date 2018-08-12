@@ -1,7 +1,5 @@
 # Startup Basics
 
-This guide was last updated for v1.0.0
-
 ---
 
 This guide applies to command-line application users. Decrediton users can safely ignore the use of config files - Decrediton handles basic configuration automatically. It is also worth noting that some of our guides show configuration file settings and other guides show startup command flags. 

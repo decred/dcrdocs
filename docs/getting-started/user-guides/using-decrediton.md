@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Using Decrediton
 
-Last updated for v1.2.0.
+Last updated for Decrediton v1.2.1.
 
 This guide assumes you have already set up a Decrediton wallet using [the Decrediton Setup guide](decrediton-setup.md).
 

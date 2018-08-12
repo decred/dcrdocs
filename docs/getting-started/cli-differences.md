@@ -1,7 +1,5 @@
 # Command-Line Differences Across Operating Systems 
 
-This page was last updated for v1.0.0.
-
 ---
 
 The purpose of this page is to explain the key differences for running the cross-platform command-line applications on Windows, Linux, and macOS.

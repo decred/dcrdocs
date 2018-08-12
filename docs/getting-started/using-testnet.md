@@ -1,6 +1,6 @@
 # Using Testnet Guide
 
-last updated for testnet2
+Last updated for testnet2
 
 ---
 

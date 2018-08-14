@@ -66,3 +66,58 @@ details .md-typeset__table {
 details .md-typeset__table code{
     white-space: nowrap;
 }
+.md-typeset table:not([class]) th{
+    background-color: #EDEFF1;
+    font-size: 13px;
+    font-weight: bold;
+    color: #1b1742;
+}
+
+.md-typeset table:not([class]) td{
+    font-size: 13px;
+    color: #1b1742;
+}
+
+.md-typeset blockquote{
+    border-left:.4rem solid #2ED8A3;
+}
+
+.md-typeset blockquote p{
+    color: #2ED8A3;
+    font-weight:  bold;
+}
+
+.md-typeset details summary {
+    font-size: 14px;
+}
+
+.md-typeset .admonition-title{
+    font-size: 14px;
+}
+
+.md-typeset .admonition p{
+    font-size: 14px;
+}
+
+.md-typeset code {
+    padding: 2px 4px 2px 4px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.md-typeset pre>code{
+    background-color: #EDEFF1;
+}
+
+.md-typeset a:link {
+    color: #2970FF;
+}
+
+.md-typeset a:hover {
+    color: #1A59F7;
+}
+
+.md-typeset a:visited {
+    color: #2970FF;
+}
+

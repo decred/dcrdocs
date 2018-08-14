@@ -40,7 +40,7 @@ pages:
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
 - Governance:
-  - 'Introduction to Decred governance': 'getting-started/governance.md'
+  - 'Introduction to Decred governance': 'governance/governance.md'
   - 'Consensus rules voting': 'getting-started/user-guides/agenda-voting.md'
   - 'How to Vote on consensus rule changes': 'getting-started/user-guides/how-to-vote.md'
   - 'Politeia proposals and voting': 'getting-started/politeia.md' 

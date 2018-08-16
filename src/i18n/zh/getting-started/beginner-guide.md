@@ -10,21 +10,20 @@
 
 这份初学者指南是一条启动运行Decread软件的线路。您可以从多个客户端选择，以得到一个网络中节点以及将Decred币放到您的钱包中。具体来说，您将学习如何安装，设置和使用Decred应用程序; 如何获得DCR; 如何通过权益证明投票; 以及如何使用区块浏览器。
 
-You'll need to follow an [Installation Guide](#installation-guides), and then follow the path for the application of your choice below. After your application is set-up, go through the [General Guides](#general-guides) at the bottom of this page. If you have any questions along the way, join us in our [Slack](/support-directory.md#join-us-on-slack).
+首先你需要认真阅读[安装引导](#安装指导),然后可以根据需要再看相应的应用，应用运行起来之后，通读页面下方[通用指南](#通用指导)。如果你有什么问题，可以加入我们的[Slack](/support-directory.md#join-us-on-slack)以寻求帮助。
 
-**NOTE: Using Testnet is highly recommended for learning how to use the Decred software without the fear of making a mistake and losing real money. After following the guides to setup your choice of software, please visit the [Using Testnet guide](/getting-started/using-testnet.md) to learn how to launch your application onto Decred's testnet.**
-
+**注意: 在学习使用Decred程序的过程中，我们强烈建议你使用测试网络，这可以减少出错的可能以及资产的丢失。 启动你所需要程序之后, 请阅读[测试指南](/getting-started/using-testnet.md)以进一步学习如何让你的程序访问Decred的测试网络。**
 ---
 
-## Applications 
+## 应用 
 
-Below you'll find a list of currently available applications, with a chart showing their compatibility with different operating systems.
+下面以表格的形式列出了当前可用的应用，同时也给出了应用的操作系统兼容情况。
 
-**Paymetheus**: The only Windows GUI client as of v1.1.0. <br />
-**dcrd**: The node daemon, this command-line application handles block management and consensus. <br />
-**dcrwallet**: The wallet daemon, this command-line application handles address and transaction management. <br />
-**dcrctl**: The remote procedure call (RPC) client, this command-line application is used to control dcrd and dcrwallet via RPC commands. <br />
-**Decrediton**: Cross-platform GUI client as of v1.1.0.
+**Paymetheus**: v1.1.0. windows独占可视化钱包客户端  <br />
+**dcrd**: 节点程序，命令行程序，负责区块管理及共识 <br />
+**dcrwallet**: 钱包程序，命令行程序，负责管理地址及交易 <br />
+**dcrctl**: RPC客户端,命令行程序，通过Rpc命令控制dcrd及dcrwallet <br />
+**Decrediton**: v1.1.0 可视化钱包客户端 .
 
 |           | Paymetheus | dcrd | dcrwallet | dcrctl | Decrediton |
 | ---------:|:----------:|:----:|:---------:|:------:|:-----------:|
@@ -33,58 +32,55 @@ Below you'll find a list of currently available applications, with a chart showi
 | Linux     |            | X    | X         | X      | X           |
 | Other UNIX|            | X    | X         | X      |             |
 
-"Other UNIX" currently includes various *BSDs and Solaris/illumos.
+UNIX类似系统当前还支持了*BSDs和Solaris/illumos.
 
-Note: You might soon notice one of the many differences between Decred and other 
-popular cryptocurrencies: the wallet daemon and node daemon are separate.
-A lot of other coins run these functions together in a single daemon.
-For those who choose to use the command line interfaces, this means you must
-run `dcrd` for full node functionality, and `dcrwallet` to store your DCR,
-create transactions and participate in Proof-of-Stake mining/voting.
+注意: 你可能已经注意到Decred和其他主流加密货币的区别指出：钱包和节点程序是分离的，许多其他加密货币把这些功能
+集中在一个进程之中。因而，对于使用命令行接口的人来说，必须运行`dcrd` 来获取节点功能，运行`dcrwallet`来管理DCR，创建交易以及参与POS，挖矿/投票。
 
 ---
 
-## Installation Guides 
+## 安装指导
 
-To get started, choose an option for installations available for your operating system below:
+开始之前，请选择一个适合你当前操作系统的安装程序
 
 * [Paymetheus](/getting-started/user-guides/paymetheus.md)
-* [Command Line Suite **via dcrinstall**](/getting-started/user-guides/cli-installation.md) - NOTE: The `dcrinstall` method is the fastest and easiest way to get a command-line node and wallet running. It is recommended and the command-line path setup guides below will assume you've used this method.
+* [Command Line Suite **via dcrinstall**](/getting-started/user-guides/cli-installation.md) - 注意:  
+`dcrinstall` 是运行命令行节点和钱包最快、最简单的方式，推荐使用这种方式并且下面的命令行启动引导也会假定你曾经使用过这种方法
 * [Decrediton (ALPHA)](/getting-started/user-guides/decrediton-setup.md)
 
 ---
 
-**NOTE:** All of the following guides can be found in the navigation menu with the same names.
+**注意:** 下文所有的指导都可以在导航菜单中找到同名的选项
 
-## Paymetheus Path 
+## windows独占可视化钱包（Paymetheus） 
 
-The following guides, in order, will get you started with Paymetheus:
+按下面指导的顺序阅读，你会启动你的钱包程序：
 
-* [Paymetheus Setup](/getting-started/user-guides/paymetheus.md)
-* [Using Paymetheus](/getting-started/user-guides/using-paymetheus.md)
+* [启动Paymetheus](/getting-started/user-guides/paymetheus.md)
+* [使用Paymetheus](/getting-started/user-guides/using-paymetheus.md)
 
-## Decrediton Path 
+## 跨平台可视化钱包 （Decrediton  ） 
 
-The following guide will help you load Decrediton:
+下面的指导能帮你载入Decrediton：
 
-* [Decrediton Setup](/getting-started/user-guides/decrediton-setup.md)
+* [启动Decrediton](/getting-started/user-guides/decrediton-setup.md)
 
-## Command-Line Path 
+## 命令行方式（Command-Line Path） 
 
-The following guides, in order, will get you started with the Command-Line Applications (`dcrd`, `dcrwallet`, `dcrctl`):
+按顺序阅读下面的指导，你将能够运行命令行程序（`dcrd`, `dcrwallet`, `dcrctl`）:
 
-* [Command-Line Differences](/getting-started/cli-differences.md)
-* [Startup Option Basics](/getting-started/startup-basics.md)
-* [dcrd Setup](/getting-started/user-guides/dcrd-setup.md)
-* [dcrwallet Setup](/getting-started/user-guides/dcrwallet-setup.md)
-* [dcrctl Basic Usage](/getting-started/user-guides/dcrctl-basics.md)
+* [命令行方式的区别](/getting-started/cli-differences.md)
+* [基础启动选项](/getting-started/startup-basics.md)
+* [启动dcrd](/getting-started/user-guides/dcrd-setup.md)
+* [启动dcrwallet](/getting-started/user-guides/dcrwallet-setup.md)
+* [dcrctl基础用法](/getting-started/user-guides/dcrctl-basics.md)
 
-## General Guides 
+## 通用指导
 
-The following guides are independent of the different applications:
+以下指南与你使用何种方式启动decred程序无关:
 
-* [Using Testnet](/getting-started/using-testnet.md)
-* [Obtaining DCR](/getting-started/obtaining-dcr.md)
-* [Using the Block Explorer](/getting-started/using-the-block-explorer.md)
-* [Proof-of-Stake Guide](/mining/proof-of-stake.md)
-* [Mainnet Voting Guide](/getting-started/user-guides/agenda-voting.md)
+* [如何使用测试网络](/getting-started/using-testnet.md)
+* [如何获取DCR](/getting-started/obtaining-dcr.md)
+* [如何使用区块链浏览器](/getting-started/using-the-block-explorer.md)
+* [POS指南](/mining/proof-of-stake.md)
+* [主网投票指南](/getting-started/user-guides/agenda-voting.md)

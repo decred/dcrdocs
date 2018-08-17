@@ -1,27 +1,27 @@
-# Command-Line Differences Across Operating Systems 
+# 命令行在不同系统之间的区别
 
-This page was last updated for v1.0.0.
-
----
-
-The purpose of this page is to explain the key differences for running the cross-platform command-line applications on Windows, Linux, and macOS.
+本页最新更新对应版本为v1.0.0
 
 ---
 
-> Launch Commands
+本页的目的是为了说明命令行在不同系统（windows,Linux,和macOS）上的关键差别。
 
-The first major difference in the command line applications (`dcrd`,`dcrwallet`,`dcrctl`) is how you launch them from the command line. This is not as much of an operating system as it is a difference in shells. Windows comes with Command Prompt and PowerShell installed. macOS uses Bash within the Terminal application, and many Linux distributions use Bash as well. Below are examples of the basic run commands for Bash and Command Prompt.
+---
 
-**Command Prompt:** `dcrd.exe`, `dcrwallet.exe`, `dcrctl.exe` <br />
+> 启动命令
+
+命令行程序(`dcrd`,`dcrwallet`,`dcrctl`)的第一个主要差别是调用命令行的程序的方式不同。这与操作系统没太大关系，主要是shell区别，widows使用命令行提示符和PowerShell。macOS使用bash和终端程序，很多Linux发行版也使用Bash，下面给出了一些基础的例子，用于说明如何在Bash和命令行提示窗口上执行命令行。
+
+**命令提示符:** `dcrd.exe`, `dcrwallet.exe`, `dcrctl.exe` <br />
 **Bash:** `./dcrd`, `./dcrwallet`, `./dcrctl`
 
-Some of our guides might be OS-agnostic with the launch commands. If a guide says to run `dcrctl --wallet getbalance`, it's referring to using `dcrctl.exe --wallet getbalance` for Command Prompt and `./dcrctl --wallet getbalance` for Bash.
+指导中的启动命令行可能没有特别指定操作系统，如果让你执行命令`dcrctl --wallet getbalance`，这既指在命令提示符中使用命令`dcrctl.exe --wallet getbalance`，也是在Bash中执行命令`./dcrctl --wallet getbalance`。
 
-> Application Directory Locations
+> 应用程序目录位置
 
-The other way the command line clients differ is the location of each application directory (blocks, wallets, configuration files are all stored within the data directory). Below is a table of the default application directories for each application. 
+命令行程序在不同系统间的另一个区别是各自的程序目录不一样（块数据，钱包数据，配置文件，日志等），下面给出一个表格，列出了所有应用程序的默认程序路径
 
-| OS      | dcrd, dcrwallet, dcrctl App Directories      | 
+| 系统     | dcrd, dcrwallet, dcrctl App Directories      | 
 | -------:|:--------------------------------------------- |
 | Windows | `C:\Users\<your-username>\AppData\Local\dcrd\`      |
 |         | `C:\Users\<your-username>\AppData\Local\dcrwallet\` | 

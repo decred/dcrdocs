@@ -1,8 +1,8 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Constitution.svg" /> Decred Constitution
 
-> Note: The constitution was written prior to Decred's launch, some portions of it are no longer relevant and some are yet to be realized. Politeia will be used, when it launches, to propose amendments to the constitution for ratification by Voters.
+!!! Note
+The constitution was written prior to Decred's launch, some portions of it are no longer relevant and some are yet to be realized. Politeia will be used, when it launches, to propose amendments to the constitution for ratification by Voters.
 
----
 
 *Decred* (/ˈdi:ˈkred/, /dɪˈkred/, dee-cred) is an open, progressive, and self-funding cryptocurrency with a system of community-based governance integrated into its blockchain. The project mission is to develop technology for the public benefit, with a primary focus on cryptocurrency technology. *Decred*, as a currency and as a project, is bound by the following set of rules, which include guiding principles, a system of governance, and a funding mechanism. These rules have been established in an effort to create an equitable and sustainable framework within which to achieve *Decred*'s goals.
 

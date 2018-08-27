@@ -6,7 +6,14 @@ Last updated for v1.1.3
 
 ## How to Stake
 
-Participating in proof-of-stake requires a Decred wallet to be running 24/7. The wallet needs to be always online so that it can be called to vote - if the wallet is unavailable then the votes will be missed and no block reward will be received.
+Staking in Decred is two part process:
+
+- Buy ticket with DCR (locks up DCR until the ticket is called upon)
+- Vote the ticket once called upon and collect the staking reward. (returns original DCR)
+
+Buying tickets must happen from a device you control with your wallet's private keys present. This step can happen at your leisure. There is no time pressure to buy tickets.
+
+Voting when called upon, the essential part of participating in proof-of-stake consensus, requires a Decred wallet to be running 24/7. This can be done either by you or outsourced to a pool for a small fee. The wallet needs to be always online so that it can be called to vote - if the wallet is unavailable then the votes will be missed and no block reward will be received.
 
 Running your own always-online wallet is known as "Solo" staking/mining.
 

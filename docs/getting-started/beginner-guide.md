@@ -24,6 +24,43 @@ The [Decred Constitution](/getting-started/constitution.md) sets out some guidin
 
 There is also a [Command Line Interface](/getting-started/user-guides/cli-installation/) and set of tools for more advanced users, these include running a personal Voting wallet.
 
+## General Guides 
+
+The following guides go into depth on key aspects of the Decred experience:
+
+* [Obtaining DCR](/getting-started/obtaining-dcr.md)
+* [Using the Block Explorer](/getting-started/using-the-block-explorer.md)
+* [Governance](/governance/governance/)
+* [Ticket buying guide](/mining/proof-of-stake.md)
+* [Politeia](/governance/politeia.md)
+* [Voting on consensus rules changes](/getting-started/user-guides/agenda-voting.md)
+* [Using Testnet](/getting-started/using-testnet.md)
+
+
+## Information
+
+**Network Stats**
+
+* https://stats.decred.org/
+* https://dcrstats.com/
+
+**Block Explorers**
+
+* https://explorer.dcrdata.org/
+* https://mainnet.decred.org/
+
+**News/Articles**
+
+* [Decred journal](https://xaur.github.io/decred-news/) - comprehensive monthly newsletter maintained by some community members
+* [Decred.org blog](https://blog.decred.org)
+* [Decred Medium](https://medium.com/decred) (curated content from community members)
+* [Press coverage/releases](https://decred.org/press/)
+* [The Decred Digest](https://thedecreddigest.com/) - community blog
+
+**Video**
+
+* [Decred Youtube channel](https://www.youtube.com/channel/UCJ2bYDaPYHpSmJPh_M5dNSg/videos)
+
 ## Community
 
 In addition to the [Politeia proposals site](www.proposals.decred.org), the Decred community can be found on a [variety of platforms](https://decred.org/community/).
@@ -64,40 +101,3 @@ Selected GitHub repositories:
 ### Contributing
 
 Decred is always looking for new contributors. A basic outline of how this works is: Show up, Find something useful to do, Do it, Get Paid. Do a small bit at first and see if other contributors in that domain appreciate it. This [blog post](https://blog.decred.org/2017/07/25/Decred-Recruiting/) explains the project's recruitment philosophy and approach in more detail.
-
-## Information
-
-**Network Stats**
-
-* https://stats.decred.org/
-* https://dcrstats.com/
-
-**Block Explorers**
-
-* https://explorer.dcrdata.org/
-* https://mainnet.decred.org/
-
-**News/Articles**
-
-* [Decred journal](https://xaur.github.io/decred-news/) - comprehensive monthly newsletter maintained by some community members
-* [Decred.org blog](https://blog.decred.org)
-* [Decred Medium](https://medium.com/decred) (curated content from community members)
-* [Press coverage/releases](https://decred.org/press/)
-* [The Decred Digest](https://thedecreddigest.com/) - community blog
-
-**Video**
-
-* [Decred Youtube channel](https://www.youtube.com/channel/UCJ2bYDaPYHpSmJPh_M5dNSg/videos)
-
-
-## General Guides 
-
-The following guides go into depth on key aspects of the Decred experience:
-
-* [Obtaining DCR](/getting-started/obtaining-dcr.md)
-* [Using the Block Explorer](/getting-started/using-the-block-explorer.md)
-* [Governance](/governance/governance/)
-* [Ticket buying guide](/mining/proof-of-stake.md)
-* [Politeia](/governance/politeia.md)
-* [Voting on consensus rules changes](/getting-started/user-guides/agenda-voting.md)
-* [Using Testnet](/getting-started/using-testnet.md)

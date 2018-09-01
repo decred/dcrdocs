@@ -66,3 +66,31 @@ details .md-typeset__table {
 details .md-typeset__table code{
     white-space: nowrap;
 }
+
+.md-typeset table:not([class]) th{
+    background-color: #EDEFF1;
+    font-size: 13px;
+    font-weight: bold;
+    color: #0C1E3E;
+}
+.md-typeset table:not([class]) td{
+    font-size: 13px;
+}
+
+.md-typeset blockquote{
+    border-left:.4rem solid #2ED8A3;
+}
+.md-typeset blockquote p{
+    color: #2ED8A3;
+}
+
+.md-typeset details summary {
+    /* This is the title of a collapsible admonition */
+    font-size: 14px;
+}
+.md-typeset .admonition-title{
+    font-size: 14px;
+}
+.md-typeset .admonition p{
+    font-size: 14px;
+}

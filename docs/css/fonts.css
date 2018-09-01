@@ -83,3 +83,15 @@ pre, code {
     color    : #48566E;
     font-size: 16px;
 }
+
+.md-typeset a {
+    font-weight: bold;
+}
+.md-typeset a:link,
+.md-typeset a:visited {
+    color: #2970FF;
+}
+.md-typeset a:hover,
+.md-typeset a:active {
+    color: #1A59F7;
+}

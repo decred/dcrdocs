@@ -94,3 +94,16 @@ details .md-typeset__table code{
 .md-typeset .admonition p{
     font-size: 14px;
 }
+
+.md-typeset code {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    background-color: #EDEFF1;
+    box-shadow: none;
+}
+
+.md-typeset pre>code {
+    border-radius: 3px;
+    background-color: #EDEFF1;
+}

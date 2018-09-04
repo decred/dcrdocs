@@ -1,7 +1,6 @@
 site_name: Decred Documentation
 theme: 
   name: material
-  custom_dir: theme_override
   favicon: 'img/favicon.ico'
   logo: 'img/decred_logo_symbol_128.svg'
   font: false
@@ -33,7 +32,7 @@ extra_javascript:
 extra_css:
   - css/fonts.css
   - css/style.css
-pages:
+nav:
 - 'Home': 'index.md'
 - Getting Started:
   - "Beginner's Guide": 'getting-started/beginner-guide.md'
@@ -111,4 +110,4 @@ pages:
   - 'Support Directory': 'support-directory.md'
   - 'Credits': 'about/credits.md'
   - 'License': 'about/license.md'
-copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.2. Decred Project 2016.
+copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.3. Decred Project 2018.

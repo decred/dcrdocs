@@ -42,7 +42,7 @@ Finally, you'll need to learn how to set the `votechoice` for your tickets in or
 
 ## Verifying Your Vote
 
-The easiest method to track your how your tickets actually voted is to use the [block explorer](https://mainnet.decred.org) to view each of your votes.
+The easiest method to track your how your tickets actually voted is to use the [block explorer](https://explorer.dcrdata.org) to view each of your votes.
 
 The block explorer has been updated to display "YES", "NO", and "ABSTAIN" votes for each agenda with each ticket. The first and second tickets in the following example image voted "ABSTAIN" for both agendas while the third ticket voted "YES" for both agendas. The image will be updated to reflect the v5 agenda when voting is live.
 

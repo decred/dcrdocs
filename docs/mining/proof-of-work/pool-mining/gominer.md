@@ -41,10 +41,8 @@ If this is new to you, here are a few guides for creating workers on some of the
 !!! warning "Warning"
     Do not forget the PIN you set during account creation - you will be unable to withdraw any mined DCR without it
 
-- [https://dcr.maxminers.net/index.php?page=gettingstarted](https://dcr.maxminers.net/index.php?page=gettingstarted)
 - [https://dcr.suprnova.cc/index.php?page=gettingstarted](https://dcr.suprnova.cc/index.php?page=gettingstarted)
 - [https://www2.coinmine.pl/dcr/index.php?page=gettingstarted](https://www2.coinmine.pl/dcr/index.php?page=gettingstarted)
-- [https://pool.mn/dcr/index.php?page=gettingstarted](https://pool.mn/dcr/index.php?page=gettingstarted)
 
 ### Step 2: Verify Device ID
 

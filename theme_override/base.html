@@ -69,6 +69,11 @@
     {% for path in extra_css %}
       <link rel="stylesheet" href="{{ path }}">
     {% endfor %}
+    <link rel="preload" href="/css/fonts/SourceCodePro-Regular/SourceCodePro-Regular.ttf.woff2" as="font"  crossorigin="anonymous">
+    <link rel="preload" href="/css/fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf.woff2" as="font"  crossorigin="anonymous">
+    <link rel="preload" href="/css/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.ttf.woff2" as="font"  crossorigin="anonymous">
+    <link rel="preload" href="/css/fonts/SourceSansPro-It/SourceSansPro-It.ttf.woff2" as="font"  crossorigin="anonymous">
+    <link rel="preload" href="/css/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.ttf.woff2" as="font"  crossorigin="anonymous">
     {% block extrahead %}{% endblock %}
   </head>
   {% if palette.primary or palette.accent %}

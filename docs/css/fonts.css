@@ -1,40 +1,60 @@
 @font-face {
     font-family: "dcrdocs-code";
-    src        : url(/css/fonts/SourceCodePro-Regular.ttf);
+    src:
+        url("/css/fonts/SourceCodePro-Regular/SourceCodePro-Regular.ttf.woff2") format("woff2"),
+        url("/css/fonts/SourceCodePro-Regular/SourceCodePro-Regular.ttf.woff")  format("woff"),
+        url("/css/fonts/SourceCodePro-Regular/SourceCodePro-Regular.ttf")       format("truetype"),
+        url("/css/fonts/SourceCodePro-Regular/SourceCodePro-Regular.eot")       format("embedded-opentype");
 }
 
 @font-face {
     font-family: "dcrdocs";
-    src        : url(/css/fonts/SourceSansPro-Regular.ttf);
+    src:
+        url("/css/fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf.woff2") format("woff2"),
+        url("/css/fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf.woff") format("woff"),
+        url("/css/fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf") format("truetype"),
+        url("/css/fonts/SourceSansPro-Regular/SourceSansPro-Regular.eot") format("embedded-opentype");
 }
 
 @font-face {
     font-family: "dcrdocs";
-    src        : url(/css/fonts/SourceSansPro-SemiBold.ttf);
+    src:
+        url("/css/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.ttf.woff2") format("woff2"),
+        url("/css/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.ttf.woff") format("woff"),
+        url("/css/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.ttf") format("truetype"),
+        url("/css/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.eot") format("embedded-opentype");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "dcrdocs";
-    src        : url(/css/fonts/SourceSansPro-Italic.ttf);
+    src:
+        url("/css/fonts/SourceSansPro-It/SourceSansPro-It.ttf.woff2") format("woff2"),
+        url("/css/fonts/SourceSansPro-It/SourceSansPro-It.ttf.woff") format("woff"),
+        url("/css/fonts/SourceSansPro-It/SourceSansPro-It.ttf") format("truetype"),
+        url("/css/fonts/SourceSansPro-It/SourceSansPro-It.eot") format("embedded-opentype");
     font-style : italic;
 }
 
 @font-face {
     font-family: "dcrdocs";
-    src        : url(/css/fonts/SourceSansPro-SemiBoldItalic.ttf);
+    src:
+        url("/css/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.ttf.woff2") format("woff2"),
+        url("/css/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.ttf.woff") format("woff"),
+        url("/css/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.ttf") format("truetype"),
+        url("/css/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.eot") format("embedded-opentype");
     font-style : italic;
     font-weight: bold;   
 }
 
 html, body {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "dcrdocs" !important;
+    font-family: "dcrdocs", "Verdana", "sans-serif" !important;
 }
 
 pre, code {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "dcrdocs-code" !important;
+    font-family: "dcrdocs-code", "Courier New", "monospace" !important;
 }
 
 .md-typeset h1 {

@@ -6,13 +6,13 @@ Last updated for Decrediton v1.2.1
 
 ## Welcome To Decred 
 
-This beginner's guide introduces Decred, and offers signposts to some useful resources.
+This beginner's guide introduces Decred and offers signposts to some useful resources.
 
 Decred is an autonomous digital currency. Stakeholders make and enforce the blockchain's consensus rules, set a course for future development, and decide how the project's treasury is used to fund it. Decred's blockchain is similar to Bitcoin's, but with major aspects of [governance](/governance/governance.md) baked into the protocol. 
 
-[Proof of Work](/mining/proof-of-work.md) Miners play a similar role for Decred as they do for Bitcoin, but with Decred they only receive 60% of the block reward.
+[Proof of Work](/mining/proof-of-work.md) miners play a similar role for Decred as they do for Bitcoin, but with Decred they only receive 60% of the block reward.
 
-[Proof of Stake Ticket Voting](/mining/proof-of-stake.md) is central to Decred's governance. Decred holders can time-lock (or "stake") chunks of DCR to buy tickets. Tickets are randomly called to vote on-chain, this involves both approving the work of PoW Miners and voting Yes/No on any open [rule change proposals](/getting-started/user-guides/agenda-voting.md). 30% of the block reward goes to the holders of the tickets that voted in that block.
+[Proof of Stake Ticket Voting](/mining/proof-of-stake.md) is central to Decred's governance. Decred holders can time-lock (or "stake") DCR to buy tickets. Tickets are randomly called to vote on-chain, this involves both approving the work of PoW Miners and voting Yes/No on any open [rule change proposals](/getting-started/user-guides/agenda-voting.md). 30% of the block reward goes to the holders of the tickets that voted in that block.
 
 The remaining 10% of the block reward goes into a [Project Treasury fund](http://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx). Holders of live tickets decide how that treasury is used through [Politeia proposals and voting](/governance/politeia.md).
 
@@ -59,7 +59,7 @@ The following guides go into depth on key aspects of the Decred experience:
 
 **Video**
 
-* [Decred Youtube channel](https://www.youtube.com/channel/UCJ2bYDaPYHpSmJPh_M5dNSg/videos)
+* [Decred Youtube channel](https://www.youtube.com/decredchannel)
 
 ## Community
 

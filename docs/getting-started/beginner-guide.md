@@ -12,7 +12,7 @@ Decred is an autonomous digital currency. Stakeholders make and enforce the bloc
 
 [Proof of Work](/mining/proof-of-work.md) miners play a similar role for Decred as they do for Bitcoin, but with Decred they only receive 60% of the block reward.
 
-[Proof of Stake Ticket Voting](/mining/proof-of-stake.md) is central to Decred's governance. Decred holders can time-lock (or "stake") DCR to buy tickets. Tickets are randomly called to vote on-chain, this involves both approving the work of PoW Miners and voting Yes/No on any open [rule change proposals](/getting-started/user-guides/agenda-voting.md). 30% of the block reward goes to the holders of the tickets that voted in that block.
+[Proof of Stake](/mining/proof-of-stake.md) voting is central to Decred's governance. Decred holders can time-lock (or "stake") DCR to obtain voting tickets. Tickets are randomly called to vote on-chain, this involves both approving the work of PoW Miners and voting Yes/No on any open [rule change proposals](/getting-started/user-guides/agenda-voting.md). 30% of the block reward goes to the holders of the tickets that voted in that block.
 
 The remaining 10% of the block reward goes into a [Project Treasury fund](http://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx). Holders of live tickets decide how that treasury is used through [Politeia proposals and voting](/governance/politeia.md).
 

@@ -20,7 +20,7 @@ The [Decred Constitution](/getting-started/constitution.md) sets out some guidin
 
 ## Wallets
 
-[Decrediton](/getting-started/user-guides/decrediton-setup/) is Decred's GUI wallet, it supports Voting through [Voting Service Providers](https://decred.org/stakepools/) and offers the easiest way to start buying tickets and participating in governance.
+[Decrediton](/getting-started/user-guides/decrediton-setup/) is Decred's GUI wallet, it supports Voting through [stakepools](https://decred.org/stakepools/) and offers the easiest way to start buying tickets and participating in governance.
 
 There is also a [Command Line Interface](/getting-started/user-guides/cli-installation/) and set of tools for more advanced users, these include running a personal Voting wallet.
 

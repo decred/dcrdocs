@@ -42,7 +42,6 @@ The following guides go into depth on key aspects of the Decred experience:
 **Network Stats**
 
 * https://stats.decred.org/
-* https://dcrstats.com/
 
 **Block Explorers**
 

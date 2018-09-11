@@ -6,7 +6,7 @@
 
 Parameter               | Value        | Description
 ---                     | ---          | ---
-Maximum block size      | 393,216      | The maximum size of a block in bytes.
+Maximum block size      | 1,000,000      | The maximum size of a block in bytes.
 Initial block reward    | 31.19582664  | The initial reward in DCR for mining a block.
 Block reward multiplier | 100/101      | The block reward is multiplied by this whenever the block price changes. Basically what that means is that every reward cycle (see below) the block reward given for mining a block is reduced by approximately 1%.
 Block reward change     | 6,144 blocks | The number of blocks between block reward changes. This occurs approximately every 3 weeks. Decred uses a more frequent change cycle (about 3 weeks compared to Bitcoins 4 years), but the magnitude of the change is much less (about 1% per cycle whereas Bitcoin is 50%). This is designed to reduce the shock in markets when a change occurs.

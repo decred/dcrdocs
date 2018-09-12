@@ -22,9 +22,9 @@ Ticket-voting on proposals doesn’t happen directly on Politeia, but from withi
 
 When proposals are submitted, they are checked by Politeia administrators. Proposals that are deemed spam or invalid will be censored.
 
-Politeia is _*censor-proof_,* using ***dcrtime\***. Users cannot be silently censored, they can prove that censorship has occurred. When a proposal/comment is submitted, a censorship token is generated. Content creators can use these tokens to demonstrate that their specific proposal/comment was submitted, in a particular form, at a particular point in time.
+Politeia is built around the concept of _transparent censorship_, using [dcrtime](https://github.com/decred/dcrtime). Users cannot be silently censored, they can prove that censorship has occurred. When a proposal/comment is submitted, a censorship token is generated. Content creators can use these tokens to demonstrate that their specific proposal/comment was submitted, in a particular form, at a particular point in time.
 
-To access this censor-proof feature, **Politeia users have cryptographic identities** (pub/priv key pairs) to go with their accounts. When you register for a Politeia account, a key-pair identity will be generated for you, this is stored in your browser by default.  
+**Politeia users have cryptographic identities** (pub/priv key pairs) that can be used to demonstrate censorship of one's submissions. When you register for a Politeia account, a key-pair identity will be generated for you, this is stored in your browser by default.
 
 If you change browser/device you can import your Pi identity key or generate a new one, but for now it is important to *verify your account from the same browser you used to sign up*. The cryptographic Pi identity is only used for demonstrating that your submissions have been censored.
 

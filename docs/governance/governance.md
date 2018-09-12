@@ -20,7 +20,7 @@ Decred's on-chain governance is supplemented by *Politeia proposal voting*, whic
 
 Politeia proposals concern the direction of the project, they may involve spending the [project subsidy fund](http://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) (10% of the block reward goes into this fund to support development of the project) or amending the [Decred Constitution](/getting-started/constitution.md) or other policies.
 
-Politeia proposals are anchored to the Decred blockchain using [dcrtime](https://github.com/decred/dcrtime), making them "censor-proof" - one can prove when one's contributions have been censored.
+Politeia is built around the concept of _transparent censorship_, using [dcrtime](https://github.com/decred/dcrtime). Users cannot be silently censored, they can prove that censorship has occurred.
 
 The [Politeia web platform](https://proposals.decred.org/) is a reddit-style space to facilitate submitting, viewing and discussing proposals.
 

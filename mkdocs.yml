@@ -3,7 +3,7 @@ theme:
   name: material
   custom_dir: theme_override
   favicon: 'img/favicon.ico'
-  logo: 'img/logo_full_color.svg'
+  logo: 'img/decred_logo_symbol_128.svg'
   font: false
 extra:
   social:

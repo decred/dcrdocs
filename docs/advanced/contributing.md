@@ -13,7 +13,9 @@ The following examples will be split into two sections, one for the Go projects 
 
 ## Go 
 
-For projects using Go, you can follow this procedure.  dcrd will be used as the example.  This assumes you already have go1.6 or newer installed and a working `$GOPATH`.
+For projects using Go, ensure you have either the latest Go release or the one prior installed, and a working $GOPATH. All Go code for Decred runs on N and N-1 releases of Go, and all Go code changes must be compliant for both.
+
+Below is an example procedure for dcrd.
 
 ### One time setup
 - Fork dcrd on GitHub

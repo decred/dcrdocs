@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "dcrdocs-code";
+    src:
+        url("/css/fonts/SourceCodePro-Regular/SourceCodePro-Regular.ttf.woff2") format("woff2"),
+        url("/css/fonts/SourceCodePro-Regular/SourceCodePro-Regular.ttf.woff")  format("woff"),
+        url("/css/fonts/SourceCodePro-Regular/SourceCodePro-Regular.ttf")       format("truetype"),
+        url("/css/fonts/SourceCodePro-Regular/SourceCodePro-Regular.eot")       format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "dcrdocs";
+    src:
+        url("/css/fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf.woff2") format("woff2"),
+        url("/css/fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf.woff") format("woff"),
+        url("/css/fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf") format("truetype"),
+        url("/css/fonts/SourceSansPro-Regular/SourceSansPro-Regular.eot") format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "dcrdocs";
+    src:
+        url("/css/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.ttf.woff2") format("woff2"),
+        url("/css/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.ttf.woff") format("woff"),
+        url("/css/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.ttf") format("truetype"),
+        url("/css/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.eot") format("embedded-opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "dcrdocs";
+    src:
+        url("/css/fonts/SourceSansPro-It/SourceSansPro-It.ttf.woff2") format("woff2"),
+        url("/css/fonts/SourceSansPro-It/SourceSansPro-It.ttf.woff") format("woff"),
+        url("/css/fonts/SourceSansPro-It/SourceSansPro-It.ttf") format("truetype"),
+        url("/css/fonts/SourceSansPro-It/SourceSansPro-It.eot") format("embedded-opentype");
+    font-style : italic;
+}
+
+@font-face {
+    font-family: "dcrdocs";
+    src:
+        url("/css/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.ttf.woff2") format("woff2"),
+        url("/css/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.ttf.woff") format("woff"),
+        url("/css/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.ttf") format("truetype"),
+        url("/css/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.eot") format("embedded-opentype");
+    font-style : italic;
+    font-weight: bold;   
+}
+
+html, body {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "dcrdocs", "Verdana", "sans-serif" !important;
+}
+
+pre, code {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "dcrdocs-code", "Courier New", "monospace" !important;
+}
+
+.md-typeset h1 {
+    color         : #596D81;
+    font-size     : 34px;
+    text-transform: none;
+}
+
+.md-typeset h2 {
+    color         : #0C1E3E;
+    font-size     : 26px;
+    text-transform: none;
+    font-weight   : bold;
+}
+
+.md-typeset h3 {
+    color         : #0C1E3E;
+    font-size     : 23px;
+    text-transform: none;
+}
+
+.md-typeset h4 {
+    color         : #0C1E3E;
+    font-size     : 20px;
+    text-transform: none;
+    font-weight   : bold;
+}
+
+.md-typeset h5 {
+    color         : #0C1E3E;
+    font-size     : 18px;
+    text-transform: none;
+}
+
+.md-typeset h6 {
+    color         : #596D81;
+    font-size     : 16px;
+    text-transform: none;
+    font-weight   : bold;
+}
+
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol,
+.md-typeset table {
+    color    : #48566E;
+    font-size: 16px;
+}
+
+.md-typeset a {
+    font-weight: bold;
+}
+.md-typeset a:link,
+.md-typeset a:visited {
+    color: #2970FF;
+}
+.md-typeset a:hover,
+.md-typeset a:active {
+    color: #1A59F7;
+}

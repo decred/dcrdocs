@@ -3,7 +3,7 @@
 ---
 
 ## <img class="dcr-icon" src="/img/dcr-icons/decred-logo.svg" /></i> What is Decred?
-Decred is a cryptocurrency, similar to Bitcoin, with a strong focus on community input, open governance and sustainable funding and development. It utilizes a hybrid "proof-of-work" and "proof-of-stake" mining system to ensure that a small group cannot dominate the flow of transactions or make changes to Decred without the input of the community. A unit of currency is called a 'decred' (DCR). To ensure the integrity of the currency and prevent people from making fraudulent transactions or creating their own coins, Decred uses a method of recording transactions known as a blockchain.
+Decred is a blockchain-based cryptocurrency with a strong focus on community input, open governance, and sustainable funding for development. It utilizes a hybrid Proof-of-Work (PoW) and Proof-of-Stake (PoS) mining system to ensure that a small group cannot dominate the flow of transactions or make changes to Decred without the input of the community. A unit of the currency is called a decred (DCR).
 
 ---
 

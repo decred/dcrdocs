@@ -6,13 +6,13 @@ The choice a ticket votes with depends on your vote preference at the time the t
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> **Stakepool Voting**
 
-If your Stakepool has updated to the latest stakepool software, you will find a "Voting" page in the navigation menu with dropdown options for each agenda. After you've chosen how you want your tickets to vote, simply press the "Update Voting Preferences" to save your votechoices. Below you'll find an image of the votechoices for vote version 5.
+If your Stakepool has updated to the latest stakepool software, you will find a "Voting" page in the navigation menu with dropdown options for each agenda. After you've chosen how you want your tickets to vote, simply press the "Update Voting Preferences" to save your vote choices. Below you'll find an image of the votechoices for vote version 5.
 
 <img src="/img/voting_preferences.png">
 
 You can also update your voting preferences via Decrediton. Under the Tickets section, you'll find the option to set your vote. You must be using a stake pool to use this option.
 
-<img src="/img/decrediton/voting.jpg">
+<img src="/img/decrediton/voting_preferences.png">
 
 ---------------------------
 

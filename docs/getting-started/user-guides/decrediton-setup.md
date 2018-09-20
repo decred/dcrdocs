@@ -8,7 +8,7 @@ Last updated for v1.2.1.
 
 !!! info "Blockchain Download"
 
-	Decrediton needs to download a full copy of the Decred blockchain before it can be used. This means that a large download must be completed and a large amount of storage space must be be available on the device where Decrediton is intalled. You can check the current size of the Decred blockchain via [dcrdata charts](https://explorer.dcrdata.org/charts#blockchain-size). Total required storage space for Decrediton may vary, depending on your device.
+	Without SPV enabled, Decrediton needs to download a full copy of the Decred blockchain before it can be used. This means that a large download must be completed and a large amount of storage space must be be available on the device where Decrediton is intalled. You can check the current size of all serialized blocks via [dcrdata charts](https://explorer.dcrdata.org/charts#blockchain-size). The total size of Decrediton will be bigger, since additional wallet data is stored on your device.
 
 ---
 

@@ -12,7 +12,7 @@ If your Stakepool has updated to the latest stakepool software, you will find a 
 
 You can also update your voting preferences via Decrediton. Under the Tickets section, you'll find the option to set your vote. You must be using a stake pool to use this option.
 
-<img src="/img/decrediton/voting_preferences.png">
+<img src="/img/decrediton/voting.png">
 
 ---------------------------
 

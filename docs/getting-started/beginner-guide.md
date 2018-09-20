@@ -12,9 +12,9 @@ Decred is an autonomous digital currency. Stakeholders make and enforce the bloc
 
 [Proof of Work](/mining/proof-of-work.md) miners play a similar role for Decred as they do for Bitcoin, but with Decred they only receive 60% of the block reward.
 
-[Proof of Stake](/mining/proof-of-stake.md) voting is central to Decred's governance. Decred holders can time-lock (or "stake") DCR to obtain voting tickets. Tickets are randomly called to vote on-chain, this involves both approving the work of PoW Miners and voting Yes/No on any open [rule change proposals](/getting-started/user-guides/agenda-voting.md). 30% of the block reward goes to the holders of the tickets that voted in that block.
+[Proof of Stake](/mining/proof-of-stake.md) voting is central to Decred's governance. Decred holders can time-lock (or "stake") DCR to obtain voting tickets. Tickets are randomly called to vote on-chain, this involves both approving the work of PoW miners and voting Yes/No on any open [rule change proposals](/getting-started/user-guides/agenda-voting.md). 30% of the block reward goes to the holders of the tickets that voted in that block.
 
-The remaining 10% of the block reward goes into a [Project Treasury fund](http://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx). Holders of live tickets decide how that treasury is used through [Politeia proposals and voting](/governance/politeia.md).
+The remaining 10% of the block reward goes into a [Project Treasury fund](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx). Holders of live tickets decide how that treasury is used through [Politeia proposals and voting](/governance/politeia.md).
 
 The [Decred Constitution](/getting-started/constitution.md) sets out some guiding principles for the project, the constitution is subject to amendment through Politeia proposals.
 
@@ -41,16 +41,16 @@ The following guides go into depth on key aspects of the Decred experience:
 
 **Network Stats**
 
-* https://stats.decred.org/
+* [stats.decred.org](https://stats.decred.org/)
 
 **Block Explorers**
 
-* https://explorer.dcrdata.org/
-* https://mainnet.decred.org/
+* [explorer.dcrdata.org](https://explorer.dcrdata.org/)
+* [mainnet.decred.org](https://mainnet.decred.org/)
 
 **News/Articles**
 
-* [Decred journal](https://xaur.github.io/decred-news/) - comprehensive monthly newsletter maintained by some community members
+* [Decred Journal](https://xaur.github.io/decred-news/) - comprehensive monthly newsletter maintained by some community members
 * [Decred.org blog](https://blog.decred.org)
 * [Decred Medium](https://medium.com/decred) (curated content from community members)
 * [Press coverage/releases](https://decred.org/press/)
@@ -62,7 +62,7 @@ The following guides go into depth on key aspects of the Decred experience:
 
 ## Community
 
-In addition to the [Politeia proposals site](www.proposals.decred.org), the Decred community can be found on a [variety of platforms](https://decred.org/community/).
+In addition to the [Politeia proposals site](https://proposals.decred.org), the Decred community can be found on a [variety of platforms](https://decred.org/community/).
 
 ### Chat 
 
@@ -79,7 +79,7 @@ Telegram, Rocket.Chat and KakaoTalk are partially bridged.
 
 * [Reddit](https://www.reddit.com/r/decred)
 
-* [Twitter]() (account operated by small group of contributors)
+* [Twitter](https://twitter.com/decredproject) (account operated by small group of contributors)
 * [Forum](https://forum.decred.org/)
 * [Facebook](https://facebook.com/decredproject) 
 
@@ -93,7 +93,7 @@ Selected GitHub repositories:
 * [dcrd](https://github.com/decred/dcrd) and [dcrwallet](https://github.com/decred/dcrwallet) - Decred daemons
 * [politeia](https://github.com/decred/politeia) and [politeiagui](https://github.com/decred/politeiagui) - Politeia back and front end
 * [dcrdata](https://github.com/decred/dcrdata) - block explorer
-* [dcrdocs](https://github.com/decred/dcrdocs) - this [docs site](http://docs.decred.org)
+* [dcrdocs](https://github.com/decred/dcrdocs) - this [docs site](/)
 * [dcrweb](https://github.com/decred/dcrweb) - [Decred.org](https://decred.org/)
 * [dcps](https://github.com/decred/dcps) - Decred Change Proposals
 

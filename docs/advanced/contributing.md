@@ -13,7 +13,7 @@ The following examples will be split into two sections, one for the Go projects 
 
 ## Go 
 
-For projects using Go, ensure you have either the latest Go release or the one prior installed, and a working $GOPATH. All Go code for Decred runs on N and N-1 releases of Go, and all Go code changes must be compliant for both.
+For projects using Go, ensure you have either the latest Go release or the one prior installed. All Go code changes for Decred must be compliant with the latest version of Go and the one prior to it.
 
 Below is an example procedure for dcrd.
 

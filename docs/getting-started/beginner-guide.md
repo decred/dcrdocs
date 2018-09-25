@@ -1,7 +1,5 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Flag.svg" /> Beginner's Guide
 
-Last updated for Decrediton v1.2.1
-
 ---
 
 ## Welcome To Decred 

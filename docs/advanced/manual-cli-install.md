@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> Manual CLI Installation
 
-Last updated for v1.2.0.
+Last updated for CLI release v1.2.0.
 
 ---
 

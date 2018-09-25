@@ -1,5 +1,7 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Options2.svg" /> `dcrd` and `dcrwallet` CLI Arguments
 
+Last updated for CLI release v1.3.0.
+
 ---
 Both the `dcrd` and `dcrwallet` daemons should work with default configuration for most users, however there is a wide variety of command line aguments to change the way they behave if required. For example, the following command can be used to change the log directory `dcrd` will write to.
 
@@ -64,7 +66,7 @@ dcrd --logdir=/my/custom/log/directory
             `--miningtimeoffset=`     | Offset the mining timestamp of a block by this many seconds (positive values are in the past)
     `-d` or `--debuglevel=`           | Logging level for all subsystems {trace, debug, info, warn, error, critical} -- You may also specify <subsystem>=<level>,<subsystem2>=<level>,... to set the log level for individual subsystems -- Use show to list available subsystems (default: info)
             `--upnp`                  | Use UPnP to map our listening port outside of NAT
-            `--minrelaytxfee=`        | The minimum transaction fee in DCR/kB to be considered a non-zero fee. (default: 0.001)
+            `--minrelaytxfee=`        | The minimum transaction fee in DCR/kB to be considered a non-zero fee. (default: 0.0001)
             `--limitfreerelay=`       | Limit relay of transactions with no transaction fee to the given amount in thousands of bytes per minute (default: 15)
             `--norelaypriority`       | Do not require free or low-fee transactions to have high priority for relaying
             `--maxorphantx=`          | Max number of orphan transactions to keep in memory (default: 1000)
@@ -74,7 +76,6 @@ dcrd --logdir=/my/custom/log/directory
             `--blockmaxsize=`         | Maximum block size in bytes to be used when creating a block (default: 375000)
             `--blockprioritysize=`    | Size in bytes for high-priority/low-fee transactions when creating a block (default: 20000)
             `--getworkkey=`           | **DEPRECATED** -- Use the `--miningaddr` option instead
-            `--nopeerbloomfilters`    | Disable bloom filtering support
             `--sigcachemaxsize=`      | The maximum number of entries in the signature verification cache (default: 100000)
             `--nonaggressive`         | Disable mining off of the parent block of the blockchain if there aren't enough voters
             `--nominingstatesync`     | Disable synchronizing the mining state with other nodes
@@ -103,7 +104,7 @@ dcrd --logdir=/my/custom/log/directory
     `-C` or `--configfile=`                            | Path to configuration file (default: `~/.dcrwallet/dcrwallet.conf`)
     `-V` or `--version`                                | Display version information and exit
             `--create`                                 | Create the wallet if it does not exist
-            `--createtemp`                             | Create a temporary simulation wallet (pass=password) in the data directory indicated; must call with `--datadir`
+            `--createtemp`                             | Create a temporary simulation wallet (pass=password) in the data directory indicated; must call with `--appdata`
             `--createwatchingonly`                     | Create the wallet and instantiate it as watching only with an HD extended pubkey
     `-A` or `--appdata=`                               | Application data directory for wallet config, databases and logs (default: `~/.dcrwallet`)
             `--testnet`                                | Use the test network
@@ -113,8 +114,6 @@ dcrd --logdir=/my/custom/log/directory
             `--logdir=`                                | Directory to log output. (default: `~/.dcrwallet/logs`)
             `--profile=`                               | Enable HTTP profiling this interface/port
             `--memprofile=`                            | Write mem profile to the specified file
-            `--rollbacktest`                           | Rollback testing is a simnet testing mode that eventually stops wallet and examines wtxmgr database integrity
-            `--automaticrepair`                        | Attempt to repair the wallet automatically if a database inconsistency is found
             `--walletpass=`                            | The public wallet password -- Only required if the wallet was created with one
             `--promptpass`                             | The private wallet password is prompted for at start up, so the wallet starts unlocked without a time limit
             `--pass=`                                  | The private wallet passphrase
@@ -131,6 +130,7 @@ dcrd --logdir=/my/custom/log/directory
             `--allowhighfees`                          | Force the RPC client to use the 'allowHighFees' flag when sending transactions
             `--txfee=`                                 | Sets the wallet's tx fee per kb (default: 0.001 DCR)
             `--ticketfee=`                             | Sets the wallet's ticket fee per kb (default: 0.001 DCR)
+            `--accountgaplimit=`                       | Number of accounts that can be created in a row without using any of them (default: 10)
     `-c` or `--rpcconnect=`                            | Hostname/IP and port of dcrd RPC server to connect to
             `--cafile=`                                | File containing root certificates to authenticate a TLS connections with dcrd
             `--noclienttls`                            | Disable TLS for the RPC client -- **NOTE:** This is only allowed if the RPC client is connecting to localhost
@@ -139,6 +139,8 @@ dcrd --logdir=/my/custom/log/directory
             `--proxy=`                                 | Connect via SOCKS5 proxy (eg. 127.0.0.1:9050)
             `--proxyuser=`                             | Username for proxy server
             `--proxypass=`                             | Password for proxy server
+            `--spv`                                    |
+            `--spvconnect=`                            |
             `--rpccert=`                               | File containing the certificate file (default: `~/.dcrwallet/rpc.cert`)
             `--rpckey=`                                | File containing the certificate key (default: `~/.dcrwallet/rpc.key`)
             `--tlscurve=`                              | Curve to use when generating TLS keypairs (default: P-521)
@@ -159,23 +161,23 @@ dcrd --logdir=/my/custom/log/directory
             `--prunetickets`                           | **DEPRECATED** -- old tickets are always pruned
             `--ticketaddress=`                         | **DEPRECATED** -- use `--ticketbuyer.votingaddress` instead
             `--addridxscanlen=`                        | **DEPRECATED** -- use `--gaplimit` instead (default: 20)
-            `--ticketbuyer.avgpricemode=`              | The mode to use for calculating the average price if pricetarget is disabled (vwap, pool, dual) (default: vwap)
-            `--ticketbuyer.avgpricevwapdelta=`         | The number of blocks to use from the current block to calculate the VWAP (default: 2880)
-            `--ticketbuyer.maxfee=`                    | Maximum ticket fee per KB (default: 0.01 DCR)
-            `--ticketbuyer.minfee=`                    | Minimum ticket fee per KB (default: 0.001 DCR)
-            `--ticketbuyer.feesource=`                 | The fee source to use for ticket fee per KB (median or mean) (default: median)
-            `--ticketbuyer.maxperblock=`               | Maximum tickets per block, with negative numbers indicating buy one ticket every 1-in-n blocks (default: 1)
-            `--ticketbuyer.blockstoavg=`               | Number of blocks to average for fees calculation (default: 11)
-            `--ticketbuyer.feetargetscaling=`          | Scaling factor for setting the ticket fee, multiplies by the average fee (default: 1)
-            `--ticketbuyer.maxinmempool=`              | The maximum number of your tickets allowed in mempool before purchasing more tickets (default: 40)
-            `--ticketbuyer.expirydelta=`               | Number of blocks in the future before the ticket expires (default: 16)
-            `--ticketbuyer.maxpriceabsolute=`          | Maximum absolute price to purchase a ticket (default: 0 DCR)
-            `--ticketbuyer.maxpricerelative=`          | Scaling factor for setting the maximum price, multiplies by the average price (default: 1.25)
             `--ticketbuyer.balancetomaintainabsolute=` | Amount of funds to keep in wallet when stake mining (default: 0 DCR)
-            `--ticketbuyer.balancetomaintainrelative=` | Proportion of funds to leave in wallet when stake mining (default: 0.3)
-            `--ticketbuyer.nospreadticketpurchases`    | Do not spread ticket purchases evenly throughout the window
-            `--ticketbuyer.dontwaitfortickets`         | Don't wait until your last round of tickets have entered the blockchain to attempt to purchase more
             `--ticketbuyer.votingaddress=`             | Purchase tickets with voting rights assigned to this address
+            `--ticketbuyer.avgpricemode=`              | **DEPRECATED** -- The mode to use for calculating the average price if pricetarget is disabled (vwap, pool, dual) (default: vwap)
+            `--ticketbuyer.avgpricevwapdelta=`         | **DEPRECATED** -- The number of blocks to use from the current block to calculate the VWAP (default: 2880)
+            `--ticketbuyer.maxfee=`                    | **DEPRECATED** -- Maximum ticket fee per KB (default: 0.01 DCR)
+            `--ticketbuyer.minfee=`                    | **DEPRECATED** -- Minimum ticket fee per KB (default: 0.001 DCR)
+            `--ticketbuyer.feesource=`                 | **DEPRECATED** -- The fee source to use for ticket fee per KB (median or mean) (default: median)
+            `--ticketbuyer.maxperblock=`               | **DEPRECATED** -- Maximum tickets per block, with negative numbers indicating buy one ticket every 1-in-n blocks (default: 1)
+            `--ticketbuyer.blockstoavg=`               | **DEPRECATED** -- Number of blocks to average for fees calculation (default: 11)
+            `--ticketbuyer.feetargetscaling=`          | **DEPRECATED** -- Scaling factor for setting the ticket fee, multiplies by the average fee (default: 1)
+            `--ticketbuyer.maxinmempool=`              | **DEPRECATED** -- The maximum number of your tickets allowed in mempool before purchasing more tickets (default: 40)
+            `--ticketbuyer.expirydelta=`               | **DEPRECATED** -- Number of blocks in the future before the ticket expires (default: 16)
+            `--ticketbuyer.maxpriceabsolute=`          | **DEPRECATED** -- Maximum absolute price to purchase a ticket (default: 0 DCR)
             `--ticketbuyer.maxpricescale=`             | **DEPRECATED** -- Attempt to prevent the stake difficulty from going above this multiplier (>1.0) by manipulation, 0 to disable
+            `--ticketbuyer.maxpricerelative=`          | **DEPRECATED** -- Scaling factor for setting the maximum price, multiplies by the average price (default: 1.25)
+            `--ticketbuyer.balancetomaintainrelative=` | **DEPRECATED** -- Proportion of funds to leave in wallet when stake mining (default: 0.3)
             `--ticketbuyer.pricetarget=`               | **DEPRECATED** -- A target to try to seek setting the stake price to rather than meeting the average price, 0 to disable (default: 0 DCR)
+            `--ticketbuyer.nospreadticketpurchases`    | **DEPRECATED** -- Do not spread ticket purchases evenly throughout the window
             `--ticketbuyer.spreadticketpurchases`      | **DEPRECATED** -- Spread ticket purchases evenly throughout the window
+            `--ticketbuyer.dontwaitfortickets`         | **DEPRECATED** -- Don't wait until your last round of tickets have entered the blockchain to attempt

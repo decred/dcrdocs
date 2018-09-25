@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> `dcrctl` RPC Commands
 
-Last updated for v1.2.0.
+Last updated for CLI release v1.3.0.
 
 ## `dcrd` RPC Commands
 
@@ -8,11 +8,12 @@ Last updated for v1.2.0.
     RPC Method                |Params
     --------------------------|-------------
     `addnode`                 | `"addr"` `"add|remove|onetry"`
-    `createrawtransaction`    | `[{"txid":"value", "vout":n, "tree":n},...]` `{"address":amount,...}` (`locktime`)
+    `createrawtransaction`    | `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]` `{"address":amount,...}` (`locktime` `expiry`)
     `debuglevel`              | `"levelspec"`
     `decoderawtransaction`    | `"hextx"`
     `decodescript`            | `"hexscript"`
     `estimatefee`             | `numblocks`
+    `estimatesmartfee`        | `confirmations` `"mode"`
     `estimatestakediff`       | (`tickets`)
     `existsaddress`           | `"address"`
     `existsaddresses`         | `["address",...]`
@@ -94,11 +95,15 @@ Last updated for v1.2.0.
     `consolidate`             | `inputs` (`"account"` `"address"`)
     `createmultisig`          | `nrequired` `["key",...]`
     `createnewaccount`        | `"account"`
-    `createrawssgentx`        | `[{"txid":"value", "vout":n, "tree":n},...]` `votebits`
-    `createrawssrtx`          | `[{"txid":"value", "vout":n, "tree":n},...]` (`fee`)
-    `createrawsstx`           | `[{"txid":"value", "vout":n, "tree":n, "amt":n},...]` `amount` `[{"addr":"value", "commitamt":n, "changeaddr":"value", "changeamt":n},...]`
+    `createrawssgentx`        | `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]` `votebits`
+    `createrawssrtx`          | `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]` (`fee`)
+    `createrawsstx`           | `[{"txid":"value", "vout":n, "tree":n, "amt":n},...]` `amount` `[{"addr":"value", "commitamt":n, 
+    "changeaddr":"value", "changeamt":n},...]`
+    `createvotingaccount`     | `"name"` `"pubkey"` (`childindex=0`)
+    `dropvotingaccount`       |
     `dumpprivkey`             | `"address"`
     `estimatepriority`        | `numblocks`
+    `fundrawtransaction`      | `"hexstring"` `"fundaccount"` (`{"changeaddress":changeaddress,"feerate":feerate,"conftarget":conftarget}`)
     `generatevote`            | `"blockhash"` `height` `"tickethash"` `votebits` `"votebitsext"`
     `getaccount`              | `"address"`
     `getaccountaddress`       | `"account"`
@@ -129,8 +134,8 @@ Last updated for v1.2.0.
     `listsinceblock`          | (`"blockhash"` `targetconfirmations=1` `includewatchonly=false`)
     `listtransactions`        | (`"account"` `count=10` `from=0` `includewatchonly=false`)
     `listunspent`             | (`minconf=1` `maxconf=9999999` `["address",...]`)
-    `lockunspent`             | `unlock` `[{"txid":"value", "vout":n, "tree":n},...]`
-    `purchaseticket`          | `"fromaccount"` `spendlimit` (`minconf=1` `"ticketaddress"` `numtickets` `"pooladdress"` `poolfees` `expiry` `"comment"` `nosplittransaction` `ticketfee`)
+    `lockunspent`             | `unlock` `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]`
+    `purchaseticket`          | `"fromaccount"` `spendlimit` (`minconf=1` `"ticketaddress"` `numtickets` `"pooladdress"` `poolfees` `expiry` `"comment"` `ticketfee`)
     `redeemmultisigout`       | `"hash"` `index` `tree` (`"address"`)
     `redeemmultisigouts`      | `"fromscraddress"` (`"toaddress"` `number`)
     `renameaccount`           | `"oldaccount"` `"newaccount"`

@@ -36,7 +36,7 @@ For a more concrete example, assume the current chain tip is at block 5,000. The
 
 #### 6. What happens if a ticket I have missed a vote? 
 
-Your wallet will automatically revoke the ticket in the block after it is missed[^13912], so you get them back just after they were missed as immature funds (that means they will not be spendable for 256 blocks when they mature).
+When using dcrwallet, your wallet will automatically revoke the ticket in the block after it is missed[^13912], so you get them back just after they were missed as immature funds (that means they will not be spendable for 256 blocks when they mature). If you stake tickets with the GUI wallet Decrediton, you will need to click "Revoke Ticket" after the ticket is missed.
 
 For example:
 

@@ -15,6 +15,10 @@ extra:
       link: 'https://www.reddit.com/r/decred/'
     - type: 'youtube'
       link: 'https://www.youtube.com/decredchannel'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/decredproject'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company/decredproject/'
 site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
 repo_name: decred/dcrdocs

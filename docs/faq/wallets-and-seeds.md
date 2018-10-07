@@ -2,9 +2,9 @@
 
 ---
 
-#### 1. Should I give my wallet seed to someone? 
+#### 1. Why should I not store my seed in a file on my machine or share the seed with someone? 
 
-No, you should never[^8613] share your wallet seed with anyone. Doing so is the equivalent of giving them all of your DCR in that wallet.
+Your seed is used to recreate your wallet and its accounts granting anyone with knowledge of the seed complete control of the funds within the wallet. If your machine were to be compromised and your seed stolen, the attacker would have the ability to drain your funds by sending your DCR to wallets under their control. Likewise, sharing your seed with anyone regardless of your current level of trust is highly discouraged as this could pose a major security risk for your wallet that they may misuse access in the future or store the copy of the seed less securely than you.
 
 ---
 
@@ -82,7 +82,6 @@ The stake pool, however, uses a pay-to-script-hash address, which is identified 
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
 
-[^8613]: Decred Forum, [Post 8,613](https://forum.decred.org/threads/576/#post-8613)
 [^8660]: Decred Forum, [Post 8,660](https://forum.decred.org/threads/534/page-3#post-8660)
 [^9803]: Decred Forum, [Post 9,803](https://forum.decred.org/threads/686/#post-9803)
 [^10452]: Decred Forum, [Post 10,452](https://forum.decred.org/threads/734/#post-10452)

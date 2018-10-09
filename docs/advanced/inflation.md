@@ -16,7 +16,7 @@ If a block includes less than 5 PoS votes there will be a fraction of the block 
 
 The following chart shows an estimate of the coin supply growth over time.
 
-![Decred supply chart](../../img/decred_supply.png)
+![Decred supply chart](/img/decred_supply.png)
 
 The table below shows the estimated block reward and estimated total supply of Decred up to block 2,457,600 in 2039. Note that the total supply of DCR at block 1 is 1,680,000 due to the [premine](/faq/general.md#3-how-was-the-decred-premine-distributed). PoS voting started at block 4,096[^3] therefore PoS rewards were not generated before that height.
 

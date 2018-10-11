@@ -1,48 +1,65 @@
+# <img class="dcr-icon" src="/img/dcr-icons/UserProjects.svg" /> Politeia
 
-**What is Politeia?**
+Politeia (Pi for short) is the Decred proposal system developed to give stakeholders sovereignty over Decred's development through an open, immutable, and censorship resistant web application.
 
-Politeia, or Pi, is a platform which is being developed to support Decred’s governance. It facilitates the submission, tracking, and discussion of Decred governance proposals by the stakeholder community.
+---
 
-The Politeia web platform (at [proposals.decred.org](https://proposals.decred.org/)) facilitates browsing, discussing and submitting proposals.
+## Proposals
 
-**Politeia proposals**
+Community members may submit proposals through Pi with one of 3 main goals in mind:
+1. To alter/determine the Decred roadmap.
+2. To amend the Decred Constitution.
+3. To create a budget for a project to be paid for through the Decred Treasury.
 
-There are two broad types of proposal:
+Pi is an open platform meaning anyone on the internet can create an account and submit a proposal for Decred stakeholder consideration.
 
-1. Proposals that aim to establish Voter support for a course of action, e.g. direction of software development, adopting or changing some policy.
-2. Proposals that commit to spending project fund DCR, creating a budget that some entity can draw down against as they demonstrate progress towards the proposal's aim.
+---
 
-There is a fee for submitting a proposal (0.1 DCR), to limit the potential for proposal spamming. There is also a fee for registering a Politeia account (0.1 DCR), to limit comment spam and up/down voting sock-puppetry. Fees may be altered if a) they're not a sufficient spam-deterrent, or b) the price of DCR changes considerably.
+## Spam Resistance
+Since Pi is an open proposal platform it is likely to attract spam.
 
-Reddit-style **up/down voting** is used for **proposal and comment sorting only**. Up/down votes are not anonymous.
+In order to limit spam, there are two fees a user must pay to participate:
+1. **Account creation fee** (0.1DCR) - A one time fee that must be paid when registering an account on Pi.
+2. **Proposal submission fee**(0.1DCR) - A fee that must be paid when submitting a proposal.
 
-Ticket-voting on proposals doesn’t happen directly on Politeia, but from within a Decred wallet.
+!!! note
+​    These fees are subject to change based on their effectiveness at discouraging spam and change in DCR price.
 
-**Censorship**  
+To provide a second layer of defense against spam, all submitted proposals are reviewed by human administrators.
 
-When proposals are submitted, they are checked by Politeia administrators. Proposals that are deemed spam or invalid will be censored.
+---
 
-Politeia is built around the concept of _transparent censorship_, using [dcrtime](https://github.com/decred/dcrtime). Users cannot be silently censored, they can prove that censorship has occurred. When a proposal/comment is submitted, a censorship token is generated. Content creators can use these tokens to demonstrate that their specific proposal/comment was submitted, in a particular form, at a particular point in time.
+## Transparent Censorship 
 
-**Politeia users have cryptographic identities** (pub/priv key pairs) that can be used to demonstrate censorship of one's submissions. When you register for a Politeia account, a key-pair identity will be generated for you, this is stored in your browser by default.
+Pi was developed to facilitate transparent censorship in order to ensure that Pi administrators do no have the ability to silently censor a proposal.
 
-If you change browser/device you can import your Pi identity key or generate a new one, but for now it is important to *verify your account from the same browser you used to sign up*. The cryptographic Pi identity is only used for demonstrating that your submissions have been censored.
+When a user submits a proposal for review, they recieve a **censorship token** which serves as an immutable record of an individual identity's proposal being submitted for review.
 
-**Submitting and approving proposals**
+If an administrator is found to be unfairly censoring proposals, the creators of the censored proposals can use their censorship tokens to prove they were censored and hold that administrator publicly accountable.
 
-Politeia's aim is to serve as the decision-making force behind the Decred Decentralized Autonomous Entity (DAE). This is an ambitious aim, Politeia and its accompanying processes are in an experimental stage and thus subject to change.
+!!! note
+   Censhorship tokens are tied to the cryptographic identity of the user who submitted its corresponding proposal. All users recieve a cryptographic identity (public/private key pair) specific to their browser when they register an account on Pi.
 
-For now, the process is something like this:
+   When registering an account on Pi it is important to verify your account in the same brower that you used to register. After you are successfully verified your identity can be imported into a different browser. 
 
-1. Submit proposal.
-2. Proposal reviewed by Politeia admins, spam is censored.
-3. Valid proposals appear publicly on Politeia, open for discussion, but voting does not begin immediately.  	
-4. Ticket-voting interval (~1 week) can be triggered by the proposal owner. Until ticket-voting is triggered, the proposal can be edited by its owner in response to community feedback.
-5. Ticket-voting starts, ticket-holders vote through their wallet (details tbc).
-6. When the ticket-voting period ends, the proposal is formally approved or rejected. Some types of proposal will require a super-majority. Details like supermajorities and quorum required for different kinds of proposal are to be determined. 
-7. When a proposal with a budget and deliverables is approved, work can 	begin. The proposal owner can submit claims against that budget as deliverables are completed.
-8. Payment claims will be handled manually by Decred Holdings Group until such times as this process can be adequately decentralized.
+---
 
-Proposal voting works, initially, as a robust signalling mechanism from the Decred stakeholders to the people who control the project fund wallet. Over time, this will be iterated towards a DAE that decentralizes the functions currently performed by trusted humans. When the DAE is ready, it will control the project fund wallet directly.
+## Data Immutability
 
-For proposals that request funding, an initial set of guidelines and examples has been prepared (see bottom of this page)[https://github.com/decred/politeia/blob/master/politeia.md]. Guidelines for good proposals and policies for censoring proposals will be iterated once Politeia is live.
+In order to ensure governance through Pi is resistant to manipulation (internal or external), its data is made immutable.
+
+All data generated through Pi is stored off-chain but made cryptographically verifiable through **chain anchoring**. Leveraging the power of git and dcrTime, hashes of changes to pi data are periodically anchored into the blockchain, creating a timestamped record of the data.
+
+Chain anchoring allows the creation of an immutable record of Pi data without the need for large amounts of on-chain storage.
+
+---
+
+## The Proposal Process
+
+The stages a proposal will go through from submission to voted are as follows:
+1. **Review** - Once  proposals are submitted they are reviewed Pi admins. If the proposal is determined to be spam, it is censored. All acceptable proposals are released for public conciderations. 
+2. **Discussion** - Once released, the proposal is discussed by the community. During this stage the proposal may be edited by the writer in response to community feedback.
+3. **Voting** - Once ready, the proposal writer invokes the voting on their proposal. Ticketholder votes on whether to approve or deny the the proposal are collected over 1 week period. If approved by a majority vote, than the actions outlined within the proposal may be performed.
+
+!!! note
+​    Pi is a step toward fully decentralizing the governance of Decred's development. Currently, pi serves as a signaling mechanism from stakeholders to the trusted humans in control of the Decred Treasury wallet (Decred Holdings Group). Relinquishment of control over the Treasury to a DAE in order to achieve true decentralization is planned for the future.

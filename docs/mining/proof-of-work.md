@@ -47,9 +47,13 @@ Follow the [dcrctl Basics](/getting-started/user-guides/dcrctl-basics.md) guide 
 
 These mining pools are known to support Decred:
 
-* [:fa-external-link-square: https://dcr.suprnova.cc](https://dcr.suprnova.cc)
-* [:fa-external-link-square: http://coinmine.pl/dcr](http://coinmine.pl/dcr)
-* [:fa-external-link-square: http://mining.luxor.tech](http://mining.luxor.tech)
+* [:fa-external-link-square: BeePool](beepool.org)
+* [:fa-external-link-square: F2Pool](f2pool.com)
+* [:fa-external-link-square: Poolin](poolin.com)
+* [:fa-external-link-square: UUpool](uupool.cn/dcr)
+* [:fa-external-link-square: Luxor](decred.luxor.tech)
+* [:fa-external-link-square: Coinmine](coinmine.pl/dcr)
+* [:fa-external-link-square: Suprnova](dcr.suprnova.cc)
 
 Mining pools all work more or less the same but you may wish to sign up at multiple pools and see which one suits you the best.
 

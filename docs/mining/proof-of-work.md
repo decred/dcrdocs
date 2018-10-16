@@ -39,7 +39,7 @@ Pool mining distributes shares based on blocks found so you can earn a steady am
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Receive.svg" /> Obtain a Decred Address to Receive Funds With
 
-Follow the [dcrctl Basics](/getting-started/user-guides/dcrctl-basics.md) guide and create an address so you can withdraw mining rewards to it.
+Follow the [dcrctl Basics](../getting-started/user-guides/dcrctl-basics.md) guide and create an address so you can withdraw mining rewards to it.
 
 ---
 
@@ -75,7 +75,7 @@ Gominer is the official Decred miner developed and supported by the Decred team.
 
 Please be certain to select the correct operating system (Windows/Linux) and the correct version for your GPU type (CUDA for NVIDIA cards, OpenCL/OpenCLADL for AMD cards). gominer is only available to 64-bit operating systems. User guides to start mining with gominer can be found here:
 
-- [gominer Pool-Mining](/mining/proof-of-work/pool-mining/gominer.md)
+- [gominer Pool-Mining](../mining/proof-of-work/pool-mining/gominer.md)
 
 ### Unofficial Miners
 
@@ -94,4 +94,4 @@ Please be certain to select the correct operating system (Windows/Linux) and the
 * Follow your mining pools instructions for setup.
 * Run the miner.
 
-Continue to [PoW Mining FAQ](/faq/proof-of-work-mining.md)
+Continue to [PoW Mining FAQ](../faq/proof-of-work-mining.md)

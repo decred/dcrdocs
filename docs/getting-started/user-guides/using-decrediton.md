@@ -59,7 +59,7 @@ addresses available so you don't need to worry about running out.
 
 This tab shows a list of all transactions that have occurred involving this wallet. A dropdown menu allows filtering the list
 by transaction type: regular, ticket and vote transactions. The transaction hash can be used with the
-[block explorer](/getting-started/using-the-block-explorer.md) to see more information about the transaction.
+[block explorer](../using-the-block-explorer.md) to see more information about the transaction.
 
 ![History Tab](/img/decrediton/history.png)
 
@@ -69,7 +69,7 @@ by transaction type: regular, ticket and vote transactions. The transaction hash
 
 The tickets tab allows you to see how many proof of stake tickets you current have, to buy new tickets, and to set your voting preferences.
 
-Before you can use the tickets tab you must first import the API key from your [stakepool account](/mining/how-to-stake.md#pos-using-a-stakepool).
+Before you can use the tickets tab you must first import the API key from your [stakepool account](../../mining/how-to-stake.md#pos-using-a-stakepool).
 
 ![Tickets Tab](/img/decrediton/tickets.png)
 

@@ -69,7 +69,7 @@ As Decrediton allows you to manage multiple wallets on one PC, you must give a n
 
 1. **Create a New Wallet** - Press this button if this is your first time using Decred.
 
-1. **Restore Existing Wallet** - Press this button if you already have a wallet seed. You can skip ahead to [Restore Existing Wallet From Seed](/getting-started/user-guides/decrediton-setup.md#restore-existing-wallet-from-seed)
+1. **Restore Existing Wallet** - Press this button if you already have a wallet seed. You can skip ahead to [Restore Existing Wallet From Seed](decrediton-setup.md#restore-existing-wallet-from-seed)
 
 ![Decrediton create wallet screen](/img/decrediton/create-wallet.png)
 

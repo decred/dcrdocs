@@ -6,11 +6,11 @@
 
 Decred's unique Proof-of-Stake protocol serves multiple purposes:
 
-1. Allowing stakeholders to vote for or against proposed changes to the Decred blockchain. If stakeholders vote in support of a change, the chain will hardfork and the new feature becomes active automatically. More information on voting can be found in the [Mainnet Voting Guide](/getting-started/user-guides/agenda-voting.md).
+1. Allowing stakeholders to vote for or against proposed changes to the Decred blockchain. If stakeholders vote in support of a change, the chain will hardfork and the new feature becomes active automatically. More information on voting can be found in the [Mainnet Voting Guide](../getting-started/user-guides/agenda-voting.md).
 
 1. Providing a mechanism for stakeholders to keep check of nonconforming proof-of-work miners. Stakeholders can vote a block invalid even if it conforms to the consensus rules of the network. This allows stakeholders to discourage unfavourable mining behavior such as mining empty blocks.
 
-1. Allowing long-term holders of Decred to lock up their funds for a length of time in order to accrue new coins from the [Block Reward](/advanced/inflation/).
+1. Allowing long-term holders of Decred to lock up their funds for a length of time in order to accrue new coins from the [Block Reward](../advanced/inflation.md).
 
 ---
 
@@ -56,14 +56,14 @@ A ticket on main net (test net uses different parameters) will go through a few 
 
 ## Additional Information 
 
-[Mainnet Voting Guide](/getting-started/user-guides/agenda-voting.md)
+[Mainnet Voting Guide](../getting-started/user-guides/agenda-voting.md)
 
-[Proof-of-Stake FAQ - General](/faq/proof-of-stake/general.md)
+[Proof-of-Stake FAQ - General](../faq/proof-of-stake/general.md)
 
-[Proof-of-Stake FAQ - Buying Tickets and Fees](/faq/proof-of-stake/buying-tickets-and-fees.md)
+[Proof-of-Stake FAQ - Buying Tickets and Fees](../faq/proof-of-stake/buying-tickets-and-fees.md)
 
-[Proof-of-Stake FAQ - Solo Mining](/faq/proof-of-stake/solo-mining.md)
+[Proof-of-Stake FAQ - Solo Mining](../faq/proof-of-stake/solo-mining.md)
 
-[Proof-of-Stake FAQ - Stake Pools](/faq/proof-of-stake/stake-pools.md)
+[Proof-of-Stake FAQ - Stake Pools](../faq/proof-of-stake/stake-pools.md)
 
-[Proof-of-Stake FAQ - Voting Tickets](/faq/proof-of-stake/voting-tickets.md)
+[Proof-of-Stake FAQ - Voting Tickets](../faq/proof-of-stake/voting-tickets.md)

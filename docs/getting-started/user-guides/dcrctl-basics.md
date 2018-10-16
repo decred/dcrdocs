@@ -2,9 +2,9 @@
 
 **Prerequisites:**
 
-- Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md) to install the command line tools.
-- [Setup dcrd](/getting-started/user-guides/dcrd-setup.md) and have it running in the background.
-- [Setup dcrwallet](/getting-started/user-guides/dcrwallet-setup.md) and have it running in the background.
+- Use the latest [dcrinstall](cli-installation.md) to install the command line tools.
+- [Setup dcrd](dcrd-setup.md) and have it running in the background.
+- [Setup dcrwallet](dcrwallet-setup.md) and have it running in the background.
 
 ---
 
@@ -58,7 +58,7 @@ If the command was successful, you will not get a confirmation from `dcrctl`, bu
 [INF] RPCS: The wallet has been unlocked without a time limit.
 ```
 
-NOTE: Because unlocking the wallet is required for many functions of `dcrwallet`, `dcrwallet` can be started with the `--promptpass` flag or setting `promptpass=true` in `dcrwallet.conf` (discussed [here](/advanced/storing-login-details.md#dcrwalletconf)).
+NOTE: Because unlocking the wallet is required for many functions of `dcrwallet`, `dcrwallet` can be started with the `--promptpass` flag or setting `promptpass=true` in `dcrwallet.conf` (discussed [here](../../advanced/storing-login-details.md)).
 
 ---
 
@@ -94,7 +94,7 @@ To send DCR to an address, issue the `sendtoaddress` command to `dcrwallet` usin
 dcrctl --wallet sendtoaddress <address> <amount>
 ```
 
-If successful, `dcrctl` will return a transaction hash that can be used to watch the transaction on the official [Decred Block Explorer](/getting-started/using-the-block-explorer.md).
+If successful, `dcrctl` will return a transaction hash that can be used to watch the transaction on the official [Decred Block Explorer](../using-the-block-explorer.md).
 
 ---
 
@@ -118,6 +118,6 @@ dcrctl --wallet getstakeinfo
 
 ## Additional Commands
 
-More commands can also be found on the [dcrctl RPC Commands](/getting-started/dcrctl-rpc-commands.md) page.
+More commands can also be found on the [dcrctl RPC Commands](../dcrctl-rpc-commands.md) page.
 
 ---

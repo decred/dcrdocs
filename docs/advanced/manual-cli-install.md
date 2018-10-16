@@ -66,7 +66,7 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
 At the very minimum, for `dcrd`, `dcrwallet`, and `dcrctl` to be able to communicate with each other, they need to be launched with the same `rpcuser`/`rpcpass` combination. For manual configuration please follow these steps:
 
-1. If the OS-specific home directories listed in [Configuration File Locations](/getting-started/startup-basics#configuration-file-locations) do not exist, please create them for `dcrd`, `dcrwallet`, and `dcrctl`.
+1. If the OS-specific home directories listed in [Configuration File Locations](../getting-started/startup-basics.md#configuration-file-locations) do not exist, please create them for `dcrd`, `dcrwallet`, and `dcrctl`.
 
 2. Choose an arbitrary username and password, these will only be used for each application to communicate via remote procedure call. The easiest configuration is to set them all equal.
 

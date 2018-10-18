@@ -4,7 +4,7 @@
 
 ## Welcome To Decred 
 
-This guide offers signposts to some useful resources, including how to set up your Decred wallet, buy DRC, participate in Decred’s governance, connect with the community and contribute to the project (contributors welcome!). 
+This guide offers signposts to some useful resources, including how to set up your Decred wallet, buy DCR, participate in Decred’s governance, connect with the community and contribute to the project (contributors welcome!). 
 
 ## Wallets
 

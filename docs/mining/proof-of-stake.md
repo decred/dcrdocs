@@ -32,7 +32,7 @@ When the **Ticket Price** gets relatively low for a single **Ticket Window**, yo
 
 When a ticket is called to vote, the wallet that has voting rights for that ticket must be online. If the wallet is not online to cast its vote, the ticket will be marked as `missed` and you will not receive a reward for that ticket. Stakepools are offered as a solution for those that cannot have a voting wallet online 24/7.
 
-Stakepools allow stakeholders to generate ticket purchase transactions that give a stakepool voting rights for your ticket. They vote on your behalf, usually requiring a small fee for participation (under 7%) which covers the cost of hosting the minimum of 3 servers required to run a stakepool. This fee is known as the **Pool Fee** and is only taken out of the small PoS reward. A list of stakepools can be found [below](#list-of-stakepools).
+Stakepools allow stakeholders to generate ticket purchase transactions that give a stakepool voting rights for your ticket. They vote on your behalf, usually requiring a small fee for participation (under 7%) which covers the cost of hosting the minimum of 3 servers required to run a stakepool. This fee is known as the **Pool Fee** and is only taken out of the small PoS reward. A list of stakepools can be found [here](https://decred.org/stakepools/).
 
 ---
 

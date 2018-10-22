@@ -5,6 +5,14 @@ theme:
   logo: 'img/decred_logo_symbol_128.svg'
   font: false
 extra:
+  decreditonversion:
+    windows: 1.4.0-rc3
+    linux: 1.4.0-rc3
+    mac: 1.4.0-rc3
+  cliversion:
+    windows: 1.4.0-rc3
+    linux: 1.4.0-rc3
+    mac: 1.4.0-rc3
   social:
     - type: 'github'
       link: 'https://github.com/decred'
@@ -37,6 +45,8 @@ extra_javascript:
 extra_css:
   - css/fonts.css
   - css/style.css
+plugins:
+  - markdownextradata
 nav:
 - 'Home': 'index.md'
 - Getting Started:

@@ -26,7 +26,7 @@ There are a few possible outcomes of a vote:
 
 Below is a diagram of the entire cycle for a single agenda with consensus upgrades.
 
-<img src="/img/voting-cycle-v9.png">
+<img src="/img/voting-cycle.png">
 
 ---
 

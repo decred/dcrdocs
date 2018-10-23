@@ -96,7 +96,7 @@ If you receive a message similar to the one above, it means your dcrd node alrea
 
 ![Cannot purchase ticket](/img/decrediton/trouble-purchaseticket.png)
 
-This is usually caused by shutting down decrediton before a ticket has been mined.
+This is usually caused by shutting down Decrediton before a ticket has been mined.
 
 Perform the same steps as described in ["Cannot see all my coins"](#cannot-see-all-my-coins-after-restoring-from-seed)
 

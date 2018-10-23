@@ -42,7 +42,7 @@ To ease debugging of problems, you can run in debug mode in a terminal (command 
 $ ./decrediton --debug
 
 # Windows:
-c:\[...]> decrediton.exe -debug
+c:\[...]> decrediton.exe --debug
 ```
 
 ## Cannot see all my coins after restoring from seed

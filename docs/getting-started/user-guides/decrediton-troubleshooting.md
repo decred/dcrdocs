@@ -35,7 +35,7 @@ And finally, the blockchain (dcrd) log is located in:
 
 ## Running in debug mode
 
-To ease debugging of problems, you can run in debug mode in a terminal (command line console window). You need to open a terminal (`cmd.exe` in windows), navigate to the directory where decrediton is installed and then execute it:
+To ease debugging of problems, you can run in debug mode in a terminal (command line console window). You need to open a terminal (`cmd.exe` in Windows), navigate to the directory where Decrediton is installed and then execute it:
 
 ```
 # Linux/macOS:

@@ -4,7 +4,7 @@
 
     Before starting any attempt at fixing a broken wallet, ensure you have your **correct** 33 word seed written down (preferably physically, in a piece of paper) and accessible.
 
-    If you have lost your seed, you are in serious danger of losing access to your funds permanently. See the ["I have lost my seed"](/faq/wallets-and-seeds/#9-i-have-lost-my-seed-what-can-i-do) section of the seed FAQ for instructions in that situation.
+    If you have lost your seed, you are in serious danger of losing access to your funds permanently. See the ["I have lost my seed"](/faq/wallets-and-seeds.md#9-i-have-lost-my-seed-what-can-i-do) section of the seed FAQ for instructions in that situation.
 
 
 ## Location of data and log files

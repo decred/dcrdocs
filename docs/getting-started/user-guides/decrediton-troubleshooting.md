@@ -80,7 +80,7 @@ Check the following:
 
 4. Disable any antivirus or protection software and try running again.
 
-4. Run Decrediton's dcrd version in the terminal and look for any fatal messages or panics.
+5. Run Decrediton's dcrd version in the terminal and look for any fatal messages or panics.
 
 ## Error "Already Have Transaction..."
 

@@ -39,7 +39,7 @@ To ease debugging of problems, you can run in debug mode in a terminal (command 
 
 ```
 # Linux/macOS:
-$ ./decrediton -debug
+$ ./decrediton --debug
 
 # Windows:
 c:\[...]> decrediton.exe -debug

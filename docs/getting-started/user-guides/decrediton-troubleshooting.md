@@ -86,7 +86,11 @@ Check the following:
 
 ![Rebroadcast error](/img/decrediton/trouble-rebroadcast.png)
 
-If you receive a message similar to the one above, it means your dcrd node already has the transaction you're trying to publish. This is harmless, but if the transaction is left as pending for a long time, you may try rebroadcasting it again, checking the explorer if the transaction was actually published/mined or perform a rescan.
+If you receive a message similar to the one above, it means your dcrd node already has the transaction you're trying to publish. This is harmless, but if the transaction is left pending for a long time, you could try:
+
+- Rebroadcast the transaction using the button in the Transactions tab
+- Check if your transaction has been broadcast by using the [block explorer](https://explorer.dcrdata.org/)  
+- Perform a rescan
 
 ## Cannot Purchase Tickets
 

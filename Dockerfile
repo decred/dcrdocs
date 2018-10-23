@@ -16,10 +16,12 @@ RUN pip install mkdocs && \
 RUN ./build_docs.sh && chmod -R a+rw site
 
 # Serve image
-FROM httpd:alpine
+FROM httpd:2.4.35-alpine
 
 LABEL description="dcrdocs serve"
 LABEL version="1.0"
 LABEL maintainer "holdstockjamie@gmail.com"
+
+COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
 
 COPY --from=build ./root/site/ /usr/local/apache2/htdocs/

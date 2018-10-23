@@ -110,28 +110,3 @@ Press **Create Wallet** and your wallet setup is complete. You will be taken bac
 1. Create a private passphrase for your wallet.
 
 1. Select **Create Wallet**. Wait for the blockchain to be scanned.
-
----
-
-## Troubleshooting
-
-*Decrediton will not start!*
-
-```
-dcrd closed due to an error. Check dcrd logs
-and contact support if the issue persists.
-```
-
-If you encounter the above error, it could be because there is already a running instance of `dcrd` on your machine. Decrediton attempts to start its own instance of `dcrd` and `dcrwallet` in the background.
-
-You could possibly resolve this by killing any any running `dcrd` processes prior to restarting Decrediton.
-
-*Where does Decrediton store data/write log files?*
-
-Decrediton stores the blockchain, your wallet, log files and its own configuration files all in a single directory. A different directory is used depending on the operating system:
-
-| OS      | Decrediton data directory                   |
-| -------:|:-------------------------------------------:|
-| Windows | `%LOCALAPPDATA%\Decrediton\`                |
-| macOS   | `~/Library/Application Support/Decrediton/` |
-| Linux   | `~/.config/decrediton/`                     |

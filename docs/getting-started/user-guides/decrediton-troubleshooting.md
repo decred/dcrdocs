@@ -55,7 +55,7 @@ c:\[...]> decrediton.exe --debug
 
 3. Rebroadcast any pending transactions (access the transaction and click the "Rebroadcast" button) and verify in the block explorer if it has been published and mined.
 
-3. Perform a full rescan of the transactions (click on the small refresh button besides the "Latest Block" label).
+4. Perform a full rescan of the transactions (click on the small refresh button besides the "Latest Block" label).
 
 ## Decrediton will not start (dcrd closed due to an error)
 

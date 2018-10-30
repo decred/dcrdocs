@@ -8,7 +8,7 @@ Last updated for Decrediton v1.2.1.
 
 !!! info "Blockchain Download"
 
-	Without SPV enabled, Decrediton needs to download a full copy of the Decred blockchain before it can be used. This means that a large download must be completed and a large amount of storage space must be be available on the device where Decrediton is installed. You can check the current size of all serialized blocks via [dcrdata charts](https://explorer.dcrdata.org/charts#blockchain-size). The total size of Decrediton will be bigger, since additional wallet data is stored on your device.
+    Without SPV enabled, Decrediton needs to download a full copy of the Decred blockchain before it can be used. This means that a large download must be completed and a large amount of storage space must be be available on the device where Decrediton is installed. You can check the current size of all serialized blocks via [dcrdata charts](https://explorer.dcrdata.org/charts#blockchain-size). The total size of Decrediton will be bigger, since additional wallet data is stored on your device.
 
 ---
 
@@ -16,32 +16,33 @@ Last updated for Decrediton v1.2.1.
 
 The latest version of Decrediton can be downloaded from [https://decred.org/downloads/](https://decred.org/downloads/).
 
-> Windows
+??? info "Windows instructions (click to expand)"
 
-1. Download the Windows installer `decrediton-v1.2.1.exe`.
+    1. Download the Windows installer `decrediton-v1.2.1.exe`.
 
-1. Double click the installer and follow the instructions. This will install and automatically start up Decrediton to download the Decred blockchain and set up your wallet.
+    1. Double click the installer and follow the instructions. This will install and automatically start up Decrediton to download the Decred blockchain and set up your wallet.
 
-1. The installer adds a shortcut to Decrediton on your desktop for next time you want to use it.
+    1. The installer adds a shortcut to Decrediton on your desktop for next time you want to use it.
 
-> macOS
+??? info "macOS instructions (click to expand)"
 
-1. Download the `decrediton-v1.2.1.dmg` file.
+    1. Download the `decrediton-v1.2.1.dmg` file.
 
-1. Double click the `decrediton-v1.2.1.dmg` file once downloaded to mount the disk image.
+    1. Double click the `decrediton-v1.2.1.dmg` file once downloaded to mount the disk image.
 
-1. Drag the decrediton.app into the link to your Applications folder within the disk image.
+    1. Drag the decrediton.app into the link to your Applications folder within the disk image.
 
-> Linux
+??? info "Linux instructions (click to expand)"
 
-1. Download the `decrediton-v1.2.1.tar.gz` file.
+    1. Download the `decrediton-v1.2.1.tar.gz` file.
 
-1. Navigate to download location and extract the .tar.gz file:
+    1. Navigate to download location and extract the .tar.gz file:
 
-    Ubuntu File Browser: simply right click on the .tar.gz file and select "Extract Here". <br />
-    Terminal: use the `tar -xvzf filename.tar.gz` command.
+        Ubuntu File Browser: simply right click on the .tar.gz file and select "Extract Here".
 
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.2.1.tar.gz` should extract to `decrediton-v1.2.1`). If successful, this new folder should include a `decrediton` executable.
+        Terminal: use the `tar -xvzf filename.tar.gz` command.
+
+        Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.2.1.tar.gz` should extract to `decrediton-v1.2.1`). If successful, this new folder should include a `decrediton` executable.
 
 ---
 

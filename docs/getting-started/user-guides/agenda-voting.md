@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Mainnet Voting Guide
+# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Consensus rules voting
 
 This guide was last updated on September 23, 2017.
 

@@ -1,1 +1,7 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 450"><defs><style>.cls-1{fill:#8795a2;}.cls-2{fill:#121f3c;}.cls-3{fill:none;}</style></defs><title>Download</title><g id="_Group_" data-name="&lt;Group&gt;"><rect id="_Rectangle_" data-name="&lt;Rectangle&gt;" class="cls-1" x="87.5" y="75" width="300" height="300" rx="1.95" ry="1.95"/><rect id="_Rectangle_2" data-name="&lt;Rectangle&gt;" class="cls-2" x="112.5" y="300" width="250" height="25"/><rect id="_Rectangle_3" data-name="&lt;Rectangle&gt;" class="cls-2" x="122.32" y="127.68" width="230.35" height="25" transform="translate(97.32 377.68) rotate(-90)"/><rect id="_Rectangle_4" data-name="&lt;Rectangle&gt;" class="cls-2" x="160.99" y="218.31" width="100" height="25" transform="translate(196.99 543.21) rotate(-135)"/><rect id="_Rectangle_5" data-name="&lt;Rectangle&gt;" class="cls-2" x="214.02" y="218.31" width="100" height="25" transform="translate(-85.87 254.29) rotate(-45)"/></g><rect class="cls-3" width="450" height="450"/></svg>
+<svg width="300" height="350" viewBox="0 0 300 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M298.05 49.99H1.95C0.873042 49.99 0 50.863 0 51.94V348.04C0 349.117 0.873042 349.99 1.95 349.99H298.05C299.127 349.99 300 349.117 300 348.04V51.94C300 50.863 299.127 49.99 298.05 49.99Z" fill="#C4CBD2"/>
+<path d="M275 274.99H25V299.99H275V274.99Z" fill="#091440"/>
+<path d="M137.5 -3.05176e-05V230.35H162.5V-3.05176e-05H137.5Z" fill="#091440"/>
+<path d="M79.3108 179.284L150.021 249.994L167.699 232.317L96.9885 161.606L79.3108 179.284Z" fill="#091440"/>
+<path d="M203.045 161.603L132.334 232.313L150.012 249.991L220.722 179.28L203.045 161.603Z" fill="#091440"/>
+</svg>

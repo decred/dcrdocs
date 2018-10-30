@@ -1,1 +1,9 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 450"><defs><style>.cls-1{fill:#8795a2;}.cls-2{fill:#121f3c;}.cls-3{fill:none;}</style></defs><title>RFP</title><polygon id="_Path_" data-name="&lt;Path&gt;" class="cls-1" points="49.74 25.01 24.74 75 25 75 74.73 75 49.74 25.01"/><rect id="_Path_2" data-name="&lt;Path&gt;" class="cls-2" x="125" y="225" width="275" height="25"/><rect id="_Path_3" data-name="&lt;Path&gt;" class="cls-2" x="125" y="275" width="137" height="25"/><polygon id="_Path_4" data-name="&lt;Path&gt;" class="cls-2" points="25 425 75 425 75 75 74.73 75 25 75 25 75.01 25 425"/><path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" class="cls-1" d="M100,338.43V425l67.83,0H425V25H100ZM125,125H400v25H125Zm0,50H400v25H125Zm0,50H400v25H125Zm0,50H262v25H125Z"/><rect id="_Path_5" data-name="&lt;Path&gt;" class="cls-2" x="125" y="175" width="275" height="25"/><rect id="_Path_6" data-name="&lt;Path&gt;" class="cls-2" x="125" y="125" width="275" height="25"/><rect class="cls-3" width="450" height="450"/></svg>
+<svg width="401" height="400" viewBox="0 0 401 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25 0.0100098L0 50H0.26001H49.99L25 0.0100098Z" fill="#C4CBD2"/>
+<path d="M375.26 200H100.26V225H375.26V200Z" fill="#091440"/>
+<path d="M237.26 250H100.26V275H237.26V250Z" fill="#091440"/>
+<path d="M0.259766 400H50.2598V50H49.9897H0.259766V50.01V400Z" fill="#091440"/>
+<path d="M75.2598 313.43V400H143.09H400.26V0H75.2598V313.43ZM100.26 100H375.26V125H100.26V100ZM100.26 150H375.26V175H100.26V150ZM100.26 200H375.26V225H100.26V200ZM100.26 250H237.26V275H100.26V250Z" fill="#C4CBD2"/>
+<path d="M375.26 150H100.26V175H375.26V150Z" fill="#091440"/>
+<path d="M375.26 100H100.26V125H375.26V100Z" fill="#091440"/>
+</svg>

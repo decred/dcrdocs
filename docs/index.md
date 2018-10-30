@@ -18,7 +18,7 @@ To align incentives, block rewards are split between PoW miners, stakeholders an
 
 The remaining 10% of the block reward goes into a [Project Treasury fund](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx). Holders of live tickets decide how that treasury is used through [Politeia proposals and voting](governance/politeia.md).
 
-The [Decred Constitution](getting-started/constitution.md) sets out some guiding principles for the project; the constitution is subject to amendment through Politeia proposals.
+The [Decred Constitution](governance/decred-constitution.md) sets out some guiding principles for the project; the constitution is subject to amendment through Politeia proposals.
 
 
 

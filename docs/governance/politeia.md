@@ -45,4 +45,4 @@ For now, the process is something like this:
 
 Proposal voting works, initially, as a robust signalling mechanism from the Decred stakeholders to the people who control the project fund wallet. Over time, this will be iterated towards a DAE that decentralizes the functions currently performed by trusted humans. When the DAE is ready, it will control the project fund wallet directly.
 
-For proposals that request funding, an initial set of guidelines and examples has been prepared (see bottom of this page)[https://github.com/decred/politeia/blob/master/politeia.md]. Guidelines for good proposals and policies for censoring proposals will be iterated once Politeia is live.
+For proposals that request funding, an initial set of guidelines and examples has been prepared. It can be found at the bottom of [this page](https://github.com/decred/politeia/blob/master/politeia.md). Guidelines for good proposals and policies for censoring proposals will be iterated once Politeia is live.

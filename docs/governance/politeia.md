@@ -39,8 +39,8 @@ For now, the process is something like this:
 3. Valid proposals appear publicly on Politeia, open for discussion, but voting does not begin immediately.  	
 4. Ticket-voting interval (~1 week) can be triggered by the proposal owner. Until ticket-voting is triggered, the proposal can be edited by its owner in response to community feedback.
 5. Ticket-voting starts, ticket-holders vote through their wallet (details tbc).
-6. When the ticket-voting period ends, the proposal is formally approved or rejected. Some types of proposal will require a super-majority. Details like supermajorities and quorum required for different kinds of proposal are to be determined. 
-7. When a proposal with a budget and deliverables is approved, work can 	begin. The proposal owner can submit claims against that budget as deliverables are completed.
+6. When the ticket-voting period ends, the proposal is formally approved or rejected. A typical proposal must meet a 20% quorum and 60% approval threshold to pass. Some types of proposal will require a super-majority. Details like supermajorities and quorum required for different kinds of proposal are to be determined. 
+7. When a proposal with a budget and deliverables is approved, work can begin. The proposal owner can submit claims against that budget as deliverables are completed.
 8. Payment claims will be handled manually by Decred Holdings Group until such times as this process can be adequately decentralized.
 
 Proposal voting works, initially, as a robust signalling mechanism from the Decred stakeholders to the people who control the project fund wallet. Over time, this will be iterated towards a DAE that decentralizes the functions currently performed by trusted humans. When the DAE is ready, it will control the project fund wallet directly.

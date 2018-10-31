@@ -88,7 +88,7 @@ If you still have access to the wallet and the passphrase you need to **IMMEDIAT
 
 If you have live tickets, maintain both wallets until all tickets have voted, then transfer the remaining funds to the new wallet.
 
-You should backup your `wallet.db` file (preferably in a thumb drive stored in a secure location) until all funds have been transfered.
+You should backup your `wallet.db` file (preferably in a thumb drive stored in a secure location) until all funds have been transferred.
 
 ---
 

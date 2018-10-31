@@ -1,3 +1,5 @@
+# <img class="dcr-icon" src="/img/dcr-icons/Governance.svg" /> Introduction to Decred governance
+
 ---
 
 *Decred* (/ˈdi:ˈkred/, /dɪˈkred/, dee-cred) is an open, progressive, and self-funding cryptocurrency with a system of community-based governance integrated into its blockchain. The project mission is to develop technology for the public benefit, with a primary focus on cryptocurrency technology.

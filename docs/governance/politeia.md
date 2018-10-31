@@ -1,3 +1,6 @@
+# <img class="dcr-icon" src="/img/dcr-icons/Politeia.svg" /> Politeia proposals and voting
+
+---
 
 **What is Politeia?**
 

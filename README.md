@@ -88,7 +88,7 @@ $ docker run -d --rm -p <local port>:80 decred/dcrdocs:latest
 
 #### Testnet reset
 
-- `getting-started/using-testnet.md`
+- `advanced/using-testnet.md`
 
 
 ## Getting help

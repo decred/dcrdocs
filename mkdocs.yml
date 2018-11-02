@@ -81,7 +81,7 @@ nav:
   - 'Blocks': 'faq/blocks.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
 - Advanced:
-  - 'Using Testnet': 'getting-started/using-testnet.md'
+  - 'Using Testnet': 'advanced/using-testnet.md'
   - 'Manual CLI Installation': 'advanced/manual-cli-install.md'
   - 'Storing Login Details': 'advanced/storing-login-details.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'

@@ -103,10 +103,10 @@ nav:
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - Contributing:
-  - 'Contributor Compensation': 'advanced/contributor-compensation.md'
+  - 'Contributor Compensation': 'contributing/contributor-compensation.md'
   - Guidelines:
-    - 'Using GitHub': 'advanced/using-github.md'
-    - 'Source Code Contributions': 'advanced/contributing.md'
+    - 'Using GitHub': 'contributing/using-github.md'
+    - 'Source Code Contributions': 'contributing/source-code-contributions.md'
 - About:
   - 'Credits': 'about/credits.md'
   - 'License': 'about/license.md'

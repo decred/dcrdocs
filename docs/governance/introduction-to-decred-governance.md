@@ -14,13 +14,13 @@ In each block, five live tickets are selected pseudo-randomly and called to vote
 
 On-chain voting serves the following purposes:
 
-1. [Agenda voting](getting-started/user-guides/agenda-voting/) to *approve or reject a proposed change to the consensus rules* of the protocol. A proposed change must be approved by 75% of non-abstaining tickets to take effect.
+1. [Agenda voting](consensus-rules-voting.md) to *approve or reject a proposed change to the consensus rules* of the protocol. A proposed change must be approved by 75% of non-abstaining tickets to take effect.
 
 1. Voting to *approve the work of PoW Miners*. In order for a PoW Miner to receive their share of the block reward, at least three of the five tickets called in the subsequent block must approve their block. This gives ticket-holders power over PoW Miners in the case of undesirable behavior by miners (e.g. mining empty blocks), although this power is yet to be exercised on mainnet.
 
 Decred's on-chain governance is supplemented by *Politeia proposal voting*, which doesn't happen directly on-chain but is woven into the Decred blockchain in some ways. 
 
-Politeia proposals concern the direction of the project, they may involve spending the [project subsidy fund](http://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) (10% of the block reward goes into this fund to support development of the project) or amending the [Decred Constitution](../getting-started/constitution.md) or other policies.
+Politeia proposals concern the direction of the project, they may involve spending the [project subsidy fund](http://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) (10% of the block reward goes into this fund to support development of the project) or amending the [Decred Constitution](decred-constitution.md) or other policies.
 
 Politeia is built around the concept of _transparent censorship_, using [dcrtime](https://github.com/decred/dcrtime). Users cannot be silently censored, they can prove that censorship has occurred.
 

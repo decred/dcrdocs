@@ -1,10 +1,10 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> Manual CLI Installation
 
-Last updated for CLI release v1.2.0.
+Last updated for CLI release v1.3.0.
 
 ---
 
-The newest binary releases can be found [here](https://github.com/decred/decred-binaries/releases). With the exception of the `.exe` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be extract and go, instructions are provided for [Windows](#windows), [macOS](#macos), and [Linux](#linux) below (assumed proficiency for FreeBSD users).
+The newest binary releases can be found [here](https://github.com/decred/decred-binaries/releases). With the exception of the `.exe` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be extract and go, instructions are provided for Windows, macOS, and Linux below (assumed proficiency for FreeBSD users).
 
 ??? info "Windows instructions (click to expand)"
 
@@ -16,8 +16,8 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
         | Architecture | Filename                          |
         | ------------ | ----------------------------------|
-        | 32-bit       | `decred-windows-386-v1.2.0.zip`   |
-        | 64-bit       | `decred-windows-amd64-v1.2.0.zip` |
+        | 32-bit       | `decred-windows-386-v1.3.0.zip`   |
+        | 64-bit       | `decred-windows-amd64-v1.3.0.zip` |
 
     1. Navigate to download location and extract the `.zip` file:
 
@@ -29,14 +29,14 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
         | Architecture | Filename                            |
         | ------------ | ----------------------------------- |
-        | 64-bit       | `decred-darwin-amd64-v1.2.0.tar.gz` |
+        | 64-bit       | `decred-darwin-amd64-v1.3.0.tar.gz` |
 
     1. Navigate to download location and extract the `.tar.gz` file:
 
         **Finder:** simply double click on the `.tar.gz` file.
         **Terminal:** use the `tar -xvzf filename.tar.gz` command.
 
-        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-darwin-amd64-v1.2.0.tar.gz` should extract to `decred-darwin-amd64-v1.2.0`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-darwin-amd64-v1.3.0.tar.gz` should extract to `decred-darwin-amd64-v1.3.0`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
 
     !!! note
 
@@ -48,17 +48,17 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
         | Architecture | Filename                           |
         | ------------ | ---------------------------------- |
-        | 32-bit       | `decred-linux-386-v1.2.0.tar.gz`   |
-        | 64-bit       | `decred-linux-amd64-v1.2.0.tar.gz` |
-        | 32-bit ARM   | `decred-linux-arm-v1.2.0.tar.gz`   |
-        | 64-bit ARM   | `decred-linux-arm64-v1.2.0.tar.gz` |
+        | 32-bit       | `decred-linux-386-v1.3.0.tar.gz`   |
+        | 64-bit       | `decred-linux-amd64-v1.3.0.tar.gz` |
+        | 32-bit ARM   | `decred-linux-arm-v1.3.0.tar.gz`   |
+        | 64-bit ARM   | `decred-linux-arm64-v1.3.0.tar.gz` |
 
     1. Navigate to download location and extract the `.tar.gz` file:
 
         **Ubuntu File Browser:** simply right click on the `.tar.gz` file and select "Extract Here".
         **Terminal:** use the `tar -xvzf filename.tar.gz` command.
 
-        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-linux-amd64-v1.2.0.tar.gz` should extract to `decred-linux-amd64-v1.2.0`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-linux-amd64-v1.3.0.tar.gz` should extract to `decred-linux-amd64-v1.3.0`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
 
 ---
 

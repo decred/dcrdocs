@@ -81,7 +81,7 @@ nav:
   - 'Blocks': 'faq/blocks.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
 - Advanced:
-  - 'Using Testnet': 'getting-started/using-testnet.md'
+  - 'Using Testnet': 'advanced/using-testnet.md'
   - 'Manual CLI Installation': 'advanced/manual-cli-install.md'
   - 'Storing Login Details': 'advanced/storing-login-details.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
@@ -103,10 +103,10 @@ nav:
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - Contributing:
-  - 'Contributor Compensation': 'advanced/contributor-compensation.md'
+  - 'Contributor Compensation': 'contributing/contributor-compensation.md'
   - Guidelines:
-    - 'Using GitHub': 'advanced/using-github.md'
-    - 'Source Code Contributions': 'advanced/contributing.md'
+    - 'Using GitHub': 'contributing/using-github.md'
+    - 'Source Code Contributions': 'contributing/source-code-contributions.md'
 - About:
   - 'Credits': 'about/credits.md'
   - 'License': 'about/license.md'

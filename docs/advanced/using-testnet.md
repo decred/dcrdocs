@@ -1,4 +1,4 @@
-# Using Testnet Guide
+# Using Testnet
 
 Last updated for testnet3
 
@@ -36,7 +36,7 @@ To launch `dcrd` and `dcrwallet` on testnet, simply add the `--testnet` flag to 
 
 On the first launch of `dcrd --testnet`, `dcrd` will begin downloading the testnet3 blockchain to the `data/testnet3` folder of `dcrd`'s home directory.
 
-Before you're able to launch `dcrwallet` with the `--testnet` flag, you must create a separate testnet wallet using the `dcrwallet --testnet --create` command. The steps are the same as those found in the [dcrwallet Setup Guide](user-guides/dcrwallet-setup.md). 
+Before you're able to launch `dcrwallet` with the `--testnet` flag, you must create a separate testnet wallet using the `dcrwallet --testnet --create` command. The steps are the same as those found in the [dcrwallet Setup Guide](../getting-started/user-guides/dcrwallet-setup.md). 
 
 To issue commands to both `dcrwallet` and `dcrd`, you must also add the `--testnet` flag to any of the `dcrctl` commands that you use. E.g. you would issue the `dcrctl --testnet --wallet getbalance` command to check your testnet balance. 
 

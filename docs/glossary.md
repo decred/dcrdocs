@@ -145,7 +145,7 @@ See [consensus rules voting](#consensus-rules-voting).
 
 #### Address
 
-A secure identifier that represents a possible destination for a payment, similar to an email address. The address is a cryptographic hash of the public key receiving payment. 
+A secure identifier that represents a possible destination for a payment, similar to an email address. The address is a human-readable representation of the public key receiving payment.
 
 #### Atom
 
@@ -177,7 +177,7 @@ An interface a user interacts with via the command line - often referring to a C
 
 #### Confirmation
 
-A transaction is confirmed when it has been included in a block that has been verified by the network (added to the blockchain). Each additional block added to the blockchain reconfirms all transactions in all previous blocks. The number of times a transaction has been confirmed (i.e. the number of blocks that include the transaction) is used as a measure of confidence that the transaction will remain in the blockchain. For example. a wallet or other service may requre a certain number of confirmations before it considers a transaction to be valid. 
+A transaction is confirmed when it has been included in a block that has been verified by the network (added to the blockchain). Each additional block added to the blockchain reconfirms all transactions in all previous blocks. The number of times a transaction has been confirmed is used as a measure of confidence that the transaction will remain in the blockchain. A wallet or other service may require a certain number of confirmations before it considers a transaction to be valid. For example, if a wallet requires three confirmations to consider a transaction valid, it would require the next two blocks after the block including the transaction to confirm the transaction. 
 
 
 #### Consensus rules
@@ -279,7 +279,7 @@ Orphaned blocks are valid blocks which are not included in the definitive blockc
 
 #### Orphan transaction
 
-A transaction with missing inputs (i.e. the "parent" transaction is unknown, making the transaction an "orphan"). Opphan transactions can also be created when they are part of a block that has been abandoned and have not been included in another block. For example, if a miner creates a valid block with transactions specific to them, such as coinbase transactions and votes, and that block is orphaned, the transactions in that block will become orphaned transactions. 
+A transaction with missing inputs (i.e. the "parent" transaction is unknown, making the transaction an "orphan"). Orphan transactions can also be created when they are part of a block that has been abandoned and have not been included in another block. For example, if a miner creates a valid block with transactions specific to them, such as coinbase transactions and votes, and that block is orphaned, the transactions in that block will become orphaned transactions. 
 
 
 #### Politeia

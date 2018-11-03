@@ -1,4 +1,139 @@
+[Account](#account)
 
+[Agenda voting](#agenda-voting)
+
+[Address](#address)
+
+[Atom](#atom)
+
+[Block](#block)
+
+[Block explorer](#block-explorer)
+
+[Block header](#block-header)
+
+[Block reward](#block-reward)
+
+[Block voting](#block-voting)
+
+[Command Line Interface (CLI)](#command-line-interface--cli-)
+
+[Confirmation](#confirmation)
+
+[Consensus rules](#consensus-rules)
+
+[Consensus rules voting](#consensus-rules-voting)
+
+[Constitution](#constitution)
+
+[Credits](#credits)
+
+[DCR](#dcr)
+
+[Decred Change Proposal (DCP)](#decred-change-proposal--dcp-)
+
+[Decrediton](#decrediton)
+
+[Difficulty](#difficulty)
+
+[Distributed ledger](#distributed-ledger)
+
+[Expired ticket](#expired-ticket)
+
+[Faucet](#faucet)
+
+[Hash](#hash)
+
+[Hash function](#hash-function)
+
+[Hashrate](#hashrate)
+
+[Hybrid PoW/PoS](#hybrid-pow-pos)
+
+[Immature ticket](#immature-ticket)
+
+[Inflation](#inflation)
+
+[Live ticket](#live-ticket)
+
+[Mainnet](#mainnet)
+
+[Mempool](#mempool)
+
+[Miners](#miners)
+
+[Mining Pool](#mining-pool)
+
+[Missed ticket](#missed-ticket)
+
+[Orphan block](#orphan-block)
+
+[Orphan transaction](#orphan-transaction)
+
+[Politeia](#politeia)
+
+[Private key](#private-key)
+
+[Private passphrase](#private-passphrase)
+
+[Proof-of-Stake (PoS) voting](#proof-of-stake--pos--voting)
+
+[Protocol rules](#protocol-rules)
+
+[Public key](#public-key)
+
+[Quorum](#quorum)
+
+[Regular transaction tree](#regular-transaction-tree)
+
+[Reorg](#reorg)
+
+[Revoked ticket](#revoked-ticket)
+
+[Rule Change Interval (RCI)](#rule-change-interval--rci-)
+
+[Rule change proposal](#rule-change-proposal)
+
+[Seed](#seed)
+
+[Simnet](#simnet)
+
+[Stake transaction tree](#stake-transaction-tree)
+
+[Stake Version Interval (SVI)](#stake-version-interval--svi-)
+
+[Stakepool](#stakepool)
+
+[Staking](#staking)
+
+[Testnet](#testnet)
+
+[Ticket](#ticket)
+
+[Ticket pool](#ticket-pool)
+
+[Ticket price](#ticket-price)
+
+[Ticket-splitting](#ticket-splitting)
+
+[Transaction fees](#transaction-fees)
+
+[Treasury](#treasury)
+
+[Unmined ticket](#unmined-ticket)
+
+[Voted ticket](#voted-ticket)
+
+[Voters](#voters)
+
+[Voting Service Provider](#voting-service-provider)
+
+[Wallet](#wallet)
+
+[Watch-only](#watch-only)
+
+
+<br>
 
 #### Account
 
@@ -10,7 +145,7 @@ See [consensus rules voting](#consensus-rules-voting).
 
 #### Address
 
-The cryptographic hash of a given public key. Addresses are publicly viewable on the blockchain and can be used to send and receive transactions, similar to an email address. 
+A secure identifier that represents a possible destination for a payment, similar to an email address. The address is a cryptographic hash of the public key receiving payment. 
 
 #### Atom
 
@@ -30,7 +165,7 @@ Metadata at the beginning of a block that defines information about the block. T
 
 #### Block reward
 
-A reward (in DCR) split between PoW miners, ticket holders, and the Treasury for successfully approving a block of transactions. As in Bitcoin, the block reward [decays exponentially](https://docs.decred.org/advanced/inflation/) with block height (length of blockchain). However, Decred’s algorithm interpolates this decay over time so as not to produce market shocks, as typically seen when Bitcoin's difficulty halves. The block reward started at 31.19582664 and it adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/1011.
+A reward (in DCR) split between PoW miners, ticket holders, and the Treasury for successfully approving a block of transactions. The block reward [decays exponentially](https://docs.decred.org/advanced/inflation/) with block height (length of blockchain). However, Decred’s algorithm interpolates this decay over time so as not to produce market shocks, as typically seen in algorithms that involve large and infrequent reductions, such as halving the rewards every 4 years. The block reward started at 31.19582664 and it adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/1011.
 
 #### Block voting
 
@@ -40,9 +175,10 @@ In each block, five tickets are called to vote. In addition to votes on any open
 
 An interface a user interacts with via the command line - often referring to a CLI wallet, which is operated using various tools and commands.
 
-#### Confirmations
+#### Confirmation
 
-The number of blocks that have been mined on top of the block when a transaction was made; more confirmations gives greater finality or confidence that the transaction will remain in the Decred blockchain.
+A transaction is confirmed when it has been included in a block that has been verified by the network (added to the blockchain). Each additional block added to the blockchain reconfirms all transactions in all previous blocks. The number of times a transaction has been confirmed (i.e. the number of blocks that include the transaction) is used as a measure of confidence that the transaction will remain in the blockchain. For example. a wallet or other service may requre a certain number of confirmations before it considers a transaction to be valid. 
+
 
 #### Consensus rules
 
@@ -90,11 +226,11 @@ A mechanism for obtaining free (testnet) tokens.
 
 #### Hash
 
-The output of a cryptographic hashing function that produces a fixed-size and unique hash value from variable-size input. 
+The output of a cryptographic hashing function that produces a fixed-size and unique value from variable-size input. 
 
 #### Hash function
 
-A cryptographic function that produces a fixed-size and unique hash value from variable-size transaction input. Decred uses the [BLAKE-256](https://docs.decred.org/research/blake-256-hash-function/) hashing function. 
+A cryptographic function that produces a fixed-size and unique hash value from variable-size transaction input. Decred's Proof-of-Work uses the [BLAKE-256](https://docs.decred.org/research/blake-256-hash-function/) hashing function. 
 
 #### Hashrate
 
@@ -102,7 +238,7 @@ The number of hashes per second computed by miners on the network.
 
 #### Hybrid PoW/PoS
 
-In Decred, a [hybrid PoW/PoS system](https://docs.decred.org/research/hybrid-design/) is used, whereby blocks mined by PoW miners must be approved by ticket holders, which are pseudorandomly selected from the ticket pool. This provides a check on PoW miners and increases the overall cost of attacking the network. When a block is approved, 60% of the block reward goes to the PoW miner, 30% goes to the holders of  tickets called to vote (approve blocks), and 10% goes to the Decred Treasury to fund the project's development.
+In Decred, a [hybrid PoW/PoS system](https://docs.decred.org/research/hybrid-design/) is used, whereby blocks mined by PoW miners must be approved by ticket holders, which are pseudorandomly selected from the ticket pool. This provides a check on PoW miners and increases the overall cost of attacking the network. When a block is approved, 60% of the block reward goes to the PoW miner, 30% goes to the holders of  tickets called to vote (approve blocks), and 10% goes to the Decred Treasury to fund the project.
 
 #### Immature ticket
 
@@ -130,15 +266,21 @@ Miners help secure the network via Proof-of-Work (PoW) mining. Miners recieve bl
 
 #### Mining Pool
 
-A group of miners who share (pool) their computational resources to mine DCR. When a member of a mining pool successfully mines a block, the rewards are split among all pool members in proportion to the hashpower they contribute to the pool. 
+A group of miners who share (pool) their computational resources to mine DCR. When a member of a mining pool successfully mines a block, the rewards are typically split among all pool members in proportion to the hashpower they contribute to the pool. 
 
 #### Missed ticket
 
-Tickets that have been called but did not respond - these can be revoked, but do not grant a reward.
+Tickets that have been called but did not receive a reward. This can happen if a ticket is called to vote and does not respond. This can also happen if a ticket is called to vote, responds and broadcasts their vote to the network, but a miner does not include the vote in the following block. 
 
-#### Orphan
+#### Orphan block
 
-A valid block which is not built upon and therefore not included in the definitive blockchain.
+Orphaned blocks are valid blocks which are not included in the definitive blockchain. Orphan blocks can occur when they are part of a branch of the blockchain that has been abandoned. This can occur naturally when two miners produce blocks at similar times. Orphan blocks can also be created when they build on an unknown block (i.e. the "parent" block is unknown, making it an "orphan"). 
+
+
+#### Orphan transaction
+
+A transaction with missing inputs (i.e. the "parent" transaction is unknown, making the transaction an "orphan"). Opphan transactions can also be created when they are part of a block that has been abandoned and have not been included in another block. For example, if a miner creates a valid block with transactions specific to them, such as coinbase transactions and votes, and that block is orphaned, the transactions in that block will become orphaned transactions. 
+
 
 #### Politeia
 
@@ -146,11 +288,11 @@ A system for facilitating the submission and discussion of [proposals](https://p
 
 #### Private key
 
-A string of data that allows you to access and spend DCR stored in address associated with the private key. When sending DCR from one address to another, the wallet must use the private key of the sending address to sign the transaction.
+An astronomically large secret number that allows DCR to be spent. All transactions that spend DRC must include a signature that can only be produced with knowledge of this secret number.
 
 #### Private passphrase
 
-A passphrate that is used to encrypt wallet.db files. wallet.db files encrypted with a private passphrase cannot be used without that passphrase.
+A passphrate that is used to encrypt parts of the wallet.db file; most notably private keys. A wallet.db file encrypted with a private passphrase cannot be used without that passphrase.
 
 #### Proof-of-Stake (PoS) voting
 
@@ -162,18 +304,19 @@ See [consensus rules](#consensus-rules).
 
 #### Public key
 
-A long string of alphanumeric characters generated algorithmically from a private key. The user’s public key is used to prove that a transaction was signed using their private key.
+A cryptographic code generated algorithmically from a private key. The user’s public key is used to prove that a transaction was signed using their private key.
 
 #### Quorum
 
-The minimum level of participation required in order for a decision-making process to produce a valid outcome. Changes to the consensus rules require at least 10% of votes to be for or against the change in order to be valid. Politeaia proposals require 20%.
+The minimum level of participation required in order for a decision-making process to produce an actionable outcome. Changes to the consensus rules require at least 10% of votes to be for or against the change in order to be valid. Politeaia proposals require 20%.
 
 #### Regular transaction tree
 
 The normal [transactions](https://www.reddit.com/r/decred/comments/66j4l4/decred_proof_of_stake_explained/dgjsyxd) in a block: sending DCR to an address, coinbase transactions such as PoW Miner reward and Treasury stipend.
 
 #### Reorg
-A reorganization of the blockchain in which a set of blocks are replaced by another (longer) set. The number of blocks replaced is the depth of the reorg. 
+
+A reorganization (or reorg) of the blockchain is when a set of blocks are replaced by another set which has more work. The number of blocks replaced is the depth of the reorg. 
 
 #### Revoked ticket
 
@@ -189,7 +332,7 @@ A proposal to change the consensus rules of the Decred blockchain. Rule change p
 
 #### Seed
 
-A series of 33 words that is used to generate the private key for a wallet. Anyone who has the seed for a wallet can spend any DCR it holds.
+A 256-bit (32-byte) cryptographically secure random number that can be used to recover a wallet. When creating a wallet using any Decred wallet software, a 33 word "seed phrase" is also created from the 32-byte seed. If the wallet is lost or corrupted, the seed phrase can be used to restore the wallet's private keys, transaction history, and ballances using any Decred wallet on any computer.  
 
 #### Simnet
 

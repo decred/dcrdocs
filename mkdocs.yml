@@ -50,7 +50,7 @@ nav:
       - 'Using Decrediton': 'getting-started/user-guides/using-decrediton.md'
       - 'Troubleshooting Problems': 'getting-started/user-guides/decrediton-troubleshooting.md'
     - CLI Wallet:
-      - 'Installation': 'getting-started/user-guides/cli-installation.md'
+      - 'Installation': 'wallets/cli/cli-installation.md'
       - 'OS Differences': 'getting-started/cli-differences.md'
       - 'Startup Basics': 'getting-started/startup-basics.md'
       - 'dcrd Setup': 'getting-started/user-guides/dcrd-setup.md'

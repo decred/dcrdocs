@@ -7,7 +7,7 @@ This guide is intended to help you setup the `dcrd` application using [startup f
 **Prerequisites:**
 
 - Use the latest [dcrinstall](../../wallets/cli/cli-installation.md) to install `dcrd`. Additional steps will be required if another installation method was used.
-- Review how the launch commands for the Command Prompt (Windows) and Bash (macOS/Linux) shells differ [here](../cli-differences.md).
+- Review how the launch commands for the Command Prompt (Windows) and Bash (macOS/Linux) shells differ [here](../../wallets/cli/os-differences.md).
 
 ---
 

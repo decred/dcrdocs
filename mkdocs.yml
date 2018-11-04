@@ -51,7 +51,7 @@ nav:
       - 'Troubleshooting Problems': 'getting-started/user-guides/decrediton-troubleshooting.md'
     - CLI Wallet:
       - 'Installation': 'wallets/cli/cli-installation.md'
-      - 'OS Differences': 'getting-started/cli-differences.md'
+      - 'OS Differences': 'wallets/cli/os-differences.md'
       - 'Startup Basics': 'getting-started/startup-basics.md'
       - 'dcrd Setup': 'getting-started/user-guides/dcrd-setup.md'
       - 'dcrwallet Setup': 'getting-started/user-guides/dcrwallet-setup.md'

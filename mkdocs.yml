@@ -59,7 +59,7 @@ nav:
       - 'Buying Tickets': 'getting-started/user-guides/dcrwallet-tickets.md'
       - 'dcrd and dcrwallet CLI Arguments': 'getting-started/dcrd-and-dcrwallet-cli-arguments.md'
       - 'dcrctl RPC Commands': 'getting-started/dcrctl-rpc-commands.md'
-    - 'Web Wallet': 'getting-started/user-guides/web.md'
+    - 'Web Wallet': 'wallets/web.md'
 - Proof-of-Stake Voting:
   - "What is Proof-of-Stake?": 'mining/proof-of-stake.md'
   - "How to Stake": 'mining/how-to-stake.md' 

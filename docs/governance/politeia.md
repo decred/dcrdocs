@@ -19,7 +19,7 @@ There is a fee for submitting a proposal (0.1 DCR), to limit the potential for p
 
 Reddit-style **up/down voting** is used for **proposal and comment sorting only**. Up/down votes are not anonymous.
 
-Ticket-voting on proposals doesn’t happen directly on Politeia, but within [Decrediton](https://docs.decred.org/getting-started/user-guides/decrediton-setup.md) or [politeiavoter CLI](https://github.com/decred/politeia/tree/master/politeiavoter) with dcrwallet
+Ticket-voting on proposals doesn’t happen directly on Politeia, but within [Decrediton](/getting-started/user-guides/decrediton-setup/) or [politeiavoter CLI](https://github.com/decred/politeia/tree/master/politeiavoter) with dcrwallet
 
 **Censorship**  
 
@@ -49,3 +49,7 @@ For now, the process is something like this:
 Proposal voting works, initially, as a robust signalling mechanism from the Decred stakeholders to the people who control the project fund wallet. Over time, this will be iterated towards a DAE that decentralizes the functions currently performed by trusted humans. When the DAE is ready, it will control the project fund wallet directly.
 
 For proposals that request funding, an initial set of guidelines and examples has been prepared. It can be found at the bottom of [this page](https://github.com/decred/politeia/blob/master/politeia.md). Guidelines for good proposals and policies for censoring proposals will be iterated once Politeia is live.
+
+**Politeia Data**
+
+This [page](/advanced/navigating-politeia-data/) offers a guide to navigating Politeia data in the repository where it is stored.

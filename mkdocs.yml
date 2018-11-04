@@ -41,7 +41,7 @@ nav:
 - Governance:
   - 'Introduction to Decred governance': 'governance/introduction-to-decred-governance.md'
   - 'Consensus rules voting': 'governance/consensus-rules-voting.md'
-  - 'How to Vote on consensus rule changes': 'getting-started/user-guides/how-to-vote.md'
+  - 'How to Vote on consensus rule changes': 'governance/how-to-vote.md'
   - 'Politeia proposals and voting': 'governance/politeia.md'
   - 'Decred Constitution': 'governance/decred-constitution.md'
 - Wallets:

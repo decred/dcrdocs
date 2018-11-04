@@ -36,7 +36,7 @@ To participate in voting, you first need a wallet. If you don't have one already
 
 Next, you'll need to learn the basics of [Proof-of-Stake](../mining/proof-of-stake.md). You'll need to be able to [buy tickets](../mining/how-to-stake.md) with your application of choice.
 
-Finally, you'll need to learn how to set the `votechoice` for your tickets in order to cast a "Yes", "No", or "Abstain" vote for an agenda. By default, your tickets will cast "Abstain" votes. To set your vote choice, see our quick [How To Vote](../getting-started/user-guides/how-to-vote.md).
+Finally, you'll need to learn how to set the `votechoice` for your tickets in order to cast a "Yes", "No", or "Abstain" vote for an agenda. By default, your tickets will cast "Abstain" votes. To set your vote choice, see our quick [How To Vote](how-to-vote.md).
 
 ---
 

@@ -90,6 +90,7 @@ nav:
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
   - 'Inflation': 'advanced/inflation.md'
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
+  - 'Navigating Politeia Data': 'advanced/navigating-politeia-data.md'
   - 'Simnet': 'advanced/simnet.md'
 - Research:
   - 'Overview': 'research/overview.md'

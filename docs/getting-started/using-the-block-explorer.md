@@ -49,7 +49,7 @@ Option                   | Explanation
 `Timestamp`              | The time this block was created by a miner and was included in the blockchain.
 `Merkle Root`            | A hash value of all the transaction hashes included in this block.
 `Stake Root`             | A hash value of all the stake related transaction hashes in this block. This includes ticket purchases, votes, and ticket revocations.
-`VoteBits`               | (1) Block was approved by proof-of-stake voters. (2) Block was vetoed by proof-of-stake voters and all non-stake transactions in the block were invalidated, along with the proof-of-work miner and development subsidy.
+`VoteBits`               | (1) Block was approved by proof-of-stake voters. (2) Block was vetoed by proof-of-stake voters and all non-stake transactions in the block were invalidated, along with the proof-of-work miner and Decred Treasury.
 `Final State`            | The final state of the pseudo random number generator used for ticket selection.
 `Voters`                 | The number of successful proof-of-stake votes cast in this block. The maximum value is 5.
 `Fresh Stake`            | The number of stake ticket purchases confirmed in this block.

@@ -14,7 +14,7 @@ Subsidy | Party
 ---     | ---
 60%   | PoW Miners
 30%   | PoS Voters
-10%   | Decred development subsidy
+10%   | Decred Treasury
 
 You will, on average, receive a reward that is roughly proportional to the
 hashrate of your miner and the overall hashrate of the network when you commit

@@ -44,7 +44,6 @@ The following guides go into depth on key aspects of the Decred experience:
 * [Press coverage/releases](https://decred.org/press/)
 * [The Decred Digest](https://thedecreddigest.com/) - community blog
 
-
 **Video**
 
 * [Decred Youtube channel](https://www.youtube.com/decredchannel)

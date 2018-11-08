@@ -17,7 +17,7 @@ There are two broad types of proposal:
 
 There is a fee for submitting a proposal (0.1 DCR), to limit the potential for proposal spamming. There is also a fee for registering a Politeia account (0.1 DCR), to limit comment spam and up/down voting sock-puppetry. Fees may be altered if a) they're not a sufficient spam-deterrent, or b) the price of DCR changes considerably.
 
-Reddit-style **up/down voting** is used for **proposal and comment sorting only**. Up/down votes are not anonymous.
+Reddit-style **up/down voting** is used for  comment sorting only. Up/down votes are not anonymous.
 
 Ticket-voting on proposals doesn’t happen directly on Politeia, but within [Decrediton](../getting-started/user-guides/decrediton-setup.md) or [politeiavoter CLI](https://github.com/decred/politeia/tree/master/politeiavoter) with dcrwallet
 
@@ -52,4 +52,4 @@ For proposals that request funding, an initial set of guidelines and examples ha
 
 **Politeia Data**
 
-This [page](/advanced/navigating-politeia-data/) offers a guide to navigating Politeia data in the repository where it is stored.
+[This page](../advanced/navigating-politeia-data/) offers a guide to navigating Politeia data in the repository where it is stored.

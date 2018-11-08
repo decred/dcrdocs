@@ -19,7 +19,7 @@ There is a fee for submitting a proposal (0.1 DCR), to limit the potential for p
 
 Reddit-style **up/down voting** is used for **proposal and comment sorting only**. Up/down votes are not anonymous.
 
-Ticket-voting on proposals doesn’t happen directly on Politeia, but within [Decrediton](/getting-started/user-guides/decrediton-setup/) or [politeiavoter CLI](https://github.com/decred/politeia/tree/master/politeiavoter) with dcrwallet
+Ticket-voting on proposals doesn’t happen directly on Politeia, but within [Decrediton](../getting-started/user-guides/decrediton-setup.md) or [politeiavoter CLI](https://github.com/decred/politeia/tree/master/politeiavoter) with dcrwallet
 
 **Censorship**  
 

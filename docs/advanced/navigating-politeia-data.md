@@ -14,7 +14,7 @@ Within each proposal folder there are sequentially numbered sub-folders for each
 
 ![Versions of the example proposal](/img/politeia/example-proposal.png)
 
-Within the version number folder all relevant data for that proposal can be found.
+All relevant data for the proposal can be found within the version number folder.
 
 ![Folder for version 2 of the example proposal](/img/politeia/prop-version2.png)
 

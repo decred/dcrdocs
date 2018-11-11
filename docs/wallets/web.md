@@ -80,7 +80,7 @@ Option                                | Description
 Click `Backup`. You will see this screen:
 
 First of all, read the note. Only use ONE wallet at a time with a
-given seed (See: [FAQ](#)). You can have multiple wallets installed on
+given seed. You can have multiple wallets installed on
 different machines, but only one of them should be running at any
 given time. Click `Show Wallet Seed`. Write this down somewhere safe,
 or put it in an encrypted document to which you will not forget the

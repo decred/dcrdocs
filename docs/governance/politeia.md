@@ -13,7 +13,7 @@ The Politeia web platform (at [proposals.decred.org](https://proposals.decred.or
 There are two broad types of proposal:
 
 1. Proposals that aim to establish Voter support for a course of action, e.g. direction of software development, adopting or changing some policy.
-2. Proposals that commit to spending project fund DCR, creating a budget that some entity can draw down against as they demonstrate progress towards the proposal's aim.
+2. Proposals that commit to spending DCR from the Decred Treasury, creating a budget that some entity can draw down against as they demonstrate progress towards the proposal's aim.
 
 There is a fee for submitting a proposal (0.1 DCR), to limit the potential for proposal spamming. There is also a fee for registering a Politeia account (0.1 DCR), to limit comment spam and up/down voting sock-puppetry. Fees may be altered if a) they're not a sufficient spam-deterrent, or b) the price of DCR changes considerably.
 
@@ -46,6 +46,6 @@ For now, the process is something like this:
 7. When a proposal with a budget and deliverables is approved, work can begin. The proposal owner can submit claims against that budget as deliverables are completed.
 8. Payment claims will be handled manually by Decred Holdings Group until such times as this process can be adequately decentralized.
 
-Proposal voting works, initially, as a robust signalling mechanism from the Decred stakeholders to the people who control the project fund wallet. Over time, this will be iterated towards a DAE that decentralizes the functions currently performed by trusted humans. When the DAE is ready, it will control the project fund wallet directly.
+Proposal voting works, initially, as a robust signalling mechanism from the Decred stakeholders to the people who control the Decred Treasury wallet. Over time, this will be iterated towards a DAE that decentralizes the functions currently performed by trusted humans. When the DAE is ready, it will control the Decred Treasury wallet directly.
 
 For proposals that request funding, an initial set of guidelines and examples has been prepared. It can be found at the bottom of [this page](https://github.com/decred/politeia/blob/master/politeia.md). Guidelines for good proposals and policies for censoring proposals will be iterated once Politeia is live.

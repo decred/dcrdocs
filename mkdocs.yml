@@ -63,7 +63,6 @@ nav:
       - 'Buying Tickets': 'getting-started/user-guides/dcrwallet-tickets.md'
       - 'dcrd and dcrwallet CLI Arguments': 'getting-started/dcrd-and-dcrwallet-cli-arguments.md'
       - 'dcrctl RPC Commands': 'getting-started/dcrctl-rpc-commands.md'
-    - 'Web Wallet': 'wallets/web.md'
 - Proof-of-Stake Voting:
   - "What is Proof-of-Stake?": 'mining/proof-of-stake.md'
   - "How to Stake": 'mining/how-to-stake.md' 
@@ -81,7 +80,6 @@ nav:
   - 'General': 'faq/general.md'
   - 'Configuration': 'faq/configuration.md'
   - 'Wallets and Seeds': 'faq/wallets-and-seeds.md'
-  - 'Web Client': 'faq/web-client.md'
   - 'Blocks': 'faq/blocks.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
 - Advanced:

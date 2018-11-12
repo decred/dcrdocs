@@ -20,7 +20,7 @@ On-chain voting serves the following purposes:
 
 Decred's on-chain governance is supplemented by *Politeia proposal voting*, which doesn't happen directly on-chain but is woven into the Decred blockchain in some ways. 
 
-Politeia proposals concern the direction of the project, they may involve the spending of [Decred Treasury funds](http://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) (10% of the block reward goes into this fund to support development of the project) or amending the [Decred Constitution](decred-constitution.md) or other policies.
+Politeia proposals concern the direction of the project, they may involve the spending of [Decred Treasury funds](http://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) (10% of the block reward goes into the Treasury to support development of the project) or amending the [Decred Constitution](decred-constitution.md) or other policies.
 
 Politeia is built around the concept of _transparent censorship_, using [dcrtime](https://github.com/decred/dcrtime). Users cannot be silently censored, they can prove that censorship has occurred.
 

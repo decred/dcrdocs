@@ -69,7 +69,7 @@ Telegram, Rocket.Chat and KakaoTalk are partially bridged.
 * [Twitter](https://twitter.com/decredproject) (account operated by small group of contributors)
 * [Forum](https://forum.decred.org/)
 * [Facebook](https://facebook.com/decredproject) 
-* [Linkedin](https://www.linkedin.com/company/decredproject/) (account operated by small group of contributors)
+* [LinkedIn](https://www.linkedin.com/company/decredproject/) (account operated by small group of contributors)
 
 ### Code
 

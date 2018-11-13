@@ -1,20 +1,13 @@
 # <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Proof of Stake Ticket Voting
 
-<<<<<<< HEAD
-=======
+
 Last updated for v1.3.0
 
->>>>>>> 9ce3733... First attempt at switcing terms to Voting and Voting Service Providers
 ---
 
 ## Overview 
 
 Ticket Voting is a form of Proof of Stake (PoS) security, but the way Decred integrates this as a complement to Proof of Work mining gives it a distinctive set of roles and characteristics.
-
-<<<<<<< HEAD
-1. Allowing stakeholders to vote for or against proposed changes to the Decred blockchain. If stakeholders vote in support of a change, the chain will hardfork and the new feature becomes active automatically. More information on voting can be found in the [Mainnet Voting Guide](../getting-started/user-guides/agenda-voting.md).
-=======
-**Staking** is the act of time-locking some DCR in exchange for a **ticket**. Ticket buyers prove that they have something at stake (a quantity of DCR which they cannot sell until it unlocks, after an unpredictable interval), and this qualifies them to receive a ticket and vote.
 
 Ticket Voting serves a number of purposes:
 
@@ -24,14 +17,7 @@ Ticket Voting serves a number of purposes:
 1. The same principle makes the Decred blockchain resistant to contentious hard forks. PoW Miners are unable to build on a chain without the Votes of the tickets that are called. 
 1. Snap voting of live tickets is used to make decisions about the project treasury through [Politeia](/governance/politeia).
 
-These roles are incentivized, ticket-holders (or "Proof of Stake Miners") collectively receive 30% of the block reward when their tickets are called to vote.
->>>>>>> 9ce3733... First attempt at switcing terms to Voting and Voting Service Providers
-
-
-<<<<<<< HEAD
-1. Allowing long-term holders of Decred to lock up their funds for a length of time in order to accrue new coins from the [Block Reward](../advanced/inflation.md).
-=======
->>>>>>> 9ce3733... First attempt at switcing terms to Voting and Voting Service Providers
+These roles are incentivized, ticket-holders (or "Proof of Stake Voters") collectively receive 30% of the block reward when their tickets are called to vote.
 
 ---
 

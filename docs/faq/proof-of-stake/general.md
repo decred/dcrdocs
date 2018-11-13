@@ -27,13 +27,11 @@ A ticket is a token you buy to participate in the PoS system. You can buy ticket
 
 #### 3. Do I need to be constantly connected to the network to participate in PoS? 
 
-<<<<<<< HEAD
 A wallet needs to be online 24/7 to respond to a vote if one of your tickets is selected. There are two main ways to do this; a solo staking wallet which you set up and keep online all the time, or you 
 can use a [stake pool](../../mining/how-to-stake.md). A stake pool is basically a community run wallet to which you can assign the voting rights of your tickets and the pool will
 vote on your behalf for a small percentage of the PoS reward.
 =======
 A wallet needs to be online 24/7 to respond to vote if one of your tickets is selected. There are two main ways to do this; a solo staking wallet which you set up and keep online all the time, or you can use a [Voting Service Provider](/mining/proof-of-stake.md#solo-mining-or-pool-mining) (VSP). A VSP is a community run wallet to which you can assign the voting rights of your tickets, the VSP will vote on your behalf, charging a small percentage of the PoS reward as a fee for this service.
->>>>>>> 9ce3733... First attempt at switcing terms to Voting and Voting Service Providers
 
 It is important to note that you are only assigning voting rights to the pool, not your actual funds. A VSP does not have access to your funds at any time.
 

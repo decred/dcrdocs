@@ -10,13 +10,14 @@ If your VSP has updated to the latest VSP software, you will find a "Voting" pag
 
 <img src="/img/voting_preferences.png">
 
-<<<<<<< HEAD
 You can also update your voting preferences via Decrediton. Under the Tickets section, you'll find the option to set your vote. You must be using a stake pool to use this option.
 
 <img src="/img/decrediton/voting.png">
 =======
 You can also update your voting preferences via Decrediton. Under the Tickets section, Governance tab, you'll find the option to set your vote.
 >>>>>>> 9ce3733... First attempt at switcing terms to Voting and Voting Service Providers
+=======
+You can also update your voting preferences via Decrediton. Under the Tickets section, Governance tab, you'll find the option to set your vote.
 
 ---------------------------
 

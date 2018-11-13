@@ -1,10 +1,7 @@
 # <img class="dcr-icon" src="/img/dcr-icons/QuestionTicket.svg" /> How to Stake/Vote
 
-<<<<<<< HEAD
-=======
 Last updated for v1.3.0
 
->>>>>>> 9ce3733... First attempt at switcing terms to Voting and Voting Service Providers
 ---
 
 ## How to Stake/Vote
@@ -37,12 +34,5 @@ Unlike PoW mining pools, VSPs do not pool work or rewards. Using a VSP with many
 All VSPs run the same basic code, but they may differ in the amount of redundancy available.
 More redundancy equals less chance of missed votes, although all pools will have some missed votes as many missed votes are caused by PoW miners. Sometimes miners will find a solution to the next block so quickly that votes haven't had time to propagate around the network.
 
-<<<<<<< HEAD
-- `Decrediton` - GUI wallet for Windows/macOS/Linux. The [Purchase Tickets tab](../getting-started/user-guides/using-decrediton.md#tickets) is used to buy tickets.
-- `dcrwallet` - CLI wallet for Windows/macOS/Linux. The [Buying Tickets with dcrwallet](../getting-started/user-guides/dcrwallet-tickets.md) guide explains how to purchase tickets via command line.
-=======
-There are currently two wallets which support voting through VSPs:
-
 - `Decrediton` - GUI wallet for Windows/macOS/Linux. The [Tickets menu, Purchase tab](/getting-started/user-guides/using-decrediton.md#tickets) is used to buy tickets.
 - `dcrwallet` - CLI wallet for Windows/macOS/Linux. The [Buying Tickets with dcrwallet](/getting-started/user-guides/dcrwallet-tickets.md) guide explains how to purchase tickets via command line.
->>>>>>> 9ce3733... First attempt at switcing terms to Voting and Voting Service Providers

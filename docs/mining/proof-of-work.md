@@ -19,7 +19,7 @@ Subsidy | Party
 ---     | ---
 60%   | PoW Miners
 30%   | PoS Voters
-10%   | Decred development subsidy
+10%   | Decred Treasury
 
 
 For more details on the growth of the coin supply, see the 

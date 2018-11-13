@@ -2,11 +2,14 @@
 
 ---
 
-!!! Note This FAQ dates from earlier in Decred's history and used deprecated terms like PoS Mining (now Voting) and Stakepools (now Voting Service Providers).
+!!! danger "Critical Information"
+
+    This FAQ dates from earlier in Decred's history and used deprecated terms like PoS Mining (now Voting) and Stakepools (now Voting Service Providers).
+
 
 #### 1. Are there any other benefits to a stake pool other than not needing to run a full node and keeping your wallet unlocked? For example, will it have a better chance of winning or anything like that? 
 
-Stake pools will usually implement multi-wallet redundancy by having many wallets physically distributed around the globe. This means there's less chance of a vote being missed because one wallet is down. It also reduces latency between the wallet and network which can reduce the chance of a vote being missed. Using a VSP does not affect the chance of one's ticket being called to vote.
+Stake pools will usually implement multi-wallet redundancy by having many wallets physically distributed around the globe. This means there's less chance of a vote being missed because one wallet is down. It also reduces latency between the wallet and network which can reduce the chance of a vote being missed. Using a stake pool (Voting Service Provider (VSP)) does not affect the chance of one's ticket being called to vote.
 
 ---
 

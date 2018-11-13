@@ -7,25 +7,25 @@ Last updated for v1.3.0
 
 ## Overview 
 
-Ticket Voting is a form of Proof of Stake (PoS) security, but the way Decred integrates this as a complement to Proof of Work mining gives it a distinctive set of roles and characteristics.
+Ticket voting is a form of Proof-of-Stake (PoS) security, but the way Decred integrates this as a complement to Proof-of-Work (PoW) mining gives it a distinctive set of roles and characteristics.
 
-Ticket Voting serves a number of purposes:
-=======
+Ticket voting serves a number of purposes:
+
 1. Allowing stakeholders to vote for or against proposed changes to the Decred blockchain. If stakeholders vote in support of a change, the chain will hardfork and the new feature becomes active automatically. More information on voting can be found in the [Mainnet Voting Guide](../governance/consensus-rules-voting.md).
-1. Providing a mechanism for stakeholders to influence proof-of-work miners. Stakeholders can vote to withhold a miner's reward even if the block conforms to the consensus rules of the network. This allows stakeholders, in principle, to discourage problematic mining behavior such as mining empty blocks.
-1. For a block to be valid it has to be signed by at least 3 of the 5 tickets that are called to vote in that block. This makes the Decred blockchain more robust to certain kinds of attack, such as those which rely on secret mining.
+1. Providing a mechanism for stakeholders to influence Proof-of-Work (PoW) miners. Stakeholders can vote to withhold a miner's reward even if the block conforms to the consensus rules of the network. This allows stakeholders, in principle, to discourage problematic mining behavior such as mining empty blocks.
+1. For a block to be valid, it has to be signed by at least 3 of the 5 tickets that are called to vote in that block. This makes the Decred blockchain more robust to certain kinds of attack, such as those which rely on secret mining.
 1. The same principle makes the Decred blockchain resistant to contentious hard forks. PoW Miners are unable to build on a chain without the Votes of the tickets that are called. 
 1. Snap voting of live tickets is used to make decisions about the project treasury through [Politeia](/governance/politeia).
 
-These roles are incentivized, ticket-holders (or "Proof of Stake Voters") collectively receive 30% of the block reward when their tickets are called to vote.
+These roles are incentivized; ticket-holders (or "Proof-of-Stake (PoS) Voters") collectively receive 30% of the block reward when their tickets are called to vote.
 
 ---
 
 ## How Ticket Voting Works
 
-To participate in ticket voting, stakeholders lock some DCR in return for a ticket. Every ticket owned gives its holder the ability to cast a single vote. Upon voting, each ticket returns a small reward plus the original **Ticket Price** of the ticket. Each ticket is selected to vote at random, giving an average vote time of 28 days, but possibly requiring up to 142 days, with a .5% chance of expiring before being chosen to vote (this expiration returns the original **Ticket Price** without a reward). Every block mined must include 5 votes (Miners are penalized by a reward deduction if fewer than 5 votes are included). 
+To participate in ticket voting, stakeholders lock some DCR in return for a ticket. Every ticket owned gives its holder the ability to cast a single vote. Upon voting, each ticket returns a small reward plus the original **Ticket Price** of the ticket. Each ticket is selected to vote at random, giving an average vote time of 28 days, but possibly requiring up to 142 days, with a 0.5% chance of expiring before being chosen to vote (this expiration returns the original **Ticket Price** without a reward). Every block mined must include 5 votes (Miners are penalized by a reward deduction if fewer than 5 votes are included). 
 
-Every block mined can also include up to 20 fresh ticket purchases. A new ticket requires 256 blocks to mature before it is entered into the *Ticket Pool* and can be called to vote.
+Every block mined can also include up to 20 fresh ticket purchases. A new ticket requires 256 blocks to mature before it is entered into the **Ticket Pool** and can be called to vote.
 
 There are a few important variables that you should familiarize yourself with while staking.
 
@@ -35,20 +35,20 @@ The **Ticket Price**/**Stake Difficulty** is the price you must pay for a ticket
 
 The **Ticket Pool** is the total number of tickets in the Decred network.
 
-The **Ticket Fee** (`ticketfee`) is the fee rate that must be included in the ticket purchase to incentivize Proof-of-Work miners to include that ticket in a new block. **Ticket Fee** usually refers to the DCR/kB fee rate for a ticket purchase transaction. Therefore, with a higher transaction size, you will end up paying a higher absolute fee. For example, solo-staking ticket purchases are around 300 Bytes, which means a **Ticket Fee** of .3 DCR/kB will result in the spending on .1 DCR if, and only if, that ticket gets included in a block.
+The **Ticket Fee** (`ticketfee`) is the fee rate that must be included in the ticket purchase to incentivize Proof-of-Work (PoW) miners to include that ticket in a new block. **Ticket Fee** usually refers to the DCR/kB fee rate for a ticket purchase transaction. Therefore, with a higher transaction size, you will end up paying a higher absolute fee. For example, solo-staking ticket purchases are around 300 Bytes, which means a **Ticket Fee** of 0.3 DCR/kB will result in the spending of 0.1 DCR, if and only if, that ticket gets included in a block.
 
-**When a ticket is called to vote, the wallet that has voting rights for that ticket must be online.** If the wallet is not online to cast its vote, the ticket will be marked as `missed` and you will not receive a reward for that ticket. In practice, **solo Voters** often run voting wallets on a number of servers on different continents, to minimise the chance of their tickets missing a call to vote. 
+**When a ticket is called to vote, the wallet that has voting rights for that ticket must be online.** If the wallet is not online to cast its vote, the ticket will be marked as `missed` and you will not receive a reward for that ticket. In practice, **Solo Voters** often run voting wallets on a number of servers on different continents, to minimise the chance of their tickets missing a call to vote. 
 
 **Voting Service Providers (VSPs)** (formerly "Stakepools") offer a service whereby ticket buyers can delegate the act of voting to the VSP. The ticket-buyer instructs the VSP how their ticket should vote on any open rule change proposals, but transfers voting rights to the VSP to take advantage of the voting infrastructure they provide (i.e. at least three always-online servers). 
 
-VSPs charge a fee for this service, which is taken out of the reward returned upon a successful vote. This fee is generally 5% or less. A [list of VSPs](https://decred.org/stakepools/) is maintained on decred.org. VSPs do not take custody of DCR, using them is a case of delegating the voting rights of a ticket only.
+VSPs charge a fee for this service, which is taken out of the reward returned upon a successful vote. This fee is generally 5% or less. A [list of VSPs](https://decred.org/stakepools/) is maintained on decred.org. VSPs do not take custody of DCR. By using them, you only delegate the voting rights of a ticket.
 
 ---
 
 ## Ticket Lifecycle 
 
-Purchasing a ticket is quite simple (see below) but what happens to it after you buy it?
-A ticket on main net (test net uses different parameters) will go through a few stages in its lifetime:
+Purchasing a ticket is quite simple (see below), but what happens to it after you buy it?
+A ticket on mainnet (testnet uses different parameters) will go through a few stages in its lifetime:
 
 1. You buy a ticket using a Decrediton or dcrwallet wallet. The total cost of the each single ticket transaction should be **Ticket Price** + **Ticket Fee**(`ticketfee`).
 2. Your ticket enters the `mempool`. This is where your ticket waits to be mined by PoW miners. Only 20 fresh tickets are mined into each block.

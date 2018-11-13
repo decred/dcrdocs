@@ -6,13 +6,13 @@
 
 Stake "mining" is a term that is no longer used, because the actions and dynamics associated with PoS voting are very different to PoW mining.
 
-Voting does not require any hash power[^9304], the only requirement is having enough DCR to stake, or lock, in exchange for a ticket. 
+Voting does not require any hash power[^9304]. The only requirement is having enough DCR to stake (lock) in exchange for a ticket. 
 
 ---
 
-#### 2. Isn't one of the main reasons for PoS voting to ensure there are always a sufficient amount of peers online? 
+#### 2. Isn't one of the main reasons for Proof-of-Stake (PoS) voting to ensure there are always a sufficient amount of peers online? 
 
-Definitely not[^9311]. Stake voting cannot possibly enforce that. An SPV style wallet could easily perform the necessary voting by communicating with other full nodes (`dcrd` instances) on the network. It is true that the current wallet requires `dcrd` to be running, but that will not always be the case.
+Definitely not[^9311]. Stake voting cannot possibly enforce that. An SPV-style wallet could easily perform the necessary voting by communicating with other full nodes (`dcrd` instances) on the network. It is true that the current wallet requires `dcrd` to be running, but that will not always be the case.
 
 Even if the software did try to enforce that, you could not stop people from writing utilities and such to do it via the peer-to-peer network without needing to run their own local instance anyways.
 

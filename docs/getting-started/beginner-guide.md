@@ -4,23 +4,13 @@
 
 ## Welcome To Decred 
 
-This beginner's guide introduces Decred and offers signposts to some useful resources.
-
-Decred is an autonomous digital currency. Stakeholders make and enforce the blockchain's consensus rules, set a course for future development, and decide how the project's treasury is used to fund it. Decred's blockchain is similar to Bitcoin's, but with major aspects of [governance](../governance/governance.md) baked into the protocol. 
-
-[Proof of Work](../mining/proof-of-work.md) miners play a similar role for Decred as they do for Bitcoin, but with Decred they only receive 60% of the block reward.
-
-[Proof of Stake](../mining/proof-of-stake.md) voting is central to Decred's governance. Decred holders can time-lock (or "stake") DCR to obtain voting tickets. Tickets are randomly called to vote on-chain, this involves both approving the work of PoW miners and voting Yes/No on any open [rule change proposals](user-guides/agenda-voting.md). 30% of the block reward goes to the holders of the tickets that voted in that block.
-
-The remaining 10% of the block reward goes into a [Project Treasury fund](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx). Holders of live tickets decide how that treasury is used through [Politeia proposals and voting](../governance/politeia.md).
-
-The [Decred Constitution](constitution.md) sets out some guiding principles for the project, the constitution is subject to amendment through Politeia proposals.
+This guide offers signposts to some useful resources, including how to set up your Decred wallet, buy DCR, participate in Decred’s governance, connect with the community and contribute to the project (contributors welcome!). 
 
 ## Wallets
 
-[Decrediton](user-guides/decrediton-setup.md) is Decred's GUI wallet, it supports Voting through [stakepools](https://decred.org/stakepools/) and offers the easiest way to start buying tickets and participating in governance.
+[Decrediton](user-guides/decrediton-setup.md) is Decred's GUI wallet. It supports Voting through [stakepools](https://decred.org/stakepools/) and offers the easiest way to start buying tickets and participating in governance.
 
-There is also a [Command Line Interface](user-guides/cli-installation.md) and set of tools for more advanced users, these include running a personal Voting wallet.
+There is also a [Command Line Interface](../wallets/cli/cli-installation.md) that exposes more advanced functionality, including the ability to run a personal Voting wallet.
 
 ## General Guides 
 
@@ -28,11 +18,11 @@ The following guides go into depth on key aspects of the Decred experience:
 
 * [Obtaining DCR](obtaining-dcr.md)
 * [Using the Block Explorer](using-the-block-explorer.md)
-* [Governance](../governance/governance.md)
+* [Governance](../governance/introduction-to-decred-governance.md)
 * [Ticket buying guide](../mining/proof-of-stake.md)
 * [Politeia](../governance/politeia.md)
-* [Voting on consensus rules changes](user-guides/agenda-voting.md)
-* [Using Testnet](using-testnet.md)
+* [Voting on consensus rules changes](../governance/consensus-rules-voting.md)
+* [Using Testnet](../advanced/using-testnet.md)
 
 
 ## Information

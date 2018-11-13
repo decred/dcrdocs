@@ -6,8 +6,8 @@ This guide is intended to walk through ticket buying using `dcrwallet`. It will 
 
 **Prerequisites:**
 
--   Use the latest [dcrinstall](cli-installation.md) to install `dcrd`, `dcrwallet,` and `dcrctl`. Additional steps will be required if another installation method was used.
--   Review how the launch commands for the Command Prompt (Windows) and Bash (macOS/Linux) shells differ [here](../cli-differences.md).
+-   Use the latest [dcrinstall](../../wallets/cli/cli-installation.md) to install `dcrd`, `dcrwallet,` and `dcrctl`. Additional steps will be required if another installation method was used.
+-   Review how the launch commands for the Command Prompt (Windows) and Bash (macOS/Linux) shells differ [here](../../wallets/cli/os-differences.md).
 -   [Setup dcrd](dcrd-setup.md) and have it running in the background.
 -   [Setup dcrwallet](dcrwallet-setup.md) and have it running in the background.
 -   Familiarize yourself with the [basics of using dcrctl](dcrctl-basics.md).
@@ -139,49 +139,22 @@ A quick example:
 
 #### Ticketbuyer Configuration
 
-To set up your `dcrwallet` to enable its built-in `ticketbuyer` feature, add the following line to your `dcrwallet.conf` config file in the `[Application Options]` section:
+`dcrwallet` includes a built-in `ticketbuyer` which can buy tickets for you automatically. It can be enabled by adding the following line to your `dcrwallet.conf` config file:
 
-    enableticketbuyer=1
+```
+enableticketbuyer=1
+```
 
 If you are using a stakepool, you should also add the following lines (all of these can be found on your stakepool's "Tickets" page):
 
-    ticketaddress=<P2SH Address shared with Stakepool>
-    pooladdress=<Stakepool's Fee Collection Address>
-    poolfees=<Stakepool's Required Reward Fee>
+```
+ticketbuyer.votingaddress=<P2SH Address shared with Stakepool>
+pooladdress=<Stakepool's Fee Collection Address>
+poolfees=<Stakepool's Required Reward Fee>
+```
 
-With this configuration `ticketbuyer` will start running with it's default settings. You may want to modify the `ticketbuyer` configuration to tweak its behaviour - the full set of configuration options and their default values can be found in the chart [below](#full-ticketbuyer-options).
+If you dont want `ticketbuyer` to spend all of your funds, there is one more option which allows you to specify a balance which will not be spent:
 
-With `ticketbuyer` running and your wallet unlocked, you can watch your `dcrwallet` console to see whether or not tickets are being purchased. It will even display an explanation if tickets weren't purchased.
-
----
-
-## Full Ticketbuyer Options
-
-We recommended you read
-and understand the options available before using the feature as you may set your fees and ticket
-prices higher than desired.
-
-All of these options can be specified on the command line or in dcrwallet.conf in the `[Ticket Buyer Options]` section. Note that at
-this time there is no way to change settings while dcrwallet is running: you will need to restart it to
-adjust your settings.
-
-Parameter|Description|Default|Explanation
-:----------:|:---------------------------:|:----------:|:---------------------------:
-ticketbuyer.avgpricemode|The mode to use for calculating the average price if pricetarget is disabled (vwap, pool, dual) |vwap|!
-ticketbuyer.avgpricevwapdelta|The number of blocks to use from the current block to calculate the VWAP |2880|!
-ticketbuyer.maxfee|Maximum ticket fee per KB |0.1 DCR|Tickets are entered into the mempool in order of their fee per kilobyte. This sets the maximum fee you are willing to pay.
-ticketbuyer.minfee|Minimum ticket fee per KB |0.001 DCR|The minimum fee per kilobyte you are willing to pay. This should probably be left at 0.001 unless you know what you're doing.
-ticketbuyer.feesource|The fee source to use for ticket fee per KB (median or mean) |median|The fee chosen by the ticket buyer will be based off either the median (line all the fees up in order and choose the middle one) or the mean (also known as the average; add all the fees up and divide by 2). It's recommended to leave this at median as there have been instances of fee manipulation where people try to force up the average by buying one ticket with a very high fee.
-ticketbuyer.maxperblock|Maximum tickets per block, with negative numbers indicating buy one ticket every 1-in-n blocks |5|Do not buy more than this number of tickets per block. A negative number means buy one ticket every n blocks. e.g. -2 would mean buy a ticket every second block.
-ticketbuyer.blockstoavg|Number of blocks to average for fees calculation |11| Fees are calculated using this many previous blocks. You can usually leave this at the default.
-ticketbuyer.feetargetscaling|Scaling factor for setting the ticket fee, multiplies by the average fee |1|The average fee is multiplied by this number to give the fee to pay. DO NOT change this until you really know what you're doing. It could raise your fees very high. Remember, fees are non-refundable!
-ticketbuyer.dontwaitfortickets|Don't wait until your last round of tickets have entered the blockchain to attempt to purchase more| |By default, the ticket buyer will not buy more tickets until all the previous ones purchased have been entered into the blockchain. You can set this to purchase more even if some are still in the mempool.
-ticketbuyer.nospreadticketpurchases|Do not spread ticket purchases evenly throughout the window| | By default `ticketbuyer` spreads out the purchase of tickets which may result in more favourable fees. This setting tells `ticketbuyer` to purchase all tickets at once.
-ticketbuyer.maxinmempool|The maximum number of your tickets allowed in mempool before purchasing more tickets |40|If you have this many tickets in the mempool, the ticket buyer will not buy more until some are accepted into the blockchain.
-ticketbuyer.expirydelta|Number of blocks in the future before the ticket expires |16|You can set an expiry so that if your tickets are not accepted into the blockchain due to high fees, they will cancel and you can try again by raising your fees.
-ticketbuyer.maxpriceabsolute|Maximum absolute price to purchase a ticket |0 DCR| If the ticket price is above this value, you will not buy more tickets. The default of 0 turns this off.
-ticketbuyer.maxpricerelative|Scaling factor for setting the maximum price, multiplies by the average price |1.25|If the current window price is significantly higher than the last few windows, do not buy any tickets. E.g. With the default value of 1.25, if the average price of the last few windows is 50DCR, you won't buy any tickets if the current window is over 75DCR.
-ticketbuyer.balancetomaintainabsolute|Amount of funds to keep in wallet when stake mining |0 DCR| If your balance is lower than this number, you will not buy tickets. The default of 0 will use all the funds in your account to buy tickets.
-ticketbuyer.balancetomaintainrelative|Proportion of funds to leave in wallet when stake mining |0.3|Similar to the last one, except it's based on a percentage of your total funds.
-
----
+```
+ticketbuyer.balancetomaintainabsolute=<balance>
+```

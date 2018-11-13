@@ -2,6 +2,5 @@
 .DS_Store
 node_modules
 npm-debug.log
-/docker-build/
 /site/
 /package-lock.json

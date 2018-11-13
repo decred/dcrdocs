@@ -64,27 +64,27 @@ pre, code {
 }
 
 .md-typeset h2 {
-    color         : #0C1E3E;
+    color         : #091440;
     font-size     : 26px;
     text-transform: none;
     font-weight   : bold;
 }
 
 .md-typeset h3 {
-    color         : #0C1E3E;
+    color         : #091440;
     font-size     : 23px;
     text-transform: none;
 }
 
 .md-typeset h4 {
-    color         : #0C1E3E;
+    color         : #091440;
     font-size     : 20px;
     text-transform: none;
     font-weight   : bold;
 }
 
 .md-typeset h5 {
-    color         : #0C1E3E;
+    color         : #091440;
     font-size     : 18px;
     text-transform: none;
 }

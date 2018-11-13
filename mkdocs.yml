@@ -14,6 +14,10 @@ extra:
       link: 'https://www.reddit.com/r/decred/'
     - type: 'youtube'
       link: 'https://www.youtube.com/decredchannel'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company/decredproject/'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/decredproject/'
 site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
 repo_name: decred/dcrdocs
@@ -39,18 +43,19 @@ nav:
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
 - Governance:
-  - 'Introduction to Decred governance': 'governance/governance.md'
-  - 'Consensus rules voting': 'getting-started/user-guides/agenda-voting.md'
-  - 'How to Vote on consensus rule changes': 'getting-started/user-guides/how-to-vote.md'
+  - 'Introduction to Decred governance': 'governance/introduction-to-decred-governance.md'
+  - 'Consensus rules voting': 'governance/consensus-rules-voting.md'
+  - 'How to Vote on consensus rule changes': 'governance/how-to-vote.md'
   - 'Politeia proposals and voting': 'governance/politeia.md'
-  - 'Decred Constitution': 'getting-started/constitution.md'
+  - 'Decred Constitution': 'governance/decred-constitution.md'
 - Wallets:
     - Decrediton (GUI):
       - 'Decrediton Setup': 'getting-started/user-guides/decrediton-setup.md'
       - 'Using Decrediton': 'getting-started/user-guides/using-decrediton.md'
+      - 'Troubleshooting Problems': 'getting-started/user-guides/decrediton-troubleshooting.md'
     - CLI Wallet:
-      - 'Installation': 'getting-started/user-guides/cli-installation.md'
-      - 'OS Differences': 'getting-started/cli-differences.md'
+      - 'Installation': 'wallets/cli/cli-installation.md'
+      - 'OS Differences': 'wallets/cli/os-differences.md'
       - 'Startup Basics': 'getting-started/startup-basics.md'
       - 'dcrd Setup': 'getting-started/user-guides/dcrd-setup.md'
       - 'dcrwallet Setup': 'getting-started/user-guides/dcrwallet-setup.md'
@@ -58,7 +63,7 @@ nav:
       - 'Buying Tickets': 'getting-started/user-guides/dcrwallet-tickets.md'
       - 'dcrd and dcrwallet CLI Arguments': 'getting-started/dcrd-and-dcrwallet-cli-arguments.md'
       - 'dcrctl RPC Commands': 'getting-started/dcrctl-rpc-commands.md'
-    - 'Web Wallet': 'getting-started/user-guides/web.md'
+    - 'Web Wallet': 'wallets/web.md'
 - Proof-of-Stake Voting:
   - "What is Proof-of-Stake?": 'mining/proof-of-stake.md'
   - "How to Stake": 'mining/how-to-stake.md' 
@@ -80,7 +85,7 @@ nav:
   - 'Blocks': 'faq/blocks.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
 - Advanced:
-  - 'Using Testnet': 'getting-started/using-testnet.md'
+  - 'Using Testnet': 'advanced/using-testnet.md'
   - 'Manual CLI Installation': 'advanced/manual-cli-install.md'
   - 'Storing Login Details': 'advanced/storing-login-details.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
@@ -102,12 +107,11 @@ nav:
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - Contributing:
-  - 'Contributor Compensation': 'advanced/contributor-compensation.md'
+  - 'Contributor Compensation': 'contributing/contributor-compensation.md'
   - Guidelines:
-    - 'Using GitHub': 'advanced/using-github.md'
-    - 'Source Code Contributions': 'advanced/contributing.md'
+    - 'Using GitHub': 'contributing/using-github.md'
+    - 'Source Code Contributions': 'contributing/source-code-contributions.md'
 - About:
-  - 'Support Directory': 'support-directory.md'
   - 'Credits': 'about/credits.md'
   - 'License': 'about/license.md'
 copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.3. Decred Project 2018.

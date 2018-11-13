@@ -1,1 +1,6 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 450"><defs><style>.cls-1{fill:#121f3c;}.cls-2{fill:#8795a2;}.cls-3{fill:#132f4b;}.cls-4{fill:none;}</style></defs><title>Flag</title><rect class="cls-1" x="350" y="262.5" width="24.99" height="125"/><rect id="_Rectangle_" data-name="&lt;Rectangle&gt;" class="cls-2" x="200" y="87.5" width="175" height="150"/><path id="_Rectangle_2" data-name="&lt;Rectangle&gt;" class="cls-1" d="M362.5,62.5h0A12.5,12.5,0,0,1,375,75V87.5a0,0,0,0,1,0,0H350a0,0,0,0,1,0,0V75a12.5,12.5,0,0,1,12.5-12.5Z"/><polygon id="_Path_" data-name="&lt;Path&gt;" class="cls-3" points="224.76 237.74 200 237.5 225 262.5 224.76 237.74"/><polygon class="cls-2" points="75 112.5 100 187.5 75 262.5 225 262.5 225 112.5 75 112.5"/><rect class="cls-4" width="450" height="450"/></svg>
+<svg width="333" height="360" viewBox="0 0 333 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M332.289 193.85H304.609V360H332.289V193.85Z" fill="#091440"/>
+<path d="M318.459 0C322.132 0 325.655 1.45926 328.253 4.05664C330.85 6.65402 332.309 10.1768 332.309 13.8501V27.7H304.619V13.8501C304.619 10.1768 306.078 6.65402 308.676 4.05664C311.273 1.45926 314.796 0 318.469 0H318.459Z" fill="#091440"/>
+<path d="M332.3 193.85V27.6899H138.46V55.3899H0L27.6899 138.46L0 221.54H166.15V221.53V193.85H332.3Z" fill="#C4CBD2"/>
+<path d="M138.461 193.85H166.151V221.54L138.461 193.85Z" fill="#091440"/>
+</svg>

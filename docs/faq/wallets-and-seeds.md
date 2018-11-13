@@ -60,13 +60,13 @@ dcrctl --wallet getbalance "imported" 0 all
 
 ---
 
-#### 7. What is the difference between a testnet and mainnet address? 
+#### 7. What is the difference between a testnet and mainnet address?
 
 A testnet public key address[^11507] starts with the letters `Tk`. A mainnet address starts with the letters `Dk`. `T` = Testnet, `D` = (Decred) Mainnet.
 
 ---
 
-#### 8. What are the different types of addresses? 
+#### 8. What are the different types of addresses?
 
 A Decred address[^14995] is actually just a representation of a public key (which itself could be a script hash) along with a 2-byte prefix which identifies the network and type and a checksum suffix in order to detect improperly entered addresses.
 
@@ -77,6 +77,18 @@ The first byte of the prefix identifies the network. This is why all mainnet add
 The most common addresses used at the moment are secp256k1 pubkey hashes, which are identified by a lowercase "s". It represents a single public key and therefore only has a single associated private key which can be used to redeem it.
 
 The stake pool, however, uses a pay-to-script-hash address, which is identified by the second byte being a lowercase "c" (again that is shown in the linked params). The specific flavor of script it generates is a multi-signature 1-of-2, which is how it allows either the pool, or you, to vote. Both you and the stake pool have your own private keys and since the script only requires one signature of the possible two, that is how it allows delegation of voting rights to the pool without you giving up your voting rights completely.
+
+---
+
+#### 9. I have lost my seed. What can I do?
+
+If you have lost all copies of your seed *and* the wallet (or the wallet's passphrase), then you're out of luck: your funds are truly lost.
+
+If you still have access to the wallet and the passphrase you need to **IMMEDIATELY CREATE A NEW WALLET** with a new seed that you properly store and then transfer your funds from the old wallet to the new.
+
+If you have live tickets, maintain both wallets until all tickets have voted, then transfer the remaining funds to the new wallet.
+
+You should backup your `wallet.db` file (preferably in a thumb drive stored in a secure location) until all funds have been transferred.
 
 ---
 

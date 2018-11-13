@@ -2,7 +2,7 @@
 
 **Prerequisites:**
 
-- Use the latest [dcrinstall](cli-installation.md) to install the command line tools.
+- Use the latest [dcrinstall](../../wallets/cli/cli-installation.md) to install the command line tools.
 - [Setup dcrd](dcrd-setup.md) and have it running in the background.
 - [Setup dcrwallet](dcrwallet-setup.md) and have it running in the background.
 

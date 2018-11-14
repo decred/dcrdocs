@@ -14,7 +14,7 @@ The RFP process worked well for certain types of tasks, however a need arose to 
 
 ## <img class="dcr-icon" src="/img/dcr-icons/User.svg" /> Contractors
 
-Decred currently has over 20 active contractors and they can be viewed on the decred.org [Contributors](https://decred.org/contributors) page. The active contractors are made up of both individuals and corporate contractors. Contractors contribute in a wide variety of ways including software development, design, marketing, community management and documentation.
+Decred currently has over 50 active contractors and they can be viewed on the decred.org [Contributors](https://decred.org/contributors) page. The active contractors are made up of both individuals and corporate contractors. Contractors contribute in a wide variety of ways including software development, design, marketing, community management and documentation.
 
 Contractors submit a monthly invoice to DHG (Decred Holding Group) and are paid in Decred according to an hourly rate.
 

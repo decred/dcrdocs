@@ -120,7 +120,7 @@ The governance tab enables the user to browse and vote upon Politeia proposals.
 
 ![Governance page](/img/decrediton/governance.png)
 
-There are buttons at the top to view all proposals, and to create your own proposal. These will open the relevant pages on [https://proposals.decred.org](https://proposals.decred.org) in your browser.
+There are buttons at the top to view all proposals, and to create your own proposal. These will open the relevant pages on <https://proposals.decred.org> in your browser.
 
 You are able to vote on proposals if the following two criteria are met:
 

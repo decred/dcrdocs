@@ -6,7 +6,7 @@ A simple web wallet is available for users who do not want to install
 additional software on their computer.  It is based on
 [Copay](https://github.com/bitpay/copay) with Decred specific changes
 added and can be found at
-[https://wallet.decred.org](https://wallet.decred.org)
+<https://wallet.decred.org>
 
 There are a couple of things you need to know about the web client
 before you use it:
@@ -29,7 +29,7 @@ before you use it:
 
 > Step One
 
-Go to [https://wallet.decred.org](https://wallet.decred.org). You will
+Go to <https://wallet.decred.org>. You will
 be presented with the `Terms and Conditions` screen. Pay extra
 attention to the following:
 

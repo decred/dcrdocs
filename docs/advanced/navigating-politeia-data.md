@@ -1,5 +1,7 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Politeia.svg" /> Navigating Politeia Data
 
+---
+
 Data from the [proposals.decred.org](https://proposals.decred.org/) site is stored in [this repository](https://github.com/decred-proposals/mainnet). This page gives an overview of how to navigate that repository and how to interpret the contents of its files.
 
 For the purpose of this guide I will be using [this proposal](https://github.com/decred-proposals/mainnet/tree/master/c68bb790ba0843980bb9695de4628995e75e0d1f36c992951db49eca7b3b4bcd/) as an example. Links from [proposals.decred.org](https://proposals.decred.org/) will take you one layer deeper to the [most recent version of the proposal](https://github.com/decred-proposals/mainnet/tree/master/c68bb790ba0843980bb9695de4628995e75e0d1f36c992951db49eca7b3b4bcd/2). 

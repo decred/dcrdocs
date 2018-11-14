@@ -211,7 +211,7 @@ An astronomically large secret number that allows DCR to be spent. All transacti
 
 #### Private passphrase
 
-A passphrate that is used to encrypt parts of the wallet.db file; most notably private keys. A wallet.db file encrypted with a private passphrase cannot be used without that passphrase.
+A passphrase that is used to encrypt parts of the wallet.db file; most notably private keys. A wallet.db file encrypted with a private passphrase cannot be used without that passphrase.
 
 #### Proof-of-Stake (PoS) voting
 
@@ -223,7 +223,7 @@ See [consensus rules](#consensus-rules).
 
 #### Public key
 
-A cryptographic code generated algorithmically from a private key. The user’s public key is used to prove that a transaction was signed using their private key.
+An astronomically large number generated algorithmically from a private key. Public keys can be freely shared without revealing any information about the private key they are generated from. The user’s public key is used to prove that a transaction was signed using their private key.
 
 
 ## Q
@@ -265,7 +265,7 @@ A proposal to change the consensus rules of the Decred blockchain. Rule change p
 
 #### Seed
 
-A 256-bit (32-byte) cryptographically secure random number that can be used to recover a wallet. When creating a wallet using any Decred wallet software, a 33 word "seed phrase" is also created from the 32-byte seed. If the wallet is lost or corrupted, the seed phrase can be used to restore the wallet's private keys, transaction history, and ballances using any Decred wallet on any computer.  
+A 256-bit (32-byte) cryptographically secure random number that can be used to recover a wallet. When creating a wallet using any Decred wallet software, a 33 word "seed phrase" is also created from the 32-byte seed. If the wallet is lost or corrupted, the seed phrase can be used to restore the wallet's private keys, transaction history, and balances using any Decred wallet on any computer.  
 
 #### Simnet
 

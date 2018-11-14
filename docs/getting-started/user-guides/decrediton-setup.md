@@ -14,7 +14,7 @@ Last updated for Decrediton v1.3.1.
 
 ## Download and Install
 
-The latest version of Decrediton can be downloaded from [https://decred.org/downloads/](https://decred.org/downloads/).
+The latest version of Decrediton can be downloaded from <https://decred.org/downloads>.
 
 ??? info "Windows instructions (click to expand)"
 

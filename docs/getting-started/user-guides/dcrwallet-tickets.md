@@ -104,7 +104,7 @@ Your `ticketfee` is the DCR/kB rate you'll pay to have your ticket purchase be i
 
 Why are ticket fees important? Usually the default fee of 0.001 is enough to get your tickets mined, however there are extremely rare circumstances where an increased ticket fee may be beneficial. When ticket demand outpaces supply (there are only a maximum of 2880 tickets available at each price interval) a situation is created where stakeholders can increase their ticket fees in order to get their ticket purchases mined ahead of others offering lower fees. This type of "fee wars" scenario has not occurred since the new ticket price algorithm was introduced in July 2017.
 
-Third party sites such as [https://dcrstats.com](https://dcrstats.com) and [http://posmaster.info](http://posmaster.info) can be used to find the average ticket fee in the mempool.
+Third party sites such as <https://dcrstats.com> can be used to find the average ticket fee in the mempool.
 
 > Ticket Price
 

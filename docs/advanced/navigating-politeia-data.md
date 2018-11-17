@@ -42,7 +42,8 @@ Below is a table with descriptions of the files and folders found in each propos
 
 ### Voting and comment data 
 
-Data on proposal comments and votes is updated hourly during the proposal's life cycle. Every hour, for each proposal in the "pre-voting" stage (proposal is open for comments, but author has not yet triggered a vote) or "active voting" stage (proposal is being voted on currently), a git commit is made updating each proposal's `comments.journal` file and (if proposal is in active voting stage) its `ballot.journal` file ---versions of the proposal submitted prior to the version that is voted on will only have a `comments.journal` file. Commits are made every hour because making a git commit is expensive performance-wise, and making a commit for every vote and comment would not be practical. Additionally, grouping votes in hourly commits helps protect the privacy of ticketholders.
+A git commit is made every hour for each active proposal to update the `comments.journal` file. If voting has started on a proposal, the same commit will also be used to update its `ballot.journal` file. The hourly commits are stopped once the voting has been completed and all votes have been recorded in git. Commits are made every hour because making a git commit is expensive performance-wise and making a commit for every vote and comment would not be practical. Additionally, grouping votes in hourly commits helps protect the privacy of ticketholders.
+
 
 ### Vote data
 
@@ -85,7 +86,6 @@ In the datasets presented here, **users are identified by their public keys**. O
 
 Currently, to associate a public key with a username, you need to go through [proposals.decred.org](https://proposals.decred.org/). To look up the public key for a user, click on their username anywhere on the site. This will take you to the user's profile, which has a URL like this: 
 <https://proposals.decred.org/user/350a4b6c-5cdd-4d87-822a-4900dc3a930c>
-
 
 The final part of this URL is the Universally Unique ID (UUID) for the account. This can be input into a [public API](https://proposals.decred.org/api/v1/user/) exposed by the Politeia website, which will takes the UUID as an input and outputs user profile data, including the public key. For example, if you paste the above example UUID into a browser:
 <https://proposals.decred.org/api/v1/user/350a4b6c-5cdd-4d87-822a-4900dc3a930c>

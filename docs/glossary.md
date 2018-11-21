@@ -36,11 +36,11 @@ Metadata at the beginning of a block that defines information about the block. T
 
 #### Block reward
 
-A reward (in DCR) split between PoW miners, ticket holders, and the Treasury for successfully approving a block of transactions. The block reward [decays exponentially](https://docs.decred.org/advanced/inflation/) with block height (length of blockchain). However, Decred’s algorithm interpolates this decay over time so as not to produce market shocks, as typically seen in algorithms that involve large and infrequent reductions, such as halving the rewards every 4 years. The block reward started at 31.19582664 and it adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/1011.
+A reward (in DCR) split between PoW miners, voters (ticket holders that have been called to vote), and the Treasury for successfully creating a block of transactions. The block reward [decays exponentially](https://docs.decred.org/advanced/inflation/) with block height (length of blockchain). However, Decred’s algorithm interpolates this decay over time so as not to produce market shocks, as typically seen in algorithms that involve large and infrequent reductions, such as halving the rewards every 4 years. The block reward started at 31.19582664 and it adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/1011.
 
 #### Block voting
 
-In each block, five tickets are called to vote. In addition to votes on any open consensus rule change proposals, each ticket votes to approve or reject the regular transaction tree of the previous block. If a majority of voting tickets vote No, the regular transaction tree of the previous block is rejected and those transactions are returned to the mempool.
+In each block, five tickets are called to vote. In addition to votes on any open consensus rule change proposals, each ticket votes to approve or reject the regular transaction tree of the previous block. If a majority of voting tickets vote Yes, the regular transaction tree of the previous block is accepted. If a majority of voting tickets vote No (or there is a tie), the regular transaction tree of the previous block is rejected and those transactions are returned to the mempool.
 
 
 ## C
@@ -113,7 +113,7 @@ Tickets that reached the end of their window without being called to vote - thes
 
 #### Faucet
 
-A mechanism for obtaining free (testnet) tokens.
+A mechanism for obtaining free (testnet) coins.
 
 
 ## H
@@ -122,11 +122,12 @@ A mechanism for obtaining free (testnet) tokens.
 
 #### Hash
 
-The output of a cryptographic hashing function that produces a fixed-size and unique value from variable-size input. 
+The output of a cryptographic hashing function that produces a fixed-size value from variable-size input. While it is computationally easy to create a hash from an input, it is extremely computationally difficult to calculate an input that will produce a given hash. 
+
 
 #### Hash function
 
-A cryptographic function that produces a fixed-size and unique hash value from variable-size transaction input. Decred's Proof-of-Work uses the [BLAKE-256](https://docs.decred.org/research/blake-256-hash-function/) hashing function. 
+A cryptographic function that produces a fixed-size hash value from variable-size transaction input. Decred's Proof-of-Work uses the [BLAKE-256](https://docs.decred.org/research/blake-256-hash-function/) hashing function. 
 
 #### Hashrate
 
@@ -150,7 +151,7 @@ Once tickets are mined they are immature for 256 blocks (about 20 hours) and can
 Increase in the [available supply](https://docs.decred.org/advanced/inflation/) of Decred as new DCR is minted into existence through the block reward.
 
 
-## I
+## L
 
 ---
 
@@ -181,7 +182,8 @@ A group of miners who share (pool) their computational resources to mine DCR. Wh
 
 #### Missed ticket
 
-Tickets that have been called but did not receive a reward. This can happen if a ticket is called to vote and does not respond. This can also happen if a ticket is called to vote, responds and broadcasts their vote to the network, but a miner does not include the vote in the following block. 
+Tickets that have been called but did not receive a reward. This can happen if a ticket is called to vote, but the wallet that bought the ticket does not respond. This can also happen if the wallet does respond and broadcasts its vote to the network, but a miner does not include their vote in the following block. 
+
 
 ## O
 
@@ -207,11 +209,12 @@ A system for facilitating the submission and discussion of [proposals](https://p
 
 #### Private key
 
-An astronomically large secret number that allows DCR to be spent. All transactions that spend DRC must include a signature that can only be produced with knowledge of this secret number.
+An astronomically large secret number that allows DCR to be spent. All transactions that spend DCR can only be produced with knowledge of this secret number.
 
 #### Private passphrase
 
-A passphrase that is used to encrypt parts of the wallet.db file; most notably private keys. A wallet.db file encrypted with a private passphrase cannot be used without that passphrase.
+A passphrase that is used to encrypt parts of the wallet.db file; most notably private keys. The private keys can not be accessed unless the passphrase is used to decrypt them. 
+
 
 #### Proof-of-Stake (PoS) voting
 

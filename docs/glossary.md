@@ -209,7 +209,7 @@ A system for facilitating the submission and discussion of [proposals](https://p
 
 #### Private key
 
-An astronomically large secret number that allows DCR to be spent. All transactions that spend DCR can only be produced with knowledge of this secret number.
+An astronomically large number which, when kept secret from others, enables legitimate spending of personal Decred while preventing others from spending it. Private keys are encrypted by wallets to prevent theft.
 
 #### Private passphrase
 

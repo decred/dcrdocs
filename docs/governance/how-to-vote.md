@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> **How to Vote on Rule Change Proposals**
+# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> **How to Vote on consensus rule changes**
 
 This guide assumes you already have an active wallet and have purchased tickets. If not, please follow the [Voting Preparation](consensus-rules-voting.md#voting-preparation) guide.
 
@@ -6,7 +6,7 @@ The choice a ticket votes with depends on your vote preference at the time the t
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> **Voting with a Voting Service Provider (VSP)**
 
-If your Voting Service Provider (VSP) has updated to the latest VSP software, you will find a 'Voting' page in the navigation menu with dropdown options for each agenda. After you've chosen how you want your tickets to vote, simply press the 'Update Voting Preferences' button to save your vote choices. Below you'll find an image of the votechoices for vote version 5.
+If your Voting Service Provider (VSP) has updated to the latest VSP software, you will find a 'Voting' page in the navigation menu with dropdown options for each agenda. After you've chosen how you want your tickets to vote, simply press the 'Update Voting Preferences' button to save your vote choices. Below you'll find an image of the vote choices for vote version 5.
 
 <img src="/img/voting_preferences.png">
 

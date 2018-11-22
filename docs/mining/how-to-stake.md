@@ -1,7 +1,5 @@
 # <img class="dcr-icon" src="/img/dcr-icons/QuestionTicket.svg" /> How to Stake/Vote
 
-Last updated for v1.3.0
-
 ---
 
 ## How to Stake/Vote

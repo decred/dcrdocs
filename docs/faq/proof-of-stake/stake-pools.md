@@ -2,10 +2,6 @@
 
 ---
 
-!!! danger "Critical Information"
-
-    This FAQ dates from earlier in Decred's history and used deprecated terms like PoS Mining (now Voting) and Stakepools (now Voting Service Providers).
-
 
 #### 1. Are there any other benefits to a stake pool other than not needing to run a full node and keeping your wallet unlocked? For example, will it have a better chance of winning or anything like that? 
 

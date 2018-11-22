@@ -27,7 +27,7 @@ A ticket is a token you buy to participate in the PoS system. You can buy ticket
 
 #### 3. Do I need to be constantly connected to the network to participate in PoS? 
 
-A wallet needs to be online 24/7 to respond to vote if one of your tickets is selected. There are two main ways to do this: 1) a solo staking wallet which you set up and keep online all the time, or 2) you can use a [Voting Service Provider](/mining/proof-of-stake.md#solo-mining-or-pool-mining) (VSP). A VSP is a community-run wallet to which you can assign the voting rights of your tickets. The VSP will vote on your behalf, charging a small percentage of the PoS reward as a fee for this service.
+A wallet needs to be online 24/7 to respond to vote if one of your tickets is selected. There are two main ways to do this: 1) a solo staking wallet which you set up and keep online all the time, or 2) you can use a [Voting Service Provider](../../mining/how-to-stake.md#pos-using-a-voting-service-provider-vsp) (VSP). A VSP is a community-run wallet to which you can assign the voting rights of your tickets. The VSP will vote on your behalf, charging a small percentage of the PoS reward as a fee for this service.
 
 It is important to note that you are only assigning voting rights to the pool, not your actual funds. A VSP does not have access to your funds at any time.
 
@@ -35,7 +35,7 @@ It is important to note that you are only assigning voting rights to the pool, n
 
 #### 4. What is the "ticket price"? 
 
-The price for tickets is determined by an algorithm that aims to keep the ticket pool size, which is the total amount of tickets in the PoS system ticket pool, around a target size of 40960 tickets. This target was selected prior to Decred's launch as a way of balancing the average time until tickets are called to vote with the on-chain footprint of the voting process.
+The price for tickets is determined by an algorithm that aims to keep the ticket pool size, which is the total amount of tickets in the PoS system ticket pool, around a target size of 40960 tickets. 
 
 The ticket price goes up or down according to the demand for tickets, and the number of tickets currently in the pool. Every 144 blocks the algorithm adjusts the ticket price. This is called a buying window. Each block can contain 20 newly bought tickets. This means that in every buying window a maximum of 2880 tickets can be added to the PoS system ticket pool.
 
@@ -53,7 +53,7 @@ The ticketfee is the fee you pay if your ticket gets mined. This fee is an incen
 In case the buying window is full, meaning there are more tickets being bought than there are available to be mined during that window, the ticketfee will be used to determine which tickets get put into
 the ticket pool. The tickets with the highest ticketfee will be selected by the PoW miners.
 
-Fees are calculated in DCR per kilobyte. Since a ticket is only about 300 bytes (for solo) or 540 bytes (for pool) in size, the actual fees you pay will be lower than what you set as the specific fee amount.
+Fees are calculated in DCR per kilobyte. Since a ticket is only about 300 bytes (for solo) or 540 bytes (for VSP) in size, the actual fees you pay will be lower than what you set as the specific fee amount.
 
 Both txfees and ticketfees will *not* be returned when a ticket votes, expires, or misses a vote.
 
@@ -74,11 +74,9 @@ It also reduces latency between the wallet and network which can reduce the chan
 
 #### 7. What happens to my funds when I buy a ticket? 
 
-Funds used to purchase tickets are locked until the ticket is selected to vote or it expires. They are unable to leave your wallet and will appear under the Locked heading of your wallet. If your ticket is selected to vote, you will be refunded the total amount paid for the ticket and given the PoS reward.
+Funds used to purchase tickets are locked until your ticket is selected to vote or expires; tickets expire if they aren't selected to vote after 40960 blocks (about 4 months). If your ticket does successfully vote when called, you will receive the PoS reward. 
 
-The only costs for using this system are the fees you set. The txfee will be charged for the transaction of your ticket across the network. The ticketfee will be charged for incorporation into the ticket pool, and is paid to the PoW miners. If your ticket does not get mined, there is no charge as the transaction never made it onto the network.
-
-In case your ticket isn't selected to vote after 40960 blocks (about 4 months), the system will revoke your ticket and the decred you paid for it (minus fees) will be transferred back into your wallet. 
+If you submit a ticket, and it is not added to the ticket pool (included in a block by PoW miners), the `ticketfee` set when you purchased your ticket is never paid. The `txfee` for buying the ticket is paid out of the unlocked DCR sent back to your wallet. 
 
 ---
 
@@ -115,7 +113,7 @@ Currently, a platform for the community to submit and advocate a voting agenda i
 
 #### 10. What is hardfork voting? 
 
-A more up-to-date version of this information, with a diagram, is available on [adgenda voting](/getting-started/user-guides/agenda-voting/) page.
+A more up-to-date version of this information, with a diagram, is available on [consensus rules voting](../../governance/consensus-rules-voting.md) page.
 
 Like any other cryptocurrency, Decred might need to hardfork at some point.
 

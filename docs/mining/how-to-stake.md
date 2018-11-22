@@ -6,7 +6,7 @@ Last updated for v1.3.0
 
 ## How to Stake/Vote
 
-Participating in Proof-of-Stake (PoS) voting requires tickets to be controlled by a Decred wallet running 24/7. The wallet needs to be always online so that it can respond by signing the block when its tickets are called to vote; if the wallet is unavailable then the votes will be missed and no block reward will be received.
+Participating in Proof-of-Stake (PoS) voting requires a Decred wallet to be running 24/7. The wallet needs to be always online so that it can be called to vote; if the wallet is unavailable then the votes will be missed and no block reward will be received.
 
 Running your own always-online wallet is known as **"Solo" Voting**.
 
@@ -36,5 +36,5 @@ More redundancy equals less chance of missed votes, although all pools will have
 
 PoS voting using a VSP can be done using Decrediton or dcrwallet.
 
-- `Decrediton` - GUI wallet for Windows/macOS/Linux. The [Tickets menu, Purchase tab](/getting-started/user-guides/using-decrediton.md#tickets) is used to buy tickets.
-- `dcrwallet` - CLI wallet for Windows/macOS/Linux. The [Buying Tickets with dcrwallet](/getting-started/user-guides/dcrwallet-tickets.md) guide explains how to purchase tickets via command line.
+- `Decrediton` - GUI wallet for Windows/macOS/Linux. The [Tickets menu, Purchase tab](../../getting-started/user-guides/using-decrediton.md#tickets) is used to buy tickets.
+- `dcrwallet` - CLI wallet for Windows/macOS/Linux. The [Buying Tickets with dcrwallet](../../getting-started/user-guides/dcrwallet-tickets.md) guide explains how to purchase tickets via command line.

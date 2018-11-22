@@ -1,8 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Proof of Stake Voting
 
 
-Last updated for v1.3.0
-
 ---
 
 ## Overview 

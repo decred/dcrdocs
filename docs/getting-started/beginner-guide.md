@@ -1,85 +1,90 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Flag.svg" /> Beginner's Guide
 
-Last updated for v1.0.1
-
 ---
 
 ## Welcome To Decred 
 
-Welcome to Decred! We are very glad to have you. As you may or may not already know, Decred is different. There's a lot of new things to learn to fully grasp how things work. This documentation will attempt to make things a bit easier to understand.
+This guide offers signposts to some useful resources, including how to set up your Decred wallet, buy DCR, participate in Decred’s governance, connect with the community and contribute to the project (contributors welcome!). 
 
-This beginner's guide is a path to getting the Decred software up and running. You can choose from multiple clients to get a node on the network and Decred in your wallet. Specifically, you'll learn how to install, setup, and use the Decred applications; how to obtain DCR; how to vote via Proof-of-Stake; and how to use the block explorer.
+## Wallets
 
-You'll need to follow an [Installation Guide](#installation-guides), and then follow the path for the application of your choice below. After your application is set-up, go through the [General Guides](#general-guides) at the bottom of this page. If you have any questions along the way, join us in our [Slack](/support-directory.md#join-us-on-slack).
+[Decrediton](user-guides/decrediton-setup.md) is Decred's GUI wallet. It supports Voting through [stakepools](https://decred.org/stakepools/) and offers the easiest way to start buying tickets and participating in governance.
 
-**NOTE: Using Testnet is highly recommended for learning how to use the Decred software without the fear of making a mistake and losing real money. After following the guides to setup your choice of software, please visit the [Using Testnet guide](/getting-started/using-testnet.md) to learn how to launch your application onto Decred's testnet.**
-
----
-
-## Applications 
-
-Below you'll find a list of currently available applications, with a chart showing their compatibility with different operating systems.
-
-* **Decrediton**: Cross-platform GUI client as of v1.1.1.
-
-* **dcrd**: The node daemon, this command-line application handles block management and consensus.
-
-* **dcrwallet**: The wallet daemon, this command-line application handles address and transaction management.
-
-* **dcrctl**: The remote procedure call (RPC) client, this command-line application is used to control dcrd and dcrwallet via RPC commands.
-
-|           | dcrd | dcrwallet | dcrctl | Decrediton  |
-| ---------:|:----:|:---------:|:------:|:-----------:|
-| Windows   | X    | X         | X      | X           |
-| macOS     | X    | X         | X      | X           |
-| Linux     | X    | X         | X      | X           |
-| Other UNIX| X    | X         | X      |             |
-
-"Other UNIX" currently includes various *BSDs and Solaris/illumos.
-
-Note: You might soon notice one of the many differences between Decred and other 
-popular cryptocurrencies: the wallet daemon and node daemon are separate.
-A lot of other coins run these functions together in a single daemon.
-For those who choose to use the command line interfaces, this means you must
-run `dcrd` for full node functionality, and `dcrwallet` to store your DCR,
-create transactions and participate in Proof-of-Stake mining/voting.
-
----
-
-## Installation Guides 
-
-To get started, choose an option for installations available for your operating system below:
-
-* [Command Line Suite **via dcrinstall**](/getting-started/user-guides/cli-installation.md) - NOTE: The `dcrinstall` method is the fastest and easiest way to get a command-line node and wallet running. It is recommended and the command-line path setup guides below will assume you've used this method.
-* [Decrediton](/getting-started/user-guides/decrediton-setup.md)
-
----
-
-**NOTE:** All of the following guides can be found in the navigation menu with the same names.
-
-## Decrediton Path 
-
-The following guide will help you load Decrediton:
-
-* [Decrediton Setup](/getting-started/user-guides/decrediton-setup.md)
-* [Using Decrediton](/getting-started/user-guides/using-decrediton.md)
-
-## Command-Line Path 
-
-The following guides, in order, will get you started with the Command-Line Applications (`dcrd`, `dcrwallet`, `dcrctl`):
-
-* [Command-Line Differences](/getting-started/cli-differences.md)
-* [Startup Option Basics](/getting-started/startup-basics.md)
-* [dcrd Setup](/getting-started/user-guides/dcrd-setup.md)
-* [dcrwallet Setup](/getting-started/user-guides/dcrwallet-setup.md)
-* [dcrctl Basic Usage](/getting-started/user-guides/dcrctl-basics.md)
+There is also a [Command Line Interface](../wallets/cli/cli-installation.md) that exposes more advanced functionality, including the ability to run a personal Voting wallet.
 
 ## General Guides 
 
-The following guides are independent of the different applications:
+The following guides go into depth on key aspects of the Decred experience:
 
-* [Using Testnet](/getting-started/using-testnet.md)
-* [Obtaining DCR](/getting-started/obtaining-dcr.md)
-* [Using the Block Explorer](/getting-started/using-the-block-explorer.md)
-* [Proof-of-Stake Guide](/mining/proof-of-stake.md)
-* [Mainnet Voting Guide](/getting-started/user-guides/agenda-voting.md)
+* [Obtaining DCR](obtaining-dcr.md)
+* [Using the Block Explorer](using-the-block-explorer.md)
+* [Governance](../governance/introduction-to-decred-governance.md)
+* [Ticket buying guide](../mining/proof-of-stake.md)
+* [Politeia](../governance/politeia.md)
+* [Voting on consensus rules changes](../governance/consensus-rules-voting.md)
+* [Using Testnet](../advanced/using-testnet.md)
+
+
+## Information
+
+**Network Stats**
+
+* [stats.decred.org](https://stats.decred.org/)
+
+**Block Explorers**
+
+* [explorer.dcrdata.org](https://explorer.dcrdata.org/)
+* [mainnet.decred.org](https://mainnet.decred.org/)
+
+**News/Articles**
+
+* [Decred Journal](https://xaur.github.io/decred-news/) - comprehensive monthly newsletter maintained by some community members
+* [Decred.org blog](https://blog.decred.org)
+* [Decred Medium](https://medium.com/decred) (curated content from community members)
+* [Press coverage/releases](https://decred.org/press/)
+* [The Decred Digest](https://thedecreddigest.com/) - community blog
+
+**Video**
+
+* [Decred Youtube channel](https://www.youtube.com/decredchannel)
+
+## Community
+
+In addition to the [Politeia proposals site](https://proposals.decred.org), the Decred community can be found on a [variety of platforms](https://decred.org/community/).
+
+### Chat 
+
+The following chat platforms are bridged, such that one's messages are relayed to users on the other platforms:
+
+* [Slack](https://slack.decred.org/)
+* [Matrix (via Riot.im)](https://riot.im/app/#/room/#general:decred.org)
+* [Discord](https://discord.gg/GJ2GXfz)
+* [IRC](https://webchat.freenode.net/?channels=decred&uio=d4)
+
+Telegram, Rocket.Chat and KakaoTalk are partially bridged.
+
+### Social Media
+
+* [Reddit](https://www.reddit.com/r/decred)
+* [Twitter](https://twitter.com/decredproject) (account operated by small group of contributors)
+* [Forum](https://forum.decred.org/)
+* [Facebook](https://facebook.com/decredproject) 
+* [LinkedIn](https://www.linkedin.com/company/decredproject/) (account operated by small group of contributors)
+
+### Code
+
+Code for a variety of software projects lives on [GitHub](https://github.com/decred). Issues can be used to report bugs or suggest features. Pull Requests can be issued to merge work into the main repository branch.
+
+Selected GitHub repositories:
+
+* [decrediton](https://github.com/decred/decrediton) - GUI wallet
+* [dcrd](https://github.com/decred/dcrd) and [dcrwallet](https://github.com/decred/dcrwallet) - Decred daemons
+* [politeia](https://github.com/decred/politeia) and [politeiagui](https://github.com/decred/politeiagui) - Politeia back and front end
+* [dcrdata](https://github.com/decred/dcrdata) - block explorer
+* [dcrdocs](https://github.com/decred/dcrdocs) - this [docs site](../index.md)
+* [dcrweb](https://github.com/decred/dcrweb) - [Decred.org](https://decred.org/)
+* [dcps](https://github.com/decred/dcps) - Decred Change Proposals
+
+### Contributing
+
+Decred is always looking for new contributors. A basic outline of how this works is: Show up, Find something useful to do, Do it, Get Paid. Do a small bit at first and see if other contributors in that domain appreciate it. This [blog post](https://blog.decred.org/2017/07/25/Decred-Recruiting/) explains the project's recruitment philosophy and approach in more detail.

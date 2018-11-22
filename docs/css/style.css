@@ -2,7 +2,7 @@
 .md-header,
 .md-footer-nav,
 .md-footer-meta {
-    background-color: #0C1E3E
+    background-color: #091440
 }
 
 /* Highlight current page in nav menu */
@@ -36,7 +36,7 @@ p img.dcr-icon {
 
 @media only screen and (max-width: 76.1875em){
     html .md-nav--primary .md-nav__title--site {
-    	background-color: #0C1E3E;
+    	background-color: #091440;
     }
     .md-nav__source {
     	background-color: #122c5c;
@@ -71,7 +71,7 @@ details .md-typeset__table code{
     background-color: #EDEFF1;
     font-size: 13px;
     font-weight: bold;
-    color: #0C1E3E;
+    color: #091440;
 }
 .md-typeset table:not([class]) td{
     font-size: 13px;
@@ -93,4 +93,17 @@ details .md-typeset__table code{
 }
 .md-typeset .admonition p{
     font-size: 14px;
+}
+
+.md-typeset code {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    background-color: #EDEFF1;
+    box-shadow: none;
+}
+
+.md-typeset pre>code {
+    border-radius: 3px;
+    background-color: #EDEFF1;
 }

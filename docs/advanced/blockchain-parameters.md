@@ -10,7 +10,7 @@ Maximum block size      | 393,216      | The maximum size of a block in bytes.
 Initial block reward    | 31.19582664  | The initial reward in DCR for mining a block.
 Block reward multiplier | 100/101      | The block reward is multiplied by this whenever the block price changes. Basically what that means is that every reward cycle (see below) the block reward given for mining a block is reduced by approximately 1%.
 Block reward change     | 6,144 blocks | The number of blocks between block reward changes. This occurs approximately every 3 weeks. Decred uses a more frequent change cycle (about 3 weeks compared to Bitcoins 4 years), but the magnitude of the change is much less (about 1% per cycle whereas Bitcoin is 50%). This is designed to reduce the shock in markets when a change occurs.
-Block reward share      | 60/30/10     | The reward for a block is split between miners and the Decred development team as follows: PoW miners get 60% of the reward to reimburse them for electricity and hardware expenses. PoS miners get 6% of the reward each (30% for 5 votes) <what happens if less than 5 vote?>. This encourages people to hold their coins and invest in the Decred network. The development team receives 10% to help ensure the future of Decred by funding ongoing development.
+Block reward share      | 60/30/10     | The reward for a block is split between PoW miners, PoS voters and the Decred Treasury as follows: PoW miners get 60% of the reward to reimburse them for electricity and hardware expenses. PoS voters get 6% of the reward each (30% for 5 votes). This encourages people to hold their coins and invest in the Decred network. The Decred Treasury receives 10% to help ensure the future of Decred by funding ongoing development.
 
 ---
 

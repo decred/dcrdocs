@@ -1,13 +1,13 @@
 # dcrd Setup Guide 
 
-Last updated for v1.1.2.
+Last updated for CLI release v1.1.2.
 
-This guide is intended to help you setup the `dcrd` application using [startup flags](/getting-started/startup-basics.md#startup-command-flags). 
+This guide is intended to help you setup the `dcrd` application using [startup flags](../startup-basics.md#startup-command-flags). 
 
 **Prerequisites:**
 
-- Use the latest [dcrinstall](/getting-started/user-guides/cli-installation.md) to install `dcrd`. Additional steps will be required if another installation method was used.
-- Review how the launch commands for the Command Prompt (Windows) and Bash (macOS/Linux) shells differ [here](/getting-started/cli-differences.md).
+- Use the latest [dcrinstall](../../wallets/cli/cli-installation.md) to install `dcrd`. Additional steps will be required if another installation method was used.
+- Review how the launch commands for the Command Prompt (Windows) and Bash (macOS/Linux) shells differ [here](../../wallets/cli/os-differences.md).
 
 ---
 
@@ -27,9 +27,9 @@ The first time launching `dcrd`, it will connect to the Decred network and begin
 
 > Configure RPC Username and Password
 
-If you used [`dcrinstall`](/getting-started/user-guides/cli-installation.md), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
+If you used [`dcrinstall`](../../wallets/cli/cli-installation.md), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
 
-If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](/advanced/manual-cli-install.md#minimum-configuration) to do so. 
+If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](../../advanced/manual-cli-install.md#minimum-configuration) to do so. 
 
 > Start dcrd 
 
@@ -61,4 +61,4 @@ Note that this connection will be used in the future. You must leave this `dcrd`
 
 ---
 
-Now that you've set up `dcrd`, visit the [dcrwallet Setup](/getting-started/user-guides/dcrwallet-setup.md) guide.
+Now that you've set up `dcrd`, visit the [dcrwallet Setup](dcrwallet-setup.md) guide.

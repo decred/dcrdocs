@@ -2,24 +2,23 @@
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/decred-logo.svg" /></i> What is Decred?
-Decred is a cryptocurrency, similar to Bitcoin, with a strong focus on community input, open governance and sustainable funding and development. It utilizes a hybrid "proof-of-work" and "proof-of-stake" mining system to ensure that a small group cannot dominate the flow of transactions or make changes to Decred without the input of the community. A unit of currency is called a 'decred' (DCR). To ensure the integrity of the currency and prevent people from making fraudulent transactions or creating their own coins, Decred uses a method of recording transactions known as a blockchain.
+## <img class="dcr-icon" alt="Decred logo" src="/img/dcr-icons/DCRsymbol.svg" /> What is Decred?
+Decred is a blockchain-based cryptocurrency with a strong focus on community input, open governance, and sustainable funding for development. It utilizes a hybrid Proof-of-Work (PoW) and Proof-of-Stake (PoS) mining system to ensure that a small group cannot dominate the flow of transactions or make changes to Decred without the input of the community. A unit of the currency is called a decred (DCR).
 
 ---
 
-<more information to link to Decred governance, tech and dev pages>
+## How Does it Work?
+Stakeholders make and enforce the blockchain's consensus rules, set a course for future development, and decide how the project's treasury is used to fund it. Decred's blockchain is similar to Bitcoin's, but with major aspects of [governance](governance/introduction-to-decred-governance.md) baked into the protocol. 
 
-## <img class="dcr-icon" src="/img/dcr-icons/Cryptocurrency.svg" /> What is a cryptocurrency?
-A cryptocurrency is a system of 'value exchange', just like any real world currency you may be familiar with. Its main difference is that it is not controlled by a central government or group and thus cannot be manipulated or restricted in the way those currencies can be.
+To align incentives, block rewards are split between PoW miners, stakeholders and the Decred Treasury, which funds the project. 
 
-As an example, you may buy Decred from a fiat currency exchange and use it to directly purchase a product in a different country without having to pay high exchange rates.
-Decred uses a wallet to store, transfer and receive DCR. This wallet signs every transaction in and out with a special private key that is unique to you. This is how the network knows that the address sending the transaction is the correct one. Think of your bank account and PIN. When you use your card (wallet), you also enter your PIN (private key), so the bank knows it was you that authorized the transaction. When you first start using Decred, your wallet will generate a private key that you must not give to anyone.
+[Proof of Work](mining/proof-of-work.md) miners play a similar role for Decred as they do for Bitcoin, but with Decred they only receive 60% of the block reward.
 
----
+[Proof of Stake](mining/proof-of-stake.md) voting is central to Decred's governance. Decred holders can time-lock (or "stake") DCR to obtain voting tickets. Tickets are randomly called to vote on-chain; this involves both approving the work of PoW miners and voting Yes/No on any open [rule change proposals](governance/consensus-rules-voting.md). 30% of the block reward goes to the holders of the tickets that voted in that block.
 
-## <img class="dcr-icon" src="/img/dcr-icons/Blocks.svg" /> What is the blockchain?
-The blockchain is the heart of Decred. It is where all transactions that take place are stored. It is similar to a bank ledger in that it records all the activity that happens when DCR are transferred. This ledger is able to confirm that new transactions are valid and that no fraud is taking place.
+The remaining 10% of the block reward goes into the [Decred Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx). Holders of live tickets decide how that treasury is used through [Politeia proposals and voting](governance/politeia.md).
 
-Each block in the blockchain is a record of transactions that have occurred since the last block (about 5 minutes). Every computer (node) in the Decred network shares this blockchain. Nodes in the network run an algorithm many times over a block looking for a solution with a known difficulty. This process is known as "proof-of-work" mining. Once the solution is found it is broadcast to the network. The network then verifies the solution (finding the solution is very hard, but verifying it is easy). Decred uses an extra step of verification known as "proof-of-stake" mining. Stakeholders who have purchased tickets now have the chance to vote on the block. 5 tickets are chosen randomly from the ticket pool and if at least 3 of them vote 'yes' the block is permanently added to the blockchain and the transactions are cleared. Both PoS and PoW miners are compensated with DCR for the resources used to mine the block.
+The [Decred Constitution](governance/decred-constitution.md) sets out some guiding principles for the project; the constitution is subject to amendment through Politeia proposals.
 
-<More information section to link to PoW and PoS guides>
+
+

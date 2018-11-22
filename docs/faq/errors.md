@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Questions.svg" /> Common Errors and Solutions
+# <img class="dcr-icon" src="/img/dcr-icons/Question.svg" /> Common Errors and Solutions
 
 ## Proof-of-Stake 
 

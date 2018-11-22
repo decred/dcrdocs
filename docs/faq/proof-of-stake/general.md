@@ -36,7 +36,7 @@ you can increase the fee you're willing to pay to get your ticket(s) mined. Once
 #### 3. Do I need to be constantly connected to the network to participate in PoS? 
 
 A wallet needs to be online 24/7 to respond to a vote if one of your tickets is selected. There are two main ways to do this; a solo staking wallet which you set up and keep online all the time, or you 
-can use a [stake pool](/mining/proof-of-stake.md#solo-mining-or-pool-mining). A stake pool is basically a community run wallet to which you can assign the voting rights of your tickets and the pool will
+can use a [stake pool](../../mining/how-to-stake.md). A stake pool is basically a community run wallet to which you can assign the voting rights of your tickets and the pool will
 vote on your behalf for a small percentage of the PoS reward.
 
 It is important to note that you are only assigning voting rights to the pool, not your actual funds. A stake pool does not have access to your funds at any time.
@@ -188,4 +188,4 @@ So Decred was specifically designed to minimise impact from both large PoW and P
 
 ## :fa-book: Links
 
-[^1]: [Decrediton Ticket Purchasing Guide](/getting-started/user-guides/using-decrediton/#tickets)
+[^1]: [Decrediton Ticket Purchasing Guide](../../getting-started/user-guides/using-decrediton/#tickets)

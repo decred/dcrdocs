@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Decrediton Setup Guide
 
-Last updated for v1.2.1.
+Last updated for Decrediton v1.3.1.
 
 ---
 
@@ -8,42 +8,37 @@ Last updated for v1.2.1.
 
 !!! info "Blockchain Download"
 
-	Decrediton needs to download a full copy of the Decred blockchain before it can be used. This means that a large download must be completed and a large amount of storage space must be be available on the PC where Decrediton is intalled.
-
-	At the end of May 2018 the Decred blockchain was 3.3GB.
+    Without SPV enabled, Decrediton needs to download a full copy of the Decred blockchain before it can be used. This means that a large download must be completed and a large amount of storage space must be be available on the device where Decrediton is installed. You can check the current size of all serialized blocks via [dcrdata charts](https://explorer.dcrdata.org/charts#blockchain-size). The total size of Decrediton will be bigger, since additional wallet data is stored on your device.
 
 ---
 
 ## Download and Install
 
-The latest version of Decrediton can be downloaded from [https://decred.org/downloads/](https://decred.org/downloads/).
+The latest version of Decrediton can be downloaded from <https://decred.org/downloads>.
 
-> Windows
+??? info "Windows instructions (click to expand)"
 
-1. Download the Windows installer `decrediton-v1.2.1.exe`.
+    1. Download the Windows installer `decrediton-v1.3.1.exe`.
 
-1. Double click the installer and follow the instructions. This will install and automatically start up Decrediton to download the Decred blockchain and set up your wallet.
+    1. Double click the installer and follow the instructions.
 
-1. The installer adds a shortcut to Decrediton on your desktop for next time you want to use it.
+    1. The installer adds a shortcut to Decrediton on your desktop.
 
-> macOS
+??? info "macOS instructions (click to expand)"
 
-1. Download the `decrediton-v1.2.1.dmg` file.
+    1. Download the `decrediton-v1.3.1.dmg` file.
 
-1. Double click the `decrediton-v1.2.1.dmg` file once downloaded to mount the disk image.
+    1. Double click the `decrediton-v1.3.1.dmg` file to mount the disk image.
 
-1. Drag the decrediton.app into the link to your Applications folder within the disk image.
+    1. Drag the `decrediton.app` file into the link to your Applications folder within the disk image.
 
-> Linux
+??? info "Linux instructions (click to expand)"
 
-1. Download the `decrediton-v1.2.1.tar.gz` file.
+    1. Download the `decrediton-v1.3.1.tar.gz` file.
 
-1. Navigate to download location and extract the .tar.gz file:
+    1. Navigate to the download location and extract `decrediton-v1.3.1.tar.gz`.
 
-    Ubuntu File Browser: simply right click on the .tar.gz file and select "Extract Here". <br />
-    Terminal: use the `tar -xvzf filename.tar.gz` command.
-
-    Both of these should extract the tar.gz into a folder that shares the same name. (`e.g. tar -xvzf decrediton-v1.2.1.tar.gz` should extract to `decrediton-v1.2.1`). If successful, this new folder should include a `decrediton` executable.
+    1. The extracted files include an executable named `decrediton`.
 
 ---
 
@@ -53,13 +48,17 @@ Opening Decrediton for the first time will display the following screen:
 
 ![Decrediton startup screen](/img/decrediton/startup.png)
 
-Select your desired language and press **Continue**. A short presentation explaining Decred blockchain, wallet, keys, staking/governance, and safety tips is shown. Please read these slides carefully if you are new to Decred.
+Select your desired language and press **Continue**. You will then be offered various privacy options which allow you to restrict which external services Decrediton will contact. The "Standard" option is recommended for most users, as this will enable all of the features in Decrediton and provide the best user experience.
+
+![Decrediton privacy options](/img/decrediton/privacy-options.png)
+
+After making your choice, a short presentation explaining Decred blockchain, wallet, keys, staking/governance, and safety tips is shown. Please read these slides carefully if you are new to Decred.
 
 The following screen should be displayed next.
 
 ![Decrediton blockchain download screen](/img/decrediton/chain-downloading.png)
 
-A large progress bar on this screen shows the progress of the blockchain download. You can begin to set up your wallet before the download completes. 
+A large progress bar on this screen shows the progress of the blockchain download. 
 
 !!! info "Pausing the download"
 
@@ -67,17 +66,17 @@ A large progress bar on this screen shows the progress of the blockchain downloa
 
     This means you can download the blockchain in multiple sessions if required.
 
-As Decrediton allows you to manage multiple wallets on one PC, you must give a name to your wallet so it can be identified. Enter a name and press the **Create New Wallet** button. You will now be faced with two options: 
+You can begin to set up your wallet before the download completes. You have to options:
 
-1. **Create a New Wallet** - Press this button if this is your first time using Decred.
+1. [Create a New Wallet](#create-a-new-wallet) - Press this button if this is your first time using Decred.
 
-1. **Restore Existing Wallet** - Press this button if you already have a wallet seed. You can skip ahead to [Restore Existing Wallet From Seed](/getting-started/user-guides/decrediton-setup.md#restore-existing-wallet-from-seed)
-
-![Decrediton create wallet screen](/img/decrediton/create-wallet.png)
+1. [Restore Existing Wallet](#restore-existing-wallet) - Press this button if you already have a wallet seed you would like to use.
 
 ---
 
 ## Create a New Wallet
+
+As Decrediton allows you to manage multiple wallets on one PC, you must give a name to your wallet so it can be identified. Enter a name and press the **Continue** button.
 
 !!! danger "Critical Information"
 
@@ -97,43 +96,24 @@ Press **Continue** and re-enter the missing words from your seed on the next scr
 
 ![Decrediton seed entry screen](/img/decrediton/seed-entered.png)
 
-Create a private passphrase for your wallet. This passphrase will be used to unlock your wallet when creating transactions.
+Create a passphrase for your wallet. This passphrase will be used to unlock your wallet when creating transactions.
 
 Press **Create Wallet** and your wallet setup is complete. You will be taken back to the blockchain download progress bar. Once the download has been completed, Decrediton will open the Overview page for your new wallet and you will be able to begin sending and receiving Decred.
 
 ---
 
-## Restore Existing Wallet From Seed
+## Restore Existing Wallet
 
-1. If you already have a wallet seed you can use it by clicking on the **Existing Seed** button.
+1. As Decrediton allows you to manage multiple wallets on one PC, you must give a name to your wallet so it can be identified. 
+
+1. Advanced users can use the "Watch only" option and enter a public key to configure a watch only wallet.
 
 1. Enter your seed into the **Confirm Seed** text box.
 
 1. Create a private passphrase for your wallet.
 
-1. Select **Create Wallet**. Wait for the blockchain to be scanned.
+1. Select **Create Wallet**. Wait for the blockchain to be downloaded.
 
----
+1. You will be prompted to enter the stakepool API key associated with this wallet. This can be left blank if you don't have one.
 
-## Troubleshooting
-
-*Decrediton will not start!*
-
-```
-dcrd closed due to an error. Check dcrd logs
-and contact support if the issue persists.
-```
-
-If you encounter the above error, it could be because there is already a running instance of `dcrd` on your machine. Decrediton attempts to start its own instance of `dcrd` and `dcrwallet` in the background.
-
-You could possibly resolve this by killing any any running `dcrd` processes prior to restarting Decrediton.
-
-*Where does Decrediton store data/write log files?*
-
-Decrediton stores the blockchain, your wallet, log files and its own configuration files all in a single directory. A different directory is used depending on the operating system:
-
-| OS      | Decrediton data directory                   |
-| -------:|:-------------------------------------------:|
-| Windows | `%LOCALAPPDATA%\Decrediton\`                |
-| macOS   | `~/Library/Application Support/Decrediton/` |
-| Linux   | `~/.config/decrediton/`                     |
+1. The blockchain will now be scanned for any transactions belonging to this wallet.

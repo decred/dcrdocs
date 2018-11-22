@@ -1,1 +1,14 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 450"><defs><style>.cls-1{fill:#121f3c;}.cls-2{fill:none;}</style></defs><title>Code</title><polygon id="_Path_" data-name="&lt;Path&gt;" class="cls-1" points="25 312.99 75 337.99 75 312.99 50 300.49 75 287.99 75 262.99 25 287.99 25 312.99"/><polygon id="_Path_2" data-name="&lt;Path&gt;" class="cls-1" points="375 337.99 400 350.49 375 362.99 375 387.99 425 362.99 425 337.99 375 312.99 375 337.99"/><rect id="_Path_3" data-name="&lt;Path&gt;" class="cls-1" x="100" y="338" width="250" height="25"/><rect id="_Path_4" data-name="&lt;Path&gt;" class="cls-1" x="100" y="288" width="104" height="25"/><rect id="_Path_5" data-name="&lt;Path&gt;" class="cls-1" x="225" y="288" width="125" height="25"/><rect id="_Path_6" data-name="&lt;Path&gt;" class="cls-1" x="100" y="238" width="125" height="25"/><rect id="_Path_7" data-name="&lt;Path&gt;" class="cls-1" x="246" y="238" width="104" height="25"/><polygon id="_Path_8" data-name="&lt;Path&gt;" class="cls-1" points="25 112.99 75 137.99 75 112.99 50 100.49 75 87.99 75 62.99 25 87.99 25 112.99"/><polygon id="_Path_9" data-name="&lt;Path&gt;" class="cls-1" points="375 237.99 400 250.49 375 262.99 375 287.99 425 262.99 425 237.99 375 212.99 375 237.99"/><rect id="_Path_10" data-name="&lt;Path&gt;" class="cls-1" x="100" y="88" width="250" height="25"/><rect id="_Path_11" data-name="&lt;Path&gt;" class="cls-1" x="100" y="138" width="125" height="25"/><rect id="_Path_12" data-name="&lt;Path&gt;" class="cls-1" x="100" y="188" width="250" height="25"/><rect class="cls-2" width="450" height="450"/></svg>
+<svg width="400" height="325" viewBox="0 0 400 325" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 250L50 275V250L24.99 237.5L50 225V200L0 225V250Z" fill="#C4CBD2"/>
+<path d="M350 275L375 287.5L350 300V325L400 300V275L350 250V275Z" fill="#C4CBD2"/>
+<path d="M324.99 275.01H74.9902V300.01H324.99V275.01Z" fill="#091440"/>
+<path d="M178.99 225.01H74.9902V250.01H178.99V225.01Z" fill="#091440"/>
+<path d="M324.99 225.01H199.99V250.01H324.99V225.01Z" fill="#091440"/>
+<path d="M199.99 175.01H74.9902V200.01H199.99V175.01Z" fill="#091440"/>
+<path d="M324.99 175.01H220.99V200.01H324.99V175.01Z" fill="#091440"/>
+<path d="M0 50L50 75V50L24.99 37.5L50 25V0L0 25V50Z" fill="#C4CBD2"/>
+<path d="M350 175L375 187.5L350 200V225L400 200V175L350 150V175Z" fill="#C4CBD2"/>
+<path d="M324.99 25.01H74.9902V50.01H324.99V25.01Z" fill="#091440"/>
+<path d="M199.99 75.01H74.9902V100.01H199.99V75.01Z" fill="#091440"/>
+<path d="M324.99 125.01H74.9902V150.01H324.99V125.01Z" fill="#091440"/>
+</svg>

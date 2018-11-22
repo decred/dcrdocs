@@ -36,7 +36,7 @@ Metadata at the beginning of a block that defines information about the block. T
 
 #### Block reward
 
-A reward (in DCR) split between PoW miners, voters (ticket holders that have been called to vote), and the Treasury for successfully creating a block of transactions. The block reward [decays exponentially](https://docs.decred.org/advanced/inflation/) with block height (length of blockchain). However, Decred’s algorithm interpolates this decay over time so as not to produce market shocks, as typically seen in algorithms that involve large and infrequent reductions, such as halving the rewards every 4 years. The block reward started at 31.19582664 and it adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/101.
+A reward (in DCR) split between PoW miners, voters (ticket holders that have been called to vote), and the Treasury for successfully creating a block of transactions. The block reward [decays exponentially](/advanced/inflation/) with block height (length of blockchain). However, Decred’s algorithm interpolates this decay over time so as not to produce market shocks, as typically seen in algorithms that involve large and infrequent reductions, such as halving the rewards every 4 years. The block reward started at 31.19582664 and it adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/101.
 
 #### Block voting
 
@@ -62,11 +62,11 @@ Rules, encoded in software, that allow a network of nodes to reach an agreement 
 
 #### Consensus rules voting
 
-Changes to Decred's consensus rules can only be made through an [on-chain voting process](https://docs.decred.org/getting-started/user-guides/agenda-voting/) which lasts for around one month. The change is made only if at least 75% of votes are in favor. 
+Changes to Decred's consensus rules can only be made through an [on-chain voting process](/getting-started/user-guides/agenda-voting/) which lasts for around one month. The change is made only if at least 75% of votes are in favor. 
 
 #### Constitution
 
-A [document](https://docs.decred.org/getting-started/constitution/) which defines the purpose and guiding principles of the Decred project.
+A [document](/getting-started/constitution/) which defines the purpose and guiding principles of the Decred project.
 
 #### Credits
 
@@ -127,7 +127,7 @@ The output of a cryptographic hashing function that produces a fixed-size value 
 
 #### Hash function
 
-A cryptographic function that produces a fixed-size hash value from variable-size transaction input. Decred's Proof-of-Work uses the [BLAKE-256](https://docs.decred.org/research/blake-256-hash-function/) hashing function. 
+A cryptographic function that produces a fixed-size hash value from variable-size transaction input. Decred's Proof-of-Work uses the [BLAKE-256](/research/blake-256-hash-function/) hashing function. 
 
 #### Hashrate
 
@@ -135,7 +135,7 @@ The number of hashes per second computed by miners on the network.
 
 #### Hybrid PoW/PoS
 
-In Decred, a [hybrid PoW/PoS system](https://docs.decred.org/research/hybrid-design/) is used, whereby blocks mined by PoW miners must be approved by ticket holders, which are pseudorandomly selected from the ticket pool. This provides a check on PoW miners and increases the overall cost of attacking the network. When a block is approved, 60% of the block reward goes to the PoW miner, 30% goes to the holders of  tickets called to vote (approve blocks), and 10% goes to the Decred Treasury to fund the project.
+In Decred, a [hybrid PoW/PoS system](/research/hybrid-design/) is used, whereby blocks mined by PoW miners must be approved by ticket holders, which are pseudorandomly selected from the ticket pool. This provides a check on PoW miners and increases the overall cost of attacking the network. When a block is approved, 60% of the block reward goes to the PoW miner, 30% goes to the holders of  tickets called to vote (approve blocks), and 10% goes to the Decred Treasury to fund the project.
 
 
 ## I
@@ -148,7 +148,7 @@ Once tickets are mined they are immature for 256 blocks (about 20 hours) and can
 
 #### Inflation
 
-Increase in the [available supply](https://docs.decred.org/advanced/inflation/) of Decred as new DCR is minted into existence through the block reward.
+Increase in the [available supply](/advanced/inflation/) of Decred as new DCR is minted into existence through the block reward.
 
 
 ## L
@@ -272,7 +272,7 @@ A 256-bit (32-byte) cryptographically secure random number that can be used to r
 
 #### Simnet
 
-A [simulation network](https://docs.decred.org/advanced/simnet/) with very low difficulty, such that a developer can mine new blocks locally at will for testing purposes.
+A [simulation network](/advanced/simnet/) with very low difficulty, such that a developer can mine new blocks locally at will for testing purposes.
 
 #### Stake transaction tree
 
@@ -297,7 +297,7 @@ Colloquial term for time-locking DCR in exchange for tickets.
 
 #### Testnet
 
-A parallel [network](https://docs.decred.org/getting-started/using-testnet/) used for testing, where DCR can be obtained freely from faucets.
+A parallel [network](/getting-started/using-testnet/) used for testing, where DCR can be obtained freely from faucets.
 
 #### Ticket
 
@@ -305,7 +305,7 @@ Decred holders can time-lock DCR in exchange for tickets. Tickets grant their ho
 
 #### Ticket pool
 
-The pool of live tickets that are available to be called to vote. The target size for the [ticket pool](https://docs.decred.org/mining/proof-of-stake/) is 40,960.
+The pool of live tickets that are available to be called to vote. The target size for the [ticket pool](/mining/proof-of-stake/) is 40,960.
 
 #### Ticket price
 

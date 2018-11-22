@@ -5,9 +5,9 @@
 
 ## Overview 
 
-Ticket voting is a form of Proof-of-Stake (PoS) security, but the way Decred integrates this as a complement to Proof-of-Work (PoW) mining gives it a distinctive set of roles and characteristics.
+Proof-of-Stake (PoS) voting is a form of Proof-of-Stake (PoS) security, but the way Decred integrates this as a complement to Proof-of-Work (PoW) mining gives it a distinctive set of roles and characteristics.
 
-Ticket voting serves a number of purposes:
+PoS voting serves a number of purposes:
 
 1. Allowing stakeholders to vote for or against proposed changes to the Decred blockchain. If stakeholders vote in support of a change, the chain will hardfork and the new feature becomes active automatically. More information on voting can be found in the [Mainnet Voting Guide](../governance/consensus-rules-voting.md).
 1. Providing a mechanism for stakeholders to influence Proof-of-Work (PoW) miners. Stakeholders can vote to withhold a miner's reward even if the block conforms to the consensus rules of the network. This allows stakeholders, in principle, to discourage problematic mining behavior such as mining empty blocks.
@@ -21,7 +21,7 @@ These roles are incentivized; ticket-holders (or "Proof-of-Stake (PoS) Voters") 
 
 ## How Ticket Voting Works
 
-To participate in ticket voting, stakeholders lock some DCR in return for a ticket. Every ticket owned gives its holder the ability to cast a single vote. Upon voting, each ticket returns a small reward plus the original **Ticket Price** of the ticket. Each ticket is selected to vote at random, giving an average vote time of 28 days, but possibly requiring up to 142 days, with a 0.5% chance of expiring before being chosen to vote (this expiration returns the original **Ticket Price** without a reward). Every block mined must include 5 votes (Miners are penalized by a reward deduction if fewer than 5 votes are included). 
+To participate in PoS voting, stakeholders lock some DCR in return for a ticket. Every ticket owned gives its holder the ability to cast a single vote. Upon voting, each ticket returns a small reward plus the original **Ticket Price** of the ticket. Each ticket is selected to vote at random, giving an average vote time of 28 days, but possibly requiring up to 142 days, with a 0.5% chance of expiring before being chosen to vote (this expiration returns the original **Ticket Price** without a reward). Every block mined must include 5 votes (Miners are penalized by a reward deduction if fewer than 5 votes are included). 
 
 Every block mined can also include up to 20 fresh ticket purchases. A new ticket requires 256 blocks to mature before it is entered into the **Ticket Pool** and can be called to vote.
 
@@ -54,7 +54,7 @@ A ticket on mainnet (testnet uses different parameters) will go through a few st
 4. **A -** If your ticket is mined into a block, it becomes an immature ticket. This state lasts for 256 blocks (about 20 hours). During this time the ticket cannot vote. At this point, the ticket fee is non-refundable. <br /> 
 **B -** If your ticket is not mined, both the **Ticket Price** and **Ticket Fee** are returned to the purchasing account.
 5. After your ticket matures (256 blocks), it enters the **Ticket Pool** and is eligible for voting.
-6. The chance of a ticket voting is based on a Poisson distribution with a mean of 28 days. After 28 days a ticket has a 50% chance to have already voted.
+6. The chance of a PoS voting is based on a Poisson distribution with a mean of 28 days. After 28 days a ticket has a 50% chance to have already voted.
 7. Given a target pool size of 40960 tickets, any given ticket has a 99.5% chance of voting within ~142 days (about 4.7 months). If, after this time, a ticket has not voted, it expires. You receive a refund on the original **Ticket Price**.
 8. A ticket may miss its call to vote if the voting wallet does not respond or two valid blocks are found within close proximity of each other. If this happens, you receive a refund on the original **Ticket Price**.
 9. After a ticket has voted, missed, or expired, the funds (ticket price and reward if applicable, minus the fee) will enter immature status for another 256 blocks, after which they are released. If a ticket is missed or expired, a ticket revocation transaction is submitted by the wallet which then frees up the locked ticket outputs. **NOTE:** Revocations can only be submitted for a corresponding missed ticket. You cannot revoke a ticket until it is missed.

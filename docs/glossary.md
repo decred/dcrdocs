@@ -235,7 +235,7 @@ An astronomically large number generated algorithmically from a private key. Pub
 
 #### Quorum
 
-The minimum level of participation required in order for a decision-making process to produce an actionable outcome. Changes to the consensus rules require at least 10% of votes to be for or against the change in order to be valid. Politeaia proposals require 20%.
+The minimum level of participation required in order for a decision-making process to produce an actionable outcome. Changes to the consensus rules require at least 10% of votes to be for or against the change in order to be valid. Politeia proposals require 20%.
 
 
 ## R

@@ -87,11 +87,8 @@ In the datasets presented here, **users are identified by their public keys**. O
 Currently, to associate a public key with a username, you need to go through [proposals.decred.org](https://proposals.decred.org/). To look up the public key for a user, click on their username anywhere on the site. This will take you to the user's profile, which has a URL like this: 
 <https://proposals.decred.org/user/350a4b6c-5cdd-4d87-822a-4900dc3a930c>
 
-The final part of this URL is the Universally Unique ID (UUID) for the account. This can be input into a [public API](https://proposals.decred.org/api/v1/user/) exposed by the Politeia website, which will takes the UUID as an input and outputs user profile data, including the public key. For example, if you paste the above example UUID into a browser:
-<https://proposals.decred.org/api/v1/user/350a4b6c-5cdd-4d87-822a-4900dc3a930c>
-
-, it will return all publicly-available data for that user, including their public key:
-`"publickey":"cd6e57b93f95dd0386d670c7ce42cb0ccd1cd5b997e87a716e9359e20251994e"`
+The final part of this URL is the Universally Unique ID (UUID) for the account. This can be input into a [public API](https://proposals.decred.org/api/v1/user/) exposed by the Politeia website, which will takes the UUID as an input and outputs user profile data, including the public key. For example, if you paste the above example UUID into a browser,
+<https://proposals.decred.org/api/v1/user/350a4b6c-5cdd-4d87-822a-4900dc3a930c>, it will return all publicly-available data for that user, including their public key: `"publickey":"cd6e57b93f95dd0386d670c7ce42cb0ccd1cd5b997e87a716e9359e20251994e"`
 
 
 

@@ -270,6 +270,10 @@ A proposal to change the consensus rules of the Decred blockchain. Rule change p
 
 A 256-bit (32-byte) cryptographically secure random number that can be used to recover a wallet. When creating a wallet using any Decred wallet software, a 33 word "seed phrase" is also created from the 32-byte seed. If the wallet is lost or corrupted, the seed phrase can be used to restore the wallet's private keys, transaction history, and balances using any Decred wallet on any computer.
 
+#### Signature
+
+A cryptographic mechanism that proves that the owner of the private key has approved a transaction.
+
 #### Simnet
 
 A [simulation network](advanced/simnet.md) with very low difficulty, such that a developer can mine new blocks locally at will for testing purposes.

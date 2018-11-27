@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Politeia.svg" /> Politeia proposals and voting
+# <img class="dcr-icon" src="/img/dcr-icons/Politeia.svg" /> Politeia Proposals and Voting
 
 ---
 

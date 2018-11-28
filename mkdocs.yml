@@ -44,9 +44,9 @@ nav:
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
 - Governance:
   - 'Introduction to Decred governance': 'governance/introduction-to-decred-governance.md'
-  - 'Consensus rules voting': 'governance/consensus-rules-voting.md'
-  - 'How to Vote on consensus rule changes': 'governance/how-to-vote.md'
-  - 'Politeia proposals and voting': 'governance/politeia.md'
+  - 'Consensus Rules Voting': 'governance/consensus-rules-voting.md'
+  - 'How to Vote on Consensus Rule Changes': 'governance/how-to-vote.md'
+  - 'Politeia Proposals and Voting': 'governance/politeia.md'
   - 'Decred Constitution': 'governance/decred-constitution.md'
 - Wallets:
     - Decrediton (GUI):

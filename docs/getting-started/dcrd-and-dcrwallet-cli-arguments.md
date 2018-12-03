@@ -139,8 +139,8 @@ dcrd --logdir=/my/custom/log/directory
             `--proxy=`                                 | Connect via SOCKS5 proxy (eg. 127.0.0.1:9050)
             `--proxyuser=`                             | Username for proxy server
             `--proxypass=`                             | Password for proxy server
-            `--spv`                                    |
-            `--spvconnect=`                            |
+            `--spv`                                    | Sync using simplified payment verification
+            `--spvconnect=`                            | Full node addresses to SPV sync from
             `--rpccert=`                               | File containing the certificate file (default: `~/.dcrwallet/rpc.cert`)
             `--rpckey=`                                | File containing the certificate key (default: `~/.dcrwallet/rpc.key`)
             `--tlscurve=`                              | Curve to use when generating TLS keypairs (default: P-521)

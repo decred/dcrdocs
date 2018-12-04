@@ -8,8 +8,8 @@ This guide is intended to walk through ticket buying using `dcrwallet`. It will 
 
 -   Use the latest [dcrinstall](../../wallets/cli/cli-installation.md) to install `dcrd`, `dcrwallet,` and `dcrctl`. Additional steps will be required if another installation method was used.
 -   Review how the launch commands for the Command Prompt (Windows) and Bash (macOS/Linux) shells differ [here](../../wallets/cli/os-differences.md).
--   [Setup dcrd](dcrd-setup.md) and have it running in the background.
--   [Setup dcrwallet](dcrwallet-setup.md) and have it running in the background.
+-   [Setup dcrd](../../wallets/cli/dcrd-setup.md) and have it running in the background.
+-   [Setup dcrwallet](../../wallets/cli/dcrwallet-setup.md) and have it running in the background.
 -   Familiarize yourself with the [basics of using dcrctl](dcrctl-basics.md).
 -   Familiarize yourself with the [staking process](../../mining/proof-of-stake.md) and the [ticket lifecycle](../../mining/proof-of-stake.md#ticket-lifecycle)
 

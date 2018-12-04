@@ -4,16 +4,16 @@
 
 ## What is Simple Payment Verification?
 
-Simple Payment Verification (SPV) allows the use of a Decred wallet without having to download the entire Decred blockchain. A wallet operating in SPV mode is able to retrieve all of its transactions whilst only downloading blocks from the Decred network if they contained owned transactions. In a typical case a wallet will only need to download tens of megabytes rather than multiple gigabytes.
+Simple Payment Verification (SPV) allows the use of a Decred wallet without having to download the entire Decred blockchain. A wallet operating in SPV mode is able to retrieve all of its transactions whilst only downloading blocks from the Decred network if they contain owned transactions. In a typical case a wallet will only need to download tens of megabytes rather than multiple gigabytes.
 
-SPV has been built directly into the `dcrwallet` CLI tool as a secondary operating mode. Decrediton uses `dcrwallet` behind the scenes, and as a result all users of Decred are able to enable SPV regardless of their wallet preference.
+SPV has been built directly into the `dcrwallet` CLI tool as a secondary operating mode, and as Decrediton uses `dcrwallet` behind the scenes, all users of official wallets are able to enable SPV.
 
 
 ## Why was SPV added to `dcrwallet`?
 
 The hardware requirements to run a Decred wallet are drastically reduced when operating in SPV mode. Storage and download requirements are reduced because rather than downloading the whole blockchain, an SPV wallet will only download the blocks which contain relevant transactions, and for all of the other blocks in the chain only the headers are downloaded. The amount of processing power required is reduced because a device running an SPV wallet will only validate the proof-of-work and the header chain rather than validating every transaction in every block and ensuring the block contents are consistent with the headers.
 
-As a result of these decreased requirements, Decred wallets can operate on a wider set of devices, particularly mobile devices. Smartphones and tablets are typically limited in at least one of CPU power, storage or download capacity, which makes running a full node either impractical or impossible. 
+As a result of these decreased requirements, Decred wallets can operate on a wider set of devices - particularly mobile devices. Smartphones and tablets are typically limited in at least one of CPU power, storage or download capacity, and mobile operating systems limit the amount of background work processing each application can perform, which makes running a full node either impractical or impossible. 
 
 Another benefit offered by SPV is an extreme reduction in the time required for a brand new wallet to become operational, offering a huge improvement to the user experience.
 
@@ -35,23 +35,23 @@ When an SPV wallet initialises it will connect to the Decred network using peer-
 
 - Light wallets do not validate the information they receive by checking the blockchain directly - they have to blindly trust the information provided by the central server.
 
-These concerns do not apply to SPV wallets because they connect directly to the decentralised peer-to-peer Decred network, they upload no private data to remote nodes, and they validate their own transactions by inspecting the blockchain directly.
+These concerns do not apply to SPV wallets because they connect directly to the decentralised peer-to-peer Decred network, they upload no private data to remote nodes, and they discover their own transactions by inspecting the blockchain directly.
 
 
 ## Are there any disadvantages?
 
 - SPV does not support voting wallets. Voting wallets have the responsibility to vote on the validity of the last block, and a wallet cannot be sure of the validity unless it fully validates the whole blockchain leading up to that block. It is possible however to purchase tickets and allocate the voting rights to a [Voting Service Provider](../mining/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
 
-- SPV wallets only download blocks which have transactions related to their owned addresses, which could potentially reveal more information about the wallet than if it downloaded every single block. This only presents a very minor decrease in privacy, but it is a decrease nonetheless. This is mitigated by downloading blocks from multiple peers so no single peer is able to see the full list of blocks downloaded by a wallet. Even if a passive observer on the network is able to see which blocks are downloaded by a wallet, they are not able to identify which transactions in those blocks are relevant.
+- SPV wallets only download blocks which have transactions related to their owned addresses, which could potentially reveal more information about the wallet than if it downloaded every single block. This only presents a very minor decrease in privacy, but it is a decrease nonetheless. This can be mitigated by downloading blocks from multiple peers so no single peer is able to see the full list of blocks downloaded by a wallet. Even if a passive observer on the network is able to see which blocks are downloaded by a wallet, they are not able to identify which transactions in those blocks are relevant.
 
-- Wallets operating in SPV mode are only able to validate the block headers they download and not the filters. This makes a "false-negative" attack possible: a malicious peer which knows a wallet is waiting for a particular transaction could send the wallet a fake filter which does not include the transaction, resulting in the wallet not downloading the block and so not becoming aware of the transactions existence. This transaction would still be visible to all fully validating nodes and wallets, and it will still appear in the [block explorer](../getting-started/using-the-block-explorer.md). One way to prevent this vulnerability is to add the hash of the filter into the block header, enabling SPV wallets to easily check the validity of the filters without having to download their blocks. A "false-positive" scenario is not possible - if a malicious node provides a fake filter which includes a non-existent transaction, the wallet will simply download the full block, compare it to the filter and discover that the filter is not genuine.
+- Wallets operating in SPV mode are only able to validate the block headers they download and not the filters. This makes a "false-negative" attack possible: a malicious peer which knows a wallet is waiting for a particular transaction could send the wallet a fake filter which does not include the transaction, resulting in the wallet not downloading the block and so not becoming aware of the transactions existence. This transaction would still be visible to all fully validating nodes and wallets, and it will still appear in the [block explorer](../getting-started/using-the-block-explorer.md). One way to prevent this vulnerability is to add the hash of the filter into the part of the block header that is PoW validated, enabling SPV wallets to easily check the validity of the filters without having to download their blocks. A proposal to make this change has [already been suggested](https://github.com/decred/dcrd/issues/971), however a hardfork will be required to make the required change to the block header format.  A "false-positive" scenario is not possible - if a malicious node provides a fake filter which includes a non-existent transaction, the wallet will simply download the full block, compare it to the filter and discover that the filter is not genuine.
 
 
 ## How do I use SPV?
 
 #### `dcrwallet` CLI
 
-To enable SPV mode in `dcrwallet` simply provide the `--spv` flag when starting the process. There is also an optional `--spvconnect` flag which allows you to specify the IP of a full node you wish to sync from.
+To enable SPV mode in `dcrwallet` simply provide the `--spv` flag when starting the process. There is also an optional `--spvconnect` flag which disables DNS seeding and allows you to specify the IP of a full node you wish to sync from. `--spvconnect` can be specified multiple times to sync from multiple peers.
 
 #### Decrediton
 

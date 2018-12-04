@@ -10,7 +10,7 @@ time.
 
 ## Configuration File Basics 
 
-If unfamiliar with the basics of configuration files, please review the information found in our [Startup Options Intro](../getting-started/startup-basics.md#configuration-file-locations) page.
+If unfamiliar with the basics of configuration files, please review the information found in our [Startup Options Intro](../wallets/cli/startup-basics.md#configuration-file-locations) page.
 
 ---
 
@@ -23,7 +23,7 @@ anywhere and they will only be used to allow `dcrwallet` and `dcrctl` to communi
 
 Please follow the steps below if you've already copied the sample configuration files into their appropriate directories.
 
-1. Navigate to your `dcrd` application folder as described in our [Startup Options Intro](../getting-started/startup-basics.md#configuration-file-locations). 
+1. Navigate to your `dcrd` application folder as described in our [Startup Options Intro](../wallets/cli/startup-basics.md#configuration-file-locations). 
 2. Open `dcrd.conf` in a text editor.
 3. Find the following lines:
 
@@ -36,7 +36,7 @@ Please follow the steps below if you've already copied the sample configuration 
 
 Please follow the steps below if you have **not** copied the sample configuration files into their appropriate directories.
 
-1. Navigate to your `dcrd` application folder as described above in our [Startup Options Intro](../getting-started/startup-basics.md#configuration-file-locations).
+1. Navigate to your `dcrd` application folder as described above in our [Startup Options Intro](../wallets/cli/startup-basics.md#configuration-file-locations).
 2. Create a new text file.
 3. Rename it `dcrd.conf`.
 3. Open `dcrd.conf` in a text editor.
@@ -61,7 +61,7 @@ Please note that if the values of `username=` and `password=` in `dcrwallet.conf
 
 Please follow the steps below if you've already copied the sample configuration files into their appropriate directories.
 
-1. Navigate to your `dcrwallet` application folder as described in our [Startup Options Intro](../getting-started/startup-basics.md#configuration-file-locations). 
+1. Navigate to your `dcrwallet` application folder as described in our [Startup Options Intro](../wallets/cli/startup-basics.md#configuration-file-locations). 
 2. Open `dcrwallet.conf` in a text editor.
 3. Find the following lines:
 
@@ -74,7 +74,7 @@ Please follow the steps below if you've already copied the sample configuration 
 
 Please follow the steps below if you have **not** copied the sample configuration files into their appropriate directories.
 
-1. Navigate to your `dcrwallet` application folder as described in our [Startup Options Intro](../getting-started/startup-basics.md#configuration-file-locations).
+1. Navigate to your `dcrwallet` application folder as described in our [Startup Options Intro](../wallets/cli/startup-basics.md#configuration-file-locations).
 2. Create a new text file.
 3. Rename it `dcrwallet.conf`.
 3. Open `dcrwallet.conf` in a text editor.
@@ -106,7 +106,7 @@ It is again easiest to set the username/passwords the same amongst `dcrd.conf`, 
 
 Please follow the steps below if you've already copied the sample configuration files into their appropriate directories.
 
-1. Navigate to your `dcrctl` application folder as described in our [Startup Options Intro](../getting-started/startup-basics.md#configuration-file-locations). 
+1. Navigate to your `dcrctl` application folder as described in our [Startup Options Intro](../wallets/cli/startup-basics.md#configuration-file-locations). 
 2. Open `dcrctl.conf` in a text editor.
 3. Find the following lines:
 
@@ -119,7 +119,7 @@ Please follow the steps below if you've already copied the sample configuration 
 
 Please follow the steps below if you have **not** copied the sample configuration files into their appropriate directories.
 
-1. Navigate to your `dcrctl` application folder as described in our [Startup Options Intro](../getting-started/startup-basics.md#configuration-file-locations).
+1. Navigate to your `dcrctl` application folder as described in our [Startup Options Intro](../wallets/cli/startup-basics.md#configuration-file-locations).
 2. Create a new text file.
 3. Rename it `dcrctl.conf`.
 3. Open `dcrctl.conf` in a text editor.

@@ -2,7 +2,7 @@
 
 Last updated for CLI release v1.1.2.
 
-This guide is intended to help you setup the `dcrd` application using [startup flags](../startup-basics.md#startup-command-flags). 
+This guide is intended to help you setup the `dcrd` application using [startup flags](../../wallets/cli/startup-basics.md#startup-command-flags). 
 
 **Prerequisites:**
 

@@ -7,7 +7,7 @@ There are a few reasons you might need to delete your wallet.
 * You want to remove the wallet from a particular computer.
 
 First you need to find the dcrwallet application directory which varies by platform.
-This is the same directory that is home for your [configuration files](../getting-started/startup-basics.md#configuration-file-locations).
+This is the same directory that is home for your [configuration files](../wallets/cli/startup-basics.md#configuration-file-locations).
 
 In that directory, you need to delete the file `mainnet/wallet.db`.
 That will completely remove your wallet from that computer.  To access

@@ -11,7 +11,7 @@ Accounts allow you to keep separate records of your DCR funds. Transferring DCR 
 
 #### Address
 
-A secure identifier that represents a possible destination for a payment, similar to an email address. The address is a human-readable representation of the public key receiving payment.
+A human-readable representation of a possible destination for a payment, similar to an email address. Unlike an email address however, there are a variety of address types, and most addresses are intended only for a single use. This is because addresses represent not only the destination of a payment, but constraints required to redeem funds. For the most common type of address, the constraints require that the recipient provide both the public key which hashes to the requisite hash and a valid signature that is created from the corresponding private key. Other address types require signatures from multiple parties (multi-sig), signatures created within specified time limits, or other more complex constraints.
 
 #### Atom
 

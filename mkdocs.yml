@@ -56,9 +56,9 @@ nav:
     - CLI Wallet:
       - 'Installation': 'wallets/cli/cli-installation.md'
       - 'OS Differences': 'wallets/cli/os-differences.md'
-      - 'Startup Basics': 'getting-started/startup-basics.md'
-      - 'dcrd Setup': 'getting-started/user-guides/dcrd-setup.md'
-      - 'dcrwallet Setup': 'getting-started/user-guides/dcrwallet-setup.md'
+      - 'Startup Basics': 'wallets/cli/startup-basics.md'
+      - 'dcrd Setup': 'wallets/cli/dcrd-setup.md'
+      - 'dcrwallet Setup': 'wallets/cli/dcrwallet-setup.md'
       - 'dcrctl Basics': 'getting-started/user-guides/dcrctl-basics.md'
       - 'Buying Tickets': 'getting-started/user-guides/dcrwallet-tickets.md'
       - 'dcrd and dcrwallet CLI Arguments': 'getting-started/dcrd-and-dcrwallet-cli-arguments.md'

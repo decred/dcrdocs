@@ -2,12 +2,12 @@
 
 Last updated for CLI release v1.1.2.
 
-This guide is intended to help you setup the `dcrwallet` application using [startup flags](../startup-basics.md#startup-command-flags). 
+This guide is intended to help you setup the `dcrwallet` application using [startup flags](startup-basics.md#startup-command-flags). 
 
 **Prerequisites:**
 
-- Use the latest [dcrinstall](../../wallets/cli/cli-installation.md) to install `dcrwallet`. Additional steps will be required if another installation method was used.
-- Review how the launch commands differ for the Command Prompt (Windows) and Bash (macOS/Linux) shells, and how the home directories differ [here](../../wallets/cli/os-differences.md).
+- Use the latest [dcrinstall](cli-installation.md) to install `dcrwallet`. Additional steps will be required if another installation method was used.
+- Review how the launch commands differ for the Command Prompt (Windows) and Bash (macOS/Linux) shells, and how the home directories differ [here](os-differences.md).
 - [Setup dcrd](dcrd-setup.md) and have it running in the background.
 
 ---
@@ -64,7 +64,7 @@ The public passphrase is optional. It is used to encrypt all of the public data 
 
 > Record Your Seed
 
-Before creating a new seed for your wallet, please review the [Critical Information section](dcrwallet-setup.md#critical-information).
+Before creating a new seed for your wallet, please review the [Critical Information section](#critical-information).
 
 After you've set your private passphrase and optional public passphrase, you'll see the following prompt:
 
@@ -76,9 +76,9 @@ This guide assumes you do not have an existing seed, so continue by hitting `Ent
 
 After answering `[no]`, your seed phrase (wallet generation seed) and its hex will be displayed in the window. Please read through the IMPORTANT section displayed immediately after the Hex.
 
-It cannot be stressed enough how important it is to save your seed phrase in a secure location, so if you haven't committed this to memory, please review the [Critical Information section](dcrwallet-setup.md#critical-information) again.
+It cannot be stressed enough how important it is to save your seed phrase in a secure location, so if you haven't committed this to memory, please review the [Critical Information section](#critical-information) again.
 
-Once you have written down the seed phrase and hex, type `OK` and press `Enter`. NOTE: if you did not write the phrase down before continuing, you should [start this process over](dcrwallet-setup.md#create-a-new-wallet) after [deleting your wallet file](../../advanced/deleting-your-wallet.md)
+Once you have written down the seed phrase and hex, type `OK` and press `Enter`. NOTE: if you did not write the phrase down before continuing, you should [start this process over](#create-a-new-wallet) after [deleting your wallet file](../../advanced/deleting-your-wallet.md)
 
 After pressing `Enter`, you should see the following message:
 
@@ -98,7 +98,7 @@ In order to launch `dcrwallet`, you first must have [created your wallet](#walle
 
 > Configure RPC Username and Password
 
-If you used [`dcrinstall`](../../wallets/cli/cli-installation.md), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
+If you used [`dcrinstall`](cli-installation.md), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
 
 If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](../../advanced/manual-cli-install.md#minimum-configuration) to do so.
 
@@ -121,4 +121,4 @@ through your daemon.
 
 ---
 
-To learn how to use `dcrd` and  `dcrwallet`, visit the [dcrctl Basics](dcrctl-basics.md) guide. You'll learn how to unlock your wallet, send and receive DCR using `dcrctl`, check your balance, and check various network stats.
+To learn how to use `dcrd` and  `dcrwallet`, visit the [dcrctl Basics](../../getting-started/user-guides/dcrctl-basics.md) guide. You'll learn how to unlock your wallet, send and receive DCR using `dcrctl`, check your balance, and check various network stats.

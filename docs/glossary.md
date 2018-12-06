@@ -274,6 +274,10 @@ A 256-bit (32-byte) cryptographically secure random number that can be used to r
 
 A [simulation network](advanced/simnet.md) with very low difficulty, such that a developer can mine new blocks locally at will for testing purposes.
 
+#### Simple Payment Verification (SPV)
+
+A wallet mode in which only blocks related to addresses owned by the wallet are downloaded. When not in SPV mode, wallets must download all blocks in the blockchain to verify transactions (fully validating mode). SPV mode allows wallets to operate with less stringent hardware requirements and load significantly faster. SPV wallets cannot vote, but can purchase tickets and allocate voting rights to a [Voting Service Provider (VSP)](#voting-service-provider). 
+
 #### Stake transaction tree
 
 [Transactions](https://www.reddit.com/r/decred/comments/66j4l4/decred_proof_of_stake_explained/dgjsyxd) relating to ticket buying and ticket voting rewards.

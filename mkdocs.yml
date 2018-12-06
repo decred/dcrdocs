@@ -18,6 +18,8 @@ extra:
       link: 'https://www.linkedin.com/company/decredproject/'
     - type: 'facebook'
       link: 'https://www.facebook.com/decredproject/'
+    - type: 'weibo'
+      link: 'https://weibo.com/DecredProject'
 site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
 repo_name: decred/dcrdocs

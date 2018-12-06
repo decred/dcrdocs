@@ -2,7 +2,7 @@
 
 This guide was last updated on September 23, 2017.
 
-This page is intended to give a brief introduction to how agenda voting works and details the process for setting your tickets to cast your preferred vote for any agenda.
+This page is intended to give a brief introduction to how consensus rule voting works and details the process for setting your tickets to cast your preferred vote for any agenda.
 
 ---
 

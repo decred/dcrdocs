@@ -47,7 +47,7 @@ Some functionality of `dcrwallet` requires the wallet to be unlocked.
 The command to unlock your wallet follows: 
 
 ```no-highlight
-dcrctl --wallet walletpassphrase <private passphrase set during wallet creation> 0
+promptsecret | dcrctl --wallet walletpassphrase - 0
 ```
 
 Here, we are specifying for `dcrctl` to send the command to `dcrwallet` by using the `--wallet` flag. The actual command is `walletpassphrase` which accepts two parameters, your private passphrase and a time limit. Specifying `0` for a time limit unlocks `dcrwallet` without a time limit. Note, however, that this only unlocks the wallet for the current session. If you close the window the wallet is running in, or stop/restart the `dcrwallet`, you will need to unlock it again the next time you start it. 

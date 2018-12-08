@@ -53,7 +53,7 @@ nav:
 - Wallets:
     - Decrediton (GUI):
       - 'Decrediton Setup': 'getting-started/user-guides/decrediton-setup.md'
-      - 'Using Decrediton': 'getting-started/user-guides/using-decrediton.md'
+      - 'Using Decrediton': 'wallets/decrediton/using-decrediton.md'
       - 'Troubleshooting Problems': 'getting-started/user-guides/decrediton-troubleshooting.md'
     - CLI Wallet:
       - 'Installation': 'wallets/cli/cli-installation.md'

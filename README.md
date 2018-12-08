@@ -80,7 +80,7 @@ $ docker run -d --rm -p <local port>:80 decred/dcrdocs:latest
 #### Decrediton releases
 
 - `user-guides/decrediton-setup.md`
-- `user-guides/using-decrediton.md`
+- `wallets/decrediton/using-decrediton.md`
 
 #### gominer release
 

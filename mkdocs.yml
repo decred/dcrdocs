@@ -54,7 +54,7 @@ nav:
     - Decrediton (GUI):
       - 'Decrediton Setup': 'getting-started/user-guides/decrediton-setup.md'
       - 'Using Decrediton': 'wallets/decrediton/using-decrediton.md'
-      - 'Troubleshooting Problems': 'getting-started/user-guides/decrediton-troubleshooting.md'
+      - 'Troubleshooting Problems': 'wallets/decrediton/decrediton-troubleshooting.md'
     - CLI Wallet:
       - 'Installation': 'wallets/cli/cli-installation.md'
       - 'OS Differences': 'wallets/cli/os-differences.md'
@@ -62,7 +62,7 @@ nav:
       - 'dcrd Setup': 'wallets/cli/dcrd-setup.md'
       - 'dcrwallet Setup': 'wallets/cli/dcrwallet-setup.md'
       - 'dcrctl Basics': 'getting-started/user-guides/dcrctl-basics.md'
-      - 'Buying Tickets': 'getting-started/user-guides/dcrwallet-tickets.md'
+      - 'Buying Tickets': 'wallets/cli/dcrwallet-tickets.md'
       - 'dcrd and dcrwallet CLI Arguments': 'getting-started/dcrd-and-dcrwallet-cli-arguments.md'
       - 'dcrctl RPC Commands': 'getting-started/dcrctl-rpc-commands.md'
     - 'SPV': 'wallets/spv.md'

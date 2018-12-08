@@ -50,7 +50,7 @@ Pool mining distributes shares based on blocks found so you can earn a steady am
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Receive.svg" /> Obtain a Decred Address to Receive Funds With
 
-Follow the [dcrctl Basics](../getting-started/user-guides/dcrctl-basics.md) guide and create an address so you can withdraw mining rewards to it.
+Follow the [dcrctl Basics](../wallets/cli/dcrctl-basics.md) guide and create an address so you can withdraw mining rewards to it.
 
 ---
 

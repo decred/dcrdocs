@@ -61,7 +61,7 @@ nav:
       - 'Startup Basics': 'wallets/cli/startup-basics.md'
       - 'dcrd Setup': 'wallets/cli/dcrd-setup.md'
       - 'dcrwallet Setup': 'wallets/cli/dcrwallet-setup.md'
-      - 'dcrctl Basics': 'getting-started/user-guides/dcrctl-basics.md'
+      - 'dcrctl Basics': 'wallets/cli/dcrctl-basics.md'
       - 'Buying Tickets': 'wallets/cli/dcrwallet-tickets.md'
       - 'dcrd and dcrwallet CLI Arguments': 'wallets/cli/dcrd-and-dcrwallet-cli-arguments.md'
       - 'dcrctl RPC Commands': 'wallets/cli/dcrctl-rpc-commands.md'

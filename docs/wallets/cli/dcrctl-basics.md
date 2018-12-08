@@ -2,9 +2,9 @@
 
 **Prerequisites:**
 
-- Use the latest [dcrinstall](../../wallets/cli/cli-installation.md) to install the command line tools.
-- [Setup dcrd](../../wallets/cli/dcrd-setup.md) and have it running in the background.
-- [Setup dcrwallet](../../wallets/cli/dcrwallet-setup.md) and have it running in the background.
+- Use the latest [dcrinstall](cli-installation.md) to install the command line tools.
+- [Setup dcrd](dcrd-setup.md) and have it running in the background.
+- [Setup dcrwallet](dcrwallet-setup.md) and have it running in the background.
 
 ---
 
@@ -94,7 +94,7 @@ To send DCR to an address, issue the `sendtoaddress` command to `dcrwallet` usin
 dcrctl --wallet sendtoaddress <address> <amount>
 ```
 
-If successful, `dcrctl` will return a transaction hash that can be used to watch the transaction on the official [Decred Block Explorer](../using-the-block-explorer.md).
+If successful, `dcrctl` will return a transaction hash that can be used to watch the transaction on the official [Decred Block Explorer](../../getting-started/using-the-block-explorer.md).
 
 ---
 
@@ -118,6 +118,6 @@ dcrctl --wallet getstakeinfo
 
 ## Additional Commands
 
-More commands can also be found on the [dcrctl RPC Commands](../../wallets/cli/dcrctl-rpc-commands.md) page.
+More commands can also be found on the [dcrctl RPC Commands](dcrctl-rpc-commands.md) page.
 
 ---

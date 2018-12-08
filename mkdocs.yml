@@ -63,8 +63,8 @@ nav:
       - 'dcrwallet Setup': 'wallets/cli/dcrwallet-setup.md'
       - 'dcrctl Basics': 'getting-started/user-guides/dcrctl-basics.md'
       - 'Buying Tickets': 'wallets/cli/dcrwallet-tickets.md'
-      - 'dcrd and dcrwallet CLI Arguments': 'getting-started/dcrd-and-dcrwallet-cli-arguments.md'
-      - 'dcrctl RPC Commands': 'getting-started/dcrctl-rpc-commands.md'
+      - 'dcrd and dcrwallet CLI Arguments': 'wallets/cli/dcrd-and-dcrwallet-cli-arguments.md'
+      - 'dcrctl RPC Commands': 'wallets/cli/dcrctl-rpc-commands.md'
     - 'SPV': 'wallets/spv.md'
 - Proof-of-Stake Voting:
   - "What is Proof-of-Stake?": 'mining/proof-of-stake.md'

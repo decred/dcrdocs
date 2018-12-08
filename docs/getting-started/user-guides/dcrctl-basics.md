@@ -118,6 +118,6 @@ dcrctl --wallet getstakeinfo
 
 ## Additional Commands
 
-More commands can also be found on the [dcrctl RPC Commands](../dcrctl-rpc-commands.md) page.
+More commands can also be found on the [dcrctl RPC Commands](../../wallets/cli/dcrctl-rpc-commands.md) page.
 
 ---

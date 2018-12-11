@@ -43,7 +43,7 @@ It is possible to import a standalone private key[^10724] into `dcrwallet`. Note
 Unlock the wallet (ignore angle brackets):
 
 ```no-highlight
-dcrctl --wallet walletpassphrase <private encryption passphrase> 60
+promptsecret | dcrctl --wallet - <private encryption passphrase> 60
 ```
 
 Import the standalone (`--noseed`) private key (ignore angle brackets):

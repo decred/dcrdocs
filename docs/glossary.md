@@ -321,7 +321,7 @@ The process of buying part of a ticket. This is done by coordinating with other 
 
 #### Transaction fees
 
-A fee paid to have your transaction included in a block. The default transaction fee for Decred is 0.001 DCR/kB.
+A fee paid to have your transaction included in a block. The default transaction fee for Decred is 0.0001 DCR/kB.
 
 #### Treasury
 

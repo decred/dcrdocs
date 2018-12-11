@@ -121,4 +121,4 @@ through your daemon.
 
 ---
 
-To learn how to use `dcrd` and  `dcrwallet`, visit the [dcrctl Basics](../../getting-started/user-guides/dcrctl-basics.md) guide. You'll learn how to unlock your wallet, send and receive DCR using `dcrctl`, check your balance, and check various network stats.
+To learn how to use `dcrd` and  `dcrwallet`, visit the [dcrctl Basics](dcrctl-basics.md) guide. You'll learn how to unlock your wallet, send and receive DCR using `dcrctl`, check your balance, and check various network stats.

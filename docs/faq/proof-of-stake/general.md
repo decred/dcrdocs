@@ -164,4 +164,4 @@ Decred was specifically designed to minimise impact from both large PoW mining p
 
 ## :fa-book: Links
 
-[^1]: [Decrediton Ticket Purchasing Guide](../../getting-started/user-guides/using-decrediton/#tickets)
+[^1]: [Decrediton Ticket Purchasing Guide](../../wallets/decrediton/using-decrediton.md#tickets)

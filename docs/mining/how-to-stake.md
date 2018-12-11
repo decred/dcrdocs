@@ -14,7 +14,7 @@ Running your own always-online wallet is known as **"Solo" Voting**.
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo PoS Voting
 
-Solo PoS voting is currently only possible using the Decred command line tools. The [Buying Tickets with dcrwallet](../getting-started/user-guides/dcrwallet-tickets.md) guide explains how to buy tickets using the CLI wallet `dcrwallet`.
+Solo PoS voting is currently only possible using the Decred command line tools. The [Buying Tickets with dcrwallet](../wallets/cli/dcrwallet-tickets.md) guide explains how to buy tickets using the CLI wallet `dcrwallet`.
 
 ---
 
@@ -34,5 +34,5 @@ More redundancy equals less chance of missed votes, although all pools will have
 
 PoS voting using a VSP can be done using Decrediton or dcrwallet.
 
-- `Decrediton` - GUI wallet for Windows/macOS/Linux. The [Tickets menu, Purchase tab](../getting-started/user-guides/using-decrediton.md#tickets) is used to buy tickets.
-- `dcrwallet` - CLI wallet for Windows/macOS/Linux. The [Buying Tickets with dcrwallet](../getting-started/user-guides/dcrwallet-tickets.md) guide explains how to purchase tickets via command line.
+- `Decrediton` - GUI wallet for Windows/macOS/Linux. The [Tickets menu, Purchase tab](../wallets/decrediton/using-decrediton.md#tickets) is used to buy tickets.
+- `dcrwallet` - CLI wallet for Windows/macOS/Linux. The [Buying Tickets with dcrwallet](../wallets/cli/dcrwallet-tickets.md) guide explains how to purchase tickets via command line.

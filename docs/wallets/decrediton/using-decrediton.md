@@ -2,7 +2,7 @@
 
 Last updated for Decrediton v1.3.1.
 
-This guide assumes you have already set up a Decrediton wallet using [the Decrediton Setup guide](decrediton-setup.md).
+This guide assumes you have already set up a Decrediton wallet using [the Decrediton Setup guide](../../getting-started/user-guides/decrediton-setup.md).
 
 ---
 
@@ -48,7 +48,7 @@ Decred addresses can be used as many times as you want, but for privacy reasons 
 ### History
 
 This tab shows a list of all transactions that have occurred involving this wallet. A dropdown menu allows filtering the list by transaction type: regular, ticket and vote transactions. The transaction hash can be used with the
-[block explorer](../using-the-block-explorer.md) to see more information about the transaction.
+[block explorer](../../getting-started/using-the-block-explorer.md) to see more information about the transaction.
 
 ![History Tab](/img/decrediton/history.png)
 

@@ -73,14 +73,14 @@ $ docker run -d --rm -p <local port>:80 decred/dcrdocs:latest
 #### CLI releases
 
 - `advanced/manual-cli-install.md`
-- `getting-started/dcrd-and-dcrwallet-cli-arguments.md`
-- `getting-started/dcrctl-rpc-commands.md`
+- `wallets/cli/dcrd-and-dcrwallet-cli-arguments.md`
+- `wallets/cli/dcrctl-rpc-commands.md`
 - `wallets/cli/cli-installation.md`
 
 #### Decrediton releases
 
 - `user-guides/decrediton-setup.md`
-- `user-guides/using-decrediton.md`
+- `wallets/decrediton/using-decrediton.md`
 
 #### gominer release
 

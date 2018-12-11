@@ -272,7 +272,7 @@ A 256-bit (32-byte) cryptographically secure random number that can be used to r
 
 #### Signature
 
-A cryptographic mechanism that proves that the owner of the private key has approved a transaction.
+A cryptographic mechanism to prove that a private key was used to validate or authorize some data (such as a transaction or a Politeia vote).
 
 #### Simnet
 

@@ -62,6 +62,6 @@ A ticket on main net (test net uses different parameters) will go through a few 
 
 [Proof-of-Stake FAQ - Solo Mining](../faq/proof-of-stake/solo-mining.md)
 
-[Proof-of-Stake FAQ - Stake Pools](../faq/proof-of-stake/stake-pools.md)
+[Proof-of-Stake FAQ - Voting Service Providers](../faq/proof-of-stake/stake-pools.md)
 
 [Proof-of-Stake FAQ - Voting Tickets](../faq/proof-of-stake/voting-tickets.md)

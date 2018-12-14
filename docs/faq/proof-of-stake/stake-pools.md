@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> Voting Service Providers
+# <img class="dcr-icon" src="/img/dcr-icons/Servers.svg" /> Voting Service Providers
 
 ---
 

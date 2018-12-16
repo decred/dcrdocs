@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Options2.svg" /> `dcrd` and `dcrwallet` CLI Arguments
 
-Last updated for CLI release v1.3.0.
+Last updated for CLI release v{{ cliversion.mac }}.
 
 ---
 Both the `dcrd` and `dcrwallet` daemons should work with default configuration for most users, however there is a wide variety of command line aguments to change the way they behave if required. For example, the following command can be used to change the log directory `dcrd` will write to.
@@ -28,6 +28,7 @@ dcrd --logdir=/my/custom/log/directory
             `--connect=`              | Connect only to the specified peers at startup
             `--nolisten`              | Disable listening for incoming connections -- **NOTE:** Listening is automatically disabled if the `--connect` or `--proxy` options are used without also specifying listen interfaces via `--listen`
             `--listen=`               | Add an interface/port to listen for connections (default all interfaces port: 9108, testnet: 19108)
+            `--maxsameip=`            | Max number of connections with the same IP -- 0 to disable (default: 5)
             `--maxpeers=`             | Max number of inbound and outbound peers (default: 125)
             `--nobanning`             | Disable banning of misbehaving peers
             `--banduration=`          | How long to ban misbehaving peers.  Valid time units are {s, m, h}.  Minimum 1 second (default: 24h0m0s)
@@ -57,6 +58,7 @@ dcrd --logdir=/my/custom/log/directory
             `--torisolation`          | Enable Tor stream isolation by randomizing user credentials for each connection.
             `--testnet`               | Use the test network
             `--simnet`                | Use the simulation test network
+            `--regnet`                | Use the regression test network
             `--nocheckpoints`         | Disable built-in checkpoints.  Don't do this unless you know what you're doing.
             `--dbtype=`               | Database backend to use for the Block Chain (default: ffldb)
             `--profile=`              | Enable HTTP profiling on given [addr:]port -- **NOTE:** port must be between 1024 and 65536
@@ -94,6 +96,7 @@ dcrd --logdir=/my/custom/log/directory
             `--piperx=`               | File descriptor of read end pipe to enable parent -> child process communication
             `--pipetx=`               | File descriptor of write end pipe to enable parent <- child process communication
             `--lifetimeevents`        | Send lifetime notifications over the TX pipe
+            `-altdnsnames=`           | Specify additional dns names to use when generating the rpc server certificate [$DCRD_ALT_DNSNAMES]
 ---
 
 ## `dcrwallet`
@@ -128,8 +131,8 @@ dcrd --logdir=/my/custom/log/directory
             `--gaplimit=`                              | The size of gaps between used addresses.  Used for address scanning and when generating addresses with the wrap option. (default: 20)
             `--stakepoolcoldextkey=`                   | Enables the wallet as a stake pool with an extended key in the format of "xpub...:index" to derive cold wallet addresses to send fees to
             `--allowhighfees`                          | Force the RPC client to use the 'allowHighFees' flag when sending transactions
-            `--txfee=`                                 | Sets the wallet's tx fee per kb (default: 0.001 DCR)
-            `--ticketfee=`                             | Sets the wallet's ticket fee per kb (default: 0.001 DCR)
+            `--txfee=`                                 | Sets the wallet's tx fee per kb (default: 0.0001 DCR)
+            `--ticketfee=`                             | Sets the wallet's ticket fee per kb (default: 0.0001 DCR)
             `--accountgaplimit=`                       | Number of accounts that can be created in a row without using any of them (default: 10)
     `-c` or `--rpcconnect=`                            | Hostname/IP and port of dcrd RPC server to connect to
             `--cafile=`                                | File containing root certificates to authenticate a TLS connections with dcrd

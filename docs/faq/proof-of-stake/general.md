@@ -63,7 +63,7 @@ Returning the funds back to your wallet after a ticket votes or is revoked does 
 
 #### 6. What is a Voting Service Provider? 
 
-A Voting Service Provider (VSP) is similar in some ways to a mining pool, but for the PoS system. Through the options in your Decred wallet, you can give your voting rights to a VSP. If your ticket is selected to vote, the VSP will cast the vote for you and you are rewarded with the PoS reward minus the VSP fee (usually 1-5%). Unlike mining pools, the PoS reward is not split amongst the users of the stake pool. The full reward goes to the owner of the specific ticket that voted.
+A Voting Service Provider (VSP) is similar in some ways to a mining pool, but for the PoS system. Through the options in your Decred wallet, you can give your voting rights to a VSP. If your ticket is selected to vote, the VSP will cast the vote for you and you are rewarded with the PoS reward minus the VSP fee (usually 1-5%). Unlike mining pools, the PoS reward is not split amongst the users of the VSP. The full reward goes to the owner of the specific ticket that voted.
 
 A VSP allows you to buy tickets and vote without the requirement of maintaining an online and unlocked wallet. It is important to note that your funds never leave your wallet. You are not sending anything to the VSP, just giving it authority to vote on your behalf. A VSP cannot access your funds. 
 
@@ -158,7 +158,7 @@ And THEN you still need the PoW miners to confirm the votes. If they think someo
 
 So basically this is close to impossible, even if a single person has a HUGE percentage of DCR.
 
-But then we come to the Voting Service Providers. VSPs, while not having access to any of their users' funds, do have the ability to change votes on tickets assigned to them. This is why it is suggested that when joining a stake pool, people don't just go for the largest one. Decred is short for 'decentralised credit' so part of the spirit of PoS is ensuring that the VSPs don't get too large in relation to the others. However, even the largest at almost 20% would still only get on average one vote per block.
+But then we come to the Voting Service Providers. VSPs, while not having access to any of their users' funds, do have the ability to change votes on tickets assigned to them. This is why it is suggested that when joining a VSP, people don't just go for the largest one. Decred is short for 'decentralised credit' so part of the spirit of PoS is ensuring that the VSPs don't get too large in relation to the others. However, even the largest at almost 20% would still only get on average one vote per block.
 
 Decred was specifically designed to minimise impact from both large PoW mining pools and PoS VSPs as well as individuals (including developers) with large holdings. 
 

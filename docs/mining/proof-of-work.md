@@ -29,7 +29,7 @@ Miners typically receive a reward that is roughly proportional to the
 hashrate of your miner and the overall hashrate of the network when you commit
 your computer to PoW mining. 
 
-Decred uses the BLAKE256 hashing function. PoW mining can be done using GPUs. However, ASICs that mine DCR are now available, and since their introduction the PoW difficulty has become high enough to make GPU 
+Decred uses the [BLAKE-256](../research/blake-256-hash-function.md) hashing function. PoW mining can be done using GPUs. However, ASICs that mine DCR are now available, and since their introduction the PoW difficulty has become high enough to make GPU
 mining unlikely to be profitable. 
 
 ---

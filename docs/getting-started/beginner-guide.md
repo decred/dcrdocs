@@ -20,7 +20,7 @@ The following guides go into depth on key aspects of the Decred experience:
 * [Using the Block Explorer](using-the-block-explorer.md)
 * [Governance](../governance/introduction-to-decred-governance.md)
 * [Ticket buying guide](../mining/proof-of-stake.md)
-* [Politeia](../governance/politeia.md)
+* [Politeia](../governance/politeia/politeia.md)
 * [Voting on consensus rules changes](../governance/consensus-rules-voting.md)
 * [Using Testnet](../advanced/using-testnet.md)
 

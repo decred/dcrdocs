@@ -46,14 +46,13 @@ nav:
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
 - Governance:
   - Politeia:
-    - 'Politeia': 'governance/politeia.md'
+    - 'Politeia': 'governance/politeia/politeia.md'
     - 'Proposal Guidelines': 'governance/politeia/proposal-guidelines.md'
     - 'Example Proposals': 'governance/politeia/example-proposals.md'
   - 'Introduction to Decred governance': 'governance/introduction-to-decred-governance.md'
   - 'Consensus Rules Voting': 'governance/consensus-rules-voting.md'
   - 'How to Vote on Consensus Rule Changes': 'governance/how-to-vote.md'
   - 'Decred Constitution': 'governance/decred-constitution.md'
-
 - Wallets:
     - Decrediton (GUI):
       - 'Decrediton Setup': 'getting-started/user-guides/decrediton-setup.md'

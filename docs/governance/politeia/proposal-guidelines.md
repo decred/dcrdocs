@@ -4,7 +4,7 @@
 
 The page provides a basic [proposal template](#proposal-template) and
 [tips for creating a successful proposal](#tips-for-creating-a-successful-proposal).
-See the [example proposals](../../governance/politeia/example-proposals.md) page for
+See the [Example Proposals](../../governance/politeia/example-proposals.md) page for
 example proposals that use this template.
 
 
@@ -44,7 +44,7 @@ Following the below tips will greatly increase your proposal's chance of success
 #### Engage the community
 
 Engaging with the [community](../../getting-started/beginner-guide.md#community) first, 
-before submitting a proposal, will allow you to gague interest in your idea, gather 
+before submitting a proposal, will allow you to gauge interest in your idea, gather 
 feedback, and better understand your proposal's chance of success before investing time
 in a proposal. 
 

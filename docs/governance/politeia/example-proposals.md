@@ -3,7 +3,7 @@
 ---
 
 Below are two example Politeia proposals that utilize the template provided in the
-Politeia [proposal guidelines](/proposal-guidelines.md). The first example proposes the 
+Politeia [Proposal Guidelines](proposal-guidelines.md). The first example proposes the 
 development of a new software feature. The second a marketing initiative.
 
 - [Software Feature Proposal](#software-feature-proposal)

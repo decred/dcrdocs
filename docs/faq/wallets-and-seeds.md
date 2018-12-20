@@ -60,9 +60,9 @@ dcrctl --wallet getbalance "imported" 0 all
 
 ---
 
-#### 7. What is the difference between a testnet and mainnet address?
+#### 7. What is the difference between a testnet and mainnet public key address?
 
-A testnet public key address[^11507] starts with the letters `Tk`. A mainnet address starts with the letters `Dk`. `T` = Testnet, `D` = (Decred) Mainnet.
+A public key address, also called Pay-To-Pubkey (P2Pk), can be identified with its 2-byte prefix which identifies the network and type. A mainnet public key address starts with the letters `Dk` while a testnet public key address[^11507] starts with the letters `Tk`. 
 
 ---
 
@@ -72,11 +72,21 @@ A Decred address[^14995] is actually just a representation of a public key (whic
 
 Consequently, you can always tell what type of address it is based on the 2-byte prefix.
 
-The first byte of the prefix identifies the network. This is why all mainnet addresses start with "D", testnet addresses start with "T", and simnet addresses start with "S". The second byte of the prefix identifies the type of address it is.
+The first byte of the prefix identifies the network. This is why all mainnet addresses start with "D", testnet addresses start with "T", and simnet addresses start with "S". 
 
-The most common addresses used at the moment are secp256k1 pubkey hashes, which are identified by a lowercase "s". It represents a single public key and therefore only has a single associated private key which can be used to redeem it.
+|        	| (Decred) Mainnet 	| Testnet 	| Simnet 	|
+|--------	|:----------------:	|:-------:	|:-------:	|
+| Prefix 	|         D        	|    T    	|    S   	|
+
+The second byte of the prefix identifies the type of address it is. The most common addresses used at the moment are secp256k1 pubkey hashes, which are identified by a lowercase "s". It represents a single public key and therefore only has a single associated private key which can be used to redeem it.
 
 The stake pool, however, uses a pay-to-script-hash address, which is identified by the second byte being a lowercase "c" (again that is shown in the linked params). The specific flavor of script it generates is a multi-signature 1-of-2, which is how it allows either the pool, or you, to vote. Both you and the stake pool have your own private keys and since the script only requires one signature of the possible two, that is how it allows delegation of voting rights to the pool without you giving up your voting rights completely.
+
+| Address   Type     	| Locking   Script 	| (Decred) Mainnet  	| Testnet 	| Simnet 	| Prefix Size (byte) 	|
+|--------------------	|:----------------:	|:-----------------:	|:--------:	|:------:	|:------------------:	|
+| Pay-to-Pubkey      	|       P2Pk       	|         Dk        	|    Tk   	|   Sk   	|    2                  	|
+| Pay-to-Pubkey-Hash (secp256k1)  	|       P2PKH      	|         Ds        	|    Ts   	|   Ss   	|    2                  	|
+| Pay-to-Script-Hash 	|       P2SH       	|         Dc        	|    Tc   	|   Sc   	|    2                  	|
 
 ---
 

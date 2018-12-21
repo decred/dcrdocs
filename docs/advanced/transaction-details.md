@@ -9,7 +9,7 @@ Decred transactions are transfers of DCR that exist within blocks. Transactions 
 
 Field        | Description                                                                                    | Size
 ---          | ---                                                                                            | ---
-Version      | Transaction version. This number is used to signify how the transaction should be interpreted. The first two bytes specify the version number. The second two bytes specify the serialization format.   | 4 bytes
+Version      | Transaction version. This number is used to signify how the transaction should be interpreted. The upper 16 bits specify the serialization format and the lower 16 bits specify the version number.   | 4 bytes
 Input count  | The number of inputs in the transaction encoded as a variable-length integer                   | 1-9 bytes
 Inputs       | Serialized list of all the transaction's inputs                                                | Variable
 Output count | The number of outputs in the transaction encoded as a variable-length integer                  | 1-9 bytes

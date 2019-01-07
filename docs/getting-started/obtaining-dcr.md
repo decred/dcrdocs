@@ -34,7 +34,7 @@ Proof-of-Work (PoW) is a measure of using computational power to create and veri
 
 ## <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Stake Mine for Decred / Proof-of-Stake (PoS)
 
-Proof-of-Stake (PoS) mining is performed by stakeholders who lock a certain amount of their DCR in return for voting rights and a monetary reward. PoS mining is described in more detail [here](../mining/proof-of-stake.md).
+Proof-of-Stake (PoS) mining is performed by stakeholders who lock a certain amount of their DCR in return for voting rights and a monetary reward. PoS mining is described in more detail [here](../proof-of-stake/proof-of-stake.md).
 
 ---
 

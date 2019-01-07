@@ -56,8 +56,8 @@ Data on votes cast by ticket holders on a given proposal is stored in the `ballo
 | **token**              | The proposal being voted on    |  
 | **ticket**              | The ticket which is voting   |  
 | **votebit**             | Whether the vote was Yes (2) or No (1)   |  
-| **signature**              |    |  
-| **receipt**             |   |  
+| **signature**              |  Signature of the vote, which is created using the voter's private key. This can be used to verify the proposal voted on, the ticket that voted, and the vote choice.  |  
+| **receipt**             |  The Politeia server signature of the vote signature. This can be used to verify that the vote was signed (verified) by the Politeia server using the Politeia server's private key. |  
 
 
 ### Comment data 
@@ -75,7 +75,8 @@ Data on comments is stored in the `comments.journal` file in the `/plugins/decre
 | **timestamp**              |  A unix timestamp specifying time comment was submitted |  
 | **publickey**             |  The public key of the Politeia user who made the comment |  
 | **censored**             |  The censorship status. If the comment has been censored, `censored` = true, and the comment will not be shown on proposals.decred.org.  |  
-| **receipt**             |   |  
+| **signature**             | Signature of the ProposalToken+ParentCommentID+Comment, which is created using the commenter's private key. This can be used to verify the proposal (or comment on a proposal) that was commented on, the public key of the commenter, and the content of the comment.  |  
+| **receipt**             |  The Politeia server signature of the comment signature. This can be used to verify that the comment was signed (verified) by the Politeia server using the Politeia server's private key. |  
 | **totalvotes**            |   |  
 | **resultvotes**             |   |  
 

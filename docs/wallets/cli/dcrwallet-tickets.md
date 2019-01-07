@@ -11,7 +11,7 @@ This guide is intended to walk through ticket buying using `dcrwallet`. It will 
 -   [Setup dcrd](dcrd-setup.md) and have it running in the background.
 -   [Setup dcrwallet](dcrwallet-setup.md) and have it running in the background.
 -   Familiarize yourself with the [basics of using dcrctl](dcrctl-basics.md).
--   Familiarize yourself with the [staking process](../../mining/proof-of-stake.md) and the [ticket lifecycle](../../mining/proof-of-stake.md#ticket-lifecycle)
+-   Familiarize yourself with the [staking process](../../proof-of-stake/proof-of-stake.md) and the [ticket lifecycle](../../proof-of-stake/proof-of-stake.md#ticket-lifecycle)
 
 This guide assumes you have set up `dcrd` and `dcrwallet` using configuration files. If you used `dcrinstall`, you have configuration files already. Using configuration files is highly recommended - it makes for an easier time issuing commands to `dcrwallet` and `dcrd` through `dcrctl`. A guide for minimum configuration (saving your RPC username and RPC password) can be found [here](../../advanced/manual-cli-install.md#minimum-configuration).
 
@@ -47,7 +47,7 @@ Once restarted with that line in `dcrwallet.conf` your wallet will be configured
 
 ## Stakepool-voting
 
-To allow a stakepool to vote for you, you first have to sign up for a stakepool. A list of them can be found [here](../../mining/how-to-stake.md#pos-using-a-stakepool). After signing up, there should be directions for creating a new P2SH address and importing your multi-sig voting script. A brief overview is provided here:
+To allow a stakepool to vote for you, you first have to sign up for a stakepool. A list of them can be found [here](../../proof-of-stake/how-to-stake.md#pos-using-a-stakepool). After signing up, there should be directions for creating a new P2SH address and importing your multi-sig voting script. A brief overview is provided here:
 
 1.  With your wallet open, issue the `dcrctl --wallet getnewaddress` command to retrieve an address.
 2.  Using that address, issue the `dcrctl --wallet validateaddress <address from step 1>` command. This should return a JSON object that will be displayed like so:

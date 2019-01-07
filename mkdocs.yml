@@ -55,7 +55,7 @@ nav:
   - 'Decred Constitution': 'governance/decred-constitution.md'
 - Wallets:
     - Decrediton (GUI):
-      - 'Decrediton Setup': 'getting-started/user-guides/decrediton-setup.md'
+      - 'Decrediton Setup': 'wallets/decrediton/decrediton-setup.md'
       - 'Using Decrediton': 'wallets/decrediton/using-decrediton.md'
       - 'Troubleshooting Problems': 'wallets/decrediton/decrediton-troubleshooting.md'
     - CLI Wallet:
@@ -70,8 +70,8 @@ nav:
       - 'dcrctl RPC Commands': 'wallets/cli/dcrctl-rpc-commands.md'
     - 'SPV': 'wallets/spv.md'
 - Proof-of-Stake Voting:
-  - "What is Proof-of-Stake?": 'mining/proof-of-stake.md'
-  - "How to Stake": 'mining/how-to-stake.md' 
+  - "What is Proof-of-Stake?": 'proof-of-stake/proof-of-stake.md'
+  - "How to Stake": 'proof-of-stake/how-to-stake.md' 
   - PoS FAQ:
     - 'General': 'faq/proof-of-stake/general.md'
     - 'Solo Mining': 'faq/proof-of-stake/solo-mining.md'

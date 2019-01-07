@@ -2,7 +2,7 @@
 
 Last updated for Decrediton v1.3.1.
 
-This guide assumes you have already set up a Decrediton wallet using [the Decrediton Setup guide](../../getting-started/user-guides/decrediton-setup.md).
+This guide assumes you have already set up a Decrediton wallet using [the Decrediton Setup guide](decrediton-setup.md).
 
 ---
 
@@ -67,7 +67,7 @@ The tickets tab is split into four sections:
 
 ### Purchase
 
-Before you can purchase tickets you must first import the API key from your [stakepool account](../../mining/how-to-stake.md#pos-using-a-stakepool).
+Before you can purchase tickets you must first import the API key from your [stakepool account](../../proof-of-stake/how-to-stake.md#pos-using-a-stakepool).
 
 ![Tickets Tab](/img/decrediton/tickets.png)
 

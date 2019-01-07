@@ -8,7 +8,7 @@ Politeia is a platform that supports Decred’s governance. It facilitates the s
 
 Reddit-style **up/down voting** is used for comment sorting. Up/down votes are not anonymous.
 
-Voting on proposals does not happen directly on Politeia, as it requires signatures from your Decred wallet. Voting can be done from [Decrediton](../../getting-started/user-guides/decrediton-setup.md) or on the command line using the [politeiavoter CLI](https://github.com/decred/politeia/tree/master/politeiavoter) tool. 
+Voting on proposals does not happen directly on Politeia, as it requires signatures from your Decred wallet. Voting can be done from [Decrediton](../../wallets/decrediton/decrediton-setup.md) or on the command line using the [politeiavoter CLI](https://github.com/decred/politeia/tree/master/politeiavoter) tool. 
 
 There are two broad types of proposal:
 

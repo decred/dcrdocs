@@ -8,7 +8,7 @@ This guide offers signposts to some useful resources, including how to set up yo
 
 ## Wallets
 
-[Decrediton](user-guides/decrediton-setup.md) is Decred's GUI wallet. It supports Voting through [stakepools](https://decred.org/stakepools/) and offers the easiest way to start buying tickets and participating in governance.
+[Decrediton](../wallets/decrediton/decrediton-setup.md) is Decred's GUI wallet. It supports Voting through [stakepools](https://decred.org/stakepools/) and offers the easiest way to start buying tickets and participating in governance.
 
 There is also a [Command Line Interface](../wallets/cli/cli-installation.md) that exposes more advanced functionality, including the ability to run a personal Voting wallet.
 
@@ -19,7 +19,7 @@ The following guides go into depth on key aspects of the Decred experience:
 * [Obtaining DCR](obtaining-dcr.md)
 * [Using the Block Explorer](using-the-block-explorer.md)
 * [Governance](../governance/introduction-to-decred-governance.md)
-* [Ticket buying guide](../mining/proof-of-stake.md)
+* [Ticket buying guide](../proof-of-stake/proof-of-stake.md)
 * [Politeia](../governance/politeia/politeia.md)
 * [Voting on consensus rules changes](../governance/consensus-rules-voting.md)
 * [Using Testnet](../advanced/using-testnet.md)

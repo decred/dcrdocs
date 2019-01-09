@@ -4,13 +4,13 @@ Last updated for CLI release v1.2.0.
 
 ---
 
-The newest binary releases can be found [here](https://github.com/decred/decred-binaries/releases). With the exception of the `.exe` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be extract and go, instructions are provided for [Windows](#windows), [macOS](#macos), and [Linux](#linux) below (assumed proficiency for FreeBSD users).
+The newest binary releases can be found [here](https://github.com/decred/decred-binaries/releases). With the exception of the `.exe` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be extract and go, instructions are provided for Windows, macOS, and Linux below (assumed proficiency for FreeBSD users).
 
 ??? info "Windows instructions (click to expand)"
 
     !!! note
 
-        Windows 7/8/10 provides native support for `.zip` files, therefore it is preferable to use the `.zip` file. If you decide to download the `.tar.gz` file, it will require two separate extractions in some third-party application (7-Zip, WinRAR, etc.) to get to the actual binaries. Instructions are provided for the `.zip` file.
+        Windows 7/8/10 provides native support for `.zip` files, therefore it is preferable to use the `.zip` file. If you decide to download the `.tar.gz` file, it will need to be extracted using a third-party application (7-Zip, WinRAR, etc.). Instructions are provided for the `.zip` file.
 
     1. Download the correct file for your computer:
 
@@ -56,6 +56,7 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
     1. Navigate to download location and extract the `.tar.gz` file:
 
         **Ubuntu File Browser:** simply right click on the `.tar.gz` file and select "Extract Here".
+
         **Terminal:** use the `tar -xvzf filename.tar.gz` command.
 
         Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-linux-amd64-v1.2.0.tar.gz` should extract to `decred-linux-amd64-v1.2.0`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
@@ -94,4 +95,10 @@ At the very minimum, for `dcrd`, `dcrwallet`, and `dcrctl` to be able to communi
 
     Save it as `dcrctl.conf` in `dcrctl`'s home directory.
 
-Please see the [sample config](https://github.com/decred/dcrd/blob/master/sampleconfig/sampleconfig.go#L8-L352) for more customization options.
+---
+
+## Additional Configuration Options
+
+All command line options can be put in the config file. The sample config files in the release package give additional options or you can run one of the programs with the `-h` flag to show a list and description of all options for the specified application.
+
+There is also a full list of options for each application which can be found [here](../wallets/cli/dcrd-and-dcrwallet-cli-arguments.md).

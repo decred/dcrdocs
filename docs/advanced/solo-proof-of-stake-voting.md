@@ -1,7 +1,7 @@
 # Solo Proof-of-Stake (PoS) Voting
 
 ## Overview
-Decred’s Proof-of-Stake system requires a user to have a wallet connect to the network in order to purchase tickets so as to participate in its governance model and receive the corresponding rewards. This introduces some risks compared to other setups where a user might choose to store private keys on a paper wallet and not have to worry about a host of attack vectors introduced by being online.
+Decred’s Proof-of-Stake system requires a user to have a wallet connect to the Internet in order to purchase tickets so as to participate in its governance model and receive the corresponding rewards. This introduces some risks compared to other setups where a user might choose to store private keys on a paper wallet and not have to worry about a host of attack vectors introduced by being online.
 
 If you want to do something akin to running your own pool, where "hot wallets" on virtual private servers (VPSs) will do the voting on your behalf, but a secure wallet which contains your funds will control ticket buying and receive all rewards this guide is for you.
 

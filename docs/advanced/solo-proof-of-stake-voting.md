@@ -3,7 +3,7 @@
 ## Overview
 Decred’s Proof-of-Stake system requires a user to have a wallet connect to the Internet in order to purchase tickets so as to participate in its governance model and receive the corresponding rewards. This introduces some risks compared to other setups where a user might choose to store private keys on a paper wallet and not have to worry about a host of attack vectors introduced by being online.
 
-If you want to do something akin to running your own pool, where "hot wallets" on virtual private servers (VPSs) will do the voting on your behalf, but a secure wallet which contains your funds will control ticket buying and receive all rewards this guide is for you.
+This guide is for you if you want to do something akin to running your own pool, where "hot wallets" on virtual private servers (VPSs) will do the voting on your behalf, but a secure wallet which contains your funds will control ticket buying and receive all rewards.
 
 Basically the advantage of the setup is that the VPSs will be online and ready to vote 24/7 so your machine at home (cool wallet) does not have to be. You will also have redundancy and low latency as you will be running multiple hot wallets on servers in different geographic locations (3 is recommended). Another advantage of this over using a pool is that there is no risk of a pool operator voting in a manner contrary to your wishes, it promotes decentralization, and there is no pool fee. The only additional costs will be those of maintaining the VPSs which may be significantly lower than what a pool might cost if you have a fair number of tickets.
 

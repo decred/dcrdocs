@@ -58,7 +58,7 @@ If the command was successful, you will not get a confirmation from `dcrctl`, bu
 [INF] RPCS: The wallet has been unlocked without a time limit.
 ```
 
-NOTE: Because unlocking the wallet is required for many functions of `dcrwallet`, `dcrwallet` can be started with the `--promptpass` flag or setting `promptpass=true` in `dcrwallet.conf` (discussed [here](../../advanced/storing-login-details.md)).
+NOTE: Because unlocking the wallet is required for many functions of `dcrwallet`, `dcrwallet` can be started with the `--promptpass` flag or setting `promptpass=true` in `dcrwallet.conf`.
 
 ---
 

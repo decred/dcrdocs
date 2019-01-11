@@ -91,7 +91,6 @@ nav:
 - Advanced:
   - 'Using Testnet': 'advanced/using-testnet.md'
   - 'Manual CLI Installation': 'advanced/manual-cli-install.md'
-  - 'Storing Login Details': 'advanced/storing-login-details.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
   - 'Blockchain Parameters': 'advanced/blockchain-parameters.md'
   - 'Transaction Details': 'advanced/transaction-details.md'

@@ -55,6 +55,6 @@ To enable SPV mode in `dcrwallet` simply provide the `--spv` flag when starting 
 
 #### Decrediton
 
-If Decrediton is being started for the first time, the file `config.json` needs to be modified in order to enable SPV. Locate the file in the [Decrediton data directory](decrediton/decrediton-troubleshooting.md#location-of-data-and-log-files), and update the setting `spv_mode` to `true`.
+If Decrediton is being started for the first time, the file `config.json` needs to be modified in order to start in SPV mode. Locate the file in the [Decrediton data directory](decrediton/decrediton-troubleshooting.md#location-of-data-and-log-files), and update the setting `spv_mode` to `true`. An alternative is to use the command-line option `--spv` and optionally `--spvconnect`. See the command-line help message for more details.
 
 If Decrediton is already synced with the network it is possible to change to SPV mode through the GUI. Open a wallet, and locate the "SPV" option in the setting tab. There is also a "SPV Connect" setting on this tab, which will allow you to specify the IP address of a full node you wish to sync from.

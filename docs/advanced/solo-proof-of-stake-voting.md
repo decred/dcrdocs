@@ -1,6 +1,9 @@
 # Solo Proof-of-Stake (PoS) Voting
 
+--- 
+
 ## Overview
+
 Decred’s Proof-of-Stake system requires a user to have a wallet connect to the Internet in order to purchase tickets so as to participate in its governance model and receive the corresponding rewards. This introduces some risks compared to other setups where a user might choose to store private keys on a paper wallet and not have to worry about a host of attack vectors introduced by being online.
 
 This guide is for you if you want to do something akin to running your own pool, where "hot wallets" on virtual private servers (VPSs) will do the voting on your behalf, but a secure wallet which contains your funds will control ticket buying and receive all rewards.
@@ -11,8 +14,10 @@ To mitigate a great number of the risks associated with having a Decred wallet c
 
 ---
 
-# Setting Up A Secure "Cool" Wallet
-## Hardware
+## Setting Up A Secure "Cool" Wallet
+
+### Hardware
+
 The first concept we will address is that of _compartmentalization_. There is really no reason that a machine which may be storing large amounts of cryptocurrency should have multiple roles. It should not be used, for gaming, word processing, web browsing, downloading torrents, etc...
 
 I highly recommend [Qubes OS](https://www.qubes-os.org/) paired with [compatible hardware](https://www.qubes-os.org/hcl/).
@@ -22,31 +27,33 @@ If cost is a huge factor, single-board computers such as the Raspberry Pi 3 Mode
 
 ---
 
-## Configuration
+### Configuration
+
 Once your staking machine is set up you will need to install the Decred CLI tools.
+
 1. Import the Decred Release Signing Key in GnuPG.
 
-`gpg --keyserver pgp.mit.edu --recv-keys 0x518A031D`
+    `gpg --keyserver pgp.mit.edu --recv-keys 0x518A031D`
 
-2. Download the installer, manifest, and signature files.
+1. Download the installer, manifest, and signature files.
 
-`wget https://github.com/decred/decred-release/releases/download/v1.3.0/{dcrinstall-linux-amd64-v1.3.0,manifest-dcrinstall-v1.3.0.txt,manifest-dcrinstall-v1.3.0.txt.asc}`
+    `wget https://github.com/decred/decred-release/releases/download/v1.3.0/{dcrinstall-linux-amd64-v1.3.0,manifest-dcrinstall-v1.3.0.txt,manifest-dcrinstall-v1.3.0.txt.asc}`
 
-3. Verify the manifest.
+1. Verify the manifest.
 
-`gpg --verify manifest-dcrinstall-v1.3.0.txt.asc`
+    `gpg --verify manifest-dcrinstall-v1.3.0.txt.asc`
 
-4. Verify the SHA-256 hash in the manifest matches that of the binary.
+1. Verify the SHA-256 hash in the manifest matches that of the binary.
 
-`sha256sum dcrinstall-linux-amd64-v1.3.0`
+    `sha256sum dcrinstall-linux-amd64-v1.3.0`
 
-5. Make the binary executable.
+1. Make the binary executable.
 
-`chmod +x dcrinstall-linux-amd64-v1.3.0`
+    `chmod +x dcrinstall-linux-amd64-v1.3.0`
 
-6. Run it.
+1. Run it.
 
-`./dcrinstall-linux-amd64-v1.3.0`
+    `./dcrinstall-linux-amd64-v1.3.0`
 
 **Important**
 
@@ -62,23 +69,28 @@ The only way a person should be able to get the seed words is by acquiring one o
 
 Once the wallet is created we can do a few things to make life easier. 
 
-1. Create a `bash` script called `decred.sh` which will start a `tmux` session for each application, start `dcrd`, start `dcrwallet`, prompt us for the password to unlock the wallet, and start `dcrctl`. Also make sure you have `tmux` installed.
+1. Make sure you have `tmux` installed.
 
-`echo "tmux new -d -s dcrd 'dcrd & tmux new -d -s dcrwallet 'dcrwallet --promptpass' & tmux attach -t dcrwallet" > ~/decred.sh"`
+1. Create a `bash` script called `decred.sh` which will start a `tmux` session for each application, start `dcrd`, start `dcrwallet`, prompt us for the password to unlock the wallet, and start `dcrctl`. 
 
-2. Add the pathe to the Decred binaries to your `.profile`.
-`"PATH=~/decred:$PATH" >> ~/.profile && source ~/.profile`
+    `echo "tmux new -d -s dcrd 'dcrd & tmux new -d -s dcrwallet 'dcrwallet --promptpass' & tmux attach -t dcrwallet" > ~/decred.sh"`
 
-3. Now make it executable with `chmod +x ~/decred.sh`
+1. Add the path to the Decred binaries to your `.profile`.
 
-Now you can start `dcrd`, `dcrwallet`, and unlock it using `promptsecret` just by running `./decred.sh`.
+    `"PATH=~/decred:$PATH" >> ~/.profile && source ~/.profile`
+
+1. Now make it executable with `chmod +x ~/decred.sh`
+
+Now you can start `dcrd`, `dcrwallet`, and unlock it just by running `./decred.sh`.
+
 If necessary do `tmux attach -t dcrwallet` to enter the password and then `tmux attach -t dcrctl` to enter commands
 
 The next step will be to start buying tickets manually or using `ticketbuyer` in conjunction with a series of hot wallets you will set up later in this guide.
 
 ---
 
-## Ticket Buying
+### Ticket Buying
+
 Now from your cool wallet you can purchase tickets using the following command once your wallet is unlocked:
 
 `dcrctl --wallet purchaseticket default 150 1 DsHotWalletAddressFromVPS 10`
@@ -95,41 +107,41 @@ ticketbuyer.balancetomaintainabsolute=0
 
 ---
 
-## Voting
+### Politeia Voting
+
 Setting vote choices for on-chain votes will happen on the VPSs you will set up and we will address that process in a later section. For Politeia votes you will need to cast those from your cool wallet. I will outline the process for doing so using the `politeiavoter` CLI tool.
 
 1. Download the Politeia archive, manifest, and signature files.
 
-`wget https://github.com/decred/decred-binaries/releases/download/v1.3.1/{politeiavoter-linux-amd64-v1.3.1.tar.gz,manifest-politeiavoter-v1.3.1.txt,manifest-politeiavoter-v1.3.1.txt.asc}`
+    `wget https://github.com/decred/decred-binaries/releases/download/v1.3.1/{politeiavoter-linux-amd64-v1.3.1.tar.gz,manifest-politeiavoter-v1.3.1.txt,manifest-politeiavoter-v1.3.1.txt.asc}`
 
-2. Verify the manifest.
+1. Verify the manifest.
 
-`gpg --verify manifest-politeiavoter-v1.3.1.txt.asc`
+    `gpg --verify manifest-politeiavoter-v1.3.1.txt.asc`
 
-4. Verify the SHA-256 hash in the manifest matches that of the archive.
+1. Verify the SHA-256 hash in the manifest matches that of the archive.
 
-`sha256sum politeiavoter-linux-amd64-v1.3.1.tar.gz`
+    `sha256sum politeiavoter-linux-amd64-v1.3.1.tar.gz`
 
-5. Extract the archive.
+1. Extract the archive.
 
-`tar -xf politeiavoter-linux-amd64-v1.3.1.tar.gz`
+    `tar -xf politeiavoter-linux-amd64-v1.3.1.tar.gz`
 
-6. Enter the `politeiavoter-linux-amd64-v1.3.1` directory.
+1. Enter the `politeiavoter-linux-amd64-v1.3.1` directory.
 
 
 Now to view the various agendas and vote on them you will need to run the following commands. Also remember that for this to work `dcrd` and `dcrwallet` must also be running.
 
-To get a list of active proposals:
+To get a list of active proposals: `./politeiavoter inventory`
 
-`./politeiavoter inventory`
-
-To vote on a proposal:
-`./politeiavoter vote <prop-hash> <yes|no>`
+To vote on a proposal: `./politeiavoter vote <prop-hash> <yes|no>`
 
 ---
 
-# Setting Up "Hot" Voting Wallets
-## VPS Providers
+## Setting Up "Hot" Voting Wallets
+
+### VPS Providers
+
 The first thing you will need is to choose at least one VPS provider. You will find a short list of decent providers below, you may mix and match any number of providers, ideally your VPS should have at least 2 GB of RAM.
 
 * [Scaleway](https://www.scaleway.com/)
@@ -137,11 +149,12 @@ The first thing you will need is to choose at least one VPS provider. You will f
 * [Amazon Web Services (AWS)](https://aws.amazon.com/)
 * [OVH](https://www.ovh.com/)
 
-Note: Another consideration is storage space. As you will need to store the complete Decred blockchain which is constantly growing, it is important to keep in mind that while it is currently quite small (~3 GB), it will eventually grow to the point where you may need to upgrade the storage space on your VPS instances.
+Note: Another consideration is storage space. As you will need to store the complete Decred blockchain which is constantly growing, it is important to keep in mind that while it is currently quite small, it will eventually grow to the point where you may need to upgrade the storage space on your VPS instances. The current size of the blockchain can be checked using [dcrdata charts](https://explorer.dcrdata.org/charts#blockchain-size).
 
 ---
 
-## Configuration
+### Configuration
+
 Once you have set up a VPS you will need to get Decred up and running on it, so that you may generate a voting address. This will be the address which you specify when you purchase tickets, so as to grant the hot wallets voting rights. Follow the steps below to set up your hot wallet. You can then repeat the steps for each additional instance you want to run, or just clone the VPS from the control panel of your provider and select a different geographic location where you would like to host it (each hot wallet needs to use the same seed). It is highly recommended you run at least three hot wallets, one on the East coast of the US, one in Europe, and one in Asia should be adequate, adding an additional one on the West coast of the US might be desireable as well if you're into overkill.
 
 Use SSH to connect to one of the VPS instances you set up. We will assume the OS you are running is Ubuntu as it is popular and available on all the providers listed above.
@@ -178,7 +191,8 @@ You will also want to open up TCP port `9108` for all your voting nodes so they 
 
 ---
 
-## Voting
+### Proof-of-Stake Voting
+
 In order for your hot wallets to vote as you wish when there are on-chain votes you will need to connect to each one and specify your voting choices. This is done by using the following commands:
 
 To see what votes are available.
@@ -194,5 +208,3 @@ So if for example you wished to vote `yes` for the proposed sdiff algo change wh
 `dcrctl --wallet setvotechoice sdiffalgorithm yes`
 
 And remember, this process will need to be repeated on each VPS instance running a hot voting wallet.
-
----

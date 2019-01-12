@@ -26,6 +26,7 @@ There are several requirements for the VSP configuration:
 
 * At least one machine to host the web front end, handling web connections from VSP users and allowing them to configure their account.
 * At least three machines to host voting wallets. Necessary because at least one voting wallet needs to be connected to the network and ready to vote at any time.
+* Each voting wallet should be connected to a dedicated instance of `dcrd`.
 * The physical or virtual machines used to host the configuration must be spread across 3 or more physical locations.
 * More specifically, voting wallets must be in 3+ physically separate locations.
 * The web frontend must have an IP that is distinct from those of the voting wallets, and is ideally located in another physical location.

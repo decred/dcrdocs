@@ -15,7 +15,7 @@ A human-readable representation of a possible destination for a payment, similar
 
 #### ASIC
 
-An application specific integrated circuit (ASIC) is a computing device which has been designed to perform only a single task, but to perform that task with extreme efficiency. In the context of cryptocurrency, ASIC usually refers to a piece of hardware which is designed to perform proof-of-work mining. Hashrates from ASICs are typically orders of magnitudes higher than hashrates from general purpose computers.
+An Application-Specific-Integrated-Circuit (ASIC) is a computing device which has been designed to perform only a single task with extreme efficiency. In the context of cryptocurrency, an ASIC is usually designed to perform Proof-of-Work (PoW) mining. Hashrates from ASICs are typically orders of magnitudes higher than hashrates from general purpose computers or GPUs.
 
 #### Atom
 

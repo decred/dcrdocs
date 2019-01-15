@@ -100,6 +100,7 @@ nav:
   - 'Navigating Politeia Data': 'advanced/navigating-politeia-data.md'
   - 'Simnet': 'advanced/simnet.md'
   - 'Solo Proof-of-Stake (PoS) Voting': 'advanced/solo-proof-of-stake-voting.md'
+  - 'Operating a VSP': 'advanced/operating-a-vsp.md'
 - Research:
   - 'Overview': 'research/overview.md'
   - 'Hybrid Design': 'research/hybrid-design.md'

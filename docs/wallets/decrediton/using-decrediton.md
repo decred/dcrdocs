@@ -179,6 +179,6 @@ The settings tab is also where you come to change your private passphrase.
 
 ## Help
 
-The help tab contains various links to get help using Decrediton. The "Issues" link will take you the to the Decrediton Github page where problems with the Decrediton software can be reported. We would be grateful for your help!
+The help tab contains various links to get help using Decrediton and to learn more about Decred. There are also links to our various communication platforms. The Tutorials section contains introductions to the ticket lifecycle and how Decreds proof-of-stake system works. It is also possible to view logs of the `dcrd` and `dcrwallet` processes in the Logs section.
 
 ![Help Tab](/img/decrediton/help.png)

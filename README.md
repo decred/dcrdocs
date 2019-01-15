@@ -76,6 +76,7 @@ $ docker run -d --rm -p <local port>:80 decred/dcrdocs:latest
 - `wallets/cli/dcrd-and-dcrwallet-cli-arguments.md`
 - `wallets/cli/dcrctl-rpc-commands.md`
 - `wallets/cli/cli-installation.md`
+- `advanced/solo-proof-of-stake-voting.md`
 
 #### Decrediton releases
 

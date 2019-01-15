@@ -11,8 +11,8 @@ for that.
 In order to verify binaries or other signed files from the Decred
 Project, there are a couple pieces of software required:
 
-* SHA256 -- Once you download your file(s), you need to check their
-  SHA256 hashes, so you may need to download a tool to do this,
+* SHA-256 -- Once you download your file(s), you need to check their
+  SHA-256 hashes, so you may need to download a tool to do this,
   depending on your OS.
 * GnuPG or PGP -- This is required to import public keys and verify
   signatures. Examples below use GnuPG.
@@ -25,7 +25,7 @@ are as follows:
 > Step One
 
 Download the file manifest, the signature for the file manifest, and
-the zip/tarball for your OS from [here](https://github.com/decred/decred-binaries). Obtain the SHA256 value for the
+the zip/tarball for your OS from [here](https://github.com/decred/decred-binaries). Obtain the SHA-256 value for the
 zip/tarball for your OS and check that it matches the value in the
 file manifest, e.g. for 64-bit Linux:
 

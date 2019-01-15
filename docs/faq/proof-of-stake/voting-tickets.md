@@ -36,7 +36,9 @@ For a more concrete example, assume the current chain tip is at block 5,000. The
 
 #### 6. What happens if a ticket I have missed a vote? 
 
-Your wallet will automatically revoke the ticket in the block after it is missed[^13912], so you get them back just after they were missed as immature funds (that means they will not be spendable for 256 blocks when they mature).
+If using dcrwallet with the --enablevoting option set, tickets will automatically be revoked once missed[^13912]. The funds from the revoked ticket will be returned as immature and will not be mature (spendable) for 256 blocks.
+
+If you are using the GUI wallet Decrediton, you will need to click the "Revoke Ticket" button if a ticket is missed.
 
 For example:
 
@@ -57,7 +59,7 @@ Missed tickets are tickets that were called to vote, but did not. After a ticket
 
 All `rebroadcastmissed` does is tell the wallet to ask the network daemon (`dcrd`) to give it the list of missed tickets again to double check if any need to be revoked. Typically this is not needed unless, for example, an attempt to revoke a ticket was made but failed because the wallet was locked. In other words, if you notice that revoked does not equal missed, you might need to `rebroadcastmissed`. As said though, there is rarely a need for this since the wallet automatically does it on startup and looks for missed tickets on every block.
 
-Continue to [Proof-of-Work Mining](/mining/proof-of-work.md)
+Continue to [Proof-of-Work Mining](../../mining/proof-of-work.md)
 
 ---
 

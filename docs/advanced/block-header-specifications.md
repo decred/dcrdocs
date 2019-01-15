@@ -85,7 +85,7 @@ StakeVersion   | The stake version used for voting on the created block         
 Both getwork and getblocktemplate are implemented, but neither is
 precisely the same as in Bitcoin. getwork is very similar, but returns
 a non-int32 reversed byte string to work off of. The 'data' field
-refers to the properly padded blake256 input of 3x64 byte chunks. Only
+refers to the properly padded BLAKE-256 input of 3x64 byte chunks. Only
 the last chunk needs to be modified when mining.
 
 Example `getwork` response:

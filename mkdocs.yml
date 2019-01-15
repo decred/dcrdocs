@@ -1,7 +1,6 @@
 site_name: Decred Documentation
 theme: 
   name: material
-  custom_dir: theme_override
   favicon: 'img/favicon.ico'
   logo: 'img/decred_logo_symbol_128.svg'
   font: false
@@ -15,10 +14,12 @@ extra:
       link: 'https://www.reddit.com/r/decred/'
     - type: 'youtube'
       link: 'https://www.youtube.com/decredchannel'
-    - type: 'facebook'
-      link: 'https://www.facebook.com/decredproject'
     - type: 'linkedin'
       link: 'https://www.linkedin.com/company/decredproject/'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/decredproject/'
+    - type: 'weibo'
+      link: 'https://weibo.com/DecredProject'
 site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
 repo_name: decred/dcrdocs
@@ -37,42 +38,46 @@ extra_javascript:
 extra_css:
   - css/fonts.css
   - css/style.css
-pages:
+nav:
 - 'Home': 'index.md'
 - Getting Started:
   - "Beginner's Guide": 'getting-started/beginner-guide.md'
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
 - Governance:
-  - 'Introduction to Decred governance': 'governance/governance.md'
-  - 'Consensus rules voting': 'getting-started/user-guides/agenda-voting.md'
-  - 'How to Vote on consensus rule changes': 'getting-started/user-guides/how-to-vote.md'
-  - 'Politeia proposals and voting': 'governance/politeia.md'
-  - 'Decred Constitution': 'getting-started/constitution.md'
+  - Politeia:
+    - 'Politeia': 'governance/politeia/politeia.md'
+    - 'Proposal Guidelines': 'governance/politeia/proposal-guidelines.md'
+    - 'Example Proposals': 'governance/politeia/example-proposals.md'
+  - 'Introduction to Decred governance': 'governance/introduction-to-decred-governance.md'
+  - 'Consensus Rules Voting': 'governance/consensus-rules-voting.md'
+  - 'How to Vote on Consensus Rule Changes': 'governance/how-to-vote.md'
+  - 'Decred Constitution': 'governance/decred-constitution.md'
 - Wallets:
     - Decrediton (GUI):
-      - 'Decrediton Setup': 'getting-started/user-guides/decrediton-setup.md'
-      - 'Using Decrediton': 'getting-started/user-guides/using-decrediton.md'
+      - 'Decrediton Setup': 'wallets/decrediton/decrediton-setup.md'
+      - 'Using Decrediton': 'wallets/decrediton/using-decrediton.md'
+      - 'Troubleshooting Problems': 'wallets/decrediton/decrediton-troubleshooting.md'
     - CLI Wallet:
-      - 'Installation': 'getting-started/user-guides/cli-installation.md'
-      - 'OS Differences': 'getting-started/cli-differences.md'
-      - 'Startup Basics': 'getting-started/startup-basics.md'
-      - 'dcrd Setup': 'getting-started/user-guides/dcrd-setup.md'
-      - 'dcrwallet Setup': 'getting-started/user-guides/dcrwallet-setup.md'
-      - 'dcrctl Basics': 'getting-started/user-guides/dcrctl-basics.md'
-      - 'Buying Tickets': 'getting-started/user-guides/dcrwallet-tickets.md'
-      - 'dcrd and dcrwallet CLI Arguments': 'getting-started/dcrd-and-dcrwallet-cli-arguments.md'
-      - 'dcrctl RPC Commands': 'getting-started/dcrctl-rpc-commands.md'
-    - 'Web Wallet': 'getting-started/user-guides/web.md'
+      - 'Installation': 'wallets/cli/cli-installation.md'
+      - 'OS Differences': 'wallets/cli/os-differences.md'
+      - 'Startup Basics': 'wallets/cli/startup-basics.md'
+      - 'dcrd Setup': 'wallets/cli/dcrd-setup.md'
+      - 'dcrwallet Setup': 'wallets/cli/dcrwallet-setup.md'
+      - 'dcrctl Basics': 'wallets/cli/dcrctl-basics.md'
+      - 'Buying Tickets': 'wallets/cli/dcrwallet-tickets.md'
+      - 'dcrd and dcrwallet CLI Arguments': 'wallets/cli/dcrd-and-dcrwallet-cli-arguments.md'
+      - 'dcrctl RPC Commands': 'wallets/cli/dcrctl-rpc-commands.md'
+    - 'SPV': 'wallets/spv.md'
 - Proof-of-Stake Voting:
-  - "What is Proof-of-Stake?": 'mining/proof-of-stake.md'
-  - "How to Stake": 'mining/how-to-stake.md' 
+  - "What is Proof-of-Stake?": 'proof-of-stake/proof-of-stake.md'
+  - "How to Stake": 'proof-of-stake/how-to-stake.md' 
   - PoS FAQ:
     - 'General': 'faq/proof-of-stake/general.md'
     - 'Solo Mining': 'faq/proof-of-stake/solo-mining.md'
     - 'Buying Tickets and Fees': 'faq/proof-of-stake/buying-tickets-and-fees.md'
     - 'Voting Tickets': 'faq/proof-of-stake/voting-tickets.md'
-    - 'Stake Pools': 'faq/proof-of-stake/stake-pools.md'
+    - 'Voting Service Providers': 'faq/proof-of-stake/stake-pools.md'
 - Proof-of-Work Mining:
   - 'Overview': 'mining/proof-of-work.md'
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'
@@ -81,20 +86,21 @@ pages:
   - 'General': 'faq/general.md'
   - 'Configuration': 'faq/configuration.md'
   - 'Wallets and Seeds': 'faq/wallets-and-seeds.md'
-  - 'Web Client': 'faq/web-client.md'
   - 'Blocks': 'faq/blocks.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
 - Advanced:
-  - 'Using Testnet': 'getting-started/using-testnet.md'
+  - 'Using Testnet': 'advanced/using-testnet.md'
   - 'Manual CLI Installation': 'advanced/manual-cli-install.md'
-  - 'Storing Login Details': 'advanced/storing-login-details.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
   - 'Blockchain Parameters': 'advanced/blockchain-parameters.md'
   - 'Transaction Details': 'advanced/transaction-details.md'
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
   - 'Inflation': 'advanced/inflation.md'
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
+  - 'Navigating Politeia Data': 'advanced/navigating-politeia-data.md'
   - 'Simnet': 'advanced/simnet.md'
+  - 'Solo Proof-of-Stake (PoS) Voting': 'advanced/solo-proof-of-stake-voting.md'
+  - 'Operating a VSP': 'advanced/operating-a-vsp.md'
 - Research:
   - 'Overview': 'research/overview.md'
   - 'Hybrid Design': 'research/hybrid-design.md'
@@ -107,12 +113,12 @@ pages:
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - Contributing:
-  - 'Contributor Compensation': 'advanced/contributor-compensation.md'
+  - 'Contributor Compensation': 'contributing/contributor-compensation.md'
   - Guidelines:
-    - 'Using GitHub': 'advanced/using-github.md'
-    - 'Source Code Contributions': 'advanced/contributing.md'
+    - 'Using GitHub': 'contributing/using-github.md'
+    - 'Source Code Contributions': 'contributing/source-code-contributions.md'
 - About:
-  - 'Support Directory': 'support-directory.md'
   - 'Credits': 'about/credits.md'
   - 'License': 'about/license.md'
-copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.2. Decred Project 2016.
+- 'Glossary': 'glossary.md'
+copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.3. Decred Project 2018.

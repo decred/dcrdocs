@@ -7,21 +7,31 @@
 Proof-of-work mining, more commonly referred to as PoW mining, is the activity
 of committing your computer’s hardware and resources to process network
 transactions and build the blocks that make up the blockchain in the Decred
-network. Each time a block is created (by a miner), about 30 new Decred coins
-are made. These coins are then split up as follows:
+network. Each time a block is created (by a miner), which is then approved by 
+ticket holders, the miner receives a block reward (newly created DCR). If the
+block is rejected by ticket holders, the miner does not receive a reward. 
+The block reward adjusts every 6,144 blocks (approximately 21.33 days) by reducing
+by a factor of 100/101. 
+
+Each new block reward is then split up as follows:
 
 Subsidy | Party
 ---     | ---
 60%   | PoW Miners
 30%   | PoS Voters
-10%   | Decred development subsidy
+10%   | Decred Treasury
 
-You will, on average, receive a reward that is roughly proportional to the
+
+For more details on the growth of the coin supply, see the 
+[inflation](../advanced/inflation.md) page. 
+
+Miners typically receive a reward that is roughly proportional to the
 hashrate of your miner and the overall hashrate of the network when you commit
-your computer to PoW mining. To get started, you must have a computer with a
-video card. Most video cards can be used for mining (including the "mobile"
-types found in some laptops). In general, higher end video cards perform at
-higher hashrates and therefore receive higher rewards.
+your computer to PoW mining. 
+
+Decred uses the [BLAKE-256](../research/blake-256-hash-function.md) hashing function. PoW mining can be done using GPUs. However, ASICs that mine DCR are now available, and since their introduction the PoW difficulty has become high enough to make GPU
+mining unlikely to be profitable. 
+
 ---
 
 ## Solo Mining or Pool Mining  
@@ -39,7 +49,7 @@ Pool mining distributes shares based on blocks found so you can earn a steady am
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Receive.svg" /> Obtain a Decred Address to Receive Funds With
 
-Follow the [dcrctl Basics](/getting-started/user-guides/dcrctl-basics.md) guide and create an address so you can withdraw mining rewards to it.
+Follow the [dcrctl Basics](../wallets/cli/dcrctl-basics.md) guide and create an address so you can withdraw mining rewards to it.
 
 ---
 
@@ -47,9 +57,13 @@ Follow the [dcrctl Basics](/getting-started/user-guides/dcrctl-basics.md) guide 
 
 These mining pools are known to support Decred:
 
-* [:fa-external-link-square: https://dcr.suprnova.cc](https://dcr.suprnova.cc)
-* [:fa-external-link-square: http://coinmine.pl/dcr](http://coinmine.pl/dcr)
-* [:fa-external-link-square: http://mining.luxor.tech](http://mining.luxor.tech)
+* [:fa-external-link-square: BeePool](https://beepool.org)
+* [:fa-external-link-square: F2Pool](https://www.f2pool.com)
+* [:fa-external-link-square: Poolin](https://www.poolin.com)
+* [:fa-external-link-square: UUpool](https://uupool.cn/dcr)
+* [:fa-external-link-square: Luxor](https://mining.luxor.tech/decred)
+* [:fa-external-link-square: Coinmine](https://www2.coinmine.pl/dcr/)
+* [:fa-external-link-square: Suprnova](https://dcr.suprnova.cc)
 
 Mining pools all work more or less the same but you may wish to sign up at multiple pools and see which one suits you the best.
 
@@ -67,11 +81,11 @@ GPU drivers usually contain the libraries needed for mining.  If you have diffic
 
 ### Official Decred Miner (gominer)
 
-Gominer is the official Decred miner developed and supported by the Decred team. It is the easiest miner to setup and start mining and so it is recommended for most users. Currently, the latest version of gominer is **:fa-github: [v1.0.0](https://github.com/decred/gominer/releases/)** and the official binaries can be downloaded from **[https://github.com/decred/decred-binaries/releases/tag/v1.0.0](https://github.com/decred/decred-binaries/releases/tag/v1.0.0)**
+Gominer is the official Decred miner developed and supported by the Decred team. It is the easiest miner to setup and start mining and so it is recommended for most users. Currently, the latest version of gominer is **:fa-github: [v1.0.0](https://github.com/decred/gominer/releases/)** and the official binaries can be downloaded from **<https://github.com/decred/decred-binaries/releases/tag/v1.0.0>**
 
 Please be certain to select the correct operating system (Windows/Linux) and the correct version for your GPU type (CUDA for NVIDIA cards, OpenCL/OpenCLADL for AMD cards). gominer is only available to 64-bit operating systems. User guides to start mining with gominer can be found here:
 
-- [gominer Pool-Mining](/mining/proof-of-work/pool-mining/gominer.md)
+- [gominer Pool-Mining](../mining/proof-of-work/pool-mining/gominer.md)
 
 ### Unofficial Miners
 
@@ -90,4 +104,4 @@ Please be certain to select the correct operating system (Windows/Linux) and the
 * Follow your mining pools instructions for setup.
 * Run the miner.
 
-Continue to [PoW Mining FAQ](/faq/proof-of-work-mining.md)
+Continue to [PoW Mining FAQ](../faq/proof-of-work-mining.md)

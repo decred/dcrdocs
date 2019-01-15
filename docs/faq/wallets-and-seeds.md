@@ -6,6 +6,8 @@
 
 Your seed is used to recreate your wallet and its accounts granting anyone with knowledge of the seed complete control of the funds within the wallet. If your machine were to be compromised and your seed stolen, the attacker would have the ability to drain your funds by sending your DCR to wallets under their control. Likewise, sharing your seed with anyone regardless of your current level of trust is highly discouraged as this could pose a major security risk for your wallet that they may misuse access in the future or store the copy of the seed less securely than you.
 
+The safest method of storing your seed is on a physical medium, eg. written on paper. Store this paper as you would a key to your personal vault of gold. This is essentially what these seed words represent.
+
 ---
 
 #### 2. How can I convert my wallet seed hex to seed words? 

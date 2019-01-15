@@ -13,7 +13,7 @@ Here are a series of blog posts that discuss the motivation[^8550] for Decred:
 
 #### 2. How do you pronounce Decred? 
 
-The correct pronunciation is in the opening line of the [Decred Constitution](/getting-started/constitution.md).
+The correct pronunciation is in the opening line of the [Decred Constitution](../governance/decred-constitution.md).
 
 ```no-highlight
 Decred (/ˈdi:ˈkred/, /dɪˈkred/, dee-cred)

@@ -1,2 +1,6 @@
 build_docker.sh
 Dockerfile
+site/
+README.md
+.git
+.gitignore

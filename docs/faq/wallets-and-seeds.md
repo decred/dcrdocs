@@ -6,6 +6,8 @@
 
 Your seed is used to recreate your wallet and its accounts granting anyone with knowledge of the seed complete control of the funds within the wallet. If your machine were to be compromised and your seed stolen, the attacker would have the ability to drain your funds by sending your DCR to wallets under their control. Likewise, sharing your seed with anyone regardless of your current level of trust is highly discouraged as this could pose a major security risk for your wallet that they may misuse access in the future or store the copy of the seed less securely than you.
 
+The safest method of storing your seed is on a physical medium, eg. written on paper. Store this paper as you would a key to your personal vault of gold. This is essentially what these seed words represent.
+
 ---
 
 #### 2. How can I convert my wallet seed hex to seed words? 
@@ -43,7 +45,7 @@ It is possible to import a standalone private key[^10724] into `dcrwallet`. Note
 Unlock the wallet (ignore angle brackets):
 
 ```no-highlight
-dcrctl --wallet walletpassphrase <private encryption passphrase> 60
+promptsecret | dcrctl --wallet - <private encryption passphrase> 60
 ```
 
 Import the standalone (`--noseed`) private key (ignore angle brackets):
@@ -60,23 +62,45 @@ dcrctl --wallet getbalance "imported" 0 all
 
 ---
 
-#### 7. What is the difference between a testnet and mainnet address? 
+#### 7. What is the difference between a testnet and mainnet public key address?
 
-A testnet public key address[^11507] starts with the letters `Tk`. A mainnet address starts with the letters `Dk`. `T` = Testnet, `D` = (Decred) Mainnet.
+A public key address, also called Pay-To-Pubkey (P2Pk), can be identified with its 2-byte prefix which identifies the network and type. A mainnet public key address starts with the letters `Dk` while a testnet public key address[^11507] starts with the letters `Tk`. 
 
 ---
 
-#### 8. What are the different types of addresses? 
+#### 8. What are the different types of addresses?
 
 A Decred address[^14995] is actually just a representation of a public key (which itself could be a script hash) along with a 2-byte prefix which identifies the network and type and a checksum suffix in order to detect improperly entered addresses.
 
 Consequently, you can always tell what type of address it is based on the 2-byte prefix.
 
-The first byte of the prefix identifies the network. This is why all mainnet addresses start with "D", testnet addresses start with "T", and simnet addresses start with "S". The second byte of the prefix identifies the type of address it is.
+The first byte of the prefix identifies the network. This is why all mainnet addresses start with "D", testnet addresses start with "T", and simnet addresses start with "S". 
 
-The most common addresses used at the moment are secp256k1 pubkey hashes, which are identified by a lowercase "s". It represents a single public key and therefore only has a single associated private key which can be used to redeem it.
+|        	| (Decred) Mainnet 	| Testnet 	| Simnet 	|
+|--------	|:----------------:	|:-------:	|:-------:	|
+| Prefix 	|         D        	|    T    	|    S   	|
+
+The second byte of the prefix identifies the type of address it is. The most common addresses used at the moment are secp256k1 pubkey hashes, which are identified by a lowercase "s". It represents a single public key and therefore only has a single associated private key which can be used to redeem it.
 
 The stake pool, however, uses a pay-to-script-hash address, which is identified by the second byte being a lowercase "c" (again that is shown in the linked params). The specific flavor of script it generates is a multi-signature 1-of-2, which is how it allows either the pool, or you, to vote. Both you and the stake pool have your own private keys and since the script only requires one signature of the possible two, that is how it allows delegation of voting rights to the pool without you giving up your voting rights completely.
+
+| Address   Type     	| Locking   Script 	| (Decred) Mainnet  	| Testnet 	| Simnet 	| Prefix Size (byte) 	|
+|--------------------	|:----------------:	|:-----------------:	|:--------:	|:------:	|:------------------:	|
+| Pay-to-Pubkey      	|       P2Pk       	|         Dk        	|    Tk   	|   Sk   	|    2                  	|
+| Pay-to-Pubkey-Hash (secp256k1)  	|       P2PKH      	|         Ds        	|    Ts   	|   Ss   	|    2                  	|
+| Pay-to-Script-Hash 	|       P2SH       	|         Dc        	|    Tc   	|   Sc   	|    2                  	|
+
+---
+
+#### 9. I have lost my seed. What can I do?
+
+If you have lost all copies of your seed *and* the wallet (or the wallet's passphrase), then you're out of luck: your funds are truly lost.
+
+If you still have access to the wallet and the passphrase you need to **IMMEDIATELY CREATE A NEW WALLET** with a new seed that you properly store and then transfer your funds from the old wallet to the new.
+
+If you have live tickets, maintain both wallets until all tickets have voted, then transfer the remaining funds to the new wallet.
+
+You should backup your `wallet.db` file (preferably in a thumb drive stored in a secure location) until all funds have been transferred.
 
 ---
 

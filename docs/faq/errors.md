@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Questions.svg" /> Common Errors and Solutions
+# <img class="dcr-icon" src="/img/dcr-icons/Question.svg" /> Common Errors and Solutions
 
 ## Proof-of-Stake 
 
@@ -16,7 +16,7 @@
 
 1. Start the wallet process with the `--enablevoting` flag. It will not issue revocations without it.
 
-2. Unlock the wallet with `dcrctl --wallet walletpassphrase <yourpassphrase> 0`. The wallet must be unlocked for it to be able to create the revocations and sign them.
+2. Unlock the wallet with `promptsecret | dcrctl --wallet walletpassphrase - 0`. The wallet must be unlocked for it to be able to create the revocations and sign them.
 
 3. Instruct dcrd to notify the wallet about missed tickets again so it will issue the revocations with `dcrctl rebroadcastmissed`.
 

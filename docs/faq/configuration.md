@@ -24,7 +24,7 @@
 
 Each application (`dcrd`, `dcrwallet`, `dcrctl`) can have its own configuration files[^9055]. Use `-h` and look at the path in parentheses of the configuration file option (`-C`, `--configfile`) to see the default path. Create a text file at the path and named according to that path you just looked up.
 
-Then you can use the `dcrd` [sample config file](https://github.com/decred/dcrd/blob/master/sample-dcrd.conf) and `dcrwallet` [sample config file](https://github.com/decred/dcrwallet/blob/master/sample-dcrwallet.conf) to set whatever options you want. You can do the same thing for `dcrctl` too. The format is the same. Every command line option listed by `-h` can be specified in the config files (just use the long option name).
+Then you can use the `dcrd` [sample config file](https://github.com/decred/dcrd/blob/029fc17e9cad1537941a590042288df87e71450d/sampleconfig/sampleconfig.go#L10-L351) and `dcrwallet` [sample config file](https://github.com/decred/dcrwallet/blob/master/sample-dcrwallet.conf) to set whatever options you want. You can do the same thing for `dcrctl` too. The format is the same. Every command line option listed by `-h` can be specified in the config files (just use the long option name).
 
 Once those are created and in place, you do not have to add all of the options to the command line all the time. For instance, you can run `dcrctl` without passing in any parameters on the command line:
 
@@ -55,7 +55,7 @@ On the other hand, the `dcrwallet` that contains your funds, for best security, 
 
 There is an intentional unconfigurable limit of 8 outbound peers[^15399]. More outbound peers than that does not help you in any way and is actually worse for both you and the network. This has been tested extremely thoroughly in Bitcoin, including btcsuite (the upstream project for Decred). All you would do by upping your outbound connections is waste valuable slots of the relatively few public peers there are (there are always a much higher number of "leechers" than there are "seeders").
 
-On the other hand, increasing your maximum connections, which really just increases the number of allowed inbound connections, helps the network by ensuring there are more slots available for new nodes and SPV clients.
+On the other hand, increasing your maximum connections, which really just increases the number of allowed inbound connections, helps the network by ensuring there are more slots available for new nodes and [SPV](../wallets/spv.md) clients.
 
 ---
 

@@ -1,1 +1,7 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 450"><defs><style>.cls-1{fill:#121f3c;}.cls-2{fill:#8795a2;}.cls-3{fill:none;}</style></defs><title>Document</title><rect id="_Path_" data-name="&lt;Path&gt;" class="cls-1" x="87.5" y="224.99" width="275" height="25"/><rect id="_Path_2" data-name="&lt;Path&gt;" class="cls-1" x="87.5" y="274.99" width="137" height="25"/><path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" class="cls-2" d="M62.5,338.42V425l67.83,0,257.17,0V25H62.5ZM87.5,125h275v25H87.5Zm0,50h275v25H87.5Zm0,50h275v25H87.5Zm0,50h137v25H87.5Z"/><rect id="_Path_3" data-name="&lt;Path&gt;" class="cls-1" x="87.5" y="174.99" width="275" height="25"/><rect id="_Path_4" data-name="&lt;Path&gt;" class="cls-1" x="87.5" y="124.99" width="275" height="25"/><rect class="cls-3" width="450" height="450"/></svg>
+<svg width="325" height="400" viewBox="0 0 325 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M300 199.99H25V224.99H300V199.99Z" fill="#091440"/>
+<path d="M162 249.99H25V274.99H162V249.99Z" fill="#091440"/>
+<path d="M0 313.42V400H67.83H325V0H0V313.42ZM25 99.99H300V124.99H25V99.99ZM25 149.99H300V174.99H25V149.99ZM25 199.99H300V224.99H25V199.99ZM25 249.99H162V274.99H25V249.99Z" fill="#C4CBD2"/>
+<path d="M300 149.99H25V174.99H300V149.99Z" fill="#091440"/>
+<path d="M300 99.9902H25V124.99H300V99.9902Z" fill="#091440"/>
+</svg>

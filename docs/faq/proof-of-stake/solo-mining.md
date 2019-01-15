@@ -1,20 +1,18 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo Mining
+# <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo Voting
 
 ---
 
 #### 1. Do I need hash power to stake mine? 
 
-Stake "mining" does not need any hash power[^9304]. Think of it a bit like interest on invested coins. You lock your coins for a period of time in order to purchase a ticket that gives you a high probability (>99%) of gaining voting rights and receiving interest in exchange for casting a vote and the opportunity cost of not being able to use those coins for potentially up to ~4.7 months.
+Stake "mining" is a term that is no longer used, because the actions and dynamics associated with PoS voting are very different to PoW mining.
 
-If you have already purchased stake tickets, those coins are locked until the tickets either win or expire. You are solo staking and therefore you MUST keep your wallet online 24/7 until all of your tickets have won (or expired) or you will miss out on the rewards since you cannot cast a vote if you wallet is not online. Because those coins are now locked there is no way for you to change the already staked coins now.
-
-The stake pool, on the other hand, allows you to delegate your voting rights to the pool so it is responsible for being online 24/7 and casting your vote for you.
+Voting does not require any hash power[^9304]. The only requirement is having enough DCR to stake (lock) in exchange for a ticket. 
 
 ---
 
-#### 2. Isn't one of the main reasons for stake mining to ensure there are always a sufficient amount of peers online? 
+#### 2. Isn't one of the main reasons for Proof-of-Stake (PoS) voting to ensure there are always a sufficient amount of peers online? 
 
-Definitely not[^9311]. Stake mining cannot possibly enforce that. An SPV style wallet could easily perform the necessary staking by communicating with other full nodes (`dcrd` instances) on the network. It is true that the current wallet requires `dcrd` to be running, but that will not always be the case.
+Definitely not[^9311]. Stake voting cannot possibly enforce that. An SPV-style wallet could easily perform the necessary voting by communicating with other full nodes (`dcrd` instances) on the network. It is true that the current wallet requires `dcrd` to be running, but that will not always be the case.
 
 Even if the software did try to enforce that, you could not stop people from writing utilities and such to do it via the peer-to-peer network without needing to run their own local instance anyways.
 
@@ -38,7 +36,7 @@ You can have multiple voting-only wallets because they are not creating new addr
 
 If you are doing a hot/cold setup, you can create multiple voting-only hot wallets without any issues so long as they both are aware of the address you give voting rights to.
 
-Continue to [Stake Pools FAQ](/faq/proof-of-stake/stake-pools.md)
+Continue to [Stake Pools FAQ](stake-pools.md)
 
 ---
 

@@ -4,35 +4,25 @@
 
 ## Welcome To Decred 
 
-This beginner's guide introduces Decred and offers signposts to some useful resources.
-
-Decred is an autonomous digital currency. Stakeholders make and enforce the blockchain's consensus rules, set a course for future development, and decide how the project's treasury is used to fund it. Decred's blockchain is similar to Bitcoin's, but with major aspects of [governance](/governance/governance.md) baked into the protocol. 
-
-[Proof of Work](/mining/proof-of-work.md) miners play a similar role for Decred as they do for Bitcoin, but with Decred they only receive 60% of the block reward.
-
-[Proof of Stake](/mining/proof-of-stake.md) voting is central to Decred's governance. Decred holders can time-lock (or "stake") DCR to obtain voting tickets. Tickets are randomly called to vote on-chain, this involves both approving the work of PoW miners and voting Yes/No on any open [rule change proposals](/getting-started/user-guides/agenda-voting.md). 30% of the block reward goes to the holders of the tickets that voted in that block.
-
-The remaining 10% of the block reward goes into a [Project Treasury fund](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx). Holders of live tickets decide how that treasury is used through [Politeia proposals and voting](/governance/politeia.md).
-
-The [Decred Constitution](/getting-started/constitution.md) sets out some guiding principles for the project, the constitution is subject to amendment through Politeia proposals.
+This guide offers signposts to some useful resources, including how to set up your Decred wallet, buy DCR, participate in Decred’s governance, connect with the community and contribute to the project (contributors welcome!). 
 
 ## Wallets
 
-[Decrediton](/getting-started/user-guides/decrediton-setup/) is Decred's GUI wallet, it supports Voting through [stakepools](https://decred.org/stakepools/) and offers the easiest way to start buying tickets and participating in governance.
+[Decrediton](../wallets/decrediton/decrediton-setup.md) is Decred's GUI wallet. It supports Voting through [stakepools](https://decred.org/stakepools/) and offers the easiest way to start buying tickets and participating in governance.
 
-There is also a [Command Line Interface](/getting-started/user-guides/cli-installation/) and set of tools for more advanced users, these include running a personal Voting wallet.
+There is also a [Command Line Interface](../wallets/cli/cli-installation.md) that exposes more advanced functionality, including the ability to run a personal Voting wallet.
 
 ## General Guides 
 
 The following guides go into depth on key aspects of the Decred experience:
 
-* [Obtaining DCR](/getting-started/obtaining-dcr.md)
-* [Using the Block Explorer](/getting-started/using-the-block-explorer.md)
-* [Governance](/governance/governance/)
-* [Ticket buying guide](/mining/proof-of-stake.md)
-* [Politeia](/governance/politeia.md)
-* [Voting on consensus rules changes](/getting-started/user-guides/agenda-voting.md)
-* [Using Testnet](/getting-started/using-testnet.md)
+* [Obtaining DCR](obtaining-dcr.md)
+* [Using the Block Explorer](using-the-block-explorer.md)
+* [Governance](../governance/introduction-to-decred-governance.md)
+* [Ticket buying guide](../proof-of-stake/proof-of-stake.md)
+* [Politeia](../governance/politeia/politeia.md)
+* [Voting on consensus rules changes](../governance/consensus-rules-voting.md)
+* [Using Testnet](../advanced/using-testnet.md)
 
 
 ## Information
@@ -76,10 +66,11 @@ Telegram, Rocket.Chat and KakaoTalk are partially bridged.
 ### Social Media
 
 * [Reddit](https://www.reddit.com/r/decred)
-
 * [Twitter](https://twitter.com/decredproject) (account operated by small group of contributors)
 * [Forum](https://forum.decred.org/)
 * [Facebook](https://facebook.com/decredproject) 
+* [Weibo](https://weibo.com/DecredProject) 
+* [LinkedIn](https://www.linkedin.com/company/decredproject/) (account operated by small group of contributors)
 
 ### Code
 
@@ -91,7 +82,7 @@ Selected GitHub repositories:
 * [dcrd](https://github.com/decred/dcrd) and [dcrwallet](https://github.com/decred/dcrwallet) - Decred daemons
 * [politeia](https://github.com/decred/politeia) and [politeiagui](https://github.com/decred/politeiagui) - Politeia back and front end
 * [dcrdata](https://github.com/decred/dcrdata) - block explorer
-* [dcrdocs](https://github.com/decred/dcrdocs) - this [docs site](/)
+* [dcrdocs](https://github.com/decred/dcrdocs) - this [docs site](../index.md)
 * [dcrweb](https://github.com/decred/dcrweb) - [Decred.org](https://decred.org/)
 * [dcps](https://github.com/decred/dcps) - Decred Change Proposals
 

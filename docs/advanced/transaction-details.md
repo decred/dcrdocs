@@ -9,7 +9,7 @@ Decred transactions are transfers of DCR that exist within blocks. Transactions 
 
 Field        | Description                                                                                    | Size
 ---          | ---                                                                                            | ---
-Version      | Transaction version. This number is used to signify how the transaction should be interpreted  | 4 bytes
+Version      | Transaction version. This number is used to signify how the transaction should be interpreted. The upper 16 bits specify the serialization format and the lower 16 bits specify the version number.   | 4 bytes
 Input count  | The number of inputs in the transaction encoded as a variable-length integer                   | 1-9 bytes
 Inputs       | Serialized list of all the transaction's inputs                                                | Variable
 Output count | The number of outputs in the transaction encoded as a variable-length integer                  | 1-9 bytes
@@ -74,5 +74,4 @@ The witness data of a transaction involves only its inputs. The included data fi
 * **0 (Full serialization)** - The transaction's prefix is located immediately before its witness data.
 * **1 (No witness)** - The transaction's prefix is the only data present.
 * **2 (Only witness)** - The transaction's witness data is the only data present. For each input, this includes its value, block height, block index, and signature script.
-* **3 (Witness signing)** - The transaction's witness data is the only data present, and is serialized for signing purposes. For each input, this includes only its signature script.
-* **4 (Witness signing with value)** - The transaction's witness data is the only data present, and is serialized for signing purposes. Unlike the Witness signing format, this format includes the value of each input before its signature script.
+

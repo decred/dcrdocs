@@ -8,7 +8,7 @@ Last updated for gominer v1.0.0.
 
 ## :fa-download: Download and Extract *gominer*
 
-Visit [https://github.com/decred/decred-binaries/releases/tag/v1.0.0](https://github.com/decred/decred-binaries/releases/tag/v1.0.0) to download the gominer binaries. Within the "Downloads" section you should see the following files:
+Visit <https://github.com/decred/decred-binaries/releases/tag/v1.0.0> to download the gominer binaries. Within the "Downloads" section you should see the following files:
 
 - `gominer-windows-amd64-cuda-v1.0.0.zip`
 - `gominer-windows-amd64-opencl-v1.0.0.zip`
@@ -41,8 +41,8 @@ If this is new to you, here are a few guides for creating workers on some of the
 !!! warning "Warning"
     Do not forget the PIN you set during account creation - you will be unable to withdraw any mined DCR without it
 
-- [https://dcr.suprnova.cc/index.php?page=gettingstarted](https://dcr.suprnova.cc/index.php?page=gettingstarted)
-- [https://www2.coinmine.pl/dcr/index.php?page=gettingstarted](https://www2.coinmine.pl/dcr/index.php?page=gettingstarted)
+- <https://dcr.suprnova.cc/index.php?page=gettingstarted>
+- <https://www2.coinmine.pl/dcr/index.php?page=gettingstarted>
 
 ### Step 2: Verify Device ID
 

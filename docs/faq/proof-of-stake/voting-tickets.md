@@ -36,7 +36,7 @@ For a more concrete example, assume the current chain tip is at block 5,000. The
 
 #### 6. What happens if a ticket I have missed a vote? 
 
-If using dcrwallet with the enablevoting option set, tickets will automatically be revoked once missed[^13912]. The funds from the revoked ticket will be returned as immature and will not be mature (spendable) for 256 blocks.
+If using dcrwallet with the --enablevoting option set, tickets will automatically be revoked once missed[^13912]. The funds from the revoked ticket will be returned as immature and will not be mature (spendable) for 256 blocks.
 
 If you are using the GUI wallet Decrediton, you will need to click the "Revoke Ticket" button if a ticket is missed.
 

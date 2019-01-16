@@ -20,7 +20,6 @@ extra:
       link: 'https://www.facebook.com/decredproject/'
     - type: 'weibo'
       link: 'https://weibo.com/DecredProject'
-site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
 repo_name: decred/dcrdocs
 markdown_extensions:
@@ -121,4 +120,4 @@ nav:
   - 'Credits': 'about/credits.md'
   - 'License': 'about/license.md'
 - 'Glossary': 'glossary.md'
-copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.3. Decred Project 2018.
+copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.3. Decred Project 2019.

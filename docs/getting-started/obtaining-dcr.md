@@ -10,7 +10,7 @@ The five basic ways are:
 
 * Purchase Decred using BTC or fiat currency
 * PoW mine for Decred
-* PoS mine for Decred (this requires you to already have some Decred)
+* Participate in proof-of-stake voting
 * Contribute to Decred
 * Sell or trade goods or services with someone who already has Decred
 
@@ -32,9 +32,9 @@ Proof-of-Work (PoW) is a measure of using computational power to create and veri
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Stake Mine for Decred / Proof-of-Stake (PoS)
+## <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Participate in Proof-of-Stake Voting
 
-Proof-of-Stake (PoS) mining is performed by stakeholders who lock a certain amount of their DCR in return for voting rights and a monetary reward. PoS mining is described in more detail [here](../proof-of-stake/proof-of-stake.md).
+Proof-of-Stake (PoS) voting is performed by stakeholders who lock a certain amount of their DCR in return for voting rights and a monetary reward. PoS voting is described in more detail [here](../proof-of-stake/proof-of-stake.md).
 
 ---
 

@@ -22,7 +22,11 @@ h1 img.dcr-icon {
     vertical-align: middle;
 }
 
-h2 img.dcr-icon, h3 img.dcr-icon {
+h2 img.dcr-icon,
+h3 img.dcr-icon,
+h4 img.dcr-icon,
+h5 img.dcr-icon,
+h6 img.dcr-icon {
     height: 26px;
     width : 26px;
     vertical-align: middle;
@@ -75,13 +79,6 @@ details .md-typeset__table code{
 }
 .md-typeset table:not([class]) td{
     font-size: 13px;
-}
-
-.md-typeset blockquote{
-    border-left:.4rem solid #2ED8A3;
-}
-.md-typeset blockquote p{
-    color: #2ED8A3;
 }
 
 .md-typeset details summary {

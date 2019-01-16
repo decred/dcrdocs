@@ -77,7 +77,7 @@ Both manual and automatic ticket purchasing require your wallet to be unlocked v
 
 There are three things you might want to understand before purchasing tickets: the `purchaseticket` command, when/why a `ticketfee` is important, and the significance of `ticket price`.
 
-> purchaseticket Command
+##### `purchaseticket` Command
 
 The `purchaseticket` command will be used to purchase tickets whether manual or automatic. Let's take a closer look at the command and its arguments:
 
@@ -95,7 +95,7 @@ purchaseticket "fromaccount" spendlimit (minconf=1 "ticketaddress" numtickets "p
 8.  `expiry`         =  Optional Number: The block height where unmined tickets will expire from the mempool, returning the original DCR to your "fromaccount". If left blank, tickets will only expire in the mempool when the ticket price changes.
 9.  `comment`        =  Optional String: This argument is unused and has no significance.
 
-> Ticket Fees
+##### Ticket Fees
 
 Your `ticketfee` is the DCR/kB rate you'll pay to have your ticket purchase be included in a block by a miner. You'll notice that the above `purchaseticket` command doesn't include any `ticketfee` arguments. The `ticketfee` argument can be set two ways.
 
@@ -106,15 +106,15 @@ Why are ticket fees important? Usually the default fee of 0.001 is enough to get
 
 Third party sites such as <https://dcrstats.com> can be used to find the average ticket fee in the mempool.
 
-> Ticket Price
+##### Ticket Price
 
 To get the current ticket price, issue the `dcrctl --wallet getstakeinfo` command and look for the `difficulty` value. This is the price of each ticket in the current price window. You'll want to adjust your `spendlimit` argument in the `purchaseticket` command to be greater than this `difficulty` value when purchasing tickets manually.
 
 ---
 
-### Manual Ticket Purchase
+## Manual Ticket Purchase
 
-> Solo Tickets
+##### Solo Tickets
 
 To purchase tickets used for solo-staking, you only need to specify the `fromaccount` and `spendlimit` arguments while using the `purchaseticket` command. For example: `dcrctl --wallet purchaseticket "default" 50` would use DCR from your `default` account to purchase a ticket if the current ticket price was a max of 50 DCR.
 
@@ -123,7 +123,7 @@ If you wish to specify the `numtickets` or `expiry` arguments, you would specify
 -  `dcrctl --wallet purchaseticket "default" 50 1 "" 5` would purchase 5 tickets, as the 5th argument (`numtickets`) is set to 5.
 -  `dcrctl --wallet purchaseticket "default" 50 1 "" 5 "" 0 100000` would purchase 5 tickets that would expire from the mempool if not mined by block 100,000, as the 8th argument (`expiry`) is set to 100000.
 
-> Pool Tickets
+##### Pool Tickets
 
 To purchase tickets with their voting rights delegated to a stakepool, we have to use the full `purchaseticket` command.
 
@@ -137,7 +137,7 @@ A quick example:
 
 ---
 
-#### Ticketbuyer Configuration
+## Ticketbuyer Configuration
 
 `dcrwallet` includes a built-in `ticketbuyer` which can buy tickets for you automatically. It can be enabled by adding the following line to your `dcrwallet.conf` config file:
 

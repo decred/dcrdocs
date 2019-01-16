@@ -115,3 +115,11 @@ pre, code {
 .md-typeset a:active {
     color: #1A59F7;
 }
+
+.md-typeset blockquote {
+    border-left:.4rem solid #48566E;
+}
+.md-typeset blockquote p {
+    font-style: italic;
+    color:      #48566E;
+}

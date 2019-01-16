@@ -4,14 +4,14 @@
 
 #### 1. What are the default ports `dcrd` and `dcrwallet` listen on?
 
-> `dcrd`
+##### `dcrd`
 
 |             |Mainet|Testnet|Simnet
 ---           |---   |---    |---
 *Peer to Peer*| 9108 | 19108 | 18555
 *RPC Server*  | 9109 | 19109 | 19556
 
-> `dcrwallet`
+##### `dcrwallet`
 
 |                |Mainet|Testnet|Simnet
 ---              |---   |---    |---

@@ -35,8 +35,8 @@ In order to run `dcrwallet`, a `wallet.db` must exist within `dcrwallet`'s home 
 If you do not already have a `wallet.db` file stored in `dcrwallet`'s home directory, you must run the `dcrwallet --create` command. Steps for this can be found below. 
 
 1. Open a new shell window (Bash/Command Prompt/etc,..).
-2. Navigate to the directory of the `dcrwallet` executable.
-3. Enter the command `dcrwallet --create` (review the Prerequisites above if you are unsure whether you should use `./dcrwallet` or `dcrwallet.exe` for the previous command). 
+1. Navigate to the directory of the `dcrwallet` executable.
+1. Enter the command `dcrwallet --create` (review the Prerequisites above if you are unsure whether you should use `./dcrwallet` or `dcrwallet.exe` for the previous command).
 
 ---
 
@@ -44,50 +44,50 @@ If you do not already have a `wallet.db` file stored in `dcrwallet`'s home direc
 
 During this process, you'll set a private passphrase, optionally set a public passphrase, and record your seed. To accomplish this, follow the steps below:
 
-> Set Passphrases for Your Wallet
+1. Set Passphrases for Your Wallet
 
-If the `dcrwallet --create` command successfully executed, you should be greeted by the following text:
+    If the `dcrwallet --create` command successfully executed, you should be greeted by the following text:
 
-```no-highlight
-Enter the private passphrase for your new wallet:
-```
+    ```no-highlight
+    Enter the private passphrase for your new wallet:
+    ```
 
-This first passphrase, the private passphrase, is what you will use to unlock your wallet when creating transactions or voting with Proof-of-Stake. Please use a unique and strong password. This password also protects the private keys within your wallet file, securing it from theft.
+    This first passphrase, the private passphrase, is what you will use to unlock your wallet when creating transactions or voting with Proof-of-Stake. Please use a unique and strong password. This password also protects the private keys within your wallet file, securing it from theft.
 
-After you've verified your private passphrase, you should see the following prompt:
+    After you've verified your private passphrase, you should see the following prompt:
 
-```no-highlight
-Do you want to add an additional layer of encryption for public data? (n/no/y/yes) [no]:
-```
+    ```no-highlight
+    Do you want to add an additional layer of encryption for public data? (n/no/y/yes) [no]:
+    ```
 
-The public passphrase is optional. It is used to encrypt all of the public data (transactions and addresses) within your wallet file so if it is stolen, an adversary can't link you to your transactions. 
+    The public passphrase is optional. It is used to encrypt all of the public data (transactions and addresses) within your wallet file so if it is stolen, an adversary can't link you to your transactions.
 
-> Record Your Seed
+1. Record Your Seed
 
-Before creating a new seed for your wallet, please review the [Critical Information section](#critical-information).
+    Before creating a new seed for your wallet, please review the [Critical Information section](#critical-information).
 
-After you've set your private passphrase and optional public passphrase, you'll see the following prompt:
+    After you've set your private passphrase and optional public passphrase, you'll see the following prompt:
 
-```no-highlight
-Do you have an existing wallet seed you want to use? (n/no/y/yes) [no]:
-```
+    ```no-highlight
+    Do you have an existing wallet seed you want to use? (n/no/y/yes) [no]:
+    ```
 
-This guide assumes you do not have an existing seed, so continue by hitting `Enter` which will answer the prompt with the default `[no]`. NOTE: If you wish to restore your wallet by using your seed, you would simply enter `[yes]` here and follow the instructions on screen.
+    This guide assumes you do not have an existing seed, so continue by hitting `Enter` which will answer the prompt with the default `[no]`. NOTE: If you wish to restore your wallet by using your seed, you would simply enter `[yes]` here and follow the instructions on screen.
 
-After answering `[no]`, your seed phrase (wallet generation seed) and its hex will be displayed in the window. Please read through the IMPORTANT section displayed immediately after the Hex.
+    After answering `[no]`, your seed phrase (wallet generation seed) and its hex will be displayed in the window. Please read through the IMPORTANT section displayed immediately after the Hex.
 
-It cannot be stressed enough how important it is to save your seed phrase in a secure location, so if you haven't committed this to memory, please review the [Critical Information section](#critical-information) again.
+    It cannot be stressed enough how important it is to save your seed phrase in a secure location, so if you haven't committed this to memory, please review the [Critical Information section](#critical-information) again.
 
-Once you have written down the seed phrase and hex, type `OK` and press `Enter`. NOTE: if you did not write the phrase down before continuing, you should [start this process over](#create-a-new-wallet) after [deleting your wallet file](../../advanced/deleting-your-wallet.md)
+    Once you have written down the seed phrase and hex, type `OK` and press `Enter`. NOTE: if you did not write the phrase down before continuing, you should [start this process over](#create-a-new-wallet) after [deleting your wallet file](../../advanced/deleting-your-wallet.md)
 
-After pressing `Enter`, you should see the following message:
+    After pressing `Enter`, you should see the following message:
 
-```no-highlight
-Creating the wallet...
-The wallet has been created successfully.
-```
+    ```no-highlight
+    Creating the wallet...
+    The wallet has been created successfully.
+    ```
 
-The wallet will then be created. This might take a few minutes if you have a slow computer.
+    The wallet will then be created. This might take a few minutes if you have a slow computer.
 
 ---
 
@@ -96,28 +96,28 @@ The wallet will then be created. This might take a few minutes if you have a slo
 In order to launch `dcrwallet`, you first must have [created your wallet](#wallet-creation-walkthrough) and
 [connected dcrd to the Decred network](dcrd-setup.md#connect-to-the-decred-network).
 
-> Configure RPC Username and Password
+1. Configure RPC Username and Password
 
-If you used [`dcrinstall`](cli-installation.md), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
+    If you used [`dcrinstall`](cli-installation.md), your configuration files are already setup with the RPC username/password for `dcrd`, `dcrwallet`, and `dcrctl`.
 
-If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](../../advanced/manual-cli-install.md#minimum-configuration) to do so.
+    If you did not use `dcrinstall`, you will need to enable the bare minimum settings in your configuration files. Follow [this guide](../../advanced/manual-cli-install.md#minimum-configuration) to do so.
 
-> Start dcrwallet 
+1. Start dcrwallet
 
-With the correctly set configuration files, open another shell window in your Decred directory (or use the last window if you have just created your wallet). Type the following command (review this guide’s Prerequisites to determine the right command for your OS/Shell application):
+    With the correctly set configuration files, open another shell window in your Decred directory (or use the last window if you have just created your wallet). Type the following command (review this guide’s Prerequisites to determine the right command for your OS/Shell application):
 
-```no-highlight
-dcrwallet
-```
+    ```no-highlight
+    dcrwallet
+    ```
 
-Your `dcrwallet` will now connect to the network via `dcrd`. It will begin to scan the network for your active addresses which can take a few minutes on slow computers. Eventually it will start showing lines like:
+    Your `dcrwallet` will now connect to the network via `dcrd`. It will begin to scan the network for your active addresses which can take a few minutes on slow computers. Eventually it will start showing lines like:
 
-```no-highlight
-[INF] WLLT: Connecting block 0000000000002004ea8fa74af334cb291a22832642b5be603995683534bbb97b, height 9990
-```
+    ```no-highlight
+    [INF] WLLT: Connecting block 0000000000002004ea8fa74af334cb291a22832642b5be603995683534bbb97b, height 9990
+    ```
 
-This means your wallet is successfully connected to the network
-through your daemon.
+    This means your wallet is successfully connected to the network
+    through your daemon.
 
 ---
 

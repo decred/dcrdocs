@@ -25,9 +25,7 @@ In other words, it is a long _e_ as in the word decentralized.
 
 #### 3. How was the Decred premine distributed? 
 
-The premine consists of 8% of the total supply of 21 million coins (1.68 million coins).[^1] This was split equally between compensation for bring-up costs and an “airdrop”.
-
-** Full details of the premine transaction can be viewed [on the block explorer](https://explorer.dcrdata.org/tx/5e29cdb355b3fc7e76c98a9983cd44324b3efdd7815c866e33f6c72292cb8be6). **
+The premine consists of 8% of the total supply of 21 million coins (1.68 million coins).[^1] This was split equally between compensation for bring-up costs and an “airdrop”. Full details of the premine transaction can be viewed [on the block explorer](https://explorer.dcrdata.org/tx/5e29cdb355b3fc7e76c98a9983cd44324b3efdd7815c866e33f6c72292cb8be6).
 
 ##### Bring up costs (840,000 coins, 50% of premine, 4% of total Decred supply)
 

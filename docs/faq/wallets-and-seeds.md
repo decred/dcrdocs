@@ -82,7 +82,7 @@ The first byte of the prefix identifies the network. This is why all mainnet add
 
 The second byte of the prefix identifies the type of address it is. The most common addresses used at the moment are secp256k1 pubkey hashes, which are identified by a lowercase "s". It represents a single public key and therefore only has a single associated private key which can be used to redeem it.
 
-The stake pool, however, uses a pay-to-script-hash address, which is identified by the second byte being a lowercase "c" (again that is shown in the linked params). The specific flavor of script it generates is a multi-signature 1-of-2, which is how it allows either the pool, or you, to vote. Both you and the stake pool have your own private keys and since the script only requires one signature of the possible two, that is how it allows delegation of voting rights to the pool without you giving up your voting rights completely.
+Voting Service Providers (VSPs) use pay-to-script-hash addresses, which are identified by the second byte being a lowercase "c" (again that is shown in the linked params). The specific flavor of script it generates is a multi-signature 1-of-2, which is how it allows either the VSP, or you, to vote. Both you and the VSP have your own private keys and since the script only requires one signature of the possible two, that is how it allows delegation of voting rights to the VSP without you giving up your voting rights completely.
 
 | Address   Type     	| Locking   Script 	| (Decred) Mainnet  	| Testnet 	| Simnet 	| Prefix Size (byte) 	|
 |--------------------	|:----------------:	|:-----------------:	|:--------:	|:------:	|:------------------:	|

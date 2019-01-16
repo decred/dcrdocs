@@ -8,7 +8,7 @@ This guide offers signposts to some useful resources, including how to set up yo
 
 ## Wallets
 
-[Decrediton](../wallets/decrediton/decrediton-setup.md) is Decred's GUI wallet. It supports Voting through [stakepools](https://decred.org/stakepools/) and offers the easiest way to start buying tickets and participating in governance.
+[Decrediton](../wallets/decrediton/decrediton-setup.md) is Decred's GUI wallet. It supports Voting through [Voting Service Providers](https://decred.org/stakepools/) and offers the easiest way to start buying tickets and participating in governance.
 
 There is also a [Command Line Interface](../wallets/cli/cli-installation.md) that exposes more advanced functionality, including the ability to run a personal Voting wallet.
 

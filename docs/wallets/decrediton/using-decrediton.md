@@ -67,7 +67,7 @@ The tickets tab is split into four sections:
 
 ### Purchase
 
-Before you can purchase tickets you must first import the API key from your [stakepool account](../../proof-of-stake/how-to-stake.md#pos-using-a-stakepool).
+Before you can purchase tickets you must first import the API key from your [stakepool account](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
 
 ![Tickets Tab](/img/decrediton/tickets.png)
 

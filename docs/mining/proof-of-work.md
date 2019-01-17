@@ -36,11 +36,11 @@ mining unlikely to be profitable.
 
 ## Solo Mining or Pool Mining  
 
-> <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo Mining
+##### <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo Mining
 
 :fa-exclamation-triangle: **Solo mining is not recommended and is not covered by this documentation!** The Decred network regularly sees a network hash rate of up to 10,000Gh/s. Solo mining is generally only done by advanced individuals or organized groups with a large cluster of GPUs so it is not addressed here.
 
-> <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> Pool Mining
+##### <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> Pool Mining
 
 When you mine in a pool, your hashrate is combined with all the other pool miners’ hashrates to look for the correct solution for a block. You will receive a reward based on the amount of work your miner performs in the pool.
 Pool mining distributes shares based on blocks found so you can earn a steady amount of Decred rather than the "all or none" of solo mining.

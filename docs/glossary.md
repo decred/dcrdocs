@@ -133,7 +133,7 @@ A mechanism for obtaining free (testnet) coins.
 
 #### Full node
 
-An instance of the Decred daemon `dcrd` which is serving the full version of the blockchain to peers, and fully verifying all of the consensus rules of Decred. 
+Short for 'fully-validating node. Refers to software that fully validates all transactions and blocks, as opposed to trusting a 3rd party. In addition to validating transactions and blocks, nearly all full nodes also participate in relaying transactions and blocks to other full nodes around the world, thus forming the peer-to-peer network that is the backbone of the Decred cryptocurrency.
 
 
 ## G
@@ -151,7 +151,7 @@ The very first block of the Decred blockchain, created on the 8th of February 20
 
 #### Hardware wallet
 
-A dedicated hardware device which securely stores a wallets private keys. Examples include [Trezor](https://trezor.io/) and [Ledger](https://www.ledger.com/).
+A dedicated hardware device which stores a wallets private keys. Examples include [Trezor](https://trezor.io/) and [Ledger](https://www.ledger.com/).
 
 #### Hash
 
@@ -232,7 +232,7 @@ Multisignature refers to Decred addresses which require more than one private ke
 
 #### Nonce
 
-The word nonce is derived from "number used once". In the context of Decred, this usually refers to a 4-byte field in the block header which is adjusted by proof-of-work miners so that the hash of the block is lower than or equal to the current difficulty target of the network.
+The word nonce is derived from "number used once". In the context of Decred, this usually refers to a 4-byte field in the block header which, along with some additional bytes used as an extra nonce, is adjusted by proof-of-work miners so that the hash of the block is lower than or equal to the current difficulty target of the network.
 
 
 ## O
@@ -379,7 +379,7 @@ The process of buying part of a ticket. This is done by coordinating with other 
 
 #### Tor
 
-The Onion Router (Tor) is free open-source software which enables users to improve security and privacy when communicating over a network. It is commonly used to protect against Internet traffic analysis or to enable anonymous communication.
+[The Onion Router](https://www.torproject.org/) (Tor) is free open-source software which enables users to improve security and privacy when communicating over a network. It is commonly used to protect against Internet traffic analysis or to enable anonymous communication.
 
 #### Transaction fees
 

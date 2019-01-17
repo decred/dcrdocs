@@ -119,7 +119,10 @@ pre, code {
 .md-typeset blockquote {
     border-left:.4rem solid #48566E;
 }
-.md-typeset blockquote p {
-    font-style: italic;
+.md-typeset blockquote p,
+.md-typeset blockquote ul,
+.md-typeset blockquote ol
+ {
     color:      #48566E;
+    font-style: italic;
 }

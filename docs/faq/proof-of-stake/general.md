@@ -122,7 +122,7 @@ One of the agenda issues set for the PoS voting system could be a hardfork. If s
 For a hardfork vote to start two critical conditions have to be met:
 
 - First, 95% of the PoW miners have to upgrade to the latest version of the current network block version. This check runs over the past 1000 blocks.
-- Second, 75% of the PoS miners have to upgrade to the latest version. This check runs over the past 2016 blocks.
+- Second, 75% of the PoS voters have to upgrade to the latest version. This check runs over the past 2016 blocks.
 
 Once these checks are met, the voting process begins. Tickets can be set with an additional parameter of Yes/No/Abstain. You do this in your wallet before the ticket votes. Tickets marked as abstain will not be counted in the total amount of votes.
 
@@ -132,7 +132,7 @@ Because the code for the hardfork is already in the then current version of Decr
 
 The hardfork vote can fail at multiple points. The vote might not start at all if the PoW miners or PoS voters do not upgrade. After that, the threshold of 75% Yes votes might not be reached.
 
-In case a vote fails a new round will start at the beginning of the process. This means checking whether the PoW miners have upgraded, if the PoS miners have upgraded, and then another vote counting period. This will continue for a certain amount of rounds, after which, if the vote hasn't passed, the agenda issue will be shelved.
+In case a vote fails a new round will start at the beginning of the process. This means checking whether the PoW miners have upgraded, if the PoS voters have upgraded, and then another vote counting period. This will continue for a certain amount of rounds, after which, if the vote hasn't passed, the agenda issue will be shelved.
 
 ---
 

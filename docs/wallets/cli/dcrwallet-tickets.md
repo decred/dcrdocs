@@ -2,7 +2,7 @@
 
 Last updated for CLI release v1.1.2
 
-This guide is intended to walk through ticket buying using `dcrwallet`. It will cover both manual ticket purchases and automatic ticket purchases for solo-voting and stakepool-voting configurations.
+This guide is intended to walk through ticket buying using `dcrwallet`. It will cover both manual ticket purchases and automatic ticket purchases for solo-voting and VSP voting configurations.
 
 **Prerequisites:**
 
@@ -21,11 +21,11 @@ NOTE: `dcrwallet.conf` is split into two sections labeled `[Application Options]
 
 ## Decisions
 
-There are a few decisions to be made before venturing into this guide. First, will you be using a stakepool to delegate your ticket voting rights? Second, will you be purchasing tickets manually or automatically via the ticketbuyer feature?
+There are a few decisions to be made before venturing into this guide. First, will you be using a Voting Service Provider (VSP) to delegate your ticket voting rights? Second, will you be purchasing tickets manually or automatically via the ticketbuyer feature?
 
-Stakepool ticket purchasing allows a stakeholder to delegate voting rights to a stakepool. These stakepools are online at all times (24/7) and very rarely miss a vote. They utilize multi-sig transactions so they're unable to touch any of your DCR. As a downside, most require a small percentage of your voting reward as a pool fee. Stakepool delegated tickets also require a larger transaction size (~540 Bytes vs. ~300 Bytes for solo-voting tickets) for purchasing which results in a slightly higher absolute ticket fee since fees are calculated by DCR/kB.
+VSP ticket purchasing allows a stakeholder to delegate voting rights to a VSP. These VSPs are online at all times (24/7) and very rarely miss a vote. They utilize multi-sig transactions so they're unable to touch any of your DCR. As a downside, most require a small percentage of your voting reward as a VSP fee. VSP delegated tickets also require a larger transaction size (~540 Bytes vs. ~300 Bytes for solo-voting tickets) for purchasing which results in a slightly higher absolute ticket fee since fees are calculated by DCR/kB.
 
-Solo-voting requires you to have a voting wallet unlocked at all times (24/7), or else you may miss votes and lose your voting reward. You do not have to pay pool fees and your ticket purchases are more likely to be mined with a smaller absolute fee (due to the miners selecting tickets based on DCR/kB ticket fee rates and solo tickets having a smaller TXN size).
+Solo-voting requires you to have a voting wallet unlocked at all times (24/7), or else you may miss votes and lose your voting reward. You do not have to pay VSP fees and your ticket purchases are more likely to be mined with a smaller absolute fee (due to the miners selecting tickets based on DCR/kB ticket fee rates and solo tickets having a smaller TXN size).
 
 Manual ticket purchasing vs. automated ticketbuyer purchasing is mainly up to personal preference. The normal benefits of automation apply to ticketbuyer, but many may be overwhelmed by the amount variables that can be configured. Also, ticketbuyer's fee calculation sometimes doesn't result in the most economical fee for a stakeholder. Some people also enjoy manually purchasing tickets every few days and trying to bid the most economical fee. Both methods will only purchase tickets when your wallet is unlocked.
 
@@ -45,9 +45,9 @@ Once restarted with that line in `dcrwallet.conf` your wallet will be configured
 
 ---
 
-## Stakepool-voting
+## VSP voting
 
-To allow a stakepool to vote for you, you first have to sign up for a stakepool. A list of them can be found [here](../../proof-of-stake/how-to-stake.md#pos-using-a-stakepool). After signing up, there should be directions for creating a new P2SH address and importing your multi-sig voting script. A brief overview is provided here:
+To allow a VSP to vote for you, you first have to sign up for a VSP. A list of them can be found [here](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp). After signing up, there should be directions for creating a new P2SH address and importing your multi-sig voting script. A brief overview is provided here:
 
 1.  With your wallet open, issue the `dcrctl --wallet getnewaddress` command to retrieve an address.
 2.  Using that address, issue the `dcrctl --wallet validateaddress <address from step 1>` command. This should return a JSON object that will be displayed like so:
@@ -64,10 +64,10 @@ To allow a stakepool to vote for you, you first have to sign up for a stakepool.
 }
 ```
 
-3.  Copy the `pubkeyaddr` into the stakepool's "Submit Address" form and hit the submit button. The page should redirect you to the tickets page, which will display more instructions.
+3.  Copy the `pubkeyaddr` into the VSP's "Submit Address" form and hit the submit button. The page should redirect you to the tickets page, which will display more instructions.
 4.  At the top of the tickets page, you should see a "Ticket Information" section. Copy your "Redeem Script" and use it to issue the `dcrctl --wallet importscript <Insert Redeem Script Here>` command.
 
-With the stakepool configured and your multi-sig script imported to your wallet, you can now start [purchasing tickets](#ticket-purchasing).
+With the VSP configured and your multi-sig script imported to your wallet, you can now start [purchasing tickets](#ticket-purchasing).
 
 ---
 
@@ -90,8 +90,8 @@ purchaseticket "fromaccount" spendlimit (minconf=1 "ticketaddress" numtickets "p
 3.  `minconf`        =  Optional Number: Minimum number of block confirmations required (e.g. 1).
 4.  `ticketaddress`  =  Optional String: The ticket address to which voting rights are given
 5.  `numtickets`     =  Optional Number: The number of tickets to purchase at once (e.g. 1)
-6.  `pooladdress`    =  Optional String: The address to pay stake pool fees to
-7.  `poolfees`       =  Optional Number: The percentage of fees to pay to the stake pool (e.g. 5)
+6.  `pooladdress`    =  Optional String: The address to pay VSP fees to
+7.  `poolfees`       =  Optional Number: The percentage of fees to pay to the VSP (e.g. 5)
 8.  `expiry`         =  Optional Number: The block height where unmined tickets will expire from the mempool, returning the original DCR to your "fromaccount". If left blank, tickets will only expire in the mempool when the ticket price changes.
 9.  `comment`        =  Optional String: This argument is unused and has no significance.
 
@@ -123,17 +123,17 @@ If you wish to specify the `numtickets` or `expiry` arguments, you would specify
 -  `dcrctl --wallet purchaseticket "default" 50 1 "" 5` would purchase 5 tickets, as the 5th argument (`numtickets`) is set to 5.
 -  `dcrctl --wallet purchaseticket "default" 50 1 "" 5 "" 0 100000` would purchase 5 tickets that would expire from the mempool if not mined by block 100,000, as the 8th argument (`expiry`) is set to 100000.
 
-##### Pool Tickets
+##### VSP Tickets
 
-To purchase tickets with their voting rights delegated to a stakepool, we have to use the full `purchaseticket` command.
+To purchase tickets with their voting rights delegated to a VSP, we have to use the full `purchaseticket` command.
 
--  Your `ticketaddress` is the P2SH Address found at the top of "Tickets" page of your stakepool under the "Ticket Information" section.
--  Your `pooladdress` is the address for your stakepool's fees are collected. This can be found in the "Ticket Instructions" section of your stakepool's "Tickets" page.
--  Your `poolfees` is the percentage of the stake reward that will go to the `pooladdress` when a ticket votes. It is important to match your pool's advertised fee.
+-  Your `ticketaddress` is the P2SH Address found at the top of "Tickets" page of your VSP under the "Ticket Information" section.
+-  Your `pooladdress` is the address for your VSP's fees are collected. This can be found in the "Ticket Instructions" section of your VSP's "Tickets" page.
+-  Your `poolfees` is the percentage of the stake reward that will go to the `pooladdress` when a ticket votes. It is important to match your VSP's advertised fee.
 
 A quick example:
 
-`dcrctl --wallet purchaseticket "default" 23 1 DcExampleAddr1For2Demo3PurposesOnly 1 DsExampleAddr1For2Demo3PurposesOnly 7.5` would use DCR from your `default` account to purchase 1 ticket if the current ticket price is a max of 23 DCR. The P2SH Address received from the stakepool is `DcExampleAddr1For2Demo3PurposesOnly` and their fee address is `DsExampleAddr1For2Demo3PurposesOnly`. They will collect a 7.5% fee if this ticket successfully votes. This ticket will not expire from the mempool until the ticket price changes, as only 7 arguments were specified (no `expiry`).
+`dcrctl --wallet purchaseticket "default" 23 1 DcExampleAddr1For2Demo3PurposesOnly 1 DsExampleAddr1For2Demo3PurposesOnly 7.5` would use DCR from your `default` account to purchase 1 ticket if the current ticket price is a max of 23 DCR. The P2SH Address received from the VSP is `DcExampleAddr1For2Demo3PurposesOnly` and their fee address is `DsExampleAddr1For2Demo3PurposesOnly`. They will collect a 7.5% fee if this ticket successfully votes. This ticket will not expire from the mempool until the ticket price changes, as only 7 arguments were specified (no `expiry`).
 
 ---
 
@@ -145,12 +145,12 @@ A quick example:
 enableticketbuyer=1
 ```
 
-If you are using a stakepool, you should also add the following lines (all of these can be found on your stakepool's "Tickets" page):
+If you are using a VSP, you should also add the following lines (all of these can be found on your VSP's "Tickets" page):
 
 ```
-ticketbuyer.votingaddress=<P2SH Address shared with Stakepool>
-pooladdress=<Stakepool's Fee Collection Address>
-poolfees=<Stakepool's Required Reward Fee>
+ticketbuyer.votingaddress=<P2SH Address shared with VSP>
+pooladdress=<VSP's Fee Collection Address>
+poolfees=<VSP's Required Reward Fee>
 ```
 
 If you dont want `ticketbuyer` to spend all of your funds, there is one more option which allows you to specify a balance which will not be spent:

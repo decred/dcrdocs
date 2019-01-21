@@ -76,7 +76,7 @@ nav:
     - 'Solo Mining': 'faq/proof-of-stake/solo-mining.md'
     - 'Buying Tickets and Fees': 'faq/proof-of-stake/buying-tickets-and-fees.md'
     - 'Voting Tickets': 'faq/proof-of-stake/voting-tickets.md'
-    - 'Voting Service Providers': 'faq/proof-of-stake/stake-pools.md'
+    - 'Voting Service Providers': 'faq/proof-of-stake/voting-service-providers.md'
 - Proof-of-Work Mining:
   - 'Overview': 'mining/proof-of-work.md'
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'

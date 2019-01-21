@@ -15,7 +15,7 @@ A human-readable representation of a possible destination for a payment, similar
 
 #### ASIC
 
-An Application-Specific-Integrated-Circuit (ASIC) is a computing device which has been designed to perform only a single task with extreme efficiency. In the context of cryptocurrency, an ASIC is usually designed to perform Proof-of-Work (PoW) mining. Hashrates from ASICs are typically orders of magnitudes higher than hashrates from general purpose computers or GPUs.
+An Application-Specific-Integrated-Circuit (ASIC) is a computing device which has been designed to perform only a single task with extreme efficiency. In the context of cryptocurrency, an ASIC is usually designed to perform Proof-of-Work (PoW) mining. Hashrates from ASICs are typically orders of magnitudes higher than hashrates from general purpose CPUs or GPUs.
 
 #### Atom
 
@@ -57,11 +57,11 @@ Outputs from coinbase and stakebase transactions cannot be spent until the coinb
 
 #### Coinbase transaction
 
-Every block which is mined contains a single coinbase transaction. This transaction will only have one input, and that is newly created Decred which constitutes the PoW and Treasury portions of the block reward. Coinbase transactions are part of the regular transaction tree, which means that they will be rejected if proof-of-stake voters vote to reject the block which contains them. Decred created in coinbase transactions cannot be spend until the coinbase maturity period has passed.
+Every block which is mined contains a single coinbase transaction. This transaction will only have one input, and that is newly created Decred which constitutes the PoW and Treasury portions of the block reward. Coinbase transactions are part of the regular transaction tree, which means that they will be rejected if proof-of-stake voters vote to reject the block which contains them. Decred created in coinbase transactions cannot be spent until the coinbase maturity period has passed.
 
 #### Cold wallet
 
-A Decred wallet which is used to generate private keys and and store Decred whilst being completely offline. Methods of cold storage include generating a wallet on a computer which is never connected to the Internet, using a dedicated hardware wallet, or using a paper wallet.
+A Decred wallet which is used to generate private keys and store Decred whilst being completely offline. Methods of cold storage include generating a wallet on a computer which is never connected to the Internet, using a dedicated hardware wallet, or using a paper wallet.
 
 #### Command Line Interface (CLI)
 
@@ -151,7 +151,7 @@ The very first block of the Decred blockchain, created on the 8th of February 20
 
 #### Hardware wallet
 
-A dedicated hardware device which stores a wallets private keys. Examples include [Trezor](https://trezor.io/) and [Ledger](https://www.ledger.com/).
+A dedicated hardware device which stores a wallet's private keys. Examples include [Trezor](https://trezor.io/) and [Ledger](https://www.ledger.com/).
 
 #### Hash
 
@@ -168,7 +168,7 @@ The number of hashes per second computed by miners on the network.
 
 #### Hot wallet
 
-A Decred wallet which is connected to the Internet. Proof of stake voting wallets are an example of hot wallets, they are constantly connected to the Decred network because they can be called to vote at any time.
+A Decred wallet which is connected to the Internet. Proof-of-stake voting wallets are an example of hot wallets, they are constantly connected to the Decred network because they can be called to vote at any time.
 
 #### Hybrid PoW/PoS
 

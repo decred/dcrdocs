@@ -223,7 +223,7 @@ Tickets that have been called but did not receive a reward. This can happen if a
 
 #### Multisignature
 
-Multisignature refers to Decred addresses which require more than one private key to authorize transactions. A multisignature address can support multiple keys (N) and a subset of those (M) are required to transact (commonly known as "MofN"). For example, an 2 of 3 address would have three valid keys, however only two of them would be required to authorize transactions. 
+Multisignature refers to transactions which can be authorized by more than one private key. Multisignature transactions can support multiple keys (N) and a subset of those (M) are required to transact (commonly known as "MofN"). For example, an 2 of 3 multisignature transaction would have three valid keys, however only two of them would be required to authorize.
 
 
 ## N

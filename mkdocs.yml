@@ -112,7 +112,7 @@ nav:
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - Contributing:
-  - 'Contributor Compensation': 'contributing/contributor-compensation.md'
+  - 'Contributing to Decred': 'advanced/contributing-to-decred.md'
   - Guidelines:
     - 'Using GitHub': 'contributing/using-github.md'
     - 'Source Code Contributions': 'contributing/source-code-contributions.md'

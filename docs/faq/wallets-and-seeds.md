@@ -64,13 +64,9 @@ dcrctl --wallet getbalance "imported" 0 all
 
 #### 7. What is the difference between a testnet and mainnet public key address?
 
-A public key address, also called Pay-To-Pubkey (P2Pk), can be identified with its 2-byte prefix which identifies the network and type. A mainnet public key address starts with the letters `Dk` while a testnet public key address[^11507] starts with the letters `Tk`. 
+A public key address, also called Pay-To-Pubkey (P2Pk), can be identified with its 2-byte prefix which identifies the network and type. A mainnet public key address starts with the letters `Dk` while a testnet public key address starts with the letters `Tk`. For details on address types, see the see the [address details](advanced/address-details.md) page.  
 
 ---
-
-#### 8. What are the different types of addresses?
-
-The most commonly used address currently is the Pay-to-PubkeyHash (P2PKH) type, which is used to send DCR to a single address. Other address types require signatures from multiple parties (multi-sig), signatures created within specified time limits, or other more complex constraints. For details on various address types, see the see the [address details](../advanced/address-details.md) page.  
 
 #### 9. I have lost my seed. What can I do?
 
@@ -91,5 +87,4 @@ You should backup your `wallet.db` file (preferably in a thumb drive stored in a
 [^10452]: Decred Forum, [Post 10,452](https://forum.decred.org/threads/734/#post-10452)
 [^10657]: Decred Forum, [Post 10,657](https://forum.decred.org/threads/483/#post-10657)
 [^10724]: Decred Forum, [Post 10,724](https://forum.decred.org/threads/643/page-3#post-10724)
-[^11507]: Decred Forum, [Post 11,507](https://forum.decred.org/threads/792/#post-11507)
-[^14995]: Decred Forum, [Post 14,995](https://forum.decred.org/threads/1321/page-2#post-14995)
+

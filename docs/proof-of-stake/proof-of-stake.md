@@ -21,7 +21,7 @@ These roles are incentivized; ticket-holders (or "Proof-of-Stake (PoS) Voters") 
 
 ## How Ticket Voting Works
 
-To participate in PoS voting, stakeholders lock some DCR in return for a ticket. Every ticket owned gives its holder the ability to cast a single vote. Upon voting, each ticket returns a small reward plus the original **Ticket Price** of the ticket. Each ticket is selected to vote at random, giving an average vote time of 28 days, but possibly requiring up to 142 days, with a 0.5% chance of expiring before being chosen to vote (this expiration returns the original **Ticket Price** without a reward). Every block mined must include 5 votes (Miners are penalized by a reward deduction if fewer than 5 votes are included). 
+To participate in PoS voting, stakeholders lock some DCR in return for a ticket. Every ticket owned gives its holder the ability to cast a single vote. Upon voting, each ticket returns a small reward plus the original **Ticket Price** of the ticket. Each ticket is selected to vote at random, giving an average vote time of 28 days, but possibly requiring up to 142 days, with a 0.5% chance of expiring before being chosen to vote (this expiration returns the original **Ticket Price** without a reward). Every block mined must include a minimum of 3 votes (miners are penalized by a reward deduction if fewer than 5 votes are included).
 
 Every block mined can also include up to 20 fresh ticket purchases. A new ticket requires 256 blocks to mature before it is entered into the **Ticket Pool** and can be called to vote.
 

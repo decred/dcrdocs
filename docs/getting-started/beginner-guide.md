@@ -61,7 +61,7 @@ The following chat platforms are bridged, such that one's messages are relayed t
 * [Discord](https://discord.gg/GJ2GXfz)
 * [IRC](https://webchat.freenode.net/?channels=decred&uio=d4)
 
-Telegram, Rocket.Chat and KakaoTalk are partially bridged.
+Telegram and KakaoTalk are partially bridged.
 
 ### Social Media
 

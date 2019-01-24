@@ -137,7 +137,7 @@ In case a vote fails a new round will start at the beginning of the process. Thi
 
 #### 11. Is Proof-of-Stake (PoS) susceptible to large exchanges using their customers’ DCR? 
 
-The amount of DCR a person (or exchange) posesses doesn't matter, only the number of tickets. Funds used to purchase tickets are locked until the ticket they purchased votes. This means that DCR involved in PoS are effectively nontransferable. For an exchange to use their customers’ DCR for voting, they would have to transfer them out of the wallets and lock them for up to 5 months. People would notice their balances change (DCR locked in PoS will not show as spendable) and they would not be able to withdraw any funds so the exchange would suffer a large loss of liquidity.
+The amount of DCR a person (or exchange) possesses doesn't matter, only the number of tickets. Funds used to purchase tickets are locked until the ticket they purchased votes. This means that DCR involved in PoS are effectively nontransferable. For an exchange to use their customers’ DCR for voting, they would have to transfer them out of the wallets and lock them for up to 5 months. People would notice their balances change (DCR locked in PoS will not show as spendable) and they would not be able to withdraw any funds so the exchange would suffer a large loss of liquidity.
 
 Furthermore, there is a hard limit of 20 tickets added per block, so no exchange could flood the pool faster than this.
 

@@ -211,7 +211,7 @@ Transactions waiting to be mined.
 
 #### Miners
 
-Miners help secure the network via Proof-of-Work (PoW) mining. Miners recieve block rewards and transaction fees for successfully validating blocks. 
+Miners help secure the network via Proof-of-Work (PoW) mining. Miners receive block rewards and transaction fees for successfully validating blocks.
 
 #### Mining Pool
 
@@ -338,7 +338,7 @@ A wallet mode in which only blocks related to addresses owned by the wallet are 
 
 #### Stake Version Interval (SVI)
 
-An interval of 2016 blocks (~1 week) which is used to determine if a vote on concensus rules can begin. Before a vote on consensus rule changes can begin, 75% of tickets that vote during a Stake Version Interval (SVI) must be using software that contains the latent software change being proposed.
+An interval of 2016 blocks (~1 week) which is used to determine if a vote on consensus rules can begin. Before a vote on consensus rule changes can begin, 75% of tickets that vote during a Stake Version Interval (SVI) must be using software that contains the latent software change being proposed.
 
 #### Stakebase transaction
 

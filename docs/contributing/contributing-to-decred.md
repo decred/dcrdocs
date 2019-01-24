@@ -20,11 +20,11 @@ The people who are best placed to judge whether a new contributor would make a g
 
 At present, this process is informal, but a formal process for granting a Decred Contractor Clearance (DCC) that allows an individual to bill for their work has been [proposed](https://proposals.decred.org/proposals/fa38a3593d9a3f6cb2478a24c25114f5097c572f6dadf24c78bb521ed10992a4) and approved by stakeholders. This process will involve three established contractors in the relevant sub-domain agreeing that a new contributor should be invited to become a contractor. This DCC model will go live once the [contractor management system](https://github.com/decred/contractor-mgmt) is operational.
 
-As part of becoming a paid contractor, you will agree an hourly rate at which you can bill for your work on the project. Contractors are also eligible for a portrait to be shown on the [contributors page](https://decred.org/contributors/) of decred.org.
+As part of becoming a paid contractor, you will agree on an hourly rate at which you can bill for your work on the project. Contractors are also eligible for a portrait to be shown on the [contributors page](https://decred.org/contributors/) of decred.org.
 
 The [Contributor Compensation](advanced/contributor-compensation) page has details of how billing and payments work.
 
-Questions about becoming a contributor or contractor can be asked in the #Recruiting channel - available on bridged [chat platforms](https://decred.org/community). The first steps are generally to read the [blog post](https://blog.decred.org/2017/07/25/Decred-Recruiting/), explore the sub-project(s) you're most interested in contributing to (typically on [GitHub](https://github.com/decred/)), and talk to the people who work on those already.
+Questions about becoming a contributor or contractor can be asked in the #recruiting room - available on bridged [chat platforms](https://decred.org/community). The first steps are generally to read the [blog post](https://blog.decred.org/2017/07/25/Decred-Recruiting/), explore the sub-project(s) you're most interested in contributing to (typically on [GitHub](https://github.com/decred/)), and talk to the people who work on those already.
 
 The following posts also describe aspects of the contractor recruitment process, and may be of interest:
 

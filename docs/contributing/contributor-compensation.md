@@ -6,18 +6,18 @@
 
 The term "Contractors" covers both **corporate contractors** and **independent contractors**.
 
-* Corporate contractors are companies that do work for Decred, e.g. Company 0, Raedah, Ditto. Corporate contractors typically employ a number of contributors who work on Decred (but for the corporate contractor).
+* Corporate contractors are companies that do work for Decred, e.g. Company 0, Raedah Group, Ditto. Corporate contractors typically employ a number of contributors who work on Decred (but for the corporate contractor).
 * Independent contractors are people that do work for Decred. [This page](contributing-to-decred.md) explains how people who contribute to the project can become independent contractors.
 
 Contractors contribute in a wide variety of ways including software development, design, communications, community support, research and documentation.
  
-Decred currently has over 50 contributors (independant contractors and employees of corporate contractors), and you can see them on [decred.org/contributors](https://decred.org/contributors/) in portraits with badges indicating whether they work for a corporate contractor.
+Decred currently has over 50 contributors (independent contractors and employees of corporate contractors), and you can see them on [decred.org/contributors](https://decred.org/contributors/) in portraits with badges indicating whether they work for a corporate contractor.
 
 ---
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Billing and payments
 
-At the end of each month, each contractor prepares an invoice and submits it to the _Decred Holdings Group_ LLC (DHG). The invoice lists the items the contractor has worked on and a charge (in $USD) for each - typically hours worked charged at an agreed hourly rate.
+At the end of each month, each contractor prepares an invoice and submits it to the Decred Holdings Group LLC (DHG). The invoice lists the items the contractor has worked on and a charge (in USD) for each - typically these charges are for a number of hours worked at an agreed hourly rate.
 
 $USD amounts are converted to DCR at the average daily market rate for the previous month. 
 

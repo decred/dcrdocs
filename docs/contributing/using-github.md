@@ -17,7 +17,7 @@ Our model for contributing in outline form is as follows. If any of this does no
 1. Push these changes to your own forked GitHub repo.
 1. When your changes are ready to be reviewed or when you just want input from other devs open a Pull Request (PR) on the main repo from the GitHub web page.
 1. Add a comment on the PR that says what issue you are fixing. Put the text Closes # or Fixes # followed by the number of the issue on a single line. This will allow GitHub to automatically link the PR to the issue and close the issue when the PR is closed.
-1. You can request a specific reviewer from the GitHub webpage or you can ask someone on IRC/Slack to review.
+1. You can request a specific reviewer from the GitHub webpage or you can join the [Decred community](https://decred.org/community) and ask somebody to review.
 1. ALL changes must be reviewed and receive at least one approval before they can go in. Only team members can give official approval, but comments from other users are encouraged.
 1. If there are changes requested, make those changes and commit them to your local branch.
 1. Push those changes to the same branch you have been working on. They will show up in the PR that way and the reviewer can then compare to the previous version.
@@ -40,7 +40,7 @@ $ git checkout -b <feature_branch>
 $ git push <yourname> <feature_branch>
 ```
 - With your browser, navigate to https://github.com/decred/dcrd
-- Create a pull request with the GitHub UI. You can request a reviewer on the GitHub web page or you can ask someone on irc/slack.
+- Create a pull request with the GitHub UI. You can request a reviewer on the GitHub web page or you can join the [Decred community](https://decred.org/community) and ask somebody to review.
 
 ## Rebasing one of your existing pull requests 
 
@@ -73,4 +73,4 @@ $ git push -f <yourname> <feature_branch>
 
 Each GitHub repo has a LICENSE. Your new code must be under the same LICENSE as the existing code and assigned copyright to 'The Decred Developers'. In most cases this is the very liberal ISC license but a few repos are different. Check the repo to be sure.
 
-If you have any questions for contributing, feel free to ask on irc/slack or GitHub. Decred team members (and probably community members too) will be happy to help.
+If you have any questions for contributing, feel free to contact the [Decred community](https://decred.org/community).  Decred team members (and probably community members too) will be happy to help.

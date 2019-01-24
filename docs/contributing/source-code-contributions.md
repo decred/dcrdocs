@@ -62,4 +62,4 @@ $ git remote add <yourname> https://github.com/<yourname>/dcrdocs.git
 
 There are a few other things to consider when doing a pull request.  In the case of the Go code, there is significant test coverage already.  If you are adding code, you should add tests as well.  If you are fixing something, you need to make sure you do not break any existing tests.  For the Go code, there is a script ```goclean.sh``` in each repo to run the tests and the any static checkers we have.  NO code will be accepted without passing all the tests.  In the case of the node.js code (decrediton) all code must pass eslint.  You can check this with the command ```npm run lint```.
 
-If you have any questions for contributing, feel free to ask on irc/slack or GitHub.  Decred team members (and probably community members too) will be happy to help.
+If you have any questions for contributing, feel free to contact the [Decred community](https://decred.org/community).  Decred team members (and probably community members too) will be happy to help.

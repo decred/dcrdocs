@@ -49,15 +49,15 @@ Purchasing a ticket is quite simple (see below), but what happens to it after yo
 A ticket on mainnet (testnet uses different parameters) will go through a few stages in its lifetime:
 
 1. You buy a ticket using a Decrediton or dcrwallet wallet. The total cost of the each single ticket transaction should be **Ticket Price** + **Ticket Fee**(`ticketfee`).
-2. Your ticket enters the `mempool`. This is where your ticket waits to be mined by PoW miners. Only 20 fresh tickets are mined into each block.
-3. Tickets are mined into a block, with higher **Ticket Fee** transactions having a higher priority. Note that the **Ticket Fee** is DCR per KB of the transaction. A few common transaction sizes are 298 Bytes (a solo ticket purchase) and 539 Bytes (a pool ticket purchase).
-4. **A -** If your ticket is mined into a block, it becomes an immature ticket. This state lasts for 256 blocks (about 20 hours). During this time the ticket cannot vote. At this point, the ticket fee is non-refundable. <br /> 
+1. Your ticket enters the `mempool`. This is where your ticket waits to be mined by PoW miners. Only 20 fresh tickets are mined into each block.
+1. Tickets are mined into a block, with higher **Ticket Fee** transactions having a higher priority. Note that the **Ticket Fee** is DCR per KB of the transaction. A few common transaction sizes are 298 Bytes (a solo ticket purchase) and 539 Bytes (a pool ticket purchase).
+1. **A -** If your ticket is mined into a block, it becomes an immature ticket. This state lasts for 256 blocks (about 20 hours). During this time the ticket cannot vote. At this point, the ticket fee is non-refundable. <br /> 
 **B -** If your ticket is not mined, both the **Ticket Price** and **Ticket Fee** are returned to the purchasing account.
-5. After your ticket matures (256 blocks), it enters the **Ticket Pool** and is eligible for voting.
-6. The chance of a PoS voting is based on a Poisson distribution with a mean of 28 days. After 28 days a ticket has a 50% chance to have already voted.
-7. Given a target pool size of 40960 tickets, any given ticket has a 99.5% chance of voting within ~142 days (about 4.7 months). If, after this time, a ticket has not voted, it expires. You receive a refund on the original **Ticket Price**.
-8. A ticket may miss its call to vote if the voting wallet does not respond or two valid blocks are found within close proximity of each other. If this happens, you receive a refund on the original **Ticket Price**.
-9. After a ticket has voted, missed, or expired, the funds (ticket price and reward if applicable, minus the fee) will enter immature status for another 256 blocks, after which they are released. If a ticket is missed or expired, a ticket revocation transaction is submitted by the wallet which then frees up the locked ticket outputs. **NOTE:** Revocations can only be submitted for a corresponding missed ticket. You cannot revoke a ticket until it is missed.
+1. After your ticket matures (256 blocks), it enters the **Ticket Pool** and is eligible for voting.
+1. The chance of a ticket voting is based on a Poisson distribution with a mean of 28 days.
+1. Given a target pool size of 40,960 tickets, any given ticket has a 99.5% chance of voting within ~142 days (about 4.7 months). If, after this time, a ticket has not voted, it expires. You receive a refund on the original **Ticket Price**.
+1. A ticket may miss its call to vote if the voting wallet does not respond or two valid blocks are found within close proximity of each other. If this happens, you receive a refund on the original **Ticket Price**.
+1. After a ticket has voted, missed, or expired, the funds (ticket price and reward if applicable, minus the fee) will enter immature status for another 256 blocks, after which they are released. If a ticket is missed or expired, a ticket revocation transaction is submitted by the wallet which then frees up the locked ticket outputs. **NOTE:** Revocations can only be submitted for a corresponding missed ticket. You cannot revoke a ticket until it is missed.
 
 ---
 

@@ -18,11 +18,11 @@ The following chart shows an estimate of the coin supply growth over time.
 
 ![Decred supply chart](/img/decred_supply.png)
 
-The table below shows the estimated block reward and estimated total supply of Decred up to block 2,457,600 in 2039. Note that the total supply of DCR at block 1 is 1,680,000 due to the [premine](../faq/general.md#3-how-was-the-decred-premine-distributed). PoS voting started at block 4,096[^3] therefore PoS rewards were not generated before that height.
+The table below shows the estimated block reward and estimated total supply of Decred up to block 2,457,600 in 2039. Note that the total supply of DCR at block 1 is 1,680,000 due to the [premine](../faq/general.md#3-how-was-the-decred-premine-distributed). There was no block reward for proof-of-work miners in block 1, which allowed miners to voluntarily choose whether or not to accept the terms of the airdrop independent of a potential reward which could skew the incentive. PoS voting started at block 4,096[^3] therefore PoS rewards were not generated before that height.
 
 Block height | Estimated date     | Block reward (DCR) | PoW (DCR)    | PoS vote (DCR) | Decred Treasury (DCR) | Total DCR supply
 ------------ | ------------------ | ------------------ | ------------ | -------------- | ----------------- | ----------------
-1            | February 8, 2016   | 1,680,000.00       | 1,680,000.00 | 0.00           | 0.00              | 1,680,000
+1            | February 8, 2016   | 1,680,000.00       | 0.00         | 0.00           | 0.00              | 1,680,000
 2            | February 8, 2016   | 21.84              | 18.72        | 0.00           | 3.12              | 1,680,022
 4,096        | February 22, 2016  | 31.20              | 18.72        | 1.87           | 3.12              | 1,769,432
 6,144        | March 1, 2016      | 30.89              | 18.53        | 1.85           | 3.09              | 1,833,321

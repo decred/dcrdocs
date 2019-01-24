@@ -11,7 +11,7 @@ The term "Contractors" covers both **corporate contractors** and **independent c
 
 Contractors contribute in a wide variety of ways including software development, design, communications, community support, research and documentation.
  
-Decred currently has over 50 contributors (independant contractors and employees of corporate contractors), and you can see them on [decred.org/contributors](https://decred.org/contributors/) in artfully styled portraits with badges indicating whether they work for a corporate contractor.
+Decred currently has over 50 contributors (independant contractors and employees of corporate contractors), and you can see them on [decred.org/contributors](https://decred.org/contributors/) in portraits with badges indicating whether they work for a corporate contractor.
 
 ---
 

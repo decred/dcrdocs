@@ -16,7 +16,7 @@ The strength of the open source approach to production is that individuals effic
 
 Decred has a Treasury fund to pay contributors who work effectively to advance the project. To become a paid contractor one must demonstrate that one's work is of value to the project. This [blog post](https://blog.decred.org/2017/07/25/Decred-Recruiting/) by Project Organizer Jake Yocom-Piatt is still the definitive guide to becoming a contractor.
 
-For every aspect of the project that's being actively worked on, there are people who are already doing that work. These are the people who are best placed to judge whether a new contributor would make a good addition to that team. New contributors who produce good work will be invited to become a paid contractor.
+The people who are best placed to judge whether a new contributor would make a good addition to a team are the people who are already working in that team. New contributors who produce good work will be invited to become a paid contractor.
 
 At present, this process is informal, but a formal process for granting a Decred Contractor Clearance (DCC) that allows an individual to bill for their work has been [proposed](https://proposals.decred.org/proposals/fa38a3593d9a3f6cb2478a24c25114f5097c572f6dadf24c78bb521ed10992a4) and approved by stakeholders. This process will involve three established contractors in the relevant sub-domain agreeing that a new contributor should be invited to become a contractor. This DCC model will go live once the [contractor management system](https://github.com/decred/contractor-mgmt) is operational.
 

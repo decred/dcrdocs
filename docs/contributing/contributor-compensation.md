@@ -7,7 +7,7 @@
 The term "Contractors" covers both **corporate contractors** and **independent contractors**.
 
 * Corporate contractors are companies that do work for Decred, e.g. Company 0, Raedah, Ditto. Corporate contractors typically employ a number of contributors who work on Decred (but for the corporate contractor).
-* Independent contractors are people that do work for Decred. This [page](advanced/contributing-to-Decred) explains how people who contribute to the project can become independent contractors.
+* Independent contractors are people that do work for Decred. [This page](contributing-to-decred.md) explains how people who contribute to the project can become independent contractors.
 
 Contractors contribute in a wide variety of ways including software development, design, communications, community support, research and documentation.
  

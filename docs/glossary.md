@@ -223,7 +223,7 @@ Tickets that have been called but did not receive a reward. This can happen if a
 
 #### Multisignature
 
-Multisignature refers to transactions which can be authorized by more than one private key. Multisignature transactions can support multiple keys (N) and a subset of those (M) are required to transact (commonly known as "MofN"). For example, an 2 of 3 multisignature transaction would have three valid keys, however only two of them would be required to authorize.
+Multisignature refers to transactions which can be authorized by more than one private key. Multisignature transactions can support multiple keys (N) and a subset of those (M) are required to transact (commonly known as "MofN"). For example, a 2 of 3 multisignature transaction would have three valid keys, however only two of them would be required to authorize.
 
 
 ## N

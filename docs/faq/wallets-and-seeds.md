@@ -64,31 +64,7 @@ dcrctl --wallet getbalance "imported" 0 all
 
 #### 7. What is the difference between a testnet and mainnet public key address?
 
-A public key address, also called Pay-To-Pubkey (P2Pk), can be identified with its 2-byte prefix which identifies the network and type. A mainnet public key address starts with the letters `Dk` while a testnet public key address[^11507] starts with the letters `Tk`. 
-
----
-
-#### 8. What are the different types of addresses?
-
-A Decred address[^14995] is actually just a representation of a public key (which itself could be a script hash) along with a 2-byte prefix which identifies the network and type and a checksum suffix in order to detect improperly entered addresses.
-
-Consequently, you can always tell what type of address it is based on the 2-byte prefix.
-
-The first byte of the prefix identifies the network. This is why all mainnet addresses start with "D", testnet addresses start with "T", and simnet addresses start with "S". 
-
-|        	| (Decred) Mainnet 	| Testnet 	| Simnet 	|
-|--------	|:----------------:	|:-------:	|:-------:	|
-| Prefix 	|         D        	|    T    	|    S   	|
-
-The second byte of the prefix identifies the type of address it is. The most common addresses used at the moment are secp256k1 pubkey hashes, which are identified by a lowercase "s". It represents a single public key and therefore only has a single associated private key which can be used to redeem it.
-
-Voting Service Providers (VSPs) use pay-to-script-hash addresses, which are identified by the second byte being a lowercase "c" (again that is shown in the linked params). The specific flavor of script it generates is a multi-signature 1-of-2, which is how it allows either the VSP, or you, to vote. Both you and the VSP have your own private keys and since the script only requires one signature of the possible two, that is how it allows delegation of voting rights to the VSP without you giving up your voting rights completely.
-
-| Address   Type     	| Locking   Script 	| (Decred) Mainnet  	| Testnet 	| Simnet 	| Prefix Size (byte) 	|
-|--------------------	|:----------------:	|:-----------------:	|:--------:	|:------:	|:------------------:	|
-| Pay-to-Pubkey      	|       P2Pk       	|         Dk        	|    Tk   	|   Sk   	|    2                  	|
-| Pay-to-Pubkey-Hash (secp256k1)  	|       P2PKH      	|         Ds        	|    Ts   	|   Ss   	|    2                  	|
-| Pay-to-Script-Hash 	|       P2SH       	|         Dc        	|    Tc   	|   Sc   	|    2                  	|
+A public key address, also called Pay-To-Pubkey (P2Pk), can be identified with its 2-byte prefix which identifies the network and type. A mainnet public key address starts with the letters `Dk` while a testnet public key address starts with the letters `Tk`. For details on address types, see the see the [address details](../advanced/address-details.md) page.  
 
 ---
 
@@ -111,5 +87,4 @@ You should backup your `wallet.db` file (preferably in a thumb drive stored in a
 [^10452]: Decred Forum, [Post 10,452](https://forum.decred.org/threads/734/#post-10452)
 [^10657]: Decred Forum, [Post 10,657](https://forum.decred.org/threads/483/#post-10657)
 [^10724]: Decred Forum, [Post 10,724](https://forum.decred.org/threads/643/page-3#post-10724)
-[^11507]: Decred Forum, [Post 11,507](https://forum.decred.org/threads/792/#post-11507)
-[^14995]: Decred Forum, [Post 14,995](https://forum.decred.org/threads/1321/page-2#post-14995)
+

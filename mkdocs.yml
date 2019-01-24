@@ -88,6 +88,7 @@ nav:
   - 'Blocks': 'faq/blocks.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
 - Advanced:
+  - 'Address Details': advanced/address-details.md
   - 'Using Testnet': 'advanced/using-testnet.md'
   - 'Manual CLI Installation': 'advanced/manual-cli-install.md'
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'

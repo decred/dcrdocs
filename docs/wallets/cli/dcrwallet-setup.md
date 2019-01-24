@@ -64,7 +64,7 @@ During this process, you'll set a private passphrase, optionally set a public pa
 
 1. Record Your Seed
 
-    Before creating a new seed for your wallet, please review the [Critical Information section](#critical-information).
+    Before creating a new seed for your wallet, please review the Critical Information section above.
 
     After you've set your private passphrase and optional public passphrase, you'll see the following prompt:
 
@@ -76,9 +76,9 @@ During this process, you'll set a private passphrase, optionally set a public pa
 
     After answering `[no]`, your seed phrase (wallet generation seed) and its hex will be displayed in the window. Please read through the IMPORTANT section displayed immediately after the Hex.
 
-    It cannot be stressed enough how important it is to save your seed phrase in a secure location, so if you haven't committed this to memory, please review the [Critical Information section](#critical-information) again.
+    It cannot be stressed enough how important it is to save your seed phrase in a secure location, so if you haven't committed this to memory, please review the Critical Information section above.
 
-    Once you have written down the seed phrase and hex, type `OK` and press `Enter`. NOTE: if you did not write the phrase down before continuing, you should [start this process over](#create-a-new-wallet) after [deleting your wallet file](../../advanced/deleting-your-wallet.md)
+    Once you have written down the seed phrase and hex, type `OK` and press `Enter`. NOTE: if you did not write the phrase down before continuing, you should start this process over after [deleting your wallet file](../../advanced/deleting-your-wallet.md)
 
     After pressing `Enter`, you should see the following message:
 

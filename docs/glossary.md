@@ -13,6 +13,10 @@ Accounts allow you to keep separate records of your DCR funds. Transferring DCR 
 
 A human-readable representation of a possible destination for a payment, similar to an email address. Unlike an email address however, there are a variety of address types, and most addresses are intended only for a single use. This is because addresses represent not only the destination of a payment, but constraints required to redeem funds. For the most common type of address, the constraints require that the recipient provide both the public key which hashes to the requisite hash and a valid signature that is created from the corresponding private key. Other address types require signatures from multiple parties (multi-sig), signatures created within specified time limits, or other more complex constraints.
 
+#### ASIC
+
+An Application-Specific-Integrated-Circuit (ASIC) is a computing device which has been designed to perform only a single task with extreme efficiency. In the context of cryptocurrency, an ASIC is usually designed to perform Proof-of-Work (PoW) mining. Hashrates from ASICs are typically orders of magnitudes higher than hashrates from general purpose CPUs or GPUs.
+
 #### Atom
 
 The smallest unit of Decred currency. One atom is one hundred millionth of a single DCR (0.00000001 DCR).
@@ -46,6 +50,18 @@ In each block, five tickets are called to vote. In addition to votes on any open
 ## C
 
 ---
+
+#### Coinbase maturity
+
+Outputs from coinbase and stakebase transactions cannot be spent until the coinbase maturity period has passed. The coinbase maturity period is 256 blocks.
+
+#### Coinbase transaction
+
+Every block which is mined contains a single coinbase transaction. This transaction will only have one input, and that is newly created Decred which constitutes the PoW and Treasury portions of the block reward. Coinbase transactions are part of the regular transaction tree, which means that they will be rejected if proof-of-stake voters vote to reject the block which contains them. Decred created in coinbase transactions cannot be spent until the coinbase maturity period has passed.
+
+#### Cold wallet
+
+A Decred wallet which is used to generate private keys and store Decred whilst being completely offline. Methods of cold storage include generating a wallet on a computer which is never connected to the Internet, using a dedicated hardware wallet, or using a paper wallet.
 
 #### Command Line Interface (CLI)
 
@@ -115,10 +131,27 @@ Tickets that reached the end of their window without being called to vote - thes
 
 A mechanism for obtaining free (testnet) coins.
 
+#### Full node
+
+Short for 'fully-validating node. Refers to software that fully validates all transactions and blocks, as opposed to trusting a 3rd party. In addition to validating transactions and blocks, nearly all full nodes also participate in relaying transactions and blocks to other full nodes around the world, thus forming the peer-to-peer network that is the backbone of the Decred cryptocurrency.
+
+
+## G
+
+---
+
+#### Genesis block
+
+The very first block of the Decred blockchain, created on the 8th of February 2016.
+
 
 ## H
 
 ---
+
+#### Hardware wallet
+
+A dedicated hardware device which stores a wallet's private keys. Examples include [Trezor](https://trezor.io/) and [Ledger](https://www.ledger.com/).
 
 #### Hash
 
@@ -132,6 +165,10 @@ A cryptographic function that produces a fixed-size hash value from variable-siz
 #### Hashrate
 
 The number of hashes per second computed by miners on the network.
+
+#### Hot wallet
+
+A Decred wallet which is connected to the Internet. Proof-of-stake voting wallets are an example of hot wallets, they are constantly connected to the Decred network because they can be called to vote at any time.
 
 #### Hybrid PoW/PoS
 
@@ -183,6 +220,19 @@ A group of miners who share (pool) their computational resources to mine DCR. Wh
 #### Missed ticket
 
 Tickets that have been called but did not receive a reward. This can happen if a ticket is called to vote, but the wallet that bought the ticket does not respond. This can also happen if the wallet does respond and broadcasts its vote to the network, but a miner does not include their vote in the following block. 
+
+#### Multisignature
+
+Multisignature refers to transactions which can be authorized by more than one private key. Multisignature transactions can support multiple keys (N) and a subset of those (M) are required to transact (commonly known as "MofN"). For example, a 2 of 3 multisignature transaction would have three valid keys, however only two of them would be required to authorize.
+
+
+## N
+
+---
+
+#### Nonce
+
+The word nonce is derived from "number used once". In the context of Decred, this usually refers to a 4-byte field in the block header which, along with some additional bytes used as an extra nonce, is adjusted by proof-of-work miners so that the hash of the block is lower than or equal to the current difficulty target of the network.
 
 
 ## O
@@ -290,6 +340,10 @@ A wallet mode in which only blocks related to addresses owned by the wallet are 
 
 An interval of 2016 blocks (~1 week) which is used to determine if a vote on concensus rules can begin. Before a vote on consensus rule changes can begin, 75% of tickets that vote during a Stake Version Interval (SVI) must be using software that contains the latent software change being proposed.
 
+#### Stakebase transaction
+
+Every block which is mined will contain a stakebase transaction for each ticket which voted on that block. Stakebase transactions have two inputs, the Decred which was spent to purchase the ticket, and the newly created Decred constituting the reward for voting. Stakebase transactions are also created when an expired or missed ticket is revoked, however there will be no voting reward created in these cases. Stakebase transactions belong to the stake transaction tree, which means that these transactions cannot be rejected by proof-of-stake voters, even if they vote to reject the block which contains them.
+
 #### Stakepool
 
 See [Voting Service Provider](#voting-service-provider).
@@ -322,6 +376,10 @@ The amount of DCR one must time-lock in order to buy a ticket. The ticket price 
 #### Ticket-splitting
 
 The process of buying part of a ticket. This is done by coordinating with other parties who will buy the other parts of a ticket. This can be done without giving up custody to your DCR. The minimum amount of DCR that can be put into a split ticket is 5 DCR. Ticket-splitting is currently coordinated through the 'ticket-splitting' channel on the [Decred slack](https://slack.decred.org/) channel. 
+
+#### Tor
+
+[The Onion Router](https://www.torproject.org/) (Tor) is free open-source software which enables users to improve security and privacy when communicating over a network. It is commonly used to protect against Internet traffic analysis or to enable anonymous communication.
 
 #### Transaction fees
 

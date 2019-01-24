@@ -162,6 +162,14 @@ But then we come to the Voting Service Providers. VSPs, while not having access 
 
 Decred was specifically designed to minimise impact from both large PoW mining pools and PoS VSPs as well as individuals (including developers) with large holdings. 
 
+---
+
+#### 13. Why is the ticket pool target size 40,960?
+
+This target was selected prior to Decred's launch to ensure that tickets would have a 99.5% chance of voting before they expire.
+
+---
+
 ## :fa-book: Links
 
 [^1]: [Decrediton Ticket Purchasing Guide](../../wallets/decrediton/using-decrediton.md#tickets)

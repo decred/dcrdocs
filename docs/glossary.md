@@ -79,7 +79,7 @@ Rules, encoded in software, that allow a network of nodes to reach an agreement 
 
 #### Consensus rules voting
 
-Changes to Decred's consensus rules can only be made through an [on-chain voting process](governance/consensus-rules-voting.md) which lasts for around one month. The change is made only if at least 75% of votes are in favor. 
+Changes to Decred's consensus rules can only be made through an [on-chain voting process](governance/consensus-rule-voting/consensus-rules-voting.md) which lasts for around one month. The change is made only if at least 75% of votes are in favor.
 
 #### Constitution
 

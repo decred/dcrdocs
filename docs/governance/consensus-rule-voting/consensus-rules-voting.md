@@ -26,17 +26,18 @@ There are a few possible outcomes of a vote:
 
 Below is a diagram of the entire cycle for a single agenda with consensus upgrades.
 
-<img src="/img/voting-cycle.png">
+
+![Consensus rule voting cycle](/img/voting-cycle.png)
 
 ---
 
 ## Voting Preparation
 
-To participate in voting, you first need a wallet. If you don't have one already, visit the [Beginner Guide](../getting-started/beginner-guide.md), choose a wallet, and follow the installation and setup guides.
+To participate in voting, you first need a wallet. If you don't have one already, visit the [Beginner Guide](../../getting-started/beginner-guide.md), choose a wallet, and follow the installation and setup guides.
 
-Next, you'll need to learn the basics of [Proof-of-Stake](../proof-of-stake/proof-of-stake.md). You'll need to be able to [buy tickets](../proof-of-stake/how-to-stake.md) with your application of choice.
+Next, you'll need to learn the basics of [Proof-of-Stake](../../proof-of-stake/proof-of-stake.md). You'll need to be able to [buy tickets](../../proof-of-stake/how-to-stake.md) with your application of choice.
 
-Finally, you'll need to learn how to set the `votechoice` for your tickets in order to cast a "Yes", "No", or "Abstain" vote for an agenda. By default, your tickets will cast "Abstain" votes. To set your vote choice, see our quick [How To Vote](how-to-vote.md).
+Finally, you'll need to learn how to set the `votechoice` for your tickets in order to cast a "Yes", "No", or "Abstain" vote for an agenda. By default, your tickets will cast "Abstain" votes. To set your vote choice, see our quick [How To Vote](../how-to-vote.md).
 
 ---
 
@@ -46,76 +47,10 @@ The easiest method to track your how your tickets actually voted is to use the [
 
 The block explorer has been updated to display "YES", "NO", and "ABSTAIN" votes for each agenda with each ticket. The first and second tickets in the following example image voted "ABSTAIN" for both agendas while the third ticket voted "YES" for both agendas. The image will be updated to reflect the v5 agenda when voting is live.
 
-<img src="/img/verify_block-explorer-votes.png">
+![Verifying votes on the block explorer](/img/verify_block-explorer-votes.png)
 
 ---
 
 ## Tracking Vote Progress
 
 [voting.decred.org](https://voting.decred.org) is an official website set up to track the progress of upgrading and voting.
-
----
-
-## Voting Archive
-
-This section provides an archive for previous votes along with their outcomes.
-
-#V4#
-
-## Change PoS Staking Algorithm
-**Agenda ID:**  sdiffalgorithm
-
-Change stake difficulty algorithm as defined in DCP0001
-
-Specifies a proposed replacement algorithm for determining the stake difficulty (commonly called the ticket price). This proposal resolves all issues with a new algorithm that adheres to the referenced ideals.
-
-## Voting Results: 
-
-| Choice  | Result
-|-----|-------|
-|No   |  2.07%|
-|Yes  | 97.92%|
-
-**Locked In:** 141184<br />
-**Activated:** 149248<br />
-**Hard Forked:** 149328
-
-
-## Start Lightning Network Support
-**Agenda ID:**  lnsupport
-
-Request developers begin work on Lightning Network (LN) integration
-
-The Lightning Network is the most directly useful application of smart contracts to date since it allows for off-chain transactions that optionally settle on-chain. This infrastructure has clear benefits for both scaling and privacy. Decred is optimally positioned for this integration.
-
-##Voting Results:
-
-| Choice  | Result
-|-----|-------|
-|No   |  1.38%|
-|Yes  | 98.61%|
-
-**Locked In:** 141184<br />
-**Activated:** 149248
-
-
-#V5#
-
-## Activation of new opcodes for Lightning Network Support
-**Agenda ID:** lnfeatures
-
-Enable features defined in [DCP0002](https://github.com/decred/dcps/blob/master/dcp-0002/dcp-0002.mediawiki) and [DCP0003](https://github.com/decred/dcps/blob/master/dcp-0003/dcp-0003.mediawiki) necessary to support Lightning Network (LN)
-
-The Lightning Network is the most directly useful application of smart contracts to date since it allows for off-chain transactions that optionally settle on-chain. This infrastructure has clear benefits for both scaling and privacy. Decred is optimally positioned for this integration.
-
-Block 205189 is the first block which contains the new opcode which was voted in via the lnfeatures vote and thus all old nodes must upgrade.
-
-##Voting Results:
-
-| Choice  | Result
-|-----|-------|
-|No   |  0.49%|
-|Yes  | 99.51%|
-
-**Locked In:** 181504<br />
-**Activated:** 189568

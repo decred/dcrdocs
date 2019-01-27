@@ -8,8 +8,6 @@ As with many other open source software development projects, people working on 
 
 The strength of the open source approach to production is that individuals efficiently allocate themselves to the tasks they are most interested in and apt for. Contributors are typically not keen to spend time managing or directing others, so this model tends to only suit people who enjoy working independently in a self-directed manner.
 
-
-
 ---
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Introductions.svg" /> Becoming a paid Contractor
@@ -30,14 +28,4 @@ The following posts also describe aspects of the contractor recruitment process,
 
 * [How to Get Hired as a Decred Contractor](https://medium.com/decred/how-to-get-hired-as-a-decred-contractor-e1435842df10)
 * [Working for the Decred DAE](https://medium.com/@richardred/working-for-the-decred-dae-a9cfb17686fa#5a3c)
-
-
-
-
-
-
-
-
-
-
 

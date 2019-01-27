@@ -49,7 +49,9 @@ nav:
     - 'Politeia': 'governance/politeia/politeia.md'
     - 'Proposal Guidelines': 'governance/politeia/proposal-guidelines.md'
     - 'Example Proposals': 'governance/politeia/example-proposals.md'
-  - 'Consensus Rules Voting': 'governance/consensus-rules-voting.md'
+  - Consensus Rule Voting:
+    - 'Consensus Rules Voting': 'governance/consensus-rule-voting/consensus-rules-voting.md'
+    - 'Consensus Vote Archive': 'governance/consensus-rule-voting/consensus-vote-archive.md'
   - 'How to Vote on Consensus Rule Changes': 'governance/how-to-vote.md'
   - 'Decred Constitution': 'governance/decred-constitution.md'
 - Wallets:

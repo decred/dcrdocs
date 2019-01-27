@@ -112,7 +112,7 @@ Currently, a platform for the community to submit and advocate a voting agenda i
 
 #### 10. What is hardfork voting? 
 
-A more up-to-date version of this information, with a diagram, is available on [consensus rules voting](../../governance/consensus-rules-voting.md) page.
+A more up-to-date version of this information, with a diagram, is available on [consensus rules voting](../../governance/consensus-rule-voting/consensus-rules-voting.md) page.
 
 Like any other cryptocurrency, Decred might need to hardfork at some point.
 

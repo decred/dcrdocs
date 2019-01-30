@@ -47,7 +47,7 @@ Open up <http://127.0.0.1:8000> in your browser, and you will see the documentat
 To deploy `dcrdocs`, first build the documentation:
 
 ```bash
-$ ./build_docs.sh
+$ ./bin/build_docs.sh
 ```
 
 This will build the documentation into a new directory named `site`.
@@ -59,7 +59,7 @@ The version of `dcrdocs` that you just built only uses static files which are al
 `dcrdocs` can also be built and hosted in a [Docker](https://www.docker.com/) container. Build the container using:
 
 ```bash
-$ ./build_docker.sh
+$ ./bin/build.sh
 ```
 
 The container can then be run with:

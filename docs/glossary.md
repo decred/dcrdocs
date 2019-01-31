@@ -266,10 +266,13 @@ An astronomically large number which, when kept secret from others, enables legi
 
 A passphrase that is used to encrypt parts of the wallet.db file; most notably private keys. The private keys can not be accessed unless the passphrase is used to decrypt them. 
 
-
 #### Proof-of-Stake (PoS) voting
 
 The mechanism by which ticket holders vote to approve blocks confirmed by PoW miners (thus providing a check on PoW miners), earn staking rewards, and vote on consensus rule changes and Politeia proposals. 
+
+#### Proof-of-Work
+
+The mechanism used by miners to show that they have contributed computational power in order to create a new block. Miners will repeatedly create a hash of the block header until they find a hash equal to or below the current difficulty. Once shared with the network, this hash can easily be validated, thus demonstrating proof of the miners work.
 
 #### Protocol rules
 
@@ -429,3 +432,6 @@ A file that stores private keys. Wallets allow their owner to view and create tr
 
 An address or pubkey script stored in the wallet without the corresponding private key, allowing the wallet to watch for outputs but not spend them.
 
+#### Work
+
+The cumulative number of hashes calculated by proof-of-work miners to produce the blockchain.

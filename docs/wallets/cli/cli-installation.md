@@ -16,19 +16,19 @@ Last updated for CLI release v1.1.2.
 
     1. Download the correct file:
 
-        For 32-bit computers, download the `dcrinstall-darwin-386-v1.1.2` file.
+        For 32-bit computers, download the `dcrinstall-darwin-386-v{{ cliversion.mac }}` file.
 
-        For 64-bit computers, download the `dcrinstall-darwin-amd64-v1.1.2` file.
+        For 64-bit computers, download the `dcrinstall-darwin-amd64-v{{ cliversion.mac }}` file.
 
-    1. Make dcrinstall-darwin-xxxx-vx.x.x an executable within your terminal, and run it:
+    1. Make dcrinstall-darwin-xxxx-v{{ cliversion.mac }} an executable within your terminal, and run it:
 
         Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
 
         `cd ~/Downloads/`
 
-        `chmod u+x dcrinstall-darwin-amd64-v1.1.2`
+        `chmod u+x dcrinstall-darwin-amd64-v{{ cliversion.mac }}`
 
-        `./dcrinstall-darwin-amd64-v1.1.2`
+        `./dcrinstall-darwin-amd64-v{{ cliversion.mac }}`
 
     1. The executable binaries for `dcrd`, `dcrwallet`, and `dcrctl` can now be found in the `~/decred/` directory. Before the `dcrinstall` process completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](../../wallets/cli/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 
@@ -36,23 +36,23 @@ Last updated for CLI release v1.1.2.
 
     1. Download the correct file:
 
-        For 32-bit computers, download the `dcrinstall-linux-386-v1.1.2` file.
+        For 32-bit computers, download the `dcrinstall-linux-386-v{{ cliversion.linux }}` file.
 
-        For 64-bit computers, download the `dcrinstall-linux-amd64-v1.1.2` file.
+        For 64-bit computers, download the `dcrinstall-linux-amd64-v{{ cliversion.linux }}` file.
 
-        For 32-bit ARM computers, download the `dcrinstall-linux-arm-v1.1.2` file.
+        For 32-bit ARM computers, download the `dcrinstall-linux-arm-v{{ cliversion.linux }}` file.
 
-        For 64-bit ARM computers, download the `dcrinstall-linux-arm64-v1.1.2` file.
+        For 64-bit ARM computers, download the `dcrinstall-linux-arm64-v{{ cliversion.linux }}` file.
 
-    1. Make dcrinstall-linux-xxxx-vx.x.x an executable within your terminal, and run it:
+    1. Make dcrinstall-linux-xxxx-v{{ cliversion.linux }} an executable within your terminal, and run it:
 
         Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run chmod with u+x mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
 
         `cd ~/Downloads/`
 
-        `chmod u+x dcrinstall-linux-amd64-v1.1.2`
+        `chmod u+x dcrinstall-linux-amd64-v{{ cliversion.linux }}`
 
-        `./dcrinstall-linux-amd64-v1.1.2`
+        `./dcrinstall-linux-amd64-v{{ cliversion.linux }}`
 
     1. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can now be found in the `~/decred/` directory. Before the `dcrinstall` process completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](../../wallets/cli/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 
@@ -60,9 +60,9 @@ Last updated for CLI release v1.1.2.
 
     1. Download the correct file:
 
-        For 32-bit computers, download the `dcrinstall-windows-386-v1.1.2.exe` file.
+        For 32-bit computers, download the `dcrinstall-windows-386-v{{ cliversion.windows }}.exe` file.
 
-        For 64-bit computers, download the `dcrinstall-windows-amd64-v1.1.2.exe` file.
+        For 64-bit computers, download the `dcrinstall-windows-amd64-v{{ cliversion.windows }}.exe` file.
 
     1. Run the dcrinstall executable file.
 

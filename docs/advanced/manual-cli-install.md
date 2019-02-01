@@ -16,8 +16,8 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
         | Architecture | Filename                          |
         | ------------ | ----------------------------------|
-        | 32-bit       | `decred-windows-386-v1.2.0.zip`   |
-        | 64-bit       | `decred-windows-amd64-v1.2.0.zip` |
+        | 32-bit       | `decred-windows-386-v{{ cliversion.windows }}.zip`   |
+        | 64-bit       | `decred-windows-amd64-v{{ cliversion.windows }}.zip` |
 
     1. Navigate to download location and extract the `.zip` file:
 
@@ -29,14 +29,14 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
         | Architecture | Filename                            |
         | ------------ | ----------------------------------- |
-        | 64-bit       | `decred-darwin-amd64-v1.2.0.tar.gz` |
+        | 64-bit       | `decred-darwin-amd64-v{{ cliversion.mac }}.tar.gz` |
 
     1. Navigate to download location and extract the `.tar.gz` file:
 
         **Finder:** simply double click on the `.tar.gz` file.
         **Terminal:** use the `tar -xvzf filename.tar.gz` command.
 
-        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-darwin-amd64-v1.2.0.tar.gz` should extract to `decred-darwin-amd64-v1.2.0`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-darwin-amd64-v{{ cliversion.mac }}.tar.gz` should extract to `decred-darwin-amd64-v{{ cliversion.mac }}`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
 
     !!! note
 
@@ -48,10 +48,10 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
         | Architecture | Filename                           |
         | ------------ | ---------------------------------- |
-        | 32-bit       | `decred-linux-386-v1.2.0.tar.gz`   |
-        | 64-bit       | `decred-linux-amd64-v1.2.0.tar.gz` |
-        | 32-bit ARM   | `decred-linux-arm-v1.2.0.tar.gz`   |
-        | 64-bit ARM   | `decred-linux-arm64-v1.2.0.tar.gz` |
+        | 32-bit       | `decred-linux-386-v{{ cliversion.linux }}.tar.gz`   |
+        | 64-bit       | `decred-linux-amd64-v{{ cliversion.linux }}.tar.gz` |
+        | 32-bit ARM   | `decred-linux-arm-v{{ cliversion.linux }}.tar.gz`   |
+        | 64-bit ARM   | `decred-linux-arm64-v{{ cliversion.linux }}.tar.gz` |
 
     1. Navigate to download location and extract the `.tar.gz` file:
 
@@ -59,7 +59,7 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
         **Terminal:** use the `tar -xvzf filename.tar.gz` command.
 
-        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-linux-amd64-v1.2.0.tar.gz` should extract to `decred-linux-amd64-v1.2.0`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-linux-amd64-v{{ cliversion.linux }}.tar.gz` should extract to `decred-linux-amd64-v{{ cliversion.linux }}`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
 
 ---
 

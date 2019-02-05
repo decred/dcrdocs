@@ -1,5 +1,8 @@
 # dcrdocs
 
+[![Build Status](https://travis-ci.org/decred/dcrdocs.png?branch=master)](https://travis-ci.org/decred/dcrdocs)
+[![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
+
 `dcrdocs` is source code for the [Decred project documentation](https://docs.decred.org).
 
 `dcrdocs` is built with [MkDocs](https://www.mkdocs.org/) - a documentation toolkit written in Python.

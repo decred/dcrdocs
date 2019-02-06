@@ -1,7 +1,5 @@
 # dcrwallet Setup Guide 
 
-Last updated for CLI release v1.1.2.
-
 This guide is intended to help you setup the `dcrwallet` application using [startup flags](startup-basics.md#startup-command-flags). 
 
 **Prerequisites:**

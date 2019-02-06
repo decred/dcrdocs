@@ -6,13 +6,13 @@ theme:
   font: false
 extra:
   decreditonversion:
-    windows: 1.4.0-rc3
-    linux: 1.4.0-rc3
-    mac: 1.4.0-rc3
+    windows: 1.4.0
+    linux: 1.4.0
+    mac: 1.4.0
   cliversion:
-    windows: 1.4.0-rc3
-    linux: 1.4.0-rc3
-    mac: 1.4.0-rc3
+    windows: 1.4.0
+    linux: 1.4.0
+    mac: 1.4.0
   social:
     - type: 'github'
       link: 'https://github.com/decred'

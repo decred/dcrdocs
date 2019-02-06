@@ -1,6 +1,8 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> `dcrctl` RPC Commands
 
-Last updated for CLI release v1.3.0.
+Last updated for CLI release v{{ cliversion.mac }}.
+
+---
 
 ## `dcrd` RPC Commands
 
@@ -13,7 +15,7 @@ Last updated for CLI release v1.3.0.
     `decoderawtransaction`    | `"hextx"`
     `decodescript`            | `"hexscript"`
     `estimatefee`             | `numblocks`
-    `estimatesmartfee`        | `confirmations` `"mode"`
+    `estimatesmartfee`        | `confirmations` (`mode="conservative"`)
     `estimatestakediff`       | (`tickets`)
     `existsaddress`           | `"address"`
     `existsaddresses`         | `["address",...]`
@@ -109,9 +111,11 @@ Last updated for CLI release v1.3.0.
     `getaccountaddress`       | `"account"`
     `getaddressesbyaccount`   | `"account"`
     `getbalance`              | (`"account"` `minconf=1`)
+    `getcontracthash`         | `["filepath",...]`
     `getmasterpubkey`         | (`"account"`)
     `getmultisigoutinfo`      | `"hash"` `index`
     `getnewaddress`           | (`"account"` `"gappolicy"`)
+    `getpaytocontractaddress` | `["filepath",...]`
     `getrawchangeaddress`     | (`"account"`)
     `getreceivedbyaccount`    | `"account"` (`minconf=1`)
     `getreceivedbyaddress`    | `"address"` (`minconf=1`)
@@ -121,9 +125,7 @@ Last updated for CLI release v1.3.0.
     `gettransaction`          | `"txid"` (`includewatchonly=false`)
     `getvotechoices`          | 
     `getwalletfee`            | 
-    `importaddress`           | `"address"` (`rescan=true`)
     `importprivkey`           | `"privkey"` (`"label"` `rescan=true` `scanfrom`)
-    `importpubkey`            | `"pubkey"` (`rescan=true`)
     `importscript`            | `"hex"` (`rescan=true` `scanfrom`)
     `keypoolrefill`           | (`newsize=100`)
     `listaccounts`            | (`minconf=1`)
@@ -132,6 +134,7 @@ Last updated for CLI release v1.3.0.
     `listreceivedbyaddress`   | (`minconf=1` `includeempty=false` `includewatchonly=false`)
     `listscripts`             | 
     `listsinceblock`          | (`"blockhash"` `targetconfirmations=1` `includewatchonly=false`)
+    `listtickets`             | 
     `listtransactions`        | (`"account"` `count=10` `from=0` `includewatchonly=false`)
     `listunspent`             | (`minconf=1` `maxconf=9999999` `["address",...]`)
     `lockunspent`             | `unlock` `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]`
@@ -145,12 +148,7 @@ Last updated for CLI release v1.3.0.
     `sendmany`                | `"fromaccount"` `{"address":amount,...}` (`minconf=1` `"comment"`)
     `sendtoaddress`           | `"address"` `amount` (`"comment"` `"commentto"`)
     `sendtomultisig`          | `"fromaccount"` `amount` `["pubkey",...]` (`nrequired=1` `minconf=1` `"comment"`)
-    `sendtossgen`             | `"fromaccount"` `"tickethash"` `"blockhash"` `height` `votebits` (`"comment"`)
-    `sendtossrtx`             | `"fromaccount"` `"tickethash"` (`"comment"`)
-    `sendtosstx`              | `"fromaccount"` `amounts` `[{"txid":"value", "vout":n, "tree":n, "amt":n},...]` `[{"addr":"value", "commitamt":n, "changeaddr":"value", "changeamt":n},...]` (`minconf=1` `"comment"`)
-    `setbalancetomaintain`    | `balance`
     `setticketfee`            | `fee`
-    `setticketmaxprice`       | `max`
     `settxfee`                | `amount`
     `setvotechoice`           | `"agendaid"` `"choiceid"`
     `signmessage`             | `"address"` `"message"`

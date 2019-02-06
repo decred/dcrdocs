@@ -47,7 +47,7 @@ The ticket price is always refunded, no matter if your ticket votes, misses or e
 
 The PoS system utilizes two types of fees, a "txfee" (also known as a 'split' fee) and a "ticketfee".
 	
-The txfee is a fee you pay the network for handling the transaction to buy your ticket. This fee is at default set to a low amount (0.001 DCR/kB) and should not be changed.
+The txfee is a fee you pay the network for handling the transaction to buy your ticket. This fee is at default set to a low amount (0.0001 DCR/kB) and should not be changed.
 The ticketfee is the fee you pay if your ticket gets mined. This fee is an incentive for PoW miners to mine your ticket and add it to the ticket pool.
 
 In case the buying window is full, meaning there are more tickets being bought than there are available to be mined during that window, the ticketfee will be used to determine which tickets get put into

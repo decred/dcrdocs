@@ -5,6 +5,14 @@ theme:
   logo: 'img/decred_logo_symbol_128.svg'
   font: false
 extra:
+  decreditonversion:
+    windows: 1.4.0
+    linux: 1.4.0
+    mac: 1.4.0
+  cliversion:
+    windows: 1.4.0
+    linux: 1.4.0
+    mac: 1.4.0
   social:
     - type: 'github'
       link: 'https://github.com/decred'
@@ -37,6 +45,8 @@ extra_javascript:
 extra_css:
   - css/fonts.css
   - css/style.css
+plugins:
+  - markdownextradata
 nav:
 - 'Home': 'index.md'
 - Getting Started:
@@ -115,6 +125,7 @@ nav:
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - Contributing:
+  - 'Contributing to Decred': 'contributing/contributing-to-decred.md'
   - 'Contributor Compensation': 'contributing/contributor-compensation.md'
   - Guidelines:
     - 'Using GitHub': 'contributing/using-github.md'

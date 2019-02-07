@@ -167,11 +167,6 @@ Decred was specifically designed to minimise impact from both large PoW mining p
 
 This target was selected prior to Decred's launch to ensure that tickets would have a 99.5% chance of voting before they expire.
 
----
-
-#### 14. What happens if my Voting Service Provider (VSP) goes down?
-
-Voting rights are based on 1-of-2 multisig transactions. Therefore, in the unlikely event your Voting Service Provider (VSP) goes down permanently, you can still vote and receive your PoS reward, as well as revoke a missing or expired ticket. To do this, you will need to have a wallet with your VSPs pool script imported. See the [Solo Proof-of-Stake (PoS) Voting](../../advanced/solo-proof-of-stake-voting.md) page for details on setting up a wallet for solo voting. 
 
 ---
 

@@ -55,6 +55,12 @@ Continue to [PoS Voting Tickets FAQ](voting-tickets.md)
 
 ---
 
+#### 8. What happens if my Voting Service Provider (VSP) goes down?
+
+If your VSP goes down, you can still vote your tickets, as well as revoke a missed or expired ticket. In this highly unlikely scenario, you can revoke your tickets in Decrediton, releasing the DCR used to purchase tickets back to your wallet. You can also vote and recieve the PoS reward if you have your VSP's pool script (available on the VSP's website). Voting rights are assigned to a 1-of-2 multisig address, where one of the required keys belongs to your wallet. Therefore, you can configure your wallet with your VSP's pool script imported, set it up for solo voting, and essentially become your own VSP. See the [Solo Proof-of-Stake (PoS) Voting](../../advanced/solo-proof-of-stake-voting.md) page for details on setting up a wallet for solo voting. 
+
+---
+
 ## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
 
 [^9262]: Decred Forum, [Post 9,262](https://forum.decred.org/threads/626/#post-9262)

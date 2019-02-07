@@ -42,7 +42,17 @@ INFO    -  Cleaning site directory
 [I 160402 15:50:43 handlers:58] Start watching changes
 [I 160402 15:50:43 handlers:60] Start detecting changes
 ```
+If you are using Windows, some of the above commands may not work out-of-the-box.
+A quick solution may be to preface every Python command with `python -m` like this:
 
+```bash
+$ python -m mkdocs serve
+INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+[I 190207 18:05:35 server:298] Serving on http://127.0.0.1:8000
+[I 190207 18:05:35 handlers:59] Start watching changes
+[I 190207 18:05:35 handlers:61] Start detecting changes
+```
 Open up <http://127.0.0.1:8000> in your browser, and you will see the documentation home page being displayed. The dev-server also supports auto-reloading, and will rebuild your documentation whenever anything in the configuration file or the documentation directory changes.
 
 ## Deploying

@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> **How to Vote on consensus rule changes**
+# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> **How to Vote**
 
 This guide assumes you already have an active wallet and have purchased tickets. If not, please follow the [Voting Preparation](consensus-rule-voting/consensus-rules-voting.md#voting-preparation) guide.
 

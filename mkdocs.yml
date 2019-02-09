@@ -47,6 +47,7 @@ extra_css:
   - css/style.css
 plugins:
   - markdownextradata
+  - search
 nav:
 - 'Home': 'index.md'
 - Getting Started:

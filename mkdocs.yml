@@ -61,8 +61,8 @@ nav:
     - 'Example Proposals': 'governance/politeia/example-proposals.md'
   - Consensus Rule Voting:
     - 'Consensus Rules Voting': 'governance/consensus-rule-voting/consensus-rules-voting.md'
+    - 'How to Vote': 'governance/consensus-rule-voting/how-to-vote.md'
     - 'Consensus Vote Archive': 'governance/consensus-rule-voting/consensus-vote-archive.md'
-  - 'How to Vote on Consensus Rule Changes': 'governance/how-to-vote.md'
   - 'Decred Constitution': 'governance/decred-constitution.md'
 - Wallets:
     - Decrediton (GUI):

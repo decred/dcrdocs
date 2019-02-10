@@ -1,6 +1,6 @@
-# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> **How to Vote on consensus rule changes**
+# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> **How to Vote**
 
-This guide assumes you already have an active wallet and have purchased tickets. If not, please follow the [Voting Preparation](consensus-rule-voting/consensus-rules-voting.md#voting-preparation) guide.
+This guide assumes you already have an active wallet and have purchased tickets. If not, please follow the [Voting Preparation](consensus-rules-voting.md#voting-preparation) guide.
 
 The choice a ticket votes with depends on your vote preference at the time the ticket is chosen, not when it is bought. So you can set your choice at any time within the voting window and all future tickets will vote accordingly.
 

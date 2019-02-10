@@ -8,7 +8,8 @@ New blocks are discovered by the proof-of-work miners roughly every 5 minutes, a
 * 30% goes to the PoS voters on that block (6% to each of the 5 voters)
 * 10% goes towards the Decred Treasury
 
-This split is designed to encourage people to stake their coins and invest in the network, but not allow PoS voters to gain share over time simply by staking. PoW miners receive a greater share of the reward than PoS voters to compensate them for their ongoing work securing the network, and to dilute early investors, whales, and other large stakeholders over time, unless they also participate in PoW mining. This is intended to incentivize active participation in the network and to decentralize the coin supply over time. The 10% block reward to the Decred Treasury helps to ensure the future of Decred by creating a sustainable source of funding for development. 
+This split is designed to encourage people to stake their coins and invest in the network, but not allow PoS voters to gain share over time simply by staking. PoW miners receive a greater share of the reward than PoS voters to compensate them for their ongoing work securing the network, and to encourage a broader distribution of the monetary supply by preventing the "rich get richer" effect.
+The 10% block reward to the Decred Treasury helps to ensure the future of Decred by creating a sustainable source of funding for development. 
 
 The block reward started at 31.19582664 and it adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/101[^1].
 

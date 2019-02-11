@@ -27,4 +27,4 @@ Hierarchical deterministic <br>(Private Key ID) |	HD |	dprv |	tprv |	sprv |	rprv
 Hierarchical deterministic <br> (Public Key ID) |	HD |	dpub |	tpub |	spub |	rpub |	4 |
 
 ## P2PKH address generation flow
-![How a P2PKH address is generated](/img/P2PKH ADDRESS GEN.svg)
+![How a P2PKH address is generated](/img/p2pkh_address_gen.svg)

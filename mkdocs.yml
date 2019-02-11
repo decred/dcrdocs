@@ -96,7 +96,7 @@ nav:
   - 'PoW': 'faq/proof-of-work-mining.md'
   - PoS:
     - 'General': 'faq/proof-of-stake/general.md'
-    - 'Solo Mining': 'faq/proof-of-stake/solo-mining.md'
+    - 'Solo Voting': 'faq/proof-of-stake/solo-voting.md'
     - 'Buying Tickets and Fees': 'faq/proof-of-stake/buying-tickets-and-fees.md'
     - 'Voting Tickets': 'faq/proof-of-stake/voting-tickets.md'
     - 'Voting Service Providers': 'faq/proof-of-stake/voting-service-providers.md'

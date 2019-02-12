@@ -6,7 +6,7 @@
 
 VSPs are a key part of the Decred infrastructure which make participating in proof-of-stake much more accessible for the average user. It is desirable to increase the number of operating VSPs in order to promote decentralization, improve the stability of the Decred network, and give stakeholders more choice.
 
-This is a high level guide of how to set up a VSP, and the steps required to list a VSP on [decred.org](https://decred.org/stakepools) and in Decrediton wallet. The guide is deliberately written at a high level and with minimal details because a level of system admin experience is assumed for VSP operators.
+This is a high level guide of how to set up a VSP, and the steps required to list a VSP on [decred.org](https://decred.org/vsp) and in Decrediton wallet. The guide is deliberately written at a high level and with minimal details because a level of system admin experience is assumed for VSP operators.
 
 ---
 

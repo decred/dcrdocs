@@ -39,7 +39,7 @@ The **Ticket Fee** (`ticketfee`) is the fee rate that must be included in the ti
 
 **Voting Service Providers (VSPs)** (formerly "Stakepools") offer a service whereby ticket buyers can delegate the act of voting to the VSP. The ticket-buyer instructs the VSP how their ticket should vote on any open rule change proposals, but transfers voting rights to the VSP to take advantage of the voting infrastructure they provide (i.e. at least three always-online servers). 
 
-VSPs charge a fee for this service, which is taken out of the reward returned upon a successful vote. This fee is generally 5% or less. A [list of VSPs](https://decred.org/stakepools/) is maintained on decred.org. VSPs do not take custody of DCR. By using them, you only delegate the voting rights of a ticket.
+VSPs charge a fee for this service, which is taken out of the reward returned upon a successful vote. This fee is generally 5% or less. A [list of VSPs](https://decred.org/vsp/) is maintained on decred.org. VSPs do not take custody of DCR. By using them, you only delegate the voting rights of a ticket.
 
 ---
 

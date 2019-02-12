@@ -86,7 +86,6 @@ nav:
 - Proof-of-Work Mining:
   - 'Overview': 'mining/proof-of-work.md'
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'
-  - 'PoW FAQ': 'faq/proof-of-work-mining.md'
 - FAQ:
   - 'General': 'faq/general.md'
   - 'Configuration': 'faq/configuration.md'

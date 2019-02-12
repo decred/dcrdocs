@@ -42,8 +42,7 @@ INFO    -  Cleaning site directory
 [I 160402 15:50:43 handlers:58] Start watching changes
 [I 160402 15:50:43 handlers:60] Start detecting changes
 ```
-If you are using Windows, some of the above commands may not work out-of-the-box.
-A quick solution may be to preface every Python command with `python -m` like this:
+If you are using Windows, you may need to inform python to search sys.path for the mkdocs module:
 
 ```bash
 $ python -m mkdocs serve

@@ -119,7 +119,7 @@ This tab shows a summary of all of the tickets your wallet has ever purchased. F
 
 ### Statistics
 
-This page displays various statistics about all of the available Voting Service Providers. The dropdown can be used to change the currently displayed pool.
+This page displays various statistics about all of the available voting service providers. The dropdown can be used to change the currently displayed pool.
 
 ![VSP statistics page](/img/decrediton/pool-stats.png)
 

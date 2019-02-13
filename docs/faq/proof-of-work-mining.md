@@ -1,4 +1,4 @@
-# :fa-fire: Proof-of-work Mining
+# :fa-fire: Proof-of-Work (PoW) Mining
 
 ---
 

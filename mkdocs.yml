@@ -82,24 +82,24 @@ nav:
       - 'dcrctl RPC Commands': 'wallets/cli/dcrctl-rpc-commands.md'
     - 'SPV': 'wallets/spv.md'
 - Proof-of-Stake Voting:
-  - "What is Proof-of-Stake?": 'proof-of-stake/proof-of-stake.md'
+  - "Overview": 'proof-of-stake/proof-of-stake.md'
   - "How to Stake": 'proof-of-stake/how-to-stake.md' 
-  - PoS FAQ:
-    - 'General': 'faq/proof-of-stake/general.md'
-    - 'Solo Voting': 'faq/proof-of-stake/solo-voting.md'
-    - 'Buying Tickets and Fees': 'faq/proof-of-stake/buying-tickets-and-fees.md'
-    - 'Voting Tickets': 'faq/proof-of-stake/voting-tickets.md'
-    - 'Voting Service Providers': 'faq/proof-of-stake/voting-service-providers.md'
 - Proof-of-Work Mining:
   - 'Overview': 'mining/proof-of-work.md'
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'
-  - 'PoW FAQ': 'faq/proof-of-work-mining.md'
 - FAQ:
   - 'General': 'faq/general.md'
   - 'Configuration': 'faq/configuration.md'
   - 'Wallets and Seeds': 'faq/wallets-and-seeds.md'
   - 'Blocks': 'faq/blocks.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
+  - 'PoW': 'faq/proof-of-work-mining.md'
+  - PoS:
+    - 'General': 'faq/proof-of-stake/general.md'
+    - 'Solo Voting': 'faq/proof-of-stake/solo-voting.md'
+    - 'Buying Tickets and Fees': 'faq/proof-of-stake/buying-tickets-and-fees.md'
+    - 'Voting Tickets': 'faq/proof-of-stake/voting-tickets.md'
+    - 'Voting Service Providers': 'faq/proof-of-stake/voting-service-providers.md'
 - Advanced:
   - 'Address Details': advanced/address-details.md
   - 'Using Testnet': 'advanced/using-testnet.md'

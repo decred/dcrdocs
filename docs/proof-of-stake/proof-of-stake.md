@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Proof of Stake Voting
+# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Proof-of-Stake (PoS) Voting
 
 
 ---

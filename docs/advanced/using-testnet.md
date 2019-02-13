@@ -14,7 +14,7 @@ Decred is currently on its 3rd Testnet, also known as testnet3. Testnets are per
 
 ## How to Run a Testnet Node
 
-Running a testnet3 node is incredibly easy. You application of choice will need to download the testnet3 blockchain, and you will need to create a new wallet file for testnet3 use. Your mainnet blockchain and wallet files will remain untouched. Switching between the two is incredibly easy.
+Running a testnet3 node is incredibly easy. Your application of choice will need to download the testnet3 blockchain, and you will need to create a new wallet file for testnet3 use. Your mainnet blockchain and wallet files will remain untouched. Switching between the two is incredibly easy.
 
 ---
 

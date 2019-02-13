@@ -89,7 +89,7 @@ The tickets tab is split into four sections:
 
 ### Purchase
 
-Before you can purchase tickets you must first import the API key from your [voting service provider account](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
+Before you can purchase tickets you must first import the API key from your [stakepool account](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
 
 ![Tickets Tab](/img/decrediton/tickets.png)
 
@@ -119,9 +119,9 @@ This tab shows a summary of all of the tickets your wallet has ever purchased. F
 
 ### Statistics
 
-This page displays various statistics about all of the available voting service providers. The dropdown can be used to change the currently displayed pool.
+This page displays various statistics about all of the available stakepools. The dropdown can be used to change the currently displayed pool.
 
-![VSP statistics page](/img/decrediton/pool-stats.png)
+![Stakepool statistics page](/img/decrediton/pool-stats.png)
 
 ---
 

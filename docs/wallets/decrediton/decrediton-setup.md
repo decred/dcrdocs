@@ -118,6 +118,6 @@ Press **Create Wallet** and your wallet setup is complete. You will be taken bac
 
 1. Select **Create Wallet**. Wait for the blockchain to be downloaded.
 
-1. You will be prompted to enter the voting service provider API key associated with this wallet. This can be left blank if you don't have one.
+1. You will be prompted to enter the stakepool API key associated with this wallet. This can be left blank if you don't have one.
 
 1. The blockchain will now be scanned for any transactions belonging to this wallet.

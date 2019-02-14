@@ -47,11 +47,6 @@ p img.dcr-icon {
     }
 }
 
-/* Increase font-size for info/warning/danger boxes. 1.6rem matches the rest of the text. */
-.md-typeset .admonition {
-    font-size: 1.6rem;
-}
-
 /* Disable min-width for headers in tables with at least 7 columns */
 .md-typeset table:not([class]) th:first-child:nth-last-child(n+7),
 .md-typeset table:not([class]) th:first-child:nth-last-child(n+7) ~ th {

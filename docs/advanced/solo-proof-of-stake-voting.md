@@ -183,7 +183,7 @@ echo "PATH=~/decred:$PATH" >> ~/.profile;
 source ~/.profile
 ```
 
-You may want to change the `v=v1.3.0` to the latest version if a newer one has been relased and `a=amd64` to whatever CPU architecture your VPS is using.
+You may want to change the `v=v1.3.0` to the latest version if a newer one has been released and `a=amd64` to whatever CPU architecture your VPS is using.
 
 Start everything: `./decred.sh`
 

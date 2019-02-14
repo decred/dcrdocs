@@ -21,7 +21,7 @@ In the Decred PoS system anyone holding DCR can participate by buying a ticket.
 
 #### 2. What are tickets? 
 
-A ticket is a token you buy to participate in the PoS system. You can buy tickets through the command line interface of dcrctl, or through a GUI like Decrediton[^1]. Whenever you buy a  ticket, you pay the current ticket price and a ticket fee using your DCR. When a ticket is purchased, it goes to a temporary "mempool". Twenty tickets can be mined into each block and tickets are chosen to be mined based on their fee per kilobyte. Once your ticket is mined, it will move from the current "allmempool" to the "immature" ticket pool. After 256 blocks (about 20 hours) it then will mature and go into the live ticket pool where it is eligible to be chosen to vote.
+A ticket is a token you buy to participate in the PoS system. You can buy tickets through the command line interface of dcrctl, or through a GUI like Decrediton[^1]. Whenever you buy a ticket, you pay the current ticket price and a ticket fee using your DCR. When a ticket is purchased, it goes to a temporary "mempool". Twenty tickets can be mined into each block and tickets are chosen to be mined based on their fee per kilobyte. Once your ticket is mined, it will move from the current "allmempool" to the "immature" ticket pool. After 256 blocks (about 20 hours) it then will mature and go into the live ticket pool where it is eligible to be chosen to vote.
 
 ---
 

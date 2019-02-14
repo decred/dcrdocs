@@ -118,7 +118,7 @@ To get the current ticket price, issue the `dcrctl --wallet getstakeinfo` comman
 
 To purchase tickets used for solo-staking, you only need to specify the `fromaccount` and `spendlimit` arguments while using the `purchaseticket` command. For example: `dcrctl --wallet purchaseticket "default" 50` would use DCR from your `default` account to purchase a ticket if the current ticket price was a max of 50 DCR.
 
-If you wish to specify the `numtickets` or `expiry` arguments, you would specify a `minconf` of 1, an empty `ticketaddress` (""), an empty `pooladdress` (""), and an empty `poolfees` (0). Two example follow:
+If you wish to specify the `numtickets` or `expiry` arguments, you would specify a `minconf` of 1, an empty `ticketaddress` (""), an empty `pooladdress` (""), and an empty `poolfees` (0). Two examples follow:
 
 -  `dcrctl --wallet purchaseticket "default" 50 1 "" 5` would purchase 5 tickets, as the 5th argument (`numtickets`) is set to 5.
 -  `dcrctl --wallet purchaseticket "default" 50 1 "" 5 "" 0 100000` would purchase 5 tickets that would expire from the mempool if not mined by block 100,000, as the 8th argument (`expiry`) is set to 100000.
@@ -153,7 +153,7 @@ pooladdress=<VSP's Fee Collection Address>
 poolfees=<VSP's Required Reward Fee>
 ```
 
-If you dont want `ticketbuyer` to spend all of your funds, there is one more option which allows you to specify a balance which will not be spent:
+If you don't want `ticketbuyer` to spend all of your funds, there is one more option which allows you to specify a balance which will not be spent:
 
 ```
 ticketbuyer.balancetomaintainabsolute=<balance>

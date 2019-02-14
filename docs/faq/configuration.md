@@ -6,14 +6,14 @@
 
 ##### `dcrd`
 
-|             |Mainet|Testnet|Simnet
+|             |Mainnet|Testnet|Simnet
 ---           |---   |---    |---
 *Peer to Peer*| 9108 | 19108 | 18555
 *RPC Server*  | 9109 | 19109 | 19556
 
 ##### `dcrwallet`
 
-|                |Mainet|Testnet|Simnet
+|                |Mainnet|Testnet|Simnet
 ---              |---   |---    |---
 *JSON-RPC Server*| 9110 | 19110 | 19557
 *gRPC Server*    | 9111 | 19111 | 19558

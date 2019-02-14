@@ -62,7 +62,7 @@ This tab shows allows you to export your transaction history in a .csv format. Y
 
 ## Governance
 
-The governance tab enables users holding tickets to have their say on Decred's governance. Here you can browse and vote upon [Politeia proposals](../../governance/politeia/politeia.md), and you can set your voting preferences for on chain [consensus rule votes](../../governance/consensus-rule-voting/consensus-rules-voting.md). Your privacy settings must allow Decrediton to contact Politeia to download proposal informaton.
+The governance tab enables users holding tickets to have their say on Decred's governance. Here you can browse and vote upon [Politeia proposals](../../governance/politeia/politeia.md), and you can set your voting preferences for on chain [consensus rule votes](../../governance/consensus-rule-voting/consensus-rules-voting.md). Your privacy settings must allow Decrediton to contact Politeia to download proposal information.
 
 ![Governance page](/img/decrediton/governance.png)
 

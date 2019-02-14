@@ -272,7 +272,7 @@ The mechanism by which ticket holders vote to approve blocks confirmed by PoW mi
 
 #### Proof-of-Work
 
-The mechanism used by miners to show that they have contributed computational power in order to create a new block. Miners will repeatedly create a hash of the block header until they find a hash equal to or below the current difficulty. Once shared with the network, this hash can easily be validated, thus demonstrating proof of the miners work.
+The mechanism used by miners to show that they have contributed computational power in order to create a new block. Miners will repeatedly create a hash of the block header until they find a hash equal to or below the current difficulty. Once shared with the network, this hash can easily be validated, thus demonstrating proof of the miners' work.
 
 #### Protocol rules
 

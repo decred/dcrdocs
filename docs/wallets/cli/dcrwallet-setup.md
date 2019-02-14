@@ -117,4 +117,4 @@ In order to launch `dcrwallet`, you first must have [created your wallet](#walle
 
 ---
 
-To learn how to use `dcrd` and  `dcrwallet`, visit the [dcrctl Basics](dcrctl-basics.md) guide. You'll learn how to unlock your wallet, send and receive DCR using `dcrctl`, check your balance, and check various network stats.
+To learn how to use `dcrd` and `dcrwallet`, visit the [dcrctl Basics](dcrctl-basics.md) guide. You'll learn how to unlock your wallet, send and receive DCR using `dcrctl`, check your balance, and check various network stats.

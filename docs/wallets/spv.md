@@ -28,7 +28,7 @@ When an SPV wallet initialises it will connect to the Decred network using peer-
 
 - Light wallets depend on a remote service to watch owned addresses and provide notifications when transactions are received by the addresses. Notifications could be missed or incorrect.
 
-- Users will often be required to upload an extended public key to the central server so it is aware of all of owned addresses, potentially compromising the users privacy.
+- Users will often be required to upload an extended public key to the central server so it is aware of all of owned addresses, potentially compromising the users' privacy.
 
 - Light wallets do not validate the information they receive by checking the blockchain directly - they have to blindly trust the information provided by the central server.
 

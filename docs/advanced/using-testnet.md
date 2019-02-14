@@ -39,3 +39,16 @@ To issue commands to both `dcrwallet` and `dcrd`, you must also add the `--testn
 ## Acquiring Testnet Coins
 
 You can acquire coins through the [Decred Testnet Faucet](https://faucet.decred.org). Please return any coins to the address listed at the bottom of that page when you're done playing with the testnet.
+
+---
+
+## Voting Service Providers (VSP)
+
+To experiment with staking and voting with a Voting Service Provider (VSP), you'll need to sign up for a testnet VSP. 
+
+### Testnet VSPs
+
+- [https://testnet.decredvoting.com](https://testnet.decredvoting.com)
+- [https://test-dcrpool.dittrex.com](https://test-dcrpool.dittrex.com)
+- [https://teststakepool.decred.org](https://teststakepool.decred.org)
+- [https://test.stakey.net](https://test.stakey.net)

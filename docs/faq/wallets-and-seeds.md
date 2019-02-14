@@ -2,7 +2,7 @@
 
 ---
 
-#### 1. Why should I not store my seed in a file on my machine or share the seed with someone? 
+#### 1. Why should I not store my seed in a file on my machine or share the seed with someone?
 
 Your seed is used to recreate your wallet and its accounts granting anyone with knowledge of the seed complete control of the funds within the wallet. If your machine were to be compromised and your seed stolen, the attacker would have the ability to drain your funds by sending your DCR to wallets under their control. Likewise, sharing your seed with anyone regardless of your current level of trust is highly discouraged as this could pose a major security risk for your wallet that they may misuse access in the future or store the copy of the seed less securely than you.
 
@@ -10,19 +10,19 @@ The safest method of storing your seed is on a physical medium, eg. written on p
 
 ---
 
-#### 2. How can I convert my wallet seed hex to seed words? 
+#### 2. How can I convert my wallet seed hex to seed words?
 
 You can use the [dcrseedhextowords](https://github.com/davecgh/dcrseedhextowords)[^8660] utility to convert a Decred seed from hex to the seed words needed for importing into wallets.
 
 ---
 
-#### 3. Can someone steal my coins if they access wallet.db? 
+#### 3. Can someone steal my coins if they access wallet.db?
 
 Nobody can steal your coins if they get access to the wallet.db[^9803] file unless they also have your private passphrase. If you chose to use public encryption, they also cannot get access to any of your extended public keys or addresses.
 
 ---
 
-#### 4. Can someone use a brute-force attack on a random wallet to regenerate its seed words (the words are not salted)? 
+#### 4. Can someone use a brute-force attack on a random wallet to regenerate its seed words (the words are not salted)?
 
 All the seed words are is a direct mapping of English words to hex digits. The seed is nothing more than a 256-bit (32-byte) cryptographically secure random number. Salt does not apply here at all. It has nothing to do with brute-forcing[^10452] random numbers.
 
@@ -32,13 +32,13 @@ To put this in perspective, assuming there are 7 billion people on the planet an
 
 ---
 
-#### 5. My seed is not working. What can I do? 
+#### 5. My seed is not working. What can I do?
 
 Make sure all of the words are on a single line separated by spaces[^10657]. Even though they are printed out on multiple lines for readability, they must be entered on a single line. Also double-check your words have no typos by comparing them to the words in the [PGP word list](https://en.wikipedia.org/wiki/PGP_word_list).
 
 ---
 
-#### 6. How do I import a key that is in wallet import format (WIF)? 
+#### 6. How do I import a key that is in wallet import format (WIF)?
 
 It is possible to import a standalone private key[^10724] into `dcrwallet`. Note that this is only for `--noseed` addresses and you should not run this unless you know what you are doing!
 
@@ -68,7 +68,7 @@ A public key address, also called Pay-To-Pubkey (P2Pk), can be identified with i
 
 ---
 
-#### 9. I have lost my seed. What can I do?
+#### 8. I have lost my seed. What can I do?
 
 If you have lost all copies of your seed *and* the wallet (or the wallet's passphrase), then you're out of luck: your funds are truly lost.
 
@@ -80,11 +80,10 @@ You should backup your `wallet.db` file (preferably in a thumb drive stored in a
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources
 
 [^8660]: Decred Forum, [Post 8,660](https://forum.decred.org/threads/534/page-3#post-8660)
 [^9803]: Decred Forum, [Post 9,803](https://forum.decred.org/threads/686/#post-9803)
 [^10452]: Decred Forum, [Post 10,452](https://forum.decred.org/threads/734/#post-10452)
 [^10657]: Decred Forum, [Post 10,657](https://forum.decred.org/threads/483/#post-10657)
 [^10724]: Decred Forum, [Post 10,724](https://forum.decred.org/threads/643/page-3#post-10724)
-

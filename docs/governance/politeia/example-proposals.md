@@ -32,7 +32,7 @@ In the *How* section, describe the steps you will perform to accomplish your
 goals.
 
 > 1. Design and document RPC.
-> 2. Add a priviledged RPC called Status that replies with StatusReply.
+> 2. Add a privileged RPC called Status that replies with StatusReply.
 >     * The Status RPC is an empty structure
 >     * The StatusReply structure returns a tri-state status: OK, Warning, Critical. In addition to the status the RPC returns a server message that can be forwarded to the administrators in case of Warning or Failure.
 >     * The StatusReply returns interesting statistics such as: number of proposals in memory, number of comments in memory etc.

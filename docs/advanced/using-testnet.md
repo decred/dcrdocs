@@ -42,11 +42,9 @@ You can acquire coins through the [Decred Testnet Faucet](https://faucet.decred.
 
 ---
 
-## Voting Service Providers (VSP)
+## Testnet Voting Service Providers (VSP)
 
 To experiment with staking and voting with a Voting Service Provider (VSP), you'll need to sign up for a testnet VSP. 
-
-### Testnet VSPs
 
 - [https://testnet.decredvoting.com](https://testnet.decredvoting.com)
 - [https://test-dcrpool.dittrex.com](https://test-dcrpool.dittrex.com)

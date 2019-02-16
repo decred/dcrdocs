@@ -11,6 +11,6 @@ or by clicking on the `Update Available` button in the upper right-hand corner o
     Click on the link for your OS and download the installer.
     ![Decrediton update link](/img/decrediton/upgrading/download-link.png)
 2. Close your current version of Decrediton (if open) and click on the downloaded installer. Follow the installation instructions as you would for any other program. 
-3. Open Decrediton. Note that when upgrading, Decrediton will need to re-download the entire Decred blockchain the first time you open it, which can take several minutes.
+3. Open Decrediton. Note that when upgrading, Decrediton may need to perform a one-time reindexing operation.  This can take several minutes to an hour depending on your hardware.
 4. Click on the `Governance` tab to check for new Politeia proposals and consensus rule changes. Upgraded versions of Decrediton may contain latent consensus rule changes that will be automatically enabled if stakeholders vote to accept them. For more on voting, see the governance section of the [Using Decrediton](../wallets/decrediton/using-decrediton/#governance) page. 
 

@@ -60,6 +60,7 @@ nav:
     - Decrediton (GUI):
       - 'Decrediton Setup': 'wallets/decrediton/decrediton-setup.md'
       - 'Using Decrediton': 'wallets/decrediton/using-decrediton.md'
+      - 'Upgrading Decrediton': 'wallets/decrediton/upgrading-decrediton.md'
       - 'Troubleshooting Problems': 'wallets/decrediton/decrediton-troubleshooting.md'
     - CLI Wallet:
       - 'Installation': 'wallets/cli/cli-installation.md'

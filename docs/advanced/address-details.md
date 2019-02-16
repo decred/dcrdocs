@@ -26,4 +26,5 @@ Wallet Import format <br> (Private Key ID) |	WIF |	Pm |	Pt |	Ps |	Pr |	2 |
 Hierarchical deterministic <br>(Private Key ID) |	HD |	dprv |	tprv |	sprv |	rprv |	4 |
 Hierarchical deterministic <br> (Public Key ID) |	HD |	dpub |	tpub |	spub |	rpub |	4 |
 
-
+## P2PKH address generation flow
+![How a P2PKH address is generated](/img/p2pkh_address_gen.svg)

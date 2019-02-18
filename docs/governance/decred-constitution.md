@@ -29,8 +29,8 @@
 - Stakeholder votes recorded in the blockchain are rewarded with 6% of each block subsidy, and each block can have up to 5 votes for a total of 30% of each block subsidy.
 - PoW receives 60% of each block subsidy, subject to the constraint that their subsidy scales linearly with the number of PoS votes included, e.g. including 3 of 5 votes reduces PoW subsidy to 60% of the maximum.
 - The votes themselves decide by majority decision whether the regular transaction tree of the previous block, including the PoW subsidy, is valid. Thus, if PoS voters vote against a particular PoW block, it destroys the PoW reward (and Treasury reward) and invalidates any regular transactions within that block.
-- Decred's process for [amending the consensus rules](https://docs.decred.org/governance/consensus-rule-voting/consensus-rules-voting/) is also driven by stakeholder voting. The process begins when at least 95% of PoW miners and 75% of PoS voters have upgraded their software to a new version with latent changes to the rules. Once these criteria are met, a voting period of 8064 blocks (~4 weeks) begins, to decide whether the latent rule changes should be activated. 
-- For a rule change proposal to be approved, at least 75% of the tickets that vote must vote Yes. If this requirement is met, and a quorum of 10% tickets voting Yes or No is achieved, then the rule change will be activated 8064 blocks (~4 weeks) later.
+- Decred's process for [amending the consensus rules](https://docs.decred.org/governance/consensus-rule-voting/consensus-rules-voting/) is also driven by stakeholder voting. The process begins when at least 95% of PoW miners and 75% of PoS voters have upgraded their software to a new version with latent changes to the rules. Once these criteria are met, a voting period of 8,064 blocks (~4 weeks) begins, to decide whether the latent rule changes should be activated. 
+- For a rule change proposal to be approved, at least 75% of the tickets that vote must vote Yes. If this requirement is met, and a quorum of 10% tickets voting Yes or No is achieved, then the rule change will be activated 8,064 blocks (~4 weeks) later.
 
 ------
 
@@ -42,7 +42,7 @@
 * The DHG shall comply with all relevant bodies of law in the jurisdictions where applicable, such as embargoes and other trade sanctions.
 * The project aims to transition to a Decentralized Autonomous Entity which controls the disbursement of Treasury funds.
 * Politeia proposals are the mechanism through which stakeholders make policy decisions and approve programs of work. 
-* Politeia proposals must be approved by at least 60% of the tickets that vote, and at least 20% of the eligible tickets must participate in the vote. The default voting period is 2016 blocks (~1 week).
+* Politeia proposals must be approved by at least 60% of the tickets that vote, and at least 20% of the eligible tickets must participate in the vote. The default voting period is 2,016 blocks (~1 week).
 * Decred contractors are individuals and corporations who work on the project, under an agreement that they are compensated for their work. 
 * Decred contractors are autonomous, they cannot be managed directly by stakeholders. Through Politeia, stakeholders can approve or reject programs of work as performed by specific contractors, but they cannot mandate that workers take certain actions. 
 * The Decred contractor collective is a self-regulating entity, wherein cells working on specific aspects resolve disputes and add new members independently.

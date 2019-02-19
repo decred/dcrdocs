@@ -137,6 +137,10 @@ extra:
     windows: 1.4.0
     linux: 1.4.0
     mac: 1.4.0
+  pivoterversion:
+    windows: 1.4.0
+    linux: 1.4.0
+    mac: 1.4.0
   seedWarning1:
     "During the creation process for your wallet, you will be given a sequence of 33 words known as a seed phrase. This seed phrase is essentially the private key for your wallet. You will be able to use this seed phrase to restore your private keys, transaction history, and balances using any Decred wallet on any computer."
   seedWarning2:

@@ -1,6 +1,6 @@
 # Solo Proof-of-Stake (PoS) Voting
 
-Last updated for CLI release v1.3.0.
+Last updated for CLI release v1.4.0.
 
 ---
 
@@ -38,25 +38,25 @@ Once your machine is set up you will need to install the Decred CLI tools.
 
 1. Download the installer, manifest, and signature files.
 
-    `wget https://github.com/decred/decred-release/releases/download/v1.3.0/{dcrinstall-linux-amd64-v1.3.0,manifest-dcrinstall-v1.3.0.txt,manifest-dcrinstall-v1.3.0.txt.asc}`
+    `wget https://github.com/decred/decred-release/releases/download/v1.4.0/{dcrinstall-linux-amd64-v1.4.0,manifest-dcrinstall-v1.4.0.txt,manifest-dcrinstall-v1.4.0.txt.asc}`
 
 1. Verify the manifest. The output from this command should say "Good signature from Decred Release <release@decred.org>". Warnings about the key not being certified with a trusted signature can be ignored.
 
-    `gpg --verify manifest-dcrinstall-v1.3.0.txt.asc`
+    `gpg --verify manifest-dcrinstall-v1.4.0.txt.asc`
 
 1. Verify the SHA-256 hash in the manifest matches that of the binary - the following two commands should have the same output.
 
-    `sha256sum dcrinstall-linux-amd64-v1.3.0`
+    `sha256sum dcrinstall-linux-amd64-v1.4.0`
 
-    `grep dcrinstall-linux-amd64-v1.3.0 manifest-dcrinstall-v1.3.0.txt`
+    `grep dcrinstall-linux-amd64-v1.4.0 manifest-dcrinstall-v1.4.0.txt`
 
 1. Make the binary executable.
 
-    `chmod +x dcrinstall-linux-amd64-v1.3.0`
+    `chmod +x dcrinstall-linux-amd64-v1.4.0`
 
 1. Run it to install the Decred CLI tools and to create your wallet.
 
-    `./dcrinstall-linux-amd64-v1.3.0`
+    `./dcrinstall-linux-amd64-v1.4.0`
 
 1. Add the path to the Decred binaries to your `.profile`.
 
@@ -116,23 +116,23 @@ Setting vote choices for on-chain votes will happen on the remote servers you wi
 
 1. Download the Politeia archive, manifest, and signature files.
 
-    `wget https://github.com/decred/decred-binaries/releases/download/v1.3.1/{politeiavoter-linux-amd64-v1.3.1.tar.gz,manifest-politeiavoter-v1.3.1.txt,manifest-politeiavoter-v1.3.1.txt.asc}`
+    `wget https://github.com/decred/decred-binaries/releases/download/v{{ pivoterversion.linux }}/{politeiavoter-linux-amd64-v{{ pivoterversion.linux }}.tar.gz,manifest-politeiavoter-v{{ pivoterversion.linux }}.txt,manifest-politeiavoter-v{{ pivoterversion.linux }}.txt.asc}`
 
 1. Verify the manifest. The output from this command should say "Good signature from Decred Release <release@decred.org>". Warnings about the key not being certified with a trusted signature can be ignored.
 
-    `gpg --verify manifest-politeiavoter-v1.3.1.txt.asc`
+    `gpg --verify manifest-politeiavoter-v{{ pivoterversion.linux }}.txt.asc`
 
 1. Verify the SHA-256 hash in the manifest matches that of the archive - the following two commands should have the same output.
 
-    `sha256sum politeiavoter-linux-amd64-v1.3.1.tar.gz`
+    `sha256sum politeiavoter-linux-amd64-v{{ pivoterversion.linux }}.tar.gz`
 
-    `grep politeiavoter-linux-amd64-v1.3.1.tar.gz manifest-politeiavoter-v1.3.1.txt`
+    `grep politeiavoter-linux-amd64-v{{ pivoterversion.linux }}.tar.gz manifest-politeiavoter-v{{ pivoterversion.linux }}.txt`
 
 1. Extract the archive.
 
-    `tar -xf politeiavoter-linux-amd64-v1.3.1.tar.gz`
+    `tar -xf politeiavoter-linux-amd64-v{{ pivoterversion.linux }}.tar.gz`
 
-1. Enter the `politeiavoter-linux-amd64-v1.3.1` directory.
+1. Enter the `politeiavoter-linux-amd64-v{{ pivoterversion.linux }}` directory.
 
 Now to view the various agendas and vote on them you will need to run the following commands. Also remember that for this to work `dcrd` and `dcrwallet` must also be running.
 
@@ -170,7 +170,7 @@ sudo apt update;
 sudo apt upgrade;
 sudo apt install tmux curl;
 
-v=v1.3.0;
+v=v1.4.0;
 a=amd64;
 b=dcrinstall-linux-${a}-${v};
 wget https://github.com/decred/decred-release/releases/download/${v}/${b};
@@ -183,7 +183,7 @@ echo "PATH=~/decred:$PATH" >> ~/.profile;
 source ~/.profile
 ```
 
-You may want to change the `v=v1.3.0` to the latest version if a newer one has been released and `a=amd64` to whatever CPU architecture your VPS is using.
+You may want to change the `v=v1.4.0` to the latest version if a newer one has been released and `a=amd64` to whatever CPU architecture your VPS is using.
 
 Start everything: `./decred.sh`
 

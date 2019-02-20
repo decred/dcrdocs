@@ -1,21 +1,16 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Constitution.svg" /> Decred Constitution
 
-* *Decred* (/ˈdi:ˈkred/, /dɪˈkred/, dee-cred) is a secure, adaptable and self-funding cryptocurrency with a system of community-based governance integrated into its blockchain. The project mission is to develop technology for the public benefit, with a primary focus on cryptocurrency technology. This constitution defines a set of principles which guide the decision-making of the project's stakeholders, and describes the processes through which the blockchain and Treasury are governed. The purpose of this document is to explain what the Decred currency and project is about, so that interested parties can make a more informed judgment about whether it is something they are into. This document is not intended to take precedence over the Decred network's consensus rules, should any conflict arise.
+*Decred* (/ˈdi:ˈkred/, /dɪˈkred/, dee-cred) is a secure, adaptable and self-funding cryptocurrency with a system of community-based governance integrated into its blockchain. The project mission is to develop technology for the public benefit, with a primary focus on cryptocurrency technology. This constitution defines a set of principles which guide the decision-making of the project's stakeholders, and describes the processes through which the blockchain and Treasury are governed. The purpose of this document is to explain what the Decred currency and project is about, so that interested parties can make a more informed judgment about whether it is something they are into. This document is not intended to take precedence over the Decred network's consensus rules, should any conflict arise.
 
-  ------
+------
 
-  ## Principles
+## Principles
 
 * *Free and Open-Source Software* - All software developed as part of *Decred* shall be free and open source-software.
-
 * *Free Speech and Consideration* - Everyone has the right to communicate opinions and ideas without fear of censorship. Consideration shall be given to all constructive speech that is based in fact and reason.
-
 * *Multi-Stakeholder Inclusivity* - Inclusivity represents a multi-stakeholder system and an active effort shall be maintained to include a diverse set of views and users. While it would be ideal to include everyone, *Decred* shall comply with all relevant bodies of law in the jurisdictions where applicable, such as embargoes and other trade sanctions.
-
 * *Incremental Privacy and Security* - Privacy and security are priorities and shall be balanced with the complexity of their implementations. Additional privacy and security technology shall be implemented on a continuing and incremental basis, both proactively and on-demand in response to attacks.
-
 * *Fixed Finite Supply* - Issuance is finite and the total maximum number of coins in *Decred* shall not change. The total maximum supply for *Decred* is 20,999,999.99800912 coins, with a per-block subsidy that adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/101. The genesis block subsidy starts at 31.19582664 coins.
-
 * *Universal Fungibility* - Universal fungibility is fundamental to *Decred* being a store of value and attacks against it shall be actively monitored and countermeasures pursued as necessary.
 
 ------
@@ -38,11 +33,12 @@
 
 * Sustainability and longevity require that 10% of all block rewards be given to a project Treasury fund, administered by a development organization.
 * The initial development organization is *Decred Holdings Group* LLC ("DHG"), a Nevis LLC that is responsible for funding work related to the development of the project, such as software development, infrastructure, and awareness.
-* DHG shall only fund work that adheres to the guiding principles.
-* The DHG shall comply with all relevant bodies of law in the jurisdictions where applicable, such as embargoes and other trade sanctions.
+* DHG shall only fund work that adheres to the guiding principles. 
+* DHG shall comply with all relevant bodies of law in the jurisdictions where applicable, such as embargoes and other trade sanctions.
 * The project aims to transition to a Decentralized Autonomous Entity which controls the disbursement of Treasury funds.
-* Politeia proposals are the mechanism through which stakeholders make policy decisions and approve programs of work. 
+* Politeia proposals are the mechanism through which stakeholders make policy decisions and approve programs of work.
 * Politeia proposals must be approved by at least 60% of the tickets that vote, and at least 20% of the eligible tickets must participate in the vote. The default voting period is 2,016 blocks (~1 week).
+* For as long as DHG has responsibility for managing the Treasury (i.e. until control is fully decentralized),  it holds a veto that can be exercised if it is felt that following through with a decision would put the project or DHG organization in jeopardy. 
 * Decred contractors are individuals and corporations who work on the project, under an agreement that they are compensated for their work. 
 * Decred contractors are autonomous, they cannot be managed directly by stakeholders. Through Politeia, stakeholders can approve or reject programs of work as performed by specific contractors, but they cannot mandate that workers take certain actions. 
 * The Decred contractor collective is a self-regulating entity, wherein cells working on specific aspects resolve disputes and add new members independently.

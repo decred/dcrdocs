@@ -51,6 +51,7 @@ nav:
     - 'Politeia': 'governance/politeia/politeia.md'
     - 'Proposal Guidelines': 'governance/politeia/proposal-guidelines.md'
     - 'Example Proposals': 'governance/politeia/example-proposals.md'
+    - 'Censorship': 'governance/politeia/politeia-censorship.md'
   - Consensus Rule Voting:
     - 'Consensus Rules Voting': 'governance/consensus-rule-voting/consensus-rules-voting.md'
     - 'How to Vote': 'governance/consensus-rule-voting/how-to-vote.md'

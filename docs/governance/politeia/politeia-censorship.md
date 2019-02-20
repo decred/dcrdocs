@@ -24,5 +24,5 @@ If a user's proposal is censored, it will not appear publicly on Politeia, but w
 
 ### Don't trust, verify
 
-Clicking on the `Download Proposal Bundle` link on the proposal page will download a JSON file to the user's computer containing information about the proposal, including the proposal's censorship token. This JSON contains all the information needed to prove that a proposal was censored, the time it was submitted, and its exact form. Politeia provides a tool, politeia_verify, which uses the information in the JSON to verify the proposal submission. Source code and instructions for politeia_verify can be found [here](https://github.com/decred/politeia/tree/master/politeiad/cmd/politeia_verify)
+Clicking on the `Download Proposal Bundle` link on the proposal page will download a JSON file to the user's computer containing information about the proposal, including the proposal's censorship token. This JSON contains all the information needed to prove that a proposal was censored, the time it was submitted, and its exact form. Politeia provides a tool, `politeia_verify`, which uses the information in the JSON to verify the proposal submission. Source code and instructions for `politeia_verify` can be found [here](https://github.com/decred/politeia/tree/master/politeiad/cmd/politeia_verify).
 

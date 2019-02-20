@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Decrediton Setup Guide
 
-Last updated for Decrediton v{{ decreditonversion.windows }}.
+Last updated for Decrediton v{{ decreditonversion }}.
 
 ---
 
@@ -18,7 +18,7 @@ The latest version of Decrediton can be downloaded from <https://decred.org/down
 
 ??? info "Windows instructions (click to expand)"
 
-    1. Download the Windows installer `decrediton-v{{ decreditonversion.windows }}.exe`.
+    1. Download the Windows installer `decrediton-v{{ decreditonversion }}.exe`.
 
     1. Double click the installer and follow the instructions.
 
@@ -26,17 +26,17 @@ The latest version of Decrediton can be downloaded from <https://decred.org/down
 
 ??? info "macOS instructions (click to expand)"
 
-    1. Download the `decrediton-v{{ decreditonversion.mac }}.dmg` file.
+    1. Download the `decrediton-v{{ decreditonversion }}.dmg` file.
 
-    1. Double click the `decrediton-v{{ decreditonversion.mac }}.dmg` file to mount the disk image.
+    1. Double click the `decrediton-v{{ decreditonversion }}.dmg` file to mount the disk image.
 
     1. Drag the `decrediton.app` file into the link to your Applications folder within the disk image.
 
 ??? info "Linux instructions (click to expand)"
 
-    1. Download the `decrediton-v{{ decreditonversion.mac }}.tar.gz` file.
+    1. Download the `decrediton-v{{ decreditonversion }}.tar.gz` file.
 
-    1. Navigate to the download location and extract `decrediton-v{{ decreditonversion.mac }}.tar.gz`.
+    1. Navigate to the download location and extract `decrediton-v{{ decreditonversion }}.tar.gz`.
 
     1. The extracted files include an executable named `decrediton`.
 

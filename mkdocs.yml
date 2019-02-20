@@ -129,18 +129,9 @@ nav:
 - 'Glossary': 'glossary.md'
 copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.3. Decred Project 2019.
 extra:
-  decreditonversion:
-    windows: 1.4.0
-    linux: 1.4.0
-    mac: 1.4.0
-  cliversion:
-    windows: 1.4.0
-    linux: 1.4.0
-    mac: 1.4.0
-  pivoterversion:
-    windows: 1.4.0
-    linux: 1.4.0
-    mac: 1.4.0
+  decreditonversion: 1.4.0
+  cliversion: 1.4.0
+  pivoterversion: 1.4.0
   gominerversion: 1.0.0
   seedWarning1:
     "During the creation process for your wallet, you will be given a sequence of 33 words known as a seed phrase. This seed phrase is essentially the private key for your wallet. You will be able to use this seed phrase to restore your private keys, transaction history, and balances using any Decred wallet on any computer."

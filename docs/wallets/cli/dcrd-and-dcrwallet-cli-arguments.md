@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Options2.svg" /> `dcrd` and `dcrwallet` CLI Arguments
 
-Last updated for CLI release v{{ cliversion.mac }}.
+Last updated for CLI release v{{ cliversion }}.
 
 ---
 Both the `dcrd` and `dcrwallet` daemons should work with default configuration for most users, however there is a wide variety of command line arguments to change the way they behave if required. For example, the following command can be used to change the log directory `dcrd` will write to.

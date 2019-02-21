@@ -16,13 +16,19 @@ Politeia is based on the concept of *__transparent censorship__*. A limitation o
 
 ## Proving censorship
 
-When a user registers, a cryptographic identity (pub/priv key pair) is created. This cryptographic identity is then used to create a “censorship token” for each user submission (proposal, comment, comment upvote/downvote). If a user's submission is censored, they can use this token to cryptographically prove their submission was censored, the time it was submitted, and the exact form of the submission. 
+When a user registers, a cryptographic identity (pub/priv key pair) is created. This cryptographic identity is then used to create a “censorship record" for each user submission (proposal, comment, comment upvote/downvote). If a user's submission is censored, they can use this censorship record to cryptographically prove their submission was censored, the time it was submitted, and the exact form of the submission. 
 
 If a user's proposal is censored, it will not appear publicly on Politeia, but will still be visible to the user and admins. The censored proposal will still appear on the user's `Your Proposals` page, along with the reason the proposal was censored. Below is an example proposal that was censored as spam. 
 
 ![Example Censored Proposal](/img/politeia/censored-proposal.png)
 
+## Recourse
+
+If a user feels they have been unjustly censored, they are free to show their provably censored proposal to the [community](../../getting-started/beginner-guide.md#community) at large and build support for their submission to be uncensored (which admins have the ability to do). Proposals can also be resubmitted at any time after incorporating feedback from the admins or other community members. Users are responsible for hosting any censored content if they wish to share it externally.   
+
 ### Don't trust, verify
 
-Clicking on the `Download Proposal Bundle` link on the proposal page will download a JSON file to the user's computer containing information about the proposal, including the proposal's censorship token. This JSON contains all the information needed to prove that a proposal was censored, the time it was submitted, and its exact form. Politeia provides a tool, politeia_verify, which uses the information in the JSON to verify the proposal submission. Source code and instructions for politeia_verify can be found [here](https://github.com/decred/politeia/tree/master/politeiad/cmd/politeia_verify)
+Clicking on the `Download Proposal Bundle` link on the proposal page will download a JSON file to the user's computer containing information about the proposal, including the proposal's censorship record. The censorship record contains all the information needed to prove a proposal was submitted, including the time it was submitted, its exact form at the time of submission, and if it was censored. Politeia provides a verification tool, politeia_verify, that can be used verify a proposal submission using its censorship record. Source code and instructions for using politeia_verify can be found [here](https://github.com/decred/politeia/tree/master/politeiad/cmd/politeia_verify).
+
+
 

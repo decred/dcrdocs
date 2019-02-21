@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> `dcrctl` RPC Commands
 
-Last updated for CLI release v{{ cliversion.mac }}.
+Last updated for CLI release v{{ cliversion }}.
 
 ---
 
@@ -26,53 +26,53 @@ Last updated for CLI release v{{ cliversion.mac }}.
     `existsmissedtickets`     | `"txhashblob"`
     `generate`                | `numblocks`
     `getaddednodeinfo`        | `dns` (`"node"`)
-    `getbestblock`            | 
-    `getbestblockhash`        | 
+    `getbestblock`            |
+    `getbestblockhash`        |
     `getblock`                | `"hash"` (`verbose=true` `verbosetx=false`)
-    `getblockchaininfo`       | 
-    `getblockcount`           | 
+    `getblockchaininfo`       |
+    `getblockcount`           |
     `getblockhash`            | `index`
     `getblockheader`          | `"hash"` (`verbose=true`)
     `getblocksubsidy`         | `height` `voters`
     `getblocktemplate`        | (`{"mode":"value", "capabilities":["capability",...], "longpollid":"value", "sigoplimit":sigoplimit, "sizelimit":sizelimit, "maxversion":n, "target":"value", "data":"value", "workid":"value"}`)
     `getcfilter`              | `"hash"` `"filtertype"`
     `getcfilterheader`        | `"hash"` `"filtertype"`
-    `getchaintips`            | 
-    `getcoinsupply`           | 
-    `getconnectioncount`      | 
-    `getcurrentnet`           | 
-    `getdifficulty`           | 
-    `getgenerate`             | 
-    `gethashespersec`         | 
+    `getchaintips`            |
+    `getcoinsupply`           |
+    `getconnectioncount`      |
+    `getcurrentnet`           |
+    `getdifficulty`           |
+    `getgenerate`             |
+    `gethashespersec`         |
     `getheaders`              | `"blocklocators"` `"hashstop"`
-    `getinfo`                 | 
-    `getmempoolinfo`          | 
-    `getmininginfo`           | 
-    `getnettotals`            | 
+    `getinfo`                 |
+    `getmempoolinfo`          |
+    `getmininginfo`           |
+    `getnettotals`            |
     `getnetworkhashps`        | (`blocks=120` `height=-1`)
-    `getnetworkinfo`          | 
-    `getpeerinfo`             | 
+    `getnetworkinfo`          |
+    `getpeerinfo`             |
     `getrawmempool`           | (`verbose=false` `"txtype"`)
     `getrawtransaction`       | `"txid"` (`verbose=0`)
-    `getstakedifficulty`      | 
+    `getstakedifficulty`      |
     `getstakeversioninfo`     | (`count`)
     `getstakeversions`        | `"hash"` `count`
-    `getticketpoolvalue`      | 
+    `getticketpoolvalue`      |
     `gettxout`                | `"txid"` `vout` (`includemempool=true`)
-    `gettxoutsetinfo`         | 
+    `gettxoutsetinfo`         |
     `getvoteinfo`             | `version`
     `getwork`                 | (`"data"`)
     `help`                    | (`"command"`)
-    `livetickets`             | 
-    `missedtickets`           | 
+    `livetickets`             |
+    `missedtickets`           |
     `node`                    | `"connect|remove|disconnect"` `"target"` (`"perm|temp"`)
-    `ping`                    | 
-    `rebroadcastmissed`       | 
-    `rebroadcastwinners`      | 
+    `ping`                    |
+    `rebroadcastmissed`       |
+    `rebroadcastwinners`      |
     `searchrawtransactions`   | `"address"` (`verbose=1` `skip=0` `count=100` `vinextra=0` `reverse=false` `["filteraddr",...]`)
     `sendrawtransaction`      | `"hextx"` (`allowhighfees=false`)
     `setgenerate`             | `generate` (`genproclimit=-1`)
-    `stop`                    | 
+    `stop`                    |
     `submitblock`             | `"hexblock"` (`{"workid":"value"}`)
     `ticketfeeinfo`           | (`blocks` `windows`)
     `ticketsforaddress`       | `"address"`
@@ -81,7 +81,7 @@ Last updated for CLI release v{{ cliversion.mac }}.
     `validateaddress`         | `"address"`
     `verifychain`             | (`checklevel=3` `checkdepth=288`)
     `verifymessage`           | `"address"` `"signature"` `"message"`
-    `version`                 | 
+    `version`                 |
 
 ---
 
@@ -99,8 +99,7 @@ Last updated for CLI release v{{ cliversion.mac }}.
     `createnewaccount`        | `"account"`
     `createrawssgentx`        | `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]` `votebits`
     `createrawssrtx`          | `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]` (`fee`)
-    `createrawsstx`           | `[{"txid":"value", "vout":n, "tree":n, "amt":n},...]` `amount` `[{"addr":"value", "commitamt":n, 
-    "changeaddr":"value", "changeamt":n},...]`
+    `createrawsstx`           | `[{"txid":"value", "vout":n, "tree":n, "amt":n},...]` `amount` `[{"addr":"value", "commitamt":n, "changeaddr":"value", "changeamt":n},...]`
     `createvotingaccount`     | `"name"` `"pubkey"` (`childindex=0`)
     `dropvotingaccount`       |
     `dumpprivkey`             | `"address"`
@@ -119,22 +118,22 @@ Last updated for CLI release v{{ cliversion.mac }}.
     `getrawchangeaddress`     | (`"account"`)
     `getreceivedbyaccount`    | `"account"` (`minconf=1`)
     `getreceivedbyaddress`    | `"address"` (`minconf=1`)
-    `getstakeinfo`            | 
-    `getticketfee`            | 
+    `getstakeinfo`            |
+    `getticketfee`            |
     `gettickets`              | `includeimmature`
     `gettransaction`          | `"txid"` (`includewatchonly=false`)
-    `getvotechoices`          | 
-    `getwalletfee`            | 
+    `getvotechoices`          |
+    `getwalletfee`            |
     `importprivkey`           | `"privkey"` (`"label"` `rescan=true` `scanfrom`)
     `importscript`            | `"hex"` (`rescan=true` `scanfrom`)
     `keypoolrefill`           | (`newsize=100`)
     `listaccounts`            | (`minconf=1`)
-    `listlockunspent`         | 
+    `listlockunspent`         |
     `listreceivedbyaccount`   | (`minconf=1` `includeempty=false` `includewatchonly=false`)
     `listreceivedbyaddress`   | (`minconf=1` `includeempty=false` `includewatchonly=false`)
-    `listscripts`             | 
+    `listscripts`             |
     `listsinceblock`          | (`"blockhash"` `targetconfirmations=1` `includewatchonly=false`)
-    `listtickets`             | 
+    `listtickets`             |
     `listtransactions`        | (`"account"` `count=10` `from=0` `includewatchonly=false`)
     `listunspent`             | (`minconf=1` `maxconf=9999999` `["address",...]`)
     `lockunspent`             | `unlock` `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]`
@@ -143,7 +142,7 @@ Last updated for CLI release v{{ cliversion.mac }}.
     `redeemmultisigouts`      | `"fromscraddress"` (`"toaddress"` `number`)
     `renameaccount`           | `"oldaccount"` `"newaccount"`
     `rescanwallet`            | (`beginheight=0`)
-    `revoketickets`           | 
+    `revoketickets`           |
     `sendfrom`                | `"fromaccount"` `"toaddress"` `amount` (`minconf=1` `"comment"` `"commentto"`)
     `sendmany`                | `"fromaccount"` `{"address":amount,...}` (`minconf=1` `"comment"`)
     `sendtoaddress`           | `"address"` `amount` (`"comment"` `"commentto"`)
@@ -156,10 +155,10 @@ Last updated for CLI release v{{ cliversion.mac }}.
     `signrawtransactions`     | `["rawtx",...]` (`send=true`)
     `stakepooluserinfo`       | `"user"`
     `startautobuyer`          | `"account"` `"passphrase"` (`balancetomaintain` `maxfeeperkb` `maxpricerelative` `maxpriceabsolute` `"votingaddress"` `"pooladdress"` `poolfees` `maxperblock`)
-    `stopautobuyer`           | 
+    `stopautobuyer`           |
     `sweepaccount`            | `"sourceaccount"` `"destinationaddress"` (`requiredconfirmations` `feeperkb`)
     `verifyseed`              | `"seed"` (`account`)
-    `walletinfo`              | 
-    `walletlock`              | 
+    `walletinfo`              |
+    `walletlock`              |
     `walletpassphrase`        | `"passphrase"` `timeout`
     `walletpassphrasechange`  | `"oldpassphrase"` `"newpassphrase"`

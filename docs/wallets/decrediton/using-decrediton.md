@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Using Decrediton
 
-Last updated for Decrediton v{{ decreditonversion.windows }}.
+Last updated for Decrediton v{{ decreditonversion }}.
 
 This guide assumes you have already set up a Decrediton wallet using [the Decrediton Setup guide](decrediton-setup.md).
 

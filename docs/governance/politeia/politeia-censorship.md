@@ -24,7 +24,7 @@ If a user's proposal is censored, it will not appear publicly on Politeia, but w
 
 ## Recourse
 
-If a user feels they have been unjustly censored, they are free to show their provably censored proposal to the [community](../../getting-started/beginner-guide.md#community) at large and build support for their submission to be uncensored (which admins have the ability to do). Proposals can also be resubmitted at any time after incorporating feedback from the admins or other community members. Users are responsible for hosting any censored content if they wish to share it externally.   
+If a user feels they have been unjustly censored, they are free to show their provably censored proposal to the [community](../../getting-started/beginner-guide.md#community) at large and build support for their proposal. Proposals can be resubmitted at any time. Users are responsible for hosting any censored content if they wish to share it externally.   
 
 ### Don't trust, verify
 

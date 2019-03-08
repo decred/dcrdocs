@@ -88,4 +88,4 @@ Selected GitHub repositories:
 
 ### Contributing
 
-Decred is always looking for new contributors. A basic outline of how this works is: Show up, Find something useful to do, Do it, Get Paid. Do a small bit at first and see if other contributors in that domain appreciate it. This [blog post](https://blog.decred.org/2017/07/25/Decred-Recruiting/) explains the project's recruitment philosophy and approach in more detail.
+Decred is always looking for new contributors. A basic outline of how this works is: Show up, Find something useful to do, Do it, Get Paid. Do a small bit at first and see if other contributors in that domain appreciate it. This [recruitment page](https://www.decred.org/recruiting/) explains the project's recruitment philosophy and approach in more detail.

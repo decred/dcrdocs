@@ -16,7 +16,7 @@ If you prefer video, try this [tutorial](https://www.youtube.com/watch?v=9L8P7hL
 
 - **Decrediton wallet:** You will need [Decrediton](../wallets/decrediton/decrediton-setup.md) version 1.2.1 or later to run the Split Ticket Buyer. 
 - **5 DCR:** A minimum of 5 DCR is required to participate in ticket splitting. This must be in your wallet, not on an exchange. 
-- **Split Ticket Buyer:** This is the software that coordinates ticket splitting with other participants. To install it, download a binary release for your OS [here](https://github.com/matheusd/dcr-split-ticket-matcher/releases/latest) or [build from source](building.md).
+- **Split Ticket Buyer:** This is the software that coordinates ticket splitting with other participants. To install it, download a binary release for your OS [here](https://github.com/matheusd/dcr-split-ticket-matcher/releases/latest) or [build from source](https://github.com/matheusd/dcr-split-ticket-matcher/blob/master/docs/building.md).
 
 
 ## How it works

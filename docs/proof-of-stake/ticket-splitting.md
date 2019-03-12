@@ -15,7 +15,7 @@ If you prefer video, try this [tutorial](https://www.youtube.com/watch?v=9L8P7hL
 ## Requirements
 
 - **Decrediton wallet:** You will need [Decrediton](../wallets/decrediton/decrediton-setup.md) version 1.2.1 or later to run the Split Ticket Buyer. 
-- **5 DCR:** A minimum of 5 DCR is required to participate in ticket splitting. This must be in your wallet, not on an exchange. 
+- **5 DCR:** A minimum of 5 DCR (plus transaction fees) is required to participate in ticket splitting. This must be in your wallet, not on an exchange. 
 - **Split Ticket Buyer:** This is the software that coordinates ticket splitting with other participants. To install it, download a binary release for your OS [here](https://github.com/matheusd/dcr-split-ticket-matcher/releases/latest) or [build from source](https://github.com/matheusd/dcr-split-ticket-matcher/blob/master/docs/building.md).
 
 
@@ -71,7 +71,7 @@ These instructions will walk you through buying a ticket using the GUI version o
 
     ![Split Ticket Buyer config menu](../img/split_ticket_buyer_config_menut.png)
 
-1. Enter the amount of DCR you wish to put into your split ticket. Currently, only integer numbers are supported in the GUI version of Split Ticket Buyer. In the CLI version you can purchase arbitrary amounts. The minimum amount of DCR you can contribute is 5 DCR. 
+1. Enter the amount of DCR you wish to put into your split ticket. Currently, only integer numbers are supported in the GUI version of Split Ticket Buyer. In the CLI version you can purchase arbitrary amounts. The minimum amount of DCR you can contribute is 5 DCR. Transaction fees will be automatically calculated by the Split Ticket Buyer and added to your pledged amount when the ticket is purchased. Transaction fees will vary based on the number of participants in the split ticket. A typical transaction fee might be 0.003 DCR. If you have more than 0.1 DCR in your wallet for fees, that should be more than enough.  
 
     ![Split Ticket Buyer config menu](../img/split_ticket_buyer_amount.png)
 

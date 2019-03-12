@@ -23,7 +23,7 @@ be addressed.
 In the *Why* section, answer why the proposal is needed and why it is
 a good idea.
 
-> Currently there is no prescribed way to remotely determine if politeiawww is functioning correctly. We propose to add a single RPC that doubles as the heartbeat and a status monitor.
+> Currently there is no prescribed way to remotely determine if politeiawww is functioning correctly. This is problematic because if there is a problem with politeiawww, the Politeia website could experience outages and Decred admins would not be aware of it until users were negatively impacted. We propose to add a single RPC that doubles as the heartbeat and a status monitor.
 > The idea is that monitoring software can periodically issue the RPC and determine if an alert needs to be sent out to the admins.
 
 ### How

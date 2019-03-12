@@ -30,3 +30,4 @@ If a user feels they have been unjustly censored, they are free to show their pr
 
 Clicking on the `Download Proposal Bundle` link on the proposal page will download a JSON file to the user's computer containing information about the proposal, including the proposal's censorship record. The censorship record contains all the information needed to prove a proposal was submitted, including the time it was submitted, its exact form at the time of submission, and if it was censored. Politeia provides a verification tool, politeia_verify, that can be used verify a proposal submission using its censorship record. Source code and instructions for using politeia_verify can be found [here](https://github.com/decred/politeia/tree/master/politeiad/cmd/politeia_verify).
 
+

@@ -32,7 +32,7 @@ To prevent ticket splitting from being used to game Decred's PoS voting mechanis
 For more on ticket splitting, including further explanation of the risks involved, voting, and technical specs of the Split Ticket Buyer software, see the following:
 
 - [DCR Ticket Splitting — All you need to know!](https://medium.com/decred/dcr-ticket-splitting-all-you-need-to-know-b8edc6b65db3): a thorough overview of how ticket splitting works. 
-- [Split Ticket Buyer documentation](https://github.com/matheusd/dcr-split-ticket-matcher/tree/master/docs): Technical documentation for the Split Ticket Matcher software used to fascilitate ticket splitting. 
+- [Split Ticket Buyer documentation](https://github.com/matheusd/dcr-split-ticket-matcher/tree/master/docs): Technical documentation for the Split Ticket Matcher software used to facilitate ticket splitting. 
 
 
 
@@ -59,7 +59,7 @@ These instructions will walk you through buying a ticket using the GUI version o
 
 1. Download the Split Ticket Matcher software for your OS.
 
-    - Split Ticket Matcher [downloads](https://github.com/matheusd/dcr-split-ticket-matcher/releases/tag/v0.7.0).
+    - Split Ticket Matcher [downloads](https://github.com/matheusd/dcr-split-ticket-matcher/releases/).
     - Split Ticket Matcher instructions on [building from source](https://github.com/matheusd/dcr-split-ticket-matcher/blob/master/docs/building.md).
 
 1. Run the `splitticketbuyergui` executable. This will open the Split Ticket Buyer GUI (shown below). 

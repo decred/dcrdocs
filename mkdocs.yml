@@ -51,7 +51,6 @@ nav:
     - 'Politeia': 'governance/politeia/politeia.md'
     - 'Proposal Guidelines': 'governance/politeia/proposal-guidelines.md'
     - 'Example Proposals': 'governance/politeia/example-proposals.md'
-    - 'Censorship': 'governance/politeia/politeia-censorship.md'
   - Consensus Rule Voting:
     - 'Consensus Rules Voting': 'governance/consensus-rule-voting/consensus-rules-voting.md'
     - 'How to Vote': 'governance/consensus-rule-voting/how-to-vote.md'
@@ -77,6 +76,7 @@ nav:
 - Proof-of-Stake Voting:
   - "Overview": 'proof-of-stake/proof-of-stake.md'
   - "How to Stake": 'proof-of-stake/how-to-stake.md' 
+  - "Ticket Splitting": 'proof-of-stake/ticket-splitting.md' 
 - Proof-of-Work Mining:
   - 'Overview': 'mining/proof-of-work.md'
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'
@@ -130,10 +130,18 @@ nav:
 - 'Glossary': 'glossary.md'
 copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.3. Decred Project 2019.
 extra:
-  decreditonversion: 1.4.0
-  cliversion: 1.4.0
-  pivoterversion: 1.4.0
-  gominerversion: 1.0.0
+  decreditonversion:
+    windows: 1.4.0
+    linux: 1.4.0
+    mac: 1.4.0
+  cliversion:
+    windows: 1.4.0
+    linux: 1.4.0
+    mac: 1.4.0
+  pivoterversion:
+    windows: 1.4.0
+    linux: 1.4.0
+    mac: 1.4.0
   seedWarning1:
     "During the creation process for your wallet, you will be given a sequence of 33 words known as a seed phrase. This seed phrase is essentially the private key for your wallet. You will be able to use this seed phrase to restore your private keys, transaction history, and balances using any Decred wallet on any computer."
   seedWarning2:

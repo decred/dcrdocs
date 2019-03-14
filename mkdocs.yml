@@ -77,6 +77,7 @@ nav:
 - Proof-of-Stake Voting:
   - "Overview": 'proof-of-stake/proof-of-stake.md'
   - "How to Stake": 'proof-of-stake/how-to-stake.md' 
+  - "Ticket Splitting": 'proof-of-stake/ticket-splitting.md' 
 - Proof-of-Work Mining:
   - 'Overview': 'mining/proof-of-work.md'
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'

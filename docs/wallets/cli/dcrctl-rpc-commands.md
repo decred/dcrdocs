@@ -2,6 +2,10 @@
 
 Last updated for CLI release v{{ cliversion }}.
 
+The dcrd and dcrwallet daemons have APIs that can be used to access lower-level functionality not available in their respective [Command-line Interfaces (CLIs)](dcrd-and-dcrwallet-cli-arguments.md). These APIs are called using Remote Procedure Calls (RPCs). RPCs also allow for integrations with clients written in any language that supports RPCs. 
+
+Below are some common RPC commands for dcrd and dcrwallet. For a full list of supported RPC commands and more detailed documentation, see the [dcrd RPC API](https://github.com/decred/dcrd/blob/9a5161ce9e687db0cb0696e673610e51f2c5ab6f/docs/json_rpc_api.md) and [dcrwallet RPC Documentation](https://github.com/decred/dcrwallet/tree/master/rpc/documentation).
+
 ---
 
 ## `dcrd` RPC Commands

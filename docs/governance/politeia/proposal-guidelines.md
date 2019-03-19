@@ -62,6 +62,14 @@ blockchain space. Over-hyped, buzzword-filled proposals without substance will l
 ignored. Be precise in your use of technical terms, realistic in your projections, 
 and bring your A game in the comments.
 
+#### Speak to a broad audience
+
+Some proposals will necessarily contain complex concepts and jargon. This is fine.
+Be aware however that not all stakeholders will be experts in your domain. You'll need 
+their votes too. Take part of your proposal to explain any complex ideas in simple,
+easy-to-understand language all stakeholders can understand. 
+
+
 #### Build Credibility
 
 The bigger the proposal, the more you will need to convince stakeholders you 

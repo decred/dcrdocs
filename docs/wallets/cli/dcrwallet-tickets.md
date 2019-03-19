@@ -1,6 +1,6 @@
 # Buying Tickets With dcrwallet
 
-Last updated for CLI release v1.1.2
+Last updated for CLI release v{{ cliversion }}.
 
 This guide is intended to walk through ticket buying using `dcrwallet`. It will cover both manual ticket purchases and automatic ticket purchases for solo-voting and VSP voting configurations.
 
@@ -15,19 +15,17 @@ This guide is intended to walk through ticket buying using `dcrwallet`. It will 
 
 This guide assumes you have set up `dcrd` and `dcrwallet` using configuration files. If you used `dcrinstall`, you have configuration files already. Using configuration files is highly recommended - it makes for an easier time issuing commands to `dcrwallet` and `dcrd` through `dcrctl`. A guide for minimum configuration (saving your RPC username and RPC password) can be found [here](../../advanced/manual-cli-install.md#minimum-configuration).
 
-NOTE: `dcrwallet.conf` is split into two sections labeled `[Application Options]` and `[Ticket Buyer Options]`. Any setting prefixed by 'ticketbuyer.' must be placed within the lower `[Ticket Buyer Options]` section. All other settings go within `[Application Options]`.
-
 ---
 
 ## Decisions
 
 There are a few decisions to be made before venturing into this guide. First, will you be using a Voting Service Provider (VSP) to delegate your ticket voting rights? Second, will you be purchasing tickets manually or automatically via the ticketbuyer feature?
 
-VSP ticket purchasing allows a stakeholder to delegate voting rights to a VSP. These VSPs are online at all times (24/7) and very rarely miss a vote. They utilize multi-sig transactions so they're unable to touch any of your DCR. As a downside, most require a small percentage of your voting reward as a VSP fee. VSP delegated tickets also require a larger transaction size (~540 Bytes vs. ~300 Bytes for solo-voting tickets) for purchasing which results in a slightly higher absolute ticket fee since fees are calculated by DCR/kB.
+VSP ticket purchasing allows a stakeholder to delegate voting rights to a VSP. VSPs are online at all times (24/7) and very rarely miss a vote. They utilize multi-sig transactions so they're unable to touch any of your DCR. As a downside, most require a small percentage of your voting reward as a VSP fee. VSP delegated tickets also require a larger transaction size (~540 Bytes vs. ~300 Bytes for solo-voting tickets) for purchasing which results in a slightly higher absolute ticket fee since fees are calculated by DCR/kB.
 
-Solo-voting requires you to have a voting wallet unlocked at all times (24/7), or else you may miss votes and lose your voting reward. You do not have to pay VSP fees and your ticket purchases are more likely to be mined with a smaller absolute fee (due to the miners selecting tickets based on DCR/kB ticket fee rates and solo tickets having a smaller TXN size).
+Solo-voting requires you to have a voting wallet unlocked at all times (24/7), or else you may miss votes and lose your voting reward. You do not have to pay VSP fees and your ticket purchases are more likely to be mined with a smaller absolute fee (due to the miners selecting tickets based on DCR/kB ticket fee rates and solo tickets having a smaller transaction size).
 
-Manual ticket purchasing vs. automated ticketbuyer purchasing is mainly up to personal preference. The normal benefits of automation apply to ticketbuyer, but many may be overwhelmed by the amount variables that can be configured. Also, ticketbuyer's fee calculation sometimes doesn't result in the most economical fee for a stakeholder. Some people also enjoy manually purchasing tickets every few days and trying to bid the most economical fee. Both methods will only purchase tickets when your wallet is unlocked.
+Manual ticket purchasing vs. automated ticketbuyer purchasing is mainly up to personal preference. Purchasing manually offers the user more control over when tickets are purchased, how much is paid for each ticket, and how often the purchasing wallet is unlocked. The automated buyer offers more convenience and requires less maintenance, however it requires the purchasing wallet to remain online and unlocked constantly.
 
 ---
 
@@ -35,15 +33,15 @@ Manual ticket purchasing vs. automated ticketbuyer purchasing is mainly up to pe
 
 REMINDER: Solo-voting with a voting wallet that doesn't stay online 24/7 may result in missed votes and forfeited stake rewards.
 
-To solo-vote, you simply set the enablevoting option when starting `dcrwallet`, unlock the wallet with your private passphrase, and buy tickets. With enablevoting enabled and `dcrwallet` unlocked, your wallet will automatically handle voting.
+To solo-vote, you simply set the `enablevoting` option when starting `dcrwallet`, unlock the wallet with your private passphrase, and buy tickets. With `enablevoting` enabled and `dcrwallet` unlocked, your wallet will automatically handle voting.
 
-To set up your `dcrwallet` for solo-staking, add the following line to your `dcrwallet.conf` config file in the `[Application Options]` section:
+To set up your `dcrwallet` for solo-staking, add the following line to your `dcrwallet.conf` config file:
 
 ```no-highlight
 enablevoting=1
 ```
 
-Once restarted with that line in `dcrwallet.conf` your wallet will be configured for solo-voting and you can now start [purchasing tickets](#ticket-purchasing).
+Once `dcrwallet` is restarted with that line in `dcrwallet.conf`, your wallet will be configured for solo-voting and you can start [purchasing tickets](#ticket-purchasing).
 
 ---
 
@@ -84,7 +82,7 @@ There are three things you might want to understand before purchasing tickets: t
 The `purchaseticket` command will be used to purchase tickets whether manual or automatic. Let's take a closer look at the command and its arguments:
 
 ```no-highlight
-purchaseticket "fromaccount" spendlimit (minconf=1 "ticketaddress" numtickets "pooladdress" poolfees expiry "comment")
+purchaseticket "fromaccount" spendlimit (minconf=1 "ticketaddress" numtickets "pooladdress" poolfees expiry "comment" ticketfee)
 ```
 
 1. `fromaccount`    =  Required String: The account from which to purchase tickets (e.g. "default").
@@ -96,12 +94,13 @@ purchaseticket "fromaccount" spendlimit (minconf=1 "ticketaddress" numtickets "p
 1. `poolfees`       =  Optional Number: The percentage of fees to pay to the VSP (e.g. 5)
 1. `expiry`         =  Optional Number: The block height where unmined tickets will expire from the mempool, returning the original DCR to your "fromaccount". If left blank, tickets will only expire in the mempool when the ticket price changes.
 1. `comment`        =  Optional String: This argument is unused and has no significance.
+1. `ticketfee`      =  Optional Number: The DCR/kB rate you'll pay to have your ticket purchase be included in a block.
 
 ##### Ticket Fees
 
-Your `ticketfee` is the DCR/kB rate you'll pay to have your ticket purchase be included in a block by a miner. You'll notice that the above `purchaseticket` command doesn't include any `ticketfee` arguments. The `ticketfee` argument can be set two ways.
+Your `ticketfee` is the DCR/kB rate you'll pay to have your ticket purchase be included in a block by a miner. You'll notice that the `ticketfee` argument of the above `purchaseticket` is optional. The `ticketfee` argument can be set using two other methods.
 
-1. During startup by adding `ticketfee=<fee rate>` to the `[Application Options]` of your `dcrwallet.conf`.
+1. During startup by adding `ticketfee=<fee rate>` to your `dcrwallet.conf`.
 1. While your wallet is running, using the `dcrctl --wallet setticketfee <fee rate>` command. This is not a permanent setting and will default to 0.0001 every time your wallet is restarted unless a ticketfee is specified in `dcrwallet.conf`.
 
 Why are ticket fees important? Usually the default fee of 0.0001 is enough to get your tickets mined, however there are extremely rare circumstances where an increased ticket fee may be beneficial. When ticket demand outpaces supply (there are only a maximum of 2880 tickets available at each price interval) a situation is created where stakeholders can increase their ticket fees in order to get their ticket purchases mined ahead of others offering lower fees. This type of "fee wars" scenario has not occurred since the new ticket price algorithm was introduced in July 2017.

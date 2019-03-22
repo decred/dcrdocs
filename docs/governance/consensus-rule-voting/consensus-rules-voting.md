@@ -15,11 +15,10 @@ Examples of consensus rules include:
 - Blocks must meet the current [difficulty](../../glossary.md#difficulty) requirement.
 
 It is essential that every node on the network uses exactly the same set of consensus rules.
-Nodes attempting to use consensus rules differing from the majority of the network will not be able to properly validate the blockchain, thus they will not able to participate and will eventually end up operating on their own seperate network.
+Nodes attempting to use consensus rules that differ from the majority of the network will not be able to properly validate blocks, and will eventually end up operating on their own seperate network. 
 
 Decred has a built-in upgrade mechanism which allows consensus rules to be changed across the entire network in a coordinated fashion.
-This enables the rules to be changed predictably and without fracturing the network.
-The process also allows proof-of-stake voters to exercise sovereignty over whether or not to accept the proposed changes.
+This enables the rules to be changed predictably and without fracturing the network, and allows proof-of-stake voters to exercise sovereignty over whether or not to accept the proposed changes.
 
 The process to change the consensus rules is detailed below.
 
@@ -28,22 +27,21 @@ The process to change the consensus rules is detailed below.
 ## Step 1: Decred Change Proposal (DCP)
 
 A Decred Change Proposal (DCP) is a design document which describes potential protocol or consensus changes to Decred.
-A well written DCP will include a detailed description of the proposed change, explain the motivation for making the change and provide a reference implementation.
+A well-written DCP will include a detailed description of the proposed change, explain the motivation for making the change and provide a reference implementation.
 
-Detailed documentation on the format of DCPs, as well as all of the DCPs which have been produced so far, can be found in the  GitHub repository [decred/dcps](https://github.com/decred/dcps).
+Detailed documentation on the format of DCPs, as well as all past DCPs, can be found in the  GitHub repository [decred/dcps](https://github.com/decred/dcps).
 
 ## Step 2: New node software
 
-New node software which implements the consensus rule changes must be developed and released.
-This new software will include all of the code necessary to enforce the existing consensus rules, as well as the code required to implement the change specified in the DCP.
-The new code implementing the change will lie dormant until the change has been voted upon and accepted by the proof-of-stake voters.
+New node software which implements the proposed consensus rule changes must be developed and released.
+This software must include all code necessary to enforce existing consensus rules, as well as the new code implementing the change specified in the DCP. The new code will lie dormant until the change has been voted upon and accepted by the proof-of-stake voters.
 
 ## Step 3: Network upgrade
 
 Proof-of-work miners and proof-of-stake voters must upgrade their software to the new version before voting on activation of the new rules can begin. Each has a different threshold to meet before the upgrade is considered complete:
 
-- The **proof-of-work** upgrade is considered complete once 95% of the latest 1,000 blocks are mined with the latest version
-- The **proof-of-stake** upgrade is considered complete once 75% of the votes in a complete [stake version interval](../../glossary.md#stake-version-interval-svi) are of the latest version
+- The **proof-of-work** upgrade is considered complete once 95% of the latest 1,000 blocks are mined with the latest version.
+- The **proof-of-stake** upgrade is considered complete once 75% of the votes in a complete [stake version interval](../../glossary.md#stake-version-interval-svi) are cast using the latest version.
 
 Once both of these thresholds have been met, the vote is scheduled to begin on the first block of the next [rule change interval](../../glossary.md#rule-change-interval-rci).
 
@@ -79,9 +77,9 @@ Below is a diagram of the entire cycle for a single agenda with consensus upgrad
 
 ## Voting Preparation
 
-To participate in voting, you first need a wallet. If you don't have one already, visit the [Beginner Guide](../../getting-started/beginner-guide.md), choose a wallet, and follow the installation and setup guides.
+To participate in voting, you'll first need a wallet. If you don't have one already, visit the [Beginner Guide](../../getting-started/beginner-guide.md), choose a wallet, and follow the installation and setup guides.
 
-Next, you'll need to learn the basics of [Proof-of-Stake](../../proof-of-stake/proof-of-stake.md). You'll need to be able to [buy tickets](../../proof-of-stake/how-to-stake.md) with your application of choice.
+Next, you'll need to [buy tickets](../../proof-of-stake/how-to-stake.md) to vote with using your application of choice. Be sure to familiarize yourself with the basics of [Proof-of-Stake](../../proof-of-stake/proof-of-stake.md) before purchasing tickets. 
 
 Finally, you'll need to learn how to set the `votechoice` for your tickets in order to cast a "Yes", "No", or "Abstain" vote for an agenda. By default, your tickets will cast "Abstain" votes. To set your vote choice, see our quick [How To Vote](how-to-vote.md).
 
@@ -89,9 +87,7 @@ Finally, you'll need to learn how to set the `votechoice` for your tickets in or
 
 ## Verifying Your Vote
 
-The easiest method to track your how your tickets actually voted is to use the [block explorer](https://explorer.dcrdata.org) to view each of your votes.
-
-The block explorer has been updated to display "YES", "NO", and "ABSTAIN" votes for each agenda with each ticket. The first and second tickets in the following example image voted "ABSTAIN" for both agendas while the third ticket voted "YES" for both agendas. The image will be updated to reflect the v5 agenda when voting is live.
+The easiest way to verify that your tickets actually voted as intended is to use the [block explorer](https://explorer.dcrdata.org). To do this, simply look up the vote transaction for the ticket of interest and the block explorer will display "YES", "NO", and "ABSTAIN" votes for each agenda. The first and second tickets in the following example image voted "ABSTAIN" for both agendas while the third ticket voted "YES" for both agendas. The image will be updated to reflect the v5 agenda when voting is live.
 
 ![Verifying votes on the block explorer](/img/verify_block-explorer-votes.png)
 
@@ -99,7 +95,7 @@ The block explorer has been updated to display "YES", "NO", and "ABSTAIN" votes 
 
 ## Tracking Vote Progress
 
-[voting.decred.org](https://voting.decred.org) is an official website set up to track the progress of upgrading and voting.
+An offial website, [voting.decred.org](https://voting.decred.org), has been set up to track the progress of upgrading and voting, 
 
 ---
 

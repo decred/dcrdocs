@@ -53,7 +53,7 @@ nav:
     - 'Example Proposals': 'governance/politeia/example-proposals.md'
     - 'Censorship': 'governance/politeia/politeia-censorship.md'
   - Consensus Rule Voting:
-    - 'Consensus Rules Voting': 'governance/consensus-rule-voting/consensus-rules-voting.md'
+    - 'Overview': 'governance/consensus-rule-voting/consensus-rules-voting.md'
     - 'How to Vote': 'governance/consensus-rule-voting/how-to-vote.md'
     - 'Consensus Vote Archive': 'governance/consensus-rule-voting/consensus-vote-archive.md'
   - 'Decred Constitution': 'governance/decred-constitution.md'

@@ -103,6 +103,18 @@ The total number of tickets you currently own is at the top of the page:
 - **Immature Tickets** - Mined tickets which cannot vote until a 256 block maturing period has passed (around 20 hours)
 - **Live Tickets** - Mature tickets eligible to be called to vote
 
+#### Backup redeem script
+
+Now is a good time to back up your VSPs multi-sig voting script (or "redeem script"). If your VSP goes down, you'll need this script to vote or revoke tickets. Click on the gear icon next to your VSP. Then click on the donut icon that appears.
+
+![Purchase Tickets page](/img/decrediton/redeem-script.png)
+
+This will bring up your VSP's configuration details. Copy the string of characters in the `Script` field and store them in a safe location. 
+
+![Purchase Tickets page](/img/decrediton/redeem-script-field.png)
+
+#### Purchasing tickets
+
 In order to purchase tickets you just need to select which account to purchase tickets from, how many tickets you want to buy, and then press the **Purchase** button.
 
 The "Automatic Ticket Buyer" panel allows you to enable the automated ticket buyer - Decrediton will continually buy tickets for you for as long as you keep it running. You can configure how the ticket buyer works using the options:

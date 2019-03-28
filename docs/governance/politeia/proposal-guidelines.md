@@ -2,10 +2,27 @@
 
 ---
 
-The page provides a basic [proposal template](#proposal-template) and
+The page provides proposal requirements, a basic [proposal template](#proposal-template) and
 [tips for creating a successful proposal](#tips-for-creating-a-successful-proposal).
 See the [Example Proposals](../../governance/politeia/example-proposals.md) page for
 example proposals that use this template.
+
+## Requirements 
+
+If your proposal seeks funds from the Treasury, in addition to answering all the questions 
+in the [proposal template](#proposal-template), your proposal should provide the following 
+information (if applicable). 
+
+* **Total budget:** If your proposal draws down on its budget when milestones are achieved, 
+include a draw schedule (how much DCR is paid for each milestone achieved).
+* **Duration of contract:** If your proposal provides an ongoing service, your proposal must
+provide an end date.
+* **Restrictions on deliverables:** Specify any license or other restrictions on 
+deliverables. For example, if delivering software, specify whether it will be open-source, 
+closed-source, and what (if any) license will be used. 
+* **Reporting commitment:** Specify how you plan to report on the progress of your project. If
+reporting on an ongoing basis, specify what is being reported, who is reponsible for the reporting, 
+and a reporting schedule.
 
 
 ## Proposal Template

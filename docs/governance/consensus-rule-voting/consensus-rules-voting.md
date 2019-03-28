@@ -50,7 +50,12 @@ Once both of these thresholds have been met, the vote is scheduled to begin on t
 Voting takes place across the duration of a full [rule change interval](../../glossary.md#rule-change-interval-rci).
 Each proof-of-stake ticket which is called to vote during this interval will include votebits which indicate whether the ticket holder wishes to accept or reject the new rules, or if they wish to abstain from voting.
 If ticket holders do not explicitly set their voting preference, the default setting is to abstain.
+This is to prevent any option having an unfair advantage in the cases where ticket holders are apathetic or unaware that a vote is taking place.
+
 Given that each block can contain a maximum of five votes, and the rule change interval on mainnet is 8,064 blocks, the maximum number of votes is 40,320.
+This number is deliberately very close to the target size of the ticket pool, 40,960.
+Allowing almost a full ticket pool to vote ensures a good sampling of votes, and that the vote result is truly representative of the stakeholders preferences.
+
 Every vote has a quorum requirement of 10%.
 This means that at least 10% of all votes cast must be non-abstain for the result to be considered valid.
 
@@ -79,7 +84,7 @@ Below is a diagram of the entire cycle for a single agenda with consensus upgrad
 
 To participate in voting, you'll first need a wallet. If you don't have one already, visit the [Beginner Guide](../../getting-started/beginner-guide.md), choose a wallet, and follow the installation and setup guides.
 
-Next, you'll need to [buy tickets](../../proof-of-stake/how-to-stake.md) to vote with using your application of choice. Be sure to familiarize yourself with the basics of [Proof-of-Stake](../../proof-of-stake/proof-of-stake.md) before purchasing tickets. 
+Next, you'll need to [buy tickets](../../proof-of-stake/how-to-stake.md) to vote with using your application of choice. Be sure to familiarize yourself with the basics of [Proof-of-Stake](../../proof-of-stake/proof-of-stake.md) before purchasing tickets.
 
 Finally, you'll need to learn how to set the `votechoice` for your tickets in order to cast a "Yes", "No", or "Abstain" vote for an agenda. By default, your tickets will cast "Abstain" votes. To set your vote choice, see our quick [How To Vote](how-to-vote.md).
 
@@ -95,7 +100,7 @@ The easiest way to verify that your tickets actually voted as intended is to use
 
 ## Tracking Vote Progress
 
-An offial website, [voting.decred.org](https://voting.decred.org), has been set up to track the progress of upgrading and voting, 
+An official website, [voting.decred.org](https://voting.decred.org), has been set up to track the progress of upgrading and voting.
 
 ---
 

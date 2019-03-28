@@ -296,7 +296,7 @@ When a ticket (that was missed or expired) is revoked, the DCR used to buy it be
 
 #### Rule Change Interval (RCI)
 
-An interval of 8,064 blocks (~4 weeks) in which ticket holders can vote on consensus rule changes. A Rule Change Interval (RCI) consists of four Stake Version Intervals (SVI), which are 2,016 blocks (~1 week). Once the conditions for a vote have been met during an SVI, voting is scheduled to begin on the first block of the next RCI. Because there are four SVIs per RCI, it can take up to 6,048 blocks [3 SVIs] for the next RCI to begin.
+An interval in which ticket holders can vote on consensus rule changes. On mainnet this is every 8,064 blocks (~4 weeks). Once the conditions for a vote have been met during a [Stake Version Interval (SVI)](#stake-version-interval-svi), voting is scheduled to begin on the first block of the next RCI. Votes are tallied on the last block of the RCI.
 
 #### Rule change proposal
 
@@ -328,7 +328,7 @@ A wallet mode in which only blocks related to addresses owned by the wallet are 
 
 #### Stake Version Interval (SVI)
 
-An interval of 2,016 blocks (~1 week) which is used to determine if a vote on consensus rules can begin. Before a vote on consensus rule changes can begin, 75% of tickets that vote during a Stake Version Interval (SVI) must be using software that contains the latent software change being proposed.
+An interval which is used to determine if a vote on consensus rule changes can begin. On mainnet this is every 2,016 blocks (~1 week). Before a vote on consensus rule changes can begin, 75% of tickets that vote during a Stake Version Interval (SVI) must be using software that contains the latent software change being proposed.
 
 #### Stakebase transaction
 

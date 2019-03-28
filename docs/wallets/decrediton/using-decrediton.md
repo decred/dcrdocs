@@ -105,7 +105,12 @@ The total number of tickets you currently own is at the top of the page:
 
 #### Backup redeem script
 
-Now is a good time to back up your VSPs multi-sig voting script (or "redeem script"). If your VSP goes down, you'll need this script to vote or revoke tickets. Click on the gear icon next to your VSP. Then click on the donut icon that appears.
+Now is a good time to back up your VSPs multi-sig voting script (or "redeem script"). 
+
+!!! warning "Warning"
+    If your VSP goes down, you'll need this script to vote or revoke tickets.
+
+Click on the gear icon next to your VSP. Then click on the donut icon that appears.
 
 ![Purchase Tickets page](/img/decrediton/redeem-script.png)
 

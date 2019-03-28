@@ -15,7 +15,7 @@ If you prefer video, try this [tutorial](https://www.youtube.com/watch?v=9L8P7hL
 
 - **Decrediton wallet:** You will need [Decrediton](../wallets/decrediton/decrediton-setup.md) version 1.2.1 or later to run the Split Ticket Buyer.
 - **5 DCR:** A minimum of 5 DCR (plus transaction fees) is required to participate in ticket splitting. This must be in your wallet, not on an exchange.
-- **Split Ticket Buyer:** This is the software that coordinates ticket splitting with other participants. To install it, download a binary release for your OS [here](https://github.com/matheusd/dcr-split-ticket-matcher/releases/latest) or [build from source](https://github.com/matheusd/dcr-split-ticket-matcher/blob/master/docs/building.md).
+- **Split Ticket Buyer:** This is the software that coordinates ticket splitting with other participants. To install it, download a binary release for your OS [here](https://github.com/matheusd/dcr-split-ticket-matcher/releases/) or [build from source](https://github.com/matheusd/dcr-split-ticket-matcher/blob/master/docs/building.md).
 
 ## How it works
 
@@ -39,7 +39,7 @@ These instructions will walk you through buying a ticket using the GUI version o
 1. Create an account with a Voting Service Provider (VSP) that supports ticket splitting. Below is a list of VSPs that support ticket splitting.
 
     - [https://stake.decredbrasil.com](https://stake.decredbrasil.com)
-    - [https://decredvoting.com](https://stake.decredbrasil.com)
+    - [https://decredvoting.com](https://decredvoting.com/)
 
 1. Login to your VSP and navigate to the `Settings` tab. Copy the API token.
 

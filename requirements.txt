@@ -1,4 +1,4 @@
 mkdocs==1.0.4
-mkdocs-material==4.0.2
+mkdocs-material==4.1.0
 mkdocs-markdownextradata-plugin==0.0.5
 fontawesome-markdown==0.2.6

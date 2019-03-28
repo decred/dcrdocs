@@ -39,7 +39,7 @@ These instructions will walk you through buying a ticket using the GUI version o
 1. Create an account with a Voting Service Provider (VSP) that supports ticket splitting. Below is a list of VSPs that support ticket splitting.
 
     - [https://stake.decredbrasil.com](https://stake.decredbrasil.com)
-    - [https://decredvoting.com](https://stake.decredbrasil.com)
+    - [https://decredvoting.com](https://decredvoting.com/)
 
 1. Login to your VSP and navigate to the `Settings` tab. Copy the API token.
 

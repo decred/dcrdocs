@@ -11,11 +11,15 @@ If you prefer video, try this [tutorial](https://www.youtube.com/watch?v=9L8P7hL
 !!! warning "Warning"
     Ticket Splitting is still in Beta. The code for splitting tickets has not been extensively vetted by automated tests and more experienced community members. See [risks in joining the beta](https://github.com/matheusd/dcr-split-ticket-matcher/blob/master/docs/beta.md#risks-in-joining-the-beta) for further explanation of the risks.
 
+---
+
 ## Requirements
 
 - **Decrediton wallet:** You will need [Decrediton](../wallets/decrediton/decrediton-setup.md) version 1.2.1 or later to run the Split Ticket Buyer.
 - **5 DCR:** A minimum of 5 DCR (plus transaction fees) is required to participate in ticket splitting. This must be in your wallet, not on an exchange.
 - **Split Ticket Buyer:** This is the software that coordinates ticket splitting with other participants. To install it, download a binary release for your OS [here](https://github.com/matheusd/dcr-split-ticket-matcher/releases/) or [build from source](https://github.com/matheusd/dcr-split-ticket-matcher/blob/master/docs/building.md).
+
+---
 
 ## How it works
 
@@ -23,7 +27,15 @@ DCR holders wishing to split a ticket join a "session" with other participants. 
 
 Coordination of sessions is currently done on Decred's Slack group in the #ticket_splitting channel, or in the Telegram group located [here](https://t.me/dcrtktsplit).
 
-To prevent ticket splitting from being used to game Decred's PoS voting mechanism, voting rights for a split ticket are assigned pseudorandomly to a single participant, based on the  percentage of their contribution. I.e., if someone purchases 60% of a split ticket, they have a 60% chance of being selected as the voter for that ticket. Further details about the voting algorithm can be found [here](https://github.com/matheusd/dcr-split-ticket-matcher/blob/master/docs/voter-selection-ago.md).
+### Voting
+
+#### Consensus Rule Voting
+
+Voting rights for consensus rule voting are assigned pseudorandomly to a single participant, based on the  percentage of their contribution. I.e., if someone purchases 60% of a split ticket, they have a 60% chance of being selected as the voter for that ticket. Further details about the voting algorithm can be found [here](https://github.com/matheusd/dcr-split-ticket-matcher/blob/master/docs/voter-selection-ago.md).
+
+#### Politeia Voting
+
+Rights for voting on Politeia proposals are granted to the biggest contributor of a split-ticket. The biggest contributor can vote on proposals in Decrediton or via the CLI using `politeiavoter`, exactly as if they had purchased a whole ticket.
 
 ### Further reading
 
@@ -31,6 +43,8 @@ For more on ticket splitting, including further explanation of the risks involve
 
 - [DCR Ticket Splitting — All you need to know!](https://medium.com/decred/dcr-ticket-splitting-all-you-need-to-know-b8edc6b65db3): a thorough overview of how ticket splitting works.
 - [Split Ticket Buyer documentation](https://github.com/matheusd/dcr-split-ticket-matcher/tree/master/docs): Technical documentation for the Split Ticket Matcher software used to facilitate ticket splitting.
+
+---
 
 ## Setting up Ticket Splitting
 
@@ -90,6 +104,8 @@ These instructions will walk you through buying a ticket using the GUI version o
 
 1. You can now close Split Ticket Buyer and Decrediton. Your VSP should email you a confirmation once your split ticket has been purchased, as well a notification email when your ticket was called to vote. Voting rewards are split according to the percentage of the split ticket each participant bought, and sent to the wallet used to purchase the split ticket.
 
+---
+
 ## Troubleshooting
 
 When loading your wallet and VSP configuration details into Split Ticket Buyer (Step #7), some users may see the following error:
@@ -97,6 +113,8 @@ When loading your wallet and VSP configuration details into Split Ticket Buyer (
 ![Split Ticket Buyer config error](../img/split_ticket_buyer_config_error.png)
 
 In this case, you may need to manually update a parameter value in the `splitticketbuyer.conf` file. See the [video tutorial](https://www.youtube.com/watch?v=9L8P7hL5v6w) for a step-by-step walkthrough of fixing this error.
+
+---
 
 ### General help
 

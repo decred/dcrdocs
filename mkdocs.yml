@@ -61,12 +61,12 @@ nav:
 - Governance:
   - 'Introduction to Decred governance': 'governance/introduction-to-decred-governance.md'
   - Politeia:
-    - 'Politeia': 'governance/politeia/politeia.md'
+    - 'Overview': 'governance/politeia/politeia.md'
     - 'Proposal Guidelines': 'governance/politeia/proposal-guidelines.md'
     - 'Example Proposals': 'governance/politeia/example-proposals.md'
     - 'Censorship': 'governance/politeia/politeia-censorship.md'
   - Consensus Rule Voting:
-    - 'Overview': 'governance/consensus-rule-voting/consensus-rules-voting.md'
+    - 'Overview': 'governance/consensus-rule-voting/overview.md'
     - 'How to Vote': 'governance/consensus-rule-voting/how-to-vote.md'
     - 'Verifying Votes': 'governance/consensus-rule-voting/verifying-votes.md'
     - 'Consensus Vote Archive': 'governance/consensus-rule-voting/consensus-vote-archive.md'

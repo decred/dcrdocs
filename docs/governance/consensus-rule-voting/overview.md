@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Consensus Rules Voting
+# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Consensus Rule Voting
 
 This page is intended to give a brief introduction to how consensus rule voting works and details the process for setting your tickets to cast your preferred vote for any agenda.
 

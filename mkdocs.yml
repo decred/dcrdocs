@@ -68,6 +68,7 @@ nav:
   - Consensus Rule Voting:
     - 'Overview': 'governance/consensus-rule-voting/consensus-rules-voting.md'
     - 'How to Vote': 'governance/consensus-rule-voting/how-to-vote.md'
+    - 'Verifying Votes': 'governance/consensus-rule-voting/verifying-votes.md'
     - 'Consensus Vote Archive': 'governance/consensus-rule-voting/consensus-vote-archive.md'
   - 'Decred Constitution': 'governance/decred-constitution.md'
 - Wallets:

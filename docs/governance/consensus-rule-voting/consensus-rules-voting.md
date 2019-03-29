@@ -85,14 +85,6 @@ Finally, you'll need to learn how to set the `votechoice` for your tickets in or
 
 ---
 
-## Verifying Your Vote
-
-The easiest way to verify that your tickets actually voted as intended is to use the [block explorer](https://explorer.dcrdata.org). To do this, simply look up the vote transaction for the ticket of interest and the block explorer will display "YES", "NO", and "ABSTAIN" votes for each agenda. The first and second tickets in the following example image voted "ABSTAIN" for both agendas while the third ticket voted "YES" for both agendas. The image will be updated to reflect the v5 agenda when voting is live.
-
-![Verifying votes on the block explorer](/img/verify_block-explorer-votes.png)
-
----
-
 ## Tracking Vote Progress
 
 An offial website, [voting.decred.org](https://voting.decred.org), has been set up to track the progress of upgrading and voting, 

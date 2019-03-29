@@ -61,7 +61,7 @@ nav:
 - Governance:
   - 'Introduction to Decred governance': 'governance/introduction-to-decred-governance.md'
   - Politeia:
-    - 'Overview': 'governance/politeia/politeia.md'
+    - 'Overview': 'governance/politeia/overview.md'
     - 'Proposal Guidelines': 'governance/politeia/proposal-guidelines.md'
     - 'Example Proposals': 'governance/politeia/example-proposals.md'
     - 'Censorship': 'governance/politeia/politeia-censorship.md'

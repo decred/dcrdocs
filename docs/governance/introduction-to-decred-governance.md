@@ -8,7 +8,7 @@ Decred's governance is based on the principle of ticket-holder voting. The ultim
 
 ---
 
-Holders of DCR can time-lock their funds in exchange for [tickets](../proof-of-stake/proof-of-stake.md). Tickets allow one to participate in Decred's governance in three ways, two on-chain and one off-chain.
+Holders of DCR can time-lock their funds in exchange for [tickets](../proof-of-stake/overview.md). Tickets allow one to participate in Decred's governance in three ways, two on-chain and one off-chain.
 
 In each block, five live tickets are selected pseudo-randomly and called to vote on-chain. Tickets are called to vote after an average of around 28 days, once a ticket has voted the DCR which was time-locked to buy it matures (un-locks) after 256 blocks, along with a portion of the block reward.
 

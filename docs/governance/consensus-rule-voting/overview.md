@@ -84,7 +84,7 @@ Below is a diagram of the entire cycle for a single agenda with consensus upgrad
 
 To participate in voting, you'll first need a wallet. If you don't have one already, visit the [Beginner Guide](../../getting-started/beginner-guide.md), choose a wallet, and follow the installation and setup guides.
 
-Next, you'll need to [buy tickets](../../proof-of-stake/how-to-stake.md) to vote with using your application of choice. Be sure to familiarize yourself with the basics of [Proof-of-Stake](../../proof-of-stake/proof-of-stake.md) before purchasing tickets.
+Next, you'll need to [buy tickets](../../proof-of-stake/how-to-stake.md) to vote with using your application of choice. Be sure to familiarize yourself with the basics of [Proof-of-Stake](../../proof-of-stake/overview.md) before purchasing tickets.
 
 Finally, you'll need to learn how to set the `votechoice` for your tickets in order to cast a "Yes", "No", or "Abstain" vote for an agenda. By default, your tickets will cast "Abstain" votes. To set your vote choice, see our quick [How To Vote](how-to-vote.md).
 

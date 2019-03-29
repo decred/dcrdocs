@@ -356,7 +356,7 @@ Decred holders can time-lock DCR in exchange for tickets. Tickets grant their ho
 
 #### Ticket pool
 
-The pool of live tickets that are available to be called to vote. The target size for the [ticket pool](proof-of-stake/proof-of-stake.md) is 40,960.
+The pool of live tickets that are available to be called to vote. The target size for the [ticket pool](proof-of-stake/overview.md) is 40,960.
 
 #### Ticket price
 

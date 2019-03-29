@@ -59,7 +59,7 @@ nav:
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
 - Governance:
-  - 'Introduction to Decred governance': 'governance/introduction-to-decred-governance.md'
+  - 'Introduction to Decred Governance': 'governance/introduction-to-decred-governance.md'
   - Politeia:
     - 'Overview': 'governance/politeia/overview.md'
     - 'Proposal Guidelines': 'governance/politeia/proposal-guidelines.md'
@@ -89,11 +89,11 @@ nav:
       - 'dcrctl RPC Commands': 'wallets/cli/dcrctl-rpc-commands.md'
     - 'SPV': 'wallets/spv.md'
 - Proof-of-Stake Voting:
-  - "Overview": 'proof-of-stake/proof-of-stake.md'
+  - "Overview": 'proof-of-stake/overview.md'
   - "How to Stake": 'proof-of-stake/how-to-stake.md' 
   - "Ticket Splitting": 'proof-of-stake/ticket-splitting.md' 
 - Proof-of-Work Mining:
-  - 'Overview': 'mining/proof-of-work.md'
+  - 'Overview': 'mining/overview.md'
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'
 - FAQ:
   - 'General': 'faq/general.md'

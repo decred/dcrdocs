@@ -28,13 +28,13 @@ There is a variety of ways to purchase Decred listed on the [Decred website](htt
 
 ## <img class="dcr-icon" src="/img/dcr-icons/PoWMine.svg" /> Mine for Decred (PoW)
 
-Proof-of-Work (PoW) is a measure of using computational power to create and verify the cryptographically secure blockchain.  This is similar to traditional Bitcoin mining. PoW mining is described in more detail [here](../mining/proof-of-work.md).
+Proof-of-Work (PoW) is a measure of using computational power to create and verify the cryptographically secure blockchain.  This is similar to traditional Bitcoin mining. PoW mining is described in more detail [here](../mining/overview.md).
 
 ---
 
 ## <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Participate in Proof-of-Stake Voting
 
-Proof-of-Stake (PoS) voting is performed by stakeholders who lock a certain amount of their DCR in return for voting rights and a monetary reward. PoS voting is described in more detail [here](../proof-of-stake/proof-of-stake.md).
+Proof-of-Stake (PoS) voting is performed by stakeholders who lock a certain amount of their DCR in return for voting rights and a monetary reward. PoS voting is described in more detail [here](../proof-of-stake/overview.md).
 
 ---
 

@@ -76,7 +76,7 @@ Rules, encoded in software, that allow a network of nodes to reach an agreement 
 
 #### Consensus rules voting
 
-Changes to Decred's consensus rules can only be made through an [on-chain voting process](governance/consensus-rule-voting/consensus-rules-voting.md) which lasts for around one month. The change is made only if at least 75% of votes are in favor.
+Changes to Decred's consensus rules can only be made through an [on-chain voting process](governance/consensus-rule-voting/overview.md) which lasts for around one month. The change is made only if at least 75% of votes are in favor.
 
 #### Constitution
 
@@ -356,7 +356,7 @@ Decred holders can time-lock DCR in exchange for tickets. Tickets grant their ho
 
 #### Ticket pool
 
-The pool of live tickets that are available to be called to vote. The target size for the [ticket pool](proof-of-stake/proof-of-stake.md) is 40,960.
+The pool of live tickets that are available to be called to vote. The target size for the [ticket pool](proof-of-stake/overview.md) is 40,960.
 
 #### Ticket price
 

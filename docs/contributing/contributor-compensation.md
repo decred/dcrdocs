@@ -33,7 +33,7 @@ Decred was launched with a Request For Proposal system in order to provide compe
 
 The RFPs were stored on GitHub and they can still be viewed. The first, [RFP-001](https://github.com/decred/RFPs/blob/master/rfp-0001/rfp-0001.md), was looking for developers to overhaul the Paymetheus application. RFP progress and payments were made public via the Decred forum[^1].
 
-The RFP process worked well for certain types of tasks, however a need arose to have contributors engaged and compensated over the longer term and on a more flexible basis[^2]. In January 2017 the RFP system was changed to a contractor model and Decred began to hire its first contractors. In October 2018 [Politeia](../governance/politeia/politeia.md) launched, this augments the contractor model by facilitating decision-making about the work which should be funded.
+The RFP process worked well for certain types of tasks, however a need arose to have contributors engaged and compensated over the longer term and on a more flexible basis[^2]. In January 2017 the RFP system was changed to a contractor model and Decred began to hire its first contractors. In October 2018 [Politeia](../governance/politeia/overview.md) launched, this augments the contractor model by facilitating decision-making about the work which should be funded.
 
 ---
 

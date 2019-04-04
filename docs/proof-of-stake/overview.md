@@ -61,7 +61,7 @@ A ticket on mainnet (testnet uses different parameters) will go through a few st
 
 1. The chance of a ticket voting is based on a Poisson distribution with a mean of 28 days.
 
-1. Given a target pool size of 40,960 tickets, any given ticket has a 99.5% chance of voting within ~142 days (about 4.7 months). If, after this time, a ticket has not voted, it expires. You receive a refund on the original **Ticket Price**.
+1. Given a target pool size of 40,960 tickets, any given ticket has a 99.5% chance of voting within 40,960 blocks (approximately 142 days, or 4.7 months). If, after this time, a ticket has not voted, it expires. You receive a refund on the original **Ticket Price**.
 
 1. A ticket may miss its call to vote if the voting wallet does not respond or two valid blocks are found within close proximity of each other. If this happens, you receive a refund on the original **Ticket Price**.
 

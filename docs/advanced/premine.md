@@ -2,7 +2,9 @@
 
 ---
 
-The premine consists of 8% of the total supply of 21 million coins (1.68 million coins). This was split equally between compensation for bring-up costs and an “airdrop”. Full details of the premine transaction can be viewed [on the block explorer](https://explorer.dcrdata.org/tx/5e29cdb355b3fc7e76c98a9983cd44324b3efdd7815c866e33f6c72292cb8be6).
+When the Decred blockchain launched on Feb 8, 2016, a premine was conducted in which 8% of the total supply of 21 million coins (1.68 million coins) were distributed. Half (4%) went to developers to compensate them for development of the project. The other half (4%) was airdropped evenly across a list of airdrop participants. Details of the development costs and airdrop are outlined below.
+
+Full details of the premine transaction can be viewed [on the block explorer](https://explorer.dcrdata.org/tx/5e29cdb355b3fc7e76c98a9983cd44324b3efdd7815c866e33f6c72292cb8be6).
 
 ---
 

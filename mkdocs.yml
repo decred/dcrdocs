@@ -59,7 +59,7 @@ nav:
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
 - Governance:
-  - 'Introduction to Decred Governance': 'governance/introduction-to-decred-governance.md'
+  - 'Overview': 'governance/overview.md'
   - Politeia:
     - 'Overview': 'governance/politeia/overview.md'
     - 'Proposal Guidelines': 'governance/politeia/proposal-guidelines.md'
@@ -135,7 +135,7 @@ nav:
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - Contributing:
-  - 'Overview': 'contributing/contributing-to-decred.md'
+  - 'Overview': 'contributing/overview.md'
   - 'Contributor Compensation': 'contributing/contributor-compensation.md'
   - Guidelines:
     - 'Using GitHub': 'contributing/using-github.md'

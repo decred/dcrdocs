@@ -18,7 +18,7 @@ The following guides go into depth on key aspects of the Decred experience:
 
 * [Obtaining DCR](obtaining-dcr.md)
 * [Using the Block Explorer](using-the-block-explorer.md)
-* [Governance](../governance/introduction-to-decred-governance.md)
+* [Governance](../governance/overview.md)
 * [Ticket buying guide](../proof-of-stake/overview.md)
 * [Politeia](../governance/politeia/overview.md)
 * [Voting on consensus rules changes](../governance/consensus-rule-voting/overview.md)

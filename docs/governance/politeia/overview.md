@@ -17,7 +17,7 @@ There are two broad types of proposal:
 
 ## How Politeia Works
 
-To vote, stakeholders must time-lock DCR to buy tickets. While tickets are live they can be used to cast a vote for or against each open Politeia proposal. For more information on tickets and their role in Decred's governance, see the [Introduction to Decred Governance](../../governance/introduction-to-decred-governance.md) page.
+To vote, stakeholders must time-lock DCR to buy tickets. While tickets are live they can be used to cast a vote for or against each open Politeia proposal. For more information on tickets and their role in Decred's governance, see the [Introduction to Decred Governance](../../governance/overview.md) page.
 
 There is a fee for submitting a proposal (0.1 DCR) to limit the potential for proposal spamming. There is also a fee for registering a Politeia account (0.1 DCR) to limit comment spam and up/down voting sock-puppetry. Fees may be altered if a) they aren't serving as a sufficient spam-deterrent, or b) the price of DCR changes considerably.
 

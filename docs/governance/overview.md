@@ -2,29 +2,29 @@
 
 ---
 
-*Decred* (/ˈdi:ˈkred/, /dɪˈkred/, dee-cred) is an open, progressive, and self-funding cryptocurrency with a system of community-based governance integrated into its blockchain. The project mission is to develop technology for the public benefit, with a primary focus on cryptocurrency technology.
+Decred’s governance is based on the principle of ticket-holder voting. To participate in governance, users must time-lock DCR to purchase [tickets](../proof-of-stake/overview.md). Tickets can then be used to vote on validating blocks, consensus rule changes, or proposals in Decred’s web-based proposal system, [Politeia](https://proposals.decred.org/). 
 
-Decred's governance is based on the principle of ticket-holder voting. The ultimate decision-making force for the project is the voting of active tickets.
+Validation of blocks and voting on consensus rule changes occurrs on-chain. Voting on higher-level issues, such as how to spend [Treasury funds](http://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx), or significant policy decisions (e.g. amend the [Decred constitution](decred-constitution.md)) occurs off-chain in Politeia, a web platform where the community at large can submit, discuss and vote on proposals.
+
+To compensate ticket holders for validating transactions and securing the network, 30% of the block reward (PoS reward) is sent to ticket holders for voting on blocks; the remaining block reward is split between PoW miners (60%) and the Treasury (10%) to fund ongoing development. The ticket price (the amount of DCR that must be time-locked) is adjusted dynamically every 144 blocks (~12 hrs), in an attempt to keep PoS returns stable over time. 
+
+
 
 ---
 
-Holders of DCR can time-lock their funds in exchange for [tickets](../proof-of-stake/overview.md). The ticket price (the amount that must be time-locked) is adjusted dynamically every 144 blocks (~12 hrs), in an attempt to keep PoS subsidy returns stable over time. Tickets allow one to participate in Decred's governance in three ways, two on-chain and one off-chain. 
+## On-chain voting
+
+On-chain voting serves two main purposes: validating blocks created by Proof-of-Work (PoW) miners and voting on proposed consensus rule changes. 
+
+### Block voting
+
+In each block, five tickets are selected pseudo-randomly and called to vote on-chain. It takes an average of 28 days for a ticket to be called to vote, though a ticket can be called anytime between 256 blocks after purchase (~20 hrs) to up to 40,960 blocks after purchase (~4 months). Tickets then vote to approve or reject the previous block of transactions created by a PoW miner. At least three out of five tickets called to vote must respond for the block to be considered valid. If a majority of voting tickets vote to approve the block, the block is accepted. If less than 50% of voting tickets approve the block (or there is a tie), all transactions from the previous block are removed and returned to the mempool; the PoW miner does not receive a reward. This power provides a check against malicious PoW miner behavior (e.g. mining empty blocks), as well as forming the basis of Decred’s [fork resistance](https://medium.com/decred/detailed-analysis-of-decred-fork-resistance-93022e0bcde7). After a ticket is called to vote, the DCR locked in that ticket is unlocked and returned to the purchaser’s wallet, along with the PoS reward if the ticket successfully voted. 
+
+If a vote to change the consensus rules is occurring, tickets can also [vote](consensus-rule-voting/overview.md) to approve or reject the proposed change. A proposed change must be approved by 75% of non-abstaining tickets to take effect.
 
 
-In each block, five live tickets are selected pseudo-randomly and called to vote on-chain. Tickets are called to vote after an average of around 28 days, once a ticket has voted the DCR which was time-locked to buy it matures (un-locks) after 256 blocks, along with a portion of the block reward.
+## Off-chain voting
 
-On-chain voting serves the following purposes:
+Decisions concerning the direction of the project generally, such as how to spend Treasury funds, or amending the Decred Constitution or other policies, are made via proposals on [Politeia](https://proposals.decred.org/).
 
-1. [Consensus rule voting](consensus-rule-voting/overview.md) to *approve or reject a proposed change to the consensus rules* of the protocol. A proposed change must be approved by 75% of non-abstaining tickets to take effect.
-
-1. Voting to *approve the work of PoW Miners*. In order for a PoW Miner to receive their share of the block reward, at least three of the five tickets called in the subsequent block must approve their block. This gives ticket-holders power over PoW Miners in the case of undesirable behavior by miners (e.g. mining empty blocks), although this power is yet to be exercised on mainnet.
-
-Decred's on-chain governance is supplemented by *Politeia proposal voting*, which doesn't happen directly on-chain but is woven into the Decred blockchain in some ways. 
-
-Politeia proposals concern the direction of the project, they may involve the spending of [Decred Treasury funds](http://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) (10% of the block reward goes into the Treasury to support development of the project) or amending the [Decred Constitution](decred-constitution.md) or other policies.
-
-Politeia is built around the concept of _transparent censorship_, using [dcrtime](https://github.com/decred/dcrtime). Users cannot be silently censored, they can prove that censorship has occurred.
-
-The [Politeia web platform](https://proposals.decred.org/) is a reddit-style space to facilitate submitting, viewing and discussing proposals.
-
-Politeia proposals are approved/rejected through "snap" voting. When proposals move to a vote, all live tickets at that moment are eligible to vote Yes/No on the proposal while voting remains open (one week period). Ticket-holders vote through their wallet.
+Anyone may submit a proposal, and all data on Politeia (proposals, comments, upvotes/downvotes) is periodically anchored into the Decred blockchain, using [dcrtime](https://github.com/decred/dcrtime). This enables users to cryptographically prove if censorship has occurred. In this way, Politeia is built around the idea of _transparent censorship_. Users cannot be silently censored. 

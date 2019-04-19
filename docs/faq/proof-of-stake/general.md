@@ -63,8 +63,4 @@ Decred was specifically designed to minimise impact from both large PoW mining p
 
 This target was selected prior to Decred's launch to ensure that tickets would have a 99.5% chance of voting before they expire.
 
----
 
-## :fa-book: Links
-
-[^1]: [Decrediton Ticket Purchasing Guide](../../wallets/decrediton/using-decrediton.md#tickets)

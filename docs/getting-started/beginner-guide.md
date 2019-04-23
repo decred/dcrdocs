@@ -38,11 +38,11 @@ The following guides go into depth on key aspects of the Decred experience:
 
 **News/Articles**
 
-* [Decred Journal](https://xaur.github.io/decred-news/) - comprehensive monthly newsletter maintained by some community members
+* [Decred Journal](https://xaur.github.io/decred-news/) - Comprehensive monthly newsletter maintained by some community members
 * [Decred.org blog](https://blog.decred.org)
-* [Decred Medium](https://medium.com/decred) (curated content from community members)
+* [Decred Medium](https://medium.com/decred) - Curated content from community members
 * [Press coverage/releases](https://decred.org/press/)
-* [The Decred Digest](https://thedecreddigest.com/) - community blog
+* [The Decred Digest](https://thedecreddigest.com/) - Community blog
 * [Decred-Canon](https://github.com/maxbron08/Decred-Canon/) - A collection of readings and resources on Decred.
 
 **Video**
@@ -67,11 +67,11 @@ Telegram and KakaoTalk are partially bridged.
 ### Social Media
 
 * [Reddit](https://www.reddit.com/r/decred)
-* [Twitter](https://twitter.com/decredproject) (account operated by small group of contributors)
+* [Twitter](https://twitter.com/decredproject) - Account operated by small group of contributors
 * [Forum](https://forum.decred.org/)
 * [Facebook](https://facebook.com/decredproject) 
 * [Weibo](https://weibo.com/DecredProject) 
-* [LinkedIn](https://www.linkedin.com/company/decredproject/) (account operated by small group of contributors)
+* [LinkedIn](https://www.linkedin.com/company/decredproject/) - Account operated by small group of contributors
 
 ### Code
 
@@ -82,8 +82,8 @@ Selected GitHub repositories:
 * [decrediton](https://github.com/decred/decrediton) - GUI wallet
 * [dcrd](https://github.com/decred/dcrd) and [dcrwallet](https://github.com/decred/dcrwallet) - Decred daemons
 * [politeia](https://github.com/decred/politeia) and [politeiagui](https://github.com/decred/politeiagui) - Politeia back and front end
-* [dcrdata](https://github.com/decred/dcrdata) - block explorer
-* [dcrdocs](https://github.com/decred/dcrdocs) - this [docs site](../index.md)
+* [dcrdata](https://github.com/decred/dcrdata) - Block explorer
+* [dcrdocs](https://github.com/decred/dcrdocs) - This [docs site](../index.md)
 * [dcrweb](https://github.com/decred/dcrweb) - [Decred.org](https://decred.org/)
 * [dcps](https://github.com/decred/dcps) - Decred Change Proposals
 

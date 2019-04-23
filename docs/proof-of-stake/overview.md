@@ -34,7 +34,7 @@ The **Ticket Price**/**Stake Difficulty** is the price you must pay for a ticket
 
 The **Ticket Pool** is the total number of tickets in the Decred network.
 
-The **Ticket Fee** (`ticketfee`) is the fee rate that must be included in the ticket purchase to incentivize Proof-of-Work (PoW) miners to include that ticket in a new block. **Ticket Fee** usually refers to the DCR/kB fee rate for a ticket purchase transaction. Therefore, with a higher transaction size, you will end up paying a higher absolute fee. For example, solo-staking ticket purchases consume around 300 Bytes, whereas staking with a VSP will consume around 540 Bytes. Therefore, with a a **Ticket Fee** of 0.3 DCR/kB, a solo-staked ticket would cost ~0.09 DCR, and a VSP-staked ticket would cost ~0.16 DCR. Buying a ticket will also require a regular transaction fee (`txfee`). This fee is at default set to a low amount (0.0001 DCR/kB) and should not be changed.
+The **Ticket Fee** (`ticketfee`) is the fee that must be included in the ticket purchase to incentivize Proof-of-Work (PoW) miners to include that ticket in a new block. **Ticket Fee** usually refers to the DCR/kB fee rate for a ticket purchase transaction. The **Ticket Fee** defaults to the minimum (0.0001 DCR/kB), which is typically sufficient. 
 
 **When a ticket is called to vote, the wallet that has voting rights for that ticket must be online.** If the wallet is not online to cast its vote, the ticket will be marked as `missed` and you will not receive a reward for that ticket. In practice, **Solo Voters** often run voting wallets on a number of servers on different continents, to minimise the chance of their tickets missing a call to vote.
 

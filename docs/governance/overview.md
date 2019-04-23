@@ -27,4 +27,4 @@ If a vote to change the consensus rules is occurring, tickets can also [vote](co
 
 Decisions concerning the direction of the project, such as how to spend Treasury funds, or amending the Decred Constitution or other policies, are made via proposals on [Politeia](https://proposals.decred.org/).
 
-Anyone may submit a proposal, and all data on Politeia (proposals, comments, upvotes/downvotes) is periodically anchored into the Decred blockchain, using [dcrtime](https://github.com/decred/dcrtime). This enables users to [cryptographically prove](../politeia/politeia-censorship/) if censorship has occurred. In this way, Politeia is built around the idea of _transparent censorship_. Users cannot be silently censored. 
+Anyone may submit a proposal, and all data on Politeia (proposals, comments, upvotes/downvotes) is periodically anchored into the Decred blockchain, using [dcrtime](https://github.com/decred/dcrtime). This enables users to [cryptographically prove](politeia/politeia-censorship.md) if censorship has occurred. In this way, Politeia is built around the idea of _transparent censorship_. Users cannot be silently censored. 

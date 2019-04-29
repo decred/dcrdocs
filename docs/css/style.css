@@ -1,7 +1,8 @@
 /* Override header and footer with decred dark blue*/
 .md-header,
 .md-footer-nav,
-.md-footer-meta {
+.md-footer-meta,
+.md-nav__source {
     background-color: #091440
 }
 

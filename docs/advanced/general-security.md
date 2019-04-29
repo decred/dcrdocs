@@ -35,5 +35,5 @@ Once you have a secure system set up, here are some operational security measure
 
 - **Only run dcrwallet on ticketbuying machine:** dcrd, the consensus daemon, necessarily communicates with a variety of peers on the public internet. Run dcrwallet on a locked-down machine and have it connect to a remote dcrd to minimize traffic going to or from your secure machine.
 
-- **Audit your traffic:** Using Commercial-off-the-shelf (COTS) gear, you can audit network traffic to and from your computer down to [Layer 2](https://www.juniper.net/documentation/en_US/junos/topics/concept/l2-qfx-series-overview.html) (the layer where data packets are encoded and decoded into bits). Keep in mind that you cannot audit most Transport Layer Security (TLS) traffic offline because of how ephemeral keys are used.
+- **Audit your traffic:** Using Commercial-off-the-shelf (COTS) gear, you can audit network traffic to and from your computer down to [Layer 2](https://en.wikipedia.org/wiki/Layer_2) (the layer where data packets are encoded and decoded into bits). Keep in mind that you cannot audit most Transport Layer Security (TLS) traffic offline because of how ephemeral keys are used.
 

@@ -23,7 +23,7 @@ provide an end date.
 deliverables. For example, if delivering software, specify whether it will be open-source,
 closed-source, and what (if any) license will be used.
 * **Reporting commitment:** Specify how you plan to report on the progress of your project. If
-reporting on an ongoing basis, specify what is being reported, who is reponsible for the reporting,
+reporting on an ongoing basis, specify what is being reported, who is responsible for the reporting,
 and a reporting schedule.
 
 ---

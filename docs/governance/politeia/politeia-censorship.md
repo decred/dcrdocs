@@ -11,7 +11,7 @@ Censorship is a necessary tool for administrators for several reasons. For one, 
 
 ## Transparent censorship 
 
-Politeia is based on the concept of *__transparent censorship__*. A limitation observed with other platforms such as Reddit, is that moderators can censor silently. This can lead to situations where content is censored because it goes against the preferred narrative of the moderators. In these cases, it is often the users' word against that of the moderators'. In Politeia, admins can censor content, but can only do so transparently. If a user's submission is censored, they can cryptographically prove that the censorship occured. If admins censor a proposal, they must also provide a reason, which is viewable to the user. 
+Politeia is based on the concept of *__transparent censorship__*. A limitation observed with other platforms such as Reddit, is that moderators can censor silently. This can lead to situations where content is censored because it goes against the preferred narrative of the moderators. In these cases, it is often the users' word against that of the moderators'. In Politeia, admins can censor content, but can only do so transparently. If a user's submission is censored, they can cryptographically prove that the censorship occurred. If admins censor a proposal, they must also provide a reason, which is viewable to the user.
 
 
 ## Proving censorship

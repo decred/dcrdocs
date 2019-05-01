@@ -15,7 +15,7 @@ Examples of consensus rules include:
 - Blocks must meet the current [difficulty](../../glossary.md#difficulty) requirement.
 
 It is essential that every node on the network uses exactly the same set of consensus rules.
-Nodes attempting to use consensus rules that differ from the majority of the network will not be able to properly validate blocks, and will eventually end up operating on their own seperate network. 
+Nodes attempting to use consensus rules that differ from the majority of the network will not be able to properly validate blocks, and will eventually end up operating on their own separate network.
 
 Decred has a built-in upgrade mechanism which allows consensus rules to be changed across the entire network in a coordinated fashion.
 This enables the rules to be changed predictably and without fracturing the network, and allows proof-of-stake voters to exercise sovereignty over whether or not to accept the proposed changes.

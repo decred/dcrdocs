@@ -24,6 +24,10 @@ To participate in PoS voting, stakeholders lock some DCR in return for a ticket.
 
 Tickets are selected pseudorandomly according to a Poisson distribution. The average time it takes for a ticket to vote is 28 days, but possibly requiring up to 142 days, with a 0.5% chance of expiring before being chosen to vote (this expiration returns the original **Ticket Price** without a reward). Every block mined must include a minimum of 3 votes (miners are penalized by a reward deduction if fewer than 5 votes are included).
 
+Below is a chart showing the probability of a ticket voting by day.
+
+![Ticket Voting Chart](../img/ticket_voting_chart.svg)
+
 Every block mined can also include up to 20 fresh ticket purchases. A new ticket requires 256 blocks to mature before it is entered into the **Ticket Pool** and can be called to vote.
 
 There are a few important variables that you should familiarize yourself with while staking.

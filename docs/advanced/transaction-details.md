@@ -42,6 +42,7 @@ Field            | Description
 Value            | The amount of coins that the output being spent transfers.
 Block height     | The height of the block containing the transaction in which the output being spent is located.
 Block index      | The index of the transaction in which the output being spent is located.
+Signature script length | The length of the signature script as a variable-length integer 
 Signature script | The script that satisfies the requirements of the script in the output being spent.
 
 
@@ -95,33 +96,33 @@ Field        | Value        | Description
 Version      | `01`  | Version: 1
 Serialization format  | `00`  | Serialization: Full serialization
 Number inputs |  `000002`     | Inputs: 2                                              
-1st input | `4ff2,8b53,4361,e383,b5b1,49df,4572,feb1,fbc6,59cb,0706,7c3c,b6c6,8445,2ae7,9f54`                 | Transaction hash
-      | `0100,0000`                                              | Output index: 1
+1st input | `4ff28b534361e383b5b149df4572feb1fbc659cb07067c3cb6c684452ae79f54`                 | Transaction hash
+      | `01000000`                                              | Output index: 1
     | `00`       | Tree: 0
-       | `ffff,ffff`                     | Sequence number: 4294967295
-2nd input | `c619,e6ad,e3f4,69b8,bb60,b8ae,9b05,99ee,eca0,5cd2,db25,1cad,ea44,3344,eafd,ac57`                 | Transaction hash
-      | `0100,0000`                                              | Output index: 1
+       | `ffffffff`                     | Sequence number: 4294967295
+2nd input | `c619e6ade3f469b8bb60b8ae9b0599eeeca05cd2db251cadea443344eafdac57`                 | Transaction hash
+      | `01000000`                                              | Output index: 1
     | `00`       | Tree: 0
-       | `ffff,ffff`                     | Sequence number: 4294967295
-1st output | `91c2,e26d,0200,0000`                 | Output amount: 104.33
+       | `ffffffff`                     | Sequence number: 4294967295
+1st output | `91c2e26d02000000`                 | Output amount: 104.33
       | `0000`                                              | Version: 0
     | `19`       | Public key script (length): 25
        | `76a914f2ccddc70f8b8bcea24a362bf404841d53cbebc088ac`                     | Public key script
-2nd output | `d676,dd68,0100,0000`                 | Output amount: 60.54
+2nd output | `d676dd6801000000`                 | Output amount: 60.54
       | `0000`                                              | Version: 0
     | `19`       | Public key script (length): 25
        | `76a9141a1f5c7e9f7696989dced5cb9b61464f95790b7288ac`                     | Public key script
 Lock time      | `00000000`  | Lock time: 0 
 Expiry     | `00000000`  | Expiry: 0
 Number witnesses     | `02`  | Witnesses: 2
-1st witness    | `ca68,8654,0200,0000`  | Input amount: 100.08
-    | `a29c,0400`  | Block height: 302242
-        | `0400,0000`  | Block index: 4
+1st witness    | `ca68865402000000`  | Input amount: 100.08
+    | `a29c0400`  | Block height: 302242
+        | `04000000`  | Block index: 4
         | `6a`  | Signature script (length): 106
         | `4730440220139466bd10b1f071f9b4ac16ed434d63d090613fd06470f7bca9bba2b6ea6a0a02203cad1297ab9384466b3f304cd61e7e4ffa9abc1ae9fe1630207fae6f200da1680121024d540859b805c5780f2f0da350df8757c1defb72e3381b252d20874478a5549c`  | Signature script 
-2nd witness    | `4974,3a82,0100,0000`  | Input amount: 64.79
-    | `9e9c,0400`  | Block height: 302238
-        | `0100,0000`  | Block index: 1
+2nd witness    | `49743a8201000000`  | Input amount: 64.79
+    | `9e9c0400`  | Block height: 302238
+        | `01000000`  | Block index: 1
         | `6b`  | Signature script (length): 107
         | `483045022100da5b0fde58c4c57a88d96f83b02eddcb67b1b68ce95cc562c895f2e4e57bb44302201a8744aed654d2979bdd797187f6bf63ad1898c5d5c585309eeca558742858b201210307e3d98b004b15561c0f5aa158c90f93de33756d3bfd1f8a1058a4d90ffc7ec7`  | Signature script 
 

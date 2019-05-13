@@ -23,7 +23,7 @@ be addressed.
 In the *Why* section, answer why the proposal is needed and why it is
 a good idea.
 
-> Currently there is no prescribed way to remotely determine if politeiawww is functioning correctly. We propose to add a single RPC that doubles as the heartbeat and a status monitor.
+> Currently there is no prescribed way to remotely determine if politeiawww is functioning correctly. This is problematic because if there is a problem with politeiawww, the Politeia website could experience outages and Decred admins would not be aware of it until users were negatively impacted. We propose to add a single RPC that doubles as the heartbeat and a status monitor.
 > The idea is that monitoring software can periodically issue the RPC and determine if an alert needs to be sent out to the admins.
 
 ### How
@@ -32,12 +32,14 @@ In the *How* section, describe the steps you will perform to accomplish your
 goals.
 
 > 1. Design and document RPC.
-> 2. Add a priviledged RPC called Status that replies with StatusReply.
+> 2. Add a privileged RPC called Status that replies with StatusReply.
 >     * The Status RPC is an empty structure
 >     * The StatusReply structure returns a tri-state status: OK, Warning, Critical. In addition to the status the RPC returns a server message that can be forwarded to the administrators in case of Warning or Failure.
 >     * The StatusReply returns interesting statistics such as: number of proposals in memory, number of comments in memory etc.
 > 3. Add refclient unit tests that validate all 3 conditions.
 > 4. Add RPC to politeiawwwcli so that the status calls can be scripted.
+
+The software implementing the RPC will be published in the Politeia GitHub [repo](https://github.com/decred/politeia) under the [ISC license](https://github.com/decred/politeia/blob/master/LICENSE) that applies to all code in this repo. 
 
 ### Who
 
@@ -53,9 +55,9 @@ complete the work, and who will draw down on the proposal's budget.
 In the *When* section, describe the project's milestones, expected 
 completion dates, and the draw schedule (how much DCR is paid for each milestone delivered).
 
-> We proposing doing the design and documentation first and finish the work with the implementation of the code.
-> We allow for some time between the deliverables in order to leave space for a vote by the stakeholders to see if the first step makes sense.
-> Note that this is a small example and therefore the timelines are a bit longish. The milestone votes should be less than a week.
+> We are proposing doing the design and documentation first, then finish the work with the implementation of the code.
+> We allow for some time between the deliverables in order for the community to provide feedback on the initial design and 
+> documentation.
 >
 > 1. 2 hours to design and add documentation on how to use the call with some
 > examples.
@@ -81,6 +83,8 @@ completion dates, and the draw schedule (how much DCR is paid for each milestone
 > 1. Implement politeiawwwcli
 >
 > 15 hours, to be completed on August 29 2018
+>
+> An invoice for all work will be submitted upon completion of all deliverables in an estimated two weeks time. 
 
 
 ## Marketing Proposal

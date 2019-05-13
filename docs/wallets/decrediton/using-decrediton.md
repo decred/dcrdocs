@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Using Decrediton
 
-Last updated for Decrediton v{{ decreditonversion.windows }}.
+Last updated for Decrediton v{{ decreditonversion }}.
 
 This guide assumes you have already set up a Decrediton wallet using [the Decrediton Setup guide](decrediton-setup.md).
 
@@ -62,7 +62,7 @@ This tab shows allows you to export your transaction history in a .csv format. Y
 
 ## Governance
 
-The governance tab enables users holding tickets to have their say on Decred's governance. Here you can browse and vote upon [Politeia proposals](../../governance/politeia/politeia.md), and you can set your voting preferences for on chain [consensus rule votes](../../governance/consensus-rule-voting/consensus-rules-voting.md). Your privacy settings must allow Decrediton to contact Politeia to download proposal informaton.
+The governance tab enables users holding tickets to have their say on Decred's governance. Here you can browse and vote upon [Politeia proposals](../../governance/politeia/overview.md), and you can set your voting preferences for on chain [consensus rule votes](../../governance/consensus-rule-voting/overview.md). Your privacy settings must allow Decrediton to contact Politeia to download proposal information.
 
 ![Governance page](/img/decrediton/governance.png)
 
@@ -102,6 +102,23 @@ The total number of tickets you currently own is at the top of the page:
 - **Mempool Tickets** - Tickets waiting to be mined by PoW miners (only 20 new tickets are mined into each block)
 - **Immature Tickets** - Mined tickets which cannot vote until a 256 block maturing period has passed (around 20 hours)
 - **Live Tickets** - Mature tickets eligible to be called to vote
+
+#### Backup redeem script
+
+Now is a good time to back up your VSPs multi-sig voting script (or "redeem script"). 
+
+!!! warning "Warning"
+    If your VSP goes down, you'll need this script to vote or revoke tickets.
+
+Click on the gear icon next to your VSP. Then click on the donut icon that appears.
+
+![Purchase Tickets page](/img/decrediton/redeem-script.png)
+
+This will bring up your VSP's configuration details. Copy the string of characters in the `Script` field and store them in a safe location. 
+
+![Purchase Tickets page](/img/decrediton/redeem-script-field.png)
+
+#### Purchasing tickets
 
 In order to purchase tickets you just need to select which account to purchase tickets from, how many tickets you want to buy, and then press the **Purchase** button.
 

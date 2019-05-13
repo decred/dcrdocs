@@ -1,9 +1,9 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Options2.svg" /> `dcrd` and `dcrwallet` CLI Arguments
 
-Last updated for CLI release v{{ cliversion.mac }}.
+Last updated for CLI release v{{ cliversion }}.
 
 ---
-Both the `dcrd` and `dcrwallet` daemons should work with default configuration for most users, however there is a wide variety of command line aguments to change the way they behave if required. For example, the following command can be used to change the log directory `dcrd` will write to.
+Both the `dcrd` and `dcrwallet` daemons should work with default configuration for most users, however there is a wide variety of command line arguments to change the way they behave if required. For example, the following command can be used to change the log directory `dcrd` will write to.
 
 ```bash
 dcrd --logdir=/my/custom/log/directory
@@ -74,7 +74,7 @@ dcrd --logdir=/my/custom/log/directory
             `--maxorphantx=`          | Max number of orphan transactions to keep in memory (default: 1000)
             `--generate`              | Generate (mine) coins using the CPU
             `--miningaddr=`           | Add the specified payment address to the list of addresses to use for generated blocks -- At least one address is required if the generate option is set
-            `--blockminsize=`         | Mininum block size in bytes to be used when creating a block
+            `--blockminsize=`         | Minimum block size in bytes to be used when creating a block
             `--blockmaxsize=`         | Maximum block size in bytes to be used when creating a block (default: 375000)
             `--blockprioritysize=`    | Size in bytes for high-priority/low-fee transactions when creating a block (default: 20000)
             `--getworkkey=`           | **DEPRECATED** -- Use the `--miningaddr` option instead
@@ -86,13 +86,13 @@ dcrd --logdir=/my/custom/log/directory
             `--acceptnonstd`          | Accept and relay non-standard transactions to the network regardless of the default settings for the active network.
             `--rejectnonstd`          | Reject non-standard transactions regardless of the default settings for the active network.
             `--txindex`               | Maintain a full hash-based transaction index which makes all transactions available via the getrawtransaction RPC
-            `--droptxindex`           | Deletes the hash-based transaction index from the database on start up and then exits.
+            `--droptxindex`           | Deletes the hash-based transaction index from the database on startup and then exits.
             `--addrindex`             | Maintain a full address-based transaction index which makes the searchrawtransactions RPC available
-            `--dropaddrindex`         | Deletes the address-based transaction index from the database on start up and then exits.
+            `--dropaddrindex`         | Deletes the address-based transaction index from the database on startup and then exits.
             `--noexistsaddrindex`     | Disable the exists address index, which tracks whether or not an address has even been used.
-            `--dropexistsaddrindex`   | Deletes the exists address index from the database on start up and then exits.
+            `--dropexistsaddrindex`   | Deletes the exists address index from the database on startup and then exits.
             `--nocfilters`            | Disable compact filtering (CF) support
-            `--dropcfindex`           | Deletes the index used for compact filtering (CF) support from the database on start up and then exits.
+            `--dropcfindex`           | Deletes the index used for compact filtering (CF) support from the database on startup and then exits.
             `--piperx=`               | File descriptor of read end pipe to enable parent -> child process communication
             `--pipetx=`               | File descriptor of write end pipe to enable parent <- child process communication
             `--lifetimeevents`        | Send lifetime notifications over the TX pipe

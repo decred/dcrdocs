@@ -4,49 +4,28 @@
 This section provides an archive for previous votes along with their outcomes.
 
 ---
+## V6
 
-## V4
+### Update Sequence Lock Rules
 
-### Change PoS Staking Algorithm
-
-**Agenda ID:**  sdiffalgorithm
-
-Change stake difficulty algorithm as defined in DCP0001
-
-Specifies a proposed replacement algorithm for determining the stake difficulty (commonly called the ticket price). This proposal resolves all issues with a new algorithm that adheres to the referenced ideals.
-
-#### Voting Results
-
-| Choice | Result |
-|--------|--------|
-|No      |  2.07% |
-|Yes     | 97.92% |
-
-**Locked In:** 141184
-
-**Activated:** 149248
-
-**Hard Forked:** 149328
+Agenda ID: [fixlnseqlocks](https://explorer.dcrdata.org/agenda/fixlnseqlocks)
 
 
-### Start Lightning Network Support
+**Modify sequence lock handling as defined in [DCP0004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki)**
 
-**Agenda ID:**  lnsupport
+In order to fully support the Lightning Network, the current sequence lock consensus rules need to be modified.
 
-Request developers begin work on Lightning Network (LN) integration
-
-The Lightning Network is the most directly useful application of smart contracts to date since it allows for off-chain transactions that optionally settle on-chain. This infrastructure has clear benefits for both scaling and privacy. Decred is optimally positioned for this integration.
+|**Voting Start:**|**Voting End:**|**Activated:**|
+|-----------------|---------------|--------------|
+[326656](https://explorer.dcrdata.org/block/326656)|[334720](https://explorer.dcrdata.org/block/334720)|[342784](https://explorer.dcrdata.org/block/342784)|
 
 #### Voting Results
 
-| Choice | Result |
-|--------|--------|
-|No      |  1.38% |
-|Yes     | 98.61% |
-
-**Locked In:** 141184
-
-**Activated:** 149248
+|Choice|Percentage|
+|------|----------|
+|Abstain|45.52%|
+|No|0.00%|
+|Yes|54.46%|
 
 ---
 
@@ -54,21 +33,69 @@ The Lightning Network is the most directly useful application of smart contracts
 
 ### Activation of new opcodes for Lightning Network Support
 
-**Agenda ID:** lnfeatures
+Agenda ID: [lnfeatures](https://explorer.dcrdata.org/agenda/lnfeatures)
 
-Enable features defined in [DCP0002](https://github.com/decred/dcps/blob/master/dcp-0002/dcp-0002.mediawiki) and [DCP0003](https://github.com/decred/dcps/blob/master/dcp-0003/dcp-0003.mediawiki) necessary to support Lightning Network (LN)
+**Enable features defined in [DCP0002](https://github.com/decred/dcps/blob/master/dcp-0002/dcp-0002.mediawiki) and [DCP0003](https://github.com/decred/dcps/blob/master/dcp-0003/dcp-0003.mediawiki) necessary to support Lightning Network (LN)**
 
 The Lightning Network is the most directly useful application of smart contracts to date since it allows for off-chain transactions that optionally settle on-chain. This infrastructure has clear benefits for both scaling and privacy. Decred is optimally positioned for this integration.
 
 Block 205189 is the first block which contains the new opcode which was voted in via the lnfeatures vote and thus all old nodes must upgrade.
 
+|**Voting Start:**|**Voting End:**|**Activated:**|
+|-----------------|---------------|--------------|
+[173440](https://explorer.dcrdata.org/block/133120)|[181504](https://explorer.dcrdata.org/block/181504)|[189568](https://explorer.dcrdata.org/block/189568)|
+
 #### Voting Results
 
-| Choice | Result |
-|--------|--------|
-|No      |  0.49% |
-|Yes     | 99.51% |
+|Choice|Percentage|
+|------|----------|
+|Abstain|37.70%|
+|No|0.30%|
+|Yes|61.98%|
 
-**Locked In:** 181504
 
-**Activated:** 189568
+---
+
+## V4
+
+### Change PoS Staking Algorithm
+
+Agenda ID:  [sdiffalgorithm](https://explorer.dcrdata.org/agenda/sdiffalgorithm)
+
+**Change stake difficulty algorithm as defined in DCP0001**
+
+Specifies a proposed replacement algorithm for determining the stake difficulty (commonly called the ticket price). This proposal resolves all issues with a new algorithm that adheres to the referenced ideals.
+
+|**Voting Start:**|**Voting End:**|**Activated:**|
+|-----------------|---------------|--------------|
+[133120](https://explorer.dcrdata.org/block/133120)|[141184](https://explorer.dcrdata.org/block/149248)|[149248](https://explorer.dcrdata.org/block/149248)|
+
+#### Voting Results
+
+|Choice|Percentage|
+|------|----------|
+|Abstain|12.23%|
+|No|1.81%|
+|Yes|85.94%|
+
+### Start Lightning Network Support
+
+Agenda ID:  [lnsupport](https://explorer.dcrdata.org/agenda/lnsupport)
+
+**Request developers begin work on Lightning Network (LN) integration**
+
+The Lightning Network is the most directly useful application of smart contracts to date since it allows for off-chain transactions that optionally settle on-chain. This infrastructure has clear benefits for both scaling and privacy. Decred is optimally positioned for this integration.
+
+|**Voting Start:**|**Voting End:**|**Activated:**|
+|-----------------|---------------|--------------|
+|[133120](https://explorer.dcrdata.org/block/133120)|[141184](https://explorer.dcrdata.org/block/141184)|[149248](https://explorer.dcrdata.org/block/149248)
+
+#### Voting Results
+
+|Choice|Percentage|
+|------|----------|
+|Abstain|22.58%|
+|No|1.07%|
+|Yes|76.34%|
+
+---

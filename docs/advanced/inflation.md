@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Rocket.svg" /> Inflation 
+# <img class="dcr-icon" src="/img/dcr-icons/Rocket.svg" /> Inflation
 
 ---
 
@@ -7,6 +7,8 @@ New blocks are discovered by the proof-of-work miners roughly every 5 minutes, a
 * 60% goes to the PoW miner who found the block
 * 30% goes to the PoS voters on that block (6% to each of the 5 voters)
 * 10% goes towards the Decred Treasury
+
+This PoS reward is designed to encourage people to stake their coins and provide the valuable service of approving blocks on the network, but not allow PoS voters to gain share over time simply by staking. PoW miners receive a greater share of the reward than PoS voters to compensate them for securing the network and to encourage a broader distribution of the monetary supply. The 10% block reward to the Decred Treasury helps to ensure the future of Decred by creating a sustainable source of funding for development.
 
 The block reward started at 31.19582664 and it adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/101[^1].
 
@@ -18,7 +20,7 @@ The following chart shows an estimate of the coin supply growth over time.
 
 ![Decred supply chart](/img/decred_supply.png)
 
-The table below shows the estimated block reward and estimated total supply of Decred up to block 2,457,600 in 2039. Note that the total supply of DCR at block 1 is 1,680,000 due to the [premine](../faq/general.md#3-how-was-the-decred-premine-distributed). There was no block reward for proof-of-work miners in block 1, which allowed miners to voluntarily choose whether or not to accept the terms of the airdrop independent of a potential reward which could skew the incentive. PoS voting started at block 4,096[^3] therefore PoS rewards were not generated before that height.
+The table below shows the estimated block reward and estimated total supply of Decred up to block 2,457,600 in 2039. Note that the total supply of DCR at block 1 is 1,680,000 due to the [premine](premine.md). There was no block reward for proof-of-work miners in block 1, which allowed miners to voluntarily choose whether or not to accept the terms of the airdrop independent of a potential reward which could skew the incentive. PoS voting started at block 4,096[^3] therefore PoS rewards were not generated before that height.
 
 Block height | Estimated date     | Block reward (DCR) | PoW (DCR)    | PoS vote (DCR) | Decred Treasury (DCR) | Total DCR supply
 ------------ | ------------------ | ------------------ | ------------ | -------------- | ----------------- | ----------------
@@ -428,7 +430,7 @@ Block height | Estimated date     | Block reward (DCR) | PoW (DCR)    | PoS vote
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources
 
 [^1]: [Blockchain parameters](blockchain-parameters.md#blockchain-parameters_1)
 [^2]: GitHub, [decred/dcrd](https://github.com/decred/dcrd/blob/5076a00512a521cea3c51b443b50970804dbe712/blockchain/subsidy_test.go#L52-L54)

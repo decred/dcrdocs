@@ -45,7 +45,7 @@ c:\[...]> decrediton.exe --debug
 
 ## Cannot see all my coins after restoring from seed
 
-1. Check if the blockchain is synchronized to the latest block. Look at the block height at the lower left corner of the screen and the lastest block from [explorer.dcrdata.org](https://explorer.dcrdata.org)
+1. Check if the blockchain is synchronized to the latest block. Look at the block height at the lower left corner of the screen and the latest block from [explorer.dcrdata.org](https://explorer.dcrdata.org)
 
     ![Block Height](/img/decrediton/troubleshooting/blockheight.png)
 

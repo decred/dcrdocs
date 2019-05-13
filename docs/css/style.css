@@ -1,7 +1,8 @@
 /* Override header and footer with decred dark blue*/
 .md-header,
 .md-footer-nav,
-.md-footer-meta {
+.md-footer-meta,
+.md-nav__source {
     background-color: #091440
 }
 
@@ -45,11 +46,6 @@ p img.dcr-icon {
     .md-nav__source {
     	background-color: #122c5c;
     }
-}
-
-/* Increase font-size for info/warning/danger boxes. 1.6rem matches the rest of the text. */
-.md-typeset .admonition {
-    font-size: 1.6rem;
 }
 
 /* Disable min-width for headers in tables with at least 7 columns */

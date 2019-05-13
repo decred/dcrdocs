@@ -1,8 +1,8 @@
 # Solo Proof-of-Stake (PoS) Voting
 
-Last updated for CLI release v1.3.0.
+Last updated for CLI release v{{ cliversion }}.
 
---- 
+---
 
 ## Overview
 
@@ -38,47 +38,47 @@ Once your machine is set up you will need to install the Decred CLI tools.
 
 1. Download the installer, manifest, and signature files.
 
-    `wget https://github.com/decred/decred-release/releases/download/v1.3.0/{dcrinstall-linux-amd64-v1.3.0,manifest-dcrinstall-v1.3.0.txt,manifest-dcrinstall-v1.3.0.txt.asc}`
+    `wget https://github.com/decred/decred-release/releases/download/v{{ cliversion }}/{dcrinstall-linux-amd64-v{{ cliversion }},manifest-dcrinstall-v{{ cliversion }}.txt,manifest-dcrinstall-v{{ cliversion }}.txt.asc}`
 
 1. Verify the manifest. The output from this command should say "Good signature from Decred Release <release@decred.org>". Warnings about the key not being certified with a trusted signature can be ignored.
 
-    `gpg --verify manifest-dcrinstall-v1.3.0.txt.asc`
+    `gpg --verify manifest-dcrinstall-v{{ cliversion }}.txt.asc`
 
 1. Verify the SHA-256 hash in the manifest matches that of the binary - the following two commands should have the same output.
 
-    `sha256sum dcrinstall-linux-amd64-v1.3.0`
+    `sha256sum dcrinstall-linux-amd64-v{{ cliversion }}`
 
-    `grep dcrinstall-linux-amd64-v1.3.0 manifest-dcrinstall-v1.3.0.txt`
+    `grep dcrinstall-linux-amd64-v{{ cliversion }} manifest-dcrinstall-v{{ cliversion }}.txt`
 
 1. Make the binary executable.
 
-    `chmod +x dcrinstall-linux-amd64-v1.3.0`
+    `chmod +x dcrinstall-linux-amd64-v{{ cliversion }}`
 
 1. Run it to install the Decred CLI tools and to create your wallet.
 
-    `./dcrinstall-linux-amd64-v1.3.0`
+    `./dcrinstall-linux-amd64-v{{ cliversion }}`
 
 1. Add the path to the Decred binaries to your `.profile`.
 
     `echo "PATH=~/decred:$PATH" >> ~/.profile && source ~/.profile`
 
-**Important**
+!!! danger "Critical Information"
 
-When you create your wallet, write the 33 seed words down using a pen and paper on a hard surface, and write out two copies.
+    {{ seedWarning1 }}
 
-* **DO NOT** take a picture of the seed words with your phone’s camera.
-* **DO NOT** save the seed words in a text file on a computer.
-* **DO NOT** email the seed words to yourself for "safe keeping".
+    {{ seedWarning2 }}
 
-The only way a person should be able to get the seed words is by acquiring one of the copies you have written out. You should store one copy offsite in case of fire or theft.
+    {{ seedWarning3 }}
+
+    {{ seedWarning4 }}
 
 ---
 
-Once the wallet is created we can do a few things to make life easier. 
+Once the wallet is created we can do a few things to make life easier.
 
 1. Make sure you have `tmux` installed.
 
-1. Create a `bash` script called `decred.sh` which will start a `tmux` session for each application, start `dcrd`, start `dcrwallet`, prompt us for the password to unlock the wallet, and start `dcrctl`. 
+1. Create a `bash` script called `decred.sh` which will start a `tmux` session for each application, start `dcrd`, start `dcrwallet`, prompt us for the password to unlock the wallet, and start `dcrctl`.
 
     `echo "tmux new -d -s dcrd 'dcrd'; tmux new -d -s dcrwallet 'dcrwallet --promptpass'; tmux attach -t dcrwallet" > ~/decred.sh;`
 
@@ -100,7 +100,7 @@ Replacing `DsHotWalletAddressFromVotingWallet` with your hot wallet voting addre
 
 If you wish to automate ticket purchases using ticketbuyer you will need to add the following info in your `~/.dcrwallet/dcrwallet.conf`, where `DsHotWalletAddressFromVotingWallet` is once again the address you generated on your voting VPS.
 
-```
+```no-highlight
 enableticketbuyer=1
 ticketbuyer.votingaddress=DsHotWalletAddressFromVotingWallet
 ticketbuyer.balancetomaintainabsolute=0
@@ -116,24 +116,23 @@ Setting vote choices for on-chain votes will happen on the remote servers you wi
 
 1. Download the Politeia archive, manifest, and signature files.
 
-    `wget https://github.com/decred/decred-binaries/releases/download/v1.3.1/{politeiavoter-linux-amd64-v1.3.1.tar.gz,manifest-politeiavoter-v1.3.1.txt,manifest-politeiavoter-v1.3.1.txt.asc}`
+    `wget https://github.com/decred/decred-binaries/releases/download/v{{ pivoterversion }}/{politeiavoter-linux-amd64-v{{ pivoterversion }}.tar.gz,manifest-politeiavoter-v{{ pivoterversion }}.txt,manifest-politeiavoter-v{{ pivoterversion }}.txt.asc}`
 
 1. Verify the manifest. The output from this command should say "Good signature from Decred Release <release@decred.org>". Warnings about the key not being certified with a trusted signature can be ignored.
 
-    `gpg --verify manifest-politeiavoter-v1.3.1.txt.asc`
+    `gpg --verify manifest-politeiavoter-v{{ pivoterversion }}.txt.asc`
 
 1. Verify the SHA-256 hash in the manifest matches that of the archive - the following two commands should have the same output.
 
-    `sha256sum politeiavoter-linux-amd64-v1.3.1.tar.gz`
-    
-    `grep politeiavoter-linux-amd64-v1.3.1.tar.gz manifest-politeiavoter-v1.3.1.txt`
+    `sha256sum politeiavoter-linux-amd64-v{{ pivoterversion }}.tar.gz`
+
+    `grep politeiavoter-linux-amd64-v{{ pivoterversion }}.tar.gz manifest-politeiavoter-v{{ pivoterversion }}.txt`
 
 1. Extract the archive.
 
-    `tar -xf politeiavoter-linux-amd64-v1.3.1.tar.gz`
+    `tar -xf politeiavoter-linux-amd64-v{{ pivoterversion }}.tar.gz`
 
-1. Enter the `politeiavoter-linux-amd64-v1.3.1` directory.
-
+1. Enter the `politeiavoter-linux-amd64-v{{ pivoterversion }}` directory.
 
 Now to view the various agendas and vote on them you will need to run the following commands. Also remember that for this to work `dcrd` and `dcrwallet` must also be running.
 
@@ -164,14 +163,14 @@ Use SSH to connect to one of the remote servers you have set up. Once connected,
 
 To avoid a super long-winded section on setting up the wallets I'll just include the script I've written to set everything up:
 
-```
+```no-highlight
 #!/bin/bash
 
 sudo apt update;
 sudo apt upgrade;
 sudo apt install tmux curl;
 
-v=v1.3.0;
+v=v{{ cliversion }};
 a=amd64;
 b=dcrinstall-linux-${a}-${v};
 wget https://github.com/decred/decred-release/releases/download/${v}/${b};
@@ -184,7 +183,7 @@ echo "PATH=~/decred:$PATH" >> ~/.profile;
 source ~/.profile
 ```
 
-You may want to change the `v=v1.3.0` to the latest version if a newer one has been relased and `a=amd64` to whatever CPU architecture your VPS is using.
+You may want to change the `v=v{{ cliversion }}` to the latest version if a newer one has been released and `a=amd64` to whatever CPU architecture your VPS is using.
 
 Start everything: `./decred.sh`
 
@@ -195,7 +194,7 @@ To detach from this session press `<CTRL>` + `<B>` and then `<D>` on your keyboa
 
 Once the initial sync is complete do `tmux attach -t dcrwallet` and enter your password.
 
-Now we will generate an address which we will use to delegate voting rights using: 
+Now we will generate an address which we will use to delegate voting rights using:
 
 `dcrctl --wallet getnewaddress`
 

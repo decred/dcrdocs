@@ -91,49 +91,193 @@ Here is the raw hex data for the example transaction.
 
 Below is a breakdown of the above raw hex transaction data into fields. This transaction uses the full serialization format, so we can see witness data along with inputs and outputs. 
 
-Field        | Value        | Description
----          | ---          | ---
-Version      | `01`  | Version: 1
-Serialization format  | `00`  | Serialization: Full serialization
-Number inputs |  `000002`     | Inputs: 2                                              
-1st input | `4ff28b534361e383b5b149df4572feb1fbc659cb07067c3cb6c684452ae79f54`                 | Transaction hash
-      | `01000000`                                              | Output index: 1
-    | `00`       | Tree: 0
-       | `ffffffff`                     | Sequence number: 4294967295
-2nd input | `c619e6ade3f469b8bb60b8ae9b0599eeeca05cd2db251cadea443344eafdac57`                 | Transaction hash
-      | `01000000`                                              | Output index: 1
-    | `00`       | Tree: 0
-       | `ffffffff`                     | Sequence number: 4294967295
-1st output | `91c2e26d02000000`                 | Output amount: 104.33
-      | `0000`                                              | Version: 0
-    | `19`       | Public key script (length): 25
-       | `76a914f2ccddc70f8b8bcea24a362bf404841d53cbebc088ac`                     | Public key script
-2nd output | `d676dd6801000000`                 | Output amount: 60.54
-      | `0000`                                              | Version: 0
-    | `19`       | Public key script (length): 25
-       | `76a9141a1f5c7e9f7696989dced5cb9b61464f95790b7288ac`                     | Public key script
-Lock time      | `00000000`  | Lock time: 0 
-Expiry     | `00000000`  | Expiry: 0
-Number witnesses     | `02`  | Witnesses: 2
-1st witness    | `ca68865402000000`  | Input amount: 100.08
-    | `a29c0400`  | Block height: 302242
-        | `04000000`  | Block index: 4
-        | `6a`  | Signature script (length): 106
-        | `4730440220139466bd10b1f071f9b4ac16ed434d63d090613fd06470f7bca9bba2b6ea6a0a02203cad1297ab9384466b3f304cd61e7e4ffa9abc1ae9fe1630207fae6f200da1680121024d540859b805c5780f2f0da350df8757c1defb72e3381b252d20874478a5549c`  | Signature script 
-2nd witness    | `49743a8201000000`  | Input amount: 64.79
-    | `9e9c0400`  | Block height: 302238
-        | `01000000`  | Block index: 1
-        | `6b`  | Signature script (length): 107
-        | `483045022100da5b0fde58c4c57a88d96f83b02eddcb67b1b68ce95cc562c895f2e4e57bb44302201a8744aed654d2979bdd797187f6bf63ad1898c5d5c585309eeca558742858b201210307e3d98b004b15561c0f5aa158c90f93de33756d3bfd1f8a1058a4d90ffc7ec7`  | Signature script 
-
-
-
-
-
-
-
-
-
-
-
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Version</td>
+<td><code>01</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Serialization format</td>
+<td><code>00</code></td>
+<td>Full serialization</td>
+</tr>
+<tr>
+<td>Number inputs</td>
+<td><code>000002</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">1st input</td>
+</tr>
+<td>Transaction hash</td>
+<td><code>4ff28b534361e383b5b149df4572feb1fbc659cb07067c3cb6c684452ae79f54</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Output index</td>
+<td><code>01000000</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Tree</td>
+<td><code>00</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sequence number</td>
+<td><code>ffffffff</code></td>
+<td>4294967295</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">2nd input</td>
+</tr>
+<tr>
+  <td>Transaction hash</td>
+<td><code>c619e6ade3f469b8bb60b8ae9b0599eeeca05cd2db251cadea443344eafdac57</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Output index</td>
+<td><code>01000000</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Tree</td>
+<td><code>00</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sequence number</td>
+<td><code>ffffffff</code></td>
+<td>4294967295</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">1st output</td>
+</tr>
+<tr>
+<td>Output amount</td>
+<td><code>91c2e26d02000000</code></td>
+<td>104.33</td>
+</tr>
+<tr>
+<td>Version</td>
+<td><code>0000</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>Public key script length</td>
+<td><code>19</code></td>
+<td>25</td>
+</tr>
+<tr>
+<td>Public key script</td>
+<td><code>76a914f2ccddc70f8b8bcea24a362bf404841d53cbebc088ac</code></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">2nd output</td>
+</tr>
+<tr>
+<td>Output amount</td>
+<td><code>d676dd6801000000</code></td>
+<td>60.54</td>
+</tr>
+<tr>
+<td>Version</td>
+<td><code>0000</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>Public key script length</td>
+<td><code>19</code></td>
+<td>25</td>
+<td></td>
+</tr>
+<tr>
+<td>Public key script</td>
+<td><code>76a9141a1f5c7e9f7696989dced5cb9b61464f95790b7288ac</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Lock time</td>
+<td><code>00000000</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>Expiry</td>
+<td><code>00000000</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>Number witnesses</td>
+<td><code>02</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">1st witness</td>
+</tr>
+<tr>
+  <td>Input amount</td>
+<td><code>ca68865402000000</code></td>
+<td>100.08</td>
+</tr>
+<tr>
+<td>Block height</td>
+<td><code>a29c0400</code></td>
+<td>302242</td>
+</tr>
+<tr>
+<td>Block index</td>
+<td><code>04000000</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>Signature script length</td>
+<td><code>6a</code></td>
+<td>106</td>
+</tr>
+<tr>
+<td>Signature script</td>
+<td><code>4730440220139466bd10b1f071f9b4ac16ed434d63d090613fd06470f7bca9bba2b6ea6a0a02203cad1297ab9384466b3f304cd61e7e4ffa9abc1ae9fe1630207fae6f200da1680121024d540859b805c5780f2f0da350df8757c1defb72e3381b252d20874478a5549c</code></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">2nd witness</td>
+</tr>
+<tr>
+<td>Input amount</td>
+<td><code>49743a8201000000</code></td>
+<td>64.79</td>
+</tr>
+<tr>
+<td>Block height: 302238</td>
+<td><code>9e9c0400</code></td>
+<td>302238</td>
+</tr>
+<tr>
+<td>Block index: 1</td>
+<td><code>01000000</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Signature script length</td>
+<td><code>6b</code></td>
+<td>107</td>
+</tr>
+<tr>
+<td>Signature script</td>
+<td><code>483045022100da5b0fde58c4c57a88d96f83b02eddcb67b1b68ce95cc562c895f2e4e57bb44302201a8744aed654d2979bdd797187f6bf63ad1898c5d5c585309eeca558742858b201210307e3d98b004b15561c0f5aa158c90f93de33756d3bfd1f8a1058a4d90ffc7ec7</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 

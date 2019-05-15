@@ -132,12 +132,12 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <tr>
 <td>Tree</td>
 <td><code>00</code></td>
-<td>0</td>
+<td>0 <br>(use regular transaction fee)</td>
 </tr>
 <tr>
 <td>Sequence number</td>
 <td><code>ffffffff</code></td>
-<td>4294967295</td>
+<td>4294967295 <br>(transaction finalized)</td>
 </tr>
 <tr>
 <td colspan="3" style="text-align: center;">2nd input</td>
@@ -155,12 +155,12 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <tr>
 <td>Tree</td>
 <td><code>00</code></td>
-<td>0</td>
+<td>0 <br>(use regular transaction fee)</td>
 </tr>
 <tr>
 <td>Sequence number</td>
 <td><code>ffffffff</code></td>
-<td>4294967295</td>
+<td>4294967295 <br>(transaction finalized)</td>
 </tr>
 <tr>
 <td colspan="3" style="text-align: center;">1st output</td>
@@ -168,10 +168,10 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <tr>
 <td>Output amount</td>
 <td><code>91c2e26d02000000</code></td>
-<td>104.33</td>
+<td>104.33512081</td>
 </tr>
 <tr>
-<td>Version</td>
+<td>Script Version</td>
 <td><code>0000</code></td>
 <td>0</td>
 </tr>
@@ -183,7 +183,7 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <tr>
 <td>Public key script</td>
 <td style="word-break: break-all;"><code>76a914f2ccddc70f8b8bcea24a362bf404841d53cbebc088ac</code></td>
-<td></td>
+<td style="word-break;">OP_DUP OP_HASH160 f2ccddc70f8b8bcea24a362bf404841d53cbebc0 OP_EQUALVERIFY OP_CHECKSIG <br>(Pay-To-Pubkey (P2Pk) hash script)</td>
 </tr>
 <tr>
 <td colspan="3" style="text-align: center;">2nd output</td>
@@ -191,10 +191,10 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <tr>
 <td>Output amount</td>
 <td><code>d676dd6801000000</code></td>
-<td>60.54</td>
+<td>60.54311638</td>
 </tr>
 <tr>
-<td>Version</td>
+<td>Script Version</td>
 <td><code>0000</code></td>
 <td>0</td>
 </tr>
@@ -207,7 +207,7 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <tr>
 <td>Public key script</td>
 <td style="word-break: break-all;"><code>76a9141a1f5c7e9f7696989dced5cb9b61464f95790b7288ac</code></td>
-<td></td>
+<td style="word-break;">OP_DUP OP_HASH160 1a1f5c7e9f7696989dced5cb9b61464f95790b72 OP_EQUALVERIFY OP_CHECKSIG <br>(Pay-To-Pubkey (P2Pk) hash script)</td>
 </tr>
 <tr>
 <td>Lock time</td>
@@ -230,7 +230,7 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <tr>
   <td>Input amount</td>
 <td><code>ca68865402000000</code></td>
-<td>100.08</td>
+<td>100.08029386</td>
 </tr>
 <tr>
 <td>Block height</td>
@@ -250,7 +250,7 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <tr>
 <td>Signature script</td>
 <td style="word-break: break-all;"><code>4730440220139466bd10b1f071f9b4ac16ed434d63d090613fd06470f7bca9bba2b6ea6a0a02203cad1297ab9384466b3f304cd61e7e4ffa9abc1ae9fe1630207fae6f200da1680121024d540859b805c5780f2f0da350df8757c1defb72e3381b252d20874478a5549c</code></td>
-<td></td>
+<td>2 data pushes. 1st push is DER signature. 2nd push is public key</td>
 </tr>
 <tr>
 <td colspan="3" style="text-align: center;">2nd witness</td>
@@ -258,7 +258,7 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <tr>
 <td>Input amount</td>
 <td><code>49743a8201000000</code></td>
-<td>64.79</td>
+<td>64.79836233</td>
 </tr>
 <tr>
 <td>Block height: 302238</td>
@@ -278,7 +278,7 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <tr>
 <td>Signature script</td>
 <td style="word-break: break-all;"><code>483045022100da5b0fde58c4c57a88d96f83b02eddcb67b1b68ce95cc562c895f2e4e57bb44302201a8744aed654d2979bdd797187f6bf63ad1898c5d5c585309eeca558742858b201210307e3d98b004b15561c0f5aa158c90f93de33756d3bfd1f8a1058a4d90ffc7ec7</code></td>
-<td></td>
+<td>2 data pushes. 1st push is DER signature. 2nd push is public key</td>
 </tr>
 </tbody>
 </table>

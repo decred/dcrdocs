@@ -11,13 +11,13 @@ This section provides an archive for previous votes along with their outcomes.
 Agenda ID: [fixlnseqlocks](https://explorer.dcrdata.org/agenda/fixlnseqlocks)
 
 
-**Modify sequence lock handling as defined in [DCP0004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki)**
+**Modify sequence lock handling as defined in [DCP-0004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki)**
 
 In order to fully support the Lightning Network, the current sequence lock consensus rules need to be modified.
 
-|**Voting Start:**|**Voting End:**|**Activated:**|
-|-----------------|---------------|--------------|
-[326656](https://explorer.dcrdata.org/block/326656)|[334720](https://explorer.dcrdata.org/block/334720)|[342784](https://explorer.dcrdata.org/block/342784)|
+|Voting Start:|Voting End:|Activated:|
+|-------------|-----------|----------|
+[326,656](https://explorer.dcrdata.org/block/326656)|[334,720](https://explorer.dcrdata.org/block/334720)|[342,784](https://explorer.dcrdata.org/block/342784)|
 
 #### Voting Results
 
@@ -35,15 +35,15 @@ In order to fully support the Lightning Network, the current sequence lock conse
 
 Agenda ID: [lnfeatures](https://explorer.dcrdata.org/agenda/lnfeatures)
 
-**Enable features defined in [DCP0002](https://github.com/decred/dcps/blob/master/dcp-0002/dcp-0002.mediawiki) and [DCP0003](https://github.com/decred/dcps/blob/master/dcp-0003/dcp-0003.mediawiki) necessary to support Lightning Network (LN)**
+**Enable features defined in [DCP-0002](https://github.com/decred/dcps/blob/master/dcp-0002/dcp-0002.mediawiki) and [DCP-0003](https://github.com/decred/dcps/blob/master/dcp-0003/dcp-0003.mediawiki) necessary to support Lightning Network (LN)**
 
 The Lightning Network is the most directly useful application of smart contracts to date since it allows for off-chain transactions that optionally settle on-chain. This infrastructure has clear benefits for both scaling and privacy. Decred is optimally positioned for this integration.
 
 Block 205189 is the first block which contains the new opcode which was voted in via the lnfeatures vote and thus all old nodes must upgrade.
 
-|**Voting Start:**|**Voting End:**|**Activated:**|
-|-----------------|---------------|--------------|
-[173440](https://explorer.dcrdata.org/block/133120)|[181504](https://explorer.dcrdata.org/block/181504)|[189568](https://explorer.dcrdata.org/block/189568)|
+|Voting Start:|Voting End:|Activated:|
+|-------------|-----------|----------|
+[173,440](https://explorer.dcrdata.org/block/133120)|[181,504](https://explorer.dcrdata.org/block/181504)|[189,568](https://explorer.dcrdata.org/block/189568)|
 
 #### Voting Results
 
@@ -62,13 +62,13 @@ Block 205189 is the first block which contains the new opcode which was voted in
 
 Agenda ID:  [sdiffalgorithm](https://explorer.dcrdata.org/agenda/sdiffalgorithm)
 
-**Change stake difficulty algorithm as defined in DCP0001**
+**Change stake difficulty algorithm as defined in DCP-0001**
 
 Specifies a proposed replacement algorithm for determining the stake difficulty (commonly called the ticket price). This proposal resolves all issues with a new algorithm that adheres to the referenced ideals.
 
-|**Voting Start:**|**Voting End:**|**Activated:**|
-|-----------------|---------------|--------------|
-[133120](https://explorer.dcrdata.org/block/133120)|[141184](https://explorer.dcrdata.org/block/149248)|[149248](https://explorer.dcrdata.org/block/149248)|
+|Voting Start:|Voting End:|Activated:|
+|-------------|-----------|----------|
+[133,120](https://explorer.dcrdata.org/block/133120)|[141,184](https://explorer.dcrdata.org/block/149248)|[149,248](https://explorer.dcrdata.org/block/149248)|
 
 #### Voting Results
 
@@ -86,9 +86,9 @@ Agenda ID:  [lnsupport](https://explorer.dcrdata.org/agenda/lnsupport)
 
 The Lightning Network is the most directly useful application of smart contracts to date since it allows for off-chain transactions that optionally settle on-chain. This infrastructure has clear benefits for both scaling and privacy. Decred is optimally positioned for this integration.
 
-|**Voting Start:**|**Voting End:**|**Activated:**|
+|Voting Start:|Voting End:|Activated:|
 |-----------------|---------------|--------------|
-|[133120](https://explorer.dcrdata.org/block/133120)|[141184](https://explorer.dcrdata.org/block/141184)|[149248](https://explorer.dcrdata.org/block/149248)
+|[133,120](https://explorer.dcrdata.org/block/133120)|[141,184](https://explorer.dcrdata.org/block/141184)|[149,248](https://explorer.dcrdata.org/block/149248)
 
 #### Voting Results
 
@@ -97,5 +97,3 @@ The Lightning Network is the most directly useful application of smart contracts
 |Abstain|22.58%|
 |No|1.07%|
 |Yes|76.34%|
-
----

@@ -143,7 +143,7 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <td colspan="3" style="text-align: center;">2nd input</td>
 </tr>
 <tr>
-  <td>Transaction hash</td>
+<td>Transaction hash</td>
 <td style="word-break: break-all;"><code>c619e6ade3f469b8bb60b8ae9b0599eeeca05cd2db251cadea443344eafdac57</code></td>
 <td></td>
 </tr>
@@ -183,7 +183,7 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <tr>
 <td>Public key script</td>
 <td style="word-break: break-all;"><code>76a914f2ccddc70f8b8bcea24a362bf404841d53cbebc088ac</code></td>
-<td style="word-break: break-all; word-wrap: break-word;">OP_DUP OP_HASH160 f2ccddc70f8b8bcea24a362bf404841d53cbebc0 OP_EQUALVERIFY OP_CHECKSIG <br><br>(Pay-To-Pubkey-Hash (P2PKH) script)</td>
+<td style="word-break: break-all; word-wrap: break-word;">OP_DUP OP_HASH160 f2ccddc70f8b8bcea24a362bf404841d53cbebc0 OP_EQUALVERIFY OP_CHECKSIG <br><br>(Pay-To-Pubkey-Hash (P2PKH)<br> script)</td>
 </tr>
 <tr>
 <td colspan="3" style="text-align: center;">2nd output</td>
@@ -202,22 +202,21 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <td>Public key script length</td>
 <td><code>19</code></td>
 <td>25</td>
-<td></td>
 </tr>
 <tr>
 <td>Public key script</td>
 <td style="word-break: break-all;"><code>76a9141a1f5c7e9f7696989dced5cb9b61464f95790b7288ac</code></td>
-<td style="word-break: break-all; word-wrap: break-word;">OP_DUP OP_HASH160 1a1f5c7e9f7696989dced5cb9b61464f95790b72 OP_EQUALVERIFY OP_CHECKSIG <br><br>(Pay-To-Pubkey-Hash (P2PKH) script)</td>
+<td style="word-break: break-all; word-wrap: break-word;">OP_DUP OP_HASH160 1a1f5c7e9f7696989dced5cb9b61464f95790b72 OP_EQUALVERIFY OP_CHECKSIG <br><br>(Pay-To-Pubkey-Hash (P2PKH)<br> script)</td>
 </tr>
 <tr>
 <td>Lock time</td>
 <td><code>00000000</code></td>
-<td>0</td>
+<td>0<br>(no lock time)</td>
 </tr>
 <tr>
 <td>Expiry</td>
 <td><code>00000000</code></td>
-<td>0</td>
+<td>0<br>(no expiry)</td>
 </tr>
 <tr>
 <td>Number witnesses</td>
@@ -228,7 +227,7 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <td colspan="3" style="text-align: center;">1st witness</td>
 </tr>
 <tr>
-  <td>Input amount</td>
+<td>Input amount</td>
 <td><code>ca68865402000000</code></td>
 <td>100.08029386</td>
 </tr>
@@ -251,7 +250,7 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <td>Signature script</td>
 <td style="word-break: break-all;"><code>4730440220139466bd10b1f071f9b4ac16ed434d63d090613fd06470f7bca9bba2b6ea6a0a02203cad1297ab9384466b3f304cd61e7e4ffa9abc1ae9fe1630207fae6f200da1680121024d540859b805c5780f2f0da350df8757c1defb72e3381b252d20874478a5549c</code></td>
 <td style="word-break: break-all;">
-  The signature script contains two <br>pieces of data to be pushed onto<br> the stack:<br><br>1st push<br>(DER signature (asm))<br><code>30440220139466bd10b1f071f9b4ac16ed434d63d090613fd06470f7bca9bba2b6ea6a0a02203cad1297ab9384466b3f304cd61e7e4ffa9abc1ae9fe1630207fae6f200da16801</code><br><br>2nd push<br>(public key)<br><br><code>024d540859b805c5780f2f0da350df8757c1defb72e3381b252d20874478a5549c</code></td>
+  The signature script contains two <br>pieces of data to be pushed onto<br> the stack:<br><br>1st push<br>(DER signature)<br><code>30440220139466bd10b1f071f9b4ac16ed434d63d090613fd06470f7bca9bba2b6ea6a0a02203cad1297ab9384466b3f304cd61e7e4ffa9abc1ae9fe1630207fae6f200da16801</code><br><br>2nd push<br>(public key)<br><br><code>024d540859b805c5780f2f0da350df8757c1defb72e3381b252d20874478a5549c</code></td>
 </tr>
 <tr>
 <td colspan="3" style="text-align: center;">2nd witness</td>
@@ -279,7 +278,7 @@ Below is a breakdown of the above raw hex transaction data into fields. This tra
 <tr>
 <td>Signature script</td>
 <td style="word-break: break-all;"><code>483045022100da5b0fde58c4c57a88d96f83b02eddcb67b1b68ce95cc562c895f2e4e57bb44302201a8744aed654d2979bdd797187f6bf63ad1898c5d5c585309eeca558742858b201210307e3d98b004b15561c0f5aa158c90f93de33756d3bfd1f8a1058a4d90ffc7ec7</code></td>
-<td style="word-break: break-all;">The signature script contains two <br>pieces of data to be pushed onto<br> the stack:<br><br>1st push<br>(DER signature (asm))<br><code style="word-break: break-all">3045022100da5b0fde58c4c57a88d96f83b02eddcb67b1b68ce95cc562c895f2e4e 57bb44302201a8744aed654d2979bdd797187f6bf63ad1898c5d5c585309eeca558742858b201</code><br><br>2nd push<br>(public key)<br><br><code style="word-break: break-all;">0307e3d98b004b15561c0f5aa158c90f93de33756d3bfd1f8a1058a4d90ffc7ec7</code></td>
+<td style="word-break: break-all;">The signature script contains two <br>pieces of data to be pushed onto<br> the stack:<br><br>1st push<br>(DER signature<br><code style="word-break: break-all">3045022100da5b0fde58c4c57a88d96f83b02eddcb67b1b68ce95cc562c895f2e4e 57bb44302201a8744aed654d2979bdd797187f6bf63ad1898c5d5c585309eeca558742858b201</code><br><br>2nd push<br>(public key)<br><br><code style="word-break: break-all;">0307e3d98b004b15561c0f5aa158c90f93de33756d3bfd1f8a1058a4d90ffc7ec7</code></td>
 </tr>
 </tbody>
 </table>

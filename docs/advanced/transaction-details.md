@@ -42,6 +42,7 @@ Field            | Description
 Value            | The amount of coins that the output being spent transfers.
 Block height     | The height of the block containing the transaction in which the output being spent is located.
 Block index      | The index of the transaction in which the output being spent is located.
+Signature script length | The length of the signature script as a variable-length integer 
 Signature script | The script that satisfies the requirements of the script in the output being spent.
 
 
@@ -74,4 +75,211 @@ The witness data of a transaction involves only its inputs. The included data fi
 * **0 (Full serialization)** - The transaction's prefix is located immediately before its witness data.
 * **1 (No witness)** - The transaction's prefix is the only data present.
 * **2 (Only witness)** - The transaction's witness data is the only data present. For each input, this includes its value, block height, block index, and signature script.
+
+## Example Transaction
+
+Below we examine an example [transaction](https://explorer.dcrdata.org/tx/a58389bd42520a9b9ecbae5432e27b91fde74d2f8e74ac6f8c22cda57b8ae348) from the Decred mainnet.
+
+### Raw Transaction (Hex)
+
+Here is the raw hex data for the example transaction.
+
+```no-highlight
+01000000024ff28b534361e383b5b149df4572feb1fbc659cb07067c3cb6c684452ae79f540100000000ffffffffc619e6ade3f469b8bb60b8ae9b0599eeeca05cd2db251cadea443344eafdac570100000000ffffffff0291c2e26d0200000000001976a914f2ccddc70f8b8bcea24a362bf404841d53cbebc088acd676dd680100000000001976a9141a1f5c7e9f7696989dced5cb9b61464f95790b7288ac000000000000000002ca68865402000000a29c0400040000006a4730440220139466bd10b1f071f9b4ac16ed434d63d090613fd06470f7bca9bba2b6ea6a0a02203cad1297ab9384466b3f304cd61e7e4ffa9abc1ae9fe1630207fae6f200da1680121024d540859b805c5780f2f0da350df8757c1defb72e3381b252d20874478a5549c49743a82010000009e9c0400010000006b483045022100da5b0fde58c4c57a88d96f83b02eddcb67b1b68ce95cc562c895f2e4e57bb44302201a8744aed654d2979bdd797187f6bf63ad1898c5d5c585309eeca558742858b201210307e3d98b004b15561c0f5aa158c90f93de33756d3bfd1f8a1058a4d90ffc7ec7
+```
+
+
+### Transaction Breakdown
+
+Below is a breakdown of the above raw hex transaction data into fields. This transaction uses the full serialization format, so we can see witness data along with inputs and outputs. 
+
+<table style="overflow-wrap: break-word;">
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Version</td>
+<td><code>01</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Serialization format</td>
+<td><code>00</code></td>
+<td>Full serialization</td>
+</tr>
+<tr>
+<td>Number inputs</td>
+<td><code>000002</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">1st input</td>
+</tr>
+<td>Transaction hash</td>
+<td style="word-break: break-all;"><code>4ff28b534361e383b5b149df4572feb1fbc659cb07067c3cb6c684452ae79f54</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Output index</td>
+<td><code>01000000</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Tree</td>
+<td><code>00</code></td>
+<td>0 <br>(regular transaction tree)</td>
+</tr>
+<tr>
+<td>Sequence number</td>
+<td><code>ffffffff</code></td>
+<td>4294967295 <br>(transaction finalized)</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">2nd input</td>
+</tr>
+<tr>
+<td>Transaction hash</td>
+<td style="word-break: break-all;"><code>c619e6ade3f469b8bb60b8ae9b0599eeeca05cd2db251cadea443344eafdac57</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Output index</td>
+<td><code>01000000</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Tree</td>
+<td><code>00</code></td>
+<td>0 <br>(regular transaction tree)</td>
+</tr>
+<tr>
+<td>Sequence number</td>
+<td><code>ffffffff</code></td>
+<td>4294967295 <br>(transaction finalized)</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">1st output</td>
+</tr>
+<tr>
+<td>Output amount</td>
+<td><code>91c2e26d02000000</code></td>
+<td>104.33512081</td>
+</tr>
+<tr>
+<td>Script Version</td>
+<td><code>0000</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>Public key script length</td>
+<td><code>19</code></td>
+<td>25</td>
+</tr>
+<tr>
+<td>Public key script</td>
+<td style="word-break: break-all;"><code>76a914f2ccddc70f8b8bcea24a362bf404841d53cbebc088ac</code></td>
+<td style="word-break: break-all; word-wrap: break-word;">OP_DUP OP_HASH160 f2ccddc70f8b8bcea24a362bf404841d53cbebc0 OP_EQUALVERIFY OP_CHECKSIG <br><br>(Pay-To-Pubkey-Hash (P2PKH)<br> script)</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">2nd output</td>
+</tr>
+<tr>
+<td>Output amount</td>
+<td><code>d676dd6801000000</code></td>
+<td>60.54311638</td>
+</tr>
+<tr>
+<td>Script Version</td>
+<td><code>0000</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>Public key script length</td>
+<td><code>19</code></td>
+<td>25</td>
+</tr>
+<tr>
+<td>Public key script</td>
+<td style="word-break: break-all;"><code>76a9141a1f5c7e9f7696989dced5cb9b61464f95790b7288ac</code></td>
+<td style="word-break: break-all; word-wrap: break-word;">OP_DUP OP_HASH160 1a1f5c7e9f7696989dced5cb9b61464f95790b72 OP_EQUALVERIFY OP_CHECKSIG <br><br>(Pay-To-Pubkey-Hash (P2PKH)<br> script)</td>
+</tr>
+<tr>
+<td>Lock time</td>
+<td><code>00000000</code></td>
+<td>0<br>(no lock time)</td>
+</tr>
+<tr>
+<td>Expiry</td>
+<td><code>00000000</code></td>
+<td>0<br>(no expiry)</td>
+</tr>
+<tr>
+<td>Number witnesses</td>
+<td><code>02</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">1st witness</td>
+</tr>
+<tr>
+<td>Input amount</td>
+<td><code>ca68865402000000</code></td>
+<td>100.08029386</td>
+</tr>
+<tr>
+<td>Block height</td>
+<td><code>a29c0400</code></td>
+<td>302242</td>
+</tr>
+<tr>
+<td>Block index</td>
+<td><code>04000000</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>Signature script length</td>
+<td><code>6a</code></td>
+<td>106</td>
+</tr>
+<tr>
+<td>Signature script</td>
+<td style="word-break: break-all;"><code>4730440220139466bd10b1f071f9b4ac16ed434d63d090613fd06470f7bca9bba2b6ea6a0a02203cad1297ab9384466b3f304cd61e7e4ffa9abc1ae9fe1630207fae6f200da1680121024d540859b805c5780f2f0da350df8757c1defb72e3381b252d20874478a5549c</code></td>
+<td style="word-break: break-all;">
+  The signature script contains two <br>pieces of data to be pushed onto<br> the stack:<br><br>1st push<br>(DER signature)<br><code>30440220139466bd10b1f071f9b4ac16ed434d63d090613fd06470f7bca9bba2b6ea6a0a02203cad1297ab9384466b3f304cd61e7e4ffa9abc1ae9fe1630207fae6f200da16801</code><br><br>2nd push<br>(public key)<br><br><code>024d540859b805c5780f2f0da350df8757c1defb72e3381b252d20874478a5549c</code></td>
+</tr>
+<tr>
+<td colspan="3" style="text-align: center;">2nd witness</td>
+</tr>
+<tr>
+<td>Input amount</td>
+<td><code>49743a8201000000</code></td>
+<td>64.79836233</td>
+</tr>
+<tr>
+<td>Block height: 302238</td>
+<td><code>9e9c0400</code></td>
+<td>302238</td>
+</tr>
+<tr>
+<td>Block index: 1</td>
+<td><code>01000000</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>Signature script length</td>
+<td><code>6b</code></td>
+<td>107</td>
+</tr>
+<tr>
+<td>Signature script</td>
+<td style="word-break: break-all;"><code>483045022100da5b0fde58c4c57a88d96f83b02eddcb67b1b68ce95cc562c895f2e4e57bb44302201a8744aed654d2979bdd797187f6bf63ad1898c5d5c585309eeca558742858b201210307e3d98b004b15561c0f5aa158c90f93de33756d3bfd1f8a1058a4d90ffc7ec7</code></td>
+<td style="word-break: break-all;">The signature script contains two <br>pieces of data to be pushed onto<br> the stack:<br><br>1st push<br>(DER signature<br><code style="word-break: break-all">3045022100da5b0fde58c4c57a88d96f83b02eddcb67b1b68ce95cc562c895f2e4e 57bb44302201a8744aed654d2979bdd797187f6bf63ad1898c5d5c585309eeca558742858b201</code><br><br>2nd push<br>(public key)<br><br><code style="word-break: break-all;">0307e3d98b004b15561c0f5aa158c90f93de33756d3bfd1f8a1058a4d90ffc7ec7</code></td>
+</tr>
+</tbody>
+</table>
 

@@ -13,7 +13,7 @@ Version        | Block header version                                           
 PrevBlock      | Hash of the previous block                                                  | 32 bytes
 MerkleRoot     | Merkle tree hash calculated using all transactions in the block             | 32 bytes
 StakeRoot      | Merkle tree hash calculated using all stake transactions in the block       | 32 bytes
-VoteBits       | Bit flags. Currently only used to signify votes on the previous merkle root | 2 bytes
+VoteBits       | Bit flags. Currently used to signify votes on the previous merkle root and vote on proposed consensus rule changes | 2 bytes
 FinalState     | Commitment to the final state of the PRNG (for lottery purposes)            | 6 bytes
 Voters         | Number of participating voters in the block                                 | 2 bytes
 FreshStake     | Number of new tickets in the block                                          | 1 byte

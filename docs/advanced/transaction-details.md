@@ -2,10 +2,27 @@
 
 ---
 
-Decred transactions are transfers of DCR that exist within blocks. Transactions are comprised primarily of inputs and outputs, though they have a few other fields of data as well. 
+Decred transactions are transfers of DCR that exist within blocks. Transactions are comprised primarily of inputs and outputs, though they have a few other fields of data as well. In this page, we will examine the types of transactions Decred supports, the basic format common to all transactions, and examine an example transaction in detail. 
+
+
+## Transaction Types
+
+To enable Decred's consensus rules, transactions are split into two separate trees within a block: the regular transaction tree and the stake transaction tree. The stake transaction tree contains transactions related to ticket buying and ticket voting rewards. The regular transaction tree contains all other transactions. 
+
+In addition to regular transactions (sending DCR from one address to another), there are a few special transaction types to be aware of:
+
+* **Coinbase transaction:** Every block which is mined contains a single coinbase transaction. A coinbase transaction will typically have three outputs: one output that contains the encoded block height (used to ensure that coinbase hash collisions are impossible), one output that creates the coins added to the project treasury (10% of the block reward), and one output that creates the coins paid to the PoW miner for creating the block (60% of the block reward). Coinbase transactions are part of the regular transaction tree, which means that they will be rejected if Proof-of-Stake (PoS) voters vote to disapprove the block which contains them. Decred created in coinbase transactions cannot be spent until the coinbase maturity period has passed.
+* **Stakebase transaction:** Every block starting at the stake validation height which is mined will contain a stakebase transaction for each ticket which voted on that block. The stakebase transaction will identify the ticket that voted, as well as produce the Decred which was spent to purchase the ticket, and the newly created Decred constituting the voting reward. Stakebase transactions belong to the stake transaction tree, which means that these transactions cannot be rejected by PoS voters, even if they vote to disapprove the block which contains them.
+* **Multisignature:** Multisignature refers to transactions which can be authorized by more than one private key. Multisignature transactions can support multiple keys (N) and a subset of those (M) are required to transact (commonly known as “MofN”). For example, a 2 of 3 multisignature transaction would have three valid keys, however only two of them would be required to authorize. Multisignature transactions are in the regular transaction tree.
 
 
 ## Transaction Format 
+
+At the protocol level, all transactions share the same basic transaction format; the transaction type is determined by the signature type present in the transaction. The section below describes this basic transaction format. 
+
+Lower-level documentation for each possible variant of signature can be found in the relevant source files in the [dcrd](https://github.com/decred/dcrd) repo.
+
+Below are the top-level fields of any transaction.
 
 Field        | Description                                                                                    | Size
 ---          | ---                                                                                            | ---
@@ -17,9 +34,13 @@ Outputs      | Serialized list of all the transaction's outputs                 
 Lock time    | The time when a transaction can be spent. (usually zero, in which case it has no effect)       | 4 bytes
 Expiry       | The block height at which the transaction expires and is no longer valid                       | 4 bytes
 
+### Bitcoin similarities
+
+Decred originally began as fork of the Bitcoin client [btcd](https://github.com/btcsuite/btcd), and its transaction format has similarities to Bitcoin's. However, to address some issues Bitcoin transactions had at the time, Decred implemented separate fields that allowed for script versioning and transaction immalleability. Bitcoin later added support for these features in the SegWit [soft fork](https://en.wikipedia.org/wiki/SegWit). However, to avoid a hard fork and preserve backwards compatability, Bitcoin implemented these changes inside the signature scripts, not as separate fields. In this respect, Decred and Bitcoin transactions are conceptually similar, but differ somewhat in their implementation.
+
 
 ### Inputs
-Inputs spend previously-made outputs. There are two types of transaction inputs: Witness and non-witness.
+In Decred, there are two types of transaction inputs: witness and non-witness. A non-witness transaction input is a reference to an unspent output (inputs spend previously-made outputs), and a sequence number. A witness transaction input contains the data necessary to prove that an output can be spent. 
 
 
 #### Non-Witness Inputs

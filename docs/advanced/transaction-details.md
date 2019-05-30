@@ -36,7 +36,7 @@ Expiry       | The block height at which the transaction expires and is no longe
 
 ### Bitcoin similarities
 
-Decred originally began as fork of the Bitcoin client [btcd](https://github.com/btcsuite/btcd), and its transaction format has similarities to Bitcoin's. However, to address some issues Bitcoin transactions had at the time, Decred implemented separate fields that allowed for script versioning and transaction immalleability. Bitcoin later added support for these features in the SegWit [soft fork](https://en.wikipedia.org/wiki/SegWit). However, to avoid a hard fork and preserve backwards compatability, Bitcoin implemented these changes inside the signature scripts, not as separate fields. In this respect, Decred and Bitcoin transactions are conceptually similar, but differ somewhat in their implementation.
+Decred originally began as fork of the Bitcoin client [btcd](https://github.com/btcsuite/btcd), and its transaction format has similarities to Bitcoin's. However, to address some issues Bitcoin transactions had at the time, Decred implemented separate fields that allowed for script versioning and transaction immalleability. Bitcoin later added support for these features in the SegWit [soft fork](https://en.wikipedia.org/wiki/SegWit). However, to avoid a hard fork and preserve backwards compatibility, Bitcoin implemented these changes inside the signature scripts, not as separate fields. In this respect, Decred and Bitcoin transactions are conceptually similar, but differ somewhat in their implementation.
 
 
 ### Inputs

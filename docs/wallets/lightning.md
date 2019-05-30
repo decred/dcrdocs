@@ -4,7 +4,7 @@
 
 ## What is Lightning (LN)?
 
-The Lighning Network (LN) is a "Layer 2" [protocol](https://en.wikipedia.org/wiki/Lightning_Network) that runs on top of the base layer Decred blockchain ("Layer 1"). It enables fast, low cost transactions and higher throughput than possible on Layer 1. 
+The Lightning Network (LN) is a "Layer 2" [protocol](https://en.wikipedia.org/wiki/Lightning_Network) that runs on top of the base layer Decred blockchain ("Layer 1"). It enables fast, low cost transactions and higher throughput than possible on Layer 1. 
 
 ## Decred Lightning Implemetation
 

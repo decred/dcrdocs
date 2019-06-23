@@ -40,7 +40,7 @@ Below is the basic process for submitting and evaluating proposals:
 1. The ticket-voting interval of 2,016 blocks (~1 week) begins. A snapshot of the live ticket pool is taken at 256 blocks prior to the start of voting. Every ticket in the pool when this snapshot was taken can vote 'Yes' or 'No' on the proposal. Tickets bought after the snapshot cannot vote on the proposal. If a ticket is called to vote on-chain during the ticket-voting interval (to validate blocks or vote on consensus rule changes), it still has until the end of the ticket-voting interval to vote on the proposal.
 1. When the ticket-voting period ends, the proposal is formally approved or rejected. There is a quorum requirement for a vote to be considered valid: 20% of the eligible tickets must vote 'Yes' or 'No'. The threshold for a proposal to be approved is 60% 'Yes' votes.
 1. When a proposal with a budget and deliverables is approved, work can begin. The proposal owner can submit claims against the budget as deliverables are completed.
-1. Payment claims will be handled manually by Decred Holdings Group (DHG) until such times as this process can be handled by the Decred [Decentralized Autonomous Organization (DAO)](#decentralized-autonomous-entity-dae).
+1. Payment claims will be handled manually by Decred Holdings Group (DHG) until such times as this process can be handled by the Decred [Decentralized Autonomous Organization (DAO)](#decentralized-autonomous-organization-dao).
 
 For guidance on creating a good proposal, see the [Proposal Guidelines](../../governance/politeia/proposal-guidelines.md) and [Example Proposals](../../governance/politeia/example-proposals.md) pages.
 

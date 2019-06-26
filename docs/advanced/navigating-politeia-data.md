@@ -12,7 +12,7 @@ Below is a screenshot of the root directory of the [decred-proposals/mainnet](ht
 
 ![The root of the mainnet repository. * = proposal folders, A = anchoring data](/img/politeia/mainnet-pi-repo.png)
 
-Folders marked with `*` contain proposal data. Folders and files marked with `A` contain anchoring data. Anchoring data relates to the anchoring of Politeia data to the Decred blockchain through [dcrtime](https://github.com/decred/dcrtime), which facilitates Politeia's transparent censorship functionality. This guide will not describe those files in detail, as they are not likely to be of interest for analysis. 
+Folders marked with `*` contain proposal data. Folders and files marked with `A` contain anchoring data. Anchoring data relates to the anchoring of Politeia data to the Decred blockchain through [dcrtime](dcrtime.md), which facilitates Politeia's transparent censorship functionality. This guide will not describe those files in detail, as they are not likely to be of interest for analysis. 
 
 Within each proposal folder there are sequentially numbered sub-folders, one for each version of the proposal. The first folder ('/1') corresponds to the initial version of the proposal submitted to Politeia. If a proposal author updates their proposal (typically in response to community feedback), the updated version and its associated data are put into folder ('/2'), and so on.
 

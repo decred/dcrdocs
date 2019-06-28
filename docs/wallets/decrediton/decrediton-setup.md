@@ -108,7 +108,7 @@ Press **Create Wallet** and your wallet setup is complete. You will be taken bac
 
 ## Restore Existing Wallet
 
-1. To restore an existing wallet, open Decrediton (If Decrediton is already open, restart it) and click on **Restore Existing Wallet**.
+1. To restore an existing wallet, open Decrediton (if Decrediton is already open, restart it) and click on **Restore Existing Wallet**.
 
 1. Name your wallet. As Decrediton allows you to manage multiple wallets on one PC, you must give a name to your wallet so it can be identified.
 
@@ -121,3 +121,5 @@ Press **Create Wallet** and your wallet setup is complete. You will be taken bac
 1. Select **Create Wallet**. Wait for the blockchain to be downloaded.
 
 1. The blockchain will now be scanned for any transactions belonging to this wallet.
+
+1. If you need to reconnect to your Voting Service Provider (VSP), you will need to import your VSP's redeem script, as shown on the [Using Decrediton](using-decrediton.md) page. 

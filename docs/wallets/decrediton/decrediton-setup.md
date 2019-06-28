@@ -108,7 +108,11 @@ Press **Create Wallet** and your wallet setup is complete. You will be taken bac
 
 ## Restore Existing Wallet
 
-1. As Decrediton allows you to manage multiple wallets on one PC, you must give a name to your wallet so it can be identified.
+1. Open Decrediton and click on **Restore Existing Wallet**. If Decrediton is open and you have another wallet open, you'll need to first go to Settings and click **Close Wallet**.
+
+![Decrediton close wallet](/img/decrediton/setup/wallet-close.png)
+
+1. Name your wallet. As Decrediton allows you to manage multiple wallets on one PC, you must give a name to your wallet so it can be identified.
 
 1. Advanced users can use the "Watch only" option and enter a public key to configure a watch only wallet.
 
@@ -118,6 +122,6 @@ Press **Create Wallet** and your wallet setup is complete. You will be taken bac
 
 1. Select **Create Wallet**. Wait for the blockchain to be downloaded.
 
-1. You will be prompted to enter the stakepool API key associated with this wallet. This can be left blank if you don't have one.
-
 1. The blockchain will now be scanned for any transactions belonging to this wallet.
+
+1. If you need to reconnect to your Voting Service Provider (VSP), you'll need to re-import your VSP API key, as described in the Tickets section on the [Using Decrediton](using-decrediton.md) page. 

@@ -124,4 +124,4 @@ Press **Create Wallet** and your wallet setup is complete. You will be taken bac
 
 1. The blockchain will now be scanned for any transactions belonging to this wallet.
 
-1. If you need to reconnect to your Voting Service Provider (VSP), you'll need to import your VSP's redeem script, as shown on the Tickets section on the [Using Decrediton](using-decrediton.md) page. 
+1. If you need to reconnect to your Voting Service Provider (VSP), you'll need to re-import your VSP API key, as described in the Tickets section on the [Using Decrediton](using-decrediton.md) page. 

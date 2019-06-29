@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/QuestionTicket.svg" /> Ticket Selection Algorithm
 
-Every block, 5 tickets are pseudorandomly selected from the ticket pool to [vote](../../proof-of-stake/overview/). Below is a high-level description of the ticket selection algorithm. A more detailed, low-level description can be found in comments in the dcrd [source code](https://github.com/decred/dcrd/). 
+Every block, 5 tickets are pseudorandomly selected from the ticket pool to [vote](../../proof-of-stake/overview/). Below is a high-level description of the ticket selection algorithm. A more detailed, low-level walkthrough of the ticket selection code can be found in this [video](https://www.youtube.com/watch?v=eysGWVhDFWY).
 
 ## Pseudorandom number generation
 

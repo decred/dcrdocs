@@ -10,7 +10,7 @@ Decred (/ˈdi:ˈkred/, /dɪˈkred/, dee-cred) is a blockchain-based cryptocurren
 ## How Does it Work?
 Stakeholders make and enforce the blockchain's consensus rules, set a course for future development, and decide how the project's treasury is used to fund it. Decred's blockchain is similar to Bitcoin's, but with major aspects of [governance](governance/overview.md) baked into the protocol. 
 
-To align incentives, block rewards are split between PoW miners, stakeholders and the Decred Treasury, which funds the project. 
+To align incentives, block rewards are split between Proof-of-Work (PoW) miners, stakeholders and the Decred Treasury, which funds the project. 
 
 Subsidy | Party
 ---     | ---

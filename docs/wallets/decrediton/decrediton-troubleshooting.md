@@ -1,5 +1,7 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Troubleshooting Common Decrediton Problems
 
+Last updated for Decrediton v{{ decreditonversion }}.
+
 !!! danger "Critical Information"
 
     Before starting any attempt at fixing a broken wallet, ensure you have your **correct** 33 word seed written down (preferably physically, on a piece of paper) and accessible.

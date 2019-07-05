@@ -25,7 +25,7 @@ There is a fee for submitting a proposal (0.1 DCR) to limit the potential for pr
 
 When proposals are submitted, they are checked by Politeia administrators. Proposals that are deemed spam or invalid will be censored.
 
-Politeia is built around the concept of **transparent censorship**, using [dcrtime](../../advanced/dcrtime.md). Users cannot be silently censored; they can prove that censorship has occurred. When a user registers, a **cryptographic identity** (pub/priv key pair) is created. This cryptographic identity is then used to create a "censorship record" for each user submission (proposal, comment, comment upvote/downvote). If a user is censored, these censorship records can be used to prove that a specific submission was submitted, the time it was submitted, and the exact form of the submission. This cryptographic identity is stored in the user's browser by default, but can be exported and re-imported at any time. 
+Politeia is built around the concept of **transparent censorship**, using [dcrtime](../../advanced/dcrtime.md). Users cannot be silently censored; they can prove that censorship has occurred. When a user registers, a **cryptographic identity** (pub/priv key pair) is created. This cryptographic identity is then used to create a "censorship token" for each user submission (proposal, comment, comment upvote/downvote). If a user is censored, these tokens can be used to prove that a specific submission was submitted, the time it was submitted, and the exact form of the submission. This cryptographic identity is stored in the user's browser by default, but can be exported and re-imported at any time. 
 
 
 ### Proposal Lifecycle

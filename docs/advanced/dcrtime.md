@@ -2,9 +2,9 @@
 
 ---
 
-Dcrtime is a timestamping application that allows users to store hashes of arbitrary data on the Decred blockchain. Inspired by Peter Todd's [opentimestamps](https://petertodd.org/2016/opentimestamps-announcement), dcrtime was originally built to store timestamped hashes of data from [Politeia](../../governance/politeia/overview), Decred's proposal system, on the Decred blockchain. 
+Dcrtime is a timestamping application that allows users to store hashes of arbitrary data on the Decred blockchain. Inspired by Peter Todd's [OpenTimestamps](https://petertodd.org/2016/opentimestamps-announcement), dcrtime was originally built to store timestamped hashes of data from [Politeia](../../governance/politeia/overview.md), Decred's proposal system, on the Decred blockchain. 
 
-Although dcrtime was created for Politeia, it is expected to have generic utility as a timestamping service. Dcrtime is implemented as a client and server application, with all code open source and  available in the [dcrtime repo](https://github.com/decred/dcrtime). Decred also offers a free timestamping service through its public mainnet server. We expect this to be particularly useful in scenarios where transparency, accountability and time-ordering are of key importance, in either a public or private context (e.g. computer security, data integrity and various compliance contexts).
+Although dcrtime was created for Politeia, it is expected to have generic utility as a timestamping service. Dcrtime is implemented as a client and server application, with all code open source and available in the [dcrtime repo](https://github.com/decred/dcrtime). Decred also offers a free timestamping service through its [public mainnet server](https://timestamp.decred.org/). We expect this to be particularly useful in scenarios where transparency, accountability and time-ordering are of key importance, in either a public or private context (e.g. computer security, data integrity and various compliance contexts).
 
 In this page, we list some [notable uses](#notable-uses) of dcrtime, as well as describe the high-level [timestamping process](#timestamping-process), [dcrtime architecture](#dcrtime-architecture), and [dcrtime's implementation details](#dcrtime-implementation) via examples.
 
@@ -21,9 +21,9 @@ Below are some notable uses of dcrtime:
 Dcrtime allows a nearly unlimited number of hashes to be timestamped. It does this by creating a single merkle root from any number of hashes and including it in a transaction on the Decred blockchain. This process can be summarized as follows:
 
 1. A 32-byte hash is created for each document or piece of data to be timestamped.
-2. A single merkle root is calculated from the hashes.
-3. This merkle root is included in an on-chain transaction, "anchoring" the data in the Decred blockchain by timestamping the data.
-4. A transaction hash and merkle path is generated, which can then be used to query the Decred blockchain and retrieve the block containing the transaction (and associated timestamp).
+1. A single merkle root is calculated from the hashes.
+1. This merkle root is included in an on-chain transaction, "anchoring" the data in the Decred blockchain by timestamping the data.
+1. A transaction hash and merkle path is generated, which can then be used to query the Decred blockchain and retrieve the block containing the transaction (and associated timestamp).
 
 To help verify an anchor against the blockchain, a command line tool [dcrtime_checker](https://github.com/decred/dcrtime/tree/master/cmd/dcrtime_checker) is provided.  
 
@@ -96,7 +96,7 @@ Our file is now anchored in the Decred blockchain. Any third party can now prove
 
 Building on our simple example, the following example illustrates how dcrtime is used to timestamp data in Politeia.
 
-Politeia commits user data (new proposals, edits, etc.) as needed to a public git [repo](https://github.com/decred-proposals/mainnet). For performance reasons, incoming vote and comment data are stored in the Politeia backend in "journal" files. These journal files are then committed to the repo when other data such as a new proposal is submitted, or every hour if no other data is submitted. Once Politeia verifies that these commits are in the repo, dcrtime is used to anchor all  commit hashes in the blockchain. For each commit hash anchored, an anchor file is committed to the `/anchors` directory in the repo. To fasciliate verification, metadata for each anchor is also appended to a single text file, `anchor_audit_trail.txt`, which provides a chonological record of anchors. 
+Politeia commits user data (new proposals, edits, etc.) as needed to a public git [repo](https://github.com/decred-proposals/mainnet). For performance reasons, incoming vote and comment data are stored in the Politeia backend in "journal" files. These journal files are then committed to the repo when other data such as a new proposal is submitted, or every hour if no other data is submitted. Once Politeia verifies that these commits are in the repo, dcrtime is used to anchor the implicit hash for each commit. For each hash anchored, an anchor file is committed to the `/anchors` directory in the repo. To fasciliate verification, metadata for each anchor is also appended to a single text file, `anchor_audit_trail.txt`, which provides a chonological record of anchors. 
 
 The diagram below provides a high-level diagram of the timestamping process.
 

@@ -2,7 +2,7 @@
 
 ---
 
-Dcrtime is a timestamping application that allows users to store hashes of arbitrary data on the Decred blockchain. Inspired by Peter Todd's [OpenTimestamps](https://petertodd.org/2016/opentimestamps-announcement), dcrtime was originally built to store timestamped hashes of data from [Politeia](../../governance/politeia/overview), Decred's proposal system, on the Decred blockchain. 
+Dcrtime is a timestamping application that allows users to store hashes of arbitrary data on the Decred blockchain. Inspired by Peter Todd's [OpenTimestamps](https://petertodd.org/2016/opentimestamps-announcement), dcrtime was originally built to store timestamped hashes of data from [Politeia](../governance/politeia/overview.md), Decred's proposal system, on the Decred blockchain. 
 
 Although dcrtime was created for Politeia, it is expected to have generic utility as a timestamping service. Dcrtime is implemented as a client and server application, with all code open source and available in the [dcrtime repo](https://github.com/decred/dcrtime). Decred also offers a free timestamping service through its [public mainnet server](https://timestamp.decred.org/). We expect this to be particularly useful in scenarios where transparency, accountability and time-ordering are of key importance, in either a public or private context (e.g. computer security, data integrity and various compliance contexts).
 

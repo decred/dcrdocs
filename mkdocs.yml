@@ -99,6 +99,8 @@ nav:
 - Proof-of-Work Mining:
   - 'Overview': 'mining/overview.md'
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'
+- Privacy:
+  - 'General Privacy': 'privacy/general-privacy.md'
 - FAQ:
   - 'General': 'faq/general.md'
   - 'Configuration': 'faq/configuration.md'

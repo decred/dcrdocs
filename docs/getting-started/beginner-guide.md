@@ -33,7 +33,7 @@ The following guides go into depth on key aspects of the Decred experience:
 
 **Block Explorers**
 
-* [explorer.dcrdata.org](https://explorer.dcrdata.org/)
+* [dcrdata.decred.org](https://dcrdata.decred.org/)
 * [mainnet.decred.org](https://mainnet.decred.org/)
 
 **News/Articles**

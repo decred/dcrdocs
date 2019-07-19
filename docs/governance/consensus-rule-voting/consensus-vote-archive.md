@@ -8,7 +8,7 @@ This section provides an archive for previous votes along with their outcomes.
 
 ### Update Sequence Lock Rules
 
-Agenda ID: [fixlnseqlocks](https://explorer.dcrdata.org/agenda/fixlnseqlocks)
+Agenda ID: [fixlnseqlocks](https://dcrdata.decred.org/agenda/fixlnseqlocks)
 
 
 **Modify sequence lock handling as defined in [DCP-0004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki)**
@@ -17,7 +17,7 @@ In order to fully support the Lightning Network, the current sequence lock conse
 
 |Voting Start:|Voting End:|Activated:|
 |-------------|-----------|----------|
-[326,656](https://explorer.dcrdata.org/block/326656)|[334,720](https://explorer.dcrdata.org/block/334720)|[342,784](https://explorer.dcrdata.org/block/342784)|
+[326,656](https://dcrdata.decred.org/block/326656)|[334,720](https://dcrdata.decred.org/block/334720)|[342,784](https://dcrdata.decred.org/block/342784)|
 
 #### Voting Results
 
@@ -33,7 +33,7 @@ In order to fully support the Lightning Network, the current sequence lock conse
 
 ### Activation of new opcodes for Lightning Network Support
 
-Agenda ID: [lnfeatures](https://explorer.dcrdata.org/agenda/lnfeatures)
+Agenda ID: [lnfeatures](https://dcrdata.decred.org/agenda/lnfeatures)
 
 **Enable features defined in [DCP-0002](https://github.com/decred/dcps/blob/master/dcp-0002/dcp-0002.mediawiki) and [DCP-0003](https://github.com/decred/dcps/blob/master/dcp-0003/dcp-0003.mediawiki) necessary to support Lightning Network (LN)**
 
@@ -43,7 +43,7 @@ Block 205189 is the first block which contains the new opcode which was voted in
 
 |Voting Start:|Voting End:|Activated:|
 |-------------|-----------|----------|
-[173,440](https://explorer.dcrdata.org/block/133120)|[181,504](https://explorer.dcrdata.org/block/181504)|[189,568](https://explorer.dcrdata.org/block/189568)|
+[173,440](https://dcrdata.decred.org/block/133120)|[181,504](https://dcrdata.decred.org/block/181504)|[189,568](https://dcrdata.decred.org/block/189568)|
 
 #### Voting Results
 
@@ -60,7 +60,7 @@ Block 205189 is the first block which contains the new opcode which was voted in
 
 ### Change PoS Staking Algorithm
 
-Agenda ID:  [sdiffalgorithm](https://explorer.dcrdata.org/agenda/sdiffalgorithm)
+Agenda ID:  [sdiffalgorithm](https://dcrdata.decred.org/agenda/sdiffalgorithm)
 
 **Change stake difficulty algorithm as defined in DCP-0001**
 
@@ -68,7 +68,7 @@ Specifies a proposed replacement algorithm for determining the stake difficulty 
 
 |Voting Start:|Voting End:|Activated:|
 |-------------|-----------|----------|
-[133,120](https://explorer.dcrdata.org/block/133120)|[141,184](https://explorer.dcrdata.org/block/149248)|[149,248](https://explorer.dcrdata.org/block/149248)|
+[133,120](https://dcrdata.decred.org/block/133120)|[141,184](https://dcrdata.decred.org/block/149248)|[149,248](https://dcrdata.decred.org/block/149248)|
 
 #### Voting Results
 
@@ -80,7 +80,7 @@ Specifies a proposed replacement algorithm for determining the stake difficulty 
 
 ### Start Lightning Network Support
 
-Agenda ID:  [lnsupport](https://explorer.dcrdata.org/agenda/lnsupport)
+Agenda ID:  [lnsupport](https://dcrdata.decred.org/agenda/lnsupport)
 
 **Request developers begin work on Lightning Network (LN) integration**
 
@@ -88,7 +88,7 @@ The Lightning Network is the most directly useful application of smart contracts
 
 |Voting Start:|Voting End:|Activated:|
 |-----------------|---------------|--------------|
-|[133,120](https://explorer.dcrdata.org/block/133120)|[141,184](https://explorer.dcrdata.org/block/141184)|[149,248](https://explorer.dcrdata.org/block/149248)
+|[133,120](https://dcrdata.decred.org/block/133120)|[141,184](https://dcrdata.decred.org/block/141184)|[149,248](https://dcrdata.decred.org/block/149248)
 
 #### Voting Results
 

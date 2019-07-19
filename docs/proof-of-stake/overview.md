@@ -20,7 +20,7 @@ These roles are incentivized; ticket-holders (or "Proof-of-Stake (PoS) Voters") 
 
 ## How Ticket Voting Works
 
-To participate in PoS voting, stakeholders lock some DCR in return for a ticket. The amount of DCR locked, or **Ticket Price**, is adjusted dynamically every 144 blocks (~12 hrs). The current ticket price can be found in [Decrediton](../wallets/decrediton/decrediton-setup.md) or on [explorer.dcrdata.org](https://explorer.dcrdata.org/). Partial tickets can also be purchased using [ticket splitting](ticket-splitting.md) software. Every ticket owned gives its holder the ability to cast a single vote. Upon voting, each ticket returns a small reward plus the original **Ticket Price** of the ticket. 
+To participate in PoS voting, stakeholders lock some DCR in return for a ticket. The amount of DCR locked, or **Ticket Price**, is adjusted dynamically every 144 blocks (~12 hrs). The current ticket price can be found in [Decrediton](../wallets/decrediton/decrediton-setup.md) or on [dcrdata.decred.org](https://dcrdata.decred.org/). Partial tickets can also be purchased using [ticket splitting](ticket-splitting.md) software. Every ticket owned gives its holder the ability to cast a single vote. Upon voting, each ticket returns a small reward plus the original **Ticket Price** of the ticket. 
 
 Tickets are selected pseudorandomly according to a Poisson distribution. The average time it takes for a ticket to vote is 28 days, but possibly requiring up to 142 days, with a 0.5% chance of expiring before being chosen to vote (this expiration returns the original **Ticket Price** without a reward). Every block mined must include a minimum of 3 votes (miners are penalized by a reward deduction if fewer than 5 votes are included).
 

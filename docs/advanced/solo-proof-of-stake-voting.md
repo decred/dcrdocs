@@ -151,7 +151,7 @@ For people who do not already have access to remote servers which they own, Virt
 * [Amazon Web Services (AWS)](https://aws.amazon.com/)
 * [OVH](https://www.ovh.com/)
 
-Note: Another consideration is storage space. As you will need to store the complete Decred blockchain which is constantly growing, it is important to keep in mind that while it is currently quite small, it will eventually grow to the point where you may need to upgrade the storage space on your VPS instances. The current size of the blockchain can be checked using [dcrdata charts](https://explorer.dcrdata.org/charts#blockchain-size).
+Note: Another consideration is storage space. As you will need to store the complete Decred blockchain which is constantly growing, it is important to keep in mind that while it is currently quite small, it will eventually grow to the point where you may need to upgrade the storage space on your VPS instances. The current size of the blockchain can be checked using [dcrdata charts](https://dcrdata.decred.org/charts#blockchain-size).
 
 ---
 
@@ -187,7 +187,7 @@ You may want to change the `v=v{{ cliversion }}` to the latest version if a newe
 
 Start everything: `./decred.sh`
 
-The first time you do this the blockchain will be downloaded, I would wait until that process is complete before continuing. You can check what the latest block is on [dcrdata](https://explorer.dcrdata.org/).
+The first time you do this the blockchain will be downloaded, I would wait until that process is complete before continuing. You can check what the latest block is on [dcrdata](https://dcrdata.decred.org/).
 Then you can moitor the download progress by doing `tmux attach -t dcrd`.
 
 To detach from this session press `<CTRL>` + `<B>` and then `<D>` on your keyboard.

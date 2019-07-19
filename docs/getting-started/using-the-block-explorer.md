@@ -9,11 +9,7 @@ are visible through the use of these block explorers.
 
 * The explorer based on 
 [dcrdata](https://github.com/decred/dcrdata) is located at
-[`https://explorer.dcrdata.org`](https://explorer.dcrdata.org) or
-[`https://testnet.dcrdata.org`](https://testnet.dcrdata.org).
-* The explorer based on
-[insight](https://github.com/bitpay/insight-ui) is located at
-[`https://mainnet.decred.org`](https://mainnet.decred.org) or 
+[`https://dcrdata.decred.org`](https://dcrdata.decred.org) or
 [`https://testnet.decred.org`](https://testnet.decred.org).
 
 Below is a quick review of some of the information on them.

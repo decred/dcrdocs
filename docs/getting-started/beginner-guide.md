@@ -58,7 +58,7 @@ In addition to the [Politeia proposals site](https://proposals.decred.org), the 
 The following chat platforms are bridged, such that one's messages are relayed to users on the other platforms:
 
 * [Slack](https://slack.decred.org/)
-* [Matrix (via Riot.im)](https://riot.im/app/#/room/#general:decred.org)
+* [Matrix](https://chat.decred.org/#/room/#general:decred.org)
 * [Discord](https://discord.gg/GJ2GXfz)
 * [IRC](https://webchat.freenode.net/?channels=decred&uio=d4)
 

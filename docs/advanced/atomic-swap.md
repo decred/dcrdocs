@@ -12,7 +12,7 @@ The other prerequisite is that they need to have the same hash function. That do
 
 ## History of Atomic Swaps
 
-Tier Nolan is considered the inventor of atomic swaps. The concept of decentralized exchanges were widely discussed already in 2012. [The first atomic swap](https://blog.decred.org/2017/09/20/On-Chain-Atomic-Swaps/) happened between Decred and Litecoin on September 20, 2017.
+Tier Nolan is considered the inventor of atomic swaps. The concept of decentralized exchanges were widely discussed already in 2012. [The first atomic swap](https://blog.decred.org/2017/09/20/On-Chain-Atomic-Swaps/) that was published happened between Decred and Litecoin on September 20, 2017.
 
 ## Using Decred's atomicswap tool
 

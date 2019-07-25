@@ -25,9 +25,14 @@ This are the steps for an atomic swap:
  * If the address, the amount, the timelock and the secret hash is correct, the initiator will *redeem* the money the second party paid in by participating.
  * After redeeming, the other party can *extract the secret* from the original contract. This way he or she can also withdraw the money, thus the exchange is completed.
 
-Atomic Swap will create the possibility to the widespread adoption of decentralized exchanges. Atomic swaps don't only operate on-chain. A side-channel is required. Most likely, the Lightning Network will be the most widely used side-channel. However, other side-channels could do this work as well. For an atomic swap to happen, the users need to exchange information in some way. This could be done in a text-chat as well, or any other form of written communication.
+Atomic swaps don't only operate on-chain. A side-channel is required. The Lightning Network can be used as a side-channel. However, other side-channels could do this work as well. For an atomic swap to happen, the users need to exchange information in some way. This could be done in a text-chat as well, or any other form of written communication.
+
+## Use cases
+ * Atomic Swap can create the possibility to the widespread adoption of decentralized exchanges.
+ * 2 parties could exchange currencies without any exchange involved. 
 
 ## Further Information
 
 For more technical information about Atomic Swaps, visit Decred's [atomicswap Github repo](https://github.com/decred/atomicswap).
+
 

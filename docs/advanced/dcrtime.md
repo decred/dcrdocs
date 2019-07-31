@@ -90,7 +90,7 @@ $ dcrtime --testnet -v 8496855341883fdc90cc532f8304d1c46a60586fb15d99f07e41bb5ab
 
 Note that the dcrtime client does verify the merkle path that the server returns. 
 
-Our file is now anchored in the Decred blockchain. Any third party can now prove that `myfile.txt` existed, in its exact form, at the time the block was mined (Chain Timestamp). This can be proved by taking our original `myfile.txt` file, calculating its merkle root, and comparing it to the merkle root stored in the transaction submitted by dcrtime (which we can look up via the TxID in the [block exporer](https://explorer.dcrdata.org/)).
+Our file is now anchored in the Decred blockchain. Any third party can now prove that `myfile.txt` existed, in its exact form, at the time the block was mined (Chain Timestamp). 
 
 ### Politeia
 

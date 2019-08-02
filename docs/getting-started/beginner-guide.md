@@ -33,7 +33,7 @@ The following guides go into depth on key aspects of the Decred experience:
 
 **Block Explorers**
 
-* [explorer.dcrdata.org](https://explorer.dcrdata.org/)
+* [dcrdata.decred.org](https://dcrdata.decred.org/)
 * [mainnet.decred.org](https://mainnet.decred.org/)
 
 **News/Articles**
@@ -58,7 +58,7 @@ In addition to the [Politeia proposals site](https://proposals.decred.org), the 
 The following chat platforms are bridged, such that one's messages are relayed to users on the other platforms:
 
 * [Slack](https://slack.decred.org/)
-* [Matrix (via Riot.im)](https://riot.im/app/#/room/#general:decred.org)
+* [Matrix](https://chat.decred.org/)
 * [Discord](https://discord.gg/GJ2GXfz)
 * [IRC](https://webchat.freenode.net/?channels=decred&uio=d4)
 

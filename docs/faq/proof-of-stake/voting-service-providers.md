@@ -49,7 +49,7 @@ The worst that would happen if a VSP owner disappears is the votes will be misse
 
 #### 7. Where can I see an example of a Voting Service Provider (VSP) ticket on the block explorer? 
 
-VSPs involve 'Dc' addresses since the VSP uses pay-to-script-hash addresses[^17515]. For example, see txid: [c0abc0ec63a8de15550f067e2b6fde28f0432fb91b938574b282daa69f914103](https://explorer.dcrdata.org/tx/c0abc0ec63a8de15550f067e2b6fde28f0432fb91b938574b282daa69f914103).
+VSPs involve 'Dc' addresses since the VSP uses pay-to-script-hash addresses[^17515]. For example, see txid: [c0abc0ec63a8de15550f067e2b6fde28f0432fb91b938574b282daa69f914103](https://dcrdata.decred.org/tx/c0abc0ec63a8de15550f067e2b6fde28f0432fb91b938574b282daa69f914103).
 
 Continue to [PoS Voting Tickets FAQ](voting-tickets.md)
 

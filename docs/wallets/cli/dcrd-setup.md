@@ -47,7 +47,7 @@ The first time launching `dcrd`, it will connect to the Decred network and begin
 
         22:58:16 2016-02-09 [INF] BMGR: Processed 321 blocks in the last 10.03s (544 transactions, height 322, 2016-02-09 09:50:34 +1000 EST)
 
-    The blockchain will be fully synced once the most recently processed block is the current block height. You can tell by either comparing the date and time in the log message or by comparing the height of the last block processed against the last block height on [the official block explorer](https://explorer.dcrdata.org/).
+    The blockchain will be fully synced once the most recently processed block is the current block height. You can tell by either comparing the date and time in the log message or by comparing the height of the last block processed against the last block height on [the official block explorer](https://dcrdata.decred.org/).
 
     Note that this connection will be used in the future. You must leave this `dcrd` instance running in order to use `dcrwallet`.
 

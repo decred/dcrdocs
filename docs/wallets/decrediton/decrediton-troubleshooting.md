@@ -47,7 +47,7 @@ c:\[...]> decrediton.exe --debug
 
 ## Cannot see all my coins after restoring from seed
 
-1. Check if the blockchain is synchronized to the latest block. Look at the block height at the lower left corner of the screen and the latest block from [explorer.dcrdata.org](https://explorer.dcrdata.org)
+1. Check if the blockchain is synchronized to the latest block. Look at the block height at the lower left corner of the screen and the latest block from [dcrdata.decred.org](https://dcrdata.decred.org)
 
     ![Block Height](/img/decrediton/troubleshooting/blockheight.png)
 
@@ -89,7 +89,7 @@ Check the following:
 If you receive a message similar to the one above, it means your dcrd node already has the transaction you're trying to publish. This is harmless, but if the transaction is left pending for a long time, you could try:
 
 - Rebroadcast the transaction using the button in the Transactions tab
-- Check if your transaction has been broadcast by using the [block explorer](https://explorer.dcrdata.org/)  
+- Check if your transaction has been broadcast by using the [block explorer](https://dcrdata.decred.org/)  
 - Perform a rescan
 
 ## Cannot Purchase Tickets

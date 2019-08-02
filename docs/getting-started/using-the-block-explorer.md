@@ -4,17 +4,12 @@
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Info.svg" /> Overview
 
-There are two block explorers available for Decred. All blocks and transactions on the Decred blockchain
-are visible through the use of these block explorers.
+All blocks and transactions on the Decred blockchain
+are visible through the use of the block explorer, [dcrdata](https://github.com/decred/dcrdata).
 
-* The explorer based on 
-[dcrdata](https://github.com/decred/dcrdata) is located at
-[`https://explorer.dcrdata.org`](https://explorer.dcrdata.org) or
-[`https://testnet.dcrdata.org`](https://testnet.dcrdata.org).
-* The explorer based on
-[insight](https://github.com/bitpay/insight-ui) is located at
-[`https://mainnet.decred.org`](https://mainnet.decred.org) or 
-[`https://testnet.decred.org`](https://testnet.decred.org).
+* Networks
+- [mainnet](https://dcrdata.decred.org)
+- [testnet](https://testnet.decred.org)
 
 Below is a quick review of some of the information on them.
 

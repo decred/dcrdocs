@@ -376,7 +376,7 @@ A fee paid to have your transaction included in a block. The default transaction
 
 #### Treasury
 
-The [Decred Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) holds funds for use in development of the project. Decisions about how to use these funds are made through [Politeia](#politeia) proposals and voting.
+The [Decred Treasury](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) holds funds for use in development of the project. Decisions about how to use these funds are made through [Politeia](#politeia) proposals and voting.
 
 ## U
 

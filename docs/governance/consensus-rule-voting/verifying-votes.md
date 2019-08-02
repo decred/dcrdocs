@@ -58,7 +58,7 @@ Once the transaction ID of the ticket vote has been found, the voting preference
 
 ### Block Explorer
 
-To find the voting preferences of a ticket on [the block explorer](https://explorer.dcrdata.org), simply enter the transaction ID obtained above into the search feature at the top of the homepage.
+To find the voting preferences of a ticket on [the block explorer](https://dcrdata.decred.org), simply enter the transaction ID obtained above into the search feature at the top of the homepage.
 The search result should show the detailed information about the transaction, including the voting preferences.
 
 ![Verifying voting preferences in dcrdata](/img/verifying-votes/dcrdata-voting-prefs.png)

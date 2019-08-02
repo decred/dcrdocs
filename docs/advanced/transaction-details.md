@@ -99,7 +99,7 @@ The witness data of a transaction involves only its inputs. The included data fi
 
 ## Example Transaction
 
-Below we examine an example [transaction](https://explorer.dcrdata.org/tx/a58389bd42520a9b9ecbae5432e27b91fde74d2f8e74ac6f8c22cda57b8ae348) from the Decred mainnet.
+Below we examine an example [transaction](https://dcrdata.decred.org/tx/a58389bd42520a9b9ecbae5432e27b91fde74d2f8e74ac6f8c22cda57b8ae348) from the Decred mainnet.
 
 ### Raw Transaction (Hex)
 

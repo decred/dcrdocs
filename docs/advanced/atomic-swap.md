@@ -24,20 +24,7 @@ The CLTV and the CSV is for performing a timelock.
 
 ## Decred-compatible cross-chain atomic swapping
 
- * Bitcoin (Bitcoin Core)
- * Bitcoin Cash (Bitcoin ABC, Bitcoin Unlimited, Bitcoin XT)
- * Decred (dcrwallet)
- * Litecoin (Litecoin Core)
- * Monacoin (Monacoin Core)
- * Particl (Particl Core)
- * Qtum (Qtum Core)
- * Vertcoin (Vertcoin Core)
- * Viacoin (Viacoin Core)
- * Zcoin (Zcoin Core)
-
-External support exists for the following coins and wallets:
-
- * ThreeFold Token (ThreeFold Chain)
+For the current list of Decred compatible currencies for atomic swapping, [view the README](https://github.com/decred/atomicswap) on Decred's atomicswap Github repo.
 
 
 ## Using Decred's atomicswap tool

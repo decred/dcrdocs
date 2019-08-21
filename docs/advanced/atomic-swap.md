@@ -13,9 +13,9 @@ One party (called counterparty 1 or the initiator) generates a secret and pays t
 
 In order to perform an on-chain atomic swap between 2 cryptocurrencies, there are several prerequisites. Both chains must support:
 
- * branched transaction scripts
- * the same hash algorithm in both chains’ transaction scripts
- * signature checks in transaction scripts
+ * Branched transaction scripts
+ * The same hash algorithm in both chains’ transaction scripts
+ * Signature checks in transaction scripts
  * CheckLockTimeVerify or CheckSequenceVerify (“CLTV” and “CSV” for short) in transaction scripts
 
 The hash function in the scripting language is different from the function used for mining. For example, Decred supports blake256, sha256, ripemd160, and sha1.

@@ -16,6 +16,8 @@ If a block includes less than 5 PoS votes there will be a fraction of the block 
 
 > The last block reward will be created in September 2120. The upper limit on the total supply of Decred is 20,999,999.99800912 coins[^2].
 
+The hard cap with no “tail emissions” beyond the scheduled ~21M is designed to provide certainty in the monetary policy and prevent existing holders from being diluted by future manipulation of the monetary supply.
+
 The following chart shows an estimate of the coin supply growth over time.
 
 ![Decred supply chart](/img/decred_supply.png)

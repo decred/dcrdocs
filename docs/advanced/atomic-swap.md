@@ -24,7 +24,7 @@ The CLTV and the CSV is for performing a timelock.
 
 ## Decred-compatible cross-chain atomic swapping
 
-The list of compatible currencies can be seen in the GitHub repo: https://github.com/decred/atomicswap
+The list of compatible currencies can be seen in the [GitHub repo](https://github.com/decred/atomicswap)
 
 
 ## Use cases

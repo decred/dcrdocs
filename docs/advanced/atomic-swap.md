@@ -2,7 +2,7 @@
 
 ## Overview
 
-A cross-chain swap is a trade between two users of different cryptocurrencies. For example, one party may send Decred to a second party's Decred address, while the second party would send Bitcoin to the first party's Bitcoin address. However, as the blockchains are unrelated and transactions can not be reversed, this provides no protection against one of the parties never honoring their end of the trade. One common solution to this problem is to introduce a mutually-trusted third party for escrow. An atomic cross-chain swap solves this problem without the need for a third party.
+An Atomic Swap is a smart contract technology which makes possible to exchange coins from two different blockchains without having to trust any third party, for example a centralized exchange.
 
 Atomic swaps involve each party paying into a contract transaction, one contract for each blockchain. The contracts contain an output that is spendable by either party, but the rules required for redemption are different for each party involved.
 
@@ -22,40 +22,9 @@ The hash function in the scripting language is different from the function used 
 The CLTV and the CSV is for performing a timelock.
 
 
-
 ## Decred-compatible cross-chain atomic swapping
 
- * Bitcoin (Bitcoin Core)
- * Bitcoin Cash (Bitcoin ABC, Bitcoin Unlimited, Bitcoin XT)
- * Decred (dcrwallet)
- * Litecoin (Litecoin Core)
- * Monacoin (Monacoin Core)
- * Particl (Particl Core)
- * Qtum (Qtum Core)
- * Vertcoin (Vertcoin Core)
- * Viacoin (Viacoin Core)
- * Zcoin (Zcoin Core)
-
-External support exists for the following coins and wallets:
-
- * ThreeFold Token (ThreeFold Chain)
-
-The list of compatible currencies may change over time.
-
-
-## Using Decred's atomicswap tool
-
-To perform an atomic swap, one needs to use the necessary command line tools for both chains. Each blockchain has it’s own tools. 
-These are the steps for an atomic swap:
-
- * One of the parties needs to *initiate* the process. This way a smart contract will be created. In this smart contract, a hash of a secret will be visible. The secret is only known by the initiator at this point. The secret is a very large number (32 bytes). 
- * The other party is *auditing* the contract. The address (their receiving address), the amount and the locktime should be correct
- * If the audit was successful, he or she will *participate* in the contract.
- * The creator of the original contract also needs to *audit* the second contract, that was created with the *participate* command on the other chain. 
- * If the address, the amount, the timelock and the secret hash is correct, the initiator will *redeem* the money the second party paid in by participating.
- * After redeeming, the other party can *extract the secret* from the original contract. This way he or she can also withdraw the money, thus the exchange is completed.
-
-Atomic swaps don't only operate on-chain. A side-channel is required. The Lightning Network can be used as a side-channel. However, other side-channels could do this work as well. For an atomic swap to happen, the users need to exchange information in some way. This could be done in a text-chat as well, or any other form of written communication.
+The list of compatible currencies can be seen in the GitHub repo: https://github.com/decred/atomicswap
 
 
 ## Use cases

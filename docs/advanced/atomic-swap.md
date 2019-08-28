@@ -39,7 +39,7 @@ Since these swaps are on-chain, there are some privacy implications that users s
 
 ## Further Information
 
-For more technical information about Atomic Swaps, visit Decred's [atomicswap Github repo](https://github.com/decred/atomicswap).
-[Atomic Swaps on Decred's blog](https://blog.decred.org/2017/09/20/On-Chain-Atomic-Swaps/)
+For more technical information about Atomic Swaps, visit Decred's atomicswap [Github repo](https://github.com/decred/atomicswap).
+You can also read about Atomic Swaps on [Decred's blog](https://blog.decred.org/2017/09/20/On-Chain-Atomic-Swaps/).
 
 

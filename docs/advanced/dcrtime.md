@@ -2,9 +2,9 @@
 
 ---
 
-Dcrtime is a timestamping application that allows users to store hashes of arbitrary data on the Decred blockchain. Inspired by Peter Todd's [OpenTimestamps](https://petertodd.org/2016/opentimestamps-announcement), dcrtime was originally built to store timestamped hashes of data from [Politeia](../governance/politeia/overview.md), Decred's proposal system, on the Decred blockchain. 
+Dcrtime is a timestamping application that allows users to store hashes of arbitrary data on the Decred blockchain. Inspired by Peter Todd's [OpenTimestamps](https://petertodd.org/2016/opentimestamps-announcement), dcrtime was originally built to store timestamped hashes of data from [Politeia](../governance/politeia/overview.md), Decred's proposal system, on the Decred blockchain. It can also be used as a generic timestamping service.
 
-Although dcrtime was created for Politeia, it is expected to have generic utility as a timestamping service. Dcrtime is implemented as a client and server application, with all code open source and available in the [dcrtime repo](https://github.com/decred/dcrtime). Decred also offers a free timestamping service through its [public mainnet server](https://timestamp.decred.org/). We expect this to be particularly useful in scenarios where transparency, accountability and time-ordering are of key importance, in either a public or private context (e.g. computer security, data integrity and various compliance contexts).
+Dcrtime is implemented as a client and server application, with all code open source and available in the [dcrtime repo](https://github.com/decred/dcrtime). Decred also offers a free timestamping service through its [public mainnet server](https://timestamp.decred.org/). We expect this to be particularly useful in scenarios where transparency, accountability and time-ordering are of key importance, in either a public or private context (e.g. computer security, data integrity and various compliance contexts).
 
 In this page, we list some [notable uses](#notable-uses) of dcrtime, as well as describe the high-level [timestamping process](#timestamping-process), [dcrtime architecture](#dcrtime-architecture), and [dcrtime's implementation details](#dcrtime-implementation) via examples.
 

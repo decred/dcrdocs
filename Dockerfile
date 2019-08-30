@@ -3,7 +3,7 @@ FROM python:3.7
 
 LABEL description="dcrdocs build"
 LABEL version="1.0"
-LABEL maintainer "holdstockjamie@gmail.com"
+LABEL maintainer "jholdstock@decred.org"
 
 USER root
 WORKDIR /root
@@ -20,7 +20,7 @@ FROM nginx:1.16
 
 LABEL description="dcrdocs serve"
 LABEL version="1.0"
-LABEL maintainer "holdstockjamie@gmail.com"
+LABEL maintainer "jholdstock@decred.org"
 
 COPY conf/nginx.conf /etc/nginx/conf.d/default.conf
 

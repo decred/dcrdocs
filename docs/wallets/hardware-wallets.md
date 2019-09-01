@@ -7,5 +7,5 @@ Below is a table of hardware wallets that support Decred (last updated 8/31/2019
 
 | Hardware        | Native Wallet Support           | Decrediton Support  |
 | ------------- |:-------------:| -----:|
-| [Trezor](https://trezor.io/)     | Yes | No |
-| [Ledger](https://www.ledger.com/)     | No      |   Yes|
+| [Trezor](https://trezor.io/)     | No | Yes |
+| [Ledger](https://www.ledger.com/)     | Yes      |   No |

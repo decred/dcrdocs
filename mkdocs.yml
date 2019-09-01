@@ -22,6 +22,8 @@ extra:
       link: 'https://github.com/decred'
     - type: 'twitter'
       link: 'https://twitter.com/decredproject'
+    - type: 'medium'
+      link: 'https://medium.com/decred'
     - type: 'reddit'
       link: 'https://www.reddit.com/r/decred/'
     - type: 'youtube'

@@ -104,8 +104,14 @@ pre, code {
     font-size: 16px;
 }
 
+
 .md-typeset a {
     font-weight: bold;
+}
+/* We want all links to be bold, but not if they contain
+font-awesome icons */
+a.fa{
+    font-weight: normal;
 }
 .md-typeset a:link,
 .md-typeset a:visited {

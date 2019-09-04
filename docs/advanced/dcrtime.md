@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Servers.svg" /> Dcrtime
+# <img class="dcr-icon" src="/img/dcr-icons/Servers.svg" /> dcrtime
 
 ---
 
@@ -96,20 +96,20 @@ Our file is now anchored in the Decred blockchain. Any third party can now prove
 
 Building on our simple example, the following example illustrates how dcrtime is used to timestamp data in Politeia.
 
-Politeia commits user data (new proposals, edits, etc.) as needed to a public git [repo](https://github.com/decred-proposals/mainnet). For performance reasons, incoming vote and comment data are stored in the Politeia backend in "journal" files. These journal files are then committed to the repo when other data such as a new proposal is submitted, or every hour if no other data is submitted. Once Politeia verifies that these commits are in the repo, dcrtime is used to anchor the git hash for each commit. For each hash anchored, an anchor file is committed to the `/anchors` directory in the repo. To fasciliate verification, metadata for each anchor is also appended to a single text file, `anchor_audit_trail.txt`, which provides a chonological record of anchors. 
+Politeia commits user data (new proposals, edits, etc.) as needed to a public git [repo](https://github.com/decred-proposals/mainnet). For performance reasons, incoming vote and comment data are stored in the Politeia backend in "journal" files. These journal files are then committed to the repo when other data such as a new proposal is submitted, or every hour if no other data is submitted. Once Politeia verifies that these commits are in the repo, dcrtime is used to anchor the git hash for each commit. For each hash anchored, an anchor file is committed to the `/anchors` directory in the repo. To facilitate verification, metadata for each anchor is also appended to a single text file, `anchor_audit_trail.txt`, which provides a chonological record of anchors. 
 
 The diagram below provides a high-level diagram of the timestamping process.
 
 ![dcrtime politeia](/img/dcrtime_politeia_diagram.png)
 
-To illustrate, let's examine an anchor from a real proposal, the [Decred Bug Bounty Proposal: Phase 2](https://proposals.decred.org/proposals/073694ed82d34b2bfff51e35220e8052ad4060899b23bc25791a9383375cae70) proposal. This anchor hashes two commits to the blockchain. The first [commit](https://github.com/decred-proposals/mainnet/commit/9125d351db4a429681cd7158d2c17d62a2b47c4c) contains all vote data submitted in the last hour. The second [commit](https://github.com/decred-proposals/mainnet/commit/afcca3b205ab6ec749d26e1903414aa35acd9767) contains all comments submitted in the last hour. First, Politeia will submit an Anchor commit, which appends an "Audit Trail Record" containing metadata to `anchor_audit_trail.txt`, as shown below.  
+To illustrate, let's examine an anchor from a real proposal, the [Decred Bug Bounty Proposal: Phase 2](https://proposals.decred.org/proposals/073694ed82d34b2bfff51e35220e8052ad4060899b23bc25791a9383375cae70) proposal. This anchor hashes two commits to the blockchain. The first [commit](https://github.com/decred-proposals/mainnet/commit/9125d351db4a429681cd7158d2c17d62a2b47c4c) contains all vote data submitted in the last hour. The second [commit](https://github.com/decred-proposals/mainnet/commit/afcca3b205ab6ec749d26e1903414aa35acd9767) contains all comments submitted in the last hour. First, Politeia will submit an anchor commit, which appends an "Audit Trail Record" containing metadata to `anchor_audit_trail.txt`, as shown below.  
 
 ```
 1561489213: --- Audit Trail Record b3a3a7e8a28a2e4b889622851228c9f606bb542599a57511f7c15b6edd847a65 ---
 1561489213: 9d3b1aac6988d02038ad829fc1a2c6ca530d385f000000000000000000000000 Flush vote journals.
 1561489213: 0b935a75bfea54c38c0e08efbea7d1fbe24dab68000000000000000000000000 Flush comment journals.
 ```
-Politeia will then wait for the transaction containing the anchor data to be mined into a block. Once it receives confirmation that the transaction has been mined, it will submit an Anchor confirmation [commit](https://github.com/decred-proposals/mainnet/commit/233708a380061982fd44bfb64a5ace325cf59315) that contains information needed to prove the data existed at the time the block was mined. This includes the TxID of the transaction. If we enter this TxID into the [block explorer](https://explorer.dcrdata.org/tx/9584e34a8f3c805c2df71f45632c73b69bd9c29b37322d7003cd9cc9b8b8fe2e), we can indeed see the merkle root embedded in an OP_RETURN transaction.
+Politeia will then wait for the transaction containing the anchor data to be mined into a block. Once it receives confirmation that the transaction has been mined, it will submit an anchor confirmation [commit](https://github.com/decred-proposals/mainnet/commit/233708a380061982fd44bfb64a5ace325cf59315) that contains information needed to prove the data existed at the time the block was mined. This includes the TxID of the transaction. If we enter this TxID into the [block explorer](https://explorer.dcrdata.org/tx/9584e34a8f3c805c2df71f45632c73b69bd9c29b37322d7003cd9cc9b8b8fe2e), we can indeed see the merkle root embedded in an OP_RETURN transaction.
 
 `OP_RETURN 5aa2c14bf8d17617b2ae9bb8772e8da2fc2008c98a2ea090b61b53fddec3412e`
 

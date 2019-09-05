@@ -119,6 +119,7 @@ nav:
   - 'Block Header Specifications': 'advanced/block-header-specifications.md'
   - 'Blockchain Parameters': 'advanced/blockchain-parameters.md'
   - 'Transaction Details': 'advanced/transaction-details.md'
+  - 'dcrtime': 'advanced/dcrtime.md'
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
   - 'Premine': 'advanced/premine.md'
   - 'Inflation': 'advanced/inflation.md'

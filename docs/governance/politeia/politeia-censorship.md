@@ -16,7 +16,7 @@ Politeia is based on the concept of *__transparent censorship__*. A limitation o
 
 ## Proving censorship
 
-When a user registers, a cryptographic identity (pub/priv key pair) is created. This cryptographic identity is then used to create a “censorship record" for each user submission (proposal, comment, comment upvote/downvote). If a user's submission is censored, they can use this censorship record to cryptographically prove their submission was censored, the time it was submitted, and the exact form of the submission. 
+When a user registers, a cryptographic identity (pub/priv key pair) is created. This cryptographic identity is then used to create a “censorship token" for each user submission (proposal, comment, comment upvote/downvote). If a user's submission is censored, they can use this token to cryptographically prove their submission was censored, the time it was submitted, and the exact form of the submission. 
 
 If a user's proposal is censored, it will not appear publicly on Politeia, but will still be visible to the user and admins. The censored proposal will still appear on the user's `Your Proposals` page, along with the reason the proposal was censored. Below is an example proposal that was censored as spam. 
 

@@ -16,7 +16,7 @@ in the [proposal template](#proposal-template), your proposal should provide the
 information (if applicable).
 
 * **Total budget:** If your proposal draws down on its budget when milestones are achieved,
-include a draw schedule (how much DCR is paid for each milestone achieved).
+include a draw schedule (how much is paid for each milestone achieved). To account for variance in the price of DCR, amounts should be specified in USD. The amount of DCR distributed will then be adjusted at payout according to the exchange rate.
 * **Duration of contract:** If your proposal provides an ongoing service, your proposal must
 provide an end date.
 * **Restrictions on deliverables:** Specify any license or other restrictions on
@@ -55,7 +55,7 @@ complete the work and draw down on the proposal's budget.
 ### When
 
 In the *When* section, describe the project's milestones, expected
-completion dates, and the draw schedule (how much DCR is paid for each milestone achieved).
+completion dates, and the draw schedule (how much is paid for each milestone achieved).
 
 ---
 

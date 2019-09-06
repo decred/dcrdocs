@@ -53,7 +53,7 @@ complete the work, and who will draw down on the proposal's budget.
 ### When
 
 In the *When* section, describe the project's milestones, expected 
-completion dates, and the draw schedule (how much DCR is paid for each milestone delivered).
+completion dates, and the draw schedule (how much is paid for each milestone delivered).
 
 > We are proposing doing the design and documentation first, then finish the work with the implementation of the code.
 > We allow for some time between the deliverables in order for the community to provide feedback on the initial design and 
@@ -134,7 +134,7 @@ complete the work, and who will draw down on the proposal's budget.
 ### When
 
 In the *When* section, describe the project's milestones, expected 
-completion dates, and the draw schedule (how much DCR is paid for each milestone delivered).
+completion dates, and the draw schedule (how much is paid for each milestone delivered).
 
 > Registration fees are due by September 30th, I will pay these up-front and request full reimbursement immediately.
 > I will front the cost of the swag and Stakey suit, and claim this along with my travel/accommodation expenses and payment for my work, after the event.

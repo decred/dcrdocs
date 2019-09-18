@@ -128,6 +128,7 @@ nav:
   - 'Simnet': 'advanced/simnet.md'
   - 'Solo Proof-of-Stake (PoS) Voting': 'advanced/solo-proof-of-stake-voting.md'
   - 'Operating a VSP': 'advanced/operating-a-vsp.md'
+  - 'Running a Full Node': 'advanced/full-node.md'
   - 'Security': 'advanced/general-security.md'
   - 'Atomic Swaps': 'advanced/atomic-swap.md'
 - Research:

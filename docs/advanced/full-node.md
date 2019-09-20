@@ -15,10 +15,9 @@ There are a number of reasons to run a full node:
 - **Help the network:** Full nodes are the backbone of Decred. By validating and broadcasting transactions without relying on third parties&mdash; as lightweight nodes do&mdash;they help keep the network decentralized. Each full node added to the network adds to its security and robustness. 
 - **Safety & Privacy:** Because a lightweight node cannot fully validate transactions and blocks, it must trust third parties to do so. This means that the third party will have access to information about your transactions, as well as any personal data you give to that third party. For instance, many lightweight wallets rely on a centralized server to process transactions. Even Simplified Payment Verification (SPV) wallets, which typically connect directly to full nodes in the network, still rely on those other full nodes to process and broadcast their transactions. 
 
-
 ## Requirements:
 
-You do not need high-performance hardware to run a full node. A cheap (refurbished) laptop or Rasberry Pi (3B+ or better) will work. Below are the basic requirements:
+Below are the basic requirements for running a full node:
 
 - \>15 GB disk space (as of September 2019, increases over time)
 - \>2 GB of RAM
@@ -31,8 +30,6 @@ If running a node on your own hardware (i.e. not on remote servers), you will al
 - A safe place to leave your device running
 - If you need a silent node (hard disk drives can be loud), a SSD or USB drive
 
-
-
 ## Guides
 
 Below are some guides from the community that walk you step-by-step through setting up a full node on various hardware and OSes. For generic high-level instructions, see the [Steps](#steps) section below. 
@@ -44,7 +41,6 @@ Below are some guides from the community that walk you step-by-step through sett
 ## Steps
 
 Below are the basic high-level steps to install a full node on any hardware and OS. These instructions use [dcrinstall](../wallets/cli/cli-installation.md), the automatic installer and upgrader software. In addition to installing `dcrd`, it will also install `dcrwallet` (which allows you to create wallets) and `dcrctl` (which allows you to control `dcrwallet` and `dcrd` from the command line). You can also just install `dcrd` on its own from [binaries or source files](https://github.com/decred/dcrd#installing-and-updating); a full node does not require a wallet unless you want to use your full node to validate and broadcast your own transactions.
-
 
 1. **Download and install dcrd**
 	- Follow the instructions for your OS in the [CLI Installation guide](https://docs.decred.org/wallets/cli/cli-installation/). The `dcrd` executable will be installed in a directory named `/decred` under your OS's home directory. 
@@ -65,11 +61,3 @@ Below are the basic high-level steps to install a full node on any hardware and 
 	- If you don't wish to pass your IP address every time you restart `dcrd`, you can put it in dcrd's [configuration file](../wallets/cli/startup-basics.md#configuration-file-locations). 
 
 Congratulations, you are now running a Decred full node to support the network!
-
-
-
-
-
-
-
-

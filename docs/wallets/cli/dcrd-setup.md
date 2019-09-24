@@ -12,7 +12,7 @@ This guide is intended to help you setup the `dcrd` application using [startup f
 `dcrd` is the node daemon for Decred. A daemon is a program that works in the background that you do not interface with directly. `dcrd` maintains the entire past transactional ledger (or blockchain) of Decred and allows relaying of transactions to other Decred nodes across the world. You can think of it as your own personal Decred blockchain server. The blockchain is saved in the `data` folder within `dcrd`'s home directory.
 
 **Advanced Users: If you are running in headless mode via SSH,** you
-will need to use a terminal multiplexer such as [screen](http://www.howtogeek.com/howto/ubuntu/keep-your-ssh-session-running-when-you-disconnect/)
+will need to use a terminal multiplexer such as [screen](https://www.howtogeek.com/howto/ubuntu/keep-your-ssh-session-running-when-you-disconnect/)
 or [tmux](https://tmux.github.io/). Where you see the instruction to
 move to another shell, you'll need to start a new window in `screen`
 or `tmux`.

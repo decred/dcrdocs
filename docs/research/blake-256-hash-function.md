@@ -10,4 +10,4 @@ SHA-256, used in Bitcoin, has a number of technical shortcomings due to its Merk
 
 [^1]: Aumasson J., Henzen L., Meier W., Phan R. 2010. [SHA-3 proposal BLAKE](https://decred.org/research/aumasson2010.pdf).
 [^2]: Aumasson J., Henzen L., Meier W., Phan R. 2014. The hash function BLAKE.
-[^3]: Bernstein D. and Lange T. 2013. [eBACS: ECRYPT benchmarking of cryptographic systems](http://bench.cr.yp.to).
+[^3]: Bernstein D. and Lange T. 2013. [eBACS: ECRYPT benchmarking of cryptographic systems](https://bench.cr.yp.to).

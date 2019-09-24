@@ -1,7 +1,7 @@
 # dcrdocs
 
-[![Build Status](https://travis-ci.org/decred/dcrdocs.png?branch=master)](https://travis-ci.org/decred/dcrdocs)
-[![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
+[![Build Status](https://github.com/decred/dcrdocs/workflows/Build%20and%20Test/badge.svg)](https://github.com/decred/dcrdocs/actions)
+[![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 
 `dcrdocs` is source code for the [Decred project documentation](https://docs.decred.org).
 

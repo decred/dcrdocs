@@ -2,7 +2,7 @@
 
 ---
 
-This guide explains everything you need to know about running a full node on Decred.
+This guide explains everything you need to know about running a Decred full node.
 
 ## What is a full node?
 
@@ -12,29 +12,33 @@ A full node is a program that fully validates transactions and blocks, without h
 
 There are a number of reasons to run a full node:
 
-- **Help the network:** Full nodes are the backbone of Decred. By validating and broadcasting transactions without relying on third parties&mdash; as lightweight nodes do&mdash;they help keep the network decentralized. Each full node added to the network adds to its security and robustness. 
-- **Safety & Privacy:** Because a lightweight node cannot fully validate transactions and blocks, it must trust third parties to do so. This means that the third party will have access to information about your transactions, as well as any personal data you give to that third party. For instance, many lightweight wallets rely on a centralized server to process transactions. Even Simplified Payment Verification (SPV) wallets, which typically connect directly to full nodes in the network, still rely on those other full nodes to process and broadcast their transactions. 
+- **Help the network:** Full nodes are the backbone of Decred. By validating and broadcasting transactions without relying on third parties they help keep the network decentralized. Each full node added to the network adds to its security and robustness. 
+- **Safety & Privacy:** Because a lightweight node cannot fully validate transactions and blocks, it must trust third parties to do so. This means that the third party will have access to information about your transactions, as well as any personal data you give to that third party. For instance, many lightweight wallets rely on a centralized server to process transactions. Even [Simplified Payment Verification (SPV)](../wallets/spv.md) wallets, which typically connect directly to full nodes in the network, still rely on those other full nodes to process and broadcast their transactions. 
 
 ## Requirements:
 
 Below are the basic requirements for running a full node:
 
-- \>15 GB disk space (as of September 2019, increases over time)
+- \>15 GB disk space (as of September 2019). 
+
+!!! note "Note"
+    The size of the blockchain is continually increasing as new blocks are added to the chain. To support migration to new versions and future growth, a good rule of thumb is to have ~3X the [current raw blockchain size](https://dcrdata.decred.org/charts?chart=blockchain-size&zoom=ikd7pc00-k0vn9c00&bin=day&axis=time) in hard disk space.  
+
 - \>2 GB of RAM
-- Stable Operating System (OS) &mdash;Windows 7/8.x/10 (server preferred), macOS, Linux
+- Supported Operating System (OS) &mdash;Windows 7/8.x/10 (server preferred), macOS, Linux
 - Reliable internet connection
 
 If running a node on your own hardware (i.e. not on remote servers), you will also need:
 
-- Access to the settings of your router (to allow outbound connections)
+- Ability to open a port for incoming internet traffic. If using a home wifi network, this may require changing the settings of your router.
 - A safe place to leave your device running
 - If you need a silent node (hard disk drives can be loud), a SSD or USB drive
 
 ## Guides
 
-Below are some guides from the community that walk you step-by-step through setting up a full node on various hardware and OSes. For generic high-level instructions, see the [Steps](#steps) section below. 
+Below are some guides from the community that walk you step-by-step through setting up a full node on various hardware and operating systems. For generic high-level instructions, see the [Steps](#steps) section below. 
 
-- [Running a Decred Raspberry Pi Node](https://medium.com/@_Checkmatey_/running-a-decred-raspberry-pi-node-ac605b70c652): A more beginner friedly guide that uses a VNC server (remote desktop). This guide is intented to be a gentle introduction to using SSH on the command line. 
+- [Running a Decred Raspberry Pi Node](https://medium.com/@_Checkmatey_/running-a-decred-raspberry-pi-node-ac605b70c652): A more beginner-friedly guide that uses a VNC server (remote desktop). This guide is intented to be a gentle introduction to using SSH on the command line. 
 - [My experience setting up a Decred full-node](https://medium.com/crypto-rocket-blog/my-experience-setting-up-a-decred-full-node-8a9bbf55bc30): Another beginner-friendly guide that walks through setting up a full node on a Raspberry Pi using an Ubuntu terminal on a Windows PC.
 - [Installing dcrd](https://stakey.club/en/installing-dcrd/): A more advanced guide to installing a full node (Mac or Debian) that also covers manual installation (from binaries or source) and configuring dcrd to run on Tor for extra security.
 
@@ -44,20 +48,20 @@ Below are the basic high-level steps to install a full node on any hardware and 
 
 1. **Download and install dcrd**
 	- Follow the instructions for your OS in the [CLI Installation guide](https://docs.decred.org/wallets/cli/cli-installation/). The `dcrd` executable will be installed in a directory named `/decred` under your OS's home directory. 
-2. **Start `dcrd`**
+1. **Start `dcrd`**
 	- Navigate to the `/decred` directory and launch `dcrd`. See the [Operating System Differences](../wallets/cli/os-differences.md) page for OS-specific commands.
 	- `dcrd` will boot up, begin connecting to peers and downloading the full Decred blockchain.
-3. **(Optional) Create wallet**
-	- If you would like to use your full node to validate and broadcast your wallet's transactions, you'll need to create and set up a wallet. See the [dcrwallet Setup Guide](../wallets/cli/dcrwallet-setup.md) for instructions.
-4. **Enable incoming connections**
-	- `dcrd` will automatically begin downloading the blockchain and connecting to peers. However, if you want to help the network and have your node start validating transactions, you'll need to configure your internet router to allow inbound connections. 
+1. **Enable incoming connections**
+	- `dcrd` will automatically begin downloading the blockchain and connecting to peers. However, if you want to help the network and have your node start validating transactions, you'll need to open a port for incoming internet traffic. This may require changing the settings of your router (to allow outbound connections). If this is the case:
 		1. Find your [Local IP address](https://www.howtogeek.com/236838/how-to-find-any-devices-ip-address-mac-address-and-other-network-connection-details/) and [External IP address](https://whatismyipaddress.com/).
-		2. Edit the settings of your router to open port 9108 (port forwarding). This [process](https://www.wikihow.com/Set-Up-Port-Forwarding-on-a-Router) depends on the type of router you have. 
-	- If running a firewall, you'll also need to configure it to allow connections on port 9108.
-5. **Wait for dcrd to sync**
+		1. Edit the settings of your router to open port 9108 (port forwarding). This [process](https://www.wikihow.com/Set-Up-Port-Forwarding-on-a-Router) depends on the type of router you have. 
+	- If running a firewall, you'll also need to configure it to allow inbound connections on port 9108.
+1. **Wait for dcrd to sync**
 	- Check a Decred block explorer such as [dcrdata](https://dcrdata.decred.org/) and wait until the block height displayed matches the block height shown locally.
-5. **Restart dcrd**
+1. **Restart dcrd**
 	- Restart `dcrd` and pass it your external IP address using the following flag `--externalip=[your.external.ip]`
 	- If you don't wish to pass your IP address every time you restart `dcrd`, you can put it in dcrd's [configuration file](../wallets/cli/startup-basics.md#configuration-file-locations). 
+1. **Leave running**
+	-  Leave your node running, online, in a safe space, 24/7/365.
 
 Congratulations, you are now running a Decred full node to support the network!

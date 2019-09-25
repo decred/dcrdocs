@@ -1,4 +1,4 @@
-name: Build and Test
+name: Docker Build
 on: [pull_request]
 
 jobs:

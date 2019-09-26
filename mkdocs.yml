@@ -138,6 +138,7 @@ nav:
   - 'BLAKE-256 Hash Function': 'research/blake-256-hash-function.md'
   - 'Script Extensions': 'research/script-extensions.md'
   - 'Signature Script Isolation and Fraud Proofs': 'research/signature-script-isolation-and-fraud-proofs.md'
+  - 'Block Production Times': 'research/block-production-times.md'
   - 'Transaction Extensions': 'research/transaction-extensions.md'
   - 'Ticket Selection Algorithm': 'research/ticket-selection-algorithm.md'
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'

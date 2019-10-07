@@ -27,7 +27,7 @@ The figure below shows shows the actual values plotted against the CDF used to d
 
 ![block times chart](/img/block_times_chart.png)
 
-As we can see, it turns out that the actual distribution is quite close to the expected perfect distribution, which shows the network is operating in a healthy fashion. Note that the 0 to 10 and 0 to 30 second intervals slightly underperform the ideal values, which is  expected because miners must wait for the votes to arrive before they can start building a new block, and this fact slightly skews the number of blocks found within the time spans downwards.
+As we can see, it turns out that the actual distribution is quite close to the expected perfect distribution, which shows the network is operating in a healthy fashion. Note that the 0 to 10 and 0 to 30 second intervals slightly underperform the ideal values, which is expected because miners must wait for the votes to arrive before they can start building a new block, and this fact slightly skews the number of blocks found within the time spans downwards.
 
 
 ## :fa-book: References

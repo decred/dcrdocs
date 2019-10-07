@@ -38,7 +38,7 @@ If running a node on your own hardware (i.e. not on remote servers), you will al
 
 Below are some guides from the community that walk you step-by-step through setting up a full node on various hardware and operating systems. For generic high-level instructions, see the [Steps](#steps) section below. 
 
-- [Running a Decred Raspberry Pi Node](https://medium.com/@_Checkmatey_/running-a-decred-raspberry-pi-node-ac605b70c652): A more beginner-friedly guide that uses a VNC server (remote desktop). This guide is intented to be a gentle introduction to using SSH on the command line. 
+- [Running a Decred Raspberry Pi Node](https://medium.com/@_Checkmatey_/running-a-decred-raspberry-pi-node-ac605b70c652): A more beginner-friendly guide that uses a VNC server (remote desktop). This guide is intented to be a gentle introduction to using SSH on the command line. 
 - [My experience setting up a Decred full-node](https://medium.com/crypto-rocket-blog/my-experience-setting-up-a-decred-full-node-8a9bbf55bc30): Another beginner-friendly guide that walks through setting up a full node on a Raspberry Pi using an Ubuntu terminal on a Windows PC.
 - [Installing dcrd](https://stakey.club/en/installing-dcrd/): A more advanced guide to installing a full node (Mac or Debian) that also covers manual installation (from binaries or source) and configuring dcrd to run on Tor for extra security.
 

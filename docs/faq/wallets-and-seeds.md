@@ -107,6 +107,10 @@ In the case of Decrediton or dcrwallet, both the client and server
 implementations of TOTP would exist on the same machine, which would negate the
 primary security enhancement usually attributed to 2FA.
 
+For extra reading on this topic, Exodus wallet has a detailed article named [Why
+local apps and 2FA aren't friends
+yet](https://support.exodus.io/article/1208-why-local-apps-and-2fa-arent-friends-yet).
+
 ---
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources

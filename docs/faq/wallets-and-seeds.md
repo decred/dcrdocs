@@ -80,6 +80,35 @@ You should backup your `wallet.db` file (preferably in a thumb drive stored in a
 
 ---
 
+#### 9. Could wallet security be improved using 2-Factor Authentication (2FA)?
+
+2-Factor Authentication (2FA) would provide no extra security to Decrediton or
+dcrwallet.
+
+2FA is an authentication technique in which a computer user is granted access
+only after successfully presenting two or more pieces of evidence (or factors)
+to an authentication mechanism.
+These are typically "something you know" such as a password, and "something you
+possess" such as a smartphone.
+Proving possession of a smartphone is often acheived using a piece of software
+on the device which implements a [Time-based One-Time Password
+(TOTP)](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm)
+algorithm.
+Google Authenticator and Authy are two well known examples.
+
+2FA using TOTP is most commonly used in client/server applications as a
+mechanism for clients to prove their identity to the server.
+The security added by this mechanism depends on both the client and the
+server agreeing upon a TOTP algorithm, and each implementing it independently.
+In order to subvert authentication, an attacker would have to compromise both the
+client and the server software.
+
+In the case of Decrediton or dcrwallet, both the client and server
+implementations of TOTP would exist on the same machine, which would negate the
+primary security enhancement usually attributed to 2FA.
+
+---
+
 ## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources
 
 [^8660]: Decred Forum, [Post 8,660](https://forum.decred.org/threads/534/page-3#post-8660)

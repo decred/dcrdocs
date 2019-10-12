@@ -61,7 +61,7 @@ Below are the basic high-level steps to install a full node on any hardware and 
 1. **Restart dcrd**
 	- Restart `dcrd` and pass it your external IP address using the following flag `--externalip=[your.external.ip]`
 	- If you don't wish to pass your IP address every time you restart `dcrd`, you can put it in dcrd's [configuration file](../wallets/cli/startup-basics.md#configuration-file-locations). \
-	- If you have configured your node to allow inbound peers, you should see inbound peers in the logs. Inbound peers can also be check using the Remote Procedure Call (RPC) command [getpeerinfo](../wallets/cli/dcrctl-rpc-commands.md).
+	- If you have configured your node to allow inbound peers, you should see inbound peers in the logs. Inbound peers can also be checked using the Remote Procedure Call (RPC) command [getpeerinfo](../wallets/cli/dcrctl-rpc-commands.md).
 1. **Leave running**
 	-  Leave your node running, online, in a safe space, 24/7/365.
 

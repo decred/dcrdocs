@@ -88,8 +88,8 @@ dcrwallet.
 2FA is an authentication technique in which a computer user is granted access
 only after successfully presenting two or more pieces of evidence (or factors)
 to an authentication mechanism.
-These are typically "something you know" such as a password, and "something you
-possess" such as a smartphone.
+These are typically "something you know", such as a password, and "something you
+possess", such as a smartphone.
 Proving possession of a smartphone is often acheived using a piece of software
 on the device which implements a [Time-based One-Time Password
 (TOTP)](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm)

@@ -57,8 +57,8 @@ In addition to the [Politeia proposals site](https://proposals.decred.org), the 
 
 The following chat platforms are bridged, such that one's messages are relayed to users on the other platforms:
 
-* [Slack](https://slack.decred.org/)
 * [Matrix](https://chat.decred.org/)
+* [Slack](https://slack.decred.org/)
 * [Discord](https://discord.gg/GJ2GXfz)
 * [IRC](https://webchat.freenode.net/?channels=decred&uio=d4)
 
@@ -68,9 +68,8 @@ Telegram and KakaoTalk are partially bridged.
 
 * [Reddit](https://www.reddit.com/r/decred)
 * [Twitter](https://twitter.com/decredproject) - Account operated by small group of contributors
-* [Forum](https://forum.decred.org/)
-* [Facebook](https://facebook.com/decredproject) 
-* [Weibo](https://weibo.com/DecredProject) 
+* [Facebook](https://facebook.com/decredproject)
+* [Weibo](https://weibo.com/DecredProject)
 * [LinkedIn](https://www.linkedin.com/company/decredproject/) - Account operated by small group of contributors
 
 ### Code

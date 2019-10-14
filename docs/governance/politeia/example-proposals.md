@@ -65,7 +65,7 @@ completion dates, and the draw schedule (how much is paid for each milestone del
 > 1. 4 hours to add refclient validation tests.
 > 1. 2 hours to add RPC to politeiawwwcli
 >
-> In addition allow for 1 hour of overhead (going back and forth on slack/github etc). This will bring the grand total to 17 hours at a rate of $40/hr.
+> In addition allow for 1 hour of overhead (going back and forth on Slack/GitHub etc). This will bring the grand total to 17 hours at a rate of $40/hr.
 > This proposal will therefore be capped $680.
 > The proposed schedule is to do this work over 2 weeks in order to allow back and forth on the details.
 >

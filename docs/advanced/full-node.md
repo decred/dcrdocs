@@ -30,7 +30,7 @@ Below are the basic requirements for running a full node:
 
 If running a node on your own hardware (i.e. not on remote servers), you will also need:
 
-- Ability to open a port for incoming internet traffic. If using a home wifi network, this may require changing the settings of your router.
+- Ability to open a port for incoming internet traffic. If using a home Wi-Fi network, this may require changing the settings of your router.
 - A safe place to leave your device running
 - If you need a silent node (hard disk drives can be loud), a SSD or USB drive
 

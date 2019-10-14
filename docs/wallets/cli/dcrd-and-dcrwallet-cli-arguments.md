@@ -51,10 +51,10 @@ dcrd --logdir=/my/custom/log/directory
             `--proxy=`                | Connect via SOCKS5 proxy (eg. 127.0.0.1:9050)
             `--proxyuser=`            | Username for proxy server
             `--proxypass=`            | Password for proxy server
-            `--onion=`                | Connect to tor hidden services via SOCKS5 proxy (eg. 127.0.0.1:9050)
+            `--onion=`                | Connect to Tor hidden services via SOCKS5 proxy (eg. 127.0.0.1:9050)
             `--onionuser=`            | Username for onion proxy server
             `--onionpass=`            | Password for onion proxy server
-            `--noonion`               | Disable connecting to tor hidden services
+            `--noonion`               | Disable connecting to Tor hidden services
             `--torisolation`          | Enable Tor stream isolation by randomizing user credentials for each connection.
             `--testnet`               | Use the test network
             `--simnet`                | Use the simulation test network

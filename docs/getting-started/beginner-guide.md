@@ -60,7 +60,6 @@ The following chat platforms are bridged, such that one's messages are relayed t
 * [Matrix](https://chat.decred.org/)
 * [Slack](https://slack.decred.org/)
 * [Discord](https://discord.gg/GJ2GXfz)
-* [IRC](https://webchat.freenode.net/?channels=decred&uio=d4)
 
 Telegram and KakaoTalk are partially bridged.
 

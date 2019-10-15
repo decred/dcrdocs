@@ -163,10 +163,10 @@ that may be essentially anywhere.
 Assuming N is sufficiently large, reversing this process is computationally
 infeasible.
 
-#### Elliptic Curve Cryptography
+#### Elliptic Curve Cryptography (ECC)
 
-Elliptic-curve cryptography (ECC) is an approach to public-key cryptography
-based on the algebraic structure of elliptic curves over finite fields.
+An approach to public-key cryptography based on the algebraic structure of
+elliptic curves over finite fields.
 
 ECC requires significantly smaller keys to achieve equivalent security compared
 to non-EC cryptography techniques - for example, a 256 bit ECC key is equivalent
@@ -383,8 +383,8 @@ A wallet mode in which only blocks related to addresses owned by the wallet are 
 
 #### Smart contract
 
-A smart contract is a self-executing contract with the terms of the agreement
-between buyer and seller being directly written into lines of code.
+A self-executing contract with the terms of the agreement between buyer and
+seller being directly written into lines of code.
 
 Once a smart contract has been written and broadcast to the Decred network, the
 code and the agreements contained therein exist across the distributed,
@@ -393,6 +393,9 @@ As a result, the code fully controls the execution of the contract, enabling
 trusted transactions and agreements to be carried out among disparate, anonymous
 parties without the need for a central authority, legal system, or external
 enforcement mechanism.
+
+The scripting language used to create Decred smart contracts is not [Turing
+complete](https://en.wikipedia.org/wiki/Turing_completeness).
 
 #### Stake transaction tree
 

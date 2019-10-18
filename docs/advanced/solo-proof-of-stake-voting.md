@@ -20,7 +20,7 @@ To mitigate a great number of the risks associated with having a Decred wallet c
 
 ### Hardware and Operating System
 
-The first concept we will address is that of _compartmentalization_. There is really no reason that a machine which may be storing large amounts of cryptocurrency should have multiple roles. It should not be used for gaming, word processing, web browsing, downloading torrents, etc. The only software installed on this machine should be the software which is absolutely necessary to manage your Decred wallet. It should never connect to a public WiFi network or any other network you do not fully trust.
+The first concept we will address is that of _compartmentalization_. There is really no reason that a machine which may be storing large amounts of cryptocurrency should have multiple roles. It should not be used for gaming, word processing, web browsing, downloading torrents, etc. The only software installed on this machine should be the software which is absolutely necessary to manage your Decred wallet. It should never connect to a public Wi-Fi network or any other network you do not fully trust.
 
 The hardware requirements for running Decred software are modest, so it is not required to use a very expensive or powerful machine. 20GB storage and 2GB of RAM should be sufficient. Single-board computers such as the Raspberry Pi 3 Model B can be used, however using a machine that is more powerful will yield a better user experience.
 

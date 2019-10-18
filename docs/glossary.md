@@ -364,7 +364,7 @@ The amount of DCR one must time-lock in order to buy a ticket. The ticket price 
 
 #### Ticket-splitting
 
-The process of buying part of a ticket. This is done by coordinating with other parties who will buy the other parts of a ticket. This can be done without giving up custody to your DCR. The minimum amount of DCR that can be put into a split ticket is 5 DCR. Ticket-splitting is currently coordinated through the 'ticket-splitting' channel on the [Decred slack](https://slack.decred.org/) channel.
+The process of buying part of a ticket. This is done by coordinating with other parties who will buy the other parts of a ticket. This can be done without giving up custody to your DCR. The minimum amount of DCR that can be put into a split ticket is 5 DCR. Ticket-splitting is currently coordinated through the `#ticketsplitting:decred.org` channel on [Matrix](https://chat.decred.org/).
 
 #### Tor
 

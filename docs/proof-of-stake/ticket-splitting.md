@@ -25,7 +25,7 @@ If you prefer video, try this [tutorial](https://www.youtube.com/watch?v=9L8P7hL
 
 DCR holders wishing to split a ticket join a "session" with other participants. Sessions can be public or private. There is typically at least one public session going at all times. Participants in a session pledge an amount of DCR they are willing to spend, and when the  total amount pledged by all participants reaches the ticket price, a ticket is automatically purchased.
 
-Coordination of sessions is currently done on Decred's Slack group in the #ticket_splitting channel, or in the Telegram group located [here](https://t.me/dcrtktsplit).
+Coordination of sessions is currently done in the `#ticketsplitting:decred.org` channel on [Matrix](https://chat.decred.org/), or in the Telegram group located [here](https://t.me/dcrtktsplit).
 
 ### Voting
 
@@ -84,7 +84,7 @@ These instructions will walk you through buying a ticket using the GUI version o
 
     ![Split Ticket Buyer config menu](../img/split_ticket_buyer_amount.png)
 
-1. Pick a session to join. Public session names can typically be found on the websites of VSPs that support ticket splitting, or in the ticket splitting chat channels (#ticket_splitting channel on Decred's Slack group or in the Telegram group located [here](https://t.me/dcrtktsplit)).
+1. Pick a session to join. Public session names can typically be found on the websites of VSPs that support ticket splitting, or in the ticket splitting chat channels (`#ticketsplitting:decred.org` channel on [Matrix](https://chat.decred.org/) or in the Telegram group located [here](https://t.me/dcrtktsplit)).
 
 1. Enter the name of the ticket buying session you want to join and your wallet passphrase. Then click `Participate` to join the session. In the screenshot below, we're joining a public session, `decredvoting1`. You can also create private sessions with other participants. All that is required to create a private session is for all participants to use the same session name.
 
@@ -118,4 +118,4 @@ In this case, you may need to manually update a parameter value in the `splittic
 
 ### General help
 
-General technical support is often available in the #ticket_splitting channel on Decred's Slack group, or in the Telegram group located [here](https://t.me/dcrtktsplit).
+General technical support is often available in the `#ticketsplitting:decred.org` channel on [Matrix](https://chat.decred.org/), or in the Telegram group located [here](https://t.me/dcrtktsplit).

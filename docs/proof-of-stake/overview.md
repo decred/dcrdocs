@@ -8,7 +8,7 @@ Proof-of-Stake (PoS) voting is a form of Proof-of-Stake (PoS) security, but the 
 
 PoS voting serves a number of purposes:
 
-1. Allowing stakeholders to vote for or against proposed changes to the Decred blockchain. If stakeholders vote in support of a change, the chain will hardfork and the new feature becomes active automatically. More information on voting can be found in the [Mainnet Voting Guide](../governance/consensus-rule-voting/overview.md).
+1. Allowing stakeholders to vote for or against proposed changes to the Decred blockchain. If stakeholders vote in support of a change, the chain will hard fork and the new feature becomes active automatically. More information on voting can be found in the [Mainnet Voting Guide](../governance/consensus-rule-voting/overview.md).
 1. Providing a mechanism for stakeholders to influence Proof-of-Work (PoW) miners. Stakeholders can vote to withhold a miner's reward even if the block conforms to the consensus rules of the network. This allows stakeholders, in principle, to discourage problematic mining behavior such as mining empty blocks.
 1. For a block to be valid, it has to be signed by at least 3 of the 5 tickets that are called to vote in that block. This makes the Decred blockchain more robust to certain kinds of attack, such as those which rely on secret mining.
 1. The same principle makes the Decred blockchain resistant to contentious hard forks. PoW Miners are unable to build on a chain without the Votes of the tickets that are called.

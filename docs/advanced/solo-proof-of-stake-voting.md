@@ -112,7 +112,7 @@ Using the automated ticket buyer will require you to leave your wallet online.
 
 ### Politeia Voting
 
-Setting vote choices for on-chain votes will happen on the remote servers you will set up and we will address that process in a later section. For Politeia votes you will need to cast those from your cool wallet. I will outline the process for doing so using the `politeiavoter` CLI tool.
+Setting vote choices for on-chain votes will happen on the remote servers you will set up and we will address that process in a later section. For Politeia votes you will need to cast those from your cool wallet. I will outline the process for doing so using the [politeiavoter](https://github.com/decred/politeia/tree/master/politeiawww/cmd/politeiavoter) CLI tool.
 
 1. Download the Politeia archive, manifest, and signature files.
 

@@ -35,7 +35,7 @@ Voting rights for consensus rule voting are assigned pseudorandomly to a single 
 
 #### Politeia Voting
 
-Rights for voting on Politeia proposals are granted to the biggest contributor of a split-ticket. The biggest contributor can vote on proposals in Decrediton or via the CLI using `politeiavoter`, exactly as if they had purchased a whole ticket.
+Rights for voting on Politeia proposals are granted to the biggest contributor of a split-ticket. The biggest contributor can vote on proposals in Decrediton or via the [politeiavoter](https://github.com/decred/politeia/tree/master/politeiawww/cmd/politeiavoter) CLI tool, exactly as if they had purchased a whole ticket.
 
 ### Further reading
 

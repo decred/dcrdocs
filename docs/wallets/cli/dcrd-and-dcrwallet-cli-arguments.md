@@ -55,6 +55,7 @@ dcrd --logdir=/my/custom/log/directory
             `--onionuser=`            | Username for onion proxy server
             `--onionpass=`            | Password for onion proxy server
             `--noonion`               | Disable connecting to Tor hidden services
+            `--nodiscoverip`          | Disable automatic network address discovery
             `--torisolation`          | Enable Tor stream isolation by randomizing user credentials for each connection.
             `--testnet`               | Use the test network
             `--simnet`                | Use the simulation test network
@@ -77,7 +78,6 @@ dcrd --logdir=/my/custom/log/directory
             `--blockminsize=`         | Minimum block size in bytes to be used when creating a block
             `--blockmaxsize=`         | Maximum block size in bytes to be used when creating a block (default: 375000)
             `--blockprioritysize=`    | Size in bytes for high-priority/low-fee transactions when creating a block (default: 20000)
-            `--getworkkey=`           | **DEPRECATED** -- Use the `--miningaddr` option instead
             `--sigcachemaxsize=`      | The maximum number of entries in the signature verification cache (default: 100000)
             `--nonaggressive`         | Disable mining off of the parent block of the blockchain if there aren't enough voters
             `--nominingstatesync`     | Disable synchronizing the mining state with other nodes

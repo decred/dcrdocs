@@ -14,20 +14,22 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     RPC Method                |Params
     --------------------------|-------------
     `addnode`                 | `"addr"` `"add|remove|onetry"`
+    `createrawssrtx`          | `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]` (`fee`)
+    `createrawsstx`           | `[{"txid":"value","vout":n,"tree":n,"amt":n},...] amount [{"addr":"value","commitamt":n,"changeaddr":"value","changeamt":n},...]`
     `createrawtransaction`    | `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]` `{"address":amount,...}` (`locktime` `expiry`)
     `debuglevel`              | `"levelspec"`
     `decoderawtransaction`    | `"hextx"`
-    `decodescript`            | `"hexscript"`
+    `decodescript`            | `"hexscript"` (`version`)
     `estimatefee`             | `numblocks`
     `estimatesmartfee`        | `confirmations` (`mode="conservative"`)
     `estimatestakediff`       | (`tickets`)
     `existsaddress`           | `"address"`
     `existsaddresses`         | `["address",...]`
-    `existsexpiredtickets`    | `"txhashblob"`
+    `existsexpiredtickets`    | `["txhash",...]`
     `existsliveticket`        | `"txhash"`
-    `existslivetickets`       | `"txhashblob"`
-    `existsmempooltxs`        | `"txhashblob"`
-    `existsmissedtickets`     | `"txhashblob"`
+    `existslivetickets`       | `["txhash",...]`
+    `existsmempooltxs`        | `["txhash",...]`
+    `existsmissedtickets`     | `["txhash",...]`
     `generate`                | `numblocks`
     `getaddednodeinfo`        | `dns` (`"node"`)
     `getbestblock`            |
@@ -38,9 +40,9 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `getblockhash`            | `index`
     `getblockheader`          | `"hash"` (`verbose=true`)
     `getblocksubsidy`         | `height` `voters`
-    `getblocktemplate`        | (`{"mode":"value", "capabilities":["capability",...], "longpollid":"value", "sigoplimit":sigoplimit, "sizelimit":sizelimit, "maxversion":n, "target":"value", "data":"value", "workid":"value"}`)
     `getcfilter`              | `"hash"` `"filtertype"`
     `getcfilterheader`        | `"hash"` `"filtertype"`
+    `getcfilterv2`            | `"blockhash"`
     `getchaintips`            |
     `getcoinsupply`           |
     `getconnectioncount`      |
@@ -48,7 +50,7 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `getdifficulty`           |
     `getgenerate`             |
     `gethashespersec`         |
-    `getheaders`              | `"blocklocators"` `"hashstop"`
+    `getheaders`              | `["blocklocator",...]` `"hashstop"`
     `getinfo`                 |
     `getmempoolinfo`          |
     `getmininginfo`           |

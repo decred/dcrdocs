@@ -176,8 +176,7 @@ b=dcrinstall-linux-${a}-${v};
 wget https://github.com/decred/decred-release/releases/download/${v}/${b};
 chmod +x ${b};
 ./${b};
-ip=$(curl icanhazip.com);
-echo "tmux new -d -s dcrd 'dcrd --externalip=${ip}'; tmux new -d -s dcrwallet 'dcrwallet --enablevoting --promptpass'; tmux attach -t dcrwallet" > ~/decred.sh;
+echo "tmux new -d -s dcrd 'dcrd'; tmux new -d -s dcrwallet 'dcrwallet --enablevoting --promptpass'; tmux attach -t dcrwallet" > ~/decred.sh;
 chmod +x ~/decred.sh;
 echo "PATH=~/decred:$PATH" >> ~/.profile;
 source ~/.profile

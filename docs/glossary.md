@@ -50,6 +50,35 @@ In each block, five tickets are called to vote. In addition to votes on any open
 
 ---
 
+#### Change
+
+Decred has a concept of change, which is very similar to the concept of change
+when using physical cash.
+
+To explain by way of an example, imagine you have received 5 DCR in a single
+transaction from a friend.
+This 5 DCR is likely contained in a single Unspent Transaction Output (UTXO)
+within your wallet, and this can be compared to a physical $5 bill in your
+wallet.
+Suppose you want to purchase an item for $1 and pay for it with your $5 bill -
+the shopkeeper must give you $4 of change.
+Similarly, in order to spend 1 DCR from the UTXO containing 5 DCR, your wallet
+creates a transaction which sends 1 DCR to the intended recipient, and a change
+transaction which sends the remaining 4 DCR to another address you own (aka. a
+change address).
+
+#### Change Address
+
+An address created by your wallet for the purpose of receiving change.
+Every time a wallet has a need for a change address, it will create a new
+address which has never been used before.
+
+Creating a new change address for each transaction provides a significant boost
+to user privacy.
+Not using dedicated change addresses, or re-using existing ones, would enable a
+passive observer to infer a significant amount of information about your
+transaction sizes and where you are sending transactions to.
+
 #### Coinbase maturity
 
 Outputs from coinbase and stakebase transactions cannot be spent until the coinbase maturity period has passed. The coinbase maturity period is 256 blocks.
@@ -117,6 +146,36 @@ A double-spend is an attack where the given set of coins are spent in more than 
 ## E
 
 ---
+
+#### Elliptic Curve
+
+In mathematics, an elliptic curve is a plane algebraic curve defined by an
+equation of the form $y^2=x^3+ax+b$.
+Elliptic curves have a number of interesting properties which make them useful
+for cryptographic purposes.
+
+For example, elliptic curve point multiplication is used as the basis of
+producing a one-way function.
+The multiplication of two points on an elliptic curve yields a third point on
+the curve whose location has no immediately obvious relationship to the
+locations of the first two, and thus repeating this N times will yield a point
+that may be essentially anywhere.
+Assuming N is sufficiently large, reversing this process is computationally
+infeasible.
+
+#### Elliptic Curve Cryptography (ECC)
+
+An approach to public-key cryptography based on the algebraic structure of
+elliptic curves over finite fields.
+
+ECC requires significantly smaller keys to achieve equivalent security compared
+to non-EC cryptography techniques - for example, a 256 bit ECC key is equivalent
+to a 3072 bit RSA key.
+This is a particularly useful property in the context of a cryptocurrency, which
+fundamentally depends upon transmitting and storing a large number of
+cryptographic keys.
+ECC also has lower CPU and memory requirements compared to most non-EC
+techniques.
 
 #### Expired ticket
 
@@ -321,6 +380,22 @@ A [simulation network](advanced/simnet.md) with very low difficulty, such that a
 #### Simple Payment Verification (SPV)
 
 A wallet mode in which only blocks related to addresses owned by the wallet are downloaded. When not in SPV mode, wallets must download all blocks in the blockchain to verify transactions (fully validating mode). SPV mode allows wallets to operate with less stringent hardware requirements and load significantly faster. SPV wallets cannot vote, but can purchase tickets and allocate voting rights to a [Voting Service Provider (VSP)](#voting-service-provider).
+
+#### Smart contract
+
+A self-executing contract with the terms of the agreement between buyer and
+seller being directly written into lines of code.
+
+Once a smart contract has been written and broadcast to the Decred network, the
+code and the agreements contained therein exist across the distributed,
+decentralized blockchain network.
+As a result, the code fully controls the execution of the contract, enabling
+trusted transactions and agreements to be carried out among disparate, anonymous
+parties without the need for a central authority, legal system, or external
+enforcement mechanism.
+
+The scripting language used to create Decred smart contracts is not [Turing
+complete](https://en.wikipedia.org/wiki/Turing_completeness).
 
 #### Stake transaction tree
 

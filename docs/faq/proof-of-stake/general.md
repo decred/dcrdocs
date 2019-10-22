@@ -31,7 +31,13 @@ It also reduces latency between the wallet and network which can reduce the chan
 
 ---
 
-#### 4. Is Proof-of-Stake (PoS) susceptible to large exchanges using their customers’ DCR?
+#### 4. Can I cancel my ticket?
+
+No. The fact that funds cannot be withdrawn is a key element in Decred's PoS security and governance model. Having funds locked in tickets proves that ticket holders have "skin in the game" and are properly incentivized. Funds will be returned to the ticket holder's wallet once the ticket has voted or the ticket has been revoked after missing a vote.
+
+---
+
+#### 5. Is Proof-of-Stake (PoS) susceptible to large exchanges using their customers’ DCR?
 
 The amount of DCR a person (or exchange) possesses doesn't matter, only the number of tickets. Funds used to purchase tickets are locked until the ticket they purchased votes. This means that DCR involved in PoS are effectively nontransferable. For an exchange to use their customers’ DCR for voting, they would have to transfer them out of the wallets and lock them for up to 5 months. People would notice their balances change (DCR locked in PoS will not show as spendable) and they would not be able to withdraw any funds so the exchange would suffer a large loss of liquidity.
 
@@ -41,7 +47,7 @@ Finally, there's a soft cap on the total number of tickets in the pool. Every 14
 
 ---
 
-#### 5. Is Proof-of-Stake (PoS) susceptible to influence from large balance holders such as the original developers?
+#### 6. Is Proof-of-Stake (PoS) susceptible to influence from large balance holders such as the original developers?
 
 The pool size limits above apply here. This stops one person/group flooding the PoS pool with large numbers of their own tickets. Even if they bought up the whole pool (with huge fees) the most they would likely get is about 4000 tickets (based on previous ticket windows where the ones around 30 DCR usually go up to 100 for the next window, and the max for the one after that is often over 300). So a large balance holder could probably buy 2 windows out. A window at 30 would be 86,400 DCR, then the next at 100 would be 288,000 DCR. So it would cost 374,400 DCR to buy 5,760 tickets. With a target pool size of 40,960 tickets, 374,400 DCR would give you about 14% of all tickets.
 
@@ -59,7 +65,7 @@ Decred was specifically designed to minimise impact from both large PoW mining p
 
 ---
 
-#### 6. Why is the ticket pool target size 40,960?
+#### 7. Why is the ticket pool target size 40,960?
 
 This target was selected prior to Decred's launch to ensure that tickets would have a 99.5% chance of voting before they expire.
 

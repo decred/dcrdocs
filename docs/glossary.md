@@ -461,6 +461,10 @@ The [Decred Treasury](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5
 
 Immediately after a ticket is bought it is unmined until the transaction is included in a block.
 
+#### UTXO
+
+An Unspent Transaction Output (UTXO) is an output of a transaction that has not been spent, i.e. some amount of DCR that can be used as an input in a new transaction that spends the DCR. The sum of all UTXOs a user has the private keys to spend is the user’s total balance. 
+
 ## V
 
 ---

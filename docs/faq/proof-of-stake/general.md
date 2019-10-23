@@ -33,7 +33,7 @@ It also reduces latency between the wallet and network which can reduce the chan
 
 #### 4. Can I cancel my ticket?
 
-No. The fact that funds cannot be withdrawn is a key element in Decred's PoS security and governance model. Having funds locked in tickets proves that ticket holders have "skin in the game" and are properly incentivized. Funds will be returned to the ticket holder's wallet once the ticket has voted or the ticket has been revoked after missing a vote.
+No. The fact that funds cannot be withdrawn is a key element in Decred's PoS security and governance model. Having funds locked in tickets proves that ticket holders have "skin in the game" and are properly incentivized. Funds will be returned to the ticket holder's wallet once the ticket has either voted or been revoked due to a missed or expired vote.
 
 ---
 

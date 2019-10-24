@@ -2,7 +2,7 @@ site_name: Decred Documentation
 theme: 
   name: material
   favicon: 'img/favicon.ico?v=s3ss'
-  logo: 'img/decred_logo_symbol_128.svg'
+  logo: 'img/decred_logo_symbol_color_gradient_128.svg'
   font: false
 extra:
   decreditonversion: 1.4.0

@@ -18,12 +18,12 @@ Below are some notable uses of dcrtime:
 
 ## Timestamping process
 
-dcrtime allows a nearly unlimited number of hashes to be timestamped. It does this by creating a single merkle root from any number of hashes and including it in a transaction on the Decred blockchain. This process can be summarized as follows:
+dcrtime allows a nearly unlimited number of hashes to be timestamped. It does this by creating a single Merkle root from any number of hashes and including it in a transaction on the Decred blockchain. This process can be summarized as follows:
 
 1. A 32-byte hash is created for each document or piece of data to be timestamped.
-1. A single merkle root is calculated from the hashes.
-1. This merkle root is included in an on-chain transaction, "anchoring" the data in the Decred blockchain by timestamping the data.
-1. A transaction hash and merkle path is generated, which can then be used to query the Decred blockchain and retrieve the block containing the transaction (and associated timestamp).
+1. A single Merkle root is calculated from the hashes.
+1. This Merkle root is included in an on-chain transaction, "anchoring" the data in the Decred blockchain by timestamping the data.
+1. A transaction hash and Merkle path is generated, which can then be used to query the Decred blockchain and retrieve the block containing the transaction (and associated timestamp).
 
 To help verify an anchor against the blockchain, a command line tool [dcrtime_checker](https://github.com/decred/dcrtime/tree/master/cmd/dcrtime_checker) is provided.  
 
@@ -77,7 +77,7 @@ cd90cc268d9ceef6e276bfa7a615c5f85b5a27b0d917ee3f1f1e5d5598f2fa00 Verify
 cd90cc268d9ceef6e276bfa7a615c5f85b5a27b0d917ee3f1f1e5d5598f2fa00 Not anchored
 ```
 
-If we wait until the transaction containing the merkle root has been mined into a block and call dcrtime again, the dcrtime server will verify that the transaction has been anchored, as well as provide the merkle path (path to the merkle root), the transaction ID (TxID) of the transaction containing the merkle root, and a `Chain Timestamp` providing the time the block was mined. 
+If we wait until the transaction containing the Merkle root has been mined into a block and call dcrtime again, the dcrtime server will verify that the transaction has been anchored, as well as provide the Merkle path (path to the Merkle root), the transaction ID (TxID) of the transaction containing the Merkle root, and a `Chain Timestamp` providing the time the block was mined. 
 
 ```
 $ dcrtime --testnet -v 8496855341883fdc90cc532f8304d1c46a60586fb15d99f07e41bb5ab19c79c6
@@ -88,7 +88,7 @@ $ dcrtime --testnet -v 8496855341883fdc90cc532f8304d1c46a60586fb15d99f07e41bb5ab
   TxID           : 4172a560a7035c169c4da60cba2cb1fbac686bd01224e09a1a56ce5e6f31cff0
 ```
 
-Note that the dcrtime client does verify the merkle path that the server returns. 
+Note that the dcrtime client does verify the Merkle path that the server returns. 
 
 Our file is now anchored in the Decred blockchain. Any third party can now prove that `myfile.txt` existed, in its exact form, at the time the block was mined (Chain Timestamp). 
 
@@ -109,7 +109,7 @@ To illustrate, let's examine an anchor from a real proposal, the [Decred Bug Bou
 1561489213: 9d3b1aac6988d02038ad829fc1a2c6ca530d385f000000000000000000000000 Flush vote journals.
 1561489213: 0b935a75bfea54c38c0e08efbea7d1fbe24dab68000000000000000000000000 Flush comment journals.
 ```
-Politeia will then wait for the transaction containing the anchor data to be mined into a block. Once it receives confirmation that the transaction has been mined, it will submit an anchor confirmation [commit](https://github.com/decred-proposals/mainnet/commit/233708a380061982fd44bfb64a5ace325cf59315) that contains information needed to prove the data existed at the time the block was mined. This includes the TxID of the transaction. If we enter this TxID into the [block explorer](https://explorer.dcrdata.org/tx/9584e34a8f3c805c2df71f45632c73b69bd9c29b37322d7003cd9cc9b8b8fe2e), we can indeed see the merkle root embedded in an OP_RETURN transaction.
+Politeia will then wait for the transaction containing the anchor data to be mined into a block. Once it receives confirmation that the transaction has been mined, it will submit an anchor confirmation [commit](https://github.com/decred-proposals/mainnet/commit/233708a380061982fd44bfb64a5ace325cf59315) that contains information needed to prove the data existed at the time the block was mined. This includes the TxID of the transaction. If we enter this TxID into the [block explorer](https://explorer.dcrdata.org/tx/9584e34a8f3c805c2df71f45632c73b69bd9c29b37322d7003cd9cc9b8b8fe2e), we can indeed see the Merkle root embedded in an OP_RETURN transaction.
 
 `OP_RETURN 5aa2c14bf8d17617b2ae9bb8772e8da2fc2008c98a2ea090b61b53fddec3412e`
 

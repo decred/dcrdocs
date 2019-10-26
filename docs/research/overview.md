@@ -16,7 +16,6 @@ Research work in Decred is currently organized around the following subsections:
 * [BLAKE-256 Hash Function](blake-256-hash-function.md)
 * [Script Extensions](script-extensions.md)
 * [Signature Script Isolation and Fraud Proofs](signature-script-isolation-and-fraud-proofs.md)
-* [Transaction Extensions](transaction-extensions.md)
 * [Schnorr Signatures](schnorr-signatures.md)
 * [Miscellaneous Improvements](miscellaneous-improvements.md)
 

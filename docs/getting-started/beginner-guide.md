@@ -22,7 +22,7 @@ The following guides go into depth on key aspects of the Decred experience:
 * [Ticket buying guide](../proof-of-stake/overview.md)
 * [Politeia](../governance/politeia/overview.md)
 * [Voting on consensus rules changes](../governance/consensus-rule-voting/overview.md)
-* [Using Testnet](../advanced/using-testnet.md)
+* [Using Testnet](https://devdocs.decred.org/environments/testnet/)
 
 
 ## Information

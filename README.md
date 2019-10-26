@@ -102,9 +102,6 @@ $ docker run -d --rm -p <local port>:80 decred/dcrdocs:latest
 
 - `mining/proof-of-work/pool-mining/gominer.md`
 
-#### Testnet reset
-
-- `advanced/using-testnet.md`
 
 ## Getting help
 

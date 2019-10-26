@@ -18,7 +18,7 @@ Another benefit offered by SPV is an extreme reduction in the time required for 
 
 ## How does SPV work?
 
-At the start of every block added to the Decred blockchain is 180 bytes of data called the [block header](../advanced/block-header-specifications.md). The block header describes key information about the block including the hash of the block, the Merkle root (the sum of all the transaction hashes in the block), and the nonce calculated by the proof-of-work miners. A predetermined filter is also created for every block, based on the all of the transactions within the block.
+At the start of every block added to the Decred blockchain is 180 bytes of data called the [block header](https://devdocs.decred.org/developer-guides/block-header-specifications/). The block header describes key information about the block including the hash of the block, the Merkle root (the sum of all the transaction hashes in the block), and the nonce calculated by the proof-of-work miners. A predetermined filter is also created for every block, based on the all of the transactions within the block.
 
 When an SPV wallet initialises it will connect to the Decred network using peer-to-peer connections, and it will download the full set of headers and filters. It will then validate the header chain to ensure that the chain and its proof-of-work are valid. Once this is complete, the wallet will use the filters to locally identify which blocks contain owned transactions without uploading any private data to remote nodes. The wallet can then use the peer-to-peer network to download these blocks, scan them for relevant transactions and select these to update personal transaction history and balance.
 

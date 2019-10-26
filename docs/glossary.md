@@ -12,7 +12,7 @@ Accounts allow you to keep separate records of your DCR funds. Transferring DCR 
 
 #### Address
 
-A human-readable representation of a possible destination for a payment, similar to an email address. Unlike an email address however, there are a variety of address types, and most addresses are intended only for a single use. This is because addresses represent not only the destination of a payment, but constraints required to redeem funds. For more on addresses see the [address details](advanced/address-details.md) page.  
+A human-readable representation of a possible destination for a payment, similar to an email address. Unlike an email address however, there are a variety of address types, and most addresses are intended only for a single use. This is because addresses represent not only the destination of a payment, but constraints required to redeem funds. For more on addresses see the [address details](https://devdocs.decred.org/developer-guides/addresses/) page in the developer documentation.  
 
 #### ASIC
 
@@ -375,7 +375,7 @@ A cryptographic mechanism to prove that a private key was used to validate or au
 
 #### Simnet
 
-A [simulation network](advanced/simnet.md) with very low difficulty, such that a developer can mine new blocks locally at will for testing purposes.
+A [simulation network](https://devdocs.decred.org/environments/simnet/) with very low difficulty, such that a developer can mine new blocks locally at will for testing purposes.
 
 #### Simple Payment Verification (SPV)
 
@@ -423,7 +423,7 @@ Colloquial term for time-locking DCR in exchange for tickets.
 
 #### Testnet
 
-A parallel [network](advanced/using-testnet.md) used for testing, where DCR can be obtained freely from faucets.
+A parallel [network](https://devdocs.decred.org/environments/testnet/) used for testing, where DCR can be obtained freely from faucets.
 
 #### Ticket
 

@@ -2,11 +2,24 @@
 
 ---
 
-Decred is open to contributions across all domains (including software development, design, communications, community support, research and documentation). At its core, Decred is an open source project with a mission to build free software which provides universal access to a method of securely storing and communicating value.
+Decred is open to contributions across all domains, including software development, design, communications, community support, research and documentation. At its core, Decred is an open source project with a mission to build free software which provides universal access to a method of securely storing and communicating value.
 
 As with many other open source software development projects, people working on Decred do so autonomously and voluntarily. People contribute to Decred because they want the project to succeed and there is some aspect they are personally attached to, enough to want to spend some of their time working on it. The Treasury has funds to pay people for this work, once they demonstrate that they are capable of adding significant value in a particular domain.
 
 The strength of the open source approach to production is that individuals efficiently allocate themselves to the tasks they are most interested in and apt for. Contributors are typically not keen to spend time managing or directing others, so this model tends to only suit people who enjoy working independently in a self-directed manner.
+
+---
+
+## <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> Guidelines
+
+While the process of contributing will vary depending on domain, the basic steps will be as follows:
+
+1. Understand the basics of Decred by using its software and reading our documentation or other educational content.
+2. Find a part of the project you feel you have the skills to contribute to.
+3. Check with the Decred team before starting work, to avoid duplication.
+4. Submit work for review.
+
+If contributing code, see the [contributor guidelines](https://devdocs.decred.org/contributing/contributor-guidelines/) in the Decred developer documentation.
 
 ---
 

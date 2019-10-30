@@ -189,6 +189,14 @@ Tickets that reached the end of their window without being called to vote - thes
 
 A mechanism for obtaining free (testnet) coins.
 
+#### Fork
+
+A programming term for an open-source code modification. The modified code is considered a “fork” of the original code. Typically, forks contain modifications that significantly alter the original code. For example, the Bitcoin Cash fork of the Bitcoin blockchain raised the block size from 1Mb to 8 Mb. If the state of the blockchain is also forked, as was the case with Bitcoin Cash, it is also considered a “chain fork”. In this case, owners of coins on the original chain will have equivalent coins on the new chain when the chains diverge. Decred began its life as a source code fork of [btcd](https://github.com/btcsuite/btcd), an alternate full node implementation of Bitcoin. Significant changes were then made before launch, including modifications to the consensus rules, a Proof-of-Stake (PoS) layer to enable on-chain governance, a new hashing algorithm and other innovations. It is arguable whether Decred is a source code fork, considering the scope of modifications made. Decred is not a chain fork, as it did not copy the state of the Bitcoin blockchain, and instead started from its own genesis block. 
+
+It is also worth noting that chain forks can and do regularly occur without any code changes. This happens unintentionally when nodes in the network temporarily disagree on the state of the blockchain. Typically, these forks are short lived and resolve when the nodes reach consensus. 
+
+Source code forks can be [hard forks](#hard-fork) or [soft forks](#soft-fork). Soft forks are backwards compatible, whereas hard forks are not. 
+
 #### Full node
 
 Short for 'fully-validating node. Refers to software that fully validates all transactions and blocks, as opposed to trusting a 3rd party. In addition to validating transactions and blocks, nearly all full nodes also participate in relaying transactions and blocks to other full nodes around the world, thus forming the peer-to-peer network that is the backbone of the Decred cryptocurrency.
@@ -204,6 +212,12 @@ The very first block of the Decred blockchain, created on the 8th of February 20
 ## H
 
 ---
+
+#### Hard Fork
+
+A permanent divergence (or split) in the blockchain caused by non-backwards compatible changes to the consensus rules. Nodes validating transactions with the old rules will create blocks or transactions that are considered invalid by nodes using the new rules. Hard forks result in two separate chains, one creating blocks using the old rules, and another creating blocks using the new rules. 
+
+In Decred, consensus rule changes are implemented via hard forks coordinated using [consensus rule voting](governance/consensus-rule-voting/overview.md). This enables rules to be changed predictably without fracturing the network, and allows Proof-of-Stake (PoS) voters to exercise sovereignty over whether or not to accept the proposed changes. 
 
 #### Hardware wallet
 
@@ -396,6 +410,10 @@ enforcement mechanism.
 
 The scripting language used to create Decred smart contracts is not [Turing
 complete](https://en.wikipedia.org/wiki/Turing_completeness).
+
+#### Soft Fork
+
+A change to consensus rules that is backwards compatible. Nodes running older versions without the new rules can still validate transactions and blocks created with the new rules. New transaction types, for instance, can often be added with soft-forking changes. However, only nodes using the new rules will be able to understand the new transaction type.
 
 #### Stake transaction tree
 

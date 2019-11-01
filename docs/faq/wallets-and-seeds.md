@@ -64,7 +64,7 @@ dcrctl --wallet getbalance "imported" 0 all
 
 #### 7. What is the difference between a testnet and mainnet public key address?
 
-A public key address, also called Pay-To-Pubkey (P2Pk), can be identified with its 2-byte prefix which identifies the network and type. A mainnet public key address starts with the letters `Dk` while a testnet public key address starts with the letters `Tk`. For details on address types, see the see the [address details](https://devdocs.decred.org/developer-guides/addresses/) page in the developer documentation.  
+A public key address, also called Pay-To-Pubkey (P2Pk), can be identified with its 2-byte prefix which identifies the network and type. A mainnet public key address starts with the letters `Dk` while a testnet public key address starts with the letters `Tk`. For details on address types, see the [address details](https://devdocs.decred.org/developer-guides/addresses/) page in the developer documentation.  
 
 ---
 

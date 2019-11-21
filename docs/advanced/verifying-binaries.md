@@ -31,8 +31,8 @@ are as follows:
 
 1. Import the Decred Release Signing Key in GnuPG.  You will only need to do this a single time and can skip this when verifying later releases on the same computer.
 
-        $ gpg --keyserver pgp.mit.edu --recv-keys 0x518A031D
-        gpg: requesting key 518A031D from hkp server pgp.mit.edu
+        $ gpg --keyserver pgp.key-server.io --recv-keys 0x518A031D
+        gpg: requesting key 518A031D from hkp server pgp.key-server.io
         gpg: /home/user/.gnupg/trustdb.gpg: trustdb created
         gpg: key 7608AF04: public key "Decred Release <release@decred.org>" imported
         gpg: Total number processed: 1

@@ -17,6 +17,7 @@ There is also a [Command Line Interface](../wallets/cli/cli-installation.md) tha
 The following guides go into depth on key aspects of the Decred experience:
 
 * [Obtaining DCR](obtaining-dcr.md)
+* [Developer documentation](https://devdocs.decred.org/)
 * [Using the Block Explorer](using-the-block-explorer.md)
 * [Governance](../governance/overview.md)
 * [Ticket buying guide](../proof-of-stake/overview.md)
@@ -71,20 +72,14 @@ Telegram and KakaoTalk are partially bridged.
 * [Weibo](https://weibo.com/DecredProject)
 * [LinkedIn](https://www.linkedin.com/company/decredproject/) - Account operated by small group of contributors
 
+
 ### Code
 
 Code for a variety of software projects lives on [GitHub](https://github.com/decred). Issues can be used to report bugs or suggest features. Pull Requests can be issued to merge work into the main repository branch.
 
-Selected GitHub repositories:
-
-* [decrediton](https://github.com/decred/decrediton) - GUI wallet
-* [dcrd](https://github.com/decred/dcrd) and [dcrwallet](https://github.com/decred/dcrwallet) - Decred daemons
-* [politeia](https://github.com/decred/politeia) and [politeiagui](https://github.com/decred/politeiagui) - Politeia back and front end
-* [dcrdata](https://github.com/decred/dcrdata) - Block explorer
-* [dcrdocs](https://github.com/decred/dcrdocs) - This [docs site](../index.md)
-* [dcrweb](https://github.com/decred/dcrweb) - [Decred.org](https://decred.org/)
-* [dcps](https://github.com/decred/dcps) - Decred Change Proposals
+See the [developer documentation](https://devdocs.decred.org/) for more information on various projects, technical documentation and developer-specific contribution guidelines. 
 
 ### Contributing
 
-Decred is always looking for new contributors. A basic outline of how this works is: Show up, Find something useful to do, Do it, Get Paid. Do a small bit at first and see if other contributors in that domain appreciate it. This [recruitment page](https://www.decred.org/recruiting/) explains the project's recruitment philosophy and approach in more detail.
+Decred is always looking for new contributors. A basic outline of how this works is: Show up, Find something useful to do, Do it, Get Paid. Do a small bit at first and see if other contributors in that domain appreciate it. For details, see  [contributing to Decred](../contributing/overview.md).
+

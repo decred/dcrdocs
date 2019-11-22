@@ -15,9 +15,9 @@ The strength of the open source approach to production is that individuals effic
 While the process of contributing will vary depending on domain, the basic steps will be as follows:
 
 1. Understand the basics of Decred by using its software and reading our documentation or other educational content.
-2. Find a part of the project you feel you have the skills to contribute to.
-3. Check with the Decred team before starting work, to avoid duplication.
-4. Submit work for review.
+1. Find a part of the project you feel you have the skills to contribute to.
+1. Check with the Decred team before starting work, to avoid duplication.
+1. Submit work for review.
 
 If contributing code, see the [contributor guidelines](https://devdocs.decred.org/contributing/contributor-guidelines/) in the Decred developer documentation.
 

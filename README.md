@@ -91,6 +91,11 @@ $ docker run -d --rm -p <local port>:80 decred/dcrdocs:latest
 - `wallets/cli/dcrctl-rpc-commands.md`
 - `wallets/cli/cli-installation.md`
 - `advanced/solo-proof-of-stake-voting.md`
+- `advanced/verifying-binaries.md`
+
+#### politeiavoter releases
+
+- `advanced/solo-proof-of-stake-voting.md`
 
 #### Decrediton releases
 

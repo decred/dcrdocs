@@ -434,6 +434,6 @@ Block height | Estimated date     | Block reward (DCR) | PoW (DCR)    | PoS vote
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources
 
-[^1]: [Blockchain parameters](blockchain-parameters.md#blockchain-parameters_1)
+[^1]: [Blockchain parameters](https://devdocs.decred.org/developer-guides/blockchain-parameters/) 
 [^2]: GitHub, [decred/dcrd](https://github.com/decred/dcrd/blob/5076a00512a521cea3c51b443b50970804dbe712/blockchain/subsidy_test.go#L52-L54)
-[^3]: [PoS network parameters](blockchain-parameters.md#pos-network-parameters)
+[^3]: [PoS network parameters](https://devdocs.decred.org/developer-guides/blockchain-parameters/#pos-network-parameters)

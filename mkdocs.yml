@@ -140,9 +140,6 @@ nav:
 - Contributing:
   - 'Overview': 'contributing/overview.md'
   - 'Contributor Compensation': 'contributing/contributor-compensation.md'
-  - Guidelines:
-    - 'Using GitHub': 'contributing/using-github.md'
-    - 'Source Code Contributions': 'contributing/source-code-contributions.md'
 - About:
   - 'Credits': 'about/credits.md'
   - 'License': 'about/license.md'

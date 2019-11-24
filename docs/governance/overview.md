@@ -26,7 +26,5 @@ Decisions concerning the direction of the project, such as how to spend Treasury
 
 ### Politeia voting
 
-Anyone may submit a proposal, and all data on Politeia (proposals, comments, upvotes/downvotes) is periodically anchored into the Decred blockchain, using [dcrtime](../advanced/dcrtime.md/). This enables users to [cryptographically prove](politeia/politeia-censorship.md/) if censorship has occurred. In this way, Politeia is built around the idea of transparent censorship. Users cannot be silently censored. These votes can be about allocating money from the Treasury, or changing the Constitution or other policies.
-
 A Politeia vote is not changing the software itself. It is theoretical, and later an on-chain consensus rule change can happen, that is aligned with the Constitution or other policies, that were voted off-chain.
 Anyone may submit a proposal, and all data on Politeia (proposals, comments, upvotes/downvotes) is periodically anchored into the Decred blockchain, using [dcrtime](../advanced/dcrtime.md). This enables users to [cryptographically prove](politeia/politeia-censorship.md) if censorship has occurred. In this way, Politeia is built around the idea of _transparent censorship_. Users cannot be silently censored. 

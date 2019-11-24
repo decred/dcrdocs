@@ -11,7 +11,7 @@ On-chain voting serves two main purposes: validating blocks created by Proof-of-
 
 ### Block Voting
 
-In each block, five tickets are selected pseudo-randomly and called to [vote on-chain](../proof-of-stake/overview.md). Tickets vote to approve or reject the previous block of transactions created by a PoW miner. At least three out of five tickets called to vote must respond for the block to be considered valid. This power provides a check against malicious PoW miner behavior (e.g. mining empty blocks), as well as forming the basis of Decred’s [fork resistance](https://medium.com/decred/detailed-analysis-of-decred-fork-resistance-93022e0bcde7). After a ticket is called to vote, the DCR locked in that ticket is unlocked and returned to the purchaser’s wallet, along with the PoS reward if the ticket successfully voted. Decred is a hybrid PoW/PoS system.
+In each block, five tickets are selected pseudo-randomly and called to [vote on-chain](../proof-of-stake/overview.md). Tickets vote to approve or reject the previous block of transactions created by a PoW miner. At least three out of five tickets called to vote must approve for the block to be mined. This power provides a check against malicious PoW miner behavior (e.g. mining empty blocks), as well as forming the basis of Decred’s [fork resistance](https://medium.com/decred/detailed-analysis-of-decred-fork-resistance-93022e0bcde7). After a ticket is called to vote, the DCR locked in that ticket is unlocked and returned to the purchaser’s wallet, along with the PoS reward if the ticket successfully voted. Decred is a hybrid PoW/PoS system.
 
 ### Consensus Rule Voting
 

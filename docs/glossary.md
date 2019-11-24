@@ -227,7 +227,7 @@ A cryptographic function that produces a fixed-size hash value from variable-siz
 
 The number of hashes per second computed by miners on the network.
 
-#### HD Wallet
+#### Hierarchical Deterministic (HD) Wallet
 
 A wallet that uses the Hierarchical Deterministic (HD) protocol, that was defined in [BIP-0032](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki). In HD wallets, a special parent seed is used to deterministically create child private keys for addresses. This means that the user typically only needs to back up the seed phrase.
 

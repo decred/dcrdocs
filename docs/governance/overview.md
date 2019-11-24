@@ -2,7 +2,7 @@
 
 ---
 
-Decred is a Decentralized Autonomous Organization (DAO). Changes to the system, for example consensus rule changes, happen in a decentralized manner. Decred’s governance is based on the principle of ticket-holder voting. To participate in governance, users must time-lock DCR to purchase tickets. There are multiple things ticket holders can vote on. Some of them are on-chain, and some of them are off-chain.
+Decred aims to transition to be a Decentralized Autonomous Organization (DAO). Changes to the system, for example consensus rule changes, happen in a decentralized manner. Decred’s governance is based on the principle of ticket-holder voting. To participate in governance, users must time-lock DCR to purchase tickets. There are multiple things ticket holders can vote on. Some of them are on-chain, and some of them are off-chain.
 
 ## On-Chain Voting
 Validation of blocks and voting on consensus rule changes occurs on-chain. Voting on higher-level issues, such as how to spend [Treasury funds](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx), or significant policy decisions (e.g. amend the [Decred constitution](decred-constitution.md)) occurs off-chain in Politeia, a web platform where the community at large can submit, discuss and vote on proposals.
@@ -22,7 +22,7 @@ At the point of voting, a [DCP](https://github.com/decred/dcps/blob/master/dcp-0
 
 ## Off-Chain Voting
 
-Decisions concerning the direction of the project, such as how to spend Treasury funds, or amending the [Decred Constitution](https://docs.decred.org/governance/decred-constitution/) or other policies, are made via proposals on [Politeia](politeia/overview.md).
+Decisions concerning the direction of the project, such as how to spend Treasury funds, or amending the [Decred Constitution](https://docs.decred.org/governance/decred-constitution/) or other policies, are made via proposals on [Politeia](politeia/overview.md). Decred is not a DAO yet, and in the transition period the Decred Holding Group (DHG) has responsibility for managing the Treasury. The DHG has a veto right.
 
 ### Politeia voting
 

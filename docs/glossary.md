@@ -413,7 +413,7 @@ complete](https://en.wikipedia.org/wiki/Turing_completeness).
 
 #### Soft Fork
 
-A change to consensus rules that is backwards compatible. Nodes running older versions without the new rules can still validate transactions and blocks created with the new rules. However, nodes running older versions can only partially validate transactions and blocks created using the new rules. For instance, if a new transaction type is added in a soft-fork, only nodes using the new rules will be able to understand the new transaction type. 
+A change to consensus rules that is backwards compatible. Nodes running older versions without the new rules can still validate transactions and blocks. However, nodes running older versions can only partially validate transactions and blocks created by nodes using the new rules. This is because old nodes believe they are fully validating transactions, however, they are not able to undstand transactions created using the new rules. For instance, if a new transaction type is added via soft fork, only nodes using the new rules will be able to understand the new transaction type. 
 
 #### Stake transaction tree
 

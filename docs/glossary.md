@@ -341,6 +341,16 @@ The minimum level of participation required in order for a decision-making proce
 
 ---
 
+#### Regnet
+
+A [regression testing network](https://devdocs.decred.org/environments/regnet/)
+with very low difficulty, such that a developer can mine new blocks locally at
+will for testing purposes.
+Regnet is designed for running unit tests, RPC server tests and consensus rule
+tests.
+It is not designed for full integration testing with other applications, such as
+mining software or wallets.
+
 #### Regular transaction tree
 
 The normal [transactions](https://www.reddit.com/r/decred/comments/66j4l4/decred_proof_of_stake_explained/dgjsyxd) in a block: sending DCR to an address, coinbase transactions such as PoW Miner reward and Treasury stipend.

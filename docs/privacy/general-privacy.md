@@ -32,7 +32,13 @@ your personal activity.
 An observer may be able to deduce other transactions which you have participated
 in, or they may be able to deduce your total balance.
 
-One possible way your personal identity could be linked to your blockchain activity is through the use of a block explorer. The administrator of the block explorer may be able to view your IP address and which addresses or transactions you are browsing, and they may infer that you own those addresses or transactions. A possible solution for this is to use blockchain explorers exclusively over Tor.
+One possible way your personal identity could be linked to your blockchain
+activity is through the use of a block explorer.
+The administrator of the block explorer may be able to view your IP address and
+which addresses or transactions you are browsing, and they may infer that you
+own those addresses or transactions.
+A possible solution for this is to use blockchain explorers exclusively over
+Tor.
 
 ---
 
@@ -48,7 +54,7 @@ For example, [dcrdata](https://github.org/decred/dcrdata) has this
 functionality, and is available as a hidden service on Tor using the URL
 <http://dcrdata2opeenddl.onion>.
 
-It's also important to note, that different wallets might use different [address
+It's also important to note that different wallets might use different [address
 types](https://devdocs.decred.org/developer-guides/addresses/).
 This can also give a hint about your identity, which combined with other signals
 could reveal your identity.
@@ -57,8 +63,17 @@ could reveal your identity.
 
 ## Trade-offs of Reusing vs Not Reusing Addresses
 
-For privacy the best practice is to not reuse an address ever. A cryptocurrency address can be thought of as a cryptocurrency invoice instead. The term "address" does not mean, that it was designed to reuse it, like one would do with a bank account number for example. A privacy conscious user will use a newly generated address for every single transaction, and never reuse an address unless absolutely necessary.
-On the other hand, there may be situations where address reuse may be preferred, or even necessary. The Decred Treasury is a good example of this. Transparency and auditability are more important than privacy in the context of the treasury.
+For privacy the best practice is to not reuse an address ever.
+A cryptocurrency address can be thought of as a cryptocurrency invoice instead.
+The term "address" does not mean, that it was designed to reuse it, like one
+would do with a bank account number for example.
+A privacy conscious user will use a newly generated address for every single
+transaction, and never reuse an address unless absolutely necessary.
+On the other hand, there may be situations where address reuse may be preferred,
+or even necessary.
+The Decred Treasury is a good example of this.
+Transparency and auditability are more important than privacy in the context of
+the treasury.
 
 ---
 
@@ -95,7 +110,10 @@ could be cameras nearby the ATM which could reveal your identity.
 
 ## Avoid Leaving Identifiers in Public Places
 
-Many times this is something physical, for example leaving behind a printed QR code somewhere, writing your nickname or real name on a piece of paper. Your name can be inprinted on the next page of the sticky notes stack, for example.
+Many times this is something physical, for example leaving behind a printed QR
+code somewhere, writing your nickname or real name on a piece of paper.
+Your name can be inprinted on the next page of the sticky notes stack, for
+example.
 Be careful not to leave your phone or computer unlocked in a public place with
 important information displayed on screen.
 
@@ -111,14 +129,19 @@ technology such as The Lightning Network.
 One possible downside is that the operator of a lightning node could keep logs
 of the pseudonymous identifiers and the balances of the network participants.
 The node operator could later sell this information to governments or corporations.
-A research paper called [Bolt](https://eprint.iacr.org/2016/701) proposes
-solutions for this problem.
 
 ---
 
 ## Hiding Cryptocurrency Usage Itself
 
-Use VPN or Tor. Don’t link your VPN or Tor usage with social networks, or with any other software or website that might identify you. Keep in mind that cookies exist. Use a browser profile that is dedicated to your crypto-related activities only. Quit all programs that you don’t need. Download some random data, so the size of your downloaded data won’t be exactly blockchain-sized.
+Use VPN or Tor.
+Don’t link your VPN or Tor usage with social networks, or with any other
+software or website that might identify you.
+Keep in mind that cookies exist.
+Use a browser profile that is dedicated to your crypto-related activities only.
+Quit all programs that you don’t need.
+Download some random data, so the size of your downloaded data won’t be exactly
+blockchain-sized.
 
 ---
 

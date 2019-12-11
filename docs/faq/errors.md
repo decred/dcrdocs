@@ -8,7 +8,7 @@
 
 1. Delete the wallet and restore from seed
 
-1. Open Tickets view, click import script button, paste the stakepool script into the textbox, enter the private passphrase and click Save.
+1. Open Tickets view, click import script button, paste the VSP script into the textbox, enter the private passphrase and click Save.
 
 1. Wait until the rescan completes.
 

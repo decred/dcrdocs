@@ -116,23 +116,23 @@ Setting vote choices for on-chain votes will happen on the remote servers you wi
 
 1. Download the Politeia archive, manifest, and signature files.
 
-    `wget https://github.com/decred/decred-binaries/releases/download/v{{ pivoterversion }}/{politeiavoter-linux-amd64-v{{ pivoterversion }}.tar.gz,manifest-politeiavoter-v{{ pivoterversion }}.txt,manifest-politeiavoter-v{{ pivoterversion }}.txt.asc}`
+    `wget https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/{decred-linux-amd64-v{{ cliversion }}.tar.gz,decred-v{{ cliversion}}-manifest.txt,decred-v{{ cliversion }}-manifest.txt.asc}`
 
 1. Verify the manifest. The output from this command should say "Good signature from Decred Release <release@decred.org>". Warnings about the key not being certified with a trusted signature can be ignored.
 
-    `gpg --verify manifest-politeiavoter-v{{ pivoterversion }}.txt.asc`
+    `gpg --verify decred-v{{ cliversion }}-manifest.txt.asc`
 
 1. Verify the SHA-256 hash in the manifest matches that of the archive - the following two commands should have the same output.
 
-    `sha256sum politeiavoter-linux-amd64-v{{ pivoterversion }}.tar.gz`
+    `sha256sum decred-linux-amd64-v{{ cliversion }}.tar.gz`
 
-    `grep politeiavoter-linux-amd64-v{{ pivoterversion }}.tar.gz manifest-politeiavoter-v{{ pivoterversion }}.txt`
+    `grep decred-linux-amd64-v{{ cliversion }}.tar.gz decred-v{{ cliversion }}-manifest.txt`
 
 1. Extract the archive.
 
-    `tar -xf politeiavoter-linux-amd64-v{{ pivoterversion }}.tar.gz`
+    `tar -zxf decred-linux-amd64-v{{ cliversion }}.tar.gz`
 
-1. Enter the `politeiavoter-linux-amd64-v{{ pivoterversion }}` directory.
+1. Enter the `decred-linux-amd64-v{{ cliversion }}` directory.
 
 Now to view the various agendas and vote on them you will need to run the following commands. Also remember that for this to work `dcrd` and `dcrwallet` must also be running.
 

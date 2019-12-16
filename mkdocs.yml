@@ -5,9 +5,8 @@ theme:
   logo: 'img/decred_logo_symbol_color_gradient_128.svg'
   font: false
 extra:
-  decreditonversion: 1.4.0
-  cliversion: 1.4.0
-  pivoterversion: 1.4.0
+  decreditonversion: 1.5.0
+  cliversion: 1.5.0
   gominerversion: 1.0.0
   seedWarning1:
     "During the creation process for your wallet, you will be given a sequence of 33 words known as a seed phrase. This seed phrase is essentially the private key for your wallet. You will be able to use this seed phrase to restore your private keys, transaction history, and balances using any Decred wallet on any computer."

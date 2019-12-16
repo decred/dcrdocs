@@ -22,7 +22,7 @@ When Decred launched in February 2016, the developers and project members commit
 
 
 !!! warning "Warning"
-    Decred is not currently running an airdrop! The only airdrop Decred has ever conducted was at launch, as described below. Offers to airdrop DCR are likely scams.  
+    Decred is not currently running an airdrop! Offers to airdrop DCR are likely scams. The only airdrop Decred has ever conducted was at launch, as described below.
 
 In total, **840,000 coins** (**50% of premine**, **4% of total Decred supply**), were distributed evenly across a list of airdrop participants. 
 

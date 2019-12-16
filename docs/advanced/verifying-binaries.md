@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Verifying Binaries 
+# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Verifying Binaries
 
 ---
 
@@ -24,8 +24,9 @@ are as follows:
 
 1. Download the file manifest, the signature for the file manifest, and the zip/tarball for your OS from [here](https://github.com/decred/decred-binaries/releases). Obtain the SHA-256 value for the zip/tarball for your OS and check that it matches the value in the file manifest, e.g. for 64-bit Linux:
 
-        $ sha256sum decred-linux-amd64-v1.4.0.tar.gz
-        36375985df1ba9a45bc11b4f6cdaed4f14ff6e5e9c46e17ef6e4f70a3349aba2 decred-linux-amd64-v1.4.0.tar.gz
+
+        $ sha256sum decred-linux-amd64-v1.5.0.tar.gz 
+        870b2ca1704086d9a89431ba921d49c7221d180553823b8947540fc550450279  decred-linux-amd64-v1.5.0.tar.gz
 
 1. Compare the value you got in Step One to the value for the file in the manifest file.
 
@@ -40,10 +41,11 @@ are as follows:
 
 1. Verify the signature for the file manifest is valid and created by the Decred Release Signing Key:
 
-        $ gpg --verify manifest-v1.4.0.txt.asc
-        gpg: assuming signed data in `manifest-v1.4.0.txt'
-        gpg: Signature made Mon Feb  4 12:48:24 2019 UTC using RSA key ID 518A031D
-        gpg: Good signature from "Decred Release <release@decred.org>"
+        $ gpg --verify manifest-v1.5.0.txt.asc
+        gpg: assuming signed data in 'decred-v1.5.0-manifest.txt'
+        gpg: Signature made Mon 16 Dec 2019 18:06:53 GMT
+        gpg:                using RSA key F516ADB7A069852C7C28A02D6D897EDF518A031D
+        gpg: Good signature from "Decred Release <release@decred.org>" [unknown]
         gpg: WARNING: This key is not certified with a trusted signature!
         gpg:          There is no indication that the signature belongs to the owner.
         Primary key fingerprint: FD13 B683 5E24 8FAF 4BD1  838D 6DF6 34AA 7608 AF04

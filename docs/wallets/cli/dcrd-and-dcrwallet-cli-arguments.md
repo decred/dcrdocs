@@ -55,6 +55,7 @@ dcrd --logdir=/my/custom/log/directory
             `--onionuser=`            | Username for onion proxy server
             `--onionpass=`            | Password for onion proxy server
             `--noonion`               | Disable connecting to Tor hidden services
+            `--nodiscoverip`          | Disable automatic network address discovery
             `--torisolation`          | Enable Tor stream isolation by randomizing user credentials for each connection.
             `--testnet`               | Use the test network
             `--simnet`                | Use the simulation test network
@@ -77,7 +78,6 @@ dcrd --logdir=/my/custom/log/directory
             `--blockminsize=`         | Minimum block size in bytes to be used when creating a block
             `--blockmaxsize=`         | Maximum block size in bytes to be used when creating a block (default: 375000)
             `--blockprioritysize=`    | Size in bytes for high-priority/low-fee transactions when creating a block (default: 20000)
-            `--getworkkey=`           | **DEPRECATED** -- Use the `--miningaddr` option instead
             `--sigcachemaxsize=`      | The maximum number of entries in the signature verification cache (default: 100000)
             `--nonaggressive`         | Disable mining off of the parent block of the blockchain if there aren't enough voters
             `--nominingstatesync`     | Disable synchronizing the mining state with other nodes
@@ -121,10 +121,10 @@ dcrd --logdir=/my/custom/log/directory
             `--promptpass`                             | The private wallet password is prompted for at start up, so the wallet starts unlocked without a time limit
             `--pass=`                                  | The private wallet passphrase
             `--promptpublicpass`                       | The public wallet password is prompted for at start up
-            `--disallowfree`                           | Force transactions to always include a fee
+            `--disallowfree`                           | **DEPRECATED** -- Force transactions to always include a fee
             `--enableticketbuyer`                      | Enable the automatic ticket buyer
             `--enablevoting`                           | Enable creation of votes and revocations for owned tickets
-            `--reuseaddresses`                         | Reuse addresses for ticket purchase to cut down on address overuse
+            `--reuseaddresses`                         | **DEPRECATED** -- Reuse addresses for ticket purchase to cut down on address overuse
             `--purchaseaccount=`                       | Name of the account to buy tickets from (default: default)
             `--pooladdress=`                           | The ticket pool address where ticket fees will go to
             `--poolfees=`                              | The per-ticket fee mandated by the ticket pool as a percent (e.g. 1.00 for 1.00% fee)
@@ -132,8 +132,8 @@ dcrd --logdir=/my/custom/log/directory
             `--stakepoolcoldextkey=`                   | Enables the wallet as a stake pool with an extended key in the format of "xpub...:index" to derive cold wallet addresses to send fees to
             `--allowhighfees`                          | Force the RPC client to use the 'allowHighFees' flag when sending transactions
             `--txfee=`                                 | Sets the wallet's tx fee per kb (default: 0.0001 DCR)
-            `--ticketfee=`                             | Sets the wallet's ticket fee per kb (default: 0.0001 DCR)
             `--accountgaplimit=`                       | Number of accounts that can be created in a row without using any of them (default: 10)
+            `--disablecointypeupgrades`                | Never upgrade from legacy to SLIP0044 coin type keys
     `-c` or `--rpcconnect=`                            | Hostname/IP and port of dcrd RPC server to connect to
             `--cafile=`                                | File containing root certificates to authenticate a TLS connections with dcrd
             `--noclienttls`                            | Disable TLS for the RPC client -- **NOTE:** This is only allowed if the RPC client is connecting to localhost
@@ -160,27 +160,13 @@ dcrd --logdir=/my/custom/log/directory
             `--pipetx=`                                | File descriptor or handle of write end pipe to enable child -> parent process communication
             `--piperx=`                                | File descriptor or handle of read end pipe to enable parent -> child process communication
             `--rpclistenerevents`                      | Notify JSON-RPC and gRPC listener addresses over the TX pipe
-    `-b` or `--datadir=`                               | **DEPRECATED** -- use `--appdata` instead
-            `--prunetickets`                           | **DEPRECATED** -- old tickets are always pruned
-            `--ticketaddress=`                         | **DEPRECATED** -- use `--ticketbuyer.votingaddress` instead
-            `--addridxscanlen=`                        | **DEPRECATED** -- use `--gaplimit` instead (default: 20)
             `--ticketbuyer.balancetomaintainabsolute=` | Amount of funds to keep in wallet when stake mining (default: 0 DCR)
             `--ticketbuyer.votingaddress=`             | Purchase tickets with voting rights assigned to this address
-            `--ticketbuyer.avgpricemode=`              | **DEPRECATED** -- The mode to use for calculating the average price if pricetarget is disabled (vwap, pool, dual) (default: vwap)
-            `--ticketbuyer.avgpricevwapdelta=`         | **DEPRECATED** -- The number of blocks to use from the current block to calculate the VWAP (default: 2880)
-            `--ticketbuyer.maxfee=`                    | **DEPRECATED** -- Maximum ticket fee per KB (default: 0.01 DCR)
-            `--ticketbuyer.minfee=`                    | **DEPRECATED** -- Minimum ticket fee per KB (default: 0.001 DCR)
-            `--ticketbuyer.feesource=`                 | **DEPRECATED** -- The fee source to use for ticket fee per KB (median or mean) (default: median)
-            `--ticketbuyer.maxperblock=`               | **DEPRECATED** -- Maximum tickets per block, with negative numbers indicating buy one ticket every 1-in-n blocks (default: 1)
-            `--ticketbuyer.blockstoavg=`               | **DEPRECATED** -- Number of blocks to average for fees calculation (default: 11)
-            `--ticketbuyer.feetargetscaling=`          | **DEPRECATED** -- Scaling factor for setting the ticket fee, multiplies by the average fee (default: 1)
-            `--ticketbuyer.maxinmempool=`              | **DEPRECATED** -- The maximum number of your tickets allowed in mempool before purchasing more tickets (default: 40)
-            `--ticketbuyer.expirydelta=`               | **DEPRECATED** -- Number of blocks in the future before the ticket expires (default: 16)
-            `--ticketbuyer.maxpriceabsolute=`          | **DEPRECATED** -- Maximum absolute price to purchase a ticket (default: 0 DCR)
-            `--ticketbuyer.maxpricescale=`             | **DEPRECATED** -- Attempt to prevent the stake difficulty from going above this multiplier (>1.0) by manipulation, 0 to disable
-            `--ticketbuyer.maxpricerelative=`          | **DEPRECATED** -- Scaling factor for setting the maximum price, multiplies by the average price (default: 1.25)
-            `--ticketbuyer.balancetomaintainrelative=` | **DEPRECATED** -- Proportion of funds to leave in wallet when stake mining (default: 0.3)
-            `--ticketbuyer.pricetarget=`               | **DEPRECATED** -- A target to try to seek setting the stake price to rather than meeting the average price, 0 to disable (default: 0 DCR)
-            `--ticketbuyer.nospreadticketpurchases`    | **DEPRECATED** -- Do not spread ticket purchases evenly throughout the window
-            `--ticketbuyer.spreadticketpurchases`      | **DEPRECATED** -- Spread ticket purchases evenly throughout the window
-            `--ticketbuyer.dontwaitfortickets`         | **DEPRECATED** -- Don't wait until your last round of tickets have entered the blockchain to attempt
+            `--ticketbuyer.limit=`                     | Buy no more than specified number of tickets per block (0 disables limit)
+            `--ticketbuyer.votingaccount=`             | Account used to derive addresses specifying voting rights
+            `--csppserver=`                            | Network address of CoinShuffle++ server
+            `--csppserver.ca=`                         | CoinShuffle++ Certificate Authority
+            `--mixedaccount=`                          | Account/branch used to derive CoinShuffle++ mixed outputs and voting rewards
+            `--ticketsplitaccount=`                    | Account to derive fresh addresses from for mixed ticket splits; uses mixedaccount if unset
+            `--changeaccount=`                         | Account used to derive unmixed CoinJoin outputs in CoinShuffle++ protocol
+            `--mixchange`                              | Use CoinShuffle++ to mix change account outputs into mix account

@@ -110,7 +110,7 @@ Press **Create Wallet** and your wallet setup is complete. You will be taken bac
 
 1. Open Decrediton and click on **Restore Existing Wallet**. If Decrediton is open and you have another wallet open, you'll need to first go to Settings and click **Close Wallet**.
 
-![Decrediton close wallet](/img/decrediton/setup/wallet-close.png)
+    ![Decrediton close wallet](/img/decrediton/setup/wallet-close.png)
 
 1. Name your wallet. As Decrediton allows you to manage multiple wallets on one PC, you must give a name to your wallet so it can be identified.
 

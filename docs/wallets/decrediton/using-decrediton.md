@@ -66,7 +66,7 @@ The governance tab enables users holding tickets to have their say on Decred's g
 
 ![Governance page](/img/decrediton/governance.png)
 
-Politeia proposals can be filtered by "Under Discussion", "Under Vote", "Finished Voting" and "Abandoned". The "Create Proposal" button will open on <https://proposals.decred.org> in your browser.
+Politeia proposals can be filtered by "Under Discussion", "Under Vote", "Finished Voting" and "Abandoned". The "Create Proposal" button will open <https://proposals.decred.org> in your browser.
 
 You are able to vote on proposals if the following two criteria are met:
 
@@ -89,7 +89,7 @@ The tickets tab is split into four sections:
 
 ### Purchase
 
-Before you can purchase tickets you must first import the API key from your [stakepool account](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
+Before you can purchase tickets you must first import the API key from your [VSP account](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
 
 ![Tickets Tab](/img/decrediton/tickets.png)
 
@@ -127,7 +127,7 @@ The "Automatic Ticket Buyer" panel allows you to enable the automated ticket buy
 ![Automatic Purchase panel](/img/decrediton/autobuyer.png)
 
 - **From** - Funds to purchase tickets will come from this account
-- **Stake Pool** - Which pool to purchase tickets with
+- **VSP** - Which VSP to purchase tickets with
 - **Balance to maintain** - If your balance is lower than this number, you will not buy tickets. The default of 0 will use all the funds in your account to buy tickets
 
 ### My Tickets
@@ -136,9 +136,9 @@ This tab shows a summary of all of the tickets your wallet has ever purchased. F
 
 ### Statistics
 
-This page displays various statistics about all of the available stakepools. The dropdown can be used to change the currently displayed pool.
+This page displays various statistics about all of the available VSPs. The dropdown can be used to change the currently displayed VSP.
 
-![Stakepool statistics page](/img/decrediton/pool-stats.png)
+![VSP statistics page](/img/decrediton/pool-stats.png)
 
 ---
 

@@ -39,6 +39,11 @@ The latest version of Decrediton can be downloaded from <https://decred.org/down
     1. Navigate to the download location and extract `decrediton-v{{ decreditonversion }}.tar.gz`.
 
     1. The extracted files include an executable named `decrediton`.
+    
+    1. Open a terminal in the extracted folder and run the command `chmod u+x decrediton`.
+    
+    1. Decrediton can then be launched from the terminal using the command `./decrediton`.
+    
 
 ---
 

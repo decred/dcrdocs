@@ -1,5 +1,5 @@
 site_name: Decred Documentation
-theme: 
+theme:
   name: material
   favicon: 'img/favicon.ico?v=s3ss'
   logo: 'img/decred_logo_symbol_color_gradient_128.svg'
@@ -93,13 +93,14 @@ nav:
     - 'Hardware Wallets': 'wallets/hardware-wallets.md'
 - Proof-of-Stake Voting:
   - "Overview": 'proof-of-stake/overview.md'
-  - "How to Stake": 'proof-of-stake/how-to-stake.md' 
-  - "Ticket Splitting": 'proof-of-stake/ticket-splitting.md' 
+  - "How to Stake": 'proof-of-stake/how-to-stake.md'
+  - "Ticket Splitting": 'proof-of-stake/ticket-splitting.md'
 - Proof-of-Work Mining:
   - 'Overview': 'mining/overview.md'
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'
 - Privacy:
   - 'General Privacy': 'privacy/general-privacy.md'
+  - 'CoinShuffle++': 'privacy/cspp.md'
 - FAQ:
   - 'General': 'faq/general.md'
   - 'Configuration': 'faq/configuration.md'

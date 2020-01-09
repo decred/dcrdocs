@@ -6,31 +6,25 @@
 
 Proof-of-work mining, more commonly referred to as PoW mining, is the activity
 of committing your computer’s hardware and resources to process network
-transactions and build the blocks that make up the blockchain in the Decred
-network. Each time a block is created (by a miner), which is then approved by 
-ticket holders, the miner receives a block reward (newly created DCR). If the
-block is rejected by ticket holders, the miner does not receive a reward. 
-The block reward adjusts every 6,144 blocks (approximately 21.33 days) by reducing
-by a factor of 100/101. 
+transactions and build the blocks that make up the Decred blockchain.
 
-Each new block reward is then split up as follows:
+Each time a valid block is created by a miner, the miner receives the fees from
+all of the transacitons included in the block, as well as a block reward (newly
+created DCR).
 
-Subsidy | Party
----     | ---
-60%   | PoW Miners
-30%   | PoS Voters
-10%   | Decred Treasury
+The block reward reduces by a factor of 100/101 every 6,144 blocks
+(approximately 21.33 days).
+For more details on the block reward and growth of the coin supply, see the
+[Inflation](../advanced/inflation.md) page.
 
-
-For more details on the growth of the coin supply, see the 
-[inflation](../advanced/inflation.md) page. 
-
-Miners typically receive a reward that is roughly proportional to the
-hashrate of your miner and the overall hashrate of the network when you commit
-your computer to PoW mining. 
+When proof-of-stake tickets are called to vote on a block, they have the ability
+to the strip the reward from the miner of the previous block.
+This power may be used if the miner has constructed a block contrary to the best
+interests of the network - for example, an empty block when there are
+transactions waiting to be processed in the mempool.
 
 Decred uses the [BLAKE-256](../research/blake-256-hash-function.md) hashing function. PoW mining can be done using GPUs. However, ASICs that mine DCR are now available, and since their introduction the PoW difficulty has become high enough to make GPU
-mining unlikely to be profitable. 
+mining unlikely to be profitable.
 
 ---
 

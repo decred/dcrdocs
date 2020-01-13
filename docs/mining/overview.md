@@ -103,5 +103,3 @@ Please be certain to select the correct operating system (Windows/Linux) and the
 * Open a command prompt to that path.
 * Follow your mining pools instructions for setup.
 * Run the miner.
-
-Continue to [PoW Mining FAQ](../faq/proof-of-work-mining.md)

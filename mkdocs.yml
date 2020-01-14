@@ -100,7 +100,9 @@ nav:
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'
 - Privacy:
   - 'General Privacy': 'privacy/general-privacy.md'
-  - 'CoinShuffle++': 'privacy/cspp.md'
+  - CoinShuffle++:
+    - 'Overview': 'privacy/cspp/overview.md'
+    - 'How to use CSPP': 'privacy/cspp/how-to-cspp.md'
 - FAQ:
   - 'General': 'faq/general.md'
   - 'Configuration': 'faq/configuration.md'

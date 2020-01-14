@@ -1,10 +1,10 @@
-# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> **How to Vote**
+# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> How to Vote
 
 This guide assumes you already have an active wallet and have purchased tickets. If not, please follow the [Voting Preparation](overview.md#voting-preparation) guide.
 
 The choice a ticket votes with depends on your vote preference at the time the ticket is chosen, not when it is bought. So you can set your choice at any time within the voting window and all future tickets will vote accordingly.
 
-## <img class="dcr-icon" src="/img/dcr-icons/Servers.svg" /> **Voting with a Voting Service Provider (VSP)**
+## <img class="dcr-icon" src="/img/dcr-icons/Servers.svg" /> Voting with a Voting Service Provider (VSP)
 
 If your Voting Service Provider (VSP) has updated to the latest VSP software, you will find a 'Voting' page in the navigation menu with dropdown options for each agenda. After you've chosen how you want your tickets to vote, simply press the 'Update Voting Preferences' button to save your vote choices.
 
@@ -16,25 +16,27 @@ to set your vote.
 
 ![Decrediton voting preferences](/img/decrediton_voting_preferences.png)
 
----------------------------
+---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> **Solo Voting**
+## <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo Voting
 
-##I just want the commands!##
+## I just want the commands!
 
-###**YES**###
+### YES
+
 `dcrctl --wallet setvotechoice lnfeatures yes`
 
-###**NO**###
+### NO
+
 `dcrctl --wallet setvotechoice lnfeatures no`
 
-----------------
+---
 
 Through the command line, you'll want to familiarize yourself with the `dcrctl --wallet getvotechoices` and `dcrctl --wallet setvotechoice "agendaid" "choiceid"` commands.
 
 The first command, `dcrctl --wallet getvotechoices`, returns JSON resembling this:
 
-```
+```no-highlight
 {
   "version": 5,
   "choices": [
@@ -52,7 +54,7 @@ The second command, `dcrctl --wallet setvotechoice "agendaid" "choiceid"`, let's
 
 For example, issuing `dcrctl --wallet setvotechoice lnfeatures yes` results in the following changes to `dcrctl --wallet getvotechoices`:
 
-```
+```no-highlight
 {
   "version": 5,
   "choices": [

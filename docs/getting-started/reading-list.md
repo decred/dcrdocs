@@ -3,7 +3,7 @@
 ---
 
 Welcome to the Decred rabbit hole.
-Below is a carefully curated selection of the best readings, podcasts, video
+Below is a curated selection of the best readings, podcasts, video
 recordings, and other materials to help newcomers take a deep dive into the
 various aspects of Decred.
 
@@ -71,7 +71,7 @@ various aspects of Decred.
 
 - [Monetary premiums: Can altcoins like Decred compete with Bitcoin?](https://medium.com/@_Checkmatey_/monetary-premiums-can-altcoins-compete-with-bitcoin-54c97a92c6d4) by Checkmate
 
-### Decred as a DAO
+### Decred as a Decentralized Autonomous Organization (DAO)
 
 - [Introduction to Politeia: What it is and how it works](https://medium.com/decred/on-the-launch-of-decreds-politeia-b305d06d8bda) by Richard Red
 

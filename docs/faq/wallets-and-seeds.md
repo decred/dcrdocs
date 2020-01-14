@@ -47,7 +47,10 @@ In scientific notation that is more than 1.15*10^77.
 Attempting to brute force a specific seed given this many possibilities is
 computationally infeasible.
 
-To put this in perspective, assuming there are 7 billion people on the planet and each person owned 10 computers and each one of those computers could test a billion possibilities a second and that you could find the solution on average after testing only 50% of the total possibilities, it would still take 26x10^48 (that's 26 trillion trillion trillion trillion) years to brute-force a single seed.
+To put this in perspective, assuming there are 7 billion people on the planet,
+with each person owning 10 computers, and each computer testing a billion
+possibilities a second, it would still take approximately 26x10^48 (that’s 26
+trillion trillion trillion trillion) years to brute-force a single seed.
 
 ---
 

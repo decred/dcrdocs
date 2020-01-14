@@ -90,7 +90,6 @@ nav:
       - 'dcrd and dcrwallet CLI Arguments': 'wallets/cli/dcrd-and-dcrwallet-cli-arguments.md'
       - 'dcrctl RPC Commands': 'wallets/cli/dcrctl-rpc-commands.md'
     - 'SPV': 'wallets/spv.md'
-    - 'Lightning Network (LN)': 'wallets/lightning.md'
     - 'Hardware Wallets': 'wallets/hardware-wallets.md'
 - Proof-of-Stake Voting:
   - "Overview": 'proof-of-stake/overview.md'
@@ -101,6 +100,8 @@ nav:
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'
 - Privacy:
   - 'General Privacy': 'privacy/general-privacy.md'
+- Lightning Network:
+  - 'Overview': 'lightning-network/overview.md'
 - FAQ:
   - 'General': 'faq/general.md'
   - 'Configuration': 'faq/configuration.md'

@@ -107,7 +107,7 @@ various aspects of Decred.
 
 ### Scaling Solution (Lightning Network)
 
-- [Brief overview of Decred's Lightning Network implementation](../wallets/lightning.md)
+- [Brief overview of Decred's Lightning Network implementation](../lightning-network/overview.md)
 
 - [How Decred's Lightning Network implementation will work](https://blog.decred.org/2017/05/23/Lightning-Network-in-Practice/) by Jake Yocom-Piatt
 

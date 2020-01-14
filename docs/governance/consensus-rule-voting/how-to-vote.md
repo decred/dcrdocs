@@ -20,50 +20,21 @@ to set your vote.
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo Voting
 
-## I just want the commands!
-
-### YES
-
-`dcrctl --wallet setvotechoice lnfeatures yes`
-
-### NO
-
-`dcrctl --wallet setvotechoice lnfeatures no`
-
----
-
-Through the command line, you'll want to familiarize yourself with the `dcrctl --wallet getvotechoices` and `dcrctl --wallet setvotechoice "agendaid" "choiceid"` commands.
-
-The first command, `dcrctl --wallet getvotechoices`, returns JSON resembling this:
+Through the command line, you'll want to familiarize yourself with the following commands:
 
 ```no-highlight
-{
-  "version": 5,
-  "choices": [
-    {
-      "agendaid": "lnfeatures",
-      "agendadescription": "Enable features defined in DCP0002 and DCP0003 necessary to support Lightning Network (LN)",
-      "choiceid": "abstain",
-      "choicedescription": "change to the new consensus rules"
-    }
-  ]
-}
+dcrctl --wallet getvotechoices
 ```
-
-The second command, `dcrctl --wallet setvotechoice "agendaid" "choiceid"`, let's you set your votechoice. `"agendaid"` is found via the `getvotechoices` command above, and `"choiceid"` can be `yes`, `no`, or `abstain`.
-
-For example, issuing `dcrctl --wallet setvotechoice lnfeatures yes` results in the following changes to `dcrctl --wallet getvotechoices`:
 
 ```no-highlight
-{
-  "version": 5,
-  "choices": [
-    {
-      "agendaid": "lnfeatures",
-      "agendadescription": "Enable features defined in DCP0002 and DCP0003 necessary to support Lightning Network (LN)",
-      "choiceid": "yes",
-      "choicedescription": "change to the new consensus rules"
-    }
-  ]
-}
+dcrctl --wallet setvotechoice "agendaid" "choiceid"
 ```
+
+The `getvotechoices` command returns JSON describing the agendas which are
+currently up for vote.
+The `choiceid` field indicates your selected voting preference, and is set to
+`abstain` by default.
+
+The `setvotechoice` let's you set your voting preference.
+`"agendaid"` is found via the `getvotechoices` command above, and `"choiceid"`
+can be `yes`, `no`, or `abstain`.

@@ -30,11 +30,11 @@ dcrctl --wallet getvotechoices
 dcrctl --wallet setvotechoice "agendaid" "choiceid"
 ```
 
-The `getvotechoices` command returns JSON describing the agendas which are
-currently up for vote.
+The `getvotechoices` command returns a JSON payload describing the agendas which
+are currently up for vote.
 The `choiceid` field indicates your selected voting preference, and is set to
 `abstain` by default.
 
 The `setvotechoice` let's you set your voting preference.
-`"agendaid"` is found via the `getvotechoices` command above, and `"choiceid"`
-can be `yes`, `no`, or `abstain`.
+You can get the `agendaid` for votes using the above `getvotechoices` command.
+The `choiceid` field can be set to `yes`, `no`, or `abstain`.

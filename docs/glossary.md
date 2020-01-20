@@ -79,6 +79,14 @@ Not using dedicated change addresses, or re-using existing ones, would enable a
 passive observer to infer a significant amount of information about your
 transaction sizes and where you are sending transactions to.
 
+#### Coin Type
+
+A unique number assigned to a cryptocurrency, which is used by [HD
+Wallets](#hd-wallet) during the process of generating public/private keypairs.
+Cryptocurrencies with assigned coin types are listed in
+[SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md).
+The coin type of Decred is 42.
+
 #### Coinbase maturity
 
 Outputs from coinbase and stakebase transactions cannot be spent until the coinbase maturity period has passed. The coinbase maturity period is 256 blocks.
@@ -234,6 +242,18 @@ A cryptographic function that produces a fixed-size hash value from variable-siz
 #### Hashrate
 
 The number of hashes per second computed by miners on the network.
+
+#### Hierarchical Deterministic (HD) Wallet
+
+Using the algorithm initially defined in
+[BIP-0032](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), a
+Hierarchical Deterministic (HD) wallet is able to automatically derive a
+tree-like structure of public/private keypairs from a single [seed
+phrase](#seed).
+This eliminates the need for the user to constantly generate and backup new
+public/private keypairs themselves.
+Instead, the user only needs to backup the seed phrase, and the full wallet and
+all of its associated keys can be regenerated when necessary.
 
 #### Hot wallet
 

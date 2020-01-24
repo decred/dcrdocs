@@ -28,7 +28,7 @@ Implementation of the mixnet began as a search for a different privacy solution 
 
 Beyond the concern about pruning, other implementations carry moderate or high complexity, making code audits costly and broadening the attack surface.
 
-TumbleBit, from  [“TumbleBit: An Untrusted Bitcoin-Compatible Anonymous Payment Hub”](https://eprint.iacr.org/2016/575.pdf), was the first option. But the development team noticed that the mixing server would be vulnerable to Denial-of-Service ('DoS') attacks, with the countermeasures adding more complexity. Despite not integrating the TumbleBit code into Decred, the code has been [released](https://github.com/decred/tumblebit) for public benefit.
+TumbleBit, from  [“TumbleBit: An Untrusted Bitcoin-Compatible Anonymous Payment Hub”](https://decred.org/research/heilman2016.pdf), was the first option. But the development team noticed that the mixing server would be vulnerable to Denial-of-Service ('DoS') attacks, with the countermeasures adding more complexity. Despite not integrating the TumbleBit code into Decred, the code has been [released](https://github.com/decred/tumblebit) for public benefit.
 
 The team ended up pivoting to CoinShuffle++, a simpler and more DoS-resistant solution.
 

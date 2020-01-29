@@ -20,11 +20,11 @@ Another benefit offered by SPV is an extreme reduction in the time required for 
 
 At the start of every block added to the Decred blockchain is 180 bytes of data called the [block header](https://devdocs.decred.org/developer-guides/block-header-specifications/). The block header describes key information about the block including the hash of the block, the Merkle root (the sum of all the transaction hashes in the block), and the nonce calculated by the proof-of-work miners. A predetermined filter is also created for every block, based on the all of the transactions within the block.
 
-When an SPV wallet initialises it will connect to the Decred network using peer-to-peer connections, and it will download the full set of headers and filters. It will then validate the header chain to ensure that the chain and its proof-of-work are valid. Once this is complete, the wallet will use the filters to locally identify which blocks contain owned transactions without uploading any private data to remote nodes. The wallet can then use the peer-to-peer network to download these blocks, scan them for relevant transactions and select these to update personal transaction history and balance.
+When an SPV wallet initializes it will connect to the Decred network using peer-to-peer connections, and it will download the full set of headers and filters. It will then validate the header chain to ensure that the chain and its proof-of-work are valid. Once this is complete, the wallet will use the filters to locally identify which blocks contain owned transactions without uploading any private data to remote nodes. The wallet can then use the peer-to-peer network to download these blocks, scan them for relevant transactions and select these to update personal transaction history and balance.
 
 ## How is this different from a "light" wallet?
 
-"Light" wallets such as [Exodus](https://www.exodus.io/) or [Atomic](https://atomicwallet.io/) already bring some of the benefits of an SPV wallet - for example these wallets allow sending and receiving Decred transactions with a minimal start-up time and without downloading the full chain. Light wallets certainly provide a level of convenience but there are often subtle consequences because they depend upon an API provided by a centralised service:
+"Light" wallets such as [Exodus](https://www.exodus.io/) or [Atomic](https://atomicwallet.io/) already bring some of the benefits of an SPV wallet - for example these wallets allow sending and receiving Decred transactions with a minimal start-up time and without downloading the full chain. Light wallets certainly provide a level of convenience but there are often subtle consequences because they depend upon an API provided by a centralized service:
 
 - Light wallets depend on a remote service to watch owned addresses and provide notifications when transactions are received by the addresses. Notifications could be missed or incorrect.
 
@@ -32,7 +32,7 @@ When an SPV wallet initialises it will connect to the Decred network using peer-
 
 - Light wallets do not validate the information they receive by checking the blockchain directly - they have to blindly trust the information provided by the central server.
 
-These concerns do not apply to SPV wallets because they connect directly to the decentralised, peer-to-peer Decred network. They upload no private data to remote nodes and they discover their own transactions by inspecting the blockchain directly.
+These concerns do not apply to SPV wallets because they connect directly to the decentralized, peer-to-peer Decred network. They upload no private data to remote nodes and they discover their own transactions by inspecting the blockchain directly.
 
 ## Are there any disadvantages?
 

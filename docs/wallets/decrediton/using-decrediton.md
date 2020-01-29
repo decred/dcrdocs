@@ -8,7 +8,7 @@ This guide assumes you have already set up a Decrediton wallet using [the Decred
 
 ## Main menu
 
-The main menu of Decrediton is displayed on the left side of the window, and it is used to switch between the different features Decrediton offers. It can be minimised by clicking the arrow icon at the top. At the bottom of the menu is a button to rescan the blockchain. This button will force a rescan of all of your owned addresses to check for new transactions, which can sometimes fix issues where Decrediton is displaying an incorrect balance. This process will take some time, however it will not cause Decrediton to redownload the whole blockchain.
+The main menu of Decrediton is displayed on the left side of the window, and it is used to switch between the different features Decrediton offers. It can be minimized by clicking the arrow icon at the top. At the bottom of the menu is a button to rescan the blockchain. This button will force a rescan of all of your owned addresses to check for new transactions, which can sometimes fix issues where Decrediton is displaying an incorrect balance. This process will take some time, however it will not cause Decrediton to redownload the whole blockchain.
 
 ---
 
@@ -187,7 +187,7 @@ The help tab contains links to get help using Decrediton and to learn more about
 
 ## Settings
 
-The settings tab allows you to customise the units DCR amounts are displayed in and also allows you to switch Decrediton onto the testnet blockchain.
+The settings tab allows you to customize the units DCR amounts are displayed in and also allows you to switch Decrediton onto the testnet blockchain.
 
 The settings tab is also where you come to change your private passphrase.
 

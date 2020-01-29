@@ -1,11 +1,11 @@
 `dcrlncli newaddress` - Generates a new address.
 
-### Usage:
+### Usage
 ```
    dcrlncli newaddress address-type
 ```
 
-### Description:
+### Description
    
-  Generate a wallet new address. Address-types has to be one of:
-      - p2pkh: Pay to public key hash
+Generate a wallet new address. Address-types has to be:
+- p2pkh: Pay to public key hash

@@ -1,6 +1,6 @@
 `dcrlncli channelbalance` - Returns the sum of the total available channel balance across all open channels.
 
-### Usage:
+### Usage
 ```
    dcrlncli channelbalance [arguments...]
 ```

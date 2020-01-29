@@ -1,11 +1,11 @@
 `dcrlncli addinvoice` - Add a new invoice.
 
-### Usage:
+### Usage
 ```
    dcrlncli addinvoice [command options] value preimage
 ```
 
-### Description:
+### Description
    
   Add a new invoice, expressing intent for a future payment.
 
@@ -13,8 +13,8 @@
   parameters or providing an amount of 0. These invoices allow the payee
   to specify the amount of atoms they wish to send.
 
-### Options:
-|option|info|
+### Options
+|Option|Info|
 |--|--|
 |`--memo value`|              a description of the payment to attach along with the invoice (default="")|
 |`--receipt value`|           an optional cryptographic receipt of payment|

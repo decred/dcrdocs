@@ -1,14 +1,14 @@
 `dcrlncli getchaninfo` - Get the state of a channel.
 
-### Usage:
+### Usage
 ```
    dcrlncli getchaninfo [command options] chan_id
 ```
 
-### Description:
+### Description
    Prints out the latest authenticated state for a particular channel
 
-### Options:
-|option|info|
+### Options
+|Option|Info|
 |--|--|
 |`--chan_id value`|  the 8-byte compact channel ID to query for (default: 0)|

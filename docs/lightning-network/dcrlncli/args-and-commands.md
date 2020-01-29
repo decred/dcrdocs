@@ -1,23 +1,40 @@
-`dcrlncli` - control plane for your Decred Lightning Network Daemon (dcrlnd)
+`dcrlncli` - a client which controls Decred Lightning Network Daemon (`dcrlnd`) via RPC calls.
+You can use `dcrlncli` for many things, such as checking your balance, managing channels,
+creating transactions, and viewing network information.
 
-### Usage:
+`dcrlncli` is not a daemon - it does not run permanently in the background - it calls the
+requested RPC method, prints the response, and then terminates immediately.
+
+### Usage
 ```
    dcrlncli [global options] command [command options] [arguments...]
 ```
 
-### Version:
-   0.2.0-pre commit=v0.1.0-1592-g18388616d89bbb775d98cc77e10bd6631a7a84b7
+## Global Options
+|Flag|Info|
+|--|--|
+|`--rpcserver value`|host:port of Decred LN daemon (default: "localhost:10009")|
+|`--dcrlnddir value`|path to dcrlnd's base directory|
+|`--tlscertpath value`|path to TLS certificate|
+|`--chain value`, `-c value`|the chain lnd is running on e.g. decred (default: "decred")|
+|`--network value`, `-n value`|the network drlnd is running on e.g. mainnet, testnet, etc. (default: "mainnet")|
+|`--no-macaroons`|disable macaroon authentication|
+|`--macaroonpath value`|path to macaroon file|
+|`--macaroontimeout value`|anti-replay macaroon validity time in seconds (default: 60)|
+|`--macaroonip value`|if set, lock macaroon to specific IP address|
+|`--help`, `-h`|show help|
+|`--version`, `-v`|print the version|
 
-### Commands:
-|command|info|
+### Commands
+|Command|Info|
 |--|--|
 |getinfo|Returns basic information related to the active daemon.|
 |debuglevel|Set the debug level.|
 |stop|Stop and shutdown the daemon.|
 |help, h|Shows a list of commands or help for one command|
 
-### Channels:
-|command|info|
+### Channels
+|Command|Info|
 |--|--|
 |[openchannel](openchannel.md)|Open a channel to a node or an existing peer.|
 |[closechannel](closechannel.md)|Close an existing channel.|
@@ -35,8 +52,8 @@
 |[verifychanbackup](verifychanbackup.md)|Verify an existing channel backup|
 |[restorechanbackup](restorechanbackup.md)|Restore an existing single or multi-channel static channel backup|
 
-### On-chain:
-|command|info|
+### On-chain
+|Command|Info|
 |--|--|
 |[estimatefee](estimatefee.md)|Get fee estimates for sending bitcoin on-chain to multiple addresses.|
 |[sendmany](sendmany.md)|Send decred on-chain to multiple addresses.|
@@ -44,8 +61,8 @@
 |[listunspent](listunspent.md)|List utxos available for spending.|
 |[listchaintxns](listchaintxns.md)|List transactions from the wallet.|
 
-### Payments:
-|command|info|
+### Payments
+|Command|Info|
 |--|--|
 |[sendpayment](sendpayment.md)|Send a payment over lightning.|
 |[payinvoice](payinvoice.md)|Pay an invoice over lightning.|
@@ -61,8 +78,8 @@
 |[addholdinvoice](addholdinvoice.md)|Add a new hold invoice.|
 |[settleinvoice](settleinvoice.md)|Reveal a preimage and use it to settle the corresponding invoice.|
 
-### Peers:
-|command|info|
+### Peers
+|Command|Info|
 |--|--|
 |[connect](connect.md)|Connect to a remote dcrlnd peer.|
 |[disconnect](disconnect.md)|Disconnect a remote dcrlnd peer identified by public key.|
@@ -70,37 +87,22 @@
 |[describegraph](describegraph.md)|Describe the network graph.|
 |[getnodeinfo](getnodeinfo.md)|Get information on a specific node.|
 
-### Startup:
-|command|info|
+### Startup
+|Command|Info|
 |--|--|
 |[create](create.md)|Initialize a wallet when starting dcrlnd for the first time.|
 |[unlock](unlock.md)|Unlock an encrypted wallet at startup.|
 |[changepassword](changepassword.md)|Change an encrypted wallet's password at startup.|
 
-### Wallet:
-|command|info|
+### Wallet
+|Command|Info|
 |--|--|
 |[newaddress](newaddress.md)|Generates a new address.|
 |[walletbalance](walletbalance.md)|Compute and display the wallet's current balance.|
 |[signmessage](signmessage.md)|Sign a message with the node's private key.|
 |[verifymessage](verifymessage.md)|Verify a message signed with the signature.|
 
-### Watchtower:
-|command|info|
+### Watchtower
+|Command|Info|
 |--|--|
 |[wtclient](wtclient.md)|Interact with the watchtower client.|
-
-## Global Options:
-|flag|info|
-|--|--|
-|`--rpcserver value`|host:port of Decred LN daemon (default: "localhost:10009")|
-|`--dcrlnddir value`|path to dcrlnd's base directory|
-|`--tlscertpath value`|path to TLS certificate|
-|`--chain value`, `-c value`|the chain lnd is running on e.g. decred (default: "decred")|
-|`--network value`, `-n value`|the network drlnd is running on e.g. mainnet, testnet, etc. (default: "mainnet")|
-|`--no-macaroons`|disable macaroon authentication|
-|`--macaroonpath value`|path to macaroon file|
-|`--macaroontimeout value`|anti-replay macaroon validity time in seconds (default: 60)|
-|`--macaroonip value`|if set, lock macaroon to specific IP address|
-|`--help`, `-h`|show help|
-|`--version`, `-v`|print the version|

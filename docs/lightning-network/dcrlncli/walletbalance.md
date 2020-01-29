@@ -1,6 +1,6 @@
 `dcrlncli walletbalance` - Compute and display the wallet's current balance.
 
-### Usage:
+### Usage
 ```
    dcrlncli walletbalance [arguments...]
 ```

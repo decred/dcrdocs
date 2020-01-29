@@ -1,12 +1,12 @@
 `dcrlncli listchannels` - List all open channels.
 
-### Usage:
+### Usage
 ```
    dcrlncli listchannels [command options] [arguments...]
 ```
 
-### Options:
-|option|info|
+### Options
+|Option|Info|
 |--|--|
 |`--active_only`|    only list channels which are currently active|
 |`--inactive_only`|  only list channels which are currently inactive|

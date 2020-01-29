@@ -1,6 +1,6 @@
 `dcrlncli listpeers` - List all active, currently connected peers.
 
-### Usage:
+### Usage
 ```
    dcrlncli listpeers [arguments...]
 ```

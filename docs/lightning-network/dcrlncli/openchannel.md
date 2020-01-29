@@ -1,29 +1,29 @@
 `dcrlncli openchannel` - Open a channel to a node or an existing peer.
 
-### Usage:
+### Usage
 ```
    dcrlncli openchannel [command options] node-key local-amt push-amt
 ```
 
-### Description:
+### Description
    
-  Attempt to open a new channel to an existing peer with the key node-key
-  optionally blocking until the channel is 'open'.
+Attempt to open a new channel to an existing peer with the key node-key
+optionally blocking until the channel is 'open'.
 
-  One can also connect to a node before opening a new channel to it by
-  setting its host:port via the --connect argument. For this to work,
-  the node_key must be provided, rather than the peer_id. This is optional.
+One can also connect to a node before opening a new channel to it by
+setting its host:port via the `--connect argument`. For this to work,
+the `node_key` must be provided, rather than the `peer_id`. This is optional.
 
-  The channel will be initialized with local-amt atoms local and push-amt
-  atoms for the remote node. Note that specifying push-amt means you give that
-  amount to the remote node as part of the channel opening. Once the channel is open,
-  a channelPoint (txid:vout) of the funding output is returned.
+The channel will be initialized with local-amt atoms local and push-amt
+atoms for the remote node. Note that specifying push-amt means you give that
+amount to the remote node as part of the channel opening. Once the channel is open,
+a channelPoint (txid:vout) of the funding output is returned.
 
-  One can manually set the fee to be used for the funding transaction via either
-  the --conf_target or --atoms_per_byte arguments. This is optional.
+One can manually set the fee to be used for the funding transaction via either
+the `--conf_target` or `--atoms_per_byte arguments`. This is optional.
 
-### Options:
-|option|info|
+### Options
+|Option|Info|
 |--|--|
 |`--node_key value`|          the identity public key of the target node/peer serialized in compressed format|
 |`--connect value`|           (optional) the host:port of the target node|

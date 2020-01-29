@@ -1,20 +1,19 @@
-`dcrlncli estimatefee` - Get fee estimates for sending bitcoin on-chain to multiple addresses.
+`dcrlncli estimatefee` - Get fee estimates for sending decred on-chain to multiple addresses.
 
-### Usage:
+### Usage
 ```
    dcrlncli estimatefee [command options] send-json-string [--conf_target=N]
 ```
 
-### Description:
-   
-  Get fee estimates for sending a transaction paying the specified amount(s) to the passed address(es).
+### Description
 
-  The send-json-string' param decodes addresses and the amount to send respectively in the following format:
+Get fee estimates for sending a transaction paying the specified amount(s) to the passed address(es).
 
-      `{"ExampleAddr": NumCoinsInSatoshis, "SecondAddr": NumCoins}`
-  
+The `send-json-string` param encodes addresses and the amount to send respectively in the following format:
 
-### Options:
-|option|info|
+`{"ExampleAddr": NumCoinsInAtoms, "SecondAddr": NumCoins}`
+
+### Options
+|Option|Info|
 |--|--|
 |`--conf_target value`|  (optional) the number of blocks that the transaction *should* confirm in (default: 0)|

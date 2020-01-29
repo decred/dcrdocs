@@ -1,21 +1,20 @@
 `dcrlncli sendcoins` - Send decred on-chain to an address.
 
-### Usage:
+### Usage
 ```
    dcrlncli sendcoins [command options] addr amt
 ```
 
-### Description:
+### Description
    
-  Send amt coins in atoms to the BASE58 encoded decred address addr.
+Send amt coins in atoms to the BASE58 encoded decred address addr.
 
-  Fees used when sending the transaction can be specified via the --conf_target, or
-  --atoms_per_byte optional flags.
+Fees used when sending the transaction can be specified via the `--conf_target`, or
+`--atoms_per_byte` optional flags.
 
-  Positional arguments and flags can be used interchangeably but not at the same time!
-  
+Positional arguments and flags can be used interchangeably but not at the same time!
 
-### Options:
+### Options
 |option|info|
 |--|--|
 |`--addr value`|            the BASE58 encoded decred address to send coins to on-chain|

@@ -1,6 +1,6 @@
 `dcrlncli pendingchannels` - Display information pertaining to pending channels.
 
-### Usage:
+### Usage
 ```
    dcrlncli pendingchannels [arguments...]
 ```

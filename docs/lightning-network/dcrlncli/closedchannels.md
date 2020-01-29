@@ -1,12 +1,12 @@
 `dcrlncli closedchannels` - List all closed channels.
 
-### Usage:
+### Usage
 ```
    dcrlncli closedchannels [command options] [arguments...]
 ```
 
-### Options:
-|option|info|
+### Options
+|Option|Info|
 |--|--|
 |`--cooperative`|       list channels that were closed cooperatively|
 |`--local_force`|       list channels that were force-closed by the local node|

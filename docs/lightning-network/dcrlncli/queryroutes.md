@@ -1,15 +1,15 @@
 `dcrlncli queryroutes` - Query a route to a destination.
 
-### Usage:
+### Usage
 ```
    dcrlncli queryroutes [command options] dest amt
 ```
 
-### Description:
-   Queries the channel router for a potential path to the destination that has sufficient flow for the amount including fees
+### Description
+Queries the channel router for a potential path to the destination that has sufficient flow for the amount including fees
 
-### Options:
-|option|info|
+### Options
+|Option|Info|
 |--|--|
 |`--dest value`|               the 33-byte hex-encoded public key for the payment destination|
 |`--amt value`|                the amount to send expressed in atoms (default: 0)|

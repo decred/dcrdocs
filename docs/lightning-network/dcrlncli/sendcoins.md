@@ -15,7 +15,7 @@ Fees used when sending the transaction can be specified via the `--conf_target`,
 Positional arguments and flags can be used interchangeably but not at the same time!
 
 ### Options
-|option|info|
+|Option|Info|
 |--|--|
 |`--addr value`|            the BASE58 encoded decred address to send coins to on-chain|
 |`--sweepall`|              if set, then the amount field will be ignored, and all the wallet will attempt to sweep all outputs within the wallet to the target address|

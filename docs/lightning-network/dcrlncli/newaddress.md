@@ -7,5 +7,4 @@
 
 ### Description
    
-Generate a wallet new address. Address-types has to be:
-- p2pkh: Pay to public key hash
+Generate a wallet new address. The only supported `address-type` is `p2pkh` (Pay to public key hash).

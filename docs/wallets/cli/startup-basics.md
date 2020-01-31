@@ -49,6 +49,6 @@ The above example would first look to the `dcrd` configuration file for settings
 [Full List of Options for Each Application](dcrd-and-dcrwallet-cli-arguments.md)
 
 
-## Next:
+## Next
 
 [dcrd Setup Guide](dcrd-setup.md)

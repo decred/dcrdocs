@@ -19,8 +19,8 @@ specified, then the last 100 invoices will be returned.
 
 For example: if you have 200 invoices, `dcrlncli listinvoices` will return
 the last 100 created. If you wish to retrieve the previous 100, the
-`first_offset_index` of the response can be used as the index_offset of
-the next listinvoices request.
+`first_offset_index` of the response can be used as the `index_offset` of
+the next `listinvoices` request.
 
 ### Options
 |Option|Info|

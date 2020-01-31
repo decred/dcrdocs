@@ -18,6 +18,7 @@ to be passed using the `--pay_req` argument.
 
 If the payment *is* manually specified, then all four alternative
 arguments need to be specified in order to complete the payment:
+
 * `--dest=N`
 * `--amt=A`
 * `--final_cltv_delta=T`

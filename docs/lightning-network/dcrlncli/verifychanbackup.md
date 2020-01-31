@@ -20,7 +20,7 @@ The command will accept backups in one of three forms:
 static channel backups in single blob.
 
 * A file path which points to a packed multi-channel backup within a
-file, using the same format that lnd does in its channels.backup
+file, using the same format that dcrlnd does in its `channels.backup`
 file.
     
 

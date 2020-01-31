@@ -16,7 +16,7 @@ requested RPC method, prints the response, and then terminates immediately.
 |`--rpcserver value`|host:port of Decred LN daemon (default: "localhost:10009")|
 |`--dcrlnddir value`|path to dcrlnd's base directory|
 |`--tlscertpath value`|path to TLS certificate|
-|`--chain value`, `-c value`|the chain lnd is running on e.g. decred (default: "decred")|
+|`--chain value`, `-c value`|the chain dcrlnd is running on e.g. decred (default: "decred")|
 |`--network value`, `-n value`|the network drlnd is running on e.g. mainnet, testnet, etc. (default: "mainnet")|
 |`--no-macaroons`|disable macaroon authentication|
 |`--macaroonpath value`|path to macaroon file|
@@ -55,10 +55,10 @@ requested RPC method, prints the response, and then terminates immediately.
 ### On-chain
 |Command|Info|
 |--|--|
-|[estimatefee](estimatefee.md)|Get fee estimates for sending bitcoin on-chain to multiple addresses.|
+|[estimatefee](estimatefee.md)|Get fee estimates for sending decred on-chain to multiple addresses.|
 |[sendmany](sendmany.md)|Send decred on-chain to multiple addresses.|
 |[sendcoins](sendcoins.md)|Send decred on-chain to an address.|
-|[listunspent](listunspent.md)|List utxos available for spending.|
+|[listunspent](listunspent.md)|List UTXOs available for spending.|
 |[listchaintxns](listchaintxns.md)|List transactions from the wallet.|
 
 ### Payments

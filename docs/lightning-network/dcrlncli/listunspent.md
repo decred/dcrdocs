@@ -7,7 +7,7 @@
 
 ### Description
 
-For each spendable utxo currently in the wallet, with at least min_confs
+For each spendable UTXO currently in the wallet, with at least min_confs
 confirmations, and at most `max_confs` confirmations, lists the txid,
 index, amount, address, address type, scriptPubkey and number of
 confirmations.  Use `--min_confs=0` to include unconfirmed coins. To list

@@ -38,7 +38,7 @@ $ dcrwallet --csppserver=cspp.decred.org:5760 \
 
 ## Transitioning from an unmixed Ticket Buyer
 
-Solo stakers wishing to convert from an unmixed solo ticket buying setup to a mixed buyer can use two ticket buying wallets simultaneously, with a setup to slowly mix funds from the existing buyer (buyer1) to the new mixed buyer (buyer2). Each ticket buyer must be provisioned with a unique voting xpub:
+jSolo stakers wishing to convert from an unmixed solo ticket buying setup to a mixed buyer can use two ticket buying wallets simultaneously, with a setup to slowly mix funds from the existing buyer (buyer1) to the new mixed buyer (buyer2). Each ticket buyer must be provisioned with a unique voting xpub:
 
 ```
 voter$ dcrctl --wallet createnewaccount voting1
@@ -92,7 +92,7 @@ $ dcrwallet --csppserver=cspp.decred.org:5760 \
   --mixedaccount=mixed/1 --changeaccount=unmixed --mixchange
 ```
 
-Alternatively, the mixaccount JSON-RPC may be used instead of the `--mixchange` option to mix single outputs from the account without leaving the wallet persistently unlocked.
+Alternatively, the `mixaccount` JSON-RPC may be used instead of the `--mixchange` option to mix single outputs from the account without leaving the wallet persistently unlocked.
 
 Non-stakers are able to use this mechanism to mix received funds by using the unmixed account to provide receiving addresses and mix them as if it was CoinShuffle++ change. The wallet will participate in CoinShuffle++ sessions by submitting only one UXTO per epoch until all unmixed funds have been mixed. Depending on the current epoch, users may have to wait for a while before seeing any mixing activity.
 

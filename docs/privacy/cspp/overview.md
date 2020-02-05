@@ -48,7 +48,7 @@ Depending on a P2P network would mean every peer could see other's public IP, wh
 
 ### Handling malicious peers
 
-The protocol handles collisions and malicious peers using a privacy-preserving redundant messaging step. In its worst case scenario, it requires `4+2f` communication rounds for `f` malicious peers. To achieve this, it that each peer uses a freshly generated bitstring (verification key).
+The protocol handles collisions and malicious peers using a privacy-preserving redundant messaging step. In its worst case scenario, it requires `4+2f` communication rounds for `f` malicious peers. To achieve this, each peer uses a freshly generated bitstring (verification key).
 
 After a failed protocol run, peers can reveal session secrets to expose and exclude malicious disruptors, and move on with the mix. If a dishonest peer is excluded from the mix, all secrets so far will be discarded and new ones are generated.
 
@@ -56,11 +56,11 @@ After a failed protocol run, peers can reveal session secrets to expose and excl
 
 ## Benefits
 
-The implementation of the CSPP mixnet did not require changing the consensus rules. It is an opt-in implementation that  obfuscates ownership of DCR coins with out requiring any modifications to the consensus rules. A non-opt-in system would be much more complex.
+The implementation of the CSPP mixnet did not require changing the consensus rules. It is an opt-in implementation that  obfuscates ownership of DCR coins with out requiring any modifications to the consensus rules.
 
 Other privacy implementations like zk-SNARKS and Ring Signatures provide substantial privacy, but impede the network from dropping historical transactions from their full nodes, a process also known as pruning. The CSPP mixnet does not have this effect on the blockchain and pruning remains possible. Pruning the blockchain reduces its size, which makes it easier to download and replicate.
 
-At the same time, the CSPP mixnet presents a much simpler solution that is based on common cryptographic primitives and finite field arithmetic. It is simpler and more DoS resistant than [TumbleBit](https://eprint.iacr.org/2016/575.pdf), which was initially planned and developed,but dropped because of its vulnerability to Denial-of-Service attacks.
+At the same time, the CSPP mixnet presents a much simpler solution that is based on common cryptographic primitives and finite field arithmetic. It is simpler and more DoS resistant than [TumbleBit](https://decred.org/research/heilman2016.pdf), which was initially planned and developed,but dropped because of its vulnerability to Denial-of-Service attacks.
 
 ---
 
@@ -68,7 +68,7 @@ At the same time, the CSPP mixnet presents a much simpler solution that is based
 
 The current implementation has several limitations. Mainly the use of a centralized server, to which the CoinJoin leaks which inputs and change addresses belong to each peer, and the lack of support for Voting Service Providers and regular transactions.
 
-Change and address use also requires careful handling. Address reusage strips the anonymity provided by CoinShuffle++. It is imperative that addresses are never reused and that extended public keys of mixed and voting accounts are not revealed to other parties.
+The anonymity provided by CoinShuffle++ can be lost if wallet addresses  are reused, or if change outputs are not handled correctly. It is imperative that addresses are never reused and that extended public keys of mixed and voting accounts are not revealed to other parties.
 
 The initial code only supports the CLI wallet, dcrwallet, and solo stakers. To implement CSPP beyond the CLI there are some issues that must be dealt with:
 

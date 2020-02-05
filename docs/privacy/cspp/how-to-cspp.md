@@ -38,7 +38,7 @@ $ dcrwallet --csppserver=cspp.decred.org:5760 \
 
 ## Transitioning from an unmixed Ticket Buyer
 
-jSolo stakers wishing to convert from an unmixed solo ticket buying setup to a mixed buyer can use two ticket buying wallets simultaneously, with a setup to slowly mix funds from the existing buyer (buyer1) to the new mixed buyer (buyer2). Each ticket buyer must be provisioned with a unique voting xpub:
+Solo stakers wishing to convert from an unmixed solo ticket buying setup to a mixed buyer can use two ticket buying wallets simultaneously, with a setup to slowly mix funds from the existing buyer (buyer1) to the new mixed buyer (buyer2). Each ticket buyer must be provisioned with a unique voting xpub:
 
 ```
 voter$ dcrctl --wallet createnewaccount voting1

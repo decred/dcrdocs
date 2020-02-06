@@ -4,9 +4,7 @@
 
 ## How to Stake/Vote
 
-Participating in Proof-of-Stake (PoS) voting requires a Decred wallet to be running 24/7. The wallet needs to be always online so that it can be called to vote; if the wallet is unavailable then the votes will be missed and no block reward will be received.
-
-Running your own always-online wallet is known as **"Solo" Voting**.
+There are two ways to stake/vote: solo staking and staking using a VSP. The former method is usually more appropriate for advanced users as it requires your wallet to be up 24/7. Running your own always-online wallet is known as **"Solo" Voting**.
 
 **Voting Service Providers (VSPs)** (formerly "Stakepools") are available for those unable to keep a personal voting wallet online. Using a VSP is completely safe; the Decred PoS protocol allows you to delegate your vote to a VSP's always-online wallet without ever giving the VSP access to your funds.
 

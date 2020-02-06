@@ -5,8 +5,8 @@ theme:
   logo: 'img/decred_logo_symbol_color_gradient_128.svg'
   font: false
 extra:
-  decreditonversion: 1.5.0
-  cliversion: 1.5.0
+  decreditonversion: 1.5.1
+  cliversion: 1.5.1
   gominerversion: 1.0.0
   seedWarning1:
     "During the creation process for your wallet, you will be given a sequence of 33 words known as a seed phrase. This seed phrase is essentially the private key for your wallet. You will be able to use this seed phrase to restore your private keys, transaction history, and balances using any Decred wallet on any computer."
@@ -59,6 +59,7 @@ nav:
   - "Beginner's Guide": 'getting-started/beginner-guide.md'
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
+  - 'Reading List': 'getting-started/reading-list.md'
 - Governance:
   - 'Overview': 'governance/overview.md'
   - Politeia:
@@ -77,6 +78,7 @@ nav:
       - 'Decrediton Setup': 'wallets/decrediton/decrediton-setup.md'
       - 'Using Decrediton': 'wallets/decrediton/using-decrediton.md'
       - 'Upgrading Decrediton': 'wallets/decrediton/upgrading-decrediton.md'
+      - 'Trezor Wallets': 'wallets/decrediton/trezor.md'
       - 'Troubleshooting Problems': 'wallets/decrediton/decrediton-troubleshooting.md'
     - CLI Wallet:
       - 'Installation': 'wallets/cli/cli-installation.md'
@@ -89,7 +91,6 @@ nav:
       - 'dcrd and dcrwallet CLI Arguments': 'wallets/cli/dcrd-and-dcrwallet-cli-arguments.md'
       - 'dcrctl RPC Commands': 'wallets/cli/dcrctl-rpc-commands.md'
     - 'SPV': 'wallets/spv.md'
-    - 'Lightning Network (LN)': 'wallets/lightning.md'
     - 'Hardware Wallets': 'wallets/hardware-wallets.md'
 - Proof-of-Stake Voting:
   - "Overview": 'proof-of-stake/overview.md'
@@ -103,6 +104,56 @@ nav:
   - CoinShuffle++:
     - 'Overview': 'privacy/cspp/overview.md'
     - 'How to use CSPP': 'privacy/cspp/how-to-cspp.md'
+- Lightning Network:
+  - 'Overview': 'lightning-network/overview.md'
+  - dcrlncli:
+    - 'Args and Commands': 'lightning-network/dcrlncli/args-and-commands.md'
+    - 'abandonchannel': 'lightning-network/dcrlncli/abandonchannel.md'
+    - 'addholdinvoice': 'lightning-network/dcrlncli/addholdinvoice.md'
+    - 'addinvoice': 'lightning-network/dcrlncli/addinvoice.md'
+    - 'cancelinvoice': 'lightning-network/dcrlncli/cancelinvoice.md'
+    - 'changepassword': 'lightning-network/dcrlncli/changepassword.md'
+    - 'channelbalance': 'lightning-network/dcrlncli/channelbalance.md'
+    - 'closeallchannels': 'lightning-network/dcrlncli/closeallchannels.md'
+    - 'closechannel': 'lightning-network/dcrlncli/closechannel.md'
+    - 'closedchannels': 'lightning-network/dcrlncli/closedchannels.md'
+    - 'connect': 'lightning-network/dcrlncli/connect.md'
+    - 'create': 'lightning-network/dcrlncli/create.md'
+    - 'decodepayreq': 'lightning-network/dcrlncli/decodepayreq.md'
+    - 'describegraph': 'lightning-network/dcrlncli/describegraph.md'
+    - 'disconnect': 'lightning-network/dcrlncli/disconnect.md'
+    - 'estimatefee': 'lightning-network/dcrlncli/estimatefee.md'
+    - 'exportchanbackup': 'lightning-network/dcrlncli/exportchanbackup.md'
+    - 'feereport': 'lightning-network/dcrlncli/feereport.md'
+    - 'fwdinghistory': 'lightning-network/dcrlncli/fwdinghistory.md'
+    - 'getchaninfo': 'lightning-network/dcrlncli/getchaninfo.md'
+    - 'getnetworkinfo': 'lightning-network/dcrlncli/getnetworkinfo.md'
+    - 'getnodeinfo': 'lightning-network/dcrlncli/getnodeinfo.md'
+    - 'listchaintxns': 'lightning-network/dcrlncli/listchaintxns.md'
+    - 'listchannels': 'lightning-network/dcrlncli/listchannels.md'
+    - 'listinvoices': 'lightning-network/dcrlncli/listinvoices.md'
+    - 'listpayments': 'lightning-network/dcrlncli/listpayments.md'
+    - 'listpeers': 'lightning-network/dcrlncli/listpeers.md'
+    - 'listunspent': 'lightning-network/dcrlncli/listunspent.md'
+    - 'lookupinvoice': 'lightning-network/dcrlncli/lookupinvoice.md'
+    - 'newaddress': 'lightning-network/dcrlncli/newaddress.md'
+    - 'openchannel': 'lightning-network/dcrlncli/openchannel.md'
+    - 'payinvoice': 'lightning-network/dcrlncli/payinvoice.md'
+    - 'pendingchannels': 'lightning-network/dcrlncli/pendingchannels.md'
+    - 'queryroutes': 'lightning-network/dcrlncli/queryroutes.md'
+    - 'restorechanbackup': 'lightning-network/dcrlncli/restorechanbackup.md'
+    - 'sendcoins': 'lightning-network/dcrlncli/sendcoins.md'
+    - 'sendmany': 'lightning-network/dcrlncli/sendmany.md'
+    - 'sendtoroute': 'lightning-network/dcrlncli/sendtoroute.md'
+    - 'settleinvoice': 'lightning-network/dcrlncli/settleinvoice.md'
+    - 'sendpayment': 'lightning-network/dcrlncli/sendpayment.md'
+    - 'signmessage': 'lightning-network/dcrlncli/signmessage.md'
+    - 'unlock': 'lightning-network/dcrlncli/unlock.md'
+    - 'updatechanpolicy': 'lightning-network/dcrlncli/updatechanpolicy.md'
+    - 'verifychanbackup': 'lightning-network/dcrlncli/verifychanbackup.md'
+    - 'verifymessage': 'lightning-network/dcrlncli/verifymessage.md'
+    - 'walletbalance': 'lightning-network/dcrlncli/walletbalance.md'
+    - 'wtclient': 'lightning-network/dcrlncli/wtclient.md'
 - FAQ:
   - 'General': 'faq/general.md'
   - 'Configuration': 'faq/configuration.md'
@@ -144,8 +195,7 @@ nav:
 - Contributing:
   - 'Overview': 'contributing/overview.md'
   - 'Contributor Compensation': 'contributing/contributor-compensation.md'
-- About:
-  - 'Credits': 'about/credits.md'
-  - 'License': 'about/license.md'
 - 'Glossary': 'glossary.md'
-copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.3. Decred Project 2019.
+- About:
+    - 'License': 'about/license.md'
+copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.3. Decred Project 2020.

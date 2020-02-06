@@ -51,8 +51,6 @@ The worst that would happen if a VSP owner disappears is the votes will be misse
 
 VSPs involve 'Dc' addresses since the VSP uses pay-to-script-hash addresses[^17515]. For example, see txid: [c0abc0ec63a8de15550f067e2b6fde28f0432fb91b938574b282daa69f914103](https://dcrdata.decred.org/tx/c0abc0ec63a8de15550f067e2b6fde28f0432fb91b938574b282daa69f914103).
 
-Continue to [PoS Voting Tickets FAQ](voting-tickets.md)
-
 ---
 
 #### 8. What happens if my Voting Service Provider (VSP) goes down?

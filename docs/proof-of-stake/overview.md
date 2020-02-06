@@ -40,7 +40,7 @@ The **Ticket Pool** is the total number of tickets in the Decred network.
 
 The **Ticket Fee** (`ticketfee`) is the fee that must be included in the ticket purchase to incentivize Proof-of-Work (PoW) miners to include that ticket in a new block. **Ticket Fee** usually refers to the DCR/kB fee rate for a ticket purchase transaction. The **Ticket Fee** defaults to the minimum (0.0001 DCR/kB), which is typically sufficient. 
 
-**When a ticket is called to vote, the wallet that has voting rights for that ticket must be online.** If the wallet is not online to cast its vote, the ticket will be marked as `missed` and you will not receive a reward for that ticket. In practice, **Solo Voters** often run voting wallets on a number of servers on different continents, to minimise the chance of their tickets missing a call to vote.
+**When a ticket is called to vote, the wallet that has voting rights for that ticket must be online.** If the wallet is not online to cast its vote, the ticket will be marked as `missed` and you will not receive a reward for that ticket. In practice, **Solo Voters** often run voting wallets on a number of servers on different continents, to minimize the chance of their tickets missing a call to vote.
 
 **Voting Service Providers (VSPs)** (formerly "Stakepools") offer a service whereby ticket buyers can delegate the act of voting to the VSP. The ticket-buyer instructs the VSP how their ticket should vote on any open rule change proposals, but transfers voting rights to the VSP to take advantage of the voting infrastructure they provide (i.e. at least three always-online servers).
 

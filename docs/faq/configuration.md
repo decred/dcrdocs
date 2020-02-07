@@ -65,11 +65,14 @@ On the other hand, increasing your maximum connections, which really just increa
 daemon as this is considered bad practice. 
 [This blog post](https://www.mikeperham.com/2014/09/22/dont-daemonize-your-daemons/)
 by Mike Perham provides some background information.
+
 Modern operating systems provide specialized facilities for running processes as
-background daemons, for example systemd, System V and Upstart, and this the
-recommended method to run `dcrd` or `dcrwallet` as daemons.
+background daemons.
+For example, systemd and Upstart are Linux utilities specifically designed to
+run long-lived daemons.
 MacOS X provides a daemon service named
 [launchd](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
+This is the recommended method for running `dcrd` or `dcrwallet` as daemons.
 
 The [dcrd GitHub repository](https://github.com/decred/dcrd/blob/master/release/services/systemd/dcrd.service)
 provides a sample service file for systemd.

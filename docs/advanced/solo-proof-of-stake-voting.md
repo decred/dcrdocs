@@ -34,7 +34,7 @@ Once your machine is set up you will need to install the Decred CLI tools.
 
 1. Import the Decred Release Signing Key in GnuPG.
 
-    `gpg --keyserver pgp.mit.edu --recv-keys 0x518A031D`
+    `gpg --keyserver pgp.mit.edu --recv-keys F516ADB7A069852C7C28A02D6D897EDF518A031D`
 
 1. Download the installer, manifest, and signature files.
 

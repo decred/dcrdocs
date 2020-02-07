@@ -21,6 +21,6 @@ not present.
 ### Options
 |Option|Info|
 |--|--|
-|`--min_confs value`|   the minimum number of confirmations for a UTXO (default: 0)|
-|`--max_confs value`|   the maximum number of confirmations for a UTXO (default: 0)|
-|`--unconfirmed_only`|  when min_confs and max_confs are zero, setting false implicitly overrides max_confs to be MaxInt32, otherwise max_confs remains zero. An error is returned if the value is true and both min_confs and max_confs are non-zero. (default: false)|
+|`--min_confs value`|   The minimum number of confirmations for a UTXO (default: 0)|
+|`--max_confs value`|   The maximum number of confirmations for a UTXO (default: 0)|
+|`--unconfirmed_only`|  When min_confs and max_confs are zero, setting false implicitly overrides max_confs to be MaxInt32, otherwise max_confs remains zero. An error is returned if the value is true and both min_confs and max_confs are non-zero. (default: false)|

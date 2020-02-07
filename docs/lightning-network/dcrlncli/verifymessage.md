@@ -16,5 +16,5 @@ Positional arguments and flags can be used interchangeably but not at the same t
 ### Options
 |Option|Info|
 |--|--|
-|`--msg value`|  the message to verify|
-|`--sig value`|  the zbase32 encoded signature of the message|
+|`--msg value`|  The message to verify|
+|`--sig value`|  The zbase32 encoded signature of the message|

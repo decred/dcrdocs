@@ -8,4 +8,4 @@
 ### Options
 |Option|Info|
 |--|--|
-|`--paymenthash value`|  the hex-encoded payment hash (32 byte) for which the corresponding invoice will be canceled.|
+|`--paymenthash value`|  The hex-encoded payment hash (32 byte) for which the corresponding invoice will be canceled.|

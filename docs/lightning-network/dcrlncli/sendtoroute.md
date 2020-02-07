@@ -39,5 +39,5 @@ the route in from stdin.
 ### Options
 |Option|Info|
 |--|--|
-|`--payment_hash value`, `--pay_hash value`|  the hash to use within the payment's HTLC|
-|`--routes value`, `-r value`|                a json array string in the format of the response of queryroutes that denotes which routes to use|
+|`--payment_hash value`, `--pay_hash value`|  The hash to use within the payment's HTLC|
+|`--routes value`, `-r value`|                A json array string in the format of the response of queryroutes that denotes which routes to use|

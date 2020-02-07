@@ -24,7 +24,7 @@ entry. Using this callers can manually paginate within a time slice.
 ### Options
 |Option|Info|
 |--|--|
-|`--start_time value`|    the starting time for the query, expressed in seconds since the unix epoch (default: 0)|
-|`--end_time value`|      the end time for the query, expressed in seconds since the unix epoch (default: 0)|
-|`--index_offset value`|  the number of events to skip (default: 0)|
-|`--max_events value`|    the max number of events to return (default: 0)|
+|`--start_time value`|    The starting time for the query, expressed in seconds since the unix epoch (default: 0)|
+|`--end_time value`|      The end time for the query, expressed in seconds since the unix epoch (default: 0)|
+|`--index_offset value`|  The number of events to skip (default: 0)|
+|`--max_events value`|    The max number of events to return (default: 0)|

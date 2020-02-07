@@ -8,10 +8,10 @@
 ### Options
 |Option|Info|
 |--|--|
-|`--pay_req value`|            a zpay32 encoded payment request to fulfill|
-|`--fee_limit value`|          maximum fee allowed in atoms when sending the payment (default: 0)|
-|`--fee_limit_percent value`|  percentage of the payment's amount used as the maximum fee allowed when sending the payment (default: 0)|
-|`--cltv_limit value`|         the maximum time lock that may be used for this payment (default: 0)|
-|`--outgoing_chan_id value`|   short channel id of the outgoing channel to use for the first hop of the payment (default: 0)|
-|`--force`, `-f`|               will skip payment request confirmation|
-|`--amt value`|                (optional) number of atoms to fulfill the invoice (default: 0)|
+|`--pay_req value`|            A zpay32 encoded payment request to fulfill|
+|`--fee_limit value`|          Maximum fee allowed in atoms when sending the payment (default: 0)|
+|`--fee_limit_percent value`|  Percentage of the payment's amount used as the maximum fee allowed when sending the payment (default: 0)|
+|`--cltv_limit value`|         The maximum time lock that may be used for this payment (default: 0)|
+|`--outgoing_chan_id value`|   Short channel id of the outgoing channel to use for the first hop of the payment (default: 0)|
+|`--force`, `-f`|               Will skip payment request confirmation|
+|`--amt value`|                (Optional) Number of atoms to fulfill the invoice (default: 0)|

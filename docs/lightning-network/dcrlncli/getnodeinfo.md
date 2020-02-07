@@ -11,5 +11,5 @@
 ### Options
 |Option|Info|
 |--|--|
-|`--pub_key value`|     the 33-byte hex-encoded compressed public of the target node|
-|`--include_channels`|  if true, will return all known channels associated with the node|
+|`--pub_key value`|     The 33-byte hex-encoded compressed public of the target node|
+|`--include_channels`|  If true, will return all known channels associated with the node|

@@ -8,4 +8,4 @@
 ### Options
 |Option|Info|
 |--|--|
-|`--include_incomplete`|  if set to true, payments still in flight (or failed) will be returned as well|
+|`--include_incomplete`|  If set to true, payments still in flight (or failed) will be returned as well|

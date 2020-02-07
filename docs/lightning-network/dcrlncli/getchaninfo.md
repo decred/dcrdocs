@@ -11,4 +11,4 @@
 ### Options
 |Option|Info|
 |--|--|
-|`--chan_id value`|  the 8-byte compact channel ID to query for (default: 0)|
+|`--chan_id value`|  The 8-byte compact channel ID to query for (default: 0)|

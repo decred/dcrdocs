@@ -26,9 +26,9 @@ The format for a `channel_point` is `funding_txid:output_index`.
 ### Options
 |Option|Info|
 |--|--|
-|`--funding_txid value`|    the txid of the channel's funding transaction|
-|`--output_index value`|    the output index for the funding output of the funding transaction (default: 0)|
-|`--force`|                attempt an uncooperative closure|
-|`--block`|                block until the channel is closed|
-|`--conf_target value`|     (optional) the number of blocks that the transaction *should* confirm in, will be used for fee estimation (default: 0)|
-|`--atoms_per_byte value`|  (optional) a manual fee expressed in atom/byte that should be used when crafting the transaction (default: 0)|
+|`--funding_txid value`|    The txid of the channel's funding transaction|
+|`--output_index value`|    The output index for the funding output of the funding transaction (default: 0)|
+|`--force`|                Attempt an uncooperative closure|
+|`--block`|                Block until the channel is closed|
+|`--conf_target value`|     (Optional) The number of blocks that the transaction *should* confirm in, will be used for fee estimation (default: 0)|
+|`--atoms_per_byte value`|  (Optional) A manual fee expressed in atom/byte that should be used when crafting the transaction (default: 0)|

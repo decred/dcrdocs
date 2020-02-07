@@ -8,4 +8,4 @@
 ### Options
 |Option|Info|
 |--|--|
-|`--preimage value`|  the hex-encoded preimage (32 byte) which will allow settling an incoming HTLC payable to this preimage.|
+|`--preimage value`|  The hex-encoded preimage (32 byte) which will allow settling an incoming HTLC payable to this preimage.|

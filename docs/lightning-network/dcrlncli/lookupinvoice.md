@@ -8,4 +8,4 @@
 ### Options
 |Option|Info|
 |--|--|
-|`--rhash value`|  the 32 byte payment hash of the invoice to query for, the hash should be a hex-encoded string|
+|`--rhash value`|  The 32 byte payment hash of the invoice to query for, the hash should be a hex-encoded string|

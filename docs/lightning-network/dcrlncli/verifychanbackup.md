@@ -27,6 +27,6 @@ file.
 ### Options
 |Option|Info|
 |--|--|
-|`--single_backup value`|  a hex encoded single channel backup obtained from exportchanbackup|
-|`--multi_backup value`|   a hex encoded multi-channel backup obtained from exportchanbackup|
-|`--multi_file value`|     the path to a multi-channel back up file|
+|`--single_backup value`|  A hex encoded single channel backup obtained from exportchanbackup|
+|`--multi_backup value`|   A hex encoded multi-channel backup obtained from exportchanbackup|
+|`--multi_file value`|     The path to a multi-channel back up file|

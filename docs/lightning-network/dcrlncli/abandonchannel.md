@@ -19,5 +19,5 @@ The format for a `channel_point` is `funding_txid:output_index`.
 ### Options
 |Option|Info|
 |--|--|
-|`--funding_txid value`|the txid of the channel's funding transaction|
-|`--output_index value`|the output index for the funding output of the funding transaction (default: 0)|
+|`--funding_txid value`|The txid of the channel's funding transaction|
+|`--output_index value`|The output index for the funding output of the funding transaction (default: 0)|

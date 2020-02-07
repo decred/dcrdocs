@@ -33,6 +33,6 @@ command.
 ### Options
 |Option|Info|
 |--|--|
-|`--chan_point value`|   the target channel to obtain an SCB for|
-|`--all`|                if specified, then a multi backup of all active channels will be returned|
-|`--output_file value`|  if specified, then rather than printing a JSON output of the static channel backup, a serialized version of the backup (either Single or Multi) will be written to the target file, this is the same format used by dcrlnd in its `channels.backup` file|
+|`--chan_point value`|   The target channel to obtain an SCB for|
+|`--all`|                If specified, then a multi backup of all active channels will be returned|
+|`--output_file value`|  If specified, then rather than printing a JSON output of the static channel backup, a serialized version of the backup (either Single or Multi) will be written to the target file, this is the same format used by dcrlnd in its `channels.backup` file|

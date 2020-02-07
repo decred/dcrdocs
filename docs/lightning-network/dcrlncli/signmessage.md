@@ -15,4 +15,4 @@ Positional arguments and flags can be used interchangeably but not at the same t
 ### Options
 |Option|Info|
 |--|--|
-|`--msg value`|  the message to sign|
+|`--msg value`|  The message to sign|

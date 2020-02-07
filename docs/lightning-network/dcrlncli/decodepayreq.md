@@ -11,5 +11,5 @@
 ### Options
 |Option|Info|
 |--|--|
-|`--pay_req value`|  the bech32 encoded payment request|
+|`--pay_req value`|  The bech32 encoded payment request|
    

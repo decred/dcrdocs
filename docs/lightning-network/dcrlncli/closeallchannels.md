@@ -30,7 +30,7 @@ fee negotiation. This is optional.
 ### Options
 |Option|Info|
 |--|--|
-|`--inactive_only`|        close inactive channels only|
-|`--force`|                ask for confirmation once before attempting to close existing channels|
-|`--conf_target value`|     (optional) the number of blocks that the closing transactions *should* confirm in, will be used for fee estimation (default: 0)|
-|`--atoms_per_byte value`|  (optional) a manual fee expressed in atoms/byte that should be used when crafting the closing transactions (default: 0)|
+|`--inactive_only`|        Close inactive channels only|
+|`--force`|                Ask for confirmation once before attempting to close existing channels|
+|`--conf_target value`|     (Optional) The number of blocks that the closing transactions *should* confirm in, will be used for fee estimation (default: 0)|
+|`--atoms_per_byte value`|  (Optional) A manual fee expressed in atoms/byte that should be used when crafting the closing transactions (default: 0)|

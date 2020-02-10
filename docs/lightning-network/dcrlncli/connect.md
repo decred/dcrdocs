@@ -8,4 +8,4 @@
 ### Options
 |Option|Info|
 |--|--|
-|`--perm`|  If set, the daemon will attempt to persistently connect to the target peer.If not, the call will be synchronous.|
+|`--perm`|  If set, the daemon will attempt to persistently connect to the target peer. If not, the call will be synchronous.|

@@ -26,14 +26,14 @@ to potentially recover all on-chain funds, and most off-chain funds as
 well.
 
 Finally, it's also possible to use this command and a set of static
-channel backups to trigger a recover attempt for the provided [Static
-Channel Backups](restorechanbackup.md). Only one of the three parameters will be accepted. See
-the restorechanbackup command for further details w.r.t the format
+channel backups to trigger a recover attempt for the provided Static
+Channel Backups. Only one of the three parameters will be accepted. See
+the [restorechanbackup](restorechanbackup.md) command for further details w.r.t the format
 accepted.
 
 ### Options
 |Option|Info|
 |--|--|
-|`--single_backup value`|  a hex encoded single channel backup obtained from exportchanbackup|
-|`--multi_backup value`|   a hex encoded multi-channel backup obtained from exportchanbackup|
-|`--multi_file value`|     the path to a multi-channel back up file|
+|`--single_backup value`|  A hex encoded single channel backup obtained from exportchanbackup|
+|`--multi_backup value`|   A hex encoded multi-channel backup obtained from exportchanbackup|
+|`--multi_file value`|     The path to a multi-channel back up file|

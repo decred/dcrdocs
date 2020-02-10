@@ -12,7 +12,9 @@ Create and broadcast a transaction paying the specified amount(s) to the passed 
 The `send-json-string` param encodes addresses and the amount to send
 respectively in the following format:
 
-`{"ExampleAddr": NumCoinsInAtoms, "SecondAddr": NumCoins}`
+```json
+{"ExampleAddr": NumCoinsInAtoms, "SecondAddr": NumCoins}
+```
 
 ### Options
 |Option|Info|

@@ -19,13 +19,13 @@ specified, then the last 100 invoices will be returned.
 
 For example: if you have 200 invoices, `dcrlncli listinvoices` will return
 the last 100 created. If you wish to retrieve the previous 100, the
-`first_offset_index` of the response can be used as the index_offset of
-the next listinvoices request.
+`first_offset_index` of the response can be used as the `index_offset` of
+the next `listinvoices` request.
 
 ### Options
 |Option|Info|
 |--|--|
-|`--pending_only`|        toggles if all invoices should be returned, or only those that are currently unsettled|
-|`--index_offset value`|  the index of an invoice that will be used as either the start or end of a query to determine which invoices should be returned in the response (default: 0)|
-|`--max_invoices value`|  the max number of invoices to return (default: 0)|
-|`--reversed`|            if set, the invoices returned precede the given index_offset, allowing backwards pagination|
+|`--pending_only`|        Toggles if all invoices should be returned, or only those that are currently unsettled|
+|`--index_offset value`|  The index of an invoice that will be used as either the start or end of a query to determine which invoices should be returned in the response (default: 0)|
+|`--max_invoices value`|  The max number of invoices to return (default: 0)|
+|`--reversed`|            If set, the invoices returned precede the given index_offset, allowing backwards pagination|

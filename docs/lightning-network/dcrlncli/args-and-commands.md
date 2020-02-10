@@ -13,17 +13,17 @@ requested RPC method, prints the response, and then terminates immediately.
 ## Global Options
 |Flag|Info|
 |--|--|
-|`--rpcserver value`|host:port of Decred LN daemon (default: "localhost:10009")|
-|`--dcrlnddir value`|path to dcrlnd's base directory|
-|`--tlscertpath value`|path to TLS certificate|
-|`--chain value`, `-c value`|the chain lnd is running on e.g. decred (default: "decred")|
-|`--network value`, `-n value`|the network drlnd is running on e.g. mainnet, testnet, etc. (default: "mainnet")|
-|`--no-macaroons`|disable macaroon authentication|
-|`--macaroonpath value`|path to macaroon file|
-|`--macaroontimeout value`|anti-replay macaroon validity time in seconds (default: 60)|
-|`--macaroonip value`|if set, lock macaroon to specific IP address|
-|`--help`, `-h`|show help|
-|`--version`, `-v`|print the version|
+|`--rpcserver value`|Host:port of Decred LN daemon (default: "localhost:10009")|
+|`--dcrlnddir value`|Path to dcrlnd's base directory|
+|`--tlscertpath value`|Path to TLS certificate|
+|`--chain value`, `-c value`|The chain dcrlnd is running on e.g. decred (default: "decred")|
+|`--network value`, `-n value`|The network drlnd is running on e.g. mainnet, testnet, etc. (default: "mainnet")|
+|`--no-macaroons`|Disable macaroon authentication|
+|`--macaroonpath value`|Path to macaroon file|
+|`--macaroontimeout value`|Anti-replay macaroon validity time in seconds (default: 60)|
+|`--macaroonip value`|If set, lock macaroon to specific IP address|
+|`--help`, `-h`|Show help|
+|`--version`, `-v`|Print the version|
 
 ### Commands
 |Command|Info|
@@ -55,10 +55,10 @@ requested RPC method, prints the response, and then terminates immediately.
 ### On-chain
 |Command|Info|
 |--|--|
-|[estimatefee](estimatefee.md)|Get fee estimates for sending bitcoin on-chain to multiple addresses.|
+|[estimatefee](estimatefee.md)|Get fee estimates for sending decred on-chain to multiple addresses.|
 |[sendmany](sendmany.md)|Send decred on-chain to multiple addresses.|
 |[sendcoins](sendcoins.md)|Send decred on-chain to an address.|
-|[listunspent](listunspent.md)|List utxos available for spending.|
+|[listunspent](listunspent.md)|List UTXOs available for spending.|
 |[listchaintxns](listchaintxns.md)|List transactions from the wallet.|
 
 ### Payments

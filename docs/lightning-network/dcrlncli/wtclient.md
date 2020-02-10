@@ -18,4 +18,4 @@
 ### Options
 |Option|Info|
 |--|--|
-|`--help`, `-h`|  show help|
+|`--help`, `-h`|  Show help|

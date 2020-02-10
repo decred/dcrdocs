@@ -8,8 +8,8 @@
 ### Options
 |Option|Info|
 |--|--|
-|`--active_only`|    only list channels which are currently active|
-|`--inactive_only`|  only list channels which are currently inactive|
-|`--public_only`|    only list channels which are currently public|
-|`--private_only`|   only list channels which are currently private|
+|`--active_only`|    Only list channels which are currently active|
+|`--inactive_only`|  Only list channels which are currently inactive|
+|`--public_only`|    Only list channels which are currently public|
+|`--private_only`|   Only list channels which are currently private|
    

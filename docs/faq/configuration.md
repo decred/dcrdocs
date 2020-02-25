@@ -59,6 +59,28 @@ On the other hand, increasing your maximum connections, which really just increa
 
 ---
 
+#### 6. How do I run dcrd and dcrwallet as a background daemon?
+
+`dcrd` and `dcrwallet` do not provide a `--daemon` or `--detach` flag to run as a
+daemon as this is considered bad practice. 
+[This blog post](https://www.mikeperham.com/2014/09/22/dont-daemonize-your-daemons/)
+by Mike Perham provides some background information.
+
+Modern operating systems provide specialized facilities for running processes as
+background daemons.
+For example, systemd and Upstart are Linux utilities specifically designed to
+run long-lived daemons.
+MacOS X provides a daemon service named
+[launchd](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
+This is the recommended method for running `dcrd` or `dcrwallet` as daemons.
+
+The [dcrd GitHub repository](https://github.com/decred/dcrd/blob/master/release/services/systemd/dcrd.service)
+provides a sample service file for systemd.
+A detailed guide on using this file to configure dcrd as a service on Debian 9
+can be found at [stakey.club](https://stakey.club/en/dcrd-as-a-linux-service/).
+
+---
+
 ## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
 
 [^8929]: Decred Forum, [Post 8,929](https://forum.decred.org/threads/600/#post-8929)

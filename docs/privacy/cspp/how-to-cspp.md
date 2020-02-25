@@ -98,6 +98,18 @@ Non-stakers are able to use this mechanism to mix received funds by using the un
 
 ---
 
+## Tor Hidden Service
+
+The CSPP server is accessible as a Tor hidden service, which provide two-way anonymity. The server doesn't know the IP of the client and the client also doesn't know the IP of the server. The **latest** onion address can be found at [CSPP server site](https://cspp.decred.org/) and can be configured by setting it as follows:
+```
+$ dcrwallet --proxy=127.0.0.1:9050 \
+  --csppserver=6i6otcms7mxhnmqf5uclj6tot4gd6dsgk3twnfefssh7v7pbqs57umqd.onion:5760 \
+  ...
+```
+In case `dcrwallet` connects to `dcrd` directly, the `--nodcrdproxy=1` option may be specified in addition to the above.
+
+---
+
 ## Further Information
 
 For more technical information about CoinShuffle++, visit Decred’s [cspp](https://github.com/decred/cspp) Github repository. You can also read about CoinShuffle++ on [Decred’s blog](https://blog.decred.org/2019/08/28/Iterating-Privacy/).

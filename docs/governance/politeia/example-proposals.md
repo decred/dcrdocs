@@ -46,7 +46,7 @@ The software implementing the RPC will be published in the Politeia GitHub [repo
 In the *Who* section, describe the entity making the proposal, who will
 complete the work, and who will draw down on the proposal's budget.
 
-> This proposal is submitted by @allstake (on Slack, /u/Satoshi2000 on reddit). You may remember me from a discussion in #dcrdata, where I solicited feedback on this idea (Matrix link).
+> This proposal is submitted by @allstake (on Matrix, /u/Satoshi2000 on reddit). You may remember me from a discussion in #dcrdata, where I solicited feedback on this idea (Matrix link).
 > I have been active in the blockchain space for two years, with a particular interest and passion for blockchain governance.
 > See my GitHub (github.com/satoshi200) for examples of my work, including an event-driven lambo address creation module.
 
@@ -65,7 +65,7 @@ completion dates, and the draw schedule (how much is paid for each milestone del
 > 1. 4 hours to add refclient validation tests.
 > 1. 2 hours to add RPC to politeiawwwcli
 >
-> In addition allow for 1 hour of overhead (going back and forth on Slack/GitHub etc). This will bring the grand total to 17 hours at a rate of $40/hr.
+> In addition allow for 1 hour of overhead (going back and forth on Matrix/GitHub etc). This will bring the grand total to 17 hours at a rate of $40/hr.
 > This proposal will therefore be capped $680.
 > The proposed schedule is to do this work over 2 weeks in order to allow back and forth on the details.
 >
@@ -127,7 +127,7 @@ goals.
 In the *Who* section, describe the entity making the proposal, who will
 complete the work, and who will draw down on the proposal's budget.
 
-> This proposal is submitted by @AllYourStake (on Slack, /u/StakeGovernor2000 on reddit).
+> This proposal is submitted by @AllYourStake (on Matrix, /u/StakeGovernor2000 on reddit).
 > You may remember me as the organizer of Decred's presence at such blockchain events as Real Blockchain Conference 2017 and Buckets of Blockchain 2018.
 > I don't know exactly who the 3 booth staff and 1 Stakey suit wearer will be, I will be one of the staff and @Contributor1 is also interested.
 

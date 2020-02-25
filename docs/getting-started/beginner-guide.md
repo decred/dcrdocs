@@ -54,15 +54,19 @@ The following guides go into depth on key aspects of the Decred experience:
 
 In addition to the [Politeia proposals site](https://proposals.decred.org), the Decred community can be found on a [variety of platforms](https://decred.org/community/).
 
-### Chat 
+### Chat
 
-The following chat platforms are bridged, such that one's messages are relayed to users on the other platforms:
+The following chat platforms are bridged, such that one's messages are relayed
+to users on the other platforms:
 
 * [Matrix](https://chat.decred.org/)
-* [Slack](https://slack.decred.org/)
 * [Discord](https://discord.gg/GJ2GXfz)
 
-Telegram and KakaoTalk are partially bridged.
+[Telegram](https://t.me/decred) is partially bridged. Messages from Telegram are
+relayed to the `DCR 101` channel on Matrix.
+
+Note that DMs and private channels cannot be bridged. In order to DM another
+user you must both be using the same chat platform.
 
 ### Social Media
 

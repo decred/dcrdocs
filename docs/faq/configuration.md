@@ -4,16 +4,16 @@
 
 #### 1. What are the default ports `dcrd` and `dcrwallet` listen on?
 
-> `dcrd`
+##### `dcrd`
 
-|             |Mainet|Testnet|Simnet
+|             |Mainnet|Testnet|Simnet
 ---           |---   |---    |---
 *Peer to Peer*| 9108 | 19108 | 18555
 *RPC Server*  | 9109 | 19109 | 19556
 
-> `dcrwallet`
+##### `dcrwallet`
 
-|                |Mainet|Testnet|Simnet
+|                |Mainnet|Testnet|Simnet
 ---              |---   |---    |---
 *JSON-RPC Server*| 9110 | 19110 | 19557
 *gRPC Server*    | 9111 | 19111 | 19558
@@ -56,6 +56,28 @@ On the other hand, the `dcrwallet` that contains your funds, for best security, 
 There is an intentional unconfigurable limit of 8 outbound peers[^15399]. More outbound peers than that does not help you in any way and is actually worse for both you and the network. This has been tested extremely thoroughly in Bitcoin, including btcsuite (the upstream project for Decred). All you would do by upping your outbound connections is waste valuable slots of the relatively few public peers there are (there are always a much higher number of "leechers" than there are "seeders").
 
 On the other hand, increasing your maximum connections, which really just increases the number of allowed inbound connections, helps the network by ensuring there are more slots available for new nodes and [SPV](../wallets/spv.md) clients.
+
+---
+
+#### 6. How do I run dcrd and dcrwallet as a background daemon?
+
+`dcrd` and `dcrwallet` do not provide a `--daemon` or `--detach` flag to run as a
+daemon as this is considered bad practice. 
+[This blog post](https://www.mikeperham.com/2014/09/22/dont-daemonize-your-daemons/)
+by Mike Perham provides some background information.
+
+Modern operating systems provide specialized facilities for running processes as
+background daemons.
+For example, systemd and Upstart are Linux utilities specifically designed to
+run long-lived daemons.
+MacOS X provides a daemon service named
+[launchd](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
+This is the recommended method for running `dcrd` or `dcrwallet` as daemons.
+
+The [dcrd GitHub repository](https://github.com/decred/dcrd/blob/master/release/services/systemd/dcrd.service)
+provides a sample service file for systemd.
+A detailed guide on using this file to configure dcrd as a service on Debian 9
+can be found at [stakey.club](https://stakey.club/en/dcrd-as-a-linux-service/).
 
 ---
 

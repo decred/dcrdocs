@@ -1,6 +1,6 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Using Decrediton
 
-Last updated for Decrediton v1.3.1.
+Last updated for Decrediton v{{ decreditonversion }}.
 
 This guide assumes you have already set up a Decrediton wallet using [the Decrediton Setup guide](decrediton-setup.md).
 
@@ -8,7 +8,7 @@ This guide assumes you have already set up a Decrediton wallet using [the Decred
 
 ## Main menu
 
-The main menu of Decrediton is displayed on the left side of the window, and it is used to switch between the different features Decrediton offers. It can be minimised by clicking the arrow icon at the top. At the bottom of the menu is a button to rescan the blockchain. This button will force a rescan of all of your owned addresses to check for new transactions, which can sometimes fix issues where Decrediton is displaying an incorrect balance. This process will take some time, however it will not cause Decrediton to redownload the whole blockchain.
+The main menu of Decrediton is displayed on the left side of the window, and it is used to switch between the different features Decrediton offers. It can be minimized by clicking the arrow icon at the top. At the bottom of the menu is a button to rescan the blockchain. This button will force a rescan of all of your owned addresses to check for new transactions, which can sometimes fix issues where Decrediton is displaying an incorrect balance. This process will take some time, however it will not cause Decrediton to redownload the whole blockchain.
 
 ---
 
@@ -60,14 +60,36 @@ This tab shows allows you to export your transaction history in a .csv format. Y
 
 ---
 
-## Tickets
+## Governance
 
+The governance tab enables users holding tickets to have their say on Decred's governance. Here you can browse and vote upon [Politeia proposals](../../governance/politeia/overview.md), and you can set your voting preferences for on chain [consensus rule votes](../../governance/consensus-rule-voting/overview.md). Your privacy settings must allow Decrediton to contact Politeia to download proposal information.
+
+![Governance page](/img/decrediton/governance.png)
+
+Politeia proposals can be filtered by "Under Discussion", "Under Vote", "Finished Voting" and "Abandoned". The "Create Proposal" button will open <https://proposals.decred.org> in your browser.
+
+You are able to vote on proposals if the following two criteria are met:
+
+1. There are currently proposals available open for voting
+
+1. You owned live proof-of-stake tickets when the proposal was opened for voting
+
+![Consensus rule changes Settings page](/img/decrediton/consensus-rule-voting.png)
+
+The Consensus Changes page shows all of the agendas which are currently up for vote on the Decred blockchain.
+You can read the details of each agenda and choose which way you would like to vote on each issue.
+This setting is only used at the moment each individual ticket votes, which means that you can change your
+voting preferences if you change your mind about an agenda.
+
+---
+
+## Tickets
 
 The tickets tab is split into four sections:
 
 ### Purchase
 
-Before you can purchase tickets you must first import the API key from your [stakepool account](../../proof-of-stake/how-to-stake.md#pos-using-a-stakepool).
+Before you can purchase tickets you must first import the API key from your [VSP account](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
 
 ![Tickets Tab](/img/decrediton/tickets.png)
 
@@ -81,52 +103,42 @@ The total number of tickets you currently own is at the top of the page:
 - **Immature Tickets** - Mined tickets which cannot vote until a 256 block maturing period has passed (around 20 hours)
 - **Live Tickets** - Mature tickets eligible to be called to vote
 
+#### Backup redeem script
+
+Now is a good time to back up your VSPs multi-sig voting script (or "redeem script"). 
+
+!!! warning "Warning"
+    If your VSP goes down, you'll need this script to vote or revoke tickets.
+
+Click on the gear icon next to your VSP. Then click on the donut icon that appears.
+
+![Purchase Tickets page](/img/decrediton/redeem-script.png)
+
+This will bring up your VSP's configuration details. Copy the string of characters in the `Script` field and store them in a safe location. 
+
+![Purchase Tickets page](/img/decrediton/redeem-script-field.png)
+
+#### Purchasing tickets
+
 In order to purchase tickets you just need to select which account to purchase tickets from, how many tickets you want to buy, and then press the **Purchase** button.
 
-The "Automatic Ticket Buyer" panel allows you to enable the automated ticket buyer - Decrediton will continually buy tickets for you for as long as you keep it running. You can configure how the ticket buyer works using the advanced options:
+The "Automatic Ticket Buyer" panel allows you to enable the automated ticket buyer - Decrediton will continually buy tickets for you for as long as you keep it running. You can configure how the ticket buyer works using the options:
 
 ![Automatic Purchase panel](/img/decrediton/autobuyer.png)
 
-- Balance to maintain - If your balance is lower than this number, you will not buy tickets. The default of 0 will use all the funds in your account to buy tickets.
-- Max Price Absolute -  If the ticket price is above this value, you will not buy more tickets. The default of 0 turns this off.
-- Max Per Block - Do not buy more than this number of tickets per block. A negative number means buy one ticket every n blocks. e.g. -2 would mean buy a ticket every second block.
-- Max Fee - Tickets are entered into the mempool in order of their fee per kilobyte. This sets the maximum fee you are willing to pay.
-- Max Price Relative  - If the current window price is significantly higher than the last few windows, do not buy any tickets. E.g. With the default value of 1.25, if the average price of the last few windows is 50DCR, you won’t buy any tickets if the current window is over 62.5DCR.
+- **From** - Funds to purchase tickets will come from this account
+- **VSP** - Which VSP to purchase tickets with
+- **Balance to maintain** - If your balance is lower than this number, you will not buy tickets. The default of 0 will use all the funds in your account to buy tickets
 
 ### My Tickets
 
 This tab shows a summary of all of the tickets your wallet has ever purchased. Filters and sorting options are available to make browsing the list easier.
 
-### Governance
-
-![Voting Settings page](/img/decrediton/voting.png)
-
-This page shows all of the agendas which are currently up for vote on the Decred blockchain.
-You can read the details of each agenda and choose which way you would like to vote on each issue.
-This setting is only used at the moment each individual ticket votes, which means that you can change your
-voting preferences if you change your mind about an agenda.
-
 ### Statistics
 
-This page displays various statistics about all of the available stakepools. The dropdown can be used to change the currently displayed pool.
+This page displays various statistics about all of the available VSPs. The dropdown can be used to change the currently displayed VSP.
 
-![Stakepool statistics page](/img/decrediton/pool-stats.png)
-
----
-
-## Governance
-
-The governance tab enables the user to browse and vote upon Politeia proposals.
-
-![Governance page](/img/decrediton/governance.png)
-
-There are buttons at the top to view all proposals, and to create your own proposal. These will open the relevant pages on <https://proposals.decred.org> in your browser.
-
-You are able to vote on proposals if the following two criteria are met:
-
-1. There are currently proposals available open for voting
-
-1. You owned live proof-of-stake tickets when the proposal was opened for voting
+![VSP statistics page](/img/decrediton/pool-stats.png)
 
 ---
 
@@ -155,7 +167,6 @@ Signing a message with an address' private key allows you to prove that you are 
 
 For instance, let's say you sent 100 DCR to a merchant and you have yet to receive your merchandise. You contact the merchant and explain the situation, but need a way to prove you are, in fact, the owner of the address that the funds were sent from. To do this you can generate a signature based on a message only known to you and your counterparty and the private key associated with the address. Upon receipt, the counterparty may use the Verify Message form to ensure the signature is valid.
 
-
 ### Validate Addresses
 
 A Decred address can be entered into the Validate Address text box, and Decrediton will put that address into one of three categories:
@@ -166,19 +177,18 @@ A Decred address can be entered into the Validate Address text box, and Decredit
 
 ---
 
+## Help
+
+The help tab contains links to get help using Decrediton and to learn more about Decred. There are also links to our various communication platforms. The Tutorials section contains introductions to the ticket lifecycle and how Decred's proof-of-stake system works. It is also possible to view logs of the `dcrd`, `dcrwallet` and `decrediton` processes in the Logs section.
+
+![Help Tab](/img/decrediton/help.png)
+
+---
+
 ## Settings
 
-The settings tab allows you to customise the units DCR amounts are displayed in and also allows you to switch Decrediton onto the testnet blockchain.
+The settings tab allows you to customize the units DCR amounts are displayed in and also allows you to switch Decrediton onto the testnet blockchain.
 
 The settings tab is also where you come to change your private passphrase.
 
 ![Settings Tab](/img/decrediton/settings.png)
-
----
-
-
-## Help
-
-The help tab contains various links to get help using Decrediton and to learn more about Decred. There are also links to our various communication platforms. The Tutorials section contains introductions to the ticket lifecycle and how Decreds proof-of-stake system works. It is also possible to view logs of the `dcrd` and `dcrwallet` processes in the Logs section.
-
-![Help Tab](/img/decrediton/help.png)

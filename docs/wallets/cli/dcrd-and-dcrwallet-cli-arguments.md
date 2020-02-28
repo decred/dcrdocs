@@ -1,9 +1,9 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Options2.svg" /> `dcrd` and `dcrwallet` CLI Arguments
 
-Last updated for CLI release v1.3.0.
+Last updated for CLI release v{{ cliversion }}.
 
 ---
-Both the `dcrd` and `dcrwallet` daemons should work with default configuration for most users, however there is a wide variety of command line aguments to change the way they behave if required. For example, the following command can be used to change the log directory `dcrd` will write to.
+Both the `dcrd` and `dcrwallet` daemons should work with default configuration for most users, however there is a wide variety of command line arguments to change the way they behave if required. For example, the following command can be used to change the log directory `dcrd` will write to.
 
 ```bash
 dcrd --logdir=/my/custom/log/directory
@@ -28,6 +28,7 @@ dcrd --logdir=/my/custom/log/directory
             `--connect=`              | Connect only to the specified peers at startup
             `--nolisten`              | Disable listening for incoming connections -- **NOTE:** Listening is automatically disabled if the `--connect` or `--proxy` options are used without also specifying listen interfaces via `--listen`
             `--listen=`               | Add an interface/port to listen for connections (default all interfaces port: 9108, testnet: 19108)
+            `--maxsameip=`            | Max number of connections with the same IP -- 0 to disable (default: 5)
             `--maxpeers=`             | Max number of inbound and outbound peers (default: 125)
             `--nobanning`             | Disable banning of misbehaving peers
             `--banduration=`          | How long to ban misbehaving peers.  Valid time units are {s, m, h}.  Minimum 1 second (default: 24h0m0s)
@@ -50,13 +51,15 @@ dcrd --logdir=/my/custom/log/directory
             `--proxy=`                | Connect via SOCKS5 proxy (eg. 127.0.0.1:9050)
             `--proxyuser=`            | Username for proxy server
             `--proxypass=`            | Password for proxy server
-            `--onion=`                | Connect to tor hidden services via SOCKS5 proxy (eg. 127.0.0.1:9050)
+            `--onion=`                | Connect to Tor hidden services via SOCKS5 proxy (eg. 127.0.0.1:9050)
             `--onionuser=`            | Username for onion proxy server
             `--onionpass=`            | Password for onion proxy server
-            `--noonion`               | Disable connecting to tor hidden services
+            `--noonion`               | Disable connecting to Tor hidden services
+            `--nodiscoverip`          | Disable automatic network address discovery
             `--torisolation`          | Enable Tor stream isolation by randomizing user credentials for each connection.
             `--testnet`               | Use the test network
             `--simnet`                | Use the simulation test network
+            `--regnet`                | Use the regression test network
             `--nocheckpoints`         | Disable built-in checkpoints.  Don't do this unless you know what you're doing.
             `--dbtype=`               | Database backend to use for the Block Chain (default: ffldb)
             `--profile=`              | Enable HTTP profiling on given [addr:]port -- **NOTE:** port must be between 1024 and 65536
@@ -72,10 +75,9 @@ dcrd --logdir=/my/custom/log/directory
             `--maxorphantx=`          | Max number of orphan transactions to keep in memory (default: 1000)
             `--generate`              | Generate (mine) coins using the CPU
             `--miningaddr=`           | Add the specified payment address to the list of addresses to use for generated blocks -- At least one address is required if the generate option is set
-            `--blockminsize=`         | Mininum block size in bytes to be used when creating a block
+            `--blockminsize=`         | Minimum block size in bytes to be used when creating a block
             `--blockmaxsize=`         | Maximum block size in bytes to be used when creating a block (default: 375000)
             `--blockprioritysize=`    | Size in bytes for high-priority/low-fee transactions when creating a block (default: 20000)
-            `--getworkkey=`           | **DEPRECATED** -- Use the `--miningaddr` option instead
             `--sigcachemaxsize=`      | The maximum number of entries in the signature verification cache (default: 100000)
             `--nonaggressive`         | Disable mining off of the parent block of the blockchain if there aren't enough voters
             `--nominingstatesync`     | Disable synchronizing the mining state with other nodes
@@ -84,16 +86,17 @@ dcrd --logdir=/my/custom/log/directory
             `--acceptnonstd`          | Accept and relay non-standard transactions to the network regardless of the default settings for the active network.
             `--rejectnonstd`          | Reject non-standard transactions regardless of the default settings for the active network.
             `--txindex`               | Maintain a full hash-based transaction index which makes all transactions available via the getrawtransaction RPC
-            `--droptxindex`           | Deletes the hash-based transaction index from the database on start up and then exits.
+            `--droptxindex`           | Deletes the hash-based transaction index from the database on startup and then exits.
             `--addrindex`             | Maintain a full address-based transaction index which makes the searchrawtransactions RPC available
-            `--dropaddrindex`         | Deletes the address-based transaction index from the database on start up and then exits.
+            `--dropaddrindex`         | Deletes the address-based transaction index from the database on startup and then exits.
             `--noexistsaddrindex`     | Disable the exists address index, which tracks whether or not an address has even been used.
-            `--dropexistsaddrindex`   | Deletes the exists address index from the database on start up and then exits.
+            `--dropexistsaddrindex`   | Deletes the exists address index from the database on startup and then exits.
             `--nocfilters`            | Disable compact filtering (CF) support
-            `--dropcfindex`           | Deletes the index used for compact filtering (CF) support from the database on start up and then exits.
+            `--dropcfindex`           | Deletes the index used for compact filtering (CF) support from the database on startup and then exits.
             `--piperx=`               | File descriptor of read end pipe to enable parent -> child process communication
             `--pipetx=`               | File descriptor of write end pipe to enable parent <- child process communication
             `--lifetimeevents`        | Send lifetime notifications over the TX pipe
+            `-altdnsnames=`           | Specify additional dns names to use when generating the rpc server certificate [$DCRD_ALT_DNSNAMES]
 ---
 
 ## `dcrwallet`
@@ -118,19 +121,19 @@ dcrd --logdir=/my/custom/log/directory
             `--promptpass`                             | The private wallet password is prompted for at start up, so the wallet starts unlocked without a time limit
             `--pass=`                                  | The private wallet passphrase
             `--promptpublicpass`                       | The public wallet password is prompted for at start up
-            `--disallowfree`                           | Force transactions to always include a fee
+            `--disallowfree`                           | **DEPRECATED** -- Force transactions to always include a fee
             `--enableticketbuyer`                      | Enable the automatic ticket buyer
             `--enablevoting`                           | Enable creation of votes and revocations for owned tickets
-            `--reuseaddresses`                         | Reuse addresses for ticket purchase to cut down on address overuse
+            `--reuseaddresses`                         | **DEPRECATED** -- Reuse addresses for ticket purchase to cut down on address overuse
             `--purchaseaccount=`                       | Name of the account to buy tickets from (default: default)
             `--pooladdress=`                           | The ticket pool address where ticket fees will go to
             `--poolfees=`                              | The per-ticket fee mandated by the ticket pool as a percent (e.g. 1.00 for 1.00% fee)
             `--gaplimit=`                              | The size of gaps between used addresses.  Used for address scanning and when generating addresses with the wrap option. (default: 20)
             `--stakepoolcoldextkey=`                   | Enables the wallet as a stake pool with an extended key in the format of "xpub...:index" to derive cold wallet addresses to send fees to
             `--allowhighfees`                          | Force the RPC client to use the 'allowHighFees' flag when sending transactions
-            `--txfee=`                                 | Sets the wallet's tx fee per kb (default: 0.001 DCR)
-            `--ticketfee=`                             | Sets the wallet's ticket fee per kb (default: 0.001 DCR)
+            `--txfee=`                                 | Sets the wallet's tx fee per kb (default: 0.0001 DCR)
             `--accountgaplimit=`                       | Number of accounts that can be created in a row without using any of them (default: 10)
+            `--disablecointypeupgrades`                | Never upgrade from legacy to SLIP0044 coin type keys
     `-c` or `--rpcconnect=`                            | Hostname/IP and port of dcrd RPC server to connect to
             `--cafile=`                                | File containing root certificates to authenticate a TLS connections with dcrd
             `--noclienttls`                            | Disable TLS for the RPC client -- **NOTE:** This is only allowed if the RPC client is connecting to localhost
@@ -157,27 +160,13 @@ dcrd --logdir=/my/custom/log/directory
             `--pipetx=`                                | File descriptor or handle of write end pipe to enable child -> parent process communication
             `--piperx=`                                | File descriptor or handle of read end pipe to enable parent -> child process communication
             `--rpclistenerevents`                      | Notify JSON-RPC and gRPC listener addresses over the TX pipe
-    `-b` or `--datadir=`                               | **DEPRECATED** -- use `--appdata` instead
-            `--prunetickets`                           | **DEPRECATED** -- old tickets are always pruned
-            `--ticketaddress=`                         | **DEPRECATED** -- use `--ticketbuyer.votingaddress` instead
-            `--addridxscanlen=`                        | **DEPRECATED** -- use `--gaplimit` instead (default: 20)
             `--ticketbuyer.balancetomaintainabsolute=` | Amount of funds to keep in wallet when stake mining (default: 0 DCR)
             `--ticketbuyer.votingaddress=`             | Purchase tickets with voting rights assigned to this address
-            `--ticketbuyer.avgpricemode=`              | **DEPRECATED** -- The mode to use for calculating the average price if pricetarget is disabled (vwap, pool, dual) (default: vwap)
-            `--ticketbuyer.avgpricevwapdelta=`         | **DEPRECATED** -- The number of blocks to use from the current block to calculate the VWAP (default: 2880)
-            `--ticketbuyer.maxfee=`                    | **DEPRECATED** -- Maximum ticket fee per KB (default: 0.01 DCR)
-            `--ticketbuyer.minfee=`                    | **DEPRECATED** -- Minimum ticket fee per KB (default: 0.001 DCR)
-            `--ticketbuyer.feesource=`                 | **DEPRECATED** -- The fee source to use for ticket fee per KB (median or mean) (default: median)
-            `--ticketbuyer.maxperblock=`               | **DEPRECATED** -- Maximum tickets per block, with negative numbers indicating buy one ticket every 1-in-n blocks (default: 1)
-            `--ticketbuyer.blockstoavg=`               | **DEPRECATED** -- Number of blocks to average for fees calculation (default: 11)
-            `--ticketbuyer.feetargetscaling=`          | **DEPRECATED** -- Scaling factor for setting the ticket fee, multiplies by the average fee (default: 1)
-            `--ticketbuyer.maxinmempool=`              | **DEPRECATED** -- The maximum number of your tickets allowed in mempool before purchasing more tickets (default: 40)
-            `--ticketbuyer.expirydelta=`               | **DEPRECATED** -- Number of blocks in the future before the ticket expires (default: 16)
-            `--ticketbuyer.maxpriceabsolute=`          | **DEPRECATED** -- Maximum absolute price to purchase a ticket (default: 0 DCR)
-            `--ticketbuyer.maxpricescale=`             | **DEPRECATED** -- Attempt to prevent the stake difficulty from going above this multiplier (>1.0) by manipulation, 0 to disable
-            `--ticketbuyer.maxpricerelative=`          | **DEPRECATED** -- Scaling factor for setting the maximum price, multiplies by the average price (default: 1.25)
-            `--ticketbuyer.balancetomaintainrelative=` | **DEPRECATED** -- Proportion of funds to leave in wallet when stake mining (default: 0.3)
-            `--ticketbuyer.pricetarget=`               | **DEPRECATED** -- A target to try to seek setting the stake price to rather than meeting the average price, 0 to disable (default: 0 DCR)
-            `--ticketbuyer.nospreadticketpurchases`    | **DEPRECATED** -- Do not spread ticket purchases evenly throughout the window
-            `--ticketbuyer.spreadticketpurchases`      | **DEPRECATED** -- Spread ticket purchases evenly throughout the window
-            `--ticketbuyer.dontwaitfortickets`         | **DEPRECATED** -- Don't wait until your last round of tickets have entered the blockchain to attempt
+            `--ticketbuyer.limit=`                     | Buy no more than specified number of tickets per block (0 disables limit)
+            `--ticketbuyer.votingaccount=`             | Account used to derive addresses specifying voting rights
+            `--csppserver=`                            | Network address of CoinShuffle++ server
+            `--csppserver.ca=`                         | CoinShuffle++ Certificate Authority
+            `--mixedaccount=`                          | Account/branch used to derive CoinShuffle++ mixed outputs and voting rewards
+            `--ticketsplitaccount=`                    | Account to derive fresh addresses from for mixed ticket splits; uses mixedaccount if unset
+            `--changeaccount=`                         | Account used to derive unmixed CoinJoin outputs in CoinShuffle++ protocol
+            `--mixchange`                              | Use CoinShuffle++ to mix change account outputs into mix account

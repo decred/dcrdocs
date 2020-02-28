@@ -1,15 +1,28 @@
 site_name: Decred Documentation
-theme: 
+theme:
   name: material
-  favicon: 'img/favicon.ico'
-  logo: 'img/decred_logo_symbol_128.svg'
+  favicon: 'img/favicon.ico?v=s3ss'
+  logo: 'img/decred_logo_symbol_color_gradient_128.svg'
   font: false
 extra:
+  decreditonversion: 1.5.1
+  cliversion: 1.5.1
+  gominerversion: 1.0.0
+  seedWarning1:
+    "During the creation process for your wallet, you will be given a sequence of 33 words known as a seed phrase. This seed phrase is essentially the private key for your wallet. You will be able to use this seed phrase to restore your private keys, transaction history, and balances using any Decred wallet on any computer."
+  seedWarning2:
+    "This ultimately means that *anyone* who knows your seed can use it to restore your private keys, transaction history, and balances to a Decred wallet on their computer without your knowledge. For this reason, it is of utmost importance to keep your seed phrase safe. Treat this seed the same way you would treat a physical key to a safe. If you lose your seed phrase, you permanently lose access to your wallet and all funds within it. It cannot be recovered by anyone, including the Decred developers. It is recommended you write it down on paper and store that somewhere secure. If you decide to keep it on your computer, it would be best to keep it in an encrypted document (do not forget the password) in case the file or your computer is stolen."
+  seedWarning3:
+    "Every seed phrase is also associated with a 64 character seed hex. The seed hex functions the same way as the seed phrase, so it is also important to keep your seed hex secure."
+  seedWarning4:
+    "**DO NOT, UNDER ANY CIRCUMSTANCES, GIVE YOUR SEED OR THE ASSOCIATED HEX KEY TO ANYONE! NOT EVEN DECRED DEVELOPERS!**"
   social:
     - type: 'github'
       link: 'https://github.com/decred'
     - type: 'twitter'
       link: 'https://twitter.com/decredproject'
+    - type: 'medium'
+      link: 'https://medium.com/decred'
     - type: 'reddit'
       link: 'https://www.reddit.com/r/decred/'
     - type: 'youtube'
@@ -20,7 +33,6 @@ extra:
       link: 'https://www.facebook.com/decredproject/'
     - type: 'weibo'
       link: 'https://weibo.com/DecredProject'
-site_url: https://docs.decred.org
 repo_url: https://github.com/decred/dcrdocs
 repo_name: decred/dcrdocs
 markdown_extensions:
@@ -38,25 +50,35 @@ extra_javascript:
 extra_css:
   - css/fonts.css
   - css/style.css
+plugins:
+  - markdownextradata
+  - search
 nav:
 - 'Home': 'index.md'
 - Getting Started:
   - "Beginner's Guide": 'getting-started/beginner-guide.md'
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
+  - 'Articles & Media': 'getting-started/articles-and-media.md'
 - Governance:
+  - 'Overview': 'governance/overview.md'
   - Politeia:
-    - 'Politeia': 'governance/politeia/politeia.md'
+    - 'Overview': 'governance/politeia/overview.md'
     - 'Proposal Guidelines': 'governance/politeia/proposal-guidelines.md'
     - 'Example Proposals': 'governance/politeia/example-proposals.md'
-  - 'Introduction to Decred governance': 'governance/introduction-to-decred-governance.md'
-  - 'Consensus Rules Voting': 'governance/consensus-rules-voting.md'
-  - 'How to Vote on Consensus Rule Changes': 'governance/how-to-vote.md'
+    - 'Censorship': 'governance/politeia/politeia-censorship.md'
+  - Consensus Rule Voting:
+    - 'Overview': 'governance/consensus-rule-voting/overview.md'
+    - 'How to Vote': 'governance/consensus-rule-voting/how-to-vote.md'
+    - 'Verifying Votes': 'governance/consensus-rule-voting/verifying-votes.md'
+    - 'Consensus Vote Archive': 'governance/consensus-rule-voting/consensus-vote-archive.md'
   - 'Decred Constitution': 'governance/decred-constitution.md'
 - Wallets:
     - Decrediton (GUI):
       - 'Decrediton Setup': 'wallets/decrediton/decrediton-setup.md'
       - 'Using Decrediton': 'wallets/decrediton/using-decrediton.md'
+      - 'Upgrading Decrediton': 'wallets/decrediton/upgrading-decrediton.md'
+      - 'Trezor Wallets': 'wallets/decrediton/trezor.md'
       - 'Troubleshooting Problems': 'wallets/decrediton/decrediton-troubleshooting.md'
     - CLI Wallet:
       - 'Installation': 'wallets/cli/cli-installation.md'
@@ -69,38 +91,95 @@ nav:
       - 'dcrd and dcrwallet CLI Arguments': 'wallets/cli/dcrd-and-dcrwallet-cli-arguments.md'
       - 'dcrctl RPC Commands': 'wallets/cli/dcrctl-rpc-commands.md'
     - 'SPV': 'wallets/spv.md'
+    - 'Hardware Wallets': 'wallets/hardware-wallets.md'
 - Proof-of-Stake Voting:
-  - "What is Proof-of-Stake?": 'proof-of-stake/proof-of-stake.md'
-  - "How to Stake": 'proof-of-stake/how-to-stake.md' 
-  - PoS FAQ:
-    - 'General': 'faq/proof-of-stake/general.md'
-    - 'Solo Mining': 'faq/proof-of-stake/solo-mining.md'
-    - 'Buying Tickets and Fees': 'faq/proof-of-stake/buying-tickets-and-fees.md'
-    - 'Voting Tickets': 'faq/proof-of-stake/voting-tickets.md'
-    - 'Voting Service Providers': 'faq/proof-of-stake/stake-pools.md'
+  - "Overview": 'proof-of-stake/overview.md'
+  - "How to Stake": 'proof-of-stake/how-to-stake.md'
+  - "Ticket Splitting": 'proof-of-stake/ticket-splitting.md'
 - Proof-of-Work Mining:
-  - 'Overview': 'mining/proof-of-work.md'
+  - 'Overview': 'mining/overview.md'
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'
-  - 'PoW FAQ': 'faq/proof-of-work-mining.md'
+- Privacy:
+  - 'General Privacy': 'privacy/general-privacy.md'
+  - CoinShuffle++:
+    - 'Overview': 'privacy/cspp/overview.md'
+    - 'How to use CSPP': 'privacy/cspp/how-to-cspp.md'
+- Lightning Network:
+  - 'Overview': 'lightning-network/overview.md'
+  - dcrlncli:
+    - 'Args and Commands': 'lightning-network/dcrlncli/args-and-commands.md'
+    - 'abandonchannel': 'lightning-network/dcrlncli/abandonchannel.md'
+    - 'addholdinvoice': 'lightning-network/dcrlncli/addholdinvoice.md'
+    - 'addinvoice': 'lightning-network/dcrlncli/addinvoice.md'
+    - 'cancelinvoice': 'lightning-network/dcrlncli/cancelinvoice.md'
+    - 'changepassword': 'lightning-network/dcrlncli/changepassword.md'
+    - 'channelbalance': 'lightning-network/dcrlncli/channelbalance.md'
+    - 'closeallchannels': 'lightning-network/dcrlncli/closeallchannels.md'
+    - 'closechannel': 'lightning-network/dcrlncli/closechannel.md'
+    - 'closedchannels': 'lightning-network/dcrlncli/closedchannels.md'
+    - 'connect': 'lightning-network/dcrlncli/connect.md'
+    - 'create': 'lightning-network/dcrlncli/create.md'
+    - 'decodepayreq': 'lightning-network/dcrlncli/decodepayreq.md'
+    - 'describegraph': 'lightning-network/dcrlncli/describegraph.md'
+    - 'disconnect': 'lightning-network/dcrlncli/disconnect.md'
+    - 'estimatefee': 'lightning-network/dcrlncli/estimatefee.md'
+    - 'exportchanbackup': 'lightning-network/dcrlncli/exportchanbackup.md'
+    - 'feereport': 'lightning-network/dcrlncli/feereport.md'
+    - 'fwdinghistory': 'lightning-network/dcrlncli/fwdinghistory.md'
+    - 'getchaninfo': 'lightning-network/dcrlncli/getchaninfo.md'
+    - 'getnetworkinfo': 'lightning-network/dcrlncli/getnetworkinfo.md'
+    - 'getnodeinfo': 'lightning-network/dcrlncli/getnodeinfo.md'
+    - 'listchaintxns': 'lightning-network/dcrlncli/listchaintxns.md'
+    - 'listchannels': 'lightning-network/dcrlncli/listchannels.md'
+    - 'listinvoices': 'lightning-network/dcrlncli/listinvoices.md'
+    - 'listpayments': 'lightning-network/dcrlncli/listpayments.md'
+    - 'listpeers': 'lightning-network/dcrlncli/listpeers.md'
+    - 'listunspent': 'lightning-network/dcrlncli/listunspent.md'
+    - 'lookupinvoice': 'lightning-network/dcrlncli/lookupinvoice.md'
+    - 'newaddress': 'lightning-network/dcrlncli/newaddress.md'
+    - 'openchannel': 'lightning-network/dcrlncli/openchannel.md'
+    - 'payinvoice': 'lightning-network/dcrlncli/payinvoice.md'
+    - 'pendingchannels': 'lightning-network/dcrlncli/pendingchannels.md'
+    - 'queryroutes': 'lightning-network/dcrlncli/queryroutes.md'
+    - 'restorechanbackup': 'lightning-network/dcrlncli/restorechanbackup.md'
+    - 'sendcoins': 'lightning-network/dcrlncli/sendcoins.md'
+    - 'sendmany': 'lightning-network/dcrlncli/sendmany.md'
+    - 'sendtoroute': 'lightning-network/dcrlncli/sendtoroute.md'
+    - 'settleinvoice': 'lightning-network/dcrlncli/settleinvoice.md'
+    - 'sendpayment': 'lightning-network/dcrlncli/sendpayment.md'
+    - 'signmessage': 'lightning-network/dcrlncli/signmessage.md'
+    - 'unlock': 'lightning-network/dcrlncli/unlock.md'
+    - 'updatechanpolicy': 'lightning-network/dcrlncli/updatechanpolicy.md'
+    - 'verifychanbackup': 'lightning-network/dcrlncli/verifychanbackup.md'
+    - 'verifymessage': 'lightning-network/dcrlncli/verifymessage.md'
+    - 'walletbalance': 'lightning-network/dcrlncli/walletbalance.md'
+    - 'wtclient': 'lightning-network/dcrlncli/wtclient.md'
 - FAQ:
   - 'General': 'faq/general.md'
   - 'Configuration': 'faq/configuration.md'
   - 'Wallets and Seeds': 'faq/wallets-and-seeds.md'
   - 'Blocks': 'faq/blocks.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
+  - 'PoW': 'faq/proof-of-work-mining.md'
+  - PoS:
+    - 'General': 'faq/proof-of-stake/general.md'
+    - 'Solo Voting': 'faq/proof-of-stake/solo-voting.md'
+    - 'Buying Tickets and Fees': 'faq/proof-of-stake/buying-tickets-and-fees.md'
+    - 'Voting Tickets': 'faq/proof-of-stake/voting-tickets.md'
+    - 'Voting Service Providers': 'faq/proof-of-stake/voting-service-providers.md'
 - Advanced:
-  - 'Using Testnet': 'advanced/using-testnet.md'
   - 'Manual CLI Installation': 'advanced/manual-cli-install.md'
-  - 'Block Header Specifications': 'advanced/block-header-specifications.md'
-  - 'Blockchain Parameters': 'advanced/blockchain-parameters.md'
-  - 'Transaction Details': 'advanced/transaction-details.md'
+  - 'dcrtime': 'advanced/dcrtime.md'
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
+  - 'Premine': 'advanced/premine.md'
   - 'Inflation': 'advanced/inflation.md'
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
   - 'Navigating Politeia Data': 'advanced/navigating-politeia-data.md'
-  - 'Simnet': 'advanced/simnet.md'
   - 'Solo Proof-of-Stake (PoS) Voting': 'advanced/solo-proof-of-stake-voting.md'
   - 'Operating a VSP': 'advanced/operating-a-vsp.md'
+  - 'Running a Full Node': 'advanced/full-node.md'
+  - 'Security': 'advanced/general-security.md'
+  - 'Atomic Swaps': 'advanced/atomic-swap.md'
 - Research:
   - 'Overview': 'research/overview.md'
   - 'Hybrid Design': 'research/hybrid-design.md'
@@ -109,16 +188,14 @@ nav:
   - 'BLAKE-256 Hash Function': 'research/blake-256-hash-function.md'
   - 'Script Extensions': 'research/script-extensions.md'
   - 'Signature Script Isolation and Fraud Proofs': 'research/signature-script-isolation-and-fraud-proofs.md'
-  - 'Transaction Extensions': 'research/transaction-extensions.md'
+  - 'Block Production Times': 'research/block-production-times.md'
+  - 'Ticket Selection Algorithm': 'research/ticket-selection-algorithm.md'
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - Contributing:
+  - 'Overview': 'contributing/overview.md'
   - 'Contributor Compensation': 'contributing/contributor-compensation.md'
-  - Guidelines:
-    - 'Using GitHub': 'contributing/using-github.md'
-    - 'Source Code Contributions': 'contributing/source-code-contributions.md'
-- About:
-  - 'Credits': 'about/credits.md'
-  - 'License': 'about/license.md'
 - 'Glossary': 'glossary.md'
-copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.3. Decred Project 2018.
+- About:
+    - 'License': 'about/license.md'
+copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>dcrdocs v0.0.3. Decred Project 2020.

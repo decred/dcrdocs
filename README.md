@@ -1,5 +1,8 @@
 # dcrdocs
 
+[![Build Status](https://github.com/decred/dcrdocs/workflows/Build%20and%20Test/badge.svg)](https://github.com/decred/dcrdocs/actions)
+[![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
+
 `dcrdocs` is source code for the [Decred project documentation](https://docs.decred.org).
 
 `dcrdocs` is built with [MkDocs](https://www.mkdocs.org/) - a documentation toolkit written in Python.
@@ -40,6 +43,17 @@ INFO    -  Cleaning site directory
 [I 160402 15:50:43 handlers:60] Start detecting changes
 ```
 
+If you are using Windows, you may need to inform python to search sys.path for the mkdocs module:
+
+```bash
+$ python -m mkdocs serve
+INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+[I 190207 18:05:35 server:298] Serving on http://127.0.0.1:8000
+[I 190207 18:05:35 handlers:59] Start watching changes
+[I 190207 18:05:35 handlers:61] Start detecting changes
+```
+
 Open up <http://127.0.0.1:8000> in your browser, and you will see the documentation home page being displayed. The dev-server also supports auto-reloading, and will rebuild your documentation whenever anything in the configuration file or the documentation directory changes.
 
 ## Deploying
@@ -47,7 +61,7 @@ Open up <http://127.0.0.1:8000> in your browser, and you will see the documentat
 To deploy `dcrdocs`, first build the documentation:
 
 ```bash
-$ ./build_docs.sh
+$ ./bin/build_docs.sh
 ```
 
 This will build the documentation into a new directory named `site`.
@@ -59,7 +73,7 @@ The version of `dcrdocs` that you just built only uses static files which are al
 `dcrdocs` can also be built and hosted in a [Docker](https://www.docker.com/) container. Build the container using:
 
 ```bash
-$ ./build_docker.sh
+$ ./bin/build.sh
 ```
 
 The container can then be run with:
@@ -76,19 +90,22 @@ $ docker run -d --rm -p <local port>:80 decred/dcrdocs:latest
 - `wallets/cli/dcrd-and-dcrwallet-cli-arguments.md`
 - `wallets/cli/dcrctl-rpc-commands.md`
 - `wallets/cli/cli-installation.md`
+- `advanced/solo-proof-of-stake-voting.md`
+- `advanced/verifying-binaries.md`
+
+#### politeiavoter releases
+
+- `advanced/solo-proof-of-stake-voting.md`
 
 #### Decrediton releases
 
 - `wallets/decrediton/decrediton-setup.md`
 - `wallets/decrediton/using-decrediton.md`
+- `wallets/decrediton/decrediton-troubleshooting.md`
 
 #### gominer release
 
-- `mining/proof-of-work/pool-mining.md`
-
-#### Testnet reset
-
-- `advanced/using-testnet.md`
+- `mining/proof-of-work/pool-mining/gominer.md`
 
 
 ## Getting help

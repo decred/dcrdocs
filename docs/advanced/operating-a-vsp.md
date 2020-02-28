@@ -6,7 +6,7 @@
 
 VSPs are a key part of the Decred infrastructure which make participating in proof-of-stake much more accessible for the average user. It is desirable to increase the number of operating VSPs in order to promote decentralization, improve the stability of the Decred network, and give stakeholders more choice.
 
-This is a high level guide of how to set up a VSP, and the steps required to list a VSP on [decred.org](https://decred.org/stakepools) and in Decrediton wallet. The guide is deliberately written at a high level and with minimal details because a level of system admin experience is assumed for VSP operators.
+This is a high level guide of how to set up a VSP, and the steps required to list a VSP on [decred.org](https://decred.org/vsp) and in Decrediton wallet. The guide is deliberately written at a high level and with minimal details because a level of system admin experience is assumed for VSP operators.
 
 ---
 
@@ -30,7 +30,7 @@ There are several requirements for the VSP configuration:
 * The physical or virtual machines used to host the configuration must be spread across 3 or more physical locations.
 * More specifically, voting wallets must be in 3+ physically separate locations.
 * The web frontend must have an IP that is distinct from those of the voting wallets, and is ideally located in another physical location.
-* Source code for the VSP is available [on Github](https://github.com/decred/dcrstakepool) and binaries must be compiled from source.
+* Source code for the VSP is available [on GitHub](https://github.com/decred/dcrstakepool) and binaries must be compiled from source.
 * The VSP must be run on testnet for 1 week to confirm it is working properly. Uptime and number of votes made versus missed will be checked.
 * Company 0 will verify the VSP configuration is proper before moving to mainnet.  Unprivileged shell accounts will be made available so the configuration can be verified after running for 1 week on testnet.
 * The VSP must be run on mainnet in test mode (no public access) until a VSP operator demonstrates they have successfully voted 1 ticket of their own using the VSP.
@@ -40,4 +40,4 @@ There are several requirements for the VSP configuration:
 
 ## Further Information
 
-More detailed instructions on how to setup a VSP can be found on Github in the [dcrstakepool repo](https://github.com/decred/dcrstakepool). For further support you can contact the [Decred community](https://decred.org/community).
+More detailed instructions on how to setup a VSP can be found on GitHub in the [dcrstakepool repo](https://github.com/decred/dcrstakepool). For further support you can contact the [Decred community](https://decred.org/community).

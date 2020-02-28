@@ -2,7 +2,7 @@
 
 This guide is intended for basic initial setup of gominer on a mining pool of choice using a configuration file, more advanced options are available.
 
-Last updated for gominer v1.0.0.
+Last updated for gominer v{{ gominerversion }}.
 
 ---
 
@@ -10,13 +10,13 @@ Last updated for gominer v1.0.0.
 
 Visit <https://github.com/decred/decred-binaries/releases/tag/v1.0.0> to download the gominer binaries. Within the "Downloads" section you should see the following files:
 
-- `gominer-windows-amd64-cuda-v1.0.0.zip`
-- `gominer-windows-amd64-opencl-v1.0.0.zip`
-- `gominer-windows-amd64-opencladl-v1.0.0.zip`
+- `gominer-windows-amd64-cuda-v{{ gominerversion }}.zip`
+- `gominer-windows-amd64-opencl-v{{ gominerversion }}.zip`
+- `gominer-windows-amd64-opencladl-v{{ gominerversion }}.zip`
 
-- `gominer-linux-amd64-cuda-v1.0.0.tar.gz`
-- `gominer-linux-amd64-opencl-v1.0.0.tar.gz`
-- `gominer-linux-amd64-opencladl-v1.0.0.tar.gz`
+- `gominer-linux-amd64-cuda-v{{ gominerversion }}.tar.gz`
+- `gominer-linux-amd64-opencl-v{{ gominerversion }}.tar.gz`
+- `gominer-linux-amd64-opencladl-v{{ gominerversion }}.tar.gz`
 
 For NVIDIA graphics cards, download the `*-cuda-*` file for your OS.
 
@@ -106,4 +106,4 @@ Now that your gominer is hashing away for you, you have time to check out your p
 
 ## Helpful Hints
 
-*For OpenCL and OpenCL ADL versions of the gominer*, gominer automatically calculates a WorkSize that results in the work algorithm being executed every 500ms. Changing the Intensity/WorkSize settings within `gominer.conf` will result in a known issue - the algorithm will execute at a much quicker pace due to the lowered WorkSize (this will not result in more shares being generated), resulting in an increased usage of memory sometimes as high as 10MB/sec. This eventually leads to your system running out of RAM space and automatically terminating gominer. It is best to leave these settings alone and allow gominer to calculate it's own WorkSize.
+*For OpenCL and OpenCL ADL versions of the gominer*, gominer automatically calculates a WorkSize that results in the work algorithm being executed every 500ms. Changing the Intensity/WorkSize settings within `gominer.conf` will result in a known issue - the algorithm will execute at a much quicker pace due to the lowered WorkSize (this will not result in more shares being generated), resulting in an increased usage of memory sometimes as high as 10MB/sec. This eventually leads to your system running out of RAM space and automatically terminating gominer. It is best to leave these settings alone and allow gominer to calculate its own WorkSize.

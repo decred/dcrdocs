@@ -1,7 +1,8 @@
 /* Override header and footer with decred dark blue*/
 .md-header,
 .md-footer-nav,
-.md-footer-meta {
+.md-footer-meta,
+.md-nav__source {
     background-color: #091440
 }
 
@@ -22,7 +23,11 @@ h1 img.dcr-icon {
     vertical-align: middle;
 }
 
-h2 img.dcr-icon, h3 img.dcr-icon {
+h2 img.dcr-icon,
+h3 img.dcr-icon,
+h4 img.dcr-icon,
+h5 img.dcr-icon,
+h6 img.dcr-icon {
     height: 26px;
     width : 26px;
     vertical-align: middle;
@@ -41,11 +46,6 @@ p img.dcr-icon {
     .md-nav__source {
     	background-color: #122c5c;
     }
-}
-
-/* Increase font-size for info/warning/danger boxes. 1.6rem matches the rest of the text. */
-.md-typeset .admonition {
-    font-size: 1.6rem;
 }
 
 /* Disable min-width for headers in tables with at least 7 columns */
@@ -75,13 +75,6 @@ details .md-typeset__table code{
 }
 .md-typeset table:not([class]) td{
     font-size: 13px;
-}
-
-.md-typeset blockquote{
-    border-left:.4rem solid #2ED8A3;
-}
-.md-typeset blockquote p{
-    color: #2ED8A3;
 }
 
 .md-typeset details summary {

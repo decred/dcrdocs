@@ -176,6 +176,5 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `walletinfo`              |
     `walletislocked`          |
     `walletlock`              |
-    `walletlock`              |
     `walletpassphrase`        | `"passphrase"` `timeout`
     `walletpassphrasechange`  | `"oldpassphrase"` `"newpassphrase"`

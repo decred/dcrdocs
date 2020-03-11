@@ -163,6 +163,8 @@ various aspects of Decred.
 
 - [How Decred fork resistance works](https://medium.com/decred/detailed-analysis-of-decred-fork-resistance-93022e0bcde7) by Haon
 
+- [Parametrized cost of attack as a measure of Decred network security](https://github.com/buck54321/dcr-research/blob/master/paper/Attack-cost%20estimation.pdf) by Brian Stafford
+
 ### Adaptability
 
 - [How consensus rule voting works](../governance/consensus-rule-voting/overview.md)

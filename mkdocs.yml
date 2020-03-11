@@ -172,7 +172,7 @@ nav:
   - 'dcrtime': 'advanced/dcrtime.md'
   - 'Verifying Binaries': 'advanced/verifying-binaries.md'
   - 'Premine': 'advanced/premine.md'
-  - 'Inflation': 'advanced/inflation.md'
+  - 'Issuance': 'advanced/issuance.md'
   - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
   - 'Navigating Politeia Data': 'advanced/navigating-politeia-data.md'
   - 'Solo Proof-of-Stake (PoS) Voting': 'advanced/solo-proof-of-stake-voting.md'

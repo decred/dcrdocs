@@ -40,7 +40,7 @@ Metadata at the beginning of a block that defines information about the block. T
 
 #### Block reward
 
-A reward (in DCR) split between PoW miners, active and chosen voters, and the Treasury for successfully creating a block of transactions. The block reward [decays exponentially](advanced/inflation.md) with block height (length of blockchain). However, Decred’s algorithm interpolates this decay over time so as not to produce market shocks, as typically seen in algorithms that involve large and infrequent reductions, such as halving the rewards every 4 years. The block reward started at 31.19582664 and it adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/101.
+A reward (in DCR) split between PoW miners, active and chosen voters, and the Treasury for successfully creating a block of transactions. The block reward [decays exponentially](advanced/issuance.md) with block height (length of blockchain). However, Decred’s algorithm interpolates this decay over time so as not to produce market shocks, as typically seen in algorithms that involve large and infrequent reductions, such as halving the rewards every 4 years. The block reward started at 31.19582664 and it adjusts every 6,144 blocks (approximately 21.33 days) by reducing by a factor of 100/101.
 
 #### Block voting
 
@@ -273,7 +273,11 @@ Once tickets are mined they are immature for 256 blocks (about 20 hours) and can
 
 #### Inflation
 
-Increase in the [available supply](advanced/inflation.md) of Decred as new DCR is minted into existence through the block reward.
+See [Issuance](#issuance).
+
+#### Issuance
+
+Increase in the [available supply](advanced/issuance.md) of Decred as new DCR is minted into existence through the block reward.
 
 ## L
 
@@ -357,7 +361,7 @@ The mechanism used by miners to show that they have contributed computational po
 
 #### Protocol rules
 
-See [consensus rules](#consensus-rules).
+See [Consensus Rules](#consensus-rules).
 
 #### Public key
 

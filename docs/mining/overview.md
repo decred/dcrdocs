@@ -15,7 +15,7 @@ created DCR).
 The block reward reduces by a factor of 100/101 every 6,144 blocks
 (approximately 21.33 days).
 For more details on the block reward and growth of the coin supply, see the
-[Inflation](../advanced/inflation.md) page.
+[Issuance](../advanced/issuance.md) page.
 
 When proof-of-stake tickets are called to vote on a block, they have the ability
 to the strip the reward from the miner of the previous block.

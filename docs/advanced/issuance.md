@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Rocket.svg" /> Inflation
+# <img class="dcr-icon" src="/img/dcr-icons/Rocket.svg" /> Issuance
 
 ---
 

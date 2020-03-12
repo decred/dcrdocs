@@ -100,12 +100,8 @@ Non-stakers are able to use this mechanism to mix received funds by using the un
 
 ## Tor Hidden Service
 
-The CSPP server is accessible as a Tor hidden service, which provide two-way anonymity. The server doesn't know the IP of the client and the client also doesn't know the IP of the server. The **latest** onion address can be found at [CSPP server site](https://cspp.decred.org/) and can be configured by setting it as follows:
-```
-$ dcrwallet --proxy=127.0.0.1:9050 \
-  --csppserver=6i6otcms7mxhnmqf5uclj6tot4gd6dsgk3twnfefssh7v7pbqs57umqd.onion:5760 \
-  ...
-```
+The CSPP server is accessible as a Tor hidden service, which provides two-way anonymity. The server doesn't know the IP of the client and the client also doesn't know the IP of the server. The latest onion address can be found at [CSPP server site](https://cspp.decred.org/) and can be configured by using the `--csppserver` flag.
+
 In case `dcrwallet` connects to `dcrd` directly, the `--nodcrdproxy=1` option may be specified in addition to the above.
 
 ---

@@ -40,7 +40,7 @@ Proof-of-Stake (PoS) voting is performed by stakeholders who lock a certain amou
 
 ## <img class="dcr-icon" src="/img/dcr-icons/Credits.svg" /> Contribute to Decred
 
-Decred is currently recruiting contractors - members of the community who are paid in Decred for their contributions. Check out [the recruitment page](https://www.decred.org/recruiting/) for details and how to get involved.
+Decred is currently recruiting contractors - members of the community who are paid in Decred for their contributions. Check out [Contributing](../contributing/overview.md) section for details and how to get involved.
 
 ---
 

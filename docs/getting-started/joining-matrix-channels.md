@@ -16,13 +16,14 @@ Download [Riot](https://about.riot.im/), an open-source Matrix client.
 
 ![Download Riot client](/img/matrix/matrix-01-download.png)
 
-You can chose from Riot's multiple clients:
+Riot supports multiple platforms:
 
 - Desktop
 - iOS
 - Android
-- F-Droid
-- Or use the web client
+  -Google Play
+  -F-Droid
+- Web Browser
 
 When creating you account, choose to use another homeserver and enter `https://matrix.decred.org`.
 

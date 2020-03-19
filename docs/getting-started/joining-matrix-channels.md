@@ -12,7 +12,7 @@ To join Matrix, you’ll need to choose a client and a homeserver. Matrix suppor
 
 ## Creating your account
 
-Download [Riot](https://about.riot.im/), an open-source Matrix client.
+Access Decred's channels using [Riot](https://about.riot.im/), an open-source Matrix client.
 
 ![Download Riot client](/img/matrix/matrix-01-download.png)
 
@@ -24,6 +24,8 @@ Riot supports multiple platforms:
   -Google Play
   -F-Droid
 - Web Browser
+    - [chat.decred.org](https://chat.decred.org/)
+    - [Riot's web app](https://riot.im/app/)
 
 When creating you account, choose to use another homeserver and enter `https://matrix.decred.org`.
 

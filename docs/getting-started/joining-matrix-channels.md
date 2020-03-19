@@ -1,4 +1,4 @@
-# Joining the Decred community at Matrix
+# Joining the Decred community on Matrix
 
 ---
 

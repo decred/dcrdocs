@@ -21,7 +21,7 @@ Riot supports multiple platforms:
 - Desktop
 - iOS
 - Android
-  -Google Play
+     - Google Play
   -F-Droid
 - Web Browser
     - [chat.decred.org](https://chat.decred.org/)
@@ -47,7 +47,7 @@ Anyone can create new channels. Feel free to make one for your Decred related pr
 
 ![Create Room](/img/matrix/matrix-06-create-room.png)
 
-Decred is a community of builders. Price and trading discussions have its own #trading channel.
+Decred is a community of builders. Price and trading discussions have their own `#trading:decred.org` channel.
 
 ![Trading Channel](/img/matrix/matrix-07-trading-channel.png)
 

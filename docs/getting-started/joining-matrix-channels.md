@@ -2,7 +2,7 @@
 
 ---
 
-## What is Matrix
+## What is Matrix?
 
 Matrix is a secure, open messaging platform popular with Decred contractors. With the help of bridge software Matrix users can communicate with users on other Decred platforms such as Discord. Matrix offers first party registration; no identifying information or third party service is required to sign up. Users should be aware however that some features, such as password reset, do require an email address. For more on Matrix’s security features and available clients, see the Matrix project homepage.
 

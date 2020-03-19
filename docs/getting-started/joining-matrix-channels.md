@@ -21,8 +21,8 @@ Riot supports multiple platforms:
 - Desktop
 - iOS
 - Android
-     - Google Play
-  -F-Droid
+    - Google Play
+    - F-Droid
 - Web Browser
     - [chat.decred.org](https://chat.decred.org/)
     - [Riot's web app](https://riot.im/app/)

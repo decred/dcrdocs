@@ -63,7 +63,8 @@ details .md-typeset__scrollwrap {
 details .md-typeset__table {
     padding: 1.6em 0 !important;
 }
-details .md-typeset__table code{
+
+.md-typeset__table code{
     white-space: nowrap;
 }
 

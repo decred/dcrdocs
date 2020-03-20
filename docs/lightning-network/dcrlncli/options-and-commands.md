@@ -1,3 +1,9 @@
+# dcrlncli Options and Commands
+
+Last updated for dcrlnd release v{{ lndversion }}.
+
+---
+
 `dcrlncli` - a client which controls Decred Lightning Network Daemon (`dcrlnd`) via RPC calls.
 You can use `dcrlncli` for many things, such as checking your balance, managing channels,
 creating transactions, and viewing network information.
@@ -6,11 +12,15 @@ creating transactions, and viewing network information.
 requested RPC method, prints the response, and then terminates immediately.
 
 ### Usage
-```
+
+```no-highlight
    dcrlncli [global options] command [command options] [arguments...]
 ```
 
+---
+
 ## Global Options
+
 |Flag|Info|
 |--|--|
 |`--rpcserver value`|Host:port of Decred LN daemon (default: "localhost:10009")|
@@ -25,7 +35,12 @@ requested RPC method, prints the response, and then terminates immediately.
 |`--help`, `-h`|Show help|
 |`--version`, `-v`|Print the version|
 
-### Commands
+---
+
+## Commands
+
+### General Commands
+
 |Command|Info|
 |--|--|
 |getinfo|Returns basic information related to the active daemon.|
@@ -33,7 +48,8 @@ requested RPC method, prints the response, and then terminates immediately.
 |stop|Stop and shutdown the daemon.|
 |help, h|Shows a list of commands or help for one command|
 
-### Channels
+### Channel Commands
+
 |Command|Info|
 |--|--|
 |[openchannel](openchannel.md)|Open a channel to a node or an existing peer.|
@@ -52,7 +68,8 @@ requested RPC method, prints the response, and then terminates immediately.
 |[verifychanbackup](verifychanbackup.md)|Verify an existing channel backup|
 |[restorechanbackup](restorechanbackup.md)|Restore an existing single or multi-channel static channel backup|
 
-### On-chain
+### On-chain commands
+
 |Command|Info|
 |--|--|
 |[estimatefee](estimatefee.md)|Get fee estimates for sending decred on-chain to multiple addresses.|
@@ -61,7 +78,8 @@ requested RPC method, prints the response, and then terminates immediately.
 |[listunspent](listunspent.md)|List UTXOs available for spending.|
 |[listchaintxns](listchaintxns.md)|List transactions from the wallet.|
 
-### Payments
+### Payment commands
+
 |Command|Info|
 |--|--|
 |[sendpayment](sendpayment.md)|Send a payment over lightning.|
@@ -74,11 +92,9 @@ requested RPC method, prints the response, and then terminates immediately.
 |[queryroutes](queryroutes.md)|Query a route to a destination.|
 |[decodepayreq](decodepayreq.md)|Decode a payment request.|
 |[fwdinghistory](fwdinghistory.md)|Query the history of all forwarded HTLCs.|
-|[cancelinvoice](cancelinvoice.md)|Cancels a (hold) invoice|
-|[addholdinvoice](addholdinvoice.md)|Add a new hold invoice.|
-|[settleinvoice](settleinvoice.md)|Reveal a preimage and use it to settle the corresponding invoice.|
 
-### Peers
+### Peer commands
+
 |Command|Info|
 |--|--|
 |[connect](connect.md)|Connect to a remote dcrlnd peer.|
@@ -87,14 +103,16 @@ requested RPC method, prints the response, and then terminates immediately.
 |[describegraph](describegraph.md)|Describe the network graph.|
 |[getnodeinfo](getnodeinfo.md)|Get information on a specific node.|
 
-### Startup
+### Startup commands
+
 |Command|Info|
 |--|--|
 |[create](create.md)|Initialize a wallet when starting dcrlnd for the first time.|
 |[unlock](unlock.md)|Unlock an encrypted wallet at startup.|
 |[changepassword](changepassword.md)|Change an encrypted wallet's password at startup.|
 
-### Wallet
+### Wallet commands
+
 |Command|Info|
 |--|--|
 |[newaddress](newaddress.md)|Generates a new address.|
@@ -102,7 +120,8 @@ requested RPC method, prints the response, and then terminates immediately.
 |[signmessage](signmessage.md)|Sign a message with the node's private key.|
 |[verifymessage](verifymessage.md)|Verify a message signed with the signature.|
 
-### Watchtower
+### Watchtower commands
+
 |Command|Info|
 |--|--|
 |[wtclient](wtclient.md)|Interact with the watchtower client.|

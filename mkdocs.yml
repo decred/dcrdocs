@@ -8,6 +8,7 @@ extra:
   decreditonversion: 1.5.1
   cliversion: 1.5.1
   gominerversion: 1.0.0
+  lndversion: 0.2.1
   seedWarning1:
     "During the creation process for your wallet, you will be given a sequence of 33 words known as a seed phrase. This seed phrase is essentially the private key for your wallet. You will be able to use this seed phrase to restore your private keys, transaction history, and balances using any Decred wallet on any computer."
   seedWarning2:
@@ -108,11 +109,9 @@ nav:
 - Lightning Network:
   - 'Overview': 'lightning-network/overview.md'
   - dcrlncli:
-    - 'Args and Commands': 'lightning-network/dcrlncli/args-and-commands.md'
+    - 'Options and Commands': 'lightning-network/dcrlncli/options-and-commands.md'
     - 'abandonchannel': 'lightning-network/dcrlncli/abandonchannel.md'
-    - 'addholdinvoice': 'lightning-network/dcrlncli/addholdinvoice.md'
     - 'addinvoice': 'lightning-network/dcrlncli/addinvoice.md'
-    - 'cancelinvoice': 'lightning-network/dcrlncli/cancelinvoice.md'
     - 'changepassword': 'lightning-network/dcrlncli/changepassword.md'
     - 'channelbalance': 'lightning-network/dcrlncli/channelbalance.md'
     - 'closeallchannels': 'lightning-network/dcrlncli/closeallchannels.md'
@@ -146,7 +145,6 @@ nav:
     - 'sendcoins': 'lightning-network/dcrlncli/sendcoins.md'
     - 'sendmany': 'lightning-network/dcrlncli/sendmany.md'
     - 'sendtoroute': 'lightning-network/dcrlncli/sendtoroute.md'
-    - 'settleinvoice': 'lightning-network/dcrlncli/settleinvoice.md'
     - 'sendpayment': 'lightning-network/dcrlncli/sendpayment.md'
     - 'signmessage': 'lightning-network/dcrlncli/signmessage.md'
     - 'unlock': 'lightning-network/dcrlncli/unlock.md'

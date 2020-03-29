@@ -47,7 +47,7 @@ Below are some guides from the community that walk you step-by-step through sett
 Below are the basic high-level steps to install a full node on any hardware and OS. These instructions use [dcrinstall](../wallets/cli/cli-installation.md), the automatic installer and upgrader software. In addition to installing `dcrd`, it will also install `dcrwallet` (which allows you to create wallets) and `dcrctl` (which allows you to control `dcrwallet` and `dcrd` from the command line). You can also just install `dcrd` on its own from [binaries or source files](https://github.com/decred/dcrd#installing-and-updating); a full node does not require a wallet unless you want to use your full node to validate and broadcast your own transactions.
 
 1. **Download and install dcrd**
-        - Follow the instructions for your OS in the [CLI Installation guide](https://docs.decred.org/wallets/cli/cli-installation/). The `dcrd` executable will be installed in a directory named `/decred` under your OS's home directory.
+        - Follow the instructions for your OS in the [CLI Installation guide](../wallets/cli/cli-installation.md). The `dcrd` executable will be installed in a directory named `/decred` under your OS's home directory.
 1. **Start `dcrd`**
         - Navigate to the `/decred` directory and launch `dcrd`. See the [Operating System Differences](../wallets/cli/os-differences.md) page for OS-specific commands.
         - `dcrd` will boot up, begin connecting to peers and downloading the full Decred blockchain.

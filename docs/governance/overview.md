@@ -60,7 +60,7 @@ intervention if the voters approve the change.
 
 Decisions concerning the direction of the project, such as how to spend Treasury
 funds, or amending the [Decred
-Constitution](https://docs.decred.org/governance/decred-constitution/) or other
+Constitution](decred-constitution.md) or other
 policies, are made via proposals on [Politeia](politeia/overview.md).
 Politeia voting is not recorded on chain, but it is still backed by
 cryptographic techniques which prevent sybil attacks and unfair censorship.

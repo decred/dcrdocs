@@ -4,6 +4,10 @@ theme:
   favicon: 'img/favicon.ico?v=s3ss'
   logo: 'img/decred_logo_symbol_color_gradient_128.svg'
   font: false
+  features:
+    - instant
+  icon:
+    repo: octicons/mark-github
 extra:
   decreditonversion: 1.5.1
   cliversion: 1.5.1
@@ -18,22 +22,22 @@ extra:
   seedWarning4:
     "**DO NOT, UNDER ANY CIRCUMSTANCES, GIVE YOUR SEED OR THE ASSOCIATED HEX KEY TO ANYONE! NOT EVEN DECRED DEVELOPERS!**"
   social:
-    - type: 'github'
-      link: 'https://github.com/decred'
-    - type: 'twitter'
-      link: 'https://twitter.com/decredproject'
-    - type: 'medium'
-      link: 'https://medium.com/decred'
-    - type: 'reddit'
-      link: 'https://www.reddit.com/r/decred/'
-    - type: 'youtube'
-      link: 'https://www.youtube.com/decredchannel'
-    - type: 'linkedin'
-      link: 'https://www.linkedin.com/company/decredproject/'
-    - type: 'facebook'
-      link: 'https://www.facebook.com/decredproject/'
-    - type: 'weibo'
-      link: 'https://weibo.com/DecredProject'
+    - icon: octicons/mark-github
+      link: https://github.com/decred
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/decredproject
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/decred
+    - icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/r/decred/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/decredchannel
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/decredproject/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/decredproject/
+    - icon: fontawesome/brands/weibo
+      link: https://weibo.com/DecredProject
 repo_url: https://github.com/decred/dcrdocs
 repo_name: decred/dcrdocs
 markdown_extensions:
@@ -45,7 +49,9 @@ markdown_extensions:
   - markdown.extensions.tables
   - pymdownx.details
   - pymdownx.arithmatex
-  - fontawesome_markdown
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 extra_javascript:
   - js/MathJax-2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 extra_css:

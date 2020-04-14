@@ -1,11 +1,10 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> BLAKE-256 Hash Function 
+# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> BLAKE-256 Hash Function
 
---- 
+---
 
-BLAKE-256 is the hashing algorithm used in Decred. It is an extremely flexible function for hardware and is very fast in software, both of which are desirable properties for a block hashing algorithm. BLAKE is a versatile and user-oriented design that performs well on all platforms, from embedded systems to resource-constrained hardware and requires low resources for implementation [^1] [^2] [^3]. 
+BLAKE-256 is the hashing algorithm used in Decred. It is an extremely flexible function for hardware and is very fast in software, both of which are desirable properties for a block hashing algorithm. BLAKE is a versatile and user-oriented design that performs well on all platforms, from embedded systems to resource-constrained hardware and requires low resources for implementation [^1] [^2] [^3].
 
-It is worth noting that BLAKE is a finalist of [The National Institute of Standards and Technology (NIST) SHA-3 competition](https://csrc.nist.gov/projects/hash-functions/sha-3-project), a public competition for alternatives to SHA-1 and SHA-2 with better efficiency and resilience to future attacks. During the competition, BLAKE was thoroughly analyzed and attacked to identify vulnerabilities by notable cryptanalysts [^1]. Below sections contain information regarding BLAKE-256 components, security and performance in hardware and software. 
-
+It is worth noting that BLAKE is a finalist of [The National Institute of Standards and Technology (NIST) SHA-3 competition](https://csrc.nist.gov/projects/hash-functions/sha-3-project), a public competition for alternatives to SHA-1 and SHA-2 with better efficiency and resilience to future attacks. During the competition, BLAKE was thoroughly analyzed and attacked to identify vulnerabilities by notable cryptanalysts [^1]. Below sections contain information regarding BLAKE-256 components, security and performance in hardware and software.
 
 | Algorithm     | Word  | Message   | Block     | Digest    | Salt  | Rounds
 |-----------    |:----: |:-------:  |-------    |--------   |------ |-------|
@@ -13,11 +12,9 @@ It is worth noting that BLAKE is a finalist of [The National Institute of Standa
 
 **<em>Table 1: Characteristics of the BLAKE-256 hash function </em>**
 
-
 ### BLAKE Components
 
 BLAKE is built on previously analyzed, and reliable components; the hash iterative framework (HAIFA) of Biham and Dunkelman [^4], the local wide-pipe introduced by the LAKE hash function[^6], and the core function inspired by ChaCha function of Bernstein [^5]. The use of well understood building blocks makes BLAKE a hash function that is simple to analyze and implement for cryptanalysts and implementers alike.
-
 
 #### HAIFA iteration mode
 
@@ -27,7 +24,7 @@ The construction of a hash output is typically done by splitting the input data 
 
 **<em>Figure 1: Merkle–Damgård Construction</em>**
 
-As shown in Figure 1 above, the output of the compression function $f$ known as a chaining value $CV$ and the initial inputs are the Initialization Vector $IV$ shown as $CV_0$, with $h(x)$ being the output after all message blocks are processed. M-D maintains the collision resistance of the compression function however it lacks the pre-image and second pre-image resistance. As a result generic attacks such as the multicollision, the long message second-preimage, herding and length extension are possible on M-D based hash functions [^7] [^8] [^9] [^10] [^11]. 
+As shown in Figure 1 above, the output of the compression function $f$ known as a chaining value $CV$ and the initial inputs are the Initialization Vector $IV$ shown as $CV_0$, with $h(x)$ being the output after all message blocks are processed. M-D maintains the collision resistance of the compression function however it lacks the pre-image and second pre-image resistance. As a result generic attacks such as the multicollision, the long message second-preimage, herding and length extension are possible on M-D based hash functions [^7] [^8] [^9] [^10] [^11].
 
 BLAKE uses HAIFA, which maintains the valuable properties of the M-D construction and adds to the security and scalability of the transformation. HAIFA is essentially an M-D construction but with a mandatory counter (number of bits hashed so far) and an optional salt (random data that used as an additional input).
 
@@ -35,16 +32,15 @@ BLAKE uses HAIFA, which maintains the valuable properties of the M-D constructio
 
 **<em>Figure 2: HAIFA Construction</em>**
 
-This iteration mode solves many of the internal collision problems with the M-D construction and provides resistance to herding, long message second pre-image, and length extension attacks as the additional salt and counter simulate distinct compression functions for each data block processed [^4] [^12]. HAIFA is both prefix-free and suffix-free and, as a result, is collision-resistant as well as indifferentiable from a random oracle, assuming the underlying compression function is ideal [^1] [^13] [^14]. 
+This iteration mode solves many of the internal collision problems with the M-D construction and provides resistance to herding, long message second pre-image, and length extension attacks as the additional salt and counter simulate distinct compression functions for each data block processed [^4] [^12]. HAIFA is both prefix-free and suffix-free and, as a result, is collision-resistant as well as indifferentiable from a random oracle, assuming the underlying compression function is ideal [^1] [^13] [^14].
 
 #### The local wide-pipe and ChaCha inspired core function
-
 
 ![Local wide-pipe](/img/wide-pipe.svg)
 
 **<em>Figure 3: Local wide-pipe construction of BLAKE's compression function, inherited from LAKE hash function [^6]</em>**
 
-BLAKE uses the LAKE local wide-pipe structure for its strong security guarantees against collision attacks [^1] [^6] and a core function $G$ inspired by the stream cipher ChaCha for its simplicity and security [^1]. The compression function takes as input four values: a chaining value, a message block, an optional salt and a mandatory counter. In the case of BLAKE-256: 
+BLAKE uses the LAKE local wide-pipe structure for its strong security guarantees against collision attacks [^1] [^6] and a core function $G$ inspired by the stream cipher ChaCha for its simplicity and security [^1]. The compression function takes as input four values: a chaining value, a message block, an optional salt and a mandatory counter. In the case of BLAKE-256:
 
 |Chaining Value|Message Block|Salt|Counter
 |-------|-------|-------|------|
@@ -56,10 +52,9 @@ The structure then works in three steps:
 
 1. 14 rounds of the $G$ function with each round consisting of eight round-dependent transformations.
 
-1. Finalization after a series of rounds, a new sequence of values taken from the matrix using sequence of initial values and salt. 
+1. Finalization after a series of rounds, a new sequence of values taken from the matrix using sequence of initial values and salt.
 
 A more detailed description can be found in the [SHA-3 proposal BLAKE](https://decred.org/research/aumasson2010.pdf).
-
 
 ### Security Evaluation Criteria
 
@@ -91,13 +86,13 @@ The security of a cryptographic hash function is determined by the number of que
 
 In the first three properties, the phrase _computationally infeasible_ means it would take the fastest computer a long time to solve the problem, e.g., billions of years, making it impossible in practice. Also, the fourth property, resistance to Length-extension attacks, is an additional requirement outlined in NIST's evaluation criteria for its SHA-3 candidates hash function [^15].
 
-BLAKE was subject to a great deal of depth during cryptanalysis, more so than other candidates likely due to its similarity with ARX (modular addition, rotation, and XOR) based hash functions, which meant that many existing techniques and tools existed for beginning the analysis [^16]. 
+BLAKE was subject to a great deal of depth during cryptanalysis, more so than other candidates likely due to its similarity with ARX (modular addition, rotation, and XOR) based hash functions, which meant that many existing techniques and tools existed for beginning the analysis [^16].
 
->“Keccak received a significant amount of cryptanalysis, although not quite the depth of analysis applied to BLAKE.” 
+> “Keccak received a significant amount of cryptanalysis, although not quite the depth of analysis applied to BLAKE.”
 
->“BLAKE and Keccak have very large security margins.” 
+> “BLAKE and Keccak have very large security margins.”
 
->"Skein and BLAKE have no known distinguishing attacks that come close to threatening their full-round versions."
+> "Skein and BLAKE have no known distinguishing attacks that come close to threatening their full-round versions."
 
 **<em>NIST in Third-Round Report of the SHA-3 Cryptographic Hash Algorithm Competition</em>**[^16]
 
@@ -119,11 +114,11 @@ Analysis of BLAKE's Domain extender proved that BLAKE-256 is secure against prei
 
 A significant amount of data on the performance of BLAKE and other SHA-3 finalists is available on the [eBASH](http://bench.cr.yp.to/ebash.html) site with the best comparative presentation of data being the ["shootout" graphs](http://bench.cr.yp.to/results-sha3.html). The shootout graphs include data from AMD64 processor models, X86 processor implementations, ARM-NEON and 32-bit RISC (Reduced Instruction Set Computers). The throughput is stated in machine cycles-per-byte, where fewer cycles indicate better performance. BLAKE-256 is notable for its high performance on x86-64 microarchitecture, being faster for short messages than SHA-256 [^18] despite being considered to have a much higher security margin at 14-rounds.
 
->“Skein and BLAKE have the best overall software performance.”
+> “Skein and BLAKE have the best overall software performance.”
 
->"On 32-bit machines (mainly ARM processors) without vector units, BLAKE-256 is the overall leader, although it has only a small throughput advantage over SHA-256"
+> "On 32-bit machines (mainly ARM processors) without vector units, BLAKE-256 is the overall leader, although it has only a small throughput advantage over SHA-256"
 
->"On small embedded computers, BLAKE-256 has the best overall performance. BLAKE-256’s throughput is usually at or near the top, although occasionally slightly less than SHA-256, while BLAKE-256 generally has smaller memory requirements than SHA-2 and most of the other candidates."
+> "On small embedded computers, BLAKE-256 has the best overall performance. BLAKE-256’s throughput is usually at or near the top, although occasionally slightly less than SHA-256, while BLAKE-256 generally has smaller memory requirements than SHA-2 and most of the other candidates."
 
 **<em>NIST in Third-Round Report of the SHA-3 Cryptographic Hash Algorithm Competition</em>**[^16]
 
@@ -139,10 +134,9 @@ Data on the performance of hardware implementations of Field Programmable Gate A
 
 In Decred, only a single round of BLAKE-256 hashing occurs versus two rounds of SHA-256 in Bitcoin due to its technical shortcomings. The combined effect is that it takes much less energy to find a solution for a given hash rate.
 
-
 ---
 
-## :fa-book: References
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> References
 
 [^1]: Aumasson J., Henzen L., Meier W., Phan R. 2010. [SHA-3 proposal BLAKE](https://decred.org/research/aumasson2010.pdf)
 

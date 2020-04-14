@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Schnorr Signatures 
+# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Schnorr Signatures
 
 ---
 
@@ -16,6 +16,6 @@ From the above it is clear that $r$ is a point on the curve, while $s$ is a scal
 
 ---
 
-## :fa-book: References
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> References
 
 [^1]: Wuille P. 2015. [Tree signatures: Multisig on steroids using tree signatures](https://decred.org/research/wuille2015.pdf).

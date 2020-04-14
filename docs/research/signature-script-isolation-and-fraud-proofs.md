@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Signature Script Isolation and Fraud Proofs 
+# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Signature Script Isolation and Fraud Proofs
 
 ---
 
@@ -6,7 +6,7 @@ To prevent transaction malleability, the ability to generate a transaction with 
 
 ---
 
-## :fa-book: References
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> References
 
 [^1]: von Saberhagen N. 2013. [CryptoNote v2.0](https://decred.org/research/saberhagen2013.pdf).
 [^2]: Maxwell G. 2015. [Bringing new elements to Bitcoin with sidechains](https://decred.org/research/maxwell2015.pdf).

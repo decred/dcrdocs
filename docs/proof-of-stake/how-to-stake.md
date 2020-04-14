@@ -19,7 +19,7 @@ Solo PoS voting is currently only possible using the Decred command line tools. 
 ## <img class="dcr-icon" src="/img/dcr-icons/Servers.svg" /> PoS using a Voting Service Provider (VSP)
 
 A list of Voting Service Providers (VSPs) and statistics is maintained on the
-[:fa-external-link-square: Decred.org website](https://decred.org/vsp/).
+[:fontawesome-solid-external-link-square-alt: Decred.org website](https://decred.org/vsp/).
 
 Using a VSP **does not give the VSP access to your funds**. All you are doing is granting voting rights to the VSP.
 

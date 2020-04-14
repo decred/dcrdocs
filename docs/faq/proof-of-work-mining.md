@@ -1,4 +1,4 @@
-# :fa-fire: Proof-of-Work (PoW) Mining
+# <img class="dcr-icon" src="/img/dcr-icons/PoWMine.svg" /> Proof-of-Work (PoW) Mining
 
 ---
 

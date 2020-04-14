@@ -6,7 +6,7 @@ Last updated for gominer v{{ gominerversion }}.
 
 ---
 
-## :fa-download: Download and Extract *gominer*
+## :fontawesome-solid-download: Download and Extract *gominer*
 
 Visit <https://github.com/decred/decred-binaries/releases/tag/v1.0.0> to download the gominer binaries. Within the "Downloads" section you should see the following files:
 
@@ -58,7 +58,7 @@ Record which device IDs you would like to use. Hint: Your video cards may be lis
 
 ### Step 3: Edit Configuration File
 
-Open the `sample-gominer.conf` file. For each setting we are about to change, simple delete the semi-colon before the setting variable after the `=` sign. 
+Open the `sample-gominer.conf` file. For each setting we are about to change, simple delete the semi-colon before the setting variable after the `=` sign.
 
 Within the "General settings" section:
 

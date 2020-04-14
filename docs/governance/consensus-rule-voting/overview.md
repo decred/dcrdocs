@@ -96,6 +96,6 @@ An official website, [voting.decred.org](https://voting.decred.org), has been se
 
 ---
 
-## :fa-book: Further Information
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Further Information
 
 - Blog post announcing Consensus Rules Voting: <https://blog.decred.org/2016/11/16/Upgrading-Consensus/>

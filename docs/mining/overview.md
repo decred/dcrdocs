@@ -32,7 +32,7 @@ mining unlikely to be profitable.
 
 ##### <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo Mining
 
-:fa-exclamation-triangle: **Solo mining is not recommended and is not covered by this documentation!** The Decred network regularly sees a network hash rate of up to 10,000Gh/s. Solo mining is generally only done by advanced individuals or organized groups with a large cluster of GPUs so it is not addressed here.
+:fontawesome-solid-exclamation-triangle: **Solo mining is not recommended and is not covered by this documentation!** The Decred network regularly sees a network hash rate of up to 10,000Gh/s. Solo mining is generally only done by advanced individuals or organized groups with a large cluster of GPUs so it is not addressed here.
 
 ##### <img class="dcr-icon" src="/img/dcr-icons/Pool.svg" /> Pool Mining
 
@@ -51,13 +51,13 @@ Follow the [dcrctl Basics](../wallets/cli/dcrctl-basics.md) guide and create an 
 
 These mining pools are known to support Decred:
 
-* [:fa-external-link-square: BeePool](https://beepool.org)
-* [:fa-external-link-square: F2Pool](https://www.f2pool.com)
-* [:fa-external-link-square: Poolin](https://www.poolin.com)
-* [:fa-external-link-square: UUpool](https://uupool.cn/dcr)
-* [:fa-external-link-square: Luxor](https://mining.luxor.tech/decred)
-* [:fa-external-link-square: Coinmine](https://www2.coinmine.pl/dcr/)
-* [:fa-external-link-square: Suprnova](https://dcr.suprnova.cc)
+* [:fontawesome-solid-external-link-square-alt: BeePool](https://beepool.org)
+* [:fontawesome-solid-external-link-square-alt: F2Pool](https://www.f2pool.com)
+* [:fontawesome-solid-external-link-square-alt: Poolin](https://www.poolin.com)
+* [:fontawesome-solid-external-link-square-alt: UUpool](https://uupool.cn/dcr)
+* [:fontawesome-solid-external-link-square-alt: Luxor](https://mining.luxor.tech/decred)
+* [:fontawesome-solid-external-link-square-alt: Coinmine](https://www2.coinmine.pl/dcr/)
+* [:fontawesome-solid-external-link-square-alt: Suprnova](https://dcr.suprnova.cc)
 
 Mining pools all work more or less the same but you may wish to sign up at multiple pools and see which one suits you the best.
 
@@ -75,7 +75,7 @@ GPU drivers usually contain the libraries needed for mining.  If you have diffic
 
 ### Official Decred Miner (gominer)
 
-Gominer is the official Decred miner developed and supported by the Decred team. It is the easiest miner to setup and start mining and so it is recommended for most users. Currently, the latest version of gominer is **:fa-github: [v{{ gominerversion }}](https://github.com/decred/gominer/releases/)** and the official binaries can be downloaded from **<https://github.com/decred/decred-binaries/releases/tag/v1.0.0>**
+Gominer is the official Decred miner developed and supported by the Decred team. It is the easiest miner to setup and start mining and so it is recommended for most users. Currently, the latest version of gominer is **:octicons-mark-github: [v{{ gominerversion }}](https://github.com/decred/gominer/releases/)** and the official binaries can be downloaded from **<https://github.com/decred/decred-binaries/releases/tag/v1.0.0>**
 
 Please be certain to select the correct operating system (Windows/Linux) and the correct version for your GPU type (CUDA for NVIDIA cards, OpenCL/OpenCLADL for AMD cards). gominer is only available to 64-bit operating systems. User guides to start mining with gominer can be found here:
 
@@ -83,11 +83,11 @@ Please be certain to select the correct operating system (Windows/Linux) and the
 
 ### Unofficial Miners
 
-* :fa-github: [cgminer](https://github.com/kR105-zz/cgminer) - cgminer is a popular miner for **AMD** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
+* :octicons-mark-github: [cgminer](https://github.com/kR105-zz/cgminer) - cgminer is a popular miner for **AMD** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
 
-* :fa-github: [ccminer](https://github.com/tpruvot/ccminer) - ccminer is a popular miner for **NVIDIA** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
+* :octicons-mark-github: [ccminer](https://github.com/tpruvot/ccminer) - ccminer is a popular miner for **NVIDIA** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
 
-* :fa-github: [sgminer](https://github.com/tpruvot/sgminer) - Those with an **AMD** graphics card running Windows may want to download sgminer.
+* :octicons-mark-github: [sgminer](https://github.com/tpruvot/sgminer) - Those with an **AMD** graphics card running Windows may want to download sgminer.
 
 ---
 

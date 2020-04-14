@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Script Extensions 
+# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Script Extensions
 
 ---
 
@@ -6,7 +6,7 @@ Aside from the previously mentioned OP_CHECKSIGALT and OP_CHECKSIGALTVERIFY, oth
 
 ---
 
-## :fa-book: References
+## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> References
 
 [^1]: Wuille P. 2015. [Segregated witness for Bitcoin](https://prezi.com/lyghixkrguao/segregated-witness-and-deploying-it-for-bitcoin/).
 [^2]: Todd P. [The difficulty of writing consensus critical code: The SIGHASH_SINGLE bug](https://decred.org/research/todd2014.pdf).

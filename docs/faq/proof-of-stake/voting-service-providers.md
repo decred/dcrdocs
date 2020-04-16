@@ -59,6 +59,20 @@ In the unlikely scenario your VSP goes down permanently, you can still vote your
 
 ---
 
+#### 9. My VSP went down and I lost the redeem script, is there a way to recover it?
+
+Only redeem scripts that have been used at least once to vote or revoke a ticket can be recovered. If this is your case, you can find it using Decred's block explorer, dcrdata.
+
+1. Look for one of your vote o revoke transactions. This can be done creating a new wallet using your seed phrase, and checking your past tickets.
+
+2. Open the transaction using [dcrdata](https://dcrdata.org) and look into the decoded JSON to find the ASM scripSig, a long string separated by a white space.
+
+3. Grab the second part of the ASM scriptSig, this is your redeem script.
+
+4. Import the script into your wallet to vote or revoke your tickets as usual.
+
+---
+
 ## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
 
 [^9262]: Decred Forum, [Post 9,262](https://forum.decred.org/threads/626/#post-9262)

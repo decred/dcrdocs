@@ -97,6 +97,7 @@ nav:
 - Proof-of-Stake Voting:
   - "Overview": 'proof-of-stake/overview.md'
   - "How to Stake": 'proof-of-stake/how-to-stake.md'
+  - "Redeem Script": 'proof-of-stake/redeem-script.md'
   - "Ticket Splitting": 'proof-of-stake/ticket-splitting.md'
 - Proof-of-Work Mining:
   - 'Overview': 'mining/overview.md'

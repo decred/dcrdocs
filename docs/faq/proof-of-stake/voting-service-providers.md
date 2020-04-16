@@ -65,7 +65,7 @@ Only redeem scripts that have been used at least once to vote or revoke a ticket
 
 1. Look for one of your vote o revoke transactions. This can be done creating a new wallet using your seed phrase, and checking your past tickets.
 
-2. Open the transaction using [dcrdata](https://dcrdata.org) and look into the decoded JSON to find the `scripSig`. It can be found inside the `vin` key.
+2. Open the transaction using [dcrdata](https://dcrdata.org) and look into the decoded JSON to find the `scriptSig`. It can be found inside the `vin` key.
 
 3.  The `asm` value should be a long string separated by a white space. Grab the second part of the `scriptSig` `asm`, this is your redeem script.
 

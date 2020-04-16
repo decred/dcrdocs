@@ -2,7 +2,7 @@
 
 ---
 
-When users sign up with a VSP, both the user and the VSP jointly create a 1-of-2 multisignatura script. This script is known as the redeem script.
+When users sign up with a VSP, both the user and the VSP jointly create a 1-of-2 multisignature script. This script is known as the redeem script.
 
 The redeem script involves both a public key from the user and a public key from the VSP so that both can vote and revoke the ticket. When the user buys a new ticket, the voting rights are given to a hash of that redeem script.
 
@@ -14,15 +14,13 @@ At first, when the user just signs up, the redeem script is not known by anyone 
 
 The VSP handles voting and revoking for the user, but if it goes offline is up to the user to vote or revoke, which means the wallet needs to know the redeem script.
 
-Currently, users can't reconstruct these scripts from their own seed, this is why users must backup their redeem scripts to ensure they don't end up with locked funds due to the VSP going offline.
+Currently, users can't reconstruct these scripts from their own seed, this is why they must [backup their redeem scripts](/wallets/decrediton/using-decrediton/#backup-redeem-script) to ensure they don't end up with locked funds due to the VSP going offline.
 
 ---
 
 ## What happens if the script is lost?
 
-User who purchased a ticket through a VSP that is no longer available and lost their redeem scripts won't be able to vote or revoke their tickets. This means their funds will remain locked.
-
-This is why users must back up their redeem script as soon as they sign up with a VSP and store it in a safe place.
+User who purchased a ticket through a VSP that is no longer available and lost their redeem script won't be able to vote or revoke their tickets. This means their funds will remain locked.
 
 ---
 
@@ -32,7 +30,7 @@ Only redeem scripts that have been used at least once to vote or revoke a ticket
 
 1. Look for one of your vote o revoke transactions. This can be done creating a new wallet using your seed phrase, and checking your past tickets.
 
-2. Open the transaction using [dcrdata](https://dcrdata.org) and look into the decoded JSON to find the `scripSig`. It can be found inside the `vin` key.
+2. Open the transaction using [dcrdata](https://dcrdata.org) and look into the decoded JSON to find the `scriptSig`. It can be found inside the `vin` key.
 
 3.  The `asm` value should be a long string separated by a white space. Grab the second part of the `scriptSig` `asm`, this is your redeem script.
 

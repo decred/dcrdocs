@@ -28,13 +28,13 @@ This is why users must back up their redeem script as soon as they sign up with 
 
 ## Recovery methods
 
-Only redeem scripts that have been used at least once to vote or revoke a ticket can be recovered. If this is your case, you can find it using Decred’s [block explorer](https://explorer.dcrdata.org), dcrdata.
+Only redeem scripts that have been used at least once to vote or revoke a ticket can be recovered. If this is your case, you can find it using Decred’s block explorer, [dcrdata](https://explorer.dcrdata.org).
 
 1. Look for one of your vote o revoke transactions. This can be done creating a new wallet using your seed phrase, and checking your past tickets.
 
-2. Open the transaction using dcrdata and look into the decoded JSON to find the ASM scripSig, a long string separated by a white space.
+2. Open the transaction using [dcrdata](https://dcrdata.org) and look into the decoded JSON to find the `scripSig`. It can be found inside the `vin` key.
 
-3. Grab the second part of the ASM scriptSig, this is your redeem script.
+3.  The `asm` value should be a long string separated by a white space. Grab the second part of the `scriptSig` `asm`, this is your redeem script.
 
 4. Import the script into your wallet to vote or revoke your tickets as usual.
 

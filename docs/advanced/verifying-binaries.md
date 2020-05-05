@@ -56,7 +56,7 @@ public GnuPG key. This creates a signature file, ending in `manifest.txt.asc`.
 To check if your downloaded binary is a 100% match to the Decred project's
 binary release, you need to do two things:
 
-1. **Verify that the manifest signature was directly signed by the Decred project:**
+1. **Verify that the manifest was directly signed by the Decred project:**
    Download the `manifest.txt` and the signature `manifest.txt.asc`. Use GnuPG
    to check the signature against the public Decred release signing key.
 
@@ -202,10 +202,12 @@ WFOp0iCvCqsdMXqjaZUrv2HYCpmpuLkhII9z8y8=
 
 Simply copy that entire text, save it as key.txt, and open a terminal.
 
-(Note that Windows uses `\` for directory paths, but Linux/macOS use `/`).
+Navigate to the directory path where you've saved key.txt.
+
+(Note that Windows uses `\` for directory paths, but Linux/macOS use `/`)
 
 ```
-$ cd /path/to/your/text/key.txt
+$ cd /path/to/the/key
 $ gpg --import < key.txt
 ```
 
@@ -225,7 +227,7 @@ gpg:               imported: 1
 
 Just to confirm, you can check if the Decred release public keys on your GnuPG
 keyring:
-```no-highlight
+```
 $ gpg --list-keys release@decred.org
 ```
 
@@ -286,14 +288,14 @@ There are many ways to generate a SHA-256 hash, but here are a few:
 
     * In a terminal:
 
-            $ certutil -hashfile <binary file> SHA256
+            $ certutil -hashfile <your binary file> SHA256
 
 
 * macOS or Linux
 
     * In a terminal:
 
-            $ sha256sum <binary file>
+            $ sha256sum <your binary file>
 
 Example output:
 ```

@@ -1,91 +1,94 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Verifying Binaries
 ---
 
-## Overveiw
+## Overview
 
 ### What is a binary?
 Binaries are typically the easiest way for users to install software.
 
 A binary is a file in machine-language format that a computer can read and
-execute. Most programmers don’t write in machine-language—they write in
-human-readable programming languages like Go, Javascript, C, or Python.
+execute. Most programmers don’t write software in machine-language. Instead,
+programmers write code in human-readable programming languages like Go,
+Javascript, C, or Python--otherwise known as *source code*. Advanced users and
+programmers can then compile the source code, which creates an executable
+binary.
 
-However, if you aren’t a programmer and you don’t want to have to download code
-compilers to run a piece of software, you can just download the binary
-executable, which was compiled from the source language into a stand-alone
-program. Binaries are compiled for one type of computer or architecture.
-Therefore, it’s important to run the binary which was compiled for your
-specific machine (e.g., Windows, MacOS, Linux, Raspberry Pi, etc.)
-
-Binary packages make it easy for your computer to track software so it can be
-easily removed, and binary packages are usually very stable compared to source
-code.
+However, if you aren’t a programmer and you don’t want to have to download
+compilers to run a piece of software, you can just download a binary executable.
+This binary file will have been compiled from the source code into a stand-alone
+program by someone else.
 
 ### Why should you verify binaries *before* running them?
 
 You shouldn’t immediately trust that a binary is safe, even if you downloaded
 it from a familiar website.
 
-Although binaries make it easy to install software, binary code is not
-human-readable. This carries an inherent risk, because it’s nearly impossible
-to tell if the binary was compiled from the true source code, or if the source
-code was tampered with by an adversary first.
+If you run a binary that you didn't compile yourself, you're placing your trust
+in whomever compiled the binary for you. This carries inherent risks. Since
+binary code is not human-readable, it's impossible to directly tell if the
+binary was compiled from the true source code, or if the source code was
+tampered with by an adversary first.
 
 Consider the case where an adversary created malware and disguised it to look
 like a Decred binary. Adversaries can try to trick you into running their
-malware by setting up fake download locations, phishing, or a MITM attack. In
-theory, even if you download the binary from somewhere you trust (like Github),
-an attacker could still potentially intercept and replace your download with
-their own malware. If you run the binary without verifying that it isn’t
+malware by setting up fake download locations, phishing, or using a
+[Man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack).
+In theory, even if you download the binary from somewhere you trust (like
+GitHub), an attacker could still potentially intercept and replace your download
+with their own malware. If you run the binary without verifying that it isn’t
 malware, you expose yourself to security risks.
+
+Therefore, to protect yourself, you should always verify that your binary is
+authentic Decred software.
 
 ### How do you verify that a binary hasn’t been tampered with?
 
 The core concept of [file verification](https://en.wikipedia.org/wiki/File_verification)
-relies on hashing. The Decred team takes it a step further and uses
-[GnuPG](https://gnupg.org/index.html) to sign their hashes so you can verify
-that the file came directly from the Decred team.
+relies on hashing. The Decred project takes it a step further and uses
+[GnuPG](https://gnupg.org/index.html) to sign their hashes. The signature
+guarantees that the files are distributed directly by Decred.
 
-When the Decred team [compiles source code into binaries](https://github.com/decred/decred-release),
-they hash each binary using [SHA-256](https://en.wikipedia.org/wiki/SHA-2).
-Each hash is stored in a `manifest.txt` file. Then they sign the manifest using
-their public GnuPG key. This creates a signature file, ending in
-`manifest.txt.asc`.
+When the Decred project compiles source code into binaries, each binary is
+hashed using [SHA-256](https://en.wikipedia.org/wiki/SHA-2). Each hash is stored
+in a `manifest.txt` file. Then the manifest is signed using the Decred project's
+public GnuPG key. This creates a signature file, ending in `manifest.txt.asc`.
 
-To check if your downloaded binary is a 100% match to the official Decred
-binary, you need to do two things:
+To check if your downloaded binary is a 100% match to the Decred project's
+binary release, you need to do two things:
 
-1. **Verify that the manifest signature was directly signed by Decred:**
+1. **Verify that the manifest signature was directly signed by the Decred project:**
    Download the `manifest.txt` and the signature `manifest.txt.asc`. Use GnuPG
-   to check the signature against the public Decred Release Signing Key.
+   to check the signature against the public Decred release signing key.
 
      * SUCCESS: If the signatures match, you know you can trust that the
-       manifest came directly from Decred, and that the hashes inside it are
-       trustworthy.
+       manifest came directly from the Decred project, and that the hashes
+       inside it are trustworthy.
 
      * FAIL: If the signatures don't match, then your manifest is not the
-       official Decred manifest. Do not continue, delete the files you've
+       official Decred project manifest. Do not continue, delete the files you've
        downloaded, and check for security problems before trying again.
 
 2. **Verify that the binary hash matches the manifest hash:** Hash your
-   downloaded binary and verify that its hash matches the hash in the official
-   Decred `manifest.txt`.
+   downloaded binary and verify that its hash matches the hash in the Decred
+   project's `manifest.txt`.
 
      * SUCCESS: If your hash matches the hash in the manifest, you know you can
        trust and run the binary.
 
      * FAIL: If your hash doesn't match, your binary doesn't match the official
-       Decred binary release, and you should not continue. Delete the binary
-       you've downloaded, and check for security problems before trying again.
+       Decred project's binary release, and you should not continue. Delete the
+       binary you've downloaded, and check for security problems before trying
+       again.
 
+---
 ## Detailed Instructions
 
 ### Preliminary Steps
 
-First, go to the official [Decred releases](https://github.com/decred/decred-release/releases)
+First, go to the [Decred releases](https://github.com/decred/decred-binaries/releases)
 page and download:
 
-* The binary installer for your OS / architecture
+* The binary installer for your specific OS / architecture
 * The file manifest and hashes, ending in `-manifest.txt`
 * The signature for the manifest, ending in `-manifest.txt.asc`
 
@@ -98,15 +101,15 @@ Also, make sure GnuPG is installed:
 With GnuPG installed, the following instructions will work from any terminal on
 Windows, macOS, or Linux/UNIX
 
-### Add the official Decred Release public keys to your GnuPG keyring.
+### Add the Decred project's release public keys to your GnuPG keyring.
 
 You only need to do this step one time, so you can skip this step when
 verifying later releases on the same computer.
 
-There are several ways to import the Decred Release public keys into GnuPG.
+There are several ways to import the Decred release public keys into GnuPG.
 The most direct method is to use the ASCII Key Block below:
 
-<details><summary><b>Here's Decred's ASCII Key Block!</b></summary>
+<details><summary><b>Decred's ASCII Key Block (click to expand)</b></summary>
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -197,9 +200,12 @@ WFOp0iCvCqsdMXqjaZUrv2HYCpmpuLkhII9z8y8=
 
 </details>
 
-Simply copy that entire text, save it as key.txt, and then:
-```console
-$ cd \path\to\your\text\key.txt
+Simply copy that entire text, save it as key.txt, and open a terminal.
+
+(Note that Windows uses `\` for directory paths, but Linux/macOS use `/`).
+
+```
+$ cd /path/to/your/text/key.txt
 $ gpg --import < key.txt
 ```
 
@@ -217,9 +223,9 @@ gpg: Total number processed: 1
 gpg:               imported: 1
 ```
 
-Just to confirm, you can check if the Decred Release Public Keys on your GnuPG
+Just to confirm, you can check if the Decred release public keys on your GnuPG
 keyring:
-```console
+```no-highlight
 $ gpg --list-keys release@decred.org
 ```
 
@@ -232,15 +238,15 @@ sub   rsa4096 2016-01-27 [S]
 sub   rsa4096 2016-01-27 [E]
 ```
 
-### Verify that the manifest signature was directly signed by Decred
+### Verify that the manifest was directly signed by the Decred project
 
-If you have the official Decred Release public keys on your GnuPG keyring, you
-can verify if the signature for the manifest was created by the Decred Release
-Signing Key.
+If you have the Decred project's release public keys on your GnuPG keyring, you
+can verify if the signature for the manifest was created by the Decred release
+signing key.
 
 In a terminal, navigate to where you saved the `manifest.txt` and the
 `manifest.txt.asc`. Then ask GnuPG to verify the signed manifest, like so:
-```console
+```no-highlight
 $ gpg --verify dcrinstall-v1.5.1-manifest.txt.asc
 ```
 
@@ -257,8 +263,8 @@ Primary key fingerprint: FD13 B683 5E24 8FAF 4BD1  838D 6DF6 34AA 7608 AF04
 ```
 
 If you see `Good signature from "Decred Release <release@decred.org>"`, then
-you're successful! You can trust that the `manifest.txt` came directly from
-Decred.
+you're successful! You can trust that the `manifest.txt` came directly from the
+Decred project.
 
 The WARNING shown is not a problem. It just means you haven't told GnuPG that
 you want to trust Decred.
@@ -267,8 +273,8 @@ you want to trust Decred.
 
 Now that you know you can trust the `manifest.txt`, open it and view the
 SHA-256 hashes. Find the row for the binary you're interested in. The first 64
-characters are the "correct" hash from the Decred team. You want to check your
-binary and make sure you get the same hash.
+characters are the "correct" hash from the Decred project. You want to check
+your binary and make sure you get the same hash.
 
 There are many ways to generate a SHA-256 hash, but here are a few:
 
@@ -298,6 +304,7 @@ If your output hash matches the hash from the manifest, you're done! The binary
 for your platform is now verified and you can be confident it was generated by
 the Decred Project. It's safe to install the software.
 
+---
 ## Links for further reading
 
 [https://gnupg.org/gph/en/manual.html#CONCEPTS](https://gnupg.org/gph/en/manual.html#CONCEPTS)

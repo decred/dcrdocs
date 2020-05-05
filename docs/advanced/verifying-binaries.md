@@ -4,6 +4,7 @@
 ## Overview
 
 ### What is a binary?
+
 Binaries are typically the easiest way for users to install software.
 
 A binary is a file in machine-language format that a computer can read and
@@ -51,7 +52,8 @@ guarantees that the files are distributed directly by Decred.
 When the Decred project compiles source code into binaries, each binary is
 hashed using [SHA-256](https://en.wikipedia.org/wiki/SHA-2). Each hash is stored
 in a `manifest.txt` file. Then the manifest is signed using the Decred project's
-public GnuPG key. This creates a signature file, ending in `manifest.txt.asc`.
+public GnuPG key. This creates a unique signature file, ending in
+`manifest.txt.asc`.
 
 To check if your downloaded binary is a 100% match to the Decred project's
 binary release, you need to do two things:
@@ -109,100 +111,97 @@ verifying later releases on the same computer.
 There are several ways to import the Decred release public keys into GnuPG.
 The most direct method is to use the ASCII Key Block below:
 
-<details><summary><b>Decred's ASCII Key Block (click to expand)</b></summary>
+??? info "The Decred Release ASCII Key Block (click to expand)"
 
-```
------BEGIN PGP PUBLIC KEY BLOCK-----
+        -----BEGIN PGP PUBLIC KEY BLOCK-----
 
-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
-WFOp0iCvCqsdMXqjaZUrv2HYCpmpuLkhII9z8y8=
-=+HJT
------END PGP PUBLIC KEY BLOCK-----
-```
-
-</details>
+        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
+        WFOp0iCvCqsdMXqjaZUrv2HYCpmpuLkhII9z8y8=
+        =+HJT
+        -----END PGP PUBLIC KEY BLOCK-----
 
 Simply copy that entire text, save it as key.txt, and open a terminal.
 
-Navigate to the directory path where you've saved key.txt.
+In the terminal, use the `cd` command to navigate to the directory path where
+you've saved key.txt. Then use the `gpg --import` command.
 
 (Note that Windows uses `\` for directory paths, but Linux/macOS use `/`)
 
@@ -225,8 +224,8 @@ gpg: Total number processed: 1
 gpg:               imported: 1
 ```
 
-Just to confirm, you can check if the Decred release public keys on your GnuPG
-keyring:
+Just to confirm, you can check if the Decred release public keys are on your
+GnuPG keyring:
 ```
 $ gpg --list-keys release@decred.org
 ```
@@ -246,16 +245,23 @@ If you have the Decred project's release public keys on your GnuPG keyring, you
 can verify if the signature for the manifest was created by the Decred release
 signing key.
 
-In a terminal, navigate to where you saved the `manifest.txt` and the
+In a terminal, navigate to where you saved both the `manifest.txt` and the
 `manifest.txt.asc`. Then ask GnuPG to verify the signed manifest, like so:
-```no-highlight
-$ gpg --verify dcrinstall-v1.5.1-manifest.txt.asc
+
+```
+$ gpg --verify <your manifest.txt.asc file>
+```
+
+For example, if you wanted to verify `decred-v1.5.1-manifest.txt.asc`:
+
+```
+$ gpg --verify decred-v1.5.1-manifest.txt.asc
 ```
 
 Example output:
 ```
-gpg: assuming signed data in '.\dcrinstall-v1.5.1-manifest.txt'
-gpg: Signature made 01/29/20 15:17:45 Eastern Standard Time
+gpg: assuming signed data in 'decred-v1.5.1-manifest.txt'
+gpg: Signature made 01/29/20 15:17:58 Eastern Standard Time
 gpg:                using RSA key F516ADB7A069852C7C28A02D6D897EDF518A031D
 gpg: Good signature from "Decred Release <release@decred.org>" [unknown]
 gpg: WARNING: This key is not certified with a trusted signature!
@@ -274,9 +280,9 @@ you want to trust Decred.
 ### Verify that the binary hash matches the manifest hash
 
 Now that you know you can trust the `manifest.txt`, open it and view the
-SHA-256 hashes. Find the row for the binary you're interested in. The first 64
-characters are the "correct" hash from the Decred project. You want to check
-your binary and make sure you get the same hash.
+SHA-256 hashes. Find the row for the binary (or zip of binaries) you're
+interested in. The first 64 characters are the "correct" hash from the Decred
+project. You want to check your binary and make sure you get the same hash.
 
 There are many ways to generate a SHA-256 hash, but here are a few:
 
@@ -290,8 +296,13 @@ There are many ways to generate a SHA-256 hash, but here are a few:
 
             $ certutil -hashfile <your binary file> SHA256
 
+* macOS
 
-* macOS or Linux
+    * In a terminal:
+
+            $ shasum -a 256 <your binary file>
+
+* Linux
 
     * In a terminal:
 

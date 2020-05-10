@@ -108,9 +108,9 @@ The total number of tickets you currently own is at the top of the page:
 Now is a good time to back up your VSPs multi-sig voting script (or "redeem script"). 
 
 !!! warning "Warning"
-    Only you and your VSP know the [redeem script](../../proof-of-stake/redeem-script.md). You must backup the script to ensure you don't end up with locked funds. If your VSP goes down, you'll need this script to vote or revoke tickets.
+    {{ scriptWarning1 }}
 
-    Lost scripts which have been used at least one time to vote or revoke tickets [can be recovered](/proof-of-stake/redeem-script/#recovery-methods).
+    {{ scriptWarning2 }}
 
 Click on the gear icon next to your VSP. Then click on the donut icon that appears.
 

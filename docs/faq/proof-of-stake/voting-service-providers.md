@@ -61,7 +61,7 @@ In the unlikely scenario your VSP goes down permanently, you can still vote your
 
 #### 9. My VSP went down and I lost the redeem script, is there a way to recover it?
 
-When a ticket votes or is revoked, that redeem script is revealed as a part of the process. Redeem scripts that have been used at least once to vote or revoke a ticket can be [recovered using Decred's block explorer](/proof-of-stake/redeem-script/#recovery-methods).
+When a ticket votes or is revoked, that redeem script is revealed as a part of the process. Redeem scripts that have been used at least once to vote or revoke a ticket can be [recovered using Decred's block explorer](../../proof-of-stake/redeem-script.md#recovery-methods).
 
 ---
 

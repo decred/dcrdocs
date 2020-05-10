@@ -24,9 +24,9 @@ A list of Voting Service Providers (VSPs) and statistics is maintained on the
 Using a VSP **does not give the VSP access to your funds**. All you are doing is granting voting rights to the VSP.
 
 !!! warning "Warning"
-    When using a VSP, remember to [backup your redeem script](../../wallets/decrediton/using-decrediton/#backup-redeem-script) to ensure you don't end up with locked funds. If your VSP goes down, you'll need this script to vote or revoke tickets.
+    {{ scriptWarning1 }}
 
-    Lost scripts which have been used at least once to vote or revoke tickets [can be recovered](/proof-of-stake/redeem-script/#recovery-methods).
+    {{ scriptWarning2 }}
 
 In order to support network decentralization, it is recommended that you join a smaller VSP with fewer live tickets. As VSPs control tickets delegated to them, they could in theory vote those tickets in a way which contradicts the expressed wishes of the ticket owners. This could be easily detected, and any VSP which attempted it would likely be abandoned by the stakeholder community. However, it is good practice to limit the power of individual VSPs, to limit the potential for damage from this kind of attack.
 

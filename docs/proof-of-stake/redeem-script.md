@@ -10,9 +10,9 @@ When a VSP user buys a new ticket, the voting rights are given to a hash of the 
 
 ## Why users must backup their scripts
 
-At first, when the user just signs up, the redeem script is not known by anyone except the user and the VSP. When the ticket votes or is revoked, that redeem script is revealed as a part of the process.
+At first, when a user has just signed up to a VSP, the redeem script is not known by anyone except the user and the VSP. When a ticket votes or is revoked, that redeem script is revealed on-chain as a part of the process.
 
-The VSP handles voting and revoking for the user, but if it goes offline, it is up to the user to vote using the remaining active tickets or revoke those that have expired. In order to do this, the user's wallet needs to know the redeem script.
+The VSP handles voting and revoking for the user, but if it goes offline, it is up to the user to vote using the remaining active tickets or revoke those that have expired. In order to do this, the users wallet also needs to know the redeem script.
 
 When registering with a VSP, the user wallet will automatically store a copy of the redeem script, but currently, users can't reconstruct these scripts from their own seed. This is why they must [backup their redeem scripts](../wallets/decrediton/using-decrediton.md#backup-redeem-script) to ensure they don't end up with locked funds due to the VSP going offline.
 

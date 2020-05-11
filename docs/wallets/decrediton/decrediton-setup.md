@@ -14,7 +14,7 @@ Last updated for Decrediton v{{ decreditonversion }}.
 
 ## Download and Install
 
-The latest version of Decrediton can be downloaded from <https://decred.org/downloads>.
+The latest version of Decrediton can be downloaded from <https://decred.org/wallets/>.
 
 ??? info "Windows instructions (click to expand)"
 
@@ -22,7 +22,7 @@ The latest version of Decrediton can be downloaded from <https://decred.org/down
 
         !!! Warning "Security Tip"
         
-            We recommend you also verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](https://docs.decred.org/advanced/verifying-binaries/).
+            We recommend you also verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
 
             You will need to visit the [Release Binaries](https://github.com/decred/decred-binaries/releases) page to download the manifest and manifest signature:
 
@@ -40,7 +40,7 @@ The latest version of Decrediton can be downloaded from <https://decred.org/down
 
         !!! Warning "Security Tip"
         
-            We recommend you also verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](https://docs.decred.org/advanced/verifying-binaries/).
+            We recommend you also verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
 
             You will need to visit the [Release Binaries](https://github.com/decred/decred-binaries/releases) page to download the manifest and manifest signature:
 
@@ -58,7 +58,7 @@ The latest version of Decrediton can be downloaded from <https://decred.org/down
 
         !!! Warning "Security Tip"
         
-            We recommend you also verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](https://docs.decred.org/advanced/verifying-binaries/).
+            We recommend you also verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
 
             You will need to visit the [Release Binaries](https://github.com/decred/decred-binaries/releases) page to download the manifest and manifest signature:
 

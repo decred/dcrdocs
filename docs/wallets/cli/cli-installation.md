@@ -14,7 +14,7 @@ Last updated for CLI release v{{ cliversion }}.
 
     1. Download the `dcrinstall-darwin-amd64-v{{ cliversion }}` file. (32 bit builds for macOS are not available):
 
-    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](https://docs.decred.org/advanced/verifying-binaries/).
+    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
 
     1. Make `dcrinstall-darwin-amd64-v{{ cliversion }}` an executable within your terminal, and run it:
 
@@ -40,7 +40,7 @@ Last updated for CLI release v{{ cliversion }}.
 
         For 64-bit ARM computers, download the `dcrinstall-linux-arm64-v{{ cliversion }}` file.
 
-    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](https://docs.decred.org/advanced/verifying-binaries/).
+    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
 
     1. Make the downloaded file an executable within your terminal and run it:
 
@@ -62,7 +62,7 @@ Last updated for CLI release v{{ cliversion }}.
 
         For 64-bit computers, download the `dcrinstall-windows-amd64-v{{ cliversion }}.exe` file.
 
-    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](https://docs.decred.org/advanced/verifying-binaries/).
+    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
 
     1. Run the dcrinstall executable file. You can either double click it or run it from the Command Prompt.
 

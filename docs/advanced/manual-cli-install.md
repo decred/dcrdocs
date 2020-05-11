@@ -19,7 +19,7 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
         | 32-bit       | `decred-windows-386-v{{ cliversion }}.zip`   |
         | 64-bit       | `decred-windows-amd64-v{{ cliversion }}.zip` |
 
-    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](https://docs.decred.org/advanced/verifying-binaries/).
+    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](verifying-binaries.md).
 
     1. Navigate to download location and extract the `.zip` file:
 
@@ -33,7 +33,7 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
         | ------------ | ---------------------------------------------- |
         | 64-bit       | `decred-darwin-amd64-v{{ cliversion }}.tar.gz` |
 
-    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](https://docs.decred.org/advanced/verifying-binaries/).
+    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](verifying-binaries.md).
 
     1. Navigate to download location and extract the `.tar.gz` file:
 
@@ -58,7 +58,7 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
         | 32-bit ARM   | `decred-linux-arm-v{{ cliversion }}.tar.gz`   |
         | 64-bit ARM   | `decred-linux-arm64-v{{ cliversion }}.tar.gz` |
 
-    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](https://docs.decred.org/advanced/verifying-binaries/).
+    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](verifying-binaries.md).
 
     1. Navigate to download location and extract the `.tar.gz` file:
 

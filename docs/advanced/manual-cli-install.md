@@ -8,10 +8,6 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
 ??? info "Windows instructions (click to expand)"
 
-    !!! note
-
-        Windows 7/8/10 provides native support for `.zip` files, therefore it is preferable to use the `.zip` file. If you decide to download the `.tar.gz` file, it will need to be extracted using a third-party application (7-Zip, WinRAR, etc.). Instructions are provided for the `.zip` file.
-
     1. Download the correct file for your computer:
 
         | Architecture | Filename                                     |

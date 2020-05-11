@@ -14,11 +14,21 @@ Last updated for Decrediton v{{ decreditonversion }}.
 
 ## Download and Install
 
-The latest version of Decrediton can be downloaded from <https://decred.org/downloads>.
+The latest version of Decrediton can be downloaded from <https://decred.org/wallets/>.
 
 ??? info "Windows instructions (click to expand)"
 
     1. Download the Windows installer `decrediton-v{{ decreditonversion }}.exe`.
+
+        !!! Warning "Security Tip"
+        
+            We recommend you also verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
+
+            You will need to visit the [Release Binaries](https://github.com/decred/decred-binaries/releases) page to download the manifest and manifest signature:
+
+            `decrediton-v{{ decreditonversion }}-manifest.txt`
+
+            `decrediton-v{{ decreditonversion }}-manifest.txt.asc`
 
     1. Double click the installer and follow the instructions.
 
@@ -28,6 +38,16 @@ The latest version of Decrediton can be downloaded from <https://decred.org/down
 
     1. Download the `decrediton-v{{ decreditonversion }}.dmg` file.
 
+        !!! Warning "Security Tip"
+        
+            We recommend you also verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
+
+            You will need to visit the [Release Binaries](https://github.com/decred/decred-binaries/releases) page to download the manifest and manifest signature:
+
+            `decrediton-v{{ decreditonversion }}-manifest.txt`
+
+            `decrediton-v{{ decreditonversion }}-manifest.txt.asc`
+
     1. Double click the `decrediton-v{{ decreditonversion }}.dmg` file to mount the disk image.
 
     1. Drag the `decrediton.app` file into the link to your Applications folder within the disk image.
@@ -35,6 +55,16 @@ The latest version of Decrediton can be downloaded from <https://decred.org/down
 ??? info "Linux instructions (click to expand)"
 
     1. Download the `decrediton-v{{ decreditonversion }}.tar.gz` file.
+
+        !!! Warning "Security Tip"
+        
+            We recommend you also verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
+
+            You will need to visit the [Release Binaries](https://github.com/decred/decred-binaries/releases) page to download the manifest and manifest signature:
+
+            `decrediton-v{{ decreditonversion }}-manifest.txt`
+
+            `decrediton-v{{ decreditonversion }}-manifest.txt.asc`
 
     1. Navigate to the download location and extract `decrediton-v{{ decreditonversion }}.tar.gz`.
 

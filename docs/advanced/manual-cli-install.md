@@ -19,6 +19,8 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
         | 32-bit       | `decred-windows-386-v{{ cliversion }}.zip`   |
         | 64-bit       | `decred-windows-amd64-v{{ cliversion }}.zip` |
 
+    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](verifying-binaries.md).
+
     1. Navigate to download location and extract the `.zip` file:
 
         Right click on the `.zip` file, select "Extract All..." and a prompt should open asking for the directory to use. The default will extract the `.zip` to a folder with the same name. It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
@@ -30,6 +32,8 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
         | Architecture | Filename                                       |
         | ------------ | ---------------------------------------------- |
         | 64-bit       | `decred-darwin-amd64-v{{ cliversion }}.tar.gz` |
+
+    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](verifying-binaries.md).
 
     1. Navigate to download location and extract the `.tar.gz` file:
 
@@ -53,6 +57,8 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
         | 64-bit       | `decred-linux-amd64-v{{ cliversion }}.tar.gz` |
         | 32-bit ARM   | `decred-linux-arm-v{{ cliversion }}.tar.gz`   |
         | 64-bit ARM   | `decred-linux-arm64-v{{ cliversion }}.tar.gz` |
+
+    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](verifying-binaries.md).
 
     1. Navigate to download location and extract the `.tar.gz` file:
 

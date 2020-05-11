@@ -12,7 +12,7 @@ When a VSP user buys a new ticket, the voting rights are given to a hash of the 
 
 At first, when a user has just signed up to a VSP, the redeem script is not known by anyone except the user and the VSP. When a ticket votes or is revoked, that redeem script is revealed on-chain as a part of the process.
 
-The VSP handles voting and revoking for the user, but if it goes offline, it is up to the user to vote using the remaining active tickets or revoke those that have expired. In order to do this, the users wallet also needs to know the redeem script.
+The VSP handles voting and revoking for the user, but if it goes offline, it is up to the user to vote the remaining active tickets or revoke those that have expired. In order to do this, the users wallet also needs to know the redeem script.
 
 When registering with a VSP, the user wallet will automatically store a copy of the redeem script, but currently, users can't reconstruct these scripts from their own seed. This is why they must [backup their redeem scripts](../wallets/decrediton/using-decrediton.md#backup-redeem-script) to ensure they don't end up with locked funds due to the VSP going offline.
 
@@ -44,5 +44,4 @@ Only redeem scripts that have been used at least once to vote or revoke a ticket
 1.  Under `scriptSig`, you should see a field for the `asm`, a deserialized form of the script. The `asm` value should be a long string separated by a white space. Grab the second part of the `scriptSig` `asm`, this is your redeem script.
 
 1. Import the script into your wallet to vote or revoke your tickets as usual.
-
 

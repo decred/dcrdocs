@@ -1,15 +1,40 @@
 # <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Consensus Vote Archive
 
-
 This section provides an archive for previous votes along with their outcomes.
 
 ---
+
+## V7
+
+### Enable Block Header Commitments
+
+Agenda ID: [headercommitments](https://dcrdata.decred.org/agenda/headercommitments)
+
+**Enable header commitments as defined in [DCP-0005](https://github.com/decred/dcps/blob/master/dcp-0005/dcp-0005.mediawiki)**
+
+Proposed modifications to the Decred block header to increase the security and
+efficiency of lightweight clients, as well as adding infrastructure to enable
+future scalability enhancements.
+
+|Voting Start:|Voting End:|Activated:|
+|-------------|-----------|----------|
+[415,360](https://dcrdata.decred.org/block/415360)|[423,423](https://dcrdata.decred.org/block/423423)|[431,488](https://dcrdata.decred.org/block/431488)|
+
+#### Voting Results
+
+|Choice|Percentage|
+|------|----------|
+|Abstain|38.74%|
+|No|0.03%|
+|Yes|61.21%|
+
+---
+
 ## V6
 
 ### Update Sequence Lock Rules
 
 Agenda ID: [fixlnseqlocks](https://dcrdata.decred.org/agenda/fixlnseqlocks)
-
 
 **Modify sequence lock handling as defined in [DCP-0004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki)**
 
@@ -53,14 +78,13 @@ Block 205189 is the first block which contains the new opcode which was voted in
 |No|0.30%|
 |Yes|61.98%|
 
-
 ---
 
 ## V4
 
 ### Change PoS Staking Algorithm
 
-Agenda ID:  [sdiffalgorithm](https://dcrdata.decred.org/agenda/sdiffalgorithm)
+Agenda ID: [sdiffalgorithm](https://dcrdata.decred.org/agenda/sdiffalgorithm)
 
 **Change stake difficulty algorithm as defined in DCP-0001**
 
@@ -80,7 +104,7 @@ Specifies a proposed replacement algorithm for determining the stake difficulty 
 
 ### Start Lightning Network Support
 
-Agenda ID:  [lnsupport](https://dcrdata.decred.org/agenda/lnsupport)
+Agenda ID: [lnsupport](https://dcrdata.decred.org/agenda/lnsupport)
 
 **Request developers begin work on Lightning Network (LN) integration**
 

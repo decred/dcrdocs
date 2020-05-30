@@ -42,3 +42,15 @@ The following posts also describe aspects of the contractor recruitment process,
 * [How to Get Hired as a Decred Contractor](https://medium.com/decred/how-to-get-hired-as-a-decred-contractor-e1435842df10)
 * [Working for the Decred DAE](https://medium.com/@richardred/working-for-the-decred-dae-a9cfb17686fa#5a3c)
 
+---
+
+## Hear from some of our contractors
+
+For a more personal perspective, check these stories where some Decred contributors share their experience of getting involved in Decred:
+
+- _Working for the Decred DAO_ by richardred ([Medium](https://medium.com/@richardred/working-for-the-decred-dae-a9cfb17686fa#5a3c))
+- _I Dump Coins on You_ by s_ben ([Medium](https://medium.com/@seth.benton/i-dump-coins-on-you-ee6db4331e18))
+- _Working for the Decred DAO + Development_ - an episode of Decred in Depth
+  podcast with jholdstock
+  ([YouTube](https://www.youtube.com/watch?v=A-zcLGSYxbA),
+  [Libsyn](https://decredindepth.libsyn.com/ep-6-working-for-the-dcr-dao-development-with-jamie-holdstock))

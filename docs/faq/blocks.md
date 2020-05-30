@@ -2,39 +2,50 @@
 
 ---
 
-#### 1. Can a block become orphaned after being confirmed multiple times? 
+#### 1. Can a block become orphaned after being confirmed multiple times?
 
-Only if there is a reorg that is sufficiently long[^8918]. In order for that to happen, you need more hash power working on the other side of a fork than the hash power that is working on the current best chain.
-
----
-
-#### 2. Can we remove the testnet block explorer given that one for mainnet is available? 
-
-Testnet will continue to be a testing ground for new features, so it makes sense to keep the testnet block explorer[^9621] up.
+Only if there is a reorg that is sufficiently long. In order for that to happen,
+you need more hash power working on the other side of a fork than the hash power
+that is working on the current best chain.
 
 ---
 
-#### 3. What do "[INF] CHAN: Adding orphan block" messages mean? 
+#### 2. Can we remove the testnet block explorer given that one for mainnet is available?
 
-It just means a block that you do not have the parent for was received[^14660]. It pretty much always happens when restarting `dcrd` due to the way the sync works. You are still syncing up to the latest block, but the remote peer, that is ahead of you, sent a notification that a new block showed up, one for which you do not have the parent yet.
-
-Rather than ignoring it, once you are sufficiently close to being synced, it essentially saves them for later so once you do have the parent blocks those newer blocks automatically get connected.
-
----
-
-#### 4. Should I download the blockchain again with every new software release? 
-
-You should almost never have to download the chain again[^14788] on an upgrade unless it is just a super massive change where it makes sense to start over. Typically though, it should migrate things so it just works.
+Testnet will continue to be a testing ground for new features, so it makes sense
+to keep the testnet block explorer up.
 
 ---
 
-#### 5. What is the genesis block number? 
+#### 3. What do "[INF] CHAN: Adding orphan block" messages mean?
 
-The genesis block[^16987] is block height 0 (block number 0). Every block after that increases by 1.
+It just means a block that you do not have the parent for was received. It
+pretty much always happens when restarting `dcrd` due to the way the sync works.
+You are still syncing up to the latest block, but the remote peer, that is ahead
+of you, sent a notification that a new block showed up, one for which you do not
+have the parent yet.
+
+Rather than ignoring it, once you are sufficiently close to being synced, it
+essentially saves them for later so once you do have the parent blocks those
+newer blocks automatically get connected.
 
 ---
 
-#### 6. What do "[INF] CHAN: FORK: Block 000..." messages mean? 
+#### 4. Should I download the blockchain again with every new software release?
+
+You should almost never have to download the chain again on an upgrade unless it
+is just a super massive change where it makes sense to start over. Typically
+though, it should migrate things so it just works.
+
+---
+
+#### 5. What is the genesis block number?
+
+The genesis block is block height 0 (block number 0). Every block after that increases by 1.
+
+---
+
+#### 6. What do "[INF] CHAN: FORK: Block 000..." messages mean?
 
 Here is an example message taken from `dcrd` logs:
 
@@ -47,13 +58,3 @@ This typically means that two miners found a solution to a block around the same
 This is totally normal and resolves itself whenever the next block is found. The miner who finds the next block will build it on whichever block which their node saw first, and that new block will now define the longest chain. Any other blocks which were not built upon will be orphaned.
 
 In the case above, [block #17880](https://mainnet.decred.org/block/000000000000154c6091747245e3c2620447c71b346aed09548e74b4543d0d66) ended up building on top of [000000000000147d33cde5e9823122924fb43405418712720eb6457956d8edbb](https://mainnet.decred.org/block/000000000000147d33cde5e9823122924fb43405418712720eb6457956d8edbb), so the other solution (`0000000000001aedcf1b82b087a1d05ef787550174da1012e473e8ee8c178937`) was orphaned.
-
----
-
-## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources 
-
-[^8918]: Decred Forum, [Post 8,918](https://forum.decred.org/threads/557/#post-8918)
-[^9621]: Decred Forum, [Post 9,621](https://forum.decred.org/threads/651/#post-9621)
-[^14660]: Decred Forum, [Post 14,660](https://forum.decred.org/threads/1333/#post-14660)
-[^14788]: Decred Forum, [Post 14,788](https://forum.decred.org/threads/1336/#post-14788)
-[^16987]: Decred Forum, [Post 16,987](https://forum.decred.org/threads/1852/#post-16987)

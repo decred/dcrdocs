@@ -216,6 +216,7 @@ Short for 'fully-validating node. Refers to software that fully validates all tr
 #### Genesis block
 
 The very first block of the Decred blockchain, created on the 8th of February 2016.
+It has a block height of [zero](https://dcrdata.decred.org/block/0).
 
 ## H
 

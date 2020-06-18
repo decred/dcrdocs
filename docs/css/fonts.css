@@ -53,13 +53,11 @@
 }
 
 html, body {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "dcrdocs", "Verdana", "sans-serif" !important;
+    font-family: "dcrdocs", "Verdana", sans-serif;
 }
 
 pre, code {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "dcrdocs-code", "Courier New", "monospace" !important;
+    font-family: "dcrdocs-code", "Courier New", monospace;
 }
 
 .md-typeset h1 {

@@ -15,13 +15,13 @@
     For complete safety from possible malicious remote nodes, users should also use third party, reputable watchtowers to ensure that if the remote nodes executes the DLP protocol with an invalid state they are correctly punished for it.
 
 
-Due to its nature as a second-layer network, Lightning Network related wallet data is **not** stored in the blockchain itself. This means that the standard wallet seed is **not sufficient** to restore the LN balance of a wallet in case of a re-seed.
+Due to its nature as a second-layer network, Lightning Network related wallet data is **not** stored in the blockchain itself. This means that the standard wallet seed is **not sufficient** to restore the LN balance of a wallet in case of a restore from seed.
 
 LN users need to **also** regularly and safely store the _Static Channel Backup_ (SCB) file so that a restored lightning wallet might be used to close the channels opened by the previous wallet.
 
 The backup should be updated every time a channel is opened or closed on the local LN node (including when a _remote_ node opens a channel back to the local node).
 
-The rest of this document details what exactly the SCB-based backup method entails, how to perform backups and restores using it and its limitations.
+The rest of this document details what exactly the SCB-based backup method entails, how to perform backups and restores using it, and its limitations.
 
 ## Overview of Backup Issues for LN nodes
 
@@ -29,7 +29,7 @@ The next sections provide a high level overview of _why_ backups are needed for 
 
 For the operational instructions on generating and applying backups see the section on [Operating SCB Backups](#operating-scb-backups).
 
-### Preamble: What data does an LN wallet store?
+### What data does an LN wallet store?
 
 This can be skipped for those familiar with how LN operates. 
 
@@ -37,9 +37,9 @@ Payments over the Lightning Network happen across _channels_. An LN channel can 
 
 While a lightning channel is realized as an on-chain output, spendable by a multisig 2-of-2 signature script, the channel state evolves completely off-chain by having _relative balances_ and _in-flight payments_ (HTLCs) only known to the parties of channel.
 
-This means that while other participants of the network know that a given channel exists (due to the output being stored and confirmed on the blockchain), the data about which portion (how many coins) each of the two nodes own in the channel as well as which payments are currently outstanding is only known to them.
+This means that while other participants of the network know that a given channel exists (due to the output being stored and confirmed on the blockchain), the data about which portion (how many coins) each of the two nodes own in the channel, as well as which payments are currently outstanding, is only known to them.
 
-Every sequential update to the channel state is summarized by a corresponding _commitment transaction_: a transaction that is usually kept off-chain (never broadcasted) but that works as a sort of insurance that either party can recover their funds if the other node stops working properly.
+Every sequential update to the channel state is summarized by a corresponding _commitment transaction_: a transaction that is usually kept off-chain (never broadcast) but works as a sort of insurance that either party can recover their funds if the other node stops working properly.
 
 This transaction is updated and re-signed every time a new payment changes the relative balances of the channel. It is then stored on a local database, along with some other metadata such as the current state number, the specific keys used to sign this update and information about older, revoked states.
 
@@ -49,13 +49,13 @@ Notice that since the commitment data is never published to the blockchain durin
 
 It also means the node cannot even advance the state of the channel, since it doesn't know what the current state _is_ to begin with. 
 
-### Unsafety of copying the dcrlnd DB
+### Danger of copying the dcrlnd database
 
 !!! danger "Do not perform full-db backups"
 
     This section details why full-db backups are **not safe** in the current implementation of `dcrlnd`. 
 
-    Do **not** perform full-db backups unless you have very deep knowledge on how LN operates and how `dcrlnd` is implemented and the _complete_ loss of funds that might occurr when using an incorrect db backup.
+    Do **not** perform full-db backups unless you have very deep knowledge on how LN operates, and how `dcrlnd` is implemented, and the _complete_ loss of funds that might occur when using an incorrect db backup.
 
 
 Given the need to prevent loss of funds by having some backup channel data, the initial idea for most sysadmins would be to perform a full backup of the `dcrlnd` DB in regular intervals (via `cp`, `rsync` or similar commands). This could, in principle, allow a node to pick up the channel states and resume operations from where it had the initial malfunction.
@@ -72,7 +72,7 @@ While it might be possible to offer some form of DB replication to increase reli
 
 ### The Data Loss Protect option
 
-The Lightning Network [BOLTs](https://github.com/lightningnetwork/lightning-rfc) define a special channel feature called `option_data_loss_protect`. Triggering this option during channel re-establishment (for example, after suffering data loss) causes the other node to publish their most recent (unrevoked) commitment transaction, thus in principle allowing a node to get their funds back.
+The Lightning Network [BOLTs](https://github.com/lightningnetwork/lightning-rfc) define a special channel feature called `option_data_loss_protect` (DLP). Triggering this option during channel re-establishment (for example, after suffering data loss) causes the other node to publish their most recent (unrevoked) commitment transaction, thus in principle allowing a node to get their funds back.
 
 However to retrieve those funds a node still needs some minimal metadata about a channel - mainly the specific keys and scripts used to redeem the local funds of the commitment transaction.
 
@@ -80,7 +80,7 @@ In dcrlnd, this metadata and the mechanism to trigger restores is called the _St
 
 Note that since the DLP protocol involves asking the _remote_ node to close a channel due to some local data loss, the remote node could attempt to send an older state that is more to its advantage.
 
-Nodes are disicentivized to do this however, because the local node could be lying to force the triggering of the DLP (and thus the remote node publishing the old state allows the local node to send a justice transaction) and because the node could have previously set up a watchtower that could remedy any breaches attempted by their counterparty.
+However, nodes are disincentivized to do this because the local node could be lying to force the triggering of the DLP, and if the remote node publishes an old state, the local node would be able to use its newer state to send a justice transaction which claims all of the channel funds. Additionally, the local node could have previously set up a watchtower to remedy any breach attempts by their counterparty.
 
 ### SCB File Contents
 
@@ -96,7 +96,7 @@ The SCB file is only updated once new channels are created (in which case the ne
 
 The contents of the file are also _encrypted_ using one of the node's private keys so they are only valid and decodable by the original node that created them.
 
-Note that SCB-based backups do not suffer from the unsafety limitations of the full DB copy procedure outlined previously. This is due to the fact that this method of backups does _not_ attempt to restore channel operations but only to trigger a remote channel closure via the DLP protocol so that a node may retrive its funds.
+Note that SCB-based backups do not suffer from the limitations of the full DB copy procedure outlined previously. This is due to the fact that this method of backups does _not_ attempt to restore channel operations but only to trigger a remote channel closure via the DLP protocol so that a node may retrive its funds.
 
 ## Operating SCB Backups
 

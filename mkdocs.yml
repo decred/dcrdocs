@@ -119,6 +119,7 @@ nav:
     - 'How to use CSPP': 'privacy/cspp/how-to-cspp.md'
 - Lightning Network:
   - 'Overview': 'lightning-network/overview.md'
+  - 'Backups': 'lightning-network/backups.md'
   - dcrlncli:
     - 'Options and Commands': 'lightning-network/dcrlncli/options-and-commands.md'
     - Channel Commands:

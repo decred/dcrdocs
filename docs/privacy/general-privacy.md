@@ -50,7 +50,7 @@ may be able to link it to your public IP address.
 It is possible to route your dcrd traffic through Tor to mitigate this risk.
 Another solution is to broadcast your transaction through a public website,
 using Tor to provide anonymity.
-For example, [dcrdata](https://github.org/decred/dcrdata) has this
+For example, [dcrdata](https://github.com/decred/dcrdata) has this
 functionality, and is available as a hidden service on Tor using the URL
 <http://dcrdata2opeenddl.onion>.
 

@@ -55,7 +55,7 @@ These mining pools are known to support Decred:
 * [:fontawesome-solid-external-link-square-alt: F2Pool](https://www.f2pool.com)
 * [:fontawesome-solid-external-link-square-alt: Poolin](https://www.poolin.com)
 * [:fontawesome-solid-external-link-square-alt: UUpool](https://uupool.cn/dcr)
-* [:fontawesome-solid-external-link-square-alt: Luxor](https://mining.luxor.tech/decred)
+* [:fontawesome-solid-external-link-square-alt: Luxor](https://mining.luxor.tech/coins/decred)
 * [:fontawesome-solid-external-link-square-alt: Coinmine](https://www2.coinmine.pl/dcr/)
 * [:fontawesome-solid-external-link-square-alt: Suprnova](https://dcr.suprnova.cc)
 

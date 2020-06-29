@@ -15,7 +15,7 @@ The main directory for Decrediton data files is OS-dependent:
 | OS      | Decrediton data directory                   |
 | -------:|:-------------------------------------------:|
 | Windows | `%LOCALAPPDATA%\Decrediton\`                |
-| macOS   | `~/Library/Application Support/Decrediton/` |
+| macOS   | `~/Library/Application Support/decrediton/` |
 | Linux   | `~/.config/decrediton/`                     |
 
 There are different log files which may be reviewed when troubleshooting a problem:
@@ -89,7 +89,7 @@ Check the following:
 If you receive a message similar to the one above, it means your dcrd node already has the transaction you're trying to publish. This is harmless, but if the transaction is left pending for a long time, you could try:
 
 - Rebroadcast the transaction using the button in the Transactions tab
-- Check if your transaction has been broadcast by using the [block explorer](https://dcrdata.decred.org/)  
+- Check if your transaction has been broadcast by using the [block explorer](https://dcrdata.decred.org/)
 - Perform a rescan
 
 ## Cannot Purchase Tickets

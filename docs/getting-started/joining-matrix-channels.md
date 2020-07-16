@@ -6,17 +6,15 @@
 
 Matrix is a secure, open messaging platform popular with Decred contractors. With the help of bridge software Matrix users can communicate with users on other Decred platforms such as Discord. Matrix offers first party registration; no identifying information or third party service is required to sign up. Users should be aware however that some features, such as password reset, do require an email address. For more on Matrix’s security features and available clients, see the [Matrix project homepage](https://matrix.org/).
 
-To join Matrix, you’ll need to choose a client and a homeserver. Matrix supports numerous clients and homeservers, but for first-time users, we recommend the most well-supported Matrix client, Riot, and Decred’s homeserver. Using the Decred homeserver makes it easier to find Decred chat rooms, puts `decred.org` in your ID, and allows you to continue messaging should Decred’s homeserver become disconnected with other homeservers.
+To join Matrix, you’ll need to choose a client and a homeserver. Matrix supports numerous clients and homeservers, but for first-time users, we recommend the most well-supported Matrix client, Element (formerly Riot), and Decred’s homeserver. Using the Decred homeserver makes it easier to find Decred chat rooms, puts `decred.org` in your ID, and allows you to continue messaging should Decred’s homeserver become disconnected with other homeservers.
 
 ---
 
 ## Creating your account
 
-Access Decred's channels using [Riot](https://about.riot.im/), an open-source Matrix client.
+Access Decred's channels using [Element](https://element.io/get-started), an open-source Matrix client.
 
-![Download Riot client](/img/matrix/matrix-01-download.png)
-
-Riot supports multiple platforms:
+Element supports multiple platforms:
 
 - Desktop
 - iOS
@@ -25,9 +23,9 @@ Riot supports multiple platforms:
     - F-Droid
 - Web Browser
     - [chat.decred.org](https://chat.decred.org/)
-    - [Riot's web app](https://riot.im/app/)
+    - [Element's web app](https://app.element.io)
 
-When creating you account, choose to use another homeserver and enter `https://matrix.decred.org`.
+When creating your account, select "Advanced" to choose to use a custom homeserver and enter `https://matrix.decred.org`.
 
 ![Select Home Server](/img/matrix/matrix-02-select-home-server.png)
 
@@ -57,7 +55,7 @@ Keep in mind that Matrix channels is where the Decred community collaborates, wo
 
 ## Using the mobile app
 
-Logging in from your mobile device requires you to setup the homeserver to `https://matrix.decred.org` in the Riot mobile app by checking the "Use custom server options (advanced)" box. If you don't have an account, create it using the guide above.
+Logging in from your mobile device requires you to setup the homeserver to `https://matrix.decred.org` in the Element mobile app by checking the "Use custom server options (advanced)" box. If you don't have an account, create it using the guide above.
 
 After logging in for the first time, your rooms list will be empty. To find Decred channels tap the top-right menu dots, then "Global Search", and browse Decred's rooms directory.
 

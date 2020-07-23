@@ -75,7 +75,7 @@ GPU drivers usually contain the libraries needed for mining.  If you have diffic
 
 ### Official Decred Miner (gominer)
 
-Gominer is the official Decred miner developed and supported by the Decred team. It is the easiest miner to setup and start mining and so it is recommended for most users. Currently, the latest version of gominer is **:octicons-mark-github: [v{{ gominerversion }}](https://github.com/decred/gominer/releases/)** and the official binaries can be downloaded from **<https://github.com/decred/decred-binaries/releases/tag/v1.0.0>**
+Gominer is the official Decred miner developed and supported by the Decred team. It is the easiest miner to setup and start mining and so it is recommended for most users. Currently, the latest version of gominer is **:octicons-mark-github-16: [v{{ gominerversion }}](https://github.com/decred/gominer/releases/)** and the official binaries can be downloaded from **<https://github.com/decred/decred-binaries/releases/tag/v1.0.0>**
 
 Please be certain to select the correct operating system (Windows/Linux) and the correct version for your GPU type (CUDA for NVIDIA cards, OpenCL/OpenCLADL for AMD cards). gominer is only available to 64-bit operating systems. User guides to start mining with gominer can be found here:
 
@@ -83,11 +83,11 @@ Please be certain to select the correct operating system (Windows/Linux) and the
 
 ### Unofficial Miners
 
-* :octicons-mark-github: [cgminer](https://github.com/kR105-zz/cgminer) - cgminer is a popular miner for **AMD** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
+* :octicons-mark-github-16: [cgminer](https://github.com/kR105-zz/cgminer) - cgminer is a popular miner for **AMD** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
 
-* :octicons-mark-github: [ccminer](https://github.com/tpruvot/ccminer) - ccminer is a popular miner for **NVIDIA** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
+* :octicons-mark-github-16: [ccminer](https://github.com/tpruvot/ccminer) - ccminer is a popular miner for **NVIDIA** GPUs that has a long history of use in many different cryptocurrencies. It is more difficult to use than the decred gominer.
 
-* :octicons-mark-github: [sgminer](https://github.com/tpruvot/sgminer) - Those with an **AMD** graphics card running Windows may want to download sgminer.
+* :octicons-mark-github-16: [sgminer](https://github.com/tpruvot/sgminer) - Those with an **AMD** graphics card running Windows may want to download sgminer.
 
 ---
 

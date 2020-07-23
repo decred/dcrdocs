@@ -7,7 +7,7 @@ theme:
   features:
     - instant
   icon:
-    repo: octicons/mark-github
+    repo: octicons/mark-github-16
 extra:
   decreditonversion: 1.5.1
   cliversion: 1.5.1
@@ -26,7 +26,7 @@ extra:
   scriptWarning2:
     "Lost scripts which have been used at least once to vote or revoke tickets [can be recovered](/proof-of-stake/redeem-script#recovery-methods)."
   social:
-    - icon: octicons/mark-github
+    - icon: octicons/mark-github-16
       link: https://github.com/decred
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/decredproject

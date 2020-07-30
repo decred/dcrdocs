@@ -11,7 +11,7 @@ various aspects of Decred.
 
 ## 1. History of Decred: Foundational Documents
 
-- [Decred: Where it all began](https://thedecreddigest.com/2017/06/10/decred-where-did-it-all-begin/)
+- [Decred: Where it all began](https://medium.com/decred/decred-where-did-it-all-begin-6d63b5c62fc4)
 
 - [Bitcoin's biggest challenges](https://blog.companyzero.com/2015/11/bitcoins-biggest-challenges/) by Jake Yocom-Piatt
 

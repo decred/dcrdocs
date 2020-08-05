@@ -11,7 +11,7 @@ various aspects of Decred.
 
 ## 1. History of Decred: Foundational Documents
 
-- [Decred: Where it all began](https://medium.com/decred/decred-where-did-it-all-begin-6d63b5c62fc4)
+- [Decred: Where it all began](https://thedecreddigest.org/2017/06/10/decred-where-did-it-all-begin/)
 
 - [Bitcoin's biggest challenges](https://blog.companyzero.com/2015/11/bitcoins-biggest-challenges/) by Jake Yocom-Piatt
 
@@ -217,7 +217,7 @@ various aspects of Decred.
 
 - [Everything you need to know about staking DCR](https://staking.com/decred/)
 
-- [The top 5 reasons to become a DCR stakeholder](https://thedecreddigest.com/2017/12/11/the-top-5-reasons-to-become-a-decred-stakeholder/)
+- [The top 5 reasons to become a DCR stakeholder](https://thedecreddigest.org/2017/12/11/the-top-5-reasons-to-become-a-decred-stakeholder/)
 
 - [Staking isn't just a way to earn crypto — and it shouldn't be](https://www.coindesk.com/staking-isnt-just-a-way-to-earn-crypto-money-and-it-shouldnt-be) by Jake Yocom-Piatt in CoinDesk
 
@@ -263,7 +263,7 @@ various aspects of Decred.
 
 - [The Decred Constitution](../governance/decred-constitution.md)
 
-- [The road to the Decred DAO: A self-funding cryptocurrency](https://thedecreddigest.com/2017/08/11/the-road-to-the-decred-dao-a-self-funding-cryptocurrency/)
+- [The road to the Decred DAO: A self-funding cryptocurrency](https://thedecreddigest.org/2017/08/11/the-road-to-the-decred-dao-a-self-funding-cryptocurrency/)
 
 - [On Decred's path to becoming a DAO](https://medium.com/@changhugo/decred-as-a-dae-infrastructure-provider-970677f38179) by Hugo Chang
 

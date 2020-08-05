@@ -43,7 +43,7 @@ The following guides go into depth on key aspects of the Decred experience:
 * [Decred.org blog](https://blog.decred.org)
 * [Decred Medium](https://medium.com/decred) - Curated content from community members
 * [Press coverage/releases](https://decred.org/press/)
-* [The Decred Digest](https://thedecreddigest.com/) - Community blog
+* [The Decred Digest](https://thedecreddigest.org/) - Community blog
 * [Decred-Canon](https://github.com/maxbron08/Decred-Canon/) - A collection of readings and resources on Decred.
 
 **Video**

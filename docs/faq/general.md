@@ -14,7 +14,7 @@ Here are a series of blog posts that discuss the motivation for Decred:
 
 **Decred Digest**
 
-* [Decred: Where did it all begin?](https://thedecreddigest.com/2017/06/10/decred-where-did-it-all-begin/)
+* [Decred: Where did it all begin?](https://thedecreddigest.org/2017/06/10/decred-where-did-it-all-begin/)
 
 ---
 

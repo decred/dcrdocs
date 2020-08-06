@@ -120,6 +120,7 @@ nav:
 - Lightning Network:
   - 'Overview': 'lightning-network/overview.md'
   - 'Backups': 'lightning-network/backups.md'
+  - 'Watchtowers': 'lightning-network/watchtowers.md'
   - dcrlncli:
     - 'Options and Commands': 'lightning-network/dcrlncli/options-and-commands.md'
     - Channel Commands:

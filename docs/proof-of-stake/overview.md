@@ -86,5 +86,3 @@ A ticket on mainnet (testnet uses different parameters) will go through a few st
 [Proof-of-Stake FAQ - Solo Mining](../faq/proof-of-stake/solo-voting.md)
 
 [Proof-of-Stake FAQ - Voting Service Providers](../faq/proof-of-stake/voting-service-providers.md)
-
-[Proof-of-Stake FAQ - Voting Tickets](../faq/proof-of-stake/voting-tickets.md)

@@ -6,8 +6,8 @@
 
 Proof-of-Stake (PoS) was included in the first release of Decred software in February 2016.
 
-Ticket purchases were possible as soon as the intial premine coins became
-spendable, however voting did not begin until block 4,096, aka the
+Ticket purchases were possible as soon as the intial coins became spendable,
+however voting did not begin until block 4,096, aka the
 [Stake Validation Height](https://devdocs.decred.org/core-blockchain-concepts/proof-of-stake/stake-validation-height/).
 
 The initial 4,096 blocks acted as a bootstrapping phase which allowed the ticket

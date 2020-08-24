@@ -1,11 +1,18 @@
 # <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Hardware Wallets
 
-A hardware wallet is a device that stores your private keys on a secure piece of hardware, instead
-of in a file on your computer, as is done with [Decrediton](../decrediton/decrediton-setup/) and other software wallets. Hardware wallets provide an additional level of security, and are generally considered more secure than software wallets.
+Traditional software wallets such as Decrediton store your private keys in a
+file on your computer.
+A hardware wallet is a device that stores your private keys on a dedicated piece
+of hardware with the intention of providing an additional level of security.
+Hardware wallets typically do not connect directly to the internet, and so they
+are often considered more secure than software wallets.
 
-Below is a table of hardware wallets that support Decred (last updated 2019-08-31).
+It is not currently possible to participate in Proof-of-Stake using hardware
+wallets.
 
-| Hardware        | Native Wallet Support           | Decrediton Support  |
-| ------------- |:-------------:| -----:|
-| [Trezor](https://trezor.io/)     | No | Yes |
-| [Ledger](https://www.ledger.com/)     | Yes      |   No |
+Below is a table of hardware wallets that support Decred (last updated 2020-08-24).
+
+| Hardware                           | Software                                |
+| -----------------------------------|-----------------------------------------|
+| [Trezor](https://trezor.io/)       | [Decrediton](https://decred.org/wallets/), [Exodus](https://www.exodus.io/) |
+| [Ledger](https://www.ledger.com/)  | [Ledger Live](https://www.ledger.com/ledger-live/download/) |

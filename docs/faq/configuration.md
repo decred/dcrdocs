@@ -59,7 +59,26 @@ On the other hand, increasing your maximum connections, which really just increa
 
 ---
 
-#### 6. How do I run dcrd and dcrwallet as a background daemon?
+#### 6. Why do I have no inbound connections after forwarding the appropriate port?
+
+When nodes are new to the network, they are not accessible to other nodes until they have matured and been randomly selected as a known and good node. The node address manager internally segregates the node addresses into groups and non-deterministically selects groups in a cryptographically random manner. This reduces the chances multiple addresses from the same nets are selected which generally helps provide greater peer diversity, and perhaps more importantly, drastically reduces the chances an attacker is able to coerce your peer into only connecting to nodes they control.
+
+This process should take several days before receiving an incoming connection.
+
+To check and confirm that your node is ready to be accepted, see the output from the `dcrctl` command `getnetworkinfo`. Under `localaddresses`, you can see what address and port your node is accepting incoming conenctions. Confirm that this address is correct and that the specified port is open.
+
+```
+"localaddresses": [
+    {
+      "address": "185.157.161.61",
+      "port": 59982,
+      "score": 0
+    }
+```
+
+---
+
+#### 7. How do I run dcrd and dcrwallet as a background daemon?
 
 `dcrd` and `dcrwallet` do not provide a `--daemon` or `--detach` flag to run as a
 daemon as this is considered bad practice. 

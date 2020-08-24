@@ -70,8 +70,8 @@ To check and confirm that your node is ready to be accepted, see the output from
 ```
 "localaddresses": [
     {
-      "address": "185.157.161.61",
-      "port": 59982,
+      "address": "***.***.*.***",
+      "port": *****,
       "score": 0
     }
 ```

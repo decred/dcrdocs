@@ -104,6 +104,7 @@ nav:
       - 'dcrctl RPC Commands': 'wallets/cli/dcrctl-rpc-commands.md'
     - 'SPV': 'wallets/spv.md'
     - 'Hardware Wallets': 'wallets/hardware-wallets.md'
+    - 'Mobile Wallets': 'wallets/mobile-wallets.md'
 - Proof-of-Stake Voting:
   - "Overview": 'proof-of-stake/overview.md'
   - "How to Stake": 'proof-of-stake/how-to-stake.md'

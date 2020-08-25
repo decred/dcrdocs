@@ -6,24 +6,46 @@
 
 The term "Contractors" covers both **corporate contractors** and **independent contractors**.
 
-* Corporate contractors are companies that do work for Decred, e.g. Company 0, Raedah Group, Ditto. Corporate contractors typically employ a number of contributors who work on Decred (but for the corporate contractor).
-* Independent contractors are people that do work for Decred. [This page](overview.md) explains how people who contribute to the project can become independent contractors.
+* Corporate contractors are companies that do work for Decred, e.g. Company 0,
+  Raedah Group, Eeter.
+  Corporate contractors typically employ a number of contributors who work on
+  Decred (but for the corporate contractor).
+* Independent contractors are people that do work for Decred.
+  [This page](overview.md) explains how people who contribute to the project can
+  become independent contractors.
 
 Contractors contribute in a wide variety of ways including software development, design, communications, community support, research and documentation.
- 
+
 Decred currently has over 50 contributors (independent contractors and employees of corporate contractors), and you can see them on [decred.org/contributors](https://decred.org/contributors/) in portraits with badges indicating whether they work for a corporate contractor.
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Billing and payments
+## <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Billing and Payments
 
 At the end of each month, each contractor prepares an invoice and submits it to the Decred Holdings Group LLC (DHG). The invoice lists the items the contractor has worked on and a charge (in USD) for each - typically these charges are for a number of hours worked at an agreed hourly rate.
 
-USD amounts are converted to DCR at the average daily market rate for the previous month. 
+USD amounts are converted to DCR at the average daily market rate for the previous month.
 
-Once all of the invoices have been received and processed, payments to all contractors are made on the same day. This typically happens in the middle of the following month, around 2-4 weeks in. The intention is to turn payments around as quickly as possible but the process takes time and relies on timely invoicing by contractors. 
+Once all of the invoices have been received and processed, payments to all contractors are made on the same day. This typically happens in the middle of the following month, around 2-4 weeks in. The intention is to turn payments around as quickly as possible but the process takes time and relies on timely invoicing by contractors.
 
 As the DCR/USD conversion rate is pegged to the previous month, contractors are exposed to any volatility in the price of DCR that occurs during this period. As contractors will be unable to liquidate their earnings until payments have been processed, they should be mindful that prices can decrease or increase in the interim, and plan their finances accordingly.
+
+### Pay Rates
+
+The hourly payment rate for a given contractor depends on which domain the
+contractor works within, eg. marketing, development, design, and also the type
+of work they are performing, eg. a developer working on critical consensus code
+will be offered more than a developer working on casual web development.
+A new contractor may start on a lower rate than some existing contractors, but
+their rate may be increased after they have delivered consistent work at an
+acceptable standard.
+
+While it is understood that the cost of living can differ drastically in
+different parts of the world, the rate offered to a contractor is not adjusted
+to take geographic location into account.
+This is because it is relatively easy for a contractor to be dishonest about
+where they reside, and very difficult for project contributors to validate
+each others locations.
 
 ---
 

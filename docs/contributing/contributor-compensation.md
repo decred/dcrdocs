@@ -43,9 +43,10 @@ acceptable standard.
 While it is understood that the cost of living can differ drastically in
 different parts of the world, the rate offered to a contractor is not adjusted
 to take geographic location into account.
-This is because it is relatively easy for a contractor to be dishonest about
-where they reside, and very difficult for project contributors to validate
-each others locations.
+Rate is determined by the quality of an individuals contributions only.
+Taking location into account would not be feasible because it is relatively easy
+for a contractor to be dishonest about where they reside, and very difficult for
+project contributors to validate each others locations.
 
 ---
 

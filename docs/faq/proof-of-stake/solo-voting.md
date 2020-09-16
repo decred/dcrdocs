@@ -25,6 +25,9 @@ Your wallet will know if your ticket is selected based on the current block, and
 it will automatically broadcast a vote to the network just like it broadcasts
 other transactions.
 
+The ticket selection algorithm is explored in further detail on the
+[Developer documentation site](https://devdocs.decred.org/developer-guides/ticket-selection).
+
 ---
 
 #### 4. Can I run multiple voting-only wallets with the same seed on multiple servers?

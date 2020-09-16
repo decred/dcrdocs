@@ -36,7 +36,15 @@ A tool for inspecting the contents of blocks in a more user-friendly format.
 
 #### Block header
 
-Metadata at the beginning of a block that defines information about the block. The hash of a block header is the main way of identifying a block.
+Metadata at the beginning of a block which contains summary information about
+the block.
+Hashing a block header yeilds a unique value which is often used as the main way
+of identifying a block.
+
+The [Block Header Specifications](https://devdocs.decred.org/developer-guides/block-header-specifications)
+page of the Developer Documentation provides a detailed look the component parts
+of a block header, and how a header is serialized for transmission across the
+Decred network.
 
 #### Block reward
 

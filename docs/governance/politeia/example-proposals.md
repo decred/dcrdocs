@@ -16,76 +16,101 @@ development of a new software feature. The second a marketing initiative.
 In the *What* section, provide a short description of the problem that will 
 be addressed.
 
-> Add monitoring RPC call that can be used for status reporting and as a heartbeat to ensure that politeiawww is functioning properly.
+> Develop a set of JavaScript libraries to enable JavaScript developers to
+> easily add support for Decred into their applications.
 
 ### Why
 
 In the *Why* section, answer why the proposal is needed and why it is
 a good idea.
 
-> Currently there is no prescribed way to remotely determine if politeiawww is functioning correctly. This is problematic because if there is a problem with politeiawww, the Politeia website could experience outages and Decred admins would not be aware of it until users were negatively impacted. We propose to add a single RPC that doubles as the heartbeat and a status monitor.
-> The idea is that monitoring software can periodically issue the RPC and determine if an alert needs to be sent out to the admins.
+> According to stats collected by GitHub.com, JavaScript has been the most
+> popular programming language for the last 6 years in a row.
+> The number of developers and companies building with JavaScript is enormous,
+> and providing a toolkit for them to easily integrate with the Decred
+> blockchain will expose the project to a massive pool of talent and innovation.
 
 ### How
 
 In the *How* section, describe the steps you will perform to accomplish your
 goals.
 
-> 1. Design and document RPC.
-> 2. Add a privileged RPC called Status that replies with StatusReply.
->     * The Status RPC is an empty structure
->     * The StatusReply structure returns a tri-state status: OK, Warning, Critical. In addition to the status the RPC returns a server message that can be forwarded to the administrators in case of Warning or Failure.
->     * The StatusReply returns interesting statistics such as: number of proposals in memory, number of comments in memory etc.
-> 3. Add refclient unit tests that validate all 3 conditions.
-> 4. Add RPC to politeiawwwcli so that the status calls can be scripted.
-
-The software implementing the RPC will be published in the Politeia GitHub [repo](https://github.com/decred/politeia) under the [ISC license](https://github.com/decred/politeia/blob/master/LICENSE) that applies to all code in this repo. 
+> The basic framework for the JavaScript toolkit is already built and is
+> available on GitHub.
+> So far I have implemented:
+>
+> - secp256k1 elliptical curve for generation of keypairs, signature creation
+>   and verification.
+> - BIP-0044 keys and PGP mnemonic seeds.
+>
+> I will be continuing to develop this project and plan to add:
+>
+> - Clients for the dcrdata block explorer.
+> - Serializable and de-serializable JavaScript versions of important types from
+>   the dcrd/wire package.
+> - Network parameters for mainnet, testnet3, and simnet.
+> - A light wallet which will include sending and receiving DCR, staking, SPV
+>   and LN.
+> - DEX integration
+>
+> All of this code is open source, published under the
+> [ISC license](https://github.com/decred/politeia/blob/master/LICENSE).
+>
+> In the case that this proposal is approved, the ownership of the existing
+> GitHub repository will be transferred to the Decred organization.
 
 ### Who
 
 In the *Who* section, describe the entity making the proposal, who will
 complete the work, and who will draw down on the proposal's budget.
 
-> This proposal is submitted by @allstake (on Matrix, /u/Satoshi2000 on reddit). You may remember me from a discussion in #dcrdata, where I solicited feedback on this idea (Matrix link).
-> I have been active in the blockchain space for two years, with a particular interest and passion for blockchain governance.
-> See my GitHub (github.com/satoshi200) for examples of my work, including an event-driven lambo address creation module.
+> This proposal is submitted by @allstake (on Matrix, /u/Satoshi2000 on reddit).
+> You may remember me from a discussion in #proposals, where I solicited feedback
+> on this idea (Matrix link).
+> I have been active in the blockchain space for two years, with a particular
+> interest and passion for blockchain governance.
+> See my GitHub (github.com/satoshi200) for examples of my work, including an
+> event-driven lambo address creation module.
 
 ### When
 
 In the *When* section, describe the project's milestones, expected 
 completion dates, and the draw schedule (how much is paid for each milestone delivered).
 
-> We are proposing doing the design and documentation first, then finish the work with the implementation of the code.
-> We allow for some time between the deliverables in order for the community to provide feedback on the initial design and 
-> documentation.
+> - **secp256k1 curve, BIP-0044, mnemonic seeds** (40 hours of work already completed - **$1,500**)
+> - **Block explorer clients** (6 hours of work - **$180**)
+> - **dcrd/wire types** (10 hours of work - **$300**)
+> - **Network parameters** (3 hours of work - **$90**)
+> - **Wallet send/receive** (45 hours of work - **$1,350**)
+> - **Wallet staking** (40 hours of work - **$1,200**)
+> - **Wallet SPV** (100 hours of work - **$3,000**)
+> - **Wallet LN** (120 hours of work - **$3,600**)
+> - **DEX integration** (120 hours of work - **$3,600**)
 >
-> 1. 2 hours to design and add documentation on how to use the call with some
-> examples.
-> 1. 8 hours to add the call, determine what status to set when and figure out what statistics return.
-> 1. 4 hours to add refclient validation tests.
-> 1. 2 hours to add RPC to politeiawwwcli
+> This will bring the grand total to 484 hours at a rate of 30 USD/hr.
+> This proposal will therefore be capped **$14,520**.
 >
-> In addition allow for 1 hour of overhead (going back and forth on Matrix/GitHub etc). This will bring the grand total to 17 hours at a rate of $40/hr.
-> This proposal will therefore be capped $680.
-> The proposed schedule is to do this work over 2 weeks in order to allow back and forth on the details.
+> The proposed schedule is to do this work over 16 weeks, breaking this period
+> into three milestones.
 >
-> Week 1 deliverables
+> **Milestone 1**
 >
-> 1. Design RPC
-> 1. Write documentation that includes examples
+> Block explorer clients, wire types, parameters, wallet send/receive and
+> staking.
 >
-> 2 hours, to be completed on August 15 2018
+> 104 hours, to be completed by week 4.
 >
-> Week 2 deliverables
+> **Milestone 2**
 >
-> 1. Implement RPC
-> 1. Implement validation tests
-> 1. Implement politeiawwwcli
+> Wallet SPV and LN.
 >
-> 15 hours, to be completed on August 29 2018
+> 220 hours, to be completed by week 11.
 >
-> An invoice for all work will be submitted upon completion of all deliverables in an estimated two weeks time. 
-
+> **Milestone 3**
+>
+> DEX integration.
+>
+> 120 hours, to be completed by week 14.
 
 ## Marketing Proposal
 

@@ -14,15 +14,7 @@ This guide is intended to help you setup the `dcrwallet` application using [star
 
 In order to run `dcrwallet`, a `wallet.db` must exist within `dcrwallet`'s home directory. In order for that file to exist, you must create a new wallet. `dcrinstall` automatically starts the creation process. If you delete your wallet.db or used another installation process, you'll have to run the [manual wallet creation command](#manual-wallet-creation-command).
 
-!!! danger "Critical Information"
-
-    {{ seedWarning1 }}
-
-    {{ seedWarning2 }}
-
-    {{ seedWarning3 }}
-
-    {{ seedWarning4 }}
+--8<-- "seed-warning.md"
 
 ---
 

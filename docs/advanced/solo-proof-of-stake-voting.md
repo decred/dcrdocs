@@ -62,15 +62,7 @@ Once your machine is set up you will need to install the Decred CLI tools.
 
     `echo "PATH=~/decred:$PATH" >> ~/.profile && source ~/.profile`
 
-!!! danger "Critical Information"
-
-    {{ seedWarning1 }}
-
-    {{ seedWarning2 }}
-
-    {{ seedWarning3 }}
-
-    {{ seedWarning4 }}
+--8<-- "seed-warning.md"
 
 ---
 

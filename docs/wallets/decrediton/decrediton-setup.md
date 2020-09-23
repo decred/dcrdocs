@@ -117,15 +117,7 @@ You can begin to set up your wallet before the download completes. You have two 
 
 As Decrediton allows you to manage multiple wallets on one PC, you must give a name to your wallet so it can be identified. Enter a name and press the **Continue** button.
 
-!!! danger "Critical Information"
-
-    {{ seedWarning1 }}
-
-    {{ seedWarning2 }}
-
-    {{ seedWarning3 }}
-
-    {{ seedWarning4 }}
+--8<-- "seed-warning.md"
 
 The 33 word seed for your new wallet is displayed on the screen (obscured in the below image). Record the seed and store it somewhere safe.
 

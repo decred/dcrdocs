@@ -77,18 +77,20 @@ complete the work, and who will draw down on the proposal's budget.
 In the *When* section, describe the project's milestones, expected 
 completion dates, and the draw schedule (how much is paid for each milestone delivered).
 
-> - **secp256k1 curve, BIP-0044, mnemonic seeds** (40 hours of work already completed - **$1,500**)
-> - **Block explorer clients** (6 hours of work - **$180**)
-> - **dcrd/wire types** (10 hours of work - **$300**)
-> - **Network parameters** (3 hours of work - **$90**)
-> - **Wallet send/receive** (45 hours of work - **$1,350**)
-> - **Wallet staking** (40 hours of work - **$1,200**)
-> - **Wallet SPV** (100 hours of work - **$3,000**)
-> - **Wallet LN** (120 hours of work - **$3,600**)
-> - **DEX integration** (120 hours of work - **$3,600**)
+> | Feature | Estimate | Cost |
+> |---------|----------|-----:|
+> | secp256k1 curve, BIP-0044, mnemonic seeds | 40 hours of work<br/>_(already complete)_ | $1,600 |
+> | Block explorer clients                    | 6 hours of work                           | $240   |
+> | dcrd/wire types                           | 10 hours of work                          | $400   |
+> | Network parameters                        | 3 hours of work                           | $120   |
+> | Wallet send/receive                       | 45 hours of work                          | $1,800 |
+> | Wallet staking                            | 40 hours of work                          | $1,600 |
+> | Wallet SPV                                | 100 hours of work                         | $4,000 |
+> | Wallet LN                                 | 120 hours of work                         | $4,800 |
+> | DEX integration                           | 120 hours of work                         | $4,800 |
 >
-> This will bring the grand total to 484 hours at a rate of 30 USD/hr.
-> This proposal will therefore be capped **$14,520**.
+> This will bring the grand total to 484 hours at a rate of 40 USD/hr.
+> This proposal will therefore be capped **$19,360**.
 >
 > The proposed schedule is to do this work over 16 weeks, breaking this period
 > into three milestones.
@@ -110,7 +112,7 @@ completion dates, and the draw schedule (how much is paid for each milestone del
 >
 > DEX integration.
 >
-> 120 hours, to be completed by week 14.
+> 120 hours, to be completed by week 16.
 
 ## Marketing Proposal
 

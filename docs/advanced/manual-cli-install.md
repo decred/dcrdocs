@@ -6,7 +6,7 @@ Last updated for CLI release v{{ cliversion }}.
 
 The newest binary releases can be found [here](https://github.com/decred/decred-binaries/releases). With the exception of the `.exe` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be extract and go, instructions are provided for Windows, macOS, and Linux below.
 
-??? info "Windows instructions (click to expand)"
+=== "Windows"
 
     1. Download the correct file for your computer:
 
@@ -19,9 +19,9 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
     1. Navigate to download location and extract the `.zip` file:
 
-        Right click on the `.zip` file, select "Extract All..." and a prompt should open asking for the directory to use. The default will extract the `.zip` to a folder with the same name. It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+        Right click on the `.zip` file, select "Extract All..." and a prompt should open asking for the directory to use. The default will extract the `.zip` to a folder with the same name.
 
-??? info "macOS instructions (click to expand)"
+=== "macOS"
 
     1. Download the correct file for your computer:
 
@@ -37,13 +37,9 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
         **Terminal:** use the `tar -xvzf filename.tar.gz` command.
 
-        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-darwin-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-darwin-amd64-v{{ cliversion }}`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-darwin-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-darwin-amd64-v{{ cliversion }}`).
 
-    !!! note
-
-        If you are using Safari on macOS Sierra and have the 'Open "safe" files after downloading' preference enabled, `.gz` and `.zip` files are automatically extracted after download. The `tar -xvzf filename.tar.gz` command results in this error: `tar: Error opening archive: Failed to open 'filename.tar.gz'`. Use `tar -xvzf filename.tar` instead (remove the `.gz` from the previous command).
-
-??? info "Linux instructions (click to expand)"
+=== "Linux"
 
     1. Download the correct file for your computer:
 
@@ -62,7 +58,7 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
         **Terminal:** use the `tar -xvzf filename.tar.gz` command.
 
-        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-linux-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-linux-amd64-v{{ cliversion }}`). It should include `dcrctl`, `dcrd`, `dcrwallet`, `sample-dcrctl.conf`, `sample-dcrd.conf`, and `sample-dcrwallet.conf`.
+        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-linux-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-linux-amd64-v{{ cliversion }}`).
 
 ---
 

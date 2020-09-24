@@ -10,7 +10,7 @@ Last updated for CLI release v{{ cliversion }}.
 
 `dcrinstall` will automatically download the precompiled, signed binary package found on GitHub, verify the signature of this package, copy the binaries within the package to a specific folder dependent on OS, create configuration files with settings to allow the 3 applications to communicate with each other, and run you through the wallet creation process. After running through `dcrinstall`, you will be able to launch the software with no additional configuration.
 
-??? info "macOS instructions (click to expand)"
+=== "macOS"
 
     1. Download the `dcrinstall-darwin-amd64-v{{ cliversion }}` file. (32 bit builds for macOS are not available):
 
@@ -28,7 +28,7 @@ Last updated for CLI release v{{ cliversion }}.
 
     1. The executable binaries for `dcrd`, `dcrwallet`, and `dcrctl` can now be found in the `~/decred/` directory. Before the `dcrinstall` process completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](../../wallets/cli/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 
-??? info "Linux instructions (click to expand)"
+=== "Linux"
 
     1. Download the correct file:
 
@@ -54,7 +54,7 @@ Last updated for CLI release v{{ cliversion }}.
 
     1. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can now be found in the `~/decred/` directory. Before the `dcrinstall` process completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](../../wallets/cli/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.
 
-??? info "Windows instructions (click to expand)"
+=== "Windows"
 
     1. Download the correct file:
 

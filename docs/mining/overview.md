@@ -2,7 +2,7 @@
 
 ---
 
-## Overview  
+## DCR PoW Overview  
 
 Proof-of-work mining, more commonly referred to as PoW mining, is the activity
 of committing your computer’s hardware and resources to process network
@@ -25,6 +25,7 @@ transactions waiting to be processed in the mempool.
 
 Decred uses the [BLAKE-256](../research/blake-256-hash-function.md) hashing function. PoW mining can be done using GPUs. However, ASICs that mine DCR are now available, and since their introduction the PoW difficulty has become high enough to make GPU
 mining unlikely to be profitable.
+
 ## Purchasing specialized hardware (ASIC)
 
 ASIC are the machines used to mine the most popular cryptocurrencies and can only be used for mining a single algorithm. 
@@ -77,14 +78,14 @@ The following Decred ASIC miners are available on the market today:
 
 You can either buy direct from the manufacturers on their official website:
 
-*   Whatsminer: [https://www.whatsminer.com/?locale=en](https://www.whatsminer.com/?locale=en)
-*   Bitmain: [https://www.bitmain.com](https://www.bitmain.com/)
-*   StrongU: [https://strongu.com.cn/?lang=en-us](https://strongu.com.cn/?lang=en-us)
+*   [Whatsminer](https://www.whatsminer.com/?locale=en)
+*   [Bitmain](https://www.bitmain.com/)
+*   [StrongU](https://strongu.com.cn/?lang=en-us)
 
 Or you can also go through ASIC resellers such as:
 
-*   Blockware Mining: [https://www.blockwaresolutions.com](https://www.blockwaresolutions.com/)
-*   Kaboom Racks: [http://kaboomracks.com](http://kaboomracks.com)
+*   [Blockware Mining](https://www.blockwaresolutions.com/)
+*   [Kaboom Racks](http://kaboomracks.com)
 
 ## Hosting Your ASIC
 
@@ -110,7 +111,7 @@ To get started, use a scanning tool like [AngryIP](https://angryip.org/) or [Loc
 Enter the local network IP address of your miner in the URL bar of any web browser. A dashboard similar to the one shown below will pop up. We are setting up a Whatsminer D1, but the process is similar for other ASICs.
 
 
-![alt_text](images/image1.png "image_tooltip")
+![Rig Configuration Detail](../img/pow-mining-guide/rig_config.png?raw=true)
 
 ---
 
@@ -118,10 +119,7 @@ Enter the local network IP address of your miner in the URL bar of any web brows
 
 ##### <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo Mining
 
-:fontawesome-solid-exclamation-triangle: **Solo mining is not recommended and is not covered by this documentation!** The Decred network regularly sees a network hash rate of up to 10,000Gh/s. Solo mining is generally only done by advanced individuals or organized groups with a large cluster of GPUs so it is not addressed here.
-#### Solo Mining
-
-Solo mining is not recommended and is not covered by this documentation! The Decred network regularly sees a network hash rate of up to 422Ph/s. Solo mining is generally only done by advanced individuals or organized groups with a large cluster of GPUs so it is not addressed here.
+:fontawesome-solid-exclamation-triangle: **Solo mining is not recommended and is not covered by this documentation!** The Decred network regularly sees a network hash rate of up to 422Ph/s. Solo mining is generally only done by advanced individuals or organized groups with a large cluster of GPUs so it is not addressed here.
 
 
 #### Pool Mining
@@ -131,7 +129,7 @@ When you mine in a pool, your hashrate is combined with all the other pool miner
 
 ## Choosing and configuring a mining pool 
 
-To finish the configuration, you will need to choose a mining pool. You can consider payout method (PPS vs PPLNS), pool fee, geographic location of the pool, ping time to the server, user interface, statistics / data, customer support, community channels and more. Mining pools all work more or less the same but you may wish to sign up at multiple pools and see which one suits you the best.
+To finish the configuration, you will need to choose a mining pool. You can consider payout method ([PPS vs PPLNS](https://www.hashrateindex.com/blog/pps-fpps-pplns-pps_plus)), pool fee, geographic location of the pool, ping time to the server, user interface, statistics / data, customer support, community channels and more. Mining pools all work more or less the same but you may wish to sign up at multiple pools and see which one suits you the best.
 
 These mining pools are known to support Decred:
 
@@ -150,8 +148,6 @@ In this guide, we will set up an ASIC with [Luxor](https://mining.luxor.tech/), 
 
 Once you have created a [user account](https://mining.luxor.tech/account/signup) with the mining pool, you will have all the information you need to complete the setup process.
 
-
-
 *   URL: stratum+tcp://dcr.luxor.tech:700
 *   Worker: [LuxorUsername].WorkerName Workername can be anything, but avoid using symbols or special characters as it may be invalid.
 *   Password: 123
@@ -163,8 +159,8 @@ Once you have filled out the details, click Save & Apply. Setup is now complete.
 It will take about 5 minutes for your workers to appear on the stats page. To find your user, simply go to Luxor, login to your account and navigate to the Workers tab. You should see something like this:
 
 
-Monitoring mining results with Luxor pool
-
+![Monitoring mining results with Luxor pool](../img/pow-mining-guide/monitoring-dashboard.png?raw=true)
 
 ## Obtain a Decred Address to Receive Funds 
-.+Follow the dcrctl Basics guide and create an address so you can withdraw mining rewards to it.
+
+Follow the  [Decrediton Setup Guide](../wallets/decrediton/decrediton-setup.md) to create an address so you can withdraw mining rewards to it.

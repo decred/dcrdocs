@@ -16,7 +16,9 @@ in the [proposal template](#proposal-template), your proposal should provide the
 information (if applicable).
 
 * **Total budget:** If your proposal draws down on its budget when milestones are achieved,
-include a draw schedule (how much is paid for each milestone achieved). To account for variance in the price of DCR, amounts should be specified in USD. The amount of DCR distributed will then be adjusted at payout according to the exchange rate.
+include a draw schedule (how much is paid for each milestone achieved).
+To account for variance in the price of DCR, amounts must be specified in USD.
+The amount of DCR distributed will then be adjusted at payout according to the exchange rate.
 * **Duration of contract:** If your proposal provides an ongoing service, your proposal must
 provide an end date.
 * **Restrictions on deliverables:** Specify any license or other restrictions on
@@ -102,3 +104,12 @@ build credibility within the community before submitting a proposal (a good stra
 you will find the Decred project very welcoming to contributors of all levels. Start small,
 deliver, and your chances of submitting a successful proposal will increase along with your
 credibility.
+
+---
+
+## Further Information
+
+- The [decredcommunity/guidelines](https://github.com/decredcommunity/guidelines/blob/master/proposals.md)
+  repo on GitHub has a very thorough set of guidelines and best practices for writing proposals.
+- [Writing Proposals on Politeia](https://medium.com/@decreddrive/writing-proposals-on-politeia-pi-e345621652a2) by The Decred Drive.
+- [Politeia Digest](https://blockcommons.red/politeia-digest/) provides a summary of activity on Politeia.

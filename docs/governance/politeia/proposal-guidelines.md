@@ -93,6 +93,10 @@ Be aware however that not all stakeholders will be experts in your domain. You'l
 their votes too. Take part of your proposal to explain any complex ideas in simple,
 easy-to-understand language all stakeholders can understand.
 
+In the case of a proposal covering an unfamiliar topic that has not previously
+been introduced to the community, consider running educational and Q&A campaigns
+before putting the proposal to a vote.
+
 #### Build Credibility
 
 The bigger the proposal, the more you will need to convince stakeholders you

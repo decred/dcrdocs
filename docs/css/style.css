@@ -78,13 +78,6 @@ details .md-typeset__table {
     font-size: 13px;
 }
 
-.md-typeset details summary {
-    /* This is the title of a collapsible admonition */
-    font-size: 14px;
-}
-.md-typeset .admonition-title{
-    font-size: 14px;
-}
 .md-typeset .admonition p{
     font-size: 14px;
 }

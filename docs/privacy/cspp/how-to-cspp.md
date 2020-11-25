@@ -59,7 +59,7 @@ mixed-xpub
 buyer1$ dcrctl --wallet importxpub mixed mixed-xpub
 ```
 
-The mixed ticket buying wallet may use the setup from the previous section. The old wallet must be configured sligtly differently:
+The mixed ticket buying wallet may use the setup from the previous section. The old wallet must be configured slightly differently:
 
 ```
 buyer1$ dcrwallet --csppserver=cspp.decred.org:5760 \

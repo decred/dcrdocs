@@ -125,6 +125,8 @@ nav:
   - 'Watchtowers': 'lightning-network/watchtowers.md'
   - dcrlncli:
     - 'Options and Commands': 'lightning-network/dcrlncli/options-and-commands.md'
+    - Autopilot Commands:
+      - 'autopilot': 'lightning-network/dcrlncli/autopilot.md'
     - Channel Commands:
       - 'openchannel': 'lightning-network/dcrlncli/openchannel.md'
       - 'closechannel': 'lightning-network/dcrlncli/closechannel.md'
@@ -134,14 +136,32 @@ nav:
       - 'pendingchannels': 'lightning-network/dcrlncli/pendingchannels.md'
       - 'listchannels': 'lightning-network/dcrlncli/listchannels.md'
       - 'closedchannels': 'lightning-network/dcrlncli/closedchannels.md'
-      - 'getchaninfo': 'lightning-network/dcrlncli/getchaninfo.md'
       - 'getnetworkinfo': 'lightning-network/dcrlncli/getnetworkinfo.md'
       - 'feereport': 'lightning-network/dcrlncli/feereport.md'
       - 'updatechanpolicy': 'lightning-network/dcrlncli/updatechanpolicy.md'
       - 'exportchanbackup': 'lightning-network/dcrlncli/exportchanbackup.md'
       - 'verifychanbackup': 'lightning-network/dcrlncli/verifychanbackup.md'
       - 'restorechanbackup': 'lightning-network/dcrlncli/restorechanbackup.md'
-    - On-chain commands:
+    - Graph Commands:
+      - 'describegraph': 'lightning-network/dcrlncli/describegraph.md'
+      - 'getnodemetrics': 'lightning-network/dcrlncli/getnodemetrics.md'
+      - 'getchaninfo': 'lightning-network/dcrlncli/getchaninfo.md'
+      - 'getnodeinfo': 'lightning-network/dcrlncli/getnodeinfo.md'
+    - Invoice Commands:
+      - 'addinvoice': 'lightning-network/dcrlncli/addinvoice.md'
+      - 'lookupinvoice': 'lightning-network/dcrlncli/lookupinvoice.md'
+      - 'listinvoices': 'lightning-network/dcrlncli/listinvoices.md'
+      - 'decodepayreq': 'lightning-network/dcrlncli/decodepayreq.md'
+      - 'cancelinvoice': 'lightning-network/dcrlncli/cancelinvoice.md'
+      - 'addholdinvoice': 'lightning-network/dcrlncli/addholdinvoice.md'
+      - 'settleinvoice': 'lightning-network/dcrlncli/settleinvoice.md'
+    - Macaroon Commands:
+      - 'bakemacaroon': 'lightning-network/dcrlncli/bakemacaroon.md'
+      - 'listmacaroonids': 'lightning-network/dcrlncli/listmacaroonids.md'
+      - 'deletemacaroonid': 'lightning-network/dcrlncli/deletemacaroonid.md'
+      - 'listpermissions': 'lightning-network/dcrlncli/listpermissions.md'
+      - 'printmacaroon': 'lightning-network/dcrlncli/printmacaroon.md'
+    - On-chain Commands:
       - 'estimatefee': 'lightning-network/dcrlncli/estimatefee.md'
       - 'sendmany': 'lightning-network/dcrlncli/sendmany.md'
       - 'sendcoins': 'lightning-network/dcrlncli/sendcoins.md'
@@ -151,19 +171,18 @@ nav:
       - 'sendpayment': 'lightning-network/dcrlncli/sendpayment.md'
       - 'payinvoice': 'lightning-network/dcrlncli/payinvoice.md'
       - 'sendtoroute': 'lightning-network/dcrlncli/sendtoroute.md'
-      - 'addinvoice': 'lightning-network/dcrlncli/addinvoice.md'
-      - 'lookupinvoice': 'lightning-network/dcrlncli/lookupinvoice.md'
-      - 'listinvoices': 'lightning-network/dcrlncli/listinvoices.md'
       - 'listpayments': 'lightning-network/dcrlncli/listpayments.md'
       - 'queryroutes': 'lightning-network/dcrlncli/queryroutes.md'
-      - 'decodepayreq': 'lightning-network/dcrlncli/decodepayreq.md'
       - 'fwdinghistory': 'lightning-network/dcrlncli/fwdinghistory.md'
+      - 'trackpayment': 'lightning-network/dcrlncli/trackpayment.md'
+      - 'querymc': 'lightning-network/dcrlncli/querymc.md'
+      - 'queryprob': 'lightning-network/dcrlncli/queryprob.md'
+      - 'resetmc': 'lightning-network/dcrlncli/resetmc.md'
+      - 'buildroute': 'lightning-network/dcrlncli/buildroute.md'
     - Peer commands:
       - 'connect': 'lightning-network/dcrlncli/connect.md'
       - 'disconnect': 'lightning-network/dcrlncli/disconnect.md'
       - 'listpeers': 'lightning-network/dcrlncli/listpeers.md'
-      - 'describegraph': 'lightning-network/dcrlncli/describegraph.md'
-      - 'getnodeinfo': 'lightning-network/dcrlncli/getnodeinfo.md'
     - Startup commands:
       - 'create': 'lightning-network/dcrlncli/create.md'
       - 'unlock': 'lightning-network/dcrlncli/unlock.md'
@@ -173,7 +192,9 @@ nav:
       - 'walletbalance': 'lightning-network/dcrlncli/walletbalance.md'
       - 'signmessage': 'lightning-network/dcrlncli/signmessage.md'
       - 'verifymessage': 'lightning-network/dcrlncli/verifymessage.md'
+      - 'wallet': 'lightning-network/dcrlncli/wallet.md'
     - Watchtower commands:
+      - 'tower': 'lightning-network/dcrlncli/tower.md'
       - 'wtclient': 'lightning-network/dcrlncli/wtclient.md'
 - FAQ:
   - 'General': 'faq/general.md'

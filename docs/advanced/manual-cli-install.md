@@ -4,7 +4,7 @@ Last updated for CLI release v{{ cliversion }}.
 
 ---
 
-The newest binary releases can be found [here](https://github.com/decred/decred-binaries/releases). With the exception of the `.exe` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be extract and go, instructions are provided for Windows, macOS, and Linux below.
+The newest binary releases can be found [here](https://github.com/decred/decred-binaries/releases). With the exception of the `.exe`, `.AppImage` and `.dmg` files, they are archives of the latest executable binaries for each release. Although most of this will be extract and go, instructions are provided for Windows, macOS, and Linux below.
 
 === "Windows"
 

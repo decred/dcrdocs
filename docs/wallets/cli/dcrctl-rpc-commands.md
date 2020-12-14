@@ -2,7 +2,7 @@
 
 Last updated for CLI release v{{ cliversion }}.
 
-The dcrd and dcrwallet daemons have APIs that can be used to access lower-level functionality not available in their respective [Command-line Interfaces (CLIs)](dcrd-and-dcrwallet-cli-arguments.md). These APIs are called using Remote Procedure Calls (RPCs). RPCs also allow for integrations with clients written in any language that supports RPCs. 
+The dcrd and dcrwallet daemons have APIs that can be used to access lower-level functionality not available in their respective [Command-line Interfaces (CLIs)](dcrd-and-dcrwallet-cli-arguments.md). These APIs are called using Remote Procedure Calls (RPCs). RPCs also allow for integrations with clients written in any language that supports RPCs.
 
 Below are some common RPC commands for dcrd and dcrwallet. For a full list of supported RPC commands and more detailed documentation, see the [dcrd RPC API](https://github.com/decred/dcrd/blob/master/docs/json_rpc_api.mediawiki) and [dcrwallet RPC Documentation](https://github.com/decred/dcrwallet/tree/master/rpc/documentation).
 
@@ -14,8 +14,8 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     RPC Method                |Params
     --------------------------|-------------
     `addnode`                 | `"addr"` `"add|remove|onetry"`
-    `createrawssrtx`          | `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]` (`fee`)
-    `createrawsstx`           | `[{"txid":"value","vout":n,"tree":n,"amt":n},...] amount [{"addr":"value","commitamt":n,"changeaddr":"value","changeamt":n},...]`
+    `createrawssrtx`          | `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n}]` (`fee`)
+    `createrawsstx`           | `[{"txid":"value","vout":n,"tree":n,"amt":n},...] {"address":amount} [{"addr":"value","commitamt":n,"changeaddr":"value","changeamt":n},...]`
     `createrawtransaction`    | `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]` `{"address":amount,...}` (`locktime` `expiry`)
     `debuglevel`              | `"levelspec"`
     `decoderawtransaction`    | `"hextx"`
@@ -64,6 +64,8 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `getstakeversioninfo`     | (`count`)
     `getstakeversions`        | `"hash"` `count`
     `getticketpoolvalue`      |
+    `gettreasurybalance`      | (`"hash"` `verbose=false`)
+    `gettreasuryspendvotes`   | (`"block"` `["tspend",...]`)
     `gettxout`                | `"txid"` `vout` (`includemempool=true`)
     `gettxoutsetinfo`         |
     `getvoteinfo`             | `version`
@@ -73,8 +75,7 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `missedtickets`           |
     `node`                    | `"connect|remove|disconnect"` `"target"` (`"perm|temp"`)
     `ping`                    |
-    `rebroadcastmissed`       |
-    `rebroadcastwinners`      |
+    `regentemplate`           |
     `searchrawtransactions`   | `"address"` (`verbose=1` `skip=0` `count=100` `vinextra=0` `reverse=false` `["filteraddr",...]`)
     `sendrawtransaction`      | `"hextx"` (`allowhighfees=false`)
     `setgenerate`             | `generate` (`genproclimit=-1`)
@@ -100,13 +101,15 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `accountaddressindex`     | `"account"` `branch`
     `accountsyncaddressindex` | `"account"` `branch` `index`
     `addmultisigaddress`      | `nrequired` `["key",...]` (`"account"`)
-    `addticket`               | `"tickethex"`
-    `authenticate`            | `"username"` `"passphrase"`
+    `addtransaction`          | `"blockhash"` `"transaction"`
+    `auditreuse`              | (`since`)
     `consolidate`             | `inputs` (`"account"` `"address"`)
     `createmultisig`          | `nrequired` `["key",...]`
     `createnewaccount`        | `"account"`
+    `createrawtransaction`    | `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]` `{"address":amount,...}` (`locktime` `expiry`)
+    `createsignature`         | `"address"` `inputindex` `hashtype` `"previouspkscript"` `"serializedtransaction"`
     `createvotingaccount`     | `"name"` `"pubkey"` (`childindex=0`)
-    `dropvotingaccount`       |
+    `discoverusage`           | (`"startblock"` `discoveraccounts` `gaplimit`)
     `dumpprivkey`             | `"address"`
     `fundrawtransaction`      | `"hexstring"` `"fundaccount"` (`{"changeaddress":changeaddress,"feerate":feerate,"conftarget":conftarget}`)
     `generatevote`            | `"blockhash"` `height` `"tickethash"` `votebits` `"votebitsext"`
@@ -118,64 +121,73 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `getbestblockhash`        |
     `getblockcount`           |
     `getblockhash`            | `index`
-    `getcontracthash`         | `["filepath",...]`
+    `getcoinjoinsbyacct`      |
     `getinfo`                 |
     `getmasterpubkey`         | (`"account"`)
     `getmultisigoutinfo`      | `"hash"` `index`
     `getnewaddress`           | (`"account"` `"gappolicy"`)
-    `getpaytocontractaddress` | `["filepath",...]`
+    `getpeerinfo`             |
     `getrawchangeaddress`     | (`"account"`)
     `getreceivedbyaccount`    | `"account"` (`minconf=1`)
     `getreceivedbyaddress`    | `"address"` (`minconf=1`)
     `getstakeinfo`            |
-    `getticketfee`            |
     `gettickets`              | `includeimmature`
     `gettransaction`          | `"txid"` (`includewatchonly=false`)
-    `getvotechoices`          |
+    `getunconfirmedbalance`   | (`"account"`)
+    `getvotechoices`          | `("tickethash")`
     `getwalletfee`            |
+    `importcfiltersv2`        | `startheight` `["filter",...]`
     `importprivkey`           | `"privkey"` (`"label"` `rescan=true` `scanfrom`)
     `importscript`            | `"hex"` (`rescan=true` `scanfrom`)
     `importxpub`              | `"name"` `"xpub"`
     `listaccounts`            | (`minconf=1`)
     `listaddresstransactions` | `["address",...]` (`"account"`)
     `listalltransactions`     | (`"account"`)
-    `listlockunspent`         |
+    `listlockunspent`         | (`"account"`)
     `listreceivedbyaccount`   | (`minconf=1` `includeempty=false` `includewatchonly=false`)
     `listreceivedbyaddress`   | (`minconf=1` `includeempty=false` `includewatchonly=false`)
-    `listscripts`             |
     `listsinceblock`          | (`"blockhash"` `targetconfirmations=1` `includewatchonly=false`)
-    `listtickets`             |
     `listtransactions`        | (`"account"` `count=10` `from=0` `includewatchonly=false`)
-    `listunspent`             | (`minconf=1` `maxconf=9999999` `["address",...]`)
+    `listunspent`             | (`minconf=1` `maxconf=9999999` `["address",...]` `"account"`)
+    `lockaccount`             | `"account"`
     `lockunspent`             | `unlock` `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]`
     `mixaccount`              |
     `mixoutput`               | `"outpoint"`
-    `purchaseticket`          | `"fromaccount"` `spendlimit` (`minconf=1` `"ticketaddress"` `numtickets` `"pooladdress"` `poolfees` `expiry` `"comment"` `ticketfee`)
+    `purchaseticket`          | `"fromaccount"` `spendlimit` (`minconf=1` `"ticketaddress"` `numtickets=1` `"pooladdress"` `poolfees` `expiry` `"comment"` `dontsigntx`)
     `redeemmultisigout`       | `"hash"` `index` `tree` (`"address"`)
     `redeemmultisigouts`      | `"fromscraddress"` (`"toaddress"` `number`)
     `renameaccount`           | `"oldaccount"` `"newaccount"`
     `rescanwallet`            | (`beginheight=0`)
     `revoketickets`           |
     `sendfrom`                | `"fromaccount"` `"toaddress"` `amount` (`minconf=1` `"comment"` `"commentto"`)
+    `sendfromtreasury`        | `"key"` `amounts`
     `sendmany`                | `"fromaccount"` `{"address":amount,...}` (`minconf=1` `"comment"`)
+    `sendrawtransaction`      | `"hextx"` (`allowhighfees=false`)
     `sendtoaddress`           | `"address"` `amount` (`"comment"` `"commentto"`)
     `sendtomultisig`          | `"fromaccount"` `amount` `["pubkey",...]` (`nrequired=1` `minconf=1` `"comment"`)
-    `setticketfee`            | `fee`
+    `sendtotreasury`          | `amount`
+    `setaccountpassphrase`    | `"account"` `"passphrase"`
+    `settreasurypolicy`       | `"key"` `"policy"`
+    `settspendpolicy`         | `"hash"` `"policy"`
     `settxfee`                | `amount`
-    `setvotechoice`           | `"agendaid"` `"choiceid"`
+    `setvotechoice`           | `"agendaid"` `"choiceid"` (`"tickethash"`)
     `signmessage`             | `"address"` `"message"`
     `signrawtransaction`      | `"rawtx"` (`[{"txid":"value", "vout":n, "tree":n, "scriptpubkey":"value", "redeemscript":"value"},...]` `["privkey",...]` `flags="ALL"`)
     `signrawtransactions`     | `["rawtx",...]` (`send=true`)
     `stakepooluserinfo`       | `"user"`
     `sweepaccount`            | `"sourceaccount"` `"destinationaddress"` (`requiredconfirmations` `feeperkb`)
+    `ticketinfo`              | (`startheight=0`)
     `ticketsforaddress`       | `"address"`
+    `treasurypolicy`          | (`"key"`)
+    `tspendpolicy`            | (`"hash"`)
+    `unlockaccount`           | `"account"` `"passphrase"`
     `validateaddress`         | `"address"`
+    `validatepredcp0005cf`    |
     `verifymessage`           | `"address"` `"signature"` `"message"`
-    `verifyseed`              | `"seed"` (`account`)
     `version`                 |
     `walletinfo`              |
     `walletislocked`          |
     `walletlock`              |
-    `walletlock`              |
     `walletpassphrase`        | `"passphrase"` `timeout`
     `walletpassphrasechange`  | `"oldpassphrase"` `"newpassphrase"`
+    `walletpubpassphrasechange` | `"oldpassphrase"` `"newpassphrase"`

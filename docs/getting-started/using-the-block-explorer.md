@@ -7,7 +7,8 @@
 All blocks and transactions on the Decred blockchain
 are visible through the use of the block explorer, [dcrdata](https://github.com/decred/dcrdata).
 
-* Networks
+Public instances of dcrdata are available for the following networks:
+
 - [mainnet](https://dcrdata.decred.org)
 - [testnet](https://testnet.decred.org)
 

@@ -85,7 +85,7 @@ A large progress bar on this screen shows the progress of the blockchain downloa
 
     This means you can download the blockchain in multiple sessions if required.
 
-You can begin to set up your wallet before the download completes. You have two options:
+When the download has completed you can set up your wallet. You have two options:
 
 1. [Create a New Wallet](#create-a-new-wallet) - Press this button if this is your first time using Decred.
 
@@ -130,5 +130,3 @@ Press **Create Wallet** and your wallet setup is complete. You will be taken bac
 1. Select **Create Wallet**. Wait for the blockchain to be downloaded.
 
 1. The blockchain will now be scanned for any transactions belonging to this wallet.
-
-1. If you need to reconnect to your Voting Service Provider (VSP), you'll need to re-import your VSP API key, as described in the Tickets section on the [Using Decrediton](using-decrediton.md) page. 

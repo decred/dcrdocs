@@ -16,15 +16,15 @@ The main menu of Decrediton is displayed on the left side of the window, and it 
 
 The overview tab gives a quick summary of your total DCR (available and locked in tickets) and a list of recent transactions.
 
-Graphs of your balance, ticket and transaction over the last two weeks can be viewed here.
+Graphs of your balance, ticket activity and transaction history over the last two weeks can be viewed here.
 
 ![Overview Tab](/img/decrediton/overview.png)
 
 ---
 
-## Transactions
+## On-chain Transactions
 
-The transactions tab is split into four sections:
+The on-chain transactions tab is split into four sections:
 
 ### Send
 
@@ -40,7 +40,6 @@ Once you have entered the details of your transaction, the estimated fee and tra
 
 This is where you can generate wallet addresses to give to other people so they can
 send you DCR. The address is displayed in the blue text box - it's the line that starts with Ds, or Ts on testnet. Simply choose the account you want funds to go to and select the **Generate New Address** button.
-You can select the clipboard icon to copy the address and share it with the person sending you DCR.
 Decred addresses can be used as many times as you want, but for privacy reasons it's best to generate a new one for each transaction. There's around 1.4E48 (that's 14 followed by 47 zeroes) addresses available so you don't need to worry about running out.
 
 ![Receive Tab](/img/decrediton/receive.png)
@@ -57,6 +56,8 @@ This tab shows a list of all transactions that have occurred involving this wall
 This tab shows allows you to export your transaction history in a .csv format. You can choose the data you wish to export, select a location to output the generated file, and then press the **Export** button.
 
 ![Export Tab](/img/decrediton/export-transactions.png)
+
+<!-- TODO add Lightning Transactions here -->
 
 ---
 
@@ -83,17 +84,11 @@ voting preferences if you change your mind about an agenda.
 
 ---
 
-## Tickets
+## Staking
 
-The tickets tab is split into four sections:
+The staking tab is split into four sections:
 
-### Purchase
-
-Before you can purchase tickets you must first import the API key from your [VSP account](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
-
-![Tickets Tab](/img/decrediton/tickets.png)
-
-Once you have done this, the "Purchase Tickets" tab becomes active.
+### Purchase Tickets
 
 ![Purchase Tickets page](/img/decrediton/purchase-tickets.png)
 
@@ -103,35 +98,25 @@ The total number of tickets you currently own is at the top of the page:
 - **Immature Tickets** - Mined tickets which cannot vote until a 256 block maturing period has passed (around 20 hours)
 - **Live Tickets** - Mature tickets eligible to be called to vote
 
-#### Backup redeem script
-
-Now is a good time to back up your VSPs multi-sig voting script (or "redeem script"). 
-
---8<-- "script-warning.md"
-
-Click on the gear icon next to your VSP. Then click on the donut icon that appears.
-
-![Purchase Tickets page](/img/decrediton/redeem-script.png)
-
-This will bring up your VSP's configuration details. Copy the string of characters in the `Script` field and store them in a safe location. 
-
-![Purchase Tickets page](/img/decrediton/redeem-script-field.png)
-
 #### Purchasing tickets
 
-In order to purchase tickets you just need to select which account to purchase tickets from, how many tickets you want to buy, and then press the **Purchase** button.
+In order to purchase tickets you just need to select which account to purchase tickets from, how many tickets you want to buy, select a VSP to use, and then press the **Purchase** button.
 
 The "Automatic Ticket Buyer" panel allows you to enable the automated ticket buyer - Decrediton will continually buy tickets for you for as long as you keep it running. You can configure how the ticket buyer works using the options:
 
 ![Automatic Purchase panel](/img/decrediton/autobuyer.png)
 
-- **From** - Funds to purchase tickets will come from this account
 - **VSP** - Which VSP to purchase tickets with
+- **From** - Funds to purchase tickets will come from this account
 - **Balance to maintain** - If your balance is lower than this number, you will not buy tickets. The default of 0 will use all the funds in your account to buy tickets
 
-### My Tickets
+### Tickets Status
 
-This tab shows a summary of all of the tickets your wallet has ever purchased. Filters and sorting options are available to make browsing the list easier.
+This tab shows a summary of all of your immature and live tickets. Filters and sorting options are available to make browsing the list easier.
+
+### Historic Tickets
+
+This tab shows a summary of all of your tickets which voted, expired or were missed. Filters and sorting options are available to make browsing the list easier.
 
 ### Statistics
 
@@ -141,22 +126,11 @@ This page displays various statistics about all of the available VSPs. The dropd
 
 ---
 
-## Accounts
+## Privacy and Security
 
-The accounts tab shows you the accounts in your wallet and allows you to add new ones.
-Accounts in Decred work just like bank accounts.
-They allow you to keep separate records of your DCR. This feature is most
-useful for those who run businesses and wish to keep separate accounts for
-tax records for example. Transferring DCR across accounts will create a
-transaction on the blockchain.
+<!-- TODO add Privacy here -->
 
-![Accounts Tab](/img/decrediton/accounts.png)
-
----
-
-## Security
-
-The Security tab offers two key features - the ability to sign and verify messages using your private key, and the ability to validate addresses.
+The Security Center tab offers two key features - the ability to sign and verify messages using your private key, and the ability to validate addresses.
 
 ![Security Tab](/img/decrediton/security.png)
 
@@ -176,11 +150,16 @@ A Decred address can be entered into the Validate Address text box, and Decredit
 
 ---
 
-## Help
+## Accounts
 
-The help tab contains links to get help using Decrediton and to learn more about Decred. There are also links to our various communication platforms. The Tutorials section contains introductions to the ticket lifecycle and how Decred's proof-of-stake system works. It is also possible to view logs of the `dcrd`, `dcrwallet` and `decrediton` processes in the Logs section.
+The accounts tab shows you the accounts in your wallet and allows you to add new ones.
+Accounts in Decred work just like bank accounts.
+They allow you to keep separate records of your DCR. This feature is most
+useful for those who run businesses and wish to keep separate accounts for
+tax records for example. Transferring DCR across accounts will create a
+transaction on the blockchain.
 
-![Help Tab](/img/decrediton/help.png)
+![Accounts Tab](/img/decrediton/accounts.png)
 
 ---
 

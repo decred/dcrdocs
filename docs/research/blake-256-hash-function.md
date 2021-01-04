@@ -18,13 +18,13 @@ BLAKE is built on previously analyzed, and reliable components; the hash iterati
 
 #### HAIFA iteration mode
 
-The construction of a hash output is typically done by splitting the input data referred to as a 'message', into small blocks of fixed length and processed iteratively using a cryptographic compression function. The combination of calls to a compression function for processing the input data is an iteration mode (also referred to as a Domain Extender). The Merkle–Damgård (M-D) construction is the classic iteration mode used by MD5, SHA1, RIPEMD-160, and SHA2 hash functions. M-D splits the variable length input message into equal-sized message blocks $x$ (i.e., 512 bits) of $n$ blocks, the last block is padded as required and appended with the length of the message.
+The construction of a hash output is typically done by splitting the input data referred to as a 'message', into small blocks of fixed length and processed iteratively using a cryptographic compression function. The combination of calls to a compression function for processing the input data is an iteration mode (also referred to as a Domain Extender). The Merkle–Damgård (M-D) construction is the classic iteration mode used by MD5, SHA1, RIPEMD-160, and SHA2 hash functions. M-D splits the variable length input message into equal-sized message blocks _x_{: .dcrm } (i.e., 512 bits) of _n_{: .dcrm } blocks, the last block is padded as required and appended with the length of the message.
 
 ![Merkle Damgard Construction](/img/merkle-damgard_construction.svg)
 
 **<em>Figure 1: Merkle–Damgård Construction</em>**
 
-As shown in Figure 1 above, the output of the compression function $f$ known as a chaining value $CV$ and the initial inputs are the Initialization Vector $IV$ shown as $CV_0$, with $h(x)$ being the output after all message blocks are processed. M-D maintains the collision resistance of the compression function however it lacks the pre-image and second pre-image resistance. As a result generic attacks such as the multicollision, the long message second-preimage, herding and length extension are possible on M-D based hash functions [^7] [^8] [^9] [^10] [^11].
+As shown in Figure 1 above, the output of the compression function _f_{: .dcrm } known as a chaining value _CV_{: .dcrm } and the initial inputs are the Initialization Vector _IV_{: .dcrm } shown as _CV~0~_{: .dcrm }, with _h(x)_{: .dcrm } being the output after all message blocks are processed. M-D maintains the collision resistance of the compression function however it lacks the pre-image and second pre-image resistance. As a result generic attacks such as the multicollision, the long message second-preimage, herding and length extension are possible on M-D based hash functions [^7] [^8] [^9] [^10] [^11].
 
 BLAKE uses HAIFA, which maintains the valuable properties of the M-D construction and adds to the security and scalability of the transformation. HAIFA is essentially an M-D construction but with a mandatory counter (number of bits hashed so far) and an optional salt (random data that used as an additional input).
 
@@ -40,7 +40,7 @@ This iteration mode solves many of the internal collision problems with the M-D 
 
 **<em>Figure 3: Local wide-pipe construction of BLAKE's compression function, inherited from LAKE hash function [^6]</em>**
 
-BLAKE uses the LAKE local wide-pipe structure for its strong security guarantees against collision attacks [^1] [^6] and a core function $G$ inspired by the stream cipher ChaCha for its simplicity and security [^1]. The compression function takes as input four values: a chaining value, a message block, an optional salt and a mandatory counter. In the case of BLAKE-256:
+BLAKE uses the LAKE local wide-pipe structure for its strong security guarantees against collision attacks [^1] [^6] and a core function _G_{: .dcrm } inspired by the stream cipher ChaCha for its simplicity and security [^1]. The compression function takes as input four values: a chaining value, a message block, an optional salt and a mandatory counter. In the case of BLAKE-256:
 
 |Chaining Value|Message Block|Salt|Counter
 |-------|-------|-------|------|
@@ -50,7 +50,7 @@ The structure then works in three steps:
 
 1. Initialization of a large internal state represented by 16 words in a 4x4 word matrix.
 
-1. 14 rounds of the $G$ function with each round consisting of eight round-dependent transformations.
+1. 14 rounds of the _G_{: .dcrm } function with each round consisting of eight round-dependent transformations.
 
 1. Finalization after a series of rounds, a new sequence of values taken from the matrix using sequence of initial values and salt.
 
@@ -60,29 +60,29 @@ A more detailed description can be found in the [SHA-3 proposal BLAKE](https://d
 
 The security of a cryptographic hash function is determined by the number of queries or guesses required to solve the following problems:
 
-1. Pre-image resistance (one-way): Given the $y$ as an output of the hash function, it is computationally infeasible to find message $x$ such that $h(x)$ = $y$. [^4]
+1. Pre-image resistance (one-way): Given the _y_{: .dcrm } as an output of the hash function, it is computationally infeasible to find message _x_{: .dcrm } such that _h(x) = y_{: .dcrm }. [^4]
 
     ![Preimage resistance](/img/preimage_resistance.svg)
 
     **<em>Figure 6: Pre-image resistance </em>**
 
-1. Second pre-image resistance (weak collision resistant): Given $x$, it is computationally infeasible to find a second pre-image  $x' ≠ x$ such that $h(x) = h(x')$ [^4]
+1. Second pre-image resistance (weak collision resistant): Given _x_{: .dcrm }, it is computationally infeasible to find a second pre-image  _x' ≠ x_{: .dcrm } such that _h(x) = h(x')_{: .dcrm } [^4]
 
     ![Second pre-image resistance](/img/second-preimage_resistance.svg)
 
     **<em>Figure 7: Second pre-image resistance </em>**
 
-1. Collision resistance (strong collision-resistant): It is computationally infeasible to find any two distinct inputs $x, x'$ that hash to the same output such that $h(x) = h(x')$ [^4]
+1. Collision resistance (strong collision-resistant): It is computationally infeasible to find any two distinct inputs _x, x'_{: .dcrm } that hash to the same output such that _h(x) = h(x')_{: .dcrm } [^4]
 
     ![Collision resistance](/img/collision_resistance.svg)
 
     **<em>Figure 8: Collision resistance </em>**
 
-1. Length-extension resistance: Based on the hash of an unknown message $h(x)$ and the length of the message $len(x)$ it is not possible to choose a message $x'$ to calculate $h(x')$ such that $h(x') = h(x)$.
+1. Length-extension resistance: Based on the hash of an unknown message _h(x)_{: .dcrm } and the length of the message _len(x)_{: .dcrm } it is not possible to choose a message _x'_{: .dcrm } to calculate _h(x')_{: .dcrm } such that _h(x') = h(x)_{: .dcrm }.
 
     ![length extension](/img/length-extension.svg)
 
-    **<em> Figure 9: Length extension attack: Since $x$ and $x'$ share the same first $n$ blocks, the hash value $h(x)$ is the intermediate hash value after first $n$ blocks when computing $h(x')$ </em> [^17]**
+    **<em>Figure 9: Length extension attack: Since _x_{: .dcrm } and _x'_{: .dcrm } share the same first _n_{: .dcrm } blocks, the hash value _h(x)_{: .dcrm } is the intermediate hash value after first _n_{: .dcrm } blocks when computing _h(x')_{: .dcrm }</em> [^17]**
 
 In the first three properties, the phrase _computationally infeasible_ means it would take the fastest computer a long time to solve the problem, e.g., billions of years, making it impossible in practice. Also, the fourth property, resistance to Length-extension attacks, is an additional requirement outlined in NIST's evaluation criteria for its SHA-3 candidates hash function [^15].
 
@@ -108,7 +108,7 @@ BLAKE was subject to a great deal of depth during cryptanalysis, more so than ot
 
 **<em>Table 3: Minimum Security Requirements for a Hash Function and proven security of BLAKE-256 in Bits</em >** [^15] [^16]
 
-Analysis of BLAKE's Domain extender proved that BLAKE-256 is secure against preimage, second-preimage, and collision attack up to $2^{256}$, $2^{256}$, and $2^{128}$ queries, respectively and is indifferentiable from a random oracle up to $2^{128}$ queries. Additionally, the counter in BLAKE protects against length extension attacks, as it assures consecutive compressions are different.
+Analysis of BLAKE's Domain extender proved that BLAKE-256 is secure against preimage, second-preimage, and collision attack up to 2^256^, 2^256^, and 2^128^ queries, respectively and is indifferentiable from a random oracle up to 2^128^ queries. Additionally, the counter in BLAKE protects against length extension attacks, as it assures consecutive compressions are different.
 
 ### Software Performance
 

@@ -41,15 +41,15 @@ An extra byte is added to act as a checksum, giving a total of 33 bytes.
 These 33 bytes are then mapped to a [set of English
 words](https://en.wikipedia.org/wiki/PGP_word_list) to yield a 33 word seed.
 
-Since each of the 32 bytes has 256 possible values, there are 256^32 possible
+Since each of the 32 bytes has 256 possible values, there are 256^32^ possible
 seeds.
-In scientific notation that is more than 1.15*10^77.
+In scientific notation that is more than 1.15*10^77^.
 Attempting to brute force a specific seed given this many possibilities is
 computationally infeasible.
 
 To put this in perspective, assuming there are 7 billion people on the planet,
 with each person owning 10 computers, and each computer testing a billion
-possibilities a second, it would still take approximately 26x10^48 (that’s 26
+possibilities a second, it would still take approximately 26x10^48^ (that’s 26
 trillion trillion trillion trillion) years to brute-force a single seed.
 
 ---

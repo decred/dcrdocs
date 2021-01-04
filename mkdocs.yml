@@ -47,11 +47,14 @@ markdown_extensions:
   - markdown.extensions.toc:
       permalink: True
   - markdown.extensions.tables
+  - markdown.extensions.attr_list
   - pymdownx.snippets:
       check_paths: True
       base_path: 'snippets'
   - pymdownx.details
   - pymdownx.arithmatex
+  - pymdownx.tilde
+  - pymdownx.caret
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg

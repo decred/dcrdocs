@@ -166,7 +166,7 @@ A double-spend is an attack where the given set of coins are spent in more than 
 #### Elliptic Curve
 
 In mathematics, an elliptic curve is a plane algebraic curve defined by an
-equation of the form $y^2=x^3+ax+b$.
+equation of the form _y^2^ = x^3^ + ax + b_{: .dcrm }.
 Elliptic curves have a number of interesting properties which make them useful
 for cryptographic purposes.
 

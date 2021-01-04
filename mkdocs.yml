@@ -52,7 +52,6 @@ markdown_extensions:
       check_paths: True
       base_path: 'snippets'
   - pymdownx.details
-  - pymdownx.arithmatex
   - pymdownx.tilde
   - pymdownx.caret
   - pymdownx.emoji:
@@ -60,8 +59,6 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tabbed
   - pymdownx.superfences
-extra_javascript:
-  - js/MathJax-2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 extra_css:
   - css/fonts.css
   - css/style.css

@@ -35,7 +35,9 @@ As part of becoming a paid contractor, you will agree on an hourly rate at which
 
 The [Contributor Compensation](contributor-compensation.md) page has details of how billing and payments work.
 
-Questions about becoming a contributor or contractor can be asked in the #recruiting room - available on bridged [chat platforms](https://decred.org/community). The first steps are generally to read the [recruitment blog post](https://blog.decred.org/2017/07/25/Decred-Recruiting/), explore the sub-project(s) you're most interested in contributing to (typically on [GitHub](https://github.com/decred/)), and talk to the people who work on those already.
+Questions about becoming a contributor or contractor can be asked in the #recruiting room - available on bridged [chat platforms](https://decred.org/community).
+The first steps are generally to read the [recruitment blog post](https://blog.decred.org/2017/07/25/Decred-Recruiting/), explore the sub-project(s) you're most interested in contributing to, and talk to the people who work on those already.
+Developers can find a list of software projects at [devdocs.decred.org](https://devdocs.decred.org/projects/).
 
 The following posts also describe aspects of the contractor recruitment process, and may be of interest:
 

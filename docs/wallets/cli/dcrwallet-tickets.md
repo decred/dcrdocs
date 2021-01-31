@@ -47,32 +47,53 @@ Once `dcrwallet` is restarted with that line in `dcrwallet.conf`, your wallet wi
 
 ## VSP voting
 
-To allow a VSP to vote for you, you first have to sign up for a VSP. A list of them can be found [here](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp). After signing up, there should be directions for creating a new P2SH address and importing your multi-sig voting script. 
+ You can find a list of VSP [here](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
 
-!!! warning "Warning"
-    Make sure to save a copy of your multi-sig voting script; if your VSP goes down, you'll need this script to vote or revoke tickets.
+ Once you have decided on a VSP, delegating voting to a VSP for purchased tickets is accomplished with the following configuration options set in your dcrwallet.conf file.
 
- A brief overview of configuring your VSP is provided here:
+- `vsp.url`
+- `vsp.pubkey`
 
-1. With your wallet open, issue the `dcrctl --wallet getnewaddress` command to retrieve an address.
+        ; ------------------------------------------------------------------------------
+        ; VSP settings
+        ; ------------------------------------------------------------------------------
 
-1. Using that address, issue the `dcrctl --wallet validateaddress <address from step 1>` command. This should return a JSON object that will be displayed like so:
+        ; The URL of the VSP.
+        ; vsp.url=https://teststakepool.decred.org
 
-        {
-          "isvalid": true,
-          "address": "DsExampleAddr1For2Demo3PurposesOnly",
-          "ismine": true,
-          "pubkeyaddr": "DkExample0Addr1For2Demo4Purposes5Only6Do7Not8Use9Pls0",
-          "pubkey": "022801337beefc0ffee1dab8d4ffa898a782466c9a1fc00ca8863de5438dc07dcc",
-          "iscompressed": true,
-          "account": "voting"
-        }
+        ; The base64 encoded public key of the VSP server.  This can be found on the
+        ; VSP website in the footer.
+        ; vsp.pubkey=ia9Ra2Drb+OHLqRyBsJnRKBd7TUG1IvrseC6robKzGo=
 
-1. Copy the `pubkeyaddr` into the VSP's "Submit Address" form and hit the submit button. The page should redirect you to the tickets page, which will display more instructions.
+Note: The process outlined below is now considered "legacy" and will be phased out at a later date. It is recommended to use the process above to purchase tickets with a VSP as of version 1.6.0 and above as it better respects privacy and requires no sign-up with the VSP.
 
-1. At the top of the tickets page, you should see a "Ticket Information" section. Copy your "Redeem Script" and use it to issue the `dcrctl --wallet importscript <Insert Redeem Script Here>` command.
+??? info "Click to display the legacy process for utilizing a VSP"
+    To allow a VSP to vote for you, you first have to sign up for a VSP. A list of them can be found [here](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp). After signing up, there should be directions for creating a new P2SH address and importing your multi-sig voting script. 
 
-With the VSP configured and your multi-sig script imported to your wallet, you can now start [purchasing tickets](#ticket-purchasing).
+    !!! warning "Warning"
+        Make sure to save a copy of your multi-sig voting script; if your VSP goes down, you will need this script to vote or revoke tickets.
+
+    A brief overview of configuring your VSP is provided here:
+
+    1. With your wallet open, issue the `dcrctl --wallet getnewaddress` command to retrieve an address.
+
+    1. Using that address, issue the `dcrctl --wallet validateaddress <address from step 1>` command. This should return a JSON object that will be displayed like so:
+
+            {
+              "isvalid": true,
+              "address": "DsExampleAddr1For2Demo3PurposesOnly",
+              "ismine": true,
+              "pubkeyaddr": "DkExample0Addr1For2Demo4Purposes5Only6Do7Not8Use9Pls0",
+              "pubkey": "022801337beefc0ffee1dab8d4ffa898a782466c9a1fc00ca8863de5438dc07dcc",
+              "iscompressed": true,
+              "account": "voting"
+            }
+
+    1. Copy the `pubkeyaddr` into the VSP's "Submit Address" form and hit the submit button. The page should redirect you to the tickets page, which will display more instructions.
+
+    1. At the top of the tickets page, you should see a "Ticket Information" section. Copy your "Redeem Script" and use it to issue the `dcrctl --wallet importscript <Insert Redeem Script Here>` command.
+
+    With the VSP configured and your multi-sig script imported to your wallet, you can now start [purchasing tickets](#ticket-purchasing).
 
 ---
 
@@ -99,11 +120,11 @@ purchaseticket "fromaccount" spendlimit (minconf=1 "ticketaddress" numtickets "p
 1. `poolfees`       =  Optional Number: The percentage of fees to pay to the VSP (e.g. 5)
 1. `expiry`         =  Optional Number: The block height where unmined tickets will expire from the mempool, returning the original DCR to your "fromaccount". If left blank, tickets will only expire in the mempool when the ticket price changes.
 1. `comment`        =  Optional String: This argument is unused and has no significance.
-1. `ticketfee`      =  Optional Number: The DCR/kB rate you'll pay to have your ticket purchase be included in a block.
+1. `ticketfee`      =  Optional Number: The DCR/kB rate you will pay to have your ticket purchase be included in a block.
 
 ##### Ticket Fees
 
-Your `ticketfee` is the DCR/kB rate you'll pay to have your ticket purchase be included in a block by a miner. You'll notice that the `ticketfee` argument of the above `purchaseticket` is optional. The `ticketfee` argument can be set using two other methods.
+Your `ticketfee` is the DCR/kB rate you will pay to have your ticket purchase be included in a block by a miner. You will notice that the `ticketfee` argument of the above `purchaseticket` is optional. The `ticketfee` argument can be set using two other methods.
 
 1. During startup by adding `ticketfee=<fee rate>` to your `dcrwallet.conf`.
 1. While your wallet is running, using the `dcrctl --wallet setticketfee <fee rate>` command. This is not a permanent setting and will default to 0.0001 every time your wallet is restarted unless a ticketfee is specified in `dcrwallet.conf`.
@@ -114,7 +135,7 @@ Third party sites such as <https://dcrstats.com> can be used to find the average
 
 ##### Ticket Price
 
-To get the current ticket price, issue the `dcrctl --wallet getstakeinfo` command and look for the `difficulty` value. This is the price of each ticket in the current price window. You'll want to adjust your `spendlimit` argument in the `purchaseticket` command to be greater than this `difficulty` value when purchasing tickets manually.
+To get the current ticket price, issue the `dcrctl --wallet getstakeinfo` command and look for the `difficulty` value. This is the price of each ticket in the current price window. you will want to adjust your `spendlimit` argument in the `purchaseticket` command to be greater than this `difficulty` value when purchasing tickets manually.
 
 ---
 
@@ -131,15 +152,24 @@ If you wish to specify the `numtickets` or `expiry` arguments, you would specify
 
 ##### VSP Tickets
 
-To purchase tickets with their voting rights delegated to a VSP, we have to use the full `purchaseticket` command.
+To purchase tickets with their voting rights delegated to a VSP, we use the `purchaseticket` command.
 
-- Your `ticketaddress` is the P2SH Address found at the top of "Tickets" page of your VSP under the "Ticket Information" section.
-- Your `pooladdress` is the address for your VSP's fees are collected. This can be found in the "Ticket Instructions" section of your VSP's "Tickets" page.
-- Your `poolfees` is the percentage of the stake reward that will go to the `pooladdress` when a ticket votes. It is important to match your VSP's advertised fee.
+Note: For v1.6.0, if you have set the [VSP options](#vsp-voting) within your dcrwallet.conf file, you need only pass the name of the account you intend to spend from, and the spend limit which specifies the highest ticket price you are willing to pay: 
 
-A quick example:
+`dcrctl --wallet purchaseticket "default" 160`
 
-`dcrctl --wallet purchaseticket "default" 23 1 DcExampleAddr1For2Demo3PurposesOnly 1 DsExampleAddr1For2Demo3PurposesOnly 7.5` would use DCR from your `default` account to purchase 1 ticket if the current ticket price is a max of 23 DCR. The P2SH Address received from the VSP is `DcExampleAddr1For2Demo3PurposesOnly` and their fee address is `DsExampleAddr1For2Demo3PurposesOnly`. They will collect a 7.5% fee if this ticket successfully votes. This ticket will not expire from the mempool until the ticket price changes, as only 7 arguments were specified (no `expiry`).
+Note: The info below is now considered "legacy" and will be phased out at a later date. It is recommended to use the process [here](#vsp-voting) to purchase tickets with a VSP as of version 1.6.0 and above as it better respects privacy and requires no sign-up with the VSP.
+
+??? info "Click to display additional info for legacy use of purchaseticket command" 
+    If purchasing tickets the legacy way, you need to include the following in your command:
+
+    - Your `ticketaddress` is the P2SH Address found at the top of "Tickets" page of your VSP under the "Ticket Information" section.
+    - Your `pooladdress` is the address for your VSP's fees are collected. This can be found in the "Ticket Instructions" section of your VSP's "Tickets" page.
+    - Your `poolfees` is the percentage of the stake reward that will go to the `pooladdress` when a ticket votes. It is important to match your VSP's advertised fee.
+
+    A quick example:
+
+    `dcrctl --wallet purchaseticket "default" 23 1 DcExampleAddr1For2Demo3PurposesOnly 1 DsExampleAddr1For2Demo3PurposesOnly 7.5` would use DCR from your `default` account to purchase 1 ticket if the current ticket price is a max of 23 DCR. The P2SH Address received from the VSP is `DcExampleAddr1For2Demo3PurposesOnly` and their fee address is `DsExampleAddr1For2Demo3PurposesOnly`. They will collect a 7.5% fee if this ticket successfully votes. This ticket will not expire from the mempool until the ticket price changes, as only 7 arguments were specified (no `expiry`).
 
 ---
 
@@ -150,17 +180,20 @@ A quick example:
 ```no-highlight
 enableticketbuyer=1
 ```
-
-If you are using a VSP, you should also add the following lines (all of these can be found on your VSP's "Tickets" page):
-
-```no-highlight
-ticketbuyer.votingaddress=<P2SH Address shared with VSP>
-pooladdress=<VSP's Fee Collection Address>
-poolfees=<VSP's Required Reward Fee>
-```
+You also need to specify options within your config file for your VSP as outlined [here.](#vsp-voting)
 
 If you don't want `ticketbuyer` to spend all of your funds, there is one more option which allows you to specify a balance which will not be spent:
 
 ```no-highlight
 ticketbuyer.balancetomaintainabsolute=<balance>
 ```
+Note: The info below is now considered "legacy" and will be phased out at a later date. It is recommended to use the process [here](#vsp-voting) to purchase tickets with a VSP as of version 1.6.0 and above as it better respects privacy and requires no sign-up with the VSP.
+
+??? info "Click to display info for legacy method of buying tickets with ticketbuyer" 
+    If you are using a VSP, you should also add the following lines (all of these can be found on your VSP's    "Tickets" page):
+
+    ```no-highlight
+    ticketbuyer.votingaddress=<P2SH Address shared with VSP>
+    pooladdress=<VSP's Fee Collection Address>
+    poolfees=<VSP's Required Reward Fee>
+    ```

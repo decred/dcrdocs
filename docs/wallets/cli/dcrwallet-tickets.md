@@ -21,9 +21,9 @@ This guide assumes you have set up `dcrd` and `dcrwallet` using configuration fi
 
 There are a few decisions to be made before venturing into this guide. First, will you be using a Voting Service Provider (VSP) to delegate your ticket voting rights? Second, will you be purchasing tickets manually or automatically via the ticketbuyer feature?
 
-VSP ticket purchasing allows a stakeholder to delegate voting rights to a VSP. VSPs are online at all times (24/7) and very rarely miss a vote. They utilize multi-sig transactions so they're unable to touch any of your DCR. As a downside, most require a small percentage of your voting reward as a VSP fee. VSP delegated tickets also require a larger transaction size (~540 Bytes vs. ~300 Bytes for solo-voting tickets) for purchasing which results in a slightly higher absolute ticket fee since fees are calculated by DCR/kB.
+VSP ticket purchasing allows a stakeholder to delegate voting rights to a VSP. VSPs are online at all times (24/7) and very rarely miss a vote. In exchange for this service, VSPs typically require an upfront fee.
 
-Solo-voting requires you to have a voting wallet unlocked at all times (24/7), or else you may miss votes and lose your voting reward. You do not have to pay VSP fees and your ticket purchases are more likely to be mined with a smaller absolute fee (due to the miners selecting tickets based on DCR/kB ticket fee rates and solo tickets having a smaller transaction size).
+Solo-voting requires you to have a voting wallet unlocked at all times (24/7), or else you may miss votes and lose your voting reward. You do not have to pay VSP fees.
 
 Manual ticket purchasing vs. automated ticketbuyer purchasing is mainly up to personal preference. Purchasing manually offers the user more control over when tickets are purchased, how much is paid for each ticket, and how often the purchasing wallet is unlocked. The automated buyer offers more convenience and requires less maintenance, however it requires the purchasing wallet to remain online and unlocked constantly.
 
@@ -47,7 +47,7 @@ Once `dcrwallet` is restarted with that line in `dcrwallet.conf`, your wallet wi
 
 ## VSP voting
 
- You can find a list of VSP [here](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
+ You can find a list of VSPs [here](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
 
  Once you have decided on a VSP, delegating voting to a VSP for purchased tickets is accomplished with the following configuration options set in your dcrwallet.conf file.
 
@@ -135,7 +135,7 @@ Third party sites such as <https://dcrstats.com> can be used to find the average
 
 ##### Ticket Price
 
-To get the current ticket price, issue the `dcrctl --wallet getstakeinfo` command and look for the `difficulty` value. This is the price of each ticket in the current price window. you will want to adjust your `spendlimit` argument in the `purchaseticket` command to be greater than this `difficulty` value when purchasing tickets manually.
+To get the current ticket price, issue the `dcrctl --wallet getstakeinfo` command and look for the `difficulty` value. This is the price of each ticket in the current price window. You will want to adjust your `spendlimit` argument in the `purchaseticket` command to be greater than this `difficulty` value when purchasing tickets manually.
 
 ---
 
@@ -180,6 +180,7 @@ Note: The info below is now considered "legacy" and will be phased out at a late
 ```no-highlight
 enableticketbuyer=1
 ```
+
 You also need to specify options within your config file for your VSP as outlined [here.](#vsp-voting)
 
 If you don't want `ticketbuyer` to spend all of your funds, there is one more option which allows you to specify a balance which will not be spent:
@@ -187,6 +188,7 @@ If you don't want `ticketbuyer` to spend all of your funds, there is one more op
 ```no-highlight
 ticketbuyer.balancetomaintainabsolute=<balance>
 ```
+
 Note: The info below is now considered "legacy" and will be phased out at a later date. It is recommended to use the process [here](#vsp-voting) to purchase tickets with a VSP as of version 1.6.0 and above as it better respects privacy and requires no sign-up with the VSP.
 
 ??? info "Click to display info for legacy method of buying tickets with ticketbuyer" 

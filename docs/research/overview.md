@@ -14,7 +14,7 @@ Research work in Decred is currently organized around the following subsections:
 * [Decentralized Stake Pooling](decentralized-stake-pooling.md)
 * [Elliptic Curve Signature Algorithms](elliptic-curve-signature-algorithms.md)
 * [BLAKE-256 Hash Function](blake-256-hash-function.md)
-* [Script Extensions](script-extensions.md)
+* [Script Extensions](https://devdocs.decred.org/developer-guides/script-extensions)
 * [Signature Script Isolation and Fraud Proofs](signature-script-isolation-and-fraud-proofs.md)
 * [Transaction Extensions](https://devdocs.decred.org/developer-guides/transactions/transaction-extensions/)
 * [Schnorr Signatures](schnorr-signatures.md)

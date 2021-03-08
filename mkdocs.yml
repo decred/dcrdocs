@@ -228,7 +228,6 @@ nav:
   - 'Decentralized Stake Pooling': 'research/decentralized-stake-pooling.md'
   - 'Elliptic Curve Signature Algorithms': 'research/elliptic-curve-signature-algorithms.md'
   - 'BLAKE-256 Hash Function': 'research/blake-256-hash-function.md'
-  - 'Script Extensions': 'research/script-extensions.md'
   - 'Signature Script Isolation and Fraud Proofs': 'research/signature-script-isolation-and-fraud-proofs.md'
   - 'Block Production Times': 'research/block-production-times.md'
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'

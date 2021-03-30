@@ -61,39 +61,39 @@ pre, code {
 }
 
 .md-typeset h1 {
-    color         : #596D81;
+    color         : var(--dcrdocs-h1-color);
     font-size     : 34px;
     text-transform: none;
 }
 
 .md-typeset h2 {
-    color         : #091440;
+    color         : var(--dcrdocs-h2-color);
     font-size     : 26px;
     text-transform: none;
     font-weight   : bold;
 }
 
 .md-typeset h3 {
-    color         : #091440;
+    color         : var(--dcrdocs-h3-color);
     font-size     : 23px;
     text-transform: none;
 }
 
 .md-typeset h4 {
-    color         : #091440;
+    color         : var(--dcrdocs-h4-color);
     font-size     : 20px;
     text-transform: none;
     font-weight   : bold;
 }
 
 .md-typeset h5 {
-    color         : #091440;
+    color         : var(--dcrdocs-h5-color);
     font-size     : 18px;
     text-transform: none;
 }
 
 .md-typeset h6 {
-    color         : #596D81;
+    color         : var(--dcrdocs-h6-color);
     font-size     : 16px;
     text-transform: none;
     font-weight   : bold;
@@ -103,7 +103,6 @@ pre, code {
 .md-typeset ul,
 .md-typeset ol,
 .md-typeset table {
-    color    : #48566E;
     font-size: 16px;
 }
 
@@ -116,22 +115,13 @@ font-awesome icons */
 a.fa{
     font-weight: normal;
 }
-.md-typeset a:link,
-.md-typeset a:visited {
-    color: #2970FF;
-}
-.md-typeset a:hover,
-.md-typeset a:active {
-    color: #1A59F7;
-}
 
 .md-typeset blockquote {
-    border-left:.2rem solid #48566E;
+    border-left:.2rem solid var(--md-typeset-color);
 }
 .md-typeset blockquote p,
 .md-typeset blockquote ul,
 .md-typeset blockquote ol
  {
-    color:      #48566E;
     font-style: italic;
 }

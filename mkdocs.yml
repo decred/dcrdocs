@@ -8,6 +8,28 @@ theme:
     - navigation.instant
   icon:
     repo: octicons/mark-github-16
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: dcrdocs-light
+      # Primary and accent colours should be fully overridden by dcrdocs-light theme.
+      # If any green shows up in the site, thats a bug.
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: dcrdocs-dark
+      # Primary and accent colours should be fully overridden by dcrdocs-dark theme.
+      # If any green shows up in the site, thats a bug.
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 extra:
   decreditonversion: 1.6.2
   cliversion: 1.6.2

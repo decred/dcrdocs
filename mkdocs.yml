@@ -9,8 +9,8 @@ theme:
   icon:
     repo: octicons/mark-github-16
 extra:
-  decreditonversion: 1.6.1
-  cliversion: 1.6.1
+  decreditonversion: 1.6.2
+  cliversion: 1.6.2
   gominerversion: 1.0.0
   lndversion: 0.3.0
   social:

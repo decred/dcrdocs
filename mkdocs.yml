@@ -244,6 +244,7 @@ nav:
   - 'Security': 'advanced/general-security.md'
   - 'Atomic Swaps': 'advanced/atomic-swap.md'
   - 'Decred Seed and BIP-0039': 'advanced/mnemonic-seed.md'
+  - 'Secure Setup': 'advanced/secure-setup.md'
 - Research:
   - 'Overview': 'research/overview.md'
   - 'Hybrid Design': 'research/hybrid-design.md'

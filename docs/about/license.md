@@ -1,11 +1,11 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Document.svg" /> License 
+# <img class="dcr-icon" src="/img/dcr-icons/Document.svg" /> License
 
 dcrdocs is licensed under the [copyfree](http://copyfree.org) ISC License.
 
 ---
 
 Copyright © 2013-2015 The btcsuite developers.  
-Copyright © 2015-2020 The Decred developers.
+Copyright © 2015-2021 The Decred developers.
 
 Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 

@@ -32,7 +32,6 @@ There are several requirements for the VSP configuration:
 * The web frontend must have an IP that is distinct from those of the voting wallets, and is ideally located in another physical location.
 * Source code for the VSP is available [on GitHub](https://github.com/decred/dcrstakepool) and binaries must be compiled from source.
 * The VSP must be run on testnet for 1 week to confirm it is working properly. Uptime and number of votes made versus missed will be checked.
-* Company 0 will verify the VSP configuration is proper before moving to mainnet.  Unprivileged shell accounts will be made available so the configuration can be verified after running for 1 week on testnet.
 * The VSP must be run on mainnet in test mode (no public access) until a VSP operator demonstrates they have successfully voted 1 ticket of their own using the VSP.
 * The operator must demonstrate their monitoring solution by temporarily sending alerts to a specified email address.  An example monit configuration will be supplied to avoid requiring operators to setup their own monitoring solution from scratch. After this has been verified, the VSP will be opened to the public.
 

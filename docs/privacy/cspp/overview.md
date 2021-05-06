@@ -1,16 +1,14 @@
-# <img class="dcr-icon" src="/img/dcr-icons/LockEye.svg" /> CoinShuffle++
+# <img class="dcr-icon" src="/img/dcr-icons/LockEye.svg" /> StakeShuffle
 
 ---
 
-## What is CoinShuffle++ and how does it work?
+## What is StakeShuffle and how does it work?
 
-**CoinShuffle++ (CSPP)** is a mixing protocol used to create Decred **CoinJoin** transactions.
+Decred's **StakeShuffle** is a **non-custodial** process used to create Decred **CoinJoin** transactions that obfuscate ownership of DCR coins, where the output addresses are anonymized via a mixnet. When using StakeShuffle, the outputs are fully anonymized. None of the peers or the server can link outputs and inputs.
 
-CSPP is a **non-custodial** process to obfuscate ownership of DCR coins, where the output addresses are anonymized via a mixnet. When using CSPP, the outputs are fully anonymized, none of the peers or the server can link outputs and inputs.
+The implementation is based on the **CoinShuffle++ (CSPP)** protocol from ["P2P Mixing and Unlinkable Bitcoin Transactions"](https://decred.org/research/ruffing2016.pdf) by Ruffing, Moreno-Sanchez and Kate. It uses [**DiceMix Light**](https://github.com/ElementsProject/dicemix/blob/master/doc/protocol.md), a faster iteration by Ruffing on the DiceMix process proposed in the CoinShuffle++ paper. This process allows for the creation of untraceable transactions, but the amounts are still publicly visible.  To make the outputs indistinguishable, each mix must have a fixed denomination.
 
-Decred's implementation is based on the CoinShuffle++ protocol from ["P2P Mixing and Unlinkable Bitcoin Transactions"](https://decred.org/research/ruffing2016.pdf) by Ruffing, Moreno-Sanchez and Kate. It uses [**DiceMix Light**](https://github.com/ElementsProject/dicemix/blob/master/doc/protocol.md), a faster iteration by Ruffing on the DiceMix process proposed in the CoinShuffle++ paper. This process allows for the creation of untraceable transactions, but the amounts are still publicly visible.  To make the outputs indistinguishable, each mix must have a fixed denomination.
-
-CoinShuffle++ does a fine job of anonymizing the output addresses, but if the change is not handled with care, it can link mixed and unmixed UTXOs. In many cases, change outputs can be linked to their inputs by doing a partial sum analysis. To deal with this threat, change from mixes flows to a separate wallet account, where it is then mixed into smaller denominations until the change is less than the smallest mixer denomination.
+StakeShuffle does a fine job of anonymizing the output addresses, but if the change is not handled with care, it can link mixed and unmixed UTXOs. In many cases, change outputs can be linked to their inputs by doing a partial sum analysis. To deal with this threat, change from mixes flows to a separate wallet account, where it is then mixed into smaller denominations until the change is less than the smallest mixer denomination.
 
 Mixes occur episodically in **epochs**, with the mainnet epoch set to 20 minutes (1200 seconds).
 
@@ -56,7 +54,7 @@ After a failed protocol run, peers can reveal session secrets to expose and excl
 
 ## Benefits
 
-The implementation of the CSPP mixnet did not require changing the consensus rules. It is an opt-in implementation that  obfuscates ownership of DCR coins with out requiring any modifications to the consensus rules.
+The implementation of the CSPP mixnet for StakeShuffle did not require changing the consensus rules. It is an opt-in implementation that obfuscates ownership of DCR coins without requiring any modifications to the consensus rules.
 
 Other privacy implementations like zk-SNARKS and Ring Signatures provide substantial privacy, but impede the network from dropping historical transactions from their full nodes, a process also known as pruning. The CSPP mixnet does not have this effect on the blockchain and pruning remains possible. Pruning the blockchain reduces its size, which makes it easier to download and replicate.
 
@@ -64,22 +62,19 @@ At the same time, the CSPP mixnet presents a much simpler solution that is based
 
 ---
 
-## Limitations
+## Considerations
 
-The current implementation has several limitations. Mainly the use of a centralized server, to which the CoinJoin leaks which inputs and change addresses belong to each peer, and the lack of support for Voting Service Providers and regular transactions.
+The current implementation has limitations to consider. The use of a centralized server, to which the CoinJoin leaks which inputs and change addresses belong to each peer. 
 
-The anonymity provided by CoinShuffle++ can be lost if wallet addresses  are reused, or if change outputs are not handled correctly. It is imperative that addresses are never reused and that extended public keys of mixed and voting accounts are not revealed to other parties.
+The anonymity provided by StakeShuffle can be lost if wallet addresses are reused, or if change outputs are not handled correctly. It is imperative that addresses are never reused and that extended public keys of mixed and voting accounts are not revealed to other parties.
 
-The initial code only supports the CLI wallet, dcrwallet, and solo stakers. To implement CSPP beyond the CLI there are some issues that must be dealt with:
-
-  + **dcrwallet:** Changes must be made to support unlocking individual accounts while other accounts keys are locked. CSPP requires hot keys to create on-demand transactions at the end of the timed process.
-
-  + **Decrediton:** UI/UX must be made so that users have a simple way to opt-in into privacy. The UI must ensure users do not send funds from other accounts besides their mixed account, prevent receiving funds into accounts besides the change account, and use the mixed account to buy tickets.
-
-  + **VSP API:** A new VSP API for buying tickets is needed. To fully support privacy, the way how users buy tickets through VSP must be substantially changed. Proposed changes are already outlined [here](https://github.com/decred/dcrstakepool/issues/574), and it entails moving from an account-based system to a ticket-based system, where users pay VSP fees upfront, and VSP tickets are indistinguishable from solo tickets.
+??? info "Development Update" 
+    While the initial code lacked support for mixing while staking with use of Voting Service Providers and for mixing regular transactions, later development of [VSPD](https://github.com/decred/vspd), a new implementation for Voting Service Providers to receive delegated voting rights, has allowed for anyone to participate in StakeShuffle mixing whether they solo stake or not. You can read about the changes that were necessary [here.](https://github.com/decred/dcrstakepool/issues/574) Support for mixing regular transactions is available as well. Additionally, while initial code was limited to command line tools, mixing is now available via GUI by way of using the [Decrediton](../../wallets/decrediton/decrediton-setup.md) wallet software.
 
 ---
 
 ## Further Information
 
 For more technical information about CoinShuffle++, visit Decred’s [cspp](https://github.com/decred/cspp) Github repository. You can also read about CoinShuffle++ on [Decred’s blog](https://blog.decred.org/2019/08/28/Iterating-Privacy/).
+
+To get started, see [How To Use StakeShuffle.](../how-to-cspp)

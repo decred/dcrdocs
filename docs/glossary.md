@@ -87,10 +87,14 @@ Not using dedicated change addresses, or re-using existing ones, would enable a
 passive observer to infer a significant amount of information about your
 transaction sizes and where you are sending transactions to.
 
+#### CoinShuffle++
+
+The protocol Decred's [StakeShuffle](#stakeshuffle) privacy implementation utilizes. The CoinShuffle++ (CSPP) protocol is described in ["P2P Mixing and Unlinkable Bitcoin Transactions"](https://decred.org/research/ruffing2016.pdf) by Ruffing, Moreno-Sanchez and Kate. It uses [**DiceMix Light**](https://github.com/ElementsProject/dicemix/blob/master/doc/protocol.md), a faster iteration by Ruffing on the DiceMix process proposed in the CoinShuffle++ paper. This process allows for the creation of untraceable transactions, but the amounts are still publicly visible.  To make the outputs indistinguishable, each mix must have a fixed denomination.
+
 #### Coin Type
 
 A unique number assigned to a cryptocurrency, which is used by [HD
-Wallets](#hd-wallet) during the process of generating public/private keypairs.
+Wallets](#hierarchical-deterministic-hd-wallet) during the process of generating public/private keypairs.
 Cryptocurrencies with assigned coin types are listed in
 [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md).
 The coin type of Decred is 42.
@@ -457,6 +461,10 @@ complete](https://en.wikipedia.org/wiki/Turing_completeness).
 #### Soft Fork
 
 A change to consensus rules that is backwards compatible. Nodes running older versions without the new rules can still validate transactions and blocks. However, nodes running older versions can only partially validate transactions and blocks created by nodes using the new rules. This is because old nodes believe they are fully validating transactions, however, they are not able to undstand transactions created using the new rules. For instance, if a new transaction type is added via soft fork, only nodes using the new rules will be able to understand the new transaction type. 
+
+#### StakeShuffle
+
+Decred's implementation of the [CoinShuffle++](#coinshuffle) protocol used to obfuscate ownership of DCR coins via Decred CoinJoin transactions created with a mixnet. When using StakeShuffle, the outputs are fully anonymized. None of the peers or the server can link outputs and inputs. The "StakeShuffle" term is often used interchangably with "CoinShuffle++" in regards to Decred's privacy implementation.
 
 #### Stake transaction tree
 

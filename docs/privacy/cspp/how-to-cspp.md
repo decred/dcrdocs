@@ -1,21 +1,29 @@
-# How to use CoinShuffle++
+# <img class="dcr-icon" src="/img/dcr-icons/LockEye.svg" /> How to use StakeShuffle
 
 ---
 
-To use CSPP, several new options must be set in `dcrwallet`.
+## Using StakeShuffle with Decrediton
 
-Regardless of the intended setup, users must create two new accounts, `mixed` and `unmixed`, and point their wallets to Decred's CSPP servers:
+Privacy mixing is available within the Decrediton wallet software.
+
+Follow along with the video tutorial [here](https://www.youtube.com/watch?v=QC65PBNwAK4) to get started.
+
+## Using StakeShuffle via Command Line
+
+To use StakeShuffle, several new options must be set in `dcrwallet`.
+
+Regardless of the intended setup, users must create two new accounts, `mixed` and `unmixed`, and point their wallets to Decred's StakeShuffle servers:
 
 Mainnet
 
-- Download the CSPP server [TLS certificate](https://cspp.decred.org/cspp.decred.org.pem)
+- Download the StakeShuffle server [TLS certificate](https://cspp.decred.org/cspp.decred.org.pem)
 - Reference the certificate file using `--csppserver.ca=cspp.decred.org.pem`
-- Point `dcrwallet`to the CSPP mainnet server by setting  `--csppserver=cspp.decred.org:5760`
+- Point `dcrwallet`to the StakeShuffle mainnet server by setting  `--csppserver=cspp.decred.org:5760`
 
 Testnet
 
 - Testnet does **not** use the TLS certificate
-- Point `dcrwallet` to the CSPP testnet server by setting `--csppserver=cspp.decred.org:15760`
+- Point `dcrwallet` to the StakeShuffle testnet server by setting `--csppserver=cspp.decred.org:15760`
 
 ---
 
@@ -100,7 +108,7 @@ Non-stakers are able to use this mechanism to mix received funds by using the un
 
 ## Tor Hidden Service
 
-The CSPP server is accessible as a Tor hidden service, which provides two-way anonymity. The server doesn't know the IP of the client and the client also doesn't know the IP of the server. The latest onion address can be found at [CSPP server site](https://cspp.decred.org/) and can be configured by using the `--csppserver` flag.
+The StakeShuffle server is accessible as a Tor hidden service, which provides two-way anonymity. The server doesn't know the IP of the client and the client also doesn't know the IP of the server. The latest onion address can be found at [StakeShuffle server site](https://cspp.decred.org/) and can be configured by using the `--csppserver` flag.
 
 In case `dcrwallet` connects to `dcrd` directly, the `--nodcrdproxy=1` option may be specified in addition to the above.
 
@@ -108,4 +116,4 @@ In case `dcrwallet` connects to `dcrd` directly, the `--nodcrdproxy=1` option ma
 
 ## Further Information
 
-For more technical information about CoinShuffle++, visit Decred’s [cspp](https://github.com/decred/cspp) Github repository. You can also read about CoinShuffle++ on [Decred’s blog](https://blog.decred.org/2019/08/28/Iterating-Privacy/).
+For more technical information about CoinShuffle++, visit Decred’s [cspp](https://github.com/decred/cspp) Github repository. You can also read about CoinShuffle++/StakeShuffle on [Decred’s blog](https://blog.decred.org/2019/08/28/Iterating-Privacy/).

@@ -139,9 +139,9 @@ nav:
   - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'
 - Privacy:
   - 'General Privacy': 'privacy/general-privacy.md'
-  - CoinShuffle++:
+  - StakeShuffle:
     - 'Overview': 'privacy/cspp/overview.md'
-    - 'How to use CSPP': 'privacy/cspp/how-to-cspp.md'
+    - 'How to use StakeShuffle': 'privacy/cspp/how-to-cspp.md'
 - Lightning Network:
   - 'Overview': 'lightning-network/overview.md'
   - 'Backups': 'lightning-network/backups.md'

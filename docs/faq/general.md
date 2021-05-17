@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Meta.svg" /> General
+# ![](../img/dcr-icons/Meta.svg){ .dcr-icon } General
 
 ---
 

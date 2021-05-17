@@ -1,8 +1,8 @@
-# <img class="dcr-icon" src="/img/dcr-icons/BlockExplorer.svg" /> Using the Block Explorer
+# ![](../img/dcr-icons/BlockExplorer.svg){ .dcr-icon } Using the Block Explorer
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Info.svg" /> Overview
+## ![](../img/dcr-icons/Info.svg){ .dcr-icon } Overview
 
 All blocks and transactions on the Decred blockchain
 are visible through the use of the block explorer, [dcrdata](https://github.com/decred/dcrdata).
@@ -28,7 +28,7 @@ the value (in DCR) transmitted across the network.
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Blocks.svg" /> Blocks
+## ![](../img/dcr-icons/Blocks.svg){ .dcr-icon } Blocks
 
 Blocks can be found by searching for their block height number,
 clicking on a `Height` value from the home page, or from their
@@ -58,7 +58,7 @@ Option                   | Explanation
 `Version`                | The version of the block.
 `Nonce`                  | The value used by a miner to find the correct solution for this block.
 
-## <img class="dcr-icon" src="/img/dcr-icons/Transactions.svg" /> Transactions
+## ![](../img/dcr-icons/Transactions.svg){ .dcr-icon } Transactions
 
 This section lists all the transactions that were mined into this
 block. Transactions are chosen from the network mempool in order of
@@ -86,7 +86,7 @@ Note `Received Time`, `Mined Time`, and `Included in Block` will not have a valu
 
 ---
 
-### <img class="dcr-icon" src="/img/dcr-icons/TicketLive.svg" /> Ticket purchases
+### ![](../img/dcr-icons/TicketLive.svg){ .dcr-icon } Ticket purchases
 
 For a ticket purchase (stake submission) there are a few differences
 from a standard transaction shown.
@@ -105,7 +105,7 @@ is the address where change for this transaction will be sent.
 
 ---
 
-### <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Proof-of-stake votes
+### ![](../img/dcr-icons/TicketVoted.svg){ .dcr-icon } Proof-of-stake votes
 
 Note the identifying terms in the details section: `Vote`, `Stake
 Base`, `Block Commitment`, and `Vote Bits`:

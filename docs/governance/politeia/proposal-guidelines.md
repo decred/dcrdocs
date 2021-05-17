@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Politeia.svg" /> Proposal Guidelines
+# ![](../../img/dcr-icons/Politeia.svg){ .dcr-icon } Proposal Guidelines
 
 ---
 

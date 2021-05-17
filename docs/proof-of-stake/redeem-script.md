@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/QuestionTicket.svg" /> Redeem Script
+# ![](../img/dcr-icons/QuestionTicket.svg){ .dcr-icon } Redeem Script
 
 ---
 

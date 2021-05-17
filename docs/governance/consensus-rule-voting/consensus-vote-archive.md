@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Consensus Vote Archive
+# ![](../../img/dcr-icons/TicketVoted.svg){ .dcr-icon } Consensus Vote Archive
 
 This section provides an archive for previous votes along with their outcomes.
 

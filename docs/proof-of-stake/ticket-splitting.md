@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/QuestionTicket.svg" /> Ticket Splitting
+# ![](../img/dcr-icons/QuestionTicket.svg){ .dcr-icon } Ticket Splitting
 
 ---
 

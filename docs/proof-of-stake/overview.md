@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Proof-of-Stake (PoS) Voting
+# ![](../img/dcr-icons/TicketVoted.svg){ .dcr-icon } Proof-of-Stake (PoS) Voting
 
 ---
 

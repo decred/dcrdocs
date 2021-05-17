@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/PoWMine.svg" /> Premine
+# ![](../img/dcr-icons/PoWMine.svg){ .dcr-icon } Premine
 
 ---
 
@@ -66,7 +66,7 @@ After the final review was completed, 2,972 addresses were included in the airdr
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Further Reading
+## ![](../img/dcr-icons/Sources.svg){ .dcr-icon } Further Reading
 
 #### Premine Commitments
 

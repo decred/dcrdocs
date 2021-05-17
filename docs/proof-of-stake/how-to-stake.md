@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/QuestionTicket.svg" /> How to Stake/Vote
+# ![](../img/dcr-icons/QuestionTicket.svg){ .dcr-icon } How to Stake/Vote
 
 ---
 
@@ -10,13 +10,13 @@ There are two ways to stake/vote: solo staking and staking using a VSP. The form
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo PoS Voting
+## ![](../img/dcr-icons/Solo.svg){ .dcr-icon } Solo PoS Voting
 
 Solo PoS voting is currently only possible using the Decred command line tools. The [Buying Tickets with dcrwallet](../wallets/cli/dcrwallet-tickets.md) guide explains how to buy tickets using the CLI wallet `dcrwallet`.
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Servers.svg" /> PoS using a Voting Service Provider (VSP)
+## ![](../img/dcr-icons/Servers.svg){ .dcr-icon } PoS using a Voting Service Provider (VSP)
 
 A list of Voting Service Providers (VSPs) and statistics is maintained on the
 [:fontawesome-solid-external-link-square-alt: Decred.org website](https://decred.org/vsp/).

@@ -1,8 +1,8 @@
-# <img class="dcr-icon" src="/img/dcr-icons/ObtainingDecred.svg" /> Contributor Compensation
+# ![](../img/dcr-icons/ObtainingDecred.svg){ .dcr-icon } Contributor Compensation
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/User.svg" /> Contractors
+## ![](../img/dcr-icons/User.svg){ .dcr-icon } Contractors
 
 The term "Contractors" covers both **corporate contractors** and **independent contractors**.
 
@@ -20,7 +20,7 @@ Decred currently has over 50 contributors (independent contractors and employees
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Billing and Payments
+## ![](../img/dcr-icons/Wallet.svg){ .dcr-icon } Billing and Payments
 
 At the end of each month, each contractor prepares an invoice and submits it to the Decred Holdings Group LLC (DHG). The invoice lists the items the contractor has worked on and a charge (in USD) for each - typically these charges are for a number of hours worked at an agreed hourly rate.
 
@@ -50,7 +50,7 @@ project contributors to validate each others locations.
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/RFP.svg" /> Request for Proposals (RFP) - Historical
+## ![](../img/dcr-icons/RFP.svg){ .dcr-icon } Request for Proposals (RFP) - Historical
 
 Decred was launched with a Request For Proposal system in order to provide compensation for contributors working on larger or more significant projects. A document (RFP) would be produced which described the requirements and scope of a project, along with a clearly defined set of milestones and a reward specified in DCR. The RFP would be posted publicly and community members would be given a period of time to submit their proposals. After review, a proposal would be selected and awarded the contract.
 
@@ -60,6 +60,6 @@ The RFP process worked well for certain types of tasks, however a need arose to 
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources
+## ![](../img/dcr-icons/Sources.svg){ .dcr-icon } Sources
 
 [^1]: Decred Blog, [2017 Decred Roadmap](https://blog.decred.org/2017/01/09/2017-Decred-Roadmap/)

@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/PoWMine.svg" /> Block Production Times
+# ![](../img/dcr-icons/PoWMine.svg){ .dcr-icon } Block Production Times
 
 ---
 
@@ -29,6 +29,6 @@ The figure below shows shows the actual values plotted against the CDF used to d
 
 As we can see, it turns out that the actual distribution is quite close to the expected perfect distribution, which shows the network is operating in a healthy fashion. Note that the 0 to 10 and 0 to 30 second intervals slightly underperform the ideal values, which is expected because miners must wait for the votes to arrive before they can start building a new block, and this fact slightly skews the number of blocks found within the time spans downwards.
 
-## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> References
+## ![](../img/dcr-icons/Sources.svg){ .dcr-icon } References
 
 [^1]: King S. and Nadal S. 2012. [PPCoin: Peer-to-Peer Crypto-Currency with Proof-of-Stake](https://decred.org/research/king2012.pdf).

@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Using a Trezor device with Decrediton
+# ![](../../img/dcr-icons/Wallet.svg){ .dcr-icon } Using a Trezor device with Decrediton
 
 Last updated for Decrediton v{{ decreditonversion }}.
 

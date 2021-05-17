@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Config1.svg" /> Configuration
+# ![](../img/dcr-icons/Config1.svg){ .dcr-icon } Configuration
 
 ---
 

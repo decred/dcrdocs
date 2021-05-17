@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/CreateWallet.svg" /> Wallets and Seeds
+# ![](../img/dcr-icons/CreateWallet.svg){ .dcr-icon } Wallets and Seeds
 
 ---
 

@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Decrediton Migrations
+# ![](../../img/dcr-icons/Wallet.svg){ .dcr-icon } Decrediton Migrations
 
 This page lists migrations performed by recent versions of Decrediton, what exactly they entail and possible impacts on custom setups.
 

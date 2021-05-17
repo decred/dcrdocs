@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> CLI Installation guide
+# ![](../../img/dcr-icons/Dcrtl.svg){ .dcr-icon } CLI Installation guide
 
 Last updated for CLI release v{{ cliversion }}.
 

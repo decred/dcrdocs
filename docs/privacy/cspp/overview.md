@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/LockEye.svg" /> CoinShuffle++
+# ![](../../img/dcr-icons/LockEye.svg){ .dcr-icon } CoinShuffle++
 
 ---
 

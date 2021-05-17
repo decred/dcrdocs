@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/TicketLive.svg" /> Proof-of-Stake General FAQ
+# ![](../../img/dcr-icons/TicketLive.svg){ .dcr-icon } Proof-of-Stake General FAQ
 
 ---
 

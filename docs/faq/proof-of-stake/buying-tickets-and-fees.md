@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/BuyTicket.svg" /> Buying Tickets and Fees
+# ![](../../img/dcr-icons/BuyTicket.svg){ .dcr-icon } Buying Tickets and Fees
 
 ---
 

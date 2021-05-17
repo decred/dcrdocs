@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Verifying Votes
+# ![](../../img/dcr-icons/TicketVoted.svg){ .dcr-icon } Verifying Votes
 
 When a proof-of-stake ticket is called to vote on-chain, the voting preference of that ticket is permanently recorded on the Decred blockchain.
 It is possible to verify the voting preference of a ticket using either the Decred block explorer or the Command Line Interface (CLI).

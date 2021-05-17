@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Question.svg" /> Common Errors and Solutions
+# ![](../img/dcr-icons/Question.svg){ .dcr-icon } Common Errors and Solutions
 
 ## Proof-of-Stake (PoS)
 

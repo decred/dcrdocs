@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Elliptic Curve Signature Algorithms
+# ![](../img/dcr-icons/Code.svg){ .dcr-icon } Elliptic Curve Signature Algorithms
 
 ---
 
@@ -31,7 +31,7 @@ In the future, threshold signatures using dealerless secret sharing will also en
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> References
+## ![](../img/dcr-icons/Sources.svg){ .dcr-icon } References
 
 [^1]: Pornin T. 2013. [StackExchange Cryptography: Should we trust the NIST-recommended ECC parameters?](https://decred.org/research/pornin2013.pdf)
 [^2]: Solinas J. 2000. [Efficient arithmetic on Koblitz curves](https://decred.org/research/solinas2000.pdf).

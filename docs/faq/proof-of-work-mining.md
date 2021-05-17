@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/PoWMine.svg" /> Proof-of-Work (PoW) Mining
+# ![](../img/dcr-icons/PoWMine.svg){ .dcr-icon } Proof-of-Work (PoW) Mining
 
 ---
 

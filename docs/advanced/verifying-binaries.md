@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Verifying Binaries
+# ![](../img/dcr-icons/Code.svg){ .dcr-icon } Verifying Binaries
 ---
 
 ## Overview

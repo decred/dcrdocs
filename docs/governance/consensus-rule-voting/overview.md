@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Consensus Rule Voting
+# ![](../../img/dcr-icons/TicketVoted.svg){ .dcr-icon } Consensus Rule Voting
 
 This page is intended to give a brief introduction to how consensus rule voting works and details the process for setting your tickets to cast your preferred vote for any agenda.
 
@@ -96,6 +96,6 @@ An official website, [voting.decred.org](https://voting.decred.org), has been se
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Further Information
+## ![](../../img/dcr-icons/Sources.svg){ .dcr-icon } Further Information
 
 - Blog post announcing Consensus Rules Voting: <https://blog.decred.org/2016/11/16/Upgrading-Consensus/>

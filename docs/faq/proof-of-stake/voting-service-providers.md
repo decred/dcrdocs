@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Servers.svg" /> Voting Service Providers
+# ![](../../img/dcr-icons/Servers.svg){ .dcr-icon } Voting Service Providers
 
 ---
 

@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> `dcrctl` Basics
+# ![](../../img/dcr-icons/Dcrtl.svg){ .dcr-icon } `dcrctl` Basics
 
 **Prerequisites:**
 

@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> `dcrctl` RPC Commands
+# ![](../../img/dcr-icons/Dcrtl.svg){ .dcr-icon } `dcrctl` RPC Commands
 
 Last updated for CLI release v{{ cliversion }}.
 

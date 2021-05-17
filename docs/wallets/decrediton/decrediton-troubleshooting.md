@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Troubleshooting Common Decrediton Problems
+# ![](../../img/dcr-icons/Wallet.svg){ .dcr-icon } Troubleshooting Common Decrediton Problems
 
 Last updated for Decrediton v{{ decreditonversion }}.
 

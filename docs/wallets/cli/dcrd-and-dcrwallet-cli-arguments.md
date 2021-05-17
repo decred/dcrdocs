@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Options2.svg" /> `dcrd` and `dcrwallet` CLI Arguments
+# ![](../../img/dcr-icons/Options2.svg){ .dcr-icon } `dcrd` and `dcrwallet` CLI Arguments
 
 Last updated for CLI release v{{ cliversion }}.
 

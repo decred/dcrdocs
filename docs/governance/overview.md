@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Governance.svg" /> Introduction to Decred Governance
+# ![](../img/dcr-icons/Governance.svg){ .dcr-icon } Introduction to Decred Governance
 
 ---
 

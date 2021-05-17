@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Blocks.svg" /> Blocks
+# ![](../img/dcr-icons/Blocks.svg){ .dcr-icon } Blocks
 
 ---
 

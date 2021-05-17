@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Servers.svg" /> dcrtime
+# ![](../img/dcr-icons/Servers.svg){ .dcr-icon } dcrtime
 
 ---
 

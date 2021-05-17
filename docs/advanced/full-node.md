@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/AtoB.svg" /> Running a Full Node
+# ![](../img/dcr-icons/AtoB.svg){ .dcr-icon } Running a Full Node
 
 ---
 

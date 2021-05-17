@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Politeia.svg" /> Navigating Politeia Data
+# ![](../img/dcr-icons/Politeia.svg){ .dcr-icon } Navigating Politeia Data
 
 ---
 

@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Miscellaneous Improvements
+# ![](../img/dcr-icons/Code.svg){ .dcr-icon } Miscellaneous Improvements
 
 ---
 
@@ -8,7 +8,7 @@ It should also be noted that many well known mining attacks, such as selfish min
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> References
+## ![](../img/dcr-icons/Sources.svg){ .dcr-icon } References
 
 [^1]: Buterin V. 2014. [A next-generation smart contract and decentralized application platform](https://decred.org/research/buterin2014.pdf).
 [^2]: King S. and Nadal S. 2012. [PPCoin: Peer-to-peer crypto-currency with proof-of-stake](https://decred.org/research/king2012.pdf).

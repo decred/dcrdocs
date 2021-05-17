@@ -2,7 +2,7 @@
 
 ---
 
-## <img class="dcr-icon" alt="Decred logo" src="/img/dcr-icons/DCRsymbol.svg" /> What is Decred?
+## ![](img/dcr-icons/DCRsymbol.svg){ .dcr-icon } What is Decred?
 Decred (/ˈdi:ˈkred/, /dɪˈkred/, dee-cred) is a blockchain-based cryptocurrency with a strong focus on community input, open governance, and sustainable funding for development. It utilizes a hybrid Proof-of-Work (PoW) and Proof-of-Stake (PoS) mining system to ensure that a small group cannot dominate the flow of transactions or make changes to Decred without the input of the community. A unit of the currency is called a decred (DCR).
 
 ---

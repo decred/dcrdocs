@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Politeia.svg" /> Politeia Censorship
+# ![](../../img/dcr-icons/Politeia.svg){ .dcr-icon } Politeia Censorship
 
 ---
 

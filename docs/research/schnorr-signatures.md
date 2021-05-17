@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Schnorr Signatures
+# ![](../img/dcr-icons/Code.svg){ .dcr-icon } Schnorr Signatures
 
 ---
 
@@ -30,6 +30,6 @@ It has been suggested that a Merkle tree containing all possible public key sums
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> References
+## ![](../img/dcr-icons/Sources.svg){ .dcr-icon } References
 
 [^1]: Wuille P. 2015. [Tree signatures: Multisig on steroids using tree signatures](https://decred.org/research/wuille2015.pdf).

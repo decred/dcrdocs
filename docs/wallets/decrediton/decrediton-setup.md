@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Decrediton Setup Guide
+# ![](../../img/dcr-icons/Wallet.svg){ .dcr-icon } Decrediton Setup Guide
 
 Last updated for Decrediton v{{ decreditonversion }}.
 

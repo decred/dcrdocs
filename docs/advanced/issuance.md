@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Rocket.svg" /> Issuance
+# ![](../img/dcr-icons/Rocket.svg){ .dcr-icon } Issuance
 
 ---
 
@@ -432,7 +432,7 @@ Block height | Estimated date     | Block reward (DCR) | PoW (DCR)    | PoS (DCR
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> Sources
+## ![](../img/dcr-icons/Sources.svg){ .dcr-icon } Sources
 
 [^1]: [Blockchain parameters](https://devdocs.decred.org/developer-guides/blockchain-parameters/) 
 [^2]: GitHub, [decred/dcrd](https://github.com/decred/dcrd/blob/5076a00512a521cea3c51b443b50970804dbe712/blockchain/subsidy_test.go#L52-L54)

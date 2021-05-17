@@ -1,8 +1,8 @@
-# <img class="dcr-icon" src="/img/dcr-icons/ObtainingDecred.svg" /> Obtaining DCR
+# ![](../img/dcr-icons/ObtainingDecred.svg){ .dcr-icon } Obtaining DCR
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Info.svg" /> Overview
+## ![](../img/dcr-icons/Info.svg){ .dcr-icon } Overview
 
 This article discusses some of the ways a user can acquire Decred.
 
@@ -16,7 +16,7 @@ The five basic ways are:
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/PurchasingDCR.svg" /> Purchasing Decred
+## ![](../img/dcr-icons/PurchasingDCR.svg){ .dcr-icon } Purchasing Decred
 
 There is a variety of ways to purchase Decred listed on the [Decred website](https://decred.org/exchanges/).
 
@@ -26,25 +26,25 @@ There is a variety of ways to purchase Decred listed on the [Decred website](htt
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/PoWMine.svg" /> Mine for Decred (PoW)
+## ![](../img/dcr-icons/PoWMine.svg){ .dcr-icon } Mine for Decred (PoW)
 
 Proof-of-Work (PoW) is a measure of using computational power to create and verify the cryptographically secure blockchain.  This is similar to traditional Bitcoin mining. PoW mining is described in more detail [here](../mining/overview.md).
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/TicketVoted.svg" /> Participate in Proof-of-Stake Voting
+## ![](../img/dcr-icons/TicketVoted.svg){ .dcr-icon } Participate in Proof-of-Stake Voting
 
 Proof-of-Stake (PoS) voting is performed by stakeholders who lock a certain amount of their DCR in return for voting rights and a monetary reward. PoS voting is described in more detail [here](../proof-of-stake/overview.md).
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Credits.svg" /> Contribute to Decred
+## ![](../img/dcr-icons/Credits.svg){ .dcr-icon } Contribute to Decred
 
 Decred is currently recruiting contractors - members of the community who are paid in Decred for their contributions. Check out [Contributing](../contributing/overview.md) section for details and how to get involved.
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/SellGoods.svg" /> Sell/Trade Goods or Services for Decred
+## ![](../img/dcr-icons/SellGoods.svg){ .dcr-icon } Sell/Trade Goods or Services for Decred
 
 If you are an online merchant, there are some payment processors listed on the [Decred website](https://decred.org/exchanges/) which can help you accept Decred payments. Some of these payment processors can also provide integration with major e-commerce platforms.
 

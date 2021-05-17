@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Hardware Wallets
+# ![](../img/dcr-icons/Wallet.svg){ .dcr-icon } Hardware Wallets
 
 Traditional software wallets such as Decrediton store your private keys in a
 file on your computer.

@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> Manual CLI Installation
+# ![](../img/dcr-icons/Dcrtl.svg){ .dcr-icon } Manual CLI Installation
 
 Last updated for CLI release v{{ cliversion }}.
 

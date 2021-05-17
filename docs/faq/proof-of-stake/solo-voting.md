@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Solo.svg" /> Solo Voting
+# ![](../../img/dcr-icons/Solo.svg){ .dcr-icon } Solo Voting
 
 ---
 

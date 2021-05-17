@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Wallet.svg" /> Mobile Wallets
+# ![](../img/dcr-icons/Wallet.svg){ .dcr-icon } Mobile Wallets
 
 Mobile Decred wallets are available for both
 [Android](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet)

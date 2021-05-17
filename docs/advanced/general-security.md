@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Harddrive.svg" /> Security
+# ![](../img/dcr-icons/Harddrive.svg){ .dcr-icon } Security
 
 This page provides a list of things you can do to improve your security when working with DCR, or cryptocurrencies more generally.
 

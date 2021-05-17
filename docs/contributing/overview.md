@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> Contributing to Decred
+# ![](../img/dcr-icons/Code.svg){ .dcr-icon } Contributing to Decred
 
 ---
 
@@ -10,7 +10,7 @@ The strength of the open source approach to production is that individuals effic
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Dcrtl.svg" /> Guidelines
+## ![](../img/dcr-icons/Dcrtl.svg){ .dcr-icon } Guidelines
 
 While the process of contributing will vary depending on domain, the basic steps will be as follows:
 
@@ -23,7 +23,7 @@ If contributing code, see the [contributor guidelines](https://devdocs.decred.or
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Introductions.svg" /> Becoming a paid Contractor
+## ![](../img/dcr-icons/Introductions.svg){ .dcr-icon } Becoming a paid Contractor
 
 Decred has a Treasury fund to pay contributors who work effectively to advance the project. To become a paid contractor one must demonstrate that one's work is of value to the project. The [recruitment blog post](https://blog.decred.org/2017/07/25/Decred-Recruiting/) by Project Organizer Jake Yocom-Piatt is the definitive guide to becoming a contractor.
 

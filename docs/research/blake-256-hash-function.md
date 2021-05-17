@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/Code.svg" /> BLAKE-256 Hash Function
+# ![](../img/dcr-icons/Code.svg){ .dcr-icon } BLAKE-256 Hash Function
 
 ---
 
@@ -136,7 +136,7 @@ In Decred, only a single round of BLAKE-256 hashing occurs versus two rounds of 
 
 ---
 
-## <img class="dcr-icon" src="/img/dcr-icons/Sources.svg" /> References
+## ![](../img/dcr-icons/Sources.svg){ .dcr-icon } References
 
 [^1]: Aumasson J., Henzen L., Meier W., Phan R. 2010. [SHA-3 proposal BLAKE](https://decred.org/research/aumasson2010.pdf)
 

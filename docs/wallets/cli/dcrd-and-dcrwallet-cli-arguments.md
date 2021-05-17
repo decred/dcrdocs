@@ -133,6 +133,7 @@ dcrd --logdir=/my/custom/log/directory
             `--poolfees=`                              | The per-ticket fee mandated by the ticket pool as a percent (e.g. 1.00 for 1.00% fee)
             `--gaplimit=`                              | The size of gaps between used addresses.  Used for address scanning and when generating addresses with the wrap option. (default: 20)
             `--stakepoolcoldextkey=`                   | Enables the wallet as a stake pool with an extended key in the format of "xpub...:index" to derive cold wallet addresses to send fees to
+            `--manualtickets`                          | Do not discover new tickets through network synchronization
             `--allowhighfees`                          | Force the RPC client to use the 'allowHighFees' flag when sending transactions
             `--txfee=`                                 | Sets the wallet's tx fee per kb (default: 0.0001 DCR)
             `--accountgaplimit=`                       | Number of accounts that can be created in a row without using any of them (default: 10)
@@ -140,7 +141,6 @@ dcrd --logdir=/my/custom/log/directory
     `-c` or `--rpcconnect=`                            | Hostname/IP and port of dcrd RPC server to connect to
             `--cafile=`                                | File containing root certificates to authenticate a TLS connections with dcrd
             `--clientcafile=`                          | Certficate Authority to verify TLS client certificates (default: `~/.dcrwallet/clients.pem`)
-            `--issueclientcert`                        | Notify a client cert and key over the TX pipe for RPC authentication
             `--noclienttls`                            | Disable TLS for the RPC client -- **NOTE:** This is only allowed if the RPC client is connecting to localhost
             `--dcrdusername=`                          | Username for dcrd authentication
             `--dcrdpassword=`                          | Password for dcrd authentication
@@ -166,18 +166,18 @@ dcrd --logdir=/my/custom/log/directory
             `--pipetx=`                                | File descriptor or handle of write end pipe to enable child -> parent process communication
             `--piperx=`                                | File descriptor or handle of read end pipe to enable parent -> child process communication
             `--rpclistenerevents`                      | Notify JSON-RPC and gRPC listener addresses over the TX pipe
-            `--manualtickets`                          | Do not discover new tickets through network synchronization
-            `--ticketbuyer.balancetomaintainabsolute=` | Amount of funds to keep in wallet when stake mining (default: 0 DCR)
-            `--ticketbuyer.votingaddress=`             | Purchase tickets with voting rights assigned to this address
-            `--ticketbuyer.limit=`                     | Buy no more than specified number of tickets per block (0 disables limit)
-            `--ticketbuyer.votingaccount=`             | Account used to derive addresses specifying voting rights
-            `--vsp.url=`                               | Base URL of the VSP server
-            `--vsp.pubkey=`                            | VSP server pubkey
-            `--vsp.sync `                              | sync tickets to vsp
-            `--vsp.maxfee=`                            | Maximum VSP fee (default: 0.1 DCR)
+            `--issueclientcert`                        | Notify a client cert and key over the TX pipe for RPC authentication
             `--csppserver=`                            | Network address of CoinShuffle++ server
             `--csppserver.ca=`                         | CoinShuffle++ Certificate Authority
             `--mixedaccount=`                          | Account/branch used to derive CoinShuffle++ mixed outputs and voting rewards
             `--ticketsplitaccount=`                    | Account to derive fresh addresses from for mixed ticket splits; uses mixedaccount if unset
             `--changeaccount=`                         | Account used to derive unmixed CoinJoin outputs in CoinShuffle++ protocol
             `--mixchange`                              | Use CoinShuffle++ to mix change account outputs into mix account
+            `--ticketbuyer.balancetomaintainabsolute=` | Amount of funds to keep in wallet when stake mining (default: 0 DCR)
+            `--ticketbuyer.votingaddress=`             | Purchase tickets with voting rights assigned to this address
+            `--ticketbuyer.limit=`                     | Buy no more than specified number of tickets per block (0 disables limit)
+            `--ticketbuyer.votingaccount=`             | Account used to derive addresses specifying voting rights
+            `--vsp.url=`                               | Base URL of the VSP server
+            `--vsp.pubkey=`                            | VSP server pubkey
+            `--vsp.sync`                               | sync tickets to vsp
+            `--vsp.maxfee=`                            | Maximum VSP fee (default: 0.1 DCR)

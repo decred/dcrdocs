@@ -37,9 +37,9 @@ The dcrtime service is comprised of four components:
 * **dcrwallet:** A Decred wallet daemon.
 * **dcrd:** A full node implementation of Decred.
 
-The diagram below illustrates how the components are connected. 
+The diagram below illustrates how the components are connected.
 
-![dcrtime architecture](/img/dcrtime_architecture_diagram.png)
+![dcrtime architecture](../img/dcrtime_architecture_diagram.png)
 
 ## dcrtime implementation
 
@@ -100,7 +100,7 @@ Politeia commits user data (new proposals, edits, etc.) as needed to a public gi
 
 The diagram below provides a high-level diagram of the timestamping process.
 
-![dcrtime politeia](/img/dcrtime_politeia_diagram.png)
+![dcrtime politeia](../img/dcrtime_politeia_diagram.png)
 
 To illustrate, let's examine an anchor from a real proposal, the [Decred Bug Bounty Proposal: Phase 2](https://proposals.decred.org/proposals/073694ed82d34b2bfff51e35220e8052ad4060899b23bc25791a9383375cae70) proposal. This anchor hashes two commits to the blockchain. The first [commit](https://github.com/decred-proposals/mainnet/commit/9125d351db4a429681cd7158d2c17d62a2b47c4c) contains all vote data submitted in the last hour. The second [commit](https://github.com/decred-proposals/mainnet/commit/afcca3b205ab6ec749d26e1903414aa35acd9767) contains all comments submitted in the last hour. First, Politeia will submit an anchor commit, which appends an "Audit Trail Record" containing metadata to `anchor_audit_trail.txt`, as shown below.  
 

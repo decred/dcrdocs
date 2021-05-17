@@ -8,13 +8,13 @@ The choice a ticket votes with depends on your vote preference at the time the t
 
 If your Voting Service Provider (VSP) has updated to the latest VSP software, you will find a 'Voting' page in the navigation menu with dropdown options for each agenda. After you've chosen how you want your tickets to vote, simply press the 'Update Voting Preferences' button to save your vote choices.
 
-![VSP voting preferences](/img/vsp_voting_preferences.png)
+![VSP voting preferences](../../img/vsp_voting_preferences.png)
 
 You can also update your voting preferences via Decrediton.
 Under the 'Governance' section, 'Consensus Changes' tab, you'll find the option
 to set your vote.
 
-![Decrediton voting preferences](/img/decrediton_voting_preferences.png)
+![Decrediton voting preferences](../../img/decrediton_voting_preferences.png)
 
 ---
 

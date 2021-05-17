@@ -54,9 +54,9 @@ After setting up the Trezor device with a seed (and optionally enabling passphra
 
 To do so, connect your Trezor device to the computer, access the "Restore Existing Wallet", enable the "Trezor" switch and click on "Continue".
 
-![Restore Wallet](/img/decrediton/restore-wallet.png)
+![Restore Wallet](../../img/decrediton/restore-wallet.png)
 
-![Switch to Trezor-backed wallet](/img/decrediton/restore-wallet-trezor.png)
+![Switch to Trezor-backed wallet](../../img/decrediton/restore-wallet-trezor.png)
 
 Decrediton will fetch the master public key for the first account of the Trezor device and initialize an internal "Watching Only" dcrwallet instance.
 

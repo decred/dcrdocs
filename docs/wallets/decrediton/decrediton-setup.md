@@ -61,21 +61,21 @@ The latest version of Decrediton can be downloaded from <https://decred.org/wall
 
 Opening Decrediton for the first time will display the following screen:
 
-![Decrediton startup screen](/img/decrediton/setup/startup.png)
+![Decrediton startup screen](../../img/decrediton/setup/startup.png)
 
 Select your desired language and press **Continue**. You will then be offered various privacy options which allow you to restrict which external services Decrediton will contact. The "Standard" option is recommended for most users, as this will enable all of the features in Decrediton and provide the best user experience.
 
-![Decrediton privacy options](/img/decrediton/setup/privacy-options.png)
+![Decrediton privacy options](../../img/decrediton/setup/privacy-options.png)
 
 A screen will be displayed which allows you to enable SPV mode if desired.
 
-![Decrediton SPV options](/img/decrediton/setup/spv-options.png)
+![Decrediton SPV options](../../img/decrediton/setup/spv-options.png)
 
 After making your choice, a short presentation explaining Decred blockchain, wallet, keys, staking/governance, and safety tips is shown. Please read these slides carefully if you are new to Decred.
 
 The following screen should be displayed next.
 
-![Decrediton blockchain download screen](/img/decrediton/setup/chain-downloading.png)
+![Decrediton blockchain download screen](../../img/decrediton/setup/chain-downloading.png)
 
 A large progress bar on this screen shows the progress of the blockchain download. If you chose to enable SPV mode, this bar will be filled immediately because downloading the blockchain is not required.
 
@@ -101,11 +101,11 @@ As Decrediton allows you to manage multiple wallets on one PC, you must give a n
 
 The 33 word seed for your new wallet is displayed on the screen (obscured in the below image). Record the seed and store it somewhere safe.
 
-![Decrediton wallet seed screen](/img/decrediton/setup/wallet-seed.png)
+![Decrediton wallet seed screen](../../img/decrediton/setup/wallet-seed.png)
 
 Press **Continue** and re-enter the missing words from your seed on the next screen. This is to confirm you have recorded your seed correctly.
 
-![Decrediton seed entry screen](/img/decrediton/setup/seed-entered.png)
+![Decrediton seed entry screen](../../img/decrediton/setup/seed-entered.png)
 
 Create a passphrase for your wallet. This passphrase will be used to unlock your wallet when creating transactions.
 
@@ -117,7 +117,7 @@ Press **Create Wallet** and your wallet setup is complete. You will be taken bac
 
 1. Open Decrediton and click on **Restore Existing Wallet**. If Decrediton is open and you have another wallet open, you'll need to first go to Settings and click **Close Wallet**.
 
-    ![Decrediton close wallet](/img/decrediton/setup/wallet-close.png)
+    ![Decrediton close wallet](../../img/decrediton/setup/wallet-close.png)
 
 1. Name your wallet. As Decrediton allows you to manage multiple wallets on one PC, you must give a name to your wallet so it can be identified.
 

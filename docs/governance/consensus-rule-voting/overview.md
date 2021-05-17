@@ -76,7 +76,7 @@ All full nodes participating in the network will automatically activate the new 
 
 Below is a diagram of the entire cycle for a single agenda with consensus upgrades.
 
-![Consensus rule voting cycle](/img/voting-cycle.png)
+![Consensus rule voting cycle](../../img/voting-cycle.png)
 
 ---
 

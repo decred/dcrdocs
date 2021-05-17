@@ -20,7 +20,7 @@ When a user registers, a cryptographic identity (pub/priv key pair) is created. 
 
 If a user's proposal is censored, it will not appear publicly on Politeia, but will still be visible to the user and admins. The censored proposal will still appear on the user's `Your Proposals` page, along with the reason the proposal was censored. Below is an example proposal that was censored as spam. 
 
-![Example Censored Proposal](/img/politeia/censored-proposal.png)
+![Example Censored Proposal](../../img/politeia/censored-proposal.png)
 
 ## Recourse
 

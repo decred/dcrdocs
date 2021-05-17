@@ -1,4 +1,4 @@
-# <img class="dcr-icon" alt="Decred logo" src="/img/dcr-icons/DCRsymbol.svg" /> Articles and Media
+# ![](../img/dcr-icons/DCRsymbol.svg){ .dcr-icon } Articles and Media
 
 ---
 

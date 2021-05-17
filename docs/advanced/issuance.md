@@ -20,7 +20,7 @@ The hard cap with no “tail emissions” beyond the scheduled ~21M is designed 
 
 The following chart shows an estimate of the coin supply growth over time.
 
-![Decred supply chart](/img/decred_supply.png)
+![Decred supply chart](../img/decred_supply.png)
 
 The table below shows the estimated block reward and estimated total supply of Decred up to block 2,457,600 in 2039. Note that the total supply of DCR at block 1 is 1,680,000 due to the [premine](premine.md). There was no block reward for proof-of-work miners in block 1, which allowed miners to voluntarily choose whether or not to accept the terms of the airdrop independent of a potential reward which could skew the incentive. PoS voting started at block 4,096[^3] therefore PoS rewards were not generated before that height.
 

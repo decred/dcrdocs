@@ -90,7 +90,7 @@ transaction sizes and where you are sending transactions to.
 #### Coin Type
 
 A unique number assigned to a cryptocurrency, which is used by [HD
-Wallets](#hd-wallet) during the process of generating public/private keypairs.
+Wallets](#hierarchical-deterministic-hd-wallet) during the process of generating public/private keypairs.
 Cryptocurrencies with assigned coin types are listed in
 [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md).
 The coin type of Decred is 42.

@@ -18,40 +18,35 @@ dcrd --logdir=/my/custom/log/directory
 ??? info "Click to expand full list of `dcrd` CLI arguments"
     Argument                          |Description
     ----------------------------------|-------------
-    `-A` or `--appdata=`              | Path to application home directory (default: `~/.dcrd`)
     `-V` or `--version`               | Display version information and exit
+    `-A` or `--appdata=`              | Path to application home directory (default: `~/.dcrd`)
     `-C` or `--configfile=`           | Path to configuration file (default: `~/.dcrd/dcrd.conf`)
     `-b` or `--datadir=`              | Directory to store data (default: `~/.dcrd/data`)
             `--logdir=`               | Directory to log output. (default: `~/.dcrd/logs`)
             `--nofilelogging`         | Disable file logging.
-    `-a` or `--addpeer=`              | Add a peer to connect with at startup
-            `--connect=`              | Connect only to the specified peers at startup
-            `--nolisten`              | Disable listening for incoming connections -- **NOTE:** Listening is automatically disabled if the `--connect` or `--proxy` options are used without also specifying listen interfaces via `--listen`
-            `--listen=`               | Add an interface/port to listen for connections (default all interfaces port: 9108, testnet: 19108)
-            `--maxsameip=`            | Max number of connections with the same IP -- 0 to disable (default: 5)
-            `--maxpeers=`             | Max number of inbound and outbound peers (default: 125)
-            `--peeridletimeout=`      | The duration of inactivity before a peer is timed out. Valid time units are {s,m,h}. Minimum 15 seconds (default: 2m0s)
-            `--dialtimeout=`          | How long to wait for TCP connection completion.  Valid time units are {s, m, h}.  Minimum 1 second (default: 30s)
-            `--nobanning`             | Disable banning of misbehaving peers
-            `--banduration=`          | How long to ban misbehaving peers.  Valid time units are {s, m, h}.  Minimum 1 second (default: 24h0m0s)
-            `--banthreshold=`         | Maximum allowed ban score before disconnecting and banning misbehaving peers. (default: 100)
-            `--whitelist=`            | Add an IP network or IP that will not be banned. (eg. 192.168.1.0/24 or ::1)
+            `--dbtype=`               | Database backend to use for the Block Chain (default: ffldb)
+            `--profile=`              | Enable HTTP profiling on given [addr:]port -- **NOTE:** port must be between 1024 and 65536
+            `--cpuprofile=`           | Write CPU profile to the specified file
+            `--memprofile=`           | Write mem profile to the specified file
+            `--testnet`               | Use the test network
+            `--simnet`                | Use the simulation test network
+            `--regnet`                | Use the regression test network
+    `-d` or `--debuglevel=`           | Logging level for all subsystems {trace, debug, info, warn, error, critical} -- You may also specify <subsystem>=<level>,<subsystem2>=<level>,... to set the log level for individual subsystems -- Use show to list available subsystems (default: info)
+            `--sigcachemaxsize=`      | The maximum number of entries in the signature verification cache (default: 100000)
+            `--norpc`                 | Disable built-in RPC server -- **NOTE:** The RPC server is disabled by default if no rpcuser/rpcpass or rpclimituser/rpclimitpass is specified
+            `--rpclisten=`            | Add an interface/port to listen for RPC connections (default port: 9109, testnet: 19109)
     `-u` or `--rpcuser=`              | Username for RPC connections
     `-P` or `--rpcpass=`              | Password for RPC connections
             `--rpclimituser=`         | Username for limited RPC connections
             `--rpclimitpass=`         | Password for limited RPC connections
-            `--rpclisten=`            | Add an interface/port to listen for RPC connections (default port: 9109, testnet: 19109)
             `--rpccert=`              | File containing the certificate file (default: `~/.dcrd/rpc.cert`)
             `--rpckey=`               | File containing the certificate key (default: `~/.dcrd/rpc.key`)
+            `--tlscurve=`             | Curve to use when generating TLS keypairs (default: P-256)
+            `--altdnsnames=`          | Specify additional DNS names to use when generating the RPC server certificate [$DCRD_ALT_DNSNAMES]
+            `--notls`                 | Disable TLS for the RPC server -- **NOTE:** This is only allowed if the RPC server is bound to localhost
             `--rpcmaxclients=`        | Max number of RPC clients for standard connections (default: 10)
             `--rpcmaxwebsockets=`     | Max number of RPC websocket connections (default: 25)
             `--rpcmaxconcurrentreqs=` | Max number of concurrent RPC requests that may be processed concurrently (default: 20)
-            `--norpc`                 | Disable built-in RPC server -- **NOTE:** The RPC server is disabled by default if no rpcuser/rpcpass or rpclimituser/rpclimitpass is specified
-            `--notls`                 | Disable TLS for the RPC server -- **NOTE:** This is only allowed if the RPC server is bound to localhost
-            `--tlscurve=`             | Curve to use when generating TLS keypairs (default: P-256)
-            `--nodnsseed`             | **DEPRECATED** -- use --noseeders
-            `--noseeders`             | Disable seeding for peer discovery
-            `--externalip=`           | Add an ip to the list of local addresses we claim to listen on to peers
             `--proxy=`                | Connect via SOCKS5 proxy (eg. 127.0.0.1:9050)
             `--proxyuser=`            | Username for proxy server
             `--proxypass=`            | Password for proxy server
@@ -59,37 +54,43 @@ dcrd --logdir=/my/custom/log/directory
             `--onionuser=`            | Username for onion proxy server
             `--onionpass=`            | Password for onion proxy server
             `--noonion`               | Disable connecting to Tor hidden services
-            `--nodiscoverip`          | Disable automatic network address discovery of local external IPs
             `--torisolation`          | Enable Tor stream isolation by randomizing user credentials for each connection.
-            `--testnet`               | Use the test network
-            `--simnet`                | Use the simulation test network
-            `--regnet`                | Use the regression test network
-            `--nocheckpoints`         | Disable built-in checkpoints.  Don't do this unless you know what you're doing.
-            `--dbtype=`               | Database backend to use for the Block Chain (default: ffldb)
-            `--profile=`              | Enable HTTP profiling on given [addr:]port -- **NOTE:** port must be between 1024 and 65536
-            `--cpuprofile=`           | Write CPU profile to the specified file
-            `--memprofile=`           | Write mem profile to the specified file
-            `--dumpblockchain=`       | Write blockchain as a flat file of blocks for use with addblock, to the specified filename
-            `--miningtimeoffset=`     | Offset the mining timestamp of a block by this many seconds (positive values are in the past)
-    `-d` or `--debuglevel=`           | Logging level for all subsystems {trace, debug, info, warn, error, critical} -- You may also specify <subsystem>=<level>,<subsystem2>=<level>,... to set the log level for individual subsystems -- Use show to list available subsystems (default: info)
+    `-a` or `--addpeer=`              | Add a peer to connect with at startup
+            `--connect=`              | Connect only to the specified peers at startup
+            `--nolisten`              | Disable listening for incoming connections -- **NOTE:** Listening is automatically disabled if the `--connect` or `--proxy` options are used without also specifying listen interfaces via `--listen`
+            `--listen=`               | Add an interface/port to listen for connections (default all interfaces port: 9108, testnet: 19108)
+            `--maxsameip=`            | Max number of connections with the same IP -- 0 to disable (default: 5)
+            `--maxpeers=`             | Max number of inbound and outbound peers (default: 125)
+            `--dialtimeout=`          | How long to wait for TCP connection completion.  Valid time units are {s, m, h}.  Minimum 1 second (default: 30s)
+            `--peeridletimeout=`      | The duration of inactivity before a peer is timed out. Valid time units are {s,m,h}. Minimum 15 seconds (default: 2m0s)
+            `--noseeders`             | Disable seeding for peer discovery
+            `--nodnsseed`             | **DEPRECATED** -- use --noseeders
+            `--externalip=`           | Add an ip to the list of local addresses we claim to listen on to peers
+            `--nodiscoverip`          | Disable automatic network address discovery of local external IPs
             `--upnp`                  | Use UPnP to map our listening port outside of NAT
+            `--nobanning`             | Disable banning of misbehaving peers
+            `--banduration=`          | How long to ban misbehaving peers.  Valid time units are {s, m, h}.  Minimum 1 second (default: 24h0m0s)
+            `--banthreshold=`         | Maximum allowed ban score before disconnecting and banning misbehaving peers. (default: 100)
+            `--whitelist=`            | Add an IP network or IP that will not be banned. (eg. 192.168.1.0/24 or ::1)
+            `--nocheckpoints`         | Disable built-in checkpoints.  Don't do this unless you know what you're doing.
+            `--dumpblockchain=`       | Write blockchain as a flat file of blocks for use with addblock, to the specified filename
             `--minrelaytxfee=`        | The minimum transaction fee in DCR/kB to be considered a non-zero fee. (default: 0.0001)
             `--limitfreerelay=`       | Limit relay of transactions with no transaction fee to the given amount in thousands of bytes per minute (default: 15)
             `--norelaypriority`       | Do not require free or low-fee transactions to have high priority for relaying
             `--maxorphantx=`          | Max number of orphan transactions to keep in memory (default: 100)
+            `--blocksonly`            | Do not accept transactions from remote peers.
+            `--acceptnonstd`          | Accept and relay non-standard transactions to the network regardless of the default settings for the active network.
+            `--rejectnonstd`          | Reject non-standard transactions regardless of the default settings for the active network.
+            `--allowoldvotes`         | Enable the addition of very old votes to the mempool
             `--generate`              | Generate (mine) coins using the CPU
             `--miningaddr=`           | Add the specified payment address to the list of addresses to use for generated blocks -- At least one address is required if the generate option is set
             `--blockminsize=`         | Minimum block size in bytes to be used when creating a block
             `--blockmaxsize=`         | Maximum block size in bytes to be used when creating a block (default: 375000)
             `--blockprioritysize=`    | Size in bytes for high-priority/low-fee transactions when creating a block (default: 20000)
-            `--sigcachemaxsize=`      | The maximum number of entries in the signature verification cache (default: 100000)
+            `--miningtimeoffset=`     | Offset the mining timestamp of a block by this many seconds (positive values are in the past)
             `--nonaggressive`         | Disable mining off of the parent block of the blockchain if there aren't enough voters
             `--nominingstatesync`     | Disable synchronizing the mining state with other nodes
-            `--allowoldvotes`         | Enable the addition of very old votes to the mempool
             `--allowunsyncedmining`   | Allow block templates to be generated even when the chain is not considered synced on networks other than the main network.  This is automatically enabled when the simnet option is set.  Don't do this unless you know what you're doing
-            `--blocksonly`            | Do not accept transactions from remote peers.
-            `--acceptnonstd`          | Accept and relay non-standard transactions to the network regardless of the default settings for the active network.
-            `--rejectnonstd`          | Reject non-standard transactions regardless of the default settings for the active network.
             `--txindex`               | Maintain a full hash-based transaction index which makes all transactions available via the getrawtransaction RPC
             `--droptxindex`           | Deletes the hash-based transaction index from the database on startup and then exits.
             `--addrindex`             | Maintain a full address-based transaction index which makes the searchrawtransactions RPC available
@@ -101,7 +102,7 @@ dcrd --logdir=/my/custom/log/directory
             `--piperx=`               | File descriptor of read end pipe to enable parent -> child process communication
             `--pipetx=`               | File descriptor of write end pipe to enable parent <- child process communication
             `--lifetimeevents`        | Send lifetime notifications over the TX pipe
-            `--altdnsnames=`          | Specify additional DNS names to use when generating the RPC server certificate [$DCRD_ALT_DNSNAMES]
+
 ---
 
 ## `dcrwallet`

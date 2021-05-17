@@ -27,27 +27,27 @@ Element supports multiple platforms:
 
 When creating your account, select "Advanced" to choose to use a custom homeserver and enter `https://matrix.decred.org`.
 
-![Select Home Server](/img/matrix/matrix-02-select-home-server.png)
+![Select Home Server](../img/matrix/matrix-02-select-home-server.png)
 
 If you filled the email field, check your in-box to verify your account.
 
-![Create Account](/img/matrix/matrix-03-create-account.png)
+![Create Account](../img/matrix/matrix-03-create-account.png)
 
 Once in, you can begin exploring the different channels using the "Explore" feature.
 
-![Explore Rooms](/img/matrix/matrix-04-explore-rooms.png)
+![Explore Rooms](../img/matrix/matrix-04-explore-rooms.png)
 
 Most Decred projects have their own channel, joining areas you would like to contribute to is encouraged.
 
-![Room List](/img/matrix/matrix-05-room-list.png)
+![Room List](../img/matrix/matrix-05-room-list.png)
 
 Anyone can create new channels. Feel free to make one for your Decred related project or friend group.
 
-![Create Room](/img/matrix/matrix-06-create-room.png)
+![Create Room](../img/matrix/matrix-06-create-room.png)
 
 Decred is a community of builders. Price and trading discussions have their own `#trading:decred.org` channel.
 
-![Trading Channel](/img/matrix/matrix-07-trading-channel.png)
+![Trading Channel](../img/matrix/matrix-07-trading-channel.png)
 
 Keep in mind that Matrix channels is where the Decred community collaborates, works and hangs around. Be respectful.
 
@@ -59,4 +59,4 @@ Logging in from your mobile device requires you to setup the homeserver to `http
 
 After logging in for the first time, your rooms list will be empty. To find Decred channels tap the top-right menu dots, then "Global Search", and browse Decred's rooms directory.
 
-![Mobile App](/img/matrix/matrix-08-mobile.png)
+![Mobile App](../img/matrix/matrix-08-mobile.png)

@@ -24,7 +24,7 @@ This section can be skipped if you know what it means to _breach_ an LN channel.
 Lightning Network channels are realized on the blockchain as multisig, 2-of-2 outputs. This means both parties of a channel must cooperate in order to advance its _state_, which reflects the relative balances of the two participants and any outstanding (in-flight) payments:
 
 
-![Channel States](/img/lightning-network/channel-states.svg)
+![Channel States](../img/lightning-network/channel-states.svg)
 
 Each state corresponds to a _commitment transaction_: a transaction signed by both parties that spends the multisig channel output and that pays the correct relative amount to each party.
 

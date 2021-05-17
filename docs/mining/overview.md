@@ -77,7 +77,7 @@ To get started, use a scanning tool like [AngryIP](https://angryip.org/) or [Loc
 Enter the local network IP address of your miner in the URL bar of any web browser. A dashboard similar to the one shown below will pop up. We are setting up a Whatsminer D1, but the process is similar for other ASICs.
 
 
-![Rig Configuration Detail](/img/pow-mining-guide/rig_config.png)
+![Rig Configuration Detail](../img/pow-mining-guide/rig_config.png)
 
 ---
 
@@ -127,4 +127,4 @@ Once you have filled out the details, click Save & Apply. Setup is now complete.
 It will take about 5 minutes for your workers to appear on the stats page. To find your user, simply go to Luxor, login to your account and navigate to the Workers tab. You should see something like this:
 
 
-![Monitoring mining results with Luxor pool](/img/pow-mining-guide/monitoring-dashboard.png)
+![Monitoring mining results with Luxor pool](../img/pow-mining-guide/monitoring-dashboard.png)

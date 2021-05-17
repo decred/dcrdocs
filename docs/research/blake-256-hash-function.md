@@ -20,7 +20,7 @@ BLAKE is built on previously analyzed, and reliable components; the hash iterati
 
 The construction of a hash output is typically done by splitting the input data referred to as a 'message', into small blocks of fixed length and processed iteratively using a cryptographic compression function. The combination of calls to a compression function for processing the input data is an iteration mode (also referred to as a Domain Extender). The Merkle–Damgård (M-D) construction is the classic iteration mode used by MD5, SHA1, RIPEMD-160, and SHA2 hash functions. M-D splits the variable length input message into equal-sized message blocks _x_{: .dcrm } (i.e., 512 bits) of _n_{: .dcrm } blocks, the last block is padded as required and appended with the length of the message.
 
-![Merkle Damgard Construction](/img/merkle-damgard_construction.svg)
+![Merkle Damgard Construction](../img/merkle-damgard_construction.svg)
 
 **<em>Figure 1: Merkle–Damgård Construction</em>**
 
@@ -28,7 +28,7 @@ As shown in Figure 1 above, the output of the compression function _f_{: .dcrm }
 
 BLAKE uses HAIFA, which maintains the valuable properties of the M-D construction and adds to the security and scalability of the transformation. HAIFA is essentially an M-D construction but with a mandatory counter (number of bits hashed so far) and an optional salt (random data that used as an additional input).
 
-![HAIFA Construction](/img/haifa.svg)
+![HAIFA Construction](../img/haifa.svg)
 
 **<em>Figure 2: HAIFA Construction</em>**
 
@@ -36,7 +36,7 @@ This iteration mode solves many of the internal collision problems with the M-D 
 
 #### The local wide-pipe and ChaCha inspired core function
 
-![Local wide-pipe](/img/wide-pipe.svg)
+![Local wide-pipe](../img/wide-pipe.svg)
 
 **<em>Figure 3: Local wide-pipe construction of BLAKE's compression function, inherited from LAKE hash function [^6]</em>**
 
@@ -62,25 +62,25 @@ The security of a cryptographic hash function is determined by the number of que
 
 1. Pre-image resistance (one-way): Given the _y_{: .dcrm } as an output of the hash function, it is computationally infeasible to find message _x_{: .dcrm } such that _h(x) = y_{: .dcrm }. [^4]
 
-    ![Preimage resistance](/img/preimage_resistance.svg)
+    ![Preimage resistance](../img/preimage_resistance.svg)
 
     **<em>Figure 6: Pre-image resistance </em>**
 
 1. Second pre-image resistance (weak collision resistant): Given _x_{: .dcrm }, it is computationally infeasible to find a second pre-image  _x' ≠ x_{: .dcrm } such that _h(x) = h(x')_{: .dcrm } [^4]
 
-    ![Second pre-image resistance](/img/second-preimage_resistance.svg)
+    ![Second pre-image resistance](../img/second-preimage_resistance.svg)
 
     **<em>Figure 7: Second pre-image resistance </em>**
 
 1. Collision resistance (strong collision-resistant): It is computationally infeasible to find any two distinct inputs _x, x'_{: .dcrm } that hash to the same output such that _h(x) = h(x')_{: .dcrm } [^4]
 
-    ![Collision resistance](/img/collision_resistance.svg)
+    ![Collision resistance](../img/collision_resistance.svg)
 
     **<em>Figure 8: Collision resistance </em>**
 
 1. Length-extension resistance: Based on the hash of an unknown message _h(x)_{: .dcrm } and the length of the message _len(x)_{: .dcrm } it is not possible to choose a message _x'_{: .dcrm } to calculate _h(x')_{: .dcrm } such that _h(x') = h(x)_{: .dcrm }.
 
-    ![length extension](/img/length-extension.svg)
+    ![length extension](../img/length-extension.svg)
 
     **<em>Figure 9: Length extension attack: Since _x_{: .dcrm } and _x'_{: .dcrm } share the same first _n_{: .dcrm } blocks, the hash value _h(x)_{: .dcrm } is the intermediate hash value after first _n_{: .dcrm } blocks when computing _h(x')_{: .dcrm }</em> [^17]**
 

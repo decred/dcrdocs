@@ -16,7 +16,7 @@ Vote transactions can be found in Decrediton by opening the History section of t
 This will display a list of all transactions involving the current wallet, but it is possible to filter the list  to show only vote transactions.
 Clicking on a vote transaction in this list will display detailed information about the transaction, including the transaction ID.
 
-![Finding a vote transaction ID in Decrediton](/img/verifying-votes/decrediton-vote-transaction-id.png)
+![Finding a vote transaction ID in Decrediton](../../img/verifying-votes/decrediton-vote-transaction-id.png)
 
 ### Command Line Interface (CLI)
 
@@ -61,7 +61,7 @@ Once the transaction ID of the ticket vote has been found, the voting preference
 To find the voting preferences of a ticket on [the block explorer](https://dcrdata.decred.org), simply enter the transaction ID obtained above into the search feature at the top of the homepage.
 The search result should show the detailed information about the transaction, including the voting preferences.
 
-![Verifying voting preferences in dcrdata](/img/verifying-votes/dcrdata-voting-prefs.png)
+![Verifying voting preferences in dcrdata](../../img/verifying-votes/dcrdata-voting-prefs.png)
 
 ### Command Line Interface (CLI)
 

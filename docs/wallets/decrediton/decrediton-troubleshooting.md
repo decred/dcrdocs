@@ -49,7 +49,7 @@ c:\[...]> decrediton.exe --debug
 
 1. Check if the blockchain is synchronized to the latest block. Look at the block height at the lower left corner of the screen and the latest block from [dcrdata.decred.org](https://dcrdata.decred.org)
 
-    ![Block Height](/img/decrediton/troubleshooting/blockheight.png)
+    ![Block Height](../../img/decrediton/troubleshooting/blockheight.png)
 
 1. Import **all** voting service provider ("stakepool") API keys that you previously used with this wallet. If you do not perform this step for all pools, your balance **will** be incorrect.
 
@@ -84,7 +84,7 @@ Check the following:
 
 ## Error "Already Have Transaction..."
 
-![Rebroadcast error](/img/decrediton/troubleshooting/rebroadcast.png)
+![Rebroadcast error](../../img/decrediton/troubleshooting/rebroadcast.png)
 
 If you receive a message similar to the one above, it means your dcrd node already has the transaction you're trying to publish. This is harmless, but if the transaction is left pending for a long time, you could try:
 
@@ -94,7 +94,7 @@ If you receive a message similar to the one above, it means your dcrd node alrea
 
 ## Cannot Purchase Tickets
 
-![Cannot purchase ticket](/img/decrediton/troubleshooting/purchaseticket.png)
+![Cannot purchase ticket](../../img/decrediton/troubleshooting/purchaseticket.png)
 
 This is usually caused by shutting down Decrediton before a ticket has been mined.
 
@@ -104,7 +104,7 @@ Perform the same steps as described in ["Cannot see all my coins"](#cannot-see-a
 
 If you can start the wallet but get error messages when performing an operation, then the first thing is to verify the wallet logs from within Decrediton. Access the Settings -> Logs page and look for any ERR messages:
 
-![Logs Page](/img/decrediton/troubleshooting/logs.png)
+![Logs Page](../../img/decrediton/troubleshooting/logs.png)
 
 ## How to backup VSP redeem script
 
@@ -114,8 +114,8 @@ Now is a good time to back up your VSPs multi-sig voting script (or "redeem scri
 
 Click on the gear icon next to your VSP. Then click on the donut icon that appears.
 
-![Purchase Tickets page](/img/decrediton/redeem-script.png)
+![Purchase Tickets page](../../img/decrediton/redeem-script.png)
 
 This will bring up your VSP's configuration details. Copy the string of characters in the `Script` field and store them in a safe location. 
 
-![Purchase Tickets page](/img/decrediton/redeem-script-field.png)
+![Purchase Tickets page](../../img/decrediton/redeem-script-field.png)

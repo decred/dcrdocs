@@ -8,11 +8,11 @@ To upgrade Decrediton, simply download the new version and install it. You do no
 
 1. Download the latest version from [https://decred.org/wallets/](https://decred.org/wallets/) or by clicking on the `Update Available` button in the upper right-hand corner of Decrediton.
 
-    ![Decrediton update link](/img/decrediton/upgrading/update-available.png)
+    ![Decrediton update link](../../img/decrediton/upgrading/update-available.png)
 
     Click on the link for your OS and download the installer.
 
-    ![Decrediton update link](/img/decrediton/upgrading/download-link.png)
+    ![Decrediton update link](../../img/decrediton/upgrading/download-link.png)
 
     !!! Warning "Security Tip"
     

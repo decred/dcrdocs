@@ -18,7 +18,7 @@ The overview tab gives a quick summary of your total DCR (available and locked i
 
 Graphs of your balance, ticket activity and transaction history over the last two weeks can be viewed here.
 
-![Overview Tab](/img/decrediton/overview.png)
+![Overview Tab](../../img/decrediton/overview.png)
 
 ---
 
@@ -34,7 +34,7 @@ There are additional buttons here which can be used to create more advanced tran
 
 Once you have entered the details of your transaction, the estimated fee and transaction size are detailed below the input panels. After reviewing these numbers, you can press the **Send** button and your transaction will be broadcast.
 
-![Send Tab](/img/decrediton/send.png)
+![Send Tab](../../img/decrediton/send.png)
 
 ### Receive
 
@@ -42,20 +42,20 @@ This is where you can generate wallet addresses to give to other people so they 
 send you DCR. The address is displayed in the blue text box - it's the line that starts with Ds, or Ts on testnet. Simply choose the account you want funds to go to and select the **Generate New Address** button.
 Decred addresses can be used as many times as you want, but for privacy reasons it's best to generate a new one for each transaction. There's around 1.4E48 (that's 14 followed by 47 zeroes) addresses available so you don't need to worry about running out.
 
-![Receive Tab](/img/decrediton/receive.png)
+![Receive Tab](../../img/decrediton/receive.png)
 
 ### History
 
 This tab shows a list of all transactions that have occurred involving this wallet. A dropdown menu allows filtering the list by transaction type: regular, ticket and vote transactions. The transaction hash can be used with the
 [block explorer](../../getting-started/using-the-block-explorer.md) to see more information about the transaction.
 
-![History Tab](/img/decrediton/history.png)
+![History Tab](../../img/decrediton/history.png)
 
 ### Export
 
 This tab shows allows you to export your transaction history in a .csv format. You can choose the data you wish to export, select a location to output the generated file, and then press the **Export** button.
 
-![Export Tab](/img/decrediton/export-transactions.png)
+![Export Tab](../../img/decrediton/export-transactions.png)
 
 <!-- TODO add Lightning Transactions here -->
 
@@ -65,7 +65,7 @@ This tab shows allows you to export your transaction history in a .csv format. Y
 
 The governance tab enables users holding tickets to have their say on Decred's governance. Here you can browse and vote upon [Politeia proposals](../../governance/politeia/overview.md), and you can set your voting preferences for on chain [consensus rule votes](../../governance/consensus-rule-voting/overview.md). Your privacy settings must allow Decrediton to contact Politeia to download proposal information.
 
-![Governance page](/img/decrediton/governance.png)
+![Governance page](../../img/decrediton/governance.png)
 
 Politeia proposals can be filtered by "Under Discussion", "Under Vote", "Finished Voting" and "Abandoned". The "Create Proposal" button will open <https://proposals.decred.org> in your browser.
 
@@ -75,7 +75,7 @@ You are able to vote on proposals if the following two criteria are met:
 
 1. You owned live proof-of-stake tickets when the proposal was opened for voting
 
-![Consensus rule changes Settings page](/img/decrediton/consensus-rule-voting.png)
+![Consensus rule changes Settings page](../../img/decrediton/consensus-rule-voting.png)
 
 The Consensus Changes page shows all of the agendas which are currently up for vote on the Decred blockchain.
 You can read the details of each agenda and choose which way you would like to vote on each issue.
@@ -90,7 +90,7 @@ The staking tab is split into four sections:
 
 ### Purchase Tickets
 
-![Purchase Tickets page](/img/decrediton/purchase-tickets.png)
+![Purchase Tickets page](../../img/decrediton/purchase-tickets.png)
 
 The total number of tickets you currently own is at the top of the page:
 
@@ -104,7 +104,7 @@ In order to purchase tickets you just need to select which account to purchase t
 
 The "Automatic Ticket Buyer" panel allows you to enable the automated ticket buyer - Decrediton will continually buy tickets for you for as long as you keep it running. You can configure how the ticket buyer works using the options:
 
-![Automatic Purchase panel](/img/decrediton/autobuyer.png)
+![Automatic Purchase panel](../../img/decrediton/autobuyer.png)
 
 - **VSP** - Which VSP to purchase tickets with
 - **From** - Funds to purchase tickets will come from this account
@@ -122,7 +122,7 @@ This tab shows a summary of all of your tickets which voted, expired or were mis
 
 This page displays various statistics about all of the available VSPs. The dropdown can be used to change the currently displayed VSP.
 
-![VSP statistics page](/img/decrediton/pool-stats.png)
+![VSP statistics page](../../img/decrediton/pool-stats.png)
 
 ---
 
@@ -132,7 +132,7 @@ This page displays various statistics about all of the available VSPs. The dropd
 
 The Security Center tab offers two key features - the ability to sign and verify messages using your private key, and the ability to validate addresses.
 
-![Security Tab](/img/decrediton/security.png)
+![Security Tab](../../img/decrediton/security.png)
 
 ### Sign and Verify messages
 
@@ -159,7 +159,7 @@ useful for those who run businesses and wish to keep separate accounts for
 tax records for example. Transferring DCR across accounts will create a
 transaction on the blockchain.
 
-![Accounts Tab](/img/decrediton/accounts.png)
+![Accounts Tab](../../img/decrediton/accounts.png)
 
 ---
 
@@ -169,4 +169,4 @@ The settings tab allows you to customize the units DCR amounts are displayed in 
 
 The settings tab is also where you come to change your private passphrase.
 
-![Settings Tab](/img/decrediton/settings.png)
+![Settings Tab](../../img/decrediton/settings.png)

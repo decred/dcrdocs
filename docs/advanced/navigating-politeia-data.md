@@ -10,7 +10,7 @@ For the purpose of this guide we'll be using this [previous proposal](https://pr
 
 Below is a screenshot of the root directory of the [decred-proposals/mainnet](https://github.com/decred-proposals/mainnet) repo.  
 
-![The root of the mainnet repository. * = proposal folders, A = anchoring data](/img/politeia/mainnet-pi-repo.png)
+![The root of the mainnet repository. * = proposal folders, A = anchoring data](../img/politeia/mainnet-pi-repo.png)
 
 Folders marked with `*` contain proposal data. Folders and files marked with `A` contain anchoring data. Anchoring data relates to the anchoring of Politeia data to the Decred blockchain through [dcrtime](dcrtime.md), which facilitates Politeia's transparent censorship functionality. This guide will not describe those files in detail, as they are not likely to be of interest for analysis. 
 
@@ -18,11 +18,11 @@ Within each proposal folder there are sequentially numbered sub-folders, one for
 
 Below shows the contents of our example proposal's folder. As we can see, there are two versions of the proposal. 
 
-![Versions of the example proposal](/img/politeia/example-proposal.png)
+![Versions of the example proposal](../img/politeia/example-proposal.png)
 
 If we click on the latest version ('/2'), we can see all the relevant data for this version. 
 
-![Folder for version 2 of the example proposal](/img/politeia/prop-version2.png)
+![Folder for version 2 of the example proposal](../img/politeia/prop-version2.png)
 
 Below is a table with descriptions of the files and folders found in each proposal version folder. 
 

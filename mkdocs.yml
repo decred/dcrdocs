@@ -31,8 +31,8 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 extra:
-  decreditonversion: 1.6.2
-  cliversion: 1.6.2
+  decreditonversion: 1.6.3
+  cliversion: 1.6.3
   gominerversion: 1.0.0
   lndversion: 0.3.0
   social:

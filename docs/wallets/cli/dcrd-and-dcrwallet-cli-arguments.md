@@ -147,6 +147,9 @@ dcrd --logdir=/my/custom/log/directory
             `--proxy=`                                 | Connect via SOCKS5 proxy (eg. 127.0.0.1:9050)
             `--proxyuser=`                             | Username for proxy server
             `--proxypass=`                             | Password for proxy server
+            `--circuitlimit=`                          | Set maximum number of open Tor circuits; used only when `--torisolation` is enabled (default: 32)
+            `--torisolation`                           | Enable Tor stream isolation by randomizing user credentials for each connection
+            `--nodcrdproxy`                            | Never use configured proxy to dial dcrd websocket connectons
             `--spv`                                    | Sync using simplified payment verification
             `--spvconnect=`                            | Full node addresses to SPV sync from
             `--rpccert=`                               | File containing the certificate file (default: `~/.dcrwallet/rpc.cert`)

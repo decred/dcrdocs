@@ -70,14 +70,6 @@ The current implementation has several limitations. Mainly the use of a centrali
 
 The anonymity provided by CoinShuffle++ can be lost if wallet addresses  are reused, or if change outputs are not handled correctly. It is imperative that addresses are never reused and that extended public keys of mixed and voting accounts are not revealed to other parties.
 
-The initial code only supports the CLI wallet, dcrwallet, and solo stakers. To implement CSPP beyond the CLI there are some issues that must be dealt with:
-
-  + **dcrwallet:** Changes must be made to support unlocking individual accounts while other accounts keys are locked. CSPP requires hot keys to create on-demand transactions at the end of the timed process.
-
-  + **Decrediton:** UI/UX must be made so that users have a simple way to opt-in into privacy. The UI must ensure users do not send funds from other accounts besides their mixed account, prevent receiving funds into accounts besides the change account, and use the mixed account to buy tickets.
-
-  + **VSP API:** A new VSP API for buying tickets is needed. To fully support privacy, the way how users buy tickets through VSP must be substantially changed. Proposed changes are already outlined [here](https://github.com/decred/dcrstakepool/issues/574), and it entails moving from an account-based system to a ticket-based system, where users pay VSP fees upfront, and VSP tickets are indistinguishable from solo tickets.
-
 ---
 
 ## Further Information

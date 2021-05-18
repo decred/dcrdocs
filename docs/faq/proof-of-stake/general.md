@@ -43,7 +43,7 @@ The ticket price is always refunded, no matter if your ticket votes, misses or e
 
 #### 4. What is a Voting Service Provider?
 
-A Voting Service Provider (VSP) is similar in some ways to a PoW mining pool, but for the PoS system. Through the options in your Decred wallet, you can give your voting rights to a VSP. If your ticket is selected to vote, the VSP will cast the vote for you and you are rewarded with the PoS reward minus the VSP fee (usually 1-5%). Unlike mining pools, the PoS reward is not split amongst the users of the VSP. The full reward goes to the owner of the specific ticket that voted.
+A Voting Service Provider (VSP) is similar in some ways to a PoW mining pool, but for the PoS system. Through the options in your Decred wallet, you can share your voting rights with a VSP. If your ticket is selected to vote, the VSP will cast the vote for you and you are rewarded with the PoS reward. Unlike mining pools, the PoS reward is not split amongst the users of the VSP. The full reward goes to the owner of the specific ticket that voted.
 
 A VSP allows you to buy tickets and vote without the requirement of maintaining an online and unlocked wallet. It is important to note that your funds never leave your wallet. You are not sending anything to the VSP, just giving it authority to vote on your behalf. A VSP cannot access your funds.
 

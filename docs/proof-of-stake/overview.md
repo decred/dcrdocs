@@ -42,9 +42,9 @@ The **Ticket Fee** (`ticketfee`) is the fee that must be included in the ticket 
 
 **When a ticket is called to vote, the wallet that has voting rights for that ticket must be online.** If the wallet is not online to cast its vote, the ticket will be marked as `missed` and you will not receive a reward for that ticket. In practice, **Solo Voters** often run voting wallets on a number of servers on different continents, to minimize the chance of their tickets missing a call to vote.
 
-**Voting Service Providers (VSPs)** (formerly "Stakepools") offer a service whereby ticket buyers can delegate the act of voting to the VSP. The ticket-buyer instructs the VSP how their ticket should vote on any open rule change proposals, but transfers voting rights to the VSP to take advantage of the voting infrastructure they provide (i.e. at least three always-online servers).
+**Voting Service Providers (VSPs)** offer a service whereby ticket buyers can delegate the act of voting to the VSP. The ticket-buyer instructs the VSP how their ticket should vote on any open rule change proposals, and shares voting rights with the VSP to take advantage of the voting infrastructure they provide (i.e. at least three always-online servers).
 
-VSPs charge a fee for this service, which is taken out of the reward returned upon a successful vote. This fee is generally 5% or less. A [list of VSPs](https://decred.org/vsp/) is maintained on decred.org. VSPs do not take custody of DCR. By using them, you only delegate the voting rights of a ticket.
+VSPs charge a fee for this service, which is paid upfront before the ticket is added to the VSPs voting wallets. This fee is generally 5% or less. A [list of VSPs](https://decred.org/vsp/) is maintained on decred.org. VSPs do not take custody of DCR. By using them, you only delegate the voting rights of a ticket.
 
 ---
 

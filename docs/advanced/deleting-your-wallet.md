@@ -1,5 +1,7 @@
 # ![](../img/dcr-icons/DeleteWallet.svg){ .dcr-icon } Deleting Your Wallet 
 
+---
+
 There are a few reasons you might need to delete your wallet.
 
 * You need to restore your wallet from seed.
@@ -18,5 +20,3 @@ deleted file may be recovered using file recovery tools.  If you are
 deleting this for security reasons you probably need to use a secure
 deletion tool such as
 [GNU shred](https://www.gnu.org/software/coreutils/manual/html_node/shred-invocation.html).
-
-

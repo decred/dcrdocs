@@ -1,8 +1,10 @@
 # ![](../img/dcr-icons/Question.svg){ .dcr-icon } Common Errors and Solutions
 
+---
+
 ## Proof-of-Stake (PoS)
 
-#### 1. Some of my missed/expired tickets are still locked after more than a day. 
+#### 1. Some of my missed/expired tickets are still locked after more than a day
 
 ##### Decrediton
 

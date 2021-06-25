@@ -1,4 +1,6 @@
 site_name: Decred Documentation
+site_url: https://docs.decred.org
+use_directory_urls: true
 theme:
   name: material
   favicon: 'img/favicon.ico?v=s3ss'
@@ -67,11 +69,11 @@ markdown_extensions:
   - markdown.extensions.smarty
   - markdown.extensions.admonition
   - markdown.extensions.toc:
-      permalink: True
+      permalink: true
   - markdown.extensions.tables
   - markdown.extensions.attr_list
   - pymdownx.snippets:
-      check_paths: True
+      check_paths: true
       base_path: 'snippets'
   - pymdownx.details
   - pymdownx.tilde

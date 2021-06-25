@@ -13,8 +13,8 @@
 
 In order to develop on `dcrdocs` you will need [Python](https://www.python.org/)
 installed on your system.
-Version 3.8 is recommended because this is the version used by the live site,
-however MkDocs does also support versions 3.5 and later.
+Version 3.9 is recommended because this is the version used by the live site,
+however MkDocs does also support versions 3.6 and later.
 Python 2 is not supported.
 
 You can verify your installation of Python by checking the output from these two
@@ -22,9 +22,9 @@ commands:
 
 ```bash
 $ python --version
-Python 3.8.2
+Python 3.9.5
 $ pip --version
-pip 20.0.2
+pip 21.1.2
 ```
 
 #### Install dependencies
@@ -41,22 +41,20 @@ This repo contains a single configuration file named `mkdocs.yml`, and a folder 
 
 ```bash
 $ mkdocs serve
-INFO    -  Building documentation...
-INFO    -  Cleaning site directory
-[I 160402 15:50:43 server:271] Serving on http://127.0.0.1:8000
-[I 160402 15:50:43 handlers:58] Start watching changes
-[I 160402 15:50:43 handlers:60] Start detecting changes
+INFO     -  Building documentation...
+INFO     -  Cleaning site directory
+INFO     -  Documentation built in 9.09 seconds
+INFO     -  [13:26:55] Serving on http://127.0.0.1:8000/
 ```
 
 If you are using Windows, you may need to inform python to search sys.path for the mkdocs module:
 
 ```bash
 $ python -m mkdocs serve
-INFO    -  Building documentation...
-INFO    -  Cleaning site directory
-[I 190207 18:05:35 server:298] Serving on http://127.0.0.1:8000
-[I 190207 18:05:35 handlers:59] Start watching changes
-[I 190207 18:05:35 handlers:61] Start detecting changes
+INFO     -  Building documentation...
+INFO     -  Cleaning site directory
+INFO     -  Documentation built in 9.09 seconds
+INFO     -  [13:26:55] Serving on http://127.0.0.1:8000/
 ```
 
 Open up <http://127.0.0.1:8000> in your browser, and you will see the documentation home page being displayed. The dev-server also supports auto-reloading, and will rebuild your documentation whenever anything in the configuration file or the documentation directory changes.

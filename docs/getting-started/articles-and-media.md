@@ -273,8 +273,6 @@ various aspects of Decred.
 
 ### How to Mine
 
-- [Pool mining user guide](../mining/proof-of-work/pool-mining/gominer.md)
-
 - [Step-by-step guide on how to mine Decred](https://howtomine.com/decred/)
 
 - [Video tutorial on how to mine Decred](https://www.youtube.com/watch?v=Mr6_b2DBOhE)

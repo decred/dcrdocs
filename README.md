@@ -108,10 +108,6 @@ $ docker run -d --rm -p <local port>:80 decred/dcrdocs:latest
 - `wallets/decrediton/using-decrediton.md`
 - `wallets/decrediton/decrediton-troubleshooting.md`
 
-#### gominer release
-
-- `mining/proof-of-work/pool-mining/gominer.md`
-
 #### dcrlnd release
 
 - `lightning-network/dcrlncli/options-and-commands.md`

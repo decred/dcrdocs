@@ -1,5 +1,7 @@
 # ![](../img/dcr-icons/Wallet.svg){ .dcr-icon } Mobile Wallets
 
+---
+
 Mobile Decred wallets are available for both
 [Android](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet)
 and [iOS](https://apps.apple.com/us/app/decred-wallet/id1462247643).

@@ -1,5 +1,7 @@
 # ![](../img/dcr-icons/Wallet.svg){ .dcr-icon } Hardware Wallets
 
+---
+
 Traditional software wallets such as Decrediton store your private keys in a
 file on your computer.
 A hardware wallet is a device that stores your private keys on a dedicated piece

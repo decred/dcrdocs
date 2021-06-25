@@ -52,7 +52,7 @@ Another solution is to broadcast your transaction through a public website,
 using Tor to provide anonymity.
 For example, [dcrdata](https://github.com/decred/dcrdata) has this
 functionality, and is available as a hidden service on Tor using the URL
-<http://dcrdata2opeenddl.onion>.
+<http://dcrdata5oppwcotlxkrlsp6afncnxvw54sw6jqftc4bjytm4rn27j3ad.onion/>.
 
 It's also important to note that different wallets might use different [address
 types](https://devdocs.decred.org/developer-guides/addresses/).

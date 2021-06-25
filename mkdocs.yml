@@ -33,7 +33,6 @@ theme:
 extra:
   decreditonversion: 1.6.3
   cliversion: 1.6.3
-  gominerversion: 1.0.0
   lndversion: 0.3.0
   social:
     - icon: octicons/mark-github-16
@@ -134,9 +133,7 @@ nav:
   - "How to Stake": 'proof-of-stake/how-to-stake.md'
   - "Redeem Script": 'proof-of-stake/redeem-script.md'
   - "Ticket Splitting": 'proof-of-stake/ticket-splitting.md'
-- Proof-of-Work Mining:
-  - 'Overview': 'mining/overview.md'
-  - 'gominer Pool Mining': 'mining/proof-of-work/pool-mining/gominer.md'
+- 'Proof-of-Work Mining': 'mining/overview.md'
 - Privacy:
   - 'General Privacy': 'privacy/general-privacy.md'
   - CoinShuffle++:

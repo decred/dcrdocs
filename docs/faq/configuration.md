@@ -67,7 +67,7 @@ This process should take several days before receiving an incoming connection.
 
 To check and confirm that your node is ready to be accepted, see the output from the `dcrctl` command `getnetworkinfo`. Under `localaddresses`, you can see what address and port your node is accepting incoming conenctions. Confirm that this address is correct and that the specified port is open.
 
-```
+```no-highlight
 "localaddresses": [
     {
       "address": "***.***.*.***",
@@ -81,7 +81,7 @@ To check and confirm that your node is ready to be accepted, see the output from
 #### 7. How do I run dcrd and dcrwallet as a background daemon?
 
 `dcrd` and `dcrwallet` do not provide a `--daemon` or `--detach` flag to run as a
-daemon as this is considered bad practice. 
+daemon as this is considered bad practice.
 [This blog post](https://www.mikeperham.com/2014/09/22/dont-daemonize-your-daemons/)
 by Mike Perham provides some background information.
 
@@ -93,7 +93,7 @@ MacOS X provides a daemon service named
 [launchd](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
 This is the recommended method for running `dcrd` or `dcrwallet` as daemons.
 
-The [dcrd GitHub repository](https://github.com/decred/dcrd/blob/master/release/services/systemd/dcrd.service)
-provides a sample service file for systemd.
+The [dcrd GitHub repository](https://github.com/decred/dcrd/tree/master/contrib)
+provides a sample service files for a variety of operating systems.
 A detailed guide on using this file to configure dcrd as a service on Debian 9
 can be found at [stakey.club](https://stakey.club/en/dcrd-as-a-linux-service/).

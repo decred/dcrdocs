@@ -96,6 +96,15 @@ Alternatively, the `mixaccount` JSON-RPC may be used instead of the `--mixchange
 
 Non-stakers are able to use this mechanism to mix received funds by using the unmixed account to provide receiving addresses and mix them as if it was CoinShuffle++ change. The wallet will participate in CoinShuffle++ sessions by submitting only one UXTO per epoch until all unmixed funds have been mixed. Depending on the current epoch, users may have to wait for a while before seeing any mixing activity.
 
+Mix a special unspent transaction output:
+
+```
+# search transaction associated address
+$ dcrctl --wallet listunpsent 0 0xffffff '["$address"]'
+
+# mix unspent transaction output
+$ dcrctl --wallet mixoutput txid:vout
+```
 ---
 
 ## Tor Hidden Service

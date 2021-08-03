@@ -1,5 +1,4 @@
 site_name: Decred Documentation
-site_url: https://docs.decred.org
 use_directory_urls: true
 theme:
   name: material

@@ -130,6 +130,13 @@ details .md-typeset__table {
     white-space: nowrap;
 }
 
+.md-typeset table:not([class]) {
+    border: 0;
+    box-shadow: 0 0.2rem 0.5rem rgb(0 0 0 / 5%), 0 0 0.05rem rgb(0 0 0 / 10%);
+}
+.md-typeset table:not([class]) tr:first-child td {
+    border-top: 0;
+}
 .md-typeset table:not([class]) th{
     background-color: var(--dcrdocs-table-bg-color);
     font-size: 13px;
@@ -142,6 +149,10 @@ details .md-typeset__table {
 
 .md-typeset .admonition p{
     font-size: 14px;
+}
+
+.md-typeset blockquote p{
+    padding: 12px 0 12px;
 }
 
 .md-typeset code {

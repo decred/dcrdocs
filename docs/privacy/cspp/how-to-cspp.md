@@ -76,7 +76,7 @@ Note these differences:
 
 It may take large stakeholders up to the full ticket expiration of roughly 4.7 months to completely migrate to the new mixed wallet. Non-stakeholders can set these options, leaving out `purchaseaccount`, and participate in the mixing without buying tickets. To receive payments, generate new addresses from the unmixed account, then those payments will be mixed into the mixed account.
 
-Note that the mixing process requires the wallet being **unlocked** for longer periods of time, so that it can participate in a mix, which occurs every 20 minutes. Ticketbuyer wallets run unlocked already, but non-staking wallets will need to be left unlocked long enough to complete their mixes.
+Note that the mixing process requires the wallet being **unlocked** for longer periods of time, so that it can participate in a mix, which occurs every 15 minutes. Ticketbuyer wallets run unlocked already, but non-staking wallets will need to be left unlocked long enough to complete their mixes.
 
 ---
 

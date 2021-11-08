@@ -12,7 +12,7 @@ Decred's implementation is based on the CoinShuffle++ protocol from ["P2P Mixing
 
 CoinShuffle++ does a fine job of anonymizing the output addresses, but if the change is not handled with care, it can link mixed and unmixed UTXOs. In many cases, change outputs can be linked to their inputs by doing a partial sum analysis. To deal with this threat, change from mixes flows to a separate wallet account, where it is then mixed into smaller denominations until the change is less than the smallest mixer denomination.
 
-Mixes occur episodically in **epochs**, with the mainnet epoch set to 20 minutes (1200 seconds).
+Mixes occur episodically in **epochs**, with the mainnet epoch set to 15 minutes.
 
 ---
 

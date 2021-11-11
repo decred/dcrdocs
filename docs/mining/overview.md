@@ -41,7 +41,7 @@ Here is a selection of the Decred ASIC miners which are available on the market 
 
 You can either buy direct from the manufacturers on their official website:
 
-*   [Whatsminer](https://www.whatsminer.com/?locale=en)
+*   [Whatsminer](https://www.microbtwhatsminerd1.com/)
 *   [Bitmain](https://www.bitmain.com/)
 *   [StrongU](https://strongu.com.cn/?lang=en-us)
 

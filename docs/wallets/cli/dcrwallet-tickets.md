@@ -37,7 +37,7 @@ To solo-vote, you simply set the `enablevoting` option when starting `dcrwallet`
 
 To set up your `dcrwallet` for solo-staking, add the following line to your `dcrwallet.conf` config file:
 
-```no-highlight
+```ini
 enablevoting=1
 ```
 
@@ -177,7 +177,7 @@ Note: The info below is now considered "legacy" and will be phased out at a late
 
 `dcrwallet` includes a built-in `ticketbuyer` which can buy tickets for you automatically. It can be enabled by adding the following line to your `dcrwallet.conf` config file:
 
-```no-highlight
+```ini
 enableticketbuyer=1
 ```
 
@@ -185,7 +185,7 @@ You also need to specify options within your config file for your VSP as outline
 
 If you don't want `ticketbuyer` to spend all of your funds, there is one more option which allows you to specify a balance which will not be spent:
 
-```no-highlight
+```ini
 ticketbuyer.balancetomaintainabsolute=<balance>
 ```
 
@@ -194,7 +194,7 @@ Note: The info below is now considered "legacy" and will be phased out at a late
 ??? info "Click to display info for legacy method of buying tickets with ticketbuyer" 
     If you are using a VSP, you should also add the following lines (all of these can be found on your VSP's    "Tickets" page):
 
-    ```no-highlight
+    ```ini
     ticketbuyer.votingaddress=<P2SH Address shared with VSP>
     pooladdress=<VSP's Fee Collection Address>
     poolfees=<VSP's Required Reward Fee>

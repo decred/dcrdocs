@@ -14,7 +14,6 @@
 
     For complete safety from possible malicious remote nodes, users should also use third party, reputable watchtowers to ensure that if the remote nodes executes the DLP protocol with an invalid state they are correctly punished for it.
 
-
 Due to its nature as a second-layer network, Lightning Network related wallet data is **not** stored in the blockchain itself. This means that the standard wallet seed is **not sufficient** to restore the LN balance of a wallet in case of a restore from seed.
 
 LN users need to **also** regularly and safely store the _Static Channel Backup_ (SCB) file so that a restored lightning wallet might be used to close the channels opened by the previous wallet.
@@ -31,7 +30,7 @@ For the operational instructions on generating and applying backups see the sect
 
 ### What data does an LN wallet store?
 
-This can be skipped for those familiar with how LN operates. 
+This can be skipped for those familiar with how LN operates.
 
 Payments over the Lightning Network happen across _channels_. An LN channel can be understood as an agreement between two entities (nodes) to allow payments up to some pre-defined amount.
 
@@ -47,7 +46,7 @@ A lightning node must **never** publish a state older than the most recent one a
 
 Notice that since the commitment data is never published to the blockchain during the regular operation of an LN node, any event that causes loss of data means the node cannot recover their funds if the counterparty disappears.
 
-It also means the node cannot even advance the state of the channel, since it doesn't know what the current state _is_ to begin with. 
+It also means the node cannot even advance the state of the channel, since it doesn't know what the current state _is_ to begin with.
 
 ### Danger of copying the dcrlnd database
 
@@ -57,12 +56,11 @@ It also means the node cannot even advance the state of the channel, since it do
 
     Do **not** perform full-db backups unless you have very deep knowledge on how LN operates, and how `dcrlnd` is implemented, and the _complete_ loss of funds that might occur when using an incorrect db backup.
 
-
 Given the need to prevent loss of funds by having some backup channel data, the initial idea for most sysadmins would be to perform a full backup of the `dcrlnd` DB in regular intervals (via `cp`, `rsync` or similar commands). This could, in principle, allow a node to pick up the channel states and resume operations from where it had the initial malfunction.
 
 There is a fundamental problem in using backups created from a running `dcrlnd` instance, however: there are **no** assurances that a given backup DB copy has the _most recent_, unrevoked channel state.
 
-Using an older backup with a revoked state (i.e. a revoked commitment transaction) would cause the local node to publish a transaction that is now completely redeemable by the remote node. 
+Using an older backup with a revoked state (i.e. a revoked commitment transaction) would cause the local node to publish a transaction that is now completely redeemable by the remote node.
 
 In other words, using a backup with an old state causes _all funds to be sent to the remote party_. On the public blockchain, this looks as if the local node tried to steal funds (by broadcasting an older commitment tx) and the remote node then performed the "breach" protocol, exacting justice for the incorrect behavior of their counterparty.
 

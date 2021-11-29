@@ -29,7 +29,7 @@ Then you can use the `dcrd` [sample config file](https://github.com/decred/dcrd/
 Once those are created and in place, you do not have to add all of the options to the command line all the time. For instance, you can run `dcrctl` without passing in any parameters on the command line:
 
 ```no-highlight
-dcrctl getnetworkhashps
+$ dcrctl getnetworkhashps
 2547036949350
 ```
 
@@ -67,13 +67,14 @@ This process should take several days before receiving an incoming connection.
 
 To check and confirm that your node is ready to be accepted, see the output from the `dcrctl` command `getnetworkinfo`. Under `localaddresses`, you can see what address and port your node is accepting incoming conenctions. Confirm that this address is correct and that the specified port is open.
 
-```no-highlight
+```json
 "localaddresses": [
     {
       "address": "***.***.*.***",
       "port": *****,
       "score": 0
     }
+]
 ```
 
 ---

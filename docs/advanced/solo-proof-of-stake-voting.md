@@ -92,7 +92,7 @@ Replacing `DsHotWalletAddressFromVotingWallet` with your hot wallet voting addre
 
 If you wish to automate ticket purchases using ticketbuyer you will need to add the following info in your `~/.dcrwallet/dcrwallet.conf`, where `DsHotWalletAddressFromVotingWallet` is once again the address you generated on your voting VPS.
 
-```no-highlight
+```ini
 enableticketbuyer=1
 ticketbuyer.votingaddress=DsHotWalletAddressFromVotingWallet
 ticketbuyer.balancetomaintainabsolute=0

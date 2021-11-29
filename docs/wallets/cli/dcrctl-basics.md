@@ -18,39 +18,41 @@
 
 To call `dcrd` RPC methods:
 
-```bash
+```no-highlight
 dcrctl <options> <rpc method> <rpc method args>
 ```
 
 To call `dcrwallet` RPC methods:
 
-```bash
+```no-highlight
 dcrctl <options> --wallet <rpc method> <rpc method args>
 ```
 
 To list available options:
-```bash
+
+```no-highlight
 dcrctl --help
 ```
 
 To list available RPC methods:
 
-```bash
+```no-highlight
 dcrctl -l
 ```
+
 ---
 
 ## Unlocking Your Wallet
 
 Some functionality of `dcrwallet` requires the wallet to be unlocked.
 
-The command to unlock your wallet follows: 
+The command to unlock your wallet follows:
 
 ```no-highlight
 promptsecret | dcrctl --wallet walletpassphrase - 0
 ```
 
-Here, we are specifying for `dcrctl` to send the command to `dcrwallet` by using the `--wallet` flag. The actual command is `walletpassphrase` which accepts two parameters, your private passphrase and a time limit. Specifying `0` for a time limit unlocks `dcrwallet` without a time limit. Note, however, that this only unlocks the wallet for the current session. If you close the window the wallet is running in, or stop/restart the `dcrwallet`, you will need to unlock it again the next time you start it. 
+Here, we are specifying for `dcrctl` to send the command to `dcrwallet` by using the `--wallet` flag. The actual command is `walletpassphrase` which accepts two parameters, your private passphrase and a time limit. Specifying `0` for a time limit unlocks `dcrwallet` without a time limit. Note, however, that this only unlocks the wallet for the current session. If you close the window the wallet is running in, or stop/restart the `dcrwallet`, you will need to unlock it again the next time you start it.
 
 If the command was successful, you will not get a confirmation from `dcrctl`, but if you look at your `dcrwallet` session, it will say:
 
@@ -119,5 +121,3 @@ dcrctl --wallet getstakeinfo
 ## Additional Commands
 
 More commands can also be found on the [dcrctl RPC Commands](dcrctl-rpc-commands.md) page.
-
----

@@ -13,7 +13,7 @@ Voting on proposals does not happen directly on Politeia, as it requires signatu
 There are two broad types of proposal:
 
 1. Proposals that aim to establish voter support for a course of action. For example, the direction of software development, or adopting or changing some policy.
-2. Proposals that commit to spending DCR from the Decred Treasury. These proposals create a budget that some entity can draw down against as they demonstrate progress towards the proposal's aim.
+1. Proposals that commit to spending DCR from the Decred Treasury. These proposals create a budget that some entity can draw down against as they demonstrate progress towards the proposal's aim.
 
 ## How Politeia Works
 

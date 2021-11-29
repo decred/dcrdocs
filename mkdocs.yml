@@ -63,13 +63,12 @@ extra:
 repo_url: https://github.com/decred/dcrdocs
 repo_name: decred/dcrdocs
 markdown_extensions:
-  - markdown.extensions.footnotes
-  - markdown.extensions.smarty
-  - markdown.extensions.admonition
-  - markdown.extensions.toc:
-      permalink: true
-  - markdown.extensions.tables
-  - markdown.extensions.attr_list
+  - footnotes
+  - smarty
+  - admonition
+  - toc
+  - tables
+  - attr_list
   - pymdownx.snippets:
       check_paths: true
       base_path: 'snippets'
@@ -79,7 +78,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.superfences
 extra_css:
   - css/fonts.css

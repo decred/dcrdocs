@@ -27,7 +27,7 @@ Solo stakers are recommended to use two wallets to separate ticket buying and vo
 
 Use the following options for a mainnet mixed solo ticket buyer which continues to buy more tickets from the mixed account as outputs mature:
 
-```
+```no-highlight
 $ dcrwallet --csppserver=cspp.decred.org:5760 \
   --csppserver.ca=cspp.decred.org.pem \
   --enableticketbuyer --purchaseaccount=mixed --mixedaccount=mixed/1 \
@@ -40,7 +40,7 @@ $ dcrwallet --csppserver=cspp.decred.org:5760 \
 
 Solo stakers wishing to convert from an unmixed solo ticket buying setup to a mixed buyer can use two ticket buying wallets simultaneously, with a setup to slowly mix funds from the existing buyer (buyer1) to the new mixed buyer (buyer2). Each ticket buyer must be provisioned with a unique voting xpub:
 
-```
+```no-highlight
 voter$ dcrctl --wallet createnewaccount voting1
 voter$ dcrctl --wallet createnewaccount voting2
 voter$ dcrctl --wallet getmasterpubkey voting1
@@ -53,7 +53,7 @@ buyer2$ dcrctl --wallet importxpub voting voting2-xpub
 
 In addition, the mixed account xpub of the mixed ticket buyer must be imported by buyer1:
 
-```
+```no-highlight
 buyer2$ dcrctl --wallet getmasterpubkey mixed
 mixed-xpub
 buyer1$ dcrctl --wallet importxpub mixed mixed-xpub
@@ -61,7 +61,7 @@ buyer1$ dcrctl --wallet importxpub mixed mixed-xpub
 
 The mixed ticket buying wallet may use the setup from the previous section. The old wallet must be configured slightly differently:
 
-```
+```no-highlight
 buyer1$ dcrwallet --csppserver=cspp.decred.org:5760 \
   --csppserver.ca=cspp.decred.org.pem \
   --enableticketbuyer --purchaseaccount=default --mixedaccount=mixed/0 \
@@ -86,7 +86,7 @@ Change outputs in the CoinJoin are not anonymous, and can easily be traced back 
 
 These features are enabled with the following config:
 
-```
+```no-highlight
 $ dcrwallet --csppserver=cspp.decred.org:5760 \
   --csppserver.ca=cspp.decred.org.pem \
   --mixedaccount=mixed/1 --changeaccount=unmixed --mixchange

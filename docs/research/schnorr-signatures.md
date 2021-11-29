@@ -7,10 +7,10 @@ They have also been used extensively in other cryptocurrencies, such as Nxt and 
 In the simplest case, a Schnorr signature ECDSA cryptosystem can be described as follows:
 
 1. _y = xG_{: .dcrm } where _y_{: .dcrm} is the public key point on the curve, _x_{: .dcrm} is the private scalar, _G_{: .dcrm} is the curve generator.
-2. _r = kG_{: .dcrm } where _r_{: .dcrm} is the point on the curve resulting from the multiplication of _k_{: .dcrm}, the nonce scalar, by the generator.
-3. _h = H(M||r)_{: .dcrm } where _H_{: .dcrm} is a secure hash function, _M_{: .dcrm} is the message (usually a 32 byte hash), and _r_{: .dcrm} is the encoded point previously described. _||_{: .dcrm } denotes concatenation.
-4. _s = k - hx_{: .dcrm } where _s_{: .dcrm} is the scalar denoted from _k - hx_{: .dcrm }.
-5. The signature is _(r,s)_{: .dcrm }, and verification is simply _H(M||r) == hQ + sG_{: .dcrm }.
+1. _r = kG_{: .dcrm } where _r_{: .dcrm} is the point on the curve resulting from the multiplication of _k_{: .dcrm}, the nonce scalar, by the generator.
+1. _h = H(M||r)_{: .dcrm } where _H_{: .dcrm} is a secure hash function, _M_{: .dcrm} is the message (usually a 32 byte hash), and _r_{: .dcrm} is the encoded point previously described. _||_{: .dcrm } denotes concatenation.
+1. _s = k - hx_{: .dcrm } where _s_{: .dcrm} is the scalar denoted from _k - hx_{: .dcrm }.
+1. The signature is _(r,s)_{: .dcrm }, and verification is simply _H(M||r) == hQ + sG_{: .dcrm }.
 
 In the above, multiplications by a capital letter (e.g., _kG_{: .dcrm}) are point multiplications by a scalar, and so always result in a point on the curve.
 Addition of these points results in another point.

@@ -1,22 +1,28 @@
-# Introduction:
+# <img class="dcr-icon" src="/img/dcr-icons/LockEye.svg" /> Secure Setup
 
-This document will guide how to setup a secure two system method for holding your Decred. I will be giving some specific commands for Debian based systems, but the principles/tools can be applied to almost any OS. 
+---
+
+This document will guide how to setup a secure two system method for holding your Decred. I will be giving some specific commands for Debian based systems, but the principles/tools can be applied to almost any OS.
 
 **Please note that this requires two computers.**
 
-Although we will be focusing on Decred and RaspberryPi this can also be used as a process guide for more general hardware devices and almost any cryptocurrency. 
+Although we will be focusing on Decred and RaspberryPi this can also be used as a process guide for more general hardware devices and almost any cryptocurrency.
 
-## Scope and limitations: 
+---
+
+## Scope and Limitations
 
 The scope of this document is to secure your cryptocurrency holdings from general malware and light threats. If you are a normal cryptocurrency holder and follow this exactly, it should give a good level of security.
 
-This also assumes some general technical knowledge and that you can fix any hitches you come across. 
+This also assumes some general technical knowledge and that you can fix any hitches you come across.
 
-### **This will not protect you against a state-level attacker or a persistent threat.**
+**This will not protect you against a state-level attacker or a persistent threat.**
 
 Read [this](general-security.md) before proceeding
 
-## The setup:
+---
+
+## The Setup
 
 This will be a multi-system setup.
 
@@ -27,14 +33,13 @@ This will be a multi-system setup.
 * A secure system that will be running our wallet for which we will be using a RaspberryPi4 device (It can be another laptop too).  Referred as (`Wallet-B`). This system should also be connected to an external monitor and keyboard. It should also connect to the local network via ethernet.
 * All details/commands that come within curly braces `{}` cannot be copy-pasted, you will need to remove the curly braces and edit them to suit your setup.
 
-### Benefits of this setup
+### Benefits of this Setup
 
 * The wallet `Wallet-B` is kept offline and turned off most of the time. This allows greatly reduces attack surface/opportunity. 
 * An attacker would first have to compromise the dcrd on `Computer A` and find a way to jump into `Wallet-B` using the RPC to both compromise and exfiltrate data. This is highly unlikely and difficult to pull off.
 * dcrd on `Computer A` can be used for other purposes in your local network (eg. other wallets, DEX, VSPD, etc), so you don't need to maintain multiple dcrd instances within your local network.
 
-
-## Setting up Computer A:
+### Setting up Computer A
 
 The best way to setup decred on your computer is to use [dcrinstall](../wallets/cli/cli-installation.md) 
 
@@ -101,10 +106,7 @@ You can also calculate the hash to ensure that the file is not modified while mo
 
 Store this output on an uneditable medium. ie: paper or a photograph.
 
-
-
-
-## Setting up Wallet-B:
+### Setting up Wallet B
 
 Install an operating system you feel comfortable with. I would recommend Ubuntu desktop for beginners (There is no need for a GUI). 
 
@@ -275,8 +277,9 @@ It should show the latest block.
 
 Then you can setup a wallet as described in the [docs](../wallets/cli/dcrwallet-setup.md)
 
+---
 
-## Improvements:
+## Improvements
 
 * This system can only be used to store and spend coins. It currently cannot be used to purchase tickets. This can be easily achieved by hosting a TOR instance in `Computer A` `apt-get install tor` and then connecting dcrwallet using its proxy setting. (You will need to add a rule to UFW accordingly eg: `sudo ufw allow out to [LOCALIPOFCOMPUTERA] port 9050`)
 
@@ -287,11 +290,11 @@ Then you can setup a wallet as described in the [docs](../wallets/cli/dcrwallet-
 * Use an [Ethernet crossover cable](https://en.wikipedia.org/wiki/Ethernet_crossover_cable) to connect to `Computer A`. This will greatly reduce the local network attack surface. (Most devices now auto cross over and you don't need a special cable)
 *  If your router supports it, bind the MAC of both devices to a static IP.
 
+---
 
+## Common Errors and Pitfalls
 
-## Common errors and pitfalls. 
-
-### 1)
+### IP Changes
 
 If at any point the IP of `Computer A` changes then you need to list
 

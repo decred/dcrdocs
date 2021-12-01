@@ -113,39 +113,34 @@ Install an operating system you feel comfortable with. I would recommend Ubuntu 
 **Note: Some systems might not have ufw or tar by default. You might have to copy them over and compile or install them online via the software repository and then proceed with this install.**  
 
 **On a general system, you can install the OS using a Linux ISO written to a USB. I recommend [unetbootin](https://unetbootin.github.io/)**
-<br>
-<details>
-<summary> RaspberryPi specific:</summary>
 
-https://www.raspberrypi.org/software/  has rpi-imager which has a nice easy to use interface and has Ubuntu Desktop listed under  
+??? note "RaspberryPi specific (click to expand)"
 
-Other general purpose OS -> Ubuntu -> Ubuntu Desktop
+    https://www.raspberrypi.org/software/  has rpi-imager which has a nice easy to use interface and has Ubuntu Desktop listed under  
 
-Once rpi-imager is done the disk/card with the OS installed should mount volumes.
+    Other general purpose OS -> Ubuntu -> Ubuntu Desktop
 
-We will need to work with
+    Once rpi-imager is done the disk/card with the OS installed should mount volumes.
 
-```
-writeable
-*boot
-```
+    We will need to work with
 
-Edit the config.txt file in *boot
+    ```
+    writeable
+    *boot
+    ```
 
-Find the text [all]
+    Edit the config.txt file in *boot
 
-and add the following lines below it:
+    Find the text [all]
 
-```
-dtoverlay=disable-wifi
-dtoverlay=disable-bt
-```
+    and add the following lines below it:
 
+    ```
+    dtoverlay=disable-wifi
+    dtoverlay=disable-bt
+    ```
 
-This will disable the wifi and Bluetooth from booting. 
-</details>
-<br>
-
+    This will disable the wifi and Bluetooth from booting. 
 
 You can now copy over `~/copytob.tar.gz` to a writeable volume.
 
@@ -163,33 +158,29 @@ Now boot `Wallet-B` with the disk inserted **(DO NOT CONNECT YOUR ETHERNET CABLE
 
 
 Once logged in get familiar with the system, adjust the clock, etc, and then open a terminal.
-<br>
 
-<details>
-<summary> RaspberryPi specific:</summary>
-Optionally you may choose to disable Wifi and Bluetooth at the kernel level too. 
+??? note "RaspberryPi specific (click to expand)"
 
-Create a file in
-```
-/etc/modprobe.d/raspi-blacklist.conf
-```
+    Optionally you may choose to disable Wifi and Bluetooth at the kernel level too. 
 
-and add the contents
+    Create a file in
+    ```
+    /etc/modprobe.d/raspi-blacklist.conf
+    ```
 
-```
-blacklist brcmfmac
-blacklist brcmutil
-blacklist hci_uart
-blacklist btbcm
-blacklist btintel
-blacklist rfcom
-blacklist btqca
-blacklist btsdio
-blacklist bluetooth
-```
-</details>
-<br>
+    and add the contents
 
+    ```
+    blacklist brcmfmac
+    blacklist brcmutil
+    blacklist hci_uart
+    blacklist btbcm
+    blacklist btintel
+    blacklist rfcom
+    blacklist btqca
+    blacklist btsdio
+    blacklist bluetooth
+    ```
 
 Disable Wifi and Bluetooth using rfkill:
 

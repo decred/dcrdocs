@@ -72,7 +72,7 @@ We should now start setting up a folder that will be copied over to Wallet-B.
 
 Copy the certificate and config.
 
-```
+```no-highlight
 cp ~/.dcrd/rpc.cert ~/copytob
 cp ~/.dcrd/dcrd.conf ~/copytob
 ```
@@ -119,7 +119,7 @@ Ubuntu desktop is a good choice for beginners (there is no need for a GUI).
 
     We will need to work with
 
-    ```
+    ```no-highlight
     writeable
     *boot
     ```
@@ -130,12 +130,12 @@ Ubuntu desktop is a good choice for beginners (there is no need for a GUI).
 
     and add the following lines below it:
 
-    ```
+    ```no-highlight
     dtoverlay=disable-wifi
     dtoverlay=disable-bt
     ```
 
-    This will disable the wifi and Bluetooth from being initialized when the system boots. 
+    This will disable the WiFi and Bluetooth from being initialized when the system boots. 
 
 You can now copy over `~/copytob.tar.gz` to a writeable volume.
 
@@ -158,16 +158,17 @@ Once logged in get familiar with the system, adjust the clock, etc, and then ope
 
 ??? note "Raspberry Pi specific (click to expand)"
 
-    Optionally you may choose to disable Wifi and Bluetooth at the kernel level too. 
+    Optionally you may choose to disable WiFi and Bluetooth at the kernel level too. 
 
     Create a file in
-    ```
+
+    ```no-highlight
     /etc/modprobe.d/raspi-blacklist.conf
     ```
 
     and add the contents
 
-    ```
+    ```no-highlight
     blacklist brcmfmac
     blacklist brcmutil
     blacklist hci_uart
@@ -179,16 +180,16 @@ Once logged in get familiar with the system, adjust the clock, etc, and then ope
     blacklist bluetooth
     ```
 
-Disable Wifi and Bluetooth using rfkill:
+Disable WiFi and Bluetooth using rfkill:
 
-```
+```no-highlight
 sudo rfkill block wifi
 sudo rfkill block bluetooth
 ```
 
 Now to setup the ufw rules run the following commands.
 
-```
+```no-highlight
 sudo ufw default deny outgoing
 sudo ufw default deny incoming
 sudo ufw allow out to {LOCALIPOFCOMPUTERA} port 9109
@@ -212,7 +213,7 @@ First, let us check that the tarfile is unchanged.
 
 Once the hash is matched then you can extract it.
 
-```
+```no-highlight
 mkdir ~/decredconfigs
 mkdir ~/decred
 tar -xf /bconfig/copytob.tar.gz -C ~/decredconfigs
@@ -225,7 +226,7 @@ Now we have the Decred binaries in the ~/decred/decred-linux-{amd/arm}64-v{{ cli
 
 Let us setup the dcrctl and dcrwallet config files that will allow it to connect to `Computer A`.
 
-```
+```no-highlight
 mkdir ~/.dcrwallet/
 mkdir ~/.dcrctl/
 ```
@@ -241,7 +242,7 @@ create a file with contents
 
  ~/.dcrwallet/dcrwallet.conf
 
-```
+```no-highlight
 rpcconnect={LOCALIPOFCOMPUTERA}:9109
 cafile=~/decredconfigs/rpc.cert
 username={username}
@@ -250,7 +251,7 @@ password={password}
 
  ~/.dcrctl/dcrctl.conf
 
-```
+```no-highlight
 rpcserver={LOCALIPOFCOMPUTERA}:9109
 walletrpcserver=127.0.0.1
 rpccert=~/decredconfigs/rpc.cert
@@ -277,7 +278,7 @@ Then you can setup a wallet as described in the [docs](../wallets/cli/dcrwallet-
 
 * A MITM proxy can be setup between `Computer A` RPC and `Wallet-B`.
   This can either be used to log traffic or can even be used to approve/disapprove all responses/requests.
-* Remove wifi/Bluetooth hardware physically.
+* Remove WiFi/Bluetooth hardware physically.
 * Use a more secure/lightweight OS.
 * Setup router level firewall rules secondary to UFW.
 * Use an [Ethernet crossover cable](https://en.wikipedia.org/wiki/Ethernet_crossover_cable) to connect to `Computer A`.

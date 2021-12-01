@@ -81,8 +81,6 @@ cp ~/.dcrd/rpc.cert ~/copytob
 cp ~/.dcrd/dcrd.conf ~/copytob
 ```
 
-**Windows users can follow along by using the relevant folders from [here](../wallets/cli/os-differences.md#application-directory-locations) and using 7z for tar.**
-
 ---
 
 === "Raspberry Pi"

@@ -2,26 +2,26 @@
 
 ---
 
-This document will guide how to setup a secure two system method for holding your Decred.
-I will be giving some specific commands for Debian based systems, but the principles/tools can be applied to almost any OS.
+This document will guide how to setup a two system method for holding your Decred securely.
+Some of the commands given will be specific to Debian based systems, but the principles/tools can be applied to almost any OS.
 
-**Please note that this requires two computers.**
+**Please note that this setup requires two computers.**
 
-Although we will be focusing on Decred and Raspberry Pi this can also be used as
-a process guide for more general hardware devices and almost any cryptocurrency.
+Although focused on Decred and Raspberry Pi, this guide can also be used for
+more general hardware devices and almost any cryptocurrency.
 
 ---
 
 ## Scope and Limitations
 
-The scope of this document is to secure your cryptocurrency holdings from general malware and light threats.
-If you are a normal cryptocurrency holder and follow this exactly, it should give a good level of security.
+The scope of this guide is to secure your cryptocurrency holdings from common malware and light threats.
+If you are a normal cryptocurrency holder and follow this guide exactly, it should give a good level of security.
 
-This also assumes some general technical knowledge and that you can fix any hitches you come across.
+The guide assumes some general technical knowledge and that you can fix any hitches you come across.
 
-**This will not protect you against a state-level attacker or a persistent threat.**
+**This setup will not protect you against a state-level attacker or a persistent threat.**
 
-Read [this](general-security.md) before proceeding
+[General Security](general-security.md) offers more techniques to keep your system secure.
 
 ---
 
@@ -31,46 +31,42 @@ This will be a multi-system setup.
 
 ![Network diagram](/img/secure-setup.png)
 
-* A general laptop or desktop that will be running the node. Referred as (`Computer A`)
-* A secure system that will be running our wallet for which we will be using a Raspberry Pi 4 device (It can be another laptop too).
-  Referred as (`Wallet-B`). This system should also be connected to an external monitor and keyboard.
-  It should also connect to the local network via ethernet.
+* A laptop or desktop that will be running the dcrd node, referred to as `Computer A`.
+* A secure system that will be running the wallet, referred as `Wallet-B`.
+  This guide will use a Raspberry Pi 4, however it could also be a laptop or desktop.
+  This system should be connected to an external monitor and keyboard, and it
+  should also connect to the local network via ethernet.
 * All details/commands that come within curly braces `{}` cannot be copy-pasted,
   you will need to remove the curly braces and edit them to suit your setup.
 
 ### Benefits of this Setup
 
-* The wallet `Wallet-B` is kept offline and turned off most of the time.
-  This allows greatly reduces attack surface/opportunity.
-* An attacker would first have to compromise the dcrd on `Computer A` and find a
-  way to jump into `Wallet-B` using the RPC to both compromise and exfiltrate
-  data.
+* `Wallet-B` is kept offline and turned off most of the time.
+  This greatly reduces attack surface/opportunity.
+* An attacker would have to compromise dcrd on `Computer A` first, and then find a
+  way to jump into `Wallet-B` using the RPC to compromise and exfiltrate data.
   This is highly unlikely and difficult to pull off.
-* dcrd on `Computer A` can be used for other purposes in your local network (eg. other wallets, DEX, VSPD, etc),
+* dcrd on `Computer A` can be used for other purposes in your local network (eg. other wallets, DEX, etc),
   so you don't need to maintain multiple dcrd instances within your local network.
 
 ### Setting up Computer A
 
-The best way to setup decred on your computer is to use [dcrinstall](../wallets/cli/cli-installation.md)
+The best way to setup Decred on your computer is to use [dcrinstall](../wallets/cli/cli-installation.md)
 
-**Note: If you setup dcrwallet in this system do not use the same seed and passwords for your Wallet-B**
+**Note: If you setup dcrwallet in this system, do not use the same seed and passwords for your Wallet-B.**
 
-Once this is done it is assumed that you have dcrd bins and the dcrd config files.
+Once this is done it is assumed that you have dcrd binaries and the dcrd config files.
 
 Note down the IP address of `Computer-A` on your local network.
+The IP can be found using `ifconfig`.
 
-`ifconfig`
+Start dcrd on `Computer-A`, ensuring it exposes RPC to the local network.
 
-eg:192.148.1.105
+`dcrd --rpclisten={LOCALIPOFCOMPUTERA}`
 
-You should start dcrd `Computer-A` and let it sync to tip.
-You should also ensure it exposes RPC to the local network.
+Let dcrd fully sync to the latest block.
 
-`dcrd --rpclisten=localip`
-
-eg: `dcrd --rpclisten=192.148.1.105`
-
-We should now start setting up a folder that will be copied over to Wallet-B
+We should now start setting up a folder that will be copied over to Wallet-B.
 
 `mkdir ~/copytob`
 
@@ -81,26 +77,22 @@ cp ~/.dcrd/rpc.cert ~/copytob
 cp ~/.dcrd/dcrd.conf ~/copytob
 ```
 
----
-
 === "Raspberry Pi"
 
-    [Download](https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz) the decred bins for arm64 (Raspberry Pi) and place them in the same folder :
-
+    [Download](https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz) the Decred binaries for arm64 (Raspberry PI) and place them in the same folder:
 
     `wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz`
 
 === "General systems"
 
-    [Download](https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-amd64-v{{ cliversion }}.tar.gz) the decred bins for linux and place them in the same folder :
+    [Download](https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-amd64-v{{ cliversion }}.tar.gz) the Decred binaries for linux and place them in the same folder:
 
     `wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-amd64-v{{ cliversion }}.tar.gz`
 
----
+Make sure you [verify](verifying-binaries.md) the tar file to ensure it has not
+been tampered with.
 
-Make sure you [verify](verifying-binaries.md) the tar file.
-
-Now you can tar the  `copytob` folder for transport.
+Now you can tar the `copytob` folder for transport.
 
 `tar -zcvf ~/copytob.tar.gz -C ~/copytob decred-linux-{arm/amd}64-v{{ cliversion }}.tar.gz dcrd.conf rpc.cert`
 
@@ -113,7 +105,7 @@ Store this output on an uneditable medium. ie: paper or a photograph.
 ### Setting up Wallet B
 
 Install an operating system you feel comfortable with.
-I would recommend Ubuntu desktop for beginners (There is no need for a GUI).
+Ubuntu desktop is a good choice for beginners (there is no need for a GUI).
 
 **Note: Some systems might not have ufw or tar by default. You might have to copy them over and compile or install them online via the software repository and then proceed with this install.**  
 
@@ -121,11 +113,9 @@ I would recommend Ubuntu desktop for beginners (There is no need for a GUI).
 
 ??? note "Raspberry Pi specific (click to expand)"
 
-    https://www.raspberrypi.org/software/  has rpi-imager which has a nice easy to use interface and has Ubuntu Desktop listed under  
+    <https://www.raspberrypi.org/software/> has rpi-imager which has a nice easy to use interface and has Ubuntu Desktop listed under `Other general purpose OS` -> `Ubuntu` -> `Ubuntu Desktop`.
 
-    Other general purpose OS -> Ubuntu -> Ubuntu Desktop
-
-    Once rpi-imager is done the disk/card with the OS installed should mount volumes.
+    Once rpi-imager is done, the disk/card with the OS installed should mount volumes.
 
     We will need to work with
 
@@ -145,7 +135,7 @@ I would recommend Ubuntu desktop for beginners (There is no need for a GUI).
     dtoverlay=disable-bt
     ```
 
-    This will disable the wifi and Bluetooth from booting. 
+    This will disable the wifi and Bluetooth from being initialized when the system boots. 
 
 You can now copy over `~/copytob.tar.gz` to a writeable volume.
 
@@ -157,7 +147,8 @@ eg (These will be different for LiveUSB's)
 `sudo mkdir /media/{yourusername}/writable/bconfig`
 `sudo cp ~/copytob.tar.gz /media/{yourusername}/writable/bconfig`
 
-Now unmount the disk from your system. **This will be the last time you will ever connect this disk to a system with internet access.**
+Now unmount the disk from your system.
+**This will be the last time you will ever connect this disk to a system with internet access.**
 
 Now boot `Wallet-B` with the disk inserted **(DO NOT CONNECT YOUR ETHERNET CABLE)**.
 Depending on the OS it should show you a system setup and a default user creation menu, proceed with a strong password.
@@ -230,7 +221,7 @@ cp ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }}/* ~/decred/
 rm -rf ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }}/
 ```
 
-Now we have the decred bins in the ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }} folder.
+Now we have the Decred binaries in the ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }} folder.
 
 Let us setup the dcrctl and dcrwallet config files that will allow it to connect to `Computer A`.
 

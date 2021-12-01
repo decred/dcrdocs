@@ -6,7 +6,7 @@ This document will guide how to setup a secure two system method for holding you
 
 **Please note that this requires two computers.**
 
-Although we will be focusing on Decred and RaspberryPi this can also be used as a process guide for more general hardware devices and almost any cryptocurrency.
+Although we will be focusing on Decred and Raspberry Pi this can also be used as a process guide for more general hardware devices and almost any cryptocurrency.
 
 ---
 
@@ -30,7 +30,7 @@ This will be a multi-system setup.
 
 
 * A general laptop or desktop that will be running the node. Referred as (`Computer A`)
-* A secure system that will be running our wallet for which we will be using a RaspberryPi4 device (It can be another laptop too).  Referred as (`Wallet-B`). This system should also be connected to an external monitor and keyboard. It should also connect to the local network via ethernet.
+* A secure system that will be running our wallet for which we will be using a Raspberry Pi 4 device (It can be another laptop too).  Referred as (`Wallet-B`). This system should also be connected to an external monitor and keyboard. It should also connect to the local network via ethernet.
 * All details/commands that come within curly braces `{}` cannot be copy-pasted, you will need to remove the curly braces and edit them to suit your setup.
 
 ### Benefits of this Setup
@@ -78,9 +78,9 @@ cp ~/.dcrd/dcrd.conf ~/copytob
 
 ---
 
-=== "RaspberryPi"
+=== "Raspberry Pi"
 
-    [Download](https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz) the decred bins for arm64 (RaspberryPI) and place them in the same folder :
+    [Download](https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz) the decred bins for arm64 (Raspberry Pi) and place them in the same folder :
 
 
     `wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz`
@@ -114,7 +114,7 @@ Install an operating system you feel comfortable with. I would recommend Ubuntu 
 
 **On a general system, you can install the OS using a Linux ISO written to a USB. I recommend [unetbootin](https://unetbootin.github.io/)**
 
-??? note "RaspberryPi specific (click to expand)"
+??? note "Raspberry Pi specific (click to expand)"
 
     https://www.raspberrypi.org/software/  has rpi-imager which has a nice easy to use interface and has Ubuntu Desktop listed under  
 
@@ -159,7 +159,7 @@ Now boot `Wallet-B` with the disk inserted **(DO NOT CONNECT YOUR ETHERNET CABLE
 
 Once logged in get familiar with the system, adjust the clock, etc, and then open a terminal.
 
-??? note "RaspberryPi specific (click to expand)"
+??? note "Raspberry Pi specific (click to expand)"
 
     Optionally you may choose to disable Wifi and Bluetooth at the kernel level too. 
 

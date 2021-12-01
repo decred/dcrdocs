@@ -2,17 +2,20 @@
 
 ---
 
-This document will guide how to setup a secure two system method for holding your Decred. I will be giving some specific commands for Debian based systems, but the principles/tools can be applied to almost any OS.
+This document will guide how to setup a secure two system method for holding your Decred.
+I will be giving some specific commands for Debian based systems, but the principles/tools can be applied to almost any OS.
 
 **Please note that this requires two computers.**
 
-Although we will be focusing on Decred and Raspberry Pi this can also be used as a process guide for more general hardware devices and almost any cryptocurrency.
+Although we will be focusing on Decred and Raspberry Pi this can also be used as
+a process guide for more general hardware devices and almost any cryptocurrency.
 
 ---
 
 ## Scope and Limitations
 
-The scope of this document is to secure your cryptocurrency holdings from general malware and light threats. If you are a normal cryptocurrency holder and follow this exactly, it should give a good level of security.
+The scope of this document is to secure your cryptocurrency holdings from general malware and light threats.
+If you are a normal cryptocurrency holder and follow this exactly, it should give a good level of security.
 
 This also assumes some general technical knowledge and that you can fix any hitches you come across.
 
@@ -28,22 +31,27 @@ This will be a multi-system setup.
 
 ![Network diagram](/img/secure-setup.png)
 
-
 * A general laptop or desktop that will be running the node. Referred as (`Computer A`)
-* A secure system that will be running our wallet for which we will be using a Raspberry Pi 4 device (It can be another laptop too).  Referred as (`Wallet-B`). This system should also be connected to an external monitor and keyboard. It should also connect to the local network via ethernet.
-* All details/commands that come within curly braces `{}` cannot be copy-pasted, you will need to remove the curly braces and edit them to suit your setup.
+* A secure system that will be running our wallet for which we will be using a Raspberry Pi 4 device (It can be another laptop too).
+  Referred as (`Wallet-B`). This system should also be connected to an external monitor and keyboard.
+  It should also connect to the local network via ethernet.
+* All details/commands that come within curly braces `{}` cannot be copy-pasted,
+  you will need to remove the curly braces and edit them to suit your setup.
 
 ### Benefits of this Setup
 
-* The wallet `Wallet-B` is kept offline and turned off most of the time. This allows greatly reduces attack surface/opportunity. 
-* An attacker would first have to compromise the dcrd on `Computer A` and find a way to jump into `Wallet-B` using the RPC to both compromise and exfiltrate data. This is highly unlikely and difficult to pull off.
-* dcrd on `Computer A` can be used for other purposes in your local network (eg. other wallets, DEX, VSPD, etc), so you don't need to maintain multiple dcrd instances within your local network.
+* The wallet `Wallet-B` is kept offline and turned off most of the time.
+  This allows greatly reduces attack surface/opportunity.
+* An attacker would first have to compromise the dcrd on `Computer A` and find a
+  way to jump into `Wallet-B` using the RPC to both compromise and exfiltrate
+  data.
+  This is highly unlikely and difficult to pull off.
+* dcrd on `Computer A` can be used for other purposes in your local network (eg. other wallets, DEX, VSPD, etc),
+  so you don't need to maintain multiple dcrd instances within your local network.
 
 ### Setting up Computer A
 
-The best way to setup decred on your computer is to use [dcrinstall](../wallets/cli/cli-installation.md) 
-
-
+The best way to setup decred on your computer is to use [dcrinstall](../wallets/cli/cli-installation.md)
 
 **Note: If you setup dcrwallet in this system do not use the same seed and passwords for your Wallet-B**
 
@@ -55,19 +63,18 @@ Note down the IP address of `Computer-A` on your local network.
 
 eg:192.148.1.105
 
-You should start dcrd `Computer-A` and let it sync to tip. You should also ensure it exposes RPC to the local network.
+You should start dcrd `Computer-A` and let it sync to tip.
+You should also ensure it exposes RPC to the local network.
 
-`dcrd --rpclisten=localip` 
+`dcrd --rpclisten=localip`
 
-eg: `dcrd --rpclisten=192.148.1.105` 
-
-
+eg: `dcrd --rpclisten=192.148.1.105`
 
 We should now start setting up a folder that will be copied over to Wallet-B
 
 `mkdir ~/copytob`
 
-Copy the certificate and config. 
+Copy the certificate and config.
 
 ```
 cp ~/.dcrd/rpc.cert ~/copytob
@@ -95,20 +102,20 @@ cp ~/.dcrd/dcrd.conf ~/copytob
 
 Make sure you [verify](verifying-binaries.md) the tar file.
 
-
 Now you can tar the  `copytob` folder for transport.
 
 `tar -zcvf ~/copytob.tar.gz -C ~/copytob decred-linux-{arm/amd}64-v{{ cliversion }}.tar.gz dcrd.conf rpc.cert`
 
-You can also calculate the hash to ensure that the file is not modified while moving. 
+You can also calculate the hash to ensure that the file is not modified while moving.
 
-`sha256sum ~/copytob.tar.gz` 
+`sha256sum ~/copytob.tar.gz`
 
 Store this output on an uneditable medium. ie: paper or a photograph.
 
 ### Setting up Wallet B
 
-Install an operating system you feel comfortable with. I would recommend Ubuntu desktop for beginners (There is no need for a GUI). 
+Install an operating system you feel comfortable with.
+I would recommend Ubuntu desktop for beginners (There is no need for a GUI).
 
 **Note: Some systems might not have ufw or tar by default. You might have to copy them over and compile or install them online via the software repository and then proceed with this install.**  
 
@@ -144,7 +151,7 @@ Install an operating system you feel comfortable with. I would recommend Ubuntu 
 
 You can now copy over `~/copytob.tar.gz` to a writeable volume.
 
-For ease of use, let us make a folder called `bconfig` and copy it over. 
+For ease of use, let us make a folder called `bconfig` and copy it over.
 
 (You might need to use an admin or sudo permissions)
 
@@ -152,10 +159,11 @@ eg (These will be different for LiveUSB's)
 `sudo mkdir /media/{yourusername}/writable/bconfig`
 `sudo cp ~/copytob.tar.gz /media/{yourusername}/writable/bconfig`
 
-Now unmount the disk from your system. **This will be the last time you will ever connect this disk to a system with internet access.** 
+Now unmount the disk from your system. **This will be the last time you will ever connect this disk to a system with internet access.**
 
-Now boot `Wallet-B` with the disk inserted **(DO NOT CONNECT YOUR ETHERNET CABLE)**. Depending on the OS it should show you a system setup and a default user creation menu, proceed with a strong password. Then once the system is installed it should reboot.
-
+Now boot `Wallet-B` with the disk inserted **(DO NOT CONNECT YOUR ETHERNET CABLE)**.
+Depending on the OS it should show you a system setup and a default user creation menu, proceed with a strong password.
+Then once the system is installed it should reboot.
 
 Once logged in get familiar with the system, adjust the clock, etc, and then open a terminal.
 
@@ -189,7 +197,7 @@ sudo rfkill block wifi
 sudo rfkill block bluetooth
 ```
 
-Now to setup the ufw rules run the following commands. 
+Now to setup the ufw rules run the following commands.
 
 ```
 sudo ufw default deny outgoing
@@ -197,10 +205,11 @@ sudo ufw default deny incoming
 sudo ufw allow out to {LOCALIPOFCOMPUTERA} port 9109
 sudo ufw enable
 ```
+
 Replace {LOCALIPOFCOMPUTERA} with the IP address of `Computer A`
 
-
-Now you may connect the ethernet cable. Wait for the connection to take place and then test if you can connect to `Computer A` on port 9109
+Now you may connect the ethernet cable.
+Wait for the connection to take place and then test if you can connect to `Computer A` on port 9109
 
 wget {LOCALIPOFCOMPUTERA}:9109
 
@@ -212,7 +221,7 @@ First, let us check that the tarfile is unchanged.
 
 `sha256sum /bconfig/copytob.tar.gz`
 
-Once the hash is matched then you can extract it. 
+Once the hash is matched then you can extract it.
 
 ```
 mkdir ~/decredconfigs
@@ -223,20 +232,21 @@ cp ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }}/* ~/decred/
 rm -rf ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }}/
 ```
 
-Now we have the decred bins in the ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }} folder. 
+Now we have the decred bins in the ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }} folder.
 
 Let us setup the dcrctl and dcrwallet config files that will allow it to connect to `Computer A`.
 
-`
+```
 mkdir ~/.dcrwallet/
 mkdir ~/.dcrctl/
-`
+```
 
-Now, these files need to be edited. 
+Now, these files need to be edited.
 
 First copy the RPC username and password from ~/decredconfigs/dcrd.conf
 
-Let us name them {username} and {password}. Replace these with the actual values in the configs below.
+Let us name them {username} and {password}.
+Replace these with the actual values in the configs below.
 
 create a file with contents
 
@@ -249,7 +259,6 @@ username={username}
 password={password}
 ```
 
-
  ~/.dcrctl/dcrctl.conf
 
 ```
@@ -260,11 +269,11 @@ rpcuser={username}
 rpcpass={password}
 ```
 
-That's it. 
+That's it.
 
 Test is out by running `~/decred/dcrctl getbestblock`
 
-It should show the latest block.     
+It should show the latest block.
 
 Then you can setup a wallet as described in the [docs](../wallets/cli/dcrwallet-setup.md)
 
@@ -272,14 +281,19 @@ Then you can setup a wallet as described in the [docs](../wallets/cli/dcrwallet-
 
 ## Improvements
 
-* This system can only be used to store and spend coins. It currently cannot be used to purchase tickets. This can be easily achieved by hosting a TOR instance in `Computer A` `apt-get install tor` and then connecting dcrwallet using its proxy setting. (You will need to add a rule to UFW accordingly eg: `sudo ufw allow out to {LOCALIPOFCOMPUTERA} port 9050`)
+* This system can only be used to store and spend coins.
+  It currently cannot be used to purchase tickets.
+  This can be easily achieved by hosting a TOR instance in `Computer A` `apt-get install tor` and then connecting dcrwallet using its proxy setting.
+  (You will need to add a rule to UFW accordingly eg: `sudo ufw allow out to {LOCALIPOFCOMPUTERA} port 9050`)
 
-* A MITM proxy can be setup between `Computer A` RPC and `Wallet-B`. This can either be used to log traffic or can even be used to approve/disapprove all responses/requests.
+* A MITM proxy can be setup between `Computer A` RPC and `Wallet-B`.
+  This can either be used to log traffic or can even be used to approve/disapprove all responses/requests.
 * Remove wifi/Bluetooth hardware physically.
 * Use a more secure/lightweight OS.
 * Setup router level firewall rules secondary to UFW.
-* Use an [Ethernet crossover cable](https://en.wikipedia.org/wiki/Ethernet_crossover_cable) to connect to `Computer A`. This will greatly reduce the local network attack surface. (Most devices now auto cross over and you don't need a special cable)
-*  If your router supports it, bind the MAC of both devices to a static IP.
+* Use an [Ethernet crossover cable](https://en.wikipedia.org/wiki/Ethernet_crossover_cable) to connect to `Computer A`.
+  This will greatly reduce the local network attack surface. (Most devices now auto cross over and you don't need a special cable)
+* If your router supports it, bind the MAC of both devices to a static IP.
 
 ---
 

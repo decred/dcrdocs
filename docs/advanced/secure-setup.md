@@ -194,15 +194,15 @@ Now to setup the ufw rules run the following commands.
 ```
 sudo ufw default deny outgoing
 sudo ufw default deny incoming
-sudo ufw allow out to [LOCALIPOFCOMPUTERA] port 9109
+sudo ufw allow out to {LOCALIPOFCOMPUTERA} port 9109
 sudo ufw enable
 ```
-Replace [LOCALIPOFCOMPUTERA] with the IP address of `Computer A`
+Replace {LOCALIPOFCOMPUTERA} with the IP address of `Computer A`
 
 
 Now you may connect the ethernet cable. Wait for the connection to take place and then test if you can connect to `Computer A` on port 9109
 
-wget [LOCALIPOFCOMPUTERA]:9109
+wget {LOCALIPOFCOMPUTERA}:9109
 
 You should get an error a 400 bad request error. This is fine and shows that a connection is possible.
 
@@ -272,7 +272,7 @@ Then you can setup a wallet as described in the [docs](../wallets/cli/dcrwallet-
 
 ## Improvements
 
-* This system can only be used to store and spend coins. It currently cannot be used to purchase tickets. This can be easily achieved by hosting a TOR instance in `Computer A` `apt-get install tor` and then connecting dcrwallet using its proxy setting. (You will need to add a rule to UFW accordingly eg: `sudo ufw allow out to [LOCALIPOFCOMPUTERA] port 9050`)
+* This system can only be used to store and spend coins. It currently cannot be used to purchase tickets. This can be easily achieved by hosting a TOR instance in `Computer A` `apt-get install tor` and then connecting dcrwallet using its proxy setting. (You will need to add a rule to UFW accordingly eg: `sudo ufw allow out to {LOCALIPOFCOMPUTERA} port 9050`)
 
 * A MITM proxy can be setup between `Computer A` RPC and `Wallet-B`. This can either be used to log traffic or can even be used to approve/disapprove all responses/requests.
 * Remove wifi/Bluetooth hardware physically.
@@ -292,10 +292,10 @@ If at any point the IP of `Computer A` changes then you need to list
 `sudo ufw status numbered`
 
  and delete the ufw rule that allows the connection.
-`sudo ufw delete [NUMBER]`
+`sudo ufw delete {NUMBER}`
 
 And then add the new IP
 
-`sudo ufw allow out to [LOCALIPOFCOMPUTERA] port 9109`
+`sudo ufw allow out to {LOCALIPOFCOMPUTERA} port 9109`
 
  You will also have to regenerate certificates for dcrd and copy them over securely.

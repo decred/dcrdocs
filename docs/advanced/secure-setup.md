@@ -33,7 +33,7 @@ This will be a multi-system setup.
 
 ![Network diagram](/img/secure-setup.png)
 
-* A laptop or desktop that will be running the dcrd node, referred to as `Computer A`.
+* A laptop or desktop that will be running the dcrd node, referred to as `Computer-A`.
 * A secure system that will be running the wallet, referred as `Wallet-B`.
   This guide will use a Raspberry Pi 4, however it could also be a laptop or desktop.
   This system should be connected to an external monitor and keyboard, and it
@@ -45,13 +45,13 @@ This will be a multi-system setup.
 
 * `Wallet-B` is kept offline and turned off most of the time.
   This greatly reduces attack surface/opportunity.
-* An attacker would have to compromise dcrd on `Computer A` first, and then find a
+* An attacker would have to compromise dcrd on `Computer-A` first, and then find a
   way to jump into `Wallet-B` using the RPC to compromise and exfiltrate data.
   This is highly unlikely and difficult to pull off.
-* dcrd on `Computer A` can be used for other purposes in your local network (eg. other wallets, DEX, etc),
+* dcrd on `Computer-A` can be used for other purposes in your local network (eg. other wallets, DEX, etc),
   so you don't need to maintain multiple dcrd instances within your local network.
 
-### Setting up Computer A
+### Setting up Computer-A
 
 The best way to setup Decred on your computer is to use [dcrinstall](../wallets/cli/cli-installation.md)
 
@@ -64,11 +64,11 @@ The IP can be found using `ifconfig`.
 
 Start dcrd on `Computer-A`, ensuring it exposes RPC to the local network.
 
-`dcrd --rpclisten={LOCALIPOFCOMPUTERA}`
+`dcrd --rpclisten={LOCAL_IP_OF_COMPUTER-A}`
 
 Let dcrd fully sync to the latest block.
 
-We should now start setting up a folder that will be copied over to Wallet-B.
+We should now start setting up a folder that will be copied over to `Wallet-B`.
 
 `mkdir ~/copytob`
 
@@ -104,11 +104,10 @@ You can also calculate the hash to ensure that the file is not modified while mo
 
 Store this output on an uneditable medium. ie: paper or a photograph.
 
-### Setting up Wallet B
+### Setting up Wallet-B
 
 Install an operating system you feel comfortable with.
 Ubuntu desktop is a good choice for beginners (there is no need for a GUI).
-
 
 **On a general system, you can install the OS using a Linux ISO written to a USB. I recommend [unetbootin](https://unetbootin.github.io/)**
 
@@ -193,16 +192,16 @@ Now to setup the ufw rules run the following commands.
 ```no-highlight
 sudo ufw default deny outgoing
 sudo ufw default deny incoming
-sudo ufw allow out to {LOCALIPOFCOMPUTERA} port 9109
+sudo ufw allow out to {LOCAL_IP_OF_COMPUTER-A} port 9109
 sudo ufw enable
 ```
 
-Replace {LOCALIPOFCOMPUTERA} with the IP address of `Computer A`
+Replace {LOCAL_IP_OF_COMPUTER-A} with the IP address of `Computer-A`
 
 Now you may connect the ethernet cable.
-Wait for the connection to take place and then test if you can connect to `Computer A` on port 9109
+Wait for the connection to take place and then test if you can connect to `Computer-A` on port 9109
 
-wget {LOCALIPOFCOMPUTERA}:9109
+wget {LOCAL_IP_OF_COMPUTER-A}:9109
 
 You should get an error a 400 bad request error. This is fine and shows that a connection is possible.
 
@@ -225,7 +224,7 @@ rm -rf ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }}/
 
 Now we have the Decred binaries in the ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }} folder.
 
-Let us setup the dcrctl and dcrwallet config files that will allow it to connect to `Computer A`.
+Let us setup the dcrctl and dcrwallet config files that will allow it to connect to `Computer-A`.
 
 ```no-highlight
 mkdir ~/.dcrwallet/
@@ -244,7 +243,7 @@ create a file with contents
  ~/.dcrwallet/dcrwallet.conf
 
 ```no-highlight
-rpcconnect={LOCALIPOFCOMPUTERA}:9109
+rpcconnect={LOCAL_IP_OF_COMPUTER-A}:9109
 cafile=~/decredconfigs/rpc.cert
 username={username}
 password={password}
@@ -253,7 +252,7 @@ password={password}
  ~/.dcrctl/dcrctl.conf
 
 ```no-highlight
-rpcserver={LOCALIPOFCOMPUTERA}:9109
+rpcserver={LOCAL_IP_OF_COMPUTER-A}:9109
 walletrpcserver=127.0.0.1
 rpccert=~/decredconfigs/rpc.cert
 rpcuser={username}
@@ -274,15 +273,15 @@ Then you can setup a wallet as described in the [docs](../wallets/cli/dcrwallet-
 
 * This system can only be used to store and spend coins.
   It currently cannot be used to purchase tickets.
-  This can be easily achieved by hosting a TOR instance in `Computer A` `apt-get install tor` and then connecting dcrwallet using its proxy setting.
-  (You will need to add a rule to UFW accordingly eg: `sudo ufw allow out to {LOCALIPOFCOMPUTERA} port 9050`)
+  This can be easily achieved by hosting a TOR instance in `Computer-A` `apt-get install tor` and then connecting dcrwallet using its proxy setting.
+  (You will need to add a rule to UFW accordingly eg: `sudo ufw allow out to {LOCAL_IP_OF_COMPUTER-A} port 9050`)
 
-* A MITM proxy can be setup between `Computer A` RPC and `Wallet-B`.
+* A MITM proxy can be setup between `Computer-A` RPC and `Wallet-B`.
   This can either be used to log traffic or can even be used to approve/disapprove all responses/requests.
 * Remove WiFi/Bluetooth hardware physically.
 * Use a more secure/lightweight OS.
 * Setup router level firewall rules secondary to UFW.
-* Use an [Ethernet crossover cable](https://en.wikipedia.org/wiki/Ethernet_crossover_cable) to connect to `Computer A`.
+* Use an [Ethernet crossover cable](https://en.wikipedia.org/wiki/Ethernet_crossover_cable) to connect to `Computer-A`.
   This will greatly reduce the local network attack surface. (Most devices now auto cross over and you don't need a special cable)
 * If your router supports it, bind the MAC of both devices to a static IP.
 
@@ -299,7 +298,7 @@ software repository.
 
 ### IP Changes
 
-If at any point the IP of `Computer A` changes then you need to list
+If at any point the IP of `Computer-A` changes then you need to list
 
 `sudo ufw status numbered`
 
@@ -308,6 +307,6 @@ If at any point the IP of `Computer A` changes then you need to list
 
 And then add the new IP
 
-`sudo ufw allow out to {LOCALIPOFCOMPUTERA} port 9109`
+`sudo ufw allow out to {LOCAL_IP_OF_COMPUTER-A} port 9109`
 
  You will also have to regenerate certificates for dcrd and copy them over securely.

@@ -1,5 +1,7 @@
 # <img class="dcr-icon" src="/img/dcr-icons/LockEye.svg" /> Secure Setup
 
+Last updated for CLI release v{{ cliversion }}.
+
 ---
 
 This document will guide how to setup a two system method for holding your Decred securely.

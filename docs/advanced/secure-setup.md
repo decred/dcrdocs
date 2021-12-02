@@ -107,7 +107,6 @@ Store this output on an uneditable medium. ie: paper or a photograph.
 Install an operating system you feel comfortable with.
 Ubuntu desktop is a good choice for beginners (there is no need for a GUI).
 
-**Note: Some systems might not have ufw or tar by default. You might have to copy them over and compile or install them online via the software repository and then proceed with this install.**  
 
 **On a general system, you can install the OS using a Linux ISO written to a USB. I recommend [unetbootin](https://unetbootin.github.io/)**
 
@@ -288,6 +287,13 @@ Then you can setup a wallet as described in the [docs](../wallets/cli/dcrwallet-
 ---
 
 ## Common Errors and Pitfalls
+
+### Missing Software
+
+Some operating systems might not have ufw or tar by default.
+If your `Wallet-B` is missing some software, you will have to either copy it
+from `Computer-A` using a removable storage device, or install it from an online
+software repository.
 
 ### IP Changes
 

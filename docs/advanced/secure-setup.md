@@ -53,56 +53,58 @@ This will be a multi-system setup.
 
 ### Setting up Computer-A
 
-The best way to setup Decred on your computer is to use [dcrinstall](../wallets/cli/cli-installation.md)
+!!! warning "If you use dcrwallet on this system, do not use the same seed and/or password on Wallet-B"
 
-**Note: If you setup dcrwallet in this system, do not use the same seed and passwords for your Wallet-B.**
+1. Use [dcrinstall](../wallets/cli/cli-installation.md) to install Decred binaries and config files.
 
-Once this is done it is assumed that you have dcrd binaries and the dcrd config files.
+1. Use `ifconfig` to find the IP address of `Computer-A` on your local network.
 
-Note down the IP address of `Computer-A` on your local network.
-The IP can be found using `ifconfig`.
+1. Start dcrd on `Computer-A`, ensuring it exposes RPC to the local network.
 
-Start dcrd on `Computer-A`, ensuring it exposes RPC to the local network.
+    ```no-highlight
+    dcrd --rpclisten={LOCAL_IP_OF_COMPUTER-A}
+    ```
 
-`dcrd --rpclisten={LOCAL_IP_OF_COMPUTER-A}`
+    Let dcrd fully sync to the latest block.
 
-Let dcrd fully sync to the latest block.
+1. Create a folder which will be copied over to `Wallet-B`.
+    Copy the dcrd certificate and config into that folder.
 
-We should now start setting up a folder that will be copied over to `Wallet-B`.
+    ```no-highlight
+    mkdir ~/copytob
+    cp ~/.dcrd/rpc.cert ~/copytob
+    cp ~/.dcrd/dcrd.conf ~/copytob
+    ```
 
-`mkdir ~/copytob`
+1. Download Decred release binaries for `Wallet-B` and place them in the same folder.
 
-Copy the certificate and config.
+    === "Raspberry Pi"
 
-```no-highlight
-cp ~/.dcrd/rpc.cert ~/copytob
-cp ~/.dcrd/dcrd.conf ~/copytob
-```
+        ```no-highlight
+        wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz
+        ```
 
-=== "Raspberry Pi"
+    === "General systems"
 
-    [Download](https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz) the Decred binaries for arm64 (Raspberry PI) and place them in the same folder:
+        ```no-highlight
+        wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-amd64-v{{ cliversion }}.tar.gz
+        ```
 
-    `wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz`
+1. Make sure you [verify](verifying-binaries.md) the tar file to ensure it has not been tampered with.
 
-=== "General systems"
+1. Archive the `copytob` folder for transport to `Wallet-B`.
 
-    [Download](https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-amd64-v{{ cliversion }}.tar.gz) the Decred binaries for linux and place them in the same folder:
+    ```no-highlight
+    tar -zcvf ~/copytob.tar.gz -C ~/copytob decred-linux-{arm/amd}64-v{{ cliversion }}.tar.gz dcrd.conf rpc.cert`
+    ```
 
-    `wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-amd64-v{{ cliversion }}.tar.gz`
+1. You can also calculate the hash to ensure that the file is not modified while moving.
 
-Make sure you [verify](verifying-binaries.md) the tar file to ensure it has not
-been tampered with.
+    ```no-highlight
+    sha256sum ~/copytob.tar.gz`
+    ```
 
-Now you can tar the `copytob` folder for transport.
-
-`tar -zcvf ~/copytob.tar.gz -C ~/copytob decred-linux-{arm/amd}64-v{{ cliversion }}.tar.gz dcrd.conf rpc.cert`
-
-You can also calculate the hash to ensure that the file is not modified while moving.
-
-`sha256sum ~/copytob.tar.gz`
-
-Store this output on an uneditable medium. ie: paper or a photograph.
+    Store this output on an uneditable medium. ie: paper or a photograph.
 
 ### Setting up Wallet-B
 

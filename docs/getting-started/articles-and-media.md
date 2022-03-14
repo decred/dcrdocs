@@ -227,14 +227,6 @@ various aspects of Decred.
 
 - [How to stake DCR](https://medium.com/@dcrthegreat/how-to-stake-dcr-decred-e6c43e052fde)
 
-### Ticket Splitting
-
-- [Overview of ticket splitting](../proof-of-stake/ticket-splitting.md)
-
-- [Everything you need to know about ticket splitting](https://medium.com/decred/dcr-ticket-splitting-all-you-need-to-know-b8edc6b65db3) by David
-
-- [Video tutorial on setting up ticket splitting](https://www.youtube.com/watch?v=9L8P7hL5v6w)
-
 ---
 
 ## 7. Funding, Contractor Model, and the Decred DAO

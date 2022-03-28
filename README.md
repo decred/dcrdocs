@@ -59,6 +59,10 @@ INFO     -  [13:26:55] Serving on http://127.0.0.1:8000/
 
 Open up <http://127.0.0.1:8000> in your browser, and you will see the documentation home page being displayed. The dev-server also supports auto-reloading, and will rebuild your documentation whenever anything in the configuration file or the documentation directory changes.
 
+#### Formatting
+
+In general, stick to standard Markdown formatting. However, these docs use [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/reference/), so consult their documentation if you need additional formatting tools.
+
 ## Deploying
 
 To deploy `dcrdocs`, first build the documentation:

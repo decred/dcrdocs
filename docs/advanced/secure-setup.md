@@ -37,7 +37,7 @@ This will be a multi-system setup.
 * A secure system that will be running the wallet, referred as `Wallet-B`.
   This guide will use a Raspberry Pi 4, however it could also be a laptop or desktop.
   This system should be connected to an external monitor and keyboard, and it
-  should also connect to the local network via ethernet.
+  should also be connected to `Computer-A` via a crossover cable or a dedicated router.
 * All details/commands that come within curly braces `{}` cannot be copy-pasted,
   you will need to remove the curly braces and edit them to suit your setup.
 
@@ -104,7 +104,11 @@ This will be a multi-system setup.
     sha256sum ~/copytob.tar.gz`
     ```
 
-    Store this output on an uneditable medium. ie: paper or a photograph.
+    Make a note of the generated hash.
+    For extra security, store the hash on an uneditable medium. e.g. paper or a
+    photograph.
+    A digital copy of the hash could be manipulated by any malicious program
+    running on the system.
 
 ### Setting up Wallet-B
 

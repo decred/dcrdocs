@@ -4,22 +4,39 @@ Last updated for CLI release v{{ cliversion }}.
 
 ---
 
-This document will guide how to setup a two system method for holding your Decred securely.
-Some of the commands given will be specific to Debian based systems, but the principles/tools can be applied to almost any OS.
+This is a guide for securely holding your Decred.
+The system described here uses two computers:
 
-**Please note that this setup requires two computers.**
+* `Computer-A` - The Node
+    * A laptop or desktop that will be running the dcrd node.
+      Connects to the public internet and is expected to remain online most of the time.
+* `Wallet-B` - The Wallet
+    * A secure system that will be running the wallet.
+      Should never connect to the public internet, and can remain offline and powered off most of the time.
+
+The guide assumes some general technical knowledge, and that users know how to
+enter commands on a terminal.
+This guide uses the more technical CLI-based Decred software, but it would be
+possible to use a GUI for Wallet B and still maintain similar security.
+
 
 Although focused on Decred and Raspberry Pi, this guide can also be used for
 more general hardware devices and almost any cryptocurrency.
+This guide also gives instructions and commands specific to Debian/Linux
+systems, but the principles/tools can be applied to almost any OS.
+
+Because firewalls can be complex and difficult for beginners, this guide assumes
+that users have zero familiarity with firewalls.
+The instructions here will explain how to set up a simple (but strong and
+sufficient) software firewall that isolates `Wallet-B` from the public internet.
 
 ---
 
 ## Scope and Limitations
 
 The scope of this guide is to secure your cryptocurrency holdings from common malware and light threats.
+The wallet setup in this guide is generally known as a “cold wallet”.
 If you are a normal cryptocurrency holder and follow this guide exactly, it should give a good level of security.
-
-The guide assumes some general technical knowledge and that you can fix any hitches you come across.
 
 **This setup will not protect you against a state-level attacker or a persistent threat.**
 
@@ -29,27 +46,64 @@ The guide assumes some general technical knowledge and that you can fix any hitc
 
 ## The Setup
 
-This will be a multi-system setup.
-
 ![Network diagram](/img/secure-setup.png)
-
-* A laptop or desktop that will be running the dcrd node, referred to as `Computer-A`.
-* A secure system that will be running the wallet, referred as `Wallet-B`.
-  This guide will use a Raspberry Pi 4, however it could also be a laptop or desktop.
-  This system should be connected to an external monitor and keyboard, and it
-  should also be connected to `Computer-A` via a crossover cable or a dedicated router.
-* All details/commands that come within curly braces `{}` cannot be copy-pasted,
-  you will need to remove the curly braces and edit them to suit your setup.
 
 ### Benefits of this Setup
 
 * `Wallet-B` is kept offline and turned off most of the time.
   This greatly reduces attack surface/opportunity.
-* An attacker would have to compromise dcrd on `Computer-A` first, and then find a
-  way to jump into `Wallet-B` using the RPC to compromise and exfiltrate data.
+* An attacker would have to compromise dcrd on `Computer-A` first, and then find
+  a way to break into `Wallet-B` using the RPC to compromise and steal your
+  wallet data.
   This is highly unlikely and difficult to pull off.
 * dcrd on `Computer-A` can be used for other purposes in your local network (eg. other wallets, DEX, etc),
   so you don't need to maintain multiple dcrd instances within your local network.
+* Even though `Wallet-B` is kept offline, it’s still possible for it to participate in staking by using a VSP.
+* Advanced readers can extrapolate from this guide and make `Wallet-B` a “hot”
+  wallet so they can Solo Stake, but that’s significantly more vulnerable to
+  attacks and outside the scope of this guide.
+
+### Hardware
+
+#### Computer-A - The Node
+
+In general, you can use almost any computer to run the node
+(see the [Minimum Recommended Specifications](https://github.com/decred/dcrd#minimum-recommended-specifications-dcrd-only) for dcrd).
+`Computer-A` is expected to remain online most of the time, but it's not required.
+For a budget device with a low energy requirement, it’s fine to use a Raspberry
+Pi with at least 2 GB memory and 16 GB disk space.
+It would also be fine to use an old laptop or desktop.
+This guide assumes users are aware that since `Computer-A` is connecting to the
+public internet, it is potentially vulnerable to attacks.
+
+#### Wallet-B - The Wallet
+
+Since the wallet needs to have the utmost security in this setup, it’s important
+to have a minimal attack surface.
+This guide suggests that this wallet be a cold wallet, i.e. powered off most of the
+time.
+It is nearly impossible to attack a system which is powered off.
+This guide suggests using a Raspberry Pi for the wallet, although other hardware
+can be used.
+
+**Finally, this guide suggests using a mouse, keyboard, and monitor to access each device.**
+
+### Operating Systems
+
+Since `Computer-A` is not storing any sensitive information, the choice of operating system is less important than the choice for `Wallet-B`.
+dcrd can be installed on anything from Windows to Mac to Linux to OpenBSD.
+However, using Linux or OpenBSD should be considered to reduce your attack surface.
+
+This guide assumes you already have an operating system on `Computer-A`, and won’t describe how to install a new one.
+
+`Wallet-B` will be the more secure device.
+Use an operating system you feel comfortable with.
+Consider using Linux or OpenBSD to reduce your attack surface.
+Raspbian works fine if you want a GUI, and Ubuntu Desktop is another good choice for beginners who don’t need a GUI.
+
+This guide will give commands specific to Debian/Linux based systems.
+All details/commands that come within curly braces `{}` cannot be copy-pasted -
+you will need to remove the curly braces and edit the command to suit your setup.
 
 ### Setting up Computer-A
 

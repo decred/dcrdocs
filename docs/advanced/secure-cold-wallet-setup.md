@@ -167,6 +167,20 @@ you will need to remove the curly braces and edit the command to suit your setup
     A digital copy of the hash could be manipulated by any malicious program
     running on the system.
 
+1. Finally, copy the archive `copytob.tar.gz` onto a portable drive, like a USB flash drive.
+
+    For ease of use, make a folder on your portable drive called `bconfig`, and then copy the archive over, e.g.:
+
+    `sudo mkdir /media/{your_username}/writable/bconfig`
+
+    then
+
+    `sudo cp ~/copytob.tar.gz /media{your_username}/writable/bconfig`
+
+    Now unmount the drive from your system.
+
+    **This will be the last time you will ever connect this drive to a system with public internet access.**
+
 ### Setting up Wallet-B
 
 Install an operating system you feel comfortable with.
@@ -199,19 +213,6 @@ Ubuntu desktop is a good choice for beginners (there is no need for a GUI).
     ```
 
     This will disable the WiFi and Bluetooth from being initialized when the system boots. 
-
-You can now copy over `~/copytob.tar.gz` to a writeable volume.
-
-For ease of use, let us make a folder called `bconfig` and copy it over.
-
-(You might need to use an admin or sudo permissions)
-
-eg (These will be different for LiveUSB's)
-`sudo mkdir /media/{yourusername}/writable/bconfig`
-`sudo cp ~/copytob.tar.gz /media/{yourusername}/writable/bconfig`
-
-Now unmount the disk from your system.
-**This will be the last time you will ever connect this disk to a system with internet access.**
 
 Now boot `Wallet-B` with the disk inserted **(DO NOT CONNECT YOUR ETHERNET CABLE)**.
 Depending on the OS it should show you a system setup and a default user creation menu, proceed with a strong password.
@@ -268,7 +269,7 @@ wget {LOCAL_IP_OF_COMPUTER-A}:9109
 
 You should get an error a 400 bad request error. This is fine and shows that a connection is possible.
 
-Now to setup dcrwallet.
+Now to setup dcrwallet. Insert the USB drive from `Computer-A`.
 
 First, let us check that the tarfile is unchanged.
 

@@ -74,7 +74,9 @@ In general, you can use almost any computer to run the node
 (see the [Minimum Recommended Specifications](https://github.com/decred/dcrd#minimum-recommended-specifications-dcrd-only) for dcrd).
 `Computer-A` is expected to remain online most of the time, but it's not required.
 For a budget device with a low energy requirement, it’s fine to use a Raspberry
-Pi with at least 2 GB memory and 16 GB disk space.
+Pi, but keep in mind that your device also needs to run an operating system.
+Many people choose to run nodes on the 4 GB models of Raspberry Pi’s, using a
+lightweight OS.
 It would also be fine to use an old laptop or desktop.
 This guide assumes users are aware that since `Computer-A` is connecting to the
 public internet, it is potentially vulnerable to attacks.
@@ -141,7 +143,7 @@ you will need to remove the curly braces and edit the command to suit your setup
         wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz
         ```
 
-    === "General systems"
+    === "Other Linux Systems"
 
         ```no-highlight
         wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-amd64-v{{ cliversion }}.tar.gz
@@ -183,12 +185,17 @@ you will need to remove the curly braces and edit the command to suit your setup
 
 ### Setting up Wallet-B
 
-Install an operating system you feel comfortable with.
-Ubuntu desktop is a good choice for beginners (there is no need for a GUI).
+Choose the operating system you'd like to use on `Wallet-B`, then use another
+computer to make a bootable USB drive to install that OS.
 
-**On a general system, you can install the OS using a Linux ISO written to a USB. I recommend [unetbootin](https://unetbootin.github.io/)**
+Generally speaking, an operating system with fewer features will have a smaller
+attack surface, so consider using a minimal OS with no unnecessary features.
 
-??? note "Raspberry Pi specific (click to expand)"
+If you are using a Raspberry Pi, you can use rpi-imager (details provided below).
+
+To install Linux on non-Raspberry Pi systems, consider using [unetbootin](https://unetbootin.github.io/).
+
+??? note "rpi-imager (click to expand)"
 
     <https://www.raspberrypi.org/software/> has rpi-imager which has a nice easy to use interface and has Ubuntu Desktop listed under `Other general purpose OS` -> `Ubuntu` -> `Ubuntu Desktop`.
 
@@ -197,7 +204,7 @@ Ubuntu desktop is a good choice for beginners (there is no need for a GUI).
     We will need to work with
 
     ```no-highlight
-    writeable
+        writable
     *boot
     ```
 
@@ -214,11 +221,19 @@ Ubuntu desktop is a good choice for beginners (there is no need for a GUI).
 
     This will disable the WiFi and Bluetooth from being initialized when the system boots. 
 
-Now boot `Wallet-B` with the disk inserted **(DO NOT CONNECT YOUR ETHERNET CABLE)**.
+Now boot `Wallet-B` with the installation disk inserted, but **MAKE SURE IT DOES NOT HAVE THE ETHERNET CABLE CONNECTED**.
+
 Depending on the OS it should show you a system setup and a default user creation menu, proceed with a strong password.
 Then once the system is installed it should reboot.
 
-Once logged in get familiar with the system, adjust the clock, etc, and then open a terminal.
+Once logged in get familiar with the system, adjust the clock, etc.
+
+Open a terminal and disable WiFi and Bluetooth using rfkill:
+
+```no-highlight
+sudo rfkill block wifi
+sudo rfkill block bluetooth
+```
 
 ??? note "Raspberry Pi specific (click to expand)"
 
@@ -244,14 +259,16 @@ Once logged in get familiar with the system, adjust the clock, etc, and then ope
     blacklist bluetooth
     ```
 
-Disable WiFi and Bluetooth using rfkill:
+Set up the software firewall.
+This is the key to keeping this device isolated from the public internet.
+If you ever connect to the internet from this device without this firewall active, then this device could become vulnerable.
 
-```no-highlight
-sudo rfkill block wifi
-sudo rfkill block bluetooth
-```
+The simple firewall is as follows (and these steps have to be done in order)
 
-Now to setup the ufw rules run the following commands.
+* Deny all outgoing traffic attempting to leave this device.
+* Deny all incoming traffic attempting to access this device.
+* Allow outgoing traffic to `Computer-A` only, on one specific port only.
+* Enable the firewall.
 
 ```no-highlight
 sudo ufw default deny outgoing
@@ -260,22 +277,25 @@ sudo ufw allow out to {LOCAL_IP_OF_COMPUTER-A} port 9109
 sudo ufw enable
 ```
 
-Replace {LOCAL_IP_OF_COMPUTER-A} with the IP address of `Computer-A`
+Replace `{LOCAL_IP_OF_COMPUTER-A}` with the actual IP address of `Computer-A`.
+
+You can check that the firewall is running using the command `sudo ufw status verbose`.
 
 Now you may connect the ethernet cable.
-Wait for the connection to take place and then test if you can connect to `Computer-A` on port 9109
+Wait for the connection to take place and then test if you can connect to `Computer-A` on port 9109:
 
-wget {LOCAL_IP_OF_COMPUTER-A}:9109
+`wget {LOCAL_IP_OF_COMPUTER-A}:9109`
 
-You should get an error a 400 bad request error. This is fine and shows that a connection is possible.
+You should get an error a 400 Bad Request error. This is fine and shows that a connection is possible.
 
 Now to setup dcrwallet. Insert the USB drive from `Computer-A`.
 
-First, let us check that the tarfile is unchanged.
+Before extracting this tarfile and running the binary, check that the file is unchanged.
 
 `sha256sum /bconfig/copytob.tar.gz`
 
-Once the hash is matched then you can extract it.
+If the hash matches the hash you stored during the `Computer-A` setup, then you
+can extract the file.
 
 ```no-highlight
 mkdir ~/decredconfigs
@@ -286,36 +306,32 @@ cp ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }}/* ~/decred/
 rm -rf ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }}/
 ```
 
-Now we have the Decred binaries in the ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }} folder.
+Now we have the Decred binaries in the `~/decred` folder.
+Don't run them before creating the config files in the next step.
 
-Let us setup the dcrctl and dcrwallet config files that will allow it to connect to `Computer-A`.
+The next step is to create the dcrctl and dcrwallet config files that will allow
+those processes to connect to `Computer-A`.
+
+Create the directories for those files:
 
 ```no-highlight
 mkdir ~/.dcrwallet/
 mkdir ~/.dcrctl/
 ```
 
-Now, these files need to be edited.
+Copy the RPC username and password from `~/decredconfigs/dcrd.conf`.
+These need to be pasted into the dcrctl and dcrwallet config files.
 
-First copy the RPC username and password from ~/decredconfigs/dcrd.conf
+Create the config files with the following contents:
 
-Let us name them {username} and {password}.
-Replace these with the actual values in the configs below.
-
-create a file with contents
-
- ~/.dcrwallet/dcrwallet.conf
-
-```no-highlight
+```no-highlight title="~/.dcrwallet/dcrwallet.conf"
 rpcconnect={LOCAL_IP_OF_COMPUTER-A}:9109
 cafile=~/decredconfigs/rpc.cert
 username={username}
 password={password}
 ```
 
- ~/.dcrctl/dcrctl.conf
-
-```no-highlight
+```no-highlight title="~/.dcrctl/dcrctl.conf"
 rpcserver={LOCAL_IP_OF_COMPUTER-A}:9109
 walletrpcserver=127.0.0.1
 rpccert=~/decredconfigs/rpc.cert

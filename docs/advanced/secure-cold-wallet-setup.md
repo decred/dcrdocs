@@ -185,167 +185,165 @@ you will need to remove the curly braces and edit the command to suit your setup
 
 ### Setting up Wallet-B
 
-Choose the operating system you'd like to use on `Wallet-B`, then use another
-computer to make a bootable USB drive to install that OS.
+1. Choose the operating system you'd like to use on `Wallet-B`, then use another
+    computer to make a bootable USB drive to install that OS.
 
-Generally speaking, an operating system with fewer features will have a smaller
-attack surface, so consider using a minimal OS with no unnecessary features.
+    Generally speaking, an operating system with fewer features will have a smaller
+    attack surface, so consider using a minimal OS with no unnecessary features.
 
-If you are using a Raspberry Pi, you can use rpi-imager (details provided below).
+    If you are using a Raspberry Pi, you can use rpi-imager (details provided below).
 
-To install Linux on non-Raspberry Pi systems, consider using [unetbootin](https://unetbootin.github.io/).
+    To install Linux on non-Raspberry Pi systems, consider using [unetbootin](https://unetbootin.github.io/).
 
-??? note "rpi-imager (click to expand)"
+    ??? note "rpi-imager (click to expand)"
 
-    <https://www.raspberrypi.org/software/> has rpi-imager which has a nice easy to use interface and has Ubuntu Desktop listed under `Other general purpose OS` -> `Ubuntu` -> `Ubuntu Desktop`.
+        <https://www.raspberrypi.org/software/> has rpi-imager which has a nice easy to use interface and has Ubuntu Desktop listed under `Other general purpose OS` -> `Ubuntu` -> `Ubuntu Desktop`.
 
-    Once rpi-imager is done, the disk/card with the OS installed should mount volumes.
+        Once rpi-imager is done, the disk/card with the OS installed should mount volumes.
 
-    We will need to work with
+        We will need to work with
 
-    ```no-highlight
+        ```no-highlight
         writable
-    *boot
-    ```
+        *boot
+        ```
 
-    Edit the config.txt file in *boot
+        Open the `config.txt` file in `*boot`.
 
-    Find the text [all]
+        Find the text `[all]` and add the following lines below it:
 
-    and add the following lines below it:
+        ```no-highlight
+        dtoverlay=disable-wifi
+        dtoverlay=disable-bt
+        ```
 
-    ```no-highlight
-    dtoverlay=disable-wifi
-    dtoverlay=disable-bt
-    ```
+        This will disable the WiFi and Bluetooth from being initialized when the system boots. 
 
-    This will disable the WiFi and Bluetooth from being initialized when the system boots. 
+1. Now boot `Wallet-B` with the installation disk inserted, but **MAKE SURE IT DOES NOT HAVE THE ETHERNET CABLE CONNECTED**.
 
-Now boot `Wallet-B` with the installation disk inserted, but **MAKE SURE IT DOES NOT HAVE THE ETHERNET CABLE CONNECTED**.
+    Depending on the OS it should show you a system setup and a default user creation menu, proceed with a strong password.
+    Once the system is installed it should reboot.
 
-Depending on the OS it should show you a system setup and a default user creation menu, proceed with a strong password.
-Then once the system is installed it should reboot.
+1. Once you have logged in, get familiar with the system, adjust the clock, etc.
 
-Once logged in get familiar with the system, adjust the clock, etc.
-
-Open a terminal and disable WiFi and Bluetooth using rfkill:
-
-```no-highlight
-sudo rfkill block wifi
-sudo rfkill block bluetooth
-```
-
-??? note "Raspberry Pi specific (click to expand)"
-
-    Optionally you may choose to disable WiFi and Bluetooth at the kernel level too. 
-
-    Create a file in
+1. Open a terminal and disable WiFi and Bluetooth using rfkill:
 
     ```no-highlight
-    /etc/modprobe.d/raspi-blacklist.conf
+    sudo rfkill block wifi
+    sudo rfkill block bluetooth
     ```
 
-    and add the contents
+    ??? note "Raspberry Pi specific (click to expand)"
+
+        Optionally you may choose to disable WiFi and Bluetooth at the kernel level too. 
+
+        Create a file in `/etc/modprobe.d/raspi-blacklist.conf` and add the contents:
+
+        ```no-highlight
+        blacklist brcmfmac
+        blacklist brcmutil
+        blacklist hci_uart
+        blacklist btbcm
+        blacklist btintel
+        blacklist rfcom
+        blacklist btqca
+        blacklist btsdio
+        blacklist bluetooth
+        ```
+
+1. Set up the software firewall.
+
+    This is the key to keeping this device isolated from the public internet.
+    If you ever connect to the internet from this device without this firewall active then this device could become vulnerable.
+
+    The simple firewall is as follows (and these steps have to be done in order):
+
+    * Deny all outgoing traffic attempting to leave this device.
+    * Deny all incoming traffic attempting to access this device.
+    * Allow outgoing traffic to `Computer-A` only, on one specific port only (9109).
+    * Enable the firewall.
 
     ```no-highlight
-    blacklist brcmfmac
-    blacklist brcmutil
-    blacklist hci_uart
-    blacklist btbcm
-    blacklist btintel
-    blacklist rfcom
-    blacklist btqca
-    blacklist btsdio
-    blacklist bluetooth
+    sudo ufw default deny outgoing
+    sudo ufw default deny incoming
+    sudo ufw allow out to {LOCAL_IP_OF_COMPUTER-A} port 9109
+    sudo ufw enable
     ```
 
-Set up the software firewall.
-This is the key to keeping this device isolated from the public internet.
-If you ever connect to the internet from this device without this firewall active, then this device could become vulnerable.
+    Replace `{LOCAL_IP_OF_COMPUTER-A}` with the actual IP address of `Computer-A`.
 
-The simple firewall is as follows (and these steps have to be done in order)
+    You can check that the firewall is running using the command `sudo ufw status verbose`.
 
-* Deny all outgoing traffic attempting to leave this device.
-* Deny all incoming traffic attempting to access this device.
-* Allow outgoing traffic to `Computer-A` only, on one specific port only.
-* Enable the firewall.
+1. Now you may connect the ethernet cable.
 
-```no-highlight
-sudo ufw default deny outgoing
-sudo ufw default deny incoming
-sudo ufw allow out to {LOCAL_IP_OF_COMPUTER-A} port 9109
-sudo ufw enable
-```
+    Wait for the connection to take place and then test if you can connect to `Computer-A` on port 9109:
 
-Replace `{LOCAL_IP_OF_COMPUTER-A}` with the actual IP address of `Computer-A`.
+    ```no-highlight
+    wget {LOCAL_IP_OF_COMPUTER-A}:9109
+    ```
 
-You can check that the firewall is running using the command `sudo ufw status verbose`.
+    You should get an error a 400 Bad Request error. This is fine and shows that a connection is possible.
 
-Now you may connect the ethernet cable.
-Wait for the connection to take place and then test if you can connect to `Computer-A` on port 9109:
+1. Now to set up dcrctl and dcrwallet. Insert the USB drive from `Computer-A`.
 
-`wget {LOCAL_IP_OF_COMPUTER-A}:9109`
+    Before extracting this tarfile and running the binary, check that the file is unchanged.
 
-You should get an error a 400 Bad Request error. This is fine and shows that a connection is possible.
+    ```no-highlight
+    sha256sum /bconfig/copytob.tar.gz
+    ```
 
-Now to setup dcrwallet. Insert the USB drive from `Computer-A`.
+    If the hash matches the hash you stored during the `Computer-A` setup, then you
+    can extract the file.
 
-Before extracting this tarfile and running the binary, check that the file is unchanged.
+    ```no-highlight
+    mkdir ~/decredconfigs
+    mkdir ~/decred
+    tar -xf /bconfig/copytob.tar.gz -C ~/decredconfigs
+    tar -xf ~/decredconfigs/decred-linux-{amd/arm}64-v{{ cliversion }}.tar.gz -C ~/decred
+    cp ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }}/* ~/decred/
+    rm -rf ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }}/
+    ```
 
-`sha256sum /bconfig/copytob.tar.gz`
+    Now we have the Decred binaries in the `~/decred` folder.
+    Don't run them before creating the config files in the next step.
 
-If the hash matches the hash you stored during the `Computer-A` setup, then you
-can extract the file.
+1. The next step is to create the dcrctl and dcrwallet config files that will allow
+    those processes to connect to `Computer-A`.
 
-```no-highlight
-mkdir ~/decredconfigs
-mkdir ~/decred
-tar -xf /bconfig/copytob.tar.gz -C ~/decredconfigs
-tar -xf ~/decredconfigs/decred-linux-{amd/arm}64-v{{ cliversion }}.tar.gz -C ~/decred
-cp ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }}/* ~/decred/
-rm -rf ~/decred/decred-linux-{amd/arm}64-v{{ cliversion }}/
-```
+    Create the directories for those files:
 
-Now we have the Decred binaries in the `~/decred` folder.
-Don't run them before creating the config files in the next step.
+    ```no-highlight
+    mkdir ~/.dcrwallet/
+    mkdir ~/.dcrctl/
+    ```
 
-The next step is to create the dcrctl and dcrwallet config files that will allow
-those processes to connect to `Computer-A`.
+    Copy the RPC username and password from `~/decredconfigs/dcrd.conf`.
+    These need to be pasted into the dcrctl and dcrwallet config files.
 
-Create the directories for those files:
+    Create the config files with the following contents:
 
-```no-highlight
-mkdir ~/.dcrwallet/
-mkdir ~/.dcrctl/
-```
+    ```no-highlight title="~/.dcrwallet/dcrwallet.conf"
+    rpcconnect={LOCAL_IP_OF_COMPUTER-A}:9109
+    cafile=~/decredconfigs/rpc.cert
+    username={username}
+    password={password}
+    ```
 
-Copy the RPC username and password from `~/decredconfigs/dcrd.conf`.
-These need to be pasted into the dcrctl and dcrwallet config files.
-
-Create the config files with the following contents:
-
-```no-highlight title="~/.dcrwallet/dcrwallet.conf"
-rpcconnect={LOCAL_IP_OF_COMPUTER-A}:9109
-cafile=~/decredconfigs/rpc.cert
-username={username}
-password={password}
-```
-
-```no-highlight title="~/.dcrctl/dcrctl.conf"
-rpcserver={LOCAL_IP_OF_COMPUTER-A}:9109
-walletrpcserver=127.0.0.1
-rpccert=~/decredconfigs/rpc.cert
-rpcuser={username}
-rpcpass={password}
-```
+    ```no-highlight title="~/.dcrctl/dcrctl.conf"
+    rpcserver={LOCAL_IP_OF_COMPUTER-A}:9109
+    walletrpcserver=127.0.0.1
+    rpccert=~/decredconfigs/rpc.cert
+    rpcuser={username}
+    rpcpass={password}
+    ```
 
 That's it.
 
-Test is out by running `~/decred/dcrctl getbestblock`
+You can test your setup by running `~/decred/dcrctl getbestblock`.
 
 It should show the latest block.
 
-Then you can setup a wallet as described in the [docs](../wallets/cli/dcrwallet-setup.md)
+You can now setup a wallet as described in the [dcrwallet setup guide](../wallets/cli/dcrwallet-setup.md).
 
 ---
 

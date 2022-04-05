@@ -1,4 +1,4 @@
-# <img class="dcr-icon" src="/img/dcr-icons/LockEye.svg" /> Secure Setup
+# <img class="dcr-icon" src="/img/dcr-icons/LockEye.svg" /> Secure Cold Wallet Setup
 
 Last updated for CLI release v{{ cliversion }}.
 
@@ -8,11 +8,14 @@ This is a guide for securely holding your Decred.
 The system described here uses two computers:
 
 * `Computer-A` - The Node
-    * A laptop or desktop that will be running the dcrd node.
-      Connects to the public internet and is expected to remain online most of the time.
+
+    A laptop or desktop that will be running the dcrd node.
+    Connects to the public internet and is expected to remain online most of the time.
+
 * `Wallet-B` - The Wallet
-    * A secure system that will be running the wallet.
-      Should never connect to the public internet, and can remain offline and powered off most of the time.
+
+    A secure system that will be running the wallet.
+    Should never connect to the public internet, and can remain offline and powered off most of the time.
 
 The guide assumes some general technical knowledge, and that users know how to
 enter commands on a terminal.

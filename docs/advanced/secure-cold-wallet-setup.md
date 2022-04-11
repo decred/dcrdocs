@@ -143,11 +143,11 @@ you will need to remove the curly braces and edit the command to suit your setup
     since it would generate new `*.cert` and `*.conf` files which are not
     compatible with `Computer-A`.
 
-        ```no-highlight
-        wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz
+    ```no-highlight
+    wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz
     wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-v{{ cliversion }}-manifest.txt
     wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-v{{ cliversion }}-manifest.txt.asc
-        ```
+    ```
 
 1. Using the binary tar file, manifest, and signature you just downloaded,
     [verify](verifying-binaries.md) the tar file to ensure it has not been
@@ -379,15 +379,25 @@ software repository.
 
 ### IP Changes
 
-If at any point the IP of `Computer-A` changes then you need to list
+If at any point the IP of `Computer-A` changes, the firewall rule on `Wallet-B`
+which allows connections out to dcrd on `Computer-A` will need to be recreated:
 
-`sudo ufw status numbered`
+1. Find the existing firewall rule.
 
- and delete the ufw rule that allows the connection.
-`sudo ufw delete {NUMBER}`
+    ```no-highlight
+    sudo ufw status numbered
+    ```
 
-And then add the new IP
+1. Delete the rule.
 
-`sudo ufw allow out to {LOCAL_IP_OF_COMPUTER-A} port 9109`
+    ```no-highlight
+    sudo ufw delete {RULE_NUMBER}
+    ```
 
- You will also have to regenerate certificates for dcrd and copy them over securely.
+1. Recreate the rule with the new IP.
+
+    ```no-highlight
+    sudo ufw allow out to {LOCAL_IP_OF_COMPUTER-A} port 9109
+    ```
+
+You will also have to regenerate certificates for dcrd and copy them over securely.

@@ -112,7 +112,7 @@ you will need to remove the curly braces and edit the command to suit your setup
 
 ### Setting up Computer-A
 
-!!! warning "If you use dcrwallet on this system, do not use the same seed and/or password on Wallet-B"
+!!! warning "If you use dcrwallet on this system, do not use the same seed and/or password on `Wallet-B`"
 
 1. Use [dcrinstall](../wallets/cli/cli-installation.md) to install Decred binaries and config files.
 
@@ -135,21 +135,24 @@ you will need to remove the curly braces and edit the command to suit your setup
     cp ~/.dcrd/dcrd.conf ~/copytob
     ```
 
-1. Download Decred release binaries for `Wallet-B` and place them in the same folder.
+1. Download the Decred binaries release for your `Wallet-B` OS from
+    [GitHub](https://github.com/decred/decred-binaries/releases/tag/v{{ cliversion }})
+    and place it in the same folder.
 
-    === "Raspberry Pi"
+    **Note:** it's recommended that you don't use `dcrinstall` again on `Wallet-B`,
+    since it would generate new `*.cert` and `*.conf` files which are not
+    compatible with `Computer-A`.
 
         ```no-highlight
         wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-arm64-v{{ cliversion }}.tar.gz
+    wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-v{{ cliversion }}-manifest.txt
+    wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-v{{ cliversion }}-manifest.txt.asc
         ```
 
-    === "Other Linux Systems"
-
-        ```no-highlight
-        wget -P ~/copytob https://github.com/decred/decred-binaries/releases/download/v{{ cliversion }}/decred-linux-amd64-v{{ cliversion }}.tar.gz
-        ```
-
-1. Make sure you [verify](verifying-binaries.md) the tar file to ensure it has not been tampered with.
+1. Using the binary tar file, manifest, and signature you just downloaded,
+    [verify](verifying-binaries.md) the tar file to ensure it has not been
+    tampered with.
+    Once verified, you can delete the manifest and signature files.
 
 1. Archive the `copytob` folder for transport to `Wallet-B`.
 

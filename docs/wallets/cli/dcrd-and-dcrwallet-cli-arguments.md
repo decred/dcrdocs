@@ -80,7 +80,7 @@ dcrd --logdir=/my/custom/log/directory
     P2P Network Discovery             |Description
     ----------------------------------|-------------
             `--noseeders`             | Disable seeding for peer discovery
-            `--externalip=`           | Add an IP to the list of local addresses we claim to listen on to peers
+            `--externalip=`           | Add a public-facing IP to the list of local external IPs that dcrd will advertise to other peers
             `--nodiscoverip`          | Disable automatic network address discovery of local external IPs
             `--upnp`                  | Use UPnP to map our listening port outside of NAT
 
@@ -165,15 +165,13 @@ dcrd --logdir=/my/custom/log/directory
             `--enableticketbuyer`                      | Enable the automatic ticket buyer
             `--enablevoting`                           | Enable creation of votes and revocations for owned tickets
             `--purchaseaccount=`                       | Name of the account to buy tickets from (default: default)
-            `--pooladdress=`                           | The ticket pool address where ticket fees will go to
-            `--poolfees=`                              | The per-ticket fee mandated by the ticket pool as a percent (e.g. 1.00 for 1.00% fee)
             `--gaplimit=`                              | The size of gaps between used addresses.  Used for address scanning and when generating addresses with the wrap option. (default: 20)
-            `--stakepoolcoldextkey=`                   | Enables the wallet as a stake pool with an extended key in the format of "xpub...:index" to derive cold wallet addresses to send fees to
-            `--manualtickets`                          | Do not discover new tickets through network synchronization
             `--allowhighfees`                          | Allows the wallet to send transactions with very large fees. By default, this is any fee over 0.1 DCR/kB
             `--txfee=`                                 | Sets the transaction fee in DCR/kB that this wallet will pay to miners (default: 0.0001)
             `--accountgaplimit=`                       | Number of accounts that can be created in a row without using any of them (default: 10)
             `--disablecointypeupgrades`                | Never upgrade from legacy to SLIP0044 coin type keys
+            `--pooladdress=`                           | **DEPRECATED: This field was for legacy Stakepools, which have been replaced by Voting Service Providers (VSPs).** The ticket pool address where ticket fees will go to
+            `--poolfees=`                              | **DEPRECATED: This field was for legacy Stakepools, which have been replaced by Voting Service Providers (VSPs).** The per-ticket fee mandated by the ticket pool as a percent (e.g. 1.00 for 1.00% fee)
 
     RPC Client                                         |Description
     ---------------------------------------------------|-------------
@@ -245,3 +243,5 @@ dcrd --logdir=/my/custom/log/directory
             `--vsp.pubkey=`                            | VSP server pubkey
             `--vsp.sync`                               | sync tickets to vsp
             `--vsp.maxfee=`                            | Maximum VSP fee (default: 0.1 DCR)
+            `--stakepoolcoldextkey=`                   | **VSP Admins Only:** Enables the wallet as a stake pool with an extended key in the format of "xpub...:index" to derive cold wallet addresses to send fees to
+            `--manualtickets`                          | **VSP Admins Only:** Do not discover new tickets through network synchronization

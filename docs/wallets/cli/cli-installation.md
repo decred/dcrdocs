@@ -12,11 +12,15 @@ Last updated for CLI release v{{ cliversion }}.
 
 === "macOS"
 
-    1. Download the `dcrinstall-darwin-amd64-v{{ cliversion }}` file. (32 bit builds for macOS are not available):
+    1. Download the correct file:
 
+        For older, 64-bit hardware, download the `decred-darwin-amd64-v{{ cliversion }}.tar.gz` file.
+        
+        For Hardware with the new M1 Chip, download the `decred-darwin-arm64-v{{ cliversion }}.tar.gz` file.
+    
     1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
 
-    1. Make `dcrinstall-darwin-amd64-v{{ cliversion }}` an executable within your terminal, and run it:
+    1. Make the downloaded file an executable within your terminal and run it:
 
         Navigate to the directory where the dcrinstall file was downloaded using the `cd` command, run `chmod` with `u+x` mode on the dcrinstall file, and run the executable that is created. Below is an example of the commands (change directories or filename as needed):
 

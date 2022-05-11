@@ -33,7 +33,7 @@ theme:
         name: Switch to light mode
 extra:
   decreditonversion: 1.6.3
-  cliversion: 1.7.1
+  cliversion: 1.7.2
   lndversion: 0.3.0
   social:
     - icon: octicons/mark-github-16

@@ -254,8 +254,8 @@ Example output:
 pub   rsa4096 2016-01-27 [SC]
       FD13B6835E248FAF4BD1838D6DF634AA7608AF04
 uid           [ unknown] Decred Release <release@decred.org>
-sub   rsa4096 2016-01-27 [S]
 sub   rsa4096 2016-01-27 [E]
+sub   rsa4096 2016-01-27 [S]
 ```
 
 ### Verify that the manifest was directly signed by the Decred project
@@ -271,17 +271,17 @@ In a terminal, navigate to where you saved both the `manifest.txt` and the
 $ gpg --verify <your manifest.txt.asc file>
 ```
 
-For example, if you wanted to verify `decred-v1.7.1-manifest.txt.asc`:
+For example, if you wanted to verify `decred-v1.7.2-manifest.txt.asc`:
 
 ```no-highlight
-$ gpg --verify decred-v1.7.1-manifest.txt.asc
+$ gpg --verify decred-v1.7.2-manifest.txt.asc
 ```
 
 Example output:
 
 ```no-highlight
-gpg: assuming signed data in 'decred-v1.7.1-manifest.txt'
-gpg: Signature made Thu 17 Feb 2022 10:19:22 AM EST
+gpg: assuming signed data in 'decred-v1.7.2-manifest.txt'
+gpg: Signature made Wed 11 May 2022 11:41:05 AM EDT
 gpg:                using RSA key F516ADB7A069852C7C28A02D6D897EDF518A031D
 gpg: Good signature from "Decred Release <release@decred.org>" [unknown]
 gpg: WARNING: This key is not certified with a trusted signature!
@@ -333,7 +333,7 @@ There are many ways to generate a SHA-256 hash, but here are a few:
 Example output:
 
 ```no-highlight
-92e0618b351042dc538c6614b475db4574ac3dfae48fae76cc1777b3972b502e  decred-linux-amd64-v1.7.1.tar.gz
+ab0c4d53576f4bd486c8c64451edc0b000a5eaae6e18e29e367f24522e11a7c6  decred-linux-amd64-v1.7.2.tar.gz
 ```
 
 If your output hash matches the hash from the manifest, you're done! The binary

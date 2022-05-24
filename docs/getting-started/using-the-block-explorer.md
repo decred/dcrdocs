@@ -43,11 +43,11 @@ Option                   | Explanation
 `Height`                 | The height of the blockchain in which this block resides.
 `Block Reward`           | The amount of new DCR minted in this block.
 `Timestamp`              | The time this block was created by a miner and was included in the blockchain.
-`Merkle Root`            | A hash value of all the transaction hashes included in this block.
-`Stake Root`             | A hash value of all the stake related transaction hashes in this block. This includes ticket purchases, votes, and ticket revocations.
-`VoteBits`               | (1) Block was approved by proof-of-stake voters. (2) Block was vetoed by proof-of-stake voters and all non-stake transactions in the block were invalidated, along with the newly generated block reward for the proof-of-work miner and the Decred Treasury.
-`Final State`            | The final state of the pseudo random number generator used for ticket selection.
-`Voters`                 | The number of successful proof-of-stake votes cast in this block. The maximum value is 5.
+`Merkle Root`            | A hash value of all the transaction hashes and stake hashes (ticket purchases, votes, and revocations) included in this block.
+`Stake Root`             | Originally, this was a hash value of all the stake related transaction hashes in this block. However, as of [DCP-0005](https://github.com/decred/dcps/blob/master/dcp-0005/dcp-0005.mediawiki), the stake hashes were moved into the Merkle Root, and the Stake Root was repurposed to house header commitments. These includes additional proofs and compact filters, which enable a more secure SPV mode for lightweight clients.
+`VoteBits`               | Used to signify the voting result on the previous block. This will either be 0 or 1. If 1, the previous block was approved by proof-of-stake voters. If 0, the previous block was disapproved by proof-of-stake voters and all non-stake transactions in the block were invalidated, including the newly generated block reward for the proof-of-work miner and the Decred Treasury.
+`Final State`            | The hash value of the final state of the lottery used to determine which tickets were eligible to vote on the previous block, and thus be included in this block. It consists of the five winning ticket hashes, as well as the state of the pseudorandom number generator that was used to select those winning tickets from the live tickets pool.
+`Voters`                 | The number of successful proof-of-stake votes cast in this block. The maximum value is 5. Tickets can fail to vote when called upon, but a minimum of 3 votes are required.
 `Fresh Stake`            | The number of stake ticket purchases confirmed in this block.
 `Revocations`            | The number of tickets that failed to vote and were revoked.
 `PoolSize`               | The total number of active proof-of-stake tickets.
@@ -55,8 +55,11 @@ Option                   | Explanation
 `SBits`                  | The price of one proof-of-stake ticket.
 `Bits`                   | A compact version of the network difficulty at the time the block was mined.
 `Size`                   | The size of the block (in bytes).
-`Version`                | The version of the block.
-`Nonce`                  | The value used by a miner to find the correct solution for this block.
+`Version`     		 | The version of the block header.
+`Stake Version`          | The stake version used for voting on the created block.
+`Nonce`                  | The value used by a miner to find a valid solution for this block.
+
+For a more advanced description of block headers, see the Dev Docs on [Block Header Specifications](https://devdocs.decred.org/developer-guides/block-header-specifications/).
 
 ## ![](../img/dcr-icons/Transactions.svg){ .dcr-icon } Transactions
 

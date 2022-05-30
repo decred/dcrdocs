@@ -75,7 +75,7 @@ The following chat platforms are bridged, such that one's messages are relayed
 to users on the other platforms:
 
 * [Matrix](https://chat.decred.org/)
-* [Discord](https://discord.gg/GJ2GXfz)
+* [Discord](https://discord.gg/dXSmwvYury)
 
 [Telegram](https://t.me/decred) is partially bridged. Messages from Telegram are
 relayed to the `DCR 101` channel on Matrix.

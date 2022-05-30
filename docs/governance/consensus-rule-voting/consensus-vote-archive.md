@@ -6,12 +6,14 @@ This section provides an archive for previous votes along with their outcomes.
 
 ??? note "Vote version 9"
 
+    The upgrade to vote version 9 was included in dcrd 1.7.0 released on 20 January 2022.
+
     |Voting Start |Voting End |Activated |
     |-------------|-----------|----------|
     [641,152](https://dcrdata.decred.org/block/641152)|[649,215](https://dcrdata.decred.org/block/649215)|[657,280](https://dcrdata.decred.org/block/657280)|
 
     ---
-    
+
     ### Revert Treasury Expenditure Policy
 
     Agenda ID: [reverttreasurypolicy](https://dcrdata.decred.org/agenda/reverttreasurypolicy)
@@ -31,7 +33,7 @@ This section provides an archive for previous votes along with their outcomes.
     | Yes     | 58.66%     |
 
     ---
-    
+
     ### Explicit Version Upgrades
 
     Agenda ID: [explicitverupgrades](https://dcrdata.decred.org/agenda/explicitverupgrades)
@@ -51,7 +53,7 @@ This section provides an archive for previous votes along with their outcomes.
     | Yes     | 58.28%     |
 
     ---
-    
+
     ### Automatic Ticket Revocations
 
     Agenda ID: [autorevocations](https://dcrdata.decred.org/agenda/autorevocations)
@@ -71,7 +73,7 @@ This section provides an archive for previous votes along with their outcomes.
     | Yes     | 58.27%     |
 
     ---
-    
+
     ### Change PoW/PoS Subsidy Split
 
     Agenda ID: [changesubsidysplit](https://dcrdata.decred.org/agenda/changesubsidysplit)
@@ -92,12 +94,14 @@ This section provides an archive for previous votes along with their outcomes.
 
 ??? note "Vote version 8"
 
+    The upgrade to vote version 8 was included in dcrd 1.6.0 released on 21 January 2021.
+
     |Voting Start |Voting End |Activated |
     |-------------|-----------|----------|
     [536,320](https://dcrdata.decred.org/block/536320)|[544,383](https://dcrdata.decred.org/block/544383)|[552,448](https://dcrdata.decred.org/block/552448)|
 
     ---
-    
+
     ### Enable Decentralized Treasury
 
     Agenda ID: [treasury](https://dcrdata.decred.org/agenda/treasury)
@@ -118,12 +122,14 @@ This section provides an archive for previous votes along with their outcomes.
 
 ??? note "Vote version 7"
 
+    The upgrade to vote version 7 was included in dcrd 1.5.0 released on 29 January 2020.
+
     |Voting Start |Voting End |Activated |
     |-------------|-----------|----------|
     [415,360](https://dcrdata.decred.org/block/415360)|[423,423](https://dcrdata.decred.org/block/423423)|[431,488](https://dcrdata.decred.org/block/431488)|
 
     ---
-    
+
     ### Enable Block Header Commitments
 
     Agenda ID: [headercommitments](https://dcrdata.decred.org/agenda/headercommitments)
@@ -144,12 +150,14 @@ This section provides an archive for previous votes along with their outcomes.
 
 ??? note "Vote version 6"
 
+    The upgrade to vote version 6 was included in dcrd 1.4.0 released on 5 February 2019.
+
     |Voting Start |Voting End |Activated |
     |-------------|-----------|----------|
     [326,656](https://dcrdata.decred.org/block/326656)|[334,720](https://dcrdata.decred.org/block/334720)|[342,784](https://dcrdata.decred.org/block/342784)|
 
     ---
-    
+
     ### Update Sequence Lock Rules
 
     Agenda ID: [fixlnseqlocks](https://dcrdata.decred.org/agenda/fixlnseqlocks)
@@ -168,12 +176,14 @@ This section provides an archive for previous votes along with their outcomes.
 
 ??? note "Vote version 5"
 
+    The upgrade to vote version 5 was included in dcrd 1.1.0 released on 22 September 2017.
+
     |Voting Start |Voting End |Activated |
     |-------------|-----------|----------|
     [173,440](https://dcrdata.decred.org/block/133120)|[181,504](https://dcrdata.decred.org/block/181504)|[189,568](https://dcrdata.decred.org/block/189568)|
 
     ---
-    
+
     ### Activation of new opcodes for Lightning Network Support
 
     Agenda ID: [lnfeatures](https://dcrdata.decred.org/agenda/lnfeatures)
@@ -194,12 +204,14 @@ This section provides an archive for previous votes along with their outcomes.
 
 ??? note "Vote version 4"
 
+    The upgrade to vote version 4 was included in dcrd 1.0.0 released on 26 April 2017.
+
     |Voting Start |Voting End |Activated |
     |-------------|-----------|----------|
     [133,120](https://dcrdata.decred.org/block/133120)|[141,184](https://dcrdata.decred.org/block/149248)|[149,248](https://dcrdata.decred.org/block/149248)|
 
     ---
-    
+
     ### Change PoS Staking Algorithm
 
     Agenda ID: [sdiffalgorithm](https://dcrdata.decred.org/agenda/sdiffalgorithm)
@@ -217,7 +229,7 @@ This section provides an archive for previous votes along with their outcomes.
     | Yes     | 85.94%     |
 
     ---
-    
+
     ### Start Lightning Network Support
 
     Agenda ID: [lnsupport](https://dcrdata.decred.org/agenda/lnsupport)

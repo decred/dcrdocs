@@ -78,6 +78,16 @@
     --dcrdocs-table-fg-color:        #EDEFF1;
 }
 
+/* Hide images for light mode */
+[data-md-color-scheme="dcrdocs-dark"] img[src$="#only-light"] {
+  display: none;
+}
+
+/* Show images for dark mode */
+[data-md-color-scheme="dcrdocs-dark"] img[src$="#only-dark"] {
+  display: initial;
+}
+
 /* Highlight current page in nav menu */
 .md-nav__link--active {
     font-weight: bold;

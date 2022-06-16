@@ -13,7 +13,7 @@ This PoS reward was designed to encourage people to stake their coins and provid
 As of block 657,280, the block reward is split three ways:
 
 * 10% goes to the PoW miner who found the block
-* 80% goes to the PoS voters on that block (6% to each of the 5 voters)
+* 80% goes to the PoS voters on that block (16% to each of the 5 voters)
 * 10% goes towards the Decred Treasury
 
 Taking into account the initial block reward split for the first 657,279 blocks and the modified split starting with block 657,280, the effective final split of the total mined coins is:

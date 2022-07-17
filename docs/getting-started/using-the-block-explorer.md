@@ -28,11 +28,11 @@ block:
     link to the previous block in the chain.
 2. **Transactions**
     - Consisting of:
-        - The Proof-of-Work Reward
-        - The Treasury Reward
-        - Proof-of-Stake Votes and Rewards
-        - Tickets which will enter the stakepool
-        - All other transactions about how DCR is transmitted across the network
+        - The Proof-of-Work reward
+        - The Treasury reward
+        - Proof-of-Stake votes and rewards
+        - Proof-of-Stake ticket purchases
+        - All other regular transactions which transmit DCR across the network
 
 ---
 
@@ -42,16 +42,18 @@ The following table should help explain what you'll see in the top section of
 [dcrdata](https://dcrdata.decred.org). This is generally all information that's
 also found inside a block header, although it adds some additional context.
 
-Parameter                | Explanation
+For a more advanced description of block headers, see the Dev Docs on [Block Header Specifications](https://devdocs.decred.org/developer-guides/block-header-specifications/).
+
+Value                    | Explanation
 ---                      | ---
 `Block Hash`             | The unique hash of this specific block, which was found by the miner.
 `Confirmations`          | The number of new blocks which follow this block in the chain.
-`Size`                   | The size of the block (in bytes).
+`Size`                   | The size of the block (in kB).
 `Height`                 | The height of the blockchain in which this block resides.
 `Version`                | The version of the block header.
 `Merkle Root`            | A hash value of all the transaction hashes and stake hashes (ticket purchases, votes, and revocations) included in this block.
 `Stake Root`             | Originally, this was a hash value of all the stake related transaction hashes in this block. However, as of [DCP-0005](https://github.com/decred/dcps/blob/master/dcp-0005/dcp-0005.mediawiki), the stake hashes were moved into the Merkle Root, and the Stake Root was repurposed to house header commitments. These includes additional proofs and compact filters, which enable a more secure SPV mode for lightweight clients.
-`Number of Transactions` | The number of standard transactions (DCR sent from one user to another).
+`Number of Transactions` | The number of regular transactions (DCR sent from one user to another).
 `Block Reward`           | The amount of new DCR minted in this block.
 `Time`                   | The time this block was created by a miner and was included in the blockchain.
 `Nonce`                  | The value used by a miner to find a valid solution for this block.
@@ -65,8 +67,6 @@ Parameter                | Explanation
 `SBits`                  | The price of one proof-of-stake ticket.
 `Stake Version`          | The stake version used for voting on the created block.
 `Difficulty`             | The proof-of-work network difficulty.
-
-For a more advanced description of block headers, see the Dev Docs on [Block Header Specifications](https://devdocs.decred.org/developer-guides/block-header-specifications/).
 
 ## ![](../img/dcr-icons/Transactions.svg){ .dcr-icon } Transactions
 
@@ -83,7 +83,7 @@ review each type of transaction.
 
 Here’s the information included in standard Decred transactions.
 
-Option              | Explanation
+Value               | Explanation
 ---                 | ---
 `Size`              | The size of the transaction in bytes.
 `Fee rate`          | The rate of fees collected by the network (per kB).

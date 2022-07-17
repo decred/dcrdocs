@@ -32,7 +32,7 @@ dcrd --logdir=/my/custom/log/directory
             `--testnet`               | Use the test network
             `--simnet`                | Use the simulation test network
             `--regnet`                | Use the regression test network
-    `-d` or `--debuglevel=`           | Logging level for all subsystems {trace, debug, info, warn, error, critical} -- You may also specify `<subsystem>=<level>`,`<subsystem2>=<level>`,... to set the log level for individual subsystems -- Use `show` to list available subsystems (default: info)
+    `-d` or `--debuglevel=`           | Logging level for all subsystems {trace, debug, info, warn, error, critical} -- You may also specify `<subsystem>=<level>,<subsystem2>=<level>,...` to set the log level for individual subsystems -- Use `show` to list available subsystems (default: info)
             `--sigcachemaxsize=`      | The maximum number of entries in the signature verification cache (default: 100000)
             `--utxocachemaxsize=`     | The maximum size in MiB of the utxo cache (default: 150, min: 25, max: 32768)
 
@@ -151,7 +151,7 @@ dcrd --logdir=/my/custom/log/directory
             `--testnet`                                | Use the test network
             `--simnet`                                 | Use the simulation test network
             `--noinitialload`                          | Defer wallet creation/opening on startup and enable loading wallets over RPC
-    `-d` or `--debuglevel=`                            | Logging level {trace, debug, info, warn, error, critical} -- You may also specify `<subsystem>=<level>`,`<subsystem2>=<level>`,... to set the log level for individual subsystems -- Use `show` to list available subsystems (default: info)
+    `-d` or `--debuglevel=`                            | Logging level {trace, debug, info, warn, error, critical} -- You may also specify `<subsystem>=<level>,<subsystem2>=<level>,...` to set the log level for individual subsystems -- Use `show` to list available subsystems (default: info)
             `--logdir=`                                | Directory to log output. (default: `~/.dcrwallet/logs`)
             `--profile=`                               | Enable HTTP profiling this interface/port
             `--memprofile=`                            | Write mem profile to the specified file
@@ -172,6 +172,7 @@ dcrd --logdir=/my/custom/log/directory
             `--disablecointypeupgrades`                | Never upgrade from legacy to SLIP0044 coin type keys
             `--pooladdress=`                           | **DEPRECATED: This field was for legacy Stakepools, which have been replaced by Voting Service Providers (VSPs).** The ticket pool address where ticket fees will go to
             `--poolfees=`                              | **DEPRECATED: This field was for legacy Stakepools, which have been replaced by Voting Service Providers (VSPs).** The per-ticket fee mandated by the ticket pool as a percent (e.g. 1.00 for 1.00% fee)
+            `--stakepoolcoldextkey=`                   | **DEPRECATED: This field was for legacy Stakepools, which have been replaced by Voting Service Providers (VSPs).** Enables the wallet as a stake pool with an extended key in the format of "xpub...:index" to derive cold wallet addresses to send fees to
 
     RPC Client                                         |Description
     ---------------------------------------------------|-------------
@@ -243,5 +244,4 @@ dcrd --logdir=/my/custom/log/directory
             `--vsp.pubkey=`                            | VSP server pubkey
             `--vsp.sync`                               | sync tickets to vsp
             `--vsp.maxfee=`                            | Maximum VSP fee (default: 0.1 DCR)
-            `--stakepoolcoldextkey=`                   | **VSP Admins Only:** Enables the wallet as a stake pool with an extended key in the format of "xpub...:index" to derive cold wallet addresses to send fees to
             `--manualtickets`                          | **VSP Admins Only:** Do not discover new tickets through network synchronization

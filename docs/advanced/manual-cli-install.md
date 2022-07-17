@@ -76,7 +76,7 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
 
         **Terminal:** use the `tar -xvzf filename.tar.gz` command.
 
-        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-openbsd-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-openbsd-amd64-v{{ cliversion }}`).
+        The `.tar.gz` file will be extracted into a folder that shares the same name. (e.g. `tar -xvzf decred-openbsd-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-openbsd-amd64-v{{ cliversion }}`).
 
 ---
 

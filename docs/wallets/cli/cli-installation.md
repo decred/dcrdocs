@@ -12,7 +12,7 @@ Last updated for CLI release v{{ cliversion }}.
 
 !!! tip "Looking for a more advanced setup?"
     
-    If you are interested in advanced configurations or Solo POS Voting, consider reading the [Solo Voting](../../advanced/solo-proof-of-stake-voting.md) guide.
+    If you are interested in advanced configurations or Solo PoS Voting, consider reading the [Solo Voting](../../advanced/solo-proof-of-stake-voting.md) guide.
 
     If you are interested in networking between multiple devices, consider reading the [Secure Cold Wallet](../../advanced/secure-cold-wallet-setup.md) guide.
 
@@ -114,7 +114,7 @@ Last updated for CLI release v{{ cliversion }}.
 
         **Terminal:** use the `tar -xvzf filename.tar.gz` command.
 
-        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-openbsd-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-openbsd-amd64-v{{ cliversion }}`).
+        The `.tar.gz` file will be extracted into a folder that shares the same name. (e.g. `tar -xvzf decred-openbsd-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-openbsd-amd64-v{{ cliversion }}`).
 
     1. Make the downloaded file an executable within your terminal and run it:
 

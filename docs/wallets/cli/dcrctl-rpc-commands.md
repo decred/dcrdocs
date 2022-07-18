@@ -40,8 +40,6 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `getblockhash`            | `index`
     `getblockheader`          | `"hash"` (`verbose=true`)
     `getblocksubsidy`         | `height` `voters`
-    `getcfilter`              | `"hash"` `"filtertype"`
-    `getcfilterheader`        | `"hash"` `"filtertype"`
     `getcfilterv2`            | `"blockhash"`
     `getchaintips`            |
     `getcoinsupply`           |
@@ -66,15 +64,17 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `getticketpoolvalue`      |
     `gettreasurybalance`      | (`"hash"` `verbose=false`)
     `gettreasuryspendvotes`   | (`"block"` `["tspend",...]`)
-    `gettxout`                | `"txid"` `vout` (`includemempool=true`)
+    `gettxout`                | `"txid"` `vout` `tree` (`includemempool=true`)
     `gettxoutsetinfo`         |
     `getvoteinfo`             | `version`
     `getwork`                 | (`"data"`)
     `help`                    | (`"command"`)
+    `invalidateblock`         | `"blockhash"`
     `livetickets`             |
     `missedtickets`           |
     `node`                    | `"connect|remove|disconnect"` `"target"` (`"perm|temp"`)
     `ping`                    |
+    `reconsiderblock`         | `"blockhash"`
     `regentemplate`           |
     `searchrawtransactions`   | `"address"` (`verbose=1` `skip=0` `count=100` `vinextra=0` `reverse=false` `["filteraddr",...]`)
     `sendrawtransaction`      | `"hextx"` (`allowhighfees=false`)
@@ -109,6 +109,7 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `createrawtransaction`    | `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]` `{"address":amount,...}` (`locktime` `expiry`)
     `createsignature`         | `"address"` `inputindex` `hashtype` `"previouspkscript"` `"serializedtransaction"`
     `createvotingaccount`     | `"name"` `"pubkey"` (`childindex=0`)
+    `disapprovepercent`       |
     `discoverusage`           | (`"startblock"` `discoveraccounts` `gaplimit`)
     `dumpprivkey`             | `"address"`
     `fundrawtransaction`      | `"hexstring"` `"fundaccount"` (`{"changeaddress":changeaddress,"feerate":feerate,"conftarget":conftarget}`)
@@ -119,9 +120,13 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `getbalance`              | (`"account"` `minconf=1`)
     `getbestblock`            |
     `getbestblockhash`        |
+    `getblock`                | `"hash"` (`verbose=true` `verbosetx=false`)
     `getblockcount`           |
     `getblockhash`            | `index`
+    `getblockheader`          | `"hash"` (`verbose=true`)
+    `getcfilterv2`            | `"blockhash"`
     `getcoinjoinsbyacct`      |
+    `getcurrentnet`           |
     `getinfo`                 |
     `getmasterpubkey`         | (`"account"`)
     `getmultisigoutinfo`      | `"hash"` `index`
@@ -133,6 +138,7 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `getstakeinfo`            |
     `gettickets`              | `includeimmature`
     `gettransaction`          | `"txid"` (`includewatchonly=false`)
+    `gettxout`                | `"txid"` `vout` `tree` (`includemempool=true`)
     `getunconfirmedbalance`   | (`"account"`)
     `getvotechoices`          | `("tickethash")`
     `getwalletfee`            |
@@ -153,6 +159,7 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `lockunspent`             | `unlock` `[{"amount":n.nnn,"txid":"value","vout":n,"tree":n},...]`
     `mixaccount`              |
     `mixoutput`               | `"outpoint"`
+    `processunmanagedticket`  | (`"tickethash"`)
     `purchaseticket`          | `"fromaccount"` `spendlimit` (`minconf=1` `"ticketaddress"` `numtickets=1` `"pooladdress"` `poolfees` `expiry` `"comment"` `dontsigntx`)
     `redeemmultisigout`       | `"hash"` `index` `tree` (`"address"`)
     `redeemmultisigouts`      | `"fromscraddress"` (`"toaddress"` `number`)
@@ -167,8 +174,9 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `sendtomultisig`          | `"fromaccount"` `amount` `["pubkey",...]` (`nrequired=1` `minconf=1` `"comment"`)
     `sendtotreasury`          | `amount`
     `setaccountpassphrase`    | `"account"` `"passphrase"`
-    `settreasurypolicy`       | `"key"` `"policy"`
-    `settspendpolicy`         | `"hash"` `"policy"`
+    `setdisapprovepercent`    | `percent`
+    `settreasurypolicy`       | `"key"` `"policy"` (`"ticket"`)
+    `settspendpolicy`         | `"hash"` `"policy"` (`"ticket"`)
     `settxfee`                | `amount`
     `setvotechoice`           | `"agendaid"` `"choiceid"` (`"tickethash"`)
     `signmessage`             | `"address"` `"message"`
@@ -176,10 +184,11 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `signrawtransactions`     | `["rawtx",...]` (`send=true`)
     `stakepooluserinfo`       | `"user"`
     `sweepaccount`            | `"sourceaccount"` `"destinationaddress"` (`requiredconfirmations` `feeperkb`)
+    `syncstatus`              |
     `ticketinfo`              | (`startheight=0`)
     `ticketsforaddress`       | `"address"`
-    `treasurypolicy`          | (`"key"`)
-    `tspendpolicy`            | (`"hash"`)
+    `treasurypolicy`          | (`"key"` `"ticket"`)
+    `tspendpolicy`            | (`"hash"` `"ticket"`)
     `unlockaccount`           | `"account"` `"passphrase"`
     `validateaddress`         | `"address"`
     `validatepredcp0005cf`    |

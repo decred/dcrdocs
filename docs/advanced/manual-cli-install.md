@@ -28,6 +28,7 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
         | Architecture | Filename                                       |
         | ------------ | ---------------------------------------------- |
         | 64-bit       | `decred-darwin-amd64-v{{ cliversion }}.tar.gz` |
+        | M1 Chip      | `decred-darwin-arm64-v{{ cliversion }}.tar.gz` |
 
     1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](verifying-binaries.md).
 
@@ -59,6 +60,23 @@ The newest binary releases can be found [here](https://github.com/decred/decred-
         **Terminal:** use the `tar -xvzf filename.tar.gz` command.
 
         Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-linux-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-linux-amd64-v{{ cliversion }}`).
+
+=== "BSD"
+
+    1. Download the correct file for your computer:
+
+        | Architecture  | Filename                                        |
+        | ------------- | ----------------------------------------------- |
+        | FreeBSD amd64 | `decred-freebsd-amd64-v{{ cliversion }}.tar.gz` |
+        | OpenBSD amd64 | `decred-openbsd-amd64-v{{ cliversion }}.tar.gz` |
+
+    1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](verifying-binaries.md).
+
+    1. Navigate to download location and extract the `.tar.gz` file:
+
+        **Terminal:** use the `tar -xvzf filename.tar.gz` command.
+
+        The `.tar.gz` file will be extracted into a folder that shares the same name. (e.g. `tar -xvzf decred-openbsd-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-openbsd-amd64-v{{ cliversion }}`).
 
 ---
 

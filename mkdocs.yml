@@ -33,7 +33,7 @@ theme:
         name: Switch to light mode
 extra:
   decreditonversion: 1.6.3
-  cliversion: 1.6.3
+  cliversion: 1.7.2
   lndversion: 0.3.0
   social:
     - icon: octicons/mark-github-16
@@ -259,4 +259,4 @@ nav:
 - 'Glossary': 'glossary.md'
 - About:
     - 'License': 'about/license.md'
-copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new">open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare">send a pull request</a>.<br />dcrdocs v0.0.3. Decred Project 2016-2021.
+copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new">open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare">send a pull request</a>.<br />dcrdocs v0.0.3. Decred Project 2016-2022.

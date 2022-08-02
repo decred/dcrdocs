@@ -91,6 +91,7 @@ nav:
 - 'Home': 'index.md'
 - Getting Started:
   - "Beginner's Guide": 'getting-started/beginner-guide.md'
+  - "Project History": 'getting-started/project-history.md'
   - 'Obtaining DCR': 'getting-started/obtaining-dcr.md'
   - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
   - 'Joining Matrix': 'getting-started/joining-matrix-channels.md'

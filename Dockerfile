@@ -15,6 +15,14 @@ COPY ./ /root/
 RUN pip install mkdocs && \
 	pip install --user -r requirements.txt
 
+# Install dependencies for generating social cards.
+# https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards
+RUN apt update && \
+    apt install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev && \
+	pip install pillow cairosvg
+
+ENV DCRDOCS_CARDS true
+
 RUN ./bin/build_docs.sh
 
 # Serve image (stable nginx version)

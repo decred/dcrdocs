@@ -1,4 +1,5 @@
 site_name: Decred Documentation
+site_url: https://docs.decred.org
 use_directory_urls: true
 watch:
   - "docs"
@@ -90,8 +91,14 @@ extra_css:
 plugins:
   - markdownextradata
   - search
+  - social:
+      cards: !ENV [DCRDOCS_CARDS, false]
+      cards_font: 'Source Sans Pro'
+      cards_color:
+        fill: '#091440'
+        text: '#FFFFFF'
 nav:
-- 'Home': 'index.md'
+- 'Introduction to Decred': 'index.md'
 - Getting Started:
   - "Beginner's Guide": 'getting-started/beginner-guide.md'
   - "Project History": 'getting-started/project-history.md'
@@ -101,14 +108,14 @@ nav:
   - 'Articles & Media': 'getting-started/articles-and-media.md'
   - 'Business Brief': 'getting-started/business-brief.md'
 - Governance:
-  - 'Overview': 'governance/overview.md'
+  - 'Governance Overview': 'governance/overview.md'
   - Politeia:
-    - 'Overview': 'governance/politeia/overview.md'
+    - 'Politeia Overview': 'governance/politeia/overview.md'
     - 'Proposal Guidelines': 'governance/politeia/proposal-guidelines.md'
     - 'Example Proposals': 'governance/politeia/example-proposals.md'
     - 'Censorship': 'governance/politeia/politeia-censorship.md'
   - Consensus Rule Voting:
-    - 'Overview': 'governance/consensus-rule-voting/overview.md'
+    - 'Consensus Rule Voting Overview': 'governance/consensus-rule-voting/overview.md'
     - 'How to Vote': 'governance/consensus-rule-voting/how-to-vote.md'
     - 'Verifying Votes': 'governance/consensus-rule-voting/verifying-votes.md'
     - 'Consensus Vote Archive': 'governance/consensus-rule-voting/consensus-vote-archive.md'
@@ -122,7 +129,7 @@ nav:
       - 'Trezor Wallets': 'wallets/decrediton/trezor.md'
       - 'Troubleshooting Problems': 'wallets/decrediton/decrediton-troubleshooting.md'
     - CLI Wallet:
-      - 'Installation': 'wallets/cli/cli-installation.md'
+      - 'CLI Installation': 'wallets/cli/cli-installation.md'
       - 'OS Differences': 'wallets/cli/os-differences.md'
       - 'Startup Basics': 'wallets/cli/startup-basics.md'
       - 'dcrd Setup': 'wallets/cli/dcrd-setup.md'
@@ -135,17 +142,17 @@ nav:
     - 'Hardware Wallets': 'wallets/hardware-wallets.md'
     - 'Mobile Wallets': 'wallets/mobile-wallets.md'
 - Proof-of-Stake Voting:
-  - "Overview": 'proof-of-stake/overview.md'
+  - "PoS Voting Overview": 'proof-of-stake/overview.md'
   - "How to Stake": 'proof-of-stake/how-to-stake.md'
   - "Redeem Script": 'proof-of-stake/redeem-script.md'
 - 'Proof-of-Work Mining': 'mining/overview.md'
 - Privacy:
   - 'General Privacy': 'privacy/general-privacy.md'
   - CoinShuffle++:
-    - 'Overview': 'privacy/cspp/overview.md'
+    - 'CoinShuffle++ Overview': 'privacy/cspp/overview.md'
     - 'How to use CSPP': 'privacy/cspp/how-to-cspp.md'
 - Lightning Network:
-  - 'Overview': 'lightning-network/overview.md'
+  - 'Lightning Network Overview': 'lightning-network/overview.md'
   - 'Backups': 'lightning-network/backups.md'
   - 'Watchtowers': 'lightning-network/watchtowers.md'
   - dcrlncli:
@@ -222,17 +229,17 @@ nav:
       - 'tower': 'lightning-network/dcrlncli/tower.md'
       - 'wtclient': 'lightning-network/dcrlncli/wtclient.md'
 - FAQ:
-  - 'General': 'faq/general.md'
-  - 'Configuration': 'faq/configuration.md'
-  - 'Wallets and Seeds': 'faq/wallets-and-seeds.md'
-  - 'Blocks': 'faq/blocks.md'
+  - 'General FAQs': 'faq/general.md'
+  - 'Configuration FAQs': 'faq/configuration.md'
+  - 'Wallets and Seed FAQs': 'faq/wallets-and-seeds.md'
+  - 'Block FAQs': 'faq/blocks.md'
+  - 'PoW FAQs': 'faq/proof-of-work-mining.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
-  - 'PoW': 'faq/proof-of-work-mining.md'
   - PoS:
-    - 'General': 'faq/proof-of-stake/general.md'
-    - 'Solo Voting': 'faq/proof-of-stake/solo-voting.md'
-    - 'Buying Tickets and Fees': 'faq/proof-of-stake/buying-tickets-and-fees.md'
-    - 'Voting Service Providers': 'faq/proof-of-stake/voting-service-providers.md'
+    - 'General PoS FAQs': 'faq/proof-of-stake/general.md'
+    - 'Solo Voting FAQs': 'faq/proof-of-stake/solo-voting.md'
+    - 'Buying Tickets and Fee FAQs': 'faq/proof-of-stake/buying-tickets-and-fees.md'
+    - 'Voting Service Provider FAQs': 'faq/proof-of-stake/voting-service-providers.md'
 - Advanced:
   - 'Manual CLI Installation': 'advanced/manual-cli-install.md'
   - 'dcrtime': 'advanced/dcrtime.md'
@@ -249,7 +256,7 @@ nav:
   - 'Decred Seed and BIP-0039': 'advanced/mnemonic-seed.md'
   - 'Secure Cold Wallet Setup': 'advanced/secure-cold-wallet-setup.md'
 - Research:
-  - 'Overview': 'research/overview.md'
+  - 'Research Overview': 'research/overview.md'
   - 'Hybrid Design': 'research/hybrid-design.md'
   - 'Decentralized Stake Pooling': 'research/decentralized-stake-pooling.md'
   - 'Elliptic Curve Signature Algorithms': 'research/elliptic-curve-signature-algorithms.md'
@@ -259,7 +266,7 @@ nav:
   - 'Schnorr Signatures': 'research/schnorr-signatures.md'
   - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
 - Contributing:
-  - 'Overview': 'contributing/overview.md'
+  - 'Contributing Overview': 'contributing/overview.md'
   - 'Contributor Compensation': 'contributing/contributor-compensation.md'
 - 'Glossary': 'glossary.md'
 - About:

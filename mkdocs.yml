@@ -1,5 +1,8 @@
 site_name: Decred Documentation
 use_directory_urls: true
+watch:
+  - "docs"
+  - "snippets"
 theme:
   name: material
   favicon: 'img/favicon.ico?v=s3ss'

@@ -45,6 +45,22 @@ and yielded significant decentralization from the outset.
 
 ---
 
+## On Chain Governance
+
+Since Block 4,096 was mined on February 21 2016, every Decred block has incorporated the votes of at least 3 tickets, approving the contents of the previous block. 
+On July 9 2017, the first consensus vote of tickets was concluded, with the approval of changes which would allow for Lightning Network features to be deployed on the Decred network.
+
+---
+
+## Politeia
+
+Politeia was launched as Decred's off chain proposal discussion and voting site on October 15 2018, with the first proposal votes concluding on November 9 2018. 
+A Contractor Management System (CMS) was built using Politeia, and since April 2019 contractors working on the Decred project have been submitting their invoices using this system. This creates a robust record of interactions between contractors and admins which cannot be falsified or tampered with.
+A second type of proposal, a Request For Proposals (RFP) was added in 2020, allowing for a two stage process where a general plan is first approved before interested parties submit proposals which meet its criteria. The [first RFP proposal](https://proposals.decred.org/record/0917c1d) was completed on September 25, 2020, with all candidate proposals being rejected.
+Politeia was launched with a git-based backend with censorship tokens for ensuring transparency of censorship, and in March 2021 this was [upgraded](https://github.com/decred/politeia/pull/1180) to use a trillian log (tstore) for improved scalability and flexibility.
+
+---
+
 ## Decred Timeline
 
 | Date         | Milestone |

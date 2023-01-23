@@ -157,7 +157,8 @@ details .md-typeset__table {
     font-size: 13px;
 }
 
-.md-typeset .admonition p{
+.md-typeset .admonition p,
+.md-typeset .admonition li {
     font-size: 14px;
 }
 

@@ -14,8 +14,8 @@ To upgrade Decrediton, simply download the new version and install it. You do no
 
     ![Decrediton update link](../../img/decrediton/upgrading/download-link.png)
 
-    !!! Warning "Security Tip"
-    
+    !!! warning "Security Tip"
+
         We recommend you also verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
 
         You will need to visit the [Release Binaries](https://github.com/decred/decred-binaries/releases) page to download the manifest and manifest signature:

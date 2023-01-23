@@ -16,7 +16,7 @@ Last updated for Decrediton v{{ decreditonversion }}.
 
 The latest version of Decrediton can be downloaded from <https://decred.org/wallets/>.
 
-!!! Warning "Security Tip"
+!!! warning "Security Tip"
 
     We recommend you also verify that your download hash matches the hash in the Decred releases manifest.
     For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).

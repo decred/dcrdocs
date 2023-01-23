@@ -47,17 +47,17 @@ and yielded significant decentralization from the outset.
 
 ## On Chain Governance
 
-Since Block 4,096 was mined on February 21 2016, every Decred block has incorporated the votes of at least 3 tickets, approving the contents of the previous block. 
+Since Block 4,096 was mined on February 21 2016, every Decred block has incorporated the votes of at least 3 tickets, approving the contents of the previous block.
 On July 9 2017, the first consensus vote of tickets was concluded, with the approval of changes which would allow for Lightning Network features to be deployed on the Decred network.
 
 ---
 
 ## Politeia
 
-Politeia was launched as Decred's off chain proposal discussion and voting site on October 15 2018, with the first proposal votes concluding on November 9 2018. 
+Politeia was launched as Decred's off chain proposal discussion and voting site on October 15 2018, with the first proposal votes concluding on November 9 2018.
 A Contractor Management System (CMS) was built using Politeia, and since April 2019 contractors working on the Decred project have been submitting their invoices using this system. This creates a robust record of interactions between contractors and admins which cannot be falsified or tampered with.
 A second type of proposal, a Request For Proposals (RFP) was added in 2020, allowing for a two stage process where a general plan is first approved before interested parties submit proposals which meet its criteria. The [first RFP proposal](https://proposals.decred.org/record/0917c1d) was completed on September 25, 2020, with all candidate proposals being rejected.
-Politeia was launched with a git-based backend with censorship tokens for ensuring transparency of censorship, and in March 2021 this was [upgraded](https://github.com/decred/politeia/pull/1180) to use a trillian log (tstore) for improved scalability and flexibility.
+Politeia was launched with a git-based backend with censorship tokens for ensuring transparency of censorship, and in March 2021 this was [upgraded](https://github.com/decred/politeia/pull/1180) to use a [Trillian log](https://transparency.dev/) for improved scalability and flexibility.
 
 ---
 
@@ -79,12 +79,12 @@ Politeia was launched with a git-based backend with censorship tokens for ensuri
 | September 21, 2018 {: .timeline-date} | [Initial SPV release for dcrwallet](https://github.com/decred/decred-binaries/releases/tag/v1.3.0) {: .timeline-event} |
 | October 15, 2018 {: .timeline-date}   | [Politeia goes live on mainnet](https://blog.decred.org/2018/10/15/Politeia-in-Production/) {: .timeline-event} |
 | May 9, 2019 {: .timeline-date}        | [Lightning Network support activated on mainnet](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki) {: .timeline-event} |
-| August 28, 2019 {: .timeline-date}	| [First CoinShuffle++ mixes live on mainnet](https://blog.decred.org/2019/08/28/Iterating-Privacy/) {: .timeline-event} |
-| September 25, 2019 {: .timeline-date}	| [Initial release of dcrpool mining pool software](https://blog.decred.org/2019/09/25/Introducing-Dcrpool/) {: .timeline-event} |
-| December 16, 2019 {: .timeline-date}	| [Release of Decred software v1.5.0](https://github.com/decred/decred-binaries/releases/tag/v1.5.0) {: .timeline-event} |
-| February 14, 2020 {: .timeline-date}	| [DCP0005 approved, enabling block header commitments which allow for more secure Simplified Payment Verification (SPV) wallets](https://github.com/decred/dcps/blob/master/dcp-0005/dcp-0005.mediawiki) {: .timeline-event} |
-| January 25, 2021 {: .timeline-date}	| [Release of Decred software v1.6.0, incorporating first DCRDEX release](https://github.com/decred/decred-binaries/releases/tag/v1.6.0) {: .timeline-event} |
-| April 9, 2021 {: .timeline-date}		| [DCP0006 approved, to enable the decentralized treasury](https://github.com/decred/dcps/blob/master/dcp-0006/dcp-0006.mediawiki) {: .timeline-event} |
-| December 28, 2021 {: .timeline-date}	| [First payment to contractors from the decentralized treasury (tspend)](https://dcrdata.decred.org/tx/f57f2f35abcfc58cb8d45da6315982610203c1335ee0d68b36240f22c24a557a) {: .timeline-event} |
-| January 24, 2022 {: .timeline-date}	| [Release of Decred software v1.7.0](https://github.com/decred/decred-binaries/releases/tag/v1.7.0) {: .timeline-event} |
-| April 10, 2022 {: .timeline-date}		| [Approval of DCP0007 (fix treasury bug), DCP0008 (explicit version upgrades), DCP0009  (automatic ticket revocations) & DCP0010 (Change PoW/PoS Subsidy Split)](https://voting.decred.org/) {: .timeline-event} |
+| August 28, 2019 {: .timeline-date}    | [First CoinShuffle++ mixes live on mainnet](https://blog.decred.org/2019/08/28/Iterating-Privacy/) {: .timeline-event} |
+| September 25, 2019 {: .timeline-date} | [Initial release of dcrpool mining pool software](https://blog.decred.org/2019/09/25/Introducing-Dcrpool/) {: .timeline-event} |
+| December 16, 2019 {: .timeline-date}  | [Release of Decred software v1.5.0](https://github.com/decred/decred-binaries/releases/tag/v1.5.0) {: .timeline-event} |
+| February 14, 2020 {: .timeline-date}  | [DCP0005 approved, enabling block header commitments which allow for more secure Simplified Payment Verification (SPV) wallets](https://github.com/decred/dcps/blob/master/dcp-0005/dcp-0005.mediawiki) {: .timeline-event} |
+| January 25, 2021 {: .timeline-date}   | [Release of Decred software v1.6.0, incorporating first DCRDEX release](https://github.com/decred/decred-binaries/releases/tag/v1.6.0) {: .timeline-event} |
+| April 9, 2021 {: .timeline-date}      | [DCP0006 approved, to enable the decentralized treasury](https://github.com/decred/dcps/blob/master/dcp-0006/dcp-0006.mediawiki) {: .timeline-event} |
+| December 28, 2021 {: .timeline-date}  | [First payment to contractors from the decentralized treasury (tspend)](https://dcrdata.decred.org/tx/f57f2f35abcfc58cb8d45da6315982610203c1335ee0d68b36240f22c24a557a) {: .timeline-event} |
+| January 24, 2022 {: .timeline-date}   | [Release of Decred software v1.7.0](https://github.com/decred/decred-binaries/releases/tag/v1.7.0) {: .timeline-event} |
+| April 10, 2022 {: .timeline-date}     | [Approval of DCP0007 (fix treasury bug), DCP0008 (explicit version upgrades), DCP0009  (automatic ticket revocations) & DCP0010 (Change PoW/PoS Subsidy Split)](https://voting.decred.org/) {: .timeline-event} |

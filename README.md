@@ -117,4 +117,4 @@ $ docker run -d --rm -p <local port>:80 decred/dcrdocs:latest
 
 ## Getting help
 
-To get help with `dcrdocs` please create a [GitHub issue](https://github.com/decred/dcrdocs/issues) or the join the [Decred community](https://decred.org/community/) using your preferred chat platform.
+To get help with `dcrdocs` please create a [GitHub issue](https://github.com/decred/dcrdocs/issues) or join the [Decred community](https://decred.org/community/) using your preferred chat platform.

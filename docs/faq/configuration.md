@@ -65,7 +65,7 @@ When nodes are new to the network, they are not accessible to other nodes until 
 
 This process should take several days before receiving an incoming connection.
 
-To check and confirm that your node is ready to be accepted, see the output from the `dcrctl` command `getnetworkinfo`. Under `localaddresses`, you can see what address and port your node is accepting incoming conenctions. Confirm that this address is correct and that the specified port is open.
+To check and confirm that your node is ready to be accepted, see the output from the `dcrctl` command `getnetworkinfo`. Under `localaddresses`, you can see what address and port your node is accepting incoming connections. Confirm that this address is correct and that the specified port is open.
 
 ```json
 "localaddresses": [

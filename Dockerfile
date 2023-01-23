@@ -1,5 +1,5 @@
 # Build image
-FROM python:3.9
+FROM python:3.11
 
 LABEL description="dcrdocs build"
 LABEL version="1.0"
@@ -26,7 +26,7 @@ ENV DCRDOCS_CARDS true
 RUN ./bin/build_docs.sh
 
 # Serve image (stable nginx version)
-FROM nginx:1.20
+FROM nginx:1.22
 
 LABEL description="dcrdocs serve"
 LABEL version="1.0"

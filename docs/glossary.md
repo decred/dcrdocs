@@ -38,11 +38,11 @@ A tool for inspecting the contents of blocks in a more user-friendly format.
 
 Metadata at the beginning of a block which contains summary information about
 the block.
-Hashing a block header yeilds a unique value which is often used as the main way
+Hashing a block header yields a unique value which is often used as the main way
 of identifying a block.
 
 The [Block Header Specifications](https://devdocs.decred.org/developer-guides/block-header-specifications)
-page of the Developer Documentation provides a detailed look the component parts
+page of the Developer Documentation provides a detailed look at the component parts
 of a block header, and how a header is serialized for transmission across the
 Decred network.
 
@@ -456,7 +456,7 @@ complete](https://en.wikipedia.org/wiki/Turing_completeness).
 
 #### Soft Fork
 
-A change to consensus rules that is backwards compatible. Nodes running older versions without the new rules can still validate transactions and blocks. However, nodes running older versions can only partially validate transactions and blocks created by nodes using the new rules. This is because old nodes believe they are fully validating transactions, however, they are not able to undstand transactions created using the new rules. For instance, if a new transaction type is added via soft fork, only nodes using the new rules will be able to understand the new transaction type. 
+A change to consensus rules that is backwards compatible. Nodes running older versions without the new rules can still validate transactions and blocks. However, nodes running older versions can only partially validate transactions and blocks created by nodes using the new rules. This is because old nodes believe they are fully validating transactions, however, they are not able to understand transactions created using the new rules. For instance, if a new transaction type is added via soft fork, only nodes using the new rules will be able to understand the new transaction type. 
 
 #### Stake transaction tree
 

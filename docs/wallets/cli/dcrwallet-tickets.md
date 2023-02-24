@@ -70,9 +70,6 @@ Note: The process outlined below is now considered "legacy" and will be phased o
 ??? info "Click to display the legacy process for utilizing a VSP"
     To allow a VSP to vote for you, you first have to sign up for a VSP. A list of them can be found [here](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp). After signing up, there should be directions for creating a new P2SH address and importing your multi-sig voting script. 
 
-    !!! warning "Warning"
-        Make sure to save a copy of your multi-sig voting script; if your VSP goes down, you will need this script to vote or revoke tickets.
-
     A brief overview of configuring your VSP is provided here:
 
     1. With your wallet open, issue the `dcrctl --wallet getnewaddress` command to retrieve an address.

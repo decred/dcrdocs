@@ -19,7 +19,7 @@ or `tmux`.
 
 ---
 
-## :fontawesome-solid-cloud: Connect to the Decred Network
+## Connect to the Decred Network
 
 The first time launching `dcrd`, it will connect to the Decred network and begin downloading the blockchain. To allow `dcrwallet` and `dcrctl` to communicate with `dcrd`, the configuration files must have `rpcuser` and `rpcpass` settings enabled. 
 

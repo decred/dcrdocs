@@ -85,7 +85,7 @@ Enter the local network IP address of your miner in the URL bar of any web brows
 
 ##### ![](../img/dcr-icons/Solo.svg){ .dcr-icon } Solo Mining
 
-:fontawesome-solid-exclamation-triangle: **Solo mining is not recommended and is not covered by this documentation!** The Decred network regularly sees a network hash rate of up to 422Ph/s. Solo mining is generally only done by advanced individuals or organized groups with a large cluster of GPUs so it is not addressed here.
+**Solo mining is not recommended and is not covered by this documentation!** The Decred network regularly sees a network hash rate of up to 422Ph/s. Solo mining is generally only done by advanced individuals or organized groups with a large cluster of GPUs so it is not addressed here.
 
 
 #### Pool Mining

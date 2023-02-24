@@ -388,6 +388,15 @@ The minimum level of participation required in order for a decision-making proce
 
 ---
 
+#### Redeem Script
+
+A [redeem script](proof-of-stake/redeem-script.md) is 1-of-2 multisignature
+script generated during the user registration process of
+[dcrstakepool](https://github.com/decred/dcrstakepool) (legacy VSP software
+superseded by [vspd](https://github.com/decred/vspd)).
+Allocating voting rights to the hash of this shared script would enable either
+the user or the VSP to vote tickets purchased by the user.
+
 #### Regnet
 
 A [regression testing network](https://devdocs.decred.org/environments/regnet/)

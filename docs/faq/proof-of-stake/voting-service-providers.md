@@ -46,9 +46,3 @@ The worst that would happen if a VSP owner disappears is the votes will be misse
 
 In the unlikely scenario your VSP goes down permanently, you can still vote your
 own tickets, as well as revoke any missed or expired tickets.
-
----
-
-#### 7. My VSP went down and I lost the redeem script, is there a way to recover it?
-
-When a ticket votes or is revoked, that redeem script is revealed as a part of the process. Redeem scripts that have been used at least once to vote or revoke a ticket can be [recovered using Decred's block explorer](../../proof-of-stake/redeem-script.md#recovery-methods).

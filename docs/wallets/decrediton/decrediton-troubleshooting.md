@@ -105,17 +105,3 @@ Perform the same steps as described in ["Cannot see all my coins"](#cannot-see-a
 If you can start the wallet but get error messages when performing an operation, then the first thing is to verify the wallet logs from within Decrediton. Access the Settings -> Logs page and look for any ERR messages:
 
 ![Logs Page](../../img/decrediton/troubleshooting/logs.png)
-
-## How to backup VSP redeem script
-
-Now is a good time to back up your VSPs multi-sig voting script (or "redeem script"). 
-
---8<-- "script-warning.md"
-
-Click on the gear icon next to your VSP. Then click on the donut icon that appears.
-
-![Purchase Tickets page](../../img/decrediton/redeem-script.png)
-
-This will bring up your VSP's configuration details. Copy the string of characters in the `Script` field and store them in a safe location. 
-
-![Purchase Tickets page](../../img/decrediton/redeem-script-field.png)

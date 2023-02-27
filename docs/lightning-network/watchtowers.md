@@ -3,32 +3,28 @@
 ---
 
 !!! danger "Critical information to prevent theft of funds"
-    
     LN nodes should remain online for as long as possible to monitor for on-chain breaches of a channel. The best alternative for _episodic_ nodes (ones that don't remain online continuously) is to use _watchtower_ services to monitor the chain for them.
-    
+
 !!! info "Watchtower Limitations"
-    
     The current implementation of watchtowers is only able to recover funds already committed to in the channel, **not** from in-flight payments, thus it's a good practice not to have a large number of outstanding payments at any one time when relying on watchtowers.
-    
 
 LN operates under the assumption that nodes can respond in a timely manner in case of _channel breaches_ by broadcasting a so called _justice transaction_ on-chain if the counter-party of a channel is (or becomes) malicious. 
 
 For many end-users however that isn't feasible: it would mean leaving their computer running 24 hours a day and their wallet unlocked so that `dcrlnd` can perform its operations.
 
 This document reviews the motivation for the existence of Watchtower services, how they work and how to interact with them.
-    
-## Overview of Channel Breaches    
+
+## Overview of Channel Breaches
 
 This section can be skipped if you know what it means to _breach_ an LN channel.
 
 Lightning Network channels are realized on the blockchain as multisig, 2-of-2 outputs. This means both parties of a channel must cooperate in order to advance its _state_, which reflects the relative balances of the two participants and any outstanding (in-flight) payments:
 
-
 ![Channel States](../img/lightning-network/channel-states.svg)
 
 Each state corresponds to a _commitment transaction_: a transaction signed by both parties that spends the multisig channel output and that pays the correct relative amount to each party.
 
-Any commitment transaction is publishable by any of the two parties once a state is "locked in" (also referred as "irrevocably committed" to). This means _any point of the entire state history_ is, in principle, publishable at any time. 
+Any commitment transaction is publishable by any of the two parties once a state is "locked in" (also referred as "irrevocably committed" to). This means _any point of the entire state history_ is, in principle, publishable at any time.
 
 The "any point of the entire state history" is key: even _old_ states, ones that no longer reflect the most recent situation for the relative balances in the channel can be broadcast at any time by any of the parties.
 

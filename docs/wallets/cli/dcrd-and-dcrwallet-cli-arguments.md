@@ -3,6 +3,7 @@
 Last updated for CLI release v{{ cliversion }}.
 
 ---
+
 Both the `dcrd` and `dcrwallet` daemons should work with default configuration for most users, however there is a wide variety of command line arguments to change the way they behave if required. For example, the following command can be used to change the log directory `dcrd` will write to.
 
 ```bash
@@ -242,6 +243,6 @@ dcrd --logdir=/my/custom/log/directory
     ---------------------------------------------------|-------------
             `--vsp.url=`                               | Base URL of the VSP server
             `--vsp.pubkey=`                            | VSP server pubkey
-            `--vsp.sync`                               | sync tickets to vsp
+            `--vsp.sync`                               | Sync tickets to VSP
             `--vsp.maxfee=`                            | Maximum VSP fee (default: 0.1 DCR)
             `--manualtickets`                          | **VSP Admins Only:** Do not discover new tickets through network synchronization

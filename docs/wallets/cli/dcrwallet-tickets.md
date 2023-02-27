@@ -67,33 +67,6 @@ vsp.url=https://teststakepool.decred.org
 vsp.pubkey=ia9Ra2Drb+OHLqRyBsJnRKBd7TUG1IvrseC6robKzGo=
 ```
 
-Note: The process outlined below is now considered "legacy" and will be phased out at a later date. It is recommended to use the process above to purchase tickets with a VSP as of version 1.6.0 and above as it better respects privacy and requires no sign-up with the VSP.
-
-??? info "Click to display the legacy process for utilizing a VSP"
-    To allow a VSP to vote for you, you first have to sign up for a VSP. A list of them can be found [here](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp). After signing up, there should be directions for creating a new P2SH address and importing your multi-sig voting script. 
-
-    A brief overview of configuring your VSP is provided here:
-
-    1. With your wallet open, issue the `dcrctl --wallet getnewaddress` command to retrieve an address.
-
-    1. Using that address, issue the `dcrctl --wallet validateaddress <address from step 1>` command. This should return a JSON object that will be displayed like so:
-
-            {
-              "isvalid": true,
-              "address": "DsExampleAddr1For2Demo3PurposesOnly",
-              "ismine": true,
-              "pubkeyaddr": "DkExample0Addr1For2Demo4Purposes5Only6Do7Not8Use9Pls0",
-              "pubkey": "022801337beefc0ffee1dab8d4ffa898a782466c9a1fc00ca8863de5438dc07dcc",
-              "iscompressed": true,
-              "account": "voting"
-            }
-
-    1. Copy the `pubkeyaddr` into the VSP's "Submit Address" form and hit the submit button. The page should redirect you to the tickets page, which will display more instructions.
-
-    1. At the top of the tickets page, you should see a "Ticket Information" section. Copy your "Redeem Script" and use it to issue the `dcrctl --wallet importscript <Insert Redeem Script Here>` command.
-
-    With the VSP configured and your multi-sig script imported to your wallet, you can now start [purchasing tickets](#ticket-purchasing).
-
 ---
 
 ## Ticket Purchasing
@@ -157,19 +130,6 @@ Note: For v1.6.0, if you have set the [VSP options](#vsp-voting) within your dcr
 
 `dcrctl --wallet purchaseticket "default" 160`
 
-Note: The info below is now considered "legacy" and will be phased out at a later date. It is recommended to use the process [here](#vsp-voting) to purchase tickets with a VSP as of version 1.6.0 and above as it better respects privacy and requires no sign-up with the VSP.
-
-??? info "Click to display additional info for legacy use of purchaseticket command" 
-    If purchasing tickets the legacy way, you need to include the following in your command:
-
-    - Your `ticketaddress` is the P2SH Address found at the top of "Tickets" page of your VSP under the "Ticket Information" section.
-    - Your `pooladdress` is the address for your VSP's fees are collected. This can be found in the "Ticket Instructions" section of your VSP's "Tickets" page.
-    - Your `poolfees` is the percentage of the stake reward that will go to the `pooladdress` when a ticket votes. It is important to match your VSP's advertised fee.
-
-    A quick example:
-
-    `dcrctl --wallet purchaseticket "default" 23 1 DcExampleAddr1For2Demo3PurposesOnly 1 DsExampleAddr1For2Demo3PurposesOnly 7.5` would use DCR from your `default` account to purchase 1 ticket if the current ticket price is a max of 23 DCR. The P2SH Address received from the VSP is `DcExampleAddr1For2Demo3PurposesOnly` and their fee address is `DsExampleAddr1For2Demo3PurposesOnly`. They will collect a 7.5% fee if this ticket successfully votes. This ticket will not expire from the mempool until the ticket price changes, as only 7 arguments were specified (no `expiry`).
-
 ---
 
 ## Ticketbuyer Configuration
@@ -187,14 +147,3 @@ If you don't want `ticketbuyer` to spend all of your funds, there is one more op
 ```ini
 ticketbuyer.balancetomaintainabsolute=<balance>
 ```
-
-Note: The info below is now considered "legacy" and will be phased out at a later date. It is recommended to use the process [here](#vsp-voting) to purchase tickets with a VSP as of version 1.6.0 and above as it better respects privacy and requires no sign-up with the VSP.
-
-??? info "Click to display info for legacy method of buying tickets with ticketbuyer" 
-    If you are using a VSP, you should also add the following lines (all of these can be found on your VSP's    "Tickets" page):
-
-    ```ini
-    ticketbuyer.votingaddress=<P2SH Address shared with VSP>
-    pooladdress=<VSP's Fee Collection Address>
-    poolfees=<VSP's Required Reward Fee>
-    ```

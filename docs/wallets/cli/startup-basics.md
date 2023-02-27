@@ -36,9 +36,11 @@ The [Manual Installation](../../advanced/manual-cli-install.md#installation) met
 
 A majority of the settings you are able to set via the configuration file can also be passed to the application as parameters during launch. For example, the following OS-specific commands would open `dcrd` for Testnet use, an alternative to using `testnet=1` in your config file:
 
-    Windows: dcrd.exe --testnet
-    macOS: ./dcrd --testnet
-    Linux: ./dcrd --testnet
+```no-highlight
+Windows: dcrd.exe --testnet
+macOS: ./dcrd --testnet
+Linux: ./dcrd --testnet
+```
 
 The above example would first look to the `dcrd` configuration file for settings and then look to the executable command to enable the testnet setting. 
 
@@ -47,8 +49,3 @@ The above example would first look to the `dcrd` configuration file for settings
 ## Advanced Usage
 
 [Full List of Options for Each Application](dcrd-and-dcrwallet-cli-arguments.md)
-
-
-## Next
-
-[dcrd Setup Guide](dcrd-setup.md)

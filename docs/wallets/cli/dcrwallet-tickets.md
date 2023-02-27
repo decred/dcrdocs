@@ -54,16 +54,18 @@ Once `dcrwallet` is restarted with that line in `dcrwallet.conf`, your wallet wi
 - `vsp.url`
 - `vsp.pubkey`
 
-        ; ------------------------------------------------------------------------------
-        ; VSP settings
-        ; ------------------------------------------------------------------------------
+```ini
+; ------------------------------------------------------------------------------
+; VSP settings
+; ------------------------------------------------------------------------------
 
-        ; The URL of the VSP.
-        ; vsp.url=https://teststakepool.decred.org
+; The URL of the VSP.
+vsp.url=https://teststakepool.decred.org
 
-        ; The base64 encoded public key of the VSP server.  This can be found on the
-        ; VSP website in the footer.
-        ; vsp.pubkey=ia9Ra2Drb+OHLqRyBsJnRKBd7TUG1IvrseC6robKzGo=
+; The base64 encoded public key of the VSP server.  This can be found on the
+; VSP website in the footer.
+vsp.pubkey=ia9Ra2Drb+OHLqRyBsJnRKBd7TUG1IvrseC6robKzGo=
+```
 
 Note: The process outlined below is now considered "legacy" and will be phased out at a later date. It is recommended to use the process above to purchase tickets with a VSP as of version 1.6.0 and above as it better respects privacy and requires no sign-up with the VSP.
 

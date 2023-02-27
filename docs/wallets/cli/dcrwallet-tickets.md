@@ -2,7 +2,14 @@
 
 Last updated for CLI release v{{ cliversion }}.
 
-This guide is intended to walk through ticket buying using `dcrwallet`. It will cover both manual ticket purchases and automatic ticket purchases for solo-voting and VSP voting configurations.
+---
+
+This guide is intended to walk through ticket buying using `dcrwallet`.
+
+Before proceeding it is recommended to decide if you want to solo vote or use a
+Voting Service Provider (VSP).
+The [How to Stake](../../proof-of-stake/how-to-stake.md) page covers the pros
+and cons of each approach.
 
 **Prerequisites:**
 
@@ -17,13 +24,7 @@ This guide assumes you have set up `dcrd` and `dcrwallet` using configuration fi
 
 ---
 
-## Decisions
-
-There are a few decisions to be made before venturing into this guide. First, will you be using a Voting Service Provider (VSP) to delegate your ticket voting rights? Second, will you be purchasing tickets manually or automatically via the ticketbuyer feature?
-
-VSP ticket purchasing allows a stakeholder to delegate voting rights to a VSP. VSPs are online at all times (24/7) and very rarely miss a vote. In exchange for this service, VSPs typically require an upfront fee.
-
-Solo-voting requires you to have a voting wallet unlocked at all times (24/7), or else you may miss votes and lose your voting reward. You do not have to pay VSP fees.
+## Manual or Automatic Ticket Buying
 
 Manual ticket purchasing vs. automated ticketbuyer purchasing is mainly up to personal preference. Purchasing manually offers the user more control over when tickets are purchased, how much is paid for each ticket, and how often the purchasing wallet is unlocked. The automated buyer offers more convenience and requires less maintenance, however it requires the purchasing wallet to remain online and unlocked constantly.
 
@@ -45,7 +46,7 @@ Once `dcrwallet` is restarted with that line in `dcrwallet.conf`, your wallet wi
 
 ---
 
-## VSP voting
+## VSP Voting
 
  You can find a list of VSPs [here](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
 

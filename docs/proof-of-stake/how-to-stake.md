@@ -2,26 +2,44 @@
 
 ---
 
-## How to Stake/Vote
+Participating in Decred’s Proof-of-Stake system requires the use of an
+always-online voting wallet.
+This wallet must remain online and unlocked 24/7, ready to sign vote
+transactions immediately when tickets are selected to vote on a block.
 
-There are two ways to stake/vote: solo staking and staking using a VSP. The former method is usually more appropriate for advanced users as it requires your wallet to be up 24/7. Running your own always-online wallet is known as **"Solo" Voting**.
-
-**Voting Service Providers (VSPs)** (formerly "Stakepools") are available for those unable to keep a personal voting wallet online. Using a VSP is completely safe; the Decred PoS protocol allows you to delegate your vote to a VSP's always-online wallet without ever giving the VSP access to your funds.
+Advanced users with some sys-admin skills may choose to run their own voting wallet.
+This is known as [Solo voting](#solo-pos-voting).
+Those who are unable or unwilling to maintain an always-online voting
+wallet can instead choose to use a [Voting Service Provider (VSP)](#voting-service-providers).
 
 ---
 
 ## ![](../img/dcr-icons/Solo.svg){ .dcr-icon } Solo PoS Voting
 
-Solo PoS voting is currently only possible using the Decred command line tools. The [Buying Tickets with dcrwallet](../wallets/cli/dcrwallet-tickets.md) guide explains how to buy tickets using the CLI wallet `dcrwallet`.
+Solo PoS voting is only recommended for advanced users.
+
+* Using the command line tools is required, it is not possible using Decrediton.
+* You must ensure your voting wallet is online and unlocked 24/7.
+* Downtime on the voting wallet can result in missed votes and lost voting rewards.
+
+Reasons to solo vote include contributing to the decentralization of the Decred
+network, retaining full control of your funds and wallet, increased privacy, and
+avoiding VSP fees.
+
+The [Buying Tickets with dcrwallet](../wallets/cli/dcrwallet-tickets.md) guide
+explains how to set up a voting wallet and buy tickets using `dcrwallet`.
 
 ---
 
-## ![](../img/dcr-icons/Servers.svg){ .dcr-icon } PoS using a Voting Service Provider (VSP)
+## ![](../img/dcr-icons/Servers.svg){ .dcr-icon } Voting Service Providers
 
-A list of Voting Service Providers (VSPs) and statistics is maintained on the
-[Decred.org website](https://decred.org/vsp/).
+Voting Service Providers (VSPs) maintain a pool of voting wallets and allow
+users to add their tickets to those wallets in exchange for a small fee.
+VSPs are completely non-custodial - they never have access to any of their
+user’s funds - the user is only delegating the rights to vote their tickets to
+the VSP.
 
-Using a VSP **does not give the VSP access to your funds**. All you are doing is granting voting rights to the VSP.
+A list of VSPs and statistics is maintained on the [decred.org website](https://decred.org/vsp/).
 
 In order to support network decentralization, it is recommended that you join a smaller VSP with fewer live tickets. As VSPs control tickets delegated to them, they could in theory vote those tickets in a way which contradicts the expressed wishes of the ticket owners. This could be easily detected, and any VSP which attempted it would likely be abandoned by the stakeholder community. However, it is good practice to limit the power of individual VSPs, to limit the potential for damage from this kind of attack.
 
@@ -32,5 +50,5 @@ More redundancy equals less chance of missed votes, although all VSPs will have 
 
 PoS voting using a VSP can be done using Decrediton or dcrwallet.
 
-- `Decrediton` - GUI wallet for Windows/macOS/Linux. The [Tickets menu, Purchase tab](../wallets/decrediton/using-decrediton.md#tickets) is used to buy tickets.
+- `Decrediton` - GUI wallet for Windows/macOS/Linux. The [Staking menu, Purchase tab](../wallets/decrediton/using-decrediton.md#staking) is used to buy tickets.
 - `dcrwallet` - CLI wallet for Windows/macOS/Linux. The [Buying Tickets with dcrwallet](../wallets/cli/dcrwallet-tickets.md) guide explains how to purchase tickets via command line.

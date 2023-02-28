@@ -7,7 +7,7 @@ always-online voting wallet.
 This wallet must remain online and unlocked 24/7, ready to sign vote
 transactions immediately when tickets are selected to vote on a block.
 
-Advanced users with some sys-admin skills may choose to run their own voting wallet.
+Advanced users with some sysadmin skills may choose to run their own voting wallet.
 This is known as [Solo voting](#solo-pos-voting).
 Those who are unable or unwilling to maintain an always-online voting
 wallet can instead choose to use a [Voting Service Provider (VSP)](#voting-service-providers).

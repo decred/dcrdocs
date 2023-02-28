@@ -86,15 +86,39 @@ Both manual and automatic ticket purchasing require your wallet to be
 
 ### Manual Ticket Purchase
 
-The `purchaseticket` RPC command will attempt to purchase a ticket immediately
-using available funds:
+The purchaseticket RPC command will attempt to purchase a ticket immediately
+using available funds. There are two required parameters:
 
-```no-highlight
-dcrctl --wallet purchaseticket "fromaccount" spendlimit
+1. `fromaccount` - String: The account from which to purchase tickets (e.g. "default").
+1. `spendlimit`  - Number: Limit on the amount to spend on ticket (e.g. 50).
+
+More advanced parameters can be listed with the command `dcrctl --wallet help purchaseticket`.
+If the purchaseticket command is successful it will output the hash of the
+purchased ticket.
+
+```sh
+$ dcrctl --testnet --wallet purchaseticket default 100
+[
+  "69b855e0d318dc5a21ff0f2717ad149b324027a1e46ecd28d0a18ea1ca249f5b"
+]
 ```
 
-1. `fromaccount`    =  String: The account from which to purchase tickets (e.g. "default").
-1. `spendlimit`     =  Number: Limit on the amount to spend on ticket (e.g. 50).
+The ticket has now entered the mempool and begins the
+[ticket lifecycle](../../proof-of-stake/overview.md#ticket-lifecycle).
+
+For **solo voters** the process is complete. If they are using separate ticket
+buying and voting wallets, the ticket buying wallet can now be closed.
+
+**VSP users** need to keep their wallet open a few moments longer while the
+newly purchased ticket is registered with the VSP and the fee is paid. A
+"successfully processed" message in the dcrwallet log will indicate when the
+registration is complete.
+
+```no-highlight
+[INF] WLLT: Published ticket purchase 69b855e0d318dc5a21ff0f2717ad149b324027a1e46ecd28d0a18ea1ca249f5b
+[INF] VSPC: VSP requires fee 0.00010829 DCR
+[INF] VSPC: successfully processed 69b855e0d318dc5a21ff0f2717ad149b324027a1e46ecd28d0a18ea1ca249f5b
+```
 
 ### Automatic Ticketbuyer
 

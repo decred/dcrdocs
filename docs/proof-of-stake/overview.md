@@ -14,7 +14,7 @@ PoS voting serves a number of purposes:
 1. The same principle makes the Decred blockchain resistant to contentious hard forks. PoW Miners are unable to build on a chain without the Votes of the tickets that are called.
 1. Snap voting of live tickets is used to make decisions about the project treasury through [Politeia](../governance/politeia/overview.md).
 
-These roles are incentivized; ticket-holders (or "Proof-of-Stake (PoS) Voters") collectively receive 30% of the block reward when their tickets are called to vote.
+These roles are incentivized; ticket-holders (or "Proof-of-Stake (PoS) Voters") collectively receive 80% of the block reward when their tickets are called to vote.
 
 ---
 

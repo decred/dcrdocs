@@ -9,7 +9,8 @@ transactions immediately when tickets are selected to vote on a block.
 
 Advanced users with some sysadmin skills may choose to run their own voting wallet.
 This is known as [Solo voting](#solo-pos-voting).
-Those who are unable or unwilling to maintain an always-online voting
+
+Beginners, or those who are unable or unwilling to maintain an always-online voting
 wallet can instead choose to use a [Voting Service Provider (VSP)](#voting-service-providers).
 
 ---
@@ -21,6 +22,7 @@ Solo PoS voting is only recommended for advanced users.
 * Using the command line tools is required, it is not possible using Decrediton.
 * You must ensure your voting wallet is online and unlocked 24/7.
 * Downtime on the voting wallet can result in missed votes and lost voting rewards.
+* You must feel confident in your ability to keep your voting hardware secure.
 
 Reasons to solo vote include contributing to the decentralization of the Decred
 network, retaining full control of your funds and wallet, increased privacy, and
@@ -35,9 +37,18 @@ explains how to set up a voting wallet and buy tickets using `dcrwallet`.
 
 Voting Service Providers (VSPs) maintain a pool of voting wallets and allow
 users to add their tickets to those wallets in exchange for a small fee.
-VSPs are completely non-custodial - they never have access to any of their
-user’s funds - the user is only delegating the rights to vote their tickets to
-the VSP.
+
+* VSPs are completely non-custodial - they never have access to any of their
+  user’s funds - the user is only delegating the rights to vote their tickets to
+  the VSP.
+* It's easy to purchase tickets with a VSP inside of Decrediton.
+* Your wallet doesn't need to stay online since the VSP's wallets are always
+  online on your behalf. Not only is this convenient, but it's also more secure
+  for you to keep your wallet offline when not in use.
+* VSPs rarely miss votes because they're a pool of wallets, usually in multiple
+  physical locations. If you chose to try solo-voting with a single wallet, and
+  if your internet/power was unreliable, there's a greater risk of missing votes
+  and voting rewards.
 
 A list of VSPs and statistics is maintained on the [decred.org website](https://decred.org/vsp/).
 

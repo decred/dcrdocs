@@ -1,7 +1,9 @@
-bin/build.sh
-Dockerfile
-README.md
-.git
 .gitignore
+.git
+.github
+LICENSE
+README.md
 
-site/
+bin/build.sh
+site
+.cache

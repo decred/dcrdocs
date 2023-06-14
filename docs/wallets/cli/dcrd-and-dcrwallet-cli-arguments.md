@@ -17,7 +17,7 @@ dcrd --logdir=/my/custom/log/directory
 ## `dcrd`
 
 ??? info "Click to expand full list of `dcrd` CLI arguments"
-    General                           |Description
+    General                           | Description
     ----------------------------------|-------------
     `-V` or `--version`               | Display version information and exit
     `-A` or `--appdata=`              | Path to application home directory (default: `~/.dcrd`)
@@ -37,7 +37,7 @@ dcrd --logdir=/my/custom/log/directory
             `--sigcachemaxsize=`      | The maximum number of entries in the signature verification cache (default: 100000)
             `--utxocachemaxsize=`     | The maximum size in MiB of the utxo cache (min: 25, max: 32768) (default: 150)
 
-    RPC Server                        |Description
+    RPC Server                        | Description
     ----------------------------------|-------------
             `--norpc`                 | Disable built-in RPC server -- **NOTE:** The RPC server is disabled by default if no rpcuser/rpcpass or rpclimituser/rpclimitpass is specified
             `--rpclisten=`            | Add an interface/port to listen for RPC connections (default port: 9109, testnet: 19109)
@@ -56,7 +56,7 @@ dcrd --logdir=/my/custom/log/directory
             `--rpcmaxwebsockets=`     | Max number of RPC websocket connections (default: 25)
             `--rpcmaxconcurrentreqs=` | Max number of concurrent RPC requests that may be processed concurrently (default: 20)
 
-    P2P Proxy and Tor                 |Description
+    P2P Proxy and Tor                 | Description
     ----------------------------------|-------------
             `--proxy=`                | Connect via SOCKS5 proxy (eg. 127.0.0.1:9050)
             `--proxyuser=`            | Username for proxy server
@@ -67,7 +67,7 @@ dcrd --logdir=/my/custom/log/directory
             `--noonion`               | Disable connecting to Tor hidden services
             `--torisolation`          | Enable Tor stream isolation by randomizing user credentials for each connection.
 
-    P2P Network                       |Description
+    P2P Network                       | Description
     ----------------------------------|-------------
     `-a` or `--addpeer=`              | Add a peer to connect with at startup
             `--connect=`              | Connect only to the specified peers at startup
@@ -78,27 +78,27 @@ dcrd --logdir=/my/custom/log/directory
             `--dialtimeout=`          | How long to wait for TCP connection completion. Valid time units are {s, m, h}. Minimum 1 second (default: 30s)
             `--peeridletimeout=`      | The duration of inactivity before a peer is timed out. Valid time units are {s,m,h}. Minimum 15 seconds (default: 2m0s)
 
-    P2P Network Discovery             |Description
+    P2P Network Discovery             | Description
     ----------------------------------|-------------
             `--noseeders`             | Disable seeding for peer discovery
             `--externalip=`           | Add a public-facing IP to the list of local external IPs that dcrd will advertise to other peers
             `--nodiscoverip`          | Disable automatic network address discovery of local external IPs
             `--upnp`                  | Use UPnP to map our listening port outside of NAT
 
-    Banning                           |Description
+    Banning                           | Description
     ----------------------------------|-------------
             `--nobanning`             | Disable banning of misbehaving peers
             `--banduration=`          | How long to ban misbehaving peers. Valid time units are {s, m, h}. Minimum 1 second (default: 24h0m0s)
             `--banthreshold=`         | Maximum allowed ban score before disconnecting and banning misbehaving peers. (default: 100)
             `--whitelist=`            | Add an IP network or IP that will not be banned (eg. 192.168.1.0/24 or ::1)
 
-    Chain Related                     |Description
+    Chain Related                     | Description
     ----------------------------------|-------------
             `--allowoldforks`         | Process forks deep in history. Don't do this unless you know what you're doing
             `--dumpblockchain=`       | Write blockchain as a flat file of blocks for use with addblock, to the specified filename
             `--assumevalid=`          | Hash of an assumed valid block. Defaults to the hard-coded assumed valid block that is updated periodically with new releases. Don't use a different hash unless you understand the implications. Set to 0 to disable
 
-    Relay and Mempool Policy          |Description
+    Relay and Mempool Policy          | Description
     ----------------------------------|-------------
             `--minrelaytxfee=`        | The minimum transaction fee in DCR/kB to be considered a non-zero fee. (default: 0.0001)
             `--limitfreerelay=`       | **DEPRECATED: This behavior is no longer available and this option will be removed in a future version of the software.** Limit relay of transactions with no transaction fee to the given amount in thousands of bytes per minute (default: 15)
@@ -109,7 +109,7 @@ dcrd --logdir=/my/custom/log/directory
             `--rejectnonstd`          | Reject non-standard transactions regardless of the default settings for the active network. (This is the default for mainnet)
             `--allowoldvotes`         | Enable the addition of very old votes to the mempool
 
-    Mining Options and Policy         |Description
+    Mining Options and Policy         | Description
     ----------------------------------|-------------
             `--generate`              | Generate (mine) coins using the CPU
             `--miningaddr=`           | Add the specified payment address to the list of addresses to use for generated blocks. At least one address is required if the generate option is set
@@ -121,14 +121,14 @@ dcrd --logdir=/my/custom/log/directory
             `--nominingstatesync`     | Disable synchronizing the mining state with other nodes
             `--allowunsyncedmining`   | Allow block templates to be generated even when the chain is not considered synced on networks other than the main network. This is automatically enabled when the simnet option is set. Don't do this unless you know what you're doing
 
-    Indexing                          |Description
+    Indexing                          | Description
     ----------------------------------|-------------
             `--txindex`               | Maintain a full hash-based transaction index which makes all transactions available via the getrawtransaction RPC
             `--droptxindex`           | Deletes the hash-based transaction index from the database on startup and then exits.
             `--noexistsaddrindex`     | Disable the exists address index, which tracks whether or not an address has even been used.
             `--dropexistsaddrindex`   | Deletes the exists address index from the database on startup and then exits.
 
-    IPC (Interprocess Communication)  |Description
+    IPC (Interprocess Communication)  | Description
     ----------------------------------|-------------
             `--piperx=`               | File descriptor of read end pipe to enable parent -> child process communication
             `--pipetx=`               | File descriptor of write end pipe to enable parent <- child process communication
@@ -140,7 +140,7 @@ dcrd --logdir=/my/custom/log/directory
 ## `dcrwallet`
 
 ??? info "Click to expand full list of `dcrwallet` CLI arguments"
-    General                                            |Description
+    General                                            | Description
     ---------------------------------------------------|-------------
     `-C` or `--configfile=`                            | Path to configuration file (default: `~/.dcrwallet/dcrwallet.conf`)
     `-V` or `--version`                                | Display version information and exit
@@ -156,7 +156,7 @@ dcrd --logdir=/my/custom/log/directory
             `--profile=`                               | Enable HTTP profiling this interface/port
             `--memprofile=`                            | Write mem profile to the specified file
 
-    Wallet                                             |Description
+    Wallet                                             | Description
     ---------------------------------------------------|-------------
             `--walletpass=`                            | The public wallet password -- Only required if the wallet was created with one
             `--promptpass`                             | The private wallet password is prompted for at start up, so the wallet starts unlocked without a time limit
@@ -174,7 +174,7 @@ dcrd --logdir=/my/custom/log/directory
             `--poolfees=`                              | **DEPRECATED: This field was for legacy Stakepools, which have been replaced by Voting Service Providers (VSPs).** The per-ticket fee mandated by the ticket pool as a percent (e.g. 1.00 for 1.00% fee)
             `--stakepoolcoldextkey=`                   | **DEPRECATED: This field was for legacy Stakepools, which have been replaced by Voting Service Providers (VSPs).** Enables the wallet as a stake pool with an extended key in the format of "xpub...:index" to derive cold wallet addresses to send fees to
 
-    RPC Client                                         |Description
+    RPC Client                                         | Description
     ---------------------------------------------------|-------------
     `-c` or `--rpcconnect=`                            | Hostname/IP and port of dcrd RPC server to connect to
             `--cafile=`                                | File containing root certificates to authenticate a TLS connection with dcrd
@@ -183,7 +183,7 @@ dcrd --logdir=/my/custom/log/directory
             `--dcrdusername=`                          | Username for dcrd authentication
             `--dcrdpassword=`                          | Password for dcrd authentication
 
-    P2P Proxy and Tor                                  |Description
+    P2P Proxy and Tor                                  | Description
     ---------------------------------------------------|-------------
             `--proxy=`                                 | Connect via SOCKS5 proxy (eg. 127.0.0.1:9050)
             `--proxyuser=`                             | Username for proxy server
@@ -192,12 +192,12 @@ dcrd --logdir=/my/custom/log/directory
             `--torisolation`                           | Enable Tor stream isolation by randomizing user credentials for each connection
             `--nodcrdproxy`                            | Never use configured proxy to dial dcrd websocket connectons
 
-    SPV                                                |Description
+    SPV                                                | Description
     ---------------------------------------------------|-------------
             `--spv`                                    | Sync using simplified payment verification
             `--spvconnect=`                            | Full node addresses to SPV sync from; disables DNS seeding
 
-    RPC Server                                         |Description
+    RPC Server                                         | Description
     ---------------------------------------------------|-------------
             `--rpccert=`                               | File containing the TLS certificate (default: `~/.dcrwallet/rpc.cert`)
             `--rpckey=`                                | File containing the TLS key (default: `~/.dcrwallet/rpc.key`)
@@ -214,14 +214,14 @@ dcrd --logdir=/my/custom/log/directory
     `-P` or `--password=`                              | Password for legacy JSON-RPC and dcrd authentication (if dcrdpassword is unset)
             `--jsonrpcauthtype=`                       | Method for JSON-RPC client authentication (basic or clientcert) (default: basic)
 
-    IPC (Interprocess Communication)                   |Description
+    IPC (Interprocess Communication)                   | Description
     ---------------------------------------------------|-------------
             `--pipetx=`                                | File descriptor or handle of write end pipe to enable child -> parent process communication
             `--piperx=`                                | File descriptor or handle of read end pipe to enable parent -> child process communication
             `--rpclistenerevents`                      | Notify JSON-RPC and gRPC listener addresses over the TX pipe
             `--issueclientcert`                        | Notify a client cert and key over the TX pipe for RPC authentication
 
-    Mixing (CSPP)                                      |Description
+    Mixing (CSPP)                                      | Description
     ---------------------------------------------------|-------------
             `--csppserver=`                            | Network address of CoinShuffle++ server
             `--csppserver.ca=`                         | CoinShuffle++ Certificate Authority
@@ -231,14 +231,14 @@ dcrd --logdir=/my/custom/log/directory
             `--mixchange`                              | Use CoinShuffle++ to mix change account outputs into mix account
             `--mixsplitlimit=`                         | Connection limit to CoinShuffle++ server per change amount
 
-    Auto Ticketbuyer                                   |Description
+    Auto Ticketbuyer                                   | Description
     ---------------------------------------------------|-------------
             `--ticketbuyer.balancetomaintainabsolute=` | Amount of funds to keep in wallet when stake mining (default: 0 DCR)
             `--ticketbuyer.votingaddress=`             | Purchase tickets with voting rights assigned to this address
             `--ticketbuyer.limit=`                     | Buy no more than specified number of tickets per block (0 disables limit)
             `--ticketbuyer.votingaccount=`             | Account used to derive addresses specifying voting rights
 
-    VSP Options                                        |Description
+    VSP Options                                        | Description
     ---------------------------------------------------|-------------
             `--vsp.url=`                               | Base URL of the VSP server
             `--vsp.pubkey=`                            | VSP server pubkey

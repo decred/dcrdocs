@@ -35,7 +35,7 @@ dcrd --logdir=/my/custom/log/directory
             `--regnet`                | Use the regression test network
     `-d` or `--debuglevel=`           | Logging level for all subsystems {trace, debug, info, warn, error, critical} -- You may also specify `<subsystem>=<level>,<subsystem2>=<level>,...` to set the log level for individual subsystems -- Use `show` to list available subsystems (default: info)
             `--sigcachemaxsize=`      | The maximum number of entries in the signature verification cache (default: 100000)
-            `--utxocachemaxsize=`     | The maximum size in MiB of the utxo cache (default: 150, min: 25, max: 32768)
+            `--utxocachemaxsize=`     | The maximum size in MiB of the utxo cache (min: 25, max: 32768) (default: 150)
 
     RPC Server                        |Description
     ----------------------------------|-------------
@@ -90,19 +90,19 @@ dcrd --logdir=/my/custom/log/directory
             `--nobanning`             | Disable banning of misbehaving peers
             `--banduration=`          | How long to ban misbehaving peers.  Valid time units are {s, m, h}.  Minimum 1 second (default: 24h0m0s)
             `--banthreshold=`         | Maximum allowed ban score before disconnecting and banning misbehaving peers. (default: 100)
-            `--whitelist=`            | Add an IP network or IP that will not be banned. (eg. 192.168.1.0/24 or ::1)
+            `--whitelist=`            | Add an IP network or IP that will not be banned (eg. 192.168.1.0/24 or ::1)
 
     Chain Related                     |Description
     ----------------------------------|-------------
-            `--nocheckpoints`         | Disable built-in checkpoints. Checkpoints allow a faster initial blockchain download. Don't disable them unless you know what you're doing.
+            `--allowoldforks`         | Process forks deep in history.  Don't do this unless you know what you're doing
             `--dumpblockchain=`       | Write blockchain as a flat file of blocks for use with addblock, to the specified filename
-            `--assumevalid=`            | Hash of an assumed valid block.  Defaults to the hard-coded assumed valid block that is updated periodically with new releases.  Don't use a different hash unless you understand the implications.  Set to 0 to disable
+            `--assumevalid=`          | Hash of an assumed valid block.  Defaults to the hard-coded assumed valid block that is updated periodically with new releases.  Don't use a different hash unless you understand the implications.  Set to 0 to disable
 
     Relay and Mempool Policy          |Description
     ----------------------------------|-------------
             `--minrelaytxfee=`        | The minimum transaction fee in DCR/kB to be considered a non-zero fee. (default: 0.0001)
-            `--limitfreerelay=`       | Limit relay of transactions with no transaction fee to the given amount in thousands of bytes per minute (default: 15)
-            `--norelaypriority`       | Do not require free or low-fee transactions to have high priority for relaying
+            `--limitfreerelay=`       | **DEPRECATED: This behavior is no longer available and this option will be removed in a future version of the software.** Limit relay of transactions with no transaction fee to the given amount in thousands of bytes per minute (default: 15)
+            `--norelaypriority`       | **DEPRECATED: This behavior is no longer available and this option will be removed in a future version of the software.** Do not require free or low-fee transactions to have high priority for relaying
             `--maxorphantx=`          | Max number of orphan transactions to keep in memory (default: 100)
             `--blocksonly`            | Do not accept transactions from remote peers.
             `--acceptnonstd`          | Accept and relay non-standard transactions to the network regardless of the default settings for the active network. (This is not the default for mainnet)
@@ -112,10 +112,10 @@ dcrd --logdir=/my/custom/log/directory
     Mining Options and Policy         |Description
     ----------------------------------|-------------
             `--generate`              | Generate (mine) coins using the CPU
-            `--miningaddr=`           | Add the specified payment address to the list of addresses to use for generated blocks -- At least one address is required if the generate option is set
-            `--blockminsize=`         | Minimum block size in bytes to be used when creating a block
+            `--miningaddr=`           | Add the specified payment address to the list of addresses to use for generated blocks. At least one address is required if the generate option is set
+            `--blockminsize=`         | **DEPRECATED: This behavior is no longer available and this option will be removed in a future version of the software.** Minimum block size in bytes to be used when creating a block
             `--blockmaxsize=`         | Maximum block size in bytes to be used when creating a block (default: 375000)
-            `--blockprioritysize=`    | Size in bytes for high-priority/low-fee transactions when creating a block (default: 20000)
+            `--blockprioritysize=`    | **DEPRECATED: This behavior is no longer available and this option will be removed in a future version of the software.** Size in bytes for high-priority/low-fee transactions when creating a block (default: 20000)
             `--miningtimeoffset=`     | Offset the mining timestamp of a block by this many seconds (positive values are in the past)
             `--nonaggressive`         | Disable mining off of the parent block of the blockchain if there aren't enough voters
             `--nominingstatesync`     | Disable synchronizing the mining state with other nodes
@@ -125,8 +125,6 @@ dcrd --logdir=/my/custom/log/directory
     ----------------------------------|-------------
             `--txindex`               | Maintain a full hash-based transaction index which makes all transactions available via the getrawtransaction RPC
             `--droptxindex`           | Deletes the hash-based transaction index from the database on startup and then exits.
-            `--addrindex`             | Maintain a full address-based transaction index which makes the searchrawtransactions RPC available
-            `--dropaddrindex`         | Deletes the address-based transaction index from the database on startup and then exits.
             `--noexistsaddrindex`     | Disable the exists address index, which tracks whether or not an address has even been used.
             `--dropexistsaddrindex`   | Deletes the exists address index from the database on startup and then exits.
 
@@ -135,6 +133,7 @@ dcrd --logdir=/my/custom/log/directory
             `--piperx=`               | File descriptor of read end pipe to enable parent -> child process communication
             `--pipetx=`               | File descriptor of write end pipe to enable parent <- child process communication
             `--lifetimeevents`        | Send lifetime notifications over the TX pipe
+            `--boundaddrevents`       | Send notifications with the locally bound addresses of the P2P and RPC subsystems over the TX pipe
 
 ---
 

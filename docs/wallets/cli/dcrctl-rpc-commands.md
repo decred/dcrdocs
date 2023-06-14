@@ -27,11 +27,9 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `estimatestakediff`       | (`tickets`)
     `existsaddress`           | `"address"`
     `existsaddresses`         | `["address",...]`
-    `existsexpiredtickets`    | `["txhash",...]`
     `existsliveticket`        | `"txhash"`
     `existslivetickets`       | `["txhash",...]`
     `existsmempooltxs`        | `["txhash",...]`
-    `existsmissedtickets`     | `["txhash",...]`
     `generate`                | `numblocks`
     `getaddednodeinfo`        | `dns` (`"node"`)
     `getbestblock`            |
@@ -73,12 +71,10 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `help`                    | (`"command"`)
     `invalidateblock`         | `"blockhash"`
     `livetickets`             |
-    `missedtickets`           |
     `node`                    | `"connect|remove|disconnect"` `"target"` (`"perm|temp"`)
     `ping`                    |
     `reconsiderblock`         | `"blockhash"`
     `regentemplate`           |
-    `searchrawtransactions`   | `"address"` (`verbose=1` `skip=0` `count=100` `vinextra=0` `reverse=false` `["filteraddr",...]`)
     `sendrawtransaction`      | `"hextx"` (`allowhighfees=false`)
     `setgenerate`             | `generate` (`genproclimit=-1`)
     `stop`                    |
@@ -115,7 +111,6 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `discoverusage`           | (`"startblock"` `discoveraccounts` `gaplimit`)
     `dumpprivkey`             | `"address"`
     `fundrawtransaction`      | `"hexstring"` `"fundaccount"` (`{"changeaddress":changeaddress,"feerate":feerate,"conftarget":conftarget}`)
-    `generatevote`            | `"blockhash"` `height` `"tickethash"` `votebits` `"votebitsext"`
     `getaccount`              | `"address"`
     `getaccountaddress`       | `"account"`
     `getaddressesbyaccount`   | `"account"`
@@ -146,6 +141,7 @@ Below are some common RPC commands for dcrd and dcrwallet. For a full list of su
     `getwalletfee`            |
     `importcfiltersv2`        | `startheight` `["filter",...]`
     `importprivkey`           | `"privkey"` (`"label"` `rescan=true` `scanfrom`)
+    `importpubkey`            | `"pubkey"` (`"label"` `rescan=true` `scanfrom`)
     `importscript`            | `"hex"` (`rescan=true` `scanfrom`)
     `importxpub`              | `"name"` `"xpub"`
     `listaccounts`            | (`minconf=1`)

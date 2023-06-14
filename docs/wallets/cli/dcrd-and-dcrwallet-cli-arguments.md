@@ -75,7 +75,7 @@ dcrd --logdir=/my/custom/log/directory
             `--listen=`               | Add an interface/port to listen for connections (default all interfaces port: 9108, testnet: 19108)
             `--maxsameip=`            | Max number of connections with the same IP -- 0 to disable (default: 5)
             `--maxpeers=`             | Max number of inbound and outbound peers (default: 125)
-            `--dialtimeout=`          | How long to wait for TCP connection completion.  Valid time units are {s, m, h}.  Minimum 1 second (default: 30s)
+            `--dialtimeout=`          | How long to wait for TCP connection completion. Valid time units are {s, m, h}. Minimum 1 second (default: 30s)
             `--peeridletimeout=`      | The duration of inactivity before a peer is timed out. Valid time units are {s,m,h}. Minimum 15 seconds (default: 2m0s)
 
     P2P Network Discovery             |Description
@@ -88,15 +88,15 @@ dcrd --logdir=/my/custom/log/directory
     Banning                           |Description
     ----------------------------------|-------------
             `--nobanning`             | Disable banning of misbehaving peers
-            `--banduration=`          | How long to ban misbehaving peers.  Valid time units are {s, m, h}.  Minimum 1 second (default: 24h0m0s)
+            `--banduration=`          | How long to ban misbehaving peers. Valid time units are {s, m, h}. Minimum 1 second (default: 24h0m0s)
             `--banthreshold=`         | Maximum allowed ban score before disconnecting and banning misbehaving peers. (default: 100)
             `--whitelist=`            | Add an IP network or IP that will not be banned (eg. 192.168.1.0/24 or ::1)
 
     Chain Related                     |Description
     ----------------------------------|-------------
-            `--allowoldforks`         | Process forks deep in history.  Don't do this unless you know what you're doing
+            `--allowoldforks`         | Process forks deep in history. Don't do this unless you know what you're doing
             `--dumpblockchain=`       | Write blockchain as a flat file of blocks for use with addblock, to the specified filename
-            `--assumevalid=`          | Hash of an assumed valid block.  Defaults to the hard-coded assumed valid block that is updated periodically with new releases.  Don't use a different hash unless you understand the implications.  Set to 0 to disable
+            `--assumevalid=`          | Hash of an assumed valid block. Defaults to the hard-coded assumed valid block that is updated periodically with new releases. Don't use a different hash unless you understand the implications. Set to 0 to disable
 
     Relay and Mempool Policy          |Description
     ----------------------------------|-------------
@@ -119,7 +119,7 @@ dcrd --logdir=/my/custom/log/directory
             `--miningtimeoffset=`     | Offset the mining timestamp of a block by this many seconds (positive values are in the past)
             `--nonaggressive`         | Disable mining off of the parent block of the blockchain if there aren't enough voters
             `--nominingstatesync`     | Disable synchronizing the mining state with other nodes
-            `--allowunsyncedmining`   | Allow block templates to be generated even when the chain is not considered synced on networks other than the main network.  This is automatically enabled when the simnet option is set.  Don't do this unless you know what you're doing
+            `--allowunsyncedmining`   | Allow block templates to be generated even when the chain is not considered synced on networks other than the main network. This is automatically enabled when the simnet option is set. Don't do this unless you know what you're doing
 
     Indexing                          |Description
     ----------------------------------|-------------
@@ -165,7 +165,7 @@ dcrd --logdir=/my/custom/log/directory
             `--enableticketbuyer`                      | Enable the automatic ticket buyer
             `--enablevoting`                           | Enable creation of votes and revocations for owned tickets
             `--purchaseaccount=`                       | Name of the account to buy tickets from (default: default)
-            `--gaplimit=`                              | The size of gaps between used addresses.  Used for address scanning and when generating addresses with the wrap option. (default: 20)
+            `--gaplimit=`                              | The size of gaps between used addresses. Used for address scanning and when generating addresses with the wrap option. (default: 20)
             `--allowhighfees`                          | Allows the wallet to send transactions with very large fees. By default, this is any fee over 0.1 DCR/kB
             `--txfee=`                                 | Sets the transaction fee in DCR/kB that this wallet will pay to miners (default: 0.0001)
             `--accountgaplimit=`                       | Number of accounts that can be created in a row without using any of them (default: 10)

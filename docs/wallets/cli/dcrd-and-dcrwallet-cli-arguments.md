@@ -155,6 +155,7 @@ dcrd --logdir=/my/custom/log/directory
             `--logdir=`                                | Directory to log output. (default: `~/.dcrwallet/logs`)
             `--profile=`                               | Enable HTTP profiling this interface/port
             `--memprofile=`                            | Write mem profile to the specified file
+            `--cpuprofile=`                            | Write cpu profile to the specified file
 
     Wallet                                             | Description
     ---------------------------------------------------|-------------
@@ -166,6 +167,7 @@ dcrd --logdir=/my/custom/log/directory
             `--enablevoting`                           | Enable creation of votes and revocations for owned tickets
             `--purchaseaccount=`                       | Name of the account to buy tickets from (default: default)
             `--gaplimit=`                              | The size of gaps between used addresses. Used for address scanning and when generating addresses with the wrap option. (default: 20)
+            `--watchlast=`                             | Limit watched previous addresses of each HD account branch
             `--allowhighfees`                          | Allows the wallet to send transactions with very large fees. By default, this is any fee over 0.1 DCR/kB
             `--txfee=`                                 | Sets the transaction fee in DCR/kB that this wallet will pay to miners (default: 0.0001)
             `--accountgaplimit=`                       | Number of accounts that can be created in a row without using any of them (default: 10)

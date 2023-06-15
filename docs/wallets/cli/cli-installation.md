@@ -32,20 +32,12 @@ After running `dcrinstall`, you will be able to launch the software with no addi
 
     1. Download the correct file for your computer:
 
-        | Architecture  | Filename                                       |
-        | ------------- | ---------------------------------------------- |
-        | Intel         | `decred-darwin-amd64-v{{ cliversion }}.tar.gz` |
-        | Apple Silicon | `decred-darwin-arm64-v{{ cliversion }}.tar.gz` |
+        | Architecture  | Filename                                    |
+        | ------------- | ------------------------------------------- |
+        | Intel         | `dcrinstall-darwin-amd64-v{{ cliversion }}` |
+        | Apple Silicon | `dcrinstall-darwin-arm64-v{{ cliversion }}` |
     
     1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
-
-    1. Navigate to download location and extract the `.tar.gz` file:
-
-        **Finder:** simply double click on the `.tar.gz` file.
-
-        **Terminal:** use the `tar -xvzf filename.tar.gz` command.
-
-        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-darwin-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-darwin-amd64-v{{ cliversion }}`).
 
     1. Make the downloaded file an executable within your terminal and run it:
 
@@ -63,22 +55,14 @@ After running `dcrinstall`, you will be able to launch the software with no addi
 
     1. Download the correct file for your computer:
 
-        | Architecture | Filename                                      |
-        | ------------ | --------------------------------------------- |
-        | 32-bit       | `decred-linux-386-v{{ cliversion }}.tar.gz`   |
-        | 64-bit       | `decred-linux-amd64-v{{ cliversion }}.tar.gz` |
-        | 32-bit ARM   | `decred-linux-arm-v{{ cliversion }}.tar.gz`   |
-        | 64-bit ARM   | `decred-linux-arm64-v{{ cliversion }}.tar.gz` |
+        | Architecture | Filename                                   |
+        | ------------ | ------------------------------------------ |
+        | 32-bit       | `dcrinstall-linux-386-v{{ cliversion }}`   |
+        | 64-bit       | `dcrinstall-linux-amd64-v{{ cliversion }}` |
+        | 32-bit ARM   | `dcrinstall-linux-arm-v{{ cliversion }}`   |
+        | 64-bit ARM   | `dcrinstall-linux-arm64-v{{ cliversion }}` |
 
     1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
-
-    1. Navigate to download location and extract the `.tar.gz` file:
-
-        **Ubuntu File Browser:** simply right click on the `.tar.gz` file and select "Extract Here".
-
-        **Terminal:** use the `tar -xvzf filename.tar.gz` command.
-
-        Both of these should extract the `.tar.gz` file into a folder that shares the same name. (e.g. `tar -xvzf decred-linux-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-linux-amd64-v{{ cliversion }}`).
 
     1. Make the downloaded file an executable within your terminal and run it:
 
@@ -96,16 +80,12 @@ After running `dcrinstall`, you will be able to launch the software with no addi
 
     1. Download the correct file for your computer:
 
-        | Architecture | Filename                                     |
-        | ------------ | ---------------------------------------------|
-        | 32-bit       | `decred-windows-386-v{{ cliversion }}.zip`   |
-        | 64-bit       | `decred-windows-amd64-v{{ cliversion }}.zip` |
+        | Architecture | Filename                                         |
+        | ------------ | -------------------------------------------------|
+        | 32-bit       | `dcrinstall-windows-386-v{{ cliversion }}.exe`   |
+        | 64-bit       | `dcrinstall-windows-amd64-v{{ cliversion }}.exe` |
 
     1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
-
-    1. Navigate to download location and extract the `.zip` file:
-
-        Right click on the `.zip` file, select "Extract All..." and a prompt should open asking for the directory to use. The default will extract the `.zip` to a folder with the same name.
 
     1. Run the dcrinstall executable file. You can either double click it or run it from the Command Prompt.
 
@@ -115,18 +95,12 @@ After running `dcrinstall`, you will be able to launch the software with no addi
 
     1. Download the correct file for your computer:
 
-        | Architecture  | Filename                                        |
-        | ------------- | ----------------------------------------------- |
-        | FreeBSD amd64 | `decred-freebsd-amd64-v{{ cliversion }}.tar.gz` |
-        | OpenBSD amd64 | `decred-openbsd-amd64-v{{ cliversion }}.tar.gz` |
+        | Architecture  | Filename                                     |
+        | ------------- | -------------------------------------------- |
+        | FreeBSD amd64 | `dcrinstall-freebsd-amd64-v{{ cliversion }}` |
+        | OpenBSD amd64 | `dcrinstall-openbsd-amd64-v{{ cliversion }}` |
 
     1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
-
-    1. Navigate to download location and extract the `.tar.gz` file:
-
-        **Terminal:** use the `tar -xvzf filename.tar.gz` command.
-
-        The `.tar.gz` file will be extracted into a folder that shares the same name. (e.g. `tar -xvzf decred-openbsd-amd64-v{{ cliversion }}.tar.gz` should extract to `decred-openbsd-amd64-v{{ cliversion }}`).
 
     1. Make the downloaded file an executable within your terminal and run it:
 
@@ -134,8 +108,8 @@ After running `dcrinstall`, you will be able to launch the software with no addi
 
         `cd ~/Downloads/`
 
-        `chmod u+x dcrinstall-linux-amd64-v{{ cliversion }}`
+        `chmod u+x dcrinstall-openbsd-amd64-v{{ cliversion }}`
 
-        `./dcrinstall-linux-amd64-v{{ cliversion }}`
+        `./dcrinstall-openbsd-amd64-v{{ cliversion }}`
 
     1. The binaries for `dcrd`, `dcrwallet`, and `dcrctl` can now be found in the `~/decred/` directory. Before the `dcrinstall` process completes, you will be taken to the wallet creation prompt. Follow the steps within the [Wallet Creation Walkthrough](../../wallets/cli/dcrwallet-setup.md#wallet-creation-walkthrough) of the dcrwallet Setup guide to finish.

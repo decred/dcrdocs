@@ -20,10 +20,10 @@ Last updated for CLI release v{{ cliversion }}.
 
     1. Download the correct file for your computer:
 
-        | Architecture | Filename                                       |
-        | ------------ | ---------------------------------------------- |
-        | 64-bit       | `decred-darwin-amd64-v{{ cliversion }}.tar.gz` |
-        | M1 Chip      | `decred-darwin-arm64-v{{ cliversion }}.tar.gz` |
+        | Architecture  | Filename                                       |
+        | ------------- | ---------------------------------------------- |
+        | Intel         | `decred-darwin-amd64-v{{ cliversion }}.tar.gz` |
+        | Apple Silicon | `decred-darwin-arm64-v{{ cliversion }}.tar.gz` |
     
     1. For your security, verify that your download hash matches the hash in the Decred releases manifest. For detailed instructions, read about [Verifying Binaries](../../advanced/verifying-binaries.md).
 

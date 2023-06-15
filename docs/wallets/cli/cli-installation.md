@@ -4,14 +4,26 @@ Last updated for CLI release v{{ cliversion }}.
 
 ---
 
-`dcrinstall` makes it easy to install Decred Command Line Interface (CLI) tools on a single machine. Everything is automatically configured to work right out of the box. This includes `dcrd`, `dcrwallet`, `dcrctl`, `dcrlnd`, and `dcrlncli`.
+`dcrinstall` is an automatic installer and upgrader for the Decred software.
+It makes it easy to install Decred Command Line Interface (CLI) tools on a single machine.
+Everything is automatically configured to work right out of the box.
+This includes `dcrd`, `dcrwallet`, `dcrctl`, `dcrlnd`, and `dcrlncli`.
 
-`dcrinstall` is an automatic installer and upgrader for the Decred software. The newest release can be found here: <https://github.com/decred/decred-release/releases>. Binaries are provided for Windows, macOS, Linux, and BSD.
+The newest release can be found here: <https://github.com/decred/decred-release/releases>.
+Binaries are provided for Windows, macOS, Linux, and BSD.
 
-`dcrinstall` will automatically download the precompiled, signed binary package found on GitHub, verify the signature of this package, copy the binaries within the package to a specific folder dependent on OS, create configuration files with settings to allow the 3 applications to communicate with each other, and run you through the wallet creation process. After running `dcrinstall`, you will be able to launch the software with no additional configuration.
+`dcrinstall` will...
+
+1. Automatically download the precompiled, signed binary package found on GitHub
+1. Verify the signature of the downloaded package
+1. Copy the binaries within the package to a specific folder dependent on OS
+1. Create configuration files with settings to allow the applications to communicate with each other
+1. Run you through the wallet creation process.
+
+After running `dcrinstall`, you will be able to launch the software with no additional configuration.
 
 !!! tip "Looking for a more advanced setup?"
-    
+
     If you are interested in advanced configurations or Solo PoS Voting, consider reading the [Solo Voting](../../advanced/solo-proof-of-stake-voting.md) guide.
 
     If you are interested in networking between multiple devices, consider reading the [Secure Cold Wallet](../../advanced/secure-cold-wallet-setup.md) guide.

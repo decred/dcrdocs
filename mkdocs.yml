@@ -93,7 +93,7 @@ plugins:
   - search
   - social:
       cards: !ENV [DCRDOCS_CARDS, false]
-      cards_font: 'Source Sans Pro'
+      cards_font: 'Source Sans 3'
       cards_color:
         fill: '#091440'
         text: '#FFFFFF'

@@ -270,7 +270,7 @@ A Decred wallet which is connected to the Internet. Proof-of-stake voting wallet
 
 #### Hybrid PoW/PoS
 
-In Decred, a [hybrid PoW/PoS system](research/hybrid-design.md) is used, whereby blocks mined by PoW miners must be approved by ticket holders, which are pseudorandomly selected from the ticket pool. This provides a check on PoW miners and increases the overall cost of attacking the network. When a block is approved, 60% of the block reward goes to the PoW miner, 30% goes to the holders of tickets called to vote (approve blocks), and 10% goes to the Decred Treasury to fund the project.
+In Decred, a [hybrid PoW/PoS system](research/hybrid-design.md) is used, whereby blocks mined by PoW miners must be approved by ticket holders, which are pseudorandomly selected from the ticket pool. This provides a check on PoW miners and increases the overall cost of attacking the network. When a block is approved, 1% of the block reward goes to the PoW miner, 89% goes to the holders of tickets called to vote (approve blocks), and 10% goes to the Decred Treasury to fund the project.
 
 ## I
 

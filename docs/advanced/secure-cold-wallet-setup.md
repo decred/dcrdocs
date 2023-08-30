@@ -49,7 +49,7 @@ If you are a normal cryptocurrency holder and follow this guide exactly, it shou
 
 ## The Setup
 
-![Network diagram](/img/secure-setup.png)
+![Network diagram](../img/secure-setup.png)
 
 ### Benefits of this Setup
 

@@ -1,2 +1,2 @@
-mkdocs-material==9.0.6
+mkdocs-material==9.2.6
 mkdocs-markdownextradata-plugin==0.2.5

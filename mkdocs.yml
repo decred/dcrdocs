@@ -1,6 +1,13 @@
 site_name: Decred Documentation
 site_url: https://docs.decred.org
 use_directory_urls: true
+validation:
+  # Increase severity of validation rules to trigger build failures on common mistakes.
+  absolute_links: warn
+  unrecognized_links: warn
+  nav:
+    omitted_files: warn
+    absolute_links: warn
 watch:
   - "docs"
   - "snippets"
@@ -92,11 +99,11 @@ plugins:
   - markdownextradata
   - search
   - social:
-      cards: !ENV [DCRDOCS_CARDS, false]
-      cards_font: 'Source Sans 3'
-      cards_color:
-        fill: '#091440'
-        text: '#FFFFFF'
+      enabled: !ENV [DCRDOCS_CARDS, false]
+      cards_layout_options:
+        font_family: 'Source Sans 3'
+        background_color: '#091440'
+        color: '#FFFFFF'
 nav:
 - 'Introduction to Decred': 'index.md'
 - Getting Started:

@@ -26,7 +26,7 @@ ENV DCRDOCS_CARDS true
 RUN ./bin/build_docs.sh
 
 # Serve image (stable nginx version)
-FROM nginx:1.22-alpine
+FROM nginx:1.24-alpine
 
 LABEL description="dcrdocs serve"
 LABEL version="1.0"

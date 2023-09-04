@@ -240,7 +240,6 @@ nav:
   - 'Configuration FAQs': 'faq/configuration.md'
   - 'Wallets and Seed FAQs': 'faq/wallets-and-seeds.md'
   - 'Block FAQs': 'faq/blocks.md'
-  - 'PoW FAQs': 'faq/proof-of-work-mining.md'
   - 'Common Errors and Solutions': 'faq/errors.md'
   - PoS:
     - 'General PoS FAQs': 'faq/proof-of-stake/general.md'

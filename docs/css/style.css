@@ -225,7 +225,6 @@ details .md-typeset__table {
 
 .timeline-date {
     font-family: "dcrdocs-code";
-    color: #596D81;
     white-space: nowrap;
     font-size: 14px !important;
     padding: 14px !important;
@@ -234,5 +233,4 @@ details .md-typeset__table {
 .timeline-event {
     font-size: 15px !important;
     padding: 14px !important;
-    color: #596D81;
 }

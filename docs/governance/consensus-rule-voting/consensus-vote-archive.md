@@ -3,6 +3,54 @@
 This section provides an archive for previous votes along with their outcomes.
 
 ---
+??? note "Vote version 10"
+
+    The upgrade to vote version 10 was included in dcrd 1.8.0 released on 13 June 2023.
+
+    |Voting Start |Voting End |Activated |
+    |-------------|-----------|----------|
+    [778,240](https://dcrdata.decred.org/block/778240)|[786,303](https://dcrdata.decred.org/block/786303)|[794,368](https://dcrdata.decred.org/block/794368)|
+
+    ---
+
+    ### Change PoW to BLAKE3 and ASERT
+
+    Agenda ID: [blake3pow](https://dcrdata.decred.org/agenda/blake3pow)
+
+    **Change proof of work hashing algorithm to BLAKE3 as defined in in [DCP-0011](https://github.com/decred/dcps/blob/master/dcp-0011/dcp-0011.mediawiki)**
+
+    
+    [Stakeholders voted](https://proposals.decred.org/record/a8501bc) to change
+    the Proof-of-Work hash function to BLAKE3. This consensus change will also
+    update the difficulty algorithm to ASERT (Absolutely Scheduled Exponentially
+    weighted Rising Targets).
+
+    #### Voting Results
+
+    | Choice  | Percentage |
+    |---------|-----------:|
+    | Abstain | 35.52%     |
+    | No      |  0.34%     |
+    | Yes     | 64.13%     |
+
+    ---
+
+    ### Change PoW/PoS Subsidy Split To 1/89
+
+    Agenda ID: [changesubsidysplitr2](https://dcrdata.decred.org/agenda/changesubsidysplitr2)
+
+    **Change block reward subsidy split to 1/89/10 as defined in [DCP-0012](https://github.com/decred/dcps/blob/master/dcp-0012/dcp-0012.mediawiki)**
+
+    Modify the block reward subsidy split such that 1% goes to Proof-of-Work
+    (PoW) and 89% goes to Proof-of-Stake (PoS). The Treasury subsidy remains at 10%.
+
+    #### Voting Results
+
+    | Choice  | Percentage |
+    |---------|-----------:|
+    | Abstain | 36.59%     |
+    | No      |  0.45%     |
+    | Yes     | 62.95%     |
 
 ??? note "Vote version 9"
 

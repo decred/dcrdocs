@@ -92,5 +92,5 @@ Politeia was launched with a git-based backend with censorship tokens for ensuri
 | December 15, 2022 {: .timeline-date}  | [Bison Relay launched](https://decred.org/news/2022-12-15-decred-launches-bison-relay/) {: .timeline-event} |
 | June 13, 2023 {: .timeline-date}      | [Release of Decred software v1.8.0](https://github.com/decred/decred-binaries/releases/tag/v1.8.0) {: .timeline-event} |
 | August 1, 2023 {: .timeline-date}     | [Approval of DCP00011 (Change PoW to BLAKE3 and ASERT) and DCP0012 (Change PoW/PoS Subsidy Split To 1/89)](https://voting.decred.org/) {: .timeline-event} |
-| May 8, 2023 {: .timeline-date}        | PoS vote reward increased to 89%, PoW reward decreased to 1%. PoW algorithm changed to BLAKE3 (CPU mining only) {: .timeline-event} |
+| August 29, 2023 {: .timeline-date}        | PoS vote reward increased to 89%, PoW reward decreased to 1%. PoW algorithm changed to BLAKE3 (CPU mining only) {: .timeline-event} |
 | September 6, 2023 {: .timeline-date}  | GPU mining for BLAKE3 started {: .timeline-event} |

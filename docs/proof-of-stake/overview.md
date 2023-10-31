@@ -14,7 +14,7 @@ PoS voting serves a number of purposes:
 1. The same principle makes the Decred blockchain resistant to contentious hard forks. PoW Miners are unable to build on a chain without the Votes of the tickets that are called.
 1. Snap voting of live tickets is used to make decisions about the project treasury through [Politeia](../governance/politeia/overview.md).
 
-These roles are incentivized; ticket-holders (or "Proof-of-Stake (PoS) Voters") collectively receive 80% of the block reward when their tickets are called to vote.
+These roles are incentivized; ticket-holders (or "Proof-of-Stake (PoS) Voters") collectively receive 89% of the block reward when their tickets are called to vote.
 
 ---
 
@@ -46,7 +46,7 @@ The **Ticket Price**/**Stake Difficulty** is the price you must pay for a ticket
 
 The **Ticket Pool** is the total number of tickets in the Decred network.
 
-The **Ticket Fee** (`ticketfee`) is the fee that must be included in the ticket purchase to incentivize Proof-of-Work (PoW) miners to include that ticket in a new block. **Ticket Fee** usually refers to the DCR/kB fee rate for a ticket purchase transaction. The **Ticket Fee** defaults to the minimum (0.0001 DCR/kB), which is typically sufficient. 
+The **Ticket Fee** (`ticketfee`) is the fee that must be included in the ticket purchase to incentivize Proof-of-Work (PoW) miners to include that ticket in a new block. **Ticket Fee** usually refers to the DCR/kB fee rate for a ticket purchase transaction. The **Ticket Fee** defaults to the minimum (0.0001 DCR/kB), which is typically sufficient.
 
 **When a ticket is called to vote, the wallet that has voting rights for that ticket must be online.** If the wallet is not online to cast its vote, the ticket will be marked as `missed` and you will not receive a reward for that ticket. In practice, **Solo Voters** often run voting wallets on a number of servers on different continents, to minimize the chance of their tickets missing a call to vote.
 

@@ -44,7 +44,7 @@ by employing an innovative hybrid Proof-of-Work (PoW)/Proof-of-Stake (PoS)
 system and Politeia governance platform to solve the issues of centralization,
 funding, and governance.
 In Decred’s hybrid system, PoW acts similarly as with Bitcoin, but miners only
-receive 60% of the block reward. Thirty percent of the Decred block reward goes
+receive 1% of the block reward. Eighty-nine percent of the Decred block reward goes
 to PoS voters who quality control the miners’ work, reducing the power of the
 miners, putting power in the hands of the coin holders, and securing the
 network. The final 10% of the block reward goes into the Treasury to fund

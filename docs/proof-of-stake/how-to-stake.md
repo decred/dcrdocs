@@ -63,3 +63,13 @@ PoS voting using a VSP can be done using Decrediton or dcrwallet.
 
 - `Decrediton` - GUI wallet for Windows/macOS/Linux. The [Staking menu, Purchase tab](../wallets/decrediton/using-decrediton.md#staking) is used to buy tickets.
 - `dcrwallet` - CLI wallet for Windows/macOS/Linux. The [Buying Tickets with dcrwallet](../wallets/cli/dcrwallet-tickets.md) guide explains how to purchase tickets via command line.
+
+!!! question "Interested in running a VSP?"
+
+    Public VSP servers are a key part of the Decred infrastructure, and as such,
+    new operators are always welcome.
+
+    [vspd](https://github.com/decred/vspd) is the reference implementation of
+    VSP software, and the GitHub repository contains guides covering how to
+    deploy the software, and how to get a new VSP listed on
+    [decred.org](https://decred.org/vsp/) and in Decrediton.

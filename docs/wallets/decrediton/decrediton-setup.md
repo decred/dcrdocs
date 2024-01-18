@@ -130,3 +130,15 @@ Press **Create Wallet** and your wallet setup is complete. You will be taken bac
 1. Select **Create Wallet**. Wait for the blockchain to be downloaded.
 
 1. The blockchain will now be scanned for any transactions belonging to this wallet.
+
+## Restore Existing Wallet from file
+
+Decred wallet file locations are:
+
+Windows: C:\Users\{Username}\AppData\Local\Decrediton\wallets\mainnet
+
+Mac: ~/Library/Application Support/decrediton/wallets/mainnet/
+
+In order to restore a wallet from file, you can copy and paste the wallet folder to the new computer. 
+
+If you are restoring a wallet, which was created on a different operating system, it is recommended to create a new wallet, to populate the config files, and then paste the original wallet.db file in the wallet's mainnet folder. Ensure that the dcrwallet.conf settings are correct.

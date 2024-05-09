@@ -276,4 +276,4 @@ nav:
 - 'Glossary': 'glossary.md'
 - About:
     - 'License': 'about/license.md'
-copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new">open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare">send a pull request</a>.<br />dcrdocs v0.0.3. Decred Project 2016-2023.
+copyright: If you wish to improve this site, please <a href="https://github.com/decred/dcrdocs/issues/new">open an issue</a> or <a href="https://github.com/decred/dcrdocs/compare">send a pull request</a>.<br />dcrdocs v0.0.3. Decred Project 2016-2024.

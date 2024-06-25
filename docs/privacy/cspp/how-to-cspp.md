@@ -4,18 +4,7 @@
 
 To use CSPP, several new options must be set in `dcrwallet`.
 
-Regardless of the intended setup, users must create two new accounts, `mixed` and `unmixed`, and point their wallets to Decred's CSPP servers:
-
-Mainnet
-
-- Download the CSPP server [TLS certificate](https://mix.decred.org/mix.decred.org.pem)
-- Reference the certificate file using `--csppserver.ca=mix.decred.org.pem`
-- Point `dcrwallet`to the CSPP mainnet server by setting  `--csppserver=mix.decred.org:5760`
-
-Testnet
-
-- Testnet does **not** use the TLS certificate
-- Point `dcrwallet` to the CSPP testnet server by setting `--csppserver=mix.decred.org:15760`
+Users must create two new accounts, `mixed` and `unmixed`.
 
 ---
 
@@ -28,10 +17,9 @@ Solo stakers are recommended to use two wallets to separate ticket buying and vo
 Use the following options for a mainnet mixed solo ticket buyer which continues to buy more tickets from the mixed account as outputs mature:
 
 ```no-highlight
-$ dcrwallet --csppserver=mix.decred.org:5760 \
-  --csppserver.ca=mix.decred.org.pem \
-  --enableticketbuyer --purchaseaccount=mixed --mixedaccount=mixed/1 \
-  --changeaccount=unmixed --ticketbuyer.votingaccount=voting --mixchange
+$ dcrwallet --mixing --enableticketbuyer --purchaseaccount=mixed \
+  --mixedaccount=mixed/1 --changeaccount=unmixed \
+  --ticketbuyer.votingaccount=voting --mixchange
 ```
 
 ---
@@ -62,8 +50,7 @@ buyer1$ dcrctl --wallet importxpub mixed mixed-xpub
 The mixed ticket buying wallet may use the setup from the previous section. The old wallet must be configured slightly differently:
 
 ```no-highlight
-buyer1$ dcrwallet --csppserver=mix.decred.org:5760 \
-  --csppserver.ca=mix.decred.org.pem \
+buyer1$ dcrwallet --mixing \
   --enableticketbuyer --purchaseaccount=default --mixedaccount=mixed/0 \
   --ticketsplitaccount=default --changeaccount=unmixed \
   --ticketbuyer.votingaccount=voting --mixchange
@@ -87,22 +74,13 @@ Change outputs in the CoinJoin are not anonymous, and can easily be traced back 
 These features are enabled with the following config:
 
 ```no-highlight
-$ dcrwallet --csppserver=mix.decred.org:5760 \
-  --csppserver.ca=mix.decred.org.pem \
+$ dcrwallet --mixing \
   --mixedaccount=mixed/1 --changeaccount=unmixed --mixchange
 ```
 
 Alternatively, the `mixaccount` JSON-RPC may be used instead of the `--mixchange` option to mix single outputs from the account without leaving the wallet persistently unlocked.
 
 Non-stakers are able to use this mechanism to mix received funds by using the unmixed account to provide receiving addresses and mix them as if it was CoinShuffle++ change. The wallet will participate in CoinShuffle++ sessions by submitting only one UXTO per epoch until all unmixed funds have been mixed. Depending on the current epoch, users may have to wait for a while before seeing any mixing activity.
-
----
-
-## Tor Hidden Service
-
-The CSPP server is accessible as a Tor hidden service, which provides two-way anonymity. The server doesn't know the IP of the client and the client also doesn't know the IP of the server. The latest onion address can be found at [CSPP server site](https://mix.decred.org/) and can be configured by using the `--csppserver` flag.
-
-In case `dcrwallet` connects to `dcrd` directly, the `--nodcrdproxy=1` option may be specified in addition to the above.
 
 ---
 

@@ -35,9 +35,9 @@ various aspects of Decred.
 
 - [Introduction to Decred and its privacy implementation](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/) on Laura Shin's Unchained podcast
 
-- [Overview of Decred](https://soundcloud.com/decredindepth/ep-1-jonathan-zeppettini-jz-dcr-101) with Jonathan Zeppettini on the Decred in Depth podcast
+- [Overview of Decred](https://www.youtube.com/watch?v=rcEJuN7zh2M) with Jonathan Zeppettini on the Decred in Depth podcast
 
-- [Cryptoeconomics and Decred as a store of value](https://soundcloud.com/decredindepth/murad-mahmudov-dcr-investment-thesis-sov-narrative-crypto-economics) with economist Murad Mahmudov on the Decred in Depth podcast
+- [Cryptoeconomics and Decred as a store of value](https://www.youtube.com/watch?v=XkvcdjSH0c0) with economist Murad Mahmudov on the Decred in Depth podcast
 
 - [Decred's hybrid approach to blockchain governance](https://soundcloud.com/epicenterbitcoin/eb-193) with Dave Collins and Jake Yocom-Piatt on the Epicenter podcast
 

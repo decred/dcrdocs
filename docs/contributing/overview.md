@@ -54,5 +54,4 @@ For a more personal perspective, check these stories where some Decred contribut
 - _I Dump Coins on You_ by s_ben ([Medium](https://medium.com/@seth.benton/i-dump-coins-on-you-ee6db4331e18))
 - _Working for the Decred DAO + Development_ - an episode of Decred in Depth
   podcast with jholdstock
-  ([YouTube](https://www.youtube.com/watch?v=A-zcLGSYxbA),
-  [Libsyn](https://decredindepth.libsyn.com/ep-6-working-for-the-dcr-dao-development-with-jamie-holdstock))
+  ([YouTube](https://www.youtube.com/watch?v=A-zcLGSYxbA))

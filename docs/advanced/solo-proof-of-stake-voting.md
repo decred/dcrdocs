@@ -6,7 +6,9 @@ Last updated for CLI release v{{ cliversion }}.
 
 ## Overview
 
-Decred’s Proof-of-Stake system requires participants to have a wallet permanently connected to the Internet in order to purchase tickets, participate in governance and receive voting rewards. This introduces extra risk when compared to storing coins on cold storage (e.g. paper wallets). Using a [Voting Service Provider (VSP)](../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp) mitigates most of the risks by running multiple always-online wallets which will vote on your behalf, however this option is not viable for all users.
+Decred’s Proof-of-Stake system requires participants to have a wallet permanently connected to the Internet in order to purchase tickets, participate in governance and receive voting rewards.
+This introduces extra risk when compared to storing coins on cold storage (e.g. paper wallets).
+Using a [Voting Service Provider (VSP)](../proof-of-stake/how-to-stake.md#voting-service-providers) mitigates most of the risks by running multiple always-online wallets which will vote on your behalf, however this option is not viable for all users.
 
 This page will guide you through creating a setup which is akin to running your own VSP. "Hot" wallets are permanently online to perform voting activities, while funds remain in a separate "cool" wallet which controls ticket buying, receives voting rewards, and importantly, does not need to be permanently online.
 

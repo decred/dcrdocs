@@ -36,7 +36,10 @@ These concerns do not apply to SPV wallets because they connect directly to the 
 
 ## Are there any disadvantages?
 
-- SPV does not support voting wallets. Voting wallets have the responsibility to vote on the validity of the last block, and a wallet cannot be sure of the validity unless it fully validates the whole blockchain leading up to that block. It is possible to purchase tickets and allocate the voting rights to a [Voting Service Provider](../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp). Be aware that if a VSP fails to revoke a missed ticket, it is not possible for an SPV wallet to revoke the missed ticket until it has reached the confirmation depth of an expired ticket.
+- SPV does not support voting wallets.
+  Voting wallets have the responsibility to vote on the validity of the last block, and a wallet cannot be sure of the validity unless it fully validates the whole blockchain leading up to that block.
+  It is possible to purchase tickets and allocate the voting rights to a [Voting Service Provider](../proof-of-stake/how-to-stake.md#voting-service-providers).
+  Be aware that if a VSP fails to revoke a missed ticket, it is not possible for an SPV wallet to revoke the missed ticket until it has reached the confirmation depth of an expired ticket.
 
 - SPV wallets only download blocks which have transactions related to their owned addresses, which could potentially reveal more information about the wallet than if it downloaded every single block. This only presents a very minor decrease in privacy, but it is a decrease nonetheless. This can be mitigated by downloading blocks from multiple peers so no single peer is able to see the full list of blocks downloaded by a wallet. Even if a passive observer on the network is able to see which blocks are downloaded by a wallet, they are not able to identify which transactions in those blocks are relevant.
 

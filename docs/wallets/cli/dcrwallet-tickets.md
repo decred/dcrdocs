@@ -43,7 +43,7 @@ Once `dcrwallet` is restarted with that line in `dcrwallet.conf`, your wallet wi
 
 ### VSP Voting
 
- You can find a list of VSPs [here](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp).
+ You can find a list of VSPs [here](../../proof-of-stake/how-to-stake.md#voting-service-providers).
 
  Once you have decided on a VSP, delegating voting to a VSP for purchased tickets is accomplished with the following configuration options set in your dcrwallet.conf file.
 

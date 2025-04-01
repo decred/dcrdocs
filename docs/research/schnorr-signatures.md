@@ -32,4 +32,4 @@ It has been suggested that a Merkle tree containing all possible public key sums
 
 ## ![](../img/dcr-icons/Sources.svg){ .dcr-icon } References
 
-[^1]: Wuille P. 2015. [Tree signatures: Multisig on steroids using tree signatures](https://decred.org/research/wuille2015.pdf).
+Wuille P. 2015. [Tree signatures: Multisig on steroids using tree signatures](https://decred.org/research/wuille2015.pdf).

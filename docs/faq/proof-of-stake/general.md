@@ -25,7 +25,7 @@ There are two main ways to do this:
 
 1. A solo staking wallet which you set up yourself and keep online all the time.
 1. Using a [Voting Service
-   Provider](../../proof-of-stake/how-to-stake.md#pos-using-a-voting-service-provider-vsp)
+   Provider](../../proof-of-stake/how-to-stake.md#voting-service-providers)
    (VSP) which will vote on your behalf, charging a small percentage of the PoS
    reward as a fee for this service.
 

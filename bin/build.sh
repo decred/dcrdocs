@@ -15,7 +15,9 @@ if [ "$1" != "" ]; then
     IMAGE_NAME=$1
 fi
 
-docker build -t $IMAGE_NAME .
+# The default logging of the docker builder folds output which can hide
+# important DEBUG/INFO messages. Use --progress==plain to prevent this.
+docker build --progress=plain -t $IMAGE_NAME .
 
 echo ""
 echo "==================="

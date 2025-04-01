@@ -25,12 +25,6 @@ various aspects of Decred.
 
 - [The Decred Constitution](../governance/decred-constitution.md)
 
-### Must-Reads
-
-- [Decred investment thesis](https://www.placeholder.vc/blog/2018/5/12/decred-investment-thesis) by Joel Monegro and Chris Burniske of Placeholder VC
-
-- [Decred governance: An iterative approach](https://maxbronstein.com/decred-governance/) by Max Bronstein of Coinbase
-
 ### Must-Listens
 
 - [Introduction to Decred and its privacy implementation](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/) on Laura Shin's Unchained podcast
@@ -46,12 +40,6 @@ various aspects of Decred.
 ### Must-Watches
 
 - [How Decred is different from Bitcoin](https://www.youtube.com/watch?v=qHPs6XdP4gQ)
-
-- [How Decred governance works](https://www.youtube.com/watch?v=qT9oBsbzUos)
-
-- [Decred's history, mission, and vision](https://blocktv.com/watch/2019-02-20/5c6d6a2be03e3-chain-breakers-promoting-constant-disruption-) with Jake Yocom-Piatt on BlockTV
-
-- [Blockchain sovereignty and blockchain integration for businesses](https://events.technologyreview.com/video/watch/jake-yocom-piatt-decred-blockchain-sovereignty/) with Jake Yocom-Piatt at MIT
 
 ---
 
@@ -79,7 +67,7 @@ various aspects of Decred.
 
 - [On Decred's path to becoming a DAO](https://medium.com/@changhugo/decred-as-a-dae-infrastructure-provider-970677f38179) by Hugo Chang
 
-- [How Decred is turning its treasury over to the community](https://breakermag.com/decred-is-letting-users-choose-how-to-spend-its-28-million-dev-budget/) in BREAKERMAG
+- [One of Investors' Favorite Governance Blockchains Is Handing Over $20 Million](https://www.coindesk.com/markets/2018/09/20/one-of-investors-favorite-governance-blockchains-is-handing-over-20-million) in CoinDesk
 
 - [Why Decred is close to absolute decentralization](https://www.cryptonewsz.com/how-close-to-absolute-decentralization-is-decreds-unique-consensus-mechanism/8998/) in CryptoNewsZ
 
@@ -111,9 +99,9 @@ various aspects of Decred.
 
 - [How Decred's Lightning Network implementation will work](https://blog.decred.org/2017/05/23/Lightning-Network-in-Practice/) by Jake Yocom-Piatt
 
-- [Lightning Network discussion with Lightning Labs CTO Laolu Osuntokun](https://decredcommunity.org/videos/decred-assembly-ep4-the-lightning-network-w/-guest-laolu-roasbeef-osuntokun) on Decred Assembly
+- [Lightning Network discussion with Lightning Labs CTO Laolu Osuntokun](https://www.youtube.com/watch?v=Auvwg8Gi5C0) on Decred Assembly
 
-- [On-chain atomic swaps and Lightning Network discussion with Charlie Lee and Dave Collins](https://decredcommunity.org/videos/decred-assembly-ep13-on-chain-atomic-swaps-lightning-network-w/-dave-collins-and-charlie-lee) on Decred Assembly
+- [On-chain atomic swaps and Lightning Network discussion with Charlie Lee and Dave Collins](https://www.youtube.com/watch?v=RZ5bTs78bNg) on Decred Assembly
 
 ---
 
@@ -122,8 +110,6 @@ various aspects of Decred.
 ### Decred Ownership Thesis
 
 - [Decred investment thesis](https://www.placeholder.vc/blog/2018/5/12/decred-investment-thesis) by Joel Monegro and Chris Burniske of Placeholder VC
-
-- [Decred investment thesis](https://www.blockheadcap.com/post/decred-investment-thesis) by Blockhead Capital
 
 - [Decred investment thesis](https://medium.com/@BlueYard/decred-82b284b4a795) by BlueYard Capital
 
@@ -143,19 +129,17 @@ various aspects of Decred.
 
 ### How Hybrid PoW/PoS Works
 
-- [Hybrid PoW/PoS Consensus explained](https://www.binance.vision/blockchain/hybrid-pow-pos-consensus-explained) by Richard Red
-
 - [How PoS voting works](../proof-of-stake/overview.md)
 
 ### Why Hybrid PoW/PoS?
 
 - [Why Decred users should have a say in hard fork changes](https://blog.decred.org/2016/11/16/Upgrading-Consensus/) by Jake Yocom-Piatt
 
-- [The advantages of stake-based governance](https://medium.com/@richardred/what-is-on-chain-cryptocurrency-governance-is-it-plutocratic-bfb407ef6f1) by Richard Red
+- [What is on-chain cryptocurrency governance? Is it plutocratic?](https://medium.com/@richardred/what-is-on-chain-cryptocurrency-governance-is-it-plutocratic-bfb407ef6f1) by Richard Red
 
 ### Security
 
-- [Why Decred is 20x more expensive to attack than Bitcoin](https://blog.usejournal.com/apples-to-apples-decred-is-20x-more-expensive-to-attack-than-bitcoin-68bafeb4546f) by Zubair Zia
+- [Why Decred is 20x more expensive to attack than Bitcoin](https://medium.com/@0xmzz/apples-to-apples-decred-is-20x-more-expensive-to-attack-than-bitcoin-68bafeb4546f) by Zubair Zia
 
 - [Decred's hybrid protocol as a superior detergent to majority attacks](https://medium.com/decred/decreds-hybrid-protocol-a-superior-deterrent-to-majority-attacks-9421bf486292) by Zubair Zia
 
@@ -219,7 +203,7 @@ various aspects of Decred.
 
 - [The top 5 reasons to become a DCR stakeholder](https://thedecreddigest.com/2017/12/11/the-top-5-reasons-to-become-a-decred-stakeholder/)
 
-- [Staking isn't just a way to earn crypto — and it shouldn't be](https://www.coindesk.com/staking-isnt-just-a-way-to-earn-crypto-money-and-it-shouldnt-be) by Jake Yocom-Piatt in CoinDesk
+- [Staking isn't just a way to earn crypto — and it shouldn't be](https://www.coindesk.com/markets/2019/06/22/staking-isnt-just-a-way-to-earn-crypto-money-and-it-shouldnt-be) by Jake Yocom-Piatt in CoinDesk
 
 ### How to Stake
 
@@ -233,9 +217,9 @@ various aspects of Decred.
 
 ### Decred Treasury
 
-- [How Decred is turning its entire treasury over to stakeholders](https://www.coindesk.com/decred-is-turning-its-entire-21-million-crypto-treasury-over-to-investors) in CoinDesk
+- [One of Investors' Favorite Governance Blockchains Is Handing Over $20 Million](https://www.coindesk.com/markets/2018/09/20/one-of-investors-favorite-governance-blockchains-is-handing-over-20-million) in CoinDesk
 
-- [Decred Treasury real-time dashboard](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)
+- [Decred Treasury real-time dashboard](https://dcrdata.decred.org/treasury)
 
 ### How Decred’s Contractor Model Works
 
@@ -265,8 +249,6 @@ various aspects of Decred.
 
 ### How to Mine
 
-- [Step-by-step guide on how to mine Decred](https://howtomine.com/decred/)
-
 - [Video tutorial on how to mine Decred](https://www.youtube.com/watch?v=Mr6_b2DBOhE)
 
 ### How to Set Up a Wallet
@@ -286,8 +268,6 @@ various aspects of Decred.
 ### Network Statistics and Block Explorers
 
 - [Decred Block Explorer](https://dcrdata.decred.org)
-
-- [DCR coin metrics](https://coinmetrics.io/charts/#assets=btc,dcr)
 
 - [DCR ticket price chart](https://dcrdata.decred.org/charts?chart=ticket-price)
 

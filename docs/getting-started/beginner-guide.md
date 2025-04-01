@@ -43,10 +43,6 @@ The following guides go into depth on key aspects of the Decred experience:
 
 ## Information
 
-### Network Stats
-
-* [stats.decred.org](https://stats.decred.org/)
-
 ### Block Explorers
 
 * [dcrdata.decred.org](https://dcrdata.decred.org/)
@@ -59,7 +55,6 @@ The following guides go into depth on key aspects of the Decred experience:
 * [Decred Medium](https://medium.com/decred) - Curated content from community members
 * [Press coverage/releases](https://decred.org/press/)
 * [The Decred Digest](https://thedecreddigest.com/) - Community blog
-* [Decred-Canon](https://github.com/maxbron08/Decred-Canon/) - A collection of readings and resources on Decred.
 
 ### Video
 

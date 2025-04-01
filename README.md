@@ -13,8 +13,8 @@
 
 In order to develop on `dcrdocs` you will need [Python](https://www.python.org/)
 installed on your system.
-Version 3.9 is recommended because this is the version used by the live site,
-however MkDocs does also support versions 3.6 and later.
+Version 3.13 is recommended because this is the version used by the live site,
+however MkDocs does also support versions 3.8 and later.
 Python 2 is not supported.
 
 You can verify your installation of Python by checking the output from these two

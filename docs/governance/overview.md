@@ -14,7 +14,7 @@ Some of the ticket holder voting occurs on-chain, and some of it off-chain.
 
 - Validation of blocks and voting on consensus rule changes occurs on-chain.
 - Voting on higher-level issues, such as how to spend [Treasury
-  funds](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx),
+  funds](https://dcrdata.decred.org/treasury),
   or significant policy decisions such as amendments to the [Decred
   constitution](decred-constitution.md), occur off-chain in
   [Politeia](politeia/overview.md).

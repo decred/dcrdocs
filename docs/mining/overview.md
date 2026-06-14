@@ -16,7 +16,7 @@ For more details on the block reward and growth of the coin supply, see the
 [Issuance](../advanced/issuance.md) page.
 
 When proof-of-stake tickets are called to vote on a block, they have the ability
-to the strip the reward from the miner of the previous block.
+to strip the reward from the miner of the previous block.
 This power may be used if the miner has constructed a block contrary to the best
 interests of the network. For example, an empty block when there are
 transactions waiting to be processed in the mempool.

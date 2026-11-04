@@ -119,6 +119,42 @@ important information displayed on screen.
 
 ---
 
+## Mixing Your Coins with StakeShuffle
+
+StakeShuffle is Decred's built-in coin mixing.
+It is based on the [CoinShuffle++](cspp/overview.md) protocol and creates
+CoinJoin transactions in which many participants mix coins of the same fixed
+denomination together.
+After a mix, nobody (not even the other participants) can tell which output
+belongs to which input.
+
+StakeShuffle is **non-custodial**: your coins never leave your wallet, and
+you sign only your own part of each mix transaction.
+
+Since [dcrd v2.0](https://github.com/decred/dcrd/releases/tag/release-v2.0.0),
+mixing is fully decentralized.
+Participants coordinate through the Decred peer-to-peer network itself, so
+there is no central mixing server that could go offline or log activity.
+
+Some things to keep in mind:
+
+- Amounts are still public. Mixing hides *which* output is yours, not the
+  amount, which is why mixes use fixed denominations.
+- Change needs care. Change outputs of a mix are not anonymous. Wallets
+  keep them in a dedicated `unmixed` account and mix them again in smaller
+  standard values. Never spend change together with other outputs, as that
+  links them again.
+- Mixing is integrated with staking: a mixed ticket buyer anonymizes the
+  outputs of its split transactions before buying tickets, so staking does
+  not have to reveal your holdings. Non-stakers can mix received funds too.
+- The wallet has to stay **unlocked** long enough to take part in a mix,
+  since mixes happen in regular rounds (epochs).
+
+See [CoinShuffle++](cspp/overview.md) for how the protocol works and
+[How to use CoinShuffle++](cspp/how-to-cspp.md) for wallet setup.
+
+---
+
 ## Using the Lightning Network for Privacy
 
 Privacy attacks like [common-input-ownership
